@@ -1,0 +1,205 @@
+[
+  {
+    "token": "defold",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Game engine for development — game dev tool, not a game"
+  },
+  {
+    "token": "gamemaker",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Game engine — \"Game development tools (Unity, Godot, Tiled) → developerTools\""
+  },
+  {
+    "token": "gb-studio",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Drag and drop retro game creator — game dev tool"
+  },
+  {
+    "token": "gdevelop",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Open-source game engine — game dev tool"
+  },
+  {
+    "token": "godot",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Game development engine"
+  },
+  {
+    "token": "godot-mono",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "C# scripting version of Godot game engine"
+  },
+  {
+    "token": "solar2d",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Lua-based game engine"
+  },
+  {
+    "token": "mcreator",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Software to make Minecraft Java Edition mods — dev tool"
+  },
+  {
+    "token": "playdate-simulator",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Playdate Lua/C APIs and Simulator for development"
+  },
+  {
+    "token": "firebird-emu",
+    "was": "games",
+    "shouldBe": "scienceEducation",
+    "confidence": "high",
+    "reason": "TI Nspire calculator emulator (calculator emulators → scienceEducation)"
+  },
+  {
+    "token": "foldit",
+    "was": "games",
+    "shouldBe": "scienceEducation",
+    "confidence": "high",
+    "reason": "Protein folding game — citizen science, not entertainment"
+  },
+  {
+    "token": "minecraft-education",
+    "was": "games",
+    "shouldBe": "scienceEducation",
+    "confidence": "high",
+    "reason": "Educational version of Minecraft — education platform"
+  },
+  {
+    "token": "classroom-mode-for-minecraft",
+    "was": "games",
+    "shouldBe": "scienceEducation",
+    "confidence": "high",
+    "reason": "Classroom management for Minecraft Education"
+  },
+  {
+    "token": "cold-turkey-blocker",
+    "was": "games",
+    "shouldBe": "utilities",
+    "confidence": "high",
+    "reason": "Website/game/app blocker — productivity/system utility, not a game"
+  },
+  {
+    "token": "ipaverse",
+    "was": "games",
+    "shouldBe": "utilities",
+    "confidence": "high",
+    "reason": "iOS app downloading/management tool — not a game"
+  },
+  {
+    "token": "playcover-community",
+    "was": "games",
+    "shouldBe": "utilities",
+    "confidence": "high",
+    "reason": "Sideload iOS apps — system tool, not a game itself"
+  },
+  {
+    "token": "pongsaver",
+    "was": "games",
+    "shouldBe": "screensaverWallpaper",
+    "confidence": "high",
+    "reason": "Screensaver that plays Pong — screensaver, not a game"
+  },
+  {
+    "token": "playdate-mirror",
+    "was": "games",
+    "shouldBe": "videoMedia",
+    "confidence": "high",
+    "reason": "Streams gameplay audio/video from Playdate — streaming tool"
+  },
+  {
+    "token": "rouvy",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "high",
+    "reason": "Indoor cycling/workout app — fitness, not gaming"
+  },
+  {
+    "token": "tpvirtual",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "high",
+    "reason": "Indoor cycling game — fitness app (TrainingPeaks)"
+  },
+  {
+    "token": "zwift",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "high",
+    "reason": "Indoor cycling — fitness platform, not traditional gaming"
+  },
+  {
+    "token": "fractal-bot",
+    "was": "games",
+    "shouldBe": "audioMusic",
+    "confidence": "high",
+    "reason": "Send/receive data to Fractal Audio Systems — audio hardware companion"
+  },
+  {
+    "token": "86box",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "medium",
+    "reason": "x86 machine emulator — more retro computing/dev than gaming"
+  },
+  {
+    "token": "clock-signal",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "medium",
+    "reason": "Latency-hating emulator of 8/16-bit platforms — preservation/dev focus"
+  },
+  {
+    "token": "bit-slicer",
+    "was": "games",
+    "shouldBe": "developerTools",
+    "confidence": "medium",
+    "reason": "Universal game trainer — memory editor, dev/reverse-engineering tool"
+  },
+  {
+    "token": "golly",
+    "was": "games",
+    "shouldBe": "scienceEducation",
+    "confidence": "medium",
+    "reason": "Conway's Game of Life / cellular automata — math/science, not entertainment"
+  },
+  {
+    "token": "volanta",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "medium",
+    "reason": "Personal flight tracker — aviation hobby, not a game"
+  },
+  {
+    "token": "navigraph-charts",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "medium",
+    "reason": "Jeppesen charts for flight simulation — aviation reference"
+  },
+  {
+    "token": "navigraph-simlink",
+    "was": "games",
+    "shouldBe": "other",
+    "confidence": "medium",
+    "reason": "Link Navigraph with flight simulators — aviation tool"
+  }
+]
