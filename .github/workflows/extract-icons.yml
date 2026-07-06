@@ -29,6 +29,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The rolling report PR may not be merged between runs; without this,
+      # a run would start from master's stale report and the report PR's
+      # force-push would clobber the previous run's outcomes (happened
+      # between the batch-1 review rerun and batch 2).
+      - name: Resume report state from rolling branch
+        run: |
+          if git fetch origin icon-extraction-report 2>/dev/null; then
+            git checkout FETCH_HEAD -- data/icon_report.json || true
+            echo "resumed report from rolling branch"
+          fi
+
       - name: Extract and publish icons
         env:
           GH_TOKEN: ${{ github.token }}
