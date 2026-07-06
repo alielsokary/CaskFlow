@@ -185,12 +185,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "google-japanese-ime": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "gpg-suite": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -221,23 +215,11 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "mactex": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "mactex-no-gui": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "microsoft-office": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
+    "status": "no_icon",
+    "reason": "multi-app suite; shallowest picked the Defender shim (manual audit 2026-07-07)",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-07"
   },
   "mysql-shell": {
     "status": "failed",
@@ -302,12 +284,6 @@
   "quarto": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "r-app": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
