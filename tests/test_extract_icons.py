@@ -114,3 +114,45 @@ def test_find_app_never_follows_symlinks(tmp_path):
     (outside / "Trap.app" / "Contents").mkdir(parents=True)
     (root / "Applications").symlink_to(outside)
     assert find_app(root, []) is None
+
+
+# --- installer demotion & token matching (batch-1 lessons) --------------------
+
+from extract_icons import installerish, token_matches_app  # noqa: E402
+
+
+def test_installerish_names():
+    assert installerish("Install TeamViewer.app")
+    assert installerish("Microsoft Office Installer.app")
+    assert installerish("Setup Assistant.app")
+    assert installerish("Sparkle Updater.app")
+    assert not installerish("Microsoft Word.app")
+    assert not installerish("Uninstaller Pro Cleaner.app") is False  # contains 'uninstaller'
+
+
+def test_token_matches_app():
+    assert token_matches_app("microsoft-word", "Microsoft Word.app")
+    assert token_matches_app("docker-desktop", "Docker.app")
+    assert token_matches_app("google-chrome", "Google Chrome.app")
+    assert not token_matches_app("r-app", "R.app")  # 1-char containment guarded
+    assert not token_matches_app("zoom", "Microsoft Word.app")
+
+
+def test_find_app_token_match_beats_shallow_installer(tmp_path):
+    _mk_app(tmp_path, "Office Installer.app")           # shallow stub
+    target = _mk_app(tmp_path, "payload", "Microsoft Word.app")
+    app, sel = find_app(tmp_path, [], token="microsoft-word")
+    assert app == target and sel == "token"
+
+
+def test_find_app_installer_only_is_parked(tmp_path):
+    _mk_app(tmp_path, "Install TeamViewer.app")
+    app, sel = find_app(tmp_path, [], token="teamviewer")
+    assert sel == "installer_only"
+
+
+def test_find_app_single_ignores_installer_sibling(tmp_path):
+    _mk_app(tmp_path, "Updater.app")
+    target = _mk_app(tmp_path, "RealThing.app")
+    app, sel = find_app(tmp_path, [], token="unrelated-token")
+    assert app == target and sel == "single"

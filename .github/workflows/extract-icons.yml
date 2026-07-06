@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write  # rolling report PR (batch 1 failed without this)
 
 concurrency:
   group: extract-icons
