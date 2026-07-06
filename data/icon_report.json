@@ -5,10 +5,10 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "background-music": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
+  "apache-directory-studio": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got bfa10deba4a4…)",
+    "attempts": 1,
     "updated": "2026-07-06"
   },
   "basictex": {
@@ -41,6 +41,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "cap": {
+    "status": "no_icon",
+    "reason": "unsupported container: 01KWCXY8M20NH8JM00HRH1HKVG",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
   "claude-code": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact",
@@ -53,9 +59,33 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "comet": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
   "conductor": {
     "status": "no_icon",
     "reason": "unsupported container: 01KWMS15GBSTND3DRNXVK0MX9F",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corelocationcli": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corretto": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corretto@11": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -77,9 +107,15 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "displaylink": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+  "corretto@8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "dotnet-runtime": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -95,15 +131,39 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "dotnet-sdk@9": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "eclipse-java": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "finch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
   "flutter": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "fuse-t": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+  "font-sf-mono": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "font-sf-pro": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -119,9 +179,21 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "google-drive": {
+  "google-earth-pro": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "google-japanese-ime": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "gpg-suite": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -131,21 +203,21 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "karabiner-elements": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "libndi": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "little-snitch": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
   "macfuse": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -161,87 +233,57 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "microsoft-excel": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "microsoft-office": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "microsoft-outlook": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
+  "mysql-shell": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-07-06"
   },
-  "microsoft-powerpoint": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-teams": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-word": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "mullvad-vpn": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "multipass": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "nextcloud": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "nordvpn": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+  "nomachine": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-07-06"
   },
   "omnidisksweeper": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-06"
-  },
-  "onedrive": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
+    "attempts": 2,
     "updated": "2026-07-06"
   },
   "onyx": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-07-06"
+  },
+  "opensc-app": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
     "updated": "2026-07-06"
   },
   "openvpn-connect": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "oracle-jdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "paraview": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -251,9 +293,9 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "powershell@preview": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+  "qqmusic": {
+    "status": "no_icon",
+    "reason": "unsupported container: file_redirect.fcg",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -269,10 +311,34 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "rawtherapee": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach canceled",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  },
   "raycast": {
     "status": "no_icon",
     "reason": "unsupported container: download",
     "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "reaper": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach canceled",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  },
+  "royal-tsx": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach canceled",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  },
+  "segger-jlink": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got c3649534b54e…)",
+    "attempts": 1,
     "updated": "2026-07-06"
   },
   "session-manager-plugin": {
@@ -281,27 +347,9 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "sf-symbols": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "sfm": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "shottr": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "squirrel-app": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -314,12 +362,6 @@
   "tailscale-app": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "teamviewer": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -359,12 +401,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "ubersicht": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "utm": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -377,33 +413,27 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "virtualbox": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "visual-studio-code": {
     "status": "no_icon",
     "reason": "unsupported container: stable",
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "warp": {
+  "vnc-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1,
     "updated": "2026-07-06"
   },
+  "warp": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 2,
+    "updated": "2026-07-06"
+  },
   "wch-ch34x-usb-serial-driver": {
     "status": "no_icon",
     "reason": "unsupported container: file",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "wezterm": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -413,21 +443,27 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "windows-app": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "xquartz": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
+  "winbox": {
+    "status": "failed",
+    "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: CANCEL (err 8)",
+    "attempts": 1,
     "updated": "2026-07-06"
   },
   "zotero": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu@11": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -438,6 +474,12 @@
     "updated": "2026-07-06"
   },
   "zulu@21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu@25": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
