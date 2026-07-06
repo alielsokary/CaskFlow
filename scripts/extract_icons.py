@@ -41,6 +41,8 @@ GITHUB_REPO = "alielsokary/CaskKit"
 ICON_SIZE = "256"
 MAX_ATTEMPTS = 3
 DOWNLOAD_TIMEOUT = 600  # seconds; some vendor artifacts are multi-GB
+PUBLISH_THROTTLE = 2.0  # seconds between release creations — stays under
+                        # GitHub secondary rate limits on large backfill runs
 
 TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz")
 
@@ -437,6 +439,7 @@ def main(argv: list[str] | None = None) -> int:
             if status == "ok":
                 if args.publish:
                     publish(token, args.output_dir / f"{token}.png")
+                    time.sleep(PUBLISH_THROTTLE)
                 report.pop(token, None)  # clear any prior failure
                 save_report(report)
                 ok += 1
