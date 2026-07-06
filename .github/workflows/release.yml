@@ -1,0 +1,39 @@
+name: Release categories.json
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - categories.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute release tag
+        id: tag
+        run: echo "tag=data-$(date -u +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Cut release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: "Categories ${{ steps.tag.outputs.tag }}"
+          body: |
+            Daily classification update.
+
+            Stable asset URL (always points to the most recent release):
+            https://github.com/${{ env.REPO }}/releases/latest/download/categories.json
+
+            See the merged PR for the diff.
+          files: categories.json
+          fail_on_unmatched_files: true
+          make_latest: true
