@@ -1,8 +1,44 @@
 {
+  "adobe-acrobat-reader": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "background-music": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "basictex": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "blackhole-16ch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
   "blackhole-2ch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 2,
+    "updated": "2026-07-06"
+  },
+  "blackhole-64ch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "burp-suite": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
     "updated": "2026-07-06"
   },
   "claude-code": {
@@ -11,10 +47,406 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "vivaldi": {
+  "cloudflare-warp": {
+    "status": "no_icon",
+    "reason": "unsupported container: 2026.6.822.0",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "conductor": {
+    "status": "no_icon",
+    "reason": "unsupported container: 01KWMS15GBSTND3DRNXVK0MX9F",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corretto@17": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corretto@21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "corretto@25": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "displaylink": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "dotnet-sdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "dotnet-sdk@8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "flutter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "fuse-t": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "gcc-arm-embedded": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "git-credential-manager": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "google-drive": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "handbrake-app": {
+    "status": "no_icon",
+    "reason": "unsupported container: rotation.php",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "karabiner-elements": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "libndi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "macfuse": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "mactex": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "mactex-no-gui": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-excel": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-office": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-outlook": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-powerpoint": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-teams": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "microsoft-word": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "mullvad-vpn": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "multipass": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "nextcloud": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "nordvpn": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "omnidisksweeper": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach canceled",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  },
+  "onedrive": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "onyx": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach canceled",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  },
+  "openvpn-connect": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "postman": {
+    "status": "no_icon",
+    "reason": "unsupported container: osx_arm64",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "powershell@preview": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "quarto": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "r-app": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "raycast": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "session-manager-plugin": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "sf-symbols": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "sfm": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "shottr": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "squirrel-app": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "sshfs-mac": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "tailscale-app": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "teamviewer": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin@11": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin@17": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin@21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin@25": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "temurin@8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "ubersicht": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "utm": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "vagrant": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "virtualbox": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "visual-studio-code": {
+    "status": "no_icon",
+    "reason": "unsupported container: stable",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "warp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1,
+    "updated": "2026-07-06"
+  },
+  "wch-ch34x-usb-serial-driver": {
+    "status": "no_icon",
+    "reason": "unsupported container: file",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "wezterm": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "whatsapp": {
+    "status": "no_icon",
+    "reason": "unsupported container: release",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "windows-app": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "xquartz": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zotero": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu@17": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu@21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "zulu@8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-06"
   }
 }
