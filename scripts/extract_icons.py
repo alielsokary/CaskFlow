@@ -24,6 +24,7 @@ import argparse
 import hashlib
 import json
 import plistlib
+import re
 import shutil
 import subprocess
 import sys
@@ -106,6 +107,31 @@ def container_type(cask: dict, filename: str) -> str | None:
     if name.endswith(".app"):  # rare: bare .app download
         return "zip" if name.endswith(".zip") else None
     return None
+
+
+_INSTALLERISH = re.compile(r"\b(install(er)?|uninstall(er)?|updater?|setup)\b", re.IGNORECASE)
+
+
+def installerish(app_name: str) -> bool:
+    """True for installer/updater stub apps — never the icon we want.
+    Batch 1 shipped the Microsoft installer icon for Word/Excel/PowerPoint/
+    Outlook because the pkg payload's stub app was the shallowest .app."""
+    return bool(_INSTALLERISH.search(app_name.removesuffix(".app")))
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def token_matches_app(token: str, app_name: str) -> bool:
+    """`microsoft-word` ↔ `Microsoft Word.app`. Containment needs ≥4 chars to
+    avoid one-letter apps (R.app) matching everything."""
+    nt, na = _norm(token), _norm(app_name.removesuffix(".app"))
+    if not nt or not na:
+        return False
+    if nt == na:
+        return True
+    return (len(na) >= 4 and na in nt) or (len(nt) >= 4 and nt in na)
 
 
 def resolve_icns_name(info: dict) -> str | None:
@@ -213,14 +239,17 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
     raise ExtractError(f"unknown container type for {artifact.name}")
 
 
-def find_app(root: Path, wanted: list[str]) -> tuple[Path, str] | None:
+def find_app(root: Path, wanted: list[str], token: str = "") -> tuple[Path, str] | None:
     """Locate the .app bundle; never follows symlinks (DMGs ship an
     /Applications symlink).
 
     Returns (app, selection) where selection is the audit signal:
-    - "exact":      name matches the cask's artifact stanzas — near-certain
-    - "single":     only one .app in the artifact — unambiguous
-    - "shallowest": multiple apps, none matching — flag for human review
+    - "exact":          name matches the cask's artifact stanzas — near-certain
+    - "token":          name matches the cask token — near-certain
+    - "single":         only one non-installer .app — unambiguous
+    - "shallowest":     multiple candidates, none matching — human review
+    - "installer_only": every .app is an installer/updater stub — caller
+                        parks the cask instead of shipping a wrong icon
     """
     wanted_lower = {w.lower() for w in wanted}
     found: list[Path] = []
@@ -242,11 +271,24 @@ def find_app(root: Path, wanted: list[str]) -> tuple[Path, str] | None:
                 found.append(entry)
             else:
                 stack.append((entry, depth + 1))
-    if len(found) == 1:
-        return found[0], "single"
-    if found:
-        return sorted(found, key=lambda p: len(p.parts))[0], "shallowest"
-    return None
+    if not found:
+        return None
+
+    candidates = [a for a in found if not installerish(a.name)]
+    if not candidates:
+        return found[0], "installer_only"
+
+    by_token = [a for a in candidates if token_matches_app(token, a.name)]
+    if by_token:
+        # Exact normalized equality beats containment; then prefer shorter
+        # names ("Docker.app" over "Docker Helper.app").
+        nt = _norm(token)
+        by_token.sort(key=lambda a: (_norm(a.name.removesuffix(".app")) != nt, len(a.name)))
+        return by_token[0], "token"
+
+    if len(candidates) == 1:
+        return candidates[0], "single"
+    return sorted(candidates, key=lambda p: len(p.parts))[0], "shallowest"
 
 
 def find_nested_archive(root: Path) -> tuple[Path, str] | None:
@@ -314,19 +356,22 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         root = expand(artifact, kind, workdir, mounts)
         wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
-        hit = find_app(root, wanted)
+        hit = find_app(root, wanted, token)
 
         if hit is None:
             nested = find_nested_archive(root)
             if nested:
                 inner, inner_kind = nested
                 root = expand(inner, inner_kind, workdir / "nested", mounts)
-                hit = find_app(root, wanted)
+                hit = find_app(root, wanted, token)
         if hit is None:
             # Deterministic outcome (e.g. suite/pkg of CLI binaries) — park it
             # rather than burning retries. --tokens bypasses parked entries.
             return "no_icon", "no .app found in expanded artifact"
         app, selection = hit
+        if selection == "installer_only":
+            # An installer stub's icon is a wrong icon, not an icon. Honest gap.
+            return "no_icon", "only installer/updater apps in artifact"
 
         dest_png = output_dir / f"{token}.png"
         icon_reason = icns_to_png(app, dest_png)
@@ -475,10 +520,10 @@ def main(argv: list[str] | None = None) -> int:
         try:
             status, detail = extract_one(cask, args.output_dir)
             if status == "ok":
-                report.pop(token, None)  # clear any prior failure
-                if detail != "exact":
+                report.pop(token, None)  # clear any prior failure/review
+                if detail in ("single", "shallowest"):
                     # Audit queue: the .app was picked heuristically, not by
-                    # the artifact stanza name — a human should eyeball it.
+                    # stanza name or token match — a human should eyeball it.
                     record(report, token, "review", f"non-exact .app selection: {detail}")
                 save_report(report)
                 ok += 1
