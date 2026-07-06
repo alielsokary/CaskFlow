@@ -31,3 +31,6 @@ htmlcov/
 .env
 .env.local
 *.local
+
+# Icon extraction local output
+icons_out/
