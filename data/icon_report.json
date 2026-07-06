@@ -1,0 +1,20 @@
+{
+  "blackhole-2ch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 2,
+    "updated": "2026-07-06"
+  },
+  "claude-code": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-07-06"
+  },
+  "vivaldi": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-06"
+  }
+}
