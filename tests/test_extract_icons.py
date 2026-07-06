@@ -74,3 +74,43 @@ def test_resolve_icns_name_appends_extension():
 def test_resolve_icns_name_missing_or_blank():
     assert resolve_icns_name({}) is None
     assert resolve_icns_name({"CFBundleIconFile": "  "}) is None
+
+
+# --- find_app selection paths -------------------------------------------------
+
+from extract_icons import find_app  # noqa: E402
+
+
+def _mk_app(root, *parts):
+    app = root.joinpath(*parts)
+    (app / "Contents").mkdir(parents=True)
+    return app
+
+
+def test_find_app_exact_match_wins(tmp_path):
+    _mk_app(tmp_path, "Helper.app")
+    target = _mk_app(tmp_path, "sub", "Real.app")
+    app, sel = find_app(tmp_path, ["Real.app"])
+    assert app == target and sel == "exact"
+
+
+def test_find_app_single_is_unambiguous(tmp_path):
+    target = _mk_app(tmp_path, "Only.app")
+    app, sel = find_app(tmp_path, ["SomethingElse.app"])
+    assert app == target and sel == "single"
+
+
+def test_find_app_multiple_without_match_flags_shallowest(tmp_path):
+    shallow = _mk_app(tmp_path, "A.app")
+    _mk_app(tmp_path, "deep", "B.app")
+    app, sel = find_app(tmp_path, [])
+    assert app == shallow and sel == "shallowest"
+
+
+def test_find_app_never_follows_symlinks(tmp_path):
+    root = tmp_path / "root"
+    root.mkdir()
+    outside = tmp_path / "outside"
+    (outside / "Trap.app" / "Contents").mkdir(parents=True)
+    (root / "Applications").symlink_to(outside)
+    assert find_app(root, []) is None

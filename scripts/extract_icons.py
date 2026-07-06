@@ -4,14 +4,15 @@ Icon extraction pipeline — see docs/superpowers/specs/2026-07-05-icon-extracti
 
 Per cask: download the vendor artifact, expand it WITHOUT executing anything,
 locate the .app bundle, convert its .icns to a 256px PNG, and (optionally)
-publish it as a per-cask GitHub pre-release `cask-<token>` with the single
-asset `AppIcon.png`. Pre-release is load-bearing: it keeps `releases/latest`
-pointing at the data-* releases that CaskHub's CategoryService consumes.
+publish it as `<token>.png` on the orphan `icons` branch. CaskHub consumes
+icons via jsDelivr's edge CDN (with raw.githubusercontent.com as fallback):
+    https://cdn.jsdelivr.net/gh/alielsokary/CaskKit@icons/<token>.png
 
 State:
-- "Done" = the cask-* releases themselves (queried via `gh api`).
+- "Done" = the files on the icons branch (one `git ls-tree`, no pagination).
 - data/icon_report.json records no_icon / car_only / failed tokens with
-  reasons. Failed tokens get MAX_ATTEMPTS tries, then are parked.
+  reasons, plus `review` entries for icons picked by a non-exact .app match
+  (the human audit queue). Failed tokens get MAX_ATTEMPTS tries, then park.
 
 Run:
     python scripts/extract_icons.py --tokens obsidian rectangle   # local, no publish
@@ -37,10 +38,11 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 REPORT_PATH = REPO_ROOT / "data" / "icon_report.json"
 BREW_API = "https://formulae.brew.sh/api/cask.json"
 ANALYTICS_API = "https://formulae.brew.sh/api/analytics/cask-install/30d.json"
-GITHUB_REPO = "alielsokary/CaskKit"
+ICONS_BRANCH = "icons"
 ICON_SIZE = "256"
 MAX_ATTEMPTS = 3
 DOWNLOAD_TIMEOUT = 600  # seconds; some vendor artifacts are multi-GB
+FLUSH_EVERY = 25  # icons per publish commit — bounds loss if a long CI run dies
 
 TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz")
 
@@ -211,9 +213,15 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
     raise ExtractError(f"unknown container type for {artifact.name}")
 
 
-def find_app(root: Path, wanted: list[str]) -> Path | None:
-    """Locate the .app bundle. Prefers names from the cask's artifacts; never
-    follows symlinks (DMGs ship an /Applications symlink)."""
+def find_app(root: Path, wanted: list[str]) -> tuple[Path, str] | None:
+    """Locate the .app bundle; never follows symlinks (DMGs ship an
+    /Applications symlink).
+
+    Returns (app, selection) where selection is the audit signal:
+    - "exact":      name matches the cask's artifact stanzas — near-certain
+    - "single":     only one .app in the artifact — unambiguous
+    - "shallowest": multiple apps, none matching — flag for human review
+    """
     wanted_lower = {w.lower() for w in wanted}
     found: list[Path] = []
     stack = [(root, 0)]
@@ -230,13 +238,14 @@ def find_app(root: Path, wanted: list[str]) -> Path | None:
                 continue
             if entry.name.endswith(".app"):
                 if entry.name.lower() in wanted_lower:
-                    return entry
+                    return entry, "exact"
                 found.append(entry)
             else:
                 stack.append((entry, depth + 1))
-    # No exact match: a single discovered app is unambiguous; otherwise shallowest.
+    if len(found) == 1:
+        return found[0], "single"
     if found:
-        return sorted(found, key=lambda p: len(p.parts))[0]
+        return sorted(found, key=lambda p: len(p.parts))[0], "shallowest"
     return None
 
 
@@ -288,8 +297,8 @@ def icns_to_png(app: Path, dest_png: Path) -> str | None:
 # ---------------------------------------------------------------------------
 
 def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
-    """Returns (status, detail) where status ∈ published-ready | no_icon | car_only.
-    Raises ExtractError for `failed`."""
+    """Returns (status, detail): ok (detail = .app selection mode) | no_icon |
+    car_only. Raises ExtractError for `failed`."""
     token = cask["token"]
     reason = eligibility(cask)
     if reason:
@@ -305,18 +314,19 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         root = expand(artifact, kind, workdir, mounts)
         wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
-        app = find_app(root, wanted)
+        hit = find_app(root, wanted)
 
-        if app is None:
+        if hit is None:
             nested = find_nested_archive(root)
             if nested:
                 inner, inner_kind = nested
                 root = expand(inner, inner_kind, workdir / "nested", mounts)
-                app = find_app(root, wanted)
-        if app is None:
+                hit = find_app(root, wanted)
+        if hit is None:
             # Deterministic outcome (e.g. suite/pkg of CLI binaries) — park it
             # rather than burning retries. --tokens bypasses parked entries.
             return "no_icon", "no .app found in expanded artifact"
+        app, selection = hit
 
         dest_png = output_dir / f"{token}.png"
         icon_reason = icns_to_png(app, dest_png)
@@ -324,27 +334,53 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
             return "car_only", "asset-catalog-only app (no .icns)"
         if icon_reason:
             return "no_icon", icon_reason
-        return "ok", str(dest_png)
+        return "ok", selection
     finally:
         for mnt in mounts:
             run(["hdiutil", "detach", str(mnt), "-force"])
         shutil.rmtree(workdir, ignore_errors=True)
 
 
-def publish(token: str, png: Path) -> None:
-    staged = png.parent / "AppIcon.png"
-    shutil.copyfile(png, staged)
-    tag = f"cask-{token}"
-    create = run(["gh", "release", "create", tag, str(staged), "--repo", GITHUB_REPO,
-                  "--prerelease", "--title", tag, "--notes", f"App icon for `{token}`."])
-    if create.returncode != 0:
-        if "already exists" in create.stderr:
-            upload = run(["gh", "release", "upload", tag, str(staged), "--repo", GITHUB_REPO, "--clobber"])
-            if upload.returncode != 0:
-                raise ExtractError(f"gh release upload failed: {upload.stderr.strip()[:200]}")
-        else:
-            raise ExtractError(f"gh release create failed: {create.stderr.strip()[:200]}")
-    staged.unlink(missing_ok=True)
+def _git(cwd: Path, *args: str) -> subprocess.CompletedProcess:
+    return run(["git", "-C", str(cwd), *args])
+
+
+def publish_batch(pngs: dict[str, Path]) -> None:
+    """Commit a batch of icons to the icons branch via a throwaway worktree.
+    One commit per FLUSH_EVERY icons instead of one API call per icon —
+    no release plumbing, no rate limits."""
+    if not pngs:
+        return
+    wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
+    wt_added = False
+    try:
+        if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
+            raise ExtractError(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+        add = _git(REPO_ROOT, "worktree", "add", "--detach", str(wt), "FETCH_HEAD")
+        if add.returncode != 0:
+            raise ExtractError(f"worktree add failed: {add.stderr.strip()[:200]}")
+        wt_added = True
+        for token, png in pngs.items():
+            shutil.copyfile(png, wt / f"{token}.png")
+        _git(wt, "add", "-A")
+        if _git(wt, "diff", "--cached", "--quiet").returncode == 0:
+            return  # everything already on the branch
+        # CI runners have no git identity configured; fall back to the bot's.
+        name = _git(wt, "config", "user.name").stdout.strip() or "github-actions[bot]"
+        email = (_git(wt, "config", "user.email").stdout.strip()
+                 or "41898282+github-actions[bot]@users.noreply.github.com")
+        commit = _git(wt, "-c", f"user.name={name}", "-c", f"user.email={email}",
+                      "commit", "-q", "-m", f"Add {len(pngs)} icons")
+        if commit.returncode != 0:
+            raise ExtractError(f"icon commit failed: {commit.stderr.strip()[:200]}")
+        push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
+        if push.returncode != 0:
+            raise ExtractError(f"icon push failed: {push.stderr.strip()[:200]}")
+        print(f"  ↑ published {len(pngs)} icons to {ICONS_BRANCH}")
+    finally:
+        if wt_added:
+            _git(REPO_ROOT, "worktree", "remove", "--force", str(wt))
+        shutil.rmtree(wt, ignore_errors=True)
 
 
 # ---------------------------------------------------------------------------
@@ -352,11 +388,14 @@ def publish(token: str, png: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def published_tokens() -> set[str]:
-    proc = run(["gh", "api", "--paginate", f"repos/{GITHUB_REPO}/releases",
-                "--jq", ".[].tag_name"])
-    if proc.returncode != 0:
-        raise SystemExit(f"gh api releases failed: {proc.stderr.strip()[:200]}")
-    return {t[len("cask-"):] for t in proc.stdout.split() if t.startswith("cask-")}
+    """Tokens already on the icons branch — the done-list. One tree listing,
+    no pagination."""
+    if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
+        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+    ls = _git(REPO_ROOT, "ls-tree", "-r", "--name-only", "FETCH_HEAD")
+    if ls.returncode != 0:
+        raise SystemExit(f"git ls-tree failed: {ls.stderr.strip()[:200]}")
+    return {Path(n).stem for n in ls.stdout.split() if n.endswith(".png")}
 
 
 def load_install_counts() -> dict[str, int]:
@@ -429,17 +468,25 @@ def main(argv: list[str] | None = None) -> int:
 
     ok = 0
     outcomes: list[tuple[str, str, str]] = []
+    pending: dict[str, Path] = {}
     start = time.time()
     for i, cask in enumerate(batch, 1):
         token = cask["token"]
         try:
             status, detail = extract_one(cask, args.output_dir)
             if status == "ok":
-                if args.publish:
-                    publish(token, args.output_dir / f"{token}.png")
                 report.pop(token, None)  # clear any prior failure
+                if detail != "exact":
+                    # Audit queue: the .app was picked heuristically, not by
+                    # the artifact stanza name — a human should eyeball it.
+                    record(report, token, "review", f"non-exact .app selection: {detail}")
                 save_report(report)
                 ok += 1
+                if args.publish:
+                    pending[token] = args.output_dir / f"{token}.png"
+                    if len(pending) >= FLUSH_EVERY:
+                        publish_batch(pending)
+                        pending.clear()
             else:
                 record(report, token, status, detail)
         except ExtractError as e:
@@ -449,8 +496,10 @@ def main(argv: list[str] | None = None) -> int:
             status, detail = "failed", f"{type(e).__name__}: {e}"
             record(report, token, status, detail)
         outcomes.append((token, status, detail))
-        print(f"  [{i}/{len(batch)}] {token}: {status}"
-              + (f" — {detail}" if status != "ok" else ""))
+        print(f"  [{i}/{len(batch)}] {token}: {status} — {detail}", flush=True)
+
+    if args.publish:
+        publish_batch(pending)
 
     elapsed = time.time() - start
     print(f"\n{ok}/{len(batch)} icons extracted in {elapsed:.0f}s; "
