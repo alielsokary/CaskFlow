@@ -1,0 +1,52 @@
+name: Extract icons
+
+# Rollout phase 2/4 (see docs/superpowers/specs/2026-07-05-icon-extraction-design.md):
+# manual dispatch only until the local backfill completes, then enable the cron.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max casks this run (batch cap)"
+        default: "50"
+      tokens:
+        description: "Specific tokens, space-separated (overrides limit)"
+        default: ""
+  # schedule:
+  #   - cron: "0 16 * * *"   # enable after backfill (rollout phase 4)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extract-icons
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: macos-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract and publish icons
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TOKENS: ${{ inputs.tokens }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          if [ -n "$TOKENS" ]; then
+            # word-splitting intended: TOKENS is space-separated; the script
+            # rejects anything that isn't a known cask token.
+            python3 scripts/extract_icons.py --publish --tokens $TOKENS
+          else
+            python3 scripts/extract_icons.py --publish --limit "$LIMIT"
+          fi
+
+      - name: Open or update rolling report PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(icons): update icon extraction report"
+          title: "Icon extraction report"
+          body: "Rolling report from extract-icons runs. `data/icon_report.json` records no_icon / car_only / failed tokens; published icons live in the `cask-*` pre-releases."
+          branch: icon-extraction-report
+          add-paths: data/icon_report.json
