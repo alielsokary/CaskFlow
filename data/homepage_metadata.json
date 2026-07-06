@@ -467,6 +467,13 @@
     "error": "The read operation timed out"
   },
   {
+    "token": "adrafinil",
+    "homepage": "https://kagerou.glass/adrafinil/",
+    "title": "Adrafinil — it sleeps when there's nothing left to do",
+    "meta_desc": "Adrafinil keeps your Mac awake only while AI agents are working, lid fully closed, and sleeps the instant the last session ends. macOS · free · open source.",
+    "og_desc": "Close the laptop. The agents keep working: locked, pocketable, awake only underneath. The Mac sleeps the moment the last session ends. macOS · free · open source."
+  },
+  {
     "token": "adrive",
     "homepage": "https://www.aliyundrive.com/",
     "title": "阿里云盘 - 备份无忧 整理有序·阿里巴巴集团出品",
@@ -31351,6 +31358,13 @@
     "title": "Objective-See: LuLu",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "lumide",
+    "homepage": "https://lumide.dev/",
+    "title": "Lumide | The Agent-Native IDE",
+    "meta_desc": "Lumide is a high-performance, lightweight code editor built for the agentic age. Host autonomous agents natively via the Agent Client Protocol with zero Electron overhead.",
+    "og_desc": "Lumide is a high-performance, lightweight code editor built for the agentic age. Host autonomous agents natively via the Agent Client Protocol with zero Electron overhead."
   },
   {
     "token": "luminance-hdr",
