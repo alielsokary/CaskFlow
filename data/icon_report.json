@@ -11,12 +11,6 @@
     "attempts": 1,
     "updated": "2026-07-06"
   },
-  "background-music": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "basictex": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -119,12 +113,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "displaylink": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "dotnet-runtime": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -179,12 +167,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "fuse-t": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "gcc-arm-embedded": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -194,12 +176,6 @@
   "git-credential-manager": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "google-drive": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -227,12 +203,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "karabiner-elements": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "libndi": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -246,8 +216,8 @@
     "updated": "2026-07-06"
   },
   "macfuse": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -263,51 +233,9 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "microsoft-excel": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "microsoft-office": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-outlook": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-powerpoint": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-teams": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "microsoft-word": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "mullvad-vpn": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "multipass": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -317,21 +245,9 @@
     "attempts": 1,
     "updated": "2026-07-06"
   },
-  "nextcloud": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "nomachine": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "nordvpn": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -339,12 +255,6 @@
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach canceled",
     "attempts": 2,
-    "updated": "2026-07-06"
-  },
-  "onedrive": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
     "updated": "2026-07-06"
   },
   "onyx": {
@@ -380,12 +290,6 @@
   "postman": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "powershell@preview": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -443,27 +347,9 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "sf-symbols": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "sfm": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "shottr": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "squirrel-app": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -476,12 +362,6 @@
   "tailscale-app": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "teamviewer": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -521,12 +401,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "ubersicht": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "utm": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -536,12 +410,6 @@
   "vagrant": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "virtualbox": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -569,12 +437,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "wezterm": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "whatsapp": {
     "status": "no_icon",
     "reason": "unsupported container: release",
@@ -585,18 +447,6 @@
     "status": "failed",
     "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: CANCEL (err 8)",
     "attempts": 1,
-    "updated": "2026-07-06"
-  },
-  "windows-app": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "xquartz": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
     "updated": "2026-07-06"
   },
   "zotero": {
