@@ -38,8 +38,14 @@ minutes on first request, cached aggressively thereafter.
 
 ## State
 
-- **Done** = the files on the `icons` branch (one `git ls-tree`, no pagination).
-- `data/icon_report.json` records:
+- **Everything lives on the `icons` branch, written only by the extractor**:
+  the PNGs *and* `icon_report.json`, committed in the same pushes. Master
+  carries no report copy and there is no rolling report PR — two report-
+  clobber races (batch 2, batch 3) came from report state existing in more
+  than one place. Manual audits edit `icon_report.json` on the icons branch
+  directly.
+- **Done** = the `.png` files on the branch (one `git ls-tree`, no pagination).
+- `icon_report.json` records:
   - `no_icon` / `car_only` — permanently parked with a reason
   - `failed` — retried up to 3 runs, then parked (`--tokens` bypasses parking)
   - `review` — icon published but the `.app` was picked heuristically
