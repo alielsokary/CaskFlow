@@ -59,6 +59,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "canon-eos-utility": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cap": {
     "status": "no_icon",
     "reason": "unsupported container: 01KWCXY8M20NH8JM00HRH1HKVG",
@@ -377,6 +383,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "microsoft-openjdk@11": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "microsoft-openjdk@17": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -488,6 +500,12 @@
   "osquery": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "pangolin": {
+    "status": "no_icon",
+    "reason": "unsupported container: proxy",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -783,6 +801,12 @@
     "status": "no_icon",
     "reason": "unsupported container: release",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "xnconvert": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7f9211670fe6…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "yandex-disk": {
