@@ -1649,6 +1649,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "raven-reader": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "rawtherapee": {
     "status": "failed",
     "reason": "sha256 mismatch (got 1b3ff467ba1b…)",
@@ -1673,10 +1679,22 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "ringcentral-phone": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "rocket": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "roonbridge": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "salt": {
@@ -1781,6 +1799,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "sonic-lineup": {
+    "status": "failed",
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6173 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df…)",
@@ -1839,6 +1863,12 @@
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "supremo": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 479abc9cf2fa…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "syncroom": {
