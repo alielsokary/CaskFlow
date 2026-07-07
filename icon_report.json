@@ -1265,6 +1265,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "readwise-ibooks": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "restic-browser": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1336,6 +1342,12 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "silnite": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "simpletex": {
     "status": "failed",
@@ -1535,6 +1547,18 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "understand": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "unity-ios-support-for-editor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "utm": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -1560,6 +1584,12 @@
     "updated": "2026-07-07"
   },
   "valhalla-freq-echo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "valhalla-space-modulator": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
