@@ -233,11 +233,23 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "cloud-pbx": {
+    "status": "no_icon",
+    "reason": "unsupported container: cloud-pbx-2.0-arm_v46.5",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cloudflare-warp": {
     "status": "no_icon",
     "reason": "unsupported container: 2026.6.822.0",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "cloudup": {
+    "status": "no_icon",
+    "reason": "unsupported container: update",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "cmpxat": {
     "status": "no_icon",
@@ -527,6 +539,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "eclipse-modeling": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "eclipse-php": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -570,6 +588,12 @@
     "updated": "2026-07-07"
   },
   "eset-cyber-security": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "excire-foto": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
