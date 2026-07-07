@@ -23,6 +23,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "anypointstudio": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 27f943d2618b…)",
@@ -56,6 +62,12 @@
   "badgeify": {
     "status": "no_icon",
     "reason": "unsupported container: 1.13.3",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "baseline": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1322,6 +1334,12 @@
   "yandextelemost": {
     "status": "no_icon",
     "reason": "unsupported container: download-desktop",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "yubihsm2-sdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
