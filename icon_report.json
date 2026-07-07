@@ -26,7 +26,7 @@
   "anypointstudio": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "apache-directory-studio": {
@@ -200,7 +200,7 @@
   "codespace": {
     "status": "failed",
     "reason": "sha256 mismatch (got f6cd1c9a4b4a…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "comet": {
@@ -208,12 +208,6 @@
     "reason": "unsupported container: download",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "compositor": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
-    "attempts": 1,
-    "updated": "2026-07-07"
   },
   "conductor": {
     "status": "no_icon",
@@ -278,7 +272,7 @@
   "dbeaver-enterprise": {
     "status": "failed",
     "reason": "sha256 mismatch (got 60bcaa629809…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dbeaverlite": {
@@ -302,7 +296,7 @@
   "dcp-o-matic-player": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9c7ea69f820a…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -728,7 +722,7 @@
   "linkandroid": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "little-snitch": {
@@ -758,7 +752,7 @@
   "macpar-deluxe": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "macsvg": {
@@ -776,7 +770,7 @@
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "meta-quest-remote-desktop": {
@@ -794,7 +788,7 @@
   "meteorologist": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -842,7 +836,7 @@
   "mini-vmac": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "mixed-in-key": {
@@ -1076,7 +1070,7 @@
   "querious": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "radar": {
@@ -1115,10 +1109,16 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "screenflick": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "seam-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "seamly2d": {
@@ -1231,8 +1231,8 @@
   },
   "swift-im": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to swift.im port 443 after 75005 ms: Couldn't connect to server",
-    "attempts": 1,
+    "reason": "download failed: curl: (28) Failed to connect to swift.im port 443 after 75007 ms: Couldn't connect to server",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "tableau": {
@@ -1244,7 +1244,7 @@
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "tableau-public": {
@@ -1256,7 +1256,7 @@
   "tableau-reader": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "tailscale-app": {
@@ -1264,6 +1264,12 @@
     "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "tdr-nova": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "teamviewer-host": {
     "status": "no_icon",
@@ -1405,8 +1411,14 @@
   },
   "virtual-ii": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75005 ms: Couldn't connect to server",
-    "attempts": 1,
+    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75016 ms: Couldn't connect to server",
+    "attempts": 2,
+    "updated": "2026-07-07"
+  },
+  "virtualgl": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
