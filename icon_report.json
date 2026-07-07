@@ -41,6 +41,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "atok": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "avg-antivirus": {
     "status": "no_icon",
     "reason": "unsupported container: build_RELEASE",
