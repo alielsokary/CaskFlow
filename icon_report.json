@@ -431,6 +431,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "opencpn": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "opensc-app": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -538,6 +544,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "r-rig-app": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "rawtherapee": {
     "status": "failed",
