@@ -1433,6 +1433,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "silkypix-developer-studio-se": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "silnite": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1454,6 +1460,12 @@
   "slicer": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "soothe2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
