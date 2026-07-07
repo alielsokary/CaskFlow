@@ -465,6 +465,8 @@ def load_install_counts() -> dict[str, int]:
 
 
 def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[dict]:
+    from classify_new_casks import is_main_cask  # shared "what the app shows" filter
+
     done = published_tokens()
     parked = {
         t for t, e in report.items()
@@ -473,7 +475,12 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
     }
     candidates = [
         c for c in api_casks
-        if c["token"] not in done and c["token"] not in parked and eligibility(c) is None
+        # is_main_cask: skip @-version variants and font-* — the app filters
+        # them out, so their icons would never be requested (--tokens still
+        # bypasses this for manual runs)
+        if is_main_cask(c)
+        and c["token"] not in done and c["token"] not in parked
+        and eligibility(c) is None
     ]
     counts = load_install_counts()
     candidates.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)

@@ -156,3 +156,15 @@ def test_find_app_single_ignores_installer_sibling(tmp_path):
     target = _mk_app(tmp_path, "RealThing.app")
     app, sel = find_app(tmp_path, [], token="unrelated-token")
     assert app == target and sel == "single"
+
+
+# --- selection skips non-main casks (shared filter with the classifier) -------
+
+from classify_new_casks import is_main_cask  # noqa: E402
+
+
+def test_is_main_cask_shared_filter():
+    assert is_main_cask({"token": "obsidian"})
+    assert not is_main_cask({"token": "1password@beta"})
+    assert not is_main_cask({"token": "font-fira-code"})
+    assert not is_main_cask({"token": "old-tool", "deprecated": True})
