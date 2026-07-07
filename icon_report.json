@@ -1001,6 +1001,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "mixed-in-key-live": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "mixing-station": {
     "status": "no_icon",
     "reason": "unsupported container: macos-aarch64",
@@ -1055,6 +1061,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "objectivesharpie": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "omnissa-horizon-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -1100,6 +1112,12 @@
   "oracle-jdk@25": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "origami-studio": {
+    "status": "no_icon",
+    "reason": "unsupported container: origami",
     "attempts": 0,
     "updated": "2026-07-07"
   },
