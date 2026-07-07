@@ -227,6 +227,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "chordpotion": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "chronoagent": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cinder": {
     "status": "review",
     "reason": "non-exact .app selection: single",
