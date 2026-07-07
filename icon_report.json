@@ -773,6 +773,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "submariner": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "sunlogincontrol": {
     "status": "review",
     "reason": "non-exact .app selection: single",
@@ -844,6 +850,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "tiptoi-manager": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "tuna": {
     "status": "no_icon",
