@@ -26,7 +26,7 @@
   "anypointstudio": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "apache-directory-studio": {
@@ -182,12 +182,18 @@
   "chemdoodle": {
     "status": "failed",
     "reason": "sha256 mismatch (got dc0914ba279d…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "chitubox": {
     "status": "no_icon",
     "reason": "unsupported container: download.do",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "cinder": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -215,10 +221,16 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "cmpxat": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "codespace": {
     "status": "failed",
     "reason": "sha256 mismatch (got f6cd1c9a4b4a…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "comet": {
@@ -308,13 +320,13 @@
   "dbeaverteam": {
     "status": "failed",
     "reason": "sha256 mismatch (got 037f96b9be78…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dbeaverultimate": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac134703e8cf…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dbvr": {
@@ -332,37 +344,49 @@
   "dcp-o-matic-batch-converter": {
     "status": "failed",
     "reason": "sha256 mismatch (got b1d06fcd4bf1…)",
+    "attempts": 2,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-combiner": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got c455e43d469f…)",
     "attempts": 1,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-disk-writer": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9febe274f265…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 01c532db4103…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-encode-server": {
     "status": "failed",
     "reason": "sha256 mismatch (got 67d32d845c78…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-kdm-creator": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9e6c72db04b5…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-player": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9c7ea69f820a…)",
-    "attempts": 2,
+    "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-playlist-editor": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7e8fae7f869e…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -485,7 +509,19 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "eclipse-php": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "eclipse-platform": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "eclipse-rcp": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
     "attempts": 0,
@@ -641,12 +677,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "fontstand": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 503",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
   "foxitreader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -656,6 +686,12 @@
   "foxmail": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "freesurfer": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -830,7 +866,7 @@
   "linkandroid": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "little-snitch": {
@@ -860,7 +896,7 @@
   "macpar-deluxe": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "macsvg": {
@@ -878,7 +914,7 @@
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "melodics": {
@@ -902,7 +938,7 @@
   "meteorologist": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -956,7 +992,7 @@
   "mini-vmac": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "mixed-in-key": {
@@ -1232,7 +1268,7 @@
   "screenflick": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "seam-app": {
@@ -1286,7 +1322,7 @@
   "simpletex": {
     "status": "failed",
     "reason": "download failed: curl: (18) Transferred a partial file",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "sizzy": {
@@ -1343,12 +1379,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "swift-im": {
-    "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to swift.im port 443 after 75007 ms: Couldn't connect to server",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "tableau": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
@@ -1370,7 +1400,7 @@
   "tableau-reader": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "tailscale-app": {
@@ -1475,6 +1505,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "unifi-identity-enterprise": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "unity-ios-support-for-editor": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1543,8 +1579,8 @@
   },
   "virtual-ii": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75016 ms: Couldn't connect to server",
-    "attempts": 2,
+    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75017 ms: Couldn't connect to server",
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "virtualgl": {
@@ -1555,8 +1591,8 @@
   },
   "visual-paradigm": {
     "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 503",
-    "attempts": 1,
+    "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
