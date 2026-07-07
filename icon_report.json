@@ -1457,6 +1457,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "securesafe": {
+    "status": "failed",
+    "reason": "pkgutil failed: Could not unarchive /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-securesafe-des8dh9y/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "segger-jlink": {
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
@@ -1526,6 +1532,12 @@
   "soothe2": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "sound-siphon": {
+    "status": "no_icon",
+    "reason": "unsupported container: 1837",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1661,6 +1673,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "tentacle-sync-studio": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "thingsmacsandboxhelper": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -1722,6 +1740,12 @@
     "updated": "2026-07-07"
   },
   "unity-ios-support-for-editor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "unity-windows-support-for-editor": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -1815,6 +1839,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got fc3c40f94cf8…)",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "visual-paradigm-ce": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got f5d53318e60f…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
