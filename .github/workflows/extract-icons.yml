@@ -1,9 +1,9 @@
 name: Extract icons
 
-# Rollout (see docs/superpowers/specs/2026-07-05-icon-extraction-design.md):
-# manual dispatch only until the backfill completes, then enable the cron.
+# Phase 4 (backfill complete 2026-07-07): daily cron for new casks.
 # All state (PNGs + icon_report.json) lives on the icons branch — the script
-# is the single writer; there is no report on master and no rolling PR.
+# is the single writer and merges report edits by dirty-token, so manual
+# audits committed mid-run survive.
 on:
   workflow_dispatch:
     inputs:
@@ -13,8 +13,10 @@ on:
       tokens:
         description: "Specific tokens, space-separated (overrides limit)"
         default: ""
-  # schedule:
-  #   - cron: "0 16 * * *"   # enable after backfill (rollout phase 4)
+  schedule:
+    # 16:00 UTC — after the 14:00 classification cron; a new cask usually
+    # gets its category and its icon on the same day.
+    - cron: "0 16 * * *"
 
 permissions:
   contents: write
