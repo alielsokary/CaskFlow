@@ -1,4 +1,10 @@
 {
+  "acronis-true-image": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "adobe-acrobat-reader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -52,6 +58,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "bitwig-studio": {
+    "status": "no_icon",
+    "reason": "unsupported container: installer_mac",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "blackhole-16ch": {
     "status": "no_icon",
@@ -646,6 +658,12 @@
     "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "perimeter81": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "pieces": {
     "status": "no_icon",
