@@ -995,6 +995,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "metarename": {
+    "status": "no_icon",
+    "reason": "unsupported container: 1.0.10",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "meteorologist": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -1041,6 +1047,12 @@
     "status": "no_icon",
     "reason": "unsupported container: vD6vXdrn",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "mimecast": {
+    "status": "failed",
+    "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "mimestream": {
@@ -1253,6 +1265,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "playmemories-home": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "poedit": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -1271,9 +1289,21 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "profit": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "prolific-pl2303": {
     "status": "no_icon",
     "reason": "unsupported container: PL2303HXD_G_Mac-Driver_v2.2.11_20250314.pkg_-1.7z",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "ptpwebcam": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
