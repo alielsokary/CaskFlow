@@ -217,20 +217,20 @@
   },
   "dbeaverlite": {
     "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
-    "attempts": 1,
+    "reason": "sha256 mismatch (got 9821764efce6…)",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -353,6 +353,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "firealpaca": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "flox": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -464,7 +470,7 @@
   "ibm-aspera-connect": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: delivery04-mul.dhe.ibm.com",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "ibm-cloud-cli": {
@@ -506,13 +512,13 @@
   "install-disk-creator": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "j": {
@@ -533,6 +539,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "lg-onscreen-control": {
+    "status": "no_icon",
+    "reason": "unsupported container: downloadFile",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "libndi": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -550,12 +562,6 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "ltx-desktop": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
-    "attempts": 1,
-    "updated": "2026-07-07"
   },
   "mac-monitor": {
     "status": "no_icon",
@@ -584,7 +590,7 @@
   "mailmaster": {
     "status": "failed",
     "reason": "sha256 mismatch (got 2937dc148176…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "meta-quest-remote-desktop": {
@@ -739,8 +745,8 @@
   },
   "orka3": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not open product archive: /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-orka3-c7nbf2eb/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
-    "attempts": 2,
+    "reason": "pkgutil failed: Could not open product archive: /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-orka3-efik5opb/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "osquery": {
@@ -836,7 +842,7 @@
   "radar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "rawtherapee": {
@@ -867,12 +873,6 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "seadrive": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
-    "attempts": 1,
     "updated": "2026-07-07"
   },
   "segger-jlink": {
@@ -1052,7 +1052,7 @@
   "ubar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 523",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "utm": {
@@ -1136,7 +1136,7 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "xnconvert": {
