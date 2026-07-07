@@ -839,6 +839,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "imaging-edge-webcam": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "inkstitch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -887,9 +893,21 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "konica-minolta-bizhub-c750i-driver": {
+    "status": "failed",
+    "reason": "download failed:                                                                 ^",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "lg-onscreen-control": {
     "status": "no_icon",
     "reason": "unsupported container: downloadFile",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "libifd-cyberjack": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
