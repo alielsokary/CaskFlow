@@ -13,8 +13,8 @@
   },
   "algodoo": {
     "status": "failed",
-    "reason": "download failed: curl: (18) transfer closed with 287712473 bytes remaining to read",
-    "attempts": 1,
+    "reason": "download failed: curl: (18) transfer closed with 262841561 bytes remaining to read",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "alisma": {
@@ -175,8 +175,8 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-4ukgisyl/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 1,
+    "reason": "pkgutil failed: Could not unarchive /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-canon-mg2500-driver-5z5r8vok/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "canon-ufrii-driver": {
@@ -212,7 +212,7 @@
   "chemdoodle": {
     "status": "failed",
     "reason": "sha256 mismatch (got dc0914ba279d…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "chitubox": {
@@ -362,13 +362,13 @@
   "dbeaverteam": {
     "status": "failed",
     "reason": "sha256 mismatch (got 037f96b9be78…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dbeaverultimate": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac134703e8cf…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dbvr": {
@@ -386,37 +386,37 @@
   "dcp-o-matic-batch-converter": {
     "status": "failed",
     "reason": "sha256 mismatch (got b1d06fcd4bf1…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-combiner": {
     "status": "failed",
     "reason": "sha256 mismatch (got c455e43d469f…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-disk-writer": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9febe274f265…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 01c532db4103…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-encode-server": {
     "status": "failed",
     "reason": "sha256 mismatch (got 67d32d845c78…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-kdm-creator": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9e6c72db04b5…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-player": {
@@ -428,7 +428,7 @@
   "dcp-o-matic-playlist-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e8fae7f869e…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -926,13 +926,13 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "lg-onscreen-control": {
@@ -974,7 +974,7 @@
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "mac-monitor": {
@@ -1094,7 +1094,7 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "mimestream": {
@@ -1286,7 +1286,7 @@
   "pencil2d": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9d65cb23326c…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "photosrevive": {
@@ -1325,6 +1325,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "pomello": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "postman": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
@@ -1340,7 +1346,7 @@
   "profit": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "prolific-pl2303": {
@@ -1358,7 +1364,7 @@
   "qidistudio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 610afc1af32c…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "qqmusic": {
@@ -1378,6 +1384,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "qudedup-extract-tool": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "querious": {
     "status": "failed",
@@ -1430,13 +1442,13 @@
   "screaming-frog-log-file-analyser": {
     "status": "failed",
     "reason": "sha256 mismatch (got 911b40730adc…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "screenflick": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "seam-app": {
@@ -1496,7 +1508,7 @@
   "simpletex": {
     "status": "failed",
     "reason": "download failed: curl: (18) Transferred a partial file",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "sizzy": {
@@ -1801,8 +1813,8 @@
   },
   "visual-paradigm": {
     "status": "failed",
-    "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
-    "attempts": 2,
+    "reason": "sha256 mismatch (got fc3c40f94cf8…)",
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
