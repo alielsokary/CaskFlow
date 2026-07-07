@@ -851,6 +851,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "querious": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "radar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -885,6 +891,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "seam-app": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "segger-jlink": {
@@ -1086,6 +1098,12 @@
     "updated": "2026-07-06"
   },
   "vagrant-vmware-utility": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "valhalla-supermassive": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
