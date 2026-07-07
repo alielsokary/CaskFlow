@@ -1037,6 +1037,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "tableau-prep": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "tableau-public": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
