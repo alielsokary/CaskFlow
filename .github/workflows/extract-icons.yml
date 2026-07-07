@@ -16,7 +16,7 @@ on:
   schedule:
     # 15:43 UTC — after the 13:17 classification cron; a new cask usually
     # gets its category and its icon on the same day.
-    - cron: "0 16 * * *"
+    - cron: "43 15 * * *"
 
 permissions:
   contents: write
