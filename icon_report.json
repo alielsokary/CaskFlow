@@ -437,6 +437,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "mailmaster": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 2937dc148176…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "microsoft-office": {
     "status": "no_icon",
     "reason": "multi-app suite; shallowest picked the Defender shim (manual audit 2026-07-07)",
@@ -573,6 +579,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "orka3": {
+    "status": "failed",
+    "reason": "pkgutil failed: Could not open product archive: /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-orka3-t37anbss/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "osquery": {
