@@ -1061,6 +1061,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "sizzy": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "slicer": {
     "status": "no_icon",
     "reason": "unsupported container: download",
