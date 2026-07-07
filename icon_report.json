@@ -23,6 +23,12 @@
     "attempts": 4,
     "updated": "2026-07-07"
   },
+  "avg-antivirus": {
+    "status": "no_icon",
+    "reason": "unsupported container: build_RELEASE",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "basictex": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -783,6 +789,12 @@
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "vb-cable": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
