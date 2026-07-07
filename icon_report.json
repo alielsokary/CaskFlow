@@ -1631,6 +1631,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "visual-paradigm": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 503",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "visual-studio-code": {
     "status": "no_icon",
     "reason": "unsupported container: stable",
