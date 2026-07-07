@@ -77,6 +77,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "bias-fx": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "bitwig-studio": {
     "status": "no_icon",
     "reason": "unsupported container: installer_mac",
@@ -185,6 +191,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "codespace": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got f6cd1c9a4b4a…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "comet": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -267,6 +279,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-player": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9c7ea69f820a…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -1287,6 +1305,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "virtual-ii": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75005 ms: Couldn't connect to server",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
