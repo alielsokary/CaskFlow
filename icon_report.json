@@ -1115,10 +1115,28 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "lotus": {
+    "status": "failed",
+    "reason": "ditto failed: ditto: Couldn't read PKZip signature",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "lrtimelapse": {
+    "status": "no_icon",
+    "reason": "unsupported container: lrtimelapse-7-mac",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 2,
+    "updated": "2026-07-07"
+  },
+  "m32-edit": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 500",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "mac-monitor": {
@@ -1157,6 +1175,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "mailtrackerblocker": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -1187,6 +1211,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "metashapepro": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 85b7e43dc87c…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "metavideo": {
     "status": "no_icon",
     "reason": "unsupported container: 1.1.6",
@@ -1197,6 +1227,12 @@
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "micro-sniff": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -1343,6 +1379,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "openframeworks": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got e4a2dd6e7580…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "opensc-app": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -1409,6 +1451,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "output-factory": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "pally": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "pangolin": {
     "status": "no_icon",
     "reason": "unsupported container: proxy",
@@ -1448,6 +1502,12 @@
   "photosrevive": {
     "status": "no_icon",
     "reason": "unsupported container: 2.2.0",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "photozoom-pro": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1499,6 +1559,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "postbox": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "postman": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
@@ -1508,6 +1574,18 @@
   "postman-agent": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "presonus-universal-control": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "prezi-video": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
