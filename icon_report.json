@@ -1391,6 +1391,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "podolski": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "podpisuj": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "poedit": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
