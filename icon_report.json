@@ -5,6 +5,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "actual-odbc-pack": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "adobe-acrobat-reader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -56,6 +62,12 @@
   "avg-antivirus": {
     "status": "no_icon",
     "reason": "unsupported container: build_RELEASE",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "backblaze-downloader": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac_restore_downloader",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -167,6 +179,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "chemdoodle": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got dc0914ba279d…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "chitubox": {
     "status": "no_icon",
     "reason": "unsupported container: download.do",
@@ -257,6 +275,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "crashplan": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "crushftp": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -281,6 +305,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "dbeaverultimate": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got ac134703e8cf…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
@@ -291,6 +321,36 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-batch-converter": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got b1d06fcd4bf1…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-disk-writer": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9febe274f265…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-editor": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 01c532db4103…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-encode-server": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 67d32d845c78…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "dcp-o-matic-kdm-creator": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9e6c72db04b5…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-player": {
