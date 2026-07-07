@@ -1217,6 +1217,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "qidistudio": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 610afc1af32c…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "qqmusic": {
     "status": "no_icon",
     "reason": "unsupported container: file_redirect.fcg",
@@ -1281,6 +1287,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "screaming-frog-log-file-analyser": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 911b40730adc…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "screenflick": {
@@ -1493,6 +1505,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "trezor-bridge-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "tuna": {
     "status": "no_icon",
     "reason": "unsupported container: 1563",
@@ -1586,6 +1604,12 @@
   "vb-cable": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "vcam": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-07-07"
   },
