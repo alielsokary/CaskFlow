@@ -14,7 +14,7 @@ on:
         description: "Specific tokens, space-separated (overrides limit)"
         default: ""
   schedule:
-    # 16:00 UTC — after the 14:00 classification cron; a new cask usually
+    # 15:43 UTC — after the 13:17 classification cron; a new cask usually
     # gets its category and its icon on the same day.
     - cron: "0 16 * * *"
 
