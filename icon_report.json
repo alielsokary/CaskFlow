@@ -281,9 +281,21 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "foxmail": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "fujitsu-scansnap-home": {
     "status": "review",
     "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "gcc-aarch64-embedded": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -684,6 +696,12 @@
     "updated": "2026-07-07"
   },
   "splashtop-business": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "splashtop-streamer": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
