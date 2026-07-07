@@ -407,6 +407,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "eclipse-platform": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "elecom-mouse-util": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -428,6 +434,12 @@
   "expandrive": {
     "status": "no_icon",
     "reason": "unsupported container: expandrive",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-pro-q": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -701,6 +713,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "macpar-deluxe": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "macsvg": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -717,6 +735,12 @@
     "status": "no_icon",
     "reason": "unsupported container: download",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "meteorologist": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
