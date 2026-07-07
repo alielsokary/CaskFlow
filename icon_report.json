@@ -236,13 +236,13 @@
   "dbeaver-enterprise": {
     "status": "failed",
     "reason": "sha256 mismatch (got 60bcaa629809…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "dbeaverlite": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9821764efce6…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dbvr": {
@@ -254,7 +254,7 @@
   "dcp-o-matic": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -530,7 +530,7 @@
   "ibm-aspera-connect": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: delivery04-mul.dhe.ibm.com",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "ibm-cloud-cli": {
@@ -572,7 +572,7 @@
   "install-disk-creator": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "ioquake3": {
@@ -590,6 +590,12 @@
   "jabra-direct": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "karafun": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac.html",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -707,9 +713,21 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "mini-vmac": {
+    "status": "failed",
+    "reason": "download failed: how to fix it, please visit the web page mentioned above.",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "mixed-in-key": {
     "status": "no_icon",
     "reason": "unsupported container: latest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "mixing-station": {
+    "status": "no_icon",
+    "reason": "unsupported container: macos-aarch64",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -926,13 +944,13 @@
   "querious": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "radar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "rawtherapee": {
@@ -968,7 +986,7 @@
   "seam-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "seamly2d": {
@@ -1025,6 +1043,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "solar2d": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "splashtop-business": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -1055,6 +1079,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "steinberg-mediabay": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "submariner": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -1070,13 +1100,19 @@
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "tableau-public": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "tableau-reader": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "tailscale-app": {
