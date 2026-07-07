@@ -1157,6 +1157,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "parallels-virtualization-sdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "paraview": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
