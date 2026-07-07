@@ -449,6 +449,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "imaging-edge": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "inkstitch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -578,6 +584,12 @@
   "mimestream": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "mixed-in-key": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
