@@ -269,6 +269,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "disk-diet": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "dotnet-runtime": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -476,6 +482,12 @@
   "gpg-suite-no-mail": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "hancom-docs": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
