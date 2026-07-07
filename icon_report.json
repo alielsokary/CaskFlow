@@ -1313,6 +1313,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "valhalla-freq-echo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "valhalla-supermassive": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
