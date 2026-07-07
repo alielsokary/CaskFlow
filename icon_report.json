@@ -743,6 +743,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "itunes-producer": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "j": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
@@ -845,6 +851,12 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
+  "melodics": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "meta-quest-remote-desktop": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -896,6 +908,12 @@
   "microsoft-openjdk@25": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "midiview": {
+    "status": "no_icon",
+    "reason": "unsupported container: vD6vXdrn",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -980,6 +998,12 @@
   "omnissa-horizon-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "open-eid": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
