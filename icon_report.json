@@ -689,6 +689,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "munki": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "muteme": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
@@ -821,6 +827,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "photosrevive": {
+    "status": "no_icon",
+    "reason": "unsupported container: 2.2.0",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "pieces": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -927,6 +939,12 @@
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "seamly2d": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "segger-jlink": {
