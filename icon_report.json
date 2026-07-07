@@ -95,6 +95,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "caldigit-thunderbolt-charging": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "caldigit-usb-hub-support-driver": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -102,6 +108,12 @@
     "updated": "2026-07-07"
   },
   "canon-eos-utility": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "canon-ufrii-driver": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -276,6 +288,12 @@
     "updated": "2026-07-07"
   },
   "eclipse-cpp": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "eclipse-dsl": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
     "attempts": 0,
