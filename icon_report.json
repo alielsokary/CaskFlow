@@ -23,6 +23,12 @@
     "attempts": 4,
     "updated": "2026-07-07"
   },
+  "apipost": {
+    "status": "no_icon",
+    "reason": "unsupported container: dl.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "avg-antivirus": {
     "status": "no_icon",
     "reason": "unsupported container: build_RELEASE",
@@ -64,6 +70,12 @@
     "reason": "unsupported container: download",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "caldigit-usb-hub-support-driver": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "canon-eos-utility": {
     "status": "no_icon",
@@ -614,6 +626,12 @@
   "rwts-pdfwriter": {
     "status": "review",
     "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "salt": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
