@@ -95,6 +95,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "box-tools": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "burp-suite": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -275,6 +281,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "diskspace": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "dotnet-runtime": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -302,6 +314,12 @@
   "dotnet-sdk@preview": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "dremel-slicer": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
