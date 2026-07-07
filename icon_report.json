@@ -29,6 +29,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "appgate-sdp-client": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "avg-antivirus": {
     "status": "no_icon",
     "reason": "unsupported container: build_RELEASE",
@@ -248,6 +254,12 @@
   "eclipse-jee": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "endnote": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
