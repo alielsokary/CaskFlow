@@ -155,6 +155,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "chatty": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "chef-workstation": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -203,6 +209,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "compositor": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "conductor": {
     "status": "no_icon",
     "reason": "unsupported container: 01KWMS15GBSTND3DRNXVK0MX9F",
@@ -250,6 +262,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "crushftp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "dante-controller": {
     "status": "no_icon",
@@ -437,7 +455,19 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "fabfilter-pro-l": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "fabfilter-pro-q": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-timeless": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
