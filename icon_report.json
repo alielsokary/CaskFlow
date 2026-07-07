@@ -683,6 +683,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "fabfilter-twin": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "fabfilter-volcano": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
