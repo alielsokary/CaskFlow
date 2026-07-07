@@ -929,6 +929,12 @@
     "attempts": 1,
     "updated": "2026-07-07"
   },
+  "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
+    "status": "failed",
+    "reason": "download failed:                                                                 ^",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "lg-onscreen-control": {
     "status": "no_icon",
     "reason": "unsupported container: downloadFile",
@@ -964,6 +970,12 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "ludwig": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
   },
   "mac-monitor": {
     "status": "no_icon",
