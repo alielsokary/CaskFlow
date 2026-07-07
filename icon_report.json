@@ -203,6 +203,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "dbeaverlite": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
@@ -812,6 +818,12 @@
   "slicer": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "softmaker-freeoffice": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
