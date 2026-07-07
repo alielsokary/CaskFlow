@@ -59,6 +59,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "apple-hewlett-packard-printer-drivers": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "atok": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -1541,6 +1547,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "tdr-kotelnikov": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "tdr-nova": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1588,6 +1600,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "tenable-nessus-agent": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "thingsmacsandboxhelper": {
     "status": "car_only",
@@ -1712,6 +1730,12 @@
   "vcam": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "vienna-assistant": {
+    "status": "no_icon",
+    "reason": "unsupported container: vamac",
     "attempts": 0,
     "updated": "2026-07-07"
   },
