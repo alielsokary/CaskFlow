@@ -83,6 +83,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "clibor": {
+    "status": "no_icon",
+    "reason": "unsupported container: clibor-for-mac",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cloudflare-warp": {
     "status": "no_icon",
     "reason": "unsupported container: 2026.6.822.0",
