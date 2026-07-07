@@ -623,6 +623,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "epoccam": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "es-de": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -644,6 +650,18 @@
   "expandrive": {
     "status": "no_icon",
     "reason": "unsupported container: expandrive",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-micro": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-one": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -690,6 +708,12 @@
     "updated": "2026-07-07"
   },
   "fabfilter-saturn": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-simplon": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -893,6 +917,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "infocert-sign": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "inkstitch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -921,6 +951,18 @@
     "status": "no_icon",
     "reason": "no .icns in Resources",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "jetdrive-toolbox": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "jumpshare": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7d3d995d1549…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "karafun": {
