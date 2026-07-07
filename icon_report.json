@@ -473,6 +473,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "hancom-word": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "handbrake-app": {
     "status": "no_icon",
     "reason": "unsupported container: rotation.php",
@@ -548,6 +554,12 @@
   "jabra-direct": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "kilohearts-installer": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -668,6 +680,12 @@
   "mono-mdk": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "muteme": {
+    "status": "no_icon",
+    "reason": "unsupported container: osx_arm64",
     "attempts": 0,
     "updated": "2026-07-07"
   },
