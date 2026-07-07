@@ -341,6 +341,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "duo-connect": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "dwarf-fortress-lmp": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -437,6 +443,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "folding-at-home": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "font-new-york": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -512,6 +524,12 @@
   "gpg-suite-no-mail": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "gplates": {
+    "status": "no_icon",
+    "reason": "unsupported container: 10116",
     "attempts": 0,
     "updated": "2026-07-07"
   },
