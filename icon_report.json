@@ -173,6 +173,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "dbvr": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got d29bd5676f1f…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "deezer": {
     "status": "no_icon",
     "reason": "unsupported container: artifact-darwin-x64-7.1.270",
@@ -209,6 +215,18 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "dotnet-sdk@preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "droidcam-obs": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "eclipse-ide": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -230,6 +248,12 @@
   "es-de": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "expandrive": {
+    "status": "no_icon",
+    "reason": "unsupported container: expandrive",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -885,6 +909,12 @@
     "status": "no_icon",
     "reason": "unsupported container: release",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "whispering": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7c15883a5562…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "xnconvert": {
