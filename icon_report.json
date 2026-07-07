@@ -899,6 +899,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "novation-components": {
+    "status": "no_icon",
+    "reason": "unsupported container: osx_64",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "nx-studio": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
