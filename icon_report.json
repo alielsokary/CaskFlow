@@ -1169,6 +1169,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "swift-im": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Failed to connect to swift.im port 443 after 75005 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "tableau": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
