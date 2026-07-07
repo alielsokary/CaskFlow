@@ -509,6 +509,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "fabfilter-pro-g": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "fabfilter-pro-l": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -516,6 +522,12 @@
     "updated": "2026-07-07"
   },
   "fabfilter-pro-q": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-saturn": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
