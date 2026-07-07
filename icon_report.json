@@ -13,8 +13,8 @@
   },
   "algodoo": {
     "status": "failed",
-    "reason": "download failed: curl: (18) transfer closed with 262841561 bytes remaining to read",
-    "attempts": 2,
+    "reason": "download failed: curl: (18) transfer closed with 252388569 bytes remaining to read",
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "alisma": {
@@ -86,7 +86,7 @@
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "avg-antivirus": {
@@ -199,8 +199,8 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-canon-mg2500-driver-5z5r8vok/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 2,
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-e6xmmppu/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "canon-ufrii-driver": {
@@ -257,6 +257,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "cinder": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
@@ -284,7 +290,7 @@
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "cloudflare-warp": {
@@ -434,7 +440,7 @@
   "dcp-o-matic-combiner": {
     "status": "failed",
     "reason": "sha256 mismatch (got c455e43d469f…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "dcp-o-matic-disk-writer": {
@@ -470,7 +476,7 @@
   "dcp-o-matic-playlist-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e8fae7f869e…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -488,7 +494,7 @@
   "digiexam": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "digital": {
@@ -644,7 +650,13 @@
   "electrumsv": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-07-07"
+  },
+  "elektron-overbridge": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "enclave": {
@@ -662,7 +674,7 @@
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "epoccam": {
@@ -851,6 +863,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "freesurfer": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "gcc-aarch64-embedded": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -914,7 +932,7 @@
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "halion-sonic": {
@@ -956,7 +974,7 @@
   "icab": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5d09f7e8ded7…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "ik-product-manager": {
@@ -1028,7 +1046,7 @@
   "jumpshare": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7d3d995d1549…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "karafun": {
@@ -1052,13 +1070,13 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "lg-onscreen-control": {
@@ -1100,7 +1118,7 @@
   "lotus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "lrtimelapse": {
@@ -1112,13 +1130,13 @@
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "m32-edit": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "mac-monitor": {
@@ -1196,7 +1214,7 @@
   "metashapepro": {
     "status": "failed",
     "reason": "sha256 mismatch (got 85b7e43dc87c…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "metavideo": {
@@ -1214,7 +1232,7 @@
   "micro-sniff": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -1262,7 +1280,7 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "mimestream": {
@@ -1364,7 +1382,7 @@
   "openframeworks": {
     "status": "failed",
     "reason": "sha256 mismatch (got e4a2dd6e7580…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "opensc-app": {
@@ -1442,7 +1460,7 @@
   "pally": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "pangolin": {
@@ -1463,6 +1481,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "paranoia-file-text-encryption": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "paraview": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -1472,7 +1496,7 @@
   "pencil2d": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9d65cb23326c…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "photosrevive": {
@@ -1505,16 +1529,22 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "playmemories-home": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "podolski": {
-    "status": "no_icon",
-    "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
   "podpisuj": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "poedit": {
@@ -1532,7 +1562,7 @@
   "postbox": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "postman": {
@@ -1562,7 +1592,7 @@
   "profit": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "prolific-pl2303": {
@@ -1580,7 +1610,7 @@
   "qidistudio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 610afc1af32c…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "qqmusic": {
@@ -1601,6 +1631,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "qudedup-extract-tool": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "querious": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -1616,7 +1652,7 @@
   "raven-reader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "rawtherapee": {
@@ -1646,7 +1682,7 @@
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "rocket": {
@@ -1658,7 +1694,7 @@
   "roonbridge": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "salt": {
@@ -1670,7 +1706,7 @@
   "screaming-frog-log-file-analyser": {
     "status": "failed",
     "reason": "sha256 mismatch (got 911b40730adc…)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "screenflick": {
@@ -1687,8 +1723,8 @@
   },
   "securesafe": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-securesafe-des8dh9y/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
-    "attempts": 1,
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-securesafe-9kpemt__/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "segger-jlink": {
@@ -1727,6 +1763,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "silkypix-developer-studio-se": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "silnite": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1759,14 +1801,14 @@
   },
   "sonic-lineup": {
     "status": "failed",
-    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6173 ms: Couldn't connect to server",
-    "attempts": 1,
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6114 ms: Couldn't connect to server",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "soothe2": {
@@ -1826,7 +1868,7 @@
   "supremo": {
     "status": "failed",
     "reason": "sha256 mismatch (got 479abc9cf2fa…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "sync-my-l2p": {
@@ -1884,8 +1926,8 @@
     "updated": "2026-07-07"
   },
   "tau": {
-    "status": "no_icon",
-    "reason": "CLI profiling toolkit; only .app is the bundled Jumpshot viewer, not representative (manual audit 2026-07-07)",
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1970,7 +2012,7 @@
   "tentacle-sync-studio": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "thingsmacsandboxhelper": {
@@ -1988,7 +2030,7 @@
   "toneprint": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "torguard": {
@@ -2010,8 +2052,8 @@
     "updated": "2026-07-07"
   },
   "triplecheese": {
-    "status": "no_icon",
-    "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -2048,6 +2090,12 @@
   "understand": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "unifi-identity-enterprise": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -2162,7 +2210,7 @@
   "visual-paradigm-ce": {
     "status": "failed",
     "reason": "sha256 mismatch (got f5d53318e60f…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "visual-studio-code": {
@@ -2192,7 +2240,7 @@
   "waveforms": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "wch-ch34x-usb-serial-driver": {
@@ -2217,6 +2265,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562…)",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "wrkspace": {
+    "status": "no_icon",
+    "reason": "unsupported container: darwin-arm64",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "wxmacmolplt": {
