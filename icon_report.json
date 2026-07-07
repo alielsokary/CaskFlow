@@ -35,6 +35,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "badgeify": {
+    "status": "no_icon",
+    "reason": "unsupported container: 1.13.3",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "basictex": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -855,6 +861,12 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "ubar": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 523",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "unifi-identity-endpoint": {
