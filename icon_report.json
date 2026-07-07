@@ -194,7 +194,7 @@
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "deezer": {
@@ -204,6 +204,12 @@
     "updated": "2026-07-07"
   },
   "desktoppr": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "digital": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -389,16 +395,28 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "iem-plugin-suite": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "ilok-license-manager": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "inkstitch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "jabra-direct": {
@@ -458,7 +476,7 @@
   "mailmaster": {
     "status": "failed",
     "reason": "sha256 mismatch (got 2937dc148176…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -589,8 +607,8 @@
   },
   "orka3": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not open product archive: /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-orka3-t37anbss/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
-    "attempts": 1,
+    "reason": "pkgutil failed: Could not open product archive: /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-orka3-c7nbf2eb/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "osquery": {
@@ -854,7 +872,7 @@
   "ubar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 523",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "utm": {
@@ -884,7 +902,7 @@
   "vanilla": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "vb-cable": {
@@ -932,19 +950,25 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "xnconvert": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7f9211670fe6…)",
-    "attempts": 2,
+    "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "xscreensaver": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "yandex-disk": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "yandextelemost": {
