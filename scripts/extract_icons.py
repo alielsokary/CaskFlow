@@ -8,11 +8,14 @@ publish it as `<token>.png` on the orphan `icons` branch. CaskHub consumes
 icons via jsDelivr's edge CDN (with raw.githubusercontent.com as fallback):
     https://cdn.jsdelivr.net/gh/alielsokary/CaskKit@icons/<token>.png
 
-State:
-- "Done" = the files on the icons branch (one `git ls-tree`, no pagination).
-- data/icon_report.json records no_icon / car_only / failed tokens with
-  reasons, plus `review` entries for icons picked by a non-exact .app match
-  (the human audit queue). Failed tokens get MAX_ATTEMPTS tries, then park.
+State — single writer, single home:
+- "Done" = the .png files on the icons branch (one `git ls-tree`).
+- icon_report.json lives ON THE ICONS BRANCH, committed in the same pushes
+  as the icons. Master carries no copy and no rolling PR exists — two prior
+  report-clobber races came from report state living in multiple places.
+  Manual audits edit the file on the icons branch directly.
+- Report entries: no_icon / car_only (parked), failed (MAX_ATTEMPTS tries,
+  then parked), review (published but heuristically selected — audit queue).
 
 Run:
     python scripts/extract_icons.py --tokens obsidian rectangle   # local, no publish
@@ -36,7 +39,7 @@ from urllib.parse import urlparse
 from urllib.request import urlopen
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-REPORT_PATH = REPO_ROOT / "data" / "icon_report.json"
+REPORT_FILE = "icon_report.json"  # lives on the icons branch, beside the PNGs
 BREW_API = "https://formulae.brew.sh/api/cask.json"
 ANALYTICS_API = "https://formulae.brew.sh/api/analytics/cask-install/30d.json"
 ICONS_BRANCH = "icons"
@@ -148,16 +151,17 @@ def resolve_icns_name(info: dict) -> str | None:
 # ---------------------------------------------------------------------------
 
 def load_report() -> dict[str, dict]:
-    if REPORT_PATH.exists():
-        return json.loads(REPORT_PATH.read_text())
-    return {}
+    """Read icon_report.json from the icons branch — its only home."""
+    if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
+        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+    show = _git(REPO_ROOT, "show", f"FETCH_HEAD:{REPORT_FILE}")
+    if show.returncode != 0:
+        return {}  # first run after migration
+    return json.loads(show.stdout)
 
 
-def save_report(report: dict[str, dict]) -> None:
-    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text(
-        json.dumps(dict(sorted(report.items())), indent=2, ensure_ascii=False) + "\n"
-    )
+def report_json(report: dict[str, dict]) -> str:
+    return json.dumps(dict(sorted(report.items())), indent=2, ensure_ascii=False) + "\n"
 
 
 def record(report: dict, token: str, status: str, reason: str) -> None:
@@ -168,17 +172,16 @@ def record(report: dict, token: str, status: str, reason: str) -> None:
         "attempts": prev.get("attempts", 0) + (1 if status == "failed" else 0),
         "updated": str(date.today()),
     }
-    save_report(report)  # write-through: crash-safe across a long batch
 
 
 # ---------------------------------------------------------------------------
 # Shell helpers
 # ---------------------------------------------------------------------------
 
-def run(cmd: list[str], **kw) -> subprocess.CompletedProcess:
-    return subprocess.run(
-        cmd, capture_output=True, text=True, stdin=subprocess.DEVNULL, **kw
-    )
+def run(cmd: list[str], input_text: str | None = None, **kw) -> subprocess.CompletedProcess:
+    if input_text is None:
+        kw["stdin"] = subprocess.DEVNULL
+    return subprocess.run(cmd, capture_output=True, text=True, input=input_text, **kw)
 
 
 def download(cask: dict, dest_dir: Path) -> Path:
@@ -214,8 +217,10 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
     out.mkdir(exist_ok=True)
     if kind == "dmg":
         mnt = workdir / "mnt"
+        # input "Y": auto-accept EULA prompts (24 of batch 3+4's 34 failures
+        # were "attach canceled" license DMGs). Read-only mount, nothing runs.
         proc = run(["hdiutil", "attach", "-nobrowse", "-readonly", "-noverify",
-                    "-mountpoint", str(mnt), str(artifact)])
+                    "-mountpoint", str(mnt), str(artifact)], input_text="Y\n")
         if proc.returncode != 0:
             raise ExtractError(f"hdiutil attach failed: {proc.stderr.strip()[:200]}")
         mounts.append(mnt)
@@ -390,12 +395,10 @@ def _git(cwd: Path, *args: str) -> subprocess.CompletedProcess:
     return run(["git", "-C", str(cwd), *args])
 
 
-def publish_batch(pngs: dict[str, Path]) -> None:
-    """Commit a batch of icons to the icons branch via a throwaway worktree.
-    One commit per FLUSH_EVERY icons instead of one API call per icon —
-    no release plumbing, no rate limits."""
-    if not pngs:
-        return
+def publish_batch(pngs: dict[str, Path], report: dict[str, dict]) -> None:
+    """Commit a batch of icons AND the report to the icons branch via a
+    throwaway worktree — icons and their state always land in the same push
+    (single writer, single home; report-only flushes are fine)."""
     wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
     wt_added = False
     try:
@@ -407,6 +410,7 @@ def publish_batch(pngs: dict[str, Path]) -> None:
         wt_added = True
         for token, png in pngs.items():
             shutil.copyfile(png, wt / f"{token}.png")
+        (wt / REPORT_FILE).write_text(report_json(report))
         _git(wt, "add", "-A")
         if _git(wt, "diff", "--cached", "--quiet").returncode == 0:
             return  # everything already on the branch
@@ -414,8 +418,9 @@ def publish_batch(pngs: dict[str, Path]) -> None:
         name = _git(wt, "config", "user.name").stdout.strip() or "github-actions[bot]"
         email = (_git(wt, "config", "user.email").stdout.strip()
                  or "41898282+github-actions[bot]@users.noreply.github.com")
+        msg = f"Add {len(pngs)} icons" if pngs else "Update icon report"
         commit = _git(wt, "-c", f"user.name={name}", "-c", f"user.email={email}",
-                      "commit", "-q", "-m", f"Add {len(pngs)} icons")
+                      "commit", "-q", "-m", msg)
         if commit.returncode != 0:
             raise ExtractError(f"icon commit failed: {commit.stderr.strip()[:200]}")
         push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
@@ -525,12 +530,11 @@ def main(argv: list[str] | None = None) -> int:
                     # Audit queue: the .app was picked heuristically, not by
                     # stanza name or token match — a human should eyeball it.
                     record(report, token, "review", f"non-exact .app selection: {detail}")
-                save_report(report)
                 ok += 1
                 if args.publish:
                     pending[token] = args.output_dir / f"{token}.png"
                     if len(pending) >= FLUSH_EVERY:
-                        publish_batch(pending)
+                        publish_batch(pending, report)
                         pending.clear()
             else:
                 record(report, token, status, detail)
@@ -544,7 +548,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  [{i}/{len(batch)}] {token}: {status} — {detail}", flush=True)
 
     if args.publish:
-        publish_batch(pending)
+        # Always flush at the end — persists report-only outcomes (failures,
+        # parks) even when no new icons were extracted.
+        publish_batch(pending, report)
+    else:
+        print("(local run — report changes not persisted; use --publish)")
 
     elapsed = time.time() - start
     print(f"\n{ok}/{len(batch)} icons extracted in {elapsed:.0f}s; "
