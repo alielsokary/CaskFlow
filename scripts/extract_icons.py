@@ -395,10 +395,15 @@ def _git(cwd: Path, *args: str) -> subprocess.CompletedProcess:
     return run(["git", "-C", str(cwd), *args])
 
 
-def publish_batch(pngs: dict[str, Path], report: dict[str, dict]) -> None:
+def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
+                  dirty: set[str]) -> None:
     """Commit a batch of icons AND the report to the icons branch via a
-    throwaway worktree — icons and their state always land in the same push
-    (single writer, single home; report-only flushes are fine)."""
+    throwaway worktree — icons and their state always land in the same push.
+
+    The report is MERGED, not overwritten: the branch's current copy is the
+    base and only `dirty` tokens (touched by this run) are overlaid. A batch
+    holds its report in memory for an hour+; blind writes clobbered a manual
+    audit committed mid-run (third report race, 2026-07-07)."""
     wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
     wt_added = False
     try:
@@ -410,7 +415,16 @@ def publish_batch(pngs: dict[str, Path], report: dict[str, dict]) -> None:
         wt_added = True
         for token, png in pngs.items():
             shutil.copyfile(png, wt / f"{token}.png")
-        (wt / REPORT_FILE).write_text(report_json(report))
+        base_file = wt / REPORT_FILE
+        merged: dict[str, dict] = (
+            json.loads(base_file.read_text()) if base_file.exists() else {}
+        )
+        for token in dirty:
+            if token in report:
+                merged[token] = report[token]
+            else:
+                merged.pop(token, None)  # cleared by this run (success)
+        base_file.write_text(report_json(merged))
         _git(wt, "add", "-A")
         if _git(wt, "diff", "--cached", "--quiet").returncode == 0:
             return  # everything already on the branch
@@ -526,9 +540,11 @@ def main(argv: list[str] | None = None) -> int:
     ok = 0
     outcomes: list[tuple[str, str, str]] = []
     pending: dict[str, Path] = {}
+    dirty: set[str] = set()  # tokens whose report entry this run may change
     start = time.time()
     for i, cask in enumerate(batch, 1):
         token = cask["token"]
+        dirty.add(token)
         try:
             status, detail = extract_one(cask, args.output_dir)
             if status == "ok":
@@ -541,7 +557,7 @@ def main(argv: list[str] | None = None) -> int:
                 if args.publish:
                     pending[token] = args.output_dir / f"{token}.png"
                     if len(pending) >= FLUSH_EVERY:
-                        publish_batch(pending, report)
+                        publish_batch(pending, report, dirty)
                         pending.clear()
             else:
                 record(report, token, status, detail)
@@ -557,7 +573,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.publish:
         # Always flush at the end — persists report-only outcomes (failures,
         # parks) even when no new icons were extracted.
-        publish_batch(pending, report)
+        publish_batch(pending, report, dirty)
     else:
         print("(local run — report changes not persisted; use --publish)")
 
