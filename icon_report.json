@@ -281,6 +281,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "eclipse-installer": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "eclipse-java": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -328,6 +334,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "fme": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "font-new-york": {
     "status": "no_icon",
@@ -485,6 +497,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "ltx-desktop": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "mac-monitor": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -513,6 +531,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 2937dc148176…)",
     "attempts": 2,
+    "updated": "2026-07-07"
+  },
+  "meta-quest-remote-desktop": {
+    "status": "no_icon",
+    "reason": "unsupported container: download",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "microsoft-office": {
@@ -783,6 +807,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "seadrive": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "segger-jlink": {
