@@ -1259,6 +1259,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "simpletex": {
+    "status": "failed",
+    "reason": "download failed: curl: (18) Transferred a partial file",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "sizzy": {
     "status": "no_icon",
     "reason": "unsupported container: mac",
