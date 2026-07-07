@@ -233,6 +233,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "font-new-york": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "font-sf-mono": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -423,6 +429,12 @@
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 4,
+    "updated": "2026-07-07"
+  },
+  "ndi-tools": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "nomachine": {
@@ -629,6 +641,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "splashtop-business": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "spyder": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -813,6 +831,12 @@
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
     "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "yandextelemost": {
+    "status": "no_icon",
+    "reason": "unsupported container: download-desktop",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "zoom-for-it-admins": {
