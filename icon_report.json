@@ -11,6 +11,18 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "algodoo": {
+    "status": "failed",
+    "reason": "download failed: curl: (18) transfer closed with 287712473 bytes remaining to read",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
+  "alisma": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "altersend": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -153,6 +165,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "canon-mg2500-driver": {
+    "status": "failed",
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-4ukgisyl/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "canon-ufrii-driver": {
@@ -1677,6 +1695,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562…)",
     "attempts": 3,
+    "updated": "2026-07-07"
+  },
+  "wxmacmolplt": {
+    "status": "no_icon",
+    "reason": "unsupported container: 026tyu30ck2xeldbxhgjkmmuxvwg87mc.gz",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "xnconvert": {
