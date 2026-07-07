@@ -257,12 +257,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "cinder": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
@@ -653,12 +647,6 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
-  "elektron-overbridge": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "enclave": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -860,12 +848,6 @@
   "foxmail": {
     "status": "no_icon",
     "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "freesurfer": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1481,12 +1463,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "paranoia-file-text-encryption": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "paraview": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -1529,15 +1505,9 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "playmemories-home": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "podolski": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+    "status": "no_icon",
+    "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1630,12 +1600,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "qudedup-extract-tool": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "querious": {
     "status": "failed",
@@ -1762,12 +1726,6 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "silkypix-developer-studio-se": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "silnite": {
     "status": "no_icon",
@@ -1926,8 +1884,8 @@
     "updated": "2026-07-07"
   },
   "tau": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
+    "status": "no_icon",
+    "reason": "CLI profiling toolkit; only .app is the bundled Jumpshot viewer, not representative (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -2052,8 +2010,8 @@
     "updated": "2026-07-07"
   },
   "triplecheese": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
+    "status": "no_icon",
+    "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -2090,12 +2048,6 @@
   "understand": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "unifi-identity-enterprise": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
