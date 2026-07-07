@@ -593,6 +593,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "halion-sonic": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "hancom-docs": {
     "status": "review",
     "reason": "non-exact .app selection: single",
@@ -719,6 +725,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "linkandroid": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "little-snitch": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -761,9 +773,21 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "mate-translate": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "meta-quest-remote-desktop": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "metaimage": {
+    "status": "no_icon",
+    "reason": "unsupported container: 2.6.7",
     "attempts": 0,
     "updated": "2026-07-07"
   },
