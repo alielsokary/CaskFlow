@@ -5,12 +5,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "actual-odbc-pack": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "adobe-acrobat-reader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -431,12 +425,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "dremel-slicer": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "droidcam-obs": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -623,12 +611,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "fme": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "folding-at-home": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -737,18 +719,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "hancom-docs": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "hancom-word": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "handbrake-app": {
     "status": "no_icon",
     "reason": "unsupported container: rotation.php",
@@ -770,12 +740,6 @@
   "ibm-cloud-cli": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "iem-plugin-suite": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -818,12 +782,6 @@
   "itunes-producer": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "j": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1019,12 +977,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "munki": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "muteme": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
@@ -1062,20 +1014,14 @@
     "updated": "2026-07-07"
   },
   "nx-studio": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
+    "status": "no_icon",
+    "reason": "Nikon installer app (download-arrow badge) with a name the installer regex misses (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
   },
   "omnissa-horizon-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "open-eid": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1168,12 +1114,6 @@
     "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "perimeter81": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "photosrevive": {
     "status": "no_icon",
@@ -1301,12 +1241,6 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
-  "seamly2d": {
-    "status": "review",
-    "reason": "non-exact .app selection: single",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "segger-jlink": {
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
@@ -1364,18 +1298,6 @@
   "slicer": {
     "status": "no_icon",
     "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "softmaker-freeoffice": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "solar2d": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -1688,12 +1610,6 @@
   "xppen-pentablet": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "xscreensaver": {
-    "status": "review",
-    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
