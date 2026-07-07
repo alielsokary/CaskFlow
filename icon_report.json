@@ -665,6 +665,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "tuxera-ntfs": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "unifi-identity-endpoint": {
     "status": "review",
     "reason": "non-exact .app selection: single",
