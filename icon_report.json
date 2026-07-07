@@ -377,6 +377,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "ioquake3": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "jabra-direct": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -699,6 +705,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
     "attempts": 4,
+    "updated": "2026-07-07"
+  },
+  "semeru-jdk-open@21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-07"
   },
   "session-manager-plugin": {
