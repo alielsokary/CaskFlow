@@ -551,6 +551,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "nx-studio": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "omnissa-horizon-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -594,6 +600,12 @@
     "updated": "2026-07-07"
   },
   "oracle-jdk@25": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "orka": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -644,6 +656,12 @@
   "pieces-os": {
     "status": "no_icon",
     "reason": "unsupported container: download",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "platinum-notes": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -844,6 +862,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "thingsmacsandboxhelper": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "tiptoi-manager": {
     "status": "no_icon",
