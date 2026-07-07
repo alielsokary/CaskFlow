@@ -1103,6 +1103,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "metavideo": {
+    "status": "no_icon",
+    "reason": "unsupported container: 1.1.6",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "meteorologist": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -1334,6 +1340,12 @@
   "parallels-virtualization-sdk": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "paranoia-file-text-encryption": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
     "updated": "2026-07-07"
   },
