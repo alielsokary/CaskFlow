@@ -659,6 +659,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "fontstand": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 503",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "foxitreader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -708,6 +714,12 @@
     "updated": "2026-07-06"
   },
   "gpg-suite-no-mail": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "gpg-suite-pinentry": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
