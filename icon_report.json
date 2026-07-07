@@ -1,10 +1,4 @@
 {
-  "ableton-live-suite": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
   "adobe-acrobat-reader": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -14,7 +8,7 @@
   "altersend": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "amazon-workspaces": {
@@ -23,22 +17,10 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "antinote": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 27f943d2618b…)",
     "attempts": 4,
-    "updated": "2026-07-07"
-  },
-  "ausweisapp": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
     "updated": "2026-07-07"
   },
   "basictex": {
@@ -92,7 +74,7 @@
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "claude-code": {
@@ -221,12 +203,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "evernote": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "finch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -305,12 +281,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "hazel": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "ibm-cloud-cli": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -335,34 +305,16 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "klogg": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "libndi": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "licecap": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
   "lidanglesensor": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "linphone": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
     "updated": "2026-07-07"
   },
   "little-snitch": {
@@ -419,22 +371,10 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "miktex-console": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
   "mimestream": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "mixxx": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
     "updated": "2026-07-07"
   },
   "mono-mdk": {
@@ -443,28 +383,10 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "mucommander": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "mysql-shell": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 4,
-    "updated": "2026-07-07"
-  },
-  "navicat-premium": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
-  "navicat-premium-lite": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
     "updated": "2026-07-07"
   },
   "nomachine": {
@@ -483,18 +405,6 @@
     "status": "review",
     "reason": "non-exact .app selection: single",
     "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "omnifocus": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
-  "omnigraffle": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
     "updated": "2026-07-07"
   },
   "omnissa-horizon-client": {
@@ -557,18 +467,6 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "pdf-squeezer": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
-  "pdfsam-basic": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 1,
-    "updated": "2026-07-07"
-  },
   "pieces": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -592,12 +490,6 @@
     "reason": "unsupported container: osx_arm64",
     "attempts": 0,
     "updated": "2026-07-06"
-  },
-  "projectlibre": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
   },
   "prolific-pl2303": {
     "status": "no_icon",
@@ -632,7 +524,7 @@
   "rocket": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-07-07"
   },
   "rwts-pdfwriter": {
@@ -680,13 +572,13 @@
   "tableau": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "tableau-public": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-07-07"
   },
   "tailscale-app": {
@@ -749,12 +641,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "ultimaker-cura": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 2,
-    "updated": "2026-07-07"
-  },
   "unifi-identity-endpoint": {
     "status": "review",
     "reason": "non-exact .app selection: single",
@@ -766,6 +652,12 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "utm@beta": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "vagrant": {
     "status": "no_icon",
