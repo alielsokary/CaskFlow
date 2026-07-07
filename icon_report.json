@@ -287,6 +287,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "cloud189": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "cloudflare-warp": {
     "status": "no_icon",
     "reason": "unsupported container: 2026.6.822.0",
@@ -378,6 +384,12 @@
     "updated": "2026-07-07"
   },
   "dante-controller": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "dante-via": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
@@ -477,6 +489,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "digiexam": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "digital": {
@@ -617,10 +635,22 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "ecodms-client": {
+    "status": "no_icon",
+    "reason": "unsupported container: jdownloads",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "elecom-mouse-util": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "electrumsv": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "elektron-overbridge": {
@@ -639,6 +669,12 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "energia": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "epoccam": {
@@ -660,6 +696,12 @@
     "updated": "2026-07-07"
   },
   "excire-foto": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "excire-search": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
@@ -845,6 +887,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "gluemotion": {
+    "status": "no_icon",
+    "reason": "unsupported container: 2.3.0",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "gog-galaxy": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -881,6 +929,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "green-go-control": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7e5bf0886337…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "halion-sonic": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -899,6 +953,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "hy-rpe2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "ibm-aspera-connect": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: delivery04-mul.dhe.ibm.com",
@@ -909,6 +969,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "icab": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 5d09f7e8ded7…)",
+    "attempts": 1,
     "updated": "2026-07-07"
   },
   "ik-product-manager": {
