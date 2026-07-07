@@ -137,6 +137,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "chitubox": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.do",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
@@ -972,6 +978,12 @@
     "updated": "2026-07-07"
   },
   "splashtop-business": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "splashtop-personal": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
