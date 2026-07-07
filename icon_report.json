@@ -191,6 +191,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "captainplugins": {
+    "status": "no_icon",
+    "reason": "unsupported container: latest",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "chatty": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -497,6 +503,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "duplicate-annihilator-for-photos": {
+    "status": "no_icon",
+    "reason": "unsupported container: downloadDap.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "dwarf-fortress-lmp": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -572,6 +584,12 @@
   "elecom-mouse-util": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "elektron-overbridge": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
