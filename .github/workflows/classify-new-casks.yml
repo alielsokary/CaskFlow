@@ -2,9 +2,9 @@ name: Classify new casks
 
 on:
   schedule:
-    # 14:00 UTC daily — Homebrew cask updates land throughout the day,
+    # 13:17 UTC daily (off-peak minute — on-the-hour slots run hours late),
     # so afternoon UTC catches most of them in one run.
-    - cron: "0 14 * * *"
+    - cron: "17 13 * * *"
   workflow_dispatch:
     inputs:
       dry-run:
