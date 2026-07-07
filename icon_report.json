@@ -1283,6 +1283,12 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
+  "pencil2d": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9d65cb23326c…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "photosrevive": {
     "status": "no_icon",
     "reason": "unsupported container: 2.2.0",
