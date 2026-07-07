@@ -31,8 +31,8 @@
   },
   "apache-directory-studio": {
     "status": "failed",
-    "reason": "sha256 mismatch (got bfa10deba4a4…)",
-    "attempts": 3,
+    "reason": "sha256 mismatch (got 27f943d2618b…)",
+    "attempts": 4,
     "updated": "2026-07-07"
   },
   "ausweisapp": {
@@ -452,7 +452,7 @@
   "mysql-shell": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 3,
+    "attempts": 4,
     "updated": "2026-07-07"
   },
   "navicat-premium": {
@@ -485,12 +485,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "omnidisksweeper": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 3,
-    "updated": "2026-07-06"
-  },
   "omnifocus": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach canceled",
@@ -508,12 +502,6 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "onyx": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 3,
-    "updated": "2026-07-06"
   },
   "opensc-app": {
     "status": "no_icon",
@@ -631,8 +619,8 @@
   },
   "rawtherapee": {
     "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 3,
+    "reason": "sha256 mismatch (got 1b3ff467ba1b…)",
+    "attempts": 4,
     "updated": "2026-07-07"
   },
   "raycast": {
@@ -641,22 +629,10 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "reaper": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 3,
-    "updated": "2026-07-07"
-  },
   "rocket": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 2,
-    "updated": "2026-07-07"
-  },
-  "royal-tsx": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach canceled",
-    "attempts": 3,
     "updated": "2026-07-07"
   },
   "rwts-pdfwriter": {
@@ -668,7 +644,7 @@
   "segger-jlink": {
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
-    "attempts": 3,
+    "attempts": 4,
     "updated": "2026-07-07"
   },
   "session-manager-plugin": {
@@ -812,14 +788,14 @@
   "vnc-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 3,
+    "attempts": 4,
     "updated": "2026-07-07"
   },
   "warp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-07-06"
+    "attempts": 4,
+    "updated": "2026-07-07"
   },
   "wch-ch34x-usb-serial-driver": {
     "status": "no_icon",
