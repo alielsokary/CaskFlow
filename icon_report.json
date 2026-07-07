@@ -527,6 +527,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "nessus": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "nomachine": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
