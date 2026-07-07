@@ -215,6 +215,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "dbeaver-enterprise": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 60bcaa629809…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "dbeaverlite": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9821764efce6…)",
@@ -284,6 +290,12 @@
   "droidcam-obs": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "dwarf-fortress-lmp": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-07"
   },
