@@ -131,6 +131,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "brightness-sync": {
+    "status": "car_only",
+    "reason": "asset-catalog-only app (no .icns)",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "burp-suite": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -305,6 +311,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "dbeaverteam": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 037f96b9be78…)",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "dbeaverultimate": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac134703e8cf…)",
@@ -443,6 +455,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "dyalog": {
+    "status": "no_icon",
+    "reason": "unsupported container: download.php",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "eclipse-cpp": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
@@ -491,6 +509,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "enclave": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "endnote": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -503,9 +527,27 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "eset-cyber-security": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "expandrive": {
     "status": "no_icon",
     "reason": "unsupported container: expandrive",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-pro-c": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-pro-ds": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -521,7 +563,19 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "fabfilter-pro-mb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "fabfilter-pro-q": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-pro-r": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -534,6 +588,12 @@
     "updated": "2026-07-07"
   },
   "fabfilter-timeless": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "fabfilter-volcano": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
