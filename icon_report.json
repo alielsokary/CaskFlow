@@ -1871,6 +1871,12 @@
     "attempts": 1,
     "updated": "2026-07-07"
   },
+  "sync-my-l2p": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "syncroom": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -1931,7 +1937,19 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "tdr-molotok": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "tdr-nova": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "tdr-prism": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -2009,15 +2027,33 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "toneprint": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 500",
+    "attempts": 1,
+    "updated": "2026-07-07"
+  },
   "torguard": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "toshiba-color-mfp": {
+    "status": "no_icon",
+    "reason": "unsupported container: TOSHIBA_ColorMFP.dmg.gz",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "trezor-bridge-app": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "triplecheese": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-07-07"
   },
@@ -2036,6 +2072,12 @@
   "tuxera-ntfs": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "twobird": {
+    "status": "no_icon",
+    "reason": "unsupported container: mac-arm64",
     "attempts": 0,
     "updated": "2026-07-07"
   },
