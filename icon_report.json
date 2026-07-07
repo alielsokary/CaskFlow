@@ -257,6 +257,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "font-sf-compact": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "font-sf-mono": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -574,6 +580,12 @@
     "reason": "unsupported container: osx_arm64",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "postman-agent": {
+    "status": "no_icon",
+    "reason": "unsupported container: osx_arm64",
+    "attempts": 0,
+    "updated": "2026-07-07"
   },
   "prolific-pl2303": {
     "status": "no_icon",
