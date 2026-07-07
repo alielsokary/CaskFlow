@@ -845,6 +845,12 @@
     "attempts": 4,
     "updated": "2026-07-07"
   },
+  "semeru-jdk-open": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "semeru-jdk-open@21": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -983,6 +989,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "torguard": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
   "tuna": {
     "status": "no_icon",
     "reason": "unsupported container: 1563",
@@ -1038,6 +1050,12 @@
     "updated": "2026-07-07"
   },
   "vb-cable": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-07"
+  },
+  "virtual-desktop-streamer": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
