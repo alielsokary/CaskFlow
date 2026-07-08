@@ -113,6 +113,12 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
+  "autodesk-fusion": {
+    "status": "review",
+    "reason": "installer-badged product icon (manual salvage) -- consider re-shoot",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "avg-antivirus": {
     "status": "no_icon",
     "reason": "unsupported container: build_RELEASE",
@@ -184,6 +190,12 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "brooklyn": {
+    "status": "no_icon",
+    "reason": "screensaver bundle; generic .saver icon only, repo has no square mark",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "btp": {
     "status": "no_icon",
@@ -948,10 +960,10 @@
     "updated": "2026-07-07"
   },
   "gog-galaxy": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/gogcom.png (pkg ships no app bundle)",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "google-earth-pro": {
     "status": "no_icon",
@@ -1165,15 +1177,33 @@
   },
   "lidanglesensor": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "app ships no icon at all (default macOS icon)",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "linkandroid": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
     "attempts": 3,
     "updated": "2026-07-07"
+  },
+  "logi-options+": {
+    "status": "review",
+    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "logitech-g-hub": {
+    "status": "review",
+    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "logitune": {
+    "status": "review",
+    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "lotus": {
     "status": "failed",
@@ -1422,8 +1452,8 @@
     "updated": "2026-07-08"
   },
   "nomachine": {
-    "status": "no_icon",
-    "reason": "no .icns/Assets.car in selected app (needs targeted look)",
+    "status": "review",
+    "reason": "installer-badged product icon (manual salvage) -- consider re-shoot",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1470,14 +1500,14 @@
     "updated": "2026-07-07"
   },
   "opensc-app": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/OpenSC.png (artifact has only uninstaller stub)",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "openvpn-connect": {
-    "status": "no_icon",
-    "reason": "no .icns/Assets.car in selected app (needs targeted look)",
+    "status": "review",
+    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -2306,6 +2336,12 @@
   "wch-ch34x-usb-serial-driver": {
     "status": "review",
     "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "wetype": {
+    "status": "review",
+    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
     "attempts": 0,
     "updated": "2026-07-08"
   },
