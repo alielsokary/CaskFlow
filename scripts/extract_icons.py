@@ -128,6 +128,10 @@ def sniff_container(artifact: Path) -> str | None:
             tail = f.read(512)
     except OSError:
         return None
+    # Trailer first: UDIF images carry their block-compression's magic at
+    # byte 0 (Warp: zlib, Comet: xz, HandBrake: bzip2) — head bytes lie.
+    if tail.startswith(b"koly"):  # UDIF trailer: the last 512 bytes of a DMG
+        return "dmg"
     if head.startswith(b"PK"):
         return "zip"
     if head.startswith(b"xar!"):
@@ -136,8 +140,6 @@ def sniff_container(artifact: Path) -> str | None:
         return "tar"  # tar -xf auto-detects the compression
     if head[257:262] == b"ustar":
         return "tar"
-    if tail.startswith(b"koly"):  # UDIF trailer: the last 512 bytes of a DMG
-        return "dmg"
     return None
 
 
