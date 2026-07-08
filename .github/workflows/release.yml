@@ -22,6 +22,9 @@ jobs:
         id: tag
         run: echo "tag=data-$(date -u +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
 
+      - name: Mine cask added dates
+        run: python3 scripts/mine_added_dates.py
+
       - name: Cut release
         uses: softprops/action-gh-release@v2
         with:
@@ -30,10 +33,13 @@ jobs:
           body: |
             Daily classification update.
 
-            Stable asset URL (always points to the most recent release):
+            Stable asset URLs (always point to the most recent release):
             https://github.com/${{ env.REPO }}/releases/latest/download/categories.json
+            https://github.com/${{ env.REPO }}/releases/latest/download/added_dates.json
 
             See the merged PR for the diff.
-          files: categories.json
+          files: |
+            categories.json
+            added_dates.json
           fail_on_unmatched_files: true
           make_latest: true
