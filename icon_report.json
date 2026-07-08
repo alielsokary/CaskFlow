@@ -642,10 +642,10 @@
     "updated": "2026-07-07"
   },
   "eclipse-ide": {
-    "status": "no_icon",
-    "reason": "unsupported container: download.php",
-    "attempts": 0,
-    "updated": "2026-07-07"
+    "status": "failed",
+    "reason": "download failed: mirror broken pipe -- retry from CI",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "eclipse-installer": {
     "status": "no_icon",
@@ -655,8 +655,8 @@
   },
   "eclipse-java": {
     "status": "failed",
-    "reason": "download failed: mirror broken pipe (x3 locally)",
-    "attempts": 1,
+    "reason": "download failed: mirror partial transfer (x4 locally) -- retry from CI",
+    "attempts": 2,
     "updated": "2026-07-08"
   },
   "eclipse-jee": {
@@ -1975,9 +1975,9 @@
   },
   "tableau": {
     "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-07-07"
+    "reason": "vendor 403 from local IP (HEAD 200) -- retry from CI runners",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "tableau-prep": {
     "status": "failed",
@@ -1987,9 +1987,9 @@
   },
   "tableau-public": {
     "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-07-07"
+    "reason": "vendor 403 from local IP (HEAD 200) -- retry from CI runners",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "tableau-reader": {
     "status": "failed",
