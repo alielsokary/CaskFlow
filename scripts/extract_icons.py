@@ -363,42 +363,62 @@ def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     return None
 
 
-# argv: <appPath|--generic> <destPng> <size>. --generic renders the system
-# generic app icon — the reference image for the wrong-icon guard below.
+# argv: <mode> <appPath> <destPng> <size> — mode: bundle | workspace | generic.
+# bundle reads the asset catalog directly; workspace asks Icon Services;
+# generic renders the system app icon (reference for the wrong-icon guard).
 _CAR_ICON_SWIFT = """\
 import AppKit
 import UniformTypeIdentifiers
 let args = CommandLine.arguments
-let size = Int(args[3]) ?? 256
-let icon = args[1] == "--generic"
-    ? NSWorkspace.shared.icon(for: UTType.applicationBundle)
-    : NSWorkspace.shared.icon(forFile: args[1])
+let size = Int(args[4]) ?? 256
+var icon: NSImage?
+switch args[1] {
+case "bundle":
+    guard let bundle = Bundle(url: URL(fileURLWithPath: args[2])) else { exit(1) }
+    let name = (bundle.infoDictionary?["CFBundleIconName"] as? String)
+        ?? (bundle.infoDictionary?["CFBundleIconFile"] as? String) ?? "AppIcon"
+    icon = bundle.image(forResource: name)
+case "generic":
+    icon = NSWorkspace.shared.icon(for: UTType.applicationBundle)
+default:
+    icon = NSWorkspace.shared.icon(forFile: args[2])
+}
+guard let resolved = icon else { exit(1) }
 guard let rep = NSBitmapImageRep(
     bitmapDataPlanes: nil, pixelsWide: size, pixelsHigh: size,
     bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
     colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0) else { exit(1) }
+resolved.size = NSSize(width: size, height: size)
 NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rep)
-icon.draw(in: NSRect(x: 0, y: 0, width: size, height: size))
+resolved.draw(in: NSRect(x: 0, y: 0, width: size, height: size))
 guard let png = rep.representation(using: .png, properties: [:]) else { exit(1) }
-try png.write(to: URL(fileURLWithPath: args[2]))
+try png.write(to: URL(fileURLWithPath: args[3]))
 """
 
 
 def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
-    """Asset-catalog-only app (icon in Assets.car, no loose .icns): render via
-    Icon Services — no public CLI decodes Assets.car. Reasons start with
-    "car" so extract_one parks them under the car_only status.
+    """Asset-catalog-only app (icon in Assets.car, no loose .icns): no public
+    CLI decodes Assets.car, so render via AppKit. Reasons start with "car" so
+    extract_one parks them under the car_only status.
 
-    Wrong-icon guard: a render byte-identical to the generic app icon means
-    the catalog had no real icon; park instead of shipping it."""
+    Bundle.image(forResource:) reads the catalog directly and comes first —
+    the NSWorkspace fallback goes through Icon Services, which stamps payload
+    apps it considers unrunnable with the prohibitory overlay (shipped a
+    slashed-out Acrobat icon) and answers with the generic icon when the
+    catalog has none, hence the byte-compare guard."""
     with tempfile.TemporaryDirectory(prefix="car-icon-") as td:
         script = Path(td) / "icon.swift"
         script.write_text(_CAR_ICON_SWIFT)
+
+        def render(mode: str, out: Path) -> bool:
+            proc = run(["swift", str(script), mode, str(app), str(out), ICON_SIZE])
+            return proc.returncode == 0 and out.exists()
+
+        if render("bundle", dest_png):
+            return None
         generic = Path(td) / "generic.png"
-        for target, out in ((str(app), dest_png), ("--generic", generic)):
-            proc = run(["swift", str(script), target, str(out), ICON_SIZE])
-            if proc.returncode != 0 or not out.exists():
-                return f"car render failed: {proc.stderr.strip()[:120]}"
+        if not render("workspace", dest_png) or not render("generic", generic):
+            return "car render failed"
         if dest_png.read_bytes() == generic.read_bytes():
             dest_png.unlink()
             return "car catalog has no app icon (generic render)"
