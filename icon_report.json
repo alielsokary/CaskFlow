@@ -1296,10 +1296,10 @@
     "updated": "2026-07-07"
   },
   "microsoft-office": {
-    "status": "no_icon",
-    "reason": "multi-app suite; shallowest picked the Defender shim (manual audit 2026-07-07)",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/OfficeDev.png (suite pkg has no single Office.app; extractor picked the Defender shield)",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "microsoft-openjdk": {
     "status": "curated",
@@ -1460,12 +1460,6 @@
   "omnissa-horizon-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "opencpn": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
   },
