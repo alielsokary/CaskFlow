@@ -1,7 +1,7 @@
 {
   "1password-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/1Password.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -42,20 +42,20 @@
     "updated": "2026-07-08"
   },
   "android-commandlinetools": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "android-ndk": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "android-platform-tools": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -120,8 +120,8 @@
     "updated": "2026-07-07"
   },
   "aws-vault-binary": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/99designs.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -186,8 +186,8 @@
     "updated": "2026-07-07"
   },
   "btp": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/SAP.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -270,8 +270,8 @@
     "updated": "2026-07-07"
   },
   "claude-code": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/anthropics.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -306,14 +306,14 @@
     "updated": "2026-07-07"
   },
   "codeql": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/github.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "coderabbit": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/coderabbitai.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -324,26 +324,26 @@
     "updated": "2026-07-07"
   },
   "codex": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/openai.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "confluent-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/confluentinc.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "consul": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "copilot-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/github.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -402,8 +402,8 @@
     "updated": "2026-07-07"
   },
   "cursor-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/cursor.png",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -420,8 +420,8 @@
     "updated": "2026-07-07"
   },
   "datadog-security-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/DataDog.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -522,14 +522,14 @@
     "updated": "2026-07-07"
   },
   "devin-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/CognitionAI.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "devtunnel": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/microsoft.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -588,8 +588,8 @@
     "updated": "2026-07-07"
   },
   "droid": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/Factory-AI.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -624,8 +624,8 @@
     "updated": "2026-07-07"
   },
   "dynamodb-local": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/aws.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -924,8 +924,8 @@
     "updated": "2026-07-08"
   },
   "gcloud-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/GoogleCloudPlatform.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -936,8 +936,8 @@
     "updated": "2026-07-08"
   },
   "gitkraken-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/gitkraken.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1032,8 +1032,8 @@
     "updated": "2026-07-07"
   },
   "ijhttp": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/JetBrains.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1074,8 +1074,8 @@
     "updated": "2026-07-07"
   },
   "inso": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/Kong.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1356,20 +1356,20 @@
     "updated": "2026-07-07"
   },
   "miniconda": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/conda.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "miniforge": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/conda-forge.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
   "mitmproxy": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/mitmproxy.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1416,8 +1416,8 @@
     "updated": "2026-07-07"
   },
   "ngrok": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/ngrok.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1434,8 +1434,8 @@
     "updated": "2026-07-07"
   },
   "notion-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/makenotion.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1548,8 +1548,8 @@
     "updated": "2026-07-07"
   },
   "p4": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/perforce.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1656,8 +1656,8 @@
     "updated": "2026-07-07"
   },
   "postman-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/postman.png",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1674,8 +1674,8 @@
     "updated": "2026-07-07"
   },
   "prince": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/yeslogic.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1793,12 +1793,6 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
-  "segger": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/SEGGERMicro.png?size=256",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "segger-jlink": {
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
@@ -1854,8 +1848,8 @@
     "updated": "2026-07-07"
   },
   "slack-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/slackapi.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1872,8 +1866,8 @@
     "updated": "2026-07-07"
   },
   "sonarqube-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/SonarSource.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1896,8 +1890,8 @@
     "updated": "2026-07-07"
   },
   "soulver-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/soulver.png",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1932,8 +1926,8 @@
     "updated": "2026-07-07"
   },
   "sqlcl": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/oracle.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1944,8 +1938,8 @@
     "updated": "2026-07-06"
   },
   "steamcmd": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/ValveSoftware.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -2008,12 +2002,6 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 3,
     "updated": "2026-07-07"
-  },
-  "tailscale": {
-    "status": "curated",
-    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/tailscale-app.png",
-    "attempts": 0,
-    "updated": "2026-07-08"
   },
   "tal-drum": {
     "status": "no_icon",
@@ -2154,8 +2142,8 @@
     "updated": "2026-07-07"
   },
   "tuist": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/tuist.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -2340,8 +2328,8 @@
     "updated": "2026-07-07"
   },
   "wizcli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/wiz-sec.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -2370,8 +2358,8 @@
     "updated": "2026-07-07"
   },
   "yandex-cloud-cli": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/yandex-cloud.png?size=256",
+    "status": "no_icon",
+    "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
