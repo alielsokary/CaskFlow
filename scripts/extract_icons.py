@@ -50,6 +50,10 @@ FLUSH_EVERY = 25  # icons per publish commit — bounds loss if a long CI run di
 
 TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz")
 
+# Some vendors 404 curl's default UA on GET (Warp) — mimic what Homebrew
+# sends, since every cask URL is served to Homebrew by definition.
+DEFAULT_UA = "Homebrew/4.5.0 (Macintosh; arm64 Mac OS X 15) curl/8.7.1"
+
 
 class ExtractError(Exception):
     """Recoverable per-cask failure — recorded in the report, never fatal."""
@@ -109,6 +113,33 @@ def container_type(cask: dict, filename: str) -> str | None:
         return "tar"
     if name.endswith(".app"):  # rare: bare .app download
         return "zip" if name.endswith(".zip") else None
+    return None
+
+
+def sniff_container(artifact: Path) -> str | None:
+    """Magic-byte fallback when the URL has no useful extension — modern
+    vendors serve …/stable (VS Code), …/osx_arm64 (Postman), …/download
+    (Raycast). Runs on the already-downloaded file, so it's authoritative."""
+    try:
+        size = artifact.stat().st_size
+        with artifact.open("rb") as f:
+            head = f.read(512)
+            f.seek(max(0, size - 512))
+            tail = f.read(512)
+    except OSError:
+        return None
+    # Trailer first: UDIF images carry their block-compression's magic at
+    # byte 0 (Warp: zlib, Comet: xz, HandBrake: bzip2) — head bytes lie.
+    if tail.startswith(b"koly"):  # UDIF trailer: the last 512 bytes of a DMG
+        return "dmg"
+    if head.startswith(b"PK"):
+        return "zip"
+    if head.startswith(b"xar!"):
+        return "pkg"
+    if head.startswith((b"\x1f\x8b", b"BZh", b"\xfd7zXZ\x00")):
+        return "tar"  # tar -xf auto-detects the compression
+    if head[257:262] == b"ustar":
+        return "tar"
     return None
 
 
@@ -190,8 +221,7 @@ def download(cask: dict, dest_dir: Path) -> Path:
     dest = dest_dir / filename
     cmd = ["curl", "-fSL", "--retry", "2", "--max-time", str(DOWNLOAD_TIMEOUT), "-o", str(dest)]
     specs = cask.get("url_specs") or {}
-    if specs.get("user_agent"):
-        cmd += ["-A", str(specs["user_agent"])]
+    cmd += ["-A", str(specs.get("user_agent") or DEFAULT_UA)]
     if specs.get("referer"):
         cmd += ["-e", str(specs["referer"])]
     for header in specs.get("header") or []:
@@ -232,9 +262,26 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
         return out
     if kind == "tar":
         proc = run(["tar", "-xf", str(artifact), "-C", str(out)])
-        if proc.returncode != 0:
+        if proc.returncode == 0:
+            return out
+        # Not a tarball — a bare gzip/bzip2/xz-wrapped payload (comet ships
+        # an xz-compressed DMG). Decompress, sniff the inner file, re-expand.
+        with artifact.open("rb") as f:
+            head = f.read(8)
+        tool = next((t for magic, t in ((b"\x1f\x8b", "gzip"), (b"BZh", "bzip2"),
+                                        (b"\xfd7zXZ\x00", "xz")) if head.startswith(magic)), None)
+        if tool is None:
             raise ExtractError(f"tar failed: {proc.stderr.strip()[:200]}")
-        return out
+        inner = workdir / f"{artifact.name}.inner"
+        with inner.open("wb") as fh:
+            dec = subprocess.run([tool, "-dc", str(artifact)], stdout=fh,
+                                 stderr=subprocess.PIPE, stdin=subprocess.DEVNULL)
+        if dec.returncode != 0:
+            raise ExtractError(f"{tool} -dc failed: {dec.stderr.decode()[:200]}")
+        inner_kind = sniff_container(inner)
+        if inner_kind in (None, "tar"):  # tar guard: no infinite recursion
+            raise ExtractError(f"unrecognized payload inside {tool} stream")
+        return expand(inner, inner_kind, workdir / "inner", mounts)
     if kind == "pkg":
         pkg_out = workdir / "pkg"
         proc = run(["pkgutil", "--expand-full", str(artifact), str(pkg_out)])
@@ -296,6 +343,16 @@ def find_app(root: Path, wanted: list[str], token: str = "") -> tuple[Path, str]
     return sorted(candidates, key=lambda p: len(p.parts))[0], "shallowest"
 
 
+def payload_bundle(root: Path) -> Path | None:
+    """A pkg whose Payload IS the .app (Tailscale): pkgutil strips the
+    bundle's directory name, leaving Payload/Contents/… directly — invisible
+    to find_app's *.app walk. The payload root is what lands in /Applications,
+    so it wins over any helper .apps nested inside it."""
+    for plist in root.rglob("Payload/Contents/Info.plist"):
+        return plist.parents[1]
+    return None
+
+
 def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     """One level of dmg-in-zip style nesting (guided search, spec §Extraction 3)."""
     for pattern, kind in (("*.dmg", "dmg"), ("*.pkg", "pkg"), ("*.zip", "zip")):
@@ -306,8 +363,70 @@ def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     return None
 
 
+# argv: <mode> <appPath> <destPng> <size> — mode: bundle | workspace | generic.
+# bundle reads the asset catalog directly; workspace asks Icon Services;
+# generic renders the system app icon (reference for the wrong-icon guard).
+_CAR_ICON_SWIFT = """\
+import AppKit
+import UniformTypeIdentifiers
+let args = CommandLine.arguments
+let size = Int(args[4]) ?? 256
+var icon: NSImage?
+switch args[1] {
+case "bundle":
+    guard let bundle = Bundle(url: URL(fileURLWithPath: args[2])) else { exit(1) }
+    let name = (bundle.infoDictionary?["CFBundleIconName"] as? String)
+        ?? (bundle.infoDictionary?["CFBundleIconFile"] as? String) ?? "AppIcon"
+    icon = bundle.image(forResource: name)
+case "generic":
+    icon = NSWorkspace.shared.icon(for: UTType.applicationBundle)
+default:
+    icon = NSWorkspace.shared.icon(forFile: args[2])
+}
+guard let resolved = icon else { exit(1) }
+guard let rep = NSBitmapImageRep(
+    bitmapDataPlanes: nil, pixelsWide: size, pixelsHigh: size,
+    bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
+    colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0) else { exit(1) }
+resolved.size = NSSize(width: size, height: size)
+NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rep)
+resolved.draw(in: NSRect(x: 0, y: 0, width: size, height: size))
+guard let png = rep.representation(using: .png, properties: [:]) else { exit(1) }
+try png.write(to: URL(fileURLWithPath: args[3]))
+"""
+
+
+def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
+    """Asset-catalog-only app (icon in Assets.car, no loose .icns): no public
+    CLI decodes Assets.car, so render via AppKit. Reasons start with "car" so
+    extract_one parks them under the car_only status.
+
+    Bundle.image(forResource:) reads the catalog directly and comes first —
+    the NSWorkspace fallback goes through Icon Services, which stamps payload
+    apps it considers unrunnable with the prohibitory overlay (shipped a
+    slashed-out Acrobat icon) and answers with the generic icon when the
+    catalog has none, hence the byte-compare guard."""
+    with tempfile.TemporaryDirectory(prefix="car-icon-") as td:
+        script = Path(td) / "icon.swift"
+        script.write_text(_CAR_ICON_SWIFT)
+
+        def render(mode: str, out: Path) -> bool:
+            proc = run(["swift", str(script), mode, str(app), str(out), ICON_SIZE])
+            return proc.returncode == 0 and out.exists()
+
+        if render("bundle", dest_png):
+            return None
+        generic = Path(td) / "generic.png"
+        if not render("workspace", dest_png) or not render("generic", generic):
+            return "car render failed"
+        if dest_png.read_bytes() == generic.read_bytes():
+            dest_png.unlink()
+            return "car catalog has no app icon (generic render)"
+    return None
+
+
 def icns_to_png(app: Path, dest_png: Path) -> str | None:
-    """Convert the app's icon to PNG. Returns a car_only/no-icon reason or None."""
+    """Convert the app's icon to PNG. Returns a no-icon/car reason or None."""
     plist_path = app / "Contents" / "Info.plist"
     info: dict = {}
     if plist_path.exists():
@@ -317,20 +436,27 @@ def icns_to_png(app: Path, dest_png: Path) -> str | None:
             info = {}
 
     resources = app / "Contents" / "Resources"
+
+    # Mirror macOS: CFBundleIconName (asset catalog) beats CFBundleIconFile.
+    # Raycast ships both — the loose .icns is stale alternate branding.
+    if info.get("CFBundleIconName") and (resources / "Assets.car").exists():
+        if car_icon_to_png(app, dest_png) is None:
+            return None
+        # Catalog render failed — fall through to the .icns path.
+
     icns_name = resolve_icns_name(info)
     icns = resources / icns_name if icns_name else None
 
     if icns is None or not icns.exists():
-        if info.get("CFBundleIconName") and not (icns and icns.exists()):
-            candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
-            if not candidates:
-                return "car_only"
+        candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
+        if candidates:
             icns = max(candidates, key=lambda p: p.stat().st_size)
+        elif (resources / "Assets.car").exists():
+            # Keyed off the actual file, not CFBundleIconName — Tailscale
+            # ships a car-only icon without declaring it in the plist.
+            return car_icon_to_png(app, dest_png)
         else:
-            candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
-            if not candidates:
-                return "no .icns in Resources"
-            icns = max(candidates, key=lambda p: p.stat().st_size)
+            return "no .icns in Resources"
 
     proc = run(["sips", "-s", "format", "png", "--resampleHeightWidthMax", ICON_SIZE,
                 str(icns), "--out", str(dest_png)])
@@ -355,13 +481,19 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
     mounts: list[Path] = []
     try:
         artifact = download(cask, workdir)
-        kind = container_type(cask, artifact.name)
+        kind = container_type(cask, artifact.name) or sniff_container(artifact)
         if kind is None:
             return "no_icon", f"unsupported container: {artifact.name}"
 
         root = expand(artifact, kind, workdir, mounts)
         wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
-        hit = find_app(root, wanted, token)
+        hit = None
+        if kind == "pkg":
+            bundle = payload_bundle(root)
+            if bundle is not None:
+                hit = (bundle, "payload_root")  # deterministic — no review needed
+        if hit is None:
+            hit = find_app(root, wanted, token)
 
         if hit is None:
             nested = find_nested_archive(root)
@@ -380,9 +512,9 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         dest_png = output_dir / f"{token}.png"
         icon_reason = icns_to_png(app, dest_png)
-        if icon_reason == "car_only":
-            return "car_only", "asset-catalog-only app (no .icns)"
         if icon_reason:
+            if icon_reason.startswith("car"):
+                return "car_only", icon_reason
             return "no_icon", icon_reason
         return "ok", selection
     finally:

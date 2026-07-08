@@ -168,3 +168,129 @@ def test_is_main_cask_shared_filter():
     assert not is_main_cask({"token": "1password@beta"})
     assert not is_main_cask({"token": "font-fira-code"})
     assert not is_main_cask({"token": "old-tool", "deprecated": True})
+
+
+# --- magic-byte container sniffing (extension-less URLs: …/stable, …/osx_arm64)
+
+import zipfile  # noqa: E402
+
+from extract_icons import icns_to_png, sniff_container  # noqa: E402
+
+
+def test_sniff_zip(tmp_path):
+    f = tmp_path / "stable"  # VS Code style: no extension
+    with zipfile.ZipFile(f, "w") as z:
+        z.writestr("hello.txt", "hi")
+    assert sniff_container(f) == "zip"
+
+
+def test_sniff_xar_pkg(tmp_path):
+    f = tmp_path / "download"
+    f.write_bytes(b"xar!" + b"\x00" * 100)
+    assert sniff_container(f) == "pkg"
+
+
+def test_sniff_gzip_tar(tmp_path):
+    f = tmp_path / "release"
+    f.write_bytes(b"\x1f\x8b\x08" + b"\x00" * 100)
+    assert sniff_container(f) == "tar"
+
+
+def test_sniff_ustar_tar(tmp_path):
+    f = tmp_path / "osx_arm64"
+    f.write_bytes(b"\x00" * 257 + b"ustar" + b"\x00" * 250)
+    assert sniff_container(f) == "tar"
+
+
+def test_sniff_dmg_koly_trailer(tmp_path):
+    f = tmp_path / "download.php"
+    # UDIF: the last 512 bytes are the koly block.
+    f.write_bytes(b"\x00" * 1024 + b"koly" + b"\x00" * 508)
+    assert sniff_container(f) == "dmg"
+
+
+def test_sniff_koly_trailer_beats_head_magic(tmp_path):
+    # comet/handbrake: UDIF images whose first data block carries the
+    # compression magic (xz/bzip2). The koly trailer is authoritative.
+    f = tmp_path / "download"
+    f.write_bytes(b"\xfd7zXZ\x00" + b"\x00" * 1024 + b"koly" + b"\x00" * 508)
+    assert sniff_container(f) == "dmg"
+
+
+def test_sniff_unknown_is_none(tmp_path):
+    f = tmp_path / "file"
+    f.write_bytes(b"MZ\x90\x00" + b"\x00" * 100)  # PE executable
+    assert sniff_container(f) is None
+
+
+def test_expand_bare_compressed_payload(tmp_path):
+    # comet: an xz/gzip-wrapped DMG is not a tarball — tar fails, the
+    # fallback decompresses and expands whatever is inside (here: a zip).
+    import gzip
+
+    from extract_icons import expand
+
+    inner_zip = tmp_path / "inner.zip"
+    with zipfile.ZipFile(inner_zip, "w") as z:
+        z.writestr("payload.txt", "hi")
+    wrapped = tmp_path / "download"  # extension-less, gzip of a zip
+    wrapped.write_bytes(gzip.compress(inner_zip.read_bytes()))
+
+    root = expand(wrapped, "tar", tmp_path / "work", mounts=[])
+    assert list(root.rglob("payload.txt"))
+
+
+# --- payload-root bundles (Tailscale: pkgutil strips the .app dir name) -------
+
+from extract_icons import payload_bundle  # noqa: E402
+
+
+def test_payload_root_bundle_detected(tmp_path):
+    contents = tmp_path / "Distribution.pkg" / "Payload" / "Contents"
+    contents.mkdir(parents=True)
+    (contents / "Info.plist").write_bytes(b"<plist/>")
+    assert payload_bundle(tmp_path) == tmp_path / "Distribution.pkg" / "Payload"
+
+
+def test_payload_bundle_ignores_normal_pkg_layout(tmp_path):
+    # Ordinary payload: Payload/Applications/Foo.app — find_app's job, not ours.
+    app = tmp_path / "Foo.pkg" / "Payload" / "Applications" / "Foo.app" / "Contents"
+    app.mkdir(parents=True)
+    (app / "Info.plist").write_bytes(b"<plist/>")
+    assert payload_bundle(tmp_path) is None
+
+
+# --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --
+
+def _mk_app_with_resources(tmp_path, *files):
+    app = tmp_path / "Test.app"
+    res = app / "Contents" / "Resources"
+    res.mkdir(parents=True)
+    for name in files:
+        (res / name).write_bytes(b"x")
+    return app
+
+
+def test_icns_to_png_routes_car_only_apps_to_renderer(tmp_path, monkeypatch):
+    import extract_icons
+    app = _mk_app_with_resources(tmp_path, "Assets.car")
+    monkeypatch.setattr(extract_icons, "car_icon_to_png", lambda a, d: "rendered")
+    assert icns_to_png(app, tmp_path / "out.png") == "rendered"
+
+
+def test_icns_to_png_prefers_declared_catalog_icon_over_legacy_icns(tmp_path, monkeypatch):
+    # Raycast: CFBundleIconName (Assets.car) is what macOS shows; the loose
+    # .icns beside it is stale alternate branding. Mirror the OS priority.
+    import plistlib
+
+    import extract_icons
+    app = _mk_app_with_resources(tmp_path, "Assets.car", "Legacy.icns")
+    (app / "Contents" / "Info.plist").write_bytes(plistlib.dumps(
+        {"CFBundleIconName": "AppIcon", "CFBundleIconFile": "Legacy"}))
+    monkeypatch.setattr(extract_icons, "car_icon_to_png", lambda a, d: None)
+    assert icns_to_png(app, tmp_path / "out.png") is None  # car path won
+
+
+def test_icns_to_png_no_icns_no_car_is_parked(tmp_path):
+    app = _mk_app_with_resources(tmp_path)  # empty Resources
+    assert icns_to_png(app, tmp_path / "out.png") == "no .icns in Resources"
