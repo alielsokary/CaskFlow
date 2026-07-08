@@ -7,9 +7,9 @@
   },
   "adobe-acrobat-reader": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "token match hit the uninstaller stub -- wrong icon, held back",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "algodoo": {
     "status": "failed",
@@ -173,12 +173,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "burp-suite": {
-    "status": "no_icon",
-    "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "caldigit-thunderbolt-charging": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -208,12 +202,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "cap": {
-    "status": "no_icon",
-    "reason": "unsupported container: 01KWCXY8M20NH8JM00HRH1HKVG",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "captainplugins": {
     "status": "no_icon",
@@ -287,12 +275,6 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
-  "cloudflare-warp": {
-    "status": "no_icon",
-    "reason": "unsupported container: 2026.6.822.0",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "cloudup": {
     "status": "no_icon",
     "reason": "unsupported container: update",
@@ -314,12 +296,6 @@
   "comet": {
     "status": "no_icon",
     "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "conductor": {
-    "status": "no_icon",
-    "reason": "unsupported container: 01KWMS15GBSTND3DRNXVK0MX9F",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -1091,12 +1067,6 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
-  "little-snitch": {
-    "status": "car_only",
-    "reason": "asset-catalog-only app (no .icns)",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "lotus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
@@ -1535,12 +1505,6 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
-  "postman": {
-    "status": "no_icon",
-    "reason": "unsupported container: osx_arm64",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "postman-agent": {
     "status": "no_icon",
     "reason": "unsupported container: osx_arm64",
@@ -1583,12 +1547,6 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
-  "qqmusic": {
-    "status": "no_icon",
-    "reason": "unsupported container: file_redirect.fcg",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "qt-design-studio": {
     "status": "no_icon",
     "reason": "unsupported container: 4.8.2-0-202604291709opensource.7z",
@@ -1618,18 +1576,6 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 2,
     "updated": "2026-07-07"
-  },
-  "rawtherapee": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 1b3ff467ba1b…)",
-    "attempts": 4,
-    "updated": "2026-07-07"
-  },
-  "raycast": {
-    "status": "no_icon",
-    "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "readwise-ibooks": {
     "status": "no_icon",
@@ -1718,12 +1664,6 @@
   "session-manager-plugin": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "shottr": {
-    "status": "car_only",
-    "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-06"
   },
@@ -2069,12 +2009,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "utm": {
-    "status": "car_only",
-    "reason": "asset-catalog-only app (no .icns)",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "utm@beta": {
     "status": "car_only",
     "reason": "asset-catalog-only app (no .icns)",
@@ -2165,19 +2099,7 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
-  "visual-studio-code": {
-    "status": "no_icon",
-    "reason": "unsupported container: stable",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "vnc-viewer": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-07-07"
-  },
-  "warp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 4,
@@ -2196,16 +2118,10 @@
     "updated": "2026-07-07"
   },
   "wch-ch34x-usb-serial-driver": {
-    "status": "no_icon",
-    "reason": "unsupported container: file",
+    "status": "review",
+    "reason": "non-exact .app selection: single",
     "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "whatsapp": {
-    "status": "no_icon",
-    "reason": "unsupported container: release",
-    "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "whatsapp@beta": {
     "status": "no_icon",
@@ -2266,12 +2182,6 @@
     "reason": "unsupported container: 46f971e4fc4a32b68ad5d7dade38a7d2",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "zotero": {
-    "status": "car_only",
-    "reason": "asset-catalog-only app (no .icns)",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "zulu": {
     "status": "no_icon",
