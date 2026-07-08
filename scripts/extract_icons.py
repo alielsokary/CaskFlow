@@ -50,6 +50,10 @@ FLUSH_EVERY = 25  # icons per publish commit — bounds loss if a long CI run di
 
 TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz")
 
+# Some vendors 404 curl's default UA on GET (Warp) — mimic what Homebrew
+# sends, since every cask URL is served to Homebrew by definition.
+DEFAULT_UA = "Homebrew/4.5.0 (Macintosh; arm64 Mac OS X 15) curl/8.7.1"
+
 
 class ExtractError(Exception):
     """Recoverable per-cask failure — recorded in the report, never fatal."""
@@ -215,8 +219,7 @@ def download(cask: dict, dest_dir: Path) -> Path:
     dest = dest_dir / filename
     cmd = ["curl", "-fSL", "--retry", "2", "--max-time", str(DOWNLOAD_TIMEOUT), "-o", str(dest)]
     specs = cask.get("url_specs") or {}
-    if specs.get("user_agent"):
-        cmd += ["-A", str(specs["user_agent"])]
+    cmd += ["-A", str(specs.get("user_agent") or DEFAULT_UA)]
     if specs.get("referer"):
         cmd += ["-e", str(specs["referer"])]
     for header in specs.get("header") or []:
@@ -257,9 +260,26 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
         return out
     if kind == "tar":
         proc = run(["tar", "-xf", str(artifact), "-C", str(out)])
-        if proc.returncode != 0:
+        if proc.returncode == 0:
+            return out
+        # Not a tarball — a bare gzip/bzip2/xz-wrapped payload (comet ships
+        # an xz-compressed DMG). Decompress, sniff the inner file, re-expand.
+        with artifact.open("rb") as f:
+            head = f.read(8)
+        tool = next((t for magic, t in ((b"\x1f\x8b", "gzip"), (b"BZh", "bzip2"),
+                                        (b"\xfd7zXZ\x00", "xz")) if head.startswith(magic)), None)
+        if tool is None:
             raise ExtractError(f"tar failed: {proc.stderr.strip()[:200]}")
-        return out
+        inner = workdir / f"{artifact.name}.inner"
+        with inner.open("wb") as fh:
+            dec = subprocess.run([tool, "-dc", str(artifact)], stdout=fh,
+                                 stderr=subprocess.PIPE, stdin=subprocess.DEVNULL)
+        if dec.returncode != 0:
+            raise ExtractError(f"{tool} -dc failed: {dec.stderr.decode()[:200]}")
+        inner_kind = sniff_container(inner)
+        if inner_kind in (None, "tar"):  # tar guard: no infinite recursion
+            raise ExtractError(f"unrecognized payload inside {tool} stream")
+        return expand(inner, inner_kind, workdir / "inner", mounts)
     if kind == "pkg":
         pkg_out = workdir / "pkg"
         proc = run(["pkgutil", "--expand-full", str(artifact), str(pkg_out)])
