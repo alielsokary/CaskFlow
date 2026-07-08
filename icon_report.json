@@ -5,12 +5,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "adobe-acrobat-reader": {
-    "status": "no_icon",
-    "reason": "token match hit the uninstaller stub -- wrong icon, held back",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "algodoo": {
     "status": "failed",
     "reason": "download failed: curl: (18) transfer closed with 252388569 bytes remaining to read",
