@@ -168,3 +168,71 @@ def test_is_main_cask_shared_filter():
     assert not is_main_cask({"token": "1password@beta"})
     assert not is_main_cask({"token": "font-fira-code"})
     assert not is_main_cask({"token": "old-tool", "deprecated": True})
+
+
+# --- magic-byte container sniffing (extension-less URLs: …/stable, …/osx_arm64)
+
+import zipfile  # noqa: E402
+
+from extract_icons import icns_to_png, sniff_container  # noqa: E402
+
+
+def test_sniff_zip(tmp_path):
+    f = tmp_path / "stable"  # VS Code style: no extension
+    with zipfile.ZipFile(f, "w") as z:
+        z.writestr("hello.txt", "hi")
+    assert sniff_container(f) == "zip"
+
+
+def test_sniff_xar_pkg(tmp_path):
+    f = tmp_path / "download"
+    f.write_bytes(b"xar!" + b"\x00" * 100)
+    assert sniff_container(f) == "pkg"
+
+
+def test_sniff_gzip_tar(tmp_path):
+    f = tmp_path / "release"
+    f.write_bytes(b"\x1f\x8b\x08" + b"\x00" * 100)
+    assert sniff_container(f) == "tar"
+
+
+def test_sniff_ustar_tar(tmp_path):
+    f = tmp_path / "osx_arm64"
+    f.write_bytes(b"\x00" * 257 + b"ustar" + b"\x00" * 250)
+    assert sniff_container(f) == "tar"
+
+
+def test_sniff_dmg_koly_trailer(tmp_path):
+    f = tmp_path / "download.php"
+    # UDIF: the last 512 bytes are the koly block.
+    f.write_bytes(b"\x00" * 1024 + b"koly" + b"\x00" * 508)
+    assert sniff_container(f) == "dmg"
+
+
+def test_sniff_unknown_is_none(tmp_path):
+    f = tmp_path / "file"
+    f.write_bytes(b"MZ\x90\x00" + b"\x00" * 100)  # PE executable
+    assert sniff_container(f) is None
+
+
+# --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --
+
+def _mk_app_with_resources(tmp_path, *files):
+    app = tmp_path / "Test.app"
+    res = app / "Contents" / "Resources"
+    res.mkdir(parents=True)
+    for name in files:
+        (res / name).write_bytes(b"x")
+    return app
+
+
+def test_icns_to_png_routes_car_only_apps_to_renderer(tmp_path, monkeypatch):
+    import extract_icons
+    app = _mk_app_with_resources(tmp_path, "Assets.car")
+    monkeypatch.setattr(extract_icons, "car_icon_to_png", lambda a, d: "rendered")
+    assert icns_to_png(app, tmp_path / "out.png") == "rendered"
+
+
+def test_icns_to_png_no_icns_no_car_is_parked(tmp_path):
+    app = _mk_app_with_resources(tmp_path)  # empty Resources
+    assert icns_to_png(app, tmp_path / "out.png") == "no .icns in Resources"

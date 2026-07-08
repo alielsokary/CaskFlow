@@ -112,6 +112,31 @@ def container_type(cask: dict, filename: str) -> str | None:
     return None
 
 
+def sniff_container(artifact: Path) -> str | None:
+    """Magic-byte fallback when the URL has no useful extension — modern
+    vendors serve …/stable (VS Code), …/osx_arm64 (Postman), …/download
+    (Raycast). Runs on the already-downloaded file, so it's authoritative."""
+    try:
+        size = artifact.stat().st_size
+        with artifact.open("rb") as f:
+            head = f.read(512)
+            f.seek(max(0, size - 512))
+            tail = f.read(512)
+    except OSError:
+        return None
+    if head.startswith(b"PK"):
+        return "zip"
+    if head.startswith(b"xar!"):
+        return "pkg"
+    if head.startswith((b"\x1f\x8b", b"BZh", b"\xfd7zXZ\x00")):
+        return "tar"  # tar -xf auto-detects the compression
+    if head[257:262] == b"ustar":
+        return "tar"
+    if tail.startswith(b"koly"):  # UDIF trailer: the last 512 bytes of a DMG
+        return "dmg"
+    return None
+
+
 _INSTALLERISH = re.compile(r"\b(install(er)?|uninstall(er)?|updater?|setup)\b", re.IGNORECASE)
 
 
@@ -306,8 +331,50 @@ def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     return None
 
 
+# argv: <appPath|--generic> <destPng> <size>. --generic renders the system
+# generic app icon — the reference image for the wrong-icon guard below.
+_CAR_ICON_SWIFT = """\
+import AppKit
+import UniformTypeIdentifiers
+let args = CommandLine.arguments
+let size = Int(args[3]) ?? 256
+let icon = args[1] == "--generic"
+    ? NSWorkspace.shared.icon(for: UTType.applicationBundle)
+    : NSWorkspace.shared.icon(forFile: args[1])
+guard let rep = NSBitmapImageRep(
+    bitmapDataPlanes: nil, pixelsWide: size, pixelsHigh: size,
+    bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
+    colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0) else { exit(1) }
+NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rep)
+icon.draw(in: NSRect(x: 0, y: 0, width: size, height: size))
+guard let png = rep.representation(using: .png, properties: [:]) else { exit(1) }
+try png.write(to: URL(fileURLWithPath: args[2]))
+"""
+
+
+def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
+    """Asset-catalog-only app (icon in Assets.car, no loose .icns): render via
+    Icon Services — no public CLI decodes Assets.car. Reasons start with
+    "car" so extract_one parks them under the car_only status.
+
+    Wrong-icon guard: a render byte-identical to the generic app icon means
+    the catalog had no real icon; park instead of shipping it."""
+    with tempfile.TemporaryDirectory(prefix="car-icon-") as td:
+        script = Path(td) / "icon.swift"
+        script.write_text(_CAR_ICON_SWIFT)
+        generic = Path(td) / "generic.png"
+        for target, out in ((str(app), dest_png), ("--generic", generic)):
+            proc = run(["swift", str(script), target, str(out), ICON_SIZE])
+            if proc.returncode != 0 or not out.exists():
+                return f"car render failed: {proc.stderr.strip()[:120]}"
+        if dest_png.read_bytes() == generic.read_bytes():
+            dest_png.unlink()
+            return "car catalog has no app icon (generic render)"
+    return None
+
+
 def icns_to_png(app: Path, dest_png: Path) -> str | None:
-    """Convert the app's icon to PNG. Returns a car_only/no-icon reason or None."""
+    """Convert the app's icon to PNG. Returns a no-icon/car reason or None."""
     plist_path = app / "Contents" / "Info.plist"
     info: dict = {}
     if plist_path.exists():
@@ -321,16 +388,15 @@ def icns_to_png(app: Path, dest_png: Path) -> str | None:
     icns = resources / icns_name if icns_name else None
 
     if icns is None or not icns.exists():
-        if info.get("CFBundleIconName") and not (icns and icns.exists()):
-            candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
-            if not candidates:
-                return "car_only"
+        candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
+        if candidates:
             icns = max(candidates, key=lambda p: p.stat().st_size)
+        elif (resources / "Assets.car").exists():
+            # Keyed off the actual file, not CFBundleIconName — Tailscale
+            # ships a car-only icon without declaring it in the plist.
+            return car_icon_to_png(app, dest_png)
         else:
-            candidates = sorted(resources.glob("*.icns")) if resources.exists() else []
-            if not candidates:
-                return "no .icns in Resources"
-            icns = max(candidates, key=lambda p: p.stat().st_size)
+            return "no .icns in Resources"
 
     proc = run(["sips", "-s", "format", "png", "--resampleHeightWidthMax", ICON_SIZE,
                 str(icns), "--out", str(dest_png)])
@@ -355,7 +421,7 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
     mounts: list[Path] = []
     try:
         artifact = download(cask, workdir)
-        kind = container_type(cask, artifact.name)
+        kind = container_type(cask, artifact.name) or sniff_container(artifact)
         if kind is None:
             return "no_icon", f"unsupported container: {artifact.name}"
 
@@ -380,9 +446,9 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         dest_png = output_dir / f"{token}.png"
         icon_reason = icns_to_png(app, dest_png)
-        if icon_reason == "car_only":
-            return "car_only", "asset-catalog-only app (no .icns)"
         if icon_reason:
+            if icon_reason.startswith("car"):
+                return "car_only", icon_reason
             return "no_icon", icon_reason
         return "ok", selection
     finally:
