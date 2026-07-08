@@ -295,9 +295,9 @@
   },
   "corelocationcli": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "headless CLI wrapper app -- no icon exists",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "corretto": {
     "status": "no_icon",
@@ -564,10 +564,10 @@
     "updated": "2026-07-07"
   },
   "eclipse-java": {
-    "status": "no_icon",
-    "reason": "unsupported container: download.php",
-    "attempts": 0,
-    "updated": "2026-07-06"
+    "status": "failed",
+    "reason": "download failed: mirror broken pipe (x3 locally)",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "eclipse-jee": {
     "status": "no_icon",
@@ -1279,9 +1279,9 @@
   },
   "nomachine": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "no .icns/Assets.car in selected app (needs targeted look)",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "nordic-nrf-command-line-tools": {
     "status": "no_icon",
@@ -1333,9 +1333,9 @@
   },
   "openvpn-connect": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "no .icns/Assets.car in selected app (needs targeted look)",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "openzfs": {
     "status": "no_icon",
@@ -1422,10 +1422,10 @@
     "updated": "2026-07-07"
   },
   "paraview": {
-    "status": "no_icon",
-    "reason": "unsupported container: download.php",
-    "attempts": 0,
-    "updated": "2026-07-06"
+    "status": "failed",
+    "reason": "download timeout at 600s locally (500MB slow mirror)",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "pencil2d": {
     "status": "failed",
