@@ -293,12 +293,6 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
-  "comet": {
-    "status": "no_icon",
-    "reason": "unsupported container: download",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
   "corelocationcli": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -898,12 +892,6 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "handbrake-app": {
-    "status": "no_icon",
-    "reason": "unsupported container: rotation.php",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "hubstaff": {
     "status": "no_icon",
@@ -1810,12 +1798,6 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 3,
     "updated": "2026-07-07"
-  },
-  "tailscale-app": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "tal-drum": {
     "status": "no_icon",
