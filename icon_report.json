@@ -1,4 +1,10 @@
 {
+  "1password-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/1Password.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "acronis-true-image": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -28,6 +34,24 @@
     "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "anaconda": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/anaconda.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "android-commandlinetools": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "android-platform-tools": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "anka-build-cloud-controller": {
     "status": "no_icon",
@@ -246,10 +270,10 @@
     "updated": "2026-07-07"
   },
   "claude-code": {
-    "status": "no_icon",
-    "reason": "no app/suite/pkg artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/anthropics.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "clibor": {
     "status": "no_icon",
@@ -286,6 +310,18 @@
     "reason": "sha256 mismatch (got f6cd1c9a4b4a…)",
     "attempts": 3,
     "updated": "2026-07-07"
+  },
+  "codex": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/openai.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "copilot-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/github.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "corelocationcli": {
     "status": "no_icon",
@@ -340,6 +376,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "cursor-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/cursor.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "dante-controller": {
     "status": "no_icon",
@@ -768,10 +810,10 @@
     "updated": "2026-07-07"
   },
   "flutter": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/flutter.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "folding-at-home": {
     "status": "no_icon",
@@ -827,11 +869,17 @@
     "attempts": 0,
     "updated": "2026-07-06"
   },
-  "git-credential-manager": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+  "gcloud-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/GoogleCloudPlatform.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
+  },
+  "git-credential-manager": {
+    "status": "curated",
+    "reason": "official vendor asset: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "gluemotion": {
     "status": "no_icon",
@@ -1080,10 +1128,10 @@
     "updated": "2026-07-07"
   },
   "macfuse": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/macfuse.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "macfuse@dev": {
     "status": "no_icon",
@@ -1229,6 +1277,24 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "miniconda": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/conda.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "miniforge": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/conda-forge.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "mitmproxy": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/mitmproxy.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "mixed-in-key": {
     "status": "no_icon",
     "reason": "unsupported container: latest",
@@ -1270,6 +1336,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "ngrok": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/ngrok.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "nomachine": {
     "status": "no_icon",
@@ -1793,6 +1865,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "tailscale": {
+    "status": "curated",
+    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/tailscale-app.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "tal-drum": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1930,6 +2008,12 @@
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "tuist": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/tuist.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "tuna": {
     "status": "no_icon",
