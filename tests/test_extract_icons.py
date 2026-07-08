@@ -278,6 +278,19 @@ def test_icns_to_png_routes_car_only_apps_to_renderer(tmp_path, monkeypatch):
     assert icns_to_png(app, tmp_path / "out.png") == "rendered"
 
 
+def test_icns_to_png_prefers_declared_catalog_icon_over_legacy_icns(tmp_path, monkeypatch):
+    # Raycast: CFBundleIconName (Assets.car) is what macOS shows; the loose
+    # .icns beside it is stale alternate branding. Mirror the OS priority.
+    import plistlib
+
+    import extract_icons
+    app = _mk_app_with_resources(tmp_path, "Assets.car", "Legacy.icns")
+    (app / "Contents" / "Info.plist").write_bytes(plistlib.dumps(
+        {"CFBundleIconName": "AppIcon", "CFBundleIconFile": "Legacy"}))
+    monkeypatch.setattr(extract_icons, "car_icon_to_png", lambda a, d: None)
+    assert icns_to_png(app, tmp_path / "out.png") is None  # car path won
+
+
 def test_icns_to_png_no_icns_no_car_is_parked(tmp_path):
     app = _mk_app_with_resources(tmp_path)  # empty Resources
     assert icns_to_png(app, tmp_path / "out.png") == "no .icns in Resources"

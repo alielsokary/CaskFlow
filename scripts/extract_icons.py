@@ -436,6 +436,14 @@ def icns_to_png(app: Path, dest_png: Path) -> str | None:
             info = {}
 
     resources = app / "Contents" / "Resources"
+
+    # Mirror macOS: CFBundleIconName (asset catalog) beats CFBundleIconFile.
+    # Raycast ships both — the loose .icns is stale alternate branding.
+    if info.get("CFBundleIconName") and (resources / "Assets.car").exists():
+        if car_icon_to_png(app, dest_png) is None:
+            return None
+        # Catalog render failed — fall through to the .icns path.
+
     icns_name = resolve_icns_name(info)
     icns = resources / icns_name if icns_name else None
 
