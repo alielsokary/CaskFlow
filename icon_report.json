@@ -509,6 +509,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "mysql-shell": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/mysql.png (pkg ships CLI only; CDN blocks scripted downloads)",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "ngrok": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -760,18 +766,6 @@
     "reason": "sha256 mismatch (got 479abc9cf2fa…)",
     "attempts": 2,
     "updated": "2026-07-07"
-  },
-  "tableau": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-08"
-  },
-  "tableau-public": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-08"
   },
   "tau": {
     "status": "no_icon",
