@@ -11,6 +11,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "algodoo": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Operation timed out after 600010 milliseconds with 75071488 out of 293512409 bytes received",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "alisma": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "altersend": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -149,7 +161,19 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "canon-mg2500-driver": {
+    "status": "failed",
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-va4yfi9h/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "canon-ufrii-driver": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "chatty": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -159,6 +183,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "chemdoodle": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got dc0914ba279d…)",
+    "attempts": 1,
     "updated": "2026-07-08"
   },
   "cinebench": {
@@ -178,6 +208,12 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 2,
     "updated": "2026-07-07"
+  },
+  "cmpxat": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "codeql": {
     "status": "no_icon",
@@ -233,6 +269,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "crushftp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "cursor-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -269,6 +311,12 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "dbeaverultimate": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got ac134703e8cf…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
@@ -278,6 +326,54 @@
   "dcp-o-matic": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-batch-converter": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got b1d06fcd4bf1…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-combiner": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got c455e43d469f…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-disk-writer": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9febe274f265…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-editor": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 01c532db4103…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-encode-server": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 67d32d845c78…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-kdm-creator": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9e6c72db04b5…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-player": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9c7ea69f820a…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic-playlist-editor": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7e8fae7f869e…)",
     "attempts": 1,
     "updated": "2026-07-08"
   },
@@ -341,6 +437,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "duo-connect": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "dwarf-fortress-lmp": {
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
@@ -364,6 +466,12 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 2,
     "updated": "2026-07-07"
+  },
+  "enclave": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "endnote": {
     "status": "no_icon",
@@ -395,6 +503,66 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "fabfilter-pro-c": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-ds": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-g": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-l": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-mb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-q": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-pro-r": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-saturn": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-timeless": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-volcano": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "finch": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/runfinch.png?size=256",
@@ -410,6 +578,12 @@
   "flutter": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/flutter.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "folding-at-home": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -593,6 +767,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "linkandroid": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "logi-options+": {
     "status": "review",
     "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
@@ -635,6 +815,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "macpar-deluxe": {
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "macsvg": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -647,11 +833,23 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "mate-translate": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "metashapepro": {
     "status": "failed",
     "reason": "sha256 mismatch (got 85b7e43dc87c…)",
     "attempts": 2,
     "updated": "2026-07-07"
+  },
+  "meteorologist": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "micro-sniff": {
     "status": "failed",
@@ -669,6 +867,12 @@
     "status": "curated",
     "reason": "official vendor asset: https://github.com/microsoft.png?size=256",
     "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "mini-vmac": {
+    "status": "failed",
+    "reason": "download failed: how to fix it, please visit the web page mentioned above.",
+    "attempts": 1,
     "updated": "2026-07-08"
   },
   "miniconda": {
@@ -736,6 +940,12 @@
     "reason": "Nikon installer app (download-arrow badge) with a name the installer regex misses (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "objectivesharpie": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "omnissa-horizon-client": {
     "status": "no_icon",
@@ -814,6 +1024,12 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 2,
     "updated": "2026-07-07"
+  },
+  "parallels-virtualization-sdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "podolski": {
     "status": "no_icon",
@@ -935,6 +1151,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "silnite": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "slack-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -1037,11 +1259,23 @@
     "attempts": 3,
     "updated": "2026-07-08"
   },
+  "tableau-reader": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "tau": {
     "status": "no_icon",
     "reason": "CLI profiling toolkit; only .app is the bundled Jumpshot viewer, not representative (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "tdr-nova": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "teamviewer-host": {
     "status": "no_icon",
@@ -1073,6 +1307,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "trezor-bridge-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "triplecheese": {
     "status": "no_icon",
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
@@ -1097,6 +1337,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "unity-ios-support-for-editor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "vagrant": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
@@ -1106,6 +1352,18 @@
   "vagrant-vmware-utility": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "valhalla-freq-echo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "valhalla-space-modulator": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1121,11 +1379,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "virtual-ii": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75006 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "virtualgl": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "visual-paradigm": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got fc3c40f94cf8…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "visual-paradigm-ce": {
     "status": "failed",
@@ -1184,6 +1454,12 @@
   "yandex-cloud-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "yubihsm2-sdk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
