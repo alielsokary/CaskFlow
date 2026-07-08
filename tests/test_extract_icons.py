@@ -209,6 +209,14 @@ def test_sniff_dmg_koly_trailer(tmp_path):
     assert sniff_container(f) == "dmg"
 
 
+def test_sniff_koly_trailer_beats_head_magic(tmp_path):
+    # comet/handbrake: UDIF images whose first data block carries the
+    # compression magic (xz/bzip2). The koly trailer is authoritative.
+    f = tmp_path / "download"
+    f.write_bytes(b"\xfd7zXZ\x00" + b"\x00" * 1024 + b"koly" + b"\x00" * 508)
+    assert sniff_container(f) == "dmg"
+
+
 def test_sniff_unknown_is_none(tmp_path):
     f = tmp_path / "file"
     f.write_bytes(b"MZ\x90\x00" + b"\x00" * 100)  # PE executable
