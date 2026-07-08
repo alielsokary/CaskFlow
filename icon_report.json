@@ -1422,10 +1422,10 @@
     "updated": "2026-07-07"
   },
   "mono-mdk": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/mono.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "muteme": {
     "status": "no_icon",
