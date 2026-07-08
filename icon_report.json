@@ -59,6 +59,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "atok": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -80,6 +86,12 @@
   "aws-vault-binary": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "baseline": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -119,6 +131,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "caldigit-thunderbolt-charging": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "caldigit-usb-hub-support-driver": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -126,6 +144,12 @@
     "updated": "2026-07-08"
   },
   "canon-eos-utility": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "canon-ufrii-driver": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -233,9 +257,27 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "dbeaver-enterprise": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 60bcaa629809…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dbeaverlite": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9821764efce6…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "dcp-o-matic": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 4c681fed33d5…)",
     "attempts": 1,
     "updated": "2026-07-08"
   },
@@ -263,6 +305,18 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
+  "digital": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "diskspace": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "dotnet-runtime": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/dotnet.png?size=256",
@@ -287,9 +341,21 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "dwarf-fortress-lmp": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "dynamodb-local": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "elecom-mouse-util": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -479,6 +545,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "install-disk-creator": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -627,6 +699,12 @@
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "nessus": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-08"
   },
   "ngrok": {
@@ -821,6 +899,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "seam-app": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "securesafe": {
     "status": "failed",
     "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-securesafe-9kpemt__/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
@@ -831,6 +915,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 7feecacd832a…)",
     "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "semeru-jdk-open": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-08"
   },
   "session-manager-plugin": {
@@ -935,6 +1025,12 @@
     "attempts": 3,
     "updated": "2026-07-08"
   },
+  "tableau-prep": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "tableau-public": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
@@ -971,6 +1067,12 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
+  "torguard": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "triplecheese": {
     "status": "no_icon",
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
@@ -1004,6 +1106,12 @@
   "vagrant-vmware-utility": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "valhalla-supermassive": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1049,6 +1157,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "whispering": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 7c15883a5562…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "wizcli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -1059,6 +1173,12 @@
     "status": "failed",
     "reason": "sha256 mismatch (got 7f9211670fe6…)",
     "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "xppen-pentablet": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
     "updated": "2026-07-08"
   },
   "yandex-cloud-cli": {
