@@ -215,6 +215,23 @@ def test_sniff_unknown_is_none(tmp_path):
     assert sniff_container(f) is None
 
 
+def test_expand_bare_compressed_payload(tmp_path):
+    # comet: an xz/gzip-wrapped DMG is not a tarball — tar fails, the
+    # fallback decompresses and expands whatever is inside (here: a zip).
+    import gzip
+
+    from extract_icons import expand
+
+    inner_zip = tmp_path / "inner.zip"
+    with zipfile.ZipFile(inner_zip, "w") as z:
+        z.writestr("payload.txt", "hi")
+    wrapped = tmp_path / "download"  # extension-less, gzip of a zip
+    wrapped.write_bytes(gzip.compress(inner_zip.read_bytes()))
+
+    root = expand(wrapped, "tar", tmp_path / "work", mounts=[])
+    assert list(root.rglob("payload.txt"))
+
+
 # --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --
 
 def _mk_app_with_resources(tmp_path, *files):
