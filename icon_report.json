@@ -1362,8 +1362,8 @@
     "updated": "2026-07-08"
   },
   "miniforge": {
-    "status": "no_icon",
-    "reason": "CLI-only cask -- app renders a CLI tile by design",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/conda-forge.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -2142,8 +2142,8 @@
     "updated": "2026-07-07"
   },
   "tuist": {
-    "status": "no_icon",
-    "reason": "CLI-only cask -- app renders a CLI tile by design",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/tuist.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
   },
