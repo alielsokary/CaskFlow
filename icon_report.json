@@ -653,23 +653,11 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "eclipse-ide": {
-    "status": "failed",
-    "reason": "download failed: mirror broken pipe -- retry from CI",
-    "attempts": 1,
-    "updated": "2026-07-08"
-  },
   "eclipse-installer": {
     "status": "no_icon",
     "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "eclipse-java": {
-    "status": "failed",
-    "reason": "download failed: mirror partial transfer (x4 locally) -- retry from CI",
-    "attempts": 2,
-    "updated": "2026-07-08"
   },
   "eclipse-jee": {
     "status": "no_icon",
@@ -1601,12 +1589,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "paraview": {
-    "status": "failed",
-    "reason": "download timeout at 600s locally (500MB slow mirror)",
-    "attempts": 1,
-    "updated": "2026-07-08"
-  },
   "pencil2d": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9d65cb23326c…)",
@@ -2005,8 +1987,8 @@
   },
   "tableau": {
     "status": "failed",
-    "reason": "vendor 403 from local IP (HEAD 200) -- retry from CI runners",
-    "attempts": 1,
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 2,
     "updated": "2026-07-08"
   },
   "tableau-prep": {
@@ -2017,8 +1999,8 @@
   },
   "tableau-public": {
     "status": "failed",
-    "reason": "vendor 403 from local IP (HEAD 200) -- retry from CI runners",
-    "attempts": 1,
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 2,
     "updated": "2026-07-08"
   },
   "tableau-reader": {
