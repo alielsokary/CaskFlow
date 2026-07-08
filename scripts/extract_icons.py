@@ -343,6 +343,16 @@ def find_app(root: Path, wanted: list[str], token: str = "") -> tuple[Path, str]
     return sorted(candidates, key=lambda p: len(p.parts))[0], "shallowest"
 
 
+def payload_bundle(root: Path) -> Path | None:
+    """A pkg whose Payload IS the .app (Tailscale): pkgutil strips the
+    bundle's directory name, leaving Payload/Contents/… directly — invisible
+    to find_app's *.app walk. The payload root is what lands in /Applications,
+    so it wins over any helper .apps nested inside it."""
+    for plist in root.rglob("Payload/Contents/Info.plist"):
+        return plist.parents[1]
+    return None
+
+
 def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     """One level of dmg-in-zip style nesting (guided search, spec §Extraction 3)."""
     for pattern, kind in (("*.dmg", "dmg"), ("*.pkg", "pkg"), ("*.zip", "zip")):
@@ -449,7 +459,13 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         root = expand(artifact, kind, workdir, mounts)
         wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
-        hit = find_app(root, wanted, token)
+        hit = None
+        if kind == "pkg":
+            bundle = payload_bundle(root)
+            if bundle is not None:
+                hit = (bundle, "payload_root")  # deterministic — no review needed
+        if hit is None:
+            hit = find_app(root, wanted, token)
 
         if hit is None:
             nested = find_nested_archive(root)

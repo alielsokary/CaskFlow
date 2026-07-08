@@ -240,6 +240,26 @@ def test_expand_bare_compressed_payload(tmp_path):
     assert list(root.rglob("payload.txt"))
 
 
+# --- payload-root bundles (Tailscale: pkgutil strips the .app dir name) -------
+
+from extract_icons import payload_bundle  # noqa: E402
+
+
+def test_payload_root_bundle_detected(tmp_path):
+    contents = tmp_path / "Distribution.pkg" / "Payload" / "Contents"
+    contents.mkdir(parents=True)
+    (contents / "Info.plist").write_bytes(b"<plist/>")
+    assert payload_bundle(tmp_path) == tmp_path / "Distribution.pkg" / "Payload"
+
+
+def test_payload_bundle_ignores_normal_pkg_layout(tmp_path):
+    # Ordinary payload: Payload/Applications/Foo.app — find_app's job, not ours.
+    app = tmp_path / "Foo.pkg" / "Payload" / "Applications" / "Foo.app" / "Contents"
+    app.mkdir(parents=True)
+    (app / "Info.plist").write_bytes(b"<plist/>")
+    assert payload_bundle(tmp_path) is None
+
+
 # --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --
 
 def _mk_app_with_resources(tmp_path, *files):
