@@ -16,6 +16,7 @@
   "ibm-cloud-cli": "https://github.com/IBM-Cloud.png?size=256",
   "macfuse": "https://github.com/macfuse.png?size=256",
   "microsoft-openjdk": "https://github.com/microsoft.png?size=256",
+  "miniforge": "https://github.com/conda-forge.png?size=256",
   "openzfs": "https://github.com/openzfs.png?size=256",
   "oracle-jdk": "https://github.com/oracle.png?size=256",
   "orka": "https://github.com/macstadium.png?size=256",
@@ -25,6 +26,7 @@
   "session-manager-plugin": "https://github.com/aws.png?size=256",
   "silicon-labs-vcp-driver": "https://github.com/SiliconLabs.png?size=256",
   "temurin": "https://github.com/adoptium.png?size=256",
+  "tuist": "https://github.com/tuist.png?size=256",
   "vagrant": "https://github.com/hashicorp.png?size=256",
   "vagrant-vmware-utility": "https://github.com/hashicorp.png?size=256",
   "zulu": "https://github.com/zulu-openjdk.png?size=256"
