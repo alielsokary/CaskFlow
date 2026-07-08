@@ -1020,10 +1020,10 @@
     "updated": "2026-07-08"
   },
   "mysql-shell": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/mysql.png (pkg ships CLI only; CDN blocks scripted downloads)",
     "attempts": 1,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "nessus": {
     "status": "no_icon",
@@ -1421,22 +1421,10 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "tableau": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-07-08"
-  },
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 1,
-    "updated": "2026-07-08"
-  },
-  "tableau-public": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 3,
     "updated": "2026-07-08"
   },
   "tableau-reader": {
