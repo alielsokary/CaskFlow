@@ -47,6 +47,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "android-ndk": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/android.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "android-platform-tools": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/android.png?size=256",
@@ -113,6 +119,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "aws-vault-binary": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/99designs.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "backblaze-downloader": {
     "status": "no_icon",
     "reason": "unsupported container: mac_restore_downloader",
@@ -138,10 +150,10 @@
     "updated": "2026-07-07"
   },
   "basictex": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/TeX-Live.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "bias-fx": {
     "status": "no_icon",
@@ -154,24 +166,6 @@
     "reason": "unsupported container: installer_mac",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "blackhole-16ch": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "blackhole-2ch": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
-    "attempts": 2,
-    "updated": "2026-07-06"
-  },
-  "blackhole-64ch": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
   },
   "box-drive": {
     "status": "no_icon",
@@ -190,6 +184,12 @@
     "reason": "asset-catalog-only app (no .icns)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "btp": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/SAP.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "caldigit-thunderbolt-charging": {
     "status": "no_icon",
@@ -305,6 +305,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "codeql": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/github.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "coderabbit": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/coderabbitai.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "codespace": {
     "status": "failed",
     "reason": "sha256 mismatch (got f6cd1c9a4b4a…)",
@@ -314,6 +326,18 @@
   "codex": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/openai.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "confluent-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/confluentinc.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "consul": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -330,10 +354,10 @@
     "updated": "2026-07-08"
   },
   "corretto": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/corretto.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "corretto@11": {
     "status": "no_icon",
@@ -394,6 +418,12 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "datadog-security-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/DataDog.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "dbeaver-enterprise": {
     "status": "failed",
@@ -491,6 +521,18 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "devin-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/CognitionAI.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "devtunnel": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/microsoft.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "digiexam": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
@@ -516,16 +558,16 @@
     "updated": "2026-07-07"
   },
   "dotnet-runtime": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/dotnet.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "dotnet-sdk": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/dotnet.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "dotnet-sdk@8": {
     "status": "no_icon",
@@ -544,6 +586,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "droid": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/Factory-AI.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "droidcam-obs": {
     "status": "no_icon",
@@ -574,6 +622,12 @@
     "reason": "unsupported container: download.php",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "dynamodb-local": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/aws.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "eclipse-cpp": {
     "status": "no_icon",
@@ -792,10 +846,10 @@
     "updated": "2026-07-07"
   },
   "finch": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/runfinch.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "firealpaca": {
     "status": "no_icon",
@@ -804,10 +858,10 @@
     "updated": "2026-07-07"
   },
   "flox": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/flox.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "flutter": {
     "status": "curated",
@@ -864,10 +918,10 @@
     "updated": "2026-07-07"
   },
   "gcc-arm-embedded": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/ARM-software.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "gcloud-cli": {
     "status": "curated",
@@ -878,6 +932,12 @@
   "git-credential-manager": {
     "status": "curated",
     "reason": "official vendor asset: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "gitkraken-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/gitkraken.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -923,6 +983,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "graalvm-jdk": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/graalvm.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337…)",
@@ -954,16 +1020,22 @@
     "updated": "2026-07-07"
   },
   "ibm-cloud-cli": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/IBM-Cloud.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "icab": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5d09f7e8ded7…)",
     "attempts": 2,
     "updated": "2026-07-07"
+  },
+  "ijhttp": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/JetBrains.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "ik-product-manager": {
     "status": "no_icon",
@@ -1000,6 +1072,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "inso": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/Kong.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "install-disk-creator": {
     "status": "failed",
@@ -1224,10 +1302,10 @@
     "updated": "2026-07-07"
   },
   "microsoft-openjdk": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/microsoft.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "microsoft-openjdk@11": {
     "status": "no_icon",
@@ -1355,6 +1433,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "notion-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/makenotion.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "novation-components": {
     "status": "no_icon",
     "reason": "unsupported container: osx_64",
@@ -1404,16 +1488,16 @@
     "updated": "2026-07-08"
   },
   "openzfs": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/openzfs.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "oracle-jdk": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/oracle.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "oracle-jdk@21": {
     "status": "no_icon",
@@ -1434,10 +1518,10 @@
     "updated": "2026-07-07"
   },
   "orka": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/macstadium.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "orka-vm-tools": {
     "status": "no_icon",
@@ -1446,22 +1530,28 @@
     "updated": "2026-07-07"
   },
   "orka3": {
-    "status": "failed",
-    "reason": "pkgutil failed: Could not open product archive: /var/folders/k8/j7r3p6cx43xdqhzy2rmp6tqr0000gn/T/icon-orka3-efik5opb/pkg/orka3.pkg/Payload/pkg/orka3.pkg",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/macstadium.png?size=256",
     "attempts": 3,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "osquery": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/osquery.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "output-factory": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "p4": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/perforce.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "pally": {
     "status": "failed",
@@ -1565,6 +1655,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "postman-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/postman.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "presonus-universal-control": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -1576,6 +1672,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "prince": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/yeslogic.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "profit": {
     "status": "failed",
@@ -1608,10 +1710,10 @@
     "updated": "2026-07-07"
   },
   "quarto": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/quarto-dev.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "querious": {
     "status": "failed",
@@ -1691,6 +1793,12 @@
     "attempts": 2,
     "updated": "2026-07-07"
   },
+  "segger": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/SEGGERMicro.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "segger-jlink": {
     "status": "failed",
     "reason": "sha256 mismatch (got c3649534b54e…)",
@@ -1716,10 +1824,16 @@
     "updated": "2026-07-07"
   },
   "session-manager-plugin": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/aws.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
+  },
+  "silicon-labs-vcp-driver": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/SiliconLabs.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "silnite": {
     "status": "no_icon",
@@ -1739,6 +1853,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "slack-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/slackapi.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "slicer": {
     "status": "no_icon",
     "reason": "unsupported container: download",
@@ -1750,6 +1870,12 @@
     "reason": "unsupported container: 5.3.0",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "sonarqube-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/SonarSource.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "sonic-lineup": {
     "status": "failed",
@@ -1768,6 +1894,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "soulver-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://raw.githubusercontent.com/alielsokary/CaskKit/icons/soulver.png",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "sound-siphon": {
     "status": "no_icon",
@@ -1799,11 +1931,23 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "sqlcl": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/oracle.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "sshfs-mac": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-06"
+  },
+  "steamcmd": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/ValveSoftware.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "steinberg-mediabay": {
     "status": "no_icon",
@@ -1920,10 +2064,10 @@
     "updated": "2026-07-07"
   },
   "temurin": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/adoptium.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "temurin@11": {
     "status": "no_icon",
@@ -2076,16 +2220,16 @@
     "updated": "2026-07-07"
   },
   "vagrant": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "vagrant-vmware-utility": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-08"
   },
   "valhalla-freq-echo": {
     "status": "no_icon",
@@ -2195,6 +2339,12 @@
     "attempts": 3,
     "updated": "2026-07-07"
   },
+  "wizcli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/wiz-sec.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "wrkspace": {
     "status": "no_icon",
     "reason": "unsupported container: darwin-arm64",
@@ -2218,6 +2368,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "yandex-cloud-cli": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/yandex-cloud.png?size=256",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "yandex-disk": {
     "status": "failed",
@@ -2244,10 +2400,10 @@
     "updated": "2026-07-07"
   },
   "zulu": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/zulu-openjdk.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-06"
+    "updated": "2026-07-08"
   },
   "zulu@11": {
     "status": "no_icon",
