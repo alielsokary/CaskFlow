@@ -59,6 +59,18 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "anka-build-cloud-controller": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "anka-build-cloud-registry": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got bfa10deba4a4…)",
@@ -71,6 +83,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "apple-hewlett-packard-printer-drivers": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "atok": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -80,8 +98,8 @@
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "autodesk-fusion": {
     "status": "review",
@@ -173,6 +191,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "captainplugins": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "chatty": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -191,6 +215,18 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "chordpotion": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "chronoagent": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
@@ -206,8 +242,8 @@
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "cmpxat": {
     "status": "no_icon",
@@ -311,6 +347,12 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "dbeaverteam": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 037f96b9be78…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "dbeaverultimate": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac134703e8cf…)",
@@ -398,8 +440,8 @@
   "digiexam": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "digital": {
     "status": "no_icon",
@@ -464,8 +506,8 @@
   "electrumsv": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "enclave": {
     "status": "no_icon",
@@ -482,8 +524,14 @@
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
+  },
+  "epoccam": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "eset-cyber-security": {
     "status": "no_icon",
@@ -502,6 +550,18 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "fabfilter-micro": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-one": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "fabfilter-pro-c": {
     "status": "no_icon",
@@ -551,7 +611,19 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "fabfilter-simplon": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "fabfilter-timeless": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "fabfilter-twin": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -662,14 +734,20 @@
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "halion-sonic": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "hy-rpe2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "ibm-cloud-cli": {
     "status": "curated",
@@ -680,8 +758,8 @@
   "icab": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5d09f7e8ded7…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "ijhttp": {
     "status": "no_icon",
@@ -743,17 +821,41 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "jetdrive-toolbox": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "jumpshare": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7d3d995d1549…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "kimi": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "konica-minolta-bizhub-c750i-driver": {
+    "status": "failed",
+    "reason": "download failed:                                                                 ^",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
+    "status": "failed",
+    "reason": "download failed:                                                                 ^",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "libifd-cyberjack": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "libndi": {
     "status": "no_icon",
@@ -794,14 +896,20 @@
   "lotus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
+  },
+  "ludwig": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
   },
   "m32-edit": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "macfuse": {
     "status": "curated",
@@ -833,6 +941,12 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "mailtrackerblocker": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -842,8 +956,8 @@
   "metashapepro": {
     "status": "failed",
     "reason": "sha256 mismatch (got 85b7e43dc87c…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "meteorologist": {
     "status": "failed",
@@ -854,8 +968,8 @@
   "micro-sniff": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "microsoft-office": {
     "status": "curated",
@@ -867,6 +981,12 @@
     "status": "curated",
     "reason": "official vendor asset: https://github.com/microsoft.png?size=256",
     "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "mimecast": {
+    "status": "failed",
+    "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
+    "attempts": 1,
     "updated": "2026-07-08"
   },
   "mini-vmac": {
@@ -956,8 +1076,8 @@
   "openframeworks": {
     "status": "failed",
     "reason": "sha256 mismatch (got e4a2dd6e7580…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "opensc-app": {
     "status": "curated",
@@ -1022,12 +1142,24 @@
   "pally": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "parallels-virtualization-sdk": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "pencil2d": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 9d65cb23326c…)",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
+  "photozoom-pro": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-08"
   },
@@ -1040,14 +1172,14 @@
   "podpisuj": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "postbox": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "postman-cli": {
     "status": "no_icon",
@@ -1061,16 +1193,40 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "prezi-video": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "prince": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "profit": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-07-08"
+  },
   "prolific-pl2303": {
     "status": "no_icon",
     "reason": "unsupported container: PL2303HXD_G_Mac-Driver_v2.2.11_20250314.pkg_-1.7z",
     "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "ptpwebcam": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "qidistudio": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
     "updated": "2026-07-08"
   },
   "qt-design-studio": {
@@ -1088,8 +1244,8 @@
   "raven-reader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "restic-browser": {
     "status": "no_icon",
@@ -1100,19 +1256,25 @@
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "roonbridge": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "salt": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "screaming-frog-log-file-analyser": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 911b40730adc…)",
+    "attempts": 1,
     "updated": "2026-07-08"
   },
   "seam-app": {
@@ -1123,9 +1285,9 @@
   },
   "securesafe": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-securesafe-9kpemt__/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-securesafe-q36cb9by/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "segger-jlink": {
     "status": "failed",
@@ -1171,15 +1333,21 @@
   },
   "sonic-lineup": {
     "status": "failed",
-    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6114 ms: Couldn't connect to server",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 4166 ms: Couldn't connect to server",
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
+  },
+  "soothe2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "soulver-cli": {
     "status": "no_icon",
@@ -1238,8 +1406,20 @@
   "supremo": {
     "status": "failed",
     "reason": "sha256 mismatch (got 479abc9cf2fa…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
+  },
+  "sync-my-l2p": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "syncroom": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-08"
   },
   "tableau": {
     "status": "failed",
@@ -1265,13 +1445,43 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "tal-drum": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "tau": {
     "status": "no_icon",
     "reason": "CLI profiling toolkit; only .app is the bundled Jumpshot viewer, not representative (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "tdr-kotelnikov": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "tdr-molotok": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "tdr-nova": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "tdr-prism": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "tdr-vos-slickeq": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -1289,19 +1499,31 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "tenable-nessus-agent": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "tentacle-sync-studio": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "toneprint": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "torguard": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "toshiba-color-mfp": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -1338,6 +1560,18 @@
     "updated": "2026-07-07"
   },
   "unity-ios-support-for-editor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "unity-webgl-support-for-editor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
+  "unity-windows-support-for-editor": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
@@ -1400,8 +1634,8 @@
   "visual-paradigm-ce": {
     "status": "failed",
     "reason": "sha256 mismatch (got f5d53318e60f…)",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "vnc-viewer": {
     "status": "failed",
@@ -1409,11 +1643,17 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "warsaw": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-07-08"
+  },
   "waveforms": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-07"
+    "attempts": 3,
+    "updated": "2026-07-08"
   },
   "wch-ch34x-usb-serial-driver": {
     "status": "review",
