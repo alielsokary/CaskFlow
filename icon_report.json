@@ -95,11 +95,17 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "avg-antivirus": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+  "avast-security": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/avast.png",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
+  },
+  "avg-antivirus": {
+    "status": "review",
+    "reason": "volume icon (drive/box shaped) -- genuine branding, re-shoot when vendor ships a cleaner asset",
+    "attempts": 0,
+    "updated": "2026-07-09"
   },
   "aws-vault-binary": {
     "status": "no_icon",
@@ -180,16 +186,16 @@
     "updated": "2026-07-08"
   },
   "chatty": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/chatty.png",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "chef-workstation": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/chef.png",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "chemdoodle": {
     "status": "failed",
@@ -432,10 +438,10 @@
     "updated": "2026-07-08"
   },
   "diskspace": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "dotnet-runtime": {
     "status": "curated",
@@ -514,12 +520,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "eset-cyber-security": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "excire-foto": {
     "status": "no_icon",
@@ -683,30 +683,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "google-earth-pro": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "gpg-suite": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-06"
-  },
-  "gpg-suite-no-mail": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "gpg-suite-pinentry": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "graalvm-jdk": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/graalvm.png?size=256",
@@ -725,11 +701,23 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "hma-vpn": {
+    "status": "review",
+    "reason": "volume icon (drive/box shaped) -- genuine branding, re-shoot when vendor ships a cleaner asset",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "hy-rpe2": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "ibkr": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/InteractiveBrokers.png",
+    "attempts": 0,
+    "updated": "2026-07-09"
   },
   "ibm-cloud-cli": {
     "status": "curated",
@@ -816,10 +804,10 @@
     "updated": "2026-07-08"
   },
   "kimi": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/MoonshotAI.png",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-09"
   },
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
@@ -841,15 +829,15 @@
   },
   "libndi": {
     "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "reason": "framework pkg, no icon; no vendor GitHub org for NDI",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "lidanglesensor": {
     "status": "no_icon",
-    "reason": "app ships no icon at all (default macOS icon)",
+    "reason": "app ships no icon at all (confirmed against fresh artifact)",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "linkandroid": {
     "status": "failed",
@@ -1049,12 +1037,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "omnissa-horizon-client": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "openframeworks": {
     "status": "failed",
     "reason": "sha256 mismatch (got e4a2dd6e7580…)",
@@ -1086,10 +1068,10 @@
     "updated": "2026-07-08"
   },
   "orka-vm-tools": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: reuse of orka.png (MacStadium)",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "orka3": {
     "status": "curated",
@@ -1362,10 +1344,10 @@
     "updated": "2026-07-08"
   },
   "sshfs-mac": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: reuse of macfuse.png (FUSE family)",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "steamcmd": {
     "status": "no_icon",
@@ -1451,12 +1433,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "teamviewer-host": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "temurin": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/adoptium.png?size=256",
@@ -1512,10 +1488,10 @@
     "updated": "2026-07-07"
   },
   "tuxera-ntfs": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/Tuxera.png",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-07-09"
   },
   "unity-ios-support-for-editor": {
     "status": "no_icon",
@@ -1668,9 +1644,9 @@
     "updated": "2026-07-08"
   },
   "zulufx": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "curated",
+    "reason": "official vendor asset: reuse of zulu.png (same Azul product family)",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   }
 }
