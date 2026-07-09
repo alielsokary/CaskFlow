@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
-"""
-Daily classification orchestrator.
-
-Computes the diff between the live Homebrew cask API and the existing
-categories.json, classifies new casks via an LLM, prunes deprecated/removed
-casks, and writes the updated categories.json plus a human-readable report.
-
-Idempotent — if there are no diffs, exits 0 with no file changes.
-Failure-isolated — per-cask LLM errors are logged and skipped, never fatal.
-
-Run:
-    LLM_PROVIDER=mock python scripts/classify_new_casks.py
-    LLM_PROVIDER=anthropic ANTHROPIC_API_KEY=... python scripts/classify_new_casks.py
-"""
+"""Daily classification orchestrator."""
+# Computes the diff between the live Homebrew cask API and the existing
+# categories.json, classifies new casks via an LLM, prunes deprecated/removed
+# casks, and writes the updated categories.json plus a human-readable report.
+#
+# Idempotent — if there are no diffs, exits 0 with no file changes.
+# Failure-isolated — per-cask LLM errors are logged and skipped, never fatal.
+#
+# Run:
+#     LLM_PROVIDER=mock python scripts/classify_new_casks.py
+#     LLM_PROVIDER=anthropic ANTHROPIC_API_KEY=... python scripts/classify_new_casks.py
 from __future__ import annotations
 
 import argparse
@@ -74,14 +71,11 @@ def load_homepage_cache() -> dict[str, dict]:
 # ---------------------------------------------------------------------------
 
 def is_main_cask(c: dict) -> bool:
-    """
-    Mirrors the filter in CaskCatalogViewModel.swift:137-142.
-
-    The app only ever shows main casks — not deprecated/disabled, not fonts,
-    not version-pinned variants (anything containing `@`). Classifying anything
-    outside that set would inflate categories.json with rows the app filters
-    out anyway.
-    """
+    """Mirror the filter in CaskCatalogViewModel.swift:137-142."""
+    # The app only ever shows main casks — not deprecated/disabled, not fonts,
+    # not version-pinned variants (anything containing `@`). Classifying anything
+    # outside that set would inflate categories.json with rows the app filters
+    # out anyway.
     token = c["token"]
     return not (
         c.get("deprecated")
@@ -92,16 +86,14 @@ def is_main_cask(c: dict) -> bool:
 
 
 def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, str]]:
-    """
-    Homebrew renames keep the old token in the new cask's `old_tokens` field.
-    Carry the existing classification over to the new token instead of pruning
-    it and paying an LLM call to re-classify the same app.
-
-    Mutates existing["tokenToCategory"] in place. Returns [(old, new), ...].
-    Renames onto an already-classified token just drop the old entry; renames
-    onto a non-main cask (deprecated etc.) are migrated here and then pruned by
-    compute_diff's no_longer_main pass.
-    """
+    """Carry the classification across a Homebrew token rename instead of re-classifying."""
+    # Homebrew renames keep the old token in the new cask's `old_tokens` field;
+    # migrating avoids pruning + paying an LLM call to re-classify the same app.
+    #
+    # Mutates existing["tokenToCategory"] in place. Returns [(old, new), ...].
+    # Renames onto an already-classified token just drop the old entry; renames
+    # onto a non-main cask (deprecated etc.) are migrated here and then pruned by
+    # compute_diff's no_longer_main pass.
     mapping = existing["tokenToCategory"]
     api_tokens = {c["token"] for c in api_casks}
     old_to_new = {
@@ -252,9 +244,11 @@ def write_report(
     deprecated_only = prune_tokens - removed_tokens
     lines: list[str] = [
         "# Daily classification update",
-        f"_Generated {date.today().isoformat()}_",
+        "",
+        f"Generated {date.today().isoformat()}",
         "",
         "## Summary",
+        "",
         f"- {len(classifications)} new casks classified",
         f"- {len(failures)} new casks **skipped** (LLM/validation failures, will retry tomorrow)",
         f"- {len(renames)} casks renamed in Homebrew (classification migrated, no LLM call)",
@@ -265,11 +259,13 @@ def write_report(
 
     if renames:
         lines.append("## Renamed (classification migrated)")
+        lines.append("")
         lines.extend(f"- `{old}` → `{new}`" for old, new in sorted(renames))
         lines.append("")
 
     if classifications:
         lines.append("## New classifications")
+        lines.append("")
         lines.append("| token | primary | secondary | confidence | reason |")
         lines.append("|---|---|---|---|---|")
         for token in sorted(classifications):
@@ -280,16 +276,19 @@ def write_report(
 
     if failures:
         lines.append("## Skipped (will retry next run)")
+        lines.append("")
         for token, err in sorted(failures):
             lines.append(f"- `{token}` — {err}")
         lines.append("")
 
     if removed_tokens:
         lines.append("## Removed from Homebrew (pruned)")
+        lines.append("")
         lines.extend(f"- `{t}`" for t in sorted(removed_tokens))
         lines.append("")
     if deprecated_only:
         lines.append("## Deprecated/disabled (pruned)")
+        lines.append("")
         lines.extend(f"- `{t}`" for t in sorted(deprecated_only))
         lines.append("")
 

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-"""
-CaskHub Category Browser & Recategorizer
-Run: python3 category_browser.py
-Opens at: http://localhost:8899
-"""
+"""CaskHub category browser and recategorizer."""
+# Run: python3 category_browser.py
+# Opens at: http://localhost:8899
 import json
 import http.server
 import webbrowser

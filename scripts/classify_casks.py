@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
-"""
-CaskHub Cask Classifier
-Generates categories.json by classifying Homebrew casks into 15 categories.
-
-Usage:
-    python3 Scripts/classify_casks.py
-
-Output:
-    CaskHub/Resources/categories.json
-"""
+"""Generate categories.json by classifying Homebrew casks into 15 categories."""
+# Usage:
+#     python3 Scripts/classify_casks.py
+#
+# Output:
+#     CaskHub/Resources/categories.json
 
 import json
 import urllib.request

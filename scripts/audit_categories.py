@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
-"""
-CaskHub Category Auditor
-=========================
-Uses homepage metadata + cask descriptions to verify every cask's category.
-Outputs a corrections JSON and a full audit report.
-
-Usage:
-    python3 audit_categories.py
-
-Requires:
-    ../homepage_metadata.json  (from fetch_homepages.py)
-    ../CaskHub/Resources/categories.json
-    ../filtered_casks.json
-"""
+"""Verify every cask's category using homepage metadata and cask descriptions."""
+# Outputs a corrections JSON and a full audit report.
+#
+# Usage:
+#     python3 audit_categories.py
+#
+# Requires:
+#     ../homepage_metadata.json  (from fetch_homepages.py)
+#     ../CaskHub/Resources/categories.json
+#     ../filtered_casks.json
 import json
 import os
 
