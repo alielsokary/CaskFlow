@@ -1,5 +1,7 @@
 # CaskKit
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b55c57a048ae4639b66e34973f122802)](https://app.codacy.com/gh/alielsokary/CaskKit?utm_source=github.com&utm_medium=referral&utm_content=alielsokary/CaskKit&utm_campaign=Badge_Grade)
+
 Classification data and pipeline for [CaskHub](https://github.com/alielsokary/CaskHub) — a macOS browser for [Homebrew Casks](https://formulae.brew.sh/cask/).
 
 This repo owns **what each cask is**. CaskHub owns **how casks are presented**.
