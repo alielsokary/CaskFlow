@@ -8,7 +8,8 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # macos: extract_icons relies on bsdtar/ditto/hdiutil — the pipeline's real runtime
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
 
