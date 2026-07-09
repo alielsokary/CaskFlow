@@ -34,12 +34,10 @@ class Classification:
 
 
 class ClassificationError(Exception):
-
     """Raised when an LLM response can't be parsed/validated. Caller skips the cask."""
 
 
 class LLMClient(ABC):
-
     """Abstract base. Subclasses override _generate(); base class handles prompt + validation."""
 
     def __init__(self, catalog: CategoryCatalog):
@@ -120,7 +118,6 @@ def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
 
 
 class AnthropicClient(LLMClient):
-
     """Default — Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
 
     MODEL = "claude-sonnet-5"
@@ -173,7 +170,6 @@ class AnthropicClient(LLMClient):
 
 
 class OpenAIClient(LLMClient):
-
     """GPT-4o-mini with response_format=json_object."""
 
     MODEL = "gpt-4o-mini"
@@ -202,7 +198,6 @@ class OpenAIClient(LLMClient):
 
 
 class GroqClient(LLMClient):
-
     """Groq free tier — Llama 3.3 70B with JSON-mode."""
 
     MODEL = "llama-3.3-70b-versatile"
@@ -231,7 +226,6 @@ class GroqClient(LLMClient):
 
 
 class CloudflareWorkersAIClient(LLMClient):
-
     """Cloudflare Workers AI free tier — Llama 3.1 via REST."""
 
     MODEL = "@cf/meta/llama-3.1-70b-instruct"
@@ -272,7 +266,6 @@ class CloudflareWorkersAIClient(LLMClient):
 
 
 class MockClient(LLMClient):
-
     """Deterministic stub for unit tests and dry-runs."""
 
     # Picks `primary` based on simple keyword rules so tests have predictable

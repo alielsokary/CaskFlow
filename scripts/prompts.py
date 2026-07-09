@@ -124,7 +124,6 @@ EVIDENCE_PRIORITY = (
 
 @dataclass(frozen=True)
 class CategoryCatalog:
-
     """Validated category list loaded from categories.json."""
 
     primary_ids: frozenset[str]   # categories valid as a primary
