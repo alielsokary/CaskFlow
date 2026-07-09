@@ -127,7 +127,7 @@ def test_installerish_names():
     assert installerish("Setup Assistant.app")
     assert installerish("Sparkle Updater.app")
     assert not installerish("Microsoft Word.app")
-    assert not installerish("Uninstaller Pro Cleaner.app") is False  # contains 'uninstaller'
+    assert installerish("Uninstaller Pro Cleaner.app")  # contains 'uninstaller'
 
 
 def test_token_matches_app():
