@@ -393,12 +393,12 @@ class Handler(http.server.BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"CaskHub Category Browser")
+    print("CaskHub Category Browser")
     print(f"  Categories: {len(cat_data['categories'])}")
     print(f"  Casks: {len(cat_data['tokenToCategory'])}")
     print(f"  Loaded cask details: {len(cask_list)}")
     print(f"\n  Opening http://localhost:{PORT} ...")
-    print(f"  Press Ctrl+C to stop\n")
+    print("  Press Ctrl+C to stop\n")
 
     server = http.server.HTTPServer(("127.0.0.1", PORT), Handler)
     threading.Timer(1, lambda: webbrowser.open(f"http://localhost:{PORT}")).start()
