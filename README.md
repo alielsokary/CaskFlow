@@ -4,9 +4,10 @@
 [![License](https://img.shields.io/github/license/alielsokary/CaskKit)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskKit)](https://github.com/alielsokary/CaskKit/releases/latest)
 
-Classification data and pipeline for [CaskHub](https://github.com/alielsokary/CaskHub) — a macOS browser for [Homebrew Casks](https://formulae.brew.sh/cask/).
+<img width="850" height="250" alt="caskkit-banner-dark" src="https://github.com/user-attachments/assets/4d98ff85-0998-4bb9-81b4-2c63323ccd86" />
 
-This repo owns **what each cask is**. CaskHub owns **how casks are presented**.
+
+Classification tool and brew data made for [CaskHub](https://github.com/alielsokary/CaskHub) — a GUI macOS application for [Homebrew Casks](https://formulae.brew.sh/cask/).
 
 ## What's in here
 
