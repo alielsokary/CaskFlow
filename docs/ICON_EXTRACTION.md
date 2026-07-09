@@ -1,9 +1,7 @@
 # Icon Extraction
 
 Extracts original app icons from Homebrew cask artifacts and publishes them to
-the orphan **`icons` branch**, served through jsDelivr's edge CDN. Full design
-rationale: `docs/specs/2026-07-05-icon-extraction-design.md`
-(hosting amended 2026-07-06 — see the spec's amendment section).
+the orphan **`icons` branch**, served through jsDelivr's edge CDN.
 
 ## Consumption
 
@@ -40,9 +38,8 @@ minutes on first request, cached aggressively thereafter.
 
 - **Everything lives on the `icons` branch, written only by the extractor**:
   the PNGs *and* `icon_report.json`, committed in the same pushes. Master
-  carries no report copy and there is no rolling report PR — two report-
-  clobber races (batch 2, batch 3) came from report state existing in more
-  than one place. Manual audits edit `icon_report.json` on the icons branch
+  carries no report copy — keeping report state in one place prevents
+  clobber races. Manual audits edit `icon_report.json` on the icons branch
   directly.
 - **Done** = the `.png` files on the branch (one `git ls-tree`, no pagination).
 - `icon_report.json` records:

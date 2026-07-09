@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Icon extraction pipeline — see docs/superpowers/specs/2026-07-05-icon-extraction-design.md.
+Icon extraction pipeline — see docs/ICON_EXTRACTION.md.
 
 Per cask: download the vendor artifact, expand it WITHOUT executing anything,
 locate the .app bundle, convert its .icns to a 256px PNG, and (optionally)
