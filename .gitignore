@@ -20,6 +20,7 @@ ENV/
 .mypy_cache/
 .ruff_cache/
 .coverage
+coverage.xml
 htmlcov/
 
 # IDE / OS
@@ -34,6 +35,9 @@ htmlcov/
 
 # Icon extraction local output
 icons_out/
+icons_rerun/
 
 # Regenerated per release by scripts/mine_added_dates.py
 added_dates.json
+docs/specs/
+.codacy/
