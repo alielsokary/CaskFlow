@@ -96,7 +96,7 @@ def main() -> int:
         "totalCasks": len(added),
         "tokenAddedDates": dict(sorted(added.items())),
     }
-    OUTPUT_PATH.write_text(json.dumps(payload, indent=2) + "\n")
+    OUTPUT_PATH.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH} ({len(added)} tokens)")
     return 0
 

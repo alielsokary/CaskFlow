@@ -34,7 +34,7 @@ CATEGORIES = [
 # data/classification_rules.json. Rule order matters and JSON preserves it.
 # Priority: manual overrides > token prefixes > homepage domains > keywords.
 _RULES_PATH = Path(__file__).resolve().parent.parent / "data" / "classification_rules.json"
-_RULES = json.loads(_RULES_PATH.read_text())
+_RULES = json.loads(_RULES_PATH.read_text(encoding="utf-8"))
 MANUAL_OVERRIDES: dict[str, str] = _RULES["manualOverrides"]
 TOKEN_PREFIX_RULES: dict[str, str] = _RULES["tokenPrefixRules"]
 HOMEPAGE_DOMAIN_RULES: dict[str, str] = _RULES["homepageDomainRules"]
