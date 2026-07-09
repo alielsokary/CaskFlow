@@ -34,6 +34,7 @@ htmlcov/
 
 # Icon extraction local output
 icons_out/
+icons_rerun/
 
 # Regenerated per release by scripts/mine_added_dates.py
 added_dates.json
