@@ -335,12 +335,6 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
-  "dbeaverlite": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 9821764efce6…)",
-    "attempts": 1,
-    "updated": "2026-07-08"
-  },
   "dbeaverteam": {
     "status": "failed",
     "reason": "sha256 mismatch (got 037f96b9be78…)",
@@ -644,12 +638,6 @@
   "folding-at-home": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
-  "foxitreader": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-07-08"
   },
