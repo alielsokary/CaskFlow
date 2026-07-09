@@ -64,7 +64,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans
 /* Sidebar */
 .sidebar { width: 260px; background: #16213e; border-right: 1px solid #2a2a4a; overflow-y: auto; flex-shrink: 0; }
 .sidebar h2 { padding: 16px; font-size: 15px; color: #8be9fd; border-bottom: 1px solid #2a2a4a; }
-.cat-btn { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 10px 16px; border: none; background: none; color: #ccc; font-size: 13px; cursor: pointer; text-align: left; border-bottom: 1px solid #1a1a2e; }
+.cat-btn { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 10px 16px; border: none;
+  background: none; color: #ccc; font-size: 13px; cursor: pointer; text-align: left; border-bottom: 1px solid #1a1a2e; }
 .cat-btn:hover { background: #1a2744; }
 .cat-btn.active { background: #0a3d62; color: #fff; font-weight: 600; }
 .cat-btn .count { font-size: 11px; color: #888; background: #2a2a4a; padding: 2px 8px; border-radius: 10px; }
@@ -74,7 +75,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans
 .toolbar { padding: 12px 20px; background: #16213e; border-bottom: 1px solid #2a2a4a; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .toolbar input { padding: 6px 12px; border-radius: 6px; border: 1px solid #2a2a4a; background: #1a1a2e; color: #e0e0e0; font-size: 13px; width: 250px; }
 .toolbar .info { font-size: 12px; color: #888; margin-left: auto; }
-.export-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid #50fa7b; background: transparent; color: #50fa7b; font-size: 12px; cursor: pointer; font-weight: 600; }
+.export-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid #50fa7b; background: transparent;
+  color: #50fa7b; font-size: 12px; cursor: pointer; font-weight: 600; }
 .export-btn:hover { background: #50fa7b22; }
 .changes-badge { background: #ff5555; color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
 
@@ -83,13 +85,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans
 .app-row { display: flex; align-items: center; padding: 10px 12px; border-radius: 8px; margin-bottom: 4px; gap: 12px; transition: background 0.15s; }
 .app-row:hover { background: #1e2d4a; }
 .app-row.changed { background: #2a1a3e; border-left: 3px solid #bd93f9; }
-.app-token { font-weight: 600; font-size: 13px; color: #f8f8f2; min-width: 200px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.app-token { font-weight: 600; font-size: 13px; color: #f8f8f2; min-width: 200px; max-width: 200px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .app-desc { flex: 1; font-size: 12px; color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .app-hp { flex-shrink: 0; }
 .app-hp a { font-size: 11px; color: #8be9fd; text-decoration: none; padding: 4px 8px; border: 1px solid #8be9fd33; border-radius: 4px; }
 .app-hp a:hover { background: #8be9fd22; }
 .app-cat-select { flex-shrink: 0; }
-.app-cat-select select { padding: 4px 8px; border-radius: 4px; border: 1px solid #2a2a4a; background: #1a1a2e; color: #e0e0e0; font-size: 11px; cursor: pointer; }
+.app-cat-select select { padding: 4px 8px; border-radius: 4px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #e0e0e0; font-size: 11px; cursor: pointer; }
 .app-cat-select select.changed { border-color: #bd93f9; color: #bd93f9; }
 .app-secondary { flex-shrink: 0; font-size: 10px; color: #666; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
@@ -98,13 +102,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans
 .modal-overlay.show { display: flex; }
 .modal { background: #16213e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 24px; width: 700px; max-height: 80vh; overflow-y: auto; }
 .modal h3 { color: #f8f8f2; margin-bottom: 12px; }
-.modal pre { background: #1a1a2e; padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto; white-space: pre-wrap; color: #50fa7b; max-height: 50vh; overflow-y: auto; }
+.modal pre { background: #1a1a2e; padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;
+  white-space: pre-wrap; color: #50fa7b; max-height: 50vh; overflow-y: auto; }
 .modal .actions { margin-top: 16px; display: flex; gap: 8px; }
 .modal button { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; }
 .modal .copy-btn { background: #50fa7b; color: #1a1a2e; font-weight: 600; }
 .modal .apply-btn { background: #bd93f9; color: #1a1a2e; font-weight: 600; }
 .modal .close-btn { background: #44475a; color: #f8f8f2; }
-.status-msg { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; border-radius: 8px; background: #50fa7b; color: #1a1a2e; font-weight: 600; font-size: 13px; display: none; z-index: 200; }
+.status-msg { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; border-radius: 8px; background: #50fa7b;
+  color: #1a1a2e; font-weight: 600; font-size: 13px; display: none; z-index: 200; }
 </style>
 </head>
 <body>
