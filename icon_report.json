@@ -828,8 +828,8 @@
     "updated": "2026-07-09"
   },
   "lidanglesensor": {
-    "status": "no_icon",
-    "reason": "app ships no icon at all (confirmed against fresh artifact)",
+    "status": "curated",
+    "reason": "project artwork (hand-supplied) -- the app bundle itself ships no icon",
     "attempts": 0,
     "updated": "2026-07-09"
   },
