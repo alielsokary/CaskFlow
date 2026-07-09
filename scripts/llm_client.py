@@ -110,16 +110,13 @@ class LLMClient(ABC):
 
 def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
     """Exponential backoff with jitter for transient provider errors."""
-    last = None
     for i in range(attempts):
         try:
             return fn()
-        except Exception as e:  # network / rate-limit / 5xx
-            last = e
+        except Exception:  # network / rate-limit / 5xx
             if i == attempts - 1:
                 raise
             time.sleep(base_delay * (2 ** i) + random.uniform(0, 0.5))
-    raise last  # pragma: no cover
 
 
 class AnthropicClient(LLMClient):

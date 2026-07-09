@@ -80,7 +80,7 @@ def main():
 
         with open(CATEGORIES_PATH, "w") as f:
             json.dump(cat_data, f, indent=2, ensure_ascii=False)
-        print(f"Saved updated categories.json")
+        print("Saved updated categories.json")
 
 
 if __name__ == "__main__":
