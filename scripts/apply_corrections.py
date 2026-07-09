@@ -48,7 +48,7 @@ def _save(cat_data: dict) -> None:
     print(f"Backup saved to {backup_path}")
 
     cat_data["generatedDate"] = date.today().isoformat()
-    with open(CATEGORIES_PATH, "w") as f:
+    with open(CATEGORIES_PATH, "w", encoding="utf-8") as f:
         json.dump(cat_data, f, indent=2, ensure_ascii=False)
     print("Saved updated categories.json")
 
@@ -57,9 +57,9 @@ def main():
     dry_run = "--dry-run" in sys.argv
     apply_all = "--all" in sys.argv
 
-    with open(CATEGORIES_PATH) as f:
+    with open(CATEGORIES_PATH, encoding="utf-8") as f:
         cat_data = json.load(f)
-    with open(CORRECTIONS_PATH) as f:
+    with open(CORRECTIONS_PATH, encoding="utf-8") as f:
         corrections = json.load(f)
 
     if not apply_all:

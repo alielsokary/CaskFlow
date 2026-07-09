@@ -120,7 +120,7 @@ def _write_output(token_to_category):
                               "CaskHub", "Resources")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "categories.json")
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, sort_keys=False)
     print(f"\nWritten to: {output_path}")
 

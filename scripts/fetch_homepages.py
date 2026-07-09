@@ -108,7 +108,7 @@ def _load_existing() -> dict:
     """Resume support: previously fetched results, keyed by token."""
     existing = {}
     if os.path.exists(OUTPUT_PATH):
-        with open(OUTPUT_PATH) as f:
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
             for item in json.load(f):
                 existing[item["token"]] = item
         print(f"Found {len(existing)} existing results (will skip)")
@@ -138,7 +138,7 @@ def _report_progress(done: int, total: int, errors: int, start_time: float, resu
 
 
 def main():
-    with open(CASKS_PATH) as f:
+    with open(CASKS_PATH, encoding="utf-8") as f:
         casks = json.load(f)
     print(f"Loaded {len(casks)} casks from {CASKS_PATH}")
 
@@ -169,7 +169,7 @@ def main():
 
 def _save(results):
     out = sorted(results.values(), key=lambda x: x["token"])
-    with open(OUTPUT_PATH, "w") as f:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
 

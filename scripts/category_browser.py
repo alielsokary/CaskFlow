@@ -13,7 +13,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 CATEGORIES_PATH = os.path.join(BASE, "CaskHub", "Resources", "categories.json")
 
 # Load data once at startup
-with open(CATEGORIES_PATH) as f:
+with open(CATEGORIES_PATH, encoding="utf-8") as f:
     cat_data = json.load(f)
 
 # Try to load filtered_casks.json from various locations
@@ -28,7 +28,7 @@ for p in [
 
 cask_list = []
 if casks_path:
-    with open(casks_path) as f:
+    with open(casks_path, encoding="utf-8") as f:
         cask_list = json.load(f)
 
 cask_map = {c["token"]: c for c in cask_list}
@@ -375,7 +375,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                         else:
                             mapping["primary"] = new_primary
 
-                with open(CATEGORIES_PATH, "w") as f:
+                with open(CATEGORIES_PATH, "w", encoding="utf-8") as f:
                     json.dump(cat_data, f, indent=2, ensure_ascii=False)
 
                 self.send_response(200)

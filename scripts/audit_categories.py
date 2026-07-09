@@ -188,14 +188,14 @@ CATEGORY_SIGNALS = {
 
 
 def load_data():
-    with open(CATEGORIES_PATH) as f:
+    with open(CATEGORIES_PATH, encoding="utf-8") as f:
         cat_data = json.load(f)
-    with open(CASKS_PATH) as f:
+    with open(CASKS_PATH, encoding="utf-8") as f:
         casks = json.load(f)
 
     metadata = {}
     if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH) as f:
+        with open(METADATA_PATH, encoding="utf-8") as f:
             for item in json.load(f):
                 metadata[item["token"]] = item
 
@@ -248,17 +248,18 @@ def _audit_one(token, mapping, cask_map, metadata):
     homepage = cask.get("homepage", "")
 
     scores = {cat_id: score_category(text, homepage, cat_id) for cat_id in CATEGORY_SIGNALS}
-    best_cat = max(scores, key=scores.get)
-    best_score = scores[best_cat]
-    current_score = scores.get(current_cat, 0)
+    best_cat = max(scores, key=lambda k: scores[k])
 
     # Flag only if another category scores significantly higher
-    if best_cat == current_cat or best_score <= current_score + 10:
+    if best_cat == current_cat or scores[best_cat] <= scores.get(current_cat, 0) + 10:
         return None
-    return _correction_entry(token, current_cat, best_cat, current_score, best_score, cask, meta)
+    return _correction_entry(token, current_cat, scores, cask, meta)
 
 
-def _correction_entry(token, current_cat, best_cat, current_score, best_score, cask, meta):
+def _correction_entry(token, current_cat, scores, cask, meta):
+    best_cat = max(scores, key=lambda k: scores[k])
+    best_score = scores[best_cat]
+    current_score = scores.get(current_cat, 0)
     has_meta = bool(meta.get("title") or meta.get("meta_desc"))
     return {
         "token": token,
@@ -298,7 +299,7 @@ def _distribution_lines(tc, categories):
         cat = mapping["primary"] if isinstance(mapping, dict) else mapping
         dist[cat] = dist.get(cat, 0) + 1
     lines = ["## Current Distribution", "", "| Category | Count |", "|----------|-------|"]
-    for cat_id in sorted(dist, key=dist.get, reverse=True):
+    for cat_id in sorted(dist, key=lambda k: dist[k], reverse=True):
         lines.append(f"| {_display(categories, cat_id)} | {dist[cat_id]} |")
     lines.append("")
     return lines
@@ -372,13 +373,13 @@ def main():
 
     # Save corrections
     all_corrections = confident + uncertain
-    with open(CORRECTIONS_PATH, "w") as f:
+    with open(CORRECTIONS_PATH, "w", encoding="utf-8") as f:
         json.dump(all_corrections, f, indent=2, ensure_ascii=False)
     print(f"\nSaved corrections to {CORRECTIONS_PATH}")
 
     # Generate report
     report = generate_report(confident, uncertain, cat_data)
-    with open(REPORT_PATH, "w") as f:
+    with open(REPORT_PATH, "w", encoding="utf-8") as f:
         f.write(report)
     print(f"Saved report to {REPORT_PATH}")
 

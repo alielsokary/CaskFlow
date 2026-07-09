@@ -20,7 +20,7 @@ class ExtractError(Exception):
 def run(cmd: list[str], input_text: str | None = None, **kw) -> subprocess.CompletedProcess:
     if input_text is None:
         kw["stdin"] = subprocess.DEVNULL
-    return subprocess.run(cmd, capture_output=True, text=True, input=input_text, **kw)
+    return subprocess.run(cmd, capture_output=True, text=True, input=input_text, check=False, **kw)
 
 
 def _git(cwd: Path, *args: str) -> subprocess.CompletedProcess:
