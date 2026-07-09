@@ -785,12 +785,6 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
-  "jabra-direct": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "jetdrive-toolbox": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1104,10 +1098,10 @@
     "updated": "2026-07-08"
   },
   "parallels-virtualization-sdk": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
+    "status": "review",
+    "reason": "volume icon (drive shaped) -- genuine Parallels branding",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "pencil2d": {
     "status": "failed",
