@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-06",
-  "totalCasks": 3786,
+  "generatedDate": "2026-07-08",
+  "totalCasks": 3794,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -6506,6 +6506,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "itermcompanion": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "itk-snap": {
       "primary": "designGraphics",
       "secondary": []
@@ -6513,6 +6519,12 @@
     "itsycal": {
       "primary": "menuBar",
       "secondary": []
+    },
+    "itsypad": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "itsytv": {
       "primary": "menuBar",
@@ -6891,6 +6903,13 @@
     "keeper-password-manager": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "keeperdb": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
     },
     "keepingyouawake": {
       "primary": "utilities",
@@ -7742,6 +7761,12 @@
     "mac-mouse-fix": {
       "primary": "utilities",
       "secondary": []
+    },
+    "mac-sai": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "macai": {
       "primary": "productivity",
@@ -10113,6 +10138,12 @@
       "primary": "games",
       "secondary": []
     },
+    "otty": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "outerbase-studio": {
       "primary": "developerTools",
       "secondary": []
@@ -11557,6 +11588,12 @@
         "ai"
       ]
     },
+    "raycast-glaze": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "rayon": {
       "primary": "designGraphics",
       "secondary": [
@@ -12130,6 +12167,12 @@
     "rwts-pdfwriter": {
       "primary": "productivity",
       "secondary": []
+    },
+    "sabaki": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
     },
     "sabnzbd": {
       "primary": "utilities",
@@ -14392,6 +14435,12 @@
     "toneprint": {
       "primary": "utilities",
       "secondary": []
+    },
+    "toolhive-studio": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "toolreleases": {
       "primary": "utilities",

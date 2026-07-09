@@ -29316,6 +29316,11 @@
     "og_desc": ""
   },
   {
+    "token": "itermcompanion",
+    "homepage": "https://iterm2.com/companion-plugin.html",
+    "error": "HTTP 429"
+  },
+  {
     "token": "itk-snap",
     "homepage": "https://www.itksnap.org/pmwiki/pmwiki.php",
     "title": "ITK-SNAP Home",
@@ -29335,6 +29340,13 @@
     "title": "Mowglii - Itsycal for Mac",
     "meta_desc": "Mowglii makes apps for macOS.",
     "og_desc": ""
+  },
+  {
+    "token": "itsypad",
+    "homepage": "https://github.com/nickustinov/itsypad-macos",
+    "title": "GitHub - nickustinov/itsypad-macos: A tiny, fast scratchpad and clipboard manager for Mac · GitHub",
+    "meta_desc": "A tiny, fast scratchpad and clipboard manager for Mac - nickustinov/itsypad-macos",
+    "og_desc": "A tiny, fast scratchpad and clipboard manager for Mac - nickustinov/itsypad-macos"
   },
   {
     "token": "itsytv",
@@ -30032,6 +30044,13 @@
     "title": "Keeper Security | Identity Security for Humans, Machines and AI Agents",
     "meta_desc": "Keeper is the unified control plane for privileged access, secrets, remote connections, endpoints and databases in a single zero-trust platform.",
     "og_desc": "Keeper is the unified control plane for privileged access, secrets, remote connections, endpoints and databases in a single zero-trust platform."
+  },
+  {
+    "token": "keeperdb",
+    "homepage": "https://www.keepersecurity.com/keeperdb/",
+    "title": "Secure Database Access with KeeperDB",
+    "meta_desc": "Secure database access with KeeperDB, an AI-powered client for database management, activity monitoring and vault-managed credentials.",
+    "og_desc": "Secure database access with KeeperDB, an AI-powered client for database management, activity monitoring and vault-managed credentials."
   },
   {
     "token": "keepingyouawake",
@@ -31508,6 +31527,13 @@
     "title": "Mac Mouse Fix",
     "meta_desc": "Make Your $10 Mouse Better Than an Apple Trackpad",
     "og_desc": "Make Your $10 Mouse Better Than an Apple Trackpad"
+  },
+  {
+    "token": "mac-sai",
+    "homepage": "https://github.com/iliyami/MacSai",
+    "title": "GitHub - iliyami/MacSai: Mac Sai: the open-source Mac cleaner, optimizer, and malware scanner. A free, Apple-notarized alternative to CleanMyMac, built with Swift 6 and SwiftUI. · GitHub",
+    "meta_desc": "Mac Sai: the open-source Mac cleaner, optimizer, and malware scanner. A free, Apple-notarized alternative to CleanMyMac, built with Swift 6 and SwiftUI. - iliyami/MacSai",
+    "og_desc": "Mac Sai: the open-source Mac cleaner, optimizer, and malware scanner. A free, Apple-notarized alternative to CleanMyMac, built with Swift 6 and SwiftUI. - iliyami/MacSai"
   },
   {
     "token": "macai",
@@ -35922,6 +35948,13 @@
     "og_desc": "Save Earth from the clutches of The Giant Brain from Planet X!"
   },
   {
+    "token": "otty",
+    "homepage": "https://otty.sh/",
+    "title": "Otty — A native, beautiful terminal app",
+    "meta_desc": "Otty is a native, beautiful terminal app. Designed for anyone who cares about the feel of every keystroke.",
+    "og_desc": "Otty is a blazing-fast, GPU-accelerated terminal emulator."
+  },
+  {
     "token": "outerbase-studio",
     "homepage": "https://github.com/outerbase/studio-desktop",
     "title": "GitHub - outerbase/studio-desktop: Outerbase Studio Desktop is a lightweight Electron wrapper for the Outerbase Studio web version. · GitHub",
@@ -38402,6 +38435,13 @@
     "title": "Raycast - Your shortcut to everything",
     "meta_desc": "A collection of powerful productivity tools all within an extendable launcher.",
     "og_desc": "A collection of powerful productivity tools all within an extendable launcher."
+  },
+  {
+    "token": "raycast-glaze",
+    "homepage": "https://www.glaze.app/",
+    "title": "Glaze by Raycast. Desktop apps, reimagined by you.",
+    "meta_desc": "Create software for you and your team. Lives on your Mac, connects to your files, tools and hardware.",
+    "og_desc": "Create software for you and your team. Lives on your Mac, connects to your files, tools and hardware."
   },
   {
     "token": "rayon",
@@ -43720,6 +43760,13 @@
     "title": "Music Tribe - Maintenance page",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "toolhive-studio",
+    "homepage": "https://github.com/stacklok/toolhive-studio",
+    "title": "GitHub - stacklok/toolhive-studio: ToolHive is an application that allows you to install, manage and run MCP servers and connect them to AI agents · GitHub",
+    "meta_desc": "ToolHive is an application that allows you to install, manage and run MCP servers and connect them to AI agents - stacklok/toolhive-studio",
+    "og_desc": "ToolHive is an application that allows you to install, manage and run MCP servers and connect them to AI agents - stacklok/toolhive-studio"
   },
   {
     "token": "toolreleases",
