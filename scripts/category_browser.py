@@ -8,7 +8,6 @@ import json
 import http.server
 import webbrowser
 import os
-import urllib.parse
 import threading
 
 PORT = 8899
@@ -389,7 +388,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
 
-    def log_message(self, format, *args):
+    def log_message(self, format, *args):  # pylint: disable=redefined-builtin
         pass  # Suppress request logs
 
 

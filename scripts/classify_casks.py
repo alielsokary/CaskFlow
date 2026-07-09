@@ -13,7 +13,6 @@ Output:
 import json
 import urllib.request
 import os
-import re
 from datetime import date
 
 # ─────────────────────────────────────────────────
@@ -75,7 +74,6 @@ MANUAL_OVERRIDES = {
     "mongodb-compass": "developerTools",
     "redis-insight": "developerTools",
     "cyberduck": "developerTools",
-    "transmit": "developerTools",
     "filezilla": "developerTools",
     "iterm2": "developerTools",
     "warp": "developerTools",
@@ -118,7 +116,6 @@ MANUAL_OVERRIDES = {
     "reveal": "developerTools",
     "figma": "designGraphics",
     "notion": "productivity",
-    "raycast": "productivity",
 
     # Browsers
     "firefox": "browsers",
@@ -235,7 +232,6 @@ MANUAL_OVERRIDES = {
     "linear-linear": "productivity",
     "height": "productivity",
     "capacitor": "productivity",
-    "numi": "productivity",
     "soulver": "productivity",
     "mela": "productivity",
     "anytype": "productivity",
@@ -256,12 +252,10 @@ MANUAL_OVERRIDES = {
     "grandperspective": "utilities",
     "disk-drill": "utilities",
     "balenaetcher": "utilities",
-    "suspicious-package": "utilities",
     "apparency": "utilities",
     "pearcleaner": "utilities",
     "sensei": "utilities",
     "monitorcontrol": "utilities",
-    "coconutbattery": "utilities",
     "amphetamine": "utilities",
     "caffeine": "utilities",
     "keepingyouawake": "utilities",
@@ -274,8 +268,6 @@ MANUAL_OVERRIDES = {
     "shottr": "utilities",
     "cleanshot": "utilities",
     "snagit": "utilities",
-    "handbrake": "utilities",
-    "localsend": "utilities",
     "alt-tab": "utilities",
     "maccy": "utilities",
     "flycut": "utilities",
@@ -285,14 +277,11 @@ MANUAL_OVERRIDES = {
     "appshelf": "utilities",
     "brew-services-menubar": "utilities",
     "homebrew-cask": "utilities",
-    "cakebrew": "utilities",
     "android-file-transfer": "utilities",
     "openinterminal": "utilities",
     "easy-move-plus-resize": "utilities",
-    "hot": "utilities",
     "latest": "utilities",
     "suspicious-package": "utilities",
-    "topnotch": "utilities",
     "swift-quit": "utilities",
     "logi-options-plus": "utilities",
     "logitech-g-hub": "utilities",
@@ -427,7 +416,6 @@ MANUAL_OVERRIDES = {
     "lunar-client": "games",
     "curseforge": "games",
     "overwolf": "games",
-    "parsec": "games",
     "moonlight": "games",
     "nvidia-geforce-now": "games",
     "xbox": "games",

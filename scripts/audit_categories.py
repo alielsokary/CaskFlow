@@ -15,8 +15,6 @@ Requires:
 """
 import json
 import os
-import re
-import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
@@ -248,7 +246,6 @@ def audit_all(cat_data, casks, metadata):
     """Audit every cask and return suspected miscategorizations."""
     tc = cat_data["tokenToCategory"]
     cask_map = {c["token"]: c for c in casks}
-    corrections = []
     confident = []
     uncertain = []
 

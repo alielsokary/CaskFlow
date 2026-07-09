@@ -147,7 +147,7 @@ def test_find_app_token_match_beats_shallow_installer(tmp_path):
 
 def test_find_app_installer_only_is_parked(tmp_path):
     _mk_app(tmp_path, "Install TeamViewer.app")
-    app, sel = find_app(tmp_path, [], token="teamviewer")
+    _, sel = find_app(tmp_path, [], token="teamviewer")
     assert sel == "installer_only"
 
 
