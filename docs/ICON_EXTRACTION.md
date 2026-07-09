@@ -2,7 +2,7 @@
 
 Extracts original app icons from Homebrew cask artifacts and publishes them to
 the orphan **`icons` branch**, served through jsDelivr's edge CDN. Full design
-rationale: `docs/superpowers/specs/2026-07-05-icon-extraction-design.md`
+rationale: `docs/specs/2026-07-05-icon-extraction-design.md`
 (hosting amended 2026-07-06 — see the spec's amendment section).
 
 ## Consumption
