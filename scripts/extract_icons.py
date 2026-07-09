@@ -254,7 +254,7 @@ def _expand_compressed_stream(artifact: Path, workdir: Path, mounts: list[Path],
         raise ExtractError(f"tar failed: {tar_stderr.strip()[:200]}")
     inner = workdir / f"{artifact.name}.inner"
     with inner.open("wb") as fh:
-        dec = subprocess.run([tool, "-dc", str(artifact)], stdout=fh,
+        dec = subprocess.run([tool, "-dc", str(artifact)], stdout=fh, check=False,
                              stderr=subprocess.PIPE, stdin=subprocess.DEVNULL)
     if dec.returncode != 0:
         raise ExtractError(f"{tool} -dc failed: {dec.stderr.decode()[:200]}")
@@ -473,7 +473,7 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
             return "no_icon", f"unsupported container: {artifact.name}"
 
         root = expand(artifact, kind, workdir, mounts)
-        hit = _locate_app(cask, root, kind, token, workdir, mounts)
+        hit = _locate_app(cask, root, kind, workdir, mounts)
         if hit is None:
             # Deterministic outcome (e.g. suite/pkg of CLI binaries) — park it
             # rather than burning retries. --tokens bypasses parked entries.
@@ -489,9 +489,10 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
         shutil.rmtree(workdir, ignore_errors=True)
 
 
-def _locate_app(cask: dict, root: Path, kind: str, token: str,
+def _locate_app(cask: dict, root: Path, kind: str,
                 workdir: Path, mounts: list[Path]) -> tuple[Path, str] | None:
     """Find the icon-bearing .app: payload root, direct walk, then nested archive."""
+    token = cask["token"]
     wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
     hit = None
     if kind == "pkg":
