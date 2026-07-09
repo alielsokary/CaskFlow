@@ -12,7 +12,6 @@ Two ways to use it:
 """
 import json
 import os
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import urlopen, Request

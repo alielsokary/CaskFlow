@@ -19,7 +19,6 @@ import random
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any
 
 from prompts import (
     CategoryCatalog,

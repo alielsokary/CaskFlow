@@ -53,7 +53,7 @@ jobs:
 
       - name: Open or update rolling PR
         if: env.DRY_RUN != 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
         with:
           commit-message: "chore(categories): daily classification update"
           title: "Daily cask classification update"

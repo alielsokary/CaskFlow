@@ -1,5 +1,5 @@
 # Core
-requests>=2.32,<3
+requests>=2.33,<3
 beautifulsoup4>=4.12,<5
 
 # LLM providers (only the configured one is actually used at runtime)
@@ -10,4 +10,4 @@ groq>=0.13,<1
 # Cloudflare Workers AI uses requests directly — no SDK needed
 
 # Dev / test
-pytest>=8.0,<9
+pytest>=9.0.3,<10
