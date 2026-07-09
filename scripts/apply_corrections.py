@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
-"""
-CaskHub Correction Applier
-============================
-Applies verified corrections from category_corrections.json to categories.json.
-Only applies HIGH-confidence corrections by default.
-
-Usage:
-    python3 apply_corrections.py              # Apply high-confidence only
-    python3 apply_corrections.py --all        # Apply all corrections
-    python3 apply_corrections.py --dry-run    # Preview without saving
-"""
+"""Apply verified corrections from category_corrections.json to categories.json."""
+# Only applies HIGH-confidence corrections by default.
+#
+# Usage:
+#     python3 apply_corrections.py              # Apply high-confidence only
+#     python3 apply_corrections.py --all        # Apply all corrections
+#     python3 apply_corrections.py --dry-run    # Preview without saving
 import json
 import os
 import sys
 import shutil
-from datetime import datetime
+from datetime import date, datetime
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
@@ -71,12 +67,12 @@ def main():
 
     if not dry_run and applied > 0:
         # Backup first
-        backup_path = CATEGORIES_PATH + f".backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        backup_path = CATEGORIES_PATH + f".backup_{datetime.now().isoformat(timespec='seconds').replace(':', '-')}"
         shutil.copy2(CATEGORIES_PATH, backup_path)
         print(f"Backup saved to {backup_path}")
 
         # Update date
-        cat_data["generatedDate"] = datetime.now().strftime("%Y-%m-%d")
+        cat_data["generatedDate"] = date.today().isoformat()
 
         with open(CATEGORIES_PATH, "w") as f:
             json.dump(cat_data, f, indent=2, ensure_ascii=False)

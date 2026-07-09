@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""
-CaskHub Homepage Fetcher
-========================
-Fetches homepage metadata (title, meta description, og:description) for casks.
-
-Two ways to use it:
-1. As a library — import fetch_one(token, url) and call per cask. The daily
-   pipeline (classify_new_casks.py) does this against the delta set.
-2. As a CLI — `python scripts/fetch_homepages.py` re-scrapes everything in
-   data/filtered_casks.json. Used for full audits, not the daily pipeline.
-"""
+"""Fetch homepage metadata (title, meta description, og:description) for casks."""
+# Two ways to use it:
+# 1. As a library — import fetch_one(token, url) and call per cask. The daily
+#    pipeline (classify_new_casks.py) does this against the delta set.
+# 2. As a CLI — `python scripts/fetch_homepages.py` re-scrapes everything in
+#    data/filtered_casks.json. Used for full audits, not the daily pipeline.
+import contextlib
 import json
 import os
 import time
@@ -32,8 +28,11 @@ MAX_BODY = 200_000  # 200KB max per page
 
 
 class MetaExtractor(HTMLParser):
+
     """Extract title, meta description, and og:description from HTML."""
+
     def __init__(self):
+        """Initialize empty parser state."""
         super().__init__()
         self.title = ""
         self.meta_desc = ""
@@ -81,15 +80,15 @@ def fetch_one(token, url):
     ctx.verify_mode = ssl.CERT_NONE
 
     try:
+        if not url.startswith(("http://", "https://")):
+            raise ValueError(f"refusing non-HTTP homepage URL: {url}")
         req = Request(url, headers=headers)
         with urlopen(req, timeout=TIMEOUT, context=ctx) as resp:
             body = resp.read(MAX_BODY).decode("utf-8", errors="replace")
 
         extractor = MetaExtractor()
-        try:
+        with contextlib.suppress(Exception):  # scraped HTML can be arbitrarily broken
             extractor.feed(body)
-        except Exception:
-            pass
 
         return {
             "token": token,

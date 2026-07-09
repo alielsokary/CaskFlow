@@ -1,16 +1,13 @@
-"""
-Provider-agnostic LLM abstraction for cask classification.
-
-LLMClient is an abstract base class. Concrete implementations are selected at
-runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
-(from prompts.py) and requests strict JSON output via the provider's structured-
-output mode where available; the base class then validates the result against
-the active CategoryCatalog.
-
-Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
-raise ClassificationError, which the orchestrator logs and skips — the cask
-remains unmapped until the next pipeline run.
-"""
+"""Provider-agnostic LLM abstraction for cask classification."""
+# LLMClient is an abstract base class. Concrete implementations are selected at
+# runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
+# (from prompts.py) and requests strict JSON output via the provider's structured-
+# output mode where available; the base class then validates the result against
+# the active CategoryCatalog.
+#
+# Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
+# raise ClassificationError, which the orchestrator logs and skips — the cask
+# remains unmapped until the next pipeline run.
 from __future__ import annotations
 
 import json
@@ -37,13 +34,16 @@ class Classification:
 
 
 class ClassificationError(Exception):
+
     """Raised when an LLM response can't be parsed/validated. Caller skips the cask."""
 
 
 class LLMClient(ABC):
+
     """Abstract base. Subclasses override _generate(); base class handles prompt + validation."""
 
     def __init__(self, catalog: CategoryCatalog):
+        """Bind the catalog and precompute the system prompt."""
         self.catalog = catalog
         self.system_prompt = build_system_prompt(catalog)
 
@@ -116,15 +116,17 @@ def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
         except Exception:  # network / rate-limit / 5xx
             if i == attempts - 1:
                 raise
-            time.sleep(base_delay * (2 ** i) + random.uniform(0, 0.5))
+            time.sleep(base_delay * (2 ** i) + random.SystemRandom().uniform(0, 0.5))
 
 
 class AnthropicClient(LLMClient):
+
     """Default — Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
 
     MODEL = "claude-sonnet-5"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the anthropic SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         import anthropic  # lazy import
 
@@ -171,11 +173,13 @@ class AnthropicClient(LLMClient):
 
 
 class OpenAIClient(LLMClient):
+
     """GPT-4o-mini with response_format=json_object."""
 
     MODEL = "gpt-4o-mini"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the OpenAI SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         from openai import OpenAI  # lazy import
 
@@ -198,11 +202,13 @@ class OpenAIClient(LLMClient):
 
 
 class GroqClient(LLMClient):
+
     """Groq free tier — Llama 3.3 70B with JSON-mode."""
 
     MODEL = "llama-3.3-70b-versatile"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the Groq SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         from groq import Groq  # lazy import
 
@@ -225,11 +231,13 @@ class GroqClient(LLMClient):
 
 
 class CloudflareWorkersAIClient(LLMClient):
+
     """Cloudflare Workers AI free tier — Llama 3.1 via REST."""
 
     MODEL = "@cf/meta/llama-3.1-70b-instruct"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Read Cloudflare credentials from the environment. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         import requests  # lazy import
 
@@ -264,12 +272,11 @@ class CloudflareWorkersAIClient(LLMClient):
 
 
 class MockClient(LLMClient):
-    """
-    Deterministic stub for unit tests and dry-runs.
 
-    Picks `primary` based on simple keyword rules so tests have predictable output
-    without burning API credits. Always returns confidence=0.5.
-    """
+    """Deterministic stub for unit tests and dry-runs."""
+
+    # Picks `primary` based on simple keyword rules so tests have predictable
+    # output without burning API credits. Always returns confidence=0.5.
 
     KEYWORDS: dict[str, list[str]] = {
         "developerTools": ["ide", "code", "git", "docker", "ssh", "terminal", "api"],

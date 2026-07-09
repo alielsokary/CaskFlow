@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""Curated icons for casks with no extractable app icon (CLI tools, SDKs).
-
-The extraction pipeline can only ship what a .app bundle contains; CLI-only
-casks (claude-code, ngrok, gcloud-cli, …) have no bundle and no icon at the
-source. This publishes official vendor assets instead — GitHub org avatars
-(vendor-controlled) or brand PNGs — mapped per token in
-data/curated_icons.json. Every icon is eye-verified before --publish.
-
-Published tokens get status "curated" in icon_report.json: provenance for
-audits, and it keeps them out of the extractor's candidate selection.
-
-Run:
-    python scripts/curate_icons.py                       # download only
-    python scripts/curate_icons.py --publish             # push to icons branch
-    python scripts/curate_icons.py --tokens ngrok codex  # subset
-"""
+"""Curated icons for casks with no extractable app icon (CLI tools, SDKs)."""
+# The extraction pipeline can only ship what a .app bundle contains; CLI-only
+# casks (claude-code, ngrok, gcloud-cli, …) have no bundle and no icon at the
+# source. This publishes official vendor assets instead — GitHub org avatars
+# (vendor-controlled) or brand PNGs — mapped per token in
+# data/curated_icons.json. Every icon is eye-verified before --publish.
+#
+# Published tokens get status "curated" in icon_report.json: provenance for
+# audits, and it keeps them out of the extractor's candidate selection.
+#
+# Run:
+#     python scripts/curate_icons.py                       # download only
+#     python scripts/curate_icons.py --publish             # push to icons branch
+#     python scripts/curate_icons.py --tokens ngrok codex  # subset
 from __future__ import annotations
 
 import argparse

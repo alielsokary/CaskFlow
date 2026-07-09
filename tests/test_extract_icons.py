@@ -141,20 +141,20 @@ def test_token_matches_app():
 def test_find_app_token_match_beats_shallow_installer(tmp_path):
     _mk_app(tmp_path, "Office Installer.app")           # shallow stub
     target = _mk_app(tmp_path, "payload", "Microsoft Word.app")
-    app, sel = find_app(tmp_path, [], token="microsoft-word")
+    app, sel = find_app(tmp_path, [], cask_token="microsoft-word")
     assert app == target and sel == "token"
 
 
 def test_find_app_installer_only_is_parked(tmp_path):
     _mk_app(tmp_path, "Install TeamViewer.app")
-    _, sel = find_app(tmp_path, [], token="teamviewer")
+    _, sel = find_app(tmp_path, [], cask_token="teamviewer")
     assert sel == "installer_only"
 
 
 def test_find_app_single_ignores_installer_sibling(tmp_path):
     _mk_app(tmp_path, "Updater.app")
     target = _mk_app(tmp_path, "RealThing.app")
-    app, sel = find_app(tmp_path, [], token="unrelated-token")
+    app, sel = find_app(tmp_path, [], cask_token="unrelated-token")
     assert app == target and sel == "single"
 
 
