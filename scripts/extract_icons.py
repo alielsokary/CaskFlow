@@ -244,8 +244,8 @@ def _expand_pkg(artifact: Path, workdir: Path) -> Path:
 
 def _expand_compressed_stream(artifact: Path, workdir: Path, mounts: list[Path],
                               tar_stderr: str) -> Path:
-    """Bare gzip/bzip2/xz-wrapped payload (comet ships an xz-compressed DMG):
-    decompress, sniff the inner file, re-expand."""
+    """Decompress a bare gzip/bzip2/xz-wrapped payload, sniff the inner file, re-expand."""
+    # comet ships an xz-compressed DMG.
     with artifact.open("rb") as f:
         head = f.read(8)
     tool = next((t for magic, t in ((b"\x1f\x8b", "gzip"), (b"BZh", "bzip2"),
