@@ -28,7 +28,6 @@ def catalog() -> CategoryCatalog:
 
 
 class _StubClient(LLMClient):
-
     """Drop-in client that returns whatever raw string the test specifies."""
 
     def __init__(self, catalog: CategoryCatalog, raw: str):

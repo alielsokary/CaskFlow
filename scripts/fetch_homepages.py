@@ -28,7 +28,6 @@ MAX_BODY = 200_000  # 200KB max per page
 
 
 class MetaExtractor(HTMLParser):
-
     """Extract title, meta description, and og:description from HTML."""
 
     def __init__(self):

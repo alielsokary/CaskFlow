@@ -53,7 +53,6 @@ DEFAULT_UA = "Homebrew/4.5.0 (Macintosh; arm64 Mac OS X 15) curl/8.7.1"
 
 
 class ExtractError(Exception):
-
     """Recoverable per-cask failure — recorded in the report, never fatal."""
 
 
@@ -288,7 +287,7 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
     raise ExtractError(f"unknown container type for {artifact.name}")
 
 
-def find_app(root: Path, wanted: list[str], cask_token: str = "") -> tuple[Path, str] | None:
+def find_app(root: Path, wanted: list[str], cask_token: str) -> tuple[Path, str] | None:
     """Locate the .app bundle; never follows symlinks (DMGs ship an /Applications symlink)."""
     # Returns (app, selection) where selection is the audit signal:
     # - "exact":          name matches the cask's artifact stanzas — near-certain
