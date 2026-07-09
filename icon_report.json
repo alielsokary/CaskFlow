@@ -29,12 +29,6 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
-  "amazon-workspaces": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "anaconda": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/anaconda.png?size=256",
@@ -69,12 +63,6 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
-  },
-  "apache-directory-studio": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got bfa10deba4a4…)",
-    "attempts": 1,
     "updated": "2026-07-08"
   },
   "appgate-sdp-client": {
@@ -136,12 +124,6 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "box-drive": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
-    "attempts": 0,
-    "updated": "2026-07-08"
   },
   "box-tools": {
     "status": "no_icon",
@@ -1085,12 +1067,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "openvpn-connect": {
-    "status": "review",
-    "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "openzfs": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/openzfs.png?size=256",
@@ -1303,9 +1279,9 @@
   },
   "session-manager-plugin": {
     "status": "curated",
-    "reason": "official vendor asset: https://github.com/aws.png?size=256",
+    "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "silicon-labs-vcp-driver": {
     "status": "curated",
@@ -1503,12 +1479,6 @@
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
     "attempts": 3,
-    "updated": "2026-07-08"
-  },
-  "torguard": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
-    "attempts": 0,
     "updated": "2026-07-08"
   },
   "toshiba-color-mfp": {
