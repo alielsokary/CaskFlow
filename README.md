@@ -1,6 +1,7 @@
 # CaskKit
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f)](https://app.codacy.com/gh/alielsokary/CaskKit/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![codecov](https://codecov.io/gh/alielsokary/CaskKit/branch/master/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskKit)
 [![License](https://img.shields.io/github/license/alielsokary/CaskKit)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskKit)](https://github.com/alielsokary/CaskKit/releases/latest)
 

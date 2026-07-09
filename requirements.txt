@@ -11,3 +11,4 @@ groq>=0.13,<1
 
 # Dev / test
 pytest>=9.0.3,<10
+pytest-cov>=7,<8
