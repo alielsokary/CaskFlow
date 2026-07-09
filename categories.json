@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-08",
-  "totalCasks": 3794,
+  "generatedDate": "2026-07-09",
+  "totalCasks": 3796,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -11220,6 +11220,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "proxybridge": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "proxygen-app": {
       "primary": "developerTools",
       "secondary": []
@@ -15155,6 +15161,12 @@
     "vibetunnel": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "vicinae": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "videoduke": {
       "primary": "videoMedia",

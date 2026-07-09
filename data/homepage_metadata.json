@@ -37810,6 +37810,11 @@
     "og_desc": "A virtual audio driver for macOS that sends all audio to another output - briankendall/proxy-audio-device"
   },
   {
+    "token": "proxybridge",
+    "homepage": "https://interceptsuite.com/",
+    "error": "HTTP 403"
+  },
+  {
     "token": "proxygen-app",
     "homepage": "https://proxygen.app/",
     "title": "Proxygen",
@@ -45021,6 +45026,13 @@
     "title": "Vibetunnel: Your Mac Terminal in Any Browser | Secure & Retro",
     "meta_desc": "Turn any browser into your terminal & command your agents on the go.",
     "og_desc": "Turn any browser into your terminal & command your agents on the go."
+  },
+  {
+    "token": "vicinae",
+    "homepage": "https://vicinae.com/",
+    "title": "Vicinae - A focused launcher for your desktop",
+    "meta_desc": "A focused launcher for your desktop - native, fast, extensible.",
+    "og_desc": "A focused launcher for your desktop - native, fast, extensible."
   },
   {
     "token": "videoduke",
