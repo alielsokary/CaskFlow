@@ -1,15 +1,12 @@
-"""
-Category definitions and prompt construction for the CaskHub classification pipeline.
-
-Source-of-truth precedence:
-1. Valid category IDs are read from `categories.json` at runtime — adding a new
-   category in the data file is enough; nothing here needs to change.
-2. The scope rules below describe boundaries between categories. They are
-   hand-curated from `docs/CLASSIFICATION_GUIDE.md` plus the systematic-error
-   audit notes. Update SCOPE_RULES whenever you fix a class of misclassification.
-3. TRAIT_CATEGORIES are categories that should NEVER be a primary — only
-   secondary. Today that's just `ai`.
-"""
+"""Category definitions and prompt construction for the CaskHub classification pipeline."""
+# Source-of-truth precedence:
+# 1. Valid category IDs are read from `categories.json` at runtime — adding a new
+#    category in the data file is enough; nothing here needs to change.
+# 2. The scope rules below describe boundaries between categories. They are
+#    hand-curated from `docs/CLASSIFICATION_GUIDE.md` plus the systematic-error
+#    audit notes. Update SCOPE_RULES whenever you fix a class of misclassification.
+# 3. TRAIT_CATEGORIES are categories that should NEVER be a primary — only
+#    secondary. Today that's just `ai`.
 from __future__ import annotations
 
 import json
@@ -128,13 +125,14 @@ EVIDENCE_PRIORITY = (
 @dataclass(frozen=True)
 class CategoryCatalog:
     """Validated category list loaded from categories.json."""
+
     primary_ids: frozenset[str]   # categories valid as a primary
     secondary_ids: frozenset[str] # categories valid as secondary (= all categories)
     display_names: dict[str, str]
 
     @classmethod
     def load(cls, categories_json_path: Path) -> "CategoryCatalog":
-        data = json.loads(categories_json_path.read_text())
+        data = json.loads(categories_json_path.read_text(encoding="utf-8"))
         cats = data["categories"]
         all_ids = frozenset(cats.keys())
         return cls(

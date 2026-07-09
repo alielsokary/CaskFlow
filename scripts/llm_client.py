@@ -1,16 +1,13 @@
-"""
-Provider-agnostic LLM abstraction for cask classification.
-
-LLMClient is an abstract base class. Concrete implementations are selected at
-runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
-(from prompts.py) and requests strict JSON output via the provider's structured-
-output mode where available; the base class then validates the result against
-the active CategoryCatalog.
-
-Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
-raise ClassificationError, which the orchestrator logs and skips — the cask
-remains unmapped until the next pipeline run.
-"""
+"""Provider-agnostic LLM abstraction for cask classification."""
+# LLMClient is an abstract base class. Concrete implementations are selected at
+# runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
+# (from prompts.py) and requests strict JSON output via the provider's structured-
+# output mode where available; the base class then validates the result against
+# the active CategoryCatalog.
+#
+# Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
+# raise ClassificationError, which the orchestrator logs and skips — the cask
+# remains unmapped until the next pipeline run.
 from __future__ import annotations
 
 import json
@@ -19,7 +16,6 @@ import random
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any
 
 from prompts import (
     CategoryCatalog,
@@ -45,6 +41,7 @@ class LLMClient(ABC):
     """Abstract base. Subclasses override _generate(); base class handles prompt + validation."""
 
     def __init__(self, catalog: CategoryCatalog):
+        """Bind the catalog and precompute the system prompt."""
         self.catalog = catalog
         self.system_prompt = build_system_prompt(catalog)
 
@@ -76,6 +73,16 @@ class LLMClient(ABC):
                 raise ClassificationError(f"{token}: trait `{primary}` cannot be primary")
             raise ClassificationError(f"{token}: unknown primary `{primary}`")
 
+        self._validate_secondary(secondary, primary, token)
+
+        return Classification(
+            primary=primary,
+            secondary=list(secondary),
+            confidence=max(0.0, min(1.0, confidence)),
+            reason=reason,
+        )
+
+    def _validate_secondary(self, secondary, primary: str, token: str) -> None:
         if not isinstance(secondary, list):
             raise ClassificationError(f"{token}: secondary must be a list")
         for s in secondary:
@@ -85,13 +92,6 @@ class LLMClient(ABC):
             raise ClassificationError(f"{token}: primary `{primary}` duplicated in secondary")
         if len(secondary) > 2:
             raise ClassificationError(f"{token}: too many secondary entries ({len(secondary)})")
-
-        return Classification(
-            primary=primary,
-            secondary=list(secondary),
-            confidence=max(0.0, min(1.0, confidence)),
-            reason=reason,
-        )
 
     @classmethod
     def from_env(cls, catalog: CategoryCatalog) -> "LLMClient":
@@ -111,16 +111,13 @@ class LLMClient(ABC):
 
 def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
     """Exponential backoff with jitter for transient provider errors."""
-    last = None
     for i in range(attempts):
         try:
             return fn()
-        except Exception as e:  # network / rate-limit / 5xx
-            last = e
+        except Exception:  # network / rate-limit / 5xx
             if i == attempts - 1:
                 raise
-            time.sleep(base_delay * (2 ** i) + random.uniform(0, 0.5))
-    raise last  # pragma: no cover
+            time.sleep(base_delay * (2 ** i) + random.SystemRandom().uniform(0, 0.5))
 
 
 class AnthropicClient(LLMClient):
@@ -129,6 +126,7 @@ class AnthropicClient(LLMClient):
     MODEL = "claude-sonnet-5"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the anthropic SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         import anthropic  # lazy import
 
@@ -180,6 +178,7 @@ class OpenAIClient(LLMClient):
     MODEL = "gpt-4o-mini"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the OpenAI SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         from openai import OpenAI  # lazy import
 
@@ -207,6 +206,7 @@ class GroqClient(LLMClient):
     MODEL = "llama-3.3-70b-versatile"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Create the Groq SDK client. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         from groq import Groq  # lazy import
 
@@ -234,6 +234,7 @@ class CloudflareWorkersAIClient(LLMClient):
     MODEL = "@cf/meta/llama-3.1-70b-instruct"
 
     def __init__(self, catalog: CategoryCatalog):
+        """Read Cloudflare credentials from the environment. Lazy import keeps unused providers dependency-free."""
         super().__init__(catalog)
         import requests  # lazy import
 
@@ -268,12 +269,10 @@ class CloudflareWorkersAIClient(LLMClient):
 
 
 class MockClient(LLMClient):
-    """
-    Deterministic stub for unit tests and dry-runs.
+    """Deterministic stub for unit tests and dry-runs."""
 
-    Picks `primary` based on simple keyword rules so tests have predictable output
-    without burning API credits. Always returns confidence=0.5.
-    """
+    # Picks `primary` based on simple keyword rules so tests have predictable
+    # output without burning API credits. Always returns confidence=0.5.
 
     KEYWORDS: dict[str, list[str]] = {
         "developerTools": ["ide", "code", "git", "docker", "ssh", "terminal", "api"],

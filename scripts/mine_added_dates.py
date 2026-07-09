@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
-"""
-Mine the date each cask was added to Homebrew/homebrew-cask.
-
-Homebrew's API has no "date added" field, so the tap's git history is the
-source of truth: the date a cask entered the tap is the author date of the
-commit that created its file. Emits added_dates.json (token -> YYYY-MM-DD),
-published as a release asset alongside categories.json for CaskHub.
-
-The earliest add per token wins — the 2023 letter-sharding move
-(Casks/foo.rb -> Casks/f/foo.rb) re-added every file, so the latest add is
-often wrong. `--no-renames` keeps those moves visible as plain adds.
-
-Run:
-    python scripts/mine_added_dates.py                  # clones a fresh copy
-    python scripts/mine_added_dates.py --repo ~/tap     # reuses a local clone
-"""
+"""Mine the date each cask was added to Homebrew/homebrew-cask."""
+# Homebrew's API has no "date added" field, so the tap's git history is the
+# source of truth: the date a cask entered the tap is the author date of the
+# commit that created its file. Emits added_dates.json (token -> YYYY-MM-DD),
+# published as a release asset alongside categories.json for CaskHub.
+#
+# The earliest add per token wins — the 2023 letter-sharding move
+# (Casks/foo.rb -> Casks/f/foo.rb) re-added every file, so the latest add is
+# often wrong. `--no-renames` keeps those moves visible as plain adds.
+#
+# Run:
+#     python scripts/mine_added_dates.py                  # clones a fresh copy
+#     python scripts/mine_added_dates.py --repo ~/tap     # reuses a local clone
 from __future__ import annotations
 
 import argparse
@@ -34,8 +31,7 @@ DATE_LINE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def clone_tap(dest: str) -> Path:
-    """Blob-less partial clone: full history and trees (enough for
-    --name-status), no file contents."""
+    """Blob-less partial clone: full history and trees (enough for --name-status), no blobs."""
     path = Path(dest) / "homebrew-cask"
     print(f"Cloning {TAP_URL} (blob-less) ...", flush=True)
     subprocess.run(
@@ -46,8 +42,8 @@ def clone_tap(dest: str) -> Path:
 
 
 def parse_log(log: str) -> dict[str, str]:
-    """Newest-first log of adds; always overwriting leaves the oldest add
-    per token, which absorbs the sharding move's re-adds."""
+    """Newest-first log of adds; always overwriting leaves the oldest add per token."""
+    # The oldest add absorbs the sharding move's re-adds.
     added: dict[str, str] = {}
     current_date = ""
     for line in log.splitlines():
@@ -100,7 +96,7 @@ def main() -> int:
         "totalCasks": len(added),
         "tokenAddedDates": dict(sorted(added.items())),
     }
-    OUTPUT_PATH.write_text(json.dumps(payload, indent=2) + "\n")
+    OUTPUT_PATH.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH} ({len(added)} tokens)")
     return 0
 

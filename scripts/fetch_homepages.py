@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
-"""
-CaskHub Homepage Fetcher
-========================
-Fetches homepage metadata (title, meta description, og:description) for casks.
-
-Two ways to use it:
-1. As a library — import fetch_one(token, url) and call per cask. The daily
-   pipeline (classify_new_casks.py) does this against the delta set.
-2. As a CLI — `python scripts/fetch_homepages.py` re-scrapes everything in
-   data/filtered_casks.json. Used for full audits, not the daily pipeline.
-"""
+"""Fetch homepage metadata (title, meta description, og:description) for casks."""
+# Two ways to use it:
+# 1. As a library — import fetch_one(token, url) and call per cask. The daily
+#    pipeline (classify_new_casks.py) does this against the delta set.
+# 2. As a CLI — `python scripts/fetch_homepages.py` re-scrapes everything in
+#    data/filtered_casks.json. Used for full audits, not the daily pipeline.
+import contextlib
 import json
 import os
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import urlopen, Request
@@ -34,7 +29,9 @@ MAX_BODY = 200_000  # 200KB max per page
 
 class MetaExtractor(HTMLParser):
     """Extract title, meta description, and og:description from HTML."""
+
     def __init__(self):
+        """Initialize empty parser state."""
         super().__init__()
         self.title = ""
         self.meta_desc = ""
@@ -82,15 +79,15 @@ def fetch_one(token, url):
     ctx.verify_mode = ssl.CERT_NONE
 
     try:
+        if not url.startswith(("http://", "https://")):
+            raise ValueError(f"refusing non-HTTP homepage URL: {url}")
         req = Request(url, headers=headers)
         with urlopen(req, timeout=TIMEOUT, context=ctx) as resp:
             body = resp.read(MAX_BODY).decode("utf-8", errors="replace")
 
         extractor = MetaExtractor()
-        try:
+        with contextlib.suppress(Exception):  # scraped HTML can be arbitrarily broken
             extractor.feed(body)
-        except Exception:
-            pass
 
         return {
             "token": token,
@@ -107,28 +104,46 @@ def fetch_one(token, url):
         return {"token": token, "homepage": url, "error": str(e)[:200]}
 
 
-def main():
-    # Load data
-    with open(CASKS_PATH) as f:
-        casks = json.load(f)
-    print(f"Loaded {len(casks)} casks from {CASKS_PATH}")
-
-    # Resume support: load existing results
+def _load_existing() -> dict:
+    """Resume support: previously fetched results, keyed by token."""
     existing = {}
     if os.path.exists(OUTPUT_PATH):
-        with open(OUTPUT_PATH) as f:
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
             for item in json.load(f):
                 existing[item["token"]] = item
         print(f"Found {len(existing)} existing results (will skip)")
+    return existing
 
-    # Build work list
+
+def _build_work(casks: list[dict], existing: dict) -> list[tuple[str, str]]:
+    """(token, homepage) pairs still needing a fetch — failures are retried."""
     work = []
     for c in casks:
         token = c["token"]
         if token in existing and "error" not in existing[token]:
             continue  # Skip already-fetched successes
         work.append((token, c.get("homepage", "")))
+    return work
 
+
+def _report_progress(done: int, total: int, errors: int, start_time: float, results: dict) -> None:
+    """Print a rate line every 100 casks and checkpoint results every 500."""
+    if done % 100 != 0 and done != total:
+        return
+    elapsed = time.time() - start_time
+    rate = done / elapsed if elapsed > 0 else 0
+    print(f"  [{done}/{total}] {rate:.0f}/sec, {errors} errors")
+    if done % 500 == 0:
+        _save(results)
+
+
+def main():
+    with open(CASKS_PATH, encoding="utf-8") as f:
+        casks = json.load(f)
+    print(f"Loaded {len(casks)} casks from {CASKS_PATH}")
+
+    existing = _load_existing()
+    work = _build_work(casks, existing)
     print(f"Fetching {len(work)} homepages with {WORKERS} workers...")
     results = dict(existing)  # Start with existing
     done = 0
@@ -143,15 +158,7 @@ def main():
             done += 1
             if "error" in result:
                 errors += 1
-
-            if done % 100 == 0 or done == len(work):
-                elapsed = time.time() - start_time
-                rate = done / elapsed if elapsed > 0 else 0
-                print(f"  [{done}/{len(work)}] {rate:.0f}/sec, {errors} errors")
-
-                # Save periodically
-                if done % 500 == 0:
-                    _save(results)
+            _report_progress(done, len(work), errors, start_time, results)
 
     _save(results)
     elapsed = time.time() - start_time
@@ -162,7 +169,7 @@ def main():
 
 def _save(results):
     out = sorted(results.values(), key=lambda x: x["token"])
-    with open(OUTPUT_PATH, "w") as f:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
 

@@ -1,22 +1,16 @@
 #!/usr/bin/env python3
-"""
-CaskHub Category Auditor
-=========================
-Uses homepage metadata + cask descriptions to verify every cask's category.
-Outputs a corrections JSON and a full audit report.
-
-Usage:
-    python3 audit_categories.py
-
-Requires:
-    ../homepage_metadata.json  (from fetch_homepages.py)
-    ../CaskHub/Resources/categories.json
-    ../filtered_casks.json
-"""
+"""Verify every cask's category using homepage metadata and cask descriptions."""
+# Outputs a corrections JSON and a full audit report.
+#
+# Usage:
+#     python3 audit_categories.py
+#
+# Requires:
+#     ../homepage_metadata.json  (from fetch_homepages.py)
+#     ../CaskHub/Resources/categories.json
+#     ../filtered_casks.json
 import json
 import os
-import re
-import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
@@ -194,14 +188,14 @@ CATEGORY_SIGNALS = {
 
 
 def load_data():
-    with open(CATEGORIES_PATH) as f:
+    with open(CATEGORIES_PATH, encoding="utf-8") as f:
         cat_data = json.load(f)
-    with open(CASKS_PATH) as f:
+    with open(CASKS_PATH, encoding="utf-8") as f:
         casks = json.load(f)
 
     metadata = {}
     if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH) as f:
+        with open(METADATA_PATH, encoding="utf-8") as f:
             for item in json.load(f):
                 metadata[item["token"]] = item
 
@@ -244,125 +238,123 @@ def score_category(text, homepage, cat_id):
     return score
 
 
+def _audit_one(token, mapping, cask_map, metadata):
+    """Score one cask against every category; a correction entry if flagged, else None."""
+    current_cat = mapping["primary"] if isinstance(mapping, dict) else mapping
+    cask = cask_map.get(token, {"token": token, "desc": ""})
+    meta = metadata.get(token, {})
+
+    text = build_text(cask, meta)
+    homepage = cask.get("homepage", "")
+
+    scores = {cat_id: score_category(text, homepage, cat_id) for cat_id in CATEGORY_SIGNALS}
+    best_cat = max(scores, key=lambda k: scores[k])
+
+    # Flag only if another category scores significantly higher
+    if best_cat == current_cat or scores[best_cat] <= scores.get(current_cat, 0) + 10:
+        return None
+    return _correction_entry(token, current_cat, scores, cask, meta)
+
+
+def _correction_entry(token, current_cat, scores, cask, meta):
+    best_cat = max(scores, key=lambda k: scores[k])
+    best_score = scores[best_cat]
+    current_score = scores.get(current_cat, 0)
+    has_meta = bool(meta.get("title") or meta.get("meta_desc"))
+    return {
+        "token": token,
+        "was": current_cat,
+        "shouldBe": best_cat,
+        "currentScore": current_score,
+        "bestScore": best_score,
+        "desc": (cask.get("desc") or "")[:100],
+        "homepage": cask.get("homepage", ""),
+        "hpTitle": (meta.get("title") or "")[:100],
+        "hpMeta": (meta.get("meta_desc") or meta.get("og_desc") or "")[:150],
+        "hasMeta": has_meta,
+        "confidence": "high" if best_score >= 20 and has_meta else "medium",
+    }
+
+
 def audit_all(cat_data, casks, metadata):
     """Audit every cask and return suspected miscategorizations."""
-    tc = cat_data["tokenToCategory"]
     cask_map = {c["token"]: c for c in casks}
-    corrections = []
     confident = []
     uncertain = []
-
-    for token, mapping in tc.items():
-        current_cat = mapping["primary"] if isinstance(mapping, dict) else mapping
-        cask = cask_map.get(token, {"token": token, "desc": ""})
-        meta = metadata.get(token, {})
-
-        text = build_text(cask, meta)
-        homepage = cask.get("homepage", "")
-
-        # Score all categories
-        scores = {}
-        for cat_id in CATEGORY_SIGNALS:
-            scores[cat_id] = score_category(text, homepage, cat_id)
-
-        # Find best match
-        best_cat = max(scores, key=scores.get)
-        best_score = scores[best_cat]
-        current_score = scores.get(current_cat, 0)
-
-        # Flag if another category scores significantly higher
-        if best_cat != current_cat and best_score > current_score + 10:
-            has_meta = bool(meta.get("title") or meta.get("meta_desc"))
-            entry = {
-                "token": token,
-                "was": current_cat,
-                "shouldBe": best_cat,
-                "currentScore": current_score,
-                "bestScore": best_score,
-                "desc": (cask.get("desc") or "")[:100],
-                "homepage": homepage,
-                "hpTitle": (meta.get("title") or "")[:100],
-                "hpMeta": (meta.get("meta_desc") or meta.get("og_desc") or "")[:150],
-                "hasMeta": has_meta,
-            }
-            if best_score >= 20 and has_meta:
-                entry["confidence"] = "high"
-                confident.append(entry)
-            else:
-                entry["confidence"] = "medium"
-                uncertain.append(entry)
-
+    for token, mapping in cat_data["tokenToCategory"].items():
+        entry = _audit_one(token, mapping, cask_map, metadata)
+        if entry is None:
+            continue
+        (confident if entry["confidence"] == "high" else uncertain).append(entry)
     return confident, uncertain
+
+
+def _display(categories, cat_id):
+    return categories.get(cat_id, {}).get("displayName", cat_id)
+
+
+def _distribution_lines(tc, categories):
+    dist = {}
+    for mapping in tc.values():
+        cat = mapping["primary"] if isinstance(mapping, dict) else mapping
+        dist[cat] = dist.get(cat, 0) + 1
+    lines = ["## Current Distribution", "", "| Category | Count |", "|----------|-------|"]
+    for cat_id in sorted(dist, key=lambda k: dist[k], reverse=True):
+        lines.append(f"| {_display(categories, cat_id)} | {dist[cat_id]} |")
+    lines.append("")
+    return lines
+
+
+def _confident_lines(confident, categories):
+    lines = ["## High-Confidence Corrections", ""]
+    if not confident:
+        return lines + ["None found.", ""]
+    by_source = {}
+    for c in confident:
+        by_source.setdefault(c["was"], []).append(c)
+    for src_cat in sorted(by_source):
+        items = by_source[src_cat]
+        lines.append(f"### From {_display(categories, src_cat)} ({len(items)} corrections)")
+        lines.append("")
+        for item in sorted(items, key=lambda x: x["token"]):
+            lines.append(f"- **{item['token']}** → {_display(categories, item['shouldBe'])}")
+            lines.append(f"  - Desc: {item['desc']}")
+            if item.get("hpTitle"):
+                lines.append(f"  - Homepage title: {item['hpTitle']}")
+            if item.get("hpMeta"):
+                lines.append(f"  - Homepage meta: {item['hpMeta']}")
+            lines.append("")
+    return lines
+
+
+def _uncertain_lines(uncertain, categories):
+    lines = ["## Medium-Confidence Flags (Review Needed)", ""]
+    if not uncertain:
+        return lines + ["None found.", ""]
+    for item in sorted(uncertain, key=lambda x: x["bestScore"] - x["currentScore"], reverse=True)[:100]:
+        src_name = _display(categories, item["was"])
+        dest_name = _display(categories, item["shouldBe"])
+        lines.append(f"- **{item['token']}**: {src_name} → {dest_name}? (score diff: +{item['bestScore'] - item['currentScore']})")
+        lines.append(f"  - Desc: {item['desc']}")
+        lines.append("")
+    return lines
 
 
 def generate_report(confident, uncertain, cat_data):
     """Generate a markdown audit report."""
     tc = cat_data["tokenToCategory"]
     categories = cat_data["categories"]
-
-    # Current distribution
-    dist = {}
-    for mapping in tc.values():
-        cat = mapping["primary"] if isinstance(mapping, dict) else mapping
-        dist[cat] = dist.get(cat, 0) + 1
-
-    lines = ["# CaskHub Category Audit Report", ""]
-    lines.append(f"**Total casks**: {len(tc)}")
-    lines.append(f"**High-confidence corrections**: {len(confident)}")
-    lines.append(f"**Medium-confidence flags**: {len(uncertain)}")
-    lines.append("")
-
-    # Distribution table
-    lines.append("## Current Distribution")
-    lines.append("")
-    lines.append("| Category | Count |")
-    lines.append("|----------|-------|")
-    for cat_id in sorted(dist, key=dist.get, reverse=True):
-        name = categories.get(cat_id, {}).get("displayName", cat_id)
-        lines.append(f"| {name} | {dist[cat_id]} |")
-    lines.append("")
-
-    # High confidence corrections
-    lines.append("## High-Confidence Corrections")
-    lines.append("")
-    if confident:
-        # Group by source category
-        by_source = {}
-        for c in confident:
-            by_source.setdefault(c["was"], []).append(c)
-
-        for src_cat in sorted(by_source):
-            src_name = categories.get(src_cat, {}).get("displayName", src_cat)
-            items = by_source[src_cat]
-            lines.append(f"### From {src_name} ({len(items)} corrections)")
-            lines.append("")
-            for item in sorted(items, key=lambda x: x["token"]):
-                dest_name = categories.get(item["shouldBe"], {}).get("displayName", item["shouldBe"])
-                lines.append(f"- **{item['token']}** → {dest_name}")
-                lines.append(f"  - Desc: {item['desc']}")
-                if item.get("hpTitle"):
-                    lines.append(f"  - Homepage title: {item['hpTitle']}")
-                if item.get("hpMeta"):
-                    lines.append(f"  - Homepage meta: {item['hpMeta']}")
-                lines.append("")
-    else:
-        lines.append("None found.")
-        lines.append("")
-
-    # Medium confidence
-    lines.append("## Medium-Confidence Flags (Review Needed)")
-    lines.append("")
-    if uncertain:
-        for item in sorted(uncertain, key=lambda x: x["bestScore"] - x["currentScore"], reverse=True)[:100]:
-            src_name = categories.get(item["was"], {}).get("displayName", item["was"])
-            dest_name = categories.get(item["shouldBe"], {}).get("displayName", item["shouldBe"])
-            lines.append(f"- **{item['token']}**: {src_name} → {dest_name}? (score diff: +{item['bestScore'] - item['currentScore']})")
-            lines.append(f"  - Desc: {item['desc']}")
-            lines.append("")
-    else:
-        lines.append("None found.")
-        lines.append("")
-
+    lines = [
+        "# CaskHub Category Audit Report",
+        "",
+        f"**Total casks**: {len(tc)}",
+        f"**High-confidence corrections**: {len(confident)}",
+        f"**Medium-confidence flags**: {len(uncertain)}",
+        "",
+    ]
+    lines += _distribution_lines(tc, categories)
+    lines += _confident_lines(confident, categories)
+    lines += _uncertain_lines(uncertain, categories)
     return "\n".join(lines)
 
 
@@ -381,13 +373,13 @@ def main():
 
     # Save corrections
     all_corrections = confident + uncertain
-    with open(CORRECTIONS_PATH, "w") as f:
+    with open(CORRECTIONS_PATH, "w", encoding="utf-8") as f:
         json.dump(all_corrections, f, indent=2, ensure_ascii=False)
     print(f"\nSaved corrections to {CORRECTIONS_PATH}")
 
     # Generate report
     report = generate_report(confident, uncertain, cat_data)
-    with open(REPORT_PATH, "w") as f:
+    with open(REPORT_PATH, "w", encoding="utf-8") as f:
         f.write(report)
     print(f"Saved report to {REPORT_PATH}")
 
