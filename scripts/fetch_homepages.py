@@ -104,28 +104,46 @@ def fetch_one(token, url):
         return {"token": token, "homepage": url, "error": str(e)[:200]}
 
 
-def main():
-    # Load data
-    with open(CASKS_PATH) as f:
-        casks = json.load(f)
-    print(f"Loaded {len(casks)} casks from {CASKS_PATH}")
-
-    # Resume support: load existing results
+def _load_existing() -> dict:
+    """Resume support: previously fetched results, keyed by token."""
     existing = {}
     if os.path.exists(OUTPUT_PATH):
         with open(OUTPUT_PATH) as f:
             for item in json.load(f):
                 existing[item["token"]] = item
         print(f"Found {len(existing)} existing results (will skip)")
+    return existing
 
-    # Build work list
+
+def _build_work(casks: list[dict], existing: dict) -> list[tuple[str, str]]:
+    """(token, homepage) pairs still needing a fetch — failures are retried."""
     work = []
     for c in casks:
         token = c["token"]
         if token in existing and "error" not in existing[token]:
             continue  # Skip already-fetched successes
         work.append((token, c.get("homepage", "")))
+    return work
 
+
+def _report_progress(done: int, total: int, errors: int, start_time: float, results: dict) -> None:
+    """Print a rate line every 100 casks and checkpoint results every 500."""
+    if done % 100 != 0 and done != total:
+        return
+    elapsed = time.time() - start_time
+    rate = done / elapsed if elapsed > 0 else 0
+    print(f"  [{done}/{total}] {rate:.0f}/sec, {errors} errors")
+    if done % 500 == 0:
+        _save(results)
+
+
+def main():
+    with open(CASKS_PATH) as f:
+        casks = json.load(f)
+    print(f"Loaded {len(casks)} casks from {CASKS_PATH}")
+
+    existing = _load_existing()
+    work = _build_work(casks, existing)
     print(f"Fetching {len(work)} homepages with {WORKERS} workers...")
     results = dict(existing)  # Start with existing
     done = 0
@@ -140,15 +158,7 @@ def main():
             done += 1
             if "error" in result:
                 errors += 1
-
-            if done % 100 == 0 or done == len(work):
-                elapsed = time.time() - start_time
-                rate = done / elapsed if elapsed > 0 else 0
-                print(f"  [{done}/{len(work)}] {rate:.0f}/sec, {errors} errors")
-
-                # Save periodically
-                if done % 500 == 0:
-                    _save(results)
+            _report_progress(done, len(work), errors, start_time, results)
 
     _save(results)
     elapsed = time.time() - start_time

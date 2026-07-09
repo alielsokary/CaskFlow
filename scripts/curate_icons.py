@@ -50,6 +50,29 @@ def fetch_icon(url: str, dest_png: Path) -> str | None:
     return None
 
 
+def _select_mapping(mapping: dict[str, str], tokens: list[str] | None) -> dict[str, str]:
+    """Optionally narrow the curated mapping to an explicit token subset."""
+    if not tokens:
+        return mapping
+    missing = [t for t in tokens if t not in mapping]
+    if missing:
+        raise SystemExit(f"not in {MAPPING_FILE.name}: {missing}")
+    return {t: mapping[t] for t in tokens}
+
+
+def _download_all(mapping: dict[str, str], output_dir: Path) -> dict[str, Path]:
+    """Fetch every curated icon; returns token -> local png for the successes."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    pngs: dict[str, Path] = {}
+    for token, url in sorted(mapping.items()):
+        dest = output_dir / f"{token}.png"
+        err = fetch_icon(url, dest)
+        print(f"  {token}: {err or 'ok'}")
+        if err is None:
+            pngs[token] = dest
+    return pngs
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tokens", nargs="*", help="Curate only these tokens")
@@ -58,21 +81,8 @@ def main(argv: list[str] | None = None) -> int:
                         default=REPO_ROOT / "icons_out" / "curated")
     args = parser.parse_args(argv)
 
-    mapping: dict[str, str] = json.loads(MAPPING_FILE.read_text())
-    if args.tokens:
-        missing = [t for t in args.tokens if t not in mapping]
-        if missing:
-            raise SystemExit(f"not in {MAPPING_FILE.name}: {missing}")
-        mapping = {t: mapping[t] for t in args.tokens}
-
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    pngs: dict[str, Path] = {}
-    for token, url in sorted(mapping.items()):
-        dest = args.output_dir / f"{token}.png"
-        err = fetch_icon(url, dest)
-        print(f"  {token}: {err or 'ok'}")
-        if err is None:
-            pngs[token] = dest
+    mapping = _select_mapping(json.loads(MAPPING_FILE.read_text()), args.tokens)
+    pngs = _download_all(mapping, args.output_dir)
 
     if args.publish and pngs:
         report = load_report()

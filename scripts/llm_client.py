@@ -73,6 +73,16 @@ class LLMClient(ABC):
                 raise ClassificationError(f"{token}: trait `{primary}` cannot be primary")
             raise ClassificationError(f"{token}: unknown primary `{primary}`")
 
+        self._validate_secondary(secondary, primary, token)
+
+        return Classification(
+            primary=primary,
+            secondary=list(secondary),
+            confidence=max(0.0, min(1.0, confidence)),
+            reason=reason,
+        )
+
+    def _validate_secondary(self, secondary, primary: str, token: str) -> None:
         if not isinstance(secondary, list):
             raise ClassificationError(f"{token}: secondary must be a list")
         for s in secondary:
@@ -82,13 +92,6 @@ class LLMClient(ABC):
             raise ClassificationError(f"{token}: primary `{primary}` duplicated in secondary")
         if len(secondary) > 2:
             raise ClassificationError(f"{token}: too many secondary entries ({len(secondary)})")
-
-        return Classification(
-            primary=primary,
-            secondary=list(secondary),
-            confidence=max(0.0, min(1.0, confidence)),
-            reason=reason,
-        )
 
     @classmethod
     def from_env(cls, catalog: CategoryCatalog) -> "LLMClient":

@@ -135,6 +135,17 @@ def compute_diff(api_casks: list[dict], existing: dict) -> tuple[set[str], set[s
 # Homepage scrape (delta only, persisted to cache)
 # ---------------------------------------------------------------------------
 
+def _cached_subset(tokens: set[str], cache: dict[str, dict]) -> dict[str, dict]:
+    return {t: cache[t] for t in tokens if t in cache}
+
+
+def _persist_cache(cache: dict[str, dict]) -> None:
+    HOMEPAGE_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    HOMEPAGE_CACHE.write_text(
+        json.dumps(sorted(cache.values(), key=lambda x: x["token"]), indent=2, ensure_ascii=False)
+    )
+
+
 def fetch_homepages_for(
     tokens: set[str], api_casks_by_token: dict[str, dict], cache: dict[str, dict]
 ) -> dict[str, dict]:
@@ -145,7 +156,7 @@ def fetch_homepages_for(
         if t not in cache or "error" in cache[t]
     ]
     if not work:
-        return {t: cache[t] for t in tokens if t in cache}
+        return _cached_subset(tokens, cache)
 
     print(f"Fetching {len(work)} homepages with {HOMEPAGE_WORKERS} workers …")
     with ThreadPoolExecutor(max_workers=HOMEPAGE_WORKERS) as pool:
@@ -154,11 +165,8 @@ def fetch_homepages_for(
             r = fut.result()
             cache[r["token"]] = r
 
-    HOMEPAGE_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    HOMEPAGE_CACHE.write_text(
-        json.dumps(sorted(cache.values(), key=lambda x: x["token"]), indent=2, ensure_ascii=False)
-    )
-    return {t: cache[t] for t in tokens if t in cache}
+    _persist_cache(cache)
+    return _cached_subset(tokens, cache)
 
 
 # ---------------------------------------------------------------------------
@@ -233,6 +241,22 @@ def write_categories(updated: dict) -> None:
     CATEGORIES_PATH.write_text(json.dumps(updated, indent=2, ensure_ascii=False) + "\n")
 
 
+def _section(title: str, rows: list[str]) -> list[str]:
+    """A `## title` block with blank lines around its content; [] when empty."""
+    if not rows:
+        return []
+    return [f"## {title}", "", *rows, ""]
+
+
+def _classification_rows(classifications: dict[str, Classification]) -> list[str]:
+    rows = ["| token | primary | secondary | confidence | reason |", "|---|---|---|---|---|"]
+    for token in sorted(classifications):
+        c = classifications[token]
+        sec = ", ".join(c.secondary) or "—"
+        rows.append(f"| `{token}` | {c.primary} | {sec} | {c.confidence:.2f} | {c.reason} |")
+    return rows
+
+
 def write_report(
     new_tokens: set[str],
     removed_tokens: set[str],
@@ -257,40 +281,14 @@ def write_report(
         "",
     ]
 
-    if renames:
-        lines.append("## Renamed (classification migrated)")
-        lines.append("")
-        lines.extend(f"- `{old}` → `{new}`" for old, new in sorted(renames))
-        lines.append("")
-
-    if classifications:
-        lines.append("## New classifications")
-        lines.append("")
-        lines.append("| token | primary | secondary | confidence | reason |")
-        lines.append("|---|---|---|---|---|")
-        for token in sorted(classifications):
-            c = classifications[token]
-            sec = ", ".join(c.secondary) or "—"
-            lines.append(f"| `{token}` | {c.primary} | {sec} | {c.confidence:.2f} | {c.reason} |")
-        lines.append("")
-
-    if failures:
-        lines.append("## Skipped (will retry next run)")
-        lines.append("")
-        for token, err in sorted(failures):
-            lines.append(f"- `{token}` — {err}")
-        lines.append("")
-
-    if removed_tokens:
-        lines.append("## Removed from Homebrew (pruned)")
-        lines.append("")
-        lines.extend(f"- `{t}`" for t in sorted(removed_tokens))
-        lines.append("")
-    if deprecated_only:
-        lines.append("## Deprecated/disabled (pruned)")
-        lines.append("")
-        lines.extend(f"- `{t}`" for t in sorted(deprecated_only))
-        lines.append("")
+    lines += _section("Renamed (classification migrated)",
+                      [f"- `{old}` → `{new}`" for old, new in sorted(renames)])
+    lines += _section("New classifications",
+                      _classification_rows(classifications) if classifications else [])
+    lines += _section("Skipped (will retry next run)",
+                      [f"- `{token}` — {err}" for token, err in sorted(failures)])
+    lines += _section("Removed from Homebrew (pruned)", [f"- `{t}`" for t in sorted(removed_tokens)])
+    lines += _section("Deprecated/disabled (pruned)", [f"- `{t}`" for t in sorted(deprecated_only)])
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text("\n".join(lines))
