@@ -317,6 +317,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "datadog-agent": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/DataDog.png",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "datadog-security-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -683,6 +689,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "gpt4all": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/nomic-ai.png",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "graalvm-jdk": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/graalvm.png?size=256",
@@ -700,6 +712,12 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "hazel": {
+    "status": "curated",
+    "reason": "project artwork (hand-supplied)",
+    "attempts": 0,
+    "updated": "2026-07-09"
   },
   "hma-vpn": {
     "status": "review",
@@ -815,6 +833,12 @@
     "attempts": 1,
     "updated": "2026-07-08"
   },
+  "kotlin-lsp": {
+    "status": "curated",
+    "reason": "official vendor asset: https://github.com/Kotlin.png",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "libifd-cyberjack": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -894,10 +918,10 @@
     "updated": "2026-07-08"
   },
   "macsvg": {
-    "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "status": "curated",
+    "reason": "project artwork (hand-supplied)",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-07-09"
   },
   "mailmaster": {
     "status": "failed",
@@ -1223,6 +1247,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "sapmachine-jdk": {
+    "status": "curated",
+    "reason": "project artwork (hand-supplied)",
+    "attempts": 0,
+    "updated": "2026-07-09"
+  },
   "screaming-frog-log-file-analyser": {
     "status": "failed",
     "reason": "sha256 mismatch (got 911b40730adc…)",
@@ -1480,12 +1510,6 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "tuxera-ntfs": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/Tuxera.png",
-    "attempts": 0,
-    "updated": "2026-07-09"
   },
   "unity-ios-support-for-editor": {
     "status": "no_icon",
