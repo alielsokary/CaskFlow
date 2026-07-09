@@ -392,7 +392,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
 
-    def log_message(self, format, *args):  # pylint: disable=redefined-builtin
+    def log_message(self, *_args):
         pass  # Suppress request logs
 
 

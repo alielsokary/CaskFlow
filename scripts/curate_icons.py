@@ -81,7 +81,7 @@ def main(argv: list[str] | None = None) -> int:
                         default=REPO_ROOT / "icons_out" / "curated")
     args = parser.parse_args(argv)
 
-    mapping = _select_mapping(json.loads(MAPPING_FILE.read_text()), args.tokens)
+    mapping = _select_mapping(json.loads(MAPPING_FILE.read_text(encoding="utf-8")), args.tokens)
     pngs = _download_all(mapping, args.output_dir)
 
     if args.publish and pngs:

@@ -371,7 +371,7 @@ def find_nested_archive(root: Path) -> tuple[Path, str] | None:
 # generic renders the system app icon (reference for the wrong-icon guard).
 # Swift renderer for asset-catalog-only icons — kept as a real .swift file
 # so it gets syntax highlighting and review as code.
-_CAR_ICON_SWIFT = (Path(__file__).with_name("car_icon.swift")).read_text()
+_CAR_ICON_SWIFT = (Path(__file__).with_name("car_icon.swift")).read_text(encoding="utf-8")
 
 
 def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
@@ -386,7 +386,7 @@ def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
     # catalog has none, hence the byte-compare guard.
     with tempfile.TemporaryDirectory(prefix="car-icon-") as td:
         script = Path(td) / "icon.swift"
-        script.write_text(_CAR_ICON_SWIFT)
+        script.write_text(_CAR_ICON_SWIFT, encoding="utf-8")
 
         def render(mode: str, out: Path) -> bool:
             proc = run(["swift", str(script), mode, str(app), str(out), ICON_SIZE])
@@ -558,14 +558,14 @@ def _merge_report(wt: Path, report: dict[str, dict], dirty: set[str]) -> None:
     """Overlay only this run's dirty tokens on the branch's current report."""
     base_file = wt / REPORT_FILE
     merged: dict[str, dict] = (
-        json.loads(base_file.read_text()) if base_file.exists() else {}
+        json.loads(base_file.read_text(encoding="utf-8")) if base_file.exists() else {}
     )
     for token in dirty:
         if token in report:
             merged[token] = report[token]
         else:
             merged.pop(token, None)  # cleared by this run (success)
-    base_file.write_text(report_json(merged))
+    base_file.write_text(report_json(merged), encoding="utf-8")
 
 
 def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
@@ -633,7 +633,7 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
 
 def _load_api_casks(casks_json: Path | None) -> list[dict]:
     if casks_json:
-        return json.loads(casks_json.read_text())
+        return json.loads(casks_json.read_text(encoding="utf-8"))
     print(f"Fetching {BREW_API} …")
     with urlopen(BREW_API, timeout=60) as resp:
         return json.loads(resp.read())
@@ -659,18 +659,18 @@ def _extract_status(cask: dict, output_dir: Path) -> tuple[str, str]:
         return "failed", f"{type(e).__name__}: {e}"
 
 
-def _handle_ok(token: str, detail: str, args, report: dict,
-               pending: dict[str, Path], dirty: set[str]) -> None:
+def _record_ok(token: str, detail: str, report: dict) -> None:
     report.pop(token, None)  # clear any prior failure/review
     if detail in ("single", "shallowest"):
         # Audit queue: the .app was picked heuristically, not by
         # stanza name or token match — a human should eyeball it.
         record(report, token, "review", f"non-exact .app selection: {detail}")
-    if args.publish:
-        pending[token] = args.output_dir / f"{token}.png"
-        if len(pending) >= FLUSH_EVERY:
-            publish_batch(pending, report, dirty)
-            pending.clear()
+
+
+def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str]) -> None:
+    if len(pending) >= FLUSH_EVERY:
+        publish_batch(pending, report, dirty)
+        pending.clear()
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -705,7 +705,10 @@ def main(argv: list[str] | None = None) -> int:
         status, detail = _extract_status(cask, args.output_dir)
         if status == "ok":
             ok += 1
-            _handle_ok(token, detail, args, report, pending, dirty)
+            _record_ok(token, detail, report)
+            if args.publish:
+                pending[token] = args.output_dir / f"{token}.png"
+                _flush_if_due(report, pending, dirty)
         else:
             record(report, token, status, detail)
         outcomes.append((token, status, detail))

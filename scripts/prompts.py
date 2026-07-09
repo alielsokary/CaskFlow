@@ -132,7 +132,7 @@ class CategoryCatalog:
 
     @classmethod
     def load(cls, categories_json_path: Path) -> "CategoryCatalog":
-        data = json.loads(categories_json_path.read_text())
+        data = json.loads(categories_json_path.read_text(encoding="utf-8"))
         cats = data["categories"]
         all_ids = frozenset(cats.keys())
         return cls(

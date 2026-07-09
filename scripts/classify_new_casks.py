@@ -57,13 +57,13 @@ def fetch_brew_api() -> list[dict]:
 
 
 def load_existing_categories() -> dict:
-    return json.loads(CATEGORIES_PATH.read_text())
+    return json.loads(CATEGORIES_PATH.read_text(encoding="utf-8"))
 
 
 def load_homepage_cache() -> dict[str, dict]:
     if not HOMEPAGE_CACHE.exists():
         return {}
-    return {entry["token"]: entry for entry in json.loads(HOMEPAGE_CACHE.read_text())}
+    return {entry["token"]: entry for entry in json.loads(HOMEPAGE_CACHE.read_text(encoding="utf-8"))}
 
 
 # ---------------------------------------------------------------------------
@@ -142,7 +142,8 @@ def _cached_subset(tokens: set[str], cache: dict[str, dict]) -> dict[str, dict]:
 def _persist_cache(cache: dict[str, dict]) -> None:
     HOMEPAGE_CACHE.parent.mkdir(parents=True, exist_ok=True)
     HOMEPAGE_CACHE.write_text(
-        json.dumps(sorted(cache.values(), key=lambda x: x["token"]), indent=2, ensure_ascii=False)
+        json.dumps(sorted(cache.values(), key=lambda x: x["token"]), indent=2, ensure_ascii=False),
+        encoding="utf-8",
     )
 
 
@@ -238,7 +239,7 @@ def build_updated_categories(
 
 
 def write_categories(updated: dict) -> None:
-    CATEGORIES_PATH.write_text(json.dumps(updated, indent=2, ensure_ascii=False) + "\n")
+    CATEGORIES_PATH.write_text(json.dumps(updated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def _section(title: str, rows: list[str]) -> list[str]:
@@ -291,7 +292,7 @@ def write_report(
     lines += _section("Deprecated/disabled (pruned)", [f"- `{t}`" for t in sorted(deprecated_only)])
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text("\n".join(lines))
+    REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
     print(f"Report → {REPORT_PATH}")
 
 
