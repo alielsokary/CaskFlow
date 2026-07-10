@@ -4,7 +4,7 @@
 # locate the .app bundle, convert its .icns to a 256px PNG, and (optionally)
 # publish it as `<token>.png` on the orphan `icons` branch. CaskHub consumes
 # icons via jsDelivr's edge CDN (with raw.githubusercontent.com as fallback):
-#     https://cdn.jsdelivr.net/gh/alielsokary/CaskKit@icons/<token>.png
+#     https://cdn.jsdelivr.net/gh/alielsokary/CaskFlow@icons/<token>.png
 #
 # State — single writer, single home:
 # - "Done" = the .png files on the icons branch (one `git ls-tree`).

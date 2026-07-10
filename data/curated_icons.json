@@ -33,16 +33,16 @@
   "openzfs": "https://github.com/openzfs.png?size=256",
   "oracle-jdk": "https://github.com/oracle.png?size=256",
   "orka": "https://github.com/macstadium.png?size=256",
-  "orka-vm-tools": "https://raw.githubusercontent.com/alielsokary/CaskKit/icons/orka.png",
+  "orka-vm-tools": "https://raw.githubusercontent.com/alielsokary/CaskFlow/icons/orka.png",
   "orka3": "https://github.com/macstadium.png?size=256",
   "osquery": "https://github.com/osquery.png?size=256",
   "quarto": "https://github.com/quarto-dev.png?size=256",
   "silicon-labs-vcp-driver": "https://github.com/SiliconLabs.png?size=256",
-  "sshfs-mac": "https://raw.githubusercontent.com/alielsokary/CaskKit/icons/macfuse.png",
+  "sshfs-mac": "https://raw.githubusercontent.com/alielsokary/CaskFlow/icons/macfuse.png",
   "temurin": "https://github.com/adoptium.png?size=256",
   "tuist": "https://github.com/tuist.png?size=256",
   "vagrant": "https://github.com/hashicorp.png?size=256",
   "vagrant-vmware-utility": "https://github.com/hashicorp.png?size=256",
   "zulu": "https://github.com/zulu-openjdk.png?size=256",
-  "zulufx": "https://raw.githubusercontent.com/alielsokary/CaskKit/icons/zulu.png"
+  "zulufx": "https://raw.githubusercontent.com/alielsokary/CaskFlow/icons/zulu.png"
 }
