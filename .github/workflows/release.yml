@@ -20,7 +20,16 @@ jobs:
 
       - name: Compute release tag
         id: tag
-        run: echo "tag=data-$(date -u +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+        run: |
+          d=$(date -u +%Y.%m.%d)
+          echo "tag=caskflow-v$d" >> "$GITHUB_OUTPUT"
+          echo "date=$d" >> "$GITHUB_OUTPUT"
+
+      - name: Read release metadata
+        id: meta
+        run: |
+          echo "count=$(jq -r .totalCasks categories.json)" >> "$GITHUB_OUTPUT"
+          echo "generated=$(jq -r .generatedDate categories.json)" >> "$GITHUB_OUTPUT"
 
       - name: Mine cask added dates
         run: python3 scripts/mine_added_dates.py
@@ -29,9 +38,9 @@ jobs:
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          name: "Categories ${{ steps.tag.outputs.tag }}"
+          name: "CaskFlow-${{ steps.tag.outputs.date }}"
           body: |
-            Daily classification update.
+            Daily classification update — **${{ steps.meta.outputs.count }} casks**, generated ${{ steps.meta.outputs.generated }}.
 
             Stable asset URLs (always point to the most recent release):
             https://github.com/${{ env.REPO }}/releases/latest/download/categories.json
