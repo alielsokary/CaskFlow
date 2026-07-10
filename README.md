@@ -1,11 +1,13 @@
 # CaskFlow
 
+[![Tests](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg)](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f)](https://app.codacy.com/gh/alielsokary/CaskFlow/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![codecov](https://codecov.io/gh/alielsokary/CaskFlow/branch/master/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskFlow)
 [![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskFlow)](https://github.com/alielsokary/CaskFlow/releases/latest)
 
-![caskflow-banner-dark](https://github.com/user-attachments/assets/4d98ff85-0998-4bb9-81b4-2c63323ccd86)
+<img width="850" height="250" alt="caskflow-banner-dark" src="https://github.com/user-attachments/assets/6accbb78-474b-4ceb-9c90-87aa1f262074" />
+
 
 Classification tool and brew data made for [CaskHub](https://github.com/alielsokary/CaskHub) — a GUI macOS application for [Homebrew Casks](https://formulae.brew.sh/cask/).
 
