@@ -1,5 +1,6 @@
 # CaskFlow
 
+[![Tests](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg)](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f)](https://app.codacy.com/gh/alielsokary/CaskFlow/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![codecov](https://codecov.io/gh/alielsokary/CaskFlow/branch/master/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskFlow)
 [![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
