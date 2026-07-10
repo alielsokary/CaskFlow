@@ -36,7 +36,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TOKENS: ${{ inputs.tokens }}
-          LIMIT: ${{ inputs.limit }}
+          LIMIT: ${{ inputs.limit || '300' }}
         run: |
           if [ -n "$TOKENS" ]; then
             # word-splitting intended: TOKENS is space-separated; the script
