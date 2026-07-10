@@ -42,18 +42,20 @@ jobs:
 
             # Diff against the previous release (still "latest" at this point)
             if curl -fsSL "https://github.com/$REPO/releases/latest/download/categories.json" -o /tmp/prev.json; then
-              jq -r --slurpfile prev /tmp/prev.json \
-                '(.tokenToCategory | keys) - ($prev[0].tokenToCategory | keys) | .[]' \
-                categories.json > /tmp/new_tokens.txt
-              n=$(grep -c . /tmp/new_tokens.txt || true)
-              if [ "$n" -gt 0 ]; then
-                echo ""
-                echo "**${n} new cask(s):**"
-                head -20 /tmp/new_tokens.txt | sed 's/.*/- `&`/'
-                if [ "$n" -gt 20 ]; then
-                  echo "- …and $((n - 20)) more"
+              list_tokens() { # $1: jq key order (added|removed), $2: heading
+                jq -r --slurpfile prev /tmp/prev.json "$1" categories.json > /tmp/tokens.txt
+                n=$(grep -c . /tmp/tokens.txt || true)
+                if [ "$n" -gt 0 ]; then
+                  echo ""
+                  echo "**${n} $2:**"
+                  head -20 /tmp/tokens.txt | sed 's/.*/- `&`/'
+                  if [ "$n" -gt 20 ]; then
+                    echo "- …and $((n - 20)) more"
+                  fi
                 fi
-              fi
+              }
+              list_tokens '(.tokenToCategory | keys) - ($prev[0].tokenToCategory | keys) | .[]' "new cask(s)"
+              list_tokens '($prev[0].tokenToCategory | keys) - (.tokenToCategory | keys) | .[]' "removed/deprecated cask(s)"
             fi
           } > /tmp/release_notes.md
 
