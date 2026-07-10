@@ -25,11 +25,37 @@ jobs:
           echo "tag=caskflow-v$d" >> "$GITHUB_OUTPUT"
           echo "date=$d" >> "$GITHUB_OUTPUT"
 
-      - name: Read release metadata
-        id: meta
+      - name: Compose release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          echo "count=$(jq -r .totalCasks categories.json)" >> "$GITHUB_OUTPUT"
-          echo "generated=$(jq -r .generatedDate categories.json)" >> "$GITHUB_OUTPUT"
+          count=$(jq -r .totalCasks categories.json)
+          generated=$(jq -r .generatedDate categories.json)
+          {
+            echo "Daily classification update — **${count} casks**, generated ${generated}."
+
+            pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '.[0].number' || true)
+            if [ -n "$pr" ]; then
+              echo ""
+              echo "Changes: #${pr}"
+            fi
+
+            # Diff against the previous release (still "latest" at this point)
+            if curl -fsSL "https://github.com/$REPO/releases/latest/download/categories.json" -o /tmp/prev.json; then
+              jq -r --slurpfile prev /tmp/prev.json \
+                '(.tokenToCategory | keys) - ($prev[0].tokenToCategory | keys) | .[]' \
+                categories.json > /tmp/new_tokens.txt
+              n=$(grep -c . /tmp/new_tokens.txt || true)
+              if [ "$n" -gt 0 ]; then
+                echo ""
+                echo "**${n} new cask(s):**"
+                head -20 /tmp/new_tokens.txt | sed 's/.*/- `&`/'
+                if [ "$n" -gt 20 ]; then
+                  echo "- …and $((n - 20)) more"
+                fi
+              fi
+            fi
+          } > /tmp/release_notes.md
 
       - name: Mine cask added dates
         run: python3 scripts/mine_added_dates.py
@@ -39,14 +65,7 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: "CaskFlow-${{ steps.tag.outputs.date }}"
-          body: |
-            Daily classification update — **${{ steps.meta.outputs.count }} casks**, generated ${{ steps.meta.outputs.generated }}.
-
-            Stable asset URLs (always point to the most recent release):
-            https://github.com/${{ env.REPO }}/releases/latest/download/categories.json
-            https://github.com/${{ env.REPO }}/releases/latest/download/added_dates.json
-
-            See the merged PR for the diff.
+          body_path: /tmp/release_notes.md
           files: |
             categories.json
             added_dates.json
