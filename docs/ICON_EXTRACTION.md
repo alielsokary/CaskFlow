@@ -6,8 +6,8 @@ the orphan **`icons` branch**, served through jsDelivr's edge CDN.
 ## Consumption
 
 ```
-https://cdn.jsdelivr.net/gh/alielsokary/CaskKit@icons/<token>.png     (primary — edge CDN)
-https://raw.githubusercontent.com/alielsokary/CaskKit/icons/<token>.png   (fallback)
+https://cdn.jsdelivr.net/gh/alielsokary/CaskFlow@icons/<token>.png     (primary — edge CDN)
+https://raw.githubusercontent.com/alielsokary/CaskFlow/icons/<token>.png   (fallback)
 ```
 
 256×256 PNG per cask token, published once (icons are not re-extracted on
