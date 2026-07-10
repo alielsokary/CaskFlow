@@ -20,7 +20,44 @@ jobs:
 
       - name: Compute release tag
         id: tag
-        run: echo "tag=data-$(date -u +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+        run: |
+          d=$(date -u +%Y.%m.%d)
+          echo "tag=caskflow-v$d" >> "$GITHUB_OUTPUT"
+          echo "date=$d" >> "$GITHUB_OUTPUT"
+
+      - name: Compose release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(jq -r .totalCasks categories.json)
+          generated=$(jq -r .generatedDate categories.json)
+          {
+            echo "Daily classification update — **${count} casks**, generated ${generated}."
+
+            pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '.[0].number' || true)
+            if [ -n "$pr" ]; then
+              echo ""
+              echo "Changes: #${pr}"
+            fi
+
+            # Diff against the previous release (still "latest" at this point)
+            if curl -fsSL "https://github.com/$REPO/releases/latest/download/categories.json" -o /tmp/prev.json; then
+              list_tokens() { # $1: jq key order (added|removed), $2: heading
+                jq -r --slurpfile prev /tmp/prev.json "$1" categories.json > /tmp/tokens.txt
+                n=$(grep -c . /tmp/tokens.txt || true)
+                if [ "$n" -gt 0 ]; then
+                  echo ""
+                  echo "**${n} $2:**"
+                  head -20 /tmp/tokens.txt | sed 's/.*/- `&`/'
+                  if [ "$n" -gt 20 ]; then
+                    echo "- …and $((n - 20)) more"
+                  fi
+                fi
+              }
+              list_tokens '(.tokenToCategory | keys) - ($prev[0].tokenToCategory | keys) | .[]' "new cask(s)"
+              list_tokens '($prev[0].tokenToCategory | keys) - (.tokenToCategory | keys) | .[]' "removed/deprecated cask(s)"
+            fi
+          } > /tmp/release_notes.md
 
       - name: Mine cask added dates
         run: python3 scripts/mine_added_dates.py
@@ -29,15 +66,8 @@ jobs:
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          name: "Categories ${{ steps.tag.outputs.tag }}"
-          body: |
-            Daily classification update.
-
-            Stable asset URLs (always point to the most recent release):
-            https://github.com/${{ env.REPO }}/releases/latest/download/categories.json
-            https://github.com/${{ env.REPO }}/releases/latest/download/added_dates.json
-
-            See the merged PR for the diff.
+          name: "CaskFlow-${{ steps.tag.outputs.date }}"
+          body_path: /tmp/release_notes.md
           files: |
             categories.json
             added_dates.json
