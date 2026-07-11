@@ -13,9 +13,9 @@
   },
   "algodoo": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600047 milliseconds with 74973184 out of 293512409 bytes received",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "reason": "download failed: curl: (28) Operation timed out after 600146 milliseconds with 74383360 out of 293512409 bytes received",
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "alisma": {
     "status": "no_icon",
@@ -163,9 +163,9 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-nt0g3ecs/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/8j/sfr9qqcj73j4p6nhwcfpr0th0000gn/T/icon-canon-mg2500-driver-5hxl6f5q/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "canon-ufrii-driver": {
     "status": "no_icon",
@@ -194,8 +194,8 @@
   "chemdoodle": {
     "status": "failed",
     "reason": "sha256 mismatch (got dc0914ba279d…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "chordpotion": {
     "status": "no_icon",
@@ -212,8 +212,8 @@
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "claude-code": {
     "status": "no_icon",
@@ -326,80 +326,80 @@
   "dbeaver-enterprise": {
     "status": "failed",
     "reason": "sha256 mismatch (got 60bcaa629809…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dbeaverteam": {
     "status": "failed",
     "reason": "sha256 mismatch (got 037f96b9be78…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dbeaverultimate": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac134703e8cf…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4c681fed33d5…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-batch-converter": {
     "status": "failed",
     "reason": "sha256 mismatch (got b1d06fcd4bf1…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-combiner": {
     "status": "failed",
     "reason": "sha256 mismatch (got c455e43d469f…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-disk-writer": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9febe274f265…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 01c532db4103…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-encode-server": {
     "status": "failed",
     "reason": "sha256 mismatch (got 67d32d845c78…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-kdm-creator": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9e6c72db04b5…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-player": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9c7ea69f820a…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "dcp-o-matic-playlist-editor": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e8fae7f869e…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "desktoppr": {
     "status": "curated",
@@ -770,14 +770,14 @@
   "install-disk-creator": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "itunes-producer": {
     "status": "no_icon",
@@ -806,14 +806,14 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "kotlin-lsp": {
     "status": "curated",
@@ -842,8 +842,8 @@
   "linkandroid": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8bf6bbc0ab53…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "logi-options+": {
     "status": "review",
@@ -872,8 +872,8 @@
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "m32-edit": {
     "status": "failed",
@@ -896,8 +896,8 @@
   "macpar-deluxe": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "macsvg": {
     "status": "curated",
@@ -908,8 +908,8 @@
   "mailmaster": {
     "status": "failed",
     "reason": "sha256 mismatch (got 2937dc148176…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "mailtrackerblocker": {
     "status": "no_icon",
@@ -920,8 +920,8 @@
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "metashapepro": {
     "status": "failed",
@@ -932,8 +932,8 @@
   "meteorologist": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "micro-sniff": {
     "status": "failed",
@@ -956,14 +956,14 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "mini-vmac": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "miniconda": {
     "status": "curated",
@@ -1112,8 +1112,8 @@
   "pencil2d": {
     "status": "failed",
     "reason": "sha256 mismatch (got 9d65cb23326c…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "photozoom-pro": {
     "status": "no_icon",
@@ -1166,8 +1166,8 @@
   "profit": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "prolific-pl2303": {
     "status": "no_icon",
@@ -1232,14 +1232,14 @@
   "screaming-frog-log-file-analyser": {
     "status": "failed",
     "reason": "sha256 mismatch (got 911b40730adc…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "seam-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "securesafe": {
     "status": "failed",
@@ -1382,14 +1382,14 @@
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "tableau-reader": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "tal-drum": {
     "status": "no_icon",
@@ -1543,9 +1543,9 @@
   },
   "virtual-ii": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75004 ms: Couldn't connect to server",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75005 ms: Couldn't connect to server",
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "virtualgl": {
     "status": "no_icon",
@@ -1556,8 +1556,8 @@
   "visual-paradigm": {
     "status": "failed",
     "reason": "sha256 mismatch (got fc3c40f94cf8…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "visual-paradigm-ce": {
     "status": "failed",
@@ -1568,8 +1568,8 @@
   "vnc-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "warsaw": {
     "status": "no_icon",
@@ -1598,8 +1598,8 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "wizcli": {
     "status": "no_icon",
@@ -1610,8 +1610,8 @@
   "xnconvert": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7f9211670fe6…)",
-    "attempts": 2,
-    "updated": "2026-07-10"
+    "attempts": 3,
+    "updated": "2026-07-11"
   },
   "xppen-pentablet": {
     "status": "no_icon",
