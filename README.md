@@ -6,8 +6,7 @@
 [![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskFlow)](https://github.com/alielsokary/CaskFlow/releases/latest)
 
-<img width="850" height="250" alt="caskflow-banner-dark" src="https://github.com/user-attachments/assets/6accbb78-474b-4ceb-9c90-87aa1f262074" />
-
+<img width="1700" height="500" alt="caskflow-banner-dark" src="https://github.com/user-attachments/assets/a9c5d9cc-16ff-401c-b919-29daa5e520ca" />
 
 Classification tool and brew data made for [CaskHub](https://github.com/alielsokary/CaskHub) — a GUI macOS application for [Homebrew Casks](https://formulae.brew.sh/cask/).
 
