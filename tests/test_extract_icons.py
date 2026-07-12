@@ -305,7 +305,7 @@ def _run_main(monkeypatch, tmp_path, statuses):
     results = iter(statuses)
     monkeypatch.setattr(extract_icons, "_load_api_casks", lambda p: casks)
     monkeypatch.setattr(extract_icons, "load_report", lambda: {})
-    monkeypatch.setattr(extract_icons, "select_candidates", lambda a, r, l: casks)
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda a, r, lim: casks)
     monkeypatch.setattr(extract_icons, "_extract_status", lambda c, o: next(results))
     return extract_icons.main(["--output-dir", str(tmp_path)])
 
