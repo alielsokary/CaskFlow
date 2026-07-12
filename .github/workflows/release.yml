@@ -25,6 +25,16 @@ jobs:
           echo "tag=caskflow-v$d" >> "$GITHUB_OUTPUT"
           echo "date=$d" >> "$GITHUB_OUTPUT"
 
+      # Stamp the tag into the asset so consumers can display the release
+      # their data actually came from, without a separate GitHub API call.
+      - name: Stamp release tag into categories.json
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          jq --arg tag "$TAG" '. + {releaseTag: $tag}' \
+            categories.json > /tmp/stamped.json
+          mv /tmp/stamped.json categories.json
+
       - name: Compose release notes
         env:
           GH_TOKEN: ${{ github.token }}
