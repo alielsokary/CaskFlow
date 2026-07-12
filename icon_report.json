@@ -1263,7 +1263,7 @@
     "status": "curated",
     "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-07-12"
   },
   "silicon-labs-vcp-driver": {
     "status": "curated",
