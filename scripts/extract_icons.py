@@ -581,7 +581,10 @@ def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
     push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
     if push.returncode != 0:
         raise ExtractError(f"icon push failed: {push.stderr.strip()[:200]}")
-    print(f"  ↑ published {len(pngs)} icons to {ICONS_BRANCH}")
+    if pngs:
+        print(f"  ↑ published {len(pngs)} icons to {ICONS_BRANCH}")
+    else:
+        print(f"  ↑ updated {REPORT_FILE} on {ICONS_BRANCH} (no new icons)")
 
 
 # ---------------------------------------------------------------------------
@@ -640,7 +643,16 @@ def _load_api_casks(casks_json: Path | None) -> list[dict]:
 
 
 def _build_batch(tokens: list[str] | None, by_token: dict[str, dict],
-                 api_casks: list[dict], report: dict, limit: int) -> list[dict]:
+                 api_casks: list[dict], report: dict, limit: int,
+                 retry_parked: bool = False) -> list[dict]:
+    if retry_parked:
+        # Monthly second chance for failed-parks only: sha256-mismatch parks
+        # heal once brew bumps the cask's version. no_icon/car_only parks are
+        # deterministic and never retried. Tokens gone from the API (removed
+        # casks) are skipped.
+        return [by_token[t] for t, e in sorted(report.items())
+                if e["status"] == "failed" and e.get("attempts", 0) >= MAX_ATTEMPTS
+                and t in by_token]
     if not tokens:
         return select_candidates(api_casks, report, limit)
     missing = [t for t in tokens if t not in by_token]
@@ -676,6 +688,8 @@ def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str]) -> No
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tokens", nargs="*", help="Extract exactly these casks")
+    parser.add_argument("--retry-parked", action="store_true",
+                        help="Retry every failed-parked token (attempts >= MAX_ATTEMPTS)")
     parser.add_argument("--limit", type=int, default=50, help="Batch cap (default 50)")
     parser.add_argument("--publish", action="store_true",
                         help="Publish cask-<token> pre-releases (requires gh auth)")
@@ -688,7 +702,8 @@ def main(argv: list[str] | None = None) -> int:
     by_token = {c["token"]: c for c in api_casks}
 
     report = load_report()
-    batch = _build_batch(args.tokens, by_token, api_casks, report, args.limit)
+    batch = _build_batch(args.tokens, by_token, api_casks, report, args.limit,
+                         retry_parked=args.retry_parked)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     print(f"Extracting {len(batch)} casks → {args.output_dir}"
@@ -712,7 +727,12 @@ def main(argv: list[str] | None = None) -> int:
         else:
             record(report, token, status, detail)
         outcomes.append((token, status, detail))
-        print(f"  [{i}/{len(batch)}] {token}: {status} — {detail}", flush=True)
+        note = ""
+        if status == "failed":
+            attempts = report[token]["attempts"]
+            note = (f" [attempt {attempts} — parked]" if attempts >= MAX_ATTEMPTS
+                    else f" [attempt {attempts}/{MAX_ATTEMPTS}]")
+        print(f"  [{i}/{len(batch)}] {token}: {status} — {detail}{note}", flush=True)
 
     if args.publish:
         # Always flush at the end — persists report-only outcomes (failures,
@@ -722,9 +742,17 @@ def main(argv: list[str] | None = None) -> int:
         print("(local run — report changes not persisted; use --publish)")
 
     elapsed = time.time() - start
+    failed = sum(1 for _, s, _ in outcomes if s == "failed")
     print(f"\n{ok}/{len(batch)} icons extracted in {elapsed:.0f}s; "
-          f"{sum(1 for _, s, _ in outcomes if s == 'failed')} failed, "
+          f"{failed} failed, "
           f"{sum(1 for _, s, _ in outcomes if s in ('no_icon', 'car_only'))} skipped")
+    if batch and failed == len(batch) and not args.retry_parked:
+        # Every cask hard-failed: either the tail-end dregs day (rare, worth a
+        # look) or a systemic problem (runner network, stale brew metadata).
+        # Report/parking is already pushed above, so failing here loses nothing.
+        # Retry-parked runs are exempt: all-fail is their expected outcome.
+        print("error: every cask in the batch failed — flagging the run red")
+        return 1
     return 0
 
 

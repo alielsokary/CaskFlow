@@ -294,3 +294,59 @@ def test_icns_to_png_prefers_declared_catalog_icon_over_legacy_icns(tmp_path, mo
 def test_icns_to_png_no_icns_no_car_is_parked(tmp_path):
     app = _mk_app_with_resources(tmp_path)  # empty Resources
     assert icns_to_png(app, tmp_path / "out.png") == "no .icns in Resources"
+
+
+# --- main exit code --------------------------------------------------------
+
+def _run_main(monkeypatch, tmp_path, statuses):
+    import extract_icons
+    casks = [{"token": f"t{i}", "url": "https://example.com/a.dmg",
+              "artifacts": [{"app": ["A.app"]}]} for i in range(len(statuses))]
+    results = iter(statuses)
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda p: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {})
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda a, r, l: casks)
+    monkeypatch.setattr(extract_icons, "_extract_status", lambda c, o: next(results))
+    return extract_icons.main(["--output-dir", str(tmp_path)])
+
+
+def test_main_all_failed_batch_exits_nonzero(monkeypatch, tmp_path):
+    # A batch where every cask hard-fails must flag the CI run red — a green
+    # run with "0 published, 40 failed" hides systemic breakage (2026-07-12).
+    assert _run_main(monkeypatch, tmp_path,
+                     [("failed", "boom"), ("failed", "boom")]) == 1
+
+
+def test_main_partial_failure_stays_green(monkeypatch, tmp_path):
+    # Individual failures are routine (MAX_ATTEMPTS retry design) — only a
+    # clean sweep of failures is an error signal.
+    assert _run_main(monkeypatch, tmp_path,
+                     [("failed", "boom"), ("no_icon", "no url")]) == 0
+    assert _run_main(monkeypatch, tmp_path, []) == 0  # empty batch: steady state
+
+
+# --- retry-parked ----------------------------------------------------------
+
+def test_build_batch_retry_parked_selects_failed_parked_only():
+    from extract_icons import _build_batch
+    by_token = {"a": {"token": "a"}, "b": {"token": "b"}, "c": {"token": "c"}}
+    report = {
+        "a": {"status": "failed", "attempts": 3},   # parked — retried
+        "b": {"status": "failed", "attempts": 2},   # daily cron still owns it
+        "c": {"status": "no_icon", "attempts": 0},  # deterministic — never retried
+        "gone": {"status": "failed", "attempts": 5},  # removed from brew API
+    }
+    batch = _build_batch(None, by_token, [], report, 50, retry_parked=True)
+    assert [c["token"] for c in batch] == ["a"]
+
+
+def test_main_retry_parked_all_fail_stays_green(monkeypatch, tmp_path):
+    # All-fail is the expected outcome of a speculative monthly retry —
+    # only the daily cron's all-fail flags the run red.
+    import extract_icons
+    casks = [{"token": "t0", "url": "u", "artifacts": [{"app": ["A.app"]}]}]
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda p: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {
+        "t0": {"status": "failed", "reason": "x", "attempts": 3, "updated": "2026-07-11"}})
+    monkeypatch.setattr(extract_icons, "_extract_status", lambda c, o: ("failed", "boom"))
+    assert extract_icons.main(["--output-dir", str(tmp_path), "--retry-parked"]) == 0

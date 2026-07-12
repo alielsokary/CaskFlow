@@ -13,10 +13,17 @@ on:
       tokens:
         description: "Specific tokens, space-separated (overrides limit)"
         default: ""
+      retry_parked:
+        description: "Retry all failed-parked tokens (overrides limit/tokens)"
+        type: boolean
+        default: false
   schedule:
-    # 15:43 UTC — after the 13:17 classification cron; a new cask usually
-    # gets its category and its icon on the same day.
+    # 15:43 UTC daily — after the 13:17 classification cron; a new cask
+    # usually gets its category and its icon on the same day.
     - cron: "43 15 * * *"
+    # Monthly: retry failed-parked tokens. sha256-mismatch parks heal once
+    # brew bumps the cask version; vendor-403 parks cost seconds to re-check.
+    - cron: "7 3 1 * *"
 
 permissions:
   contents: write
@@ -37,8 +44,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TOKENS: ${{ inputs.tokens }}
           LIMIT: ${{ inputs.limit || '300' }}
+          RETRY_PARKED: ${{ inputs.retry_parked }}
+          CRON: ${{ github.event.schedule }}
         run: |
-          if [ -n "$TOKENS" ]; then
+          if [ "$RETRY_PARKED" = "true" ] || [ "$CRON" = "7 3 1 * *" ]; then
+            python3 scripts/extract_icons.py --publish --retry-parked
+          elif [ -n "$TOKENS" ]; then
             # word-splitting intended: TOKENS is space-separated; the script
             # rejects anything that isn't a known cask token.
             python3 scripts/extract_icons.py --publish --tokens $TOKENS
