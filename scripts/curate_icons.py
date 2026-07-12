@@ -6,6 +6,10 @@
 # (vendor-controlled) or brand PNGs — mapped per token in
 # data/curated_icons.json. Every icon is eye-verified before --publish.
 #
+# The sentinel value "cli-tile" renders CaskHub's terminal tile locally
+# (cli_tile.swift) instead of downloading — for pkg-based CLI casks the app
+# can't give its own tile to (session-manager-plugin).
+#
 # Published tokens get status "curated" in icon_report.json: provenance for
 # audits, and it keeps them out of the extractor's candidate selection.
 #
@@ -32,6 +36,18 @@ from extract_icons import (
 )
 
 MAPPING_FILE = REPO_ROOT / "data" / "curated_icons.json"
+
+TILE_SENTINEL = "cli-tile"
+TILE_SCRIPT = Path(__file__).with_name("cli_tile.swift")
+TILE_FONT = Path(__file__).with_name("JetBrainsMono.ttf")  # vendored from CaskHub (OFL)
+
+
+def render_tile(dest_png: Path) -> str | None:
+    """Render CaskHub's CLI tile (cli_tile.swift explains the compensation)."""
+    proc = run(["swift", str(TILE_SCRIPT), str(TILE_FONT), str(dest_png), ICON_SIZE])
+    if proc.returncode != 0 or not dest_png.exists():
+        return f"tile render failed: {proc.stderr.strip()[:120]}"
+    return None
 
 
 def fetch_icon(url: str, dest_png: Path) -> str | None:
@@ -66,7 +82,7 @@ def _download_all(mapping: dict[str, str], output_dir: Path) -> dict[str, Path]:
     pngs: dict[str, Path] = {}
     for token, url in sorted(mapping.items()):
         dest = output_dir / f"{token}.png"
-        err = fetch_icon(url, dest)
+        err = render_tile(dest) if url == TILE_SENTINEL else fetch_icon(url, dest)
         print(f"  {token}: {err or 'ok'}")
         if err is None:
             pngs[token] = dest
@@ -87,7 +103,10 @@ def main(argv: list[str] | None = None) -> int:
     if args.publish and pngs:
         report = load_report()
         for token in pngs:
-            record(report, token, "curated", f"official vendor asset: {mapping[token]}")
+            reason = ("CaskHub CLI tile -- pkg-based CLI, no GUI ships"
+                      if mapping[token] == TILE_SENTINEL
+                      else f"official vendor asset: {mapping[token]}")
+            record(report, token, "curated", reason)
         publish_batch(pngs, report, dirty=set(pngs))
     elif not args.publish:
         print(f"(local run — review {args.output_dir}, then --publish)")

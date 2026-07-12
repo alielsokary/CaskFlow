@@ -37,6 +37,7 @@
   "orka3": "https://github.com/macstadium.png?size=256",
   "osquery": "https://github.com/osquery.png?size=256",
   "quarto": "https://github.com/quarto-dev.png?size=256",
+  "session-manager-plugin": "cli-tile",
   "silicon-labs-vcp-driver": "https://github.com/SiliconLabs.png?size=256",
   "sshfs-mac": "https://raw.githubusercontent.com/alielsokary/CaskFlow/icons/macfuse.png",
   "temurin": "https://github.com/adoptium.png?size=256",
