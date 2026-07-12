@@ -44,7 +44,12 @@ minutes on first request, cached aggressively thereafter.
 - **Done** = the `.png` files on the branch (one `git ls-tree`, no pagination).
 - `icon_report.json` records:
   - `no_icon` / `car_only` — permanently parked with a reason
-  - `failed` — retried up to 3 runs, then parked (`--tokens` bypasses parking)
+  - `failed` — retried up to 3 runs, then parked (`--tokens` bypasses parking;
+    a monthly cron re-runs all failed-parks via `--retry-parked`, since
+    sha256-mismatch parks heal once brew bumps the cask version).
+    A run where *every* cask in the batch fails exits non-zero (red CI run) —
+    it's either the tail-end dregs or a systemic problem worth a look; the
+    report/parking push happens before the exit, so nothing is lost.
   - `review` — icon published but the `.app` was picked heuristically
     (`single`/`shallowest`); **the human audit queue**. Eyeball these after
     each batch; a wrong-but-plausible icon is worse than a missing one.
