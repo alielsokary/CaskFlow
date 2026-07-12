@@ -721,9 +721,9 @@
   },
   "ibm-cloud-cli": {
     "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg/wrapper-based CLI, no GUI ships",
+    "reason": "official vendor asset: https://github.com/IBM-Cloud.png?size=256",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-07-12"
   },
   "icab": {
     "status": "failed",
@@ -1261,7 +1261,7 @@
   },
   "session-manager-plugin": {
     "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
+    "reason": "official vendor asset: https://github.com/aws.png?size=256",
     "attempts": 0,
     "updated": "2026-07-12"
   },
