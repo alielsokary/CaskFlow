@@ -3816,6 +3816,11 @@
     "og_desc": "ChatGPT Atlas, the browser with ChatGPT built in. Get instant answers, summaries, and smart web help—right from any page. With privacy settings you can control. Available now for MacOS."
   },
   {
+    "token": "chatgpt-classic",
+    "homepage": "https://chatgpt.com/",
+    "error": "HTTP 403"
+  },
+  {
     "token": "chatterino",
     "homepage": "https://chatterino.com/",
     "title": "Chatterino",
@@ -32106,6 +32111,13 @@
     "og_desc": "Discover learning. See your thinking. Refined over ten years, inspired by the academic journeys of many extraordinary learners, this all-in-one app is designed to empower everyone to embrace active learning."
   },
   {
+    "token": "markdown-preview",
+    "homepage": "https://markdownpreview.app/",
+    "title": "Markdown Preview — A native macOS app for reading Markdown",
+    "meta_desc": "A native macOS app for reading Markdown files. Clean previews, document outline, Quick Look. Open source, MIT licensed.",
+    "og_desc": "A native macOS app for reading Markdown files. Clean previews, document outline, Quick Look. Open source, MIT licensed."
+  },
+  {
     "token": "markdown-service-tools",
     "homepage": "https://brettterpstra.com/projects/markdown-service-tools/",
     "title": "Markdown Service Tools - BrettTerpstra.com",
@@ -40486,6 +40498,13 @@
     "og_desc": "The CP210x USB to UART Bridge Virtual COM Port (VCP) drivers are required for device operation as a Virtual COM Port to facilitate host communication with CP210x products. These devices can also interface to a host using the direct access driver. "
   },
   {
+    "token": "siliconscope",
+    "homepage": "https://siliconscope.calidalab.ai/",
+    "title": "SiliconScope — Apple Silicon system monitor",
+    "meta_desc": "A sudoless macOS monitor with first-class ANE, Media Engine, and memory-bandwidth tracking — the signals Activity Monitor and btop don’t show. Menu bar and full dashboard.",
+    "og_desc": "A sudoless macOS monitor with first-class ANE, Media Engine, and memory-bandwidth tracking — the signals Activity Monitor and btop don’t show. Menu bar and full dashboard."
+  },
+  {
     "token": "silkypix-developer-studio-se",
     "homepage": "https://www.isl.co.jp/SILKYPIX/english/p/",
     "title": "SILKYPIX Developer Studio SE Version",
@@ -45467,6 +45486,13 @@
     "og_desc": ""
   },
   {
+    "token": "vorssaint",
+    "homepage": "https://github.com/vorssaint/vorssaint-utils",
+    "title": "GitHub - vorssaint/vorssaint-utils: Free and open-source macOS menu bar toolkit. · GitHub",
+    "meta_desc": "Free and open-source macOS menu bar toolkit. Contribute to vorssaint/vorssaint-utils development by creating an account on GitHub.",
+    "og_desc": "Free and open-source macOS menu bar toolkit. Contribute to vorssaint/vorssaint-utils development by creating an account on GitHub."
+  },
+  {
     "token": "vorta",
     "homepage": "https://github.com/borgbase/vorta",
     "title": "GitHub - borgbase/vorta: Desktop Backup Client for Borg Backup · GitHub",
@@ -45976,6 +46002,13 @@
     "title": "WiFiSpoof by SweetP Productions",
     "meta_desc": "MAC Address Spoofing",
     "og_desc": ""
+  },
+  {
+    "token": "willow-voice",
+    "homepage": "https://willowvoice.com/",
+    "title": "AI Speech to Text Mac, Windows and iPhone Dictation Software | Willow",
+    "meta_desc": "Fast, accurate voice dictation for emails, documents, Cursor, note-taking, and messaging. Turn speech to text seamlessly, edit automatically, and stay secure with privacy. Boost productivity with context-aware AI and custom dictionaries. Get Willow Voice!",
+    "og_desc": "Fast, accurate voice dictation for emails, documents, Cursor, note-taking, and messaging. Turn speech to text seamlessly, edit automatically, and stay secure with privacy. Boost productivity with context-aware AI and custom dictionaries. Get Willow Voice!"
   },
   {
     "token": "winbox",
