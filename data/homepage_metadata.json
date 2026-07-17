@@ -29803,6 +29803,13 @@
     "og_desc": "Make your battery information a bit more interesting. - brianmichel/Juice"
   },
   {
+    "token": "juicy",
+    "homepage": "https://getjuicy.app/",
+    "title": "Juicy - Custom Mac Battery Alerts & Health Monitoring",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "jukebox",
     "homepage": "https://www.jaysce.dev/projects/jukebox",
     "title": "Jukebox • Sasindu Jayasinghe",
@@ -40865,6 +40872,13 @@
     "title": "Sloth - Mac app that shows all open files and sockets  |",
     "meta_desc": "Sveinbjörn's personal website. Also some open source software stuff.",
     "og_desc": ""
+  },
+  {
+    "token": "smallstepagent",
+    "homepage": "https://smallstep.com/",
+    "title": "The World's First Device Identity Platform | Smallstep",
+    "meta_desc": "Secure devices, enforce Zero Trust and simplify cryptography with Smallstep's unified platform for device identity and certificates.",
+    "og_desc": "Secure devices, enforce Zero Trust and simplify cryptography with Smallstep's unified platform for device identity and certificates."
   },
   {
     "token": "smart-converter-pro",
