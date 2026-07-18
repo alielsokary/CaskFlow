@@ -27,11 +27,22 @@ jobs:
 
       # Stamp the tag into the asset so consumers can display the release
       # their data actually came from, without a separate GitHub API call.
-      - name: Stamp release tag into categories.json
+      # iconTokens is the manifest of the icons branch — CaskHub skips icon
+      # requests for any token not listed (they are guaranteed 404s). If the
+      # trees API fails or truncates, the field is omitted and the app falls
+      # back to probing, so this step must never fail the release.
+      - name: Stamp release tag and icon manifest into categories.json
         env:
           TAG: ${{ steps.tag.outputs.tag }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          jq --arg tag "$TAG" '. + {releaseTag: $tag}' \
+          gh api "repos/$REPO/git/trees/icons" --jq \
+            'if .truncated then null else
+               [.tree[].path | select(endswith(".png")) | rtrimstr(".png")]
+             end' > /tmp/icon_manifest.json || echo null > /tmp/icon_manifest.json
+          jq --arg tag "$TAG" --slurpfile icons /tmp/icon_manifest.json \
+            '. + {releaseTag: $tag}
+             + (if $icons[0] then {iconTokens: ($icons[0] | sort)} else {} end)' \
             categories.json > /tmp/stamped.json
           mv /tmp/stamped.json categories.json
 
