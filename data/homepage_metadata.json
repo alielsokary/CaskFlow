@@ -1298,13 +1298,6 @@
     "og_desc": ""
   },
   {
-    "token": "aphera",
-    "homepage": "https://aphera.co/",
-    "title": "Aphera • Fast RAW Photo Editor for Mac",
-    "meta_desc": "A speedy, intentional, and modern RAW photo editor built natively for Mac.",
-    "og_desc": "A speedy, intentional, and modern RAW photo editor built natively for Mac."
-  },
-  {
     "token": "apidog",
     "homepage": "https://apidog.com/",
     "title": "",
@@ -1518,13 +1511,6 @@
     "title": "Arc from The Browser Company",
     "meta_desc": "Experience a calmer, more personal internet in this browser designed for you. Let go of the clicks, the clutter, the distractions with the Arc browser.",
     "og_desc": "Experience a calmer, more personal internet in this browser designed for you. Let go of the clicks, the clutter, the distractions."
-  },
-  {
-    "token": "arcbox",
-    "homepage": "https://arcbox.dev/",
-    "title": "Discord",
-    "meta_desc": "The fully open source Docker Desktop alternative built natively for Apple Silicon with blazing-fast performance. Run containers, Kubernetes, Firecracker VMs, and sandboxed AI agents at lightning speed.",
-    "og_desc": "The fully open source Docker Desktop alternative built natively for Apple Silicon with blazing-fast performance. Run containers, Kubernetes, Firecracker VMs, and sandboxed AI agents at lightning speed."
   },
   {
     "token": "archaeology",
@@ -31262,13 +31248,6 @@
     "og_desc": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://discuss.logseq.com/t/logseq-product-road..."
   },
   {
-    "token": "logseq-og",
-    "homepage": "https://github.com/logseq/og",
-    "title": "GitHub - logseq/og: Logseq og (file version) · GitHub",
-    "meta_desc": "Logseq og (file version). Contribute to logseq/og development by creating an account on GitHub.",
-    "og_desc": "Logseq og (file version). Contribute to logseq/og development by creating an account on GitHub."
-  },
-  {
     "token": "lolgato",
     "homepage": "https://github.com/raine/Lolgato/",
     "title": "GitHub - raine/Lolgato: A macOS app that enhances control over Elgato lights, offering features beyond the standard Elgato Control Center software. · GitHub",
@@ -36652,11 +36631,6 @@
     "title": "Permute - Media Converter for macOS - Charlie Monroe Software",
     "meta_desc": "Convert audio, video and images to 50 different formats.",
     "og_desc": ""
-  },
-  {
-    "token": "perplexity",
-    "homepage": "https://www.perplexity.ai/personal-computer",
-    "error": "HTTP 403"
   },
   {
     "token": "petrichor",

@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-07-18
+Generated 2026-07-16
 
 ## Summary
 
-- 4 new casks classified
+- 3 new casks classified
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
@@ -14,7 +14,6 @@ Generated 2026-07-18
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `aphera` | designGraphics | — | 0.95 | Aphera is a RAW photo editing application, fitting design/graphics tools. |
-| `arcbox` | developerTools | utilities | 0.85 | Container/VM runtime tool similar to Docker Desktop, aimed at developers. |
-| `logseq-og` | productivity | developerTools | 0.85 | Logseq is a note-taking/knowledge management app, with open-source developer roots. |
-| `perplexity` | productivity | ai | 0.85 | Perplexity is an AI answer-engine/assistant app, fitting productivity with an AI trait. |
+| `juicy` | menuBar | utilities | 0.90 | A menu bar battery monitoring tool with alerts and health tracking, primarily a menu bar utility. |
+| `oscar` | scienceEducation | utilities | 0.70 | OSCAR is a medical data analysis tool for CPAP sleep apnea therapy data, fitting science/health analysis rather than any other category. |
+| `smallstepagent` | securityPrivacy | developerTools | 0.85 | Device identity and certificate management daemon focused on Zero Trust security. |
