@@ -52,9 +52,13 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Open or update rolling PR
+        id: pr
         if: env.DRY_RUN != 'true'
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
         with:
+          # PAT so PR-triggered workflows run without maintainer approval
+          # (github-actions[bot] has no write access, so its runs are quarantined)
+          token: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
           commit-message: "chore(categories): daily classification update"
           title: "Daily cask classification update"
           body-path: data/classification_report.md
@@ -64,3 +68,13 @@ jobs:
             categories.json
             data/classification_report.md
             data/homepage_metadata.json
+
+      - name: Enable auto-merge
+        if: env.DRY_RUN != 'true' && steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+        run: |
+          if [ "$(gh pr view "$PR" --json autoMergeRequest --jq '.autoMergeRequest')" = "null" ]; then
+            gh pr merge --auto --squash "$PR"
+          fi
