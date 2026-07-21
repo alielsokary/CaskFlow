@@ -221,6 +221,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "cleanmymac-cli": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-07-21"
+  },
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
