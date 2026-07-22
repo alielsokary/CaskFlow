@@ -1,17 +1,20 @@
 """Tests for extract_icons pure helpers — eligibility, container detection, icon naming."""
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+import hashlib
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+import pytest
 
-from extract_icons import (  # noqa: E402
+from extract_icons import (
+    ExtractError,
+    _flush_if_due,
+    _verify_sha256,
     app_names_from_artifacts,
     container_type,
     eligibility,
     resolve_icns_name,
 )
+import extract_icons
 
 
 def _cask(**kw) -> dict:
@@ -78,7 +81,7 @@ def test_resolve_icns_name_missing_or_blank():
 
 # --- find_app selection paths -------------------------------------------------
 
-from extract_icons import find_app  # noqa: E402
+from extract_icons import find_app
 
 
 def _mk_app(root, *parts):
@@ -118,7 +121,7 @@ def test_find_app_never_follows_symlinks(tmp_path):
 
 # --- installer demotion & token matching (batch-1 lessons) --------------------
 
-from extract_icons import installerish, token_matches_app  # noqa: E402
+from extract_icons import installerish, token_matches_app
 
 
 def test_installerish_names():
@@ -160,7 +163,7 @@ def test_find_app_single_ignores_installer_sibling(tmp_path):
 
 # --- selection skips non-main casks (shared filter with the classifier) -------
 
-from classify_new_casks import is_main_cask  # noqa: E402
+from classify_new_casks import is_main_cask
 
 
 def test_is_main_cask_shared_filter():
@@ -172,9 +175,9 @@ def test_is_main_cask_shared_filter():
 
 # --- magic-byte container sniffing (extension-less URLs: …/stable, …/osx_arm64)
 
-import zipfile  # noqa: E402
+import zipfile
 
-from extract_icons import icns_to_png, sniff_container  # noqa: E402
+from extract_icons import icns_to_png, sniff_container
 
 
 def test_sniff_zip(tmp_path):
@@ -258,6 +261,40 @@ def test_payload_bundle_ignores_normal_pkg_layout(tmp_path):
     app.mkdir(parents=True)
     (app / "Info.plist").write_bytes(b"<plist/>")
     assert payload_bundle(tmp_path) is None
+
+
+def test_sha256_verification_streams_file(tmp_path, monkeypatch):
+    artifact = tmp_path / "artifact"
+    payload = b"large-enough-payload" * 100
+    artifact.write_bytes(payload)
+    monkeypatch.setattr(type(artifact), "read_bytes", lambda self: pytest.fail("must stream"))
+
+    _verify_sha256({"sha256": hashlib.sha256(payload).hexdigest()}, artifact)
+
+
+def test_sha256_mismatch_is_rejected(tmp_path):
+    artifact = tmp_path / "artifact"
+    artifact.write_bytes(b"unexpected")
+    with pytest.raises(ExtractError, match="sha256 mismatch"):
+        _verify_sha256({"sha256": "0" * 64}, artifact)
+
+
+def test_flush_clears_published_pending_and_dirty(monkeypatch, tmp_path):
+    pending = {"example": tmp_path / "example.png"}
+    dirty = {"example", "failed-example"}
+    published = []
+    monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 1)
+    monkeypatch.setattr(
+        extract_icons,
+        "publish_batch",
+        lambda pngs, report, tokens: published.append((dict(pngs), set(tokens))),
+    )
+
+    _flush_if_due({}, pending, dirty)
+
+    assert published == [({"example": tmp_path / "example.png"}, {"example", "failed-example"})]
+    assert pending == {}
+    assert dirty == set()
 
 
 # --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --

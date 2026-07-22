@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-18",
+  "generatedDate": "2026-07-21",
   "totalCasks": 3807,
   "categories": {
     "developerTools": {
@@ -4204,9 +4204,7 @@
     },
     "enfusegui": {
       "primary": "designGraphics",
-      "secondary": [
-        "designGraphics"
-      ]
+      "secondary": []
     },
     "engine-dj": {
       "primary": "audioMusic",
@@ -4230,9 +4228,7 @@
     },
     "entry": {
       "primary": "scienceEducation",
-      "secondary": [
-        "scienceEducation"
-      ]
+      "secondary": []
     },
     "envkey": {
       "primary": "securityPrivacy",
@@ -5322,9 +5318,7 @@
     },
     "gephi": {
       "primary": "scienceEducation",
-      "secondary": [
-        "scienceEducation"
-      ]
+      "secondary": []
     },
     "get-api": {
       "primary": "developerTools",
@@ -6754,9 +6748,7 @@
     },
     "josm": {
       "primary": "scienceEducation",
-      "secondary": [
-        "scienceEducation"
-      ]
+      "secondary": []
     },
     "jottacloud": {
       "primary": "cloudStorage",
@@ -9456,9 +9448,7 @@
     },
     "nordlocker": {
       "primary": "securityPrivacy",
-      "secondary": [
-        "securityPrivacy"
-      ]
+      "secondary": []
     },
     "nordpass": {
       "primary": "securityPrivacy",
@@ -11513,8 +11503,7 @@
     "quiet": {
       "primary": "communication",
       "secondary": [
-        "securityPrivacy",
-        "communication"
+        "securityPrivacy"
       ]
     },
     "quip": {
@@ -12581,9 +12570,7 @@
     },
     "shadow": {
       "primary": "games",
-      "secondary": [
-        "games"
-      ]
+      "secondary": []
     },
     "shadowsocksx": {
       "primary": "securityPrivacy",
@@ -13754,9 +13741,7 @@
     },
     "swiftdefaultappsprefpane": {
       "primary": "utilities",
-      "secondary": [
-        "utilities"
-      ]
+      "secondary": []
     },
     "swiftdialog": {
       "primary": "developerTools",
@@ -14971,9 +14956,7 @@
     },
     "unity-hub": {
       "primary": "developerTools",
-      "secondary": [
-        "developerTools"
-      ]
+      "secondary": []
     },
     "unity-ios-support-for-editor": {
       "primary": "developerTools",

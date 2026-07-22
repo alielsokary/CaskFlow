@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
-"""Daily classification orchestrator."""
-# Computes the diff between the live Homebrew cask API and the existing
-# categories.json, classifies new casks via an LLM, prunes deprecated/removed
-# casks, and writes the updated categories.json plus a human-readable report.
-#
-# Idempotent — if there are no diffs, exits 0 with no file changes.
-# Failure-isolated — per-cask LLM errors are logged and skipped, never fatal.
-#
-# Run:
-#     LLM_PROVIDER=mock python scripts/classify_new_casks.py
-#     LLM_PROVIDER=anthropic ANTHROPIC_API_KEY=... python scripts/classify_new_casks.py
+"""Classify new Homebrew casks and prune entries that are no longer usable."""
 from __future__ import annotations
 
 import argparse
@@ -34,6 +24,7 @@ REPO_ROOT = SCRIPT_DIR.parent
 CATEGORIES_PATH = REPO_ROOT / "categories.json"
 HOMEPAGE_CACHE = REPO_ROOT / "data" / "homepage_metadata.json"
 REPORT_PATH = REPO_ROOT / "data" / "classification_report.md"
+MANUAL_REVIEW_CONFIDENCE = 0.75
 
 BREW_API = "https://formulae.brew.sh/api/cask.json"
 HOMEPAGE_WORKERS = 30
@@ -45,10 +36,6 @@ LLM_WORKERS_BY_PROVIDER = {
     "mock": 16,
 }
 
-
-# ---------------------------------------------------------------------------
-# Loaders
-# ---------------------------------------------------------------------------
 
 def fetch_brew_api() -> list[dict]:
     print(f"Fetching {BREW_API} …")
@@ -65,10 +52,6 @@ def load_homepage_cache() -> dict[str, dict]:
         return {}
     return {entry["token"]: entry for entry in json.loads(HOMEPAGE_CACHE.read_text(encoding="utf-8"))}
 
-
-# ---------------------------------------------------------------------------
-# Diff
-# ---------------------------------------------------------------------------
 
 def is_main_cask(c: dict) -> bool:
     """Mirror the filter in CaskCatalogViewModel.swift:137-142."""
@@ -87,13 +70,8 @@ def is_main_cask(c: dict) -> bool:
 
 def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, str]]:
     """Carry the classification across a Homebrew token rename instead of re-classifying."""
-    # Homebrew renames keep the old token in the new cask's `old_tokens` field;
-    # migrating avoids pruning + paying an LLM call to re-classify the same app.
-    #
-    # Mutates existing["tokenToCategory"] in place. Returns [(old, new), ...].
-    # Renames onto an already-classified token just drop the old entry; renames
-    # onto a non-main cask (deprecated etc.) are migrated here and then pruned by
-    # compute_diff's no_longer_main pass.
+    # Homebrew exposes the prior token in old_tokens. The target's existing
+    # classification wins when both tokens are already mapped.
     mapping = existing["tokenToCategory"]
     api_tokens = {c["token"] for c in api_casks}
     old_to_new = {
@@ -116,9 +94,7 @@ def compute_diff(api_casks: list[dict], existing: dict) -> tuple[set[str], set[s
     main_tokens = {c["token"] for c in api_casks if is_main_cask(c)}
     existing_tokens = set(existing["tokenToCategory"])
 
-    # Tokens that should be pruned even if still present in the API:
-    # explicitly deprecated/disabled, OR tokens we already classified that
-    # the app would now filter out (e.g. someone deprecated them upstream).
+    # Also prune mapped tokens that the consumer now filters out.
     api_by_token = {c["token"]: c for c in api_casks}
     no_longer_main = {
         t for t in existing_tokens
@@ -130,10 +106,6 @@ def compute_diff(api_casks: list[dict], existing: dict) -> tuple[set[str], set[s
     prune_tokens = removed_tokens | no_longer_main
     return new_tokens, removed_tokens, prune_tokens
 
-
-# ---------------------------------------------------------------------------
-# Homepage scrape (delta only, persisted to cache)
-# ---------------------------------------------------------------------------
 
 def _cached_subset(tokens: set[str], cache: dict[str, dict]) -> dict[str, dict]:
     return {t: cache[t] for t in tokens if t in cache}
@@ -148,9 +120,13 @@ def _persist_cache(cache: dict[str, dict]) -> None:
 
 
 def fetch_homepages_for(
-    tokens: set[str], api_casks_by_token: dict[str, dict], cache: dict[str, dict]
+    tokens: set[str],
+    api_casks_by_token: dict[str, dict],
+    cache: dict[str, dict],
+    *,
+    persist: bool = True,
 ) -> dict[str, dict]:
-    """Fetch homepages for `tokens` not in cache. Updates cache file in place."""
+    """Fetch uncached homepages and optionally persist the updated cache."""
     work = [
         (t, api_casks_by_token[t].get("homepage", ""))
         for t in tokens
@@ -166,13 +142,10 @@ def fetch_homepages_for(
             r = fut.result()
             cache[r["token"]] = r
 
-    _persist_cache(cache)
+    if persist:
+        _persist_cache(cache)
     return _cached_subset(tokens, cache)
 
-
-# ---------------------------------------------------------------------------
-# LLM classification (parallel, failure-isolated)
-# ---------------------------------------------------------------------------
 
 def classify_parallel(
     client: LLMClient,
@@ -217,10 +190,6 @@ def classify_parallel(
     return classifications, failures
 
 
-# ---------------------------------------------------------------------------
-# Output
-# ---------------------------------------------------------------------------
-
 def build_updated_categories(
     existing: dict, prune_tokens: set[str], classifications: dict[str, Classification]
 ) -> dict:
@@ -254,19 +223,24 @@ def _classification_rows(classifications: dict[str, Classification]) -> list[str
     for token in sorted(classifications):
         c = classifications[token]
         sec = ", ".join(c.secondary) or "—"
-        rows.append(f"| `{token}` | {c.primary} | {sec} | {c.confidence:.2f} | {c.reason} |")
+        reason = " ".join(c.reason.splitlines()).replace("|", "\\|")
+        rows.append(f"| `{token}` | {c.primary} | {sec} | {c.confidence:.2f} | {reason} |")
     return rows
 
 
-def write_report(
-    new_tokens: set[str],
+def build_report(
     removed_tokens: set[str],
     prune_tokens: set[str],
     classifications: dict[str, Classification],
     failures: list[tuple[str, str]],
     renames: list[tuple[str, str]],
-) -> None:
+) -> str:
     deprecated_only = prune_tokens - removed_tokens
+    review_required = {
+        token: result
+        for token, result in classifications.items()
+        if result.confidence < MANUAL_REVIEW_CONFIDENCE
+    }
     lines: list[str] = [
         "# Daily classification update",
         "",
@@ -275,6 +249,8 @@ def write_report(
         "## Summary",
         "",
         f"- {len(classifications)} new casks classified",
+        f"- {len(review_required)} classifications require manual review "
+        f"(confidence below {MANUAL_REVIEW_CONFIDENCE:.2f})",
         f"- {len(failures)} new casks **skipped** (LLM/validation failures, will retry tomorrow)",
         f"- {len(renames)} casks renamed in Homebrew (classification migrated, no LLM call)",
         f"- {len(removed_tokens)} casks removed from Homebrew (pruned)",
@@ -286,26 +262,41 @@ def write_report(
                       [f"- `{old}` → `{new}`" for old, new in sorted(renames)])
     lines += _section("New classifications",
                       _classification_rows(classifications) if classifications else [])
+    lines += _section(
+        "Manual review required",
+        _classification_rows(review_required) if review_required else [],
+    )
     lines += _section("Skipped (will retry next run)",
                       [f"- `{token}` — {err}" for token, err in sorted(failures)])
     lines += _section("Removed from Homebrew (pruned)", [f"- `{t}`" for t in sorted(removed_tokens)])
     lines += _section("Deprecated/disabled (pruned)", [f"- `{t}`" for t in sorted(deprecated_only)])
 
+    return "\n".join(lines)
+
+
+def write_report(report: str) -> None:
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
+    REPORT_PATH.write_text(report, encoding="utf-8")
     print(f"Report → {REPORT_PATH}")
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
+def requires_manual_review(classifications: dict[str, Classification]) -> bool:
+    return any(c.confidence < MANUAL_REVIEW_CONFIDENCE for c in classifications.values())
+
+
+def write_github_output(name: str, value: str) -> None:
+    output_path = os.environ.get("GITHUB_OUTPUT")
+    if output_path:
+        with Path(output_path).open("a", encoding="utf-8") as output:
+            output.write(f"{name}={value}\n")
+
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Compute diffs and run LLM classification, but do not write categories.json.",
+        help="Compute and print the update without changing repository files.",
     )
     args = parser.parse_args(argv)
 
@@ -328,7 +319,12 @@ def main(argv: list[str] | None = None) -> int:
 
     cache = load_homepage_cache()
     homepage_meta = (
-        fetch_homepages_for(new_tokens, api_casks_by_token, cache) if new_tokens else {}
+        fetch_homepages_for(
+            new_tokens,
+            api_casks_by_token,
+            cache,
+            persist=not args.dry_run,
+        ) if new_tokens else {}
     )
 
     provider = os.environ.get("LLM_PROVIDER", "anthropic").lower()
@@ -340,9 +336,18 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     updated = build_updated_categories(existing, prune_tokens, classifications)
-    write_report(new_tokens, removed_tokens, prune_tokens, classifications, failures, renames)
+    report = build_report(
+        removed_tokens,
+        prune_tokens,
+        classifications,
+        failures,
+        renames,
+    )
+    review_required = requires_manual_review(classifications)
+    write_github_output("review_required", str(review_required).lower())
 
     if args.dry_run:
+        print(report)
         print(
             f"DRY RUN — would write {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
             f"(+{len(classifications)}, -{len(prune_tokens)}, skipped {len(failures)})"
@@ -350,6 +355,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     write_categories(updated)
+    write_report(report)
     print(
         f"Wrote {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
         f"(+{len(classifications)}, -{len(prune_tokens)}, skipped {len(failures)})"

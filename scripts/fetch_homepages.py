@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch homepage metadata (title, meta description, og:description) for casks."""
-# Two ways to use it:
-# 1. As a library — import fetch_one(token, url) and call per cask. The daily
-#    pipeline (classify_new_casks.py) does this against the delta set.
-# 2. As a CLI — `python scripts/fetch_homepages.py` re-scrapes everything in
-#    data/filtered_casks.json. Used for full audits, not the daily pipeline.
+"""Fetch homepage metadata for casks."""
 import contextlib
 import json
 import os
@@ -13,7 +8,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
 from html.parser import HTMLParser
-import ssl
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -21,7 +15,6 @@ CATEGORIES_PATH = os.path.join(REPO_ROOT, "categories.json")
 CASKS_PATH = os.path.join(REPO_ROOT, "data", "filtered_casks.json")
 OUTPUT_PATH = os.path.join(REPO_ROOT, "data", "homepage_metadata.json")
 
-# Resume support: skip already-fetched tokens
 WORKERS = 30
 TIMEOUT = 10
 MAX_BODY = 200_000  # 200KB max per page
@@ -65,7 +58,7 @@ class MetaExtractor(HTMLParser):
 
 def fetch_one(token, url):
     """Fetch a single homepage and extract metadata."""
-    if not url or not url.startswith("http"):
+    if not isinstance(url, str) or not url.startswith(("http://", "https://")):
         return {"token": token, "homepage": url, "error": "invalid_url"}
 
     headers = {
@@ -74,15 +67,9 @@ def fetch_one(token, url):
         "Accept-Language": "en-US,en;q=0.9",
     }
 
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
-
     try:
-        if not url.startswith(("http://", "https://")):
-            raise ValueError(f"refusing non-HTTP homepage URL: {url}")
         req = Request(url, headers=headers)
-        with urlopen(req, timeout=TIMEOUT, context=ctx) as resp:
+        with urlopen(req, timeout=TIMEOUT) as resp:
             body = resp.read(MAX_BODY).decode("utf-8", errors="replace")
 
         extractor = MetaExtractor()

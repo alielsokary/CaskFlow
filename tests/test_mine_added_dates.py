@@ -1,12 +1,7 @@
 """Tests for the mine_added_dates log parser — earliest-add-wins semantics."""
 from __future__ import annotations
 
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-
-from mine_added_dates import parse_log  # noqa: E402
+from mine_added_dates import parse_log
 
 
 LOG = "\n".join([

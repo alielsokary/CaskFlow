@@ -1,13 +1,4 @@
-"""Provider-agnostic LLM abstraction for cask classification."""
-# LLMClient is an abstract base class. Concrete implementations are selected at
-# runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
-# (from prompts.py) and requests strict JSON output via the provider's structured-
-# output mode where available; the base class then validates the result against
-# the active CategoryCatalog.
-#
-# Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
-# raise ClassificationError, which the orchestrator logs and skips — the cask
-# remains unmapped until the next pipeline run.
+"""Provider-agnostic LLM clients with validated classification output."""
 from __future__ import annotations
 
 import json
@@ -86,10 +77,12 @@ class LLMClient(ABC):
         if not isinstance(secondary, list):
             raise ClassificationError(f"{token}: secondary must be a list")
         for s in secondary:
-            if s not in self.catalog.secondary_ids:
+            if not isinstance(s, str) or s not in self.catalog.secondary_ids:
                 raise ClassificationError(f"{token}: unknown secondary `{s}`")
         if primary in secondary:
             raise ClassificationError(f"{token}: primary `{primary}` duplicated in secondary")
+        if len(secondary) != len(set(secondary)):
+            raise ClassificationError(f"{token}: duplicate secondary entries")
         if len(secondary) > 2:
             raise ClassificationError(f"{token}: too many secondary entries ({len(secondary)})")
 
@@ -104,10 +97,6 @@ class LLMClient(ABC):
             )
         return client_cls(catalog)
 
-
-# ---------------------------------------------------------------------------
-# Concrete providers
-# ---------------------------------------------------------------------------
 
 def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
     """Exponential backoff with jitter for transient provider errors."""

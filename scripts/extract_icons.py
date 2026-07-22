@@ -1,23 +1,5 @@
 #!/usr/bin/env python3
-"""Icon extraction pipeline — see docs/ICON_EXTRACTION.md."""
-# Per cask: download the vendor artifact, expand it WITHOUT executing anything,
-# locate the .app bundle, convert its .icns to a 256px PNG, and (optionally)
-# publish it as `<token>.png` on the orphan `icons` branch. CaskHub consumes
-# icons via jsDelivr's edge CDN (with raw.githubusercontent.com as fallback):
-#     https://cdn.jsdelivr.net/gh/alielsokary/CaskFlow@icons/<token>.png
-#
-# State — single writer, single home:
-# - "Done" = the .png files on the icons branch (one `git ls-tree`).
-# - icon_report.json lives ON THE ICONS BRANCH, committed in the same pushes
-#   as the icons. Master carries no copy and no rolling PR exists — two prior
-#   report-clobber races came from report state living in multiple places.
-#   Manual audits edit the file on the icons branch directly.
-# - Report entries: no_icon / car_only (parked), failed (MAX_ATTEMPTS tries,
-#   then parked), review (published but heuristically selected — audit queue).
-#
-# Run:
-#     python scripts/extract_icons.py --tokens obsidian rectangle   # local, no publish
-#     python scripts/extract_icons.py --publish --limit 50          # CI / backfill batch
+"""Safely extract and optionally publish cask icons; see docs/ICON_EXTRACTION.md."""
 from __future__ import annotations
 
 import argparse
@@ -60,10 +42,6 @@ TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz"
 # sends, since every cask URL is served to Homebrew by definition.
 DEFAULT_UA = "Homebrew/4.5.0 (Macintosh; arm64 Mac OS X 15) curl/8.7.1"
 
-
-# ---------------------------------------------------------------------------
-# Eligibility (pure — unit tested)
-# ---------------------------------------------------------------------------
 
 def app_names_from_artifacts(cask: dict) -> list[str]:
     """`.app` names declared by the cask's `app`/`suite` artifact stanzas."""
@@ -149,8 +127,6 @@ _INSTALLERISH = re.compile(r"\b(install(er)?|uninstall(er)?|updater?|setup)\b", 
 
 def installerish(app_name: str) -> bool:
     """True for installer/updater stub apps — never the icon we want."""
-    # Batch 1 shipped the Microsoft installer icon for Word/Excel/PowerPoint/
-    # Outlook because the pkg payload's stub app was the shallowest .app.
     return bool(_INSTALLERISH.search(app_name.removesuffix(".app")))
 
 
@@ -178,10 +154,6 @@ def resolve_icns_name(info: dict) -> str | None:
     return name if name.endswith(".icns") else f"{name}.icns"
 
 
-# ---------------------------------------------------------------------------
-# Shell helpers
-# ---------------------------------------------------------------------------
-
 def _curl_cmd(cask: dict, dest: Path) -> list[str]:
     """Curl invocation honouring the cask's url_specs (UA, referer, headers, cookies)."""
     cmd = ["curl", "-fSL", "--retry", "2", "--max-time", str(DOWNLOAD_TIMEOUT), "-o", str(dest)]
@@ -199,7 +171,11 @@ def _curl_cmd(cask: dict, dest: Path) -> list[str]:
 def _verify_sha256(cask: dict, dest: Path) -> None:
     expected = cask.get("sha256")
     if expected and expected != "no_check":
-        digest = hashlib.sha256(dest.read_bytes()).hexdigest()
+        hasher = hashlib.sha256()
+        with dest.open("rb") as artifact:
+            for chunk in iter(lambda: artifact.read(1024 * 1024), b""):
+                hasher.update(chunk)
+        digest = hasher.hexdigest()
         if digest != expected:
             raise ExtractError(f"sha256 mismatch (got {digest[:12]}…)")
 
@@ -452,10 +428,6 @@ def _find_icns(info: dict, resources: Path) -> Path | None:
     return None
 
 
-# ---------------------------------------------------------------------------
-# Per-cask pipeline
-# ---------------------------------------------------------------------------
-
 def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
     """Extract one cask's icon; returns (status, detail), raises ExtractError for `failed`."""
     # status: ok (detail = .app selection mode) | no_icon | car_only.
@@ -522,12 +494,7 @@ def _icon_status(app: Path, selection: str, dest_png: Path) -> tuple[str, str]:
 def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
                   dirty: set[str]) -> None:
     """Commit a batch of icons AND the report to the icons branch via a throwaway worktree."""
-    # Icons and their state always land in the same push.
-    #
-    # The report is MERGED, not overwritten: the branch's current copy is the
-    # base and only `dirty` tokens (touched by this run) are overlaid. A batch
-    # holds its report in memory for an hour+; blind writes clobbered a manual
-    # audit committed mid-run (third report race, 2026-07-07).
+    # Merge only this batch's report entries so concurrent manual audits survive.
     wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
     wt_added = False
     try:
@@ -587,10 +554,6 @@ def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
         print(f"  ↑ updated {REPORT_FILE} on {ICONS_BRANCH} (no new icons)")
 
 
-# ---------------------------------------------------------------------------
-# Selection
-# ---------------------------------------------------------------------------
-
 def load_install_counts() -> dict[str, int]:
     """Load 30-day install counts — backfill priority so the most-seen icons land first."""
     # The bulk cask.json has analytics=null; counts live in this endpoint.
@@ -629,10 +592,6 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
     candidates.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)
     return candidates[:limit]
 
-
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def _load_api_casks(casks_json: Path | None) -> list[dict]:
     if casks_json:
@@ -683,6 +642,7 @@ def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str]) -> No
     if len(pending) >= FLUSH_EVERY:
         publish_batch(pending, report, dirty)
         pending.clear()
+        dirty.clear()
 
 
 def main(argv: list[str] | None = None) -> int:

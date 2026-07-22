@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["scripts"]
+
+[tool.coverage.report]
+fail_under = 55
+omit = ["scripts/car_icon.swift"]
+show_missing = true

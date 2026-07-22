@@ -1,12 +1,7 @@
 """Tests for old_tokens rename migration in classify_new_casks."""
 from __future__ import annotations
 
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-
-from classify_new_casks import migrate_renames  # noqa: E402
+from classify_new_casks import migrate_renames
 
 
 def _existing(*tokens: str) -> dict:

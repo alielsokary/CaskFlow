@@ -25,12 +25,7 @@ jobs:
           echo "tag=caskflow-v$d" >> "$GITHUB_OUTPUT"
           echo "date=$d" >> "$GITHUB_OUTPUT"
 
-      # Stamp the tag into the asset so consumers can display the release
-      # their data actually came from, without a separate GitHub API call.
-      # iconTokens is the manifest of the icons branch — CaskHub skips icon
-      # requests for any token not listed (they are guaranteed 404s). If the
-      # trees API fails or truncates, the field is omitted and the app falls
-      # back to probing, so this step must never fail the release.
+      # Omit iconTokens if the tree request fails; consumers then probe normally.
       - name: Stamp release tag and icon manifest into categories.json
         env:
           TAG: ${{ steps.tag.outputs.tag }}

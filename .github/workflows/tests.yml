@@ -4,7 +4,6 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: [master, develop]
 
 jobs:
   test:
@@ -18,11 +17,17 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Validate pull request title
+        if: github.event_name == 'pull_request'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: python scripts/validate_pr_title.py "$PR_TITLE"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run tests with coverage
-        run: pytest --cov=scripts --cov-report=xml
+        run: pytest --cov=scripts --cov-report=term-missing --cov-report=xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
