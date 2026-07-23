@@ -3676,6 +3676,13 @@
     "og_desc": ""
   },
   {
+    "token": "cate",
+    "homepage": "https://cate.cero-ai.com/",
+    "title": "CATE · Canvas Terminal Editor",
+    "meta_desc": "An infinite zoomable canvas where terminals, editors, and browsers float spatially. Code the way you think.",
+    "og_desc": "An infinite zoomable canvas where terminals, editors, and browsers float spatially. Code the way you think."
+  },
+  {
     "token": "catlight",
     "homepage": "https://catlight.io/",
     "title": "CatLight - Action Center for Developers",
@@ -4163,6 +4170,13 @@
     "og_desc": "The missing DevTools for Claude Code — inspect session logs, tool calls, token usage, subagents, and context window in a visual UI. Free, open source. - matt1398/claude-devtools"
   },
   {
+    "token": "claude-status-bar",
+    "homepage": "https://github.com/m1ckc3s/claude-status-bar",
+    "title": "GitHub - m1ckc3s/claude-status-bar: Menu bar status indicator for Claude Code · GitHub",
+    "meta_desc": "Menu bar status indicator for Claude Code. Contribute to m1ckc3s/claude-status-bar development by creating an account on GitHub.",
+    "og_desc": "Menu bar status indicator for Claude Code. Contribute to m1ckc3s/claude-status-bar development by creating an account on GitHub."
+  },
+  {
     "token": "claudebar",
     "homepage": "https://github.com/tddworks/ClaudeBar",
     "title": "GitHub - tddworks/ClaudeBar: A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance. · GitHub",
@@ -4203,6 +4217,13 @@
     "title": "CleanMyMac: The best Mac cleaner & maintenance software",
     "meta_desc": "CleanMyMac is the best Mac cleaner app that helps you clean, maintain, and protect your Mac — trusted by millions. Try it and organize your Mac in a few clicks. ",
     "og_desc": "CleanMyMac is the best Mac cleaner app that helps you clean, maintain, and protect your Mac — trusted by millions. Try it and organize your Mac in a few clicks. "
+  },
+  {
+    "token": "cleanmymac-cli",
+    "homepage": "https://github.com/MacPaw/cleanmymac-cli",
+    "title": "GitHub - MacPaw/cleanmymac-cli: Clean Xcode, Docker, Homebrew, and developer caches, remove project and AI artifacts, analyze storage, and reclaim disk space from the Terminal. · GitHub",
+    "meta_desc": "Clean Xcode, Docker, Homebrew, and developer caches, remove project and AI artifacts, analyze storage, and reclaim disk space from the Terminal. - MacPaw/cleanmymac-cli",
+    "og_desc": "Clean Xcode, Docker, Homebrew, and developer caches, remove project and AI artifacts, analyze storage, and reclaim disk space from the Terminal. - MacPaw/cleanmymac-cli"
   },
   {
     "token": "cleanmymac-zh",
@@ -30843,6 +30864,13 @@
     "og_desc": ""
   },
   {
+    "token": "libation",
+    "homepage": "https://getlibation.com/",
+    "title": "Libation",
+    "meta_desc": "Libation: Liberate your Library - A free application for downloading your Audible audiobooks",
+    "og_desc": ""
+  },
+  {
     "token": "libcblite",
     "homepage": "https://www.couchbase.com/products/lite",
     "error": "HTTP 403"
@@ -30989,6 +31017,13 @@
     "title": "Lingon - Peter Borg Apps",
     "meta_desc": "Run whatever you want, whenever you want with Lingon. Simple scheduling, menu bar control, and powerful Pro features.",
     "og_desc": ""
+  },
+  {
+    "token": "linguax",
+    "homepage": "https://linguax.app/",
+    "title": "LinguaX – Mouse Enhancement, Push-to-Talk & Input Automation for macOS | LinguaX",
+    "meta_desc": "LinguaX gives third-party mice a pro macOS feel — smooth scrolling, gesture and side-button mapping, and push-to-talk voice typing — plus automatic input-source switching. Free trial, $9.9 lifetime.",
+    "og_desc": "LinguaX gives third-party mice a pro macOS feel — smooth scrolling, gesture and side-button mapping, and push-to-talk voice typing — plus automatic input-source switching. Free trial, $9.9 lifetime."
   },
   {
     "token": "linkandroid",
@@ -34367,6 +34402,13 @@
     "og_desc": "A beautiful, efficient system monitor built with Rust and Svelte. Monitor processes, CPU, and memory usage in real-time."
   },
   {
+    "token": "neon-vision-editor",
+    "homepage": "https://github.com/h3pdesign/Neon-Vision-Editor",
+    "title": "GitHub - h3pdesign/Neon-Vision-Editor: Neon Vision Editor - A lightweight, modern code & text editor for macOS built for speed, readability, and automatic syntax highlighting — minimal by design, with fast file access and a focused editing experience. · GitHub",
+    "meta_desc": "Neon Vision Editor - A lightweight, modern code & text editor for macOS built for speed, readability, and automatic syntax highlighting — minimal by design, with fast file access and a focused editing experience. - h3pdesign/Neon-Vision-Editor",
+    "og_desc": "Neon Vision Editor - A lightweight, modern code &amp; text editor for macOS built for speed, readability, and automatic syntax highlighting — minimal by design, with fast file access and a focused ..."
+  },
+  {
     "token": "neovide-app",
     "homepage": "https://github.com/neovide/neovide",
     "title": "GitHub - neovide/neovide: No Nonsense Neovim Client in Rust · GitHub",
@@ -35435,6 +35477,13 @@
     "title": "OpenCPN Official Site",
     "meta_desc": "Official site of OpenCPN Chart Plotter Navigation software. Thousands of boaters already use OpenCPN as their main navigational tool. You can too. Its open source.",
     "og_desc": ""
+  },
+  {
+    "token": "opendisplay",
+    "homepage": "https://opendisplay.app/",
+    "title": "OpenDisplay — Turn your spare Apple devices into second monitors for your Mac (free & open source)",
+    "meta_desc": "OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn your spare Apple devices — iPhone and iPad today, Macs on the roadmap — into true extended displays for your Mac over USB or WiFi. Retina-sharp, low latency, with touch and scroll input. No subscription, no dongle, no account.",
+    "og_desc": "Use your iPhone or iPad as a second monitor for your Mac. A true extended display over USB or WiFi — Retina-sharp, low latency, with touch and scroll. No subscription, no dongle, no account."
   },
   {
     "token": "opendnsupdater",
@@ -37598,6 +37647,13 @@
     "og_desc": ""
   },
   {
+    "token": "prisma-access-browser",
+    "homepage": "https://get.pabrowser.com/welcome",
+    "title": "Get Prisma Browser",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "prisma-studio",
     "homepage": "https://www.prisma.io/studio",
     "title": "Prisma Studio — Visual Database Browser & Editor",
@@ -39389,6 +39445,13 @@
     "og_desc": ""
   },
   {
+    "token": "roslynpad",
+    "homepage": "https://roslynpad.net/",
+    "title": "RoslynPad",
+    "meta_desc": "Cross-platform C# code editor and runner. Built with Roslyn.",
+    "og_desc": ""
+  },
+  {
     "token": "rotato",
     "homepage": "https://rotato.app/",
     "title": "Mockup Generator & Animator 3D | Rotato",
@@ -40193,6 +40256,13 @@
     "title": "SessionRestore by SweetP Productions",
     "meta_desc": "advanced Safari session management",
     "og_desc": ""
+  },
+  {
+    "token": "sessionwatcher",
+    "homepage": "https://www.sessionwatcher.com/",
+    "title": "SessionWatcher - Track AI Coding Usage on macOS",
+    "meta_desc": "SessionWatcher tracks Claude, Codex, Copilot, Cursor and Gemini usage, costs and rate limits live in your macOS menu bar. Stop getting locked out mid-session. From $6.99 one-time.",
+    "og_desc": "SessionWatcher tracks Claude, Codex, Copilot, Cursor and Gemini usage, costs and rate limits live in your macOS menu bar. Stop getting locked out mid-session. From $6.99 one-time."
   },
   {
     "token": "setapp",
