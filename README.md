@@ -30,7 +30,7 @@ A daily GitHub Actions cron (`.github/workflows/classify-new-casks.yml`):
 5. Prunes removed/deprecated tokens.
 6. Opens a single rolling PR with the diff + classification report.
 
-On merge, `release.yml` cuts a `caskflow-vYYYY.MM.DD` tag with `categories.json` and a freshly mined `added_dates.json` attached as release assets.
+`release.yml` publishes `categories.json` and a freshly mined `added_dates.json` as release assets every day, independently of classification. A category merge also triggers it immediately, so classification updates do not delay Recently Added data and date refreshes do not require an LLM result.
 
 ## Icons
 
