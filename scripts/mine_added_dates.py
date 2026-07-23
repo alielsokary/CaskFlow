@@ -14,6 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "added_dates.json"
 TAP_URL = "https://github.com/Homebrew/homebrew-cask"
+GIT_EXECUTABLE = "/usr/bin/git"
 
 DATE_LINE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -22,8 +23,8 @@ def clone_tap(dest: str) -> Path:
     """Blob-less partial clone: full history and trees (enough for --name-status), no blobs."""
     path = Path(dest) / "homebrew-cask"
     print(f"Cloning {TAP_URL} (blob-less) ...", flush=True)
-    subprocess.run(
-        ["git", "clone", "--filter=blob:none", "--no-checkout", TAP_URL, str(path)],
+    subprocess.run(  # nosec B603 - fixed executable and argument list; shell is never used
+        [GIT_EXECUTABLE, "clone", "--filter=blob:none", "--no-checkout", TAP_URL, str(path)],
         check=True,
     )
     return path
@@ -44,9 +45,9 @@ def parse_log(log: str) -> dict[str, str]:
 
 
 def mine(repo: Path) -> dict[str, str]:
-    log = subprocess.run(
+    log = subprocess.run(  # nosec B603 - fixed executable and argument list; shell is never used
         [
-            "git", "-C", str(repo), "log",
+            GIT_EXECUTABLE, "-C", str(repo), "log",
             "--diff-filter=A", "--no-renames", "--name-status",
             # Committer date = when it landed in the tap (author date can
             # predate the merge by days on slow PRs).
@@ -62,8 +63,18 @@ def mine(repo: Path) -> dict[str, str]:
 
 def current_cask_tokens(repo: Path) -> set[str]:
     """Return every cask currently present in the tap, without checking it out."""
-    paths = subprocess.run(
-        ["git", "-C", str(repo), "ls-tree", "-r", "--name-only", "HEAD", "--", "Casks/"],
+    paths = subprocess.run(  # nosec B603 - repo is one argument; shell is never used
+        [
+            GIT_EXECUTABLE,
+            "-C",
+            str(repo),
+            "ls-tree",
+            "-r",
+            "--name-only",
+            "HEAD",
+            "--",
+            "Casks/",
+        ],
         check=True,
         capture_output=True,
         text=True,
