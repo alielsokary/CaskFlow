@@ -79,6 +79,6 @@ jobs:
           GH_TOKEN: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
           PR: ${{ steps.pr.outputs.pull-request-number }}
         run: |
-          if [ "$(gh pr view "$PR" --json autoMergeRequest --jq '.autoMergeRequest')" = "null" ]; then
+          if [ "$(gh pr view "$PR" --json autoMergeRequest --jq '.autoMergeRequest != null')" != "true" ]; then
             gh pr merge --auto --squash "$PR"
           fi

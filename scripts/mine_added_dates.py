@@ -60,16 +60,48 @@ def mine(repo: Path) -> dict[str, str]:
     return parse_log(log)
 
 
+def current_cask_tokens(repo: Path) -> set[str]:
+    """Return every cask currently present in the tap, without checking it out."""
+    paths = subprocess.run(
+        ["git", "-C", str(repo), "ls-tree", "-r", "--name-only", "HEAD", "--", "Casks/"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    return {
+        Path(path).stem
+        for path in paths.splitlines()
+        if path.startswith("Casks/") and path.endswith(".rb")
+    }
+
+
+def validate_current_cask_coverage(repo: Path, added: dict[str, str]) -> set[str]:
+    """Return active tap tokens missing from the mined history."""
+    return current_cask_tokens(repo) - added.keys()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", help="Path to an existing homebrew-cask clone")
     args = parser.parse_args()
 
     if args.repo:
-        added = mine(Path(args.repo))
+        repo = Path(args.repo)
+        added = mine(repo)
+        missing = validate_current_cask_coverage(repo, added)
     else:
         with tempfile.TemporaryDirectory() as tmp:
-            added = mine(clone_tap(tmp))
+            repo = clone_tap(tmp)
+            added = mine(repo)
+            missing = validate_current_cask_coverage(repo, added)
+
+    if missing:
+        preview = ", ".join(sorted(missing)[:20])
+        print(
+            f"Coverage check failed: {len(missing)} active casks have no added date: {preview}",
+            file=sys.stderr,
+        )
+        return 1
 
     if len(added) < 5000:
         print(f"Sanity check failed: only {len(added)} tokens mined", file=sys.stderr)

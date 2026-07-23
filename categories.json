@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-21",
-  "totalCasks": 3807,
+  "generatedDate": "2026-07-22",
+  "totalCasks": 3817,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2114,6 +2114,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "cate": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "catlight": {
       "primary": "developerTools",
       "secondary": []
@@ -2408,6 +2414,13 @@
         "ai"
       ]
     },
+    "claude-status-bar": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
     "claudebar": {
       "primary": "menuBar",
       "secondary": [
@@ -2429,6 +2442,12 @@
     "cleanmymac": {
       "primary": "utilities",
       "secondary": []
+    },
+    "cleanmymac-cli": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "cleanmymac-zh": {
       "primary": "utilities",
@@ -7372,6 +7391,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "libation": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "libcblite": {
       "primary": "developerTools",
       "secondary": []
@@ -7455,6 +7480,12 @@
     "lingon-x": {
       "primary": "utilities",
       "secondary": []
+    },
+    "linguax": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "linkandroid": {
       "primary": "utilities",
@@ -9289,6 +9320,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "neon-vision-editor": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "neovide-app": {
       "primary": "developerTools",
       "secondary": []
@@ -9894,6 +9931,12 @@
       "primary": "scienceEducation",
       "secondary": [
         "utilities"
+      ]
+    },
+    "opendisplay": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
       ]
     },
     "openforis-collect": {
@@ -11104,6 +11147,12 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "prisma-access-browser": {
+      "primary": "browsers",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "prisma-studio": {
       "primary": "designGraphics",
       "secondary": []
@@ -12121,6 +12170,10 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "roslynpad": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "rotato": {
       "primary": "designGraphics",
       "secondary": []
@@ -12548,6 +12601,13 @@
     "sessionrestore": {
       "primary": "productivity",
       "secondary": []
+    },
+    "sessionwatcher": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
     },
     "setapp": {
       "primary": "utilities",

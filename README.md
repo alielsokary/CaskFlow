@@ -28,6 +28,8 @@ flowchart LR
     diff --> classify["Validated classification"]
     classify --> review["Semantic, assigned PR"]
     review --> release["Versioned release assets"]
+    brew --> dates["Mine added dates daily"]
+    dates --> release
     brew --> icons["Safe icon extraction"]
     icons --> branch["icons branch"]
     release --> caskhub["CaskHub"]
@@ -36,7 +38,7 @@ flowchart LR
 
 The daily classification workflow adds new casks, migrates Homebrew token renames, and prunes removed or disabled entries. Provider and validation failures are skipped for a later retry. Results below `0.75` confidence remain in an assigned PR for manual review; higher-confidence updates may auto-merge after required checks pass.
 
-The release workflow stamps `categories.json` with its release tag and, when available, the current icon-token manifest. It also mines `added_dates.json` from Homebrew’s history. CaskHub refreshes these assets remotely and falls back to its bundled copies when needed.
+The release workflow runs daily independently of classification, stamps `categories.json` with its release tag and current icon-token manifest when available, and mines `added_dates.json` directly from Homebrew's history. Before publishing, it verifies that every cask in the tap's current tree has an added date. A category merge also triggers it immediately. Classification updates therefore do not delay Recently Added data, and date refreshes do not require an LLM result or category assignment.
 
 Icons are downloaded from vendor artifacts, checksum-verified, expanded without running installer scripts, and converted from the application bundle’s `.icns` file. The full safety and audit protocol is in [Icon Extraction](docs/ICON_EXTRACTION.md).
 

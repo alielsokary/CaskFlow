@@ -5,10 +5,18 @@ on:
     branches: [master]
     paths:
       - categories.json
+  # Recently Added is independent of classification. Refresh its mined dates
+  # every day even when a classification PR is delayed or has nothing to merge.
+  schedule:
+    - cron: "47 14 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: caskflow-data-release
+  cancel-in-progress: false
 
 jobs:
   release:
@@ -43,17 +51,20 @@ jobs:
 
       - name: Compose release notes
         env:
+          EVENT_NAME: ${{ github.event_name }}
           GH_TOKEN: ${{ github.token }}
         run: |
           count=$(jq -r .totalCasks categories.json)
           generated=$(jq -r .generatedDate categories.json)
           {
-            echo "Daily classification update — **${count} casks**, generated ${generated}."
+            echo "Daily data update — **${count} categorized casks**. Categories generated ${generated}; added dates refreshed ${{ steps.tag.outputs.date }}."
 
-            pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '.[0].number' || true)
-            if [ -n "$pr" ]; then
-              echo ""
-              echo "Changes: #${pr}"
+            if [ "$EVENT_NAME" = "push" ]; then
+              pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '.[0].number' || true)
+              if [ -n "$pr" ]; then
+                echo ""
+                echo "Classification changes: #${pr}"
+              fi
             fi
 
             # Diff against the previous release (still "latest" at this point)
@@ -84,6 +95,7 @@ jobs:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: "CaskFlow-${{ steps.tag.outputs.date }}"
           body_path: /tmp/release_notes.md
+          overwrite_files: true
           files: |
             categories.json
             added_dates.json
