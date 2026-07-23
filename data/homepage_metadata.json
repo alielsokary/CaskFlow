@@ -35290,6 +35290,13 @@
     "og_desc": ""
   },
   {
+    "token": "onit-sidekick",
+    "homepage": "https://www.cloudless.so/ai-sidebar",
+    "title": "Cloudless Voice - The Free Alternative to Wispr Flow",
+    "meta_desc": "Seriously fast voice dictation that runs locally on Mac, Windows and iOS. See what your laptop is capable of. ",
+    "og_desc": "Seriously fast voice dictation that runs locally on Mac, Windows and iOS. See what your laptop is capable of. "
+  },
+  {
     "token": "onlook",
     "homepage": "https://onlook.com/",
     "title": "Onlook - Cursor for Designers",
@@ -35750,6 +35757,13 @@
     "title": "Java Web Start is dead. Long live OpenWebStart! - openwebstart.com",
     "meta_desc": "OWS is the enterprise-ready open source reimplementation of Java Web Start technology providing common features of JWS and the JNLP standard.",
     "og_desc": "OWS is the enterprise-ready open source reimplementation of Java Web Start technology providing common features of JWS and the JNLP standard."
+  },
+  {
+    "token": "openwhispr",
+    "homepage": "https://github.com/OpenWhispr/openwhispr",
+    "title": "GitHub - OpenWhispr/openwhispr: Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform. · GitHub",
+    "meta_desc": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform. - OpenWhispr/openwhispr",
+    "og_desc": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform. - OpenWhispr/openwhispr"
   },
   {
     "token": "openwork",
