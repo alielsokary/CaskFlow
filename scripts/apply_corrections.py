@@ -24,30 +24,35 @@ def _mapping_for(token: str, mapping: dict[str, dict]) -> dict:
     return value
 
 
-def apply_correction(
+def _apply_secondary_correction(
+    token: str,
+    value: dict,
     correction: dict,
-    mapping: dict[str, dict],
     category_ids: set[str],
 ) -> bool:
-    token = correction["token"]
-    value = _mapping_for(token, mapping)
+    additions = correction.get("secondary")
+    if not isinstance(additions, list) or not additions:
+        raise ValueError(f"{token}: addSecondary requires a non-empty secondary list")
+    unknown = set(additions) - category_ids
+    if unknown:
+        raise ValueError(f"{token}: unknown secondary categories: {sorted(unknown)}")
 
-    if correction.get("action") == "addSecondary":
-        additions = correction.get("secondary")
-        if not isinstance(additions, list) or not additions:
-            raise ValueError(f"{token}: addSecondary requires a non-empty secondary list")
-        unknown = set(additions) - category_ids
-        if unknown:
-            raise ValueError(f"{token}: unknown secondary categories: {sorted(unknown)}")
-        secondary = list(dict.fromkeys([*value["secondary"], *additions]))
-        secondary = [category for category in secondary if category != value["primary"]]
-        if len(secondary) > MAX_SECONDARY:
-            raise ValueError(f"{token}: secondary categories exceed the {MAX_SECONDARY}-item limit")
-        if secondary == value["secondary"]:
-            return False
-        value["secondary"] = secondary
-        return True
+    secondary = list(dict.fromkeys([*value["secondary"], *additions]))
+    secondary = [category for category in secondary if category != value["primary"]]
+    if len(secondary) > MAX_SECONDARY:
+        raise ValueError(f"{token}: secondary categories exceed the {MAX_SECONDARY}-item limit")
+    if secondary == value["secondary"]:
+        return False
+    value["secondary"] = secondary
+    return True
 
+
+def _apply_primary_correction(
+    token: str,
+    value: dict,
+    correction: dict,
+    category_ids: set[str],
+) -> bool:
     new_primary = correction.get("shouldBe")
     if new_primary not in category_ids:
         raise ValueError(f"{token}: unknown primary category: {new_primary!r}")
@@ -73,6 +78,19 @@ def apply_correction(
         category for category in value["secondary"] if category != new_primary
     ))
     return True
+
+
+def apply_correction(
+    correction: dict,
+    mapping: dict[str, dict],
+    category_ids: set[str],
+) -> bool:
+    token = correction["token"]
+    value = _mapping_for(token, mapping)
+
+    if correction.get("action") == "addSecondary":
+        return _apply_secondary_correction(token, value, correction, category_ids)
+    return _apply_primary_correction(token, value, correction, category_ids)
 
 
 def validate_categories(data: dict) -> None:

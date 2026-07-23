@@ -51,6 +51,58 @@ def test_secondary_action_is_deduplicated():
     assert data["tokenToCategory"]["example"]["secondary"] == ["developerTools", "ai"]
 
 
+@pytest.mark.parametrize("secondary", [None, []])
+def test_secondary_action_requires_categories(secondary):
+    data = _data()
+    correction = {
+        "token": "example",
+        "action": "addSecondary",
+        "secondary": secondary,
+    }
+
+    with pytest.raises(ValueError, match="requires a non-empty secondary list"):
+        apply_correction(correction, data["tokenToCategory"], set(data["categories"]))
+
+
+def test_secondary_action_rejects_unknown_category():
+    data = _data()
+    correction = {
+        "token": "example",
+        "action": "addSecondary",
+        "secondary": ["unknown"],
+    }
+
+    with pytest.raises(ValueError, match="unknown secondary categories"):
+        apply_correction(correction, data["tokenToCategory"], set(data["categories"]))
+
+
+def test_secondary_action_enforces_item_limit():
+    data = _data()
+    correction = {
+        "token": "example",
+        "action": "addSecondary",
+        "secondary": ["ai", "productivity"],
+    }
+
+    with pytest.raises(ValueError, match="2-item limit"):
+        apply_correction(correction, data["tokenToCategory"], set(data["categories"]))
+
+
+def test_secondary_action_reports_no_change():
+    data = _data()
+    correction = {
+        "token": "example",
+        "action": "addSecondary",
+        "secondary": ["developerTools"],
+    }
+
+    assert not apply_correction(
+        correction,
+        data["tokenToCategory"],
+        set(data["categories"]),
+    )
+
+
 def test_stale_expected_primary_is_rejected():
     data = _data()
     with pytest.raises(ValueError, match="expected current primary"):
@@ -69,6 +121,28 @@ def test_trait_cannot_be_primary():
             data["tokenToCategory"],
             set(data["categories"]),
         )
+
+
+def test_unknown_primary_is_rejected():
+    data = _data()
+    with pytest.raises(ValueError, match="unknown primary category"):
+        apply_correction(
+            {"token": "example", "was": "utilities", "shouldBe": "unknown"},
+            data["tokenToCategory"],
+            set(data["categories"]),
+        )
+
+
+def test_reapplying_primary_cleans_secondary_duplicates():
+    data = _data()
+    data["tokenToCategory"]["example"]["secondary"] = ["developerTools", "utilities"]
+
+    assert apply_correction(
+        {"token": "example", "shouldBe": "utilities"},
+        data["tokenToCategory"],
+        set(data["categories"]),
+    )
+    assert data["tokenToCategory"]["example"]["secondary"] == ["developerTools"]
 
 
 def test_default_selection_only_applies_high_confidence():

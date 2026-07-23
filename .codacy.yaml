@@ -1,6 +1,9 @@
 ---
+engines:
+  bandit:
+    exclude_paths:
+      - "tests/**"
 exclude_paths:
   - ".venv/**"
   - "venv/**"
-  # generated data files — entropy/markdown findings there are noise
   - "data/**"

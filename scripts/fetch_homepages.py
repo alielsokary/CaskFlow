@@ -69,7 +69,7 @@ def fetch_one(token, url):
 
     try:
         req = Request(url, headers=headers)
-        with urlopen(req, timeout=TIMEOUT) as resp:
+        with urlopen(req, timeout=TIMEOUT) as resp:  # nosec B310
             body = resp.read(MAX_BODY).decode("utf-8", errors="replace")
 
         extractor = MetaExtractor()

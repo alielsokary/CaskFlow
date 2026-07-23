@@ -32,12 +32,16 @@ def test_no_manual_review_at_or_above_threshold():
 def test_fetch_homepages_can_skip_cache_persistence(monkeypatch):
     cache = {}
     persisted = []
+
+    def persist(value):
+        persisted.append(value)
+
     monkeypatch.setattr(
         classifier,
         "fetch_one",
         lambda token, url: {"token": token, "homepage": url, "title": "Example"},
     )
-    monkeypatch.setattr(classifier, "_persist_cache", lambda value: persisted.append(value))
+    monkeypatch.setattr(classifier, "_persist_cache", persist)
 
     result = classifier.fetch_homepages_for(
         {"example"},
