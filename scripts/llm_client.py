@@ -1,13 +1,4 @@
-"""Provider-agnostic LLM abstraction for cask classification."""
-# LLMClient is an abstract base class. Concrete implementations are selected at
-# runtime via the `LLM_PROVIDER` env var. Each provider builds the same prompt
-# (from prompts.py) and requests strict JSON output via the provider's structured-
-# output mode where available; the base class then validates the result against
-# the active CategoryCatalog.
-#
-# Validation failures (invalid IDs, malformed JSON, primary in TRAIT_CATEGORIES)
-# raise ClassificationError, which the orchestrator logs and skips — the cask
-# remains unmapped until the next pipeline run.
+"""Provider-agnostic LLM clients with validated classification output."""
 from __future__ import annotations
 
 import json
@@ -86,10 +77,12 @@ class LLMClient(ABC):
         if not isinstance(secondary, list):
             raise ClassificationError(f"{token}: secondary must be a list")
         for s in secondary:
-            if s not in self.catalog.secondary_ids:
+            if not isinstance(s, str) or s not in self.catalog.secondary_ids:
                 raise ClassificationError(f"{token}: unknown secondary `{s}`")
         if primary in secondary:
             raise ClassificationError(f"{token}: primary `{primary}` duplicated in secondary")
+        if len(secondary) != len(set(secondary)):
+            raise ClassificationError(f"{token}: duplicate secondary entries")
         if len(secondary) > 2:
             raise ClassificationError(f"{token}: too many secondary entries ({len(secondary)})")
 
@@ -105,10 +98,6 @@ class LLMClient(ABC):
         return client_cls(catalog)
 
 
-# ---------------------------------------------------------------------------
-# Concrete providers
-# ---------------------------------------------------------------------------
-
 def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
     """Exponential backoff with jitter for transient provider errors."""
     for i in range(attempts):
@@ -120,8 +109,8 @@ def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
             time.sleep(base_delay * (2 ** i) + random.SystemRandom().uniform(0, 0.5))
 
 
-class AnthropicClient(LLMClient):
-    """Default — Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
+class AnthropicClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Default - Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
 
     MODEL = "claude-sonnet-5"
 
@@ -160,12 +149,12 @@ class AnthropicClient(LLMClient):
                 # the JSON answer, so leave headroom beyond the ~100-token output.
                 max_tokens=2048,
                 # cache_control: the system prompt is identical across every cask
-                # in a run — cached reads cost ~0.1x after the first request.
+                # in a run - cached reads cost ~0.1x after the first request.
                 system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
                 messages=[{"role": "user", "content": user}],
                 output_config={"effort": "medium", "format": self._output_format},
             )
-            # With thinking enabled the first block may be a thinking block —
+            # With thinking enabled the first block may be a thinking block -
             # the JSON payload is in the text block.
             return next(b.text for b in resp.content if b.type == "text")
 
@@ -200,8 +189,8 @@ class OpenAIClient(LLMClient):
         return _retry(call)
 
 
-class GroqClient(LLMClient):
-    """Groq free tier — Llama 3.3 70B with JSON-mode."""
+class GroqClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Groq free tier - Llama 3.3 70B with JSON-mode."""
 
     MODEL = "llama-3.3-70b-versatile"
 
@@ -228,8 +217,8 @@ class GroqClient(LLMClient):
         return _retry(call)
 
 
-class CloudflareWorkersAIClient(LLMClient):
-    """Cloudflare Workers AI free tier — Llama 3.1 via REST."""
+class CloudflareWorkersAIClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Cloudflare Workers AI free tier - Llama 3.1 via REST."""
 
     MODEL = "@cf/meta/llama-3.1-70b-instruct"
 

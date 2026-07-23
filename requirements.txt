@@ -1,14 +1,10 @@
-# Core
 requests>=2.33,<3
-beautifulsoup4>=4.12,<5
 
-# LLM providers (only the configured one is actually used at runtime)
-# anthropic floor: output_config (structured outputs) needs a 2026-era SDK
+# LLM providers; only the configured provider is used at runtime.
+# Structured output support requires a recent Anthropic SDK.
 anthropic>=0.75,<1
 openai>=1.50,<2
 groq>=0.13,<1
-# Cloudflare Workers AI uses requests directly — no SDK needed
 
-# Dev / test
 pytest>=9.0.3,<10
 pytest-cov>=7,<8

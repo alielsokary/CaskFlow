@@ -2,7 +2,7 @@ name: Classify new casks
 
 on:
   schedule:
-    # 13:17 UTC daily (off-peak minute — on-the-hour slots run hours late),
+    # 13:17 UTC daily (off-peak minute - on-the-hour slots run hours late),
     # so afternoon UTC catches most of them in one run.
     - cron: "17 13 * * *"
   workflow_dispatch:
@@ -37,6 +37,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run classification pipeline
+        id: classify
         run: |
           if [ "$DRY_RUN" = "true" ]; then
             python scripts/classify_new_casks.py --dry-run
@@ -56,21 +57,24 @@ jobs:
         if: env.DRY_RUN != 'true'
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
         with:
-          # PAT so PR-triggered workflows run without maintainer approval
-          # (github-actions[bot] has no write access, so its runs are quarantined)
+          # A PAT allows workflows triggered by this bot-authored PR to run.
           token: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
           commit-message: "chore(categories): daily classification update"
-          title: "Daily cask classification update"
+          title: "chore: Daily cask classification update"
           body-path: data/classification_report.md
           branch: bot/classify-casks
           delete-branch: false
+          assignees: ${{ github.repository_owner }}
           add-paths: |
             categories.json
             data/classification_report.md
             data/homepage_metadata.json
 
       - name: Enable auto-merge
-        if: env.DRY_RUN != 'true' && steps.pr.outputs.pull-request-number != ''
+        if: >-
+          env.DRY_RUN != 'true' &&
+          steps.pr.outputs.pull-request-number != '' &&
+          steps.classify.outputs.review_required != 'true'
         env:
           GH_TOKEN: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
           PR: ${{ steps.pr.outputs.pull-request-number }}

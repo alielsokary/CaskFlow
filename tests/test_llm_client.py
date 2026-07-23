@@ -1,22 +1,18 @@
-"""Tests for the LLMClient base class — focused on validation behavior."""
+"""Tests for the LLMClient base class - focused on validation behavior."""
 from __future__ import annotations
 
 import json
-import sys
 from pathlib import Path
 
 import pytest
 
-# scripts/ is sibling to tests/
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-
-from llm_client import (  # noqa: E402
+from llm_client import (
     Classification,
     ClassificationError,
     LLMClient,
     MockClient,
 )
-from prompts import CategoryCatalog  # noqa: E402
+from prompts import CategoryCatalog
 
 
 CATEGORIES_PATH = Path(__file__).resolve().parent.parent / "categories.json"
@@ -91,6 +87,15 @@ def test_primary_in_secondary_rejected(catalog):
     )
     client = _StubClient(catalog, raw)
     with pytest.raises(ClassificationError, match="duplicated"):
+        client.classify({"token": "x"}, None)
+
+
+def test_duplicate_secondary_rejected(catalog):
+    raw = json.dumps(
+        {"primary": "utilities", "secondary": ["ai", "ai"], "confidence": 0.5, "reason": ""}
+    )
+    client = _StubClient(catalog, raw)
+    with pytest.raises(ClassificationError, match="duplicate secondary"):
         client.classify({"token": "x"}, None)
 
 

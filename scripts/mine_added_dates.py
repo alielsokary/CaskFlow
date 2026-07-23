@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
-"""Mine the date each cask was added to Homebrew/homebrew-cask."""
-# Homebrew's API has no "date added" field, so the tap's git history is the
-# source of truth: the date a cask entered the tap is the author date of the
-# commit that created its file. Emits added_dates.json (token -> YYYY-MM-DD),
-# published as a release asset alongside categories.json for CaskHub.
-#
-# The earliest add per token wins — the 2023 letter-sharding move
-# (Casks/foo.rb -> Casks/f/foo.rb) re-added every file, so the latest add is
-# often wrong. `--no-renames` keeps those moves visible as plain adds.
-#
-# Run:
-#     python scripts/mine_added_dates.py                  # clones a fresh copy
-#     python scripts/mine_added_dates.py --repo ~/tap     # reuses a local clone
+"""Mine each cask's earliest addition date from Homebrew's git history."""
 from __future__ import annotations
 
 import argparse
@@ -26,6 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "added_dates.json"
 TAP_URL = "https://github.com/Homebrew/homebrew-cask"
+GIT_EXECUTABLE = "/usr/bin/git"
 
 DATE_LINE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -34,8 +23,8 @@ def clone_tap(dest: str) -> Path:
     """Blob-less partial clone: full history and trees (enough for --name-status), no blobs."""
     path = Path(dest) / "homebrew-cask"
     print(f"Cloning {TAP_URL} (blob-less) ...", flush=True)
-    subprocess.run(
-        ["git", "clone", "--filter=blob:none", "--no-checkout", TAP_URL, str(path)],
+    subprocess.run(  # nosec B603 - fixed executable and argument list; shell is never used
+        [GIT_EXECUTABLE, "clone", "--filter=blob:none", "--no-checkout", TAP_URL, str(path)],
         check=True,
     )
     return path
@@ -43,7 +32,6 @@ def clone_tap(dest: str) -> Path:
 
 def parse_log(log: str) -> dict[str, str]:
     """Newest-first log of adds; always overwriting leaves the oldest add per token."""
-    # The oldest add absorbs the sharding move's re-adds.
     added: dict[str, str] = {}
     current_date = ""
     for line in log.splitlines():
@@ -52,16 +40,14 @@ def parse_log(log: str) -> dict[str, str]:
         elif line.startswith("A\t"):
             path = line[2:]
             if path.startswith("Casks/") and path.endswith(".rb"):
-                # ponytail: renamed casks (old_tokens) get their rename date,
-                # not the original add — rare, and only inflates "recent" a bit.
                 added[Path(path).stem] = current_date
     return added
 
 
 def mine(repo: Path) -> dict[str, str]:
-    log = subprocess.run(
+    log = subprocess.run(  # nosec B603 - fixed executable and argument list; shell is never used
         [
-            "git", "-C", str(repo), "log",
+            GIT_EXECUTABLE, "-C", str(repo), "log",
             "--diff-filter=A", "--no-renames", "--name-status",
             # Committer date = when it landed in the tap (author date can
             # predate the merge by days on slow PRs).
@@ -75,16 +61,58 @@ def mine(repo: Path) -> dict[str, str]:
     return parse_log(log)
 
 
+def current_cask_tokens(repo: Path) -> set[str]:
+    """Return every cask currently present in the tap, without checking it out."""
+    paths = subprocess.run(  # nosec B603 - repo is one argument; shell is never used
+        [
+            GIT_EXECUTABLE,
+            "-C",
+            str(repo),
+            "ls-tree",
+            "-r",
+            "--name-only",
+            "HEAD",
+            "--",
+            "Casks/",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    return {
+        Path(path).stem
+        for path in paths.splitlines()
+        if path.startswith("Casks/") and path.endswith(".rb")
+    }
+
+
+def validate_current_cask_coverage(repo: Path, added: dict[str, str]) -> set[str]:
+    """Return active tap tokens missing from the mined history."""
+    return current_cask_tokens(repo) - added.keys()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", help="Path to an existing homebrew-cask clone")
     args = parser.parse_args()
 
     if args.repo:
-        added = mine(Path(args.repo))
+        repo = Path(args.repo)
+        added = mine(repo)
+        missing = validate_current_cask_coverage(repo, added)
     else:
         with tempfile.TemporaryDirectory() as tmp:
-            added = mine(clone_tap(tmp))
+            repo = clone_tap(tmp)
+            added = mine(repo)
+            missing = validate_current_cask_coverage(repo, added)
+
+    if missing:
+        preview = ", ".join(sorted(missing)[:20])
+        print(
+            f"Coverage check failed: {len(missing)} active casks have no added date: {preview}",
+            file=sys.stderr,
+        )
+        return 1
 
     if len(added) < 5000:
         print(f"Sanity check failed: only {len(added)} tokens mined", file=sys.stderr)

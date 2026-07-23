@@ -1,12 +1,4 @@
-"""Category definitions and prompt construction for the CaskHub classification pipeline."""
-# Source-of-truth precedence:
-# 1. Valid category IDs are read from `categories.json` at runtime — adding a new
-#    category in the data file is enough; nothing here needs to change.
-# 2. The scope rules below describe boundaries between categories. They are
-#    hand-curated from `docs/CLASSIFICATION_GUIDE.md` plus the systematic-error
-#    audit notes. Update SCOPE_RULES whenever you fix a class of misclassification.
-# 3. TRAIT_CATEGORIES are categories that should NEVER be a primary — only
-#    secondary. Today that's just `ai`.
+"""Build classification prompts from the live catalog and boundary rules."""
 from __future__ import annotations
 
 import json
@@ -14,18 +6,14 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-# Categories that may only appear as secondary (traits, not primaries).
-# The base classifier rejects classifications where `primary` is in this set.
 TRAIT_CATEGORIES: frozenset[str] = frozenset({"ai"})
 
 
-# Per-category scope rules. Lifted from docs/CLASSIFICATION_GUIDE.md.
-# These are the *boundary* rules — what counts as the category and (especially)
-# what does NOT, including known-systematic-error escape hatches.
 SCOPE_RULES: dict[str, str] = {
     "developerTools": (
         "IDEs, code editors, version control, API clients, databases, "
-        "SDKs, terminal emulators, debuggers, CI/CD, containers, build tools. "
+        "SDKs, terminal emulators, debuggers, CI/CD, containers, build tools, "
+        "game engines and game-creation tools. "
         "ALSO: cloud CLIs (gcloud, aws-cli) and SSH/SFTP clients."
     ),
     "browsers": (
@@ -40,7 +28,7 @@ SCOPE_RULES: dict[str, str] = {
     "productivity": (
         "Note-taking, task management, calendars, writing tools, clipboard managers, "
         "text expanders, RSS readers, PDF editors, project management. "
-        "ALSO: AI assistants/chatbots (LLM clients) — add secondary=ai. "
+        "ALSO: AI assistants/chatbots (LLM clients) - add secondary=ai. "
         "ALSO: digital signature / e-signing tools. "
         "NOT: full office suites (those go to officeTools)."
     ),
@@ -49,7 +37,7 @@ SCOPE_RULES: dict[str, str] = {
         "converters, system monitoring, drivers, input methods. "
         "ALSO: remote desktop, download managers, torrent clients, file transfer tools, "
         "game controller/peripheral configurators. "
-        "Default 'when in doubt' bucket — but only when truly system-level."
+        "Default 'when in doubt' bucket - but only when truly system-level."
     ),
     "designGraphics": (
         "Image/photo editors, vector tools, 3D modeling, UI/UX design, "
@@ -64,8 +52,8 @@ SCOPE_RULES: dict[str, str] = {
         "video converters, media servers, webcam tools, subtitle editors."
     ),
     "games": (
-        "Games, game launchers, game engines, emulators. "
-        "NOT: game controller config software (that's utilities)."
+        "Games, game launchers, console emulators, and tools focused on playing games. "
+        "NOT: game engines (developerTools) or controller config software (utilities)."
     ),
     "securityPrivacy": (
         "VPNs, password managers, encryption, firewalls, antivirus, privacy tools, "
@@ -91,7 +79,7 @@ SCOPE_RULES: dict[str, str] = {
         "by what the app actually does."
     ),
     "officeTools": (
-        "Full office suites and their components — Microsoft Office (Word, Excel, "
+        "Full office suites and their components - Microsoft Office (Word, Excel, "
         "PowerPoint, OneNote, Outlook), LibreOffice, OnlyOffice, WPS Office, "
         "FreeOffice. Standalone PDF editors / single-purpose document tools stay "
         "in productivity; this category is for full suite vendors."
@@ -101,18 +89,17 @@ SCOPE_RULES: dict[str, str] = {
         "Fliqlo, Wallpaper Wizard, etc."
     ),
     "ai": (
-        "TRAIT — never primary. Add as secondary to any cask whose core value is "
+        "TRAIT - never primary. Add as secondary to any cask whose core value is "
         "powered by an LLM/AI: ChatGPT/Claude/local-LLM clients, AI image/video "
         "generators, AI coding assistants, agentic tools."
     ),
     "other": (
-        "Truly uncategorizable — should be <10 apps. If you find yourself reaching "
+        "A last resort for applications without a defensible fit. If you reach "
         "for this, pick the closest of utilities/productivity/scienceEducation instead."
     ),
 }
 
 
-# Evidence priority — the LLM uses this exact ordering.
 EVIDENCE_PRIORITY = (
     "Your training knowledge of what the app does (highest)",
     "Homepage <title> + meta description",
@@ -146,7 +133,7 @@ SYSTEM_PROMPT_TEMPLATE = """\
 You classify Homebrew cask applications into a fixed taxonomy used by the CaskHub macOS app.
 
 # Output format
-Return strict JSON only — no prose, no markdown — with this exact shape:
+Return strict JSON only - no prose, no markdown - with this exact shape:
 {{
   "primary": "<category-id>",
   "secondary": ["<category-id>", ...],   // 0 to 2 entries
@@ -171,7 +158,7 @@ You MUST pick exactly one of these IDs as `primary`:
 # Hard constraints
 - Never invent category IDs. If nothing fits well, pick `other` and lower confidence.
 - `primary` MUST be in the primary list above.
-- `ai` is a TRAIT — never primary. Add it as secondary for AI-first apps.
+- `ai` is a TRAIT - never primary. Add it as secondary for AI-first apps.
 - Confidence should reflect ambiguity: 0.95+ for unmistakable apps, 0.6–0.8 for "likely but homepage was thin", below 0.5 means you're guessing.
 - Output JSON only. No commentary.
 """
@@ -186,7 +173,7 @@ def build_system_prompt(catalog: CategoryCatalog) -> str:
         f"- `{cid}` ({catalog.display_names[cid]})" for cid in sorted(catalog.secondary_ids)
     )
     scope_block = "\n".join(
-        f"- **{cid}** — {SCOPE_RULES.get(cid, '(no scope rule defined)')}"
+        f"- **{cid}** - {SCOPE_RULES.get(cid, '(no scope rule defined)')}"
         for cid in sorted(catalog.secondary_ids)
     )
     evidence_list = "\n".join(f"{i + 1}. {e}" for i, e in enumerate(EVIDENCE_PRIORITY))

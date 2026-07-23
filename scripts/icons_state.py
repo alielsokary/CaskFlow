@@ -13,8 +13,8 @@ REPORT_FILE = "icon_report.json"  # lives on the icons branch, beside the PNGs
 ICONS_BRANCH = "icons"
 
 
-class ExtractError(Exception):
-    """Recoverable per-cask failure — recorded in the report, never fatal."""
+class ExtractError(Exception):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Recoverable per-cask failure - recorded in the report, never fatal."""
 
 
 def run(cmd: list[str], input_text: str | None = None, **kw) -> subprocess.CompletedProcess:
@@ -28,9 +28,9 @@ def _git(cwd: Path, *args: str) -> subprocess.CompletedProcess:
 
 
 def load_report() -> dict[str, dict]:
-    """Read icon_report.json from the icons branch — its only home."""
+    """Read icon_report.json from the icons branch - its only home."""
     if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
-        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed - branch missing?")
     show = _git(REPO_ROOT, "show", f"FETCH_HEAD:{REPORT_FILE}")
     if show.returncode != 0:
         return {}  # first run after migration
@@ -52,10 +52,10 @@ def record(report: dict, token: str, status: str, reason: str) -> None:
 
 
 def published_tokens() -> set[str]:
-    """Tokens already on the icons branch — the done-list."""
+    """Tokens already on the icons branch - the done-list."""
     # One tree listing, no pagination.
     if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
-        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+        raise SystemExit(f"git fetch origin {ICONS_BRANCH} failed - branch missing?")
     ls = _git(REPO_ROOT, "ls-tree", "-r", "--name-only", "FETCH_HEAD")
     if ls.returncode != 0:
         raise SystemExit(f"git ls-tree failed: {ls.stderr.strip()[:200]}")

@@ -22,5 +22,5 @@ Generated 2026-07-22
 | `neon-vision-editor` | developerTools | productivity | 0.85 | A lightweight native code/text editor with syntax highlighting is primarily a developer tool. |
 | `opendisplay` | utilities | videoMedia | 0.85 | System-level display utility turning iOS devices into extended Mac displays. |
 | `prisma-access-browser` | browsers | securityPrivacy | 0.85 | It's a secure enterprise web browser with built-in security features. |
-| `roslynpad` | developerTools | — | 0.95 | RoslynPad is a C# code editor and runner built on Roslyn, a developer tool. |
+| `roslynpad` | developerTools | - | 0.95 | RoslynPad is a C# code editor and runner built on Roslyn, a developer tool. |
 | `sessionwatcher` | menuBar | developerTools, ai | 0.85 | Menu bar app that tracks AI coding assistant usage, costs, and rate limits. |

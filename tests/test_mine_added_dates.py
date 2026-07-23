@@ -1,12 +1,10 @@
-"""Tests for the mine_added_dates log parser — earliest-add-wins semantics."""
+"""Tests for the mine_added_dates log parser - earliest-add-wins semantics."""
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+import os
+import subprocess
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-
-from mine_added_dates import parse_log  # noqa: E402
+from mine_added_dates import current_cask_tokens, mine, parse_log, validate_current_cask_coverage
 
 
 LOG = "\n".join([
@@ -44,3 +42,49 @@ def test_non_ruby_and_modified_files_are_ignored():
 
 def test_empty_log():
     assert parse_log("") == {}
+
+
+def test_mines_cask_that_has_no_category(tmp_path):
+    """Recently Added must come from tap history, not category membership."""
+    repo = tmp_path / "homebrew-cask"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", str(repo)], check=True)
+    subprocess.run(["git", "-C", str(repo), "config", "user.name", "Test"], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "config", "user.email", "test@example.com"],
+        check=True,
+    )
+
+    token = "brand-new-unclassified"
+    cask = repo / "Casks" / "b" / f"{token}.rb"
+    cask.parent.mkdir(parents=True)
+    cask.write_text('cask "brand-new-unclassified" do\nend\n', encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(cask)], check=True)
+    env = os.environ | {
+        "GIT_AUTHOR_DATE": "2026-07-23T12:00:00Z",
+        "GIT_COMMITTER_DATE": "2026-07-23T12:00:00Z",
+    }
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Add unclassified cask"],
+        check=True,
+        env=env,
+    )
+
+    added = mine(repo)
+    category_tokens: set[str] = set()
+    assert token not in category_tokens
+    assert current_cask_tokens(repo) == {token}
+    assert added[token] == "2026-07-23"
+    assert validate_current_cask_coverage(repo, added) == set()
+
+
+def test_coverage_check_catches_an_active_cask_without_a_date(tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        "mine_added_dates.current_cask_tokens",
+        lambda _repo: {"classified", "brand-new-unclassified"},
+    )
+
+    assert validate_current_cask_coverage(
+        tmp_path,
+        {"classified": "2026-07-22"},
+    ) == {"brand-new-unclassified"}

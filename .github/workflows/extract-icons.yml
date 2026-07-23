@@ -1,9 +1,6 @@
 name: Extract icons
 
-# Phase 4 (backfill complete 2026-07-07): daily cron for new casks.
-# All state (PNGs + icon_report.json) lives on the icons branch — the script
-# is the single writer and merges report edits by dirty-token, so manual
-# audits committed mid-run survive.
+# PNGs and icon_report.json share the icons branch and a single writer.
 on:
   workflow_dispatch:
     inputs:
@@ -18,11 +15,9 @@ on:
         type: boolean
         default: false
   schedule:
-    # 15:43 UTC daily — after the 13:17 classification cron; a new cask
-    # usually gets its category and its icon on the same day.
+    # Run after classification so new casks can receive both assets the same day.
     - cron: "43 15 * * *"
-    # Monthly: retry failed-parked tokens. sha256-mismatch parks heal once
-    # brew bumps the cask version; vendor-403 parks cost seconds to re-check.
+    # Retry failures monthly because version bumps can repair stale checksums.
     - cron: "7 3 1 * *"
 
 permissions:
