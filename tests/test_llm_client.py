@@ -1,4 +1,4 @@
-"""Tests for the LLMClient base class — focused on validation behavior."""
+"""Tests for the LLMClient base class - focused on validation behavior."""
 from __future__ import annotations
 
 import json

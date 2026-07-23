@@ -1,4 +1,4 @@
-"""Tests for the mine_added_dates log parser — earliest-add-wins semantics."""
+"""Tests for the mine_added_dates log parser - earliest-add-wins semantics."""
 from __future__ import annotations
 
 import os

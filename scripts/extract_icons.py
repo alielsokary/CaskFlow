@@ -34,11 +34,11 @@ ANALYTICS_API = "https://formulae.brew.sh/api/analytics/cask-install/30d.json"
 ICON_SIZE = "256"
 MAX_ATTEMPTS = 3
 DOWNLOAD_TIMEOUT = 600  # seconds; some vendor artifacts are multi-GB
-FLUSH_EVERY = 25  # icons per publish commit — bounds loss if a long CI run dies
+FLUSH_EVERY = 25  # icons per publish commit - bounds loss if a long CI run dies
 
 TAR_SUFFIXES = (".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz", ".tar.xz", ".txz")
 
-# Some vendors 404 curl's default UA on GET (Warp) — mimic what Homebrew
+# Some vendors 404 curl's default UA on GET (Warp) - mimic what Homebrew
 # sends, since every cask URL is served to Homebrew by definition.
 DEFAULT_UA = "Homebrew/4.5.0 (Macintosh; arm64 Mac OS X 15) curl/8.7.1"
 
@@ -77,7 +77,7 @@ def eligibility(cask: dict) -> str | None:
 
 
 def container_type(cask: dict, filename: str) -> str | None:
-    """Container type — dmg | zip | pkg | tar — from the download filename or `container` hint."""
+    """Container type - dmg | zip | pkg | tar - from the download filename or `container` hint."""
     name = filename.lower()
     nested = (cask.get("container") or {}).get("type")
     if nested in ("dmg", "zip", "pkg"):
@@ -108,7 +108,7 @@ def sniff_container(artifact: Path) -> str | None:
     except OSError:
         return None
     # Trailer first: UDIF images carry their block-compression's magic at
-    # byte 0 (Warp: zlib, Comet: xz, HandBrake: bzip2) — head bytes lie.
+    # byte 0 (Warp: zlib, Comet: xz, HandBrake: bzip2) - head bytes lie.
     if tail.startswith(b"koly"):  # UDIF trailer: the last 512 bytes of a DMG
         return "dmg"
     if head.startswith(b"PK"):
@@ -126,7 +126,7 @@ _INSTALLERISH = re.compile(r"\b(install(er)?|uninstall(er)?|updater?|setup)\b", 
 
 
 def installerish(app_name: str) -> bool:
-    """True for installer/updater stub apps — never the icon we want."""
+    """True for installer/updater stub apps - never the icon we want."""
     return bool(_INSTALLERISH.search(app_name.removesuffix(".app")))
 
 
@@ -135,7 +135,7 @@ def _norm(s: str) -> str:
 
 
 def token_matches_app(token: str, app_name: str) -> bool:
-    """Match cask token to app name — `microsoft-word` ↔ `Microsoft Word.app`."""
+    """Match cask token to app name - `microsoft-word` ↔ `Microsoft Word.app`."""
     # Containment needs ≥4 chars to avoid one-letter apps (R.app) matching everything.
     nt, na = _norm(token), _norm(app_name.removesuffix(".app"))
     if not nt or not na:
@@ -266,11 +266,11 @@ def expand(artifact: Path, kind: str, workdir: Path, mounts: list[Path]) -> Path
 def find_app(root: Path, wanted: list[str], cask_token: str) -> tuple[Path, str] | None:
     """Locate the .app bundle; never follows symlinks (DMGs ship an /Applications symlink)."""
     # Returns (app, selection) where selection is the audit signal:
-    # - "exact":          name matches the cask's artifact stanzas — near-certain
-    # - "token":          name matches the cask token — near-certain
-    # - "single":         only one non-installer .app — unambiguous
-    # - "shallowest":     multiple candidates, none matching — human review
-    # - "installer_only": every .app is an installer/updater stub — caller
+    # - "exact":          name matches the cask's artifact stanzas - near-certain
+    # - "token":          name matches the cask token - near-certain
+    # - "single":         only one non-installer .app - unambiguous
+    # - "shallowest":     multiple candidates, none matching - human review
+    # - "installer_only": every .app is an installer/updater stub - caller
     #                     parks the cask instead of shipping a wrong icon
     exact, found = _collect_apps(root, {w.lower() for w in wanted})
     if exact is not None:
@@ -325,7 +325,7 @@ def _pick_candidate(candidates: list[Path], cask_token: str) -> tuple[Path, str]
 def payload_bundle(root: Path) -> Path | None:
     """Handle a pkg whose Payload IS the .app (Tailscale)."""
     # pkgutil strips the bundle's directory name, leaving Payload/Contents/…
-    # directly — invisible to find_app's *.app walk. The payload root is what
+    # directly - invisible to find_app's *.app walk. The payload root is what
     # lands in /Applications, so it wins over any helper .apps nested inside it.
     for plist in root.rglob("Payload/Contents/Info.plist"):
         return plist.parents[1]
@@ -342,10 +342,10 @@ def find_nested_archive(root: Path) -> tuple[Path, str] | None:
     return None
 
 
-# argv: <mode> <appPath> <destPng> <size> — mode: bundle | workspace | generic.
+# argv: <mode> <appPath> <destPng> <size> - mode: bundle | workspace | generic.
 # bundle reads the asset catalog directly; workspace asks Icon Services;
 # generic renders the system app icon (reference for the wrong-icon guard).
-# Swift renderer for asset-catalog-only icons — kept as a real .swift file
+# Swift renderer for asset-catalog-only icons - kept as a real .swift file
 # so it gets syntax highlighting and review as code.
 _CAR_ICON_SWIFT = (Path(__file__).with_name("car_icon.swift")).read_text(encoding="utf-8")
 
@@ -355,7 +355,7 @@ def car_icon_to_png(app: Path, dest_png: Path) -> str | None:
     # No public CLI decodes Assets.car. Reasons start with "car" so extract_one
     # parks them under the car_only status.
     #
-    # Bundle.image(forResource:) reads the catalog directly and comes first —
+    # Bundle.image(forResource:) reads the catalog directly and comes first -
     # the NSWorkspace fallback goes through Icon Services, which stamps payload
     # apps it considers unrunnable with the prohibitory overlay (shipped a
     # slashed-out Acrobat icon) and answers with the generic icon when the
@@ -385,16 +385,16 @@ def icns_to_png(app: Path, dest_png: Path) -> str | None:
     resources = app / "Contents" / "Resources"
 
     # Mirror macOS: CFBundleIconName (asset catalog) beats CFBundleIconFile.
-    # Raycast ships both — the loose .icns is stale alternate branding.
+    # Raycast ships both - the loose .icns is stale alternate branding.
     if info.get("CFBundleIconName") and (resources / "Assets.car").exists():
         if car_icon_to_png(app, dest_png) is None:
             return None
-        # Catalog render failed — fall through to the .icns path.
+        # Catalog render failed - fall through to the .icns path.
 
     icns = _find_icns(info, resources)
     if icns is None:
         if (resources / "Assets.car").exists():
-            # Keyed off the actual file, not CFBundleIconName — Tailscale
+            # Keyed off the actual file, not CFBundleIconName - Tailscale
             # ships a car-only icon without declaring it in the plist.
             return car_icon_to_png(app, dest_png)
         return "no .icns in Resources"
@@ -447,7 +447,7 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
         root = expand(artifact, kind, workdir, mounts)
         hit = _locate_app(cask, root, kind, workdir, mounts)
         if hit is None:
-            # Deterministic outcome (e.g. suite/pkg of CLI binaries) — park it
+            # Deterministic outcome (e.g. suite/pkg of CLI binaries) - park it
             # rather than burning retries. --tokens bypasses parked entries.
             return "no_icon", "no .app found in expanded artifact"
         app, selection = hit
@@ -470,7 +470,7 @@ def _locate_app(cask: dict, root: Path, kind: str,
     if kind == "pkg":
         bundle = payload_bundle(root)
         if bundle is not None:
-            hit = (bundle, "payload_root")  # deterministic — no review needed
+            hit = (bundle, "payload_root")  # deterministic - no review needed
     if hit is None:
         hit = find_app(root, wanted, token)
     if hit is None:
@@ -515,7 +515,7 @@ def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
 
 def _add_icons_worktree(wt: Path) -> None:
     if _git(REPO_ROOT, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
-        raise ExtractError(f"git fetch origin {ICONS_BRANCH} failed — branch missing?")
+        raise ExtractError(f"git fetch origin {ICONS_BRANCH} failed - branch missing?")
     add = _git(REPO_ROOT, "worktree", "add", "--detach", str(wt), "FETCH_HEAD")
     if add.returncode != 0:
         raise ExtractError(f"worktree add failed: {add.stderr.strip()[:200]}")
@@ -555,7 +555,7 @@ def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
 
 
 def load_install_counts() -> dict[str, int]:
-    """Load 30-day install counts — backfill priority so the most-seen icons land first."""
+    """Load 30-day install counts - backfill priority so the most-seen icons land first."""
     # The bulk cask.json has analytics=null; counts live in this endpoint.
     # Best-effort: an empty map just means unordered selection.
     try:
@@ -581,7 +581,7 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
     }
     candidates = [
         c for c in api_casks
-        # is_main_cask: skip @-version variants and font-* — the app filters
+        # is_main_cask: skip @-version variants and font-* - the app filters
         # them out, so their icons would never be requested (--tokens still
         # bypasses this for manual runs)
         if is_main_cask(c)
@@ -634,7 +634,7 @@ def _record_ok(token: str, detail: str, report: dict) -> None:
     report.pop(token, None)  # clear any prior failure/review
     if detail in ("single", "shallowest"):
         # Audit queue: the .app was picked heuristically, not by
-        # stanza name or token match — a human should eyeball it.
+        # stanza name or token match - a human should eyeball it.
         record(report, token, "review", f"non-exact .app selection: {detail}")
 
 
@@ -690,16 +690,16 @@ def main(argv: list[str] | None = None) -> int:
         note = ""
         if status == "failed":
             attempts = report[token]["attempts"]
-            note = (f" [attempt {attempts} — parked]" if attempts >= MAX_ATTEMPTS
+            note = (f" [attempt {attempts} - parked]" if attempts >= MAX_ATTEMPTS
                     else f" [attempt {attempts}/{MAX_ATTEMPTS}]")
-        print(f"  [{i}/{len(batch)}] {token}: {status} — {detail}{note}", flush=True)
+        print(f"  [{i}/{len(batch)}] {token}: {status} - {detail}{note}", flush=True)
 
     if args.publish:
-        # Always flush at the end — persists report-only outcomes (failures,
+        # Always flush at the end - persists report-only outcomes (failures,
         # parks) even when no new icons were extracted.
         publish_batch(pending, report, dirty)
     else:
-        print("(local run — report changes not persisted; use --publish)")
+        print("(local run - report changes not persisted; use --publish)")
 
     elapsed = time.time() - start
     failed = sum(1 for _, s, _ in outcomes if s == "failed")
@@ -711,7 +711,7 @@ def main(argv: list[str] | None = None) -> int:
         # look) or a systemic problem (runner network, stale brew metadata).
         # Report/parking is already pushed above, so failing here loses nothing.
         # Retry-parked runs are exempt: all-fail is their expected outcome.
-        print("error: every cask in the batch failed — flagging the run red")
+        print("error: every cask in the batch failed - flagging the run red")
         return 1
     return 0
 

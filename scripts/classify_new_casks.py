@@ -55,7 +55,7 @@ def load_homepage_cache() -> dict[str, dict]:
 
 def is_main_cask(c: dict) -> bool:
     """Mirror the filter in CaskCatalogViewModel.swift:137-142."""
-    # The app only ever shows main casks — not deprecated/disabled, not fonts,
+    # The app only ever shows main casks - not deprecated/disabled, not fonts,
     # not version-pinned variants (anything containing `@`). Classifying anything
     # outside that set would inflate categories.json with rows the app filters
     # out anyway.
@@ -82,7 +82,7 @@ def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, st
     for old in sorted(set(mapping) - api_tokens):
         new = old_to_new.get(old)
         if new is None:
-            continue  # true removal — compute_diff prunes it
+            continue  # true removal - compute_diff prunes it
         if new not in mapping:
             mapping[new] = mapping[old]
         del mapping[old]
@@ -222,7 +222,7 @@ def _classification_rows(classifications: dict[str, Classification]) -> list[str
     rows = ["| token | primary | secondary | confidence | reason |", "|---|---|---|---|---|"]
     for token in sorted(classifications):
         c = classifications[token]
-        sec = ", ".join(c.secondary) or "—"
+        sec = ", ".join(c.secondary) or "-"
         reason = " ".join(c.reason.splitlines()).replace("|", "\\|")
         rows.append(f"| `{token}` | {c.primary} | {sec} | {c.confidence:.2f} | {reason} |")
     return rows
@@ -267,7 +267,7 @@ def build_report(
         _classification_rows(review_required) if review_required else [],
     )
     lines += _section("Skipped (will retry next run)",
-                      [f"- `{token}` — {err}" for token, err in sorted(failures)])
+                      [f"- `{token}` - {err}" for token, err in sorted(failures)])
     lines += _section("Removed from Homebrew (pruned)", [f"- `{t}`" for t in sorted(removed_tokens)])
     lines += _section("Deprecated/disabled (pruned)", [f"- `{t}`" for t in sorted(deprecated_only)])
 
@@ -349,7 +349,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.dry_run:
         print(report)
         print(
-            f"DRY RUN — would write {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
+            f"DRY RUN - would write {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
             f"(+{len(classifications)}, -{len(prune_tokens)}, skipped {len(failures)})"
         )
         return 0

@@ -57,7 +57,7 @@ jobs:
           count=$(jq -r .totalCasks categories.json)
           generated=$(jq -r .generatedDate categories.json)
           {
-            echo "Daily data update — **${count} categorized casks**. Categories generated ${generated}; added dates refreshed ${{ steps.tag.outputs.date }}."
+            echo "Daily data update - **${count} categorized casks**. Categories generated ${generated}; added dates refreshed ${{ steps.tag.outputs.date }}."
 
             if [ "$EVENT_NAME" = "push" ]; then
               pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '.[0].number' || true)

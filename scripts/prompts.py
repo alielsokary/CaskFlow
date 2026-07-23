@@ -28,7 +28,7 @@ SCOPE_RULES: dict[str, str] = {
     "productivity": (
         "Note-taking, task management, calendars, writing tools, clipboard managers, "
         "text expanders, RSS readers, PDF editors, project management. "
-        "ALSO: AI assistants/chatbots (LLM clients) — add secondary=ai. "
+        "ALSO: AI assistants/chatbots (LLM clients) - add secondary=ai. "
         "ALSO: digital signature / e-signing tools. "
         "NOT: full office suites (those go to officeTools)."
     ),
@@ -37,7 +37,7 @@ SCOPE_RULES: dict[str, str] = {
         "converters, system monitoring, drivers, input methods. "
         "ALSO: remote desktop, download managers, torrent clients, file transfer tools, "
         "game controller/peripheral configurators. "
-        "Default 'when in doubt' bucket — but only when truly system-level."
+        "Default 'when in doubt' bucket - but only when truly system-level."
     ),
     "designGraphics": (
         "Image/photo editors, vector tools, 3D modeling, UI/UX design, "
@@ -79,7 +79,7 @@ SCOPE_RULES: dict[str, str] = {
         "by what the app actually does."
     ),
     "officeTools": (
-        "Full office suites and their components — Microsoft Office (Word, Excel, "
+        "Full office suites and their components - Microsoft Office (Word, Excel, "
         "PowerPoint, OneNote, Outlook), LibreOffice, OnlyOffice, WPS Office, "
         "FreeOffice. Standalone PDF editors / single-purpose document tools stay "
         "in productivity; this category is for full suite vendors."
@@ -89,7 +89,7 @@ SCOPE_RULES: dict[str, str] = {
         "Fliqlo, Wallpaper Wizard, etc."
     ),
     "ai": (
-        "TRAIT — never primary. Add as secondary to any cask whose core value is "
+        "TRAIT - never primary. Add as secondary to any cask whose core value is "
         "powered by an LLM/AI: ChatGPT/Claude/local-LLM clients, AI image/video "
         "generators, AI coding assistants, agentic tools."
     ),
@@ -133,7 +133,7 @@ SYSTEM_PROMPT_TEMPLATE = """\
 You classify Homebrew cask applications into a fixed taxonomy used by the CaskHub macOS app.
 
 # Output format
-Return strict JSON only — no prose, no markdown — with this exact shape:
+Return strict JSON only - no prose, no markdown - with this exact shape:
 {{
   "primary": "<category-id>",
   "secondary": ["<category-id>", ...],   // 0 to 2 entries
@@ -158,7 +158,7 @@ You MUST pick exactly one of these IDs as `primary`:
 # Hard constraints
 - Never invent category IDs. If nothing fits well, pick `other` and lower confidence.
 - `primary` MUST be in the primary list above.
-- `ai` is a TRAIT — never primary. Add it as secondary for AI-first apps.
+- `ai` is a TRAIT - never primary. Add it as secondary for AI-first apps.
 - Confidence should reflect ambiguity: 0.95+ for unmistakable apps, 0.6–0.8 for "likely but homepage was thin", below 0.5 means you're guessing.
 - Output JSON only. No commentary.
 """
@@ -173,7 +173,7 @@ def build_system_prompt(catalog: CategoryCatalog) -> str:
         f"- `{cid}` ({catalog.display_names[cid]})" for cid in sorted(catalog.secondary_ids)
     )
     scope_block = "\n".join(
-        f"- **{cid}** — {SCOPE_RULES.get(cid, '(no scope rule defined)')}"
+        f"- **{cid}** - {SCOPE_RULES.get(cid, '(no scope rule defined)')}"
         for cid in sorted(catalog.secondary_ids)
     )
     evidence_list = "\n".join(f"{i + 1}. {e}" for i, e in enumerate(EVIDENCE_PRIORITY))

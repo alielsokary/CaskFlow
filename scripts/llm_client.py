@@ -109,8 +109,8 @@ def _retry(fn, attempts: int = 3, base_delay: float = 1.0):
             time.sleep(base_delay * (2 ** i) + random.SystemRandom().uniform(0, 0.5))
 
 
-class AnthropicClient(LLMClient):
-    """Default — Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
+class AnthropicClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Default - Claude Sonnet 5 with structured outputs via the official anthropic SDK."""
 
     MODEL = "claude-sonnet-5"
 
@@ -149,12 +149,12 @@ class AnthropicClient(LLMClient):
                 # the JSON answer, so leave headroom beyond the ~100-token output.
                 max_tokens=2048,
                 # cache_control: the system prompt is identical across every cask
-                # in a run — cached reads cost ~0.1x after the first request.
+                # in a run - cached reads cost ~0.1x after the first request.
                 system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
                 messages=[{"role": "user", "content": user}],
                 output_config={"effort": "medium", "format": self._output_format},
             )
-            # With thinking enabled the first block may be a thinking block —
+            # With thinking enabled the first block may be a thinking block -
             # the JSON payload is in the text block.
             return next(b.text for b in resp.content if b.type == "text")
 
@@ -189,8 +189,8 @@ class OpenAIClient(LLMClient):
         return _retry(call)
 
 
-class GroqClient(LLMClient):
-    """Groq free tier — Llama 3.3 70B with JSON-mode."""
+class GroqClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Groq free tier - Llama 3.3 70B with JSON-mode."""
 
     MODEL = "llama-3.3-70b-versatile"
 
@@ -217,8 +217,8 @@ class GroqClient(LLMClient):
         return _retry(call)
 
 
-class CloudflareWorkersAIClient(LLMClient):
-    """Cloudflare Workers AI free tier — Llama 3.1 via REST."""
+class CloudflareWorkersAIClient(LLMClient):  # noqa: D203 - Codacy also enforces the conflicting D211
+    """Cloudflare Workers AI free tier - Llama 3.1 via REST."""
 
     MODEL = "@cf/meta/llama-3.1-70b-instruct"
 

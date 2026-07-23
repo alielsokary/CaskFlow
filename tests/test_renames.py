@@ -41,7 +41,7 @@ def test_true_removal_is_left_for_prune():
     api = [{"token": "still-here"}]
 
     assert migrate_renames(existing, api) == []
-    # Untouched — compute_diff owns pruning true removals.
+    # Untouched - compute_diff owns pruning true removals.
     assert "gone-forever" in existing["tokenToCategory"]
 
 

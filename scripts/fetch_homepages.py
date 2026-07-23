@@ -103,7 +103,7 @@ def _load_existing() -> dict:
 
 
 def _build_work(casks: list[dict], existing: dict) -> list[tuple[str, str]]:
-    """(token, homepage) pairs still needing a fetch — failures are retried."""
+    """(token, homepage) pairs still needing a fetch - failures are retried."""
     work = []
     for c in casks:
         token = c["token"]

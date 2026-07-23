@@ -1,4 +1,4 @@
-"""Tests for extract_icons pure helpers — eligibility, container detection, icon naming."""
+"""Tests for extract_icons pure helpers - eligibility, container detection, icon naming."""
 from __future__ import annotations
 
 import hashlib
@@ -227,7 +227,7 @@ def test_sniff_unknown_is_none(tmp_path):
 
 
 def test_expand_bare_compressed_payload(tmp_path):
-    # comet: an xz/gzip-wrapped DMG is not a tarball — tar fails, the
+    # comet: an xz/gzip-wrapped DMG is not a tarball - tar fails, the
     # fallback decompresses and expands whatever is inside (here: a zip).
     import gzip
 
@@ -256,7 +256,7 @@ def test_payload_root_bundle_detected(tmp_path):
 
 
 def test_payload_bundle_ignores_normal_pkg_layout(tmp_path):
-    # Ordinary payload: Payload/Applications/Foo.app — find_app's job, not ours.
+    # Ordinary payload: Payload/Applications/Foo.app - find_app's job, not ours.
     app = tmp_path / "Foo.pkg" / "Payload" / "Applications" / "Foo.app" / "Contents"
     app.mkdir(parents=True)
     (app / "Info.plist").write_bytes(b"<plist/>")
@@ -348,14 +348,14 @@ def _run_main(monkeypatch, tmp_path, statuses):
 
 
 def test_main_all_failed_batch_exits_nonzero(monkeypatch, tmp_path):
-    # A batch where every cask hard-fails must flag the CI run red — a green
+    # A batch where every cask hard-fails must flag the CI run red - a green
     # run with "0 published, 40 failed" hides systemic breakage (2026-07-12).
     assert _run_main(monkeypatch, tmp_path,
                      [("failed", "boom"), ("failed", "boom")]) == 1
 
 
 def test_main_partial_failure_stays_green(monkeypatch, tmp_path):
-    # Individual failures are routine (MAX_ATTEMPTS retry design) — only a
+    # Individual failures are routine (MAX_ATTEMPTS retry design) - only a
     # clean sweep of failures is an error signal.
     assert _run_main(monkeypatch, tmp_path,
                      [("failed", "boom"), ("no_icon", "no url")]) == 0
@@ -368,9 +368,9 @@ def test_build_batch_retry_parked_selects_failed_parked_only():
     from extract_icons import _build_batch
     by_token = {"a": {"token": "a"}, "b": {"token": "b"}, "c": {"token": "c"}}
     report = {
-        "a": {"status": "failed", "attempts": 3},   # parked — retried
+        "a": {"status": "failed", "attempts": 3},   # parked - retried
         "b": {"status": "failed", "attempts": 2},   # daily cron still owns it
-        "c": {"status": "no_icon", "attempts": 0},  # deterministic — never retried
+        "c": {"status": "no_icon", "attempts": 0},  # deterministic - never retried
         "gone": {"status": "failed", "attempts": 5},  # removed from brew API
     }
     batch = _build_batch(None, by_token, [], report, 50, retry_parked=True)
@@ -378,7 +378,7 @@ def test_build_batch_retry_parked_selects_failed_parked_only():
 
 
 def test_main_retry_parked_all_fail_stays_green(monkeypatch, tmp_path):
-    # All-fail is the expected outcome of a speculative monthly retry —
+    # All-fail is the expected outcome of a speculative monthly retry -
     # only the daily cron's all-fail flags the run red.
     import extract_icons
     casks = [{"token": "t0", "url": "u", "artifacts": [{"app": ["A.app"]}]}]

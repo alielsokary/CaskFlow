@@ -78,7 +78,7 @@ def main(argv: list[str] | None = None) -> int:
             record(report, token, "curated", f"official vendor asset: {mapping[token]}")
         publish_batch(pngs, report, dirty=set(pngs))
     elif not args.publish:
-        print(f"(local run — review {args.output_dir}, then --publish)")
+        print(f"(local run - review {args.output_dir}, then --publish)")
     return 0 if len(pngs) == len(mapping) else 1
 
 
