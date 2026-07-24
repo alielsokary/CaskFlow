@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-22",
-  "totalCasks": 3817,
+  "generatedDate": "2026-07-23",
+  "totalCasks": 3819,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9810,6 +9810,12 @@
       "primary": "communication",
       "secondary": []
     },
+    "onit-sidekick": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "onlook": {
       "primary": "designGraphics",
       "secondary": []
@@ -10067,6 +10073,12 @@
     "openwebstart": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "openwhispr": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "openwork": {
       "primary": "developerTools",
