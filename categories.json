@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-23",
-  "totalCasks": 3819,
+  "generatedDate": "2026-07-24",
+  "totalCasks": 3820,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -13141,6 +13141,10 @@
       "secondary": []
     },
     "softube-central": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "sogouinput": {
       "primary": "utilities",
       "secondary": []
     },
