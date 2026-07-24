@@ -78,6 +78,59 @@ def test_mines_cask_that_has_no_category(tmp_path):
     assert validate_current_cask_coverage(repo, added) == set()
 
 
+def test_mines_default_branch_landing_date_for_delayed_merge(tmp_path):
+    repo = tmp_path / "homebrew-cask"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", "-b", "master", str(repo)], check=True)
+    subprocess.run(["git", "-C", str(repo), "config", "user.name", "Test"], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "config", "user.email", "test@example.com"],
+        check=True,
+    )
+
+    readme = repo / "README.md"
+    readme.write_text("tap\n", encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(readme)], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Initialize tap"],
+        check=True,
+    )
+
+    subprocess.run(["git", "-C", str(repo), "switch", "-q", "-c", "new-cask"], check=True)
+    cask = repo / "Casks" / "o" / "openwhispr.rb"
+    cask.parent.mkdir(parents=True)
+    cask.write_text('cask "openwhispr" do\nend\n', encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(cask)], check=True)
+    feature_env = os.environ | {
+        "GIT_AUTHOR_DATE": "2026-07-16T10:00:00Z",
+        "GIT_COMMITTER_DATE": "2026-07-16T10:00:00Z",
+    }
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Add OpenWhispr"],
+        check=True,
+        env=feature_env,
+    )
+
+    subprocess.run(["git", "-C", str(repo), "switch", "-q", "master"], check=True)
+    readme.write_text("tap history\n", encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(readme)], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Advance default branch"],
+        check=True,
+    )
+    merge_env = os.environ | {
+        "GIT_AUTHOR_DATE": "2026-07-23T09:27:47Z",
+        "GIT_COMMITTER_DATE": "2026-07-23T09:27:47Z",
+    }
+    subprocess.run(
+        ["git", "-C", str(repo), "merge", "-q", "--no-ff", "new-cask", "-m", "Merge cask"],
+        check=True,
+        env=merge_env,
+    )
+
+    assert mine(repo)["openwhispr"] == "2026-07-23"
+
+
 def test_coverage_check_catches_an_active_cask_without_a_date(tmp_path, monkeypatch):
     monkeypatch.setattr(
         "mine_added_dates.current_cask_tokens",

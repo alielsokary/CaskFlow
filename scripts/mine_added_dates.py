@@ -48,9 +48,11 @@ def mine(repo: Path) -> dict[str, str]:
     log = subprocess.run(  # nosec B603 - fixed executable and argument list; shell is never used
         [
             GIT_EXECUTABLE, "-C", str(repo), "log",
+            "--first-parent", "--diff-merges=first-parent",
             "--diff-filter=A", "--no-renames", "--name-status",
-            # Committer date = when it landed in the tap (author date can
-            # predate the merge by days on slow PRs).
+            # Follow the default branch and compare merge commits with their
+            # first parent. Feature-branch commit dates can predate the merge
+            # by days, while the first-parent commit records when they landed.
             "--date=short", "--format=%cd",
             "--", "Casks/",
         ],
