@@ -23,3 +23,10 @@ def test_auto_merge_checks_null_as_a_boolean():
 
     assert "--jq '.autoMergeRequest != null'" in classification
     assert "--jq '.autoMergeRequest')\" = \"null\"" not in classification
+
+
+def test_pr_hygiene_can_assign_pull_requests():
+    hygiene = _workflow("pr-hygiene.yml")
+
+    assert "pull-requests: write" in hygiene
+    assert "issues: write" not in hygiene
