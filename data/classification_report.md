@@ -1,11 +1,11 @@
 # Daily classification update
 
-Generated 2026-07-23
+Generated 2026-07-24
 
 ## Summary
 
-- 2 new casks classified
-- 1 classifications require manual review (confidence below 0.75)
+- 1 new casks classified
+- 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
@@ -15,11 +15,4 @@ Generated 2026-07-23
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `onit-sidekick` | productivity | ai | 0.60 | An AI chat sidebar/panel tool that assists productivity, powered by AI, despite homepage metadata referencing a different voice product. |
-| `openwhispr` | productivity | ai | 0.85 | Voice-to-text dictation tool using AI models fits productivity with an AI trait. |
-
-## Manual review required
-
-| token | primary | secondary | confidence | reason |
-|---|---|---|---|---|
-| `onit-sidekick` | productivity | ai | 0.60 | An AI chat sidebar/panel tool that assists productivity, powered by AI, despite homepage metadata referencing a different voice product. |
+| `sogouinput` | utilities | - | 0.90 | Sogou Input Method is a Chinese input method editor, a system-level input utility. |
