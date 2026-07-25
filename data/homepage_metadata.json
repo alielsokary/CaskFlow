@@ -4116,9 +4116,9 @@
   {
     "token": "clarc",
     "homepage": "https://github.com/ttnear/Clarc",
-    "title": "GitHub - ttnear/Clarc: Native macOS client for Claude Code — a GUI desktop app built with SwiftUI · GitHub",
-    "meta_desc": "Native macOS client for Claude Code — a GUI desktop app built with SwiftUI - ttnear/Clarc",
-    "og_desc": "Native macOS client for Claude Code — a GUI desktop app built with SwiftUI - ttnear/Clarc"
+    "title": "GitHub - ttnear/Clarc: Native macOS client for Claude Code - a GUI desktop app built with SwiftUI · GitHub",
+    "meta_desc": "Native macOS client for Claude Code - a GUI desktop app built with SwiftUI - ttnear/Clarc",
+    "og_desc": "Native macOS client for Claude Code - a GUI desktop app built with SwiftUI - ttnear/Clarc"
   },
   {
     "token": "clarify",
@@ -4693,9 +4693,9 @@
   {
     "token": "codexia",
     "homepage": "https://github.com/milisp/codexia",
-    "title": "GitHub - milisp/codexia: Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management · GitHub",
-    "meta_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management - milisp/codexia",
-    "og_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management - milisp/codexia"
+    "title": "GitHub - milisp/codexia: Lightweight Agent Workstation for Codex CLI + Claude Code - with task scheduler, git worktree & remote control, skills management · GitHub",
+    "meta_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code - with task scheduler, git worktree & remote control, skills management - milisp/codexia",
+    "og_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code - with task scheduler, git worktree & remote control, skills management - milisp/codexia"
   },
   {
     "token": "codexmonitor",
@@ -28226,8 +28226,8 @@
     "token": "hermes-desktop",
     "homepage": "https://hermes-agent.nousresearch.com/desktop",
     "title": "Hermes Agent | Nous Research",
-    "meta_desc": "Hermes Agent — the open-source agent that grows with you. Native app for macOS, Windows, and Linux. By Nous Research.",
-    "og_desc": "Hermes Agent — a standalone terminal app and a native application for macOS, Windows, and Linux. Install it and start a conversation with the agent that grows with you."
+    "meta_desc": "Hermes Agent - the open-source agent that grows with you. Native app for macOS, Windows, and Linux. By Nous Research.",
+    "og_desc": "Hermes Agent - a standalone terminal app and a native application for macOS, Windows, and Linux. Install it and start a conversation with the agent that grows with you."
   },
   {
     "token": "hermit-crab",
