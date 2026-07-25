@@ -64,7 +64,7 @@ def has_pkg_artifact(cask: dict) -> bool:
 
 def eligibility(cask: dict) -> str | None:
     """None if extractable, else a `no_icon` reason string."""
-    # pkg-artifact casks (Zoom, Teams, …) count as extractable: the installer
+    # pkg-artifact casks (Zoom, Teams, ...) count as extractable: the installer
     # payload contains the .app, which pkgutil --expand-full exposes without
     # running any scripts.
     if cask.get("deprecated") or cask.get("disabled"):
@@ -97,7 +97,7 @@ def container_type(cask: dict, filename: str) -> str | None:
 
 def sniff_container(artifact: Path) -> str | None:
     """Magic-byte fallback when the URL has no useful extension."""
-    # Modern vendors serve …/stable (VS Code), …/osx_arm64 (Postman), …/download
+    # Modern vendors serve .../stable (VS Code), .../osx_arm64 (Postman), .../download
     # (Raycast). Runs on the already-downloaded file, so it's authoritative.
     try:
         size = artifact.stat().st_size
@@ -177,7 +177,7 @@ def _verify_sha256(cask: dict, dest: Path) -> None:
                 hasher.update(chunk)
         digest = hasher.hexdigest()
         if digest != expected:
-            raise ExtractError(f"sha256 mismatch (got {digest[:12]}…)")
+            raise ExtractError(f"sha256 mismatch (got {digest[:12]}...)")
 
 
 def download(cask: dict, dest_dir: Path) -> Path:
@@ -324,7 +324,7 @@ def _pick_candidate(candidates: list[Path], cask_token: str) -> tuple[Path, str]
 
 def payload_bundle(root: Path) -> Path | None:
     """Handle a pkg whose Payload IS the .app (Tailscale)."""
-    # pkgutil strips the bundle's directory name, leaving Payload/Contents/…
+    # pkgutil strips the bundle's directory name, leaving Payload/Contents/...
     # directly - invisible to find_app's *.app walk. The payload root is what
     # lands in /Applications, so it wins over any helper .apps nested inside it.
     for plist in root.rglob("Payload/Contents/Info.plist"):
@@ -596,7 +596,7 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
 def _load_api_casks(casks_json: Path | None) -> list[dict]:
     if casks_json:
         return json.loads(casks_json.read_text(encoding="utf-8"))
-    print(f"Fetching {BREW_API} …")
+    print(f"Fetching {BREW_API} ...")
     with urlopen(BREW_API, timeout=60) as resp:
         return json.loads(resp.read())
 

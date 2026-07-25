@@ -19,6 +19,7 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from fetch_homepages import fetch_one  # noqa: E402  (path setup above)
 from llm_client import Classification, ClassificationError, LLMClient  # noqa: E402
 from prompts import CategoryCatalog  # noqa: E402
+import style_standards  # noqa: E402
 
 REPO_ROOT = SCRIPT_DIR.parent
 CATEGORIES_PATH = REPO_ROOT / "categories.json"
@@ -38,7 +39,7 @@ LLM_WORKERS_BY_PROVIDER = {
 
 
 def fetch_brew_api() -> list[dict]:
-    print(f"Fetching {BREW_API} …")
+    print(f"Fetching {BREW_API} ...")
     with urlopen(BREW_API, timeout=30) as resp:
         return json.loads(resp.read())
 
@@ -113,9 +114,8 @@ def _cached_subset(tokens: set[str], cache: dict[str, dict]) -> dict[str, dict]:
 
 def _persist_cache(cache: dict[str, dict]) -> None:
     HOMEPAGE_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    HOMEPAGE_CACHE.write_text(
-        json.dumps(sorted(cache.values(), key=lambda x: x["token"]), indent=2, ensure_ascii=False),
-        encoding="utf-8",
+    style_standards.write_json(
+        HOMEPAGE_CACHE, sorted(cache.values(), key=lambda x: x["token"])
     )
 
 
@@ -135,7 +135,7 @@ def fetch_homepages_for(
     if not work:
         return _cached_subset(tokens, cache)
 
-    print(f"Fetching {len(work)} homepages with {HOMEPAGE_WORKERS} workers …")
+    print(f"Fetching {len(work)} homepages with {HOMEPAGE_WORKERS} workers ...")
     with ThreadPoolExecutor(max_workers=HOMEPAGE_WORKERS) as pool:
         futures = {pool.submit(fetch_one, t, u): t for t, u in work}
         for fut in as_completed(futures):
@@ -159,7 +159,7 @@ def classify_parallel(
     if not tokens:
         return classifications, failures
 
-    print(f"Classifying {len(tokens)} casks with {workers} workers …")
+    print(f"Classifying {len(tokens)} casks with {workers} workers ...")
     start = time.time()
 
     def _one(token: str) -> tuple[str, Classification | str]:
@@ -208,7 +208,7 @@ def build_updated_categories(
 
 
 def write_categories(updated: dict) -> None:
-    CATEGORIES_PATH.write_text(json.dumps(updated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    style_standards.write_json(CATEGORIES_PATH, updated, trailing_newline=True)
 
 
 def _section(title: str, rows: list[str]) -> list[str]:
@@ -276,7 +276,7 @@ def build_report(
 
 def write_report(report: str) -> None:
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text(report, encoding="utf-8")
+    style_standards.write_text(REPORT_PATH, report)
     print(f"Report → {REPORT_PATH}")
 
 

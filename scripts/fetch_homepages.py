@@ -9,6 +9,8 @@ from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
 from html.parser import HTMLParser
 
+import style_standards
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 CATEGORIES_PATH = os.path.join(REPO_ROOT, "categories.json")
@@ -156,8 +158,7 @@ def main():
 
 def _save(results):
     out = sorted(results.values(), key=lambda x: x["token"])
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+    style_standards.write_json(OUTPUT_PATH, out)
 
 
 if __name__ == "__main__":
