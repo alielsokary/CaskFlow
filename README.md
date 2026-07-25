@@ -40,7 +40,7 @@ The daily classification workflow adds new casks, migrates Homebrew token rename
 
 The release workflow runs daily independently of classification, stamps `categories.json` with its release tag and current icon-token manifest when available, and mines `added_dates.json` directly from Homebrew's history. Before publishing, it verifies that every cask in the tap's current tree has an added date. A category merge also triggers it immediately. Classification updates therefore do not delay Recently Added data, and date refreshes do not require an LLM result or category assignment.
 
-Icons are downloaded from vendor artifacts, checksum-verified, expanded without running installer scripts, and converted from the application bundle’s `.icns` file. The full safety and audit protocol is in [Icon Extraction](docs/ICON_EXTRACTION.md).
+Icons are downloaded from vendor artifacts, checksum-verified, expanded without running installer scripts, and converted from the application bundle's `.icns` file. The full safety and audit protocol is in [Icon Extraction](docs/ICON_EXTRACTION.md).
 
 ## Local development
 
@@ -58,7 +58,7 @@ LLM_PROVIDER=mock python scripts/classify_new_casks.py --dry-run
 pytest --cov=scripts --cov-report=term-missing
 ```
 
-Real classification supports `anthropic`, `openai`, `groq`, and `cloudflare`; choose one with `LLM_PROVIDER` and provide that service’s credentials. `mock` is intended for deterministic local verification.
+Real classification supports `anthropic`, `openai`, `groq`, and `cloudflare`; choose one with `LLM_PROVIDER` and provide that service's credentials. `mock` is intended for deterministic local verification.
 
 ## Repository guide
 

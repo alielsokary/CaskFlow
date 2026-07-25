@@ -146,7 +146,7 @@ You MUST pick exactly one of these IDs as `primary`:
 {primary_list}
 
 # Valid secondary categories (traits and overlaps)
-`secondary` may contain 0–2 of these IDs (must NOT duplicate `primary`):
+`secondary` may contain 0-2 of these IDs (must NOT duplicate `primary`):
 {secondary_list}
 
 # Scope rules (boundaries between categories)
@@ -159,7 +159,7 @@ You MUST pick exactly one of these IDs as `primary`:
 - Never invent category IDs. If nothing fits well, pick `other` and lower confidence.
 - `primary` MUST be in the primary list above.
 - `ai` is a TRAIT - never primary. Add it as secondary for AI-first apps.
-- Confidence should reflect ambiguity: 0.95+ for unmistakable apps, 0.6–0.8 for "likely but homepage was thin", below 0.5 means you're guessing.
+- Confidence should reflect ambiguity: 0.95+ for unmistakable apps, 0.6-0.8 for "likely but homepage was thin", below 0.5 means you're guessing.
 - Output JSON only. No commentary.
 """
 

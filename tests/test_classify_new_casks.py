@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 
 import classify_new_casks as classifier
+import style_standards
 from llm_client import Classification
 
 
@@ -109,3 +110,23 @@ def test_github_output_is_written_when_available(tmp_path, monkeypatch):
     classifier.write_github_output("review_required", "true")
 
     assert output.read_text(encoding="utf-8") == "review_required=true\n"
+
+
+def test_persisted_homepage_cache_meets_style_standards(tmp_path, monkeypatch):
+    """Scraped vendor typography must not reach the tracked cache."""
+    cache_path = tmp_path / "homepage_metadata.json"
+    monkeypatch.setattr(classifier, "HOMEPAGE_CACHE", cache_path)
+    em_dash = chr(0x2014)
+
+    classifier._persist_cache(
+        {
+            "clarc": {
+                "token": "clarc",
+                "title": f"Native macOS client for Claude Code {em_dash} a GUI desktop app",
+            }
+        }
+    )
+
+    written = cache_path.read_text(encoding="utf-8")
+    assert style_standards.violations(written) == []
+    assert "Claude Code - a GUI desktop app" in written
