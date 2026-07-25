@@ -2594,6 +2594,13 @@
     "og_desc": ""
   },
   {
+    "token": "billy",
+    "homepage": "https://usebilly.app/",
+    "title": "customization",
+    "meta_desc": "A tool crafted with love for all the freelancers and small businesses that want their bureaucracy to be a little more organized and beautiful.",
+    "og_desc": "A tool crafted with love for all the freelancers and small businesses that want their bureaucracy to be a little more organized and beautiful."
+  },
+  {
     "token": "billy-frontier",
     "homepage": "https://jorio.itch.io/billyfrontier",
     "title": "Billy Frontier by Iliyas Jorio",
@@ -2795,6 +2802,13 @@
     "title": "Blobby Volley 2 - Die offizielle Website",
     "meta_desc": "Blobby Volley 2 Volleyball Daniel Knobe Browserversion Blob",
     "og_desc": ""
+  },
+  {
+    "token": "block-buzz",
+    "homepage": "https://github.com/block/buzz",
+    "title": "GitHub - block/buzz: A hive mind communication platform · GitHub",
+    "meta_desc": "A hive mind communication platform. Contribute to block/buzz development by creating an account on GitHub.",
+    "og_desc": "A hive mind communication platform. Contribute to block/buzz development by creating an account on GitHub."
   },
   {
     "token": "block-goose",
@@ -3781,6 +3795,13 @@
     "og_desc": ""
   },
   {
+    "token": "changes",
+    "homepage": "https://github.com/maoyama/Changes",
+    "title": "GitHub - maoyama/Changes: An Open Source GUI Git Client for macOS · GitHub",
+    "meta_desc": "An Open Source GUI Git Client for macOS. Contribute to maoyama/Changes development by creating an account on GitHub.",
+    "og_desc": "An Open Source GUI Git Client for macOS. Contribute to maoyama/Changes development by creating an account on GitHub."
+  },
+  {
     "token": "charles",
     "homepage": "https://www.charlesproxy.com/",
     "title": "Charles Web Debugging Proxy • HTTP Monitor / HTTP Proxy / HTTPS & SSL Proxy / Reverse Proxy",
@@ -4091,6 +4112,13 @@
     "title": "ClamXAV - Trusted Antivirus & Malware Scanner for macOS | Download Your Free Trial",
     "meta_desc": "Protect your Mac with ClamXAV - trusted antivirus and malware scanner for macOS. Enjoy real-time protection, automatic updates and lightweight performance. Try our 30-day free trial today.",
     "og_desc": "Protect your Mac with ClamXAV - trusted antivirus and malware scanner for macOS. Enjoy real-time protection, automatic updates and lightweight performance. Try our 30-day free trial today."
+  },
+  {
+    "token": "clarc",
+    "homepage": "https://github.com/ttnear/Clarc",
+    "title": "GitHub - ttnear/Clarc: Native macOS client for Claude Code — a GUI desktop app built with SwiftUI · GitHub",
+    "meta_desc": "Native macOS client for Claude Code — a GUI desktop app built with SwiftUI - ttnear/Clarc",
+    "og_desc": "Native macOS client for Claude Code — a GUI desktop app built with SwiftUI - ttnear/Clarc"
   },
   {
     "token": "clarify",
@@ -4661,6 +4689,13 @@
     "title": "CodexBar",
     "meta_desc": "Tiny macOS menu bar app that keeps your Codex, Claude Code, Cursor, Gemini, Antigravity, Droid (Factory), Copilot, and z.ai limits visible.",
     "og_desc": "Tiny macOS menu bar app that keeps your Codex, Claude Code, Cursor, Gemini, Antigravity, Droid (Factory), Copilot, and z.ai limits visible."
+  },
+  {
+    "token": "codexia",
+    "homepage": "https://github.com/milisp/codexia",
+    "title": "GitHub - milisp/codexia: Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management · GitHub",
+    "meta_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management - milisp/codexia",
+    "og_desc": "Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control, skills management - milisp/codexia"
   },
   {
     "token": "codexmonitor",
@@ -6259,6 +6294,13 @@
   },
   {
     "token": "dnclient",
+    "homepage": "https://www.defined.net/",
+    "title": "Defined Networking",
+    "meta_desc": "Nebula Overlay Networks: Extend network access with on-demand, encrypted tunnels between any hosts on any network. Defined Networking is the company behind the Nebula open-source project.",
+    "og_desc": "Nebula Overlay Networks: Extend network access with on-demand, encrypted tunnels between any hosts on any network. Defined Networking is the company behind the Nebula open-source project."
+  },
+  {
+    "token": "dnclient-server",
     "homepage": "https://www.defined.net/",
     "title": "Defined Networking",
     "meta_desc": "Nebula Overlay Networks: Extend network access with on-demand, encrypted tunnels between any hosts on any network. Defined Networking is the company behind the Nebula open-source project.",
@@ -26771,6 +26813,13 @@
     "og_desc": "GAMA is an easy-to-use open source modeling and simulation environment for creating spatially explicit agent-based simulations."
   },
   {
+    "token": "gamehub",
+    "homepage": "https://www.gamemac.com/en",
+    "title": "GameHub - Play Windows Games on Mac",
+    "meta_desc": "GameHub lets you play Windows AAA games on Mac with Apple Silicon M-series chips. Steam multi-account management, seamless gaming experience. Beta client now available for early access.",
+    "og_desc": "GameHub lets you play Windows AAA games on Mac with Apple Silicon M-series chips. Steam multi-account management, seamless gaming experience. Beta client now available for early access."
+  },
+  {
     "token": "gamemaker",
     "homepage": "https://gamemaker.io/",
     "title": "GameMaker | Make 2D Games With The Free Engine",
@@ -28172,6 +28221,13 @@
     "title": "Laravel Herd",
     "meta_desc": "Laravel Development perfected.",
     "og_desc": "Laravel Development perfected - One click PHP development environment."
+  },
+  {
+    "token": "hermes-desktop",
+    "homepage": "https://hermes-agent.nousresearch.com/desktop",
+    "title": "Hermes Agent | Nous Research",
+    "meta_desc": "Hermes Agent — the open-source agent that grows with you. Native app for macOS, Windows, and Linux. By Nous Research.",
+    "og_desc": "Hermes Agent — a standalone terminal app and a native application for macOS, Windows, and Linux. Install it and start a conversation with the agent that grows with you."
   },
   {
     "token": "hermit-crab",
@@ -30465,6 +30521,13 @@
     "title": "Open Source Home Theater Software | Kodi",
     "meta_desc": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen.",
     "og_desc": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen."
+  },
+  {
+    "token": "koe",
+    "homepage": "https://github.com/missuo/koe",
+    "title": "GitHub - missuo/koe: A zero-GUI macOS voice input tool. Press a hotkey, speak, and the corrected text is pasted into whatever app you're using. · GitHub",
+    "meta_desc": "A zero-GUI macOS voice input tool. Press a hotkey, speak, and the corrected text is pasted into whatever app you're using. - missuo/koe",
+    "og_desc": "A zero-GUI macOS voice input tool. Press a hotkey, speak, and the corrected text is pasted into whatever app you're using. - missuo/koe"
   },
   {
     "token": "kogiqa",
@@ -33570,6 +33633,13 @@
     "og_desc": "Move, zoom, and snap windows. Arrange windows in layouts. Auto-adjust to display setups."
   },
   {
+    "token": "moonfin",
+    "homepage": "https://moonfin.io/",
+    "title": "Moonfin - A premium Jellyfin & Emby client for every screen",
+    "meta_desc": "Moonfin is a premium, open-source Jellyfin & Emby client for mobile, desktop, Android TV, Apple TV, Smart TV and Roku - native per-platform playback, offline downloads, multi-server unified libraries, native Seerr, custom theming and more.",
+    "og_desc": "A premium Jellyfin & Emby client for mobile, desktop, Android TV, Apple TV, Smart TV and Roku."
+  },
+  {
     "token": "moonlight",
     "homepage": "https://moonlight-stream.org/",
     "title": "Moonlight Game Streaming: Play Your PC Games Remotely",
@@ -34386,6 +34456,13 @@
     "title": "Neo4j Desktop Download | Free Graph Database Download",
     "meta_desc": "Experience Neo4j 5 on your desktop. Get started with the free graph database download today and avoid the costs of self-hosted deployment.",
     "og_desc": "Experience Neo4j 5 on your desktop. Get started with the free graph database download today and avoid the costs of self-hosted deployment."
+  },
+  {
+    "token": "neodisk",
+    "homepage": "https://neodisk.app/",
+    "title": "Neodisk",
+    "meta_desc": "Neodisk shows where your disk space went with interactive treemap and sunburst views. Scans your disks and cloud drives. Read-only by design: it never deletes your files. Free and open source, native to Apple Silicon.",
+    "og_desc": "See where your disk space went with interactive treemap and sunburst views. Read-only by design. Free and open source."
   },
   {
     "token": "neofinder",
