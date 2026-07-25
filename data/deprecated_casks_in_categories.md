@@ -9,7 +9,7 @@ These are all invisible in the app (filtered out by fetchCasks).
 - `airtrash` - Clone of Apple's Airdrop - easy P2P file transfer
 - `alipay-key-tool` - Key generation tool
 - `amd-power-gadget` - Power management, monitoring and VirtualSMC plugin for AMD processors
-- `appgrid` - Window manager with Vim–like hotkeys
+- `appgrid` - Window manager with Vim-like hotkeys
 - `apple-juice` - Battery gauge that displays the remaining battery time and more
 - `comictagger` - Metadata editor for digital comics
 - `eurkey` - Keyboard Layout for Europeans, Coders and Translators

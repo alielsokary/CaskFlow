@@ -173,7 +173,7 @@ def test_is_main_cask_shared_filter():
     assert not is_main_cask({"token": "old-tool", "deprecated": True})
 
 
-# --- magic-byte container sniffing (extension-less URLs: …/stable, …/osx_arm64)
+# --- magic-byte container sniffing (extension-less URLs: .../stable, .../osx_arm64)
 
 import zipfile
 
@@ -297,7 +297,7 @@ def test_flush_clears_published_pending_and_dirty(monkeypatch, tmp_path):
     assert dirty == set()
 
 
-# --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, …) --
+# --- asset-catalog icon path (car_only apps: little-snitch, tailscale-app, ...) --
 
 def _mk_app_with_resources(tmp_path, *files):
     app = tmp_path / "Test.app"

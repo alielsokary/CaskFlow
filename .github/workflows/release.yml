@@ -77,7 +77,7 @@ jobs:
                   echo "**${n} $2:**"
                   head -20 /tmp/tokens.txt | sed 's/.*/- `&`/'
                   if [ "$n" -gt 20 ]; then
-                    echo "- …and $((n - 20)) more"
+                    echo "- ...and $((n - 20)) more"
                   fi
                 fi
               }

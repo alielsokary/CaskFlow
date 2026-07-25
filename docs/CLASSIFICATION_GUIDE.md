@@ -27,7 +27,7 @@ There are 17 primary categories and one secondary-only trait:
 - **screensaverWallpaper**: macOS screensavers, dynamic wallpaper, and wallpaper-management applications
 - **other**: A last resort for applications without a defensible fit elsewhere
 
-The **ai** category is a trait, never a primary category. Add it as a secondary category when AI or an LLM is central to the application’s value.
+The **ai** category is a trait, never a primary category. Add it as a secondary category when AI or an LLM is central to the application's value.
 
 ## Classification Evidence
 
