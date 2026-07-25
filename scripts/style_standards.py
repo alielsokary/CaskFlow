@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-"""Text style standards for this repository.
-
-Two sources push typographic slop into tracked files: AI tools smarten authored
-prose, and scraped homepages carry vendor typography into generated data. Both
-normalize to plain ASCII here.
-
-Only slop is listed. Real content (CJK, emoji, accented Latin) and meaningful
-notation (c, section, >=, arrows) are deliberately absent so they survive
-untouched. Characters are built with chr() so this file stays pure ASCII and
-passes its own guard.
-"""
+"""Normalize typographic slop out of authored prose and generated data."""
+# Only slop is listed. Real content (CJK, emoji, accented Latin) and meaningful
+# notation (copyright, section, >=, arrows) are deliberately absent so they
+# survive untouched. Characters are built with chr() so this file stays pure
+# ASCII and passes its own guard.
 from __future__ import annotations
 
 import json
@@ -58,20 +52,16 @@ def normalize_data(value):
 
 
 def write_text(path: Path | str, text: str) -> None:
-    """Write plain text with slop normalized away.
-
-    For JSON use write_json: normalizing serialized JSON would turn a curly
-    quote into a bare one and corrupt the string it sits in.
-    """
+    """Write plain text with slop normalized away."""
+    # For JSON use write_json: normalizing serialized JSON would turn a curly
+    # quote into a bare one and corrupt the string it sits in.
     Path(path).write_text(normalize(text), encoding="utf-8")
 
 
 def write_json(path: Path | str, data, *, trailing_newline: bool = False) -> None:
-    """Write JSON with slop normalized before serialization, so quotes stay escaped.
-
-    Every generated JSON file routes through here, so scraped vendor typography
-    cannot reach a tracked file no matter which script produced it.
-    """
+    """Write JSON with slop normalized before serialization, so quotes stay escaped."""
+    # Every generated JSON file routes through here, so scraped vendor typography
+    # cannot reach a tracked file no matter which script produced it.
     text = json.dumps(normalize_data(data), indent=2, ensure_ascii=False)
     if trailing_newline:
         text += "\n"

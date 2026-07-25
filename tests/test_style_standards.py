@@ -1,8 +1,6 @@
-"""Repository-wide text style standard checks.
-
-Slop characters are built with chr() on purpose: literal ones would make this
-file fail its own guard.
-"""
+"""Repository-wide text style standard checks."""
+# Slop characters are built with chr() on purpose: literal ones would make this
+# file fail its own guard.
 from __future__ import annotations
 
 import json
@@ -58,11 +56,9 @@ def test_write_text_normalizes_before_writing(tmp_path):
 
 
 def test_write_json_escapes_normalized_quotes(tmp_path):
-    """Curly quotes become straight ones, so they must be escaped by the serializer.
-
-    Normalizing already-serialized JSON would inject a bare quote into a string
-    value and corrupt the file.
-    """
+    """Curly quotes become straight ones, so they must be escaped by the serializer."""
+    # Normalizing already-serialized JSON would inject a bare quote into a
+    # string value and corrupt the file.
     target = tmp_path / "out.json"
     style_standards.write_json(target, [{"title": f"{LEFT_QUOTE}Smart{RIGHT_QUOTE} app"}])
     assert json.loads(target.read_text(encoding="utf-8")) == [{"title": '"Smart" app'}]
