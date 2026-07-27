@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-25",
-  "totalCasks": 3831,
+  "generatedDate": "2026-07-27",
+  "totalCasks": 3832,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -452,6 +452,12 @@
     "airserver": {
       "primary": "utilities",
       "secondary": []
+    },
+    "airsync": {
+      "primary": "utilities",
+      "secondary": [
+        "communication"
+      ]
     },
     "airtable": {
       "primary": "productivity",
