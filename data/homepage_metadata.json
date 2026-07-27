@@ -712,6 +712,13 @@
     "og_desc": ""
   },
   {
+    "token": "airsync",
+    "homepage": "https://github.com/sameerasw/airsync-mac",
+    "title": "GitHub - sameerasw/airsync-mac: AirSync macOS - Bring the forbidden macOS continuity to Android · GitHub",
+    "meta_desc": "AirSync macOS - Bring the forbidden macOS continuity to Android - sameerasw/airsync-mac",
+    "og_desc": "AirSync macOS - Bring the forbidden macOS continuity to Android - sameerasw/airsync-mac"
+  },
+  {
     "token": "airtable",
     "homepage": "https://airtable.com/",
     "title": "Airtable: Build Enterprise-ready AI Workflows, Apps & Agents - Airtable",
