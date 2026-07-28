@@ -18,11 +18,11 @@ CaskFlow follows a rolling release model: only the latest release assets and the
 
 You **must not** report security vulnerabilities through public GitHub issues, discussions, or pull requests.
 
-Instead, report them privately through GitHub's private vulnerability reporting:
+Exception: if you have no GitHub account or cannot use the advisory form below, open a regular [issue](https://github.com/alielsokary/CaskFlow/issues) asking for a private contact channel, without including vulnerability details.
+
+Report privately through GitHub's private vulnerability reporting:
 
 **[Open a security advisory](https://github.com/alielsokary/CaskFlow/security/advisories/new)**
-
-If you cannot use the advisory form, open a regular [issue](https://github.com/alielsokary/CaskFlow/issues) asking for a private contact channel, without including vulnerability details.
 
 Reports **should** include:
 
@@ -33,7 +33,7 @@ Reports **should** include:
 
 ### What to expect
 
-CaskFlow is maintained by a single developer in their spare time, so please allow a little slack on timelines:
+For now, CaskFlow is maintained by a single developer in their spare time, so please allow a little slack on timelines:
 
 - Your report will be acknowledged within 7 days.
 - You will receive updates as the issue is triaged and fixed.
