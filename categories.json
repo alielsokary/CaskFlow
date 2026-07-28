@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-27",
-  "totalCasks": 3832,
+  "generatedDate": "2026-07-28",
+  "totalCasks": 3831,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8521,10 +8521,6 @@
     },
     "miaoyan": {
       "primary": "productivity",
-      "secondary": []
-    },
-    "micro-sniff": {
-      "primary": "utilities",
       "secondary": []
     },
     "micro-snitch": {
