@@ -22,6 +22,8 @@ Instead, report them privately through GitHub's private vulnerability reporting:
 
 **[Open a security advisory](https://github.com/alielsokary/CaskFlow/security/advisories/new)**
 
+If you cannot use the advisory form, open a regular [issue](https://github.com/alielsokary/CaskFlow/issues) asking for a private contact channel, without including vulnerability details.
+
 Reports **should** include:
 
 - A description of the vulnerability and its impact
