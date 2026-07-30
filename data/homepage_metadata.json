@@ -4537,6 +4537,13 @@
     "og_desc": "xattred - full-featured extended attribute editor, can also add quarantine xattrs Updated! xattred lets you inspect and edit all extended attributes (xattrs) associated with a file or folder,..."
   },
   {
+    "token": "cmtrace-open",
+    "homepage": "https://cmtraceopen.com/",
+    "title": "CMTrace Open: free CMTrace replacement for Windows logs",
+    "meta_desc": "Free, open-source log viewer for ConfigMgr/SCCM, Intune, and Autopilot logs. Auto-detects formats, tails in real time, and decodes Windows error codes.",
+    "og_desc": "Free, open-source log viewer for ConfigMgr/SCCM, Intune, and Autopilot logs. Auto-detects formats, tails in real time, and decodes Windows error codes."
+  },
+  {
     "token": "cmux",
     "homepage": "https://www.cmux.dev/",
     "title": "cmux - The terminal built for multitasking",
@@ -31529,6 +31536,20 @@
     "error": "HTTP 403"
   },
   {
+    "token": "luna-display",
+    "homepage": "https://astropad.com/product/lunadisplay/",
+    "title": "Luna Display | Turn your Mac or iPad into a second display",
+    "meta_desc": "The only hardware solution that turns any Mac or iPad into a wireless second display.",
+    "og_desc": "The only hardware solution that turns any Mac or iPad into a wireless second display."
+  },
+  {
+    "token": "luna-secondary",
+    "homepage": "https://astropad.com/product/lunadisplay/",
+    "title": "Luna Display | Turn your Mac or iPad into a second display",
+    "meta_desc": "The only hardware solution that turns any Mac or iPad into a wireless second display.",
+    "og_desc": "The only hardware solution that turns any Mac or iPad into a wireless second display."
+  },
+  {
     "token": "lunacy",
     "homepage": "https://icons8.com/lunacy",
     "title": "Lunacy - Free Graphic Design Software for Desktop: Download for Windows, Mac, Linux",
@@ -38847,6 +38868,13 @@
     "title": "GitHub - cmushroom/redis-pro: redis-pro redis 桌面管理工具 · GitHub",
     "meta_desc": "redis-pro redis 桌面管理工具. Contribute to cmushroom/redis-pro development by creating an account on GitHub.",
     "og_desc": "redis-pro redis 桌面管理工具. Contribute to cmushroom/redis-pro development by creating an account on GitHub."
+  },
+  {
+    "token": "redot",
+    "homepage": "https://redotengine.org/",
+    "title": "Redot Engine: Open source game engine for everyone",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "redquits",
