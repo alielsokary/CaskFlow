@@ -131,6 +131,33 @@ def test_mines_default_branch_landing_date_for_delayed_merge(tmp_path):
     assert mine(repo)["openwhispr"] == "2026-07-23T09:27:47Z"
 
 
+def test_non_utc_committer_dates_normalize_to_utc(tmp_path):
+    repo = tmp_path / "homebrew-cask"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", str(repo)], check=True)
+    subprocess.run(["git", "-C", str(repo), "config", "user.name", "Test"], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "config", "user.email", "test@example.com"],
+        check=True,
+    )
+
+    cask = repo / "Casks" / "t" / "tz-app.rb"
+    cask.parent.mkdir(parents=True)
+    cask.write_text('cask "tz-app" do\nend\n', encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(cask)], check=True)
+    env = os.environ | {
+        "GIT_AUTHOR_DATE": "2026-07-30T09:00:00+09:00",
+        "GIT_COMMITTER_DATE": "2026-07-30T09:00:00+09:00",
+    }
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Add tz cask"],
+        check=True,
+        env=env,
+    )
+
+    assert mine(repo)["tz-app"] == "2026-07-30T00:00:00Z"
+
+
 def test_coverage_check_catches_an_active_cask_without_a_date(tmp_path, monkeypatch):
     monkeypatch.setattr(
         "mine_added_dates.current_cask_tokens",
