@@ -36883,6 +36883,13 @@
     "og_desc": ""
   },
   {
+    "token": "phosphene",
+    "homepage": "https://kagerou.glass/phosphene/",
+    "title": "Phosphene - video wallpapers for macOS",
+    "meta_desc": "I reverse engineered Apple's private WallpaperExtensionKit so any video can be your desktop and lock screen wallpaper. Free, open source, MIT.",
+    "og_desc": "I reverse engineered Apple's video wallpapers. Any video, desktop and lock screen, through Apple's own extension path. Free, open source, MIT."
+  },
+  {
     "token": "photoninja",
     "homepage": "https://www.picturecode.com/index.php",
     "title": "PictureCode home page: Photo Ninja",
@@ -41596,6 +41603,13 @@
     "og_desc": "macOS space indicator. Contribute to dshnkao/SpaceId development by creating an account on GitHub."
   },
   {
+    "token": "spacejump",
+    "homepage": "https://getspacejump.com/",
+    "title": "SpaceJump - Rename macOS Desktops & Spaces",
+    "meta_desc": "Name your Mac desktops. See Space names in menu bar. Switch & jump back instantly. The missing macOS feature. Try free for 14 days.",
+    "og_desc": "Name your Mac desktops. See Space names in menu bar. Switch & jump back instantly. Try free for 14 days."
+  },
+  {
     "token": "spacelauncher",
     "homepage": "https://spacelauncherapp.com/",
     "title": "SpaceLauncher - App Launcher and Switcher for Mac",
@@ -43793,6 +43807,13 @@
     "title": "TigerVNC",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "tight-studio",
+    "homepage": "https://tight.studio/",
+    "title": "Tight Studio - Free screen recorder to make stunning videos",
+    "meta_desc": "Your work deserves a better video. Screen record and produce stunning demos, tutorials, and presentations in minutes.",
+    "og_desc": "Your work deserves a better video. Screen record and produce stunning demos, tutorials, and presentations in minutes."
   },
   {
     "token": "tikz-editor",

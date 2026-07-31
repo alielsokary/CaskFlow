@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-30",
-  "totalCasks": 3835,
+  "generatedDate": "2026-07-31",
+  "totalCasks": 3838,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -10725,6 +10725,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "phosphene": {
+      "primary": "screensaverWallpaper",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
     "photoninja": {
       "primary": "designGraphics",
       "secondary": []
@@ -13359,6 +13365,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "spacejump": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "spacelauncher": {
       "primary": "utilities",
       "secondary": [
@@ -14507,6 +14519,10 @@
     },
     "tigervnc": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "tight-studio": {
+      "primary": "videoMedia",
       "secondary": []
     },
     "tikz-editor": {
