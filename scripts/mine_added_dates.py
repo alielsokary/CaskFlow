@@ -127,7 +127,9 @@ def main() -> int:
     payload = {
         "version": 1,
         # Timestamp, not date: lets clients accept a second release cut the same day.
-        "generatedDate": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generatedDate": datetime.now(timezone.utc)
+        .isoformat(timespec="seconds")
+        .replace("+00:00", "Z"),
         "totalCasks": len(added),
         "tokenAddedDates": dict(sorted(added.items())),
     }
