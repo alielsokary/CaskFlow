@@ -25,6 +25,20 @@ def test_auto_merge_checks_null_as_a_boolean():
     assert "--jq '.autoMergeRequest')\" = \"null\"" not in classification
 
 
+def test_pending_review_disarms_previously_enabled_auto_merge():
+    classification = _workflow("classify-new-casks.yml")
+
+    assert "review_required == 'true'" in classification
+    assert "gh pr merge --disable-auto" in classification
+
+
+def test_icon_publication_cuts_a_release_for_the_fresh_manifest():
+    icons = _workflow("extract-icons.yml")
+
+    assert "actions: write" in icons
+    assert "gh workflow run release.yml" in icons
+
+
 def test_pr_hygiene_can_assign_pull_requests():
     hygiene = _workflow("pr-hygiene.yml")
 
