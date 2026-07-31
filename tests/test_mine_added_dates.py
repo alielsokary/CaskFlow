@@ -9,15 +9,15 @@ from mine_added_dates import current_cask_tokens, mine, parse_log, validate_curr
 
 LOG = "\n".join([
     # Newest first, like git log. The 2023 sharding move re-added iterm2.
-    "2023-06-01",
+    "2023-06-01T08:15:00Z",
     "",
     "A\tCasks/i/iterm2.rb",
     "A\tCasks/f/firefox.rb",
-    "2020-03-15",
+    "2020-03-15T12:30:45Z",
     "",
     "A\tCasks/newapp.rb",
     "M\tCasks/other.rb",
-    "2012-12-19",
+    "2012-12-19T23:59:59Z",
     "",
     "A\tCasks/iterm2.rb",
     "A\tCasks/README.md",
@@ -25,13 +25,13 @@ LOG = "\n".join([
 
 
 def test_earliest_add_wins_across_sharding_move():
-    assert parse_log(LOG)["iterm2"] == "2012-12-19"
+    assert parse_log(LOG)["iterm2"] == "2012-12-19T23:59:59Z"
 
 
 def test_single_add_keeps_its_date():
     result = parse_log(LOG)
-    assert result["newapp"] == "2020-03-15"
-    assert result["firefox"] == "2023-06-01"
+    assert result["newapp"] == "2020-03-15T12:30:45Z"
+    assert result["firefox"] == "2023-06-01T08:15:00Z"
 
 
 def test_non_ruby_and_modified_files_are_ignored():
@@ -74,7 +74,7 @@ def test_mines_cask_that_has_no_category(tmp_path):
     category_tokens: set[str] = set()
     assert token not in category_tokens
     assert current_cask_tokens(repo) == {token}
-    assert added[token] == "2026-07-23"
+    assert added[token] == "2026-07-23T12:00:00Z"
     assert validate_current_cask_coverage(repo, added) == set()
 
 
@@ -128,7 +128,34 @@ def test_mines_default_branch_landing_date_for_delayed_merge(tmp_path):
         env=merge_env,
     )
 
-    assert mine(repo)["openwhispr"] == "2026-07-23"
+    assert mine(repo)["openwhispr"] == "2026-07-23T09:27:47Z"
+
+
+def test_non_utc_committer_dates_normalize_to_utc(tmp_path):
+    repo = tmp_path / "homebrew-cask"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", str(repo)], check=True)
+    subprocess.run(["git", "-C", str(repo), "config", "user.name", "Test"], check=True)
+    subprocess.run(
+        ["git", "-C", str(repo), "config", "user.email", "test@example.com"],
+        check=True,
+    )
+
+    cask = repo / "Casks" / "t" / "tz-app.rb"
+    cask.parent.mkdir(parents=True)
+    cask.write_text('cask "tz-app" do\nend\n', encoding="utf-8")
+    subprocess.run(["git", "-C", str(repo), "add", str(cask)], check=True)
+    env = os.environ | {
+        "GIT_AUTHOR_DATE": "2026-07-30T09:00:00+09:00",
+        "GIT_COMMITTER_DATE": "2026-07-30T09:00:00+09:00",
+    }
+    subprocess.run(
+        ["git", "-C", str(repo), "commit", "-q", "-m", "Add tz cask"],
+        check=True,
+        env=env,
+    )
+
+    assert mine(repo)["tz-app"] == "2026-07-30T00:00:00Z"
 
 
 def test_coverage_check_catches_an_active_cask_without_a_date(tmp_path, monkeypatch):
