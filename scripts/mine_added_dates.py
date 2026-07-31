@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Mine each cask's earliest addition date from Homebrew's git history."""
+"""Mine each cask's earliest addition timestamp (UTC) from Homebrew's git history."""
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
 import tempfile
-from datetime import date
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -16,7 +17,9 @@ OUTPUT_PATH = REPO_ROOT / "added_dates.json"
 TAP_URL = "https://github.com/Homebrew/homebrew-cask"
 GIT_EXECUTABLE = "/usr/bin/git"
 
-DATE_LINE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# Full UTC timestamps so same-day adds keep their true merge order; ISO-8601
+# Zulu strings compare lexicographically, so consumers keep plain string sorts.
+DATE_LINE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 
 
 def clone_tap(dest: str) -> Path:
@@ -53,12 +56,13 @@ def mine(repo: Path) -> dict[str, str]:
             # Follow the default branch and compare merge commits with their
             # first parent. Feature-branch commit dates can predate the merge
             # by days, while the first-parent commit records when they landed.
-            "--date=short", "--format=%cd",
+            "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd",
             "--", "Casks/",
         ],
         check=True,
         capture_output=True,
         text=True,
+        env=os.environ | {"TZ": "UTC"},
     ).stdout
     return parse_log(log)
 
@@ -122,7 +126,8 @@ def main() -> int:
 
     payload = {
         "version": 1,
-        "generatedDate": date.today().isoformat(),
+        # Timestamp, not date: lets clients accept a second release cut the same day.
+        "generatedDate": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "totalCasks": len(added),
         "tokenAddedDates": dict(sorted(added.items())),
     }
