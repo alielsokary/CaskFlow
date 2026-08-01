@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-07-31
+Generated 2026-08-01
 
 ## Summary
 
-- 3 new casks classified
+- 4 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
@@ -15,6 +15,7 @@ Generated 2026-07-31
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `phosphene` | screensaverWallpaper | videoMedia | 0.95 | App sets custom video wallpapers for desktop and lock screen on macOS. |
-| `spacejump` | menuBar | utilities | 0.85 | A menu bar utility for naming and switching macOS desktop Spaces. |
-| `tight-studio` | videoMedia | - | 0.90 | Screen recorder and video editor for producing videos. |
+| `degr` | screensaverWallpaper | - | 0.97 | Explicitly described as a temperature and clock screensaver. |
+| `lm-studio-bionic` | productivity | ai, developerTools | 0.75 | LM Studio Bionic is an AI agent for creating documents and code using local or open models, blending productivity and coding assistance. |
+| `mend` | securityPrivacy | developerTools | 0.85 | CLI tool for application security scanning, relevant to developers but primarily a security tool. |
+| `orbit` | communication | productivity | 0.85 | A native Gmail/Google Workspace client for managing multiple accounts, primarily an email/communication tool. |

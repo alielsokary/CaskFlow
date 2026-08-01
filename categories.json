@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-07-31",
-  "totalCasks": 3838,
+  "generatedDate": "2026-08-01",
+  "totalCasks": 3842,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3422,6 +3422,10 @@
     },
     "defold": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "degr": {
+      "primary": "screensaverWallpaper",
       "secondary": []
     },
     "dehelper": {
@@ -7609,6 +7613,13 @@
         "ai"
       ]
     },
+    "lm-studio-bionic": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
     "lo-rain": {
       "primary": "utilities",
       "secondary": []
@@ -8436,6 +8447,12 @@
     "memoryanalyzer": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "mend": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "mendeley-reference-manager": {
       "primary": "scienceEducation",
@@ -10211,6 +10228,12 @@
     "orange": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "orbit": {
+      "primary": "communication",
+      "secondary": [
+        "productivity"
+      ]
     },
     "orbstack": {
       "primary": "developerTools",
