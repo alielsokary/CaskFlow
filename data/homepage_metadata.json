@@ -5880,6 +5880,13 @@
     "og_desc": "Defold is a free, cross-platform game engine for building 2D and 3D games on desktop, web, mobile, and consoles with one streamlined workflow."
   },
   {
+    "token": "degr",
+    "homepage": "https://degr.app/",
+    "title": "degr° - a free temperature and clock screensaver for Mac and Windows",
+    "meta_desc": "degr° shows the live local temperature, or a clean clock, as huge digits on a black screen. Free for macOS and Windows. No account, no ads, no tracking.",
+    "og_desc": "The live local temperature, or a clean clock, as huge digits on a black screen. Free for Mac and Windows."
+  },
+  {
     "token": "dehelper",
     "homepage": "https://www.eudic.net/v4/de/app/dehelper",
     "title": "《德语助手》德语翻译软件官方主页，最新支持GPT翻译和写作语法批改，德语学习首选的词典软件_欧路软件官网",
@@ -31215,6 +31222,13 @@
     "og_desc": "Run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer."
   },
   {
+    "token": "lm-studio-bionic",
+    "homepage": "https://lmstudio.ai/",
+    "title": "LM Studio Bionic - Agent for Work and Code",
+    "meta_desc": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models.",
+    "og_desc": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models."
+  },
+  {
     "token": "lo-rain",
     "homepage": "https://lo.cafe/lo-rain",
     "title": "Discord Icon",
@@ -32663,6 +32677,13 @@
     "title": "Memory Analyzer (MAT) | The Eclipse Foundation",
     "meta_desc": "The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source ...",
     "og_desc": "The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source ..."
+  },
+  {
+    "token": "mend",
+    "homepage": "https://www.mend.io/",
+    "title": "Mend.io | Application Security and AI Security, Unified",
+    "meta_desc": "Traditional application security misses AI risk. Standalone AI security tools miss your code. Mend.io closes the gap with unified security for AppSec and AI.",
+    "og_desc": "Traditional application security misses AI risk. Standalone AI security tools miss your code. Mend.io closes the gap with unified security for AppSec and AI."
   },
   {
     "token": "mendeley-reference-manager",
@@ -35988,6 +36009,13 @@
     "title": "Orange Data Mining",
     "meta_desc": "Orange Data Mining Toolbox",
     "og_desc": "Orange Data Mining Toolbox"
+  },
+  {
+    "token": "orbit",
+    "homepage": "https://orbitformac.com/",
+    "title": "Orbit - Gmail Client for Mac | Multiple Google Accounts, One Window",
+    "meta_desc": "A native Mac email client for multiple Gmail accounts. Every Google account - Gmail, Calendar, Drive - in one window, each in its own session. 4 MB download, no bundled browser. Buy once.",
+    "og_desc": "A native Mac email client for multiple Gmail accounts. Every Gmail, Calendar, and Drive in one window, each account in its own session. 4 MB download, no bundled browser."
   },
   {
     "token": "orbstack",
