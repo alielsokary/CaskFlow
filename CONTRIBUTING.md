@@ -2,6 +2,8 @@
 
 Thanks for helping improve the data that powers CaskHub. Contributions are welcome across classification quality, automation safety, tests, documentation, and icon coverage.
 
+This project follows a [Code of Conduct](CODE_OF_CONDUCT.md). Security reports go through [SECURITY.md](SECURITY.md), not public issues.
+
 ## Before you start
 
 For a focused bug fix or documentation improvement, open a pull request directly. For schema changes, new primary categories, or changes to release behavior, open an issue first so the producer and CaskHub consumer can be updated together.
