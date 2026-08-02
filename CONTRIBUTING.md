@@ -46,6 +46,16 @@ python scripts/apply_corrections.py
 
 Use `--all` only after the non-high-confidence entries have been reviewed. The tool rejects unknown categories, stale `was` values, secondary-only traits used as primaries, duplicate categories, and more than two secondary categories.
 
+## Branch model
+
+Pull requests **must** target the `develop` branch, not `master`.
+
+`master` is production: the daily classification bot commits to it and releases publish from it. It receives the automated back-merge and promotion merges only.
+
+Exception: automated PRs (daily classification, master-to-develop sync) are managed by workflows and target their own branches.
+
+Name branches `type/kebab-case-description`, for example `fix/icon-release-ordering`.
+
 ## Pull requests
 
 PR titles follow the semantic form `<type>(optional-scope): description`. Allowed types are `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test`.

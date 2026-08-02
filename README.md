@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg)](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml)
 [![Codacy](https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f)](https://app.codacy.com/gh/alielsokary/CaskFlow/dashboard)
-[![codecov](https://codecov.io/gh/alielsokary/CaskFlow/branch/master/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskFlow)
+[![codecov](https://codecov.io/gh/alielsokary/CaskFlow/branch/develop/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskFlow)
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskFlow)](https://github.com/alielsokary/CaskFlow/releases/latest)
 [![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
 
@@ -69,7 +69,7 @@ Real classification supports `anthropic`, `openai`, `groq`, and `cloudflare`; ch
 
 ## Contributing
 
-Bug reports, taxonomy corrections, tests, documentation improvements, and pipeline hardening are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), which explains local verification, category correction evidence, and the required semantic PR title format.
+Bug reports, taxonomy corrections, tests, documentation improvements, and pipeline hardening are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), which explains local verification, category correction evidence, and the required semantic PR title format. Pull requests target the `develop` branch.
 
 Examples: `fix(classifier): Handle malformed output`, `docs: Clarify category boundaries`, or `chore: Daily cask classification update`.
 

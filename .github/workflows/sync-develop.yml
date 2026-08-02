@@ -1,0 +1,49 @@
+name: Sync develop with master
+
+# Back-merge automation: every push to master opens (or reuses) a
+# "chore: master to develop" PR so develop never drifts behind the daily
+# classification commits and releases that land on master.
+#
+# The PR auto-merges with a merge commit (never squash: squashing rewrites
+# the shared history and makes every later back-merge conflict).
+#
+# Requires the repo setting "Allow GitHub Actions to create and approve
+# pull requests" (Settings > Actions > General).
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Open auto-merging PR master -> develop
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          existing=$(gh pr list --base develop --head master --state open --json number --jq '.[].number')
+          if [ -n "$existing" ]; then
+            echo "Open master->develop PR #$existing already exists; new commits land on it automatically."
+            exit 0
+          fi
+          if ! out=$(gh pr create \
+            --base develop \
+            --head master \
+            --title "chore: master to develop" \
+            --body "Automated back-merge to keep develop in sync with master." \
+            --assignee alielsokary 2>&1); then
+            echo "$out"
+            # only "develop already has everything" is a legitimate no-op
+            echo "$out" | grep -qi "no commits between" && exit 0
+            exit 1
+          fi
+          echo "$out"
+          num=$(gh pr list --base develop --head master --state open --json number --jq '.[0].number')
+          gh pr merge --auto --merge "$num" || echo "Auto-merge unavailable; merge PR #$num manually."
