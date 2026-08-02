@@ -46,6 +46,8 @@ def test_back_merge_targets_develop_with_a_merge_commit():
     assert "--head master" in sync
     assert "gh pr merge --auto --merge" in sync
     assert "--squash" not in sync
+    # PAT author: bot-authored PRs stall on manual workflow approval
+    assert "secrets.CLASSIFY_BOT_TOKEN" in sync
 
 
 def test_pr_hygiene_can_assign_pull_requests():
