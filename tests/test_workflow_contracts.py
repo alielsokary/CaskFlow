@@ -39,6 +39,15 @@ def test_icon_publication_cuts_a_release_for_the_fresh_manifest():
     assert "gh workflow run release.yml" in icons
 
 
+def test_back_merge_targets_develop_with_a_merge_commit():
+    sync = _workflow("sync-develop.yml")
+
+    assert "--base develop" in sync
+    assert "--head master" in sync
+    assert "gh pr merge --auto --merge" in sync
+    assert "--squash" not in sync
+
+
 def test_pr_hygiene_can_assign_pull_requests():
     hygiene = _workflow("pr-hygiene.yml")
 
