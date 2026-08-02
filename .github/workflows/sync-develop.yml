@@ -7,8 +7,9 @@ name: Sync develop with master
 # The PR auto-merges with a merge commit (never squash: squashing rewrites
 # the shared history and makes every later back-merge conflict).
 #
-# Requires the repo setting "Allow GitHub Actions to create and approve
-# pull requests" (Settings > Actions > General).
+# Uses CLASSIFY_BOT_TOKEN (same PAT as the classification bot) so the PR
+# is authored by the owner: bot-authored PRs need manual workflow approval,
+# which blocks the required Tests check and stalls auto-merge forever.
 on:
   push:
     branches: [master]
@@ -25,7 +26,7 @@ jobs:
 
       - name: Open auto-merging PR master -> develop
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
         run: |
           set -euo pipefail
           existing=$(gh pr list --base develop --head master --state open --json number --jq '.[].number')
