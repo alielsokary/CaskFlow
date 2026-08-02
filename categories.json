@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-01",
-  "totalCasks": 3842,
+  "generatedDate": "2026-08-02",
+  "totalCasks": 3843,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -12674,6 +12674,12 @@
     "send-anywhere": {
       "primary": "utilities",
       "secondary": []
+    },
+    "send-to-kindle": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "sensei": {
       "primary": "utilities",
