@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-02",
-  "totalCasks": 3843,
+  "generatedDate": "2026-08-03",
+  "totalCasks": 3845,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7434,6 +7434,12 @@
     "lehreroffice": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "lemonade-server": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "lens": {
       "primary": "developerTools",
@@ -15158,6 +15164,12 @@
       "secondary": []
     },
     "unity": {
+      "primary": "developerTools",
+      "secondary": [
+        "games"
+      ]
+    },
+    "unity-cli": {
       "primary": "developerTools",
       "secondary": [
         "games"
