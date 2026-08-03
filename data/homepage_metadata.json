@@ -30906,6 +30906,13 @@
     "og_desc": ""
   },
   {
+    "token": "lemonade-server",
+    "homepage": "https://lemonade-server.ai/",
+    "title": "Lemonade: Local AI for Text, Images, and Speech",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "lens",
     "homepage": "https://lenshq.io/",
     "title": "Lens",
@@ -44926,6 +44933,13 @@
     "title": "Unity Plans & Pricing: Pro, Personal, Enterprise, Industry | Unity",
     "meta_desc": "Explore all of Unity's products and services to find the right set of tools for you. Get more information about our plans and pricing.",
     "og_desc": "Explore all of Unity's products and services to find the right set of tools for you. Get more information about our plans and pricing."
+  },
+  {
+    "token": "unity-cli",
+    "homepage": "https://docs.unity.com/en-us/cli",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "unity-hub",
