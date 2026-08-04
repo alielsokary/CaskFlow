@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-03",
-  "totalCasks": 3845,
+  "generatedDate": "2026-08-04",
+  "totalCasks": 3851,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -659,6 +659,12 @@
     "anchor-wallet": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "android-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "android-commandlinetools": {
       "primary": "developerTools",
@@ -3649,6 +3655,12 @@
     "ditto": {
       "primary": "utilities",
       "secondary": []
+    },
+    "diversion": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
     },
     "divvy": {
       "primary": "utilities",
@@ -13994,6 +14006,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "switchy": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "symboliclinker": {
       "primary": "utilities",
       "secondary": []
@@ -14535,6 +14553,12 @@
     "ti-smartview-ce-for-the-ti-84-plus-family": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "tickernotch": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
     },
     "ticktick": {
       "primary": "productivity",
@@ -16137,6 +16161,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "work-louder-input": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "workbench": {
       "primary": "cloudStorage",
       "secondary": []
@@ -16495,6 +16523,12 @@
     "zappy": {
       "primary": "utilities",
       "secondary": []
+    },
+    "zcode": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "zed": {
       "primary": "developerTools",

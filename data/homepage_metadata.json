@@ -1095,6 +1095,11 @@
     "og_desc": "Anchor is a security and privacy focused open-source digital wallet for all Antelope-based networks."
   },
   {
+    "token": "android-cli",
+    "homepage": "https://developer.android.com/tools/agents/android-cli",
+    "error": "HTTP 302"
+  },
+  {
     "token": "android-commandlinetools",
     "homepage": "https://developer.android.com/studio",
     "error": "HTTP 302"
@@ -6263,6 +6268,13 @@
     "title": "Screen Mirroring, Digital Signage, Alerts | Ditto",
     "meta_desc": "Transform any TV, projector or display into a collaboration powerhouse. Get screen sharing, digital signage and alert software for your school or business.",
     "og_desc": "Transform any TV, projector or display into a collaboration powerhouse. Get screen sharing, digital signage and alert software for your school or business."
+  },
+  {
+    "token": "diversion",
+    "homepage": "https://www.diversion.dev/",
+    "title": "Diversion: Scalable Version Control",
+    "meta_desc": "Diversion is scalable version control for game development, Unreal Engine, Unity, 3D and AI - a modern alternative to Perforce, Git, and SVN.",
+    "og_desc": "Diversion is scalable version control for game development, Unreal Engine, Unity, 3D and AI - a modern alternative to Perforce, Git, and SVN."
   },
   {
     "token": "divvy",
@@ -42752,6 +42764,13 @@
     "og_desc": ""
   },
   {
+    "token": "switchy",
+    "homepage": "https://mangobuns.com/switchy/",
+    "title": "Switchy - Switch Magic Keyboard, Mouse & Trackpad Between Macs",
+    "meta_desc": "Switch your Magic Keyboard, Trackpad, and Mouse between Macs with a single click. Free 3-day trial, then $9.99 for a lifetime license. Works on macOS 14.0+.",
+    "og_desc": "One click to switch your Magic Keyboard, Trackpad, and Mouse between Macs. No more System Settings. No more unpairing."
+  },
+  {
     "token": "symboliclinker",
     "homepage": "https://github.com/nickzman/symboliclinker",
     "title": "GitHub - nickzman/symboliclinker: A contextual menu plugin & service for macOS that allows users to make symbolic links in the Finder · GitHub",
@@ -43809,6 +43828,13 @@
     "title": "TIC-80 tiny computer",
     "meta_desc": "fantasy computer for making, playing and sharing tiny games",
     "og_desc": "fantasy computer for making, playing and sharing tiny games"
+  },
+  {
+    "token": "tickernotch",
+    "homepage": "https://bitvibelabs.com/tickernotch/",
+    "title": "TickerNotch - Live tickers, weather and news in your MacBook notch",
+    "meta_desc": "TickerNotch transforms the MacBook notch into the pulse of everything you follow: markets, weather, system stats and global news. Pin any to the menu bar too.",
+    "og_desc": "TickerNotch transforms the MacBook notch into the pulse of everything you follow: markets, weather, system stats and global news. Pin any of it to the menu bar too."
   },
   {
     "token": "ticktick",
@@ -46590,6 +46616,13 @@
     "og_desc": "A little collection of free utilities for the Mac to make your life easier."
   },
   {
+    "token": "work-louder-input",
+    "homepage": "https://worklouder.cc/input",
+    "title": "WORK LOUDER®",
+    "meta_desc": "Work Louder make products for people, inspired by a version of themselves sometimes forgotten - playful, versatile, and above all else, creative.",
+    "og_desc": "Work Louder make products for people, inspired by a version of themselves sometimes forgotten - playful, versatile, and above all else, creative."
+  },
+  {
     "token": "workbench",
     "homepage": "https://github.com/mxcl/Workbench",
     "title": "GitHub - mxcl/Workbench: Seamless, automatic, \"dotfile\" sync to iCloud. · GitHub",
@@ -47205,6 +47238,13 @@
     "title": "Zappy: Free Screenshot & Recording Software for macOS",
     "meta_desc": "The fastest, all-in-one way to share screenshots, GIFs, and recordings with your teammates. Download Zappy for free today.",
     "og_desc": "The fastest, all-in-one way to share screenshots, GIFs, and recordings with your teammates. Download Zappy for free today."
+  },
+  {
+    "token": "zcode",
+    "homepage": "https://zcode.z.ai/en/",
+    "title": "ZCode - Simple, Fast, Vibe‑Ready | Official Harness for GLM-5.2",
+    "meta_desc": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
+    "og_desc": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction."
   },
   {
     "token": "zed",
