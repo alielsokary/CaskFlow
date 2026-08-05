@@ -67,11 +67,22 @@ Real classification supports `anthropic`, `openai`, `groq`, and `cloudflare`; ch
 - [`data/`](data) holds generated reports, caches, and reviewed correction input; it is not the canonical category source.
 - [`.github/workflows/`](.github/workflows) contains classification, icon, release, and verification automation.
 
+## Projects using CaskFlow
+
+| Project | Description | Categories | Added&nbsp;Dates | Icons |
+|---|---|:---:|:---:|:---:|
+| [CaskHub](https://github.com/alielsokary/CaskHub) | Native macOS app for discovering, installing, and managing Homebrew casks | ✅ | ✅ | ✅ |
+| [*Add&nbsp;yours*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | Using CaskFlow data in your project? Add it to this table | - | - | - |
+
+## Attribution
+
+CaskFlow is [MIT licensed](LICENSE), so no attribution is required beyond the license terms. If your project consumes CaskFlow data (categories, added dates, or icons), a visible credit with a link back is very much appreciated, for example:
+
+> Cask metadata powered by [CaskFlow](https://github.com/alielsokary/CaskFlow)
+
 ## Contributing
 
 Bug reports, taxonomy corrections, tests, documentation improvements, and pipeline hardening are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), which explains local verification, category correction evidence, and the required semantic PR title format. Pull requests target the `develop` branch.
-
-Examples: `fix(classifier): Handle malformed output`, `docs: Clarify category boundaries`, or `chore: Daily cask classification update`.
 
 ## License
 
