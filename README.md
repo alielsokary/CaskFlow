@@ -6,7 +6,7 @@
 [![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskFlow)](https://github.com/alielsokary/CaskFlow/releases/latest)
 [![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
 
-<img width="1700" height="500" alt="CaskFlow banner" src="https://github.com/user-attachments/assets/a9c5d9cc-16ff-401c-b919-29daa5e520ca" />
+<img width="1700" height="500" alt="caskflow-banner" src="https://github.com/user-attachments/assets/6ca8ac54-e5b8-443a-a391-4e32ad2e2b44" />
 
 CaskFlow turns the live Homebrew cask catalog into reviewed, release-ready metadata for [CaskHub](https://github.com/alielsokary/CaskHub). It classifies applications, tracks when casks were added, extracts vendor icons safely, and publishes versioned assets that CaskHub can consume with a bundled fallback.
 
