@@ -7550,6 +7550,13 @@
     "og_desc": ""
   },
   {
+    "token": "esphome-device-builder",
+    "homepage": "https://desktop.esphome.io/",
+    "title": "ESPHome Device Builder",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "espresso",
     "homepage": "https://espressoapp.com/",
     "title": "Espresso - The Web Editor for Mac",
@@ -30448,6 +30455,13 @@
     "og_desc": "Command-line interface for Kiro - build, test, and deploy from anywhere"
   },
   {
+    "token": "kirocrew",
+    "homepage": "https://kiro.dev/docs/crew/",
+    "title": "Quick start - Crew - Docs - Kiro",
+    "meta_desc": "Get Crew running on your machine in five minutes - install, configure, and open the dashboard.",
+    "og_desc": "Get Crew running on your machine in five minutes - install, configure, and open the dashboard."
+  },
+  {
     "token": "kitlangton-hex",
     "homepage": "https://hex.kitlangton.com/",
     "title": "HEX",
@@ -30610,6 +30624,13 @@
     "title": "kopia-svg",
     "meta_desc": "Fast and Secure Open-Source Backup Software for Windows, Mac, and Linux",
     "og_desc": "Fast and Secure Open-Source Backup Software for Windows, Mac, and Linux"
+  },
+  {
+    "token": "koreader",
+    "homepage": "https://koreader.rocks/",
+    "title": "KOReader",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "kotlin-lsp",
@@ -32595,6 +32616,13 @@
     "title": "GitHub - leits/MeetingBar: 🇺🇦 Your meetings at your fingertips in the macOS menu bar · GitHub",
     "meta_desc": "🇺🇦 Your meetings at your fingertips in the macOS menu bar  - GitHub - leits/MeetingBar: 🇺🇦 Your meetings at your fingertips in the macOS menu bar",
     "og_desc": "🇺🇦 Your meetings at your fingertips in the macOS menu bar  - leits/MeetingBar"
+  },
+  {
+    "token": "meetingrecorder",
+    "homepage": "https://meetingsrecorder.com/",
+    "title": "Meeting Recorder for Mac - Record Any Call, No Bots",
+    "meta_desc": "MeetingRecorder is a free Mac meeting recorder that captures any call - Zoom, Teams, Meet or any app - with no bot in the room. Recordings stay on your Mac, with one-click AI transcription and summaries.",
+    "og_desc": "MeetingRecorder is a free Mac meeting recorder that captures any call - Zoom, Teams, Meet or any app - with no bot in the room. Recordings stay on your Mac, with one-click AI transcription and summaries."
   },
   {
     "token": "mega",
@@ -43183,6 +43211,13 @@
     "title": "TAU - Tuning and Analysis Utilities -",
     "meta_desc": "Analysis of high performance\ncomputing. Designing profiling and tracing tool for scientific computing.",
     "og_desc": ""
+  },
+  {
+    "token": "tauritavern",
+    "homepage": "https://tauritavern.github.io/",
+    "title": "TauriTavern",
+    "meta_desc": "TauriTavern 文档站：围绕 Tauri v2、Rust 后端与 SillyTavern 1.18.0 前端兼容的工程文档。",
+    "og_desc": "TauriTavern 的架构、API 与开发文档站点。"
   },
   {
     "token": "tdr-kotelnikov",
