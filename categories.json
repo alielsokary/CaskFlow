@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-04",
-  "totalCasks": 3851,
+  "generatedDate": "2026-08-05",
+  "totalCasks": 3856,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -4372,6 +4372,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "esphome-device-builder": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "espresso": {
       "primary": "developerTools",
       "secondary": []
@@ -7166,6 +7172,12 @@
         "ai"
       ]
     },
+    "kirocrew": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "kitlangton-hex": {
       "primary": "productivity",
       "secondary": []
@@ -7262,6 +7274,12 @@
     "kopiaui": {
       "primary": "utilities",
       "secondary": []
+    },
+    "koreader": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "kotlin-lsp": {
       "primary": "developerTools",
@@ -8403,6 +8421,13 @@
     "meetingbar": {
       "primary": "menuBar",
       "secondary": []
+    },
+    "meetingrecorder": {
+      "primary": "videoMedia",
+      "secondary": [
+        "productivity",
+        "ai"
+      ]
     },
     "meetmic": {
       "primary": "productivity",
@@ -14249,6 +14274,12 @@
     "tau": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "tauritavern": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "tdr-kotelnikov": {
       "primary": "audioMusic",
