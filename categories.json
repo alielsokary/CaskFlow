@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-06",
-  "totalCasks": 3857,
+  "generatedDate": "2026-08-08",
+  "totalCasks": 3858,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2094,6 +2094,12 @@
     "captains-deck": {
       "primary": "utilities",
       "secondary": []
+    },
+    "captin": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "capto": {
       "primary": "videoMedia",
@@ -15270,7 +15276,7 @@
       "primary": "utilities",
       "secondary": []
     },
-    "unraid-usb-creator-next": {
+    "unraid-usb-creator": {
       "primary": "utilities",
       "secondary": []
     },
