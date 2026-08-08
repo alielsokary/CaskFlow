@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-05",
-  "totalCasks": 3856,
+  "generatedDate": "2026-08-06",
+  "totalCasks": 3857,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3660,6 +3660,12 @@
       "primary": "developerTools",
       "secondary": [
         "cloudStorage"
+      ]
+    },
+    "diversion-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "games"
       ]
     },
     "divvy": {
