@@ -1,5 +1,3 @@
-
-
 # CaskFlow
 
 [![Tests](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg)](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml)
@@ -18,7 +16,7 @@ CaskFlow convierte el catálogo activo de casks de Homebrew en metadatos revisad
 |---|---|---|
 | `categories.json` | Mapeo canónico de cask a categoría, taxonomía, etiqueta de versión y manifiesto de iconos opcional | Repositorio y [última versión](https://github.com/alielsokary/CaskFlow/releases/latest) |
 | `added_dates.json` | Fecha de adición más temprana conocida en Homebrew para cada cask | Generado para cada versión |
-| `<token>.png` | Iconos de aplicaciones de 256×256 | Rama huérfana de [`icons`](https://github.com/alielsokary/CaskFlow/tree/icons) |
+| `<token>.png` | Iconos de aplicaciones de 256×256 | Rama huérfana [`icons`](https://github.com/alielsokary/CaskFlow/tree/icons) |
 
 La taxonomía cuenta con 17 categorías principales y un rasgo `ai` exclusivo de categoría secundaria. Cada cask tiene exactamente una categoría principal y hasta dos categorías secundarias distintas. Consulta la [guía de clasificación](docs/CLASSIFICATION_GUIDE.md) para conocer los límites de las categorías y las reglas de revisión.
 
@@ -38,7 +36,7 @@ flowchart LR
     branch --> caskhub
 ```
 
-El flujo de trabajo diario de clasificación agrega nuevos casks, migra los cambios de nombre de tokens de Homebrew y elimina entradas eliminadas o deshabilitadas. Los fallos del proveedor y de validación se omiten para reintento posterior. Los resultados con una confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente una vez superados los comprobos obligatorios.
+El flujo de trabajo diario de clasificación agrega nuevos casks, migra los cambios de nombre de tokens de Homebrew y elimina entradas eliminadas o deshabilitadas. Los fallos del proveedor y de validación se omiten para reintento posterior. Los resultados con una confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente una vez superadas las comprobaciones obligatorias.
 
 El flujo de trabajo de publicación se ejecuta diariamente de forma independiente a la clasificación, marca `categories.json` con su etiqueta de versión y el manifiesto actual de iconos-tokens cuando está disponible, y extrae `added_dates.json` directamente del historial de Homebrew. Antes de publicar, verifica que cada cask en el árbol actual del tap tenga una fecha de adición. Una fusión de categorías también lo activa de inmediato. Por lo tanto, las actualizaciones de clasificación no retrasan los datos de Recién Agregados, y las actualizaciones de fechas no requieren un resultado de LLM ni una asignación de categoría.
 
