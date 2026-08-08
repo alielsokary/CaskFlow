@@ -72,6 +72,7 @@ Real classification supports `anthropic`, `openai`, `groq`, and `cloudflare`; ch
 | Project | Description | Categories | Added&nbsp;Dates | Icons |
 |---|---|:---:|:---:|:---:|
 | [CaskHub](https://github.com/alielsokary/CaskHub) | Native macOS app for discovering, installing, and managing Homebrew casks | ✅ | ✅ | ✅ |
+| [Applite](https://github.com/milanvarady/Applite) | User-friendly GUI macOS application for Homebrew casks | - | - | ✅ |
 | [*Add&nbsp;yours*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | Using CaskFlow data in your project? Add it to this table | - | - | - |
 
 ## Attribution
