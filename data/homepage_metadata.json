@@ -3543,6 +3543,13 @@
     "og_desc": "Camunda's process orchestration platform allows developers to design, automate and improve processes. Start your free trial today."
   },
   {
+    "token": "canario",
+    "homepage": "https://rioterm.com/canario",
+    "title": "Canario | Rio Terminal",
+    "meta_desc": "Canario is a Rio spin-off for macOS: spaces, splits, a command bar, live tab previews and a summonable quick terminal, built on Rio's terminal engine.",
+    "og_desc": "Canario is a Rio spin-off for macOS: spaces, splits, a command bar, live tab previews and a summonable quick terminal, built on Rio's terminal engine."
+  },
+  {
     "token": "candy-crisis",
     "homepage": "https://candycrisis.sourceforge.net/",
     "error": "HTTP 403"
@@ -3693,6 +3700,13 @@
     "title": "CashNotify - Payment notifications app for Stripe and PayPal",
     "meta_desc": "CashNotify is the easiest way to monitor your Stripe and PayPal payments. Get real-time notifications for new sales and failed payments.",
     "og_desc": "CashNotify is the easiest way to monitor your Stripe and PayPal payments. Get real-time notifications for new sales and failed payments."
+  },
+  {
+    "token": "caskhub",
+    "homepage": "https://caskhub.app/",
+    "title": "CaskHub: a native Mac app store for Homebrew casks",
+    "meta_desc": "Browse, search, install, update, and uninstall thousands of Mac apps distributed through Homebrew, in a clean native SwiftUI interface. 100% free and open source.",
+    "og_desc": "Browse, install, update, and uninstall thousands of Mac apps from Homebrew, with one-click actions in a native SwiftUI app. Free and open source."
   },
   {
     "token": "castr",

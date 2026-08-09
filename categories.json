@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-08",
-  "totalCasks": 3858,
+  "generatedDate": "2026-08-09",
+  "totalCasks": 3860,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2049,6 +2049,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "canario": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "candy-crisis": {
       "primary": "games",
       "secondary": []
@@ -2136,6 +2142,12 @@
     "cashnotify": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "caskhub": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "castr": {
       "primary": "videoMedia",
