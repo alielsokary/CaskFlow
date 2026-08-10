@@ -1,11 +1,11 @@
 # Daily classification update
 
-Generated 2026-08-09
+Generated 2026-08-10
 
 ## Summary
 
-- 2 new casks classified
-- 0 classifications require manual review (confidence below 0.75)
+- 5 new casks classified
+- 2 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
@@ -15,5 +15,15 @@ Generated 2026-08-09
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `canario` | developerTools | utilities | 0.90 | Canario is a terminal emulator built on Rio's engine, a developer tool for command-line use. |
-| `caskhub` | utilities | productivity | 0.85 | CaskHub is a native app store/manager for Homebrew casks, a system utility for installing and managing apps. |
+| `headroom` | developerTools | ai, menuBar | 0.75 | A menu bar utility that optimizes prompts for AI coding tools like Claude Code and Codex, tying it closely to developer workflows. |
+| `omegat` | productivity | scienceEducation | 0.70 | OmegaT is a translation memory tool aiding professional translators, fitting productivity software with a language/education angle. |
+| `shell360` | developerTools | utilities | 0.85 | SSH/SFTP client falls under developer tools per scope rules. |
+| `space-rabbit` | utilities | - | 0.85 | A system tweak utility that removes macOS Spaces switching animation. |
+| `textream` | videoMedia | productivity | 0.70 | A teleprompter app for streamers/presenters is primarily a video/media production tool with productivity aspects. |
+
+## Manual review required
+
+| token | primary | secondary | confidence | reason |
+|---|---|---|---|---|
+| `omegat` | productivity | scienceEducation | 0.70 | OmegaT is a translation memory tool aiding professional translators, fitting productivity software with a language/education angle. |
+| `textream` | videoMedia | productivity | 0.70 | A teleprompter app for streamers/presenters is primarily a video/media production tool with productivity aspects. |
