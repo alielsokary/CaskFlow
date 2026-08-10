@@ -1043,6 +1043,12 @@
     "attempts": 4,
     "updated": "2026-08-01"
   },
+  "paragon-extfs": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-08-10"
+  },
   "parallels-virtualization-sdk": {
     "status": "review",
     "reason": "volume icon (drive shaped) -- genuine Parallels branding",
