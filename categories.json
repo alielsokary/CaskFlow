@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-09",
-  "totalCasks": 3860,
+  "generatedDate": "2026-08-10",
+  "totalCasks": 3865,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5976,6 +5976,13 @@
         "utilities"
       ]
     },
+    "headroom": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "menuBar"
+      ]
+    },
     "headset": {
       "primary": "audioMusic",
       "secondary": []
@@ -9918,6 +9925,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "omegat": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
     "omnidisksweeper": {
       "primary": "utilities",
       "secondary": []
@@ -12872,6 +12885,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "shell360": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "sherlock-app": {
       "primary": "developerTools",
       "secondary": []
@@ -13454,6 +13473,10 @@
       "secondary": []
     },
     "space-capsule": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "space-rabbit": {
       "primary": "utilities",
       "secondary": []
     },
@@ -14468,6 +14491,12 @@
     "textmate": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "textream": {
+      "primary": "videoMedia",
+      "secondary": [
+        "productivity"
+      ]
     },
     "textsniper": {
       "primary": "utilities",

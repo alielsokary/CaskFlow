@@ -28214,6 +28214,13 @@
     "og_desc": ""
   },
   {
+    "token": "headroom",
+    "homepage": "https://extraheadroom.com/",
+    "title": "Payhawk logo",
+    "meta_desc": "Headroom is a menu bar app that trims prompt bloat before it reaches Claude Code and Codex, cutting token spend ~50% so the plan you already pay for lasts 2x longer.",
+    "og_desc": "Headroom is a menu bar app that trims prompt bloat before it reaches Claude Code and Codex, cutting token spend ~50% so the plan you already pay for lasts 2x longer."
+  },
+  {
     "token": "headset",
     "homepage": "https://headsetapp.co/",
     "title": "Headset - Desktop Music Player Powered by YouTube And Reddit",
@@ -41685,6 +41692,13 @@
     "og_desc": "macOS spaces in a grid"
   },
   {
+    "token": "space-rabbit",
+    "homepage": "https://space-rabbit.app/",
+    "title": "Instant Space Switching for macOS | Space Rabbit",
+    "meta_desc": "Space Rabbit removes the macOS Spaces slide animation. Zero delay, zero config.",
+    "og_desc": "Space Rabbit removes the macOS Spaces slide animation. Zero delay, zero config."
+  },
+  {
     "token": "space-saver",
     "homepage": "https://www.mariogt.com/space-saver.html",
     "title": "Space Saver",
@@ -43594,6 +43608,13 @@
     "title": "TextMate: Text editor for macOS",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "textream",
+    "homepage": "https://github.com/f/textream",
+    "title": "GitHub - f/textream: Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay. With extensible features. · GitHub",
+    "meta_desc": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay. With extensible features. - f/textream",
+    "og_desc": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay. With ext..."
   },
   {
     "token": "textsniper",
