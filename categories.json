@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-10",
-  "totalCasks": 3865,
+  "generatedDate": "2026-08-11",
+  "totalCasks": 3864,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9554,12 +9554,6 @@
     "network-radar": {
       "primary": "utilities",
       "secondary": []
-    },
-    "netxms-console": {
-      "primary": "utilities",
-      "secondary": [
-        "developerTools"
-      ]
     },
     "nexonplug": {
       "primary": "games",
