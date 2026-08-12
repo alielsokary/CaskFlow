@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-11",
-  "totalCasks": 3864,
+  "generatedDate": "2026-08-12",
+  "totalCasks": 3867,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9273,6 +9273,12 @@
       "primary": "screensaverWallpaper",
       "secondary": []
     },
+    "muse-code": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "museeks": {
       "primary": "audioMusic",
       "secondary": []
@@ -12769,6 +12775,10 @@
         "securityPrivacy"
       ]
     },
+    "sentry-cli": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "sequel-ace": {
       "primary": "developerTools",
       "secondary": []
@@ -15881,6 +15891,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "warp-agent-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "warsaw": {
       "primary": "securityPrivacy",
       "secondary": [
@@ -16251,7 +16267,7 @@
       "primary": "productivity",
       "secondary": []
     },
-    "worksheet-crafter": {
+    "worksheetcrafter": {
       "primary": "scienceEducation",
       "secondary": [
         "productivity"
