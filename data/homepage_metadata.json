@@ -34177,6 +34177,11 @@
     "og_desc": "Screensaver inspired by Apple's inbuilt iTunes Screensaver. It can display Artwork by Spotify or last.fm Profile Data. - obrhoff/MusaicFM"
   },
   {
+    "token": "muse-code",
+    "homepage": "https://dev.meta.ai/",
+    "error": "HTTP 500"
+  },
+  {
     "token": "museeks",
     "homepage": "https://museeks.io/",
     "title": "GitHub",
@@ -40438,6 +40443,13 @@
     "og_desc": ""
   },
   {
+    "token": "sentry-cli",
+    "homepage": "https://docs.sentry.io/cli/",
+    "title": "Sentry CLI",
+    "meta_desc": "Learn how to use the `sentry-cli` command line executable.",
+    "og_desc": "Learn how to use the `sentry-cli` command line executable."
+  },
+  {
     "token": "sequel-ace",
     "homepage": "https://github.com/Sequel-Ace/Sequel-Ace",
     "title": "GitHub - Sequel-Ace/Sequel-Ace: MySQL/MariaDB database management for macOS · GitHub",
@@ -46094,6 +46106,13 @@
     "title": "Warp: The Agentic Development Environment",
     "meta_desc": "Warp is the platform for agentic development - a modern terminal and cloud agent platform used by 700K+ developers at leading enterprises. Explore docs, features, pricing, and more.",
     "og_desc": "Warp is the platform for agentic development - a modern terminal and cloud agent platform used by 700K+ developers at leading enterprises. Explore docs, features, pricing, and more."
+  },
+  {
+    "token": "warp-agent-cli",
+    "homepage": "https://www.warp.dev/",
+    "title": "OpenAI",
+    "meta_desc": "Warp is an open platform for building software with agents. Build cloud software factories with Oz, and build locally with Warp's open source agentic terminal. Free to start.",
+    "og_desc": "Warp is an open platform for building software with agents. Build cloud software factories with Oz, and build locally with Warp's open source agentic terminal. Free to start."
   },
   {
     "token": "warp@preview",
