@@ -641,6 +641,12 @@
     "attempts": 4,
     "updated": "2026-08-01"
   },
+  "grok-bot": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-08-13"
+  },
   "halion-sonic": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
