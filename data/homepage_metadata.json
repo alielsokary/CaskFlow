@@ -27969,6 +27969,13 @@
     "og_desc": "Groestlcoin Core is a full Groestlcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
   },
   {
+    "token": "grok-bot",
+    "homepage": "https://x.ai/bot",
+    "title": "Grok Bot: A new kind of colleague",
+    "meta_desc": "Grok Bot is your team of always-on AI agents that finish the work. They have their own computer, use it like you do, and never log off.",
+    "og_desc": "Grok Bot is your team of always-on AI agents that finish the work. They have their own computer, use it like you do, and never log off."
+  },
+  {
     "token": "grok-build",
     "homepage": "https://x.ai/cli",
     "title": "Grok Build Beta | xAI",
@@ -42501,6 +42508,13 @@
     "title": "Subsurface",
     "meta_desc": "Subsurface Divelog",
     "og_desc": "Subsurface Homepage"
+  },
+  {
+    "token": "subtitle-edit",
+    "homepage": "https://www.nikse.dk/subtitleedit",
+    "title": "Nikse.dk",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "subtitle-studio",

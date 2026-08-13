@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-12",
-  "totalCasks": 3867,
+  "generatedDate": "2026-08-13",
+  "totalCasks": 3869,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5841,6 +5841,12 @@
     "gridtracker2": {
       "primary": "utilities",
       "secondary": []
+    },
+    "grok-bot": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "grok-build": {
       "primary": "developerTools",
@@ -13892,6 +13898,10 @@
     },
     "subsurface": {
       "primary": "other",
+      "secondary": []
+    },
+    "subtitle-edit": {
+      "primary": "videoMedia",
       "secondary": []
     },
     "subtitle-studio": {
