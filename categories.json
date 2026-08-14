@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-13",
-  "totalCasks": 3869,
+  "generatedDate": "2026-08-14",
+  "totalCasks": 3871,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5569,6 +5569,12 @@
     },
     "glaze-app": {
       "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "glean": {
+      "primary": "productivity",
       "secondary": [
         "ai"
       ]
@@ -13087,6 +13093,10 @@
     },
     "simplysign": {
       "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "sina-finance": {
+      "primary": "financeCrypto",
       "secondary": []
     },
     "singlebox": {
