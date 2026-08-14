@@ -27433,6 +27433,13 @@
     "og_desc": ""
   },
   {
+    "token": "glean",
+    "homepage": "https://www.glean.com/glean-for-desktop",
+    "title": "Glean Desktop App: Download for Mac & Windows",
+    "meta_desc": "Download Glean for Desktop for AI-powered search, chat, meeting notes, and faster workflows",
+    "og_desc": "Download Glean for Desktop for AI-powered search, chat, meeting notes, and faster workflows"
+  },
+  {
     "token": "glide",
     "homepage": "https://glidewm.org/",
     "title": "Glide | glide",
@@ -40980,6 +40987,13 @@
     "title": "GitHub - dsmelov/simsim: Use SimSim to explore iOS application folders in Terminal or Finder. Fast, stable, free alternative to SimPholders. · GitHub",
     "meta_desc": "Use SimSim to explore iOS application folders in Terminal or Finder. Fast, stable, free alternative to SimPholders. - dsmelov/simsim",
     "og_desc": "Use SimSim to explore iOS application folders in Terminal or Finder. Fast, stable, free alternative to SimPholders. - dsmelov/simsim"
+  },
+  {
+    "token": "sina-finance",
+    "homepage": "https://finance.sina.com.cn/desktopapp/download/",
+    "title": "新浪财经桌面端 - 焕新升级 V1.2.3 · 官方下载",
+    "meta_desc": "新浪财经桌面客户端官方下载。全球行情实时数据,更大 K 线全新配色,全局夜间模式。支持 Windows 与 macOS(Apple Silicon / Intel),移动端支持 iOS / Android / HarmonyOS。",
+    "og_desc": ""
   },
   {
     "token": "singlebox",
