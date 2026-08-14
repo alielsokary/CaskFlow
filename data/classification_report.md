@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-08-13
+Generated 2026-08-14
 
 ## Summary
 
@@ -15,5 +15,5 @@ Generated 2026-08-13
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `grok-bot` | productivity | ai | 0.75 | AI agent teammate app for automating work across tools, fitting productivity with an AI trait. |
-| `subtitle-edit` | videoMedia | - | 0.95 | Subtitle Edit is a dedicated subtitle editing tool for video content. |
+| `glean` | productivity | ai | 0.80 | Glean Desktop is an AI-powered workplace search and assistant tool aimed at productivity workflows. |
+| `sina-finance` | financeCrypto | - | 0.95 | Sina Finance is a stock market data and financial news desktop client. |
