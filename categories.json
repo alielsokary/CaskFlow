@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-14",
-  "totalCasks": 3871,
+  "generatedDate": "2026-08-17",
+  "totalCasks": 3875,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3936,6 +3936,13 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "ds4-control": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "productivity"
+      ]
+    },
     "duckduckgo": {
       "primary": "browsers",
       "secondary": []
@@ -4444,7 +4451,7 @@
       "primary": "other",
       "secondary": []
     },
-    "eve-launcher": {
+    "eve-online": {
       "primary": "games",
       "secondary": []
     },
@@ -9010,6 +9017,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "mongrel": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "monitorcontrol": {
       "primary": "utilities",
       "secondary": []
@@ -10482,6 +10495,12 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "owlocr": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "owncloud": {
       "primary": "cloudStorage",
       "secondary": []
@@ -10804,6 +10823,13 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "petdex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "utilities"
       ]
     },
     "petrichor": {

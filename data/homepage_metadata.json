@@ -6763,6 +6763,13 @@
     "og_desc": ""
   },
   {
+    "token": "ds4-control",
+    "homepage": "https://github.com/notatestuser/ds4-control",
+    "title": "GitHub - notatestuser/ds4-control: macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · GitHub",
+    "meta_desc": "macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. - notatestuser/ds4-control",
+    "og_desc": "macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. - notatestuser/ds4-control"
+  },
+  {
     "token": "duckduckgo",
     "homepage": "https://duckduckgo.com/",
     "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
@@ -33708,6 +33715,13 @@
     "og_desc": ""
   },
   {
+    "token": "mongrel",
+    "homepage": "https://www.visorcraft.com/",
+    "title": "Database Workbench & SQL Client - Mongrel | VisorCraft",
+    "meta_desc": "Mongrel is a database workbench for 30+ engines, terminals, FTP/SFTP/S3 file transfer, Docker, Kubernetes, APIs, and opt-in AI. Free trial.",
+    "og_desc": "Mongrel is a database workbench for 30+ engines, terminals, FTP/SFTP/S3 file transfer, Docker, Kubernetes, APIs, and opt-in AI. Free trial."
+  },
+  {
     "token": "monitorcontrol",
     "homepage": "https://github.com/MonitorControl/MonitorControl",
     "title": "GitHub - MonitorControl/MonitorControl: 🖥 Control your display's brightness & volume on your Mac as if it was a native Apple Display. Use Apple Keyboard keys or custom shortcuts. Shows the native macOS OSDs. · GitHub",
@@ -36397,6 +36411,13 @@
     "og_desc": "🚀 Scientific data visualization and analysis software for particle-based simulation models"
   },
   {
+    "token": "owlocr",
+    "homepage": "https://owlocr.com/",
+    "title": "OCR for Mac: Screenshots, PDFs & Local AI | OwlOCR",
+    "meta_desc": "OwlOCR is Mac OCR software for screenshots, scans, and searchable PDFs. Start free with on-device Apple Vision OCR; upgrade for local AI and batch tools.",
+    "og_desc": "OwlOCR is Mac OCR software for screenshots, scans, and searchable PDFs. Start free with on-device Apple Vision OCR; upgrade for local AI and batch tools."
+  },
+  {
     "token": "owncloud",
     "homepage": "https://owncloud.com/",
     "title": "ownCloud - share files and folders, easy and secure",
@@ -36954,6 +36975,13 @@
     "token": "perplexity",
     "homepage": "https://www.perplexity.ai/personal-computer",
     "error": "HTTP 403"
+  },
+  {
+    "token": "petdex",
+    "homepage": "https://petdex.dev/",
+    "title": "Discord",
+    "meta_desc": "Petdex is the public gallery of animated pets for coding agents. Works with ChatGPT (Codex), Claude Code, Gemini CLI, OpenCode, Qoder, Kimi Code, CodeBuddy, and OMP. Browse open-source pets, preview their animations, and install one with a single command.",
+    "og_desc": "Petdex is the public gallery of animated pets for coding agents. Works with ChatGPT (Codex), Claude Code, Gemini CLI, OpenCode, Qoder, Kimi Code, CodeBuddy, and OMP. Browse open-source pets, preview their animations, and install one with a single command."
   },
   {
     "token": "petrichor",
