@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-17",
-  "totalCasks": 3875,
+  "generatedDate": "2026-08-18",
+  "totalCasks": 3876,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2938,6 +2938,10 @@
     },
     "contexts": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "contour": {
+      "primary": "developerTools",
       "secondary": []
     },
     "contraste": {
