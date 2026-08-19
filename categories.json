@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-18",
-  "totalCasks": 3876,
+  "generatedDate": "2026-08-19",
+  "totalCasks": 3879,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1376,6 +1376,12 @@
     "bazecor": {
       "primary": "utilities",
       "secondary": []
+    },
+    "bb": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "bbackupp": {
       "primary": "utilities",
@@ -4062,6 +4068,10 @@
       "secondary": [
         "ai"
       ]
+    },
+    "easydmg": {
+      "primary": "utilities",
+      "secondary": []
     },
     "easyfind": {
       "primary": "utilities",
@@ -11691,6 +11701,12 @@
       "secondary": []
     },
     "qlmarkdown": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "qmk-toolbox": {
       "primary": "utilities",
       "secondary": [
         "developerTools"
