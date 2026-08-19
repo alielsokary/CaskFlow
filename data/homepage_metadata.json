@@ -2328,6 +2328,13 @@
     "og_desc": "With a programmable keyboard the possibilities are limitless. Remap keys, create macros, set up layers... you name it! Increase your producitivity and smooth out your workflow."
   },
   {
+    "token": "bb",
+    "homepage": "https://getbb.app/",
+    "title": "OpenAI",
+    "meta_desc": "bb can control, customize, and automate itself, laying the groundwork for your own software factory. Fully open source and local-first, with Claude Code, Codex, Cursor, Pi, OpenCode, Grok, omp, and Hermes.",
+    "og_desc": "bb can control, customize, and automate itself, laying the groundwork for your own software factory."
+  },
+  {
     "token": "bbackupp",
     "homepage": "https://github.com/Lakr233/BBackupp",
     "title": "GitHub - Lakr233/BBackupp: Automated iOS Backup Robot · GitHub",
@@ -6957,6 +6964,13 @@
     "title": "GitHub - tisfeng/Easydict: 一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。A concise and elegant Dictionary and Translator macOS App for looking up words and translating text. · GitHub",
     "meta_desc": "一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。A concise and elegant Dictionary and Translator macOS App for looking up words and translating text.  - GitHub - tisfeng/Easydict: 一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。A concise and elegant Dictionary and Translator macOS App for looking up words and translating text.",
     "og_desc": "一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。A concise and elegant Dictionary and Translator macOS App for looking up words an..."
+  },
+  {
+    "token": "easydmg",
+    "homepage": "https://easydmg.app/",
+    "title": "EasyDMG - Automated DMG Installs for macOS",
+    "meta_desc": "EasyDMG makes installing Mac apps from DMG files a single click. Set it as your default DMG handler and never drag-and-drop again.",
+    "og_desc": "EasyDMG makes installing Mac apps from DMG files a single click. Set it as your default DMG handler and never drag-and-drop again."
   },
   {
     "token": "easyfind",
@@ -38447,6 +38461,13 @@
     "title": "GitHub - Marginal/QuickLookVideo: This package allows macOS Finder to display thumbnails, static QuickLook previews, cover art and metadata for most types of video files. · GitHub",
     "meta_desc": "This package allows macOS Finder to display thumbnails, static QuickLook previews, cover art and metadata for most types of video files. - Marginal/QuickLookVideo",
     "og_desc": "This package allows macOS Finder to display thumbnails, static QuickLook previews, cover art and metadata for most types of video files. - Marginal/QuickLookVideo"
+  },
+  {
+    "token": "qmk-toolbox",
+    "homepage": "https://qmk.fm/",
+    "title": "QMK Firmware",
+    "meta_desc": "Open-source keyboard firmware for Atmel AVR and Arm USB families",
+    "og_desc": ""
   },
   {
     "token": "qobuz",
