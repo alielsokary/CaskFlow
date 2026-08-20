@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-19",
-  "totalCasks": 3879,
+  "generatedDate": "2026-08-20",
+  "totalCasks": 3882,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2544,6 +2544,10 @@
     },
     "clicker-for-youtube": {
       "primary": "videoMedia",
+      "secondary": []
+    },
+    "clickhouse": {
+      "primary": "developerTools",
       "secondary": []
     },
     "clickshare": {
@@ -5485,6 +5489,10 @@
     },
     "ghost-browser": {
       "primary": "browsers",
+      "secondary": []
+    },
+    "ghost-downloader": {
+      "primary": "utilities",
       "secondary": []
     },
     "ghostpepper": {
@@ -9002,6 +9010,12 @@
     "monero-wallet": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "monet": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "moneydance": {
       "primary": "financeCrypto",
