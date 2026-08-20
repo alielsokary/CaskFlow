@@ -4355,6 +4355,13 @@
     "og_desc": "The best way to watch YouTube on macOS"
   },
   {
+    "token": "clickhouse",
+    "homepage": "https://clickhouse.com/",
+    "title": "Fast Open-Source OLAP DBMS | ClickHouse",
+    "meta_desc": "ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries",
+    "og_desc": "ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries"
+  },
+  {
     "token": "clickshare",
     "homepage": "https://www.barco.com/en/product/clickshare-app",
     "error": "HTTP 403"
@@ -27237,6 +27244,13 @@
     "og_desc": "Manage all of your online identities with confidence!"
   },
   {
+    "token": "ghost-downloader",
+    "homepage": "https://gd.xychr.com/",
+    "title": "Ghost Downloader | The only downloader you need",
+    "meta_desc": "A downloader that sniffs page media, records live streams, and replaces five tools. Fast, free, and open source.",
+    "og_desc": "A downloader that sniffs page media, records live streams, and replaces five tools. Fast, free, and open source."
+  },
+  {
     "token": "ghostpepper",
     "homepage": "https://github.com/matthartman/ghost-pepper",
     "title": "GitHub - matthartman/ghost-pepper: 100% private on-device voice models for speech-to-text and meeting transcription on macOS · GitHub",
@@ -33671,6 +33685,13 @@
     "title": "Home | Monero - secure, private, untraceable",
     "meta_desc": "\n  Monero, a digital currency that is secure, private, and untraceable\n  ",
     "og_desc": "\n    Monero, a digital currency that is secure, private, and untraceable\n    "
+  },
+  {
+    "token": "monet",
+    "homepage": "https://github.com/zenolab124/monet",
+    "title": "GitHub - zenolab124/monet: Monet - Multi-engine mission control for coding agents (Claude Code and Codex today). Browse, search, and drive your agent sessions from a native desktop app. · GitHub",
+    "meta_desc": "Monet - Multi-engine mission control for coding agents (Claude Code and Codex today). Browse, search, and drive your agent sessions from a native desktop app. - zenolab124/monet",
+    "og_desc": "Monet - Multi-engine mission control for coding agents (Claude Code and Codex today). Browse, search, and drive your agent sessions from a native desktop app. - zenolab124/monet"
   },
   {
     "token": "moneydance",
