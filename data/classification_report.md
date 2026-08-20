@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-08-19
+Generated 2026-08-20
 
 ## Summary
 
@@ -15,6 +15,6 @@ Generated 2026-08-19
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `bb` | developerTools | ai | 0.85 | An IDE for orchestrating AI coding agents fits developer tools with an AI trait. |
-| `easydmg` | utilities | - | 0.90 | A system utility that automates DMG installation on macOS. |
-| `qmk-toolbox` | utilities | developerTools | 0.75 | QMK Toolbox flashes and debugs custom keyboard firmware, a system-level utility with developer flavor. |
+| `clickhouse` | developerTools | - | 0.95 | ClickHouse is a database management system, fitting developer tools. |
+| `ghost-downloader` | utilities | - | 0.85 | A multithreaded download manager is a system-level utility. |
+| `monet` | developerTools | ai | 0.85 | A desktop app for managing and driving AI coding agent sessions (Claude Code, Codex), aimed at developers. |
