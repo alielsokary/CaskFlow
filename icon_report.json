@@ -605,6 +605,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "ghost-downloader": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 37b803167c19...)",
+    "attempts": 1,
+    "updated": "2026-08-20"
+  },
   "git-credential-manager": {
     "status": "curated",
     "reason": "official vendor asset: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
@@ -1270,6 +1276,12 @@
     "reason": "official vendor asset: reuse of macfuse.png (FUSE family)",
     "attempts": 0,
     "updated": "2026-07-09"
+  },
+  "starnet2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-08-20"
   },
   "steamcmd": {
     "status": "no_icon",
