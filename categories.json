@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-20",
-  "totalCasks": 3882,
+  "generatedDate": "2026-08-21",
+  "totalCasks": 3881,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -15073,10 +15073,6 @@
     },
     "tripmode": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "tritium": {
-      "primary": "productivity",
       "secondary": []
     },
     "trivial": {
