@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-21",
-  "totalCasks": 3881,
+  "generatedDate": "2026-08-22",
+  "totalCasks": 3882,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -14916,6 +14916,12 @@
       "primary": "videoMedia",
       "secondary": [
         "ai"
+      ]
+    },
+    "topcat": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity"
       ]
     },
     "topnotch": {
