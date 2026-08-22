@@ -608,8 +608,8 @@
   "ghost-downloader": {
     "status": "failed",
     "reason": "sha256 mismatch (got 37b803167c19...)",
-    "attempts": 2,
-    "updated": "2026-08-21"
+    "attempts": 3,
+    "updated": "2026-08-22"
   },
   "git-credential-manager": {
     "status": "curated",
