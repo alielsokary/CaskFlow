@@ -1,16 +1,18 @@
 # Daily classification update
 
-Generated 2026-08-21
+Generated 2026-08-22
 
 ## Summary
 
-- 0 new casks classified
+- 1 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 1 casks deprecated/disabled in Homebrew (pruned)
+- 0 casks deprecated/disabled in Homebrew (pruned)
 
-## Deprecated/disabled (pruned)
+## New classifications
 
-- `tritium`
+| token | primary | secondary | confidence | reason |
+|---|---|---|---|---|
+| `topcat` | scienceEducation | productivity | 0.85 | TOPCAT is a tool for viewing and analyzing astronomical tabular data, used in scientific research. |
