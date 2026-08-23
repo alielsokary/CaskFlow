@@ -30462,6 +30462,13 @@
     "og_desc": ""
   },
   {
+    "token": "keyty",
+    "homepage": "https://keyty.app/",
+    "title": "Keyty - Keyboard and Mouse Visualizer for macOS",
+    "meta_desc": "Display keyboard shortcuts, keystrokes, mouse clicks, and scrolling in real time for macOS demos, recordings, and livestreams.",
+    "og_desc": "Display keyboard shortcuts, keystrokes, mouse clicks, and scrolling in real time for macOS demos, recordings, and livestreams."
+  },
+  {
     "token": "kicad",
     "homepage": "https://kicad.org/",
     "title": "KiCad - Schematic Capture & PCB Design Software",

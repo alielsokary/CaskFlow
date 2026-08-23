@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-08-22
+Generated 2026-08-23
 
 ## Summary
 
@@ -15,4 +15,4 @@ Generated 2026-08-22
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `topcat` | scienceEducation | productivity | 0.85 | TOPCAT is a tool for viewing and analyzing astronomical tabular data, used in scientific research. |
+| `keyty` | utilities | videoMedia | 0.75 | A keyboard/mouse input visualizer is a system utility often used for screen recordings and demos. |
