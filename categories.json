@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-22",
-  "totalCasks": 3882,
+  "generatedDate": "2026-08-23",
+  "totalCasks": 3883,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7192,6 +7192,12 @@
     "keystore-explorer": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "keyty": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
     },
     "kicad": {
       "primary": "developerTools",
