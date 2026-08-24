@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-23",
-  "totalCasks": 3883,
+  "generatedDate": "2026-08-24",
+  "totalCasks": 3890,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -620,6 +620,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "amethyst-nostr": {
+      "primary": "communication",
+      "secondary": []
+    },
     "amiberry": {
       "primary": "games",
       "secondary": []
@@ -656,6 +660,12 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "anarlog": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "anchor-wallet": {
       "primary": "financeCrypto",
       "secondary": []
@@ -675,6 +685,10 @@
       "secondary": []
     },
     "android-ndk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "android-performance-analyzer": {
       "primary": "developerTools",
       "secondary": []
     },
@@ -1814,6 +1828,10 @@
     },
     "brainfm": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "bramble": {
+      "primary": "securityPrivacy",
       "secondary": []
     },
     "brave-browser": {
@@ -5405,6 +5423,12 @@
       "primary": "utilities",
       "secondary": [
         "ai"
+      ]
+    },
+    "geektool": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
       ]
     },
     "gemini": {
@@ -12353,6 +12377,13 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "riverscript": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "audioMusic"
+      ]
+    },
     "riverside-studio": {
       "primary": "audioMusic",
       "secondary": []
@@ -13223,6 +13254,13 @@
     "sketchup": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "skills-manager": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "productivity"
+      ]
     },
     "skim": {
       "primary": "productivity",
