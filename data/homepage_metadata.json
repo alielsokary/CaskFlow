@@ -1032,6 +1032,13 @@
     "og_desc": ""
   },
   {
+    "token": "amethyst-nostr",
+    "homepage": "https://github.com/vitorpamplona/amethyst",
+    "title": "GitHub - vitorpamplona/amethyst: Nostr client for Android · GitHub",
+    "meta_desc": "Nostr client for Android. Contribute to vitorpamplona/amethyst development by creating an account on GitHub.",
+    "og_desc": "Nostr client for Android. Contribute to vitorpamplona/amethyst development by creating an account on GitHub."
+  },
+  {
     "token": "amiberry",
     "homepage": "https://amiberry.com/",
     "title": "Amiberry | Optimized Amiga Emulator for Linux, macOS, Windows, Android, FreeBSD and Haiku",
@@ -1088,6 +1095,13 @@
     "og_desc": "Anaconda is the birthplace of Python data science. We are a movement of data scientists, data-driven enterprises, and open source communities."
   },
   {
+    "token": "anarlog",
+    "homepage": "https://anarlog.so/",
+    "title": "AI notepad for private meetings.",
+    "meta_desc": "Anarlog is the open-source, privacy-first, local-first alternative to Granola AI. Take notes during private meetings, turn them into editable summaries, and keep your local meeting data and AI stack under your control.",
+    "og_desc": "Anarlog is the open-source, privacy-first, local-first alternative to Granola AI. Take notes during private meetings, turn them into editable summaries, and keep your local meeting data and AI stack under your control."
+  },
+  {
     "token": "anchor-wallet",
     "homepage": "https://www.greymass.com/anchor",
     "title": "Anchor Wallet for Desktop and Mobile | Greymass",
@@ -1114,6 +1128,11 @@
   {
     "token": "android-ndk",
     "homepage": "https://developer.android.com/ndk/index.html",
+    "error": "HTTP 302"
+  },
+  {
+    "token": "android-performance-analyzer",
+    "homepage": "https://developer.android.com/android-performance-analyzer",
     "error": "HTTP 302"
   },
   {
@@ -3104,6 +3123,13 @@
     "title": "Desktop App",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "bramble",
+    "homepage": "https://bramble.sh/",
+    "title": "Bramble · Your passwords never leave your devices.",
+    "meta_desc": "Bramble is a local-first password manager for your browser and phone. No account, no server holding your vault, no company to breach. You hold the vault, you hold the password.",
+    "og_desc": "Bramble is a local-first password manager for your browser and phone. No account, no server holding your vault, no company to breach. You hold the vault, you hold the password."
   },
   {
     "token": "brave-browser",
@@ -27090,6 +27116,13 @@
     "og_desc": ""
   },
   {
+    "token": "geektool",
+    "homepage": "https://www.tynsoe.org/geektool/",
+    "title": "GeekTool",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "gemini",
     "homepage": "https://macpaw.com/gemini",
     "title": "Gemini 2: top duplicate file finder",
@@ -39594,6 +39627,13 @@
     "og_desc": "Behind Spotify Wrapped, Duolingo, and products reaching 2 billion users. Design, animate, and code in one place. Ship everywhere."
   },
   {
+    "token": "riverscript",
+    "homepage": "https://riverscript.com/",
+    "title": "RiverScript - AI Audio & Video Transcription Workflow",
+    "meta_desc": "Your all-in-one space to turn any audio, video, and live recordings into text. Supports capturing live audio directly from your computer and files up to 50 GB.",
+    "og_desc": "Your all-in-one space to turn any audio, video, and live recordings into text. Supports capturing live audio directly from your computer and files up to 50 GB."
+  },
+  {
     "token": "riverside-studio",
     "homepage": "https://riverside.fm/",
     "title": "Riverside: HD Podcast & Video Software | Free Recording & Editing",
@@ -41190,6 +41230,13 @@
     "title": "SketchUp: 3D Design Software - Bring Your Vision to Life | SketchUp",
     "meta_desc": "Bring your vision to life with SketchUp. Design in 3D, from concept to construction, with intuitive tools for architects, designers, and builders.",
     "og_desc": "Bring your vision to life with SketchUp. Design in 3D, from concept to construction, with intuitive tools for architects, designers, and builders."
+  },
+  {
+    "token": "skills-manager",
+    "homepage": "https://github.com/xingkongliang/skills-manager",
+    "title": "GitHub - xingkongliang/skills-manager: A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools - Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more. · GitHub",
+    "meta_desc": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools - Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more. - xingkongliang/skills-manager",
+    "og_desc": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools - Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more. - xingkongliang/skills-manager"
   },
   {
     "token": "skim",
