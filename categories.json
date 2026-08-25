@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-24",
-  "totalCasks": 3890,
+  "generatedDate": "2026-08-25",
+  "totalCasks": 3894,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1043,6 +1043,12 @@
     "athas": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "atlas-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "atok": {
       "primary": "utilities",
@@ -2244,6 +2250,13 @@
     "changes": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "channel-works": {
+      "primary": "communication",
+      "secondary": [
+        "ai",
+        "productivity"
+      ]
     },
     "charles": {
       "primary": "developerTools",
@@ -14726,6 +14739,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "thoughtdag": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "threema": {
       "primary": "securityPrivacy",
       "secondary": [
@@ -15104,6 +15123,10 @@
       "secondary": [
         "productivity"
       ]
+    },
+    "triggerflo": {
+      "primary": "productivity",
+      "secondary": []
     },
     "trilium-notes": {
       "primary": "productivity",
