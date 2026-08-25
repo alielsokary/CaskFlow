@@ -1757,6 +1757,13 @@
     "og_desc": "A lightweight, fast code editor built for modern developers."
   },
   {
+    "token": "atlas-app",
+    "homepage": "https://github.com/pacifio/atlas",
+    "title": "GitHub - pacifio/atlas: Source control for agents. Use multiple coding agents, track their changes and query them in one place · GitHub",
+    "meta_desc": "Source control for agents. Use multiple coding agents, track their changes and query them in one place - pacifio/atlas",
+    "og_desc": "Source control for agents. Use multiple coding agents, track their changes and query them in one place - pacifio/atlas"
+  },
+  {
     "token": "atok",
     "homepage": "https://www.justsystems.com/jp/products/atokmac/",
     "error": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1081)"
@@ -3866,6 +3873,13 @@
     "title": "GitHub - maoyama/Changes: An Open Source GUI Git Client for macOS · GitHub",
     "meta_desc": "An Open Source GUI Git Client for macOS. Contribute to maoyama/Changes development by creating an account on GitHub.",
     "og_desc": "An Open Source GUI Git Client for macOS. Contribute to maoyama/Changes development by creating an account on GitHub."
+  },
+  {
+    "token": "channel-works",
+    "homepage": "https://channel.io/",
+    "title": "Chat with Channel Talk. Work with Channel Works.",
+    "meta_desc": "From customer conversations to analytics, marketing, and team collaboration. An AI business OS that puts your customers at the center of your business.",
+    "og_desc": "From customer conversations to analytics, marketing, and team collaboration. An AI business OS that puts your customers at the center of your business."
   },
   {
     "token": "charles",
@@ -43968,6 +43982,13 @@
     "og_desc": ""
   },
   {
+    "token": "thoughtdag",
+    "homepage": "https://chenxiachan.github.io/thoughtdag/",
+    "title": "ThoughtDAG - Make LLM context visible and editable",
+    "meta_desc": "ThoughtDAG is an open-source, local-first canvas where graph edges define the context sent to an LLM. Branch, prune, merge, and inspect what the model sees.",
+    "og_desc": "A local-first, open-source canvas where the graph determines what the model sees."
+  },
+  {
     "token": "threema",
     "homepage": "https://threema.ch/",
     "title": "Threema - Secure Communication For Individuals and Companies - Threema",
@@ -44675,6 +44696,13 @@
     "title": "Trickster - Your recently used files, at your fingertips!",
     "meta_desc": "Trickster for Mac watches the folders you specify for files with latest activity and gives you super fast access to them. Indespensable utility!",
     "og_desc": "Trickster for Mac watches the folders you specify for files with latest activity and gives you super fast access to them. Indespensable utility!"
+  },
+  {
+    "token": "triggerflo",
+    "homepage": "https://triggerflo.app/",
+    "title": "TriggerFlo - time tracking and project management",
+    "meta_desc": "TriggerFlo is a focused time tracker and Kanban app for people who want to stay in flow and actually finish things.",
+    "og_desc": "TriggerFlo is a focused time tracker and Kanban app for people who want to stay in flow and actually finish things."
   },
   {
     "token": "trilium-notes",
