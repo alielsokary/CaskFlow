@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-25",
-  "totalCasks": 3894,
+  "generatedDate": "2026-08-26",
+  "totalCasks": 3900,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1535,6 +1535,10 @@
     },
     "bibdesk": {
       "primary": "scienceEducation",
+      "secondary": []
+    },
+    "bifrost": {
+      "primary": "utilities",
       "secondary": []
     },
     "big-mean-folder-machine": {
@@ -6729,6 +6733,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "itraffic": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "itsycal": {
       "primary": "menuBar",
       "secondary": []
@@ -7180,6 +7190,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "keychron-assistant": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "keyclu": {
       "primary": "utilities",
       "secondary": []
@@ -7580,6 +7594,12 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "leigod": {
+      "primary": "utilities",
+      "secondary": [
+        "games"
+      ]
+    },
     "lemonade-server": {
       "primary": "developerTools",
       "secondary": [
@@ -7655,6 +7675,12 @@
     "librepcb": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "librewolf": {
+      "primary": "browsers",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "licecap": {
       "primary": "utilities",
@@ -9504,6 +9530,13 @@
     "naps2": {
       "primary": "productivity",
       "secondary": []
+    },
+    "nativ": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
     },
     "native-access": {
       "primary": "audioMusic",
