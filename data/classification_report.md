@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-08-25
+Generated 2026-08-26
 
 ## Summary
 
-- 4 new casks classified
+- 6 new casks classified
 - 1 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
@@ -15,13 +15,15 @@ Generated 2026-08-25
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `atlas-app` | developerTools | ai | 0.75 | Source control tool for managing coding agents fits developer tools with an AI trait. |
-| `channel-works` | communication | ai, productivity | 0.60 | An AI-powered business OS centered on customer support chat and team collaboration, with analytics and marketing features. |
-| `thoughtdag` | productivity | ai | 0.80 | A visual canvas tool for managing LLM context graphs, fitting productivity with an AI trait. |
-| `triggerflo` | productivity | - | 0.85 | A focus timer and Kanban board for task/project tracking fits productivity best. |
+| `bifrost` | utilities | - | 0.75 | A firmware downloader for Samsung devices is a system/download utility tool. |
+| `itraffic` | menuBar | utilities | 0.85 | A menu bar status app that monitors and displays network traffic per process. |
+| `keychron-assistant` | utilities | - | 0.75 | Companion configuration tool for Keychron keyboard hardware, fitting system utility/peripheral configurator category. |
+| `leigod` | utilities | games | 0.75 | A network accelerator tool that optimizes game connections, which is a system-level networking utility geared toward gaming. |
+| `librewolf` | browsers | securityPrivacy | 0.97 | LibreWolf is a privacy-focused Firefox-based web browser. |
+| `nativ` | productivity | ai, developerTools | 0.70 | A local AI model runner app, best fit as a productivity tool with AI trait and developer relevance. |
 
 ## Manual review required
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `channel-works` | communication | ai, productivity | 0.60 | An AI-powered business OS centered on customer support chat and team collaboration, with analytics and marketing features. |
+| `nativ` | productivity | ai, developerTools | 0.70 | A local AI model runner app, best fit as a productivity tool with AI trait and developer relevance. |
