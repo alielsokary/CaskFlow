@@ -2604,6 +2604,13 @@
     "error": "HTTP 403"
   },
   {
+    "token": "bifrost",
+    "homepage": "https://bifrost.zwander.dev/",
+    "title": "Packaged with: Conveyor",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "big-mean-folder-machine",
     "homepage": "https://www.publicspace.net/BigMeanFolderMachine/",
     "title": "Big Mean Folder Machine - Organize Massive File Collections",
@@ -30425,6 +30432,13 @@
     "og_desc": "KeyCastr, an open-source keystroke visualizer. Contribute to keycastr/keycastr development by creating an account on GitHub."
   },
   {
+    "token": "keychron-assistant",
+    "homepage": "https://www.keychron.com/blogs/news/how-to-download-and-install-keychron-assist",
+    "title": "How to Download and Install Keychron Assist",
+    "meta_desc": "Keychron-Assistant is a supplementary tool for Keychron Launcher that provides Quick Start functionality.   Below are the tutorials for downloading and installing Keychron-Assistant on macOS and Windows.   Installation for macOS   1.Connect your device, select the Quick Start function area on the left, and click Downlo",
+    "og_desc": "Keychron-Assistant is a supplementary tool for Keychron Launcher that provides Quick Start functionality.   Below are the tutorials for downloading and installing Keychron-Assistant on macOS and Windows.   Installation for macOS   1.Connect your device, select the Quick Start function area on the left, and click Downlo"
+  },
+  {
     "token": "keyclu",
     "homepage": "https://sergii.tatarenkov.name/keyclu/support/",
     "title": "Anze's Laboratory » KeyClu",
@@ -31077,6 +31091,13 @@
     "og_desc": ""
   },
   {
+    "token": "leigod",
+    "homepage": "https://www.leigod.com/",
+    "title": "雷神加速器-专线加速游戏,按分钟计费可暂停【官方网站】",
+    "meta_desc": "雷神加速器,使用金融级内网传输专线,玩家用户使用按分钟计费,不用可随时暂停时间,买一次相当于长久使用,雷神游戏加速器好用且贴心,玩家/网吧必选!一键下载畅玩!",
+    "og_desc": ""
+  },
+  {
     "token": "lemonade-server",
     "homepage": "https://lemonade-server.ai/",
     "title": "Lemonade: Local AI for Text, Images, and Speech",
@@ -31190,6 +31211,13 @@
     "title": "Create electronics the easy way | LibrePCB",
     "meta_desc": "A free, easy-to-use, multiplatform EDA software to draw schematics and design PCBs",
     "og_desc": "A free, easy-to-use, multiplatform EDA software to draw schematics and design PCBs"
+  },
+  {
+    "token": "librewolf",
+    "homepage": "https://librewolf.net/",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "licecap",
@@ -34550,6 +34578,13 @@
     "title": "NAPS2 - Scan documents to PDF and more",
     "meta_desc": "NAPS2 is free scanner software made easy. Scan to PDF, edit your documents, and use advanced features like OCR. Available on Windows, Mac, and Linux.",
     "og_desc": ""
+  },
+  {
+    "token": "nativ",
+    "homepage": "https://blaizzy.github.io/nativ/",
+    "title": "Nativ - Run AI locally on your Mac",
+    "meta_desc": "Nativ runs open language, vision, video, code, and embedding models locally on Apple Silicon. Free, private, and open source.",
+    "og_desc": "Frontier intelligence on your desk. No accounts, subscriptions, or cloud."
   },
   {
     "token": "native-access",
