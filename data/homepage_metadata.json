@@ -5328,6 +5328,13 @@
     "og_desc": "Crescendo is a swift based, real time event viewer for macOS. It utilizes Apple's Endpoint Security Framework. - SuprHackerSteve/Crescendo"
   },
   {
+    "token": "crisp",
+    "homepage": "https://crispmac.app/",
+    "title": "Crisp: Free BetterDisplay & Lunar alternative for macOS",
+    "meta_desc": "Crisp is a free, open-source, lightweight alternative to BetterDisplay and Lunar for macOS: DDC brightness, HiDPI scaling, presets, virtual displays, and arrangement, all in the menu bar.",
+    "og_desc": "A free, open-source alternative to BetterDisplay and Lunar: DDC brightness, HiDPI scaling, presets, virtual displays, and arrangement, all in the menu bar."
+  },
+  {
     "token": "cro-mag-rally",
     "homepage": "https://jorio.itch.io/cromagrally",
     "title": "Cro-Mag Rally by Iliyas Jorio",
@@ -5668,6 +5675,13 @@
     "title": "GitHub - inderdhir/DatWeatherDoe: Simple menu bar weather app for macOS · GitHub",
     "meta_desc": "Simple menu bar weather app for macOS. Contribute to inderdhir/DatWeatherDoe development by creating an account on GitHub.",
     "og_desc": "Simple menu bar weather app for macOS. Contribute to inderdhir/DatWeatherDoe development by creating an account on GitHub."
+  },
+  {
+    "token": "davit",
+    "homepage": "https://davit.app/",
+    "title": "Davit - a native macOS UI for Apple containers",
+    "meta_desc": "Davit is a free, open-source, fully native macOS app for Apple's container platform: containers, images, volumes and networks with live stats, logs, file browsing, private registries, Compose import, Dockerfile builds and one-click setup.",
+    "og_desc": "Free, open-source, fully native. Run Linux containers on Apple silicon with Apple's container platform; no Docker Desktop required."
   },
   {
     "token": "dayflow",
@@ -37435,6 +37449,13 @@
     "og_desc": "Tools for using PIV tokens (like Yubikeys) as an SSH agent, for encrypting data at rest, and more - arekinath/pivy"
   },
   {
+    "token": "pixcake",
+    "homepage": "https://www.pixcakeai.com/",
+    "title": "像素蛋糕PixCake - 像素级AI精修软件",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "pixel-shift-combiner",
     "homepage": "https://www.fujifilm-x.com/en-us/support/download/software/pixel-shift-combiner/",
     "title": "FUJIFILM Pixel Shift Combiner | Support | Downloads | Software | FUJIFILM X Series & GFX - USA",
@@ -45345,6 +45366,13 @@
     "title": "GitHub - aahung/Unshaky: A software attempt to address the \"double key press\" issue on Apple's butterfly keyboard [not actively maintained] · GitHub",
     "meta_desc": "A software attempt to address the \"double key press\" issue on Apple's butterfly keyboard [not actively maintained] - aahung/Unshaky",
     "og_desc": "A software attempt to address the \"double key press\" issue on Apple's butterfly keyboard [not actively maintained] - aahung/Unshaky"
+  },
+  {
+    "token": "unsloth",
+    "homepage": "https://unsloth.ai/",
+    "title": "Unsloth - Run and Train Models Locally",
+    "meta_desc": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware.",
+    "og_desc": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
   },
   {
     "token": "updatest",
