@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-26",
-  "totalCasks": 3900,
+  "generatedDate": "2026-08-27",
+  "totalCasks": 3903,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2294,12 +2294,6 @@
         "ai"
       ]
     },
-    "chatgpt-atlas": {
-      "primary": "browsers",
-      "secondary": [
-        "ai"
-      ]
-    },
     "chatgpt-classic": {
       "primary": "productivity",
       "secondary": [
@@ -3125,6 +3119,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "crisp": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "cro-mag-rally": {
       "primary": "games",
       "secondary": []
@@ -3326,6 +3326,12 @@
     "datweatherdoe": {
       "primary": "menuBar",
       "secondary": []
+    },
+    "davit": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "dayflow": {
       "primary": "productivity",
@@ -11127,6 +11133,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "pixcake": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
     "pixel-shift-combiner": {
       "primary": "designGraphics",
       "secondary": []
@@ -15510,6 +15522,12 @@
     "unshaky": {
       "primary": "utilities",
       "secondary": []
+    },
+    "unsloth": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "updatest": {
       "primary": "utilities",
