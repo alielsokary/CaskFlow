@@ -1067,6 +1067,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "pixcake": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Operation timed out after 600046 milliseconds with 1247558720 out of 2374149530 bytes received",
+    "attempts": 1,
+    "updated": "2026-08-28"
+  },
   "podolski": {
     "status": "no_icon",
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
