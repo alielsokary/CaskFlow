@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-27",
+  "generatedDate": "2026-08-28",
   "totalCasks": 3903,
   "categories": {
     "developerTools": {
@@ -969,6 +969,12 @@
     "arm-performance-libraries": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "arm-performix": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "arq": {
       "primary": "cloudStorage",
@@ -15773,10 +15779,6 @@
       "secondary": []
     },
     "virtual-desktop-streamer": {
-      "primary": "games",
-      "secondary": []
-    },
-    "virtual-ii": {
       "primary": "games",
       "secondary": []
     },
