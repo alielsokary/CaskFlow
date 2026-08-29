@@ -551,6 +551,13 @@
     "og_desc": ""
   },
   {
+    "token": "afterglow",
+    "homepage": "https://morphing.cloud/afterglow/",
+    "title": "Afterglow - classic After Dark screen savers on modern macOS",
+    "meta_desc": "Afterglow runs classic After Dark screen saver modules - Flying Toasters, Fish!, Starry Skyline, and more - natively on macOS, with no ROMs required.",
+    "og_desc": "Run classic After Dark screen saver modules - Flying Toasters, Fish!, Starry Skyline, and more - natively on macOS."
+  },
+  {
     "token": "agent-tars",
     "homepage": "https://github.com/bytedance/UI-TARS-desktop",
     "title": "GitHub - bytedance/UI-TARS-desktop: The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra · GitHub",
@@ -6813,6 +6820,13 @@
     "title": "Droplr",
     "meta_desc": "Discover the best screen capture software apps for Mac and PC. Top-rated screen recorders with audio and video capture for all your screen recording needs.",
     "og_desc": "Discover the best screen capture software apps for Mac and PC. Top-rated screen recorders with audio and video capture for all your screen recording needs."
+  },
+  {
+    "token": "droppy",
+    "homepage": "https://getdroppy.app/",
+    "title": "Droppy. Your Mac, just way better.",
+    "meta_desc": "Droppy turns your Mac's notch into a file tray, clipboard manager, media hub and live activities, with a revamped lock screen. Works with or without a notch. One-time license, macOS 14+.",
+    "og_desc": "A file tray, clipboard manager, revamped lock screen, music controls and live activities. Everything in reach, notch or not."
   },
   {
     "token": "dropshare",
@@ -43499,6 +43513,13 @@
     "title": "TauriTavern",
     "meta_desc": "TauriTavern 文档站：围绕 Tauri v2、Rust 后端与 SillyTavern 1.18.0 前端兼容的工程文档。",
     "og_desc": "TauriTavern 的架构、API 与开发文档站点。"
+  },
+  {
+    "token": "tcp-viewer",
+    "homepage": "https://tcpviewer.proxyman.com/",
+    "title": "TCP Viewer - Native macOS Packet Capture and Inspection",
+    "meta_desc": "A simpler, Mac-native Wireshark alternative for inspecting TCP traffic.",
+    "og_desc": "A simpler, Mac-native Wireshark alternative for inspecting TCP traffic."
   },
   {
     "token": "tdr-kotelnikov",
