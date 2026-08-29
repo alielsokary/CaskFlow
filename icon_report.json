@@ -1069,9 +1069,9 @@
   },
   "pixcake": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600046 milliseconds with 1247558720 out of 2374149530 bytes received",
-    "attempts": 1,
-    "updated": "2026-08-28"
+    "reason": "download failed: curl: (28) Operation timed out after 600103 milliseconds with 1456022236 out of 2374149530 bytes received",
+    "attempts": 2,
+    "updated": "2026-08-29"
   },
   "podolski": {
     "status": "no_icon",
