@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-28",
-  "totalCasks": 3903,
+  "generatedDate": "2026-08-29",
+  "totalCasks": 3906,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -348,6 +348,10 @@
     },
     "affinity": {
       "primary": "designGraphics",
+      "secondary": []
+    },
+    "afterglow": {
+      "primary": "screensaverWallpaper",
       "secondary": []
     },
     "agent-tars": {
@@ -3980,6 +3984,13 @@
     "droplr": {
       "primary": "utilities",
       "secondary": []
+    },
+    "droppy": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar",
+        "productivity"
+      ]
     },
     "dropshare": {
       "primary": "cloudStorage",
@@ -14518,6 +14529,12 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "tcp-viewer": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
       ]
     },
     "tdr-kotelnikov": {
