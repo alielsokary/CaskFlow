@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-29",
-  "totalCasks": 3906,
+  "generatedDate": "2026-08-30",
+  "totalCasks": 3907,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -4749,6 +4749,10 @@
     },
     "fellow": {
       "primary": "productivity",
+      "secondary": []
+    },
+    "fender-universal-control": {
+      "primary": "audioMusic",
       "secondary": []
     },
     "ferdium": {
@@ -11489,10 +11493,6 @@
         "designGraphics"
       ]
     },
-    "presonus-universal-control": {
-      "primary": "audioMusic",
-      "secondary": []
-    },
     "prettyclean": {
       "primary": "utilities",
       "secondary": []
@@ -13321,6 +13321,12 @@
     "sizzy": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "sjmcl": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
     },
     "sketch": {
       "primary": "designGraphics",
