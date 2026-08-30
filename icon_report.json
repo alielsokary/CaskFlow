@@ -563,6 +563,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "fender-universal-control": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-08-30"
+  },
   "finch": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/runfinch.png?size=256",
