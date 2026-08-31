@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-30",
-  "totalCasks": 3907,
+  "generatedDate": "2026-08-31",
+  "totalCasks": 3911,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8443,6 +8443,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "markviewer": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "marsedit": {
       "primary": "productivity",
       "secondary": [
@@ -11887,6 +11893,12 @@
       "primary": "games",
       "secondary": []
     },
+    "quarkclouddrive": {
+      "primary": "cloudStorage",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "quarto": {
       "primary": "scienceEducation",
       "secondary": []
@@ -14439,6 +14451,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "tabularis": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "taccy": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -15012,6 +15030,13 @@
     "tofu": {
       "primary": "productivity",
       "secondary": []
+    },
+    "token-monitor": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "menuBar"
+      ]
     },
     "tolaria": {
       "primary": "productivity",
