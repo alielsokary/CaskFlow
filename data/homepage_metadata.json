@@ -32553,6 +32553,13 @@
     "og_desc": "➡ Tauri powered markdown editor with live preview. Contribute to dvcrn/markright development by creating an account on GitHub."
   },
   {
+    "token": "markviewer",
+    "homepage": "https://markviewer.com/",
+    "title": "MarkViewer - Free Markdown Viewer & Editor for Mac (Offline)",
+    "meta_desc": "Free Markdown viewer and editor for Mac. Open .md files instantly on macOS, render GitHub-flavored Markdown with live WYSIWYG. Native, offline, lightweight.",
+    "og_desc": "Free Markdown viewer and editor for Mac. Open .md files instantly on macOS, render GitHub-flavored Markdown with live WYSIWYG. Native, offline, lightweight."
+  },
+  {
     "token": "marsedit",
     "homepage": "https://redsweater.com/marsedit/",
     "title": "MarsEdit 5 - Powerful web publishing from your Mac.",
@@ -38723,6 +38730,13 @@
     "error": "HTTP 403"
   },
   {
+    "token": "quarkclouddrive",
+    "homepage": "https://pan.quark.cn/",
+    "title": "icon/插件",
+    "meta_desc": "夸克网盘官方网站，提供电脑PC/手机/TV/Pad全平台最新版本的客户端下载。夸克网盘作为阿里巴巴旗下的一款网盘产品，支持文件存储、下载、解压、格式转换、在线预览等功能，致力于为用户提供极致的云端存储、消费与传输体验。",
+    "og_desc": ""
+  },
+  {
     "token": "quarto",
     "homepage": "https://www.quarto.org/",
     "title": "Quarto",
@@ -43354,6 +43368,13 @@
     "og_desc": ""
   },
   {
+    "token": "tabularis",
+    "homepage": "https://tabularis.dev/",
+    "title": "Tabularis | Open-Source Desktop Client for Modern Databases",
+    "meta_desc": "Open-source desktop database client with support for PostgreSQL, MySQL/MariaDB, and SQLite. Hackable with plugins, with notebooks, AI, and MCP built in.",
+    "og_desc": "Open-source desktop database client with support for PostgreSQL, MySQL/MariaDB, and SQLite. Hackable with plugins, with notebooks, AI, and MCP built in."
+  },
+  {
     "token": "taccy",
     "homepage": "https://eclecticlight.co/taccy-signet-precize-alifix-utiutility-alisma/",
     "title": "Precize, Alifix, UTIutility, Sparsity, alisma, Taccy, Signet - The Eclectic Light Company",
@@ -44453,6 +44474,13 @@
     "token": "tofu",
     "homepage": "https://amarsagoo.info/tofu/",
     "error": "HTTP 403"
+  },
+  {
+    "token": "token-monitor",
+    "homepage": "https://javis-ai.com/token-monitor/",
+    "title": "Token Monitor: AI Tools usage at a glance",
+    "meta_desc": "Token Monitor is a local-first desktop app for live tokens, cost, limits, sessions, and history across 28+ AI coding tools.",
+    "og_desc": "Live tokens, cost, limits, sessions, and history across 28+ AI coding tools."
   },
   {
     "token": "tolaria",
