@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-08-31",
-  "totalCasks": 3911,
+  "generatedDate": "2026-09-01",
+  "totalCasks": 3913,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -901,6 +901,10 @@
       "secondary": []
     },
     "aptakube": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "aptible": {
       "primary": "developerTools",
       "secondary": []
     },
@@ -16112,6 +16116,12 @@
     "wakatime": {
       "primary": "menuBar",
       "secondary": []
+    },
+    "waku": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "wallpaper-wizard": {
       "primary": "screensaverWallpaper",
