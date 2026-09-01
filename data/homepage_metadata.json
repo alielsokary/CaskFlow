@@ -1511,6 +1511,13 @@
     "og_desc": "Aptakube is the best Kubernetes GUI. A lightweight, modern, multi-cluster desktop client to manage your clusters"
   },
   {
+    "token": "aptible",
+    "homepage": "https://www.aptible.com/docs/reference/aptible-cli/overview",
+    "title": "Aptible CLI - Overview - Aptible",
+    "meta_desc": "Learn more about using the Aptible CLI for managing resources",
+    "og_desc": "Learn more about using the Aptible CLI for managing resources"
+  },
+  {
     "token": "aqua-data-studio",
     "homepage": "https://aquadatastudio.com/",
     "error": "HTTP 403"
@@ -46361,6 +46368,13 @@
     "title": "X",
     "meta_desc": "Open source IDE plugins for programmers.",
     "og_desc": "An open source Mac system tray app for automatic time tracking and metrics generated from your programming activity."
+  },
+  {
+    "token": "waku",
+    "homepage": "https://waku.sh/",
+    "title": "Waku - one native app for all your coding agents",
+    "meta_desc": "A fast, native app for local coding agents. Amp, Claude Code, Codex, Cursor, OpenCode, Grok, and Pi - one timeline, entirely on your machine.",
+    "og_desc": "A fast, native app for local coding agents. Amp, Claude Code, Codex, Cursor, OpenCode, Grok, and Pi - one timeline, entirely on your machine."
   },
   {
     "token": "wallpaper-wizard",
