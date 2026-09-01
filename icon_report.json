@@ -13,9 +13,9 @@
   },
   "algodoo": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600079 milliseconds with 74874880 out of 293512409 bytes received",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "reason": "download failed: curl: (28) Operation timed out after 600089 milliseconds with 74973184 out of 293512409 bytes received",
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "alisma": {
     "status": "no_icon",
@@ -80,8 +80,8 @@
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "autodesk-fusion": {
     "status": "review",
@@ -163,9 +163,9 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-canon-mg2500-driver-2218ijww/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-canon-mg2500-driver-bde4pdvw/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "canon-ufrii-driver": {
     "status": "no_icon",
@@ -194,8 +194,8 @@
   "chemdoodle": {
     "status": "failed",
     "reason": "sha256 mismatch (got dc0914ba279d...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "chordpotion": {
     "status": "no_icon",
@@ -212,8 +212,8 @@
   "cinebench": {
     "status": "failed",
     "reason": "sha256 mismatch (got 302a8dcff183...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "claude-code": {
     "status": "no_icon",
@@ -230,8 +230,8 @@
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B42E:SSL routines:ST_CONNECT:tlsv1 alert protocol version",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "cmpxat": {
     "status": "no_icon",
@@ -332,26 +332,20 @@
   "dbeaver-enterprise": {
     "status": "failed",
     "reason": "sha256 mismatch (got 60bcaa629809...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "dbeaverteam": {
     "status": "failed",
     "reason": "sha256 mismatch (got 037f96b9be78...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
-  "dbeaverultimate": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got ac134703e8cf...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "dbvr": {
     "status": "failed",
     "reason": "sha256 mismatch (got d29bd5676f1f...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "desktoppr": {
     "status": "curated",
@@ -370,12 +364,6 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "digiexam": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 4,
-    "updated": "2026-08-01"
   },
   "digital": {
     "status": "no_icon",
@@ -437,12 +425,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "electrumsv": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
   "enclave": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -458,8 +440,8 @@
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "epoccam": {
     "status": "no_icon",
@@ -611,12 +593,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "ghost-downloader": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 37b803167c19...)",
-    "attempts": 3,
-    "updated": "2026-08-22"
-  },
   "git-credential-manager": {
     "status": "curated",
     "reason": "official vendor asset: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
@@ -650,8 +626,8 @@
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "halion-sonic": {
     "status": "no_icon",
@@ -692,8 +668,8 @@
   "icab": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5d09f7e8ded7...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "ijhttp": {
     "status": "no_icon",
@@ -734,8 +710,8 @@
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "itunes-producer": {
     "status": "no_icon",
@@ -749,12 +725,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "jumpshare": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 7d3d995d1549...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
   "kimi": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/MoonshotAI.png",
@@ -764,14 +734,14 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "kotlin-lsp": {
     "status": "curated",
@@ -803,12 +773,6 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
-  "linkandroid": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 8bf6bbc0ab53...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
   "logi-options+": {
     "status": "review",
     "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
@@ -830,20 +794,20 @@
   "lotus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "m32-edit": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "macfuse": {
     "status": "curated",
@@ -860,8 +824,8 @@
   "macpar-deluxe": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "macsvg": {
     "status": "curated",
@@ -878,20 +842,14 @@
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
-  "metashapepro": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 85b7e43dc87c...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "meteorologist": {
     "status": "failed",
     "reason": "sha256 mismatch (got aa08cb7f2d0d...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "micro-sniff": {
     "status": "no_icon",
@@ -914,8 +872,8 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "miniconda": {
     "status": "curated",
@@ -992,8 +950,8 @@
   "openframeworks": {
     "status": "failed",
     "reason": "sha256 mismatch (got e4a2dd6e7580...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "opensc-app": {
     "status": "curated",
@@ -1049,12 +1007,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "pally": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
   "paragon-extfs": {
     "status": "review",
     "reason": "non-exact .app selection: single",
@@ -1075,9 +1027,9 @@
   },
   "pixcake": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600000 milliseconds with 923505202 out of 2374149530 bytes received",
-    "attempts": 3,
-    "updated": "2026-08-29"
+    "reason": "download failed: curl: (28) Operation timed out after 600001 milliseconds with 1099171641 out of 2705209855 bytes received",
+    "attempts": 4,
+    "updated": "2026-09-01"
   },
   "podolski": {
     "status": "no_icon",
@@ -1088,8 +1040,8 @@
   "postbox": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "postman-cli": {
     "status": "no_icon",
@@ -1114,12 +1066,6 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "profit": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
   },
   "prolific-pl2303": {
     "status": "no_icon",
@@ -1148,8 +1094,8 @@
   "raven-reader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "restic-browser": {
     "status": "no_icon",
@@ -1160,14 +1106,14 @@
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "roonbridge": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "salt": {
     "status": "no_icon",
@@ -1183,9 +1129,9 @@
   },
   "securesafe": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-securesafe-eh37nktu/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-securesafe-g_passt6/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "segger-jlink": {
     "status": "curated",
@@ -1231,15 +1177,15 @@
   },
   "sonic-lineup": {
     "status": "failed",
-    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 5651 ms: Couldn't connect to server",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6808 ms: Couldn't connect to server",
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "soothe2": {
     "status": "no_icon",
@@ -1322,14 +1268,14 @@
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "tableau-reader": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "tal-drum": {
     "status": "no_icon",
@@ -1385,17 +1331,11 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "tentacle-sync-studio": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-08-01"
-  },
   "toneprint": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "toshiba-color-mfp": {
     "status": "no_icon",
@@ -1482,10 +1422,10 @@
     "updated": "2026-07-08"
   },
   "virtual-ii": {
-    "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to virtualii.com port 443 after 75005 ms: Couldn't connect to server",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 4,
-    "updated": "2026-08-01"
+    "updated": "2026-09-01"
   },
   "virtualgl": {
     "status": "no_icon",
@@ -1496,32 +1436,26 @@
   "visual-paradigm": {
     "status": "failed",
     "reason": "sha256 mismatch (got fc3c40f94cf8...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "visual-paradigm-ce": {
     "status": "failed",
-    "reason": "sha256 mismatch (got 97eb1a3d0044...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "reason": "sha256 mismatch (got f604ac24a23e...)",
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "vnc-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "warsaw": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "waveforms": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-08-01"
   },
   "wch-ch34x-usb-serial-driver": {
     "status": "review",
@@ -1538,20 +1472,14 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
+    "attempts": 5,
+    "updated": "2026-09-01"
   },
   "wizcli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "xnconvert": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 7f9211670fe6...)",
-    "attempts": 4,
-    "updated": "2026-08-01"
   },
   "xppen-pentablet": {
     "status": "no_icon",
