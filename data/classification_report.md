@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-09-01
+Generated 2026-09-02
 
 ## Summary
 
@@ -15,5 +15,5 @@ Generated 2026-09-01
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `aptible` | developerTools | - | 0.90 | CLI tool for managing app deployment resources on Aptible platform. |
-| `waku` | developerTools | ai | 0.90 | A native desktop app for managing coding agents like Claude Code, Codex, and Cursor is a developer tool with AI focus. |
+| `db-pro` | developerTools | ai | 0.90 | A database management/query tool for developers with built-in AI chat features. |
+| `dockdoor-pro` | utilities | productivity | 0.80 | A dock replacement enhancing window management and system UI is a system-level utility. |
