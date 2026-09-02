@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-01",
-  "totalCasks": 3913,
+  "generatedDate": "2026-09-02",
+  "totalCasks": 3915,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3355,6 +3355,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "db-pro": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "dbeaver-community": {
       "primary": "developerTools",
       "secondary": []
@@ -3806,6 +3812,12 @@
     "dockdoor": {
       "primary": "utilities",
       "secondary": []
+    },
+    "dockdoor-pro": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "docker-desktop": {
       "primary": "developerTools",

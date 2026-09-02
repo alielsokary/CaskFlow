@@ -5731,6 +5731,13 @@
     "og_desc": ""
   },
   {
+    "token": "db-pro",
+    "homepage": "https://www.dbpro.app/",
+    "title": "DB Pro - Modern Database Management",
+    "meta_desc": "Query, explore, and manage your databases with a powerful yet intuitive interface. Built for developers who demand speed, reliability, and elegant workflows to export.",
+    "og_desc": "Query, explore, and manage PostgreSQL, MySQL, SQLite, and more with a powerful desktop app, collaborative web workspaces, and built-in AI chat."
+  },
+  {
     "token": "dbeaver-community",
     "homepage": "https://dbeaver.io/",
     "title": "DBeaver Community | Free Open-Source Database Management Tool",
@@ -6481,6 +6488,13 @@
     "title": "DockDoor - Free Alt+Tab and Dock Preview Window Switcher for Mac | Download Now",
     "meta_desc": "Transform your Mac workflow with DockDoor's free Alt+Tab switcher & dock previews. Privacy-first, open-source window management. Download instantly!",
     "og_desc": "Transform your Mac workflow with DockDoor's free Alt+Tab switcher & dock previews. Privacy-first, open-source window management. Download instantly!"
+  },
+  {
+    "token": "dockdoor-pro",
+    "homepage": "https://pro.dockdoor.net/",
+    "title": "DockDoor Pro - Native Dock Experience for macOS",
+    "meta_desc": "DockDoor Pro is a native dock replacement for macOS with live window previews, dock profiles, media controls, file tray, magnification, multi-monitor support, and full customization.",
+    "og_desc": "DockDoor Pro is a native dock replacement for macOS with live window previews, dock profiles, media controls, file tray, magnification, multi-monitor support, and full customization."
   },
   {
     "token": "docker-desktop",
