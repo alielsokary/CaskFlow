@@ -719,6 +719,13 @@
     "og_desc": ""
   },
   {
+    "token": "airstats",
+    "homepage": "https://airstats.app/",
+    "title": "AirStats · A menu bar system monitor for macOS",
+    "meta_desc": "Sixteen metrics in your Mac's menu bar for 0.046% CPU. One process. Free, open source, 8.9 MB.",
+    "og_desc": "Sixteen metrics in your Mac's menu bar for 0.046% CPU. One process. Free, open source, 8.9 MB."
+  },
+  {
     "token": "airsync",
     "homepage": "https://github.com/sameerasw/airsync-mac",
     "title": "GitHub - sameerasw/airsync-mac: AirSync macOS - Bring the forbidden macOS continuity to Android · GitHub",
@@ -4316,6 +4323,13 @@
     "title": "GitHub - tddworks/ClaudeBar: A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance. · GitHub",
     "meta_desc": "A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance. - tddworks/ClaudeBar",
     "og_desc": "A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance. - tddworks/ClaudeBar"
+  },
+  {
+    "token": "clawd-on-desk",
+    "homepage": "https://github.com/rullerzhou-afk/clawd-on-desk",
+    "title": "GitHub - rullerzhou-afk/clawd-on-desk: A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents - so you don't have to. · GitHub",
+    "meta_desc": "A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents - so you don't have to. - rullerzhou-afk/clawd-on-desk",
+    "og_desc": "A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents - so you don't have to. - rullerzhou-afk/clawd-on-desk"
   },
   {
     "token": "clay",
@@ -32191,6 +32205,13 @@
     "og_desc": "Feature-packed native macOS screenshot &amp; recording tool: annotate, auto-redact PII, record GIFs, OCR + translate, scroll capture, beautify, and more. No Electron, no subscription. - sw33tLie/ma..."
   },
   {
+    "token": "macshot-offline",
+    "homepage": "https://github.com/sw33tLie/macshot",
+    "title": "GitHub - sw33tLie/macshot: Feature-packed native macOS screenshot & recording tool: annotate, auto-redact PII, record GIFs, OCR + translate, scroll capture, beautify, and more. No Electron, no subscription. · GitHub",
+    "meta_desc": "Feature-packed native macOS screenshot & recording tool: annotate, auto-redact PII, record GIFs, OCR + translate, scroll capture, beautify, and more. No Electron, no subscription. - sw33tLie/macshot",
+    "og_desc": "Feature-packed native macOS screenshot &amp; recording tool: annotate, auto-redact PII, record GIFs, OCR + translate, scroll capture, beautify, and more. No Electron, no subscription. - sw33tLie/ma..."
+  },
+  {
     "token": "macskk",
     "homepage": "https://github.com/mtgto/macSKK",
     "title": "GitHub - mtgto/macSKK: Yet Another macOS SKK Input Method · GitHub",
@@ -44509,6 +44530,13 @@
     "title": "Tolaria - A second brain for the AI era",
     "meta_desc": "Organize your notes as Markdown files. With native relationships, Git, and Claude Code integration. Free forever.",
     "og_desc": ""
+  },
+  {
+    "token": "tone3000",
+    "homepage": "https://www.tone3000.com/",
+    "title": "Tone3000 - NAM Captures and IRs",
+    "meta_desc": "TONE3000 is the world's largest community for guitar tones, bass tones and studio equipment captures. Discover and share IR's and NAM profiles of amps, pedals, rigs, outboards, and signal chains. It's free!",
+    "og_desc": "TONE3000 is the world's largest community for guitar tones, bass tones and studio equipment captures. Discover and share IR's and NAM profiles of amps, pedals, rigs, outboards, and signal chains. It's free!"
   },
   {
     "token": "toneprint",
