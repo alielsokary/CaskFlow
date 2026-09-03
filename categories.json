@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-02",
-  "totalCasks": 3915,
+  "generatedDate": "2026-09-03",
+  "totalCasks": 3919,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -456,6 +456,12 @@
     "airserver": {
       "primary": "utilities",
       "secondary": []
+    },
+    "airstats": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
     },
     "airsync": {
       "primary": "utilities",
@@ -1329,10 +1335,6 @@
     },
     "banana-cake-pop": {
       "primary": "developerTools",
-      "secondary": []
-    },
-    "bananas": {
-      "primary": "utilities",
       "secondary": []
     },
     "bankid": {
@@ -2526,6 +2528,13 @@
     "claudebar": {
       "primary": "menuBar",
       "secondary": [
+        "ai"
+      ]
+    },
+    "clawd-on-desk": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools",
         "ai"
       ]
     },
@@ -8241,6 +8250,12 @@
         "utilities"
       ]
     },
+    "macshot-offline": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "macskk": {
       "primary": "utilities",
       "secondary": []
@@ -10668,6 +10683,10 @@
     },
     "oxygen-xml-editor": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "p2p-kiwi": {
+      "primary": "utilities",
       "secondary": []
     },
     "p4": {
@@ -15059,6 +15078,10 @@
       "secondary": [
         "ai"
       ]
+    },
+    "tone3000": {
+      "primary": "audioMusic",
+      "secondary": []
     },
     "toneprint": {
       "primary": "utilities",
