@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedDate": "2026-09-03",
-  "totalCasks": 3919,
+  "totalCasks": 3922,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3723,6 +3723,10 @@
       "secondary": []
     },
     "disk-jockey": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "diskboard": {
       "primary": "utilities",
       "secondary": []
     },
@@ -8125,6 +8129,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "mac-performance-monitor": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "mac-sai": {
       "primary": "utilities",
       "secondary": [
@@ -11701,6 +11711,12 @@
     "provideoplayer": {
       "primary": "videoMedia",
       "secondary": []
+    },
+    "provisionql": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "prowritingaid": {
       "primary": "productivity",
