@@ -6350,6 +6350,13 @@
     "og_desc": ""
   },
   {
+    "token": "diskboard",
+    "homepage": "https://www.diskboard.com/",
+    "title": "DiskBoard - Free disk benchmark and SSD health monitor for macOS and Windows",
+    "meta_desc": "Test the read and write speed of any SSD, NVMe, hard drive or USB stick, check S.M.A.R.T. health, and compare your results with thousands of community benchmarks. Free for Windows and macOS.",
+    "og_desc": "Test the read and write speed of any SSD, NVMe, hard drive or USB stick, check S.M.A.R.T. health, and compare your results with thousands of community benchmarks. Free for Windows and macOS."
+  },
+  {
     "token": "diskcatalogmaker",
     "homepage": "https://diskcatalogmaker.com/",
     "title": "DiskCatalogMaker",
@@ -31976,6 +31983,13 @@
     "og_desc": "Make Your $10 Mouse Better Than an Apple Trackpad"
   },
   {
+    "token": "mac-performance-monitor",
+    "homepage": "https://macperformancemonitor.com/",
+    "title": "Mac Performance Monitor | See where your Mac's performance goes",
+    "meta_desc": "Mac Performance Monitor is a fast, native macOS app that watches memory, CPU, GPU, battery and network from your menu bar, records the history, and explains what it finds. Free and open source, MIT licensed.",
+    "og_desc": "A native macOS app that watches memory, CPU, GPU, battery and network from your menu bar, records the history, and explains what it finds."
+  },
+  {
     "token": "mac-sai",
     "homepage": "https://github.com/iliyami/MacSai",
     "title": "GitHub - iliyami/MacSai: Mac Sai: the open-source Mac cleaner, optimizer, and malware scanner. A free, Apple-notarized alternative to CleanMyMac, built with Swift 6 and SwiftUI. · GitHub",
@@ -38384,6 +38398,13 @@
     "title": "ProVideoPlayer: Multi-Screen Media Server",
     "meta_desc": "ProVideoPlayer is a multi-screen media server application designed to play back and manipulate video across one or more screens. Try it free today.",
     "og_desc": "ProVideoPlayer is a multi-screen media server application designed to play back and manipulate video across one or more screens. Try it free today."
+  },
+  {
+    "token": "provisionql",
+    "homepage": "https://github.com/ealeksandrov/ProvisionQL",
+    "title": "GitHub - ealeksandrov/ProvisionQL: Quick Look plugin for mobile apps and provisioning profiles · GitHub",
+    "meta_desc": "Quick Look plugin for mobile apps and provisioning profiles - ealeksandrov/ProvisionQL",
+    "og_desc": "Quick Look plugin for mobile apps and provisioning profiles - ealeksandrov/ProvisionQL"
   },
   {
     "token": "prowritingaid",
