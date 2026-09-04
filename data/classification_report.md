@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-09-03
+Generated 2026-09-04
 
 ## Summary
 
@@ -15,6 +15,6 @@ Generated 2026-09-03
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `diskboard` | utilities | - | 0.95 | A disk benchmarking and S.M.A.R.T. health monitoring tool is a system-level utility. |
-| `mac-performance-monitor` | menuBar | utilities | 0.90 | A menu bar app dedicated to monitoring system performance metrics like CPU, GPU, and memory. |
-| `provisionql` | developerTools | utilities | 0.80 | A Quick Look plugin for mobile app provisioning profiles is a developer utility for iOS development. |
+| `sxitch` | utilities | productivity | 0.80 | An app switcher replacing CMD-Tab is a system-level productivity utility. |
+| `terminal-browser` | browsers | developerTools | 0.80 | It's a real web browser that runs in the terminal, appealing to developer users. |
+| `vernier-graphical-analysis` | scienceEducation | - | 0.95 | Vernier Graphical Analysis is a science classroom data analysis tool for experiments. |

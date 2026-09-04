@@ -43178,6 +43178,13 @@
     "og_desc": "One click to switch your Magic Keyboard, Trackpad, and Mouse between Macs. No more System Settings. No more unpairing."
   },
   {
+    "token": "sxitch",
+    "homepage": "https://sxitch.app/",
+    "title": "Sxitch - macOS CMD Tab replacement",
+    "meta_desc": "macOS CMD Tab replacement that lets you switch apps from the name of the app. Works with your muscle memory, offers a wide variety of ",
+    "og_desc": "macOS CMD Tab replacement that lets you switch apps from the name of the app. Works with your muscle memory, offers a wide variety of "
+  },
+  {
     "token": "symboliclinker",
     "homepage": "https://github.com/nickzman/symboliclinker",
     "title": "GitHub - nickzman/symboliclinker: A contextual menu plugin & service for macOS that allows users to make symbolic links in the Finder · GitHub",
@@ -43861,6 +43868,13 @@
     "title": "Terax - Terminal-first AI-native dev workspace",
     "meta_desc": "Terax is a lightweight AI terminal with a built-in editor, AI agents, voice input, and live web preview. 7 MB on disk, 300 ms cold start. Free and open source. BYOK or fully local via LM Studio.",
     "og_desc": "Terax is a lightweight AI terminal with a built-in editor, AI agents, voice input, and live web preview. 7 MB on disk, 300 ms cold start. Free and open source. BYOK or fully local via LM Studio."
+  },
+  {
+    "token": "terminal-browser",
+    "homepage": "https://terminal-browser.com/",
+    "title": "terminal-browser",
+    "meta_desc": "A real browser that runs directly inside your terminal.",
+    "og_desc": "A real browser that runs directly inside your terminal."
   },
   {
     "token": "termius",
@@ -45742,6 +45756,13 @@
     "title": "VeraCrypt - Free Open source disk encryption with strong security for the Paranoid",
     "meta_desc": "VeraCrypt is free open-source disk encryption software for Windows, Mac OS X and Linux. In case an attacker forces you to reveal the password, VeraCrypt provides plausible deniability. In contrast to file encryption, data encryption performed by VeraCrypt is real-time (on-the-fly), automatic, transparent, needs very little memory, and does not involve temporary unencrypted files.",
     "og_desc": ""
+  },
+  {
+    "token": "vernier-graphical-analysis",
+    "homepage": "https://www.vernier.com/product/graphical-analysis/",
+    "title": "Vernier Graphical Analysis® Pro - Vernier",
+    "meta_desc": "",
+    "og_desc": "Boost engagement and foster collaboration in your science classes with Vernier Graphical Analysis. This award-winning app gives students the ability to observe an experiment, collaborate with their peers, and share the results from anywhere-in real time."
   },
   {
     "token": "vernier-spectral-analysis",
