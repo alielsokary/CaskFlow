@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-03",
-  "totalCasks": 3922,
+  "generatedDate": "2026-09-04",
+  "totalCasks": 3925,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -14356,6 +14356,12 @@
         "menuBar"
       ]
     },
+    "sxitch": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "symboliclinker": {
       "primary": "utilities",
       "secondary": []
@@ -14724,6 +14730,12 @@
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "terminal-browser": {
+      "primary": "browsers",
+      "secondary": [
+        "developerTools"
       ]
     },
     "termius": {
@@ -15772,6 +15784,10 @@
     },
     "veracrypt-fuse-t": {
       "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "vernier-graphical-analysis": {
+      "primary": "scienceEducation",
       "secondary": []
     },
     "vernier-spectral-analysis": {
