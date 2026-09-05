@@ -565,6 +565,13 @@
     "og_desc": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra - bytedance/UI-TARS-desktop"
   },
   {
+    "token": "agentide",
+    "homepage": "https://github.com/MikeMcQuaid/AgentIDE",
+    "title": "GitHub - MikeMcQuaid/AgentIDE: 🪪 IDE for Agents: prompt a worktree, review another, ship a third, repeat · GitHub",
+    "meta_desc": "🪪 IDE for Agents: prompt a worktree, review another, ship a third, repeat - MikeMcQuaid/AgentIDE",
+    "og_desc": "🪪 IDE for Agents: prompt a worktree, review another, ship a third, repeat - MikeMcQuaid/AgentIDE"
+  },
+  {
     "token": "agentkube",
     "homepage": "https://agentkube.com/",
     "title": "",
@@ -32502,6 +32509,13 @@
     "title": "MAMP & MAMP PRO for macOS - Local Web Development Environment for PHP, MySQL & Apache",
     "meta_desc": "MAMP & MAMP PRO for macOS: Create a local server environment with Apache, MySQL, and PHP. Perfect for testing and developing websites. Download MAMP for free or try MAMP PRO with advanced tools!",
     "og_desc": ""
+  },
+  {
+    "token": "mangodisk",
+    "homepage": "https://mangodisk.app/",
+    "title": "MangoDisk - Deep Clean Your Disk and Free Up Space",
+    "meta_desc": "MangoDisk is a disk and privacy cleanup tool for macOS and Windows. Clean caches, large files, duplicates, app leftovers, and activity traces, analyze storage, manage startup items, and optimize your system.",
+    "og_desc": "MangoDisk is a disk and privacy cleanup tool for macOS and Windows. Clean caches, large files, duplicates, app leftovers, and activity traces, analyze storage, manage startup items, and optimize your system."
   },
   {
     "token": "manico",

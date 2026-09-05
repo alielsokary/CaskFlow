@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-04",
-  "totalCasks": 3925,
+  "generatedDate": "2026-09-05",
+  "totalCasks": 3927,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -355,6 +355,12 @@
       "secondary": []
     },
     "agent-tars": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "agentide": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -8425,6 +8431,12 @@
     "mamp": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "mangodisk": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "manico": {
       "primary": "utilities",
