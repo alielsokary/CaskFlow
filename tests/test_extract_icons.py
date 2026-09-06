@@ -287,7 +287,7 @@ def test_flush_clears_published_pending_and_dirty(monkeypatch, tmp_path):
     monkeypatch.setattr(
         extract_icons,
         "publish_batch",
-        lambda pngs, report, tokens: published.append((dict(pngs), set(tokens))),
+        lambda pngs, report, tokens, identity_file=None: published.append((dict(pngs), set(tokens))),
     )
 
     _flush_if_due({}, pending, dirty)

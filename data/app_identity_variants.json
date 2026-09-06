@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "casks": {
+    "readdle-spark": [
+      {
+        "bundleName": "Spark Desktop.app",
+        "bundleIdentifier": "com.readdle.SparkDesktop.appstore",
+        "evidence": "Observed in the Mac App Store Spark Mail 3.30.9 Info.plist on 2026-09-06; App Store receipt present. Vendor: https://sparkmailapp.com/",
+        "reviewedDate": "2026-09-06"
+      }
+    ],
+    "tailscale-app": [
+      {
+        "bundleName": "Tailscale.app",
+        "bundleIdentifier": "io.tailscale.ipn.macos",
+        "evidence": "Vendor documentation identifies this as the Mac App Store variant: https://tailscale.com/kb/1286/macos-mdm",
+        "reviewedDate": "2026-09-06"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "casks": {
+    "motion": {
+      "caskVersion": "0.117.0",
+      "sourceURL": "https://github.com/usemotion/desktopapp/releases/download/0.117.0/motion-0.117.0-mac-aarch64.zip",
+      "artifactSHA256": "6a74ed0749a5089f1303d99fa257cc28e05be1a82c26d7b9fcf37a13902fe199",
+      "apps": [
+        {
+          "bundleName": "Motion.app",
+          "bundleIdentifier": "com.electron.motion"
+        }
+      ],
+      "reviewedVariants": []
+    },
+    "spark-app": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://www.shadowlab.org/softwares/Spark/Spark.zip",
+      "artifactSHA256": "6f3cee4cccbec78fd413df0f68e66ca489707347be59a293ac6e82c0185d4fd1",
+      "apps": [
+        {
+          "bundleName": "Spark.app",
+          "bundleIdentifier": "com.xenonium.Spark"
+        }
+      ],
+      "reviewedVariants": []
+    },
+    "readdle-spark": {
+      "caskVersion": "3.30.10.140748",
+      "sourceURL": "https://downloads.sparkmailapp.com/Spark3/mac/dist/3.30.10.140748/Spark.zip",
+      "artifactSHA256": "b84de9fe848eaf0d51de04b37a428fabca041abc22a1163a8e12a927fa84a306",
+      "apps": [
+        {
+          "bundleName": "Spark Desktop.app",
+          "bundleIdentifier": "com.readdle.SparkDesktop"
+        }
+      ],
+      "reviewedVariants": [
+        {
+          "bundleName": "Spark Desktop.app",
+          "bundleIdentifier": "com.readdle.SparkDesktop.appstore",
+          "evidence": "Observed in the Mac App Store Spark Mail 3.30.9 Info.plist on 2026-09-06; App Store receipt present. Vendor: https://sparkmailapp.com/",
+          "reviewedDate": "2026-09-06"
+        }
+      ]
+    },
+    "tailscale-app": {
+      "apps": [],
+      "reviewedVariants": [
+        {
+          "bundleName": "Tailscale.app",
+          "bundleIdentifier": "io.tailscale.ipn.macos",
+          "evidence": "Vendor documentation identifies this as the Mac App Store variant: https://tailscale.com/kb/1286/macos-mdm",
+          "reviewedDate": "2026-09-06"
+        }
+      ]
+    },
+    "element": {
+      "caskVersion": "1.12.27",
+      "sourceURL": "https://packages.element.io/desktop/update/macos/Element-1.12.27-universal-mac.zip",
+      "artifactSHA256": "a9a577bcfbc2a2307525579fb9ca722ed70e9fd7d45e843dc9a297bba2bc1570",
+      "apps": [
+        {
+          "bundleName": "Element.app",
+          "bundleIdentifier": "im.riot.app"
+        }
+      ],
+      "reviewedVariants": []
+    }
+  }
+}

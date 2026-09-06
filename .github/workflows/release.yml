@@ -5,6 +5,9 @@ on:
     branches: [master]
     paths:
       - categories.json
+      - data/app_identity_variants.json
+      - app_identities.json
+      - scripts/app_identities.py
   # Recently Added is independent of classification. Refresh its mined dates
   # every day even when a classification PR is delayed or has nothing to merge.
   schedule:
@@ -48,6 +51,15 @@ jobs:
              + (if $icons[0] then {iconTokens: ($icons[0] | sort)} else {} end)' \
             categories.json > /tmp/stamped.json
           mv /tmp/stamped.json categories.json
+
+      - name: Compose app identity metadata
+        run: |
+          # Fail on fetch errors; only a missing first-rollout manifest uses the seed.
+          git fetch --depth=1 origin icons
+          if ! git show FETCH_HEAD:app_identities.json > /tmp/app_identities.json; then
+            cp app_identities.json /tmp/app_identities.json
+          fi
+          python3 scripts/app_identities.py --extracted /tmp/app_identities.json --seed app_identities.json
 
       - name: Compose release notes
         env:
@@ -99,5 +111,6 @@ jobs:
           files: |
             categories.json
             added_dates.json
+            app_identities.json
           fail_on_unmatched_files: true
           make_latest: true
