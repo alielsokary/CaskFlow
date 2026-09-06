@@ -28,30 +28,30 @@ def load_manifest(path: Path) -> dict:
     return data
 
 
+def _app_entries(stanza: object) -> list[tuple[str, str]]:
+    if not isinstance(stanza, dict) or not isinstance(stanza.get("app"), list):
+        return []
+    entries = []
+    for item in stanza["app"]:
+        if isinstance(item, str):
+            entries.append((item, PurePosixPath(item).name))
+        elif isinstance(item, dict) and isinstance(item.get("target"), str) and entries:
+            entries[-1] = (entries[-1][0], PurePosixPath(item["target"]).name)
+    return entries
+
+
 def declared_apps(cask: dict) -> list[tuple[str, str]]:
     """Source artifact path and installed basename, honoring Homebrew target renames."""
     result = []
     for stanza in cask.get("artifacts") or []:
-        if not isinstance(stanza, dict):
-            continue
-        entries = []
-        app_artifacts = stanza.get("app")
-        if not isinstance(app_artifacts, list):
-            continue
-        for item in app_artifacts:
-            if isinstance(item, str):
-                entries.append((item, PurePosixPath(item).name))
-            elif isinstance(item, dict) and isinstance(item.get("target"), str) and entries:
-                entries[-1] = (entries[-1][0], PurePosixPath(item["target"]).name)
-        for source, target in entries:
+        for source, target in _app_entries(stanza):
             path = PurePosixPath(source)
             if not path.is_absolute() and ".." not in path.parts and source.endswith(".app") and target.endswith(".app"):
                 result.append((source, target))
     return result
 
 
-def extract_identities(cask: dict, root: Path, artifact: Path) -> dict:
-    """Inspect every declared app; reject duplicates, symlinks and heuristic selections."""
+def _application_bundles(root: Path) -> list[Path]:
     bundles = []
     for parent, directories, _ in os.walk(root, followlinks=False):
         for name in list(directories):
@@ -61,21 +61,32 @@ def extract_identities(cask: dict, root: Path, artifact: Path) -> dict:
             elif name.endswith(".app"):
                 bundles.append(path)
                 directories.remove(name)  # embedded helpers are not declared top-level apps
+    return bundles
+
+
+def _bundle_identifier(bundle: Path) -> str | None:
+    info_path = bundle / "Contents" / "Info.plist"
+    if info_path.is_symlink() or info_path.parent.is_symlink() or not info_path.resolve().is_relative_to(bundle.resolve()):
+        return None
+    try:
+        info = plistlib.loads(info_path.read_bytes())
+    except (OSError, ValueError, plistlib.InvalidFileException):
+        return None
+    identifier = info.get("CFBundleIdentifier") if isinstance(info, dict) else None
+    return identifier if isinstance(identifier, str) and IDENTIFIER.fullmatch(identifier) else None
+
+
+def extract_identities(cask: dict, root: Path, artifact: Path) -> dict:
+    """Inspect every declared app; reject duplicates, symlinks and heuristic selections."""
+    bundles = _application_bundles(root)
     apps = []
     for source, target in declared_apps(cask):
         parts = PurePosixPath(source).parts
         matches = [p for p in bundles if p.parts[-len(parts):] == parts]
         if len(matches) != 1:
             continue
-        info_path = matches[0] / "Contents" / "Info.plist"
-        if info_path.is_symlink() or info_path.parent.is_symlink() or not info_path.resolve().is_relative_to(matches[0].resolve()):
-            continue
-        try:
-            info = plistlib.loads(info_path.read_bytes())
-        except (OSError, ValueError, plistlib.InvalidFileException):
-            continue
-        identifier = info.get("CFBundleIdentifier") if isinstance(info, dict) else None
-        if isinstance(identifier, str) and IDENTIFIER.fullmatch(identifier):
+        identifier = _bundle_identifier(matches[0])
+        if identifier is not None:
             apps.append({"bundleName": target, "bundleIdentifier": identifier})
     digest = hashlib.sha256()
     with artifact.open("rb") as stream:
@@ -111,6 +122,16 @@ def merge_extractions(destination: Path, source: Path, dirty: set[str]) -> None:
     write_json(destination, base, trailing_newline=True)
 
 
+def _project_identity(token: str, record: dict, reviewed: list[dict]) -> dict:
+    identifier = record.get("bundleIdentifier", "")
+    name = record.get("bundleName", "")
+    if not IDENTIFIER.fullmatch(identifier) or not name.endswith(".app") or Path(name).name != name:
+        raise ValueError(f"Invalid identity for {token}")
+    if record in reviewed and not record.get("evidence"):
+        raise ValueError(f"Missing review evidence for {token}")
+    return {"bundleName": name, "bundleIdentifier": identifier}
+
+
 def compose_release(categories: Path, extracted: Path, variants: Path, output: Path,
                     seed: Path | None = None) -> None:
     """Keep provenance in the manifest and embed its matching projection in categories."""
@@ -127,13 +148,7 @@ def compose_release(categories: Path, extracted: Path, variants: Path, output: P
         records = entry.get("apps", []) + entry["reviewedVariants"]
         valid = []
         for record in records:
-            identifier = record.get("bundleIdentifier", "")
-            name = record.get("bundleName", "")
-            if not IDENTIFIER.fullmatch(identifier) or not name.endswith(".app") or Path(name).name != name:
-                raise ValueError(f"Invalid identity for {token}")
-            if record in entry["reviewedVariants"] and not record.get("evidence"):
-                raise ValueError(f"Missing review evidence for {token}")
-            projected = {"bundleName": name, "bundleIdentifier": identifier}
+            projected = _project_identity(token, record, entry["reviewedVariants"])
             if projected not in valid:
                 valid.append(projected)
         if valid:
