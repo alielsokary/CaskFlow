@@ -55,3 +55,12 @@ def test_pr_hygiene_can_assign_pull_requests():
 
     assert "pull-requests: write" in hygiene
     assert "issues: write" not in hygiene
+
+
+def test_identity_release_merges_seed_and_publishes_manifest():
+    release = _workflow("release.yml")
+    assert "scripts/app_identities.py --extracted /tmp/app_identities.json --seed app_identities.json" in release
+    assert "git fetch --depth=1 origin icons" in release
+    assert "            app_identities.json" in release
+    assert "data/app_identity_variants.json" in release
+    assert "--identity-backfill" in _workflow("extract-icons.yml")

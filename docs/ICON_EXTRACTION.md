@@ -68,3 +68,41 @@ python3 scripts/extract_icons.py --publish --limit 300
 
 Backfill runs on GitHub-hosted macOS runners, and per-cask cleanup keeps disk flat.
 Stdlib + stock macOS tooling only - no extra dependencies.
+
+## App identity metadata
+
+Each successful archive inspection also writes `app_identities.json`. This is
+independent of icon extraction success. Entries record the cask version, source
+URL, actual archive SHA-256, installed bundle name, and `CFBundleIdentifier`.
+Only uniquely matched, explicitly declared `app` artifacts qualify. Source/target
+renames are honored; embedded helpers, symlinks, ambiguous duplicates, suite/pkg
+name guesses, and icon-selection fallbacks cannot establish app identity.
+Unsupported or ambiguous artifacts produce an empty `apps` list.
+
+The existing batch publisher merges only inspected tokens into the icons branch.
+Failed downloads leave previous evidence intact. Daily releases merge the
+checked-in seed with the branch manifest (fresh records win, including empty
+records), add reviewed App Store variants from `data/app_identity_variants.json`,
+and publish the resulting manifest. A compact `appIdentities` projection is
+embedded in `categories.json`, with `metadataUpdatedAt` allowing identity-only
+updates when the classification date is unchanged. Variant records require
+review evidence; neither shared names nor identifier prefixes prove a relation.
+
+Already-published icons need an explicit identity backfill. Use the workflow's
+`identity_backfill` input, or run locally without publishing:
+
+```sh
+python3 scripts/extract_icons.py --identity-backfill --limit 25 --output-dir /tmp/cask-identities
+```
+
+This reuses normal archive download and expansion, without installing apps.
+Backfill revisits missing records or changed cask versions, URLs, or checked
+SHA-256 values. An empty result is not retried until those inputs change. For
+rolling `no_check` archives, use `--tokens` to force a fresh inspection. Add
+`--publish` only when ready to update the icons branch. Package payload identities
+and coverage beyond inspected artifacts remain absent until verified.
+
+CaskHub consumes the optional projection using its release loader and bundled
+fallback. Older releases without the field remain readable. Unverified apps stay
+unassigned; a verified App Store variant can be recognized without becoming
+adoptable while its receipt is present.
