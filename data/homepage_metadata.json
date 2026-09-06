@@ -35716,6 +35716,13 @@
     "error": "The read operation timed out"
   },
   {
+    "token": "omniwm",
+    "homepage": "https://omniwm.app/",
+    "title": "OmniWM - macOS tiling window manager, Niri & Hyprland style",
+    "meta_desc": "Free, open-source tiling window manager for macOS - Niri scrolling columns, Hyprland tiling, quake terminal, command palette, CLI. A yabai & AeroSpace alternative.",
+    "og_desc": "Free, open-source tiling window manager for macOS - Niri scrolling columns, Hyprland tiling, quake terminal, command palette, CLI. A yabai & AeroSpace alternative."
+  },
+  {
     "token": "ondesoft-audiobook-converter",
     "homepage": "https://www.ondesoft.com/audible-audiobook-converter.html",
     "title": "Ondesoft - iTunes DRM removal software, Apple Music Converter, Spotify Music Converter, Audible Converter, iTunes movie Converter",
