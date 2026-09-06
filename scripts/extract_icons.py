@@ -16,6 +16,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
+from app_identities import MANIFEST, merge_extractions, needs_refresh, record_extraction
+
 from icons_state import (  # noqa: F401  (re-exported for curate_icons/tests)
     ICONS_BRANCH,
     REPO_ROOT,
@@ -446,6 +448,7 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
         root = expand(artifact, kind, workdir, mounts)
         hit = _locate_app(cask, root, kind, workdir, mounts)
+        record_extraction(cask, workdir, artifact, output_dir)
         if hit is None:
             # Deterministic outcome (e.g. suite/pkg of CLI binaries) - park it
             # rather than burning retries. --tokens bypasses parked entries.
@@ -492,7 +495,7 @@ def _icon_status(app: Path, selection: str, dest_png: Path) -> tuple[str, str]:
 
 
 def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
-                  dirty: set[str]) -> None:
+                  dirty: set[str], identity_file: Path | None = None) -> None:
     """Commit a batch of icons AND the report to the icons branch via a throwaway worktree."""
     # Merge only this batch's report entries so concurrent manual audits survive.
     wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
@@ -503,6 +506,8 @@ def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
         for token, png in pngs.items():
             shutil.copyfile(png, wt / f"{token}.png")
         _merge_report(wt, report, dirty)
+        if identity_file is not None:
+            merge_extractions(wt / MANIFEST, identity_file, dirty)
         _git(wt, "add", "-A")
         if _git(wt, "diff", "--cached", "--quiet").returncode == 0:
             return  # everything already on the branch
@@ -638,9 +643,10 @@ def _record_ok(token: str, detail: str, report: dict) -> None:
         record(report, token, "review", f"non-exact .app selection: {detail}")
 
 
-def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str]) -> None:
-    if len(pending) >= FLUSH_EVERY:
-        publish_batch(pending, report, dirty)
+def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str],
+                  identity_file: Path | None = None) -> None:
+    if len(pending) >= FLUSH_EVERY or len(dirty) >= FLUSH_EVERY:
+        publish_batch(pending, report, dirty, identity_file)
         pending.clear()
         dirty.clear()
 
@@ -648,6 +654,8 @@ def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str]) -> No
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tokens", nargs="*", help="Extract exactly these casks")
+    parser.add_argument("--identity-backfill", action="store_true",
+                        help="Reinspect existing icons whose identity metadata is missing or outdated")
     parser.add_argument("--retry-parked", action="store_true",
                         help="Retry every failed-parked token (attempts >= MAX_ATTEMPTS)")
     parser.add_argument("--limit", type=int, default=50, help="Batch cap (default 50)")
@@ -662,10 +670,25 @@ def main(argv: list[str] | None = None) -> int:
     by_token = {c["token"]: c for c in api_casks}
 
     report = load_report()
-    batch = _build_batch(args.tokens, by_token, api_casks, report, args.limit,
-                         retry_parked=args.retry_parked)
+    if args.identity_backfill and not args.tokens and not args.retry_parked:
+        show = _git(REPO_ROOT, "show", f"FETCH_HEAD:{MANIFEST}")
+        identities = json.loads(show.stdout).get("casks", {}) if show.returncode == 0 else {}
+        counts = load_install_counts()
+        from classify_new_casks import is_main_cask
+        batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None
+                 and needs_refresh(c, identities.get(c["token"]))
+                 and report.get(c["token"], {}).get("attempts", 0) < MAX_ATTEMPTS]
+        batch.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)
+        batch = batch[:args.limit]
+    else:
+        batch = _build_batch(args.tokens, by_token, api_casks, report, args.limit,
+                             retry_parked=args.retry_parked)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    identity_file = args.output_dir / MANIFEST
+    # Never republish stale local records from an earlier invocation after a failed download.
+    from style_standards import write_json
+    write_json(identity_file, {"schemaVersion": 1, "casks": {}}, trailing_newline=True)
     print(f"Extracting {len(batch)} casks → {args.output_dir}"
           + (" (publishing)" if args.publish else " (local only)"))
 
@@ -683,9 +706,10 @@ def main(argv: list[str] | None = None) -> int:
             _record_ok(token, detail, report)
             if args.publish:
                 pending[token] = args.output_dir / f"{token}.png"
-                _flush_if_due(report, pending, dirty)
         else:
             record(report, token, status, detail)
+        if args.publish:
+            _flush_if_due(report, pending, dirty, identity_file)
         outcomes.append((token, status, detail))
         note = ""
         if status == "failed":
@@ -697,7 +721,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.publish:
         # Always flush at the end - persists report-only outcomes (failures,
         # parks) even when no new icons were extracted.
-        publish_batch(pending, report, dirty)
+        publish_batch(pending, report, dirty, identity_file)
     else:
         print("(local run - report changes not persisted; use --publish)")
 

@@ -17093,5 +17093,42 @@
       "primary": "utilities",
       "secondary": []
     }
-  }
+  },
+  "appIdentities": {
+    "element": [
+      {
+        "bundleName": "Element.app",
+        "bundleIdentifier": "im.riot.app"
+      }
+    ],
+    "motion": [
+      {
+        "bundleName": "Motion.app",
+        "bundleIdentifier": "com.electron.motion"
+      }
+    ],
+    "readdle-spark": [
+      {
+        "bundleName": "Spark Desktop.app",
+        "bundleIdentifier": "com.readdle.SparkDesktop"
+      },
+      {
+        "bundleName": "Spark Desktop.app",
+        "bundleIdentifier": "com.readdle.SparkDesktop.appstore"
+      }
+    ],
+    "spark-app": [
+      {
+        "bundleName": "Spark.app",
+        "bundleIdentifier": "com.xenonium.Spark"
+      }
+    ],
+    "tailscale-app": [
+      {
+        "bundleName": "Tailscale.app",
+        "bundleIdentifier": "io.tailscale.ipn.macos"
+      }
+    ]
+  },
+  "metadataUpdatedAt": "2026-09-06T15:31:43.404786+00:00"
 }

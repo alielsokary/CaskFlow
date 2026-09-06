@@ -10,6 +10,10 @@ on:
       tokens:
         description: "Specific tokens, space-separated (overrides limit)"
         default: ""
+      identity_backfill:
+        description: "Reinspect apps with missing or outdated identity metadata"
+        type: boolean
+        default: false
       retry_parked:
         description: "Retry all failed-parked tokens (overrides limit/tokens)"
         type: boolean
@@ -41,6 +45,7 @@ jobs:
           TOKENS: ${{ inputs.tokens }}
           LIMIT: ${{ inputs.limit || '300' }}
           RETRY_PARKED: ${{ inputs.retry_parked }}
+          IDENTITY_BACKFILL: ${{ inputs.identity_backfill }}
           CRON: ${{ github.event.schedule }}
         run: |
           if [ "$RETRY_PARKED" = "true" ] || [ "$CRON" = "7 3 1 * *" ]; then
@@ -49,6 +54,8 @@ jobs:
             # word-splitting intended: TOKENS is space-separated; the script
             # rejects anything that isn't a known cask token.
             python3 scripts/extract_icons.py --publish --tokens $TOKENS
+          elif [ "$IDENTITY_BACKFILL" = "true" ]; then
+            python3 scripts/extract_icons.py --publish --identity-backfill --limit "$LIMIT"
           else
             python3 scripts/extract_icons.py --publish --limit "$LIMIT"
           fi
