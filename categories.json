@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-05",
-  "totalCasks": 3927,
+  "generatedDate": "2026-09-06",
+  "totalCasks": 3928,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -10173,6 +10173,12 @@
     "omnissa-horizon-client": {
       "primary": "utilities",
       "secondary": []
+    },
+    "omniwm": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "ondesoft-audiobook-converter": {
       "primary": "audioMusic",
