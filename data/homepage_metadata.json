@@ -33601,6 +33601,13 @@
     "og_desc": ""
   },
   {
+    "token": "minmaxcal",
+    "homepage": "https://github.com/MikeMcQuaid/MinMaxCal",
+    "title": "GitHub - MikeMcQuaid/MinMaxCal: 📅 Minimal menu bar calendar, maximal full-screen notifications. · GitHub",
+    "meta_desc": "📅 Minimal menu bar calendar, maximal full-screen notifications. - MikeMcQuaid/MinMaxCal",
+    "og_desc": "📅 Minimal menu bar calendar, maximal full-screen notifications. - MikeMcQuaid/MinMaxCal"
+  },
+  {
     "token": "minstaller",
     "homepage": "https://www.motionvfx.com/",
     "title": "MotionVFX - All-in-One Effects & Software Toolkit for Final Cut Pro",
@@ -35868,6 +35875,13 @@
     "title": "GitHub - Octane0411/open-vibe-island: The open-source alternative to vibe-island, designed for heavy code agent users, supporting cc/codex/opencode, terminal/ghostty/cmux/kaku/iterm. 开源的vibe-island替代品，为重度code agent用户设计，支持cc/codex/opencode, terminal/ghostty/cmux/kaku/iterm · GitHub",
     "meta_desc": "The open-source alternative to vibe-island, designed for heavy code agent users, supporting cc/codex/opencode, terminal/ghostty/cmux/kaku/iterm. 开源的vibe-island替代品，为重度code agent用户设计，支持cc/codex/opencode, terminal/ghostty/cmux/kaku/iterm - Octane0411/open-vibe-island",
     "og_desc": "The open-source alternative to vibe-island, designed for heavy code agent users, supporting cc/codex/opencode, terminal/ghostty/cmux/kaku/iterm. 开源的vibe-island替代品，为重度code agent用户设计，支持cc/codex/openc..."
+  },
+  {
+    "token": "open-science",
+    "homepage": "https://aipoch.com/open-science",
+    "title": "AIPOCH Open Science | Open-Source AI Research Workbench",
+    "meta_desc": "AIPOCH Open Science is an open-source, local-first AI research workbench with model choice, code execution, reviewer checks, and traceable artifacts.",
+    "og_desc": "AIPOCH Open Science is an open-source, local-first AI research workbench with model choice, code execution, reviewer checks, and traceable artifacts."
   },
   {
     "token": "open-video-downloader",
@@ -42644,6 +42658,13 @@
     "title": "Stirling PDF - The Secure PDF Platform | 25M+ Downloads",
     "meta_desc": "Deploy our secure application, API, or AI Agent to process sensitive documents on your own infrastructure. Air-gapped & Open Source. Trusted by 55K companies and 75% of the Fortune 500. ",
     "og_desc": "Deploy our secure application, API, or AI Agent to process sensitive documents on your own infrastructure. Air-gapped & Open Source. Trusted by 55K companies and 75% of the Fortune 500. "
+  },
+  {
+    "token": "stockbit",
+    "homepage": "https://stockbit.com/desktop",
+    "title": "Download Aplikasi Saham Stockbit Desktop App untuk Mac dan Windows",
+    "meta_desc": "Aplikasi saham dengan tampilan multi monitor untuk mendukung performa trading sahammu. Stockbit tersedia desktop app untuk Windows dan MacOs. Download sekarang!",
+    "og_desc": "Aplikasi saham dengan tampilan multi monitor untuk mendukung performa trading sahammu. Stockbit tersedia desktop app untuk Windows dan MacOs. Download sekarang!"
   },
   {
     "token": "stolendata-mpv",
