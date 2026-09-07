@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "casks": {
+    "stockbit": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://sda-release-v2.stockbit.com/release/2.2.0/macos/Stockbit.dmg",
+      "artifactSHA256": "026dc5b525f4a30d90888d4cd584948e15f3c947eaf48ec49110864bb9be1b6d",
+      "apps": [
+        {
+          "bundleName": "Stockbit.app",
+          "bundleIdentifier": "com.stockbit.desktop"
+        }
+      ]
+    },
+    "open-science": {
+      "caskVersion": "0.26.0",
+      "sourceURL": "https://github.com/aipoch/open-science/releases/download/v0.26.0/aipoch-open-science-0.26.0-mac-arm64.dmg",
+      "artifactSHA256": "d6d38790a5a0e94b1406914cea2546775d1ebfde42042fd0cff5f699955af8d8",
+      "apps": [
+        {
+          "bundleName": "Open Science.app",
+          "bundleIdentifier": "com.aipoch.open-science"
+        }
+      ]
+    }
+  }
+}
