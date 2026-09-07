@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-06",
-  "totalCasks": 3928,
+  "generatedDate": "2026-09-07",
+  "totalCasks": 3931,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9024,6 +9024,12 @@
         "scienceEducation"
       ]
     },
+    "minmaxcal": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "minstaller": {
       "primary": "utilities",
       "secondary": []
@@ -10272,6 +10278,12 @@
       "secondary": [
         "ai",
         "menuBar"
+      ]
+    },
+    "open-science": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
       ]
     },
     "open-video-downloader": {
@@ -14084,6 +14096,10 @@
     },
     "stirling-pdf": {
       "primary": "productivity",
+      "secondary": []
+    },
+    "stockbit": {
+      "primary": "financeCrypto",
       "secondary": []
     },
     "stoplight-studio": {
