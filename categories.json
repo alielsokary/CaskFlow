@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-07",
-  "totalCasks": 3931,
+  "generatedDate": "2026-09-08",
+  "totalCasks": 3932,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -11619,6 +11619,12 @@
     "pritunl": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "privacynotes": {
+      "primary": "productivity",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "privadovpn": {
       "primary": "securityPrivacy",

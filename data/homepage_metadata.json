@@ -38220,6 +38220,13 @@
     "og_desc": "Free and open source cross platform OpenVPN and WireGuard client."
   },
   {
+    "token": "privacynotes",
+    "homepage": "https://privacynotes.app/",
+    "title": "PrivacyNotes: Your Encrypted Vault for Notes, Tasks & Journals",
+    "meta_desc": "Note down your thoughts, tasks, and journal - encrypted, always. End-to-end encrypted with zero tracking, hosted in Switzerland.",
+    "og_desc": "Note down your thoughts, tasks, and journal - encrypted, always. End-to-end encrypted with zero tracking, hosted in Switzerland."
+  },
+  {
     "token": "privadovpn",
     "homepage": "https://privadovpn.com/",
     "title": "Best VPN & Internet Security Suite | PrivadoVPN",
