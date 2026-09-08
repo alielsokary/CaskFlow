@@ -22,6 +22,17 @@
           "bundleIdentifier": "com.aipoch.open-science"
         }
       ]
+    },
+    "privacynotes": {
+      "caskVersion": "0.505.1",
+      "sourceURL": "https://releases.privacynotes.app/0.505.1/PrivacyNotes_0.505.1_universal.dmg",
+      "artifactSHA256": "7348674850aeaa7bd33ce111ad5fc4ca8f11f4f217b3e8ffef9633514838f5f4",
+      "apps": [
+        {
+          "bundleName": "PrivacyNotes.app",
+          "bundleIdentifier": "app.privacynotes"
+        }
+      ]
     }
   }
 }
