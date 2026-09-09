@@ -33,6 +33,17 @@
           "bundleIdentifier": "app.privacynotes"
         }
       ]
+    },
+    "antinote": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://antinote.io/updates/Antinote_2.1.0.dmg",
+      "artifactSHA256": "106bcf712a5890f3d5eeafe15013ef679fe5b8e438ee2f8db514eb7b46542681",
+      "apps": [
+        {
+          "bundleName": "Antinote.app",
+          "bundleIdentifier": "com.chabomakers.Antinote"
+        }
+      ]
     }
   }
 }
