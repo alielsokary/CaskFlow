@@ -44,6 +44,50 @@
           "bundleIdentifier": "com.chabomakers.Antinote"
         }
       ]
+    },
+    "homebrew-app": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/Homebrew/BrewUI/releases/download/v0.3.0/Homebrew-0.3.0.zip",
+      "artifactSHA256": "58f8ebe6661683c0ce6b8fdd913b25dfa3c84f59de689b5f80054675286ec032",
+      "apps": [
+        {
+          "bundleName": "Homebrew.app",
+          "bundleIdentifier": "sh.brew.app"
+        }
+      ]
+    },
+    "easymac-cleaner": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://updates.martiancat.space/cleaner/EasyMacCleaner-1.3.zip",
+      "artifactSHA256": "ff507578f37e0e2afc3f19018c85a32e751cb199c1605bae0fb577cdbc788428",
+      "apps": [
+        {
+          "bundleName": "EasyMac Cleaner.app",
+          "bundleIdentifier": "com.martiancat.easymaccleaner"
+        }
+      ]
+    },
+    "flick": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://getflick.dev/Flick-1.0.1.dmg",
+      "artifactSHA256": "aace17c24548cd758c95eec6ee801c676f64a6e8db73f1ca93285d4523f4e81a",
+      "apps": [
+        {
+          "bundleName": "Flick.app",
+          "bundleIdentifier": "dev.getflick.flick"
+        }
+      ]
+    },
+    "zentty": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/dedene/zentty/releases/download/v0.3.0/Zentty.dmg",
+      "artifactSHA256": "718601bdaf4dc00e58dab12557cb8f29d15e3924edb4093b3e4d19b0fd492ea0",
+      "apps": [
+        {
+          "bundleName": "Zentty.app",
+          "bundleIdentifier": "be.zenjoy.zentty"
+        }
+      ]
     }
   }
 }
