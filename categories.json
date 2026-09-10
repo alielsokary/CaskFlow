@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-08",
-  "totalCasks": 3932,
+  "generatedDate": "2026-09-09",
+  "totalCasks": 3936,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -4174,6 +4174,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "easymac-cleaner": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "ebmac": {
       "primary": "productivity",
       "secondary": []
@@ -4969,6 +4975,12 @@
     "flic": {
       "primary": "utilities",
       "secondary": []
+    },
+    "flick": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "flickr-uploadr": {
       "primary": "utilities",
@@ -6242,6 +6254,12 @@
     "home-assistant": {
       "primary": "utilities",
       "secondary": []
+    },
+    "homebrew-app": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "homerow": {
       "primary": "utilities",
@@ -17016,6 +17034,12 @@
     "zenbeats": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "zentty": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "zeplin": {
       "primary": "designGraphics",
