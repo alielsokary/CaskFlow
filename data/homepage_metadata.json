@@ -38545,6 +38545,13 @@
     "og_desc": ""
   },
   {
+    "token": "psysonic",
+    "homepage": "https://www.psysonic.de/",
+    "title": "Psysonic - The Navidrome-First Desktop Music Client",
+    "meta_desc": "Psysonic is a modern desktop client for self-hosted music libraries. Fast, native, and beautiful - built for Navidrome and Subsonic servers.",
+    "og_desc": "Psysonic is a modern desktop client for self-hosted music libraries. Fast, native, and beautiful - built for Navidrome and Subsonic servers."
+  },
+  {
     "token": "ptpwebcam",
     "homepage": "https://ptpwebcam.org/",
     "title": "PTP Webcam",
@@ -47287,6 +47294,13 @@
     "title": "Wrkspace - Simplify Application Management",
     "meta_desc": "Wrkspace empowers developers to revolutionize installations and project launches effortlessly. With support for popular programming languages and frameworks, Wrkspace streamlines workflows and enhances productivity. Available for Mac, with Linux and Windows versions on the horizon.",
     "og_desc": "Launch projects seamlessly with Wrkspace. Accelerate your workflow and revolutionize installations effortlessly."
+  },
+  {
+    "token": "wsl-manager",
+    "homepage": "https://wslmanager.com/",
+    "title": "WSL Manager - Linux distros on Windows, native VMs on macOS",
+    "meta_desc": "Manage WSL distros on Windows and native Linux VMs on macOS. Move distros between drives, reclaim the disk space WSL keeps, turn any Docker image into a distro without Docker, manage WSL over SSH, and let AI agents drive your environment through a built-in MCP server.",
+    "og_desc": "One app for WSL distros on Windows and native Linux VMs on macOS. Move distros between drives, reclaim disk space, turn any Docker image into a distro, and let AI agents drive it all through an MCP server."
   },
   {
     "token": "wwdc",
