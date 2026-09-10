@@ -395,6 +395,7 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
 
     wt = tmp_path / "worktree"
     wt.mkdir()
+
     def git(*args):
         return subprocess.check_output(["git", "-C", str(wt), *args], text=True).strip()
     git("init", "-q")
@@ -409,6 +410,7 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
     monkeypatch.setattr(extract_icons, "_add_icons_worktree", lambda _: None)
     monkeypatch.setattr(extract_icons, "_merge_report", lambda *_: None)
     monkeypatch.setattr(extract_icons.shutil, "rmtree", lambda *a, **k: None)
+
     def push(*_):
         git("commit", "-qm", "publish")
         manifest = json.loads(git("show", "HEAD:icons.json"))
@@ -418,7 +420,7 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
         }}
         events.append("push")
     monkeypatch.setattr(extract_icons, "_commit_and_push", push)
-    monkeypatch.setattr(extract_icons, "purge_file", lambda path: events.append(path))
+    monkeypatch.setattr(extract_icons, "purge_file", events.append)
     png = tmp_path / "antinote.png"
     png.write_bytes(b"new")
     extract_icons.publish_batch({"antinote": png}, {}, set())
@@ -427,6 +429,7 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
     extract_icons.publish_batch({"antinote": png}, {}, set())
     assert events == []  # Unchanged bytes: no commit or purge.
     png.write_bytes(b"newer")
+
     def failed_push(*_):
         raise ExtractError("push failed")
     monkeypatch.setattr(extract_icons, "_commit_and_push", failed_push)
