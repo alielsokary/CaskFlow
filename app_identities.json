@@ -88,6 +88,34 @@
           "bundleIdentifier": "be.zenjoy.zentty"
         }
       ]
+    },
+    "realvnc-connect-viewer": {
+      "caskVersion": "8.5.0",
+      "sourceURL": "https://downloads.realvnc.com/download/file/realvnc-connect-viewer/RealVNC-Connect-Viewer-8.5.0-MacOSX-universal.pkg",
+      "artifactSHA256": "fbb9708f3193224031a7e0856f67219404384d3afa1013ea5b242c0b52525659",
+      "apps": []
+    },
+    "wsl-manager": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://github.com/bostrot/wsl2-distro-manager/releases/download/v2.0.3/wsl2-distro-manager-v2.0.3-macos.dmg",
+      "artifactSHA256": "0b8713c328ac7cc3311334bd1f41651a679aee98f736ff3f0eac95beb973e82d",
+      "apps": [
+        {
+          "bundleName": "WSL Manager.app",
+          "bundleIdentifier": "com.bostrot.wsl2distromanager"
+        }
+      ]
+    },
+    "psysonic": {
+      "caskVersion": "1.52.0",
+      "sourceURL": "https://github.com/Psysonic/psysonic/releases/download/app-v1.52.0/Psysonic_1.52.0_aarch64.dmg",
+      "artifactSHA256": "048945387a139bdc8e8cc70bd25be6bd364ccb974880dfd93d6ad748107d4b28",
+      "apps": [
+        {
+          "bundleName": "Psysonic.app",
+          "bundleIdentifier": "dev.psysonic.player"
+        }
+      ]
     }
   }
 }
