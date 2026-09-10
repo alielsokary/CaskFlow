@@ -551,7 +551,7 @@ def purge_file(filename: str) -> None:
     """Refresh a mutable CDN file; failure must not undo a successful push."""
     url = f"https://purge.jsdelivr.net/gh/alielsokary/CaskFlow@{ICONS_BRANCH}/{filename}"
     try:
-        with urlopen(url, timeout=15) as response:
+        with urlopen(url, timeout=15) as response:  # nosec B310 - fixed HTTPS scheme and jsDelivr host
             result = json.load(response)
         paths = result.get("paths", {})
         if result.get("status") != "finished" or not paths or any(
