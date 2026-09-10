@@ -7116,6 +7116,13 @@
     "og_desc": "A little collection of free utilities for the Mac to make your life easier."
   },
   {
+    "token": "easymac-cleaner",
+    "homepage": "https://martiancat.space/products/cleaner.html",
+    "title": "EasyMac Cleaner - Mac Cleaner & Optimizer for macOS | MartianCat",
+    "meta_desc": "EasyMac Cleaner for macOS helps you reclaim disk space by reviewing caches, large files, duplicate files, and privacy traces before anything is deleted. Free 30-day trial.",
+    "og_desc": "EasyMac Cleaner for macOS helps you reclaim disk space by reviewing caches, large files, duplicate files, and privacy traces before anything is deleted. Free 30-day trial."
+  },
+  {
     "token": "ebmac",
     "homepage": "https://ebstudio.info/manual/EBMac/",
     "title": "EBMac",
@@ -8562,6 +8569,13 @@
     "title": "Wireless Smart Button for your Mac - Trigger commands and workflows",
     "meta_desc": "Control your Mac with Flic - The Wireless Smart button. Launch scripts, execute commands, control apps with a simple push of a button.",
     "og_desc": "Control your Mac with Flic - The Wireless Smart button. Launch scripts, execute commands, control apps with a simple push of a button."
+  },
+  {
+    "token": "flick",
+    "homepage": "https://getflick.dev/",
+    "title": "Flick - the command wheel for macOS",
+    "meta_desc": "Hold a key, flick your mouse, done. Flick is a radial command wheel for macOS - launch apps, snap windows, run scripts, and more in a single gesture.",
+    "og_desc": "Hold a key, flick your mouse, done. Flick is a radial command wheel for macOS - launch apps, snap windows, run scripts, and more in a single gesture."
   },
   {
     "token": "flickr-uploadr",
@@ -28621,6 +28635,13 @@
     "og_desc": "Welcome to the Home Assistant App docs"
   },
   {
+    "token": "homebrew-app",
+    "homepage": "https://github.com/Homebrew/BrewUI",
+    "title": "GitHub - Homebrew/BrewUI: 📺 Homebrew's official macOS GUI · GitHub",
+    "meta_desc": "📺 Homebrew's official macOS GUI. Contribute to Homebrew/BrewUI development by creating an account on GitHub.",
+    "og_desc": "📺 Homebrew's official macOS GUI. Contribute to Homebrew/BrewUI development by creating an account on GitHub."
+  },
+  {
     "token": "homerow",
     "homepage": "https://www.homerow.app/",
     "title": "Homerow - Keyboard shortcuts for every button in macOS",
@@ -47855,6 +47876,13 @@
     "title": "Roland - Zenbeats | Music Creation App",
     "meta_desc": "Zenbeats: Music Creation App - Find Your Creative Flow",
     "og_desc": "Zenbeats: Music Creation App - Find Your Creative Flow"
+  },
+  {
+    "token": "zentty",
+    "homepage": "https://zentty.org/",
+    "title": "Zentty - Native Mac Terminal for AI Coding Agents",
+    "meta_desc": "A keyboard-first native Mac terminal. Worklanes keep parallel agent work in separate contexts - and show you the moment one needs you.",
+    "og_desc": "A keyboard-first native Mac terminal. Worklanes keep parallel agent work in separate contexts - and show you the moment one needs you."
   },
   {
     "token": "zeplin",
