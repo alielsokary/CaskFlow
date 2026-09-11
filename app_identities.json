@@ -116,6 +116,34 @@
           "bundleIdentifier": "dev.psysonic.player"
         }
       ]
+    },
+    "workbuddy-cn": {
+      "caskVersion": "5.5.6.38337834-5f969292",
+      "sourceURL": "https://download.codebuddy.cn/workbuddy/saas/darwin-arm64/WorkBuddy-darwin-arm64-5.5.6.38337834-5f969292.dmg",
+      "artifactSHA256": "f54b701da51c079eab5097f58b8dfce9df38b43f2ac1d08d0a51efba481f6059",
+      "apps": [
+        {
+          "bundleName": "WorkBuddy.app",
+          "bundleIdentifier": "com.tencent.workbuddy.mac"
+        }
+      ]
+    },
+    "workbuddy-ai": {
+      "caskVersion": "5.5.2.37849279-910352f0",
+      "sourceURL": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/workbuddy/saas/darwin-arm64/WorkBuddy-darwin-arm64-5.5.2.37849279-910352f0.dmg",
+      "artifactSHA256": "9ea440d1462297c652312efc91aba463ce7e60cc2a211380b0d38ca71fb333e7",
+      "apps": [
+        {
+          "bundleName": "WorkBuddy AI.app",
+          "bundleIdentifier": "com.workbuddy.workbuddy-ai"
+        }
+      ]
+    },
+    "capsomnia": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/fuji-mak/Capsomnia/releases/download/v4.0.0/Capsomnia-4.0.0.pkg",
+      "artifactSHA256": "db728c2cd057976e080ba746adfa2683522d93c8621cb2252ba3e3d51278f23b",
+      "apps": []
     }
   }
 }
