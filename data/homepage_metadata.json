@@ -3684,6 +3684,13 @@
     "og_desc": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut on desktop, mobile, or edit online."
   },
   {
+    "token": "capsomnia",
+    "homepage": "https://github.com/fuji-mak/Capsomnia/",
+    "title": "GitHub - fuji-mak/Capsomnia: A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. · GitHub",
+    "meta_desc": "A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. - fuji-mak/Capsomnia",
+    "og_desc": "A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. - fuji-mak/Capsomnia"
+  },
+  {
     "token": "captain",
     "homepage": "https://getcaptain.co/",
     "title": "Captain for Mac",
@@ -35676,6 +35683,13 @@
     "og_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
   },
   {
+    "token": "ollama-binary",
+    "homepage": "https://ollama.com/",
+    "title": "Ollama",
+    "meta_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+    "og_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+  },
+  {
     "token": "ollamac",
     "homepage": "https://github.com/kevinhermawan/Ollamac",
     "title": "GitHub - kevinhermawan/Ollamac: Mac app for Ollama · GitHub",
@@ -38543,6 +38557,13 @@
     "title": "PsychoPy",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "psysonic",
+    "homepage": "https://www.psysonic.de/",
+    "title": "Psysonic - The Navidrome-First Desktop Music Client",
+    "meta_desc": "Psysonic is a modern desktop client for self-hosted music libraries. Fast, native, and beautiful - built for Navidrome and Subsonic servers.",
+    "og_desc": "Psysonic is a modern desktop client for self-hosted music libraries. Fast, native, and beautiful - built for Navidrome and Subsonic servers."
   },
   {
     "token": "ptpwebcam",
@@ -47205,6 +47226,20 @@
     "og_desc": "Seamless, automatic, \"dotfile\" sync to iCloud. Contribute to mxcl/Workbench development by creating an account on GitHub."
   },
   {
+    "token": "workbuddy-ai",
+    "homepage": "https://www.workbuddy.ai/",
+    "title": "WorkBuddy - AI Agent for Everyday Office Work",
+    "meta_desc": "Tencent WorkBuddy is an AI Agent built for office professionals. Powered by multi-agent collaboration, it autonomously breaks down complex tasks and delivers finished, verifiable outputs - reports, decks, spreadsheets, and more.",
+    "og_desc": "Tencent WorkBuddy is an AI Agent built for office professionals. Powered by multi-agent collaboration, it autonomously breaks down complex tasks and delivers finished, verifiable outputs - reports, decks, spreadsheets, and more."
+  },
+  {
+    "token": "workbuddy-cn",
+    "homepage": "https://www.workbuddy.cn/",
+    "title": "WorkBuddy - AI Agent 办公新范式",
+    "meta_desc": "WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。",
+    "og_desc": "WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。"
+  },
+  {
     "token": "workflowy",
     "homepage": "https://workflowy.com/downloads/mac/",
     "title": "Workflowy Downloads",
@@ -47287,6 +47322,13 @@
     "title": "Wrkspace - Simplify Application Management",
     "meta_desc": "Wrkspace empowers developers to revolutionize installations and project launches effortlessly. With support for popular programming languages and frameworks, Wrkspace streamlines workflows and enhances productivity. Available for Mac, with Linux and Windows versions on the horizon.",
     "og_desc": "Launch projects seamlessly with Wrkspace. Accelerate your workflow and revolutionize installations effortlessly."
+  },
+  {
+    "token": "wsl-manager",
+    "homepage": "https://wslmanager.com/",
+    "title": "WSL Manager - Linux distros on Windows, native VMs on macOS",
+    "meta_desc": "Manage WSL distros on Windows and native Linux VMs on macOS. Move distros between drives, reclaim the disk space WSL keeps, turn any Docker image into a distro without Docker, manage WSL over SSH, and let AI agents drive your environment through a built-in MCP server.",
+    "og_desc": "One app for WSL distros on Windows and native Linux VMs on macOS. Move distros between drives, reclaim disk space, turn any Docker image into a distro, and let AI agents drive it all through an MCP server."
   },
   {
     "token": "wwdc",

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-09",
-  "totalCasks": 3936,
+  "generatedDate": "2026-09-11",
+  "totalCasks": 3942,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2143,6 +2143,12 @@
       "primary": "videoMedia",
       "secondary": [
         "ai"
+      ]
+    },
+    "capsomnia": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
       ]
     },
     "captain": {
@@ -10160,6 +10166,12 @@
         "ai"
       ]
     },
+    "ollama-binary": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "ollamac": {
       "primary": "developerTools",
       "secondary": []
@@ -11816,6 +11828,10 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "psysonic": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
     "ptpwebcam": {
       "primary": "videoMedia",
       "secondary": []
@@ -12240,6 +12256,10 @@
       "secondary": []
     },
     "realvnc-connect": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "realvnc-connect-viewer": {
       "primary": "utilities",
       "secondary": []
     },
@@ -16084,10 +16104,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "vnc-viewer": {
-      "primary": "utilities",
-      "secondary": []
-    },
     "vocaster-hub": {
       "primary": "other",
       "secondary": []
@@ -16648,6 +16664,19 @@
       "primary": "cloudStorage",
       "secondary": []
     },
+    "workbuddy-ai": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "officeTools"
+      ]
+    },
+    "workbuddy-cn": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "workflowy": {
       "primary": "productivity",
       "secondary": []
@@ -16701,6 +16730,12 @@
     "wrkspace": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "wsl-manager": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "wwdc": {
       "primary": "developerTools",
