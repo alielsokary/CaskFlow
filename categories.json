@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-10",
-  "totalCasks": 3938,
+  "generatedDate": "2026-09-11",
+  "totalCasks": 3942,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2143,6 +2143,12 @@
       "primary": "videoMedia",
       "secondary": [
         "ai"
+      ]
+    },
+    "capsomnia": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
       ]
     },
     "captain": {
@@ -10160,6 +10166,12 @@
         "ai"
       ]
     },
+    "ollama-binary": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "ollamac": {
       "primary": "developerTools",
       "secondary": []
@@ -16651,6 +16663,19 @@
     "workbench": {
       "primary": "cloudStorage",
       "secondary": []
+    },
+    "workbuddy-ai": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "officeTools"
+      ]
+    },
+    "workbuddy-cn": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "workflowy": {
       "primary": "productivity",
