@@ -3684,6 +3684,13 @@
     "og_desc": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut on desktop, mobile, or edit online."
   },
   {
+    "token": "capsomnia",
+    "homepage": "https://github.com/fuji-mak/Capsomnia/",
+    "title": "GitHub - fuji-mak/Capsomnia: A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. · GitHub",
+    "meta_desc": "A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. - fuji-mak/Capsomnia",
+    "og_desc": "A tiny macOS app that turns Caps Lock into a physical keep-awake switch for closed-lid MacBook work. - fuji-mak/Capsomnia"
+  },
+  {
     "token": "captain",
     "homepage": "https://getcaptain.co/",
     "title": "Captain for Mac",
@@ -35676,6 +35683,13 @@
     "og_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
   },
   {
+    "token": "ollama-binary",
+    "homepage": "https://ollama.com/",
+    "title": "Ollama",
+    "meta_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+    "og_desc": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+  },
+  {
     "token": "ollamac",
     "homepage": "https://github.com/kevinhermawan/Ollamac",
     "title": "GitHub - kevinhermawan/Ollamac: Mac app for Ollama · GitHub",
@@ -47210,6 +47224,20 @@
     "title": "GitHub - mxcl/Workbench: Seamless, automatic, \"dotfile\" sync to iCloud. · GitHub",
     "meta_desc": "Seamless, automatic, \"dotfile\" sync to iCloud. Contribute to mxcl/Workbench development by creating an account on GitHub.",
     "og_desc": "Seamless, automatic, \"dotfile\" sync to iCloud. Contribute to mxcl/Workbench development by creating an account on GitHub."
+  },
+  {
+    "token": "workbuddy-ai",
+    "homepage": "https://www.workbuddy.ai/",
+    "title": "WorkBuddy - AI Agent for Everyday Office Work",
+    "meta_desc": "Tencent WorkBuddy is an AI Agent built for office professionals. Powered by multi-agent collaboration, it autonomously breaks down complex tasks and delivers finished, verifiable outputs - reports, decks, spreadsheets, and more.",
+    "og_desc": "Tencent WorkBuddy is an AI Agent built for office professionals. Powered by multi-agent collaboration, it autonomously breaks down complex tasks and delivers finished, verifiable outputs - reports, decks, spreadsheets, and more."
+  },
+  {
+    "token": "workbuddy-cn",
+    "homepage": "https://www.workbuddy.cn/",
+    "title": "WorkBuddy - AI Agent 办公新范式",
+    "meta_desc": "WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。",
+    "og_desc": "WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。"
   },
   {
     "token": "workflowy",
