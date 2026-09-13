@@ -144,6 +144,28 @@
       "sourceURL": "https://github.com/fuji-mak/Capsomnia/releases/download/v4.0.0/Capsomnia-4.0.0.pkg",
       "artifactSHA256": "db728c2cd057976e080ba746adfa2683522d93c8621cb2252ba3e3d51278f23b",
       "apps": []
+    },
+    "langdock": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://desktop.langdock.com/global/stable/Langdock-1.0.5-universal.dmg",
+      "artifactSHA256": "41f4a6267fdb582eea458de4a22218193e33adf0043e4816d2167d320e784f41",
+      "apps": [
+        {
+          "bundleName": "Langdock.app",
+          "bundleIdentifier": "com.langdock.desktop"
+        }
+      ]
+    },
+    "nuphyio": {
+      "caskVersion": "2.2.7,1788243270464",
+      "sourceURL": "https://cdn.nuphy.io/upgrade/mac/NuPhyIO-2.2.7-1788243270464.dmg",
+      "artifactSHA256": "e30f7424569401e1442de026c768ac610e964c3924ae5083407c1cc9684a5e6b",
+      "apps": [
+        {
+          "bundleName": "NuPhyIO.app",
+          "bundleIdentifier": "NuPhyIO2.your-app"
+        }
+      ]
     }
   }
 }
