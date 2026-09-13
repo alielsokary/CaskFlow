@@ -31021,6 +31021,13 @@
     "og_desc": "Drop any files to any devices on your LAN."
   },
   {
+    "token": "langdock",
+    "homepage": "https://langdock.com/products/desktop",
+    "title": "Desktop",
+    "meta_desc": "Use Langdock natively, on Windows and macOS.",
+    "og_desc": "Use Langdock natively, on Windows and macOS."
+  },
+  {
     "token": "langflow",
     "homepage": "https://www.langflow.org/desktop",
     "title": "Desktop | Langflow | Low-code AI builder for agentic and RAG applications",
@@ -35485,6 +35492,13 @@
     "title": "Numi. Beautiful calculator app for Mac, Windows & Linux.",
     "meta_desc": "Beautiful calculator for Mac, Windows and Linux that blends math with text. Currency, units, time zones, numeral systems, variables, export, notification widget.",
     "og_desc": "Numi is a beautiful text calculator for Mac."
+  },
+  {
+    "token": "nuphyio",
+    "homepage": "https://www.nuphyio.com/",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "nutstore",

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-11",
-  "totalCasks": 3942,
+  "generatedDate": "2026-09-13",
+  "totalCasks": 3944,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7574,6 +7574,12 @@
         "cloudStorage"
       ]
     },
+    "langdock": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "langflow": {
       "primary": "developerTools",
       "secondary": []
@@ -10056,6 +10062,10 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "nuphyio": {
+      "primary": "utilities",
+      "secondary": []
     },
     "nutstore": {
       "primary": "cloudStorage",
