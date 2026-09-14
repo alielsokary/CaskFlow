@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-13",
-  "totalCasks": 3944,
+  "generatedDate": "2026-09-14",
+  "totalCasks": 3948,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2085,6 +2085,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "calyx": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "camerabag-photo": {
       "primary": "designGraphics",
       "secondary": []
@@ -3942,6 +3948,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "doubaoime": {
+      "primary": "utilities",
+      "secondary": [
+        "ai"
+      ]
+    },
     "doughnut": {
       "primary": "audioMusic",
       "secondary": []
@@ -5615,6 +5627,12 @@
     "ghost-downloader": {
       "primary": "utilities",
       "secondary": []
+    },
+    "ghostex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "ghostpepper": {
       "primary": "productivity",
@@ -8259,10 +8277,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "macpar-deluxe": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "macparakeet": {
       "primary": "productivity",
       "secondary": [
@@ -9812,6 +9826,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "network-weather": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "nexonplug": {
       "primary": "games",
       "secondary": []
@@ -10907,10 +10927,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "parallels-virtualization-sdk": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "paranoia-file-text-encryption": {
       "primary": "securityPrivacy",
       "secondary": [
@@ -11181,6 +11197,12 @@
     "piclist": {
       "primary": "cloudStorage",
       "secondary": []
+    },
+    "picmal": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
     },
     "picoscope": {
       "primary": "other",
@@ -12346,6 +12368,13 @@
     "rekordbox": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "relay": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity",
+        "ai"
+      ]
     },
     "remanager": {
       "primary": "utilities",
@@ -15450,6 +15479,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "tungsten-edge": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "tunnelbear": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -16526,10 +16561,6 @@
     },
     "windscribe": {
       "primary": "securityPrivacy",
-      "secondary": []
-    },
-    "wing-personal": {
-      "primary": "developerTools",
       "secondary": []
     },
     "wins": {
