@@ -166,6 +166,78 @@
           "bundleIdentifier": "NuPhyIO2.your-app"
         }
       ]
+    },
+    "ghostex": {
+      "caskVersion": "9.5.1",
+      "sourceURL": "https://github.com/maddada/Ghostex/releases/download/v9.5.1/ghostex-9.5.1-arm64.dmg",
+      "artifactSHA256": "3810bc827b4f205e5fe9da02fd17e5aca5d3e1b056a993a59ef15cb20879559b",
+      "apps": [
+        {
+          "bundleName": "Ghostex.app",
+          "bundleIdentifier": "com.madda.ghostex.host"
+        }
+      ]
+    },
+    "network-weather": {
+      "caskVersion": "1.3.1,113",
+      "sourceURL": "https://pkgs.networkweather.com/macOS/NetworkWeather-1.3.1.113-Universal.pkg",
+      "artifactSHA256": "bc3db56273f53b384c7a0edc464676b091b04872ea24c1b7897351d7ea23d06e",
+      "apps": []
+    },
+    "tungsten-edge": {
+      "caskVersion": "0.11.4",
+      "sourceURL": "https://tungstenedge.app/download/Tungsten-Edge-0.11.4.zip",
+      "artifactSHA256": "63904741c7aa4f42e4dd5b135d99383f8fae195a07916d36f30938eea470a6b2",
+      "apps": [
+        {
+          "bundleName": "Tungsten Edge.app",
+          "bundleIdentifier": "com.caye.macosdockcc.v2"
+        }
+      ]
+    },
+    "calyx": {
+      "caskVersion": "0.41.0",
+      "sourceURL": "https://github.com/yuuichieguchi/Calyx/releases/download/v0.41.0/Calyx.zip",
+      "artifactSHA256": "777231172b270fcac630b3ddd415c5268d8f87016e8a86f573b5830bf1d5e9d9",
+      "apps": [
+        {
+          "bundleName": "Calyx.app",
+          "bundleIdentifier": "com.calyx.terminal"
+        }
+      ]
+    },
+    "fontsmoothingadjuster": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/bouncetechnologies/Font-Smoothing-Adjuster/releases/download/v2.0.0/Font.Smoothing.Adjuster.2.0.0.dmg",
+      "artifactSHA256": "187401950b827c58262a9bb86878c5dd5820550c00ca414f971ce82837d7419f",
+      "apps": [
+        {
+          "bundleName": "Font Smoothing Adjuster.app",
+          "bundleIdentifier": "com.bouncetechnologies.Font-Smoothing-Adjuster"
+        }
+      ]
+    },
+    "picmal": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://picmal.app/downloads/Picmal-1.9.0.dmg",
+      "artifactSHA256": "ce0e76b75c514b50cd5e9578a8b9726d9ae55aa117553aaf329174a3b0a878a5",
+      "apps": [
+        {
+          "bundleName": "Picmal.app",
+          "bundleIdentifier": "com.cantimplorastudio.picmal"
+        }
+      ]
+    },
+    "relay": {
+      "caskVersion": "0.10.0",
+      "sourceURL": "https://github.com/msllrs/relay/releases/download/v0.10.0/Relay-v0.10.0.dmg",
+      "artifactSHA256": "7c9fc8023eba417af999d6dd3488e12258168ee1ebcb3e6004b4af5363ac0850",
+      "apps": [
+        {
+          "bundleName": "Relay.app",
+          "bundleIdentifier": "com.msllrs.relay"
+        }
+      ]
     }
   }
 }
