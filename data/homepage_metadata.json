@@ -3590,6 +3590,13 @@
     "og_desc": ""
   },
   {
+    "token": "calyx",
+    "homepage": "https://github.com/yuuichieguchi/Calyx",
+    "title": "GitHub - yuuichieguchi/Calyx: A native macOS terminal app built on Ghostty for running and supervising coding agents · GitHub",
+    "meta_desc": "A native macOS terminal app built on Ghostty for running and supervising coding agents - yuuichieguchi/Calyx",
+    "og_desc": "A native macOS terminal app built on Ghostty for running and supervising coding agents - yuuichieguchi/Calyx"
+  },
+  {
     "token": "camerabag-photo",
     "homepage": "https://nevercenter.com/camerabag/photo/",
     "title": "Nevercenter",
@@ -6733,6 +6740,13 @@
     "title": "",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "doubaoime",
+    "homepage": "https://shurufa.doubao.com/pc",
+    "title": "豆包输入法 - 高效输入，享受输出",
+    "meta_desc": "字节跳动旗下输入法，集成了先进好用的豆包语音能力，支持多种方言精准识别、智能纠错及轻声输入。同时键盘输入有强大的纠错、长输入能力与结合上下文的智能联想，让输入法成为你最好的输入 copilot。",
+    "og_desc": "高效输入，享受输出"
   },
   {
     "token": "doughnut",
@@ -27408,6 +27422,13 @@
     "og_desc": "A downloader that sniffs page media, records live streams, and replaces five tools. Fast, free, and open source."
   },
   {
+    "token": "ghostex",
+    "homepage": "https://ghostex.dev/",
+    "title": "Ghostex | The Most Powerful All-in-one Agents Workspace",
+    "meta_desc": "Ghostex is the desktop workspace for Claude Code, Codex, OpenCode, and any other CLI agent. Run them in parallel on macOS, Windows, and Linux, then review and continue from your computer or your phone.",
+    "og_desc": "Ghostex is the desktop workspace for Claude Code, Codex, OpenCode, and any other CLI agent. Run them in parallel on macOS, Windows, and Linux, then review and continue from your computer or your phone."
+  },
+  {
     "token": "ghostpepper",
     "homepage": "https://github.com/matthartman/ghost-pepper",
     "title": "GitHub - matthartman/ghost-pepper: 100% private on-device voice models for speech-to-text and meeting transcription on macOS · GitHub",
@@ -35038,6 +35059,13 @@
     "og_desc": ""
   },
   {
+    "token": "network-weather",
+    "homepage": "https://www.networkweather.com/",
+    "title": "Network Weather | Know What's Wrong With Your Network",
+    "meta_desc": "Network Weather scans your network and tells you exactly what's wrong and how to fix it. Detects end-of-life routers, security risks, WiFi problems, VPN issues, and ISP outages. No IT knowledge required.",
+    "og_desc": "End-of-life router? Weak WiFi? VPN slowing you down? Network Weather scans your whole connection, finds the problem, and tells you how to fix it in plain English."
+  },
+  {
     "token": "netxms-console",
     "homepage": "https://netxms.com/",
     "title": "NetXMS - enabling networks. Highly customizable, scalable, secure.",
@@ -37449,6 +37477,13 @@
     "og_desc": ""
   },
   {
+    "token": "picmal",
+    "homepage": "https://picmal.app/",
+    "title": "Picmal: convert and compress media on your Mac, offline",
+    "meta_desc": "Convert, compress, and edit images, video, audio, and PDFs right on your Mac, instead of trusting sketchy websites. Works offline, no account, no subscription.",
+    "og_desc": "Convert, compress, and edit images, video, audio, and PDFs right on your Mac, instead of trusting sketchy websites. Works offline, no account, no subscription."
+  },
+  {
     "token": "picoscope",
     "homepage": "https://www.picotech.com/",
     "title": "PC Oscilloscope, Data Logger & RF Products | Pico Technology",
@@ -39448,6 +39483,13 @@
     "title": "rekordbox｜DJ software for professional DJs",
     "meta_desc": "rekordbox is DJ software that enables a comfortable DJ workflow with AI, cloud, and automation tech. Supporting multiple music streaming services. Download now for free!",
     "og_desc": "rekordbox is DJ software that enables a comfortable DJ workflow with AI, cloud, and automation tech. Supporting multiple music streaming services. Download now for free!"
+  },
+  {
+    "token": "relay",
+    "homepage": "https://github.com/msllrs/relay/",
+    "title": "GitHub - msllrs/relay: A macOS menu bar app that lets you build rich LLM prompts by combining files, clipboard captures, and voice notes. · GitHub",
+    "meta_desc": "A macOS menu bar app that lets you build rich LLM prompts by combining files, clipboard captures, and voice notes. - msllrs/relay",
+    "og_desc": "A macOS menu bar app that lets you build rich LLM prompts by combining files, clipboard captures, and voice notes. - msllrs/relay"
   },
   {
     "token": "remanager",
@@ -45128,6 +45170,13 @@
     "title": "TuneTag by SweetP Productions",
     "meta_desc": "ID3 and meta tag editor for audio files",
     "og_desc": ""
+  },
+  {
+    "token": "tungsten-edge",
+    "homepage": "https://tungstenedge.app/",
+    "title": "Tungsten Edge - Per-Window Taskbar for macOS",
+    "meta_desc": "Tungsten Edge is a per-window taskbar for macOS - every window gets its own card, one click away. Switching done right, native and light. Requires macOS 12 or later.",
+    "og_desc": "Tungsten Edge is a per-window taskbar for macOS - every window gets its own card, one click away. Switching done right, native and light. Requires macOS 12 or later."
   },
   {
     "token": "tunnelbear",
