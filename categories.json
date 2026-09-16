@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-14",
-  "totalCasks": 3948,
+  "generatedDate": "2026-09-15",
+  "totalCasks": 3953,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1631,6 +1631,10 @@
     },
     "bitfocus-buttons": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "bitmuse": {
+      "primary": "audioMusic",
       "secondary": []
     },
     "bitrix24": {
@@ -3776,6 +3780,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "distill-web-monitor": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "ditto": {
       "primary": "utilities",
       "secondary": []
@@ -5204,6 +5214,10 @@
         "designGraphics"
       ]
     },
+    "fontsmoothingadjuster": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "fontstand": {
       "primary": "designGraphics",
       "secondary": []
@@ -5672,6 +5686,10 @@
       "secondary": []
     },
     "gitcomet": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "gitdifferent": {
       "primary": "developerTools",
       "secondary": []
     },
@@ -10102,6 +10120,12 @@
     "nvidia-nsight-systems": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "nvidia-pair": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "nvidia-sync": {
       "primary": "developerTools",
