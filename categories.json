@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-15",
-  "totalCasks": 3953,
+  "generatedDate": "2026-09-16",
+  "totalCasks": 3954,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7449,6 +7449,13 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "kkterm": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities",
+        "ai"
+      ]
+    },
     "klayout": {
       "primary": "designGraphics",
       "secondary": []
@@ -10072,6 +10079,12 @@
     "nrf-connect": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "nrfutil": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "nteract": {
       "primary": "developerTools",
@@ -12890,12 +12903,6 @@
     "samsung-magician": {
       "primary": "utilities",
       "secondary": []
-    },
-    "sanctum": {
-      "primary": "productivity",
-      "secondary": [
-        "ai"
-      ]
     },
     "sanesidebuttons": {
       "primary": "menuBar",

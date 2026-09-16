@@ -30815,6 +30815,13 @@
     "og_desc": "90+ million songs at your fingertip. Tune in to podcasts for free!"
   },
   {
+    "token": "kkterm",
+    "homepage": "https://github.com/ryantsai/KKTerm",
+    "title": "GitHub - ryantsai/KKTerm: Super-tool for vibe coders & system admins - terminals, SSH, SFTP, RDP/VNC, dashboards, install helpers, and a built-in AI assistant. · GitHub",
+    "meta_desc": "Super-tool for vibe coders & system admins - terminals, SSH, SFTP, RDP/VNC, dashboards, install helpers, and a built-in AI assistant. - ryantsai/KKTerm",
+    "og_desc": "Super-tool for vibe coders & system admins - terminals, SSH, SFTP, RDP/VNC, dashboards, install helpers, and a built-in AI assistant. - ryantsai/KKTerm"
+  },
+  {
     "token": "klatexformula",
     "homepage": "https://klatexformula.sourceforge.io/",
     "error": "HTTP 403"
