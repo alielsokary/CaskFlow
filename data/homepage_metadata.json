@@ -2763,6 +2763,13 @@
     "og_desc": ""
   },
   {
+    "token": "bitmuse",
+    "homepage": "https://bitmuse.app/",
+    "title": "BitMuse - bit-perfect music player for macOS",
+    "meta_desc": "A Mac music player for local files and NAS. Exclusive DAC output, DSD files, headphone EQ and room correction. Try every feature free for 30 days.",
+    "og_desc": ""
+  },
+  {
     "token": "bitrix24",
     "homepage": "https://www.bitrix24.com/apps/mobile-and-desktop-apps.php#desktop_app",
     "title": "Bitrix24 Applications",
@@ -6425,6 +6432,13 @@
     "title": "Displays: manage your monitors and more on macOS - Jibapps",
     "meta_desc": "Displays for macOS lets you manage all your monitors: easily change resolution, enable a customizable night mode on your Mac, highlight your mouse pointer and take screenshots with cloud services support.",
     "og_desc": ""
+  },
+  {
+    "token": "distill-web-monitor",
+    "homepage": "https://distill.io/",
+    "title": "Tracking website updates, automated and simplified",
+    "meta_desc": "Monitor webpages to track website & page changes. Get email alerts, push notifications and slack/discord alerts on changes. Start free monitoring today | Distill",
+    "og_desc": "Monitor webpages to track website & page changes. Get email alerts, push notifications and slack/discord alerts on changes. Start free monitoring today | Distill"
   },
   {
     "token": "ditto",
@@ -26596,6 +26610,13 @@
     "og_desc": ""
   },
   {
+    "token": "fontsmoothingadjuster",
+    "homepage": "https://github.com/bouncetechnologies/Font-Smoothing-Adjuster",
+    "title": "GitHub - bouncetechnologies/Font-Smoothing-Adjuster: Font Smoothing Adjuster is a tiny, native macOS app that lets you adjust your font smoothing preferences in a graphical user interface. · GitHub",
+    "meta_desc": "Font Smoothing Adjuster is a tiny, native macOS app that lets you adjust your font smoothing preferences in a graphical user interface. - bouncetechnologies/Font-Smoothing-Adjuster",
+    "og_desc": "Font Smoothing Adjuster is a tiny, native macOS app that lets you adjust your font smoothing preferences in a graphical user interface. - bouncetechnologies/Font-Smoothing-Adjuster"
+  },
+  {
     "token": "fontstand",
     "homepage": "https://fontstand.com/",
     "title": "Fontstand - try fonts for free or rent them",
@@ -27525,6 +27546,13 @@
     "title": "Git GUI for Linux, macOS, and Windows teams | GitComet",
     "meta_desc": "GitComet is a fast open source Git GUI for Linux, macOS, and Windows, with focused diff and merge tooling and familiar Git workflows.",
     "og_desc": "GitComet is a fast open source Git GUI for Linux, macOS, and Windows, with focused diff and merge tooling and familiar Git workflows."
+  },
+  {
+    "token": "gitdifferent",
+    "homepage": "https://vheissulabs.com/projects/gitdifferent",
+    "title": "GitDifferent | VheissuLabs",
+    "meta_desc": "A desktop git client that handles the parts other clients send you away for: three-way merging, code review with line comments, stacked pull requests, and worktrees with hooks that run on creation.",
+    "og_desc": "A desktop git client that handles the parts other clients send you away for: three-way merging, code review with line comments, stacked pull requests, and worktrees with hooks that run on creation."
   },
   {
     "token": "gitdock",
@@ -35555,6 +35583,13 @@
     "title": "Nsight Systems | NVIDIA Developer",
     "meta_desc": "Nsight Systems is a performance analysis tool for visualizing app algorithms and scaling optimization across CPUs and GPUs.",
     "og_desc": "Profile systems, analyze performance, and optimize platforms."
+  },
+  {
+    "token": "nvidia-pair",
+    "homepage": "https://github.com/NVIDIA/Personal-AI-Router",
+    "title": "GitHub - NVIDIA/Personal-AI-Router: Router that virtually distributes inference across connected devices in the home. · GitHub",
+    "meta_desc": "Router that virtually distributes inference across connected devices in the home. - NVIDIA/Personal-AI-Router",
+    "og_desc": "Router that virtually distributes inference across connected devices in the home. - NVIDIA/Personal-AI-Router"
   },
   {
     "token": "nvidia-sync",
