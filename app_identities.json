@@ -293,6 +293,105 @@
           "bundleIdentifier": "com.kkterm.app"
         }
       ]
+    },
+    "agentiloop-agent": {
+      "caskVersion": "1.1.33.233",
+      "sourceURL": "https://github.com/AgentiLoop/Agent/releases/download/v1.1.33.233/Agent-v1.1.33.233-macOS.dmg",
+      "artifactSHA256": "32272119b869f06b8377341f3a3cc7894649bc799a1dd021b3fb56eb058e27db",
+      "apps": [
+        {
+          "bundleName": "Agent!.app",
+          "bundleIdentifier": "Agent.app.toddbruss"
+        }
+      ]
+    },
+    "telari": {
+      "caskVersion": "0.5.5",
+      "sourceURL": "https://dl.telari.app/Telari-0.5.5.dmg",
+      "artifactSHA256": "73ae49adfa42d0dad54661ac3def970fb3c1449223f7048da871092580c7a494",
+      "apps": [
+        {
+          "bundleName": "Telari.app",
+          "bundleIdentifier": "dev.telari.reader"
+        }
+      ]
+    },
+    "kaku": {
+      "caskVersion": "0.20.0",
+      "sourceURL": "https://github.com/tw93/Kaku/releases/download/V0.20.0/Kaku.dmg",
+      "artifactSHA256": "5801d14ff80cf69fd59655ae9529a50ffc827f57555661bd525eb65f862df8a4",
+      "apps": [
+        {
+          "bundleName": "Kaku.app",
+          "bundleIdentifier": "fun.tw93.kaku"
+        }
+      ]
+    },
+    "saega": {
+      "caskVersion": "1.0.21",
+      "sourceURL": "https://storage.googleapis.com/saega-downloads/Saega-1.0.21.dmg",
+      "artifactSHA256": "0d70fd0d38269f3a37f47cc57258d095a927050338a7cddbb6bef91d8f0d25ce",
+      "apps": [
+        {
+          "bundleName": "Saega.app",
+          "bundleIdentifier": "app.saega.app"
+        }
+      ]
+    },
+    "hoptodesk": {
+      "caskVersion": "1.46.50",
+      "sourceURL": "https://dl.hoptodesk.com/releases/1.46.50/HopToDesk.dmg",
+      "artifactSHA256": "422a1fb21ca587edcac4956b6e4638d8b5d1a5fcbc32657668c019dd0ec426fa",
+      "apps": [
+        {
+          "bundleName": "HopToDesk.app",
+          "bundleIdentifier": "com.hoptodesk.hoptodesk"
+        }
+      ]
+    },
+    "opendisk": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/137137137/OpenDisk/releases/download/v1.2.0/OpenDisk-1.2.0.zip",
+      "artifactSHA256": "feb0ede55c3f158fff90a6fc84c2986fb3be07b3ef0f4c118aa713a8638d50b9",
+      "apps": [
+        {
+          "bundleName": "OpenDisk.app",
+          "bundleIdentifier": "ideals.OpenDisk"
+        }
+      ]
+    },
+    "sidex": {
+      "caskVersion": "0.1.2",
+      "sourceURL": "https://github.com/Sidenai/sidex/releases/download/v0.1.2/SideX_0.1.2_aarch64.dmg",
+      "artifactSHA256": "849fd26e236feee1c3628732a73c72bb43c6765fbfe7cf4c6d0805d089f59f0a",
+      "apps": [
+        {
+          "bundleName": "SideX.app",
+          "bundleIdentifier": "com.siden.sidex"
+        }
+      ]
+    },
+    "snapline": {
+      "caskVersion": "2.37.0",
+      "sourceURL": "https://snap-line.app/updates/Snapline-2.37.0.zip",
+      "artifactSHA256": "58f208c6b1021459a2b7301249ae52021e4645cb6b428ac96cf9b78f98ea903e",
+      "apps": [
+        {
+          "bundleName": "Snapline.app",
+          "bundleIdentifier": "com.ziadeh.Snapline"
+        }
+      ]
+    },
+    "bettermacwidgets": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://bettermacwidgets.de/BetterMacWidgets-2.3.0.dmg",
+      "artifactSHA256": "cddd2990a8e5d43edd948ecc7611006c9951fce1b1f90165ee42c8c6df459a98",
+      "apps": [
+        {
+          "bundleName": "BetterMacWidgets.app",
+          "bundleIdentifier": "com.bettermacwidgets.app"
+        }
+      ]
     }
   }
 }
