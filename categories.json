@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-16",
-  "totalCasks": 3954,
+  "generatedDate": "2026-09-17",
+  "totalCasks": 3963,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -364,6 +364,13 @@
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "agentiloop-agent": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
       ]
     },
     "agentkube": {
@@ -1522,6 +1529,12 @@
     "betterdisplay": {
       "primary": "utilities",
       "secondary": []
+    },
+    "bettermacwidgets": {
+      "primary": "utilities",
+      "secondary": [
+        "screensaverWallpaper"
+      ]
     },
     "bettermouse": {
       "primary": "utilities",
@@ -6335,6 +6348,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "hoptodesk": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "horos": {
       "primary": "designGraphics",
       "secondary": []
@@ -7181,6 +7200,12 @@
       "primary": "designGraphics",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "kaku": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "kaleidoscope": {
@@ -10448,6 +10473,10 @@
         "utilities"
       ]
     },
+    "opendisk": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "opendisplay": {
       "primary": "utilities",
       "secondary": [
@@ -12872,6 +12901,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "saega": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "safari-technology-preview": {
       "primary": "browsers",
       "secondary": []
@@ -13370,6 +13405,10 @@
       "primary": "games",
       "secondary": []
     },
+    "sidex": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "sigil": {
       "primary": "productivity",
       "secondary": [
@@ -13681,6 +13720,13 @@
     "snagit": {
       "primary": "utilities",
       "secondary": []
+    },
+    "snapline": {
+      "primary": "designGraphics",
+      "secondary": [
+        "menuBar",
+        "videoMedia"
+      ]
     },
     "snapmaker-luban": {
       "primary": "designGraphics",
@@ -14821,6 +14867,12 @@
     "teensy": {
       "primary": "utilities",
       "secondary": []
+    },
+    "telari": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "telegram": {
       "primary": "communication",

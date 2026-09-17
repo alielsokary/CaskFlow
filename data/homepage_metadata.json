@@ -572,6 +572,13 @@
     "og_desc": "🪪 IDE for Agents: prompt a worktree, review another, ship a third, repeat - MikeMcQuaid/AgentIDE"
   },
   {
+    "token": "agentiloop-agent",
+    "homepage": "https://github.com/AgentiLoop/Agent",
+    "title": "GitHub - AgentiLoop/Agent: AgentiLoop Agent! An Autonomous Agentic Agent for Mac, and exclusive Apple only harnesss. Supports  automation, scripting, coding, build anything and more. Powered by 21 LLM providers across local and cloud platforms. Dark or Light Mode UI. · GitHub",
+    "meta_desc": "AgentiLoop Agent! An Autonomous Agentic Agent for Mac, and exclusive Apple only harnesss. Supports  automation, scripting, coding, build anything and more. Powered by 21 LLM providers across local and cloud platforms. Dark or Light Mode UI. - AgentiLoop/Agent",
+    "og_desc": "AgentiLoop Agent! An Autonomous Agentic Agent for Mac, and exclusive Apple only harnesss. Supports  automation, scripting, coding, build anything and more. Powered by 21 LLM providers across local ..."
+  },
+  {
     "token": "agentkube",
     "homepage": "https://agentkube.com/",
     "title": "",
@@ -2560,6 +2567,13 @@
     "title": "BetterDisplay Pro | Unlock Your Mac Displays",
     "meta_desc": "BetterDisplay is a powerful macOS display utility for flexible HiDPI scaling, brightness and color control, virtual displays, Picture in Picture, display syncing, and more.",
     "og_desc": "BetterDisplay is a powerful macOS display utility for flexible HiDPI scaling, brightness and color control, virtual displays, Picture in Picture, display syncing, and more."
+  },
+  {
+    "token": "bettermacwidgets",
+    "homepage": "https://bettermacwidgets.de/",
+    "title": "Mac Widgets for your Desktop - 25 live widgets | BetterMacWidgets",
+    "meta_desc": "Free download. Live widgets that sit on your Mac desktop, not in Notification Center. Weather that really rains, Now Playing, 20 themes. macOS 15+, from €12.99.",
+    "og_desc": "Free download. Live widgets that sit on your Mac desktop, not in Notification Center. Weather that really rains, Now Playing, 20 themes. macOS 15+, from €12.99."
   },
   {
     "token": "bettermouse",
@@ -28747,6 +28761,13 @@
     "og_desc": "Hoppscotch is an open-source API development ecosystem that helps you create and test your API requests saving precious time in development."
   },
   {
+    "token": "hoptodesk",
+    "homepage": "https://www.hoptodesk.com/",
+    "title": "HopToDesk - Free Remote Desktop Software for All Platforms",
+    "meta_desc": "Free and secure remote desktop software for Windows, Mac, Linux, Android, iOS for remote support, control, monitoring, screen share, file transfer and live chat.",
+    "og_desc": "Free and secure remote desktop software for Windows, Mac, Linux, Android, iOS for remote support, control, monitoring, screen share, file transfer and live chat."
+  },
+  {
     "token": "horos",
     "homepage": "https://horosproject.org/",
     "title": "Home Page - Horos Project",
@@ -30348,6 +30369,13 @@
     "title": "Kactus",
     "meta_desc": "Introducing true design version control without changing your tools. Manage changes, document work and keep your team in sync.",
     "og_desc": "Introducing true design version control without changing your tools. Manage changes, document work and keep your team in sync."
+  },
+  {
+    "token": "kaku",
+    "homepage": "https://github.com/tw93/Kaku",
+    "title": "GitHub - tw93/Kaku: 🎃 A fast, out-of-the-box macOS terminal built for AI coding. · GitHub",
+    "meta_desc": "🎃 A fast, out-of-the-box macOS terminal built for AI coding. - tw93/Kaku",
+    "og_desc": "🎃 A fast, out-of-the-box macOS terminal built for AI coding. - tw93/Kaku"
   },
   {
     "token": "kaleidoscope",
@@ -36101,6 +36129,13 @@
     "og_desc": ""
   },
   {
+    "token": "opendisk",
+    "homepage": "https://opendisk.app/",
+    "title": "OpenDisk: Free, Open-Source Disk Space Analyzer for Mac",
+    "meta_desc": "OpenDisk is a free, open-source disk space analyzer for macOS. The DaisyDisk alternative scans 1 TB in 17 seconds. Interactive sunburst chart, live results, MIT licensed. No accounts, no telemetry.",
+    "og_desc": "The DaisyDisk-style sunburst you know, now free, open source, and 2.2× faster. Scans 1 TB in 17 seconds."
+  },
+  {
     "token": "opendisplay",
     "homepage": "https://opendisplay.app/",
     "title": "OpenDisplay - Turn your spare Apple devices into second monitors for your Mac (free & open source)",
@@ -40354,6 +40389,13 @@
     "og_desc": ""
   },
   {
+    "token": "saega",
+    "homepage": "https://saega.app/",
+    "title": "Sæga - Röst till text för Mac. Diktera på svenska, privat.",
+    "meta_desc": "Röst till text för Mac, byggd för svenska med KB-Whisper från Kungliga biblioteket. Lokal transkribering - ljudet lämnar aldrig din Mac. Gratis Free-version, Pro 39 USD en gång.",
+    "og_desc": "Dikteringsapp för macOS byggd för svenska och norska med KB-Whisper. Ljudet lämnar aldrig din Mac. Gratis Free-version, Pro 39 USD en gång."
+  },
+  {
     "token": "safari-technology-preview",
     "homepage": "https://developer.apple.com/safari/resources/",
     "title": "Resources - Safari - Apple Developer",
@@ -41258,6 +41300,13 @@
     "og_desc": "Welcome to SideQuest, the ultimate VR discovery platform and home to VRs greatest hits, indie gems, sideloadonly and earlyaccess VR content - and much more. SideQuest is also packed with tools and tips to help you get the most out of your VR headset. Install the SideQuest app for the best experience."
   },
   {
+    "token": "sidex",
+    "homepage": "https://github.com/Sidenai/sidex",
+    "title": "GitHub - Sidenai/sidex: VS Code rebuilt on Tauri. Same architecture, 96% smaller. Early release. · GitHub",
+    "meta_desc": "VS Code rebuilt on Tauri. Same architecture, 96% smaller. Early release. - Sidenai/sidex",
+    "og_desc": "VS Code rebuilt on Tauri. Same architecture, 96% smaller. Early release. - Sidenai/sidex"
+  },
+  {
     "token": "sigdigger",
     "homepage": "https://batchdrake.github.io/SigDigger/",
     "title": "SigDigger - A free digital signal analyzer",
@@ -41840,6 +41889,13 @@
     "token": "snagit",
     "homepage": "https://www.techsmith.com/screen-capture.html",
     "error": "HTTP 302"
+  },
+  {
+    "token": "snapline",
+    "homepage": "https://snap-line.app/",
+    "title": "Snapline: the screenshot studio in your macOS menu bar",
+    "meta_desc": "Capture, annotate, record, and scroll-capture on macOS, then find any shot by the text inside it. Native app, one purchase, no subscription.",
+    "og_desc": "Capture, annotate, record, and scroll-capture on macOS. Native, fast, one purchase, yours for good."
   },
   {
     "token": "snapmaker-luban",
@@ -43917,6 +43973,13 @@
     "title": "Teeworlds",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "telari",
+    "homepage": "https://telari.app/",
+    "title": "Telari - 专注于排版效果的 Markdown 阅读器",
+    "meta_desc": "一款 macOS Markdown 阅读器，用 Knuth-Plass 算法实现两端对齐。原生、轻量、好看。",
+    "og_desc": "一款 macOS Markdown 阅读器，用 Knuth-Plass 算法实现两端对齐。原生、轻量、好看。"
   },
   {
     "token": "telegram",
