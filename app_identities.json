@@ -392,6 +392,17 @@
           "bundleIdentifier": "com.bettermacwidgets.app"
         }
       ]
+    },
+    "tapmap": {
+      "caskVersion": "1.14.1",
+      "sourceURL": "https://github.com/olalie/tapmap/releases/download/v1.14.1/TapMap-1.14.1-macos-arm64.dmg",
+      "artifactSHA256": "00a6a65dddbef291d27c7e6393381fb7239954c8acdad258692051f1a25202a1",
+      "apps": [
+        {
+          "bundleName": "TapMap.app",
+          "bundleIdentifier": "no.tip.tapmap"
+        }
+      ]
     }
   }
 }
