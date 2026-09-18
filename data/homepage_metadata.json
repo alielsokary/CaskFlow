@@ -43802,6 +43802,11 @@
     "og_desc": "The best Homebrew GUI for Mac. A visual Homebrew manager with brew cleanup tool, service management, and one-click installs. No terminal required."
   },
   {
+    "token": "tapmap",
+    "homepage": "https://tip.no/tapmap/",
+    "error": "[Errno 101] Network is unreachable"
+  },
+  {
     "token": "tartelet",
     "homepage": "https://github.com/shapehq/tartelet",
     "title": "GitHub - shapehq/tartelet: ⚙️💻 A macOS app that makes it a breeze to manage multiple GitHub Actions runners in ephemeral virtual machines on a single host machine. The benefits are that runners can run in parallel, and each job runs in an isolated environment. · GitHub",
