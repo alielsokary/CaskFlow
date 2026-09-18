@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-17",
-  "totalCasks": 3963,
+  "generatedDate": "2026-09-18",
+  "totalCasks": 3965,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -14770,6 +14770,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "tapmap": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "tartelet": {
       "primary": "developerTools",
       "secondary": []
@@ -15513,6 +15519,12 @@
     "tripmode": {
       "primary": "utilities",
       "secondary": []
+    },
+    "tritium": {
+      "primary": "productivity",
+      "secondary": [
+        "officeTools"
+      ]
     },
     "trivial": {
       "primary": "developerTools",
