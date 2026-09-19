@@ -4193,6 +4193,276 @@
           "bundleIdentifier": "com.mojang.minecraftlauncher"
         }
       ]
+    },
+    "activitywatch": {
+      "caskVersion": "0.13.2",
+      "sourceURL": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-macos-x86_64.dmg",
+      "artifactSHA256": "22f3bce0e169457902b2c8d2967701cde887171f737d281dd414a210bd3090ed",
+      "apps": [
+        {
+          "bundleName": "ActivityWatch.app",
+          "bundleIdentifier": "net.activitywatch.ActivityWatch"
+        }
+      ]
+    },
+    "plex-media-server": {
+      "caskVersion": "1.43.4.10903,e5521bd8c",
+      "sourceURL": "https://downloads.plex.tv/plex-media-server-new/1.43.4.10903-e5521bd8c/macos/PlexMediaServer-1.43.4.10903-e5521bd8c-universal.zip",
+      "artifactSHA256": "da45e9287adaad1d442232ac27366c074223ff6e63af8d0875b46b177e44a46c",
+      "apps": [
+        {
+          "bundleName": "Plex Media Server.app",
+          "bundleIdentifier": "com.plexapp.plexmediaserver"
+        }
+      ]
+    },
+    "iptvnator": {
+      "caskVersion": "0.23.0",
+      "sourceURL": "https://github.com/4gray/iptvnator/releases/download/v0.23.0/iptvnator-0.23.0-mac-arm64.dmg",
+      "artifactSHA256": "2750299219367e2773bb176aa0a3664ff89e80830ca5d24ce4397127837ca5ad",
+      "apps": [
+        {
+          "bundleName": "IPTVnator.app",
+          "bundleIdentifier": "com.fourgray.iptvnator"
+        }
+      ]
+    },
+    "tablepro": {
+      "caskVersion": "0.75.0",
+      "sourceURL": "https://github.com/TableProApp/TablePro/releases/download/v0.75.0/TablePro-0.75.0-arm64.dmg",
+      "artifactSHA256": "c168bada8fd7da7d185f2c8980a80372a14100d960f96186b69b665ee29a786a",
+      "apps": [
+        {
+          "bundleName": "TablePro.app",
+          "bundleIdentifier": "com.TablePro"
+        }
+      ]
+    },
+    "hyperkey": {
+      "caskVersion": "1.56",
+      "sourceURL": "https://hyperkey.app/downloads/Hyperkey1.56.dmg",
+      "artifactSHA256": "5be4f3abb629688795aa87ac6490c1a693b140847bbf36d38362fac97dfb7f1e",
+      "apps": [
+        {
+          "bundleName": "Hyperkey.app",
+          "bundleIdentifier": "com.knollsoft.Hyperkey"
+        }
+      ]
+    },
+    "devin-desktop": {
+      "caskVersion": "3.10.31,b98cc43128712ba73c60cca73876f58a710aaa27",
+      "sourceURL": "https://windsurf-stable.codeiumdata.com/darwin-arm64-dmg/stable/b98cc43128712ba73c60cca73876f58a710aaa27/Devin-darwin-arm64-3.10.31.dmg",
+      "artifactSHA256": "20eaf5f2161f21397ea4322a2b2f86e3c06ee880f6a1198d04df1d04e00bffa8",
+      "apps": [
+        {
+          "bundleName": "Devin.app",
+          "bundleIdentifier": "com.exafunction.windsurf"
+        }
+      ]
+    },
+    "nvidia-geforce-now": {
+      "caskVersion": "2.0.88.129",
+      "sourceURL": "https://download.nvidia.com/gfnpc/GeForceNOW-release.dmg",
+      "artifactSHA256": "e12fc317a63fdee60c163e87520823841ee7049618b69faeef59f3399a12773c",
+      "apps": [
+        {
+          "bundleName": "GeForceNOW.app",
+          "bundleIdentifier": "com.nvidia.gfnpc.mall"
+        }
+      ]
+    },
+    "imazing": {
+      "caskVersion": "3.6.4,24330",
+      "sourceURL": "https://downloads.imazing.com/mac/iMazing/3.6.4.24330/iMazing_3.6.4.24330.dmg",
+      "artifactSHA256": "e0425b3038ca90368aad57c189ddfd521fae8aae4f7e9ef4bc6e4fbbd89a7bbf",
+      "apps": [
+        {
+          "bundleName": "iMazing.app",
+          "bundleIdentifier": "com.DigiDNA.iMazing3Mac"
+        }
+      ]
+    },
+    "memoryanalyzer": {
+      "caskVersion": "1.17.0.20260601",
+      "sourceURL": "https://download.eclipse.org/mat/1.17.0/rcp/MemoryAnalyzer-1.17.0.20260601-macosx.cocoa.aarch64.dmg",
+      "artifactSHA256": "c89471ecc07b6d30d665151d5358bc7aa3a3a7d490702a812c742581197243e0",
+      "apps": [
+        {
+          "bundleName": "MemoryAnalyzer.app",
+          "bundleIdentifier": "org.eclipse.mat.ui.rcp.MemoryAnalyzer"
+        }
+      ]
+    },
+    "vcmi": {
+      "caskVersion": "1.7.5",
+      "sourceURL": "https://github.com/vcmi/vcmi/releases/download/1.7.5/VCMI-macOS-arm.dmg",
+      "artifactSHA256": "b56b55d0671ae604effb12d0394b74a552f203426cafa165f82488505fb465e3",
+      "apps": [
+        {
+          "bundleName": "VCMI.app",
+          "bundleIdentifier": "eu.vcmi.vcmi"
+        }
+      ]
+    },
+    "exo": {
+      "caskVersion": "1.0.71",
+      "sourceURL": "https://assets.exolabs.net/EXO-1.0.71.dmg",
+      "artifactSHA256": "bc81a23ec647a995c5f8237857e749bc3de7ba8ec40f2aab39886c1a04beaac7",
+      "apps": [
+        {
+          "bundleName": "EXO.app",
+          "bundleIdentifier": "exolabs.EXO"
+        }
+      ]
+    },
+    "mactools": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/ggbond268/MacTools/releases/download/v1.3.0/MacTools.dmg",
+      "artifactSHA256": "ba541e628bac48f8943563dd0782405b1caa0282cd69fd01925cce88cdbed2c3",
+      "apps": [
+        {
+          "bundleName": "MacTools.app",
+          "bundleIdentifier": "cc.ggbond.mactools"
+        }
+      ]
+    },
+    "prusaslicer": {
+      "caskVersion": "2.9.6",
+      "sourceURL": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.6/PrusaSlicer-2.9.6.dmg",
+      "artifactSHA256": "94fd7b8a9f87c9631e1c71739b15b184fc5f4c0ceabd69072f1c78f229a4fe40",
+      "apps": []
+    },
+    "switchhosts": {
+      "caskVersion": "5.0.2",
+      "sourceURL": "https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-mac-aarch64.dmg",
+      "artifactSHA256": "1443343955edcee58b4c0618df622dc7f6790499ab3ac78b2a0f702f3869fba7",
+      "apps": [
+        {
+          "bundleName": "SwitchHosts.app",
+          "bundleIdentifier": "net.oldj.switchhosts"
+        }
+      ]
+    },
+    "musicbrainz-picard": {
+      "caskVersion": "2.13.3",
+      "sourceURL": "https://data.musicbrainz.org/pub/musicbrainz/picard/MusicBrainz-Picard-2.13.3-macOS-10.14.dmg",
+      "artifactSHA256": "ed854df1dc7ad29a092e582ad7211359d0ee7b55f8df20e906d431fb92e92124",
+      "apps": [
+        {
+          "bundleName": "MusicBrainz Picard.app",
+          "bundleIdentifier": "org.musicbrainz.Picard"
+        }
+      ]
+    },
+    "retroarch": {
+      "caskVersion": "1.22.2",
+      "sourceURL": "https://buildbot.libretro.com/stable/1.22.2/apple/osx/x86_64/RetroArch.dmg",
+      "artifactSHA256": "b807f9040caf2b94973ec02dc4a924a45ceb7eee17f8e75e3e04d66838871cb6",
+      "apps": [
+        {
+          "bundleName": "RetroArch.app",
+          "bundleIdentifier": "com.libretro.RetroArch"
+        }
+      ]
+    },
+    "playcover-community": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/PlayCover/PlayCover/releases/download/3.1.0/PlayCover_3.1.0.dmg",
+      "artifactSHA256": "5c3a291827f4802f665daf5c33a6bfe6ef0df2c6dff3f9e554db6514176196e7",
+      "apps": [
+        {
+          "bundleName": "PlayCover.app",
+          "bundleIdentifier": "io.playcover.PlayCover"
+        }
+      ]
+    },
+    "notion-calendar": {
+      "caskVersion": "1.139.0",
+      "sourceURL": "https://calendar-desktop-release.notion-static.com/Notion%20Calendar-darwin-arm64-1.139.0.zip",
+      "artifactSHA256": "f1fb3dc449a1b37ccacf5c450c41fe12c0fd9b8c3f33cad1353eed1289022724",
+      "apps": [
+        {
+          "bundleName": "Notion Calendar.app",
+          "bundleIdentifier": "com.cron.electron"
+        }
+      ]
+    },
+    "kdenlive": {
+      "caskVersion": "26.08.1",
+      "sourceURL": "https://cdn.download.kde.org/stable/kdenlive/26.08/macOS/kdenlive-26.08.1-arm64.dmg",
+      "artifactSHA256": "b606beaf42c0482a07c052bd2da384587b3aedcc948e7c885f954e195ff10bda",
+      "apps": [
+        {
+          "bundleName": "kdenlive.app",
+          "bundleIdentifier": "org.kde.Kdenlive"
+        }
+      ]
+    },
+    "cleanmymac": {
+      "caskVersion": "5.6.1,50601.0.2609011534",
+      "sourceURL": "https://updates.cleanmymac.com/com.macpaw.cleanmymac5/releases/CleanMyMac5_50601.0.2609011534.zip",
+      "artifactSHA256": "cecafce7591a8b78307bbbd9566760136ad19988074e5bf3540fc0bfe6f4964a",
+      "apps": [
+        {
+          "bundleName": "CleanMyMac.app",
+          "bundleIdentifier": "com.macpaw.CleanMyMac5"
+        }
+      ]
+    },
+    "gitkraken": {
+      "caskVersion": "12.5.0",
+      "sourceURL": "https://api.gitkraken.dev/releases/production/darwin/arm64/12.5.0/GitKraken-v12.5.0.zip",
+      "artifactSHA256": "406e38d8b1937a58ccc461f7b65e69e2a4a7da4653105bb5c5183e94d40d8bc6",
+      "apps": [
+        {
+          "bundleName": "GitKraken.app",
+          "bundleIdentifier": "com.axosoft.gitkraken"
+        }
+      ]
+    },
+    "todoist-app": {
+      "caskVersion": "9.30.0",
+      "sourceURL": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.30.0-arm64-latest.dmg",
+      "artifactSHA256": "3b0bdee906488c4f35588a2c9150df11f2c06fc5118e5661ee723d1f2eaad0c8",
+      "apps": [
+        {
+          "bundleName": "Todoist.app",
+          "bundleIdentifier": "com.todoist.mac.Todoist"
+        }
+      ]
+    },
+    "ipaverse": {
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://github.com/bahattinkoc/ipaverse/releases/download/v2.5.2/ipaverse.dmg",
+      "artifactSHA256": "db220a8eac4742768972d49a7e15c047a741e94557ea3aa0a080290f0eb2067a",
+      "apps": [
+        {
+          "bundleName": "ipaverse.app",
+          "bundleIdentifier": "com.ipaverse"
+        }
+      ]
+    },
+    "gram": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://codeberg.org/GramEditor/gram/releases/download/3.3.0/Gram-aarch64-3.3.0.dmg",
+      "artifactSHA256": "30fc7e9ff549d05dbddcec8c73530f0d8a19701d8e74b01304b53af0df2eaa40",
+      "apps": [
+        {
+          "bundleName": "Gram.app",
+          "bundleIdentifier": "app.liten.Gram"
+        }
+      ]
+    },
+    "dolphin": {
+      "caskVersion": "2606a",
+      "sourceURL": "https://dl.dolphin-emu.org/releases/2606a/dolphin-2606a-universal.dmg",
+      "artifactSHA256": "15df1afeac686951647d81b0b62e11d82e8715c92927b849e2858379cee6b5ca",
+      "apps": [
+        {
+          "bundleName": "Dolphin.app",
+          "bundleIdentifier": "org.dolphin-emu.dolphin"
+        }
+      ]
     }
   }
 }
