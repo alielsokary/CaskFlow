@@ -1,6 +1,14 @@
-name: Extract icons
+name: Extract icons and app identities
+run-name: >-
+  ${{ (inputs.retry_parked || github.event.schedule == '7 3 1 * *')
+      && 'Retry failed icon and identity extractions'
+      || inputs.tokens
+      && 'Extract icons and identities for selected apps'
+      || (inputs.identity_backfill || github.event.schedule == '23 22 * * *')
+      && 'Backfill app identities'
+      || 'Extract new icons and app identities' }}
 
-# PNGs, icons.json, and icon_report.json share the icons branch and a single writer.
+# Icons, app identities, and extraction reports share the icons branch and a single writer.
 on:
   workflow_dispatch:
     inputs:
@@ -41,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Extract and publish icons
+      - name: Extract and publish icons and app identities
         env:
           GH_TOKEN: ${{ github.token }}
           TOKENS: ${{ inputs.tokens }}
