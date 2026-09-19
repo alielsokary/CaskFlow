@@ -3643,6 +3643,281 @@
           "bundleIdentifier": "com.electron.lark"
         }
       ]
+    },
+    "eqmac": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://github.com/bitgapp/eqMac/releases/download/v1.9.1/eqMac.dmg",
+      "artifactSHA256": "655feb6578cdd5cd0fc7a2b9c0955bbddb7bd6bb23b29ea7f982ae35b8ba5e26",
+      "apps": [
+        {
+          "bundleName": "eqMac.app",
+          "bundleIdentifier": "com.bitgapp.eqmac"
+        }
+      ]
+    },
+    "openpencil": {
+      "caskVersion": "0.15.1",
+      "sourceURL": "https://github.com/open-pencil/open-pencil/releases/download/v0.15.1/OpenPencil_aarch64.app.tar.gz",
+      "artifactSHA256": "b7fcfcbc5d3e486b0c13a3caa90f442c256413bd3226108efe013ed686ec9c98",
+      "apps": [
+        {
+          "bundleName": "OpenPencil.app",
+          "bundleIdentifier": "net.dannote.open-pencil"
+        }
+      ]
+    },
+    "snipaste": {
+      "caskVersion": "2.11.3",
+      "sourceURL": "https://download.snipaste.com/archives/Snipaste-2.11.3.dmg",
+      "artifactSHA256": "a2287838889e7b1734a65d952bae5ef7f479bdc163d0c31be91859bca120fd3e",
+      "apps": [
+        {
+          "bundleName": "Snipaste.app",
+          "bundleIdentifier": "com.Snipaste"
+        }
+      ]
+    },
+    "github-copilot-for-xcode": {
+      "caskVersion": "0.51.0",
+      "sourceURL": "https://githubcopilotide.z13.web.core.windows.net/0.51.0/GitHubCopilotForXcode.dmg",
+      "artifactSHA256": "4bdf74338a366f166bbe85fa2e06616036de7bde41fa154becc95e6ec34adbf0",
+      "apps": [
+        {
+          "bundleName": "GitHub Copilot for Xcode.app",
+          "bundleIdentifier": "com.github.CopilotForXcode"
+        }
+      ]
+    },
+    "jellyfin-media-player": {
+      "caskVersion": "1.12.0",
+      "sourceURL": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.12.0/JellyfinMediaPlayer-1.12.0-AppleSilicon.dmg",
+      "artifactSHA256": "272412af869f5278b93c16cda2657de3cda50e595a68a1c062b8dff5e40980bc",
+      "apps": [
+        {
+          "bundleName": "Jellyfin Media Player.app",
+          "bundleIdentifier": "tv.jellyfin.player"
+        }
+      ]
+    },
+    "plex": {
+      "caskVersion": "1.115.0.426,4e960a1d",
+      "sourceURL": "https://downloads.plex.tv/plex-desktop/1.115.0.426-4e960a1d/macos/Plex-1.115.0.426-4e960a1d-universal.zip",
+      "artifactSHA256": "273fbc9b36938772abc5c5579923d758a6c9c158cd1d9c0f0689627d5f1af14f",
+      "apps": [
+        {
+          "bundleName": "Plex.app",
+          "bundleIdentifier": "tv.plex.desktop"
+        }
+      ]
+    },
+    "proton-mail": {
+      "caskVersion": "1.14.0",
+      "sourceURL": "https://proton.me/download/mail/macos/1.14.0/ProtonMail-desktop.dmg",
+      "artifactSHA256": "343802be033408ce91364968d95b8c4596ffa13e726a25bb42ac89540afa847a",
+      "apps": [
+        {
+          "bundleName": "Proton Mail.app",
+          "bundleIdentifier": "ch.protonmail.desktop"
+        }
+      ]
+    },
+    "joplin": {
+      "caskVersion": "3.7.18",
+      "sourceURL": "https://github.com/laurent22/joplin/releases/download/v3.7.18/Joplin-3.7.18-arm64.DMG",
+      "artifactSHA256": "103c9bc884108bc31593060008005411a45c1b2b530eeffca4d5ad262306c6e6",
+      "apps": [
+        {
+          "bundleName": "Joplin.app",
+          "bundleIdentifier": "net.cozic.joplin-desktop"
+        }
+      ]
+    },
+    "losslesscut": {
+      "caskVersion": "3.69.0",
+      "sourceURL": "https://github.com/mifi/lossless-cut/releases/download/v3.69.0/LosslessCut-mac-arm64.dmg",
+      "artifactSHA256": "c7801b482df3be0384acc8171d5a7d16cce70d1588871e344b155aaca39fa58b",
+      "apps": [
+        {
+          "bundleName": "LosslessCut.app",
+          "bundleIdentifier": "no.mifi.losslesscut-mac"
+        }
+      ]
+    },
+    "snapzy": {
+      "caskVersion": "1.32.2",
+      "sourceURL": "https://github.com/duongductrong/Snapzy/releases/download/v1.32.2/Snapzy-v1.32.2.dmg",
+      "artifactSHA256": "c25483a246a8c685e6ca0ca17ae0ae75630b33d07bab9c348de6380f3414c32f",
+      "apps": [
+        {
+          "bundleName": "Snapzy.app",
+          "bundleIdentifier": "com.trongduong.snapzy"
+        }
+      ]
+    },
+    "tencent-meeting": {
+      "caskVersion": "3.46.0.442,d33a84b584a220bd4772f72ca40653d9",
+      "sourceURL": "https://updatecdn.meeting.qq.com/cos/d33a84b584a220bd4772f72ca40653d9/TencentMeeting_0300000000_3.46.0.442.publish.arm64.officialwebsite.dmg",
+      "artifactSHA256": "05ff01258de27b940026ce6da3974148ff62c88207a34445806221fb3b677515",
+      "apps": [
+        {
+          "bundleName": "TencentMeeting.app",
+          "bundleIdentifier": "com.tencent.meeting"
+        }
+      ]
+    },
+    "claudebar": {
+      "caskVersion": "0.4.92",
+      "sourceURL": "https://github.com/tddworks/ClaudeBar/releases/download/v0.4.92/ClaudeBar-0.4.92.dmg",
+      "artifactSHA256": "b0f9d493208214203dc7435cf61ec3c4c45143c3dea3bccbe54bf49426e0004c",
+      "apps": [
+        {
+          "bundleName": "ClaudeBar.app",
+          "bundleIdentifier": "com.tddworks.claudebar"
+        }
+      ]
+    },
+    "quicklook-video": {
+      "caskVersion": "3.11",
+      "sourceURL": "https://github.com/Marginal/QuickLookVideo/releases/download/rel-311/QLVideo_311.dmg",
+      "artifactSHA256": "d84b2ff55c19dc1c118cc27524313dd95e03d898022b637a479825ab4d985c55",
+      "apps": [
+        {
+          "bundleName": "QuickLook Video.app",
+          "bundleIdentifier": "uk.org.marginal.qlvideo"
+        }
+      ]
+    },
+    "neohtop": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/Abdenasser/neohtop/releases/download/v1.2.0/silicon-NeoHtop_1.2.0_aarch64.dmg",
+      "artifactSHA256": "c099c72765aa6e95b17ebecc3fb49b784934b94f179e4c71c718dd44dd293af2",
+      "apps": [
+        {
+          "bundleName": "NeoHtop.app",
+          "bundleIdentifier": "com.neohtop.dev"
+        }
+      ]
+    },
+    "electerm": {
+      "caskVersion": "5.5.15",
+      "sourceURL": "https://mirror.electerm.org/https://github.com/electerm/electerm/releases/download/v5.5.15/electerm-5.5.15-mac-arm64.dmg",
+      "artifactSHA256": "98cc8278d0ea9918b46f80514fe8bdea5b2a5ac0fcae054e37e70e75f0c96bdc",
+      "apps": [
+        {
+          "bundleName": "electerm.app",
+          "bundleIdentifier": "org.electerm.electerm"
+        }
+      ]
+    },
+    "proton-pass": {
+      "caskVersion": "1.40.2",
+      "sourceURL": "https://proton.me/download/pass/macos/ProtonPass_1.40.2.dmg",
+      "artifactSHA256": "fb7dde5dcf7cf25797db60725c6493f70f6fb1472b0fe3cff1e51aa07b560ca2",
+      "apps": [
+        {
+          "bundleName": "Proton Pass.app",
+          "bundleIdentifier": "me.proton.pass.electron"
+        }
+      ]
+    },
+    "atoll": {
+      "caskVersion": "2.3.3",
+      "sourceURL": "https://github.com/Ebullioscopic/Atoll/releases/download/v2.3.3/Atoll-2.3.3.dmg",
+      "artifactSHA256": "bda40abaf9f5f8a69ede7bd838d5c1cc865e40dc5c8135bc1149413840003634",
+      "apps": [
+        {
+          "bundleName": "Atoll.app",
+          "bundleIdentifier": "com.Ebullioscopic.Atoll"
+        }
+      ]
+    },
+    "wave": {
+      "caskVersion": "0.14.5",
+      "sourceURL": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.5.dmg",
+      "artifactSHA256": "8d72ae31bd2c3a81356d55ec86e70ea284a65bde117b52834529da3e2e40ff39",
+      "apps": [
+        {
+          "bundleName": "Wave.app",
+          "bundleIdentifier": "dev.commandline.waveterm"
+        }
+      ]
+    },
+    "finicky": {
+      "caskVersion": "4.2.2",
+      "sourceURL": "https://github.com/johnste/finicky/releases/download/v4.2.2/Finicky.dmg",
+      "artifactSHA256": "5f0020782c9075d27411d6083d7be8663891e3146c86eafad118c44acc12208f",
+      "apps": [
+        {
+          "bundleName": "Finicky.app",
+          "bundleIdentifier": "se.johnste.finicky"
+        }
+      ]
+    },
+    "roblox": {
+      "caskVersion": "0.739.0.7390687,c53a25dbc3e44a42",
+      "sourceURL": "https://setup.rbxcdn.com/mac/arm64/version-c53a25dbc3e44a42-RobloxPlayer.zip",
+      "artifactSHA256": "f65ab075040e1fd1a120d660b6a565ab33444c378bac8e25c4ff7a5b6edfd902",
+      "apps": [
+        {
+          "bundleName": "Roblox.app",
+          "bundleIdentifier": "com.roblox.RobloxPlayer"
+        }
+      ]
+    },
+    "bartender": {
+      "caskVersion": "7.0.1",
+      "sourceURL": "https://downloads.macbartender.com/Bartender7/updates/7-0-1/Bartender%207.zip",
+      "artifactSHA256": "f9db34003e1ca82d78d5d6bcdf9fce25cbe7fc65b79793dadaabeb144d54b34b",
+      "apps": [
+        {
+          "bundleName": "Bartender 7.app",
+          "bundleIdentifier": "com.surteesstudios.Bartender"
+        }
+      ]
+    },
+    "chatbox": {
+      "caskVersion": "1.23.3",
+      "sourceURL": "https://download.chatboxai.app/releases/Chatbox-1.23.3-arm64.dmg",
+      "artifactSHA256": "5da310fe46ad3f120420bbf8a9638e031e8a325b42bc9500760c63e841acc2da",
+      "apps": [
+        {
+          "bundleName": "Chatbox.app",
+          "bundleIdentifier": "xyz.chatboxapp.app"
+        }
+      ]
+    },
+    "parallels": {
+      "caskVersion": "27.0.2-58673",
+      "sourceURL": "https://download.parallels.com/desktop/v27/27.0.2-58673/ParallelsDesktop-27.0.2-58673.dmg",
+      "artifactSHA256": "fdbb8fbaf6b6afd7714a92dd348f5083f61393463cd9747016dd97845db8c21d",
+      "apps": [
+        {
+          "bundleName": "Parallels Desktop.app",
+          "bundleIdentifier": "com.parallels.desktop.console"
+        }
+      ]
+    },
+    "musescore": {
+      "caskVersion": "4.7.5.260831071,4.7.5",
+      "sourceURL": "https://github.com/musescore/MuseScore/releases/download/v4.7.5/MuseScore-Studio-4.7.5.260831071.dmg",
+      "artifactSHA256": "5a8cc26994d3f346d3e7d88c6a1583959e990ee9346b00d7b1d3f9498de6473a",
+      "apps": [
+        {
+          "bundleName": "MuseScore 4.app",
+          "bundleIdentifier": "org.musescore.MuseScore"
+        }
+      ]
+    },
+    "herd": {
+      "caskVersion": "1.30.1",
+      "sourceURL": "https://download.herdphp.com/app_versions/Herd_1.30.1.dmg",
+      "artifactSHA256": "eff7d322597e0128a9f7f120a7f89a00adcfb950f0fb3cddc76fe4a54681990b",
+      "apps": [
+        {
+          "bundleName": "Herd.app",
+          "bundleIdentifier": "de.beyondco.herd"
+        }
+      ]
     }
   }
 }
