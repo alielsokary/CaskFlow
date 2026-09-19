@@ -491,10 +491,9 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
     git("reset", "--hard", "HEAD")
     monkeypatch.setattr(extract_icons, "_commit_and_push", push)
     monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 1)
-    casks = [_cask(token=t) for t in ["antinote", "unchanged"]]
-    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: [_cask(token=t) for t in ["antinote", "unchanged"]])
     monkeypatch.setattr(extract_icons, "load_report", lambda: {})
-    monkeypatch.setattr(extract_icons, "select_candidates", lambda *a: casks)
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda casks, *a: casks)
 
     def extract(cask, output):
         (output / f"{cask['token']}.png").write_bytes(b"batch")
