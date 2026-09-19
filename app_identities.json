@@ -3363,6 +3363,276 @@
           "bundleIdentifier": "io.open-design.desktop"
         }
       ]
+    },
+    "stremio": {
+      "caskVersion": "5.1.26",
+      "sourceURL": "https://dl.strem.io/stremio-shell-macos/v5.1.26/Stremio_arm64.dmg",
+      "artifactSHA256": "f85286f24856e78d7160eb493e6e86994871979a10bc02aa55470c893346fbb4",
+      "apps": [
+        {
+          "bundleName": "Stremio.app",
+          "bundleIdentifier": "com.westbridge.stremio5-mac"
+        }
+      ]
+    },
+    "orion": {
+      "caskVersion": "1.1.2,151",
+      "sourceURL": "https://cdn.kagi.com/updates/26_0/151.zip",
+      "artifactSHA256": "77a55ae66c0dfae9406856e8e1d20a10dcd06a699175f9059ea395db398f8100",
+      "apps": [
+        {
+          "bundleName": "Orion.app",
+          "bundleIdentifier": "com.kagi.kagimacOS"
+        }
+      ]
+    },
+    "squirrel-app": {
+      "caskVersion": "1.1.2",
+      "sourceURL": "https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg",
+      "artifactSHA256": "614746013212937623d5bbab9901e9c43d1ec937aa32307d6b6092a05e308287",
+      "apps": []
+    },
+    "granola": {
+      "caskVersion": "7.576.0",
+      "sourceURL": "https://dr2v7l5emb758.cloudfront.net/7.576.0/Granola-7.576.0-mac-universal.dmg",
+      "artifactSHA256": "c16d5dcd35bce9c766355cf88e986769a714b93345749d1c179b68bad93cda72",
+      "apps": [
+        {
+          "bundleName": "Granola.app",
+          "bundleIdentifier": "com.granola.app"
+        }
+      ]
+    },
+    "syntax-highlight": {
+      "caskVersion": "2.1.32",
+      "sourceURL": "https://github.com/sbarex/SourceCodeSyntaxHighlight/releases/download/2.1.32/Syntax.Highlight.zip",
+      "artifactSHA256": "ceba72f94b089ecfcf92691824608011e8db717265422ce7bbc623911e684a47",
+      "apps": [
+        {
+          "bundleName": "Syntax Highlight.app",
+          "bundleIdentifier": "org.sbarex.SourceCodeSyntaxHighlight"
+        }
+      ]
+    },
+    "supacode": {
+      "caskVersion": "0.10.8",
+      "sourceURL": "https://supacode.sh/download/v0.10.8/supacode.dmg",
+      "artifactSHA256": "22757e4c430aa985989606f62a125a2f08667fe8f36a35585d66ac12350dbb2b",
+      "apps": [
+        {
+          "bundleName": "supacode.app",
+          "bundleIdentifier": "app.supabit.supacode"
+        }
+      ]
+    },
+    "meetingbar": {
+      "caskVersion": "4.11.6",
+      "sourceURL": "https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg",
+      "artifactSHA256": "4f19af496d4ff44b9b0ee02be02bc76207f3e365a7f9e77c7219a08c607838d7",
+      "apps": [
+        {
+          "bundleName": "MeetingBar.app",
+          "bundleIdentifier": "leits.MeetingBar"
+        }
+      ]
+    },
+    "lens": {
+      "caskVersion": "2026.9.20601",
+      "sourceURL": "https://api.k8slens.dev/binaries/Lens-2026.9.20601-latest-arm64.dmg",
+      "artifactSHA256": "62679820a44362672030021076938aebb04c36281d94375bc9279970ee4a7e48",
+      "apps": [
+        {
+          "bundleName": "Lens.app",
+          "bundleIdentifier": "com.electron.kontena-lens"
+        }
+      ]
+    },
+    "motrix": {
+      "caskVersion": "1.8.19",
+      "sourceURL": "https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-arm64.dmg",
+      "artifactSHA256": "d73f4d69f3597ad8f98b821aa0fb58ba964bf85061b4a13f00edcb3618001c0e",
+      "apps": [
+        {
+          "bundleName": "Motrix.app",
+          "bundleIdentifier": "app.motrix.native"
+        }
+      ]
+    },
+    "clipy": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/Clipy/Clipy/releases/download/1.3.0/Clipy_1.3.0.dmg",
+      "artifactSHA256": "80e67266f220d4e63cccfc185a5f3f800eadafa123e25e5f9791351ad13cb593",
+      "apps": [
+        {
+          "bundleName": "Clipy.app",
+          "bundleIdentifier": "com.clipy-app.Clipy"
+        }
+      ]
+    },
+    "porting-kit": {
+      "caskVersion": "6.7.0",
+      "sourceURL": "https://github.com/vitor251093/porting-kit-releases/releases/download/v6.7.0/Porting.Kit-6.7.0-arm64.dmg",
+      "artifactSHA256": "7e33b70e326c7e5a99c531b65b678b605c44aaa107f51688777ad5dd9e5fbf5a",
+      "apps": [
+        {
+          "bundleName": "Porting Kit.app",
+          "bundleIdentifier": "com.paulthetall.portingkit"
+        }
+      ]
+    },
+    "middleclick": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/artginzburg/MiddleClick/releases/download/3.3.0/MiddleClick.zip",
+      "artifactSHA256": "55b61579bea1bff9575d0aae55316f826ade1cfc8948da91151bcc99df3957da",
+      "apps": [
+        {
+          "bundleName": "MiddleClick.app",
+          "bundleIdentifier": "art.ginzburg.MiddleClick"
+        }
+      ]
+    },
+    "bettercmdtab": {
+      "caskVersion": "26.7,20260813144806",
+      "sourceURL": "https://github.com/rokartur/BetterCmdTab/releases/download/26.7/BetterCmdTab-26.7-20260813144806.dmg",
+      "artifactSHA256": "d72cdffb691b8e2fbb892afaf4d016ceb9bbf4ee99d8b2272a952db9278be67b",
+      "apps": [
+        {
+          "bundleName": "BetterCmdTab.app",
+          "bundleIdentifier": "pro.bettercmdtab.BetterCmdTab"
+        }
+      ]
+    },
+    "voiceink": {
+      "caskVersion": "2.20",
+      "sourceURL": "https://github.com/Beingpax/VoiceInk/releases/download/v2.20/VoiceInk.dmg",
+      "artifactSHA256": "e0bd8ebb4cffad2cd18e30de39e2d922d085b094d95034b47d965bc845062c7d",
+      "apps": [
+        {
+          "bundleName": "VoiceInk.app",
+          "bundleIdentifier": "com.prakashjoshipax.VoiceInk"
+        }
+      ]
+    },
+    "mac-sai": {
+      "caskVersion": "1.20.0",
+      "sourceURL": "https://github.com/iliyami/MacSai/releases/download/v1.20.0/MacSai-1.20.0.dmg",
+      "artifactSHA256": "8ea74e21f25a30ad6477389c17e247bc9884dcc358155df295e67fd73fc1351b",
+      "apps": [
+        {
+          "bundleName": "Mac Sai.app",
+          "bundleIdentifier": "com.macclean.app"
+        }
+      ]
+    },
+    "omnidisksweeper": {
+      "caskVersion": "1.16",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/11/OmniDiskSweeper-1.16.dmg",
+      "artifactSHA256": "cea5153769290a17c11c58696ac9e32423e4128cec6565ef9a9b5f2c73b0df5c",
+      "apps": [
+        {
+          "bundleName": "OmniDiskSweeper.app",
+          "bundleIdentifier": "com.omnigroup.OmniDiskSweeper"
+        }
+      ]
+    },
+    "imageoptim": {
+      "caskVersion": "1.9.3",
+      "sourceURL": "https://imageoptim.com/ImageOptim1.9.3.tar.xz",
+      "artifactSHA256": "d4e453bbb55b6491d519a30e0e6de5beb7ce1a929e8f835767b638ef6ffd371d",
+      "apps": [
+        {
+          "bundleName": "ImageOptim.app",
+          "bundleIdentifier": "net.pornel.ImageOptim"
+        }
+      ]
+    },
+    "cleanshot": {
+      "caskVersion": "5.0.1",
+      "sourceURL": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.1.dmg",
+      "artifactSHA256": "85ab95c8a4be4fb650a94ec087a7e7d89f4e6bda9c18611cdd44ab6a3edb1cf1",
+      "apps": [
+        {
+          "bundleName": "CleanShot X.app",
+          "bundleIdentifier": "pl.maketheweb.cleanshotx"
+        }
+      ]
+    },
+    "secretive": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://github.com/maxgoedjen/secretive/releases/download/v3.0.4/Secretive.zip",
+      "artifactSHA256": "696d07812e4431075234a900a0136dbad3131a91086e535fc2b07d69a1d084ba",
+      "apps": [
+        {
+          "bundleName": "Secretive.app",
+          "bundleIdentifier": "com.maxgoedjen.Secretive.Host"
+        }
+      ]
+    },
+    "daisydisk": {
+      "caskVersion": "4.34.2",
+      "sourceURL": "https://daisydiskapp.com/download/DaisyDisk.zip",
+      "artifactSHA256": "45ef4639f2b4dc6a206f8129d62b54266eb42fde2abc67d7823aa92e0f064257",
+      "apps": [
+        {
+          "bundleName": "DaisyDisk.app",
+          "bundleIdentifier": "com.daisydiskapp.DaisyDiskStandAlone"
+        }
+      ]
+    },
+    "beekeeper-studio": {
+      "caskVersion": "6.1.2",
+      "sourceURL": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.1.2/Beekeeper-Studio-6.1.2-arm64.dmg",
+      "artifactSHA256": "2b3a0e9b45fee28d1d1fba4e10250cb127054d7b652d9358288c89bb9cdc02e5",
+      "apps": [
+        {
+          "bundleName": "Beekeeper Studio.app",
+          "bundleIdentifier": "io.beekeeperstudio.desktop"
+        }
+      ]
+    },
+    "cherry-studio": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.0/Cherry-Studio-2.1.0-mac-arm64.dmg",
+      "artifactSHA256": "f2a394c2da6f72eef16b844280b4173712429c9a763fe90a7e5f606df98ac27f",
+      "apps": [
+        {
+          "bundleName": "Cherry Studio.app",
+          "bundleIdentifier": "com.kangfenmao.CherryStudio"
+        }
+      ]
+    },
+    "keyboardcleantool": {
+      "caskVersion": "8.3",
+      "sourceURL": "https://folivora.ai/releases/KeyboardCleanTool-8.3.zip",
+      "artifactSHA256": "13e2a061220626392b253ab41500871ac9bda1b92598d7a3077b483960256c93",
+      "apps": [
+        {
+          "bundleName": "KeyboardCleanTool.app",
+          "bundleIdentifier": "com.hegenberg.KeyboardCleanTool"
+        }
+      ]
+    },
+    "marta": {
+      "caskVersion": "0.8.2",
+      "sourceURL": "https://updates.marta.sh/release/Marta-0.8.2.dmg",
+      "artifactSHA256": "960f3529c099a6e1429dbb15ab120c09ab9d76c6424133a18bdb954c4465bdb6",
+      "apps": [
+        {
+          "bundleName": "Marta.app",
+          "bundleIdentifier": "org.yanex.marta"
+        }
+      ]
+    },
+    "feishu": {
+      "caskVersion": "8.0.3,ceb4c744",
+      "sourceURL": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/ceb4c744/Feishu-darwin_arm64-8.0.3-signed.dmg",
+      "artifactSHA256": "0d6fb70cfea91a7a4eefccbd357c167b94f22fc507f824a4e8ed438e77680b46",
+      "apps": [
+        {
+          "bundleName": "Feishu.app",
+          "bundleIdentifier": "com.electron.lark"
+        }
+      ]
     }
   }
 }
