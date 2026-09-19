@@ -35,9 +35,9 @@
       ]
     },
     "antinote": {
-      "caskVersion": "2.1.0",
-      "sourceURL": "https://antinote.io/updates/Antinote_2.1.0.dmg",
-      "artifactSHA256": "106bcf712a5890f3d5eeafe15013ef679fe5b8e438ee2f8db514eb7b46542681",
+      "caskVersion": "2.1.3",
+      "sourceURL": "https://antinote.io/updates/Antinote_2.1.3.dmg",
+      "artifactSHA256": "c81e53c397f7ce3ce03a0059140df59899d4401c0afcac593de7be713e01af50",
       "apps": [
         {
           "bundleName": "Antinote.app",
@@ -5006,6 +5006,270 @@
         {
           "bundleName": "DeepL.app",
           "bundleIdentifier": "com.linguee.DeepLCopyTranslator"
+        }
+      ]
+    },
+    "modern-csv": {
+      "caskVersion": "2.4.4",
+      "sourceURL": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.4.4.dmg",
+      "artifactSHA256": "d8a266c48d799a16be15a121cf62f7190b46d7aefde967b81725492d9f252093",
+      "apps": [
+        {
+          "bundleName": "Modern CSV.app",
+          "bundleIdentifier": "net.galliumdigital.Modern-CSV"
+        }
+      ]
+    },
+    "bleunlock": {
+      "caskVersion": "1.12.2",
+      "sourceURL": "https://github.com/ts1/BLEUnlock/releases/download/1.12.2/BLEUnlock-1.12.2.zip",
+      "artifactSHA256": "9ceddc874cf519efc7411c8340abab9e1ff8a4b5b252eff6ca32a94b8cafef5b",
+      "apps": [
+        {
+          "bundleName": "BLEUnlock.app",
+          "bundleIdentifier": "jp.sone.BLEUnlock"
+        }
+      ]
+    },
+    "remoteviewer": {
+      "caskVersion": "0.5.7-1",
+      "sourceURL": "https://people.freedesktop.org/~teuf/spice-gtk-osx/dmg/0.5.7/RemoteViewer-0.5.7-1.dmg",
+      "artifactSHA256": "96ec9eb33422ac8a717238a7f99fded7c50503198d7302028a09f4e536b02849",
+      "apps": [
+        {
+          "bundleName": "RemoteViewer.app",
+          "bundleIdentifier": "org.virt-manager.remote-viewer"
+        }
+      ]
+    },
+    "typeless": {
+      "caskVersion": "2.7.0",
+      "sourceURL": "https://typeless-static.com/desktop-release/Typeless-2.7.0-arm64.dmg",
+      "artifactSHA256": "05d397a69a935303fe7c766c351acf67e297bc3ea27531dbe2374b98f786bca9",
+      "apps": [
+        {
+          "bundleName": "Typeless.app",
+          "bundleIdentifier": "now.typeless.desktop"
+        }
+      ]
+    },
+    "popclip": {
+      "caskVersion": "2026.8.1",
+      "sourceURL": "https://pilotmoon.com/downloads/PopClip-2026.8.1.zip",
+      "artifactSHA256": "a3117319336996cee1ef9a6d17c03c3d3f1dbf6077164c2cfca5d235420425db",
+      "apps": [
+        {
+          "bundleName": "PopClip.app",
+          "bundleIdentifier": "com.pilotmoon.popclip"
+        }
+      ]
+    },
+    "homerow": {
+      "caskVersion": "1.5.3",
+      "sourceURL": "https://builds.homerow.app/v1.5.3/Homerow.zip",
+      "artifactSHA256": "39616e577d74459d2a095e2da571fce2e528d5375615abf102b8080c1f091c6b",
+      "apps": [
+        {
+          "bundleName": "Homerow.app",
+          "bundleIdentifier": "com.superultra.Homerow"
+        }
+      ]
+    },
+    "loom": {
+      "caskVersion": "0.375.0",
+      "sourceURL": "https://packages.loom.com/desktop-packages/Loom-0.375.0-arm64.dmg",
+      "artifactSHA256": "387daa1e2e84d18f773e613ffd7752be76357fcdd0fedf85240ff672e06d96ca",
+      "apps": [
+        {
+          "bundleName": "Loom.app",
+          "bundleIdentifier": "com.loom.desktop"
+        }
+      ]
+    },
+    "tofu": {
+      "caskVersion": "3.1",
+      "sourceURL": "https://amarsagoo.info/tofu/Tofu.dmg",
+      "artifactSHA256": "65f7d43e3bb2a4f1981c6dca4f3595982446a19caa2cc29b5ad2bcb2d050e68e",
+      "apps": [
+        {
+          "bundleName": "Tofu.app",
+          "bundleIdentifier": "com.asagoo.tofu"
+        }
+      ]
+    },
+    "pika": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://github.com/superhighfives/pika/releases/download/1.9.0/Pika-1.9.0.dmg",
+      "artifactSHA256": "082ca16bdf7f4bf91f41c1d855cbaf7911c3a7c9f076bbe3f663af2f543de222",
+      "apps": [
+        {
+          "bundleName": "Pika.app",
+          "bundleIdentifier": "com.superhighfives.Pika"
+        }
+      ]
+    },
+    "altserver": {
+      "caskVersion": "1.8.1",
+      "sourceURL": "https://cdn.altstore.io/file/altstore/altserver/1_8_1.zip",
+      "artifactSHA256": "8f48728c64ad776580939ce05ee99e979d457226fb82b1d42f95a8c1bd73e3c1",
+      "apps": [
+        {
+          "bundleName": "AltServer.app",
+          "bundleIdentifier": "com.rileytestut.AltServer"
+        }
+      ]
+    },
+    "libreoffice-still": {
+      "caskVersion": "26.2.6",
+      "sourceURL": "https://download.documentfoundation.org/libreoffice/stable/26.2.6/mac/aarch64/LibreOffice_26.2.6_MacOS_aarch64.dmg",
+      "artifactSHA256": "94bb3248df074c225490a8a6d1d9dc87c7d6783dbb7a8e9f0d0c3d94348552af",
+      "apps": [
+        {
+          "bundleName": "LibreOffice.app",
+          "bundleIdentifier": "org.libreoffice.script"
+        }
+      ]
+    },
+    "cameracontroller": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/Itaybre/CameraController/releases/download/v1.4.0/CameraController.zip",
+      "artifactSHA256": "8a46dcb20a8d8898d4c47540f636e990ca3e3401c0ff062043efe5cc33d39dda",
+      "apps": [
+        {
+          "bundleName": "CameraController.app",
+          "bundleIdentifier": "com.itaysoft.CameraController"
+        }
+      ]
+    },
+    "kdiff3": {
+      "caskVersion": "1.12.6",
+      "sourceURL": "https://download.kde.org/stable/kdiff3/kdiff3-1.12.6-macos-arm64.dmg",
+      "artifactSHA256": "e80b3a304a6896d6906a930e72b0760bbd6d6dcb3392c842e15f14867c28f136",
+      "apps": [
+        {
+          "bundleName": "kdiff3.app",
+          "bundleIdentifier": "org.kde.KDiff3"
+        }
+      ]
+    },
+    "beeper": {
+      "caskVersion": "4.3.123",
+      "sourceURL": "https://beeper-desktop.download.beeper.com/builds/Beeper-4.3.123-arm64-mac.zip",
+      "artifactSHA256": "ee9473ddddeab1bfd3007e4538eba47a48515a04e0e871b518525dd1abfcb88b",
+      "apps": [
+        {
+          "bundleName": "Beeper Desktop.app",
+          "bundleIdentifier": "com.automattic.beeper.desktop"
+        }
+      ]
+    },
+    "webex": {
+      "caskVersion": "46.9.0.35800",
+      "sourceURL": "https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg",
+      "artifactSHA256": "7eab3456034d14cb125f4cd1a7238d1c564c27003446d04f51fbbd392987f535",
+      "apps": [
+        {
+          "bundleName": "Webex.app",
+          "bundleIdentifier": "Cisco-Systems.Spark"
+        }
+      ]
+    },
+    "reaper": {
+      "caskVersion": "7.80",
+      "sourceURL": "https://dlcf.reaper.fm/7.x/reaper780_universal.dmg",
+      "artifactSHA256": "8d041123ff344ec6248548fa1b554f29bff4b0e26e10de00087df0134171d985",
+      "apps": [
+        {
+          "bundleName": "REAPER.app",
+          "bundleIdentifier": "com.cockos.reaper"
+        }
+      ]
+    },
+    "godot-mono": {
+      "caskVersion": "4.7.2",
+      "sourceURL": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_mono_macos.universal.zip",
+      "artifactSHA256": "8af3977b60d2c59802f7c8ff1914b3ca02a5e294f7381fc1104ee777e33cbbd8",
+      "apps": [
+        {
+          "bundleName": "Godot_mono.app",
+          "bundleIdentifier": "org.godotengine.godot"
+        }
+      ]
+    },
+    "eclipse-java": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-java-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "417e86d866f053d0590a55213e440bf50233a77ed2a9a40680eff37a0b883e50",
+      "apps": [
+        {
+          "bundleName": "Eclipse Java.app",
+          "bundleIdentifier": "epp.package.java"
+        }
+      ]
+    },
+    "bettercapture": {
+      "caskVersion": "2026.4",
+      "sourceURL": "https://github.com/jsattler/BetterCapture/releases/download/v2026.4/BetterCapture-2026.4-arm64.dmg",
+      "artifactSHA256": "6173b64653b0f2605c069f31e18e955ca9db2513ea10633b3a4d96763a9da7b1",
+      "apps": [
+        {
+          "bundleName": "BetterCapture.app",
+          "bundleIdentifier": "com.sattlerjoshua.BetterCapture"
+        }
+      ]
+    },
+    "vicinae": {
+      "caskVersion": "0.29.0",
+      "sourceURL": "https://github.com/vicinaehq/vicinae/releases/download/v0.29.0/Vicinae.dmg",
+      "artifactSHA256": "774ab055c8033799d7190ec8a5e958811fc835d3e7ac9253ac9b14eaa94cdd35",
+      "apps": [
+        {
+          "bundleName": "Vicinae.app",
+          "bundleIdentifier": "com.vicinaehq.Vicinae"
+        }
+      ]
+    },
+    "afterglow": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://morphing.cloud/afterglow/Afterglow-v1.0.1.dmg",
+      "artifactSHA256": "f0b8a55af180bbcf1a6a08838129859ea831b9e9a582e0ad657fe7ee9951ddfd",
+      "apps": [
+        {
+          "bundleName": "Afterglow.app",
+          "bundleIdentifier": "cloud.morphing.afterglow"
+        }
+      ]
+    },
+    "iloader": {
+      "caskVersion": "2.3.3",
+      "sourceURL": "https://github.com/nab138/iloader/releases/download/v2.3.3/iloader-darwin-universal.dmg",
+      "artifactSHA256": "9869447506cdbe990944f159f929b906cb71bb1d6d659efc52c8c9ca7675bcbd",
+      "apps": [
+        {
+          "bundleName": "iloader.app",
+          "bundleIdentifier": "me.nabdev.iloader"
+        }
+      ]
+    },
+    "wpsoffice": {
+      "caskVersion": "12.1.26032,0024.21300060",
+      "sourceURL": "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/macwpsoffice/download/installer/i18n/WPSOffice_arm64_0024.21300060.dmg",
+      "artifactSHA256": "f2398daf373224a99594e372739e028df8b1a3fc1107e72f8d5d0c5b4168202c",
+      "apps": [
+        {
+          "bundleName": "wpsoffice.app",
+          "bundleIdentifier": "com.kingsoft.wpsoffice.mac.global"
+        }
+      ]
+    },
+    "macpacker": {
+      "caskVersion": "0.22.0",
+      "sourceURL": "https://macpacker-releases.s3.amazonaws.com/MacPacker_v0.22.0.zip",
+      "artifactSHA256": "f61703e5ac1ab632c2e7293e406119ddb88e35f15327d0e30721a02d689227a2",
+      "apps": [
+        {
+          "bundleName": "MacPacker.app",
+          "bundleIdentifier": "com.sarensx.MacPacker"
         }
       ]
     }
