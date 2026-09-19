@@ -120,10 +120,10 @@
     "updated": "2026-07-08"
   },
   "basictex": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/TeX-Live.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "bias-fx": {
     "status": "no_icon",
