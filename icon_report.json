@@ -143,6 +143,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "blackhole-64ch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-09-19"
+  },
   "box-tools": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -780,10 +786,10 @@
     "updated": "2026-07-08"
   },
   "libndi": {
-    "status": "curated",
-    "reason": "official vendor asset: ndi.video site icon (Vector.svg, rasterized) -- framework pkg itself has no icon",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-19"
   },
   "lidanglesensor": {
     "status": "curated",
@@ -1272,10 +1278,10 @@
     "updated": "2026-07-08"
   },
   "sshfs-mac": {
-    "status": "curated",
-    "reason": "official vendor asset: reuse of macfuse.png (FUSE family)",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-19"
   },
   "starnet2": {
     "status": "no_icon",

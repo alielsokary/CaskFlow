@@ -3113,6 +3113,256 @@
           "bundleIdentifier": "dev.kiro.desktop"
         }
       ]
+    },
+    "displaylink": {
+      "caskVersion": "16.2,2026-07",
+      "sourceURL": "https://www.synaptics.com/sites/default/files/exe_files/2026-07/DisplayLink%20Manager%20Graphics%20Connectivity16.2-EXE.pkg",
+      "artifactSHA256": "fd9eafab9542e592baa39984ed4e87e64e89f3de6b9a4429ab13a2334a7538e6",
+      "apps": []
+    },
+    "wailbrew": {
+      "caskVersion": "0.13.0",
+      "sourceURL": "https://github.com/wickenico/WailBrew/releases/download/v0.13.0/wailbrew-v0.13.0.zip",
+      "artifactSHA256": "233a2d0424c5e4ec918415ddac3473090d18ab640bbf44386e71850cb7923d17",
+      "apps": []
+    },
+    "chatgpt-classic": {
+      "caskVersion": "1.2026.184,1784145287",
+      "sourceURL": "https://persistent.oaistatic.com/classic/public/ChatGPT_Classic.dmg",
+      "artifactSHA256": "a94117fb34627229baafe3e8b7b45467c5aee7861b4cd795a5be8d547b1ff7b4",
+      "apps": [
+        {
+          "bundleName": "ChatGPT Classic.app",
+          "bundleIdentifier": "com.openai.chat"
+        }
+      ]
+    },
+    "anythingllm": {
+      "caskVersion": "1.16.1",
+      "sourceURL": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop-Silicon.dmg",
+      "artifactSHA256": "e05ae16d0e842a3bb6a26b826e06f9f61c3070464fd01aec96b0e55e6c00d729",
+      "apps": [
+        {
+          "bundleName": "AnythingLLM.app",
+          "bundleIdentifier": "com.anythingllm"
+        }
+      ]
+    },
+    "keyclu": {
+      "caskVersion": "0.33",
+      "sourceURL": "https://github.com/Anze/KeyCluCask/releases/download/v0.33/KeyClu.zip",
+      "artifactSHA256": "ce92c33b3416b4f840ba2ae1d408dd774b7f1d758455c54bd8a6069fe4263244",
+      "apps": [
+        {
+          "bundleName": "KeyClu.app",
+          "bundleIdentifier": "com.0804Team.KeyClu"
+        }
+      ]
+    },
+    "sshfs-mac": {
+      "caskVersion": "3.7.5",
+      "sourceURL": "https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.pkg",
+      "artifactSHA256": "611713612179cf7ccd2995051165da7d19e0ca199ae70d9680c3d3551f456d46",
+      "apps": []
+    },
+    "orcaslicer": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.4.2/OrcaSlicer_Mac_universal_V2.4.2.dmg",
+      "artifactSHA256": "e15e7bb1b66214ec6e96b169b388004179c4f5f705effcdaf8c80d4992ee0366",
+      "apps": [
+        {
+          "bundleName": "OrcaSlicer.app",
+          "bundleIdentifier": "com.orcaslicer.OrcaSlicer"
+        }
+      ]
+    },
+    "lm-studio-bionic": {
+      "caskVersion": "1.1.5,1",
+      "sourceURL": "https://bionic-installers.lmstudio.ai/darwin/arm64/1.1.5-1/Bionic-1.1.5-1-arm64.dmg",
+      "artifactSHA256": "9c26cf254646a799dc96461a5b2b887858abefbdd7ced3237bddc748c24f5a84",
+      "apps": [
+        {
+          "bundleName": "Bionic.app",
+          "bundleIdentifier": "ai.elementlabs.bionic"
+        }
+      ]
+    },
+    "wallspace": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://dvivcibhncrefmnjtjeq.supabase.co/functions/v1/download-version?v=1.5.1",
+      "artifactSHA256": "ac3b52dbe675273793256d03a12392a6fdccdf05f46d1d6d5d8cb745e173d61c",
+      "apps": [
+        {
+          "bundleName": "Wallspace.app",
+          "bundleIdentifier": "wallspace.app"
+        }
+      ]
+    },
+    "blackhole-64ch": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://existential.audio/downloads/BlackHole64ch-0.7.1.pkg",
+      "artifactSHA256": "586b614cffb8b84ac39b2b926b69d5416ab9a4d64c63217b71ce2f5f5d7aabd1",
+      "apps": []
+    },
+    "amethyst": {
+      "caskVersion": "0.24.3",
+      "sourceURL": "https://github.com/ianyh/Amethyst/releases/download/v0.24.3/Amethyst.zip",
+      "artifactSHA256": "442d2b9fe53f8062051dd63e5d01512ed2020c78cbdbe4f93ecf30290a5b0302",
+      "apps": [
+        {
+          "bundleName": "Amethyst.app",
+          "bundleIdentifier": "com.amethyst.Amethyst"
+        }
+      ]
+    },
+    "datagrip": {
+      "caskVersion": "2026.2.5,262.10315.132",
+      "sourceURL": "https://download.jetbrains.com/datagrip/datagrip-2026.2.5-aarch64.dmg",
+      "artifactSHA256": "f4c85cb1a1973764f84184c5fb8e4b86c7fac9aae2731e503f6f331b1217ddc8",
+      "apps": [
+        {
+          "bundleName": "DataGrip.app",
+          "bundleIdentifier": "com.jetbrains.datagrip"
+        }
+      ]
+    },
+    "macdown-3000": {
+      "caskVersion": "3000.0.7",
+      "sourceURL": "https://github.com/schuyler/macdown3000/releases/download/v3000.0.7/MacDown-3000.0.7.dmg",
+      "artifactSHA256": "62296564c5b6604b93c9a11849ec441572beadbde2e499dcc232e1d1ddd01c98",
+      "apps": [
+        {
+          "bundleName": "MacDown 3000.app",
+          "bundleIdentifier": "app.macdown.macdown3000"
+        }
+      ]
+    },
+    "qgis": {
+      "caskVersion": "4.2.2",
+      "sourceURL": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_2.dmg",
+      "artifactSHA256": "91b80ccd4d1a141615435223983b0b718c5e2c5283afc73f3780ad302f435951",
+      "apps": [
+        {
+          "bundleName": "QGIS-final-4_2_2.app",
+          "bundleIdentifier": "org.qgis.qgis3"
+        }
+      ]
+    },
+    "fork": {
+      "caskVersion": "2.70.2",
+      "sourceURL": "https://cdn.fork.dev/mac/Fork-2.70.2.dmg",
+      "artifactSHA256": "7eb22a27a11f017d5b3ffac4650ac1eb47162bf851ff43e4425e913303222571",
+      "apps": [
+        {
+          "bundleName": "Fork.app",
+          "bundleIdentifier": "com.DanPristupov.Fork"
+        }
+      ]
+    },
+    "macwhisper": {
+      "caskVersion": "15.1.1,1513",
+      "sourceURL": "https://cdn.macwhisper.com/macwhisper/MacWhisper-1513.zip",
+      "artifactSHA256": "7899a8e42436e14bf170102f35313c12918cf2415be4fd0a56322c464f790b4f",
+      "apps": [
+        {
+          "bundleName": "MacWhisper.app",
+          "bundleIdentifier": "com.goodsnooze.MacWhisper"
+        }
+      ]
+    },
+    "opera": {
+      "caskVersion": "136.0.6008.22",
+      "sourceURL": "https://get.geo.opera.com/pub/opera/desktop/136.0.6008.22/mac/Opera_136.0.6008.22_Setup.dmg",
+      "artifactSHA256": "506296522aa59ea7e0b7fba80bef08035f659dc8e6fb386e0e7cd8f2aa5a2a2f",
+      "apps": [
+        {
+          "bundleName": "Opera.app",
+          "bundleIdentifier": "com.operasoftware.Opera"
+        }
+      ]
+    },
+    "whatcable": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/darrylmorley/whatcable/releases/download/v1.4.0/WhatCable.zip",
+      "artifactSHA256": "e397334f2410cf0259b014826780f73cc22f79c40719757a5fcbdb026c4b5527",
+      "apps": [
+        {
+          "bundleName": "WhatCable.app",
+          "bundleIdentifier": "uk.whatcable.whatcable"
+        }
+      ]
+    },
+    "libndi": {
+      "caskVersion": "latest",
+      "sourceURL": "https://downloads.ndi.tv/SDK/NDI_SDK_Mac/libNDI_for_Mac.pkg",
+      "artifactSHA256": "939d73d8456dcb1b64c609cdf36d8bb365a55d4329fab040241202492b993dce",
+      "apps": []
+    },
+    "coconutbattery": {
+      "caskVersion": "4.4.0,265",
+      "sourceURL": "https://www.coconut-flavour.com/downloads/coconutBattery_440_265.zip",
+      "artifactSHA256": "ac7bb9a5f02af6f1b7f3107ae3fb62268ec41e8d853a3df5ecee58bf0a51db4d",
+      "apps": [
+        {
+          "bundleName": "coconutBattery.app",
+          "bundleIdentifier": "com.coconut-flavour.coconutBattery"
+        }
+      ]
+    },
+    "superwhisper": {
+      "caskVersion": "2.18.3",
+      "sourceURL": "https://builds.superwhisper.com/v2.18.3/superwhisper.zip",
+      "artifactSHA256": "45f52f78907ae49afc3f4729e52737591aec4b825171da709a574e61c069d1bf",
+      "apps": [
+        {
+          "bundleName": "superwhisper.app",
+          "bundleIdentifier": "com.superduper.superwhisper"
+        }
+      ]
+    },
+    "lunar": {
+      "caskVersion": "6.11.0",
+      "sourceURL": "https://files.lunar.fyi/releases/Lunar-6.11.0.dmg",
+      "artifactSHA256": "a45ad3e4b06a4729eac8c75714fe43067ebd4c750d9d729b27897de831f1237d",
+      "apps": [
+        {
+          "bundleName": "Lunar.app",
+          "bundleIdentifier": "fyi.lunar.Lunar"
+        }
+      ]
+    },
+    "crystalfetch": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/TuringSoftware/CrystalFetch/releases/download/v2.2.0/CrystalFetch.dmg",
+      "artifactSHA256": "6e428a419bc5deded21da0c9eafae4507fd5b2fb6e2c8cf8b59f97522f01deee",
+      "apps": [
+        {
+          "bundleName": "CrystalFetch.app",
+          "bundleIdentifier": "llc.turing.CrystalFetch"
+        }
+      ]
+    },
+    "zettlr": {
+      "caskVersion": "4.8.0",
+      "sourceURL": "https://github.com/Zettlr/Zettlr/releases/download/v4.8.0/Zettlr-4.8.0-arm64.dmg",
+      "artifactSHA256": "3144b95199df77e3ca97a04546bf16a60f917107061331c31b3c35bc46b7d3f5",
+      "apps": [
+        {
+          "bundleName": "Zettlr.app",
+          "bundleIdentifier": "com.zettlr.app"
+        }
+      ]
+    },
+    "open-design": {
+      "caskVersion": "0.22.2",
+      "sourceURL": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.22.2/open-design-0.22.2-mac-arm64.dmg",
+      "artifactSHA256": "9c3c5f1e523dac9228c51331dea41de998f61ab9b2d51def27f642e2ce70a30e",
+      "apps": [
+        {
+          "bundleName": "Open Design.app",
+          "bundleIdentifier": "io.open-design.desktop"
+        }
+      ]
     }
   }
 }
