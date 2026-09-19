@@ -1854,6 +1854,256 @@
           "bundleIdentifier": "net.librewolf.librewolf"
         }
       ]
+    },
+    "arc": {
+      "caskVersion": "1.165.1,87405",
+      "sourceURL": "https://releases.arc.net/release/Arc-1.165.1-87405.zip",
+      "artifactSHA256": "1db4fe1f24324bf11634ae1b42b8666fd1fdcdade693e98415b00f0c9102dfe4",
+      "apps": [
+        {
+          "bundleName": "Arc.app",
+          "bundleIdentifier": "company.thebrowser.Browser"
+        }
+      ]
+    },
+    "ungoogled-chromium": {
+      "caskVersion": "152.0.7977.82-1.1",
+      "sourceURL": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/152.0.7977.82-1.1/ungoogled-chromium_152.0.7977.82-1.1_arm64-macos.dmg",
+      "artifactSHA256": "ba673876533e79b3c09edaf3ebd0dadcc29e9d0112b9b843d8c032cfb7bfb457",
+      "apps": [
+        {
+          "bundleName": "Chromium.app",
+          "bundleIdentifier": "org.chromium.Chromium"
+        }
+      ]
+    },
+    "zotero": {
+      "caskVersion": "10.0.3",
+      "sourceURL": "https://download.zotero.org/client/release/10.0.3/Zotero-10.0.3.dmg",
+      "artifactSHA256": "36b3f302aca026467b9f1973016a794c6fe95cadb0f7c0db4d414948da19f255",
+      "apps": [
+        {
+          "bundleName": "Zotero.app",
+          "bundleIdentifier": "org.zotero.zotero"
+        }
+      ]
+    },
+    "hiddenbar": {
+      "caskVersion": "1.11.1",
+      "sourceURL": "https://github.com/dwarvesf/hidden/releases/download/v1.11.1/Hidden-Bar-v1.11.1-macos.zip",
+      "artifactSHA256": "2f1082bf55f8a3a4cd132617cf68c054da95c58983966fed0728e4a1dc19327b",
+      "apps": [
+        {
+          "bundleName": "Hidden Bar.app",
+          "bundleIdentifier": "com.dwarvesv.minimalbar"
+        }
+      ]
+    },
+    "dbx": {
+      "caskVersion": "0.6.17",
+      "sourceURL": "https://github.com/t8y2/dbx/releases/download/v0.6.17/DBX_0.6.17_arm64.dmg",
+      "artifactSHA256": "1a0dd52444b25fd6a6c51c549b2e73819b17bf575b2f6740443b6d8668aa2e14",
+      "apps": [
+        {
+          "bundleName": "DBX.app",
+          "bundleIdentifier": "com.dbx.app"
+        }
+      ]
+    },
+    "kicad": {
+      "caskVersion": "10.0.6",
+      "sourceURL": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.6/kicad-unified-universal-10.0.6.dmg",
+      "artifactSHA256": "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68",
+      "apps": []
+    },
+    "alfred": {
+      "caskVersion": "5.8,2348",
+      "sourceURL": "https://cachefly.alfredapp.com/Alfred_5.8_2348.tar.gz",
+      "artifactSHA256": "280c2553ba92a3a5ce98b59455bc2b97ee92393bac5663231fc0d9c3f5d03511",
+      "apps": [
+        {
+          "bundleName": "Alfred 5.app",
+          "bundleIdentifier": "com.runningwithcrayons.Alfred"
+        }
+      ]
+    },
+    "xcodes-app": {
+      "caskVersion": "4.1.1b41",
+      "sourceURL": "https://github.com/XcodesOrg/XcodesApp/releases/download/v4.1.1b41/Xcodes.zip",
+      "artifactSHA256": "65dc424dd06f92db1e192ac97db97861392cfe8568b72f89d7cc8836a7328c9c",
+      "apps": [
+        {
+          "bundleName": "Xcodes.app",
+          "bundleIdentifier": "com.xcodesorg.xcodesapp"
+        }
+      ]
+    },
+    "rancher": {
+      "caskVersion": "1.24.0",
+      "sourceURL": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.24.0/Rancher.Desktop-1.24.0.aarch64.dmg",
+      "artifactSHA256": "0c4eb779d376f51e34b339124ad4f24b771a8f2c69718e839f89958209e78b34",
+      "apps": [
+        {
+          "bundleName": "Rancher Desktop.app",
+          "bundleIdentifier": "io.rancherdesktop.app"
+        }
+      ]
+    },
+    "sequel-ace": {
+      "caskVersion": "5.4.0,20109",
+      "sourceURL": "https://github.com/Sequel-Ace/Sequel-Ace/releases/download/production/5.4.0-20109/Sequel-Ace-5.4.0.zip",
+      "artifactSHA256": "1522e43725f4a990a7cd7f24cc7ad7b2979a6c891f0cc72d4b6554774820b5bb",
+      "apps": [
+        {
+          "bundleName": "Sequel Ace.app",
+          "bundleIdentifier": "com.sequel-ace.sequel-ace"
+        }
+      ]
+    },
+    "fluidvoice": {
+      "caskVersion": "1.6.9",
+      "sourceURL": "https://github.com/altic-dev/FluidVoice/releases/download/v1.6.9/Fluid-oss-1.6.9.dmg",
+      "artifactSHA256": "d8fb7861d479748bb9905b34e058bc0b106efb3c1767b397f9b2cb604a9357a7",
+      "apps": [
+        {
+          "bundleName": "FluidVoice.app",
+          "bundleIdentifier": "com.FluidApp.app"
+        }
+      ]
+    },
+    "microsoft-word": {
+      "caskVersion": "16.113.26091740",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.113.26091740_Installer.pkg",
+      "artifactSHA256": "04d354e2a56f4ebaa8f56b82cb1dd75309a2444415f9f0830cea5ba8f97f1e9a",
+      "apps": []
+    },
+    "grandperspective": {
+      "caskVersion": "3.8.1",
+      "sourceURL": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.8.1/GrandPerspective-3_8_1.dmg",
+      "artifactSHA256": "df20837acaed53eaad186d8acb77b654f080aab4dd5d403dbe8696f4cb2d60cd",
+      "apps": [
+        {
+          "bundleName": "GrandPerspective.app",
+          "bundleIdentifier": "net.sourceforge.grandperspectiv"
+        }
+      ]
+    },
+    "cloudflare-warp": {
+      "caskVersion": "2026.7.1376.0",
+      "sourceURL": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.7.1376.0",
+      "artifactSHA256": "d8fea3fff465927076224d4444ca56355a86d034b2001fb4febdc3080f1f745a",
+      "apps": []
+    },
+    "the-unarchiver": {
+      "caskVersion": "4.3.9,147,1742287964",
+      "sourceURL": "https://dl.devmate.com/com.macpaw.site.theunarchiver/147/1742287964/TheUnarchiver-147.zip",
+      "artifactSHA256": "d0d8dd2e028519ece5eeb0f018b3392f67e1c85053472ccbbaee64e87f173a28",
+      "apps": [
+        {
+          "bundleName": "The Unarchiver.app",
+          "bundleIdentifier": "com.macpaw.site.theunarchiver"
+        }
+      ]
+    },
+    "handy": {
+      "caskVersion": "0.9.7",
+      "sourceURL": "https://github.com/cjpais/Handy/releases/download/v0.9.7/Handy_0.9.7_aarch64.dmg",
+      "artifactSHA256": "f8a2ed7bbc8f6e814ae620609a184212fc9f49dac19a8921bd80ab0f4bd5783c",
+      "apps": [
+        {
+          "bundleName": "Handy.app",
+          "bundleIdentifier": "com.pais.handy"
+        }
+      ]
+    },
+    "tor-browser": {
+      "caskVersion": "15.0.23",
+      "sourceURL": "https://www.torproject.org/dist/torbrowser/15.0.23/tor-browser-macos-15.0.23.dmg",
+      "artifactSHA256": "2ab21948feb8327bbcced2174fd7f4b94a289350060c4ebbc1cd96d28c333db9",
+      "apps": [
+        {
+          "bundleName": "Tor Browser.app",
+          "bundleIdentifier": "org.torproject.torbrowser"
+        }
+      ]
+    },
+    "meld": {
+      "caskVersion": "3.22.3+105",
+      "sourceURL": "https://gitlab.com/api/v4/projects/51547804/packages/generic/meld_macos/3.22.3+105/Meld-3.22.3+105_arm64.dmg",
+      "artifactSHA256": "aea65bbe21842e9c2e72c547df996858abbe05b2610c583f5121215556009527",
+      "apps": [
+        {
+          "bundleName": "Meld.app",
+          "bundleIdentifier": "org.gnome.Meld"
+        }
+      ]
+    },
+    "multipass": {
+      "caskVersion": "1.16.4",
+      "sourceURL": "https://github.com/canonical/multipass/releases/download/v1.16.4/multipass-1.16.4+mac-Darwin.pkg",
+      "artifactSHA256": "e481704f65bc1650ae8aa5c873eb9137e8b9b403eac60aa603b68d8b4d2c281c",
+      "apps": []
+    },
+    "emacs-app": {
+      "caskVersion": "31.1",
+      "sourceURL": "https://emacsformacosx.com/emacs-builds/Emacs-31.1-universal.dmg",
+      "artifactSHA256": "f0383bcbf0104947d3a46266aae43e3dc9e38fd68eeb35f11ee6b9444277b8ec",
+      "apps": [
+        {
+          "bundleName": "Emacs.app",
+          "bundleIdentifier": "org.gnu.Emacs"
+        }
+      ]
+    },
+    "freelens": {
+      "caskVersion": "1.10.3",
+      "sourceURL": "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-macos-arm64.dmg",
+      "artifactSHA256": "ae33e11d5db858da1f64ae2c4f7ca3835786780bcb2af02e55fe756f08900419",
+      "apps": [
+        {
+          "bundleName": "Freelens.app",
+          "bundleIdentifier": "app.freelens.Freelens"
+        }
+      ]
+    },
+    "another-redis-desktop-manager": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.4/Another-Redis-Desktop-Manager-mac-1.7.4-arm64.dmg",
+      "artifactSHA256": "65398843725498c2835e2df2e8da2e35e9ce5f83d7632f012eb12a2d8705087a",
+      "apps": [
+        {
+          "bundleName": "Another Redis Desktop Manager.app",
+          "bundleIdentifier": "me.qii404.another-redis-desktop-manager"
+        }
+      ]
+    },
+    "handbrake-app": {
+      "caskVersion": "1.11.2",
+      "sourceURL": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.2.dmg&update=true",
+      "artifactSHA256": "4afe27aaa77a7bbb0dcda1a335d96a5f53649f2649fb84de6982ffecc35de9d7",
+      "apps": [
+        {
+          "bundleName": "HandBrake.app",
+          "bundleIdentifier": "fr.handbrake.HandBrake"
+        }
+      ]
+    },
+    "microsoft-excel": {
+      "caskVersion": "16.113.26091740",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.113.26091740_Installer.pkg",
+      "artifactSHA256": "9db8f0c5fae677d7b06526730cf8cab4a2050c7eb21e3c8b8214a1c4c02c4459",
+      "apps": []
+    },
+    "markedit": {
+      "caskVersion": "1.35.0",
+      "sourceURL": "https://github.com/MarkEdit-app/MarkEdit/releases/download/v1.35.0/MarkEdit-1.35.0.dmg",
+      "artifactSHA256": "15c4930969b411de98c3397094d3815b40463781dd01161581f26f54d6108e7e",
+      "apps": [
+        {
+          "bundleName": "MarkEdit.app",
+          "bundleIdentifier": "app.cyan.markedit"
+        }
+      ]
     }
   }
 }
