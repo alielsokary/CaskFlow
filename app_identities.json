@@ -3918,6 +3918,281 @@
           "bundleIdentifier": "de.beyondco.herd"
         }
       ]
+    },
+    "kde-connect": {
+      "caskVersion": "26.08.1",
+      "sourceURL": "https://download.kde.org/stable/release-service/26.08.1/macos/kdeconnect-kde-26.08-macos-clang-arm64.dmg",
+      "artifactSHA256": "e481cad9046c129e9fd7ea64e665c141b5764db16da16d3b85fe36beb23574bc",
+      "apps": [
+        {
+          "bundleName": "KDE Connect.app",
+          "bundleIdentifier": "org.kde.kdeconnect"
+        }
+      ]
+    },
+    "perplexity": {
+      "caskVersion": "26.37.1",
+      "sourceURL": "https://macos-download.perplexity.ai/Perplexity.dmg",
+      "artifactSHA256": "d2dce8dcb391b63b6d5786bfbe909bb3b684e625e9dfbcbcfd8e2454c21803a8",
+      "apps": [
+        {
+          "bundleName": "Perplexity.app",
+          "bundleIdentifier": "ai.perplexity.macv3"
+        }
+      ]
+    },
+    "netnewswire": {
+      "caskVersion": "7.1.3",
+      "sourceURL": "https://github.com/Ranchero-Software/NetNewsWire/releases/download/mac-7.1.3/NetNewsWire7.1.3.zip",
+      "artifactSHA256": "b266ec3e76c118279f10a172ae740dd6feae1a69142025c44a659344c6b27367",
+      "apps": [
+        {
+          "bundleName": "NetNewsWire.app",
+          "bundleIdentifier": "com.ranchero.NetNewsWire-Evergreen"
+        }
+      ]
+    },
+    "microsoft-azure-storage-explorer": {
+      "caskVersion": "1.46.0",
+      "sourceURL": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-darwin-arm64.zip",
+      "artifactSHA256": "d96f537addf70319d65a7e510242bfcde8b92117ab3a4adf04eda80453939d1d",
+      "apps": [
+        {
+          "bundleName": "Microsoft Azure Storage Explorer.app",
+          "bundleIdentifier": "com.microsoft.StorageExplorer"
+        }
+      ]
+    },
+    "neovide-app": {
+      "caskVersion": "0.16.2",
+      "sourceURL": "https://github.com/neovide/neovide/releases/download/0.16.2/Neovide-aarch64-apple-darwin.dmg",
+      "artifactSHA256": "5eb745ea7f20cf00491a8ffd8d793c6169ef1c6e1a0f75ae8be40571e65c6b26",
+      "apps": [
+        {
+          "bundleName": "Neovide.app",
+          "bundleIdentifier": "com.neovide.neovide"
+        }
+      ]
+    },
+    "knockknock": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://github.com/objective-see/KnockKnock/releases/download/v4.1.0/KnockKnock_4.1.0.zip",
+      "artifactSHA256": "98eae6cda5a7e122e6c7e68622617c00d6533a909f505f002c93dd90941a3f9e",
+      "apps": [
+        {
+          "bundleName": "KnockKnock.app",
+          "bundleIdentifier": "com.objective-see.KnockKnock"
+        }
+      ]
+    },
+    "yubico-authenticator": {
+      "caskVersion": "7.4.1",
+      "sourceURL": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.4.1-mac.dmg",
+      "artifactSHA256": "9adb0de91b139003c86903296d042053a78f3f60ead68388341bf1b1bc2e1ef3",
+      "apps": [
+        {
+          "bundleName": "Yubico Authenticator.app",
+          "bundleIdentifier": "com.yubico.yubioath"
+        }
+      ]
+    },
+    "latest": {
+      "caskVersion": "0.11",
+      "sourceURL": "https://max.codes/latest/0.11.zip",
+      "artifactSHA256": "b372cde029f1f81c6465b1920a7c5a392a7791243cd30ebf39dab172ec82cbf5",
+      "apps": [
+        {
+          "bundleName": "Latest.app",
+          "bundleIdentifier": "com.max-langer.Latest"
+        }
+      ]
+    },
+    "charles": {
+      "caskVersion": "5.2.1",
+      "sourceURL": "https://www.charlesproxy.com/assets/release/5.2.1/charles-proxy-5.2.1.dmg",
+      "artifactSHA256": "d233395a7fbb487f0fe20ddff16e02a65990add20d5aa9ce1e87a8f9ff0fe0d5",
+      "apps": [
+        {
+          "bundleName": "Charles.app",
+          "bundleIdentifier": "com.xk72.Charles"
+        }
+      ]
+    },
+    "downie": {
+      "caskVersion": "4.13.1,5263",
+      "sourceURL": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5263.dmg",
+      "artifactSHA256": "65407f40e7f8fd52aef8850004a7e0259675430d5d82b103d06a6e1833c4629a",
+      "apps": [
+        {
+          "bundleName": "Downie 4.app",
+          "bundleIdentifier": "com.charliemonroe.Downie-4"
+        }
+      ]
+    },
+    "aside": {
+      "caskVersion": "1.0.914.1",
+      "sourceURL": "https://releases.aside.com/dev-updater/Aside-1.0.914.1.dmg",
+      "artifactSHA256": "e93b30ddd10347e11917d69a83756768a9fc7a311e4edec63c662951d78db7f7",
+      "apps": [
+        {
+          "bundleName": "Aside.app",
+          "bundleIdentifier": "at.studio.AsideBrowser"
+        }
+      ]
+    },
+    "buzz": {
+      "caskVersion": "1.4.5",
+      "sourceURL": "https://github.com/chidiwilliams/buzz/releases/download/v1.4.5/Buzz-1.4.5-mac-ARM64.dmg",
+      "artifactSHA256": "db705058144c859e15d410e11a2b7a4b6faeb6994aab8e8101bd0bb5a05a06a8",
+      "apps": [
+        {
+          "bundleName": "Buzz.app",
+          "bundleIdentifier": "com.chidiwilliams.buzz"
+        }
+      ]
+    },
+    "wpsoffice-cn": {
+      "caskVersion": "12.1.28496",
+      "sourceURL": "https://package.mac.wpscdn.cn/mac_wps_pkg/12.1.28496/WPS_Office_12.1.28496(28496)_arm64.dmg",
+      "artifactSHA256": "15fd015f8349325e9e512221a0cc6857f3a4a98ea3b8f9f95e8c4ed603e5a564",
+      "apps": [
+        {
+          "bundleName": "wpsoffice.app",
+          "bundleIdentifier": "com.kingsoft.wpsoffice.mac"
+        }
+      ]
+    },
+    "kap": {
+      "caskVersion": "3.6.0",
+      "sourceURL": "https://github.com/wulkano/kap/releases/download/v3.6.0/Kap-3.6.0-arm64.dmg",
+      "artifactSHA256": "0f4b69d5fd4ec59da7b6e153722314c93dc263db2b81c0d0191e256360473ce3",
+      "apps": [
+        {
+          "bundleName": "Kap.app",
+          "bundleIdentifier": "com.wulkano.kap"
+        }
+      ]
+    },
+    "unnaturalscrollwheels": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://github.com/ther0n/UnnaturalScrollWheels/releases/download/1.4.2/UnnaturalScrollWheels-1.4.2.dmg",
+      "artifactSHA256": "b75c3e5ebb13f94053e593d33f4e1019327d7cb60342214beae65aab7843eb88",
+      "apps": [
+        {
+          "bundleName": "UnnaturalScrollWheels.app",
+          "bundleIdentifier": "com.theron.UnnaturalScrollWheels"
+        }
+      ]
+    },
+    "skills-manager": {
+      "caskVersion": "1.40.0",
+      "sourceURL": "https://github.com/xingkongliang/skills-manager/releases/download/v1.40.0/skills-manager_1.40.0_aarch64.dmg",
+      "artifactSHA256": "be0c796ea170868054a4cd3e4f6254a431c37474743183fba67e8960b0900ccd",
+      "apps": [
+        {
+          "bundleName": "skills-manager.app",
+          "bundleIdentifier": "com.agentskills.desktop"
+        }
+      ]
+    },
+    "vesktop": {
+      "caskVersion": "1.6.7",
+      "sourceURL": "https://github.com/Vencord/Vesktop/releases/download/v1.6.7/Vesktop-1.6.7-universal.dmg",
+      "artifactSHA256": "2fbb3e3ec04774b3e7e74bcdb74b88b5d2be65ac728d1036ac17f0583ddc3aeb",
+      "apps": [
+        {
+          "bundleName": "vesktop.app",
+          "bundleIdentifier": "dev.vencord.vesktop"
+        }
+      ]
+    },
+    "proton-drive": {
+      "caskVersion": "3.0.3",
+      "sourceURL": "https://proton.me/download/drive/macos/3.0.3/ProtonDrive-3.0.3.dmg",
+      "artifactSHA256": "e89c467632a91815d5edace10917f8db19a712d7c44dbcc0dbf167b274e63951",
+      "apps": [
+        {
+          "bundleName": "Proton Drive.app",
+          "bundleIdentifier": "ch.protonmail.drive"
+        }
+      ]
+    },
+    "baidunetdisk": {
+      "caskVersion": "8.8.5",
+      "sourceURL": "https://pkg-ant.baidu.com/issue/netdisk/MACguanjia/8.8.5/BaiduNetdisk_mac_8.8.5_arm64.dmg",
+      "artifactSHA256": "894fa514d6b19a0c968cf75004c6f69ef223ddc4a9d269b9d533651f10de451a",
+      "apps": [
+        {
+          "bundleName": "BaiduNetdisk_mac.app",
+          "bundleIdentifier": "com.baidu.BaiduNetdisk-mac"
+        }
+      ]
+    },
+    "macusb": {
+      "caskVersion": "2.4",
+      "sourceURL": "https://github.com/Kruszoneq/macUSB/releases/download/v2.4/macUSB.2.4.dmg",
+      "artifactSHA256": "fe3f25cb03c0b6437a148977e36a6e00fbbfcb1d2c868a041812e2b769fde1ae",
+      "apps": [
+        {
+          "bundleName": "macUSB.app",
+          "bundleIdentifier": "com.kruszoneq.macUSB"
+        }
+      ]
+    },
+    "istat-menus": {
+      "caskVersion": "7.50.1",
+      "sourceURL": "https://cdn.istatmenus.app/files/istatmenus7/versions/iStatMenus7.50.1.zip",
+      "artifactSHA256": "3e1807f2e7ba6790267fb3c8036a10103c90227d5722ebba41e7917a544c72e5",
+      "apps": [
+        {
+          "bundleName": "iStat Menus.app",
+          "bundleIdentifier": "com.bjango.istatmenus"
+        }
+      ]
+    },
+    "rider": {
+      "caskVersion": "2026.2.2,262.10315.191",
+      "sourceURL": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.2.2-aarch64.dmg",
+      "artifactSHA256": "e991026d529e31c16e1633896b8f96937f28ef78732a22a1f9aafaddd48de615",
+      "apps": [
+        {
+          "bundleName": "Rider.app",
+          "bundleIdentifier": "com.jetbrains.rider"
+        }
+      ]
+    },
+    "heroic": {
+      "caskVersion": "2.22.3",
+      "sourceURL": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.3/Heroic-2.22.3-macOS-arm64.dmg",
+      "artifactSHA256": "23017ee6ce6e982ae2b4513656b887b693414b51e7205c8ac54b3cb52f26e019",
+      "apps": [
+        {
+          "bundleName": "Heroic.app",
+          "bundleIdentifier": "com.heroicgameslauncher.hgl"
+        }
+      ]
+    },
+    "cork": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://corkmac.app/RLS/2.0.3/Cork.zip",
+      "artifactSHA256": "45db405cec3909074e75da66b5e94d34609af1face0f1277f9c6f5c1beb84131",
+      "apps": [
+        {
+          "bundleName": "Cork.app",
+          "bundleIdentifier": "eu.davidbures.cork"
+        }
+      ]
+    },
+    "minecraft": {
+      "caskVersion": "2.1.3,1",
+      "sourceURL": "https://launcher.mojang.com/download/Minecraft.dmg",
+      "artifactSHA256": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48",
+      "apps": [
+        {
+          "bundleName": "Minecraft.app",
+          "bundleIdentifier": "com.mojang.minecraftlauncher"
+        }
+      ]
     }
   }
 }
