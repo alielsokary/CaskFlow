@@ -6903,6 +6903,265 @@
           "bundleIdentifier": "app.mp3tag.Mp3tag"
         }
       ]
+    },
+    "keyboard-maestro": {
+      "caskVersion": "11.1.1,1111",
+      "sourceURL": "https://files.stairways.com/keyboardmaestro-1111.zip",
+      "artifactSHA256": "0b9ccdbce9e6f81159041e0369bf571ce411a96eb21c20dfce9cf23af3dbe172",
+      "apps": [
+        {
+          "bundleName": "Keyboard Maestro.app",
+          "bundleIdentifier": "com.stairways.keyboardmaestro.editor"
+        }
+      ]
+    },
+    "meetily": {
+      "caskVersion": "0.4.1",
+      "sourceURL": "https://github.com/Zackriya-Solutions/meetily/releases/download/v0.4.1/meetily_0.4.1_aarch64.dmg",
+      "artifactSHA256": "16f84b1769619ba3da93bc43e9c1fa3320ce2b00cc9e99225a3d21302770eaf5",
+      "apps": [
+        {
+          "bundleName": "meetily.app",
+          "bundleIdentifier": "com.meetily.ai"
+        }
+      ]
+    },
+    "texshop": {
+      "caskVersion": "5.57",
+      "sourceURL": "https://pages.uoregon.edu/koch/texshop/texshop-64/texshop557.zip",
+      "artifactSHA256": "08aa26a5dfacfa67bacedbc73d57fe07b64dcfe49e9fab34a3be1dc5372d20d4",
+      "apps": []
+    },
+    "lark": {
+      "caskVersion": "8.0.3,eee2e5a8",
+      "sourceURL": "https://sf16-sg.larksuitecdn.com/obj/lark-version-sg/eee2e5a8/Lark-darwin_arm64-8.0.3-signed.dmg",
+      "artifactSHA256": "d2c436b26cdafa773f207d966d43b581d6ff45666ba858eac6e21581b2d14475",
+      "apps": [
+        {
+          "bundleName": "LarkSuite.app",
+          "bundleIdentifier": "com.larksuite.larkApp"
+        }
+      ]
+    },
+    "qflipper": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://update.flipperzero.one/builds/qFlipper/1.3.3/qFlipper-1.3.3.dmg",
+      "artifactSHA256": "893dd16e79ccfeb26f4adc1e36a03390a51e8baf51303df824b9fac90d46d434",
+      "apps": [
+        {
+          "bundleName": "qFlipper.app",
+          "bundleIdentifier": "com.yourcompany.qFlipper"
+        }
+      ]
+    },
+    "shortcat": {
+      "caskVersion": "0.12.2",
+      "sourceURL": "https://files.shortcat.app/releases/v0.12.2/Shortcat.zip",
+      "artifactSHA256": "8e6a7d981318203d1972efe8e880983d2f10187852c1c2f3d3bda31b7cd1da63",
+      "apps": [
+        {
+          "bundleName": "Shortcat.app",
+          "bundleIdentifier": "com.sproutcube.Shortcat"
+        }
+      ]
+    },
+    "macsyzones": {
+      "caskVersion": "3.1.1",
+      "sourceURL": "https://github.com/rohanrhu/MacsyZones/releases/download/v3.1.1/MacsyZones.zip",
+      "artifactSHA256": "6db860035ba72aaa7ea5eab0e37350687f3a69a243b4c87829168edb30281665",
+      "apps": [
+        {
+          "bundleName": "MacsyZones.app",
+          "bundleIdentifier": "MeowingCat.MacsyZones"
+        }
+      ]
+    },
+    "mediainfo": {
+      "caskVersion": "26.05",
+      "sourceURL": "https://mediaarea.net/download/binary/mediainfo-gui/26.05/MediaInfo_GUI_26.05_Mac.dmg",
+      "artifactSHA256": "3aa0b8953a7608a937c65fd86b62fec833c0ed7936a8c9db4082811f1ba31ac0",
+      "apps": [
+        {
+          "bundleName": "MediaInfo.app",
+          "bundleIdentifier": "net.mediaarea.mediainfo.mac-old"
+        }
+      ]
+    },
+    "qmk-toolbox": {
+      "caskVersion": "0.3.4",
+      "sourceURL": "https://github.com/qmk/qmk_toolbox/releases/download/0.3.4/QMK.Toolbox.app.zip",
+      "artifactSHA256": "0a051496d914d588a756ee4be2ee8aa03dc9d5d328733012e6f06fea4f425d08",
+      "apps": [
+        {
+          "bundleName": "QMK Toolbox.app",
+          "bundleIdentifier": "fm.qmk.toolbox"
+        }
+      ]
+    },
+    "lyricsx": {
+      "caskVersion": "1.6.3,2351",
+      "sourceURL": "https://github.com/ddddxxx/LyricsX/releases/download/v1.6.3/LyricsX_1.6.3+2351.zip",
+      "artifactSHA256": "7566809283aecdedd5275ded9180cedb467ce40c524b3297b411fe7abb479391",
+      "apps": [
+        {
+          "bundleName": "LyricsX.app",
+          "bundleIdentifier": "ddddxxx.LyricsX"
+        }
+      ]
+    },
+    "kitlangton-hex": {
+      "caskVersion": "0.8.5",
+      "sourceURL": "https://github.com/kitlangton/Hex/releases/download/v0.8.5/Hex-0.8.5.dmg",
+      "artifactSHA256": "fce7d4c62324f371b2c913382683e6965b2c5a7a7099073c8888e092c6503a1b",
+      "apps": [
+        {
+          "bundleName": "Hex.app",
+          "bundleIdentifier": "com.kitlangton.Hex"
+        }
+      ]
+    },
+    "keyty": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/keytyapp/Keyty/releases/download/v1.6.0/Keyty.dmg",
+      "artifactSHA256": "a8c65272cccc731f9799c4fa5b9f8dd078dde56fcfe48888d59de30394720d1b",
+      "apps": [
+        {
+          "bundleName": "Keyty.app",
+          "bundleIdentifier": "app.keyty.Keyty"
+        }
+      ]
+    },
+    "mountain-duck": {
+      "caskVersion": "5.3.2,29785",
+      "sourceURL": "https://dist.mountainduck.io/Mountain%20Duck-5.3.2.29785.zip",
+      "artifactSHA256": "682d496bfd747a6f74a63c63f4a441b5d376034249686c7be29f9679628004ef",
+      "apps": [
+        {
+          "bundleName": "Mountain Duck.app",
+          "bundleIdentifier": "io.mountainduck"
+        }
+      ]
+    },
+    "karing": {
+      "caskVersion": "1.2.25.2802",
+      "sourceURL": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_macos_universal.dmg",
+      "artifactSHA256": "90aba8e17bdf15564710e84e6328ce9c9d3edcf45c79eccc1d33995d50c2f458",
+      "apps": [
+        {
+          "bundleName": "Karing.app",
+          "bundleIdentifier": "com.nebula.karing"
+        }
+      ]
+    },
+    "spokenly": {
+      "caskVersion": "2.29.5",
+      "sourceURL": "https://cdn.spokenly.app/releases/macos/Spokenly-2.29.5.dmg",
+      "artifactSHA256": "2b93392eca48939aca5d5ee6fc81e30958a0b5fc04d7d7a0fb70caa6fd1d7637",
+      "apps": [
+        {
+          "bundleName": "Spokenly.app",
+          "bundleIdentifier": "app.spokenly"
+        }
+      ]
+    },
+    "folx": {
+      "caskVersion": "5.34",
+      "sourceURL": "https://cdn.electronic.us/products/folx/mac/download/downloader_mac.dmg",
+      "artifactSHA256": "5533458b2d767aeb043b2676ad710f6d9236de8d1a9dc02994114c30cf6f02be",
+      "apps": [
+        {
+          "bundleName": "Folx.app",
+          "bundleIdentifier": "com.eltima.Folx3"
+        }
+      ]
+    },
+    "macdroid": {
+      "caskVersion": "2.10",
+      "sourceURL": "https://cdn.electronic.us/products/macdroid/mac/download/macdroid.dmg",
+      "artifactSHA256": "46b5620f4ca141f66eba81ce55eb6c48b5f596c4c14e2a20c0a49209dd33b834",
+      "apps": [
+        {
+          "bundleName": "MacDroid.app",
+          "bundleIdentifier": "us.electronic.macdroid"
+        }
+      ]
+    },
+    "keeper-password-manager": {
+      "caskVersion": "18.6.2",
+      "sourceURL": "https://keepersecurity.com/desktop_electron/Darwin/KeeperSetup.dmg",
+      "artifactSHA256": "0de19badbd348d0c32f6af81d11ed38eca7818888ac2ec4bbc416b0a1c2cd7ba",
+      "apps": [
+        {
+          "bundleName": "Keeper Password Manager.app",
+          "bundleIdentifier": "com.keepersecurity.passwordmanager"
+        }
+      ]
+    },
+    "elasticvue": {
+      "caskVersion": "1.15.0",
+      "sourceURL": "https://github.com/cars10/elasticvue/releases/download/v1.15.0/elasticvue_1.15.0_aarch64.dmg",
+      "artifactSHA256": "db40979ec2667c9cb3aced573dc4ff33e1f6b4515fb33da6883350ec8e9a0f25",
+      "apps": [
+        {
+          "bundleName": "elasticvue.app",
+          "bundleIdentifier": "com.elasticvue.app"
+        }
+      ]
+    },
+    "keystore-explorer": {
+      "caskVersion": "5.7.0",
+      "sourceURL": "https://github.com/kaikramer/keystore-explorer/releases/download/v5.7.0/kse-570-arm64.dmg",
+      "artifactSHA256": "59ffae1f70f3e4a2eb6d25b4169ee8b7b528d5638dec27b2b60a3287b61f0499",
+      "apps": [
+        {
+          "bundleName": "KeyStore Explorer.app",
+          "bundleIdentifier": "org.kse.keystore-explorer"
+        }
+      ]
+    },
+    "ente-auth": {
+      "caskVersion": "4.4.25",
+      "sourceURL": "https://github.com/ente-io/ente/releases/download/auth-v4.4.25/ente-auth-v4.4.25.dmg",
+      "artifactSHA256": "a1a2f979feb28d4b1cf210190ed0e2efe22cbbb42edc2c22545fd244567049c0",
+      "apps": [
+        {
+          "bundleName": "Ente Auth.app",
+          "bundleIdentifier": "io.ente.auth.mac"
+        }
+      ]
+    },
+    "companion": {
+      "caskVersion": "5.0.6,9750,1acd2318f5",
+      "sourceURL": "https://cf-pub.bitfocus.io/companion/companion/companion-mac-arm64-5.0.6-9750-stable-1acd2318f5.dmg",
+      "artifactSHA256": "0f96486714a8d6bc71d543b2db59e1208c41c37ed3e5be2f2e00d3f47800eca9",
+      "apps": [
+        {
+          "bundleName": "Companion.app",
+          "bundleIdentifier": "test-companion.bitfocus.no"
+        }
+      ]
+    },
+    "hazel": {
+      "caskVersion": "6.1.2",
+      "sourceURL": "https://s3.amazonaws.com/Noodlesoft/Hazel-6.1.2.dmg",
+      "artifactSHA256": "5f169b65ef2527901119187559c40fd17d693d8db723b738f3b8dbe3ab9f5726",
+      "apps": [
+        {
+          "bundleName": "Hazel.app",
+          "bundleIdentifier": "com.noodlesoft.Hazel"
+        }
+      ]
+    },
+    "affine": {
+      "caskVersion": "0.27.4",
+      "sourceURL": "https://github.com/toeverything/AFFiNE/releases/download/v0.27.4/affine-0.27.4-stable-macos-arm64.zip",
+      "artifactSHA256": "1139f5788f40e3f0552416d8f57615d1c2750c5f184a2a1b754dde9a4d0077f6",
+      "apps": [
+        {
+          "bundleName": "AFFiNE.app",
+          "bundleIdentifier": "pro.affine.app"
+        }
+      ]
     }
   }
 }

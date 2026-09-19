@@ -62,7 +62,7 @@
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 27f943d2618b...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-19"
   },
   "appgate-sdp-client": {
@@ -664,12 +664,6 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
-  },
-  "hazel": {
-    "status": "curated",
-    "reason": "project artwork (hand-supplied)",
-    "attempts": 0,
-    "updated": "2026-07-09"
   },
   "hma-vpn": {
     "status": "review",
