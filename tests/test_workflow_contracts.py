@@ -72,7 +72,6 @@ def test_identity_release_merges_seed_and_publishes_manifest():
 
 
 @pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
-    ("23 22 * * *", "", "", "", "--identity-backfill --limit 300"),
     ("43 15 * * *", "", "", "", "--limit 300"),
     ("7 3 1 * *", "", "", "", "--retry-parked"),
     ("", "true", "", "", "--identity-backfill --limit 300"),
@@ -81,6 +80,7 @@ def test_identity_release_merges_seed_and_publishes_manifest():
 ])
 def test_icon_workflow_routes_scheduled_and_manual_extraction(cron, backfill, tokens, retry, expected):
     workflow = _workflow("extract-icons.yml")
+    assert "23 22 * * *" not in workflow  # bulk identity backfills are manually requested
     script = textwrap.dedent(workflow.split("        run: |\n", 1)[1].split("\n      # Keep", 1)[0])
     result = subprocess.run(
         ["bash", "-c", 'python3() { printf "%s\\n" "$*"; };\n' + script],

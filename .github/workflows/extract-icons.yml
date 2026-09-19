@@ -4,7 +4,7 @@ run-name: >-
       && 'Retry failed icon and identity extractions'
       || inputs.tokens
       && 'Extract icons and identities for selected apps'
-      || (inputs.identity_backfill || github.event.schedule == '23 22 * * *')
+      || inputs.identity_backfill
       && 'Backfill app identities'
       || 'Extract new icons and app identities' }}
 
@@ -19,7 +19,7 @@ on:
         description: "Specific tokens, space-separated (overrides limit)"
         default: ""
       identity_backfill:
-        description: "Reinspect apps with missing or outdated identity metadata"
+        description: "Manually backfill apps with missing or outdated identity metadata"
         type: boolean
         default: false
       retry_parked:
@@ -29,8 +29,6 @@ on:
   schedule:
     # Run after classification so new casks can receive both assets the same day.
     - cron: "43 15 * * *"
-    # Existing icons also need missing or outdated app identities refreshed.
-    - cron: "23 22 * * *"
     # Retry failures monthly because version bumps can repair stale checksums.
     - cron: "7 3 1 * *"
 
@@ -64,7 +62,7 @@ jobs:
             # word-splitting intended: TOKENS is space-separated; the script
             # rejects anything that isn't a known cask token.
             python3 scripts/extract_icons.py --publish --tokens $TOKENS
-          elif [ "$IDENTITY_BACKFILL" = "true" ] || [ "$CRON" = "23 22 * * *" ]; then
+          elif [ "$IDENTITY_BACKFILL" = "true" ]; then
             python3 scripts/extract_icons.py --publish --identity-backfill --limit "$LIMIT"
           else
             python3 scripts/extract_icons.py --publish --limit "$LIMIT"
