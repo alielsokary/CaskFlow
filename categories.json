@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-18",
-  "totalCasks": 3965,
+  "generatedDate": "2026-09-19",
+  "totalCasks": 3970,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2876,6 +2876,12 @@
     "coin-wallet": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "colamd": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "cold-turkey-blocker": {
       "primary": "utilities",
@@ -6634,6 +6640,12 @@
         "productivity"
       ]
     },
+    "incy": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "infinidesk": {
       "primary": "utilities",
       "secondary": []
@@ -9581,6 +9593,12 @@
       "primary": "screensaverWallpaper",
       "secondary": []
     },
+    "muse": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "muse-code": {
       "primary": "developerTools",
       "secondary": [
@@ -10546,6 +10564,12 @@
     "openpht": {
       "primary": "videoMedia",
       "secondary": []
+    },
+    "openplc-editor": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
     },
     "openra": {
       "primary": "games",
@@ -14927,6 +14951,12 @@
     "tencent-ugit": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "tencent-yingyongbao": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
     },
     "tentacle-sync-studio": {
       "primary": "audioMusic",
