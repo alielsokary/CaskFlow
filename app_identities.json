@@ -6628,6 +6628,281 @@
           "bundleIdentifier": "com.tencent.Lemon"
         }
       ]
+    },
+    "jupyterlab-app": {
+      "caskVersion": "4.6.3-1",
+      "sourceURL": "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v4.6.3-1/JupyterLab-Setup-macOS-arm64.dmg",
+      "artifactSHA256": "0c208d3ba4cfa4eedc3a2adafabc009b00f14a271b43b9c8a047b06f12e14503",
+      "apps": [
+        {
+          "bundleName": "JupyterLab.app",
+          "bundleIdentifier": "org.jupyter.jupyterlab-desktop"
+        }
+      ]
+    },
+    "libation": {
+      "caskVersion": "14.2.2",
+      "sourceURL": "https://github.com/rmcrackan/Libation/releases/download/v14.2.2/Libation.14.2.2-macOS-chardonnay-arm64.dmg",
+      "artifactSHA256": "477945c4d4145689d45d769086fc1a77230eae45e3ad2ed5aebf323c5be1057e",
+      "apps": [
+        {
+          "bundleName": "Libation.app",
+          "bundleIdentifier": "org.libation.macos"
+        }
+      ]
+    },
+    "gamehub": {
+      "caskVersion": "0.8.573",
+      "sourceURL": "https://api-international-gamehub.xiaoji.com/game/download/mac/en",
+      "artifactSHA256": "a3703d3a36b90b58915bb6062cd1469fad3855817bd7500ccb4abd144ce8f6f3",
+      "apps": [
+        {
+          "bundleName": "GameHub.app",
+          "bundleIdentifier": "com.gamemac.www"
+        }
+      ]
+    },
+    "trae-cn": {
+      "caskVersion": "2.3.62837",
+      "sourceURL": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.62837/darwin/Trae_CN-darwin-arm64.dmg",
+      "artifactSHA256": "b8a033c4a4ebbd4802a14d517f802e12c506504edfe2fe957ecde700ae615b64",
+      "apps": [
+        {
+          "bundleName": "Trae CN.app",
+          "bundleIdentifier": "cn.trae.app"
+        }
+      ]
+    },
+    "backdrop": {
+      "caskVersion": "2.6.20,126",
+      "sourceURL": "https://cdn.cindori.com/apps/backdrop/updates/2.6.20-126/Backdrop.dmg",
+      "artifactSHA256": "8b49fcbf8fa24d2f0ca6e08da05faf0481ca9d3c8c3ce93bf8853e21573d954c",
+      "apps": [
+        {
+          "bundleName": "Backdrop.app",
+          "bundleIdentifier": "com.cindori.Backdrop"
+        }
+      ]
+    },
+    "mtmr": {
+      "caskVersion": "0.27",
+      "sourceURL": "https://mtmr.app/MTMR%200.27.dmg",
+      "artifactSHA256": "cf0b1b8cb9d6758cd0b69d2c4c5f9f1a067416126a7daa76a8d94fea8189d608",
+      "apps": [
+        {
+          "bundleName": "MTMR.app",
+          "bundleIdentifier": "Toxblh.MTMR"
+        }
+      ]
+    },
+    "bb": {
+      "caskVersion": "0.43.3",
+      "sourceURL": "https://github.com/get-bb/bb/releases/download/desktop-v0.43.3/bb-0.43.3-arm64.dmg",
+      "artifactSHA256": "56bf7907eeb9aa2eb6eec686dfa1abf1f460fa28b176abc6484b8ff1b3242974",
+      "apps": [
+        {
+          "bundleName": "bb.app",
+          "bundleIdentifier": "dev.bb.desktop"
+        }
+      ]
+    },
+    "qqmusic": {
+      "caskVersion": "11.9.1,01,1-773b63ecdf50c1b6050d91c8f7092aac440ff5a972eeeec5fee3a09dc48f51ce-6a9a3033",
+      "sourceURL": "https://c.y.qq.com/cgi-bin/file_redirect.fcg?bid=dldir&file=ecosfile%2Fmusic_clntupate%2Fmac%2Fother%2FQQMusicMac11.9.1Build01.dmg&sign=1-773b63ecdf50c1b6050d91c8f7092aac440ff5a972eeeec5fee3a09dc48f51ce-6a9a3033",
+      "artifactSHA256": "d86dca4765aeaa0e9536420c711f58a02daa88e4e728c99aebc2ffc7806c8f6b",
+      "apps": [
+        {
+          "bundleName": "QQMusic.app",
+          "bundleIdentifier": "com.tencent.QQMusicMac"
+        }
+      ]
+    },
+    "dockflow": {
+      "caskVersion": "1.82",
+      "sourceURL": "https://github.com/AppitStudio/dock-flow-updates/releases/download/v1.82/DockFlow.dmg",
+      "artifactSHA256": "3bc061f09bfbdbeed3ba03eb601fd36df55f972e86c157de0b9d5f5223a3bb5c",
+      "apps": [
+        {
+          "bundleName": "DockFlow.app",
+          "bundleIdentifier": "com.appit.DockFlow"
+        }
+      ]
+    },
+    "notepadexe": {
+      "caskVersion": "1.6.6",
+      "sourceURL": "https://github.com/notepadhq/notepadexe-public/releases/download/1.6.6/Notepad.zip",
+      "artifactSHA256": "04aef62edf5ff3a8e07dde614c2d88277600d0e7cb97764aba02807179f569b9",
+      "apps": [
+        {
+          "bundleName": "Notepad.exe.app",
+          "bundleIdentifier": "best.swift.Notepad"
+        }
+      ]
+    },
+    "hbuilderx": {
+      "caskVersion": "5.26.2026091802",
+      "sourceURL": "https://download1.dcloud.net.cn/download/HBuilderX.5.26.2026091802.arm64.dmg",
+      "artifactSHA256": "6126e03dfa1801e65368275e3681651d7bad1f835b68ded9aef782750897a968",
+      "apps": [
+        {
+          "bundleName": "HBuilderX.app",
+          "bundleIdentifier": "io.dcloud.HBuilderX"
+        }
+      ]
+    },
+    "miaoyan": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://github.com/tw93/MiaoYan/releases/download/V4.2.0/MiaoYan_V4.2.0.zip",
+      "artifactSHA256": "d47cd9117800b50a427963fc396478d7ad70eb2c8d7633088f2f4d9e2bcb39a8",
+      "apps": [
+        {
+          "bundleName": "MiaoYan.app",
+          "bundleIdentifier": "com.tw93.miaoyan"
+        }
+      ]
+    },
+    "typewhisper": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://github.com/TypeWhisper/typewhisper-mac/releases/download/v1.6.1/TypeWhisper-v1.6.1.dmg",
+      "artifactSHA256": "85d8cb5101945e35f4e8ae89ddc55e39eada22269bcc589a058741c9a9e76930",
+      "apps": [
+        {
+          "bundleName": "TypeWhisper.app",
+          "bundleIdentifier": "com.typewhisper.mac"
+        }
+      ]
+    },
+    "siliconscope": {
+      "caskVersion": "4.3.1",
+      "sourceURL": "https://github.com/kennss/SiliconScope/releases/download/v4.3.1/SiliconScope-4.3.1.dmg",
+      "artifactSHA256": "fc8f2ee60942b37e7a83b00e83b64cb2e6bbbae9300cde140123ef97baccb8d8",
+      "apps": [
+        {
+          "bundleName": "SiliconScope.app",
+          "bundleIdentifier": "ai.calidalab.SiliconScope"
+        }
+      ]
+    },
+    "dot": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://github.com/prateekkeshari/dot-releases/releases/download/v2.4.1/Dot-2.4.1.dmg",
+      "artifactSHA256": "0c856e2dcc1984262dad80efd5414b641f86b6b9bc6affc56d1278a38ce712c5",
+      "apps": [
+        {
+          "bundleName": "Dot.app",
+          "bundleIdentifier": "com.dot.app"
+        }
+      ]
+    },
+    "megacmd-app": {
+      "caskVersion": "2.6.0",
+      "sourceURL": "https://mega.nz/MEGAcmdSetup.dmg",
+      "artifactSHA256": "82aade8e2feee51decfef78a887311ea3443c8afa80f1bf950e39f2ea866619a",
+      "apps": [
+        {
+          "bundleName": "MEGAcmd.app",
+          "bundleIdentifier": "megacmd.mac"
+        }
+      ]
+    },
+    "wechatwork": {
+      "caskVersion": "5.0.11.99998",
+      "sourceURL": "https://dldir1.qq.com/foxmail/wecom-mac/updatebzl/WeCom_5.0.11.99998_Apple.dmg",
+      "artifactSHA256": "1796c455d63403ecd6053e315d00340e4a6b59da11928bf48a58f0631ccdd7fd",
+      "apps": [
+        {
+          "bundleName": "企业微信.app",
+          "bundleIdentifier": "com.tencent.WeWorkMac"
+        }
+      ]
+    },
+    "jump-desktop": {
+      "caskVersion": "9.1.9,90109",
+      "sourceURL": "https://mirror.jumpdesktop.com/downloads/jdm/JumpDesktopMac-90109.zip",
+      "artifactSHA256": "9ed0cf53d0e2a61ca741c2ba999f91e0ca13473b4ca59692a59c67d05c8cc199",
+      "apps": [
+        {
+          "bundleName": "Jump Desktop.app",
+          "bundleIdentifier": "com.p5sys.jump.mac.viewer.web"
+        }
+      ]
+    },
+    "kate": {
+      "caskVersion": "26.08,12384",
+      "sourceURL": "https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/kate-release_26.08-12384-macos-clang-arm64.dmg",
+      "artifactSHA256": "aba47f224ff642a83a74c66c3aff290cd4e372f542a1c45e468624182d5bad20",
+      "apps": [
+        {
+          "bundleName": "kate.app",
+          "bundleIdentifier": "org.kde.Kate"
+        }
+      ]
+    },
+    "retroarch-metal": {
+      "caskVersion": "1.22.2",
+      "sourceURL": "https://buildbot.libretro.com/stable/1.22.2/apple/osx/universal/RetroArch_Metal.dmg",
+      "artifactSHA256": "81b79121ba26d539064ae13b4d0419a120c3d165afbe656cf5f5412b15fdb434",
+      "apps": [
+        {
+          "bundleName": "RetroArch.app",
+          "bundleIdentifier": "com.libretro.dist.RetroArch"
+        }
+      ]
+    },
+    "bilibili": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
+      "artifactSHA256": "2de283f55a339c26595c25822f0aac52f97593a52ffef22d2354de1f9395a877",
+      "apps": [
+        {
+          "bundleName": "哔哩哔哩.app",
+          "bundleIdentifier": "com.bilibili.bilibiliPC"
+        }
+      ]
+    },
+    "visualdiffer": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/visualdiffer/visualdiffer/releases/download/v2.2.0/VisualDiffer-2.2.0.zip",
+      "artifactSHA256": "c7f6bd36d2b469a0ed0184c97f0b338e506842e19c3372d9fa8823c5e70754dc",
+      "apps": [
+        {
+          "bundleName": "VisualDiffer.app",
+          "bundleIdentifier": "com.visualdiffer"
+        }
+      ]
+    },
+    "yt-music": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://github.com/steve228uk/YouTube-Music/releases/download/1.3.3/YT-Music-1.3.3.zip",
+      "artifactSHA256": "f54fe4892b2df4853f76bdbb94ffe24b3e9878884333da90c3681a52d184cca2",
+      "apps": [
+        {
+          "bundleName": "YT Music.app",
+          "bundleIdentifier": "uk.co.wearecocoon.YT-Music"
+        }
+      ]
+    },
+    "bloom": {
+      "caskVersion": "1.5.42",
+      "sourceURL": "https://bloomapp.club/downloads/bloom/Bloom-v1.5.42.dmg",
+      "artifactSHA256": "2e285563f4dc6f973fd161e3484d6d4cd3a7e91fdb17a1ba43e8ccc54bc46a4d",
+      "apps": [
+        {
+          "bundleName": "Bloom.app",
+          "bundleIdentifier": "com.asiafu.Bloom"
+        }
+      ]
+    },
+    "mp3tag": {
+      "caskVersion": "1.14.0",
+      "sourceURL": "https://updates.mp3tag.app/Mp3tag-1.14.0.zip",
+      "artifactSHA256": "2996a0220f6faeb00c3e27517530cf63c598e95c2d0b9d9796cd17132f0b4eee",
+      "apps": [
+        {
+          "bundleName": "Mp3tag.app",
+          "bundleIdentifier": "app.mp3tag.Mp3tag"
+        }
+      ]
     }
   }
 }
