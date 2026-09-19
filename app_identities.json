@@ -4733,6 +4733,281 @@
           "bundleIdentifier": "com.lemonmojo.RoyalTSX.App"
         }
       ]
+    },
+    "qcad": {
+      "caskVersion": "3.33.1,13-26-qt6",
+      "sourceURL": "https://www.qcad.org/archives/qcad/qcad-3.33.1-trial-macos-13-26-qt6-arm64.dmg",
+      "artifactSHA256": "e5640499d3d790b34fccc1180b39b3e213bd13255555003701eb316b4ac94a45",
+      "apps": [
+        {
+          "bundleName": "QCAD.app",
+          "bundleIdentifier": "org.qcad"
+        }
+      ]
+    },
+    "llama-app": {
+      "caskVersion": "0.42.0",
+      "sourceURL": "https://github.com/ggml-org/Llama-macOS/releases/download/0.42.0/Llama.dmg",
+      "artifactSHA256": "26babd81703cd35ca1c6dd90df15c0fd56e1a053a34710c4d143ea8235b453c4",
+      "apps": [
+        {
+          "bundleName": "Llama.app",
+          "bundleIdentifier": "app.llama.Llama"
+        }
+      ]
+    },
+    "proton-mail-bridge": {
+      "caskVersion": "3.26.0",
+      "sourceURL": "https://github.com/ProtonMail/proton-bridge/releases/download/v3.26.0/Bridge-Installer.dmg",
+      "artifactSHA256": "9f47cedf1e5a239c1c97083723a2b704677410719bc0c82f75e227fe89953884",
+      "apps": [
+        {
+          "bundleName": "Proton Mail Bridge.app",
+          "bundleIdentifier": "com.protonmail.bridge"
+        }
+      ]
+    },
+    "mockoon": {
+      "caskVersion": "9.9.0",
+      "sourceURL": "https://github.com/mockoon/mockoon/releases/download/v9.9.0/mockoon.setup.9.9.0.arm64.dmg",
+      "artifactSHA256": "d1bd3440620694fa2ac433a1c0723bbfc79b3ba5d8884de3a82eee419b54a826",
+      "apps": [
+        {
+          "bundleName": "Mockoon.app",
+          "bundleIdentifier": "com.mockoon.app"
+        }
+      ]
+    },
+    "qq": {
+      "caskVersion": "7.0.0_260812_01,9.9.33,126b7ce6",
+      "sourceURL": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.33/release/126b7ce6/QQ_7.0.0_260812_01.dmg",
+      "artifactSHA256": "b195c26df362af58954c898ab1dd984784a2ba6f57a629e6fb9b3ecc3bf9e65c",
+      "apps": [
+        {
+          "bundleName": "QQ.app",
+          "bundleIdentifier": "com.tencent.qq"
+        }
+      ]
+    },
+    "mattermost": {
+      "caskVersion": "6.3.0",
+      "sourceURL": "https://releases.mattermost.com/desktop/6.3.0/mattermost-desktop-6.3.0-mac-arm64.zip",
+      "artifactSHA256": "b6d22403e8a96cf54ba3a9ecf7267a5c7bb7ce225249ce12d53a60c8b4db5bfd",
+      "apps": [
+        {
+          "bundleName": "Mattermost.app",
+          "bundleIdentifier": "Mattermost.Desktop"
+        }
+      ]
+    },
+    "macparakeet": {
+      "caskVersion": "0.8.7",
+      "sourceURL": "https://github.com/moona3k/macparakeet/releases/download/v0.8.7/MacParakeet.dmg",
+      "artifactSHA256": "ce1c2ef47a3ee122f2fbe091094e08b603acd1ecc3ab7cd21b6d6144a3595496",
+      "apps": [
+        {
+          "bundleName": "MacParakeet.app",
+          "bundleIdentifier": "com.macparakeet.MacParakeet"
+        }
+      ]
+    },
+    "element": {
+      "caskVersion": "1.12.28",
+      "sourceURL": "https://packages.element.io/desktop/update/macos/Element-1.12.28-universal-mac.zip",
+      "artifactSHA256": "42e5f972652d8858111e4af081295934b2e97fbd2cf7faceb12063c4c0bb84b2",
+      "apps": [
+        {
+          "bundleName": "Element.app",
+          "bundleIdentifier": "im.riot.app"
+        }
+      ]
+    },
+    "visualvm": {
+      "caskVersion": "2.2.2",
+      "sourceURL": "https://github.com/oracle/visualvm/releases/download/2.2.2/VisualVM_222.dmg",
+      "artifactSHA256": "2ae9fe572b76320789b8f1a32674477b095659ba120e99e3386225cfa71991d0",
+      "apps": [
+        {
+          "bundleName": "VisualVM.app",
+          "bundleIdentifier": "io.visualvm.VisualVM"
+        }
+      ]
+    },
+    "taphouse": {
+      "caskVersion": "1.5.8.4",
+      "sourceURL": "https://taphouse.multimodalsolutions.gr/downloads/Taphouse-1.5.8.4.dmg",
+      "artifactSHA256": "3c25bbe3e9a58aa3088a139bd4db87d94650081530110549a3105c29be5c58bc",
+      "apps": [
+        {
+          "bundleName": "Taphouse.app",
+          "bundleIdentifier": "com.multimodalsolutions.taphouse"
+        }
+      ]
+    },
+    "forklift": {
+      "caskVersion": "4.7.5",
+      "sourceURL": "https://download.binarynights.com/ForkLift/ForkLift4.7.5.zip",
+      "artifactSHA256": "5a53e4303ade6fadad894b2304023f268ba5474575f8b875619176aaf2826c14",
+      "apps": [
+        {
+          "bundleName": "ForkLift.app",
+          "bundleIdentifier": "com.binarynights.ForkLift"
+        }
+      ]
+    },
+    "sol": {
+      "caskVersion": "2.1.361",
+      "sourceURL": "https://github.com/ospfranco/sol/releases/download/2.1.361/2.1.361.zip",
+      "artifactSHA256": "265d8465be0fd0a8a7ac21fc594491388cd201c9164b8643b8a04bfcdd5a3137",
+      "apps": [
+        {
+          "bundleName": "Sol.app",
+          "bundleIdentifier": "com.ospfranco.sol"
+        }
+      ]
+    },
+    "davit": {
+      "caskVersion": "0.1.36",
+      "sourceURL": "https://github.com/wouterdebie/davit/releases/download/v0.1.36/Davit-0.1.36.zip",
+      "artifactSHA256": "b22ede8685315987610122a388ae4859ef04a163fd3dcd2bdaaa7cdece0c3e0f",
+      "apps": [
+        {
+          "bundleName": "Davit.app",
+          "bundleIdentifier": "dev.wouter.davit"
+        }
+      ]
+    },
+    "stirling-pdf": {
+      "caskVersion": "2.14.3",
+      "sourceURL": "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.14.3/Stirling-PDF-macos-universal.dmg",
+      "artifactSHA256": "25073f75260c75854af3c81b457958471142b204f3f37c1142b41c75c5704a55",
+      "apps": [
+        {
+          "bundleName": "Stirling PDF.app",
+          "bundleIdentifier": "stirling.pdf.dev"
+        }
+      ]
+    },
+    "grammarly-desktop": {
+      "caskVersion": "1.192.0.0",
+      "sourceURL": "https://download-mac.grammarly.com/versions/1.192.0.0/Grammarly.dmg",
+      "artifactSHA256": "794df381a88903419bd0cb707bb5f573c027d5f413355aca2d23d5d48e850d9f",
+      "apps": [
+        {
+          "bundleName": "Grammarly Desktop.app",
+          "bundleIdentifier": "com.grammarly.ProjectLlama"
+        }
+      ]
+    },
+    "input-source-pro": {
+      "caskVersion": "2.12.0",
+      "sourceURL": "https://inputsource.pro/stable/Input%20Source%20Pro%202.12.0.dmg",
+      "artifactSHA256": "2c4154a62031b48776280a17c8e768815770874c3db00a220647a54604f4deda",
+      "apps": [
+        {
+          "bundleName": "Input Source Pro.app",
+          "bundleIdentifier": "com.runjuu.Input-Source-Pro"
+        }
+      ]
+    },
+    "shotcut": {
+      "caskVersion": "26.8.1",
+      "sourceURL": "https://github.com/mltframework/shotcut/releases/download/v26.8.1/shotcut-macos-26.8.1.dmg",
+      "artifactSHA256": "7bab10bd96fe3590bb3ba0461d21d3022681574b324bb1c21366d5432cac5657",
+      "apps": [
+        {
+          "bundleName": "Shotcut.app",
+          "bundleIdentifier": "com.Meltytech.Shotcut"
+        }
+      ]
+    },
+    "cap": {
+      "caskVersion": "0.6.0,01M2JE5SBQ73J4PJ6TZW168VGT",
+      "sourceURL": "https://cdn.crabnebula.app/asset/01M2JE5SBQ73J4PJ6TZW168VGT",
+      "artifactSHA256": "8b09b0610cb4ef282d4bd61d3c4482129bf7fa61fe6607baa22a6f9590b5dcc7",
+      "apps": [
+        {
+          "bundleName": "Cap.app",
+          "bundleIdentifier": "so.cap.desktop"
+        }
+      ]
+    },
+    "macvim-app": {
+      "caskVersion": "183,9.2.321",
+      "sourceURL": "https://github.com/macvim-dev/macvim/releases/download/release-183/MacVim.dmg",
+      "artifactSHA256": "c27fb8948328074dcb81f45b7d88ff4e123a86c06eaf3d5b330369bc39ffab69",
+      "apps": [
+        {
+          "bundleName": "MacVim.app",
+          "bundleIdentifier": "org.vim.MacVim"
+        }
+      ]
+    },
+    "osaurus": {
+      "caskVersion": "0.25.9",
+      "sourceURL": "https://github.com/osaurus-ai/osaurus/releases/download/0.25.9/Osaurus-0.25.9.dmg",
+      "artifactSHA256": "ccec3ca03052f65b7000adb662f3801fbbe1db715ef7a910e720701782a06106",
+      "apps": [
+        {
+          "bundleName": "osaurus.app",
+          "bundleIdentifier": "com.dinoki.osaurus"
+        }
+      ]
+    },
+    "canva": {
+      "caskVersion": "1.126.0",
+      "sourceURL": "https://desktop-release.canva.com/Canva-1.126.0-universal.dmg",
+      "artifactSHA256": "aecb9512bb6a1ace0ee029fc6592a9a26bb1a516806743ab2ce286e641e7dde2",
+      "apps": [
+        {
+          "bundleName": "Canva.app",
+          "bundleIdentifier": "com.canva.CanvaDesktop"
+        }
+      ]
+    },
+    "paraview": {
+      "caskVersion": "6.1.1,MPI-OSX11.0-Python3.12",
+      "sourceURL": "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v6.1&type=binary&os=macOS&downloadFile=ParaView-6.1.1-MPI-OSX11.0-Python3.12-arm64.dmg",
+      "artifactSHA256": "d6066631ed3dbd5bc237f611bc3fae13bfef3f15229e8e5b993716ab4a19ec30",
+      "apps": [
+        {
+          "bundleName": "ParaView-6.1.1.app",
+          "bundleIdentifier": "org.paraview.ParaView"
+        }
+      ]
+    },
+    "openinterminal": {
+      "caskVersion": "2.3.9",
+      "sourceURL": "https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v2.3.9/OpenInTerminal.zip",
+      "artifactSHA256": "14df8720783492fb430237e221604ac332f1025b1d51019e230b796daa387765",
+      "apps": [
+        {
+          "bundleName": "OpenInTerminal.app",
+          "bundleIdentifier": "wang.jianing.app.OpenInTerminal"
+        }
+      ]
+    },
+    "headroom": {
+      "caskVersion": "0.9.16",
+      "sourceURL": "https://github.com/gglucass/headroom-desktop/releases/download/v0.9.16/Headroom_0.9.16_mac.dmg",
+      "artifactSHA256": "205811519a2be5d512a1d2823c9d9b120b79ba76a8f8df9a91f8276d2469463f",
+      "apps": [
+        {
+          "bundleName": "Headroom.app",
+          "bundleIdentifier": "com.extraheadroom.headroom"
+        }
+      ]
+    },
+    "deepl": {
+      "caskVersion": "26.6.14916780",
+      "sourceURL": "https://www.deepl.com/macos/download/26.6/14916780/DeepL.dmg",
+      "artifactSHA256": "e5507b544654795fc06d6a73090b3c15421913f6acba0bcbf81f6066bb50917c",
+      "apps": [
+        {
+          "bundleName": "DeepL.app",
+          "bundleIdentifier": "com.linguee.DeepLCopyTranslator"
+        }
+      ]
     }
   }
 }
