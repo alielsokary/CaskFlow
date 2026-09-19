@@ -579,6 +579,256 @@
           "bundleIdentifier": "com.objective-see.lulu.app"
         }
       ]
+    },
+    "git-credential-manager": {
+      "caskVersion": "2.9.1",
+      "sourceURL": "https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.9.1/gcm-osx-arm64-2.9.1.pkg",
+      "artifactSHA256": "3b499fb5d580359d30a21b0aacc9f3314ed4df29a747b52425f647c095e37828",
+      "apps": []
+    },
+    "rectangle": {
+      "caskVersion": "1.100",
+      "sourceURL": "https://github.com/rxhanson/Rectangle/releases/download/v1.100/Rectangle1.100.dmg",
+      "artifactSHA256": "5cfbe9b68a558458302c5305cb7060491f68029338e2a4561c54a2981eb8622f",
+      "apps": [
+        {
+          "bundleName": "Rectangle.app",
+          "bundleIdentifier": "com.knollsoft.Rectangle"
+        }
+      ]
+    },
+    "dbeaver-community": {
+      "caskVersion": "26.2.0",
+      "sourceURL": "https://dbeaver.io/files/26.2.0/dbeaver-ce-26.2.0-macos-aarch64.dmg",
+      "artifactSHA256": "62a03aa88429d4eef3576550397aae75d2576a012deda0c83d4b44f5fbcd4a3f",
+      "apps": [
+        {
+          "bundleName": "DBeaver.app",
+          "bundleIdentifier": "org.jkiss.dbeaver.core.product"
+        }
+      ]
+    },
+    "tailscale-app": {
+      "caskVersion": "1.102.4",
+      "sourceURL": "https://pkgs.tailscale.com/stable/Tailscale-1.102.4-macos.pkg",
+      "artifactSHA256": "b40b733af76233fd1e4af7acaeb325268e55e6818c15c6e9aa9e78f427245c5b",
+      "apps": []
+    },
+    "raycast": {
+      "caskVersion": "2.4.1.0",
+      "sourceURL": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.4.1.0",
+      "artifactSHA256": "5bb09adafcf8070605264bb29fcf496e4d615da3a6a0ce88eab70653d186a795",
+      "apps": [
+        {
+          "bundleName": "Raycast.app",
+          "bundleIdentifier": "com.raycast.macos"
+        }
+      ]
+    },
+    "firefox": {
+      "caskVersion": "156.0",
+      "sourceURL": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0/mac/en-US/Firefox%20156.0.dmg",
+      "artifactSHA256": "fecc46103039ca4a77ecb2b2ef7b03892f922e13db0782f8570c512b2e458515",
+      "apps": [
+        {
+          "bundleName": "Firefox.app",
+          "bundleIdentifier": "org.mozilla.firefox"
+        }
+      ]
+    },
+    "libreoffice": {
+      "caskVersion": "26.8.0",
+      "sourceURL": "https://download.documentfoundation.org/libreoffice/stable/26.8.0/mac/aarch64/LibreOffice_26.8.0_MacOS_aarch64.dmg",
+      "artifactSHA256": "8858d8058da4f862f47559486814e65efc27294da67c5e4bb56b006b1ee59f89",
+      "apps": [
+        {
+          "bundleName": "LibreOffice.app",
+          "bundleIdentifier": "org.libreoffice.script"
+        }
+      ]
+    },
+    "blender": {
+      "caskVersion": "5.2.2",
+      "sourceURL": "https://download.blender.org/release/Blender5.2/blender-5.2.2-macos-arm64.dmg",
+      "artifactSHA256": "dc4125399b8bfefe283cc1624d6cfc7809d1cac20ace51072127eb371f31f210",
+      "apps": [
+        {
+          "bundleName": "Blender.app",
+          "bundleIdentifier": "org.blenderfoundation.blender"
+        }
+      ]
+    },
+    "flutter": {
+      "caskVersion": "3.47.5",
+      "sourceURL": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.47.5-stable.zip",
+      "artifactSHA256": "d4dd908b5f8f65515831b6d68ae33307a813f2b68947dded7a1994ee5ea7cead",
+      "apps": []
+    },
+    "chatgpt": {
+      "caskVersion": "26.915.31945",
+      "sourceURL": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.915.31945.zip",
+      "artifactSHA256": "3ada2015ae95a44cab8218623fb4a36c9d6d462d69ae6c2682780101254180c7",
+      "apps": [
+        {
+          "bundleName": "ChatGPT.app",
+          "bundleIdentifier": "com.openai.codex"
+        }
+      ]
+    },
+    "openlogi": {
+      "caskVersion": "0.8.5",
+      "sourceURL": "https://updates.openlogi.org/releases/v0.8.5/OpenLogi-v0.8.5-macos-arm64.dmg",
+      "artifactSHA256": "b1ee45bfa752712e9aecd90f8c1b8154b73a361c4813e211585ebcbf6331dda3",
+      "apps": [
+        {
+          "bundleName": "OpenLogi.app",
+          "bundleIdentifier": "org.openlogi.openlogi"
+        }
+      ]
+    },
+    "ghostty": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://release.files.ghostty.org/1.3.1/Ghostty.dmg",
+      "artifactSHA256": "18cff2b0a6cee90eead9c7d3064e808a252a40baf214aa752c1ecb793b8f5f69",
+      "apps": [
+        {
+          "bundleName": "Ghostty.app",
+          "bundleIdentifier": "com.mitchellh.ghostty"
+        }
+      ]
+    },
+    "docker-desktop": {
+      "caskVersion": "4.91.0,239619",
+      "sourceURL": "https://desktop.docker.com/mac/main/arm64/239619/Docker.dmg",
+      "artifactSHA256": "31a324e8f72acf178c9f5d46cd71240705541faa69827588813e539d29c7e859",
+      "apps": [
+        {
+          "bundleName": "Docker.app",
+          "bundleIdentifier": "com.docker.docker"
+        }
+      ]
+    },
+    "orbstack": {
+      "caskVersion": "2.2.3,20963",
+      "sourceURL": "https://cdn-updates.orbstack.dev/arm64/OrbStack_v2.2.3_20963_arm64.dmg",
+      "artifactSHA256": "7ca77868f3a0d7d9f57b3f98615aad30cc59d23cc84bbff13f78846df0b493d4",
+      "apps": [
+        {
+          "bundleName": "OrbStack.app",
+          "bundleIdentifier": "dev.kdrag0n.MacVirt"
+        }
+      ]
+    },
+    "google-chrome": {
+      "caskVersion": "153.0.8010.53",
+      "sourceURL": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+      "artifactSHA256": "f111c12348ff6e184db296071567d81f9da2cb5acc7257d999f9fccc67abea1a",
+      "apps": [
+        {
+          "bundleName": "Google Chrome.app",
+          "bundleIdentifier": "com.google.Chrome"
+        }
+      ]
+    },
+    "claude": {
+      "caskVersion": "2.2553.1,c38127e27202ddc1c8c187102f7798a93b1b8ede",
+      "sourceURL": "https://downloads.claude.ai/releases/darwin/universal/2.2553.1/Claude-c38127e27202ddc1c8c187102f7798a93b1b8ede.zip",
+      "artifactSHA256": "18c591e7d8a5d9f767c2388d04eee51b22ad9222c5872c6d2a80a1e1bfe0ddd9",
+      "apps": [
+        {
+          "bundleName": "Claude.app",
+          "bundleIdentifier": "com.anthropic.claudefordesktop"
+        }
+      ]
+    },
+    "vorssaint": {
+      "caskVersion": "3.3.5",
+      "sourceURL": "https://github.com/vorssaint/vorssaint-utils/releases/download/v3.3.5/Vorssaint-3.3.5.dmg",
+      "artifactSHA256": "d0c42081fbdaef21c6239fec654c88759654e37ecd50c93b74736bcadfec9294",
+      "apps": [
+        {
+          "bundleName": "Vorssaint.app",
+          "bundleIdentifier": "com.vorssaint.utils"
+        }
+      ]
+    },
+    "visual-studio-code": {
+      "caskVersion": "1.138.0",
+      "sourceURL": "https://update.code.visualstudio.com/1.138.0/darwin-arm64/stable",
+      "artifactSHA256": "ccb71930af93214caee44454e4e41f41748577331869977f0219b2fd5e4e6016",
+      "apps": [
+        {
+          "bundleName": "Visual Studio Code.app",
+          "bundleIdentifier": "com.microsoft.VSCode"
+        }
+      ]
+    },
+    "stats": {
+      "caskVersion": "3.0.16",
+      "sourceURL": "https://github.com/exelban/stats/releases/download/v3.0.16/Stats.dmg",
+      "artifactSHA256": "e653498ed80e2ef7fa8e8e0422b5a320da9792c22054c19c65974f7cb9794c86",
+      "apps": [
+        {
+          "bundleName": "Stats.app",
+          "bundleIdentifier": "eu.exelban.Stats"
+        }
+      ]
+    },
+    "iterm2": {
+      "caskVersion": "3.7.2",
+      "sourceURL": "https://iterm2.com/downloads/stable/iTerm2-3_7_2.zip",
+      "artifactSHA256": "e77f7c35292b40bfdecaaa699cbbfa7ceea6e65ebed9c9ff720eeed210daae87",
+      "apps": [
+        {
+          "bundleName": "iTerm.app",
+          "bundleIdentifier": "com.googlecode.iterm2"
+        }
+      ]
+    },
+    "android-studio": {
+      "caskVersion": "2026.1.4.8,quail4-patch1",
+      "sourceURL": "https://edgedl.me.gvt1.com/android/studio/install/2026.1.4.8/android-studio-quail4-patch1-mac_arm.dmg",
+      "artifactSHA256": "1a3393306007f90cbf2ee73e45beb809ab09aa406c2f61ee9fe81b4ef511c066",
+      "apps": [
+        {
+          "bundleName": "Android Studio.app",
+          "bundleIdentifier": "com.google.android.studio"
+        }
+      ]
+    },
+    "blackhole-2ch": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://existential.audio/downloads/BlackHole2ch-0.7.1.pkg",
+      "artifactSHA256": "57b540f27a3e29c37e310e01bee0fdfab76733087e47f997ef9dccf851400dcf",
+      "apps": []
+    },
+    "maccy": {
+      "caskVersion": "2.7.1",
+      "sourceURL": "https://github.com/p0deje/Maccy/releases/download/2.7.1/Maccy.app.zip",
+      "artifactSHA256": "f388aee34de09a0c7531631303785d9938bef9a92130e21ce1049c8f56aad077",
+      "apps": [
+        {
+          "bundleName": "Maccy.app",
+          "bundleIdentifier": "org.p0deje.Maccy"
+        }
+      ]
+    },
+    "session-manager-plugin": {
+      "caskVersion": "1.2.835.0",
+      "sourceURL": "https://session-manager-downloads.s3.amazonaws.com/plugin/1.2.835.0/mac_arm64/session-manager-plugin.pkg",
+      "artifactSHA256": "1392dde1e7c91c4e66996e8a8374c9be2a1907847cf96259311cf9c53fdff900",
+      "apps": []
+    },
+    "obsidian": {
+      "caskVersion": "1.13.7",
+      "sourceURL": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.dmg",
+      "artifactSHA256": "05daa54f5e1a4458f75da29f8faaa17e8e37ae16998432537f674c626db99bce",
+      "apps": [
+        {
+          "bundleName": "Obsidian.app",
+          "bundleIdentifier": "md.obsidian"
+        }
+      ]
     }
   }
 }
