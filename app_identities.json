@@ -5812,6 +5812,273 @@
           "bundleIdentifier": "com.javis.tokenmonitor"
         }
       ]
+    },
+    "hop": {
+      "caskVersion": "0.4.4",
+      "sourceURL": "https://github.com/golbin/hop/releases/download/v0.4.4/HOP-macos-arm64.dmg",
+      "artifactSHA256": "a2a7b86c6aa0194a7f071562847c758c0f758b24cf82fc94bc252c9747bd6883",
+      "apps": [
+        {
+          "bundleName": "HOP.app",
+          "bundleIdentifier": "net.golbin.hop"
+        }
+      ]
+    },
+    "rectangle-pro": {
+      "caskVersion": "3.91",
+      "sourceURL": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.91.dmg",
+      "artifactSHA256": "c48254170891656350b8c5dc2e0b1b05e8a2ed989b9c6c8a5f98322e5ad87659",
+      "apps": [
+        {
+          "bundleName": "Rectangle Pro.app",
+          "bundleIdentifier": "com.knollsoft.Hookshot"
+        }
+      ]
+    },
+    "updatest": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://updatest.app/download/Updatest.zip",
+      "artifactSHA256": "23affa55b3adff8811ab5a37a3865cdac43ae2d97746ac339acce1ad328094f6",
+      "apps": [
+        {
+          "bundleName": "Updatest.app",
+          "bundleIdentifier": "app.updatest.Updatest"
+        }
+      ]
+    },
+    "drivedx": {
+      "caskVersion": "1.12.1",
+      "sourceURL": "https://binaryfruit.com/download/drivedx/mac/1/bin/DriveDx.1.12.1.zip",
+      "artifactSHA256": "2011868774efd3a96405058985bb3fb8df2d6f06aead3f06d5dfde8fb80c745a",
+      "apps": [
+        {
+          "bundleName": "DriveDx.app",
+          "bundleIdentifier": "com.binaryfruit.DriveDx"
+        }
+      ]
+    },
+    "textmate": {
+      "caskVersion": "2.0.23",
+      "sourceURL": "https://github.com/textmate/textmate/releases/download/v2.0.23/TextMate_2.0.23.tbz",
+      "artifactSHA256": "f8dba933209bd01070028892474bf0b72f36c673f7bcb8da5973f93ddc387420",
+      "apps": [
+        {
+          "bundleName": "TextMate.app",
+          "bundleIdentifier": "com.macromates.TextMate"
+        }
+      ]
+    },
+    "ferdium": {
+      "caskVersion": "7.2.3",
+      "sourceURL": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-arm64.dmg",
+      "artifactSHA256": "478842403c103837b3ba3bae4b9b86df1fb4f8f1da41dc642440ac1fdd51b5b0",
+      "apps": [
+        {
+          "bundleName": "Ferdium.app",
+          "bundleIdentifier": "org.ferdium.ferdium-app"
+        }
+      ]
+    },
+    "excalidrawz": {
+      "caskVersion": "2.4.3",
+      "sourceURL": "https://github.com/chocoford/ExcalidrawZ/releases/download/v2.4.3/ExcalidrawZ.2.4.3.dmg",
+      "artifactSHA256": "7cb3a00f390a10bf0793877f0c85bcfa5c9ba6951631aecae69ec36542fa012c",
+      "apps": [
+        {
+          "bundleName": "ExcalidrawZ.app",
+          "bundleIdentifier": "com.chocoford.excalidraw"
+        }
+      ]
+    },
+    "betterzip": {
+      "caskVersion": "6.0.6",
+      "sourceURL": "https://macitbetter.com/dl/BetterZip-6.0.6.zip",
+      "artifactSHA256": "da670bf02cb98344cb58ce041a60344f84930eb24ac17744cbdd0429716e953e",
+      "apps": [
+        {
+          "bundleName": "BetterZip.app",
+          "bundleIdentifier": "com.macitbetter.betterzip"
+        }
+      ]
+    },
+    "nativ": {
+      "caskVersion": "0.3.8",
+      "sourceURL": "https://github.com/Blaizzy/nativ/releases/download/v0.3.8/Nativ-0.3.8.dmg",
+      "artifactSHA256": "638b7f4baa4209d0768b9c6162218978ad5d99dbed89486e7ca1101930878f4c",
+      "apps": [
+        {
+          "bundleName": "Nativ.app",
+          "bundleIdentifier": "io.github.blaizzy.nativ"
+        }
+      ]
+    },
+    "openhuman": {
+      "caskVersion": "0.63.12",
+      "sourceURL": "https://github.com/tinyhumansai/openhuman/releases/download/v0.63.12/OpenHuman_0.63.12_aarch64.dmg",
+      "artifactSHA256": "048c589582df5d63c053ac6e171fe0f3d59e653823f31ab8b74fc49957f720e2",
+      "apps": [
+        {
+          "bundleName": "OpenHuman.app",
+          "bundleIdentifier": "com.openhuman.app"
+        }
+      ]
+    },
+    "tidal": {
+      "caskVersion": "2.43.2",
+      "sourceURL": "https://download.tidal.com/desktop/mac/TIDAL.arm64.2.43.2.zip",
+      "artifactSHA256": "ff76e9548052a32a40c0d11111054d26e9e444377d66083f159261caf13de59c",
+      "apps": [
+        {
+          "bundleName": "TIDAL.app",
+          "bundleIdentifier": "com.tidal.desktop"
+        }
+      ]
+    },
+    "markviewer": {
+      "caskVersion": "1.8.10",
+      "sourceURL": "https://github.com/SeungbinBaik/markviewer-releases/releases/download/v1.8.10/MarkViewer.dmg",
+      "artifactSHA256": "13f5e0dfa423c6f5019e15d832493115d2595cdd737d110edbf8f3a5ea66fc41",
+      "apps": [
+        {
+          "bundleName": "MarkViewer.app",
+          "bundleIdentifier": "com.markviewer.markviewer"
+        }
+      ]
+    },
+    "only-switch": {
+      "caskVersion": "2.7.5",
+      "sourceURL": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_2.7.5/OnlySwitch.dmg",
+      "artifactSHA256": "5924bd59dc0e304bac28e246a047c19af6e2989b9648106fa87a487803dbc33d",
+      "apps": [
+        {
+          "bundleName": "Only Switch.app",
+          "bundleIdentifier": "jacklandrin.OnlySwitch"
+        }
+      ]
+    },
+    "readdle-spark": {
+      "caskVersion": "3.31.0.140986",
+      "sourceURL": "https://downloads.sparkmailapp.com/Spark3/mac/dist/3.31.0.140986/Spark.zip",
+      "artifactSHA256": "ceac5c37d6f1401f66b462b21de40cbca3c36fec710c6bd5c12872e703b4c037",
+      "apps": [
+        {
+          "bundleName": "Spark Desktop.app",
+          "bundleIdentifier": "com.readdle.SparkDesktop"
+        }
+      ]
+    },
+    "horos": {
+      "caskVersion": "4.0.1",
+      "sourceURL": "https://horosproject.org/horos-content/Horos_4.0.1_arm64.dmg",
+      "artifactSHA256": "16c6c4dee3f12138096781af438bcdf12baf6c0b63499ce110eb58600b85c4a3",
+      "apps": [
+        {
+          "bundleName": "Horos.app",
+          "bundleIdentifier": "org.horosproject.horos"
+        }
+      ]
+    },
+    "expo-orbit": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://github.com/expo/orbit/releases/download/expo-orbit-v2.8.1/expo-orbit.v2.8.1-macos.zip",
+      "artifactSHA256": "55a05786c5f3c99b3198bcefc5de3557de776bbb3a01414f620f79975795bab0",
+      "apps": [
+        {
+          "bundleName": "Expo Orbit.app",
+          "bundleIdentifier": "dev.expo.orbit"
+        }
+      ]
+    },
+    "pluginval": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/Tracktion/pluginval/releases/download/v1.0.4/pluginval_macOS.zip",
+      "artifactSHA256": "3c4c533bda0c5059eea3ddaea752d757ee2025041f0f47e6bcb0e87f6082b29f",
+      "apps": [
+        {
+          "bundleName": "pluginval.app",
+          "bundleIdentifier": "com.Tracktion.pluginval"
+        }
+      ]
+    },
+    "openra": {
+      "caskVersion": "20250330",
+      "sourceURL": "https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-release-20250330.dmg",
+      "artifactSHA256": "2a78cd58603fd06ed6006ae5916065455a7ac7c1290dba1d06c0292bad4238ab",
+      "apps": [
+        {
+          "bundleName": "OpenRA - Dune 2000.app",
+          "bundleIdentifier": "net.openra.mod.d2k"
+        },
+        {
+          "bundleName": "OpenRA - Red Alert.app",
+          "bundleIdentifier": "net.openra.mod.ra"
+        },
+        {
+          "bundleName": "OpenRA - Tiberian Dawn.app",
+          "bundleIdentifier": "net.openra.mod.cnc"
+        }
+      ]
+    },
+    "clion": {
+      "caskVersion": "2026.2.2,262.10315.131",
+      "sourceURL": "https://download.jetbrains.com/cpp/CLion-2026.2.2-aarch64.dmg",
+      "artifactSHA256": "514fd03e52d3f101fc798f87f08deec216beac864b6a78b04f9095e15d5ae898",
+      "apps": [
+        {
+          "bundleName": "CLion.app",
+          "bundleIdentifier": "com.jetbrains.CLion"
+        }
+      ]
+    },
+    "apifox": {
+      "caskVersion": "2.8.47",
+      "sourceURL": "https://file-assets.apifox.com/download/2.8.47/Apifox-macOS-arm64-2.8.47.dmg",
+      "artifactSHA256": "30eafc4df49f8ffb48aed9c94a69f83dee5482a4968fb4172b1fc8defa707277",
+      "apps": [
+        {
+          "bundleName": "Apifox.app",
+          "bundleIdentifier": "cn.apifox.app"
+        }
+      ]
+    },
+    "swift-quit": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://github.com/onebadidea/swiftquit/releases/download/v1.5/Swift.Quit.zip",
+      "artifactSHA256": "a4e467cb13a14dcff3ca4047179ba3b16119f458cd6ae2467810f3f5b9c74efb",
+      "apps": [
+        {
+          "bundleName": "Swift Quit.app",
+          "bundleIdentifier": "onebadidea.Swift-Quit"
+        }
+      ]
+    },
+    "commander-one": {
+      "caskVersion": "3.17.1",
+      "sourceURL": "https://cdn.electronic.us/products/commander/mac/download/commander.dmg",
+      "artifactSHA256": "90792d578172fa151494732d7aa762afc9c128dd7cb276ae4c2815d717b996d0",
+      "apps": [
+        {
+          "bundleName": "Commander One.app",
+          "bundleIdentifier": "com.eltima.cmd1"
+        }
+      ]
+    },
+    "revpdf-editor": {
+      "caskVersion": "5.0.0",
+      "sourceURL": "https://github.com/Pawandeep-prog/revpdf-release/releases/download/v5.0.0/RevPDF_Editor_arm64.dmg",
+      "artifactSHA256": "f0872364b5533761dc6d638cd4b12246f08a3692ffc7129904341281da97ea57",
+      "apps": [
+        {
+          "bundleName": "RevPDF Editor.app",
+          "bundleIdentifier": "com.revpdf.editor"
+        }
+      ]
+    },
+    "cloudcompare": {
+      "caskVersion": "2.13.2",
+      "sourceURL": "https://www.simulation.openfields.fr/phocadownload/CloudCompare_2.13.2__arm64.dmg",
+      "artifactSHA256": "490f16a203f2196e64d562750bd815d1bb3e1ba5a206dcebfd32ecc882dfd554",
+      "apps": []
     }
   }
 }

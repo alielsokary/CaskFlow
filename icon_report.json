@@ -59,6 +59,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "apache-directory-studio": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 27f943d2618b...)",
+    "attempts": 1,
+    "updated": "2026-09-19"
+  },
   "appgate-sdp-client": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
