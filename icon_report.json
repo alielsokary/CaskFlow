@@ -306,10 +306,10 @@
     "updated": "2026-07-08"
   },
   "corelocationcli": {
-    "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg/wrapper-based CLI, no GUI ships",
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-19"
   },
   "corretto": {
     "status": "curated",

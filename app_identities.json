@@ -6354,6 +6354,280 @@
           "bundleIdentifier": "com.jetbrains.PhpStorm"
         }
       ]
+    },
+    "remote-desktop-manager": {
+      "caskVersion": "2026.3.0.5",
+      "sourceURL": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2026.3.0.5.dmg",
+      "artifactSHA256": "945b1d1ff44a31f28e2312e1da83c71a2c3ea7ff81e4c65c0298299648371204",
+      "apps": [
+        {
+          "bundleName": "Remote Desktop Manager.app",
+          "bundleIdentifier": "com.devolutions.remotedesktopmanager"
+        }
+      ]
+    },
+    "miro": {
+      "caskVersion": "0.11.168",
+      "sourceURL": "https://desktop.miro.com/platforms/darwin-arm64/Install-Miro.dmg",
+      "artifactSHA256": "852a312bd30fb95c0578d150e352e5f4fc7aa2560aebb0759654534665f91e23",
+      "apps": [
+        {
+          "bundleName": "Miro.app",
+          "bundleIdentifier": "com.electron.realtimeboard"
+        }
+      ]
+    },
+    "suspicious-package": {
+      "caskVersion": "4.8",
+      "sourceURL": "https://www.mothersruin.com/software/archives/SuspiciousPackage-4.8.dmg",
+      "artifactSHA256": "cbe17b1a1c1d6137e8f36443622863773709d415c0aeec68e41b29ce3fad297f",
+      "apps": [
+        {
+          "bundleName": "Suspicious Package.app",
+          "bundleIdentifier": "com.mothersruin.SuspiciousPackageApp"
+        }
+      ]
+    },
+    "rsyncui": {
+      "caskVersion": "3.0.5",
+      "sourceURL": "https://github.com/rsyncOSX/RsyncUI/releases/download/v3.0.5/RsyncUI.3.0.5.dmg",
+      "artifactSHA256": "7f665eab2d90b07f1cf2f64aa7dea892c22849f59815a92853d2b9098708b06d",
+      "apps": [
+        {
+          "bundleName": "RsyncUI.app",
+          "bundleIdentifier": "no.blogspot.RsyncUI"
+        }
+      ]
+    },
+    "kodi": {
+      "caskVersion": "21.3-Omega",
+      "sourceURL": "https://mirrors.kodi.tv/releases/osx/arm64/kodi-21.3-Omega-arm64.dmg",
+      "artifactSHA256": "4ae19c4d20f41e81c8889302874179c5b8bf1d86bbb3c61b6a7e0d0f2e6cbf22",
+      "apps": [
+        {
+          "bundleName": "Kodi.app",
+          "bundleIdentifier": "org.xbmc.kodi"
+        }
+      ]
+    },
+    "deskreen": {
+      "caskVersion": "3.2.16",
+      "sourceURL": "https://github.com/pavlobu/deskreen/releases/download/v3.2.16/Deskreen-ce-3.2.16-arm64.dmg",
+      "artifactSHA256": "09a3be94f5fa2afc13e9098b8f6ad1f3285cf41f6f7a0de64a529944398d9177",
+      "apps": [
+        {
+          "bundleName": "Deskreen CE.app",
+          "bundleIdentifier": "com.deskreen-ce.app"
+        }
+      ]
+    },
+    "corelocationcli": {
+      "caskVersion": "4.0.7",
+      "sourceURL": "https://github.com/fulldecent/corelocationcli/releases/download/4.0.7/CoreLocationCLI.zip",
+      "artifactSHA256": "ac55d0abf7c9ca20dd8b933ce523d1d560004d9b3432963ba1730b573eba9c8c",
+      "apps": [
+        {
+          "bundleName": "CoreLocationCLI.app",
+          "bundleIdentifier": "com.fulldecent.CoreLocationCLI"
+        }
+      ]
+    },
+    "readest": {
+      "caskVersion": "0.12.8",
+      "sourceURL": "https://github.com/readest/readest/releases/download/v0.12.8/Readest_0.12.8_universal.dmg",
+      "artifactSHA256": "a907e243089e6b286ab116d0780ed387209ad3b6b0e283ac2b55b229ec4d78de",
+      "apps": [
+        {
+          "bundleName": "Readest.app",
+          "bundleIdentifier": "com.bilingify.readest"
+        }
+      ]
+    },
+    "anytype": {
+      "caskVersion": "0.56.5",
+      "sourceURL": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.56.5-mac-arm64.dmg",
+      "artifactSHA256": "b8283663de017a2545d94709662f56fa0cdd7759cd0c1ff4e73dc9092e39508a",
+      "apps": [
+        {
+          "bundleName": "Anytype.app",
+          "bundleIdentifier": "com.anytype.anytype"
+        }
+      ]
+    },
+    "positron": {
+      "caskVersion": "2026.09.1-2",
+      "sourceURL": "https://cdn.posit.co/positron/releases/mac/arm64/Positron-darwin-2026.09.1-2-arm64.zip",
+      "artifactSHA256": "47856dd881bff89c1749c137bd05dc1838a749afcd9e06f946bce3dca4a257a6",
+      "apps": [
+        {
+          "bundleName": "Positron.app",
+          "bundleIdentifier": "co.posit.positron"
+        }
+      ]
+    },
+    "mumuplayer": {
+      "caskVersion": "1.9.3",
+      "sourceURL": "https://a11.gdl.netease.com/MuMuUpdater_1.9.3_default.tar.gz",
+      "artifactSHA256": "e498a776404b461bc66afd5b8396e376b55d52b821312de76d326d7d42a3b818",
+      "apps": [
+        {
+          "bundleName": "MuMuPlayer.app",
+          "bundleIdentifier": "com.netease.mumu.nemux"
+        }
+      ]
+    },
+    "claude-status-bar": {
+      "caskVersion": "0.4.5",
+      "sourceURL": "https://github.com/m1ckc3s/claude-status-bar/releases/download/v0.4.5/ClaudeStatusBar.dmg",
+      "artifactSHA256": "dc42a480a86288b3a5ffd65d4f905460608b3fd25600efe5704b59275cb643eb",
+      "apps": [
+        {
+          "bundleName": "Claude Status Bar.app",
+          "bundleIdentifier": "com.local.claudestatusbar"
+        }
+      ]
+    },
+    "connectiq-sdk-manager": {
+      "caskVersion": "1.0.16",
+      "sourceURL": "https://developer.garmin.com/downloads/connect-iq/sdk-manager/connectiq-sdk-manager.dmg",
+      "artifactSHA256": "cca311ce21988a354eeed4dc575c07372d73a8cf32ef8489ba41c740888c2d67",
+      "apps": [
+        {
+          "bundleName": "SdkManager.app",
+          "bundleIdentifier": "com.garmin.connectiq.sdkmanager"
+        }
+      ]
+    },
+    "gitbutler": {
+      "caskVersion": "0.22.3,3234",
+      "sourceURL": "https://releases.gitbutler.com/releases/release/0.22.3-3234/macos/aarch64/GitButler.app.tar.gz",
+      "artifactSHA256": "edf0f680c102ff86faee1d919ea2a6166fcbe6e3a98986706c91a38eed662f74",
+      "apps": [
+        {
+          "bundleName": "GitButler.app",
+          "bundleIdentifier": "com.gitbutler.app"
+        }
+      ]
+    },
+    "sonos": {
+      "caskVersion": "90.0-79210,HBVQeC4A1l",
+      "sourceURL": "https://update-software.sonos.com/software/HBVQeC4A1l/Sonos_90.0-79210.dmg",
+      "artifactSHA256": "f088496273b6c524f3a59ec02453bad39236e5b0b5793068e1ef547f1f255272",
+      "apps": [
+        {
+          "bundleName": "Sonos.app",
+          "bundleIdentifier": "com.sonos.macController2"
+        }
+      ]
+    },
+    "sage": {
+      "caskVersion": "10.9,10.9.1",
+      "sourceURL": "https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg",
+      "artifactSHA256": "630c028d582626bb18fd74d5bd2499b944649caf6aeb4510d46920c4366e73ac",
+      "apps": [
+        {
+          "bundleName": "SageMath-10-9.app",
+          "bundleIdentifier": "org.computop.SageMath"
+        }
+      ]
+    },
+    "jdk-mission-control": {
+      "caskVersion": "9.1.2,05",
+      "sourceURL": "https://download.java.net/java/GA/jmc9/05/binaries/jmc-9.1.2_macos-aarch64.tar.gz",
+      "artifactSHA256": "c31c384e1d41e03a24826f0b3c6719f82538ee3a0045dee633e2922b38074676",
+      "apps": [
+        {
+          "bundleName": "JDK Mission Control.app",
+          "bundleIdentifier": "org.openjdk.jmc"
+        }
+      ]
+    },
+    "app-cleaner": {
+      "caskVersion": "10.0,2318",
+      "sourceURL": "https://download.nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg?build=2318",
+      "artifactSHA256": "1bdb0909c4a7b8b50a173698aadc5366b39cc048808833fd6d87e9b0e9f0a1b3",
+      "apps": [
+        {
+          "bundleName": "App Cleaner 10.app",
+          "bundleIdentifier": "com.nektony.App-Cleaner-SIII"
+        }
+      ]
+    },
+    "hoppscotch": {
+      "caskVersion": "26.8.1-0",
+      "sourceURL": "https://github.com/hoppscotch/releases/releases/download/v26.8.1-0/Hoppscotch_mac_aarch64.dmg",
+      "artifactSHA256": "01a84e22e36eef5d03035426f0a92d08e53814c957be33b102ee1c8f9801d80f",
+      "apps": [
+        {
+          "bundleName": "Hoppscotch.app",
+          "bundleIdentifier": "io.hoppscotch.desktop"
+        }
+      ]
+    },
+    "qdirstat": {
+      "caskVersion": "2.0-macos.2",
+      "sourceURL": "https://github.com/jesusha123/qdirstat-macos/releases/download/2.0-macos.2/QDirStat.dmg",
+      "artifactSHA256": "c1f1736eaaf4ed1e67babd3b46f427143a8f2a3432d1dcf257a7d2be1372747d",
+      "apps": [
+        {
+          "bundleName": "QDirStat.app",
+          "bundleIdentifier": "com.qdirstat.QDirStat"
+        }
+      ]
+    },
+    "yacreader": {
+      "caskVersion": "10.3.0.260901368",
+      "sourceURL": "https://github.com/YACReader/yacreader/releases/download/10.3.0/YACReader-10.3.0.260901368.MacOSX-U.Qt6.dmg",
+      "artifactSHA256": "3b23304407079b7fb77cf7f5f1aeecc54e39014c72f9a877e41ee184e637d2ac",
+      "apps": [
+        {
+          "bundleName": "YACReader.app",
+          "bundleIdentifier": "com.yacreader.YACReader"
+        },
+        {
+          "bundleName": "YACReaderLibrary.app",
+          "bundleIdentifier": "com.yacreader.YACReaderLibrary"
+        }
+      ]
+    },
+    "transmit": {
+      "caskVersion": "5.11.6",
+      "sourceURL": "https://download-cdn.panic.com/transmit/Transmit%205.11.6.zip",
+      "artifactSHA256": "6761097e3ec7141058f0fa67815ff2244e2ca68f9fcdce06edeaf04279a10208",
+      "apps": [
+        {
+          "bundleName": "Transmit.app",
+          "bundleIdentifier": "com.panic.Transmit"
+        }
+      ]
+    },
+    "notchi": {
+      "caskVersion": "1.2.6",
+      "sourceURL": "https://github.com/sk-ruban/notchi/releases/download/v1.2.6/Notchi-1.2.6.dmg",
+      "artifactSHA256": "49fb639e65ed0ad3e374b71d2107ab9396266dfb6553e0459067b0c8dde7ac38",
+      "apps": [
+        {
+          "bundleName": "Notchi.app",
+          "bundleIdentifier": "com.ruban.notchi"
+        }
+      ]
+    },
+    "openshot-video-editor": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/OpenShot/openshot-qt/releases/download/v4.0.0/OpenShot-v4.0.0-x86_64.dmg",
+      "artifactSHA256": "bfad1a866265f05024ffee90e5a770d4e584424f2ee6952812c55fcd2133177a",
+      "apps": []
+    },
+    "tencent-lemon": {
+      "caskVersion": "5.3.7,E25538C48C5537951B45AD1DED4B7A60",
+      "sourceURL": "https://pm.myapp.com/invc/xfspeed/qqpcmgr/module_update/E25538C48C5537951B45AD1DED4B7A60/Lemon5.3.7.dmg",
+      "artifactSHA256": "312f352bd5cf596c15620c3e38e2cff27b1ed7547a041f6ee6d0d1b313f83a8f",
+      "apps": [
+        {
+          "bundleName": "Tencent Lemon.app",
+          "bundleIdentifier": "com.tencent.Lemon"
+        }
+      ]
     }
   }
 }
