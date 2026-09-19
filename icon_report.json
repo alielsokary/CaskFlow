@@ -750,10 +750,10 @@
     "updated": "2026-07-08"
   },
   "kimi": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/MoonshotAI.png",
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-19"
   },
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",

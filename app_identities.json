@@ -5272,6 +5272,271 @@
           "bundleIdentifier": "com.sarensx.MacPacker"
         }
       ]
+    },
+    "local": {
+      "caskVersion": "10.1.2,7004",
+      "sourceURL": "https://cdn.localwp.com/releases-stable/10.1.2+7004/local-10.1.2-mac-arm64.dmg",
+      "artifactSHA256": "9507b0cf27637dedb65b5750f76da20c3a7723ebf91030c779e9211779af001c",
+      "apps": [
+        {
+          "bundleName": "Local.app",
+          "bundleIdentifier": "com.getflywheel.lightning.local"
+        }
+      ]
+    },
+    "rawtherapee": {
+      "caskVersion": "5.13",
+      "sourceURL": "https://rawtherapee.com/shared/builds/mac/RawTherapee_MacOS_26.0_Universal_5.13.zip",
+      "artifactSHA256": "795a32a688afa5b127dfd768c25c77649859ababa206352e865f6587c66c45a7",
+      "apps": [
+        {
+          "bundleName": "RawTherapee.app",
+          "bundleIdentifier": "com.rawtherapee.rawtherapee5"
+        }
+      ]
+    },
+    "soundsource": {
+      "caskVersion": "6.1.4",
+      "sourceURL": "https://cdn.rogueamoeba.com/soundsource/download/SoundSource.zip",
+      "artifactSHA256": "4467abacf219a79413d64fded37c1dde9e685d75914fa0b18eb675eb76d885ce",
+      "apps": [
+        {
+          "bundleName": "SoundSource.app",
+          "bundleIdentifier": "com.rogueamoeba.soundsource"
+        }
+      ]
+    },
+    "setapp": {
+      "caskVersion": "3.56.0,158,1789131456",
+      "sourceURL": "https://dl.devmate.com/com.setapp.DesktopClient/158/1789131456/Setapp-158.zip",
+      "artifactSHA256": "cdda926c50816092d83d7b94d1d6948f74061e6807ad27219c4255964d616904",
+      "apps": [
+        {
+          "bundleName": "Setapp.app",
+          "bundleIdentifier": "com.setapp.DesktopClient"
+        }
+      ]
+    },
+    "xbar": {
+      "caskVersion": "2.1.7-beta",
+      "sourceURL": "https://github.com/matryer/xbar/releases/download/v2.1.7-beta/xbar.v2.1.7-beta.dmg",
+      "artifactSHA256": "0a7ea7c40e4d4e2ecce0dae3c9c3773d459ddf5af86744f70c44b9f9901bc73f",
+      "apps": [
+        {
+          "bundleName": "xbar.app",
+          "bundleIdentifier": "com.xbarapp.app"
+        }
+      ]
+    },
+    "happ": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
+      "artifactSHA256": "25675fd3e6002d4768c26c1f938ccfcd4a5c0459cef0ae9cfa1e2f7193378cba",
+      "apps": []
+    },
+    "linphone": {
+      "caskVersion": "6.2.2",
+      "sourceURL": "https://download.linphone.org/releases/macosx/app/Linphone-6.2.2-mac.dmg",
+      "artifactSHA256": "e94b9448e5bb3c08414d0279286b82310686a59df3866c60855e40ac4a2979bc",
+      "apps": [
+        {
+          "bundleName": "Linphone.app",
+          "bundleIdentifier": "com.belledonnecommunications.linphone"
+        }
+      ]
+    },
+    "battery": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/actuallymentor/battery/releases/download/v1.4.0/battery-1.4.0-mac-arm64.zip",
+      "artifactSHA256": "4510a3c3fc772f57a1a7fa595604002458120b55b83364edb98b762d4e19ab14",
+      "apps": [
+        {
+          "bundleName": "battery.app",
+          "bundleIdentifier": "co.palokaj.battery"
+        }
+      ]
+    },
+    "hot": {
+      "caskVersion": "1.9.4",
+      "sourceURL": "https://github.com/macmade/Hot/releases/download/1.9.4/Hot.zip",
+      "artifactSHA256": "e4f6ccf7606673ee611870bfb1d4cc8be86a508058db8f9bb5cf41e997ed61ca",
+      "apps": [
+        {
+          "bundleName": "Hot.app",
+          "bundleIdentifier": "com.xs-labs.Hot"
+        }
+      ]
+    },
+    "mqttx": {
+      "caskVersion": "1.13.0",
+      "sourceURL": "https://github.com/emqx/MQTTX/releases/download/v1.13.0/MQTTX-1.13.0-arm64.dmg",
+      "artifactSHA256": "0c5c012018493194528fa2ada5c5034f2bd24538e1a1e86d58192f768451cb46",
+      "apps": [
+        {
+          "bundleName": "MQTTX.app",
+          "bundleIdentifier": "com.electron.mqttx"
+        }
+      ]
+    },
+    "goland": {
+      "caskVersion": "2026.2.3,262.10968.67",
+      "sourceURL": "https://download.jetbrains.com/go/goland-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "91eed14a2e131f7abfe33187a3dbd996880d589271895ce2b04674befa95d276",
+      "apps": [
+        {
+          "bundleName": "GoLand.app",
+          "bundleIdentifier": "com.jetbrains.goland"
+        }
+      ]
+    },
+    "paintbrush": {
+      "caskVersion": "2.6.0,20210402",
+      "sourceURL": "https://downloads.sourceforge.net/paintbrush/Paintbrush%202.x/Paintbrush%202.6.0/Paintbrush-2.6.0.zip",
+      "artifactSHA256": "9d12b754ec65edc77fa51d3a3c8a0b08ac863e10fd530bff219f9f22bb9dba3a",
+      "apps": [
+        {
+          "bundleName": "Paintbrush.app",
+          "bundleIdentifier": "com.soggywaffles.paintbrush"
+        }
+      ]
+    },
+    "impactor": {
+      "caskVersion": "2.6.3",
+      "sourceURL": "https://github.com/khcrysalis/Impactor/releases/download/v2.6.3/Impactor-macos-universal.dmg",
+      "artifactSHA256": "25c17a6d075f9067466ccb1762ad30c586f8203c1d46b02a6a68ca30d3a2dfff",
+      "apps": [
+        {
+          "bundleName": "Impactor.app",
+          "bundleIdentifier": "dev.khcrysalis.PlumeImpactor"
+        }
+      ]
+    },
+    "dosbox": {
+      "caskVersion": "0.74-3,3",
+      "sourceURL": "https://downloads.sourceforge.net/dosbox/dosbox/0.74-3/DOSBox-0.74-3-3.dmg",
+      "artifactSHA256": "83493d149318cb7bfe5d68d98d1cd10b003db2f0519374bf06de285dc0bb2768",
+      "apps": [
+        {
+          "bundleName": "dosbox.app",
+          "bundleIdentifier": "com.dosbox.dosbox"
+        }
+      ]
+    },
+    "bluesnooze": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://github.com/odlp/bluesnooze/releases/download/v1.2/Bluesnooze.zip",
+      "artifactSHA256": "075a8b7cf8f66d4f4002c62a1985a5d3fb043e3df09e7fd405e88ce24a96feb0",
+      "apps": [
+        {
+          "bundleName": "Bluesnooze.app",
+          "bundleIdentifier": "com.oliverpeate.Bluesnooze"
+        }
+      ]
+    },
+    "pinta": {
+      "caskVersion": "3.1.2",
+      "sourceURL": "https://github.com/PintaProject/Pinta/releases/download/3.1.2/Pinta-macos-arm64.dmg",
+      "artifactSHA256": "daad4b3550e7d5f27928ccb9ca99392aa46a5ef71cfd54ce72c0b7a810f4f993",
+      "apps": [
+        {
+          "bundleName": "Pinta.app",
+          "bundleIdentifier": "com.ximian.pinta"
+        }
+      ]
+    },
+    "surfshark": {
+      "caskVersion": "4.30.0,4594",
+      "sourceURL": "https://downloads.surfshark.com/macOS/stable/4.30.0/4594/Surfshark.dmg",
+      "artifactSHA256": "85c960fbd7897ae7a4a06770b17ab5c31d7c436ecb4b8da9a20769233f861754",
+      "apps": [
+        {
+          "bundleName": "Surfshark.app",
+          "bundleIdentifier": "com.surfshark.vpnclient.macos.direct"
+        }
+      ]
+    },
+    "comet": {
+      "caskVersion": "145.2.7632.4581",
+      "sourceURL": "https://www.perplexity.ai/rest/browser/download?channel=stable&platform=mac_arm64",
+      "artifactSHA256": "39e9a82d74b911098c148e9e565655dd0206a6683719238918c471f530334d14",
+      "apps": [
+        {
+          "bundleName": "Comet.app",
+          "bundleIdentifier": "ai.perplexity.comet"
+        }
+      ]
+    },
+    "kimi": {
+      "caskVersion": "3.2.11",
+      "sourceURL": "https://kimi-img.moonshot.cn/app/download/mac/kimi_3.2.11.dmg",
+      "artifactSHA256": "9d1eb8690be9f4bdae3008d342355851979a7969cb867d4a39f2c02593720843",
+      "apps": []
+    },
+    "reqable": {
+      "caskVersion": "3.2.23",
+      "sourceURL": "https://github.com/reqable/reqable-app/releases/download/3.2.23/reqable-app-macos-arm64.dmg",
+      "artifactSHA256": "894def95a02a53fc0fbdbf9ae2f5291ccc25ba1e8cda2fd87c31dc80fe34fe4c",
+      "apps": [
+        {
+          "bundleName": "Reqable.app",
+          "bundleIdentifier": "com.reqable.macosx"
+        }
+      ]
+    },
+    "sublime-merge": {
+      "caskVersion": "2132",
+      "sourceURL": "https://download.sublimetext.com/sublime_merge_build_2132_mac.zip",
+      "artifactSHA256": "fa0ea0b2d97e2099c2746e9a7295a5b5fe208ed414d5887daf460eb0caad37f0",
+      "apps": [
+        {
+          "bundleName": "Sublime Merge.app",
+          "bundleIdentifier": "com.sublimemerge"
+        }
+      ]
+    },
+    "free-download-manager": {
+      "caskVersion": "6.35",
+      "sourceURL": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
+      "artifactSHA256": "6007245230d5f3a013f2ca78ce0b8723da8e747c6a14c727e82f632c58a76544",
+      "apps": [
+        {
+          "bundleName": "Free Download Manager.app",
+          "bundleIdentifier": "org.freedownloadmanager.fdm6"
+        }
+      ]
+    },
+    "hex-fiend": {
+      "caskVersion": "2.18.1",
+      "sourceURL": "https://github.com/hexfiend/HexFiend/releases/download/v2.18.1/Hex_Fiend_2.18.1.dmg",
+      "artifactSHA256": "837041623a21eaae59b9b6c0bb7f75533938ab96580861ee7e276bb926e0e076",
+      "apps": [
+        {
+          "bundleName": "Hex Fiend.app",
+          "bundleIdentifier": "com.ridiculousfish.HexFiend"
+        }
+      ]
+    },
+    "mgba-app": {
+      "caskVersion": "0.10.5",
+      "sourceURL": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-macos.dmg",
+      "artifactSHA256": "443b490ec728293dfcde1cb9db160f73d94c457cb1864f3ce0407e60e174b09c",
+      "apps": [
+        {
+          "bundleName": "mGBA.app",
+          "bundleIdentifier": "com.endrift.mgba-qt"
+        }
+      ]
+    },
+    "copyclip": {
+      "caskVersion": "3.993",
+      "sourceURL": "https://fiplab.com/updates/copyclip2/CopyClip-2-3.993.zip",
+      "artifactSHA256": "0435b30b802887fe5259169c45742ab4cdbce87a5966e8bba8e102a5d041c38b",
+      "apps": [
+        {
+          "bundleName": "CopyClip 2.app",
+          "bundleIdentifier": "com.fiplab.copyclip2"
+        }
+      ]
     }
   }
 }
