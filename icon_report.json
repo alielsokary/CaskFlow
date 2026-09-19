@@ -600,10 +600,10 @@
     "updated": "2026-07-08"
   },
   "gcc-arm-embedded": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/ARM-software.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "gcloud-cli": {
     "status": "no_icon",
@@ -988,6 +988,12 @@
     "reason": "official vendor asset: https://github.com/OpenSC.png (artifact has only uninstaller stub)",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "openvpn-connect": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-09-19"
   },
   "openzfs": {
     "status": "curated",

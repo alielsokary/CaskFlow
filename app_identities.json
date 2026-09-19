@@ -46,9 +46,9 @@
       ]
     },
     "homebrew-app": {
-      "caskVersion": "0.3.0",
-      "sourceURL": "https://github.com/Homebrew/BrewUI/releases/download/v0.3.0/Homebrew-0.3.0.zip",
-      "artifactSHA256": "58f8ebe6661683c0ce6b8fdd913b25dfa3c84f59de689b5f80054675286ec032",
+      "caskVersion": "0.4.3",
+      "sourceURL": "https://github.com/Homebrew/BrewUI/releases/download/v0.4.3/Homebrew-0.4.3.zip",
+      "artifactSHA256": "831b525a2531888572086f406db270e7540ac1c1450c465ffff4b3b2d1965a42",
       "apps": [
         {
           "bundleName": "Homebrew.app",
@@ -2358,6 +2358,240 @@
       "caskVersion": "7.2.18,175117",
       "sourceURL": "https://download.virtualbox.org/virtualbox/7.2.18/VirtualBox-7.2.18-175117-macOSArm64.dmg",
       "artifactSHA256": "b8a0329d731d42fe1e0ec2ba1331149ba2f3f293443e0b5b493bcd7d54cc0b34",
+      "apps": []
+    },
+    "zcode": {
+      "caskVersion": "3.14.0",
+      "sourceURL": "https://cdn-zcode.z.ai/zcode/electron/releases/3.14.0/macos-arm64/ZCode-3.14.0-mac-arm64.dmg",
+      "artifactSHA256": "25fea2b05b7981b8ad3eea93db7f420baf19122e9462b8cc7fc06aa039a2bbc0",
+      "apps": [
+        {
+          "bundleName": "ZCode.app",
+          "bundleIdentifier": "dev.zcode.app"
+        }
+      ]
+    },
+    "proxyman": {
+      "caskVersion": "6.17.0,61700",
+      "sourceURL": "https://download.proxyman.com/61700/Proxyman_6.17.0.dmg",
+      "artifactSHA256": "533e622c3f7cdf9d92beb6ba22ac0582eaf7ad6acb03fe080f11acb0498c7a56",
+      "apps": [
+        {
+          "bundleName": "Proxyman.app",
+          "bundleIdentifier": "com.proxyman.NSProxy"
+        }
+      ]
+    },
+    "wispr-flow": {
+      "caskVersion": "1.6.897",
+      "sourceURL": "https://dl.wisprflow.com/wispr-flow/darwin/arm64/dmgs/Flow-v1.6.897.dmg",
+      "artifactSHA256": "62c5a82cdc9344dccae85ba367a47390a2b5fa6158d968225b7622dd4644f85d",
+      "apps": [
+        {
+          "bundleName": "Wispr Flow.app",
+          "bundleIdentifier": "com.electron.wispr-flow"
+        }
+      ]
+    },
+    "gcc-arm-embedded": {
+      "caskVersion": "15.3.rel1",
+      "sourceURL": "https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/15.3.rel1/arm-gnu-toolchain-15.3.rel1-darwin-arm64-arm-none-eabi.pkg",
+      "artifactSHA256": "5fb58dc3bd6684e70a02bd1c654a6b91f044cda241eb3ae663a7b9170491d7b2",
+      "apps": []
+    },
+    "pycharm": {
+      "caskVersion": "2026.2.3,262.10968.92",
+      "sourceURL": "https://download.jetbrains.com/python/pycharm-professional-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "a388574b55d2c32c08b5d73ba0302c669081060ac20988dbb7677e843e2cefb0",
+      "apps": [
+        {
+          "bundleName": "PyCharm.app",
+          "bundleIdentifier": "com.jetbrains.pycharm"
+        }
+      ]
+    },
+    "skim": {
+      "caskVersion": "1.7.16",
+      "sourceURL": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.16/Skim-1.7.16.dmg",
+      "artifactSHA256": "d15b0bb8d4c5419f3c636da08f49b98e15feb3e03f7791cd3d66c8984fbed08a",
+      "apps": [
+        {
+          "bundleName": "Skim.app",
+          "bundleIdentifier": "net.sourceforge.skim-app.skim"
+        }
+      ]
+    },
+    "background-music": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.5.0/BackgroundMusic-0.5.0.pkg",
+      "artifactSHA256": "c7742b48ac2e9ea955fea66e5c13bb56be5f1487e0b12bad93820984bccb69ef",
+      "apps": []
+    },
+    "macs-fan-control": {
+      "caskVersion": "1.5.21",
+      "sourceURL": "https://github.com/crystalidea/macs-fan-control/releases/download/v1.5.21/macsfancontrol.zip",
+      "artifactSHA256": "91590ed71b8981e89109969c0b5bd9788d781b059b24b2fc256e5a8b57803f0d",
+      "apps": [
+        {
+          "bundleName": "Macs Fan Control.app",
+          "bundleIdentifier": "com.crystalidea.macsfancontrol"
+        }
+      ]
+    },
+    "mole-app": {
+      "caskVersion": "1.15.0",
+      "sourceURL": "https://mole.fit/Mole.dmg",
+      "artifactSHA256": "2155aea8db664afb29a43a0e6ddd525c53c9f12f30b709d264ab4359241cd244",
+      "apps": [
+        {
+          "bundleName": "Mole.app",
+          "bundleIdentifier": "com.tw93.MoleApp"
+        }
+      ]
+    },
+    "dropbox": {
+      "caskVersion": "270.4.3312",
+      "sourceURL": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20270.4.3312.arm64.dmg",
+      "artifactSHA256": "42737dccd121d7c965067a38ba07cb105df17d02127f0f04a99db08777bfbf4c",
+      "apps": [
+        {
+          "bundleName": "Dropbox.app",
+          "bundleIdentifier": "com.getdropbox.dropbox"
+        }
+      ]
+    },
+    "duckduckgo": {
+      "caskVersion": "1.206.0,809",
+      "sourceURL": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.206.0.809.dmg",
+      "artifactSHA256": "5e119d40e83264130ca58a92e8b63abd770e9a40a059959ce6b4f7add91390c1",
+      "apps": [
+        {
+          "bundleName": "DuckDuckGo.app",
+          "bundleIdentifier": "com.duckduckgo.macos.browser"
+        }
+      ]
+    },
+    "adobe-acrobat-reader": {
+      "caskVersion": "26.001.21662",
+      "sourceURL": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121662/AcroRdrDC_2600121662_MUI.dmg",
+      "artifactSHA256": "21821609bea4210e54b1844a1129cdafccea21f6d6d3d0797808f92e357d5705",
+      "apps": []
+    },
+    "openlens": {
+      "caskVersion": "6.5.2-366",
+      "sourceURL": "https://github.com/MuhammedKalkan/OpenLens/releases/download/v6.5.2-366/OpenLens-6.5.2-366-arm64.dmg",
+      "artifactSHA256": "2c53fa3ccf383e10c8a711ba23a6277800415173ba45ef12597b656c9d818e29",
+      "apps": [
+        {
+          "bundleName": "OpenLens.app",
+          "bundleIdentifier": "com.electron.open-lens"
+        }
+      ]
+    },
+    "teamviewer": {
+      "caskVersion": "15.81.6",
+      "sourceURL": "https://dl.teamviewer.com/download/version_15x/update/15.81.6/TeamViewer.pkg",
+      "artifactSHA256": "39692047e9446a1e8d07461ffb22a2ce565d290584c513302e983847816eb2d0",
+      "apps": []
+    },
+    "bambu-studio": {
+      "caskVersion": "02.08.02.61,20260820225108",
+      "sourceURL": "https://github.com/bambulab/BambuStudio/releases/download/v02.08.02.61/Bambu_Studio_mac-v02.08.02.61-20260820225108.dmg",
+      "artifactSHA256": "cf648a95858fb630e1353c4987038df60d6caab693f18411fb95fb809f2d6926",
+      "apps": [
+        {
+          "bundleName": "BambuStudio.app",
+          "bundleIdentifier": "com.bambulab.bambu-studio"
+        }
+      ]
+    },
+    "epic-games": {
+      "caskVersion": "20.1.4",
+      "sourceURL": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-20.1.4.dmg",
+      "artifactSHA256": "5c4f204ed623b01890f26cc99d4af657c3fbd6be1d04be7fed176ddbc94b1259",
+      "apps": [
+        {
+          "bundleName": "Epic Games Launcher.app",
+          "bundleIdentifier": "com.epicgames.EpicGamesLauncher"
+        }
+      ]
+    },
+    "openvpn-connect": {
+      "caskVersion": "3.8.2,6009",
+      "sourceURL": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.2.6009_signed.dmg",
+      "artifactSHA256": "8d50036510859956d20d1f50e43171be53417431104c6befb1352ff5187c248a",
+      "apps": []
+    },
+    "redis-insight": {
+      "caskVersion": "3.8.0",
+      "sourceURL": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.8.0/Redis-Insight-mac-arm64.dmg",
+      "artifactSHA256": "af58c218b09b2a3d10ba6f296969fcd792a6544ff0dbd89845804eab86f05ddb",
+      "apps": [
+        {
+          "bundleName": "Redis Insight.app",
+          "bundleIdentifier": "org.RedisLabs.RedisInsight-V2"
+        }
+      ]
+    },
+    "github-copilot-app": {
+      "caskVersion": "1.1.22",
+      "sourceURL": "https://github.com/github/app/releases/download/v1.1.22/GitHub-Copilot-darwin-arm64.dmg",
+      "artifactSHA256": "e4896f507c5f4e610fc8ea7bc154dc0ec10cf2ff24f666086657dd383f43755e",
+      "apps": [
+        {
+          "bundleName": "GitHub Copilot.app",
+          "bundleIdentifier": "com.github.githubapp"
+        }
+      ]
+    },
+    "rstudio": {
+      "caskVersion": "2026.09.0,174",
+      "sourceURL": "https://download1.rstudio.org/electron/macos/RStudio-2026.09.0-174.dmg",
+      "artifactSHA256": "34f28a7bc5cc84da339475c34183fd76065dfbd70b5617ceb2eb1d238cbec2db",
+      "apps": [
+        {
+          "bundleName": "RStudio.app",
+          "bundleIdentifier": "com.rstudio.desktop"
+        }
+      ]
+    },
+    "wechat": {
+      "caskVersion": "4.1.15.20,270100",
+      "sourceURL": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.20_270100.dmg",
+      "artifactSHA256": "b73319ea3ef7f5f2f6f1403b0bed87ac75b5f5b70f0951ea61bad2d9449857f8",
+      "apps": [
+        {
+          "bundleName": "WeChat.app",
+          "bundleIdentifier": "com.tencent.xinWeChat"
+        }
+      ]
+    },
+    "macshot": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/sw33tLie/macshot/releases/download/v4.2.1/MacShot.dmg",
+      "artifactSHA256": "13a2001d975d42a90c57fb9a3fdb54ffc1c26259fde07e48b86fce9e49a2e66d",
+      "apps": [
+        {
+          "bundleName": "macshot.app",
+          "bundleIdentifier": "com.sw33tlie.macshot.macshot"
+        }
+      ]
+    },
+    "tunnelblick": {
+      "caskVersion": "9.0.1,6491",
+      "sourceURL": "https://tunnelblick.net/iprelease/Tunnelblick_9.0.1_build_6491.dmg",
+      "artifactSHA256": "73ca843b7720cd9261a7fd6cf53b0901a06f69c25824ef09430e4094f0688ad0",
+      "apps": [
+        {
+          "bundleName": "Tunnelblick.app",
+          "bundleIdentifier": "net.tunnelblick.tunnelblick"
+        }
+      ]
+    },
+    "microsoft-powerpoint": {
+      "caskVersion": "16.113.26091740",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.113.26091740_Installer.pkg",
+      "artifactSHA256": "b17cd601dc6415abe77444302fb80cf41630278063df476cc9118ee8ca8a1f27",
       "apps": []
     }
   }
