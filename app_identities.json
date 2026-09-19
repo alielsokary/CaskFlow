@@ -458,6 +458,127 @@
           "bundleIdentifier": "com.autonomylogic.openplceditor"
         }
       ]
+    },
+    "vlc": {
+      "caskVersion": "3.0.23",
+      "sourceURL": "https://get.videolan.org/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
+      "artifactSHA256": "fc6fac08d87f538517d44aca0c5e7a244b67c8c4cb589bf478363a7315fd5e0d",
+      "apps": [
+        {
+          "bundleName": "VLC.app",
+          "bundleIdentifier": "org.videolan.vlc"
+        }
+      ]
+    },
+    "caskhub": {
+      "caskVersion": "0.8.2",
+      "sourceURL": "https://github.com/alielsokary/CaskHub/releases/download/0.8.2/CaskHub-0.8.2.zip",
+      "artifactSHA256": "9197850a7aed7fecf0ec2844ba01b743c579e496caf144a4357e74cfdc9bff02",
+      "apps": [
+        {
+          "bundleName": "CaskHub.app",
+          "bundleIdentifier": "com.mag.caskhub"
+        }
+      ]
+    },
+    "unsloth": {
+      "caskVersion": "0.1.811-beta",
+      "sourceURL": "https://github.com/unslothai/unsloth/releases/download/v0.1.811-beta/Unsloth-Desktop-MacOS.dmg",
+      "artifactSHA256": "f8fe8ceb912f26d5f8595c1ab52e5d1b7068d0344804053f3efc9b05d04e6c0f",
+      "apps": [
+        {
+          "bundleName": "Unsloth.app",
+          "bundleIdentifier": "ai.unsloth.studio"
+        }
+      ]
+    },
+    "sketch": {
+      "caskVersion": "2026.3.1,234013",
+      "sourceURL": "https://download.sketch.com/sketch-2026.3.1-234013.zip",
+      "artifactSHA256": "03abbfd6b3594ed6929b53c5e296aed59543f3864fbfbda7c9cf5c43473587cc",
+      "apps": [
+        {
+          "bundleName": "Sketch.app",
+          "bundleIdentifier": "com.bohemiancoding.sketch3"
+        }
+      ]
+    },
+    "volume-control": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/alberti42/Volume-Control/releases/download/v2.3.0/VolumeControl.zip",
+      "artifactSHA256": "aec78c02cfef544aac2e6f10ae9ca60252f9c3af152939eee72a260f347ba94b",
+      "apps": [
+        {
+          "bundleName": "Volume Control.app",
+          "bundleIdentifier": "io.alberti42.VolumeControl"
+        }
+      ]
+    },
+    "asana": {
+      "caskVersion": "2.9.0",
+      "sourceURL": "https://desktop-downloads.asana.com/darwin_arm64/prod/v2.9.0/Asana-darwin-arm64-2.9.0.zip",
+      "artifactSHA256": "d6f6af330797de2a2a1215d201fd78c6e5fa98c14e6899d55b12f1cd92992c2d",
+      "apps": [
+        {
+          "bundleName": "Asana.app",
+          "bundleIdentifier": "com.electron.asana"
+        }
+      ]
+    },
+    "brave-browser": {
+      "caskVersion": "1.95.104.0",
+      "sourceURL": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/195.104/Brave-Browser-arm64.dmg",
+      "artifactSHA256": "f6823d53b3e9a287b8f8830b728ba9b34fe2d4a9f6ee4e05b3bcd4a21ee25eaf",
+      "apps": [
+        {
+          "bundleName": "Brave Browser.app",
+          "bundleIdentifier": "com.brave.Browser"
+        }
+      ]
+    },
+    "openchamber": {
+      "caskVersion": "1.24.2",
+      "sourceURL": "https://github.com/openchamber/openchamber/releases/download/v1.24.2/OpenChamber-1.24.2-mac-arm64.dmg",
+      "artifactSHA256": "66c3ff59ab6dc289c7f7a24e7bd902bc73d0387030d0395fd9e55bc1beb73f98",
+      "apps": [
+        {
+          "bundleName": "OpenChamber.app",
+          "bundleIdentifier": "dev.openchamber.desktop"
+        }
+      ]
+    },
+    "emby": {
+      "caskVersion": "2.2.39,35",
+      "sourceURL": "https://github.com/MediaBrowser/Emby.Releases/raw/master/macos/Emby.app.zip",
+      "artifactSHA256": "16d6bb1d80e68714234a7d4451bae6c16d9dd7239537c6518bdc11e1f5da519b",
+      "apps": [
+        {
+          "bundleName": "Emby.app",
+          "bundleIdentifier": "com.emby.mobile"
+        }
+      ]
+    },
+    "thebrowsercompany-dia": {
+      "caskVersion": "1.49.1,87398",
+      "sourceURL": "https://releases.diabrowser.com/release/Dia-1.49.1-87398.zip",
+      "artifactSHA256": "6b9b18f93a6520c40e0c5dbb792d634daa6f157286f8e2b59d15b011f719a9fe",
+      "apps": [
+        {
+          "bundleName": "Dia.app",
+          "bundleIdentifier": "company.thebrowser.dia"
+        }
+      ]
+    },
+    "lulu": {
+      "caskVersion": "4.5.1",
+      "sourceURL": "https://github.com/objective-see/LuLu/releases/download/v4.5.1/LuLu_4.5.1.dmg",
+      "artifactSHA256": "98f4d3427f4c6fccf9680fed22879be90a5ae81e80eb8616c1d758755b6bb624",
+      "apps": [
+        {
+          "bundleName": "LuLu.app",
+          "bundleIdentifier": "com.objective-see.lulu.app"
+        }
+      ]
     }
   }
 }
