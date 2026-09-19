@@ -237,7 +237,7 @@
     "status": "no_icon",
     "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-21"
+    "updated": "2026-09-19"
   },
   "cloud189": {
     "status": "failed",
@@ -844,6 +844,12 @@
     "reason": "project artwork (hand-supplied)",
     "attempts": 0,
     "updated": "2026-07-09"
+  },
+  "mactex": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-09-19"
   },
   "mailtrackerblocker": {
     "status": "no_icon",

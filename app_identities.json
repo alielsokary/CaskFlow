@@ -1334,6 +1334,266 @@
           "bundleIdentifier": "com.obsproject.obs-studio"
         }
       ]
+    },
+    "cleanmymac-cli": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://cli.cleanmymac.com/1.0.0/CleanMyMac-CLI-1.0.0.zip",
+      "artifactSHA256": "f22dcf72e26a680e16e7d4deb0f36c0588f5beb0f7a892248e0ddacf68fb737a",
+      "apps": [
+        {
+          "bundleName": "CleanMyMac_5_CLI.app",
+          "bundleIdentifier": "com.macpaw.CleanMyMac5.CLI"
+        }
+      ]
+    },
+    "qlmarkdown": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://github.com/sbarex/QLMarkdown/releases/download/1.5.4/QLMarkdown.zip",
+      "artifactSHA256": "d1286d3d4ada0c90ee8c4aafeef92cfc5eefcd98cc558d6234e9dff07e7121d9",
+      "apps": [
+        {
+          "bundleName": "QLMarkdown.app",
+          "bundleIdentifier": "org.sbarex.QLMarkdown"
+        }
+      ]
+    },
+    "mactex": {
+      "caskVersion": "2026.0324",
+      "sourceURL": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
+      "artifactSHA256": "e30af0640f51979a95b9f54084456d1e16749b79e12e65bdebd630fb2795ff1e",
+      "apps": []
+    },
+    "tigervnc": {
+      "caskVersion": "1.16.2",
+      "sourceURL": "https://downloads.sourceforge.net/tigervnc/TigerVNC-1.16.2.dmg",
+      "artifactSHA256": "aa0ef07e4ebe4f068cbf1118273459b5b616177cb6abf15a538af018ebfb5933",
+      "apps": [
+        {
+          "bundleName": "TigerVNC.app",
+          "bundleIdentifier": "com.tigervnc.tigervnc"
+        }
+      ]
+    },
+    "db-browser-for-sqlite": {
+      "caskVersion": "3.13.1",
+      "sourceURL": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1.dmg",
+      "artifactSHA256": "a641cfbfcc2ce609f07de44a35134dab53485ecc18e6d9afa297b514d74bd75e",
+      "apps": [
+        {
+          "bundleName": "DB Browser for SQLite.app",
+          "bundleIdentifier": "net.sourceforge.sqlitebrowser"
+        }
+      ]
+    },
+    "wezterm": {
+      "caskVersion": "20240203-110809,5046fc22",
+      "sourceURL": "https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-macos-20240203-110809-5046fc22.zip",
+      "artifactSHA256": "e77388cad55f2e9da95a220a89206a6c58f865874a629b7c3ea3c162f5692224",
+      "apps": [
+        {
+          "bundleName": "WezTerm.app",
+          "bundleIdentifier": "com.github.wez.wezterm"
+        }
+      ]
+    },
+    "gimp": {
+      "caskVersion": "3.2.6",
+      "sourceURL": "https://download.gimp.org/gimp/v3.2/macos/gimp-3.2.6-arm64.dmg",
+      "artifactSHA256": "854573aec2be6a185aa021109c3c0ca94f210379204b704231bdd191b4060294",
+      "apps": [
+        {
+          "bundleName": "GIMP.app",
+          "bundleIdentifier": "org.gimp.gimp"
+        }
+      ]
+    },
+    "cyberduck": {
+      "caskVersion": "9.5.4,45528",
+      "sourceURL": "https://update.cyberduck.io/Cyberduck-9.5.4.45528.zip",
+      "artifactSHA256": "9398777ad01bfac7228db3990aed1c834437a599664e0f3e27a68feb53cbcebf",
+      "apps": [
+        {
+          "bundleName": "Cyberduck.app",
+          "bundleIdentifier": "ch.sudo.cyberduck"
+        }
+      ]
+    },
+    "freecad": {
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-macOS-arm64-py311.dmg",
+      "artifactSHA256": "f5c0ece7cd7c932466d6effadc0fc6e179b0538a9d9a6a77a6769eae3af2667c",
+      "apps": [
+        {
+          "bundleName": "FreeCAD.app",
+          "bundleIdentifier": "org.freecad.FreeCAD"
+        }
+      ]
+    },
+    "antigravity": {
+      "caskVersion": "2.15.0,6576870427328512",
+      "sourceURL": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.15.0-6576870427328512/darwin-arm/Antigravity.dmg",
+      "artifactSHA256": "d4f2dd18cdf96970767086de938820f3d1359db9bacbea2ad402d20f8212f412",
+      "apps": [
+        {
+          "bundleName": "Antigravity.app",
+          "bundleIdentifier": "com.google.antigravity"
+        }
+      ]
+    },
+    "pgadmin4": {
+      "caskVersion": "9.18",
+      "sourceURL": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.18/macos/pgadmin4-9.18-arm64.dmg",
+      "artifactSHA256": "f374c5a971194be3bc837b43b6652fcd088189078e54a76e0aa03a418f0e4e02",
+      "apps": [
+        {
+          "bundleName": "pgAdmin 4.app",
+          "bundleIdentifier": "org.pgadmin.pgadmin4"
+        }
+      ]
+    },
+    "balenaetcher": {
+      "caskVersion": "2.1.7",
+      "sourceURL": "https://github.com/balena-io/etcher/releases/download/v2.1.7/balenaEtcher-2.1.7-arm64.dmg",
+      "artifactSHA256": "7408b5c5d3382e337f27a81aec8cc122b875b47809aca9b60a5a513100292344",
+      "apps": [
+        {
+          "bundleName": "balenaEtcher.app",
+          "bundleIdentifier": "io.balena.etcher"
+        }
+      ]
+    },
+    "telegram": {
+      "caskVersion": "12.10,282985",
+      "sourceURL": "https://osx.telegram.org/updates/Telegram-12.10.282985.app.zip",
+      "artifactSHA256": "609cf5bbed3106f919ed6145f5122f125ded88086ee6e3aeac705d03d705248d",
+      "apps": [
+        {
+          "bundleName": "Telegram.app",
+          "bundleIdentifier": "ru.keepcoder.Telegram"
+        }
+      ]
+    },
+    "mos": {
+      "caskVersion": "4.2.1,20260531.1",
+      "sourceURL": "https://github.com/Caldis/Mos/releases/download/4.2.1/Mos.Versions.4.2.1-20260531.1.zip",
+      "artifactSHA256": "2ea69e96f092e44dada93a55bda1cddab3329c527bbd5f06e00dfb78e953960a",
+      "apps": [
+        {
+          "bundleName": "Mos.app",
+          "bundleIdentifier": "com.caldis.Mos"
+        }
+      ]
+    },
+    "rustdesk": {
+      "caskVersion": "1.4.9",
+      "sourceURL": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64.dmg",
+      "artifactSHA256": "f7935597b247d42c8f2a2ed71176a9f5868018cd9e1a33b8096418a668c8caf0",
+      "apps": [
+        {
+          "bundleName": "RustDesk.app",
+          "bundleIdentifier": "com.carriez.rustdesk"
+        }
+      ]
+    },
+    "vscodium": {
+      "caskVersion": "1.135.06055",
+      "sourceURL": "https://github.com/VSCodium/vscodium/releases/download/1.135.06055/VSCodium-darwin-arm64-1.135.06055.zip",
+      "artifactSHA256": "61ff9ebc3ac5563c63a0a9e1b479822647e7f2c3303b0629f15fefe9e291f7cc",
+      "apps": [
+        {
+          "bundleName": "VSCodium.app",
+          "bundleIdentifier": "com.vscodium"
+        }
+      ]
+    },
+    "figma": {
+      "caskVersion": "126.8.18",
+      "sourceURL": "https://desktop.figma.com/mac-arm/Figma-126.8.18.zip",
+      "artifactSHA256": "b35e1f5827d6933b15f52fda1dad8e65067c9e6f31a486ca4dc1f3b00a17bb05",
+      "apps": [
+        {
+          "bundleName": "Figma.app",
+          "bundleIdentifier": "com.figma.Desktop"
+        }
+      ]
+    },
+    "monitorcontrol": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/MonitorControl/MonitorControl/releases/download/v4.4.0/MonitorControl.4.4.0.dmg",
+      "artifactSHA256": "e058da598b92f6ca674f4398c0b6fa49b3b5567ccfddccf6c6a5b23c5c625612",
+      "apps": [
+        {
+          "bundleName": "MonitorControl.app",
+          "bundleIdentifier": "app.monitorcontrol.MonitorControl"
+        }
+      ]
+    },
+    "windows-app": {
+      "caskVersion": "11.4.1",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.4.1_installer.pkg",
+      "artifactSHA256": "346b9cc2e97ce9d82bdff7c565983b9061f27c3aec38831d3c46e64a1bdfbc75",
+      "apps": []
+    },
+    "onedrive": {
+      "caskVersion": "26.153.0809.0004",
+      "sourceURL": "https://oneclient.sfx.ms/Mac/Installers/26.153.0809.0004/universal/OneDrive.pkg",
+      "artifactSHA256": "35d67e76de8579fa0b533fff7ff3b618ea54f574a8a557bb9d3d736b14029f78",
+      "apps": []
+    },
+    "alt-tab": {
+      "caskVersion": "11.7.0",
+      "sourceURL": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.7.0/AltTab-11.7.0.zip",
+      "artifactSHA256": "3c6a13db8325b6a730b5578f0862dc60c4cb28b2fb7fd4144a790bf02bac9a9f",
+      "apps": [
+        {
+          "bundleName": "AltTab.app",
+          "bundleIdentifier": "com.lwouis.alt-tab-macos"
+        }
+      ]
+    },
+    "audacity": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-macOS-4.0.0-arm64.dmg",
+      "artifactSHA256": "266201f3151b09e46a5ab8e0ce1a16cefdd53a66fc7c979e943b2c88d6500c51",
+      "apps": [
+        {
+          "bundleName": "Audacity 4.app",
+          "bundleIdentifier": "org.audacityteam.audacity4"
+        }
+      ]
+    },
+    "thaw": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/thaw-app/Thaw/releases/download/2.0.1/Thaw_2.0.1.zip",
+      "artifactSHA256": "aafefc186a96b2e0b7868b0966df4cbe3bf6737ced3f9b25a22d6c07dc6f8fba",
+      "apps": [
+        {
+          "bundleName": "Thaw.app",
+          "bundleIdentifier": "com.stonerl.Thaw"
+        }
+      ]
+    },
+    "swiftbar": {
+      "caskVersion": "2.1.1,597",
+      "sourceURL": "https://github.com/swiftbar/SwiftBar/releases/download/v2.1.1/SwiftBar.v2.1.1.b597.zip",
+      "artifactSHA256": "fcdec490782d6587046304044951c63de49ac422fc63892a6fab2dd7bc70c0cd",
+      "apps": [
+        {
+          "bundleName": "SwiftBar.app",
+          "bundleIdentifier": "com.ameba.SwiftBar"
+        }
+      ]
+    },
+    "caffeine": {
+      "caskVersion": "1.1.4",
+      "sourceURL": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
+      "artifactSHA256": "1ad34c3299a0c866873c4feb432c3e11186375adb6f43c5f481ae9d46d06d723",
+      "apps": [
+        {
+          "bundleName": "Caffeine.app",
+          "bundleIdentifier": "com.intelliscapesolutions.caffeine"
+        }
+      ]
     }
   }
 }
