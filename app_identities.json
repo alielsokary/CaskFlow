@@ -4463,6 +4463,276 @@
           "bundleIdentifier": "org.dolphin-emu.dolphin"
         }
       ]
+    },
+    "xnviewmp": {
+      "caskVersion": "1.11.6",
+      "sourceURL": "https://download.xnview.com/old_versions/XnView_MP/XnView_MP-1.11.6-mac.dmg",
+      "artifactSHA256": "1da40a995db18edf5e0a9904ffb1e0e29306f8ad6bce36853f1830f5ef084b04",
+      "apps": [
+        {
+          "bundleName": "XnViewMP.app",
+          "bundleIdentifier": "com.xnview.XnView"
+        }
+      ]
+    },
+    "otty": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://downloads.otty.sh/macos/Otty-1.4.1-arm64.zip",
+      "artifactSHA256": "93a0f3872bb37dee5ba09dfdf63e4aaeefbbcd8e3735bd2601b218e521750e3a",
+      "apps": [
+        {
+          "bundleName": "Otty.app",
+          "bundleIdentifier": "io.appmakes.otty"
+        }
+      ]
+    },
+    "deskpad": {
+      "caskVersion": "1.3.2",
+      "sourceURL": "https://github.com/Stengo/DeskPad/releases/download/v1.3.2/DeskPad.app.zip",
+      "artifactSHA256": "b7aae212364193177a6feb2fed6a7942ae9a705d6d491c15e479c58585b85ae0",
+      "apps": [
+        {
+          "bundleName": "DeskPad.app",
+          "bundleIdentifier": "com.stengo.DeskPad"
+        }
+      ]
+    },
+    "little-snitch": {
+      "caskVersion": "6.5",
+      "sourceURL": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.5.dmg",
+      "artifactSHA256": "a83763bbf416676231bcd9c414b16a36c31cc85c14aa0de43cabaf1ef97fa8ba",
+      "apps": [
+        {
+          "bundleName": "Little Snitch.app",
+          "bundleIdentifier": "at.obdev.littlesnitch"
+        }
+      ]
+    },
+    "mullvad-browser": {
+      "caskVersion": "15.0.23",
+      "sourceURL": "https://cdn.mullvad.net/browser/15.0.23/mullvad-browser-macos-15.0.23.dmg",
+      "artifactSHA256": "ea480c7897b0aa673614b1c8b97fbb42a84e1ce5fc6c2da3d961d84195d636dd",
+      "apps": [
+        {
+          "bundleName": "Mullvad Browser.app",
+          "bundleIdentifier": "net.mullvad.mullvadbrowser"
+        }
+      ]
+    },
+    "tabularis": {
+      "caskVersion": "0.24.0",
+      "sourceURL": "https://github.com/TabularisDB/tabularis/releases/download/v0.24.0/tabularis_0.24.0_aarch64.dmg",
+      "artifactSHA256": "433968aa2042b253a82785e301e21589b4b10e0e943faea3f5b4bcd22dd606aa",
+      "apps": []
+    },
+    "jan": {
+      "caskVersion": "0.8.4",
+      "sourceURL": "https://github.com/janhq/jan/releases/download/v0.8.4/jan-mac-universal-0.8.4.zip",
+      "artifactSHA256": "2ae6e41073debe33c7d81ac2be3125c2fc8505756339d73df4be5e2b9372edf1",
+      "apps": [
+        {
+          "bundleName": "Jan.app",
+          "bundleIdentifier": "jan.ai.app"
+        }
+      ]
+    },
+    "gqrx": {
+      "caskVersion": "2.17.7",
+      "sourceURL": "https://github.com/gqrx-sdr/gqrx/releases/download/v2.17.7/Gqrx-2.17.7-arm64.dmg",
+      "artifactSHA256": "772a826fd47f4deb099be8fe9204ab76ba7d234293a4bb8fb93003c55d4f4976",
+      "apps": [
+        {
+          "bundleName": "Gqrx.app",
+          "bundleIdentifier": "dk.gqrx.gqrx"
+        }
+      ]
+    },
+    "pdf-expert": {
+      "caskVersion": "3.13.3,1175",
+      "sourceURL": "https://downloads.pdfexpert.com/pem3/versions/1175/PDFExpert.zip",
+      "artifactSHA256": "0370a6675cd4277533709db53ed665b1bc704db32d18cfcc95af508041bc520b",
+      "apps": [
+        {
+          "bundleName": "PDF Expert.app",
+          "bundleIdentifier": "com.readdle.PDFExpert-Mac"
+        }
+      ]
+    },
+    "conductor": {
+      "caskVersion": "0.87.0,01M2VAA8219M6GYGH1EGVF5KZH",
+      "sourceURL": "https://cdn.crabnebula.app/asset/01M2VAA8219M6GYGH1EGVF5KZH",
+      "artifactSHA256": "a64de79881c289abb53be5ed72625a5f6034ed51f4d2cbffa46d02b507874500",
+      "apps": [
+        {
+          "bundleName": "Conductor.app",
+          "bundleIdentifier": "com.conductor.app"
+        }
+      ]
+    },
+    "sourcegit": {
+      "caskVersion": "2026.20",
+      "sourceURL": "https://github.com/ybeapps/homebrew-sourcegit/releases/download/v2026.20-signed/SourceGit-v2026.20-arm64-signed.dmg",
+      "artifactSHA256": "60eb55540ed5afbfcd6cab500afd5552b20a29e5f8549f0faedb584ab704607f",
+      "apps": [
+        {
+          "bundleName": "SourceGit.app",
+          "bundleIdentifier": "com.sourcegit-scm.sourcegit"
+        }
+      ]
+    },
+    "tradingview": {
+      "caskVersion": "3.4.1",
+      "sourceURL": "https://tvd-packages.tradingview.com/stable/3.4.1/darwin/TradingView.dmg",
+      "artifactSHA256": "cf8cd66b5bc7f3755e1d77c31e068ed7b40fce17a76df9b4086ebff04fe85e32",
+      "apps": [
+        {
+          "bundleName": "TradingView.app",
+          "bundleIdentifier": "com.tradingview.tradingviewapp.desktop"
+        }
+      ]
+    },
+    "logseq": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/logseq/logseq/releases/download/2.0.1/Logseq-darwin-arm64-2.0.1.dmg",
+      "artifactSHA256": "b76af25384f8aaa0ba322f8b5523aea712d9750d9f3e79cac55dc783796439cd",
+      "apps": [
+        {
+          "bundleName": "Logseq.app",
+          "bundleIdentifier": "com.logseq.logseq"
+        }
+      ]
+    },
+    "blip": {
+      "caskVersion": "1.1.16,20260425132215",
+      "sourceURL": "https://f000.backblazeb2.com/file/push-mac/Blip-20260425132215.zip",
+      "artifactSHA256": "c5dd4954c0f22c135c9bd5c21c7799757fe6cce0279554a99c36a0e625a8aab9",
+      "apps": [
+        {
+          "bundleName": "Blip.app",
+          "bundleIdentifier": "net.blip.macos"
+        }
+      ]
+    },
+    "termora": {
+      "caskVersion": "1.0.17",
+      "sourceURL": "https://github.com/TermoraDev/termora/releases/download/1.0.17/termora-1.0.17-osx-aarch64.dmg",
+      "artifactSHA256": "d17af308c269e49b353059ce879bf6a242df6e322241f819d3908363e77f1479",
+      "apps": [
+        {
+          "bundleName": "Termora.app",
+          "bundleIdentifier": "app.termora"
+        }
+      ]
+    },
+    "beyond-compare": {
+      "caskVersion": "5.2.5.32528",
+      "sourceURL": "https://www.scootersoftware.com/files/BCompareOSX-5.2.5.32528.zip",
+      "artifactSHA256": "f913d05e082c785f35e9532facd93e5165c1d27547ef92c9e0c196cb85b3aba3",
+      "apps": [
+        {
+          "bundleName": "Beyond Compare.app",
+          "bundleIdentifier": "com.ScooterSoftware.BeyondCompare"
+        }
+      ]
+    },
+    "kid3": {
+      "caskVersion": "3.10.1",
+      "sourceURL": "https://downloads.sourceforge.net/kid3/kid3-3.10.1-Darwin-arm64.dmg",
+      "artifactSHA256": "b8d5339c8b2e584e073a42f8f90fce8cc6865e121040d1a10d476d74d0a54950",
+      "apps": [
+        {
+          "bundleName": "kid3.app",
+          "bundleIdentifier": "org.kde.kid3"
+        }
+      ]
+    },
+    "yaak": {
+      "caskVersion": "2026.7.1",
+      "sourceURL": "https://github.com/mountain-loop/yaak/releases/download/v2026.7.1/Yaak_2026.7.1_aarch64.dmg",
+      "artifactSHA256": "4cb8760964a6ddf51a1d8ed9b3b32bdbb61c5c2c608fb2707f4d757c228a6dff",
+      "apps": [
+        {
+          "bundleName": "Yaak.app",
+          "bundleIdentifier": "app.yaak.desktop"
+        }
+      ]
+    },
+    "aerial": {
+      "caskVersion": "4.1.2",
+      "sourceURL": "https://github.com/AerialScreensaver/Aerial/releases/download/v4.1.2/Aerial-4.1.2.zip",
+      "artifactSHA256": "18efe2169b98ecf51f50d2d7a7e6266ccc5412b324ba020b2f7ab09737849b9c",
+      "apps": [
+        {
+          "bundleName": "Aerial.app",
+          "bundleIdentifier": "com.glouel.Aerial-App"
+        }
+      ]
+    },
+    "openwhispr": {
+      "caskVersion": "1.10.2",
+      "sourceURL": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.10.2/OpenWhispr-1.10.2-arm64.dmg",
+      "artifactSHA256": "9a0ebf207a96ca7d039d45299a80d0da1172a6aebed52fd63a65e09cff44463d",
+      "apps": [
+        {
+          "bundleName": "OpenWhispr.app",
+          "bundleIdentifier": "com.gizmolabs.openwhispr"
+        }
+      ]
+    },
+    "webstorm": {
+      "caskVersion": "2026.2.3,262.10968.77",
+      "sourceURL": "https://download.jetbrains.com/webstorm/WebStorm-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "2184881ad41343887f7ce9a35607db4b1cc99c3d925614f5427287e24f56fa72",
+      "apps": [
+        {
+          "bundleName": "WebStorm.app",
+          "bundleIdentifier": "com.jetbrains.WebStorm"
+        }
+      ]
+    },
+    "flux-app": {
+      "caskVersion": "42.2",
+      "sourceURL": "https://justgetflux.com/mac/Flux42.2.zip",
+      "artifactSHA256": "c937e24209f2ee99ad4586d7a19948bb1bdfca725b62e6bd061668be1f182765",
+      "apps": [
+        {
+          "bundleName": "Flux.app",
+          "bundleIdentifier": "org.herf.Flux"
+        }
+      ]
+    },
+    "block-buzz": {
+      "caskVersion": "0.5.23",
+      "sourceURL": "https://github.com/block/buzz/releases/download/desktop-v0.5.23/Buzz_0.5.23_aarch64.dmg",
+      "artifactSHA256": "9197dde29a09ade77f56677e07cb4d6a9d7d1a6a157d7212f0a050144059c5b2",
+      "apps": [
+        {
+          "bundleName": "Buzz.app",
+          "bundleIdentifier": "xyz.block.buzz.app"
+        }
+      ]
+    },
+    "aionui": {
+      "caskVersion": "2.2.2",
+      "sourceURL": "https://static.aionui.com/releases/2.2.2/AionUi-2.2.2-mac-arm64.dmg",
+      "artifactSHA256": "813dae4972fdc6352567ed201702e79ad67b0332e400a281fcd4a46e36b3b253",
+      "apps": [
+        {
+          "bundleName": "AionUi.app",
+          "bundleIdentifier": "com.aionui.app"
+        }
+      ]
+    },
+    "royal-tsx": {
+      "caskVersion": "6.4.4.1000",
+      "sourceURL": "https://royaltsx-v6.royalapps.com/updates/royaltsx_6.4.4.1000.dmg",
+      "artifactSHA256": "3fc8fb0078f0af7e9b04ce5e0980ab3f23fbc7eef192e521e0066108254835ed",
+      "apps": [
+        {
+          "bundleName": "Royal TSX.app",
+          "bundleIdentifier": "com.lemonmojo.RoyalTSX.App"
+        }
+      ]
     }
   }
 }
