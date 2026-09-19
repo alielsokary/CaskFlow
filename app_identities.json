@@ -2974,7 +2974,12 @@
       "caskVersion": "1.6.82",
       "sourceURL": "https://tracesof.net/uebersicht/releases/Uebersicht-1.6.82.app.zip",
       "artifactSHA256": "39db5e0abf03f6390992511c946c19b97a89f84ebe2ac87219ebf921fffb972b",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Übersicht.app",
+          "bundleIdentifier": "tracesOf.Uebersicht"
+        }
+      ]
     },
     "loop": {
       "caskVersion": "1.4.2",
@@ -3124,7 +3129,12 @@
       "caskVersion": "0.13.0",
       "sourceURL": "https://github.com/wickenico/WailBrew/releases/download/v0.13.0/wailbrew-v0.13.0.zip",
       "artifactSHA256": "233a2d0424c5e4ec918415ddac3473090d18ab640bbf44386e71850cb7923d17",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "WailBrew.app",
+          "bundleIdentifier": "io.github.wickenico.wailbrew"
+        }
+      ]
     },
     "chatgpt-classic": {
       "caskVersion": "1.2026.184,1784145287",
