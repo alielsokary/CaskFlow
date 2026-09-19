@@ -1594,6 +1594,266 @@
           "bundleIdentifier": "com.intelliscapesolutions.caffeine"
         }
       ]
+    },
+    "fuse-t": {
+      "caskVersion": "1.2.7",
+      "sourceURL": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.2.7/fuse-t-macos-installer-1.2.7.pkg",
+      "artifactSHA256": "6a29c747e61a86a405a189efc3de42812d73147135f93a1bb0624c1e7b90e654",
+      "apps": []
+    },
+    "moonlight": {
+      "caskVersion": "6.1.0",
+      "sourceURL": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/Moonlight-6.1.0.dmg",
+      "artifactSHA256": "d494740eead8ad4e620cdc8feedb56083bc29cabbbeef34cb82585fd87725fa2",
+      "apps": [
+        {
+          "bundleName": "Moonlight.app",
+          "bundleIdentifier": "com.moonlight-stream.Moonlight"
+        }
+      ]
+    },
+    "keepassxc": {
+      "caskVersion": "2.7.12",
+      "sourceURL": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-arm64.dmg",
+      "artifactSHA256": "65f4f63607180c0a15794b4a4068f85e99ed5391c87c1fb9312648f1b36fed40",
+      "apps": [
+        {
+          "bundleName": "KeePassXC.app",
+          "bundleIdentifier": "org.keepassxc.keepassxc"
+        }
+      ]
+    },
+    "mactex-no-gui": {
+      "caskVersion": "2026.0324",
+      "sourceURL": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
+      "artifactSHA256": "e30af0640f51979a95b9f54084456d1e16749b79e12e65bdebd630fb2795ff1e",
+      "apps": []
+    },
+    "raspberry-pi-imager": {
+      "caskVersion": "2.0.11.1",
+      "sourceURL": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.11.1/rpi-imager-v2.0.11.1.dmg",
+      "artifactSHA256": "2b4c5324c5ff04aa3bfb216795ae9e01cb54400752727353e13fb21e66c528a9",
+      "apps": [
+        {
+          "bundleName": "Raspberry Pi Imager.app",
+          "bundleIdentifier": "com.raspberrypi.rpi-imager"
+        }
+      ]
+    },
+    "transmission": {
+      "caskVersion": "4.1.3",
+      "sourceURL": "https://github.com/transmission/transmission/releases/download/4.1.3/Transmission-4.1.3.dmg",
+      "artifactSHA256": "d622736c19990262f2ab12183e1acaa5b0dad5777ddc7db0a187c06e035a7e1a",
+      "apps": [
+        {
+          "bundleName": "Transmission.app",
+          "bundleIdentifier": "org.m0k.transmission"
+        }
+      ]
+    },
+    "shottr": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://shottr.cc/dl/Shottr-1.9.2.dmg",
+      "artifactSHA256": "89a64c6615cd3955336228e94ffaf1d74cc69def88c70016e57df9b48dac23a5",
+      "apps": [
+        {
+          "bundleName": "Shottr.app",
+          "bundleIdentifier": "cc.ffitch.shottr"
+        }
+      ]
+    },
+    "podman-desktop": {
+      "caskVersion": "1.29.3",
+      "sourceURL": "https://github.com/containers/podman-desktop/releases/download/v1.29.3/podman-desktop-1.29.3-arm64.dmg",
+      "artifactSHA256": "9cf9b228da2cf95ee76a7c0435920ea8f71cdca75785a10bc6eb3cd303f68ba2",
+      "apps": [
+        {
+          "bundleName": "Podman Desktop.app",
+          "bundleIdentifier": "io.podmandesktop.PodmanDesktop"
+        }
+      ]
+    },
+    "blackhole-16ch": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://existential.audio/downloads/BlackHole16ch-0.7.1.pkg",
+      "artifactSHA256": "57254e2f76cd40db7f3f715238b1a2cb2bd08819d38abf4087f2944f71a3641a",
+      "apps": []
+    },
+    "hermes-desktop": {
+      "caskVersion": "0.21.2,088d292d364f",
+      "sourceURL": "https://hermes-assets.nousresearch.com/Hermes-Setup.dmg?build=088d292d364f",
+      "artifactSHA256": "b61e047efe3059faf1c55fec3252e661f2d2a993a7a3eebf5cc6a9aa5c1790f5",
+      "apps": [
+        {
+          "bundleName": "Hermes.app",
+          "bundleIdentifier": "com.nousresearch.hermes.setup"
+        }
+      ]
+    },
+    "jetbrains-toolbox": {
+      "caskVersion": "3.8.1,3.8.1.88030",
+      "sourceURL": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.8.1.88030-arm64.dmg",
+      "artifactSHA256": "2f07b78168913476cdae4ea1c1fa74bb075a4bcb70c598a85de099785a6e9c73",
+      "apps": [
+        {
+          "bundleName": "JetBrains Toolbox.app",
+          "bundleIdentifier": "com.jetbrains.toolbox"
+        }
+      ]
+    },
+    "t3-code": {
+      "caskVersion": "0.0.42",
+      "sourceURL": "https://github.com/pingdotgg/t3code/releases/download/v0.0.42/T3-Code-0.0.42-arm64.dmg",
+      "artifactSHA256": "11675634acdb0a4610c04879b634556caa1ff33511dee48201baffc0232984f8",
+      "apps": [
+        {
+          "bundleName": "T3 Code (Alpha).app",
+          "bundleIdentifier": "com.t3tools.t3code"
+        }
+      ]
+    },
+    "finetune": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://github.com/ronitsingh10/FineTune/releases/download/v1.9.0/FineTune.dmg",
+      "artifactSHA256": "2b8af93c0f1be1870d490ffe3e8a5ef2e17bc83bf48cfc5b4b83791861cdf22e",
+      "apps": [
+        {
+          "bundleName": "FineTune.app",
+          "bundleIdentifier": "com.finetuneapp.FineTune"
+        }
+      ]
+    },
+    "mounty": {
+      "caskVersion": "2.4",
+      "sourceURL": "https://mounty.app/releases/Mounty-2.4.dmg",
+      "artifactSHA256": "b5f0867af3ee034c61582bc40e6ebeae549cb4570381ba82d012aca8d5c72888",
+      "apps": [
+        {
+          "bundleName": "Mounty.app",
+          "bundleIdentifier": "com.cu4uc.mounty"
+        }
+      ]
+    },
+    "intellij-idea": {
+      "caskVersion": "2026.2.3,262.10968.63",
+      "sourceURL": "https://download.jetbrains.com/idea/ideaIU-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "aac3cdc6d8441b94052473fee37a9679242a36f49f60fdce6cceaa3e7ad46e33",
+      "apps": [
+        {
+          "bundleName": "IntelliJ IDEA.app",
+          "bundleIdentifier": "com.jetbrains.intellij"
+        }
+      ]
+    },
+    "mongodb-compass": {
+      "caskVersion": "1.50.0",
+      "sourceURL": "https://downloads.mongodb.com/compass/mongodb-compass-1.50.0-darwin-arm64.dmg",
+      "artifactSHA256": "0a4ec0b5aa1ff89e27bcc606f24b9ab20cf02a12724b13879d737af1f6daebfe",
+      "apps": [
+        {
+          "bundleName": "MongoDB Compass.app",
+          "bundleIdentifier": "com.mongodb.compass"
+        }
+      ]
+    },
+    "grok-bot": {
+      "caskVersion": "0.57.1",
+      "sourceURL": "https://downloads.cursor.com/sand/stable/darwin-arm64/0.57.1/Grok_Bot_0.57.1.dmg",
+      "artifactSHA256": "0ecb5036add3259a100e15bd6d0ea0ab2cb1ed8dcb9a19f7e9633abcef869fa3",
+      "apps": [
+        {
+          "bundleName": "Grok Bot.app",
+          "bundleIdentifier": "com.anysphere.sand"
+        }
+      ]
+    },
+    "zen": {
+      "caskVersion": "1.22.2b",
+      "sourceURL": "https://github.com/zen-browser/desktop/releases/download/1.22.2b/zen.macos-universal.dmg",
+      "artifactSHA256": "2332673353551bfe4607aa6edd3c3ee3149652651a7698acabad935612c93943",
+      "apps": [
+        {
+          "bundleName": "Zen.app",
+          "bundleIdentifier": "app.zen-browser.zen"
+        }
+      ]
+    },
+    "dockdoor": {
+      "caskVersion": "1.40.1",
+      "sourceURL": "https://github.com/ejbills/DockDoor/releases/download/1.40.1/DockDoor.dmg",
+      "artifactSHA256": "d04ddaf39e90bb0047b8bad161a63dddf0a3fba7d9662c80b0d01bfe8cea1522",
+      "apps": [
+        {
+          "bundleName": "DockDoor.app",
+          "bundleIdentifier": "com.ethanbills.DockDoor"
+        }
+      ]
+    },
+    "google-gemini": {
+      "caskVersion": "1.116.5.889",
+      "sourceURL": "https://dl.google.com/release2/j33ro/release/Gemini.dmg",
+      "artifactSHA256": "5481aafb004d6c87da016f6c1bcbc44440d54766e06cb24829e2b0791175ca23",
+      "apps": [
+        {
+          "bundleName": "Gemini.app",
+          "bundleIdentifier": "com.google.GeminiMacOS"
+        }
+      ]
+    },
+    "signal": {
+      "caskVersion": "8.27.0",
+      "sourceURL": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.27.0.zip",
+      "artifactSHA256": "0ba4aeddb3042de54520aee97e01bb325acb67876d59f743ae77353506967d0c",
+      "apps": [
+        {
+          "bundleName": "Signal.app",
+          "bundleIdentifier": "org.whispersystems.signal-desktop"
+        }
+      ]
+    },
+    "tableplus": {
+      "caskVersion": "26.10.22,802",
+      "sourceURL": "https://files.tableplus.com/macos/802/TablePlus.dmg",
+      "artifactSHA256": "80150687a0674a7f66d00f2a3e82353c74881a7b17229a3e6103cbfe93712d57",
+      "apps": [
+        {
+          "bundleName": "TablePlus.app",
+          "bundleIdentifier": "com.tinyapp.TablePlus"
+        }
+      ]
+    },
+    "puremac": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/momenbasel/PureMac/releases/download/v3.0.0/PureMac-3.0.0.zip",
+      "artifactSHA256": "35019475216a7498a31eca1078212ee5107cb4b522021119796ca524db72798c",
+      "apps": [
+        {
+          "bundleName": "PureMac.app",
+          "bundleIdentifier": "com.puremac.app"
+        }
+      ]
+    },
+    "protonvpn": {
+      "caskVersion": "6.5.1",
+      "sourceURL": "https://vpn.protondownload.com/download/macos/6.5.1/ProtonVPN_mac_v6.5.1.dmg",
+      "artifactSHA256": "d50a49f14c50b0ef8ad68a89fc9685d5699ba2d4f92cb4c34317291b425435f8",
+      "apps": [
+        {
+          "bundleName": "ProtonVPN.app",
+          "bundleIdentifier": "ch.protonvpn.mac"
+        }
+      ]
+    },
+    "librewolf": {
+      "caskVersion": "156.0,1",
+      "sourceURL": "https://dl.librewolf.net/librewolf/156.0-1/librewolf-156.0-1-macos-arm64-package.dmg",
+      "artifactSHA256": "e957e3fb07dc7452aae41b50375f3a860fb5c9c385f3505353b2f498e670ce28",
+      "apps": [
+        {
+          "bundleName": "LibreWolf.app",
+          "bundleIdentifier": "net.librewolf.librewolf"
+        }
+      ]
     }
   }
 }
