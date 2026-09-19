@@ -798,10 +798,10 @@
     "updated": "2026-09-19"
   },
   "lidanglesensor": {
-    "status": "curated",
-    "reason": "project artwork (hand-supplied) -- the app bundle itself ships no icon",
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-19"
   },
   "logi-options+": {
     "status": "review",

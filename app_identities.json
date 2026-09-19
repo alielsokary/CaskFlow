@@ -6079,6 +6079,281 @@
       "sourceURL": "https://www.simulation.openfields.fr/phocadownload/CloudCompare_2.13.2__arm64.dmg",
       "artifactSHA256": "490f16a203f2196e64d562750bd815d1bb3e1ba5a206dcebfd32ecc882dfd554",
       "apps": []
+    },
+    "popsql": {
+      "caskVersion": "1.0.135",
+      "sourceURL": "https://popsql-releases.s3.amazonaws.com/mac/PopSQL-1.0.135-arm64.dmg",
+      "artifactSHA256": "2a1e9af94cb191b80771c8bbb1952a85b628402fd6e783d91b2231d48236ae00",
+      "apps": [
+        {
+          "bundleName": "PopSQL.app",
+          "bundleIdentifier": "org.electron.popsql"
+        }
+      ]
+    },
+    "cmake-app": {
+      "caskVersion": "4.4.3",
+      "sourceURL": "https://cmake.org/files/v4.4/cmake-4.4.3-macos-universal.dmg",
+      "artifactSHA256": "0423c5c00f71fb8e7be281afa834137c5f95a5791a125beec7939eef45bcfc94",
+      "apps": [
+        {
+          "bundleName": "CMake.app",
+          "bundleIdentifier": "org.cmake.cmake"
+        }
+      ]
+    },
+    "locationsimulator": {
+      "caskVersion": "0.2.2",
+      "sourceURL": "https://github.com/Schlaubischlump/LocationSimulator/releases/download/v0.2.2/LocationSimulator.app.zip",
+      "artifactSHA256": "867941213a23e23c22a3e868e0fa5fec443d1e597e912eca8a1e97f68e7dbb08",
+      "apps": [
+        {
+          "bundleName": "LocationSimulator.app",
+          "bundleIdentifier": "de.davidklopp.locationsimulator"
+        }
+      ]
+    },
+    "muesli": {
+      "caskVersion": "0.8.4",
+      "sourceURL": "https://github.com/Muesli-HQ/muesli/releases/download/v0.8.4/Muesli-0.8.4.dmg",
+      "artifactSHA256": "79727313003ddb29289b6872a094a84ec9b2a011046a1344cea7e3598c4fc596",
+      "apps": [
+        {
+          "bundleName": "Muesli.app",
+          "bundleIdentifier": "com.muesli.app"
+        }
+      ]
+    },
+    "domzilla-caffeine": {
+      "caskVersion": "1.6.4",
+      "sourceURL": "https://dr-caffeine-mac.s3.amazonaws.com/Caffeine_1.6.4.zip",
+      "artifactSHA256": "792cf299c193b6e82d12877129844b05df8f21d4165655d4567e60291c6bd5e7",
+      "apps": [
+        {
+          "bundleName": "Caffeine.app",
+          "bundleIdentifier": "net.domzilla.caffeine"
+        }
+      ]
+    },
+    "launchos": {
+      "caskVersion": "2.3.1,458",
+      "sourceURL": "https://static.remixdesign.app/launchos/LaunchOS-2.3.1-458.dmg",
+      "artifactSHA256": "1fac2365f33b16c60cf049e2c9591e370f3aa329c4adf893598e347b0bd602d7",
+      "apps": [
+        {
+          "bundleName": "LaunchOS.app",
+          "bundleIdentifier": "app.remixdesign.LaunchOS"
+        }
+      ]
+    },
+    "home-assistant": {
+      "caskVersion": "2026.9.2,2026.2995",
+      "sourceURL": "https://github.com/home-assistant/iOS/releases/download/release%2F2026.9.2%2F2026.2995/home-assistant-mac.zip",
+      "artifactSHA256": "840bc23f4a4911a06293156c43d3c4f58950c857d3726c9f2825e7ca61015cf6",
+      "apps": [
+        {
+          "bundleName": "Home Assistant.app",
+          "bundleIdentifier": "io.robbie.HomeAssistant"
+        }
+      ]
+    },
+    "foobar2000": {
+      "caskVersion": "2.25.10",
+      "sourceURL": "https://www.foobar2000.org/files/foobar2000-v2.25.10.dmg",
+      "artifactSHA256": "ecd106e98c1eccbc78b3bc18dd16304e7098a47bb794d1fd383f235c527c45a7",
+      "apps": [
+        {
+          "bundleName": "foobar2000.app",
+          "bundleIdentifier": "com.foobar2000.mac"
+        }
+      ]
+    },
+    "viber": {
+      "caskVersion": "1.0.0.107,2154",
+      "sourceURL": "https://download.viber.com/desktop/mac/online/Viber.dmg",
+      "artifactSHA256": "bd9c8dbdeedb29f888d78e0ec0bedf1af2b9374065324e340075ee250dc09010",
+      "apps": [
+        {
+          "bundleName": "Viber.app",
+          "bundleIdentifier": "com.viber.osx"
+        }
+      ]
+    },
+    "disk-drill": {
+      "caskVersion": "6.2.2219",
+      "sourceURL": "https://dl.cleverfiles.com/diskdrill.dmg",
+      "artifactSHA256": "7bf4249246460a448708dcdf84418ae26353b2e5acffb3a281c2618d9306ee40",
+      "apps": [
+        {
+          "bundleName": "Disk Drill.app",
+          "bundleIdentifier": "com.cleverfiles.DiskDrill"
+        }
+      ]
+    },
+    "fantastical": {
+      "caskVersion": "4.2",
+      "sourceURL": "https://cdn.flexibits.com/Fantastical_4.2.zip",
+      "artifactSHA256": "2c07c92f4d8259bd1f96d257dea258afe2f06828c9ffda95be6089a362c6c0b2",
+      "apps": [
+        {
+          "bundleName": "Fantastical.app",
+          "bundleIdentifier": "com.flexibits.fantastical2.mac"
+        }
+      ]
+    },
+    "openinterminal-lite": {
+      "caskVersion": "1.2.8",
+      "sourceURL": "https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.8/OpenInTerminal-Lite.zip",
+      "artifactSHA256": "189842433aed140307a17f25e93cbbe496fc0d745b6e7c2e879cb5dab23250af",
+      "apps": [
+        {
+          "bundleName": "OpenInTerminal-Lite.app",
+          "bundleIdentifier": "wang.jianing.app.OpenInTerminal-Lite"
+        }
+      ]
+    },
+    "bettermouse": {
+      "caskVersion": "1.7,8995",
+      "sourceURL": "https://better-mouse.com/wp-content/uploads/BetterMouse.1.7.8995.zip",
+      "artifactSHA256": "4f9f5245eb4f2ef872c8bbff6899144a77ad540db1ebb5ec0ddeb57ff45f28c8",
+      "apps": [
+        {
+          "bundleName": "BetterMouse.app",
+          "bundleIdentifier": "com.naotanhaocan.BetterMouse"
+        }
+      ]
+    },
+    "floorp": {
+      "caskVersion": "12.18.0",
+      "sourceURL": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.18.0/floorp-macOS-universal.dmg",
+      "artifactSHA256": "0332d3abb3f12c2bca8820caf86c31b6ec2e3c791f70971adaeccb471d399527",
+      "apps": [
+        {
+          "bundleName": "Floorp.app",
+          "bundleIdentifier": "app.floorp.Floorp"
+        }
+      ]
+    },
+    "tolaria": {
+      "caskVersion": "2027.08.28,2027.8.28",
+      "sourceURL": "https://github.com/refactoringhq/tolaria/releases/download/v2027-08-28/Tolaria_2027.8.28_macOS_Silicon.dmg",
+      "artifactSHA256": "b57971df0544d06f48d85b0ad62cc8b98b1b6442fd510cfcdc4905ec4e8919b6",
+      "apps": [
+        {
+          "bundleName": "Tolaria.app",
+          "bundleIdentifier": "club.refactoring.tolaria"
+        }
+      ]
+    },
+    "clop": {
+      "caskVersion": "3.4.3",
+      "sourceURL": "https://files.lowtechguys.com/releases/Clop-3.4.3.dmg",
+      "artifactSHA256": "329b65a776c2de157cb7ed1f7f02953c06763d7109fd60f647c99a79d69f773a",
+      "apps": [
+        {
+          "bundleName": "Clop.app",
+          "bundleIdentifier": "com.lowtechguys.Clop"
+        }
+      ]
+    },
+    "kirocrew": {
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://download.crew.kiro.dev/desktop/stable/0.6.0/KiroCrew.dmg",
+      "artifactSHA256": "bd71e30d61a7ae809a5995c6681905bd361fb5ae642a8c8012a8d0971bccdfb3",
+      "apps": [
+        {
+          "bundleName": "KiroCrew.app",
+          "bundleIdentifier": "com.amazon.kiro.crew"
+        }
+      ]
+    },
+    "lidanglesensor": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/samhenrigold/LidAngleSensor/releases/download/1.1/LidAngleSensor.zip",
+      "artifactSHA256": "d4b14e7d866589117e5b2cfc7f06e8f8b915dc81948073d9df091177d21e0780",
+      "apps": [
+        {
+          "bundleName": "LidAngleSensor.app",
+          "bundleIdentifier": "gold.samhenri.LidAngleSensor"
+        }
+      ]
+    },
+    "rio": {
+      "caskVersion": "0.5.28",
+      "sourceURL": "https://github.com/raphamorim/rio/releases/download/v0.5.28/rio.dmg",
+      "artifactSHA256": "285f94c2e1a26523bc4c2433dc0dd52b9c10219be45ffe53dd6d849ce1e07868",
+      "apps": [
+        {
+          "bundleName": "rio.app",
+          "bundleIdentifier": "com.raphaelamorim.rio"
+        }
+      ]
+    },
+    "flycut": {
+      "caskVersion": "1.9.6",
+      "sourceURL": "https://github.com/TermiT/Flycut/releases/download/1.9.6/Flycut.1.9.6.zip",
+      "artifactSHA256": "bc1a73b9cb4b4d316fa11572f43383f0f02fc7e6ba88bbed046cc1b074336862",
+      "apps": [
+        {
+          "bundleName": "Flycut.app",
+          "bundleIdentifier": "com.generalarcade.flycut"
+        }
+      ]
+    },
+    "meshlab": {
+      "caskVersion": "2025.07",
+      "sourceURL": "https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2025.07/MeshLab2025.07-macos_arm64.dmg",
+      "artifactSHA256": "9a29ff3dbc0bef74fdee0e47eb8201be2509b45c965ca1f1abdf49c1ea48dac0",
+      "apps": [
+        {
+          "bundleName": "MeshLab2025.07.app",
+          "bundleIdentifier": "com.vcg.meshlab"
+        }
+      ]
+    },
+    "postico": {
+      "caskVersion": "2.3.3,9804",
+      "sourceURL": "https://downloads.eggerapps.at/postico/postico-9804.dmg",
+      "artifactSHA256": "347fe06cff1be1dca930f34b5b13242b455f8e22bc85cfa6f34f89ae483df11e",
+      "apps": [
+        {
+          "bundleName": "Postico 2.app",
+          "bundleIdentifier": "at.eggerapps.Postico"
+        }
+      ]
+    },
+    "brave-origin": {
+      "caskVersion": "1.95.104.0",
+      "sourceURL": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Origin/stable-arm64/195.104/Brave-Origin-arm64.dmg",
+      "artifactSHA256": "2f59547e4b53ac300450cb4f56f292bcbf508b20fdfa06c6341e5fd976d66859",
+      "apps": [
+        {
+          "bundleName": "Brave Origin.app",
+          "bundleIdentifier": "com.brave.Browser.origin"
+        }
+      ]
+    },
+    "open-video-downloader": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://github.com/jely2002/youtube-dl-gui/releases/download/app-v3.2.1/Open.Video.Downloader_3.2.1_aarch64.dmg",
+      "artifactSHA256": "865e22e21c432bb779f547dd42a70815324745299059e7188b6d82f64eca4b15",
+      "apps": [
+        {
+          "bundleName": "Open Video Downloader.app",
+          "bundleIdentifier": "com.jelleglebbeek.youtube-dl-gui"
+        }
+      ]
+    },
+    "phpstorm": {
+      "caskVersion": "2026.2.3,262.10968.76",
+      "sourceURL": "https://download.jetbrains.com/webide/PhpStorm-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "9207ad5d1fc6e2b6fa06fb6f41b824e64596e1b16475df22f0e207a654f8df73",
+      "apps": [
+        {
+          "bundleName": "PhpStorm.app",
+          "bundleIdentifier": "com.jetbrains.PhpStorm"
+        }
+      ]
     }
   }
 }
