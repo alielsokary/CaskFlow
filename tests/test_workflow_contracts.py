@@ -1,5 +1,10 @@
 """Regression tests for data-publication and classification workflow contracts."""
 from pathlib import Path
+import os
+import subprocess
+import textwrap
+
+import pytest
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -64,3 +69,25 @@ def test_identity_release_merges_seed_and_publishes_manifest():
     assert "            app_identities.json" in release
     assert "data/app_identity_variants.json" in release
     assert "--identity-backfill" in _workflow("extract-icons.yml")
+
+
+@pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
+    ("23 22 * * *", "", "", "", "--identity-backfill --limit 300"),
+    ("43 15 * * *", "", "", "", "--limit 300"),
+    ("7 3 1 * *", "", "", "", "--retry-parked"),
+    ("", "true", "", "", "--identity-backfill --limit 300"),
+    ("", "true", "vlc asana", "", "--tokens vlc asana"),
+    ("", "true", "vlc", "true", "--retry-parked"),
+])
+def test_icon_workflow_routes_scheduled_and_manual_extraction(cron, backfill, tokens, retry, expected):
+    workflow = _workflow("extract-icons.yml")
+    script = textwrap.dedent(workflow.split("        run: |\n", 1)[1].split("\n      # Keep", 1)[0])
+    result = subprocess.run(
+        ["bash", "-c", 'python3() { printf "%s\\n" "$*"; };\n' + script],
+        env={**os.environ, "CRON": cron, "IDENTITY_BACKFILL": backfill,
+             "TOKENS": tokens, "RETRY_PARKED": retry, "LIMIT": "300"},
+        capture_output=True, text=True, check=True,
+    )
+    assert result.stdout.strip() == f"scripts/extract_icons.py --publish {expected}"
+    if cron:
+        assert f'cron: "{cron}"' in workflow
