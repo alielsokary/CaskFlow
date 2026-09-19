@@ -5537,6 +5537,281 @@
           "bundleIdentifier": "com.fiplab.copyclip2"
         }
       ]
+    },
+    "xmind": {
+      "caskVersion": "26.05.01107-202609082317",
+      "sourceURL": "https://dl3.xmind.net/Xmind-for-macOS-26.05.01107-202609082317.dmg",
+      "artifactSHA256": "5b186c371cd8f27958b6c2d93037c880c34a38108715de84df139f8d7141c630",
+      "apps": [
+        {
+          "bundleName": "Xmind.app",
+          "bundleIdentifier": "net.xmind.vana.app"
+        }
+      ]
+    },
+    "0-ad": {
+      "caskVersion": "0.28.0",
+      "sourceURL": "https://releases.wildfiregames.com/0ad-0.28.0-macos-aarch64.dmg",
+      "artifactSHA256": "8c53566123fed9a79766c364e543d6e9dc7c84f642c78d2bb5892eeea9c4c052",
+      "apps": [
+        {
+          "bundleName": "0 A.D..app",
+          "bundleIdentifier": "com.wildfiregames.play0ad"
+        }
+      ]
+    },
+    "ticktick": {
+      "caskVersion": "8.2.10,921",
+      "sourceURL": "https://download.ticktick.app/download/mac/TickTick_8.2.10_921.dmg",
+      "artifactSHA256": "fc1fde3247d5e17c482114e3c0405c73fe5a19ae20ffcd985232203f214f3b8a",
+      "apps": [
+        {
+          "bundleName": "TickTick.app",
+          "bundleIdentifier": "com.TickTick.task.mac"
+        }
+      ]
+    },
+    "superset": {
+      "caskVersion": "1.30.0",
+      "sourceURL": "https://github.com/superset-sh/superset/releases/download/desktop-v1.30.0/Superset-1.30.0-arm64.dmg",
+      "artifactSHA256": "5d81beb386dddc28b5a45fe69736b598e30fc1eb6626f03c78d5899e4c898565",
+      "apps": [
+        {
+          "bundleName": "Superset.app",
+          "bundleIdentifier": "com.superset.desktop"
+        }
+      ]
+    },
+    "halloy": {
+      "caskVersion": "2026.8",
+      "sourceURL": "https://github.com/squidowl/halloy/releases/download/2026.8/halloy.dmg",
+      "artifactSHA256": "9e6456c7606cedac34be692527e1566ea0b89175747ad9b8e9ab4722e10cb215",
+      "apps": [
+        {
+          "bundleName": "Halloy.app",
+          "bundleIdentifier": "org.squidowl.halloy"
+        }
+      ]
+    },
+    "pcsx2": {
+      "caskVersion": "2.8.2",
+      "sourceURL": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-macos-Qt.tar.xz",
+      "artifactSHA256": "3ed9eb40a33eae67134142c24255a079be444f0616ca29575a04a37981f7d426",
+      "apps": [
+        {
+          "bundleName": "PCSX2.app",
+          "bundleIdentifier": "net.pcsx2.pcsx2"
+        }
+      ]
+    },
+    "super-productivity": {
+      "caskVersion": "19.1.0",
+      "sourceURL": "https://github.com/super-productivity/super-productivity/releases/download/v19.1.0/superProductivity-arm64.dmg",
+      "artifactSHA256": "f44bead7fd23e8bbd5ceb23d4f97037af001894f7b009e67d510be32e1636f5b",
+      "apps": [
+        {
+          "bundleName": "Super Productivity.app",
+          "bundleIdentifier": "com.super-productivity.app"
+        }
+      ]
+    },
+    "reactotron": {
+      "caskVersion": "3.11.0",
+      "sourceURL": "https://github.com/infinitered/reactotron/releases/download/reactotron-app%403.11.0/Reactotron-3.11.0-arm64-mac.zip",
+      "artifactSHA256": "9d0cd7ddf65de5587160dd7a9e4b862265b7275df548423d20e12dcce1cef1ae",
+      "apps": [
+        {
+          "bundleName": "Reactotron.app",
+          "bundleIdentifier": "com.reactotron.app"
+        }
+      ]
+    },
+    "qt-creator": {
+      "caskVersion": "20.0.1",
+      "sourceURL": "https://download.qt.io/official_releases/qtcreator/20.0/20.0.1/qt-creator-opensource-mac-universal-20.0.1.dmg",
+      "artifactSHA256": "f18ebb715619f2092e1816498e34c989b75c269bfc948169f1dd76e0231b5fa0",
+      "apps": [
+        {
+          "bundleName": "Qt Creator.app",
+          "bundleIdentifier": "org.qt-project.qtcreator"
+        }
+      ]
+    },
+    "virtualbuddy": {
+      "caskVersion": "2.1,325",
+      "sourceURL": "https://su.virtualbuddy.app/VirtualBuddy_v2.1-325.dmg",
+      "artifactSHA256": "6ed17e8d7245931fd405c419321ace7ef9333fe2e3d59b3a7f78e34fcbe628b6",
+      "apps": [
+        {
+          "bundleName": "VirtualBuddy.app",
+          "bundleIdentifier": "codes.rambo.VirtualBuddy"
+        }
+      ]
+    },
+    "textream": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/f/textream/releases/download/v1.7.1/Textream.dmg",
+      "artifactSHA256": "b1225e2df372558cec5d7e42095b70e91249cb7898ef4a12ff6013f02a4d15b9",
+      "apps": [
+        {
+          "bundleName": "Textream.app",
+          "bundleIdentifier": "dev.fka.textream"
+        }
+      ]
+    },
+    "devtoys": {
+      "caskVersion": "2.0.9.0",
+      "sourceURL": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.9.0/devtoys_osx_arm64.zip",
+      "artifactSHA256": "49d1910e24cecd1709086e47fcf0ece09080f1b93056a3bd2c874de0a0b77a82",
+      "apps": [
+        {
+          "bundleName": "DevToys.app",
+          "bundleIdentifier": "com.devtoys"
+        }
+      ]
+    },
+    "kopiaui": {
+      "caskVersion": "0.23.1",
+      "sourceURL": "https://github.com/kopia/kopia/releases/download/v0.23.1/KopiaUI-0.23.1-arm64.dmg",
+      "artifactSHA256": "f2adb1869c603c66aaeabd846affd21df426c614cc8285230f5465f9389a003c",
+      "apps": [
+        {
+          "bundleName": "KopiaUI.app",
+          "bundleIdentifier": "io.kopia.ui"
+        }
+      ]
+    },
+    "sweet-home3d": {
+      "caskVersion": "7.5",
+      "sourceURL": "https://downloads.sourceforge.net/sweethome3d/SweetHome3D/SweetHome3D-7.5/SweetHome3D-7.5-macosx.dmg",
+      "artifactSHA256": "1533f3106842b66da782639626d371797fd52ab8406f3a54017f8f44dd215e1a",
+      "apps": [
+        {
+          "bundleName": "Sweet Home 3D.app",
+          "bundleIdentifier": "com.eteks.sweethome3d.SweetHome3D"
+        }
+      ]
+    },
+    "robloxstudio": {
+      "caskVersion": "0.739.0.7390687,7a83fc2d08a249b9",
+      "sourceURL": "https://setup.rbxcdn.com/mac/arm64/version-7a83fc2d08a249b9-RobloxStudioApp.zip",
+      "artifactSHA256": "b07ffdb3865ae9a9d665cd3e85934a77370e7f58d3a8d0d97091e57a1f4f0953",
+      "apps": [
+        {
+          "bundleName": "RobloxStudio.app",
+          "bundleIdentifier": "com.Roblox.RobloxStudio"
+        }
+      ]
+    },
+    "yandex": {
+      "caskVersion": "26.8.0.1829,116215",
+      "sourceURL": "https://download.cdn.yandex.net/browser/update/26_8_0_1829_116215_m_s_r/yandex.dmg",
+      "artifactSHA256": "942e74a99ad7cd8dd8ad920cc0e0b162344a6f8abe39f8ad3266d627d527880a",
+      "apps": [
+        {
+          "bundleName": "Yandex.app",
+          "bundleIdentifier": "ru.yandex.desktop.yandex-browser"
+        }
+      ]
+    },
+    "waterfox": {
+      "caskVersion": "6.7.3",
+      "sourceURL": "https://cdn1.waterfox.net/waterfox/releases/6.7.3/Darwin_x86_64-aarch64/Waterfox%206.7.3.dmg",
+      "artifactSHA256": "1d4f69b7eb18fbfedf14c2a23d10db2377e7942f9ac7ffab21384d55d60afe19",
+      "apps": [
+        {
+          "bundleName": "Waterfox.app",
+          "bundleIdentifier": "net.waterfox.waterfox"
+        }
+      ]
+    },
+    "easydmg": {
+      "caskVersion": "2.4.0",
+      "sourceURL": "https://github.com/jeff-schumann/EasyDMG/releases/download/v2.4.0/EasyDMG.dmg",
+      "artifactSHA256": "b8d8247ac9bae0632df2246d88bd5fba4b5498a197f0ca55a4d0470cb6eb4bf1",
+      "apps": [
+        {
+          "bundleName": "EasyDMG.app",
+          "bundleIdentifier": "com.jeff.easydmg"
+        }
+      ]
+    },
+    "claude-devtools": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/matt1398/claude-devtools/releases/download/v0.5.0/claude-devtools-0.5.0-arm64.dmg",
+      "artifactSHA256": "f37ec018a4052aa7b73e8ece741cf864bd2ee20c0e25b911211616f672bef441",
+      "apps": [
+        {
+          "bundleName": "claude-devtools.app",
+          "bundleIdentifier": "com.claudecode.context"
+        }
+      ]
+    },
+    "smcfancontrol": {
+      "caskVersion": "2.6",
+      "sourceURL": "https://github.com/hholtmann/smcFanControl/releases/download/2.6/smcfancontrol_2_6.zip",
+      "artifactSHA256": "7662058e618537eb466307e3b12e540b857e61392646a5b09df51bec9ad6da38",
+      "apps": [
+        {
+          "bundleName": "smcFanControl.app",
+          "bundleIdentifier": "com.eidac.smcFanControl2"
+        }
+      ]
+    },
+    "geekbench": {
+      "caskVersion": "7.0.0",
+      "sourceURL": "https://cdn.geekbench.com/Geekbench-7.0.0-Mac.zip",
+      "artifactSHA256": "68e8e3821aa65f1b5d7e3b3e307c9f002c0f1efc02b3e62b96244a9e54bf1933",
+      "apps": [
+        {
+          "bundleName": "Geekbench 7.app",
+          "bundleIdentifier": "com.primatelabs.parkdale"
+        }
+      ]
+    },
+    "alcove": {
+      "caskVersion": "1.7.7",
+      "sourceURL": "https://download.tryalcove.com/Alcove.dmg",
+      "artifactSHA256": "17c481ffa9af91fc76e2ba9995f96750538bf171e5eb2be602c07255f4d944e5",
+      "apps": [
+        {
+          "bundleName": "Alcove.app",
+          "bundleIdentifier": "com.henrikruscon.Alcove"
+        }
+      ]
+    },
+    "winbox": {
+      "caskVersion": "4.4",
+      "sourceURL": "https://download.mikrotik.com/routeros/winbox/4.4/WinBox.dmg",
+      "artifactSHA256": "bff070fb410191d551c9988d47796ff7d245d276a981b14a90ca6f8698be4a18",
+      "apps": [
+        {
+          "bundleName": "WinBox.app",
+          "bundleIdentifier": "com.mikrotik.winbox"
+        }
+      ]
+    },
+    "http-toolkit": {
+      "caskVersion": "1.27.2",
+      "sourceURL": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.27.2/HttpToolkit-1.27.2-arm64.dmg",
+      "artifactSHA256": "fef5d5b808dc1237bac93c8beb164ee0a7f2ddff028881f573303ce2c1a331b4",
+      "apps": [
+        {
+          "bundleName": "HTTP Toolkit.app",
+          "bundleIdentifier": "tech.httptoolkit.desktop"
+        }
+      ]
+    },
+    "token-monitor": {
+      "caskVersion": "0.59.0",
+      "sourceURL": "https://github.com/Javis603/token-monitor/releases/download/v0.59.0/Token-Monitor-0.59.0-arm64.dmg",
+      "artifactSHA256": "d3086472d934ad5381f8c5985df70bcc10a499320078b2bc78c73229e9307bb3",
+      "apps": [
+        {
+          "bundleName": "Token Monitor.app",
+          "bundleIdentifier": "com.javis.tokenmonitor"
+        }
+      ]
     }
   }
 }
