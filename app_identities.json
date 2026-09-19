@@ -2853,6 +2853,266 @@
           "bundleIdentifier": "com.robinebers.openusage"
         }
       ]
+    },
+    "bettertouchtool": {
+      "caskVersion": "6.831,2026091804",
+      "sourceURL": "https://folivora.ai/releases/btt6.831-2026091804.zip",
+      "artifactSHA256": "05fbc16763f6b83eebc8a0234e64f08791b61ef3d8f61887dd12abdbf7895536",
+      "apps": [
+        {
+          "bundleName": "BetterTouchTool.app",
+          "bundleIdentifier": "com.hegenberg.BetterTouchTool"
+        }
+      ]
+    },
+    "block-goose": {
+      "caskVersion": "1.51.0",
+      "sourceURL": "https://github.com/block/goose/releases/download/v1.51.0/Goose.zip",
+      "artifactSHA256": "6ce60858a48dd69ddae7e06bf633d2d96d11f772752b25e0a84cad1474c12376",
+      "apps": [
+        {
+          "bundleName": "Goose.app",
+          "bundleIdentifier": "com.electron.goose"
+        }
+      ]
+    },
+    "crisp": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/didriksg/Crisp/releases/download/v1.6.0/Crisp.dmg",
+      "artifactSHA256": "06f464a7c35f2e23b3a38771a62623ae1b911a805aa11d3ea8ad9cbac3efd889",
+      "apps": [
+        {
+          "bundleName": "Crisp.app",
+          "bundleIdentifier": "com.crisp.app"
+        }
+      ]
+    },
+    "onyx": {
+      "caskVersion": "5.1.0",
+      "sourceURL": "https://www.titanium-software.fr/download/27/OnyX.dmg",
+      "artifactSHA256": "56182feff2b9e64933618ebf56ccef2fda0d2c64969cdde32d93d34f28c9f16b",
+      "apps": [
+        {
+          "bundleName": "OnyX.app",
+          "bundleIdentifier": "com.titanium.OnyX"
+        }
+      ]
+    },
+    "postgres-app": {
+      "caskVersion": "2.9.6,14-15-16-17-18",
+      "sourceURL": "https://github.com/PostgresApp/PostgresApp/releases/download/v2.9.6/Postgres-2.9.6-14-15-16-17-18.dmg",
+      "artifactSHA256": "ee67776540fb0d29cbd119ea4db4cac3c182349ed53048fdf79766a588ac86b3",
+      "apps": [
+        {
+          "bundleName": "Postgres.app",
+          "bundleIdentifier": "com.postgresapp.Postgres2"
+        }
+      ]
+    },
+    "telegram-desktop": {
+      "caskVersion": "7.2.9",
+      "sourceURL": "https://td.telegram.org/mac/td-setup-mac-7.2.9.dmg",
+      "artifactSHA256": "526aad8d40617fafaa27acb52dd0f5df451cd4683fb7fd63666aece164282bf4",
+      "apps": [
+        {
+          "bundleName": "Telegram Desktop.app",
+          "bundleIdentifier": "com.tdesktop.Telegram"
+        }
+      ]
+    },
+    "nextcloud": {
+      "caskVersion": "34.0.4",
+      "sourceURL": "https://github.com/nextcloud-releases/desktop/releases/download/v34.0.4/Nextcloud-34.0.4.pkg",
+      "artifactSHA256": "6cbcc1710cdc063ba377c5f5d04e5d6c8e1defc55f2d1b5e94303c1ad5744054",
+      "apps": []
+    },
+    "typora": {
+      "caskVersion": "1.14.10",
+      "sourceURL": "https://downloads.typora.io/mac/Typora-1.14.10.dmg",
+      "artifactSHA256": "a1a8e997c174577a69e33e3c1128719e886d1cd635b32f7243e9bab91ce0831c",
+      "apps": [
+        {
+          "bundleName": "Typora.app",
+          "bundleIdentifier": "abnerworks.Typora"
+        }
+      ]
+    },
+    "markdown-preview": {
+      "caskVersion": "0.0.58",
+      "sourceURL": "https://github.com/pluk-inc/markdown-preview/releases/download/v0.0.58/Markdown-Preview.dmg",
+      "artifactSHA256": "6f627a4a833c5b7f019f48c8768d5289b87d5d80046ad117f0cef54465dea336",
+      "apps": [
+        {
+          "bundleName": "Markdown Preview.app",
+          "bundleIdentifier": "doc.md-preview"
+        }
+      ]
+    },
+    "insomnia": {
+      "caskVersion": "13.2.0",
+      "sourceURL": "https://github.com/Kong/insomnia/releases/download/core%4013.2.0/Insomnia.Core-13.2.0.dmg",
+      "artifactSHA256": "f0b4535e55af44c212b6e601ae5919d0fa8cdbd82c3b52c10e85a29f4f621806",
+      "apps": [
+        {
+          "bundleName": "Insomnia.app",
+          "bundleIdentifier": "com.insomnia.app"
+        }
+      ]
+    },
+    "linear": {
+      "caskVersion": "1.32.4",
+      "sourceURL": "https://releases.linear.app/Linear-1.32.4-universal.dmg",
+      "artifactSHA256": "bae1078fabf5b72d884c3bbba4235117e92070adcba407cdc30afb3933f14d31",
+      "apps": [
+        {
+          "bundleName": "Linear.app",
+          "bundleIdentifier": "com.linear"
+        }
+      ]
+    },
+    "ubersicht": {
+      "caskVersion": "1.6.82",
+      "sourceURL": "https://tracesof.net/uebersicht/releases/Uebersicht-1.6.82.app.zip",
+      "artifactSHA256": "39db5e0abf03f6390992511c946c19b97a89f84ebe2ac87219ebf921fffb972b",
+      "apps": []
+    },
+    "loop": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://github.com/MrKai77/Loop/releases/download/1.4.2/Loop.zip",
+      "artifactSHA256": "514e97faab3843cdfb8b1859b91333704639a1a2ce580e4f684d75efe007d386",
+      "apps": [
+        {
+          "bundleName": "Loop.app",
+          "bundleIdentifier": "com.MrKai77.Loop"
+        }
+      ]
+    },
+    "mkvtoolnix-app": {
+      "caskVersion": "102.0-2",
+      "sourceURL": "https://mkvtoolnix.download/macos/releases/102.0/MKVToolNix-102.0-2-arm64.dmg",
+      "artifactSHA256": "10ebd3b424fd5f4987d50563fc43b5956bf3d4f3bbfa24fa870db956c96578b8",
+      "apps": [
+        {
+          "bundleName": "MKVToolNix.app",
+          "bundleIdentifier": "download.mkvtoolnix.MKVToolNix"
+        }
+      ]
+    },
+    "draw-things": {
+      "caskVersion": "26.0910.1-97fc1df8",
+      "sourceURL": "https://static.drawthings.ai/DrawThings-26.0910.1-97fc1df8.zip",
+      "artifactSHA256": "97fc1df8fab9ed275a931c2c1d8cb08a916c1fa6d7173ed779c6c323c3ab7143",
+      "apps": [
+        {
+          "bundleName": "Draw Things.app",
+          "bundleIdentifier": "com.liuliu.draw-things"
+        }
+      ]
+    },
+    "krita": {
+      "caskVersion": "5.3.4",
+      "sourceURL": "https://download.kde.org/stable/krita/5.3.4/krita-5.3.4-signed.dmg",
+      "artifactSHA256": "8e66539e38b8becfd31093a7701144c340c1789370b75e10a3703322739275d7",
+      "apps": [
+        {
+          "bundleName": "Krita.app",
+          "bundleIdentifier": "org.krita"
+        }
+      ]
+    },
+    "nordvpn": {
+      "caskVersion": "10.11.0",
+      "sourceURL": "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/10.11.0/NordVPN.pkg",
+      "artifactSHA256": "e5d6983aed416a8c3b005a3ea206a383bd46e81dc25b7b442ae3f0224aa84209",
+      "apps": []
+    },
+    "arduino-ide": {
+      "caskVersion": "2.3.10",
+      "sourceURL": "https://github.com/arduino/arduino-ide/releases/download/2.3.10/arduino-ide_2.3.10_macOS_ARM64.dmg",
+      "artifactSHA256": "8811860dc8782b6cd6bb0076e9215255849f404b1b9e6f38069fdc4f5c43648e",
+      "apps": [
+        {
+          "bundleName": "Arduino IDE.app",
+          "bundleIdentifier": "cc.arduino.IDE2"
+        }
+      ]
+    },
+    "reminders-menubar": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/DamascenoRafael/reminders-menubar/releases/download/v2.2.0/reminders-menubar.zip",
+      "artifactSHA256": "2187c4bac005359fcca53f599ce45bb6ef20b62196ada4cf5fdf62aee203c907",
+      "apps": [
+        {
+          "bundleName": "Reminders MenuBar.app",
+          "bundleIdentifier": "br.com.damascenorafael.reminders-menubar"
+        }
+      ]
+    },
+    "gemini": {
+      "caskVersion": "2.10.1,406,1781745541",
+      "sourceURL": "https://dl.devmate.com/com.macpaw.site.Gemini2/406/1781745541/Gemini2-406.zip",
+      "artifactSHA256": "c96dff8fa9f02becfab943a7e5b9c67eb054f1c7b41fb62b5caa5ef0536852dc",
+      "apps": [
+        {
+          "bundleName": "Gemini 2.app",
+          "bundleIdentifier": "com.macpaw.site.Gemini2"
+        }
+      ]
+    },
+    "espanso": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg",
+      "artifactSHA256": "e6aee2d9446d7625e57dafc6613add21fc7c9f709ba42f08b5ada844c6f7110a",
+      "apps": [
+        {
+          "bundleName": "Espanso.app",
+          "bundleIdentifier": "com.federicoterzi.espanso"
+        }
+      ]
+    },
+    "open-webui": {
+      "caskVersion": "0.0.20",
+      "sourceURL": "https://github.com/open-webui/desktop/releases/download/v0.0.20/open-webui-arm64.dmg",
+      "artifactSHA256": "454fee910c872168b75f98bf676af4d15b21dfcc6b43a26dfadc94bd9ef10b97",
+      "apps": [
+        {
+          "bundleName": "Open WebUI.app",
+          "bundleIdentifier": "com.openwebui.desktop"
+        }
+      ]
+    },
+    "capcut": {
+      "caskVersion": "9.4.1.4574",
+      "sourceURL": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_4_1_4574_capcutpc_0_creatortool.dmg",
+      "artifactSHA256": "86d48a42dfcb38b0d7468bbc8674f68edf722bc2587c9db1ee8714a83b520a1f",
+      "apps": [
+        {
+          "bundleName": "CapCut.app",
+          "bundleIdentifier": "com.lemon.lvoverseas"
+        }
+      ]
+    },
+    "tabby": {
+      "caskVersion": "1.0.235",
+      "sourceURL": "https://github.com/Eugeny/tabby/releases/download/v1.0.235/tabby-1.0.235-macos-arm64.zip",
+      "artifactSHA256": "1080a05d44c8acfe9301ec56c5ffa3ab0e472086d1ace8fe8a5e2cbf9f71c7d5",
+      "apps": [
+        {
+          "bundleName": "Tabby.app",
+          "bundleIdentifier": "org.tabby"
+        }
+      ]
+    },
+    "kiro": {
+      "caskVersion": "1.1.14",
+      "sourceURL": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.1.14/kiro-ide-1.1.14-stable-darwin-arm64.dmg",
+      "artifactSHA256": "03e0944aadca65079894c01a0dcf33c771ffd8b4f391486680713d1feed9e452",
+      "apps": [
+        {
+          "bundleName": "Kiro.app",
+          "bundleIdentifier": "dev.kiro.desktop"
+        }
+      ]
     }
   }
 }
