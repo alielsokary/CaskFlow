@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-09-18
+Generated 2026-09-19
 
 ## Summary
 
-- 2 new casks classified
+- 5 new casks classified
 - 2 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
@@ -15,12 +15,15 @@ Generated 2026-09-18
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `tapmap` | securityPrivacy | utilities | 0.55 | Visualizes network connections geographically, suggesting a network monitoring/security tool. |
-| `tritium` | productivity | officeTools | 0.60 | A drafting/document tool for legal professionals, closest to productivity writing tools. |
+| `colamd` | productivity | developerTools | 0.85 | A minimalist Markdown text editor for writing, best fit under productivity with a developer tools nod to Markdown. |
+| `incy` | securityPrivacy | utilities | 0.85 | INCY is a proxy/VPN-like client for private, unlogged connections using protocols like VLESS/Trojan/Reality. |
+| `muse` | productivity | ai | 0.70 | AI-powered task/project/goal management assistant fits productivity with AI trait. |
+| `openplc-editor` | developerTools | scienceEducation | 0.70 | An IDE for programming PLC controllers, fitting developer tools with an industrial/engineering flavor.' |
+| `tencent-yingyongbao` | games | utilities | 0.75 | Tencent's app is a platform for running Android/Windows games on Mac, essentially a game launcher/emulator. |
 
 ## Manual review required
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `tapmap` | securityPrivacy | utilities | 0.55 | Visualizes network connections geographically, suggesting a network monitoring/security tool. |
-| `tritium` | productivity | officeTools | 0.60 | A drafting/document tool for legal professionals, closest to productivity writing tools. |
+| `muse` | productivity | ai | 0.70 | AI-powered task/project/goal management assistant fits productivity with AI trait. |
+| `openplc-editor` | developerTools | scienceEducation | 0.70 | An IDE for programming PLC controllers, fitting developer tools with an industrial/engineering flavor.' |

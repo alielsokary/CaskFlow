@@ -4902,6 +4902,13 @@
     "og_desc": "Buy, send, receive and swap cryptocurrencies with the best Crypto Wallet. Manage Bitcoin, Ethereum, Bitcoin Cash, Litecoin, Solana, Dogecoin, XRP, and Monero in a secure wallet for both desktop and mobile."
   },
   {
+    "token": "colamd",
+    "homepage": "https://colamd.com/",
+    "title": "ColaMD: writing should be this simple.",
+    "meta_desc": "A free, elegant Markdown editor for macOS, Windows and Linux. No toolbar, no clutter, and the file on disk is always what you see.",
+    "og_desc": "A free, elegant Markdown editor for macOS, Windows and Linux. No toolbar, no clutter, and the file on disk is always what you see."
+  },
+  {
     "token": "cold-turkey-blocker",
     "homepage": "https://getcoldturkey.com/",
     "title": "Canada",
@@ -29291,6 +29298,13 @@
     "og_desc": "incident.io is an all-in-one incident management platform unifying on-call scheduling, real-time incident response, and integrated status pages - helping teams resolve issues faster and reduce downtime."
   },
   {
+    "token": "incy",
+    "homepage": "https://incy.cc/",
+    "title": "INCY - приложение для быстрых и приватных соединений",
+    "meta_desc": "INCY - клиент с открытым ядром для VLESS, VMess, Trojan, Hysteria2, Reality. iOS, Android, Windows, Linux, Apple TV и Android TV. Мы не логируем ваш трафик.",
+    "og_desc": "Клиент с открытым ядром для VLESS, VMess, Trojan, Hysteria2, Reality. Все платформы. Мы не логируем ваш трафик."
+  },
+  {
     "token": "infinidesk",
     "homepage": "https://infinidesk.app/",
     "title": "InfiniDesk - Organize Your Mac Desktop",
@@ -34558,6 +34572,11 @@
     "og_desc": "Screensaver inspired by Apple's inbuilt iTunes Screensaver. It can display Artwork by Spotify or last.fm Profile Data. - obrhoff/MusaicFM"
   },
   {
+    "token": "muse",
+    "homepage": "https://muse.ai/",
+    "error": "HTTP 400"
+  },
+  {
     "token": "muse-code",
     "homepage": "https://dev.meta.ai/",
     "error": "HTTP 500"
@@ -36260,6 +36279,13 @@
     "title": "GitHub - RasPlex/OpenPHT: OpenPHT is a community driven fork of Plex Home Theater · GitHub",
     "meta_desc": "OpenPHT is a community driven fork of Plex Home Theater - RasPlex/OpenPHT",
     "og_desc": "OpenPHT is a community driven fork of Plex Home Theater - RasPlex/OpenPHT"
+  },
+  {
+    "token": "openplc-editor",
+    "homepage": "https://github.com/Autonomy-Logic/openplc-editor",
+    "title": "GitHub - Autonomy-Logic/openplc-editor: OpenPLC Editor - IDE capable of creating programs for the OpenPLC Runtime. · GitHub",
+    "meta_desc": "OpenPLC Editor - IDE capable of creating programs for the OpenPLC Runtime. - Autonomy-Logic/openplc-editor",
+    "og_desc": "OpenPLC Editor - IDE capable of creating programs for the OpenPLC Runtime. - Autonomy-Logic/openplc-editor"
   },
   {
     "token": "openra",
@@ -44111,6 +44137,13 @@
     "title": "UGit - Making Git easy for everyone",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "tencent-yingyongbao",
+    "homepage": "https://sj.qq.com/download/macbrand",
+    "title": "应用宝 Mac 版 - 在 Mac 上运行安卓手游与 Windows 端游",
+    "meta_desc": "应用宝 Mac 版是腾讯出品的 Mac 一站式应用游戏平台，支持在 Mac 上直接运行安卓手游与 Windows 端游，无需虚拟机。支持内置键位映射，免费下载。",
+    "og_desc": "应用宝 Mac 版是腾讯出品的 Mac 一站式应用游戏平台，支持在 Mac 上直接运行安卓手游与 Windows 端游，无需虚拟机。支持内置键位映射，免费下载。"
   },
   {
     "token": "tentacle-sync-studio",
