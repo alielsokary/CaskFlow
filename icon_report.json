@@ -888,10 +888,10 @@
     "updated": "2026-08-01"
   },
   "microsoft-office": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/OfficeDev.png (suite pkg has no single Office.app; extractor picked the Defender shield)",
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "microsoft-openjdk": {
     "status": "curated",
@@ -1416,10 +1416,10 @@
     "updated": "2026-07-08"
   },
   "vagrant": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/hashicorp.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "vagrant-vmware-utility": {
     "status": "curated",

@@ -2104,6 +2104,261 @@
           "bundleIdentifier": "app.cyan.markedit"
         }
       ]
+    },
+    "scroll-reverser": {
+      "caskVersion": "1.9",
+      "sourceURL": "https://pilotmoon.com/downloads/ScrollReverser-1.9.zip",
+      "artifactSHA256": "0961dbb6f8ef4e5edd432bf0dd6e7cdd4219d8bac8b3baa3f576af9a42bbf585",
+      "apps": [
+        {
+          "bundleName": "Scroll Reverser.app",
+          "bundleIdentifier": "com.pilotmoon.scroll-reverser"
+        }
+      ]
+    },
+    "openclaw": {
+      "caskVersion": "2026.9.5",
+      "sourceURL": "https://github.com/openclaw/openclaw/releases/download/v2026.9.5/OpenClaw-2026.9.5.dmg",
+      "artifactSHA256": "63df4287eca0350df49e792b376a13d24414f0989e0ab382ba6afca2519439f5",
+      "apps": [
+        {
+          "bundleName": "OpenClaw.app",
+          "bundleIdentifier": "ai.openclaw.mac"
+        }
+      ]
+    },
+    "crossover": {
+      "caskVersion": "26.3.0",
+      "sourceURL": "https://media.codeweavers.com/pub/crossover/cxmac/demo/crossover-26.3.0.zip",
+      "artifactSHA256": "8688e0848c4e5f79f1cc351cb52d32447da00c6c00cfd3b4bb2d164d44589a26",
+      "apps": [
+        {
+          "bundleName": "CrossOver.app",
+          "bundleIdentifier": "com.codeweavers.CrossOver"
+        }
+      ]
+    },
+    "microsoft-office": {
+      "caskVersion": "16.113.26091740",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.113.26091740_Installer.pkg",
+      "artifactSHA256": "fafcedf3b6fc1c60a14416cda4c129ddf5448227da66b7a1d235e37e0ef30ded",
+      "apps": []
+    },
+    "clash-verge-rev": {
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_aarch64.dmg",
+      "artifactSHA256": "94d29405980b5d1d3419dd1de485db3a234d35cef058f79dcce595e01b697219",
+      "apps": [
+        {
+          "bundleName": "Clash Verge.app",
+          "bundleIdentifier": "io.github.clash-verge-rev.clash-verge-rev"
+        }
+      ]
+    },
+    "microsoft-outlook": {
+      "caskVersion": "16.113.26091740",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.113.26091740_Installer.pkg",
+      "artifactSHA256": "c8ce6b36b6c2f4b5bf1b907e006376b12a18e6bdebcbf5178334733db95fc5d7",
+      "apps": []
+    },
+    "antigravity-ide": {
+      "caskVersion": "2.5.5,4923483625488384",
+      "sourceURL": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.5.5-4923483625488384/darwin-arm/Antigravity%20IDE.dmg",
+      "artifactSHA256": "cad67d6d30a537fcb3bb9a6100330040ec6bcb686e38069f1ff16fe42306a33e",
+      "apps": [
+        {
+          "bundleName": "Antigravity IDE.app",
+          "bundleIdentifier": "com.google.antigravity-ide"
+        }
+      ]
+    },
+    "anki": {
+      "caskVersion": "26.09.2",
+      "sourceURL": "https://github.com/ankitects/anki/releases/download/26.09.2/anki-26.09.2-mac-apple.dmg",
+      "artifactSHA256": "bc6459bd3e57f2196dd48c212844e5522a71833e08271aa88a62ae5f68cda045",
+      "apps": [
+        {
+          "bundleName": "Anki.app",
+          "bundleIdentifier": "net.ankiweb.anki"
+        }
+      ]
+    },
+    "comfy": {
+      "caskVersion": "1.0.47,260908ensm0r3cr",
+      "sourceURL": "https://download.todesktop.com/241012ess7yxs0e/Comfy%20Desktop%201.0.47%20-%20Build%20260908ensm0r3cr-arm64-mac.zip",
+      "artifactSHA256": "b6e3725799217849907b2dac5da8c2326c18885d6ca14329e0150278947f882e",
+      "apps": [
+        {
+          "bundleName": "Comfy Desktop.app",
+          "bundleIdentifier": "com.todesktop.241012ess7yxs0e"
+        }
+      ]
+    },
+    "mysqlworkbench": {
+      "caskVersion": "8.0.47",
+      "sourceURL": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.47-macos-arm64.dmg",
+      "artifactSHA256": "90b177034b3e2c64b822f44920cb11996ec1323f4c49e2fa0224748103fb4844",
+      "apps": [
+        {
+          "bundleName": "MySQLWorkbench.app",
+          "bundleIdentifier": "com.oracle.workbench.MySQLWorkbench"
+        }
+      ]
+    },
+    "thunderbird": {
+      "caskVersion": "156.0",
+      "sourceURL": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/156.0/mac/en-US/Thunderbird%20156.0.dmg",
+      "artifactSHA256": "63586abac3d48ed3f34042a565441f8115e36333cc4db9795ad6b64feb4e51df",
+      "apps": [
+        {
+          "bundleName": "Thunderbird.app",
+          "bundleIdentifier": "org.mozilla.thunderbird"
+        }
+      ]
+    },
+    "syncthing-app": {
+      "caskVersion": "2.1.5-1",
+      "sourceURL": "https://github.com/syncthing/syncthing-macos/releases/download/v2.1.5-1/Syncthing-2.1.5-1.dmg",
+      "artifactSHA256": "50903a2a6221856e1c36e3c5c5ff39e897053d29aa1f685ad576622c93069e88",
+      "apps": [
+        {
+          "bundleName": "Syncthing.app",
+          "bundleIdentifier": "com.github.xor-gate.syncthing-macosx"
+        }
+      ]
+    },
+    "applite": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://github.com/milanvarady/Applite/releases/download/v1.4.2/Applite.dmg",
+      "artifactSHA256": "94955981298a61ae2d3094c04e2089eefa70d2ceb0099ef2ce0c9ab0af4e6306",
+      "apps": [
+        {
+          "bundleName": "Applite.app",
+          "bundleIdentifier": "dev.aerolite.Applite"
+        }
+      ]
+    },
+    "keepingyouawake": {
+      "caskVersion": "1.6.8",
+      "sourceURL": "https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.8/KeepingYouAwake-1.6.8.zip",
+      "artifactSHA256": "8001a149b4490c008fdac19898bce9902d516c4aa6412a7eb0f9a37443b15c6b",
+      "apps": [
+        {
+          "bundleName": "KeepingYouAwake.app",
+          "bundleIdentifier": "info.marcel-dierkes.KeepingYouAwake"
+        }
+      ]
+    },
+    "coteditor": {
+      "caskVersion": "7.1.0",
+      "sourceURL": "https://github.com/coteditor/CotEditor/releases/download/7.1.0/CotEditor_7.1.0.dmg",
+      "artifactSHA256": "55ab705fdb5806b40899c637c6232713da3c9919986016d49aab41ebadf1d88c",
+      "apps": [
+        {
+          "bundleName": "CotEditor.app",
+          "bundleIdentifier": "com.coteditor.CotEditor"
+        }
+      ]
+    },
+    "anydesk": {
+      "caskVersion": "9.8.0",
+      "sourceURL": "https://download.anydesk.com/anydesk.dmg",
+      "artifactSHA256": "6c1637f89b34cfbfbb4d0d02c3fe81428acd8defcea9b0ac20ff65fdcc041449",
+      "apps": [
+        {
+          "bundleName": "AnyDesk.app",
+          "bundleIdentifier": "com.philandro.anydesk"
+        }
+      ]
+    },
+    "notunes": {
+      "caskVersion": "3.5",
+      "sourceURL": "https://github.com/tombonez/noTunes/releases/download/v3.5/noTunes-3.5.zip",
+      "artifactSHA256": "07835cf9f3bf314d11f2ebe528072a200ffa2d55f38de59085979c2d476ea3d5",
+      "apps": [
+        {
+          "bundleName": "noTunes.app",
+          "bundleIdentifier": "digital.twisted.noTunes"
+        }
+      ]
+    },
+    "keycastr": {
+      "caskVersion": "0.11.1",
+      "sourceURL": "https://github.com/keycastr/keycastr/releases/download/v0.11.1/KeyCastr.app.zip",
+      "artifactSHA256": "71fb7dd90a9bb96de2990499da280ce03e13cbd559a77477515191864977a65c",
+      "apps": [
+        {
+          "bundleName": "KeyCastr.app",
+          "bundleIdentifier": "io.github.keycastr"
+        }
+      ]
+    },
+    "helium-browser": {
+      "caskVersion": "0.17.2.1",
+      "sourceURL": "https://github.com/imputnet/helium-macos/releases/download/0.17.2.1/helium_0.17.2.1_arm64-macos.dmg",
+      "artifactSHA256": "f1a3fecde3c08254f1b1eec30e36ecd25f98cf3799644427fbcefd6e6beafacf",
+      "apps": [
+        {
+          "bundleName": "Helium.app",
+          "bundleIdentifier": "net.imput.helium"
+        }
+      ]
+    },
+    "headlamp": {
+      "caskVersion": "0.45.0",
+      "sourceURL": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.45.0/Headlamp-0.45.0-mac-arm64.dmg",
+      "artifactSHA256": "4f3e7de1c048f8dbe84bfd6c18ac61d0aafd4d909278ca44648d4562c80995f3",
+      "apps": [
+        {
+          "bundleName": "Headlamp.app",
+          "bundleIdentifier": "com.microsoft.Headlamp"
+        }
+      ]
+    },
+    "kiro-cli": {
+      "caskVersion": "2.22.1",
+      "sourceURL": "https://desktop-release.q.us-east-1.amazonaws.com/2.22.1/Kiro%20CLI.dmg",
+      "artifactSHA256": "92ac8cf551a6ac6877c151538ec05164bdec61203f9af78febfe7df2410a5ea0",
+      "apps": [
+        {
+          "bundleName": "Kiro CLI.app",
+          "bundleIdentifier": "com.amazon.codewhisperer"
+        }
+      ]
+    },
+    "vagrant": {
+      "caskVersion": "2.4.9",
+      "sourceURL": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_darwin_arm64.dmg",
+      "artifactSHA256": "8de08bd435ef8ae0fc5fbd6acefa9c68e62fb898c5ae0fbdacd26853bea9d4d6",
+      "apps": []
+    },
+    "maestro": {
+      "caskVersion": "0.17.3",
+      "sourceURL": "https://github.com/pedramamini/Maestro/releases/download/v0.17.3/Maestro-0.17.3-arm64-mac.dmg",
+      "artifactSHA256": "d6fab4ca577567f85013b23346d147823a06b87ab36e066259ec02d50d958eb5",
+      "apps": [
+        {
+          "bundleName": "Maestro.app",
+          "bundleIdentifier": "com.maestro.app"
+        }
+      ]
+    },
+    "upscayl": {
+      "caskVersion": "2.15.0",
+      "sourceURL": "https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-mac.dmg",
+      "artifactSHA256": "0e53c9ee8c1800cb3e2ce0f574e4e1a35a51945e19ff2b93f33928bbd7fd4c5a",
+      "apps": [
+        {
+          "bundleName": "Upscayl.app",
+          "bundleIdentifier": "org.upscayl.Upscayl"
+        }
+      ]
+    },
+    "virtualbox": {
+      "caskVersion": "7.2.18,175117",
+      "sourceURL": "https://download.virtualbox.org/virtualbox/7.2.18/VirtualBox-7.2.18-175117-macOSArm64.dmg",
+      "artifactSHA256": "b8a0329d731d42fe1e0ec2ba1331149ba2f3f293443e0b5b493bcd7d54cc0b34",
+      "apps": []
     }
   }
 }
