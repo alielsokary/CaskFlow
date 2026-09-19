@@ -965,6 +965,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "notchnook": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
+    "attempts": 1,
+    "updated": "2026-09-19"
+  },
   "notion-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
