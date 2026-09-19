@@ -403,6 +403,61 @@
           "bundleIdentifier": "no.tip.tapmap"
         }
       ]
+    },
+    "incy": {
+      "caskVersion": "3.8.6",
+      "sourceURL": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.6/incy-macos-arm64.dmg",
+      "artifactSHA256": "d1ed68563e97123ac11d4a166a4276c91a7e8f21ba741bca11ab7f4d6df034f0",
+      "apps": [
+        {
+          "bundleName": "incy.app",
+          "bundleIdentifier": "llc.itdev.incy"
+        }
+      ]
+    },
+    "tencent-yingyongbao": {
+      "caskVersion": "0.8.1.2162,v86aPbKEPoXhM6CV",
+      "sourceURL": "https://downmac.yyb.qq.com/channel/formal/raw/v86aPbKEPoXhM6CV/mac_yyb_0.8.1.2162.dmg",
+      "artifactSHA256": "749d3bae14f36bd7256e22bb81e0403402e4052122fd77d6657cf7b0ce3af0d6",
+      "apps": [
+        {
+          "bundleName": "YYBMacApp.app",
+          "bundleIdentifier": "com.tencent.yybmac"
+        }
+      ]
+    },
+    "muse": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://muse.ai/api/hatch/app-download/mac",
+      "artifactSHA256": "312d7dc024797a9bd9249b155cf03afd0af5ebdc412cc6635842b8fc78a99b80",
+      "apps": [
+        {
+          "bundleName": "Muse.app",
+          "bundleIdentifier": "com.meta.endo"
+        }
+      ]
+    },
+    "colamd": {
+      "caskVersion": "2.4.3",
+      "sourceURL": "https://github.com/marswaveai/ColaMD/releases/download/v2.4.3/ColaMD-2.4.3-arm64.dmg",
+      "artifactSHA256": "e3874048e44baa8f6a98c6c6c450fa07a057ff0c69eb28af3259d4c5a98ca2c6",
+      "apps": [
+        {
+          "bundleName": "ColaMD.app",
+          "bundleIdentifier": "ai.marswave.colamd"
+        }
+      ]
+    },
+    "openplc-editor": {
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://github.com/Autonomy-Logic/openplc-editor/releases/download/v4.3.0/OpenPLC_Editor_4.3.0-ARM.dmg",
+      "artifactSHA256": "b307ea2a98f5728f802f4d20be0e848e3cab3cff8c011d0556d60c645c24238a",
+      "apps": [
+        {
+          "bundleName": "OpenPLC Editor.app",
+          "bundleIdentifier": "com.autonomylogic.openplceditor"
+        }
+      ]
     }
   }
 }
