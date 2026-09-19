@@ -7162,6 +7162,276 @@
           "bundleIdentifier": "pro.affine.app"
         }
       ]
+    },
+    "cardinal-search": {
+      "caskVersion": "0.1.23",
+      "sourceURL": "https://github.com/cardisoft/cardinal/releases/download/v0.1.23/Cardinal_0.1.23_aarch64.dmg",
+      "artifactSHA256": "72fbcf6d486e6f1e8bc26a19b7374322d2898426f67f269534d196cdbffa2aea",
+      "apps": [
+        {
+          "bundleName": "Cardinal.app",
+          "bundleIdentifier": "com.cardinal.one"
+        }
+      ]
+    },
+    "paper": {
+      "caskVersion": "5.5.5",
+      "sourceURL": "https://www.paperapp.net/app/pap.er_v5.5.5.dmg",
+      "artifactSHA256": "ccbef03d6fecf529e34c566034d8f052d5d719d3886fd19469cf27bfd078c16c",
+      "apps": [
+        {
+          "bundleName": "pap.er.app",
+          "bundleIdentifier": "com.w.paper"
+        }
+      ]
+    },
+    "tiled": {
+      "caskVersion": "1.12.2",
+      "sourceURL": "https://github.com/mapeditor/tiled/releases/download/v1.12.2/Tiled-1.12.2_macOS-13+.zip",
+      "artifactSHA256": "75712ec3a892701a9b2b7a12e44d636a1dbbe4caa6bb8bba729e697bd8a80433",
+      "apps": [
+        {
+          "bundleName": "Tiled.app",
+          "bundleIdentifier": "org.mapeditor.Tiled"
+        }
+      ]
+    },
+    "vmlx": {
+      "caskVersion": "1.6.64",
+      "sourceURL": "https://github.com/jjang-ai/mlxstudio/releases/download/v1.6.64/vMLX-1.6.64-sequoia-arm64.dmg",
+      "artifactSHA256": "a1ecd8a93947933badb9c1200d5f37828bda6de15d7d8c36019de357ae82c260",
+      "apps": [
+        {
+          "bundleName": "vMLX.app",
+          "bundleIdentifier": "net.vmlx.app"
+        }
+      ]
+    },
+    "whichspace": {
+      "caskVersion": "1.3.8",
+      "sourceURL": "https://github.com/gechr/WhichSpace/releases/download/v1.3.8/WhichSpace.zip",
+      "artifactSHA256": "ef8a5c92b74db0f64bb6f686c433360c3d20048d3883bb953bf1a4a6da521431",
+      "apps": [
+        {
+          "bundleName": "WhichSpace.app",
+          "bundleIdentifier": "io.gechr.WhichSpace"
+        }
+      ]
+    },
+    "pixpin": {
+      "caskVersion": "3.5.5.1",
+      "sourceURL": "https://down.pixpin.cn/PixPin_mac_3.5.5.1_uni.dmg",
+      "artifactSHA256": "efe097abe580b78139001f024b6fb18aa906e0d43fce192c98aa4e587e71e26e",
+      "apps": [
+        {
+          "bundleName": "PixPin.app",
+          "bundleIdentifier": "com.depthpicture.PixPin"
+        }
+      ]
+    },
+    "remanager": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/rmitchellscott/reManager/releases/download/v1.7.4/reManager-macos-universal.zip",
+      "artifactSHA256": "12e4ab945706da1e1688df1cd0ce619a771d8db0f978850d5cc22892ade20eae",
+      "apps": [
+        {
+          "bundleName": "reManager.app",
+          "bundleIdentifier": "com.wails.reManager"
+        }
+      ]
+    },
+    "emdash": {
+      "caskVersion": "1.2.5",
+      "sourceURL": "https://github.com/generalaction/emdash/releases/download/v1.2.5/emdash-arm64.dmg",
+      "artifactSHA256": "fa3090447f38b5b0e34462674b0f15f7c4cc012e4064d1362d673627226437d5",
+      "apps": [
+        {
+          "bundleName": "Emdash.app",
+          "bundleIdentifier": "com.emdash.stable"
+        }
+      ]
+    },
+    "swiftformat-for-xcode": {
+      "caskVersion": "0.63.0",
+      "sourceURL": "https://github.com/nicklockwood/SwiftFormat/releases/download/0.63.0/SwiftFormat.for.Xcode.app.zip",
+      "artifactSHA256": "2d55032a00604883db7d0850a483656256c179b8a326cdcb08ceaa393005c37c",
+      "apps": [
+        {
+          "bundleName": "SwiftFormat for Xcode.app",
+          "bundleIdentifier": "com.charcoaldesign.SwiftFormat-for-Xcode"
+        }
+      ]
+    },
+    "trex": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/amebalabs/TRex/releases/download/v2.0.0/TRex-2.0.0.zip",
+      "artifactSHA256": "4e8defc680daa6e09cb2daba576aa243683c775b93a9510ce5f12544d222de4d",
+      "apps": [
+        {
+          "bundleName": "TRex.app",
+          "bundleIdentifier": "com.ameba.TRex"
+        }
+      ]
+    },
+    "modrinth": {
+      "caskVersion": "0.21.4",
+      "sourceURL": "https://launcher-files.modrinth.com/versions/0.21.4/macos/Modrinth%20App_0.21.4_universal.dmg",
+      "artifactSHA256": "72fbe25e951e57c77cefbe28d021a313e01dc4db5e4c01ba037cacfe47d133c7",
+      "apps": []
+    },
+    "numi": {
+      "caskVersion": "3.32.721",
+      "sourceURL": "https://s3.numi.app/updates/3.32.721/Numi.dmg",
+      "artifactSHA256": "21b5f89ecacfab039295874d24b79a450c080d526bcdf31716a46a8b11dddb30",
+      "apps": [
+        {
+          "bundleName": "Numi.app",
+          "bundleIdentifier": "com.dmitrynikolaev.numi"
+        }
+      ]
+    },
+    "clocker": {
+      "caskVersion": "26.13",
+      "sourceURL": "https://github.com/n0shake/Clocker/releases/download/v26.13/Clocker.zip",
+      "artifactSHA256": "b649851b978850e52841778caeb7af046b071bf9881af2acdbc8580e96d2ea56",
+      "apps": [
+        {
+          "bundleName": "Clocker.app",
+          "bundleIdentifier": "com.abhishek.Clocker"
+        }
+      ]
+    },
+    "airstats": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://github.com/byrencheema/airstats/releases/download/v1.4/AirStats.dmg",
+      "artifactSHA256": "5888362bbca31914c9ec2c80541e9717e59e0eaf56ef0e846d28619015fe49c7",
+      "apps": [
+        {
+          "bundleName": "AirStats.app",
+          "bundleIdentifier": "com.airstat.AirStats"
+        }
+      ]
+    },
+    "sanesidebuttons": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://github.com/thealpa/SaneSideButtons/releases/download/1.4.1/SaneSideButtons.dmg",
+      "artifactSHA256": "694a381e7dcef5a237e2eedb203c4fb63008faea7e3615c0070c437a53740403",
+      "apps": [
+        {
+          "bundleName": "SaneSideButtons.app",
+          "bundleIdentifier": "com.janhuelsmann.SaneSideButtons"
+        }
+      ]
+    },
+    "klogg": {
+      "caskVersion": "22.06.0.1289",
+      "sourceURL": "https://github.com/variar/klogg/releases/download/v22.06/klogg-22.06.0.1289-OSX-Qt5.dmg",
+      "artifactSHA256": "e5df7722d0d851852dd9cc3449dd42d1fef3e74edda8c20dc04b38cb852b0fec",
+      "apps": [
+        {
+          "bundleName": "klogg.app",
+          "bundleIdentifier": "com.github.variar.klogg"
+        }
+      ]
+    },
+    "launchcontrol": {
+      "caskVersion": "2.11",
+      "sourceURL": "https://www.soma-zone.com/download/files/LaunchControl-2.11.tar.xz",
+      "artifactSHA256": "d46eb1548e78e9f811e089bd23f0fffa0a5a8fc7f3ed297658cff53d2bf519e5",
+      "apps": [
+        {
+          "bundleName": "LaunchControl.app",
+          "bundleIdentifier": "com.soma-zone.LaunchControl"
+        }
+      ]
+    },
+    "turbo-boost-switcher": {
+      "caskVersion": "2.13.0",
+      "sourceURL": "https://turbo-boost-switcher.s3.amazonaws.com/Turbo_Boost_Switcher_v2.13.0.dmg",
+      "artifactSHA256": "0f0e0e5edd8ceec49b9b744cdce72578775e2124e1c5f930c49e05ee522d98f9",
+      "apps": [
+        {
+          "bundleName": "Turbo Boost Switcher.app",
+          "bundleIdentifier": "rugarciap.com.Turbo-Boost-Switcher"
+        }
+      ]
+    },
+    "icon-composer": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://devimages-cdn.apple.com/design/resources/download/Icon-Composer-1.2.dmg",
+      "artifactSHA256": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6",
+      "apps": [
+        {
+          "bundleName": "Icon Composer.app",
+          "bundleIdentifier": "com.apple.IconComposer"
+        }
+      ]
+    },
+    "webtorrent": {
+      "caskVersion": "0.24.0",
+      "sourceURL": "https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/WebTorrent-v0.24.0.dmg",
+      "artifactSHA256": "9cf28d0f0ef74d793cca5a0fee0d7195a11c055b4a6c118cea295c308a3bfd9d",
+      "apps": [
+        {
+          "bundleName": "WebTorrent.app",
+          "bundleIdentifier": "io.webtorrent.webtorrent"
+        }
+      ]
+    },
+    "devpod": {
+      "caskVersion": "0.6.15",
+      "sourceURL": "https://github.com/loft-sh/devpod/releases/download/v0.6.15/DevPod_macos_aarch64.dmg",
+      "artifactSHA256": "63fea2f91762be167a53267722b1f37b95214bb1824957e2eeaf38d41f6a16af",
+      "apps": [
+        {
+          "bundleName": "DevPod.app",
+          "bundleIdentifier": "sh.loft.devpod"
+        }
+      ]
+    },
+    "soulseek": {
+      "caskVersion": "2026-4-30",
+      "sourceURL": "https://f004.backblazeb2.com/file/SoulseekQt/SoulseekQt-2026-4-30.dmg",
+      "artifactSHA256": "72fa8c2b91c9eda39c765485c09995299a17834bf62862e37e4d6353bc18f1b7",
+      "apps": [
+        {
+          "bundleName": "SoulseekQt.app",
+          "bundleIdentifier": "com.yourcompany.SoulseekQt"
+        }
+      ]
+    },
+    "teleport-connect": {
+      "caskVersion": "18.11.1",
+      "sourceURL": "https://cdn.teleport.dev/Teleport%20Connect-18.11.1.dmg",
+      "artifactSHA256": "50afd680bc32a2febfc26867db38d826094049e4322ad816d58adb1885d1d7e0",
+      "apps": [
+        {
+          "bundleName": "Teleport Connect.app",
+          "bundleIdentifier": "gravitational.teleport.connect"
+        }
+      ]
+    },
+    "dbngin": {
+      "caskVersion": "26.1.0,92",
+      "sourceURL": "https://files.dbngin.com/macos/92/DBngin.dmg",
+      "artifactSHA256": "272cfcf9228e59ea2eac0f5b9b5f2556475a1c01c5d7b9fa248a8e383f2a5f1e",
+      "apps": [
+        {
+          "bundleName": "DBngin.app",
+          "bundleIdentifier": "com.tinyapp.DBngin"
+        }
+      ]
+    },
+    "clickup": {
+      "caskVersion": "3.5.262,260717dcrpwg7m0",
+      "sourceURL": "https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.262%20-%20Build%20260717dcrpwg7m0-arm64.dmg",
+      "artifactSHA256": "76168f07eeddcab9f0ab967e1c2be6f0a6a0450625ca1369835f6ceb8d4e2a01",
+      "apps": [
+        {
+          "bundleName": "ClickUp.app",
+          "bundleIdentifier": "com.clickup.desktop-app"
+        }
+      ]
     }
   }
 }
