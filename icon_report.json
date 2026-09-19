@@ -396,10 +396,10 @@
     "updated": "2026-07-08"
   },
   "dotnet-sdk": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/dotnet.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "droid": {
     "status": "no_icon",
@@ -822,10 +822,10 @@
     "updated": "2026-09-01"
   },
   "macfuse": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/macfuse.png?size=256",
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "macfuse@dev": {
     "status": "no_icon",
@@ -1332,10 +1332,10 @@
     "updated": "2026-07-08"
   },
   "temurin": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/adoptium.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-19"
   },
   "tenable-nessus-agent": {
     "status": "no_icon",

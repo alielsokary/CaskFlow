@@ -829,6 +829,256 @@
           "bundleIdentifier": "md.obsidian"
         }
       ]
+    },
+    "warp": {
+      "caskVersion": "0.2026.09.16.08.27.stable_02",
+      "sourceURL": "https://app.warp.dev/download?version=v0.2026.09.16.08.27.stable_02&package=dmg",
+      "artifactSHA256": "826ee2b1a5103a174cb8be4447d1b7439e50f3901a74e4f748c833e567a586b1",
+      "apps": [
+        {
+          "bundleName": "Warp.app",
+          "bundleIdentifier": "dev.warp.Warp-Stable"
+        }
+      ]
+    },
+    "slack": {
+      "caskVersion": "4.52.155",
+      "sourceURL": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.52.155/Slack-4.52.155-macOS.dmg",
+      "artifactSHA256": "28f3d5dcdfcb267c10a863417bcdfe6d1a6f73b214965b19f72c825fd4b7b60e",
+      "apps": [
+        {
+          "bundleName": "Slack.app",
+          "bundleIdentifier": "com.tinyspeck.slackmacgap"
+        }
+      ]
+    },
+    "localsend": {
+      "caskVersion": "1.18.2",
+      "sourceURL": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg",
+      "artifactSHA256": "126860d56f6f49b11845f601aac51de27a49b16d2b48102415da91e0e37e5155",
+      "apps": [
+        {
+          "bundleName": "LocalSend.app",
+          "bundleIdentifier": "org.localsend.localsendApp"
+        }
+      ]
+    },
+    "cc-switch": {
+      "caskVersion": "3.20.3",
+      "sourceURL": "https://github.com/farion1231/cc-switch/releases/download/v3.20.3/CC-Switch-v3.20.3-macOS.dmg",
+      "artifactSHA256": "cff3bf8ccd06a6dacde8fd93ac88467fcba8926f96bedccba63174a7efcabde7",
+      "apps": [
+        {
+          "bundleName": "CC Switch.app",
+          "bundleIdentifier": "com.ccswitch.desktop"
+        }
+      ]
+    },
+    "godot": {
+      "caskVersion": "4.7.2",
+      "sourceURL": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_macos.universal.zip",
+      "artifactSHA256": "c58a24e31d720be9d62f60cb5627c4e695fb72f21b0cfe1bc9ccaa9a3b3ba63e",
+      "apps": [
+        {
+          "bundleName": "Godot.app",
+          "bundleIdentifier": "org.godotengine.godot"
+        }
+      ]
+    },
+    "xquartz": {
+      "caskVersion": "2.8.6",
+      "sourceURL": "https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.6/XQuartz-2.8.6.pkg",
+      "artifactSHA256": "9ac35a505095bfbd3009c3b4772f0c6421e2f79c4210ab908459270d1c447909",
+      "apps": []
+    },
+    "appcleaner": {
+      "caskVersion": "3.6.8",
+      "sourceURL": "https://www.freemacsoft.net/downloads/AppCleaner_3.6.8.zip",
+      "artifactSHA256": "e012f729442473c20e7cce334b00182521e4b6672ea681b34931b180feb3d6be",
+      "apps": [
+        {
+          "bundleName": "AppCleaner.app",
+          "bundleIdentifier": "net.freemacsoft.AppCleaner"
+        }
+      ]
+    },
+    "opencode-desktop": {
+      "caskVersion": "1.18.31",
+      "sourceURL": "https://github.com/anomalyco/opencode/releases/download/v1.18.31/opencode-desktop-mac-arm64.dmg",
+      "artifactSHA256": "dedb2c1100b96be18b4d66e797616187ed7ce68b67b78434a4c1ec6bcb02dc57",
+      "apps": [
+        {
+          "bundleName": "OpenCode.app",
+          "bundleIdentifier": "ai.opencode.desktop"
+        }
+      ]
+    },
+    "karabiner-elements": {
+      "caskVersion": "16.3.0",
+      "sourceURL": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg",
+      "artifactSHA256": "19cce7bed3d48a722242ca683bd1bae406b6a87fed520728d1c91dee175b75e4",
+      "apps": []
+    },
+    "dotnet-sdk": {
+      "caskVersion": "10.0.401",
+      "sourceURL": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-osx-arm64.pkg",
+      "artifactSHA256": "f6ff7da28160f346da9987eb0dd7fe52961ac0cd78d25712ec1e7ab57fc0950d",
+      "apps": []
+    },
+    "spotify": {
+      "caskVersion": "1.3.1.234",
+      "sourceURL": "https://download.scdn.co/SpotifyARM64.dmg",
+      "artifactSHA256": "30171cb041c07749ad41fc0487c6d9c0e283b97a945c347d6719ec6ffe21be07",
+      "apps": [
+        {
+          "bundleName": "Spotify.app",
+          "bundleIdentifier": "com.spotify.client"
+        }
+      ]
+    },
+    "hammerspoon": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://github.com/Hammerspoon/hammerspoon/releases/download/1.1.1/Hammerspoon-1.1.1.zip",
+      "artifactSHA256": "11bb1c90faf5427f37c7bd4fe7eab9774ae43e1d5cb020c5b3088dac32849efa",
+      "apps": [
+        {
+          "bundleName": "Hammerspoon.app",
+          "bundleIdentifier": "org.hammerspoon.Hammerspoon"
+        }
+      ]
+    },
+    "ollama-app": {
+      "caskVersion": "0.34.2",
+      "sourceURL": "https://github.com/ollama/ollama/releases/download/v0.34.2/Ollama-darwin.zip",
+      "artifactSHA256": "a0f49ba612d54c06ff54e4bd2050494838351a14d3cd4851362ae5c17571dc7b",
+      "apps": [
+        {
+          "bundleName": "Ollama.app",
+          "bundleIdentifier": "com.electron.ollama"
+        }
+      ]
+    },
+    "cursor": {
+      "caskVersion": "3.21.13,e44a49c17e334d442e58bbde931d791200f014a2",
+      "sourceURL": "https://downloads.cursor.com/production/e44a49c17e334d442e58bbde931d791200f014a2/darwin/arm64/Cursor-darwin-arm64.zip",
+      "artifactSHA256": "65ab5f4858e723e053657c1bd2c9dc0b8c6f9f9b40814ee27ddf7e7bb3d9f759",
+      "apps": [
+        {
+          "bundleName": "Cursor.app",
+          "bundleIdentifier": "com.todesktop.230313mzl4w4u92"
+        }
+      ]
+    },
+    "betterdisplay": {
+      "caskVersion": "5.0.5",
+      "sourceURL": "https://github.com/waydabber/BetterDisplay/releases/download/v5.0.5/BetterDisplay-v5.0.5.dmg",
+      "artifactSHA256": "5685565b3f07952c697b6d7884ff5c410a7070ea30b2eb282a93f831fe773752",
+      "apps": [
+        {
+          "bundleName": "BetterDisplay.app",
+          "bundleIdentifier": "pro.betterdisplay.BetterDisplay"
+        }
+      ]
+    },
+    "discord": {
+      "caskVersion": "0.0.412",
+      "sourceURL": "https://dl.discordapp.net/apps/osx/0.0.412/Discord.dmg",
+      "artifactSHA256": "5102d468e5593a5ffd5a3ecd38a10e9f63b349e7a3caa074eee8d6532f573a19",
+      "apps": [
+        {
+          "bundleName": "Discord.app",
+          "bundleIdentifier": "com.hnc.Discord"
+        }
+      ]
+    },
+    "utm": {
+      "caskVersion": "4.7.5",
+      "sourceURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM.dmg",
+      "artifactSHA256": "a8435c93cfb5f8bbfeea4b134cfad1ac66b67632b75e438c63b1a8ae043bef0e",
+      "apps": [
+        {
+          "bundleName": "UTM.app",
+          "bundleIdentifier": "com.utmapp.UTM"
+        }
+      ]
+    },
+    "lm-studio": {
+      "caskVersion": "0.4.25,1",
+      "sourceURL": "https://installers.lmstudio.ai/darwin/arm64/0.4.25-1/LM-Studio-0.4.25-1-arm64.dmg",
+      "artifactSHA256": "8bab857c3d2900e14ab46435f0d1471de068f165e761bb9c177093e8a25e1774",
+      "apps": [
+        {
+          "bundleName": "LM Studio.app",
+          "bundleIdentifier": "ai.elementlabs.lmstudio"
+        }
+      ]
+    },
+    "postman": {
+      "caskVersion": "12.28.6",
+      "sourceURL": "https://dl.pstmn.io/download/version/12.28.6/osx_arm64",
+      "artifactSHA256": "fc481abce04f7da6b2fc0af6d888cd865304e494a769cf2a5780f07616c51cd3",
+      "apps": [
+        {
+          "bundleName": "Postman.app",
+          "bundleIdentifier": "com.postmanlabs.mac"
+        }
+      ]
+    },
+    "iina": {
+      "caskVersion": "1.4.4",
+      "sourceURL": "https://dl.iina.io/IINA.v1.4.4.dmg",
+      "artifactSHA256": "dd0fc0bd4b37fb57a1c8d30d6e3201b3a64bafd29959fe56953964613237beb1",
+      "apps": [
+        {
+          "bundleName": "IINA.app",
+          "bundleIdentifier": "com.colliderli.iina"
+        }
+      ]
+    },
+    "macfuse": {
+      "caskVersion": "5.4.0",
+      "sourceURL": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.4.0/macfuse-5.4.0.dmg",
+      "artifactSHA256": "861814f0ac7fa8f6547ea40cdd49a36ac84bcc7d34f38a1fa74e8cf68b0401c5",
+      "apps": []
+    },
+    "jordanbaird-ice": {
+      "caskVersion": "0.11.12",
+      "sourceURL": "https://github.com/jordanbaird/ice-releases/releases/download/0.11.12/Ice.zip",
+      "artifactSHA256": "d770e81597566dd2d2363feb350f808c7a92e363df95c51e48140eb30e452cc9",
+      "apps": [
+        {
+          "bundleName": "Ice.app",
+          "bundleIdentifier": "com.jordanbaird.Ice"
+        }
+      ]
+    },
+    "zed": {
+      "caskVersion": "1.20.2",
+      "sourceURL": "https://zed.dev/api/releases/stable/1.20.2/Zed-aarch64.dmg",
+      "artifactSHA256": "58138f5a1da1d1871020dc671c4a65671fa66ea506fc2fd8c44d6983ec241de1",
+      "apps": [
+        {
+          "bundleName": "Zed.app",
+          "bundleIdentifier": "dev.zed.Zed"
+        }
+      ]
+    },
+    "drawio": {
+      "caskVersion": "31.4.5",
+      "sourceURL": "https://github.com/jgraph/drawio-desktop/releases/download/v31.4.5/draw.io-arm64-31.4.5.dmg",
+      "artifactSHA256": "9f73e9970f0a720c1b9a553c7caf0c1160cabbb03c7b90e968ff3b704aaf56a9",
+      "apps": [
+        {
+          "bundleName": "draw.io.app",
+          "bundleIdentifier": "com.jgraph.drawio.desktop"
+        }
+      ]
+    },
+    "temurin": {
+      "caskVersion": "26.0.2.1,1",
+      "sourceURL": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.2.1_1.pkg",
+      "artifactSHA256": "f03de2294ff4e02f5eda20c48ea8afe665809264b28dc249e82901718f05e3b8",
+      "apps": []
     }
   }
 }
