@@ -287,7 +287,7 @@ def test_flush_clears_published_pending_and_dirty(monkeypatch, tmp_path):
     monkeypatch.setattr(
         extract_icons,
         "publish_batch",
-        lambda pngs, report, tokens, identity_file=None: published.append((dict(pngs), set(tokens))),
+        lambda pngs, report, tokens, identity_file=None, **kw: published.append((dict(pngs), set(tokens))),
     )
 
     _flush_if_due({}, pending, dirty)
@@ -362,6 +362,54 @@ def test_main_partial_failure_stays_green(monkeypatch, tmp_path):
     assert _run_main(monkeypatch, tmp_path, []) == 0  # empty batch: steady state
 
 
+@pytest.mark.parametrize("mode", ["backfill", "icons", "manual"])
+def test_identity_backfill_requires_declared_apps_without_restricting_icon_modes(monkeypatch, tmp_path, mode):
+    from types import SimpleNamespace
+
+    casks = [_cask(token="pkg", artifacts=[{"pkg": ["Installer.pkg"]}]),
+             _cask(token="suite", artifacts=[{"suite": ["Suite"]}]),
+             _cask(token="app"), _cask(token="popular"), _cask(token="later")]
+    extracted = []
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {})
+    monkeypatch.setattr(extract_icons, "published_tokens", set)
+    monkeypatch.setattr(extract_icons, "_git", lambda *a: SimpleNamespace(returncode=1))
+    monkeypatch.setattr(extract_icons, "load_install_counts", lambda: {"pkg": 100, "suite": 90, "popular": 80})
+    monkeypatch.setattr(extract_icons, "_extract_status",
+                        lambda c, _: (extracted.append(c["token"]) or "ok", "exact"))
+    flags = {"backfill": ["--identity-backfill"], "icons": [],
+             "manual": ["--identity-backfill", "--tokens", "pkg", "suite"]}[mode]
+    assert extract_icons.main(["--output-dir", str(tmp_path), "--limit", "2", *flags]) == 0
+    assert extracted == (["popular", "app"] if mode == "backfill" else ["pkg", "suite"])
+
+
+def test_main_reports_identities_independently_of_icon_success(monkeypatch, tmp_path, capsys):
+    from app_identities import MANIFEST, load_manifest
+    from style_standards import write_json
+
+    casks = [_cask(token=t) for t in ["identified", "empty", "uninspected"]]
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {})
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda *a: casks)
+
+    def extract(cask, output):
+        token = cask["token"]
+        if token == "uninspected":
+            return "failed", "download failed"
+        manifest = load_manifest(output / MANIFEST)
+        manifest["casks"][token] = {"apps": (
+            [{"bundleName": "Test.app", "bundleIdentifier": "com.example.test"}]
+            if token == "identified" else [])}
+        write_json(output / MANIFEST, manifest)
+        return ("no_icon", "none") if token == "identified" else ("ok", "exact")
+    monkeypatch.setattr(extract_icons, "_extract_status", extract)
+    assert extract_icons.main(["--output-dir", str(tmp_path)]) == 0
+    output = capsys.readouterr().out
+    assert "1/3 casks with app identities; 1 inspected without identities; 1 not inspected" in output
+    assert "Inspected without identities: empty" in output
+    assert "Identity inspection incomplete: uninspected" in output
+
+
 # --- retry-parked ----------------------------------------------------------
 
 def test_build_batch_retry_parked_selects_failed_parked_only():
@@ -389,7 +437,8 @@ def test_main_retry_parked_all_fail_stays_green(monkeypatch, tmp_path):
     assert extract_icons.main(["--output-dir", str(tmp_path), "--retry-parked"]) == 0
 
 
-def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, tmp_path):
+@pytest.mark.parametrize("fail_later", [False, True])
+def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, tmp_path, fail_later):
     import json
     import subprocess
 
@@ -412,6 +461,8 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
     monkeypatch.setattr(extract_icons.shutil, "rmtree", lambda *a, **k: None)
 
     def push(*_):
+        if fail_later and events == ["push", "antinote.png"]:
+            raise ExtractError("later push failed")
         git("commit", "-qm", "publish")
         manifest = json.loads(git("show", "HEAD:icons.json"))
         assert manifest == {"version": 1, "hashes": {
@@ -436,6 +487,28 @@ def test_publish_manifest_and_purge_only_changed_files_after_push(monkeypatch, t
     with pytest.raises(ExtractError, match="push failed"):
         extract_icons.publish_batch({"antinote": png}, {}, set())
     assert events == []
+
+    git("reset", "--hard", "HEAD")
+    monkeypatch.setattr(extract_icons, "_commit_and_push", push)
+    monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 1)
+    casks = [_cask(token=t) for t in ["antinote", "unchanged"]]
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {})
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda *a: casks)
+
+    def extract(cask, output):
+        (output / f"{cask['token']}.png").write_bytes(b"batch")
+        return "ok", "exact"
+    monkeypatch.setattr(extract_icons, "_extract_status", extract)
+    argv = ["--output-dir", str(tmp_path), "--publish"]
+    if fail_later:
+        with pytest.raises(ExtractError, match="later push failed"):
+            extract_icons.main(argv)
+        assert events == ["push", "antinote.png", "icons.json"]
+        return
+    assert extract_icons.main(argv) == 0
+    # An exact multiple of FLUSH_EVERY leaves the final flush empty.
+    assert events == ["push", "antinote.png", "push", "unchanged.png", "icons.json"]
 
 
 def test_purge_failure_warns_without_failing_publication(monkeypatch, capsys):

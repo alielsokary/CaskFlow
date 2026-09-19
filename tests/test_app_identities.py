@@ -35,6 +35,37 @@ def test_exact_artifact_rename_and_checksum_are_recorded(tmp_path):
                       "apps": [{"bundleName": "Renamed.app", "bundleIdentifier": "com.example.original"}]}
 
 
+@pytest.mark.parametrize("duplicate", [False, True])
+def test_canonically_equivalent_artifact_paths_match_but_duplicates_are_rejected(tmp_path, duplicate):
+    app(tmp_path / "one", "Re\u0301lease/U\u0308bersicht.app", "tracesOf.Uebersicht")
+    if duplicate:
+        app(tmp_path / "two", "R\u00e9lease/\u00dcbersicht.app", "com.example.other")
+    source = {**cask(), "artifacts": [{"app": ["R\u00e9lease/\u00dcbersicht.app"]}]}
+    archive = tmp_path / "app.zip"
+    archive.write_bytes(b"archive")
+    expected = [] if duplicate else [
+        {"bundleName": "\u00dcbersicht.app", "bundleIdentifier": "tracesOf.Uebersicht"}]
+    assert extract_identities(source, tmp_path, archive)["apps"] == expected
+
+
+@pytest.mark.parametrize("encoding", ["doctype-only", "binary", "malformed"])
+def test_identity_plist_formats_and_malformed_metadata(tmp_path, encoding):
+    bundle = app(tmp_path, "Original.app", "io.github.wickenico.wailbrew")
+    info = bundle / "Contents/Info.plist"
+    if encoding == "doctype-only":
+        info.write_bytes(info.read_bytes().split(b"\n", 1)[1])
+    elif encoding == "binary":
+        info.write_bytes(plistlib.dumps({"CFBundleIdentifier": "io.github.wickenico.wailbrew"},
+                                       fmt=plistlib.FMT_BINARY))
+    else:
+        info.write_bytes(b"<plist><dict><key>CFBundleIdentifier</key><string>broken</dict></plist>")
+    archive = tmp_path / "app.zip"
+    archive.write_bytes(b"archive")
+    expected = [] if encoding == "malformed" else [
+        {"bundleName": "Renamed.app", "bundleIdentifier": "io.github.wickenico.wailbrew"}]
+    assert extract_identities(cask(), tmp_path, archive)["apps"] == expected
+
+
 @pytest.mark.parametrize("case", ["wrong-name", "duplicate", "symlink", "plist-symlink", "empty-id"])
 def test_ambiguous_or_untrusted_bundles_produce_no_identity(tmp_path, case):
     archive = tmp_path / "app.zip"
@@ -114,7 +145,7 @@ def test_identity_only_batch_is_flushed_without_a_png(tmp_path, monkeypatch):
     import extract_icons
     calls = []
     monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 1)
-    monkeypatch.setattr(extract_icons, "publish_batch", lambda *args: calls.append(args))
+    monkeypatch.setattr(extract_icons, "publish_batch", lambda *args, **kw: calls.append(args))
     dirty = {"no-icon"}
     extract_icons._flush_if_due({}, {}, dirty, tmp_path / MANIFEST)
     assert len(calls) == 1

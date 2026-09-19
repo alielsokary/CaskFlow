@@ -18,7 +18,8 @@ from urllib.request import urlopen
 
 from style_standards import write_json
 
-from app_identities import MANIFEST, merge_extractions, needs_refresh, record_extraction
+from app_identities import (MANIFEST, declared_apps, load_manifest, merge_extractions,
+                            needs_refresh, record_extraction)
 
 from icons_state import (  # noqa: F401  (re-exported for curate_icons/tests)
     ICONS_BRANCH,
@@ -497,7 +498,8 @@ def _icon_status(app: Path, selection: str, dest_png: Path) -> tuple[str, str]:
 
 
 def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
-                  dirty: set[str], identity_file: Path | None = None) -> None:
+                  dirty: set[str], identity_file: Path | None = None, *,
+                  purge_manifest: bool = True) -> None:
     """Commit a batch of icons AND the report to the icons branch via a throwaway worktree."""
     # Merge only this batch's report entries so concurrent manual audits survive.
     wt = Path(tempfile.mkdtemp(prefix="icons-wt-"))
@@ -522,7 +524,8 @@ def publish_batch(pngs: dict[str, Path], report: dict[str, dict],
             raise ExtractError("Cannot determine changed icons for CDN purge")
         _commit_and_push(wt, pngs)
         for filename in changed.stdout.splitlines():
-            purge_file(filename)
+            if filename != "icons.json" or purge_manifest:
+                purge_file(filename)
     finally:
         if wt_added:
             _git(REPO_ROOT, "worktree", "remove", "--force", str(wt))
@@ -691,7 +694,7 @@ def _record_ok(token: str, detail: str, report: dict) -> None:
 def _flush_if_due(report: dict, pending: dict[str, Path], dirty: set[str],
                   identity_file: Path | None = None) -> None:
     if len(pending) >= FLUSH_EVERY or len(dirty) >= FLUSH_EVERY:
-        publish_batch(pending, report, dirty, identity_file)
+        publish_batch(pending, report, dirty, identity_file, purge_manifest=False)
         pending.clear()
         dirty.clear()
 
@@ -720,7 +723,7 @@ def main(argv: list[str] | None = None) -> int:
         identities = json.loads(show.stdout).get("casks", {}) if show.returncode == 0 else {}
         counts = load_install_counts()
         from classify_new_casks import is_main_cask
-        batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None
+        batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None and declared_apps(c)
                  and needs_refresh(c, identities.get(c["token"]))
                  and report.get(c["token"], {}).get("attempts", 0) < MAX_ATTEMPTS]
         batch.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)
@@ -742,39 +745,54 @@ def main(argv: list[str] | None = None) -> int:
     pending: dict[str, Path] = {}
     dirty: set[str] = set()  # tokens whose report entry this run may change
     start = time.time()
-    for i, cask in enumerate(batch, 1):
-        token = cask["token"]
-        dirty.add(token)
-        status, detail = _extract_status(cask, args.output_dir)
-        if status == "ok":
-            ok += 1
-            _record_ok(token, detail, report)
+    try:
+        for i, cask in enumerate(batch, 1):
+            token = cask["token"]
+            dirty.add(token)
+            status, detail = _extract_status(cask, args.output_dir)
+            if status == "ok":
+                ok += 1
+                _record_ok(token, detail, report)
+                if args.publish:
+                    pending[token] = args.output_dir / f"{token}.png"
+            else:
+                record(report, token, status, detail)
             if args.publish:
-                pending[token] = args.output_dir / f"{token}.png"
-        else:
-            record(report, token, status, detail)
-        if args.publish:
-            _flush_if_due(report, pending, dirty, identity_file)
-        outcomes.append((token, status, detail))
-        note = ""
-        if status == "failed":
-            attempts = report[token]["attempts"]
-            note = (f" [attempt {attempts} - parked]" if attempts >= MAX_ATTEMPTS
-                    else f" [attempt {attempts}/{MAX_ATTEMPTS}]")
-        print(f"  [{i}/{len(batch)}] {token}: {status} - {detail}{note}", flush=True)
+                _flush_if_due(report, pending, dirty, identity_file)
+            outcomes.append((token, status, detail))
+            note = ""
+            if status == "failed":
+                attempts = report[token]["attempts"]
+                note = (f" [attempt {attempts} - parked]" if attempts >= MAX_ATTEMPTS
+                        else f" [attempt {attempts}/{MAX_ATTEMPTS}]")
+            print(f"  [{i}/{len(batch)}] {token}: {status} - {detail}{note}", flush=True)
 
-    if args.publish:
-        # Always flush at the end - persists report-only outcomes (failures,
-        # parks) even when no new icons were extracted.
-        publish_batch(pending, report, dirty, identity_file)
-    else:
-        print("(local run - report changes not persisted; use --publish)")
+        if args.publish:
+            # Always flush at the end - persists report-only outcomes (failures,
+            # parks) even when no new icons were extracted.
+            publish_batch(pending, report, dirty, identity_file, purge_manifest=False)
+        else:
+            print("(local run - report changes not persisted; use --publish)")
+    finally:
+        # Intermediate flushes otherwise repeatedly throttle this shared CDN path.
+        # Refresh prior pushes even if a later batch fails or the final flush is empty.
+        if args.publish and batch:
+            purge_file("icons.json")
 
     elapsed = time.time() - start
     failed = sum(1 for _, s, _ in outcomes if s == "failed")
     print(f"\n{ok}/{len(batch)} icons extracted in {elapsed:.0f}s; "
           f"{failed} failed, "
           f"{sum(1 for _, s, _ in outcomes if s in ('no_icon', 'car_only'))} skipped")
+    identities = load_manifest(identity_file)["casks"]
+    empty = [c["token"] for c in batch if c["token"] in identities and not identities[c["token"]]["apps"]]
+    uninspected = [c["token"] for c in batch if c["token"] not in identities]
+    print(f"{len(batch) - len(empty) - len(uninspected)}/{len(batch)} casks with app identities; "
+          f"{len(empty)} inspected without identities; {len(uninspected)} not inspected")
+    if empty:
+        print(f"Inspected without identities: {', '.join(empty)}")
+    if uninspected:
+        print(f"Identity inspection incomplete: {', '.join(uninspected)}")
     if batch and failed == len(batch) and not args.retry_parked:
         # Every cask hard-failed: either the tail-end dregs day (rare, worth a
         # look) or a systemic problem (runner network, stale brew metadata).

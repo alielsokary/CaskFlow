@@ -11,6 +11,8 @@ import plistlib
 import re
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
+from unicodedata import normalize
+from xml.parsers.expat import ExpatError
 
 from style_standards import write_json
 
@@ -69,8 +71,11 @@ def _bundle_identifier(bundle: Path) -> str | None:
     if info_path.is_symlink() or info_path.parent.is_symlink() or not info_path.resolve().is_relative_to(bundle.resolve()):
         return None
     try:
-        info = plistlib.loads(info_path.read_bytes())
-    except (OSError, ValueError, plistlib.InvalidFileException):
+        data = info_path.read_bytes()
+        # Valid XML plists may start with a DOCTYPE instead of an XML declaration.
+        fmt = plistlib.FMT_BINARY if data.startswith(b"bplist00") else plistlib.FMT_XML
+        info = plistlib.loads(data, fmt=fmt)
+    except (OSError, ValueError, plistlib.InvalidFileException, ExpatError):
         return None
     identifier = info.get("CFBundleIdentifier") if isinstance(info, dict) else None
     return identifier if isinstance(identifier, str) and IDENTIFIER.fullmatch(identifier) else None
@@ -81,8 +86,9 @@ def extract_identities(cask: dict, root: Path, artifact: Path) -> dict:
     bundles = _application_bundles(root)
     apps = []
     for source, target in declared_apps(cask):
-        parts = PurePosixPath(source).parts
-        matches = [p for p in bundles if p.parts[-len(parts):] == parts]
+        parts = PurePosixPath(normalize("NFC", source)).parts
+        matches = [p for p in bundles
+                   if tuple(normalize("NFC", part) for part in p.parts[-len(parts):]) == parts]
         if len(matches) != 1:
             continue
         identifier = _bundle_identifier(matches[0])
