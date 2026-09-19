@@ -2593,6 +2593,266 @@
       "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.113.26091740_Installer.pkg",
       "artifactSHA256": "b17cd601dc6415abe77444302fb80cf41630278063df476cc9118ee8ca8a1f27",
       "apps": []
+    },
+    "opensuperwhisper": {
+      "caskVersion": "0.1.0",
+      "sourceURL": "https://github.com/starmel/OpenSuperWhisper/releases/download/0.1.0/OpenSuperWhisper.dmg",
+      "artifactSHA256": "af5ca5142c22e5bed3ba7d2642223c0a481e49935f5a5a6cf1bc766c7ecd9d69",
+      "apps": [
+        {
+          "bundleName": "OpenSuperWhisper.app",
+          "bundleIdentifier": "ru.starmel.OpenSuperWhisper"
+        }
+      ]
+    },
+    "quarto": {
+      "caskVersion": "1.10.18",
+      "sourceURL": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.10.18/quarto-1.10.18-macos.pkg",
+      "artifactSHA256": "c57119e22012a4de14de0addf6da51db455082fcc2524a6dcba9696e7577cf4d",
+      "apps": []
+    },
+    "burp-suite": {
+      "caskVersion": "2026.8",
+      "sourceURL": "https://portswigger-cdn.net/burp/releases/download?product=desktop&version=2026.8&type=MacOsArm64",
+      "artifactSHA256": "638ff9d9c3026838798f5659904e3e9cba00ee0b26f3d616f93b1967f275d2ce",
+      "apps": [
+        {
+          "bundleName": "Burp Suite.app",
+          "bundleIdentifier": "com.install4j.6592-1155-2163-3973.70"
+        }
+      ]
+    },
+    "orchard": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://github.com/andrew-waters/orchard/releases/download/v2.4.2/Orchard-2.4.2.dmg",
+      "artifactSHA256": "4c4255d5b74fd78e635f94ae2296f4b6a6a688d54d37201cda04565cd3b1e765",
+      "apps": [
+        {
+          "bundleName": "Orchard.app",
+          "bundleIdentifier": "container-compose.Orchard"
+        }
+      ]
+    },
+    "jellyfin": {
+      "caskVersion": "12.1",
+      "sourceURL": "https://repo.jellyfin.org/files/server/macos/stable/v12.1/arm64/jellyfin_12.1-arm64.dmg",
+      "artifactSHA256": "0665f45616463ed22c6c2ea71c9be3827454308848a574073ef60f025d0939da",
+      "apps": [
+        {
+          "bundleName": "Jellyfin.app",
+          "bundleIdentifier": "Jellyfin.Server"
+        }
+      ]
+    },
+    "radix": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/colinvkim/Radix/releases/download/v1.7.0/Radix.zip",
+      "artifactSHA256": "69eb62f9cc318bcb0f04c56c2cfd4d4b89640ccb51ed75b663970d81c87aebca",
+      "apps": [
+        {
+          "bundleName": "Radix.app",
+          "bundleIdentifier": "com.colinkim.Radix"
+        }
+      ]
+    },
+    "vivaldi": {
+      "caskVersion": "8.2.4133.68",
+      "sourceURL": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.2.4133.68.universal.tar.xz",
+      "artifactSHA256": "d32bff705c3a525c8ea6bab13d32d9451c7906b0d193ea595a8613a55b3f7be0",
+      "apps": [
+        {
+          "bundleName": "Vivaldi.app",
+          "bundleIdentifier": "com.vivaldi.Vivaldi"
+        }
+      ]
+    },
+    "prismlauncher": {
+      "caskVersion": "11.1.0",
+      "sourceURL": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-macOS-11.1.0.zip",
+      "artifactSHA256": "b6ae145a02dd9bbc7c44ce3fa42ec942daca8c829584e21c66290a8e6ca89af8",
+      "apps": [
+        {
+          "bundleName": "Prism Launcher.app",
+          "bundleIdentifier": "org.prismlauncher.PrismLauncher"
+        }
+      ]
+    },
+    "affinity": {
+      "caskVersion": "3.3.0,4850",
+      "sourceURL": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%204850.zip",
+      "artifactSHA256": "317f5cf64a5364319898576b4648b6a96dc9ec39f50039aebf9901b7ed3a5d96",
+      "apps": [
+        {
+          "bundleName": "Affinity.app",
+          "bundleIdentifier": "com.canva.affinity"
+        }
+      ]
+    },
+    "bbedit": {
+      "caskVersion": "16.0.3",
+      "sourceURL": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.3.dmg",
+      "artifactSHA256": "acf2ae9e5c68beacdfd7534861fa8c992e1bdd5391a71b3c08b3ed879c2b3572",
+      "apps": [
+        {
+          "bundleName": "BBEdit.app",
+          "bundleIdentifier": "com.barebones.bbedit"
+        }
+      ]
+    },
+    "itsycal": {
+      "caskVersion": "0.15.14",
+      "sourceURL": "https://itsycal.s3.amazonaws.com/Itsycal-0.15.14.zip",
+      "artifactSHA256": "c66dc8a76dfb9d13396fc7bc3f5b18a41d8710840fb091aa849af747439bc949",
+      "apps": [
+        {
+          "bundleName": "Itsycal.app",
+          "bundleIdentifier": "com.mowglii.ItsycalApp"
+        }
+      ]
+    },
+    "agentsview": {
+      "caskVersion": "0.43.0",
+      "sourceURL": "https://github.com/kenn-io/agentsview/releases/download/v0.43.0/AgentsView_0.43.0_aarch64.dmg",
+      "artifactSHA256": "3f40ac9cbf46a45294853efcd95330a6d0337431a6971df4281e0ee3e7ee814e",
+      "apps": [
+        {
+          "bundleName": "AgentsView.app",
+          "bundleIdentifier": "io.agentsview.desktop"
+        }
+      ]
+    },
+    "easydict": {
+      "caskVersion": "2.22.0",
+      "sourceURL": "https://github.com/tisfeng/Easydict/releases/download/2.22.0/Easydict.dmg",
+      "artifactSHA256": "35c165f2d8029d3c50b4770f7914e18a649a016de282216ca8930cd011b600ac",
+      "apps": [
+        {
+          "bundleName": "Easydict.app",
+          "bundleIdentifier": "com.izual.Easydict"
+        }
+      ]
+    },
+    "wechatwebdevtools": {
+      "caskVersion": "2.02.2608070",
+      "sourceURL": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608070_darwin_arm64.dmg",
+      "artifactSHA256": "911600453eacc4e7c7b64366719bc8d0151bd5bdb36d7816ca17fc0881dcc681",
+      "apps": [
+        {
+          "bundleName": "wechatwebdevtools.app",
+          "bundleIdentifier": "com.github.Electron"
+        }
+      ]
+    },
+    "onlyoffice": {
+      "caskVersion": "9.4.0",
+      "sourceURL": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.4.0/ONLYOFFICE-arm.dmg",
+      "artifactSHA256": "e965be2222609add6b5a70baa2a8cdb599402491fb2925825d9039dcb154beb4",
+      "apps": [
+        {
+          "bundleName": "ONLYOFFICE.app",
+          "bundleIdentifier": "asc.onlyoffice.ONLYOFFICE"
+        }
+      ]
+    },
+    "paseo": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://github.com/getpaseo/paseo/releases/download/v0.8.0/Paseo-0.8.0-arm64.dmg",
+      "artifactSHA256": "f58810167b59eace88a8da35629d5c9b91e6293b4239cb7d1954b13a1ab9501e",
+      "apps": [
+        {
+          "bundleName": "Paseo.app",
+          "bundleIdentifier": "sh.paseo.desktop"
+        }
+      ]
+    },
+    "termius": {
+      "caskVersion": "10.0.6",
+      "sourceURL": "https://autoupdate.termius.com/mac-arm64/Termius.dmg",
+      "artifactSHA256": "adb94da93c75bb5f420f2a9d18514cb2e18049ef4f987a2bc0d0e5ba87090404",
+      "apps": [
+        {
+          "bundleName": "Termius.app",
+          "bundleIdentifier": "com.termius-dmg.mac"
+        }
+      ]
+    },
+    "aldente": {
+      "caskVersion": "1.39.3",
+      "sourceURL": "https://apphousekitchen.com/aldente/AlDente1.39.3.dmg",
+      "artifactSHA256": "aca6d1a060bb6347a8bb4d239233a1e897ab363cbaec0fea4c078481156af650",
+      "apps": [
+        {
+          "bundleName": "AlDente.app",
+          "bundleIdentifier": "com.apphousekitchen.aldente-pro"
+        }
+      ]
+    },
+    "r-app": {
+      "caskVersion": "4.6.1,sonoma",
+      "sourceURL": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.1-arm64.pkg",
+      "artifactSHA256": "67f6eea4ced4ce48f0a0d4fa3a1cac43d1859a05a88993ee3dff7c52e7edbc4b",
+      "apps": []
+    },
+    "sfm": {
+      "caskVersion": "1.14.1",
+      "sourceURL": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFM-1.14.1-Universal.pkg",
+      "artifactSHA256": "00a3e70684535aabe19a73d4850e0b63067224676bbf5ffae0a0eb3a2e034b79",
+      "apps": []
+    },
+    "sourcetree": {
+      "caskVersion": "4.2.19,317",
+      "sourceURL": "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_4.2.19_317.zip",
+      "artifactSHA256": "f9d6c65ba0b9d774add4977ad0482acde72ce91221e20f3136c009dccdf713bf",
+      "apps": [
+        {
+          "bundleName": "Sourcetree.app",
+          "bundleIdentifier": "com.torusknot.SourceTreeNotMAS"
+        }
+      ]
+    },
+    "android-file-transfer": {
+      "caskVersion": "5071136",
+      "sourceURL": "https://dl.google.com/dl/androidjumper/mtp/5071136/androidfiletransfer.dmg",
+      "artifactSHA256": "b9249399a351e8146358ff1ddb546c68a63134b780be795ae64e0a4c2258bc61",
+      "apps": [
+        {
+          "bundleName": "Android File Transfer.app",
+          "bundleIdentifier": "com.google.android.mtpviewer"
+        }
+      ]
+    },
+    "mac-mouse-fix": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/noah-nuebling/mac-mouse-fix/releases/download/3.1.0/MacMouseFixApp.zip",
+      "artifactSHA256": "afee98a91e86b287cc28c652fddefeeb02e17573af0e666d1ffa542f1025308f",
+      "apps": [
+        {
+          "bundleName": "Mac Mouse Fix.app",
+          "bundleIdentifier": "com.nuebling.mac-mouse-fix"
+        }
+      ]
+    },
+    "cryptomator": {
+      "caskVersion": "1.19.3",
+      "sourceURL": "https://github.com/cryptomator/cryptomator/releases/download/1.19.3/Cryptomator-1.19.3-arm64.dmg",
+      "artifactSHA256": "0bfe8c6aeb97acf638810e3e576016db510bc7bf71366dc00f3c7eea9a314f23",
+      "apps": [
+        {
+          "bundleName": "Cryptomator.app",
+          "bundleIdentifier": "org.cryptomator"
+        }
+      ]
+    },
+    "openusage": {
+      "caskVersion": "0.7.12",
+      "sourceURL": "https://github.com/robinebers/openusage/releases/download/v0.7.12/OpenUsage-0.7.12.dmg",
+      "artifactSHA256": "a15c24034e7a25c09a1dbbc74f36337db5fb34a4507695c1d20e19d842e6f979",
+      "apps": [
+        {
+          "bundleName": "OpenUsage.app",
+          "bundleIdentifier": "com.robinebers.openusage"
+        }
+      ]
     }
   }
 }
