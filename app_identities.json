@@ -612,7 +612,14 @@
       "caskVersion": "1.102.4",
       "sourceURL": "https://pkgs.tailscale.com/stable/Tailscale-1.102.4-macos.pkg",
       "artifactSHA256": "b40b733af76233fd1e4af7acaeb325268e55e6818c15c6e9aa9e78f427245c5b",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Tailscale.app",
+          "bundleIdentifier": "io.tailscale.ipn.macsys"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "raycast": {
       "caskVersion": "2.4.1.0",
@@ -4530,7 +4537,14 @@
       "caskVersion": "0.24.0",
       "sourceURL": "https://github.com/TabularisDB/tabularis/releases/download/v0.24.0/tabularis_0.24.0_aarch64.dmg",
       "artifactSHA256": "433968aa2042b253a82785e301e21589b4b10e0e943faea3f5b4bcd22dd606aa",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "tabularis.app",
+          "reason": "unsupported CFBundleIdentifier: 'tabularis'"
+        }
+      ]
     },
     "jan": {
       "caskVersion": "0.8.4",
@@ -6965,7 +6979,14 @@
       "caskVersion": "5.57",
       "sourceURL": "https://pages.uoregon.edu/koch/texshop/texshop-64/texshop557.zip",
       "artifactSHA256": "08aa26a5dfacfa67bacedbc73d57fe07b64dcfe49e9fab34a3be1dc5372d20d4",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "TeXShop.app",
+          "reason": "unsupported CFBundleIdentifier: 'TeXShop'"
+        }
+      ]
     },
     "lark": {
       "caskVersion": "8.0.3,eee2e5a8",
@@ -8209,7 +8230,14 @@
       "caskVersion": "5.13.0",
       "sourceURL": "https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
       "artifactSHA256": "1483806486a19728bc0f363f847d75be3f179ea43c7f074bfc327f5b5c6e05ad",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "UltiMaker Cura.app",
+          "reason": "unsupported CFBundleIdentifier: 'nl.ultimaker.cura_UltiMaker_Cura'"
+        }
+      ]
     },
     "jumpcut": {
       "caskVersion": "0.84",
@@ -9737,7 +9765,14 @@
       "caskVersion": "0.8.5",
       "sourceURL": "https://github.com/RustCastLabs/rustcast/releases/download/v0.8.5/Rustcast-universal-macos.app.zip",
       "artifactSHA256": "77ca6160adbfa38adcf8a2ae83e4484c95ce38ceb5b47d21fe45076029c12802",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Rustcast.app",
+          "bundleIdentifier": "com.umangsurana.rustcast"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "devonthink": {
       "caskVersion": "4.4",
@@ -13285,7 +13320,14 @@
       "caskVersion": "1.8",
       "sourceURL": "https://tablecruncher.com/download/v1.8/Tablecruncher-1.8-arm64.zip",
       "artifactSHA256": "9980f46fea21e30491a6aa74bfa8d2787b3377eefe61a546ed92cd26c22fe619",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Tablecruncher.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     },
     "yoink": {
       "caskVersion": "3.7.6",
@@ -28802,7 +28844,14 @@
       "caskVersion": "0.3.3",
       "sourceURL": "https://github.com/emuell/restic-browser/releases/download/v0.3.3/Restic-Browser-v0.3.3-macOS.zip",
       "artifactSHA256": "d2e772dd19912f0eed3053ba654cdd14ca44ea5039164be548362a8b0ab57e18",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Restic-Browser.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "resolutionator": {
       "caskVersion": "2.4",
@@ -29611,7 +29660,14 @@
       "caskVersion": "12.1.1",
       "sourceURL": "https://github.com/GetScatter/ScatterDesktop/releases/download/12.1.1/mac-scatter-12.1.1.dmg",
       "artifactSHA256": "b7db4b8bb63547e4313520fa906e149646ee4f7344d916921af5c57dc885ebc2",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Scatter.app",
+          "bundleIdentifier": "com.get-scatter.server"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "scoot": {
       "caskVersion": "1.3",
@@ -29870,7 +29926,14 @@
       "caskVersion": "2026.9.14.145",
       "sourceURL": "https://github.com/FashionFreedom/Seamly2D/releases/download/v2026.9.14.145/Seamly2D-macos.zip",
       "artifactSHA256": "f8174dc35aa16aa89dce81c465ec4a4771e1ee840009bce44c57031b0908dd7f",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Seamly2D.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "seam-app": {
       "caskVersion": "1.15.3",
@@ -30419,7 +30482,14 @@
       "caskVersion": "1.3.1",
       "sourceURL": "https://github.com/UNIkeEN/SJMCL/releases/download/v1.3.1/SJMCL_1.3.1_macos_aarch64.dmg",
       "artifactSHA256": "815fff70148c26b113218af9fb88c010f80ea67dc1c506b43943dce835bcaefd",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "SJMCL.app",
+          "reason": "unsupported CFBundleIdentifier: 'SJMCL'"
+        }
+      ]
     },
     "slab": {
       "caskVersion": "1.8.0",
@@ -30810,7 +30880,14 @@
       "caskVersion": "3.6.1",
       "sourceURL": "https://education.lego.com/_/downloads/SPIKE_APP_3_macOS__3.6.1_Global.dmg",
       "artifactSHA256": "3ada0f885232dd5bf1255f1a7fa64d196bfbc5638fbb2b328b80fa5d82205f9e",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Spike.app",
+          "bundleIdentifier": "com.lego.education.spikenext"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "sparrow": {
       "caskVersion": "2.5.5",
@@ -31267,7 +31344,14 @@
       "caskVersion": "1.5.4",
       "sourceURL": "https://dm5.movescount.com/SuuntoDM5.dmg",
       "artifactSHA256": "955e9a3c3f4f1b8f71ca8fd4009270d40d2b2f3aad03ff293ec851ba8b805b71",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "SuuntoDM5.app",
+          "reason": "unsupported CFBundleIdentifier: 'SuuntoDM5'"
+        }
+      ]
     },
     "superkey": {
       "caskVersion": "1.66",
@@ -31405,7 +31489,14 @@
       "caskVersion": "4.12.0.2999",
       "sourceURL": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
       "artifactSHA256": "458a2263b9164f7cfddfd7df16379d9a38c3109ac65421dfae54290a1abed61a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Supremo.app",
+          "reason": "unsupported CFBundleIdentifier: 'Supremo'"
+        }
+      ]
     },
     "stravu-crystal": {
       "caskVersion": "0.3.5",
@@ -31433,7 +31524,14 @@
       "caskVersion": "0.1.22",
       "sourceURL": "https://github.com/Stremio/stremio-service/releases/download/v0.1.22/StremioService.dmg",
       "artifactSHA256": "0b2aaf882823d16132bf1d49900d377d22f57741768ffdaa2958a8b6cef9c4f8",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "StremioService.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     },
     "streamlabs": {
       "caskVersion": "1.21.6",
@@ -31703,7 +31801,14 @@
       "caskVersion": "2.2.5,804",
       "sourceURL": "https://global.download.synology.com/download/Utility/NoteStationClient/2.2.5-804/Mac/x86_64/synology-note-station-client-2.2.5-804-mac-x64.dmg",
       "artifactSHA256": "a15b2ac632dfff5faa63c5e56cf32c2a118ee8c95846830e67a400dacbb2f377",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Synology Note Station Client.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.apple.automator.Synology Note Station'"
+        }
+      ]
     },
     "synalyze-it-pro": {
       "caskVersion": "1.32",
@@ -31720,7 +31825,14 @@
       "caskVersion": "1.2.4,0235",
       "sourceURL": "https://global.download.synology.com/download/Utility/ChatClient/1.2.4-0235/Mac/Installer/Synology%20Chat%20Client-1.2.4-0235.dmg",
       "artifactSHA256": "a040f79c5b65fad84b271f21be5fdc4805afc46d391ebca790e9f906fc710f89",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Synology Chat.app",
+          "reason": "unsupported CFBundleIdentifier: 'synochat'"
+        }
+      ]
     },
     "tartelet": {
       "caskVersion": "0.12.0",
@@ -31748,7 +31860,14 @@
       "caskVersion": "1.59-beta3",
       "sourceURL": "https://www.pjrc.com/teensy/teensy.dmg",
       "artifactSHA256": "82411158ce920454125af49a7b0eb049782b2cea24b2750e6c4a62444fce304e",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "teensy.app",
+          "bundleIdentifier": "com.pjrc.teensy"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "tella": {
       "caskVersion": "2.34,255",
@@ -31963,7 +32082,14 @@
       "caskVersion": "2.0.5,1373",
       "sourceURL": "https://amvidia.com/downloads/tag-editor-mac.dmg",
       "artifactSHA256": "3be79476a6695ffdd0f196d1669ca4c1c3093572fe24960aa175ca603b743fe5",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Tag Editor.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "taobao": {
       "caskVersion": "2.1.0",
@@ -32123,7 +32249,14 @@
       "caskVersion": "1.2.50",
       "sourceURL": "https://releases.threema.ch/web-electron/v1/release/Threema-Work-Latest.dmg",
       "artifactSHA256": "2033484988e09524cfa909e750bf6d429ecf40a4731c9e479843f1bcc7e59422",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Threema Work.app",
+          "reason": "unsupported CFBundleIdentifier: 'threema-work-web'"
+        }
+      ]
     },
     "thumbhost3mf": {
       "caskVersion": "1.7.1",
@@ -32217,7 +32350,14 @@
       "caskVersion": "1.2.50",
       "sourceURL": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
       "artifactSHA256": "1ef99f4043ed1b24d9e182bce4fbc142952e97ca37a2842f49e809035615bf48",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Threema.app",
+          "reason": "unsupported CFBundleIdentifier: 'threema-consumer-web'"
+        }
+      ]
     },
     "thingsmacsandboxhelper": {
       "caskVersion": "3.48",
@@ -32619,7 +32759,14 @@
       "caskVersion": "2.0.3,1373",
       "sourceURL": "https://amvidia.com/downloads/to-audio-converter-mac.dmg",
       "artifactSHA256": "2ecbed2e0f986286c686c627139c8087623bd4f415b3d623922c5e03b705c3c5",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "To Audio Converter.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "tiny-shield": {
       "caskVersion": "1.16.0,11600",
@@ -33054,7 +33201,14 @@
       "caskVersion": "3.10.1",
       "sourceURL": "https://github.com/NCAR/VAPOR/releases/download/3.10.1/VAPOR3-3.10.1-AppleSilicon.dmg",
       "artifactSHA256": "2c5f41427f064318c7c4724478ee1aa4bbcaca47cba43b40ef5c8e52c6108c8a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "vapor.app",
+          "reason": "unsupported CFBundleIdentifier: 'Vapor3'"
+        }
+      ]
     },
     "unshaky": {
       "caskVersion": "0.7.0",
@@ -33225,7 +33379,14 @@
       "caskVersion": "2.2.3",
       "sourceURL": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.2.3/visualboyadvance-m-Mac-ARM64.zip",
       "artifactSHA256": "8356a49d20e5d56e8e014ec537e2335e8c1904b8b22eb982d7190cf8d2d7973a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "visualboyadvance-m.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
     },
     "versions": {
       "caskVersion": "2.4.5,2042",
@@ -33374,7 +33535,14 @@
       "caskVersion": "3.5.8",
       "sourceURL": "https://jp-minerals.org/vesta/archives/3.5.8/VESTA.dmg",
       "artifactSHA256": "2fcbe3dcc3701e8de6e703f5941c8d8c767855354e5929b4022c3522da2c6d2c",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "VESTA.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
     },
     "vimcal": {
       "caskVersion": "1.0.48",
@@ -33798,7 +33966,14 @@
       "caskVersion": "9.3.65",
       "sourceURL": "https://github.com/RPGLogs/Uploaders-warcraftlogs/releases/download/v9.3.65/warcraftlogs-v9.3.65.dmg",
       "artifactSHA256": "b59a93101cf3e8bf99e651520da0da96659a007260f6756652a6ede3e7eb9ad6",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Warcraft Logs Uploader.app",
+          "reason": "unsupported CFBundleIdentifier: 'warcraftlogs'"
+        }
+      ]
     },
     "webkinz": {
       "caskVersion": "1.7.9",
