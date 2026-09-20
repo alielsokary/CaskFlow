@@ -36576,6 +36576,45 @@
           "reason": "no application payload under /Applications"
         }
       ]
+    },
+    "isabelle": {
+      "caskVersion": "2025-2",
+      "sourceURL": "https://www.cl.cam.ac.uk/research/hvg/Isabelle/dist/Isabelle2025-2_macos.tar.gz",
+      "artifactSHA256": "8f187496e295f169952e944745af9e4ae00c9c1cd2ed4cadbcf7d898e444913e",
+      "apps": [
+        {
+          "bundleName": "Isabelle2025-2.app",
+          "bundleIdentifier": "de.tum.in.isabelle"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jameica": {
+      "caskVersion": "2.12.0",
+      "sourceURL": "https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-macos-aarch64-2.12.0.zip",
+      "artifactSHA256": "0d01567ae868e3f4c73a03c809bf5f0379c37e1cd408563f5cab4b12c47feb20",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "jameica.app",
+          "reason": "unreadable Info.plist: FileNotFoundError"
+        }
+      ]
+    },
+    "ruswitcher": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/rashn/RuSwitcher/releases/download/v3.3.0/RuSwitcher-3.3.0.dmg",
+      "artifactSHA256": "22e1ffa0c2021eb75c0d341d175ef7da310b5411e82456125d8f24fa59a02a19",
+      "apps": [
+        {
+          "bundleName": "RuSwitcher.app",
+          "bundleIdentifier": "com.ruswitcher.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
