@@ -31716,6 +31716,182 @@
           "bundleIdentifier": "de.die-gutbrods.TheCommander"
         }
       ]
+    },
+    "timemachinestatus": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/lukepistrol/TimeMachineStatus/releases/download/0.3.0/TimeMachineStatus.dmg",
+      "artifactSHA256": "da4194bfb2d32bba67b444aeadcb8acf0a536d7002ea5c79af9347c8bea417b5",
+      "apps": [
+        {
+          "bundleName": "TimeMachineStatus.app",
+          "bundleIdentifier": "com.lukaspistrol.TimeMachineStatus"
+        }
+      ]
+    },
+    "timemator": {
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://timemator.s3.amazonaws.com/releases/Timemator_3.2.2.dmg",
+      "artifactSHA256": "8450093db94e3ad856a820b2849a3c8f64abbf4d7427ae524a823462344a00c7",
+      "apps": [
+        {
+          "bundleName": "Timemator.app",
+          "bundleIdentifier": "com.catforce.timemator.macos"
+        }
+      ]
+    },
+    "tinkerwell": {
+      "caskVersion": "5.17.3",
+      "sourceURL": "https://download.tinkerwell.app/tinkerwell/Tinkerwell-5.17.3-arm64.dmg",
+      "artifactSHA256": "015f773bf9eaafec655ebd947a1144e920b9f058c97fad85923fc84a363556b6",
+      "apps": [
+        {
+          "bundleName": "Tinkerwell.app",
+          "bundleIdentifier": "de.beyondco.tinkerwell"
+        }
+      ]
+    },
+    "tight-studio": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://downloads.tight.studio/TightStudio.zip",
+      "artifactSHA256": "962f8ea6353dd95962bbed3d77f8f111d8e2775f66b5030fc070b3d4f1ff68e3",
+      "apps": [
+        {
+          "bundleName": "Tight Studio.app",
+          "bundleIdentifier": "tight.studio"
+        }
+      ]
+    },
+    "timecamp": {
+      "caskVersion": "1.8.4.0",
+      "sourceURL": "https://timecamp.s3.amazonaws.com/downloadsoft/1.8.4.0/TimeCampSetup_macOS.dmg",
+      "artifactSHA256": "93005f0778689dcd5a40e8c6b928177037fbcfa811d7aaa30bf2a91827f8ec52",
+      "apps": [
+        {
+          "bundleName": "TimeCamp.app",
+          "bundleIdentifier": "com.timecamp.TimeCamp"
+        }
+      ]
+    },
+    "timescribe": {
+      "caskVersion": "1.16.0",
+      "sourceURL": "https://github.com/WINBIGFOX/TimeScribe/releases/download/v1.16.0/TimeScribe-1.16.0-arm64.zip",
+      "artifactSHA256": "0d978740e3b437fec75959607c4cc1268802f4b598bd538f8d9d5cba8b9fb0df",
+      "apps": [
+        {
+          "bundleName": "TimeScribe.app",
+          "bundleIdentifier": "de.amplussoftware.timescribe"
+        }
+      ]
+    },
+    "tikz-editor": {
+      "caskVersion": "0.5.2",
+      "sourceURL": "https://github.com/DominikPeters/tikz-editor/releases/download/app-v0.5.2/TikZ.Editor_0.5.2_aarch64.dmg",
+      "artifactSHA256": "fea06282c1e7a32910e07733e9a518eb3e1b623dcda1b7d9ddee6fc259b717f3",
+      "apps": [
+        {
+          "bundleName": "TikZ Editor.app",
+          "bundleIdentifier": "com.tikz.editor"
+        }
+      ]
+    },
+    "tinderbox": {
+      "caskVersion": "11.8.0",
+      "sourceURL": "https://www.eastgate.com/download/tbx1180.dmg",
+      "artifactSHA256": "f7173867596f84292fcb26fc3ca59875d109fd67a00282a8f89e5b6a5375e9a9",
+      "apps": [
+        {
+          "bundleName": "Tinderbox 11.app",
+          "bundleIdentifier": "com.eastgate.Tinderbox-11"
+        }
+      ]
+    },
+    "tiger-trade": {
+      "caskVersion": "9.26.2",
+      "sourceURL": "https://download.tigerfintech.com/desktop/cdn/f/TigerTrade_9.26.2.dmg",
+      "artifactSHA256": "ddf5578ba565b06404c4574c6a22181196d02e513e21b8a32d5aedeca0a6f6e0",
+      "apps": [
+        {
+          "bundleName": "Tiger Trade.app",
+          "bundleIdentifier": "com.itiger.TigerTrade-Mac"
+        }
+      ]
+    },
+    "tiny-player": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://download.catnapgames.com/TinyPlayer-1.7.1.zip",
+      "artifactSHA256": "2079ff6bdb8787a5d329ba57c4688a02420b395adf9db407a5cf05c0b3530bfb",
+      "apps": [
+        {
+          "bundleName": "Tiny Player.app",
+          "bundleIdentifier": "com.catnapgames.playermac"
+        }
+      ]
+    },
+    "timelane": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://github.com/icanzilb/Timelane/releases/download/2.0/Timelane.app-2.0.zip",
+      "artifactSHA256": "3334fbb6945d1f0cb8f535c399297356037f4fdd5c570fd7a7325f5b4bd8b57a",
+      "apps": [
+        {
+          "bundleName": "Timelane.app",
+          "bundleIdentifier": "com.underplot.Timelane"
+        }
+      ]
+    },
+    "jlcone": {
+      "caskVersion": "1.0.71",
+      "sourceURL": "https://rs.jlcone.com/static/APP/app_version/jlcone-1.0.71-arm64.dmg",
+      "artifactSHA256": "b3ccacd5be9f3e1d7656c62bddd42141fba48110c876329f02284aa4901afd2b",
+      "apps": [
+        {
+          "bundleName": "JLCONE.app",
+          "bundleIdentifier": "com.jlcpcb.www"
+        }
+      ]
+    },
+    "timeular": {
+      "caskVersion": "6.9.5",
+      "sourceURL": "https://timeular-desktop-packages.s3.amazonaws.com/mac/production/EARLY-6.9.5-m1-arm64.dmg",
+      "artifactSHA256": "b40fc8a340522986f789e3ba0c137a927403f434f2e8ee7b77e697935d1aceb6",
+      "apps": [
+        {
+          "bundleName": "Timeular.app",
+          "bundleIdentifier": "com.timeular.zei"
+        }
+      ]
+    },
+    "tickernotch": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://bitvibelabs.com/tickernotch/TickerNotch-v1.9.0.dmg",
+      "artifactSHA256": "38d9bfa970618fae33e55cf0be44c1710f4e01dde5100cd455c5a1db294f550e",
+      "apps": [
+        {
+          "bundleName": "TickerNotch.app",
+          "bundleIdentifier": "com.bitvibelabs.tickernotch"
+        }
+      ]
+    },
+    "time-sink": {
+      "caskVersion": "2.2.4",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/timesink224.dmg",
+      "artifactSHA256": "6300ae766877918c286714fb8de093cc8b3e66adee287aae5693f946d91486bb",
+      "apps": [
+        {
+          "bundleName": "Time Sink.app",
+          "bundleIdentifier": "com.manytricks.TimeSinkClient"
+        }
+      ]
+    },
+    "timing": {
+      "caskVersion": "2026.5",
+      "sourceURL": "https://updates.timingapp.com/download/Timing-2026.5.dmg",
+      "artifactSHA256": "95759fb839f63063b4ae4b268dd03ef86732d9958338112022e520175e5f5be3",
+      "apps": [
+        {
+          "bundleName": "Timing.app",
+          "bundleIdentifier": "info.eurocomp.Timing2"
+        }
+      ]
     }
   }
 }
