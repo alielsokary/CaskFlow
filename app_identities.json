@@ -27942,6 +27942,271 @@
       "sourceURL": "https://github.com/Psiphon-Inc/conduit/releases/download/release-mac-1.8.0-RC.2/conduit.dmg",
       "artifactSHA256": "56a6be1708a2e458965fcc31743cfd8ecd186f3b6e739baaa9e027996bbf1ae4",
       "apps": []
+    },
+    "quitter": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://marco.org/appcasts/Quitter.zip",
+      "artifactSHA256": "673c499ad7aaa2118354840c4ed188a14b801d4a7dbce5f7b5183fb2ab03d669",
+      "apps": [
+        {
+          "bundleName": "Quitter.app",
+          "bundleIdentifier": "com.marcoarment.quitter"
+        }
+      ]
+    },
+    "rayon": {
+      "caskVersion": "2.17.0",
+      "sourceURL": "https://rayon-electron.s3.eu-west-3.amazonaws.com/rayon-electron/rayon-electron/rayon-electron-2.17.0-arm64.dmg",
+      "artifactSHA256": "bede59483e7dc5c3b51d232b6286a9df37ac8dcef6fd13625ae7604c9f9d6802",
+      "apps": [
+        {
+          "bundleName": "Rayon.app",
+          "bundleIdentifier": "com.electron.rayon"
+        }
+      ]
+    },
+    "radar": {
+      "caskVersion": "2.6.12",
+      "sourceURL": "https://getradar.co/download/v2.6.12.dmg",
+      "artifactSHA256": "cc2439592ee3ced4d3860c94c8792708fcd3340795510d46476b678c1139b849",
+      "apps": [
+        {
+          "bundleName": "Radar.app",
+          "bundleIdentifier": "com.syncwithtech.radar"
+        }
+      ]
+    },
+    "readmoreading": {
+      "caskVersion": "1.8.3",
+      "sourceURL": "https://github.com/eCrowdMedia/remake/releases/download/v1.8.3/Readmoo.-1.8.3-arm64.dmg",
+      "artifactSHA256": "c0440c17556e9a2cffc60b4d1dbff5cfe4bee355834551108cc1125bdc69fa6e",
+      "apps": [
+        {
+          "bundleName": "Readmoo看書.app",
+          "bundleIdentifier": "com.electron.readmoo"
+        }
+      ]
+    },
+    "receipts": {
+      "caskVersion": "1.18-818",
+      "sourceURL": "https://receipts-app.com/update/download/Receipts-1.18-818.zip",
+      "artifactSHA256": "4433aec2c1ec4efb91b377f5bf33f42b293a5b720f3707387791973eca9dbbdd",
+      "apps": [
+        {
+          "bundleName": "Receipts.app",
+          "bundleIdentifier": "com.apperdeck.mac.Receipts"
+        }
+      ]
+    },
+    "quip": {
+      "caskVersion": "9.59.0",
+      "sourceURL": "https://quip-clients.com/macosx_9.59.0.dmg",
+      "artifactSHA256": "1091d886dae9bcf7cd7c93e68fc4824d03e46f68da01c6620d79d51cda0ce6ae",
+      "apps": [
+        {
+          "bundleName": "Quip.app",
+          "bundleIdentifier": "com.quip.Desktop"
+        }
+      ]
+    },
+    "rambox": {
+      "caskVersion": "2.7.1",
+      "sourceURL": "https://github.com/ramboxapp/download/releases/download/v2.7.1/Rambox-2.7.1-mac.zip",
+      "artifactSHA256": "4d4339b562447ee4e95b11273a5952dcf773bea6d2e3ea31007f0935c338a156",
+      "apps": [
+        {
+          "bundleName": "Rambox.app",
+          "bundleIdentifier": "com.rambox"
+        }
+      ]
+    },
+    "raiderio": {
+      "caskVersion": "5.0.9",
+      "sourceURL": "https://github.com/RaiderIO/raiderio-client-builds/releases/download/v5.0.9/RaiderIO_Client.dmg",
+      "artifactSHA256": "fb6701c28cf881ed6d92a9e9eceae7d3338ff4f98ed825f2682a9bb7e22e9be9",
+      "apps": [
+        {
+          "bundleName": "RaiderIO.app",
+          "bundleIdentifier": "io.raider.client"
+        }
+      ]
+    },
+    "random-mouse-clicker": {
+      "caskVersion": "6.3,1",
+      "sourceURL": "https://www.murgaa.com/mac-random-mouse-clicker/download/RandomClicker.zip",
+      "artifactSHA256": "4c85eb76300e64cfe29dbd57ae497b4dddf50f9998c02cd8bab476d5bbf61906",
+      "apps": [
+        {
+          "bundleName": "MurGaa Random Mouse Clicker.app",
+          "bundleIdentifier": "com.murgaa.Random-Mouse-Clicker-by-MurGaa-com"
+        }
+      ]
+    },
+    "readyapi": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://dl.eviware.com/ready-api/4.2.0/ReadyAPI-arm64-4.2.0.dmg",
+      "artifactSHA256": "e1e5ca628fe41b12d17da9b4aacb1f82b33126657c9c3e1f0e6c44ef6a7dc9f1",
+      "apps": [
+        {
+          "bundleName": "ReadyAPI-4.2.0.app",
+          "bundleIdentifier": "com.install4j.3080-8797-1984-6034.102895"
+        }
+      ]
+    },
+    "quiet": {
+      "caskVersion": "11.0.1",
+      "sourceURL": "https://github.com/TryQuiet/quiet/releases/download/@quiet/desktop@11.0.1/Quiet-11.0.1-arm64.dmg",
+      "artifactSHA256": "f6e80723748d0fa6fe263284393a7c604d39cb6b6e08cee88a7f6cb305d91670",
+      "apps": []
+    },
+    "recents": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://recentsapp.com/releases/Recents_2.5.0.dmg",
+      "artifactSHA256": "ff0bd3695129aa664fb7db546d2e1965ce28c4a805c80c2cc059effc5a323bec",
+      "apps": [
+        {
+          "bundleName": "Recents.app",
+          "bundleIdentifier": "com.lapier.Recents"
+        }
+      ]
+    },
+    "reamp": {
+      "caskVersion": "1.7.0,996",
+      "sourceURL": "https://update.re-amp.ru/downloads/Reamp-1.7.0(996).zip",
+      "artifactSHA256": "599706af852bbf305252827be85ba36a7cbfbb67829c4fed94c3ad43ca36cb61",
+      "apps": []
+    },
+    "rcloneview": {
+      "caskVersion": "1.5.35",
+      "sourceURL": "https://downloads.bdrive.com/rclone_view/builds/RcloneView-1.5.35.dmg",
+      "artifactSHA256": "f0ee757ffb22132489a5c42e88287d77f9ab653201a47c9a902e8760667427a3",
+      "apps": [
+        {
+          "bundleName": "RcloneView.app",
+          "bundleIdentifier": "com.bdrive.rcloneView"
+        }
+      ]
+    },
+    "raw-photo-processor": {
+      "caskVersion": "1956Beta",
+      "sourceURL": "https://www.raw-photo-processor.com/RPP/RPP64_1956Beta.zip",
+      "artifactSHA256": "ec57f099fbbbb89a3d0aaec6a5492e12e32c8b4677096a27bd1316a025df12ec",
+      "apps": [
+        {
+          "bundleName": "Raw Photo Processor 64.app",
+          "bundleIdentifier": "net.tigry.rpp"
+        }
+      ]
+    },
+    "raze": {
+      "caskVersion": "1.11.0",
+      "sourceURL": "https://github.com/coelckers/Raze/releases/download/1.11.0/raze-macos-1.11.0.zip",
+      "artifactSHA256": "b7980849a507cfcfeaf8f76298c032bfe4415b2f246f41e3c0c9a6291770c70c",
+      "apps": [
+        {
+          "bundleName": "Raze.app",
+          "bundleIdentifier": "org.zdoom.raze"
+        }
+      ]
+    },
+    "rapidweaver": {
+      "caskVersion": "9.6.8,21159",
+      "sourceURL": "https://dl.devant.io/v1/3c53887f-427a-4af7-9144-ee16178c62f4/21159/RapidWeaver.zip",
+      "artifactSHA256": "3f36c8bded3b4afd42307c3e2c393c9a49df3beea763984d3718373eeaadcbd6",
+      "apps": [
+        {
+          "bundleName": "RapidWeaver.app",
+          "bundleIdentifier": "com.realmacsoftware.rapidweaver8"
+        }
+      ]
+    },
+    "razorsql": {
+      "caskVersion": "11.0.3",
+      "sourceURL": "https://s3.amazonaws.com/downloads.razorsql.com/downloads/11_0_3/razorsql11_0_3_aarch64.dmg",
+      "artifactSHA256": "eb2b2a97b8893272df509382f2764315ad31e6c3641fba5f5213a0c4085ed4a1",
+      "apps": [
+        {
+          "bundleName": "RazorSQL.app",
+          "bundleIdentifier": "com.razorsql.RazorSQL"
+        }
+      ]
+    },
+    "quo": {
+      "caskVersion": "5.6.15",
+      "sourceURL": "https://download.quo.com/Quo-5.6.15-universal.dmg",
+      "artifactSHA256": "10ee16f9fba72316d88e453e1bf77a50adec7b47bb492a2744e9f2c089a0fdfc",
+      "apps": [
+        {
+          "bundleName": "Quo.app",
+          "bundleIdentifier": "ca.illusive.openphone"
+        }
+      ]
+    },
+    "ray": {
+      "caskVersion": "3.2.12",
+      "sourceURL": "https://ray-app.s3.eu-west-1.amazonaws.com/ray-app-updates-v3/stable/ray-3.2.12-latest-darwin-arm64.dmg",
+      "artifactSHA256": "f265d2f6b27e21a75e15f7d95083dc1a702d666d8dcda480b965ca266f07b4da",
+      "apps": [
+        {
+          "bundleName": "Ray.app",
+          "bundleIdentifier": "be.spatie.ray"
+        }
+      ]
+    },
+    "redot": {
+      "caskVersion": "26.2",
+      "sourceURL": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-26.2-stable/Redot_v26.2-stable_macos_universal.zip",
+      "artifactSHA256": "128cb7bca69b95a3998a84e72b0990a302ce5b1919dfb56cfdc709c2c87925ae",
+      "apps": [
+        {
+          "bundleName": "Redot.app",
+          "bundleIdentifier": "org.redotengine.redot"
+        }
+      ]
+    },
+    "recut": {
+      "caskVersion": "4.4.8,eyJfcmFpbHMiOnsiZGF0YSI6MTI0LCJwdXIiOiJibG9iX2lkIn19--a60e46fe8adaf5abc2a811fd2b8dfab13e7c4289",
+      "sourceURL": "https://updates.getrecut.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTI0LCJwdXIiOiJibG9iX2lkIn19--a60e46fe8adaf5abc2a811fd2b8dfab13e7c4289/Recut_4.4.8_universal.dmg",
+      "artifactSHA256": "a703bc2e0da1abb6fafba70a0d7d18b3d1aa6f64ecc83b35ae6c76d662f008e4",
+      "apps": [
+        {
+          "bundleName": "Recut.app",
+          "bundleIdentifier": "co.tinywins.recut"
+        }
+      ]
+    },
+    "radial": {
+      "caskVersion": "5.2.2",
+      "sourceURL": "https://radial.appverge.net/downloads/Radial.dmg",
+      "artifactSHA256": "3d5388f2131876e098a7c834954663c1ec4bd1c9d737a186e3401500ec541a41",
+      "apps": [
+        {
+          "bundleName": "Radial.app",
+          "bundleIdentifier": "dk.FirstForm.Radial"
+        }
+      ]
+    },
+    "quitall": {
+      "caskVersion": "1.3.6",
+      "sourceURL": "https://amicoapps.com/wp-content/updates/quitall-1.3.6.zip",
+      "artifactSHA256": "c0d6354df7426cba30f558cddacc7d7b3e3d6478bfe55b446ee63ac61cf41519",
+      "apps": [
+        {
+          "bundleName": "QuitAll.app",
+          "bundleIdentifier": "com.quitallapp.quitall-paddle"
+        }
+      ]
+    },
+    "readwise-ibooks": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://readwise.io/ibooks/download",
+      "artifactSHA256": "d3848a41c14fd7d76914f1b9a14e41bee215ee60a38736d532203b99cb34bbac",
+      "apps": [
+        {
+          "bundleName": "Readwise_iBooks.app",
+          "bundleIdentifier": "readwise.Readwise-iBooks"
+        }
+      ]
     }
   }
 }
