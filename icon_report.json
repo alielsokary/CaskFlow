@@ -1055,6 +1055,12 @@
     "attempts": 1,
     "updated": "2026-07-09"
   },
+  "navigraph-charts": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 55d8c67e2a88...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "nessus": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",

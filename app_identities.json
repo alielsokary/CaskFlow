@@ -25208,6 +25208,260 @@
           "bundleIdentifier": "com.navicat.NavicatDataModeler"
         }
       ]
+    },
+    "neteasemusic": {
+      "caskVersion": "3.1.9,3364",
+      "sourceURL": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.9.3364.dmg",
+      "artifactSHA256": "6e117a5db6957650fff187cd6c8a3970d8784685ee72ec1cb97f957b46d4d5f7",
+      "apps": [
+        {
+          "bundleName": "NeteaseMusic.app",
+          "bundleIdentifier": "com.netease.163music"
+        }
+      ]
+    },
+    "niftyman": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://notion-menubar-updates.s3.amazonaws.com/Niftyman-2.0.0.dmg",
+      "artifactSHA256": "9ffdfc517fe48f521793a03fcda3912becb004b7652821452f25a3be173f6f55",
+      "apps": [
+        {
+          "bundleName": "Niftyman.app",
+          "bundleIdentifier": "com.shadowfax.niftyman"
+        }
+      ]
+    },
+    "neat": {
+      "caskVersion": "0.0.64",
+      "sourceURL": "https://github.com/neat-run/activity-feed-public/releases/download/v0.0.64/Neat-0.0.64-arm64.dmg",
+      "artifactSHA256": "77573b588f40775baa8196e97958dabd92d01b867f263cddfbb7d667c484ffcc",
+      "apps": [
+        {
+          "bundleName": "Neat.app",
+          "bundleIdentifier": "com.electron.neat"
+        }
+      ]
+    },
+    "navicat-for-postgresql": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_pgsql_en.dmg",
+      "artifactSHA256": "42eb518e16dbaa4af6b6adc83f9d8accbabac8c6d9a5098a8c94437d4bc2cca4",
+      "apps": [
+        {
+          "bundleName": "Navicat for PostgreSQL.app",
+          "bundleIdentifier": "com.navicat.NavicatForPostgreSQL"
+        }
+      ]
+    },
+    "nightshade": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://webvault.cs.uchicago.edu/sandlab/fawkes/files/nightshade/Nightshade-1.1-m1.dmg",
+      "artifactSHA256": "ce9df85dd4227763bb89505a275e3b0dba58452b8c86a9b4ceec159fca188e0a",
+      "apps": []
+    },
+    "network-radar": {
+      "caskVersion": "3.2",
+      "sourceURL": "https://witt-software.com/downloads/networkradar/Network%20Radar.dmg",
+      "artifactSHA256": "89641c9d571b33607dfe112aa810bc6277b336746ba0312009ece0942fee45e8",
+      "apps": [
+        {
+          "bundleName": "Network Radar.app",
+          "bundleIdentifier": "com.mac-attender.Network-Radar"
+        }
+      ]
+    },
+    "neo-network-utility": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/networkutility/2.0/Neo_Network_Utility.dmg.zip",
+      "artifactSHA256": "803a4590c5c15a224f7418989e5c4e5bec490317b7cc9415b2a97a88cdb60ff6",
+      "apps": [
+        {
+          "bundleName": "Network Utility.app",
+          "bundleIdentifier": "com.devon-technologies.network-utility"
+        }
+      ]
+    },
+    "navicat-for-sqlite": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_sqlite_en.dmg",
+      "artifactSHA256": "e102ea2db15bf38625d0e74027b0db16532fe221e5677cce3507caeceaa6dc00",
+      "apps": [
+        {
+          "bundleName": "Navicat for SQLite.app",
+          "bundleIdentifier": "com.navicat.NavicatForSQLite"
+        }
+      ]
+    },
+    "nifty": {
+      "caskVersion": "3.139.0",
+      "sourceURL": "https://nifty-apps.s3.amazonaws.com/Nifty.dmg",
+      "artifactSHA256": "045fb4bc1f7cec2ca4bebe0e26c40a6bad296fa49b125963252331c9a7c36cec",
+      "apps": [
+        {
+          "bundleName": "Nifty.app",
+          "bundleIdentifier": "com.creative360.niftypm"
+        }
+      ]
+    },
+    "navicat-for-oracle": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_ora_en.dmg",
+      "artifactSHA256": "f52dd169e7416869ee29a5d87ad5509674b7de89c5859985c4b0823ec6ecb94c",
+      "apps": [
+        {
+          "bundleName": "Navicat for Oracle.app",
+          "bundleIdentifier": "com.navicat.NavicatForOracle"
+        }
+      ]
+    },
+    "nheko": {
+      "caskVersion": "0.12.1",
+      "sourceURL": "https://github.com/Nheko-Reborn/nheko/releases/download/v0.12.1/nheko-v0.12.1-apple-silicon.dmg",
+      "artifactSHA256": "07390b869a5cef5226281b215a06c7d5c87b20b7bdfec9882c71ee005b2ac949",
+      "apps": [
+        {
+          "bundleName": "nheko.app",
+          "bundleIdentifier": "im.nheko.Nheko"
+        }
+      ]
+    },
+    "nestopia": {
+      "caskVersion": "1.4.5",
+      "sourceURL": "https://www.bannister.org/software/dlh/nestopia-145.zip",
+      "artifactSHA256": "c427cad8bbc9973e955d787faf40a7dc76610c935097beb307c2496c776a0bb7",
+      "apps": [
+        {
+          "bundleName": "Nestopia.app",
+          "bundleIdentifier": "com.bannister.Nestopia"
+        }
+      ]
+    },
+    "navigator": {
+      "caskVersion": "1.0.9",
+      "sourceURL": "https://oryx.nyc3.digitaloceanspaces.com/navigator-app/Navigator.dmg",
+      "artifactSHA256": "e4e74ead0334d4799818e7f952f43b1df0b8f483a79bffc42da7e5fcae1df272",
+      "apps": [
+        {
+          "bundleName": "Navigator.app",
+          "bundleIdentifier": "io.zsa.navigator"
+        }
+      ]
+    },
+    "nightfall": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/r-thomson/Nightfall/releases/download/v3.1.0/Nightfall.dmg",
+      "artifactSHA256": "b98e86466bb89b04b9f5d3f98e4b74c03950052e8821b515ec1ea0c7f71bef6a",
+      "apps": [
+        {
+          "bundleName": "Nightfall.app",
+          "bundleIdentifier": "net.ryanthomson.Nightfall"
+        }
+      ]
+    },
+    "netviews": {
+      "caskVersion": "2.13",
+      "sourceURL": "https://www.netviews.app/installers/NetViews-2.13.zip",
+      "artifactSHA256": "1c47ce0e2103b9e87b58bb8763a020f23074a81d31d34bfe468c04b31ede7edd",
+      "apps": [
+        {
+          "bundleName": "NetViews.app",
+          "bundleIdentifier": "com.bmmup.PingStalker"
+        }
+      ]
+    },
+    "navicat-for-mysql": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_mysql_en.dmg",
+      "artifactSHA256": "3367a888c81467f14cf87d0bfeaa2654affc6306ff381a54be0256564bb560d3",
+      "apps": [
+        {
+          "bundleName": "Navicat for MySQL.app",
+          "bundleIdentifier": "com.navicat.NavicatForMySQL"
+        }
+      ]
+    },
+    "nessie-app": {
+      "caskVersion": "1.4.4148",
+      "sourceURL": "https://nessie-notes-app-auto-updates.s3.us-west-2.amazonaws.com/Nessie_1.4.4148.zip",
+      "artifactSHA256": "13a286c5324d5364b67fa7d8a56f2f22a894f655a60344b80f71f59ff4adfce5",
+      "apps": [
+        {
+          "bundleName": "Nessie.app",
+          "bundleIdentifier": "com.nessielabs.Nessie"
+        }
+      ]
+    },
+    "navicat-for-sql-server": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_sqlserver_en.dmg",
+      "artifactSHA256": "9ed5e05e264ee1c66e2cb4b38cc93f04e7d874b6b668cf7d61134d2e1b0b29cb",
+      "apps": []
+    },
+    "neat-reader": {
+      "caskVersion": "9.0.10",
+      "sourceURL": "https://neat-reader-release.oss-cn-hongkong.aliyuncs.com/NeatReader-9.0.10.dmg",
+      "artifactSHA256": "940df0fc73b38b87fbcf177024f1744d3048123c6a6d5a4e8bf6cda81f7315ed",
+      "apps": [
+        {
+          "bundleName": "NeatReader.app",
+          "bundleIdentifier": "com.reader.neat"
+        }
+      ]
+    },
+    "nifty-file-lists": {
+      "caskVersion": "1.30",
+      "sourceURL": "https://www.publicspace.net/download/NiftyFileLists.zip",
+      "artifactSHA256": "b8c1b98f270eae6c006853fbc7da360f9e6ac7deecb6238c53303557b3af44ef",
+      "apps": [
+        {
+          "bundleName": "Nifty File Lists.app",
+          "bundleIdentifier": "net.publicspace.niftyfilelists"
+        }
+      ]
+    },
+    "nethlink": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://github.com/NethServer/nethlink/releases/download/v1.5.1/nethlink-1.5.1-arm64.dmg",
+      "artifactSHA256": "349890a163cd651ab2782274f0e17dc21c7e8c758cdde0a813693833394c7788",
+      "apps": [
+        {
+          "bundleName": "NethLink.app",
+          "bundleIdentifier": "com.nethesis.nethlink.app"
+        }
+      ]
+    },
+    "nimblenote": {
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://github.com/nimblenote/nimblenote/releases/download/v3.2.2/nimblenote-3.2.2.dmg",
+      "artifactSHA256": "4c5b2f1d8f46e3ca3f3620c092a95305ce8a09ba8632f72c870b71409a445217",
+      "apps": [
+        {
+          "bundleName": "nimblenote.app",
+          "bundleIdentifier": "com.leavesunderfoot.nimblenote"
+        }
+      ]
+    },
+    "neofinder": {
+      "caskVersion": "9.3",
+      "sourceURL": "https://www.wfs-apps.de/updates/neofinder-mac.9.3.zip",
+      "artifactSHA256": "561829258205ca3b52171283deac5ebadcd1793f08f88a8460a1302b7011f5a5",
+      "apps": [
+        {
+          "bundleName": "NeoFinder.app",
+          "bundleIdentifier": "de.wfs-apps.neofinder"
+        }
+      ]
+    },
+    "navigraph-simlink": {
+      "caskVersion": "1.1.34.2212",
+      "sourceURL": "https://download.navigraph.com/software/simlink/osx/Navigraph+Simlink.dmg",
+      "artifactSHA256": "fd1aad070bae460d55869f1142c50a2d79bc9907df73a8c0dc79d0670572c397",
+      "apps": [
+        {
+          "bundleName": "Navigraph Simlink.app",
+          "bundleIdentifier": "Navigraph.NavigraphSimlink"
+        }
+      ]
     }
   }
 }
