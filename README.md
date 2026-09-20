@@ -42,6 +42,8 @@ The release workflow runs daily independently of classification, stamps `categor
 
 Icons are downloaded from vendor artifacts, checksum-verified, expanded without running installer scripts, and converted from the application bundle's `.icns` file. The full safety and audit protocol is in [Icon Extraction](docs/ICON_EXTRACTION.md).
 
+The separate, manually triggered [package installation pilot](docs/PACKAGE_OBSERVATIONS.md) observes ten selected casks on disposable Apple Silicon and Intel runners. It saves installation evidence for review and does not publish identity mappings or release assets.
+
 ## Local development
 
 Python 3.12 or newer is recommended.
