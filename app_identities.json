@@ -13862,6 +13862,276 @@
           "bundleIdentifier": "io.aircall.phone"
         }
       ]
+    },
+    "ammonite": {
+      "caskVersion": "1.30",
+      "sourceURL": "https://www.soma-zone.com/download/files/Ammonite-1.30.tar.xz",
+      "artifactSHA256": "0d5bc4d5042b240640331047a24dfeeb139adc4b89ba0e8f7601cd95ffaf65f7",
+      "apps": [
+        {
+          "bundleName": "Ammonite.app",
+          "bundleIdentifier": "com.soma-zone.Ammonite"
+        }
+      ]
+    },
+    "antconc": {
+      "caskVersion": "4.3.1",
+      "sourceURL": "https://www.laurenceanthony.net/software/antconc/releases/AntConc431/apple-silicon/AntConc.dmg",
+      "artifactSHA256": "a5dd12a9c2fbac75ae48449f097fbb0966e0fa6fc14c539eff098e6ab2b5b3e5",
+      "apps": [
+        {
+          "bundleName": "AntConc.app",
+          "bundleIdentifier": "com.antlabsolutions.AntConc"
+        }
+      ]
+    },
+    "amie": {
+      "caskVersion": "260909.0.0",
+      "sourceURL": "https://github.com/amieso/electron-releases/releases/download/v260909.0.0/Amie-260909.0.0-arm64-mac.zip",
+      "artifactSHA256": "9b604445e61d707ecd7d4d1d030a747c4a3338862e8269fcce2d42ccf04fe018",
+      "apps": [
+        {
+          "bundleName": "Amie.app",
+          "bundleIdentifier": "so.amie.electron-app"
+        }
+      ]
+    },
+    "anybar": {
+      "caskVersion": "0.2.3",
+      "sourceURL": "https://github.com/tonsky/AnyBar/releases/download/0.2.3/AnyBar-0.2.3.zip",
+      "artifactSHA256": "c87dbc6aff5411676a471e84905d69c671b62b93b1210bd95c9d776d087de95c",
+      "apps": [
+        {
+          "bundleName": "AnyBar.app",
+          "bundleIdentifier": "tonsky.AnyBar"
+        }
+      ]
+    },
+    "altar-ai": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://altar-prototype.sgp1.cdn.digitaloceanspaces.com/releases/v2.1.1/altar-app-2.1.1.dmg",
+      "artifactSHA256": "c60c2cd19605f83b18152aa5ae8e77d20279df62436dcfbde4019f5ef1f56964",
+      "apps": [
+        {
+          "bundleName": "Altar AI.app",
+          "bundleIdentifier": "com.electron.altar-app"
+        }
+      ]
+    },
+    "aliworkbench": {
+      "caskVersion": "9.98.45QNM",
+      "sourceURL": "https://download.alicdn.com/wangwang/AliworkbenchQN_(9.98.45QNM).dmg",
+      "artifactSHA256": "00beb339ed985c1447cc36c0393a89158672e72c6fb16a8da284871b0bec76b4",
+      "apps": [
+        {
+          "bundleName": "Aliworkbench.app",
+          "bundleIdentifier": "com.taobao.Aliworkbench"
+        }
+      ]
+    },
+    "apache-couchdb": {
+      "caskVersion": "3.5.2",
+      "sourceURL": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.5.2/mac/arm64/Apache-CouchDB.zip",
+      "artifactSHA256": "a14d10427e9f637ab8b2161cb538484e3bbf383a87dcb68ffa1aa305ab58ddc9",
+      "apps": [
+        {
+          "bundleName": "Apache CouchDB.app",
+          "bundleIdentifier": "org.apache.couchdb"
+        }
+      ]
+    },
+    "algoapp": {
+      "caskVersion": "13.3.2",
+      "sourceURL": "https://static.algoapp.ai/AlgoApp-MacOS.zip",
+      "artifactSHA256": "7edcaf29403c06297668100a769733a7b4264bc37e0583dfbffee316cb6f03f6",
+      "apps": [
+        {
+          "bundleName": "AlgoApp.app",
+          "bundleIdentifier": "com.ankiapp.mac-client"
+        }
+      ]
+    },
+    "amore": {
+      "caskVersion": "0.1,47",
+      "sourceURL": "https://cdn.amore.computer/releases/com.lucas-fischer.Amore/0.1-47/Amore.dmg",
+      "artifactSHA256": "a7be78e07d9d87447f0edab74d88e17083c60ed48bd8fa5dabac59f70ef67532",
+      "apps": [
+        {
+          "bundleName": "Amore.app",
+          "bundleIdentifier": "com.lucas-fischer.Amore"
+        }
+      ]
+    },
+    "alifix": {
+      "caskVersion": "1.4,2025.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/07/alifix14.zip",
+      "artifactSHA256": "8bce6e676c5e50aa0644c5794112ca45e14dd4f38af460417ce83f1a32f8cb34",
+      "apps": [
+        {
+          "bundleName": "Alifix.app",
+          "bundleIdentifier": "co.eclecticlight.Alifix"
+        }
+      ]
+    },
+    "all-in-one-messenger": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://all-in-one-messenger.ams3.digitaloceanspaces.com/All-in-One%20Messenger-2.5.0.dmg",
+      "artifactSHA256": "e027442646255f02e848dc9ae78a57ccda00c860af5ccd7619996f15163611f2",
+      "apps": [
+        {
+          "bundleName": "All-in-One Messenger.app",
+          "bundleIdentifier": "im.allinone.messenger"
+        }
+      ]
+    },
+    "amazon-photos": {
+      "caskVersion": "11.3.0,36",
+      "sourceURL": "https://d29x207vrinatv.cloudfront.net/mac/AmazonPhotosApp.zip",
+      "artifactSHA256": "27130a54c84d74c8ca7d18ea8c521761f29462f95757561e8552be6756ce03f4",
+      "apps": [
+        {
+          "bundleName": "Amazon Photos.app",
+          "bundleIdentifier": "com.amazon.clouddrive.mac"
+        }
+      ]
+    },
+    "anchor-wallet": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/greymass/anchor/releases/download/v1.4.0/mac-anchor-wallet-1.4.0-x64.dmg",
+      "artifactSHA256": "bec00cb5f9a58883b4eabf41d5e44c7baee74940b0cb57d282a472ec52c644bb",
+      "apps": [
+        {
+          "bundleName": "Anchor Wallet.app",
+          "bundleIdentifier": "com.greymass.anchordesktop.release"
+        }
+      ]
+    },
+    "android-performance-analyzer": {
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://dl.google.com/android/apa/install/v0.9.0/android-performance-analyzer-mac.dmg",
+      "artifactSHA256": "5b9c5935277eb6d12992d0c35d20114614025a501c9462f1459e5217567557bc",
+      "apps": [
+        {
+          "bundleName": "Android Performance Analyzer.app",
+          "bundleIdentifier": "com.google.android.performance.analyzer"
+        }
+      ]
+    },
+    "alternote": {
+      "caskVersion": "1.0.18,1018",
+      "sourceURL": "https://alternoteapp.com/assets/downloads/Alternote1018.zip",
+      "artifactSHA256": "b1a3c0d311b0633bae1a327d393c61a82bf21e2a0363109ef984e8f1c99549ff",
+      "apps": [
+        {
+          "bundleName": "Alternote.app",
+          "bundleIdentifier": "com.Alternote"
+        }
+      ]
+    },
+    "amadine": {
+      "caskVersion": "1.8.4",
+      "sourceURL": "https://belightsoft.s3.amazonaws.com/Amadine.dmg",
+      "artifactSHA256": "7a0729f0fcc8c4241e58a665d9d6f279115371693b2c9b17d70e2473a9a2fee1",
+      "apps": [
+        {
+          "bundleName": "Amadine.app",
+          "bundleIdentifier": "com.belightsoft.Amadine"
+        }
+      ]
+    },
+    "aloha-browser": {
+      "caskVersion": "latest",
+      "sourceURL": "https://alohabrowser.com/pc/download/aloha_setupArm64.dmg",
+      "artifactSHA256": "08aad8bf8d65356e0042e934679580dad1c70396d7c71d3abfb0563bf62f3cf2",
+      "apps": [
+        {
+          "bundleName": "Aloha.app",
+          "bundleIdentifier": "com.alohabrowser.alohabrowser"
+        }
+      ]
+    },
+    "amazon-chime": {
+      "caskVersion": "5.23.22533",
+      "sourceURL": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22533.dmg",
+      "artifactSHA256": "6db57a44e3db098f46f4ecfb5aa04e0a6e5e8f5fabd609a6fa15d3d89081f234",
+      "apps": [
+        {
+          "bundleName": "Amazon Chime.app",
+          "bundleIdentifier": "com.amazon.Amazon-Chime"
+        }
+      ]
+    },
+    "anypointstudio": {
+      "caskVersion": "7.28.0",
+      "sourceURL": "https://www.mulesoft.com/downloads/studio/latest/AnypointStudio-7.28.0-macosArm.zip",
+      "artifactSHA256": "220e428ac78039706e64ca5a77ca510d9829eda1a58db01b6d9cc3e6b072e439",
+      "apps": [
+        {
+          "bundleName": "AnypointStudio.app",
+          "bundleIdentifier": "studio.product"
+        }
+      ]
+    },
+    "almighty": {
+      "caskVersion": "2.11.0",
+      "sourceURL": "https://almighty-app.s3.amazonaws.com/Almighty.zip",
+      "artifactSHA256": "2567fe5a568af29ab4d275a85c0e773d76a46e334ce1be47b114eb422df4bca7",
+      "apps": [
+        {
+          "bundleName": "Almighty.app",
+          "bundleIdentifier": "com.onmyway133.Almighty"
+        }
+      ]
+    },
+    "aliwangwang": {
+      "caskVersion": "10.01.06M",
+      "sourceURL": "https://download.alicdn.com/wangwang/AliWangWang_(10.01.06M).dmg",
+      "artifactSHA256": "9957c3b7bdd031868af0187c0cb912f4c926f82221bbe34fb05f6eb1396fa5b0",
+      "apps": []
+    },
+    "amethyst-nostr": {
+      "caskVersion": "1.16.0",
+      "sourceURL": "https://github.com/vitorpamplona/amethyst/releases/download/v1.16.0/amethyst-desktop-1.16.0-macos-arm64.dmg",
+      "artifactSHA256": "70173b0ebba325549bd0f4b1532874c96bbe98bb4811172c7081efabd7684042",
+      "apps": [
+        {
+          "bundleName": "Amethyst.app",
+          "bundleIdentifier": "com.vitorpamplona.amethyst.desktop"
+        }
+      ]
+    },
+    "anylist": {
+      "caskVersion": "1.2,3",
+      "sourceURL": "https://s3.amazonaws.com/files.anylistapp.com/mac/AnyList_v1_2.zip",
+      "artifactSHA256": "be31f177fac4694e6f391a0231e3cb2d834d51c19129696b5191fc1d1b4601f2",
+      "apps": [
+        {
+          "bundleName": "AnyList.app",
+          "bundleIdentifier": "com.purplecover.anylist.mac"
+        }
+      ]
+    },
+    "amadeus-pro": {
+      "caskVersion": "3.0.3",
+      "sourceURL": "https://s3.amazonaws.com/HairerSoftPublic/AmadeusPro3/AmadeusPro.zip",
+      "artifactSHA256": "5cdfb0833b980ef36fa10471b3e1fadec4fee2e32e9c2229cfe5281f6b891b0b",
+      "apps": [
+        {
+          "bundleName": "Amadeus Pro 3.app",
+          "bundleIdentifier": "com.HairerSoft.AmadeusPro3"
+        }
+      ]
+    },
+    "anydo": {
+      "caskVersion": "5.0.68",
+      "sourceURL": "https://electron-app.any.do/Anydo-5.0.68-universal.dmg",
+      "artifactSHA256": "3906b4b436d23105988c22a1ba7936f7ede08be9747256a2e622338c1c846c4a",
+      "apps": [
+        {
+          "bundleName": "Anydo.app",
+          "bundleIdentifier": "com.anydo.mac"
+        }
+      ]
     }
   }
 }
