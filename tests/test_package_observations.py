@@ -278,6 +278,7 @@ def test_observation_entrypoint_collects_evidence_after_install_failure(tmp_path
 @pytest.mark.parametrize("keeps_changing", [False, True])
 def test_settling_preserves_updater_changes_and_stops_at_a_deadline(tmp_path, monkeypatch, keeps_changing):
     clock = [0]
+
     def read_snapshot(*unused):
         value = empty_snapshot()
         version = str(clock[0]) if keeps_changing else str(min(clock[0], 15))
