@@ -17463,6 +17463,281 @@
           "bundleIdentifier": "app.dataflare.desktop"
         }
       ]
+    },
+    "dehelper": {
+      "caskVersion": "latest",
+      "sourceURL": "https://static.eudic.net/pkg/dhmac.dmg?version",
+      "artifactSHA256": "f0631d1f43ddc8395afd1330b1c5ae798ba763383e3ea818b8de998256faac62",
+      "apps": [
+        {
+          "bundleName": "Dehelper.app",
+          "bundleIdentifier": "com.eusoft.dehelper"
+        }
+      ]
+    },
+    "desktoputility": {
+      "caskVersion": "6.1.4",
+      "sourceURL": "https://sweetpproductions.com/products/desktoputility/DesktopUtility.dmg",
+      "artifactSHA256": "7fee5430641ac181916186db282f5e5004a3c3084c912908b9c35fcce16a23ba",
+      "apps": [
+        {
+          "bundleName": "DesktopUtility.app",
+          "bundleIdentifier": "com.sweetpproductions.DesktopUtility"
+        }
+      ]
+    },
+    "deepgit": {
+      "caskVersion": "26.1.003",
+      "sourceURL": "https://www.syntevo.com/downloads/deepgit/deepgit-26_1_003-macos-arm64.dmg",
+      "artifactSHA256": "56b87d81e05fef9bd8c1f8b723e0835c16de251ab9ee95ccfc056293fb9abc53",
+      "apps": [
+        {
+          "bundleName": "DeepGit.app",
+          "bundleIdentifier": "com.syntevo.deepgit"
+        }
+      ]
+    },
+    "ddnet": {
+      "caskVersion": "20.0",
+      "sourceURL": "https://ddnet.org/downloads/DDNet-20.0-macos.dmg",
+      "artifactSHA256": "39a4e1825a17e4746433def14b58f9a39f2c21158bb4d58f91f42019558d6a45",
+      "apps": [
+        {
+          "bundleName": "DDNet.app",
+          "bundleIdentifier": "org.DDNetClient.app"
+        }
+      ]
+    },
+    "dcp-o-matic-disk-writer": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-disk&version=2.19.1",
+      "artifactSHA256": "0a5307c1fa66eac75a6b8b34da8c7bd739a852b5d1bf605a1ce217dbe918bc87",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Disk Writer.app",
+          "bundleIdentifier": "com.dcpomatic.disk"
+        }
+      ]
+    },
+    "detectx-swift": {
+      "caskVersion": "1.0982",
+      "sourceURL": "https://s3.amazonaws.com/sqwarq.com/PublicZips/DetectX_Swift.dmg",
+      "artifactSHA256": "f159f22aa152881ea92e3e332a33fe2d69afc30b31a1fe3355fc5f6893efe4fb",
+      "apps": [
+        {
+          "bundleName": "DetectX Swift.app",
+          "bundleIdentifier": "com.sqwarq.DetectX-Swift"
+        }
+      ]
+    },
+    "deeper": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://www.titanium-software.fr/download/26/Deeper.dmg",
+      "artifactSHA256": "a3bb49885371450a38a170d1fe9f8c10baf7cc44ee5cb387c4d7da1d339cae16",
+      "apps": [
+        {
+          "bundleName": "Deeper.app",
+          "bundleIdentifier": "com.titanium.Deeper"
+        }
+      ]
+    },
+    "default-folder-x": {
+      "caskVersion": "6.3",
+      "sourceURL": "https://www.stclairsoft.com/download/DefaultFolderX-6.3.dmg",
+      "artifactSHA256": "bda792c1ecc95d13fc73a3d5124d54a0b21c3b251362125d278e50f91145e395",
+      "apps": [
+        {
+          "bundleName": "Default Folder X.app",
+          "bundleIdentifier": "com.stclairsoft.DefaultFolderX5"
+        }
+      ]
+    },
+    "defold": {
+      "caskVersion": "1.13.1",
+      "sourceURL": "https://github.com/defold/defold/releases/download/1.13.1/Defold-arm64-macos.dmg",
+      "artifactSHA256": "0852e9ef1004cabde9e58a7780ff3440965e5568fd30d1bc4035d4b06c143c33",
+      "apps": [
+        {
+          "bundleName": "Defold.app",
+          "bundleIdentifier": "com.defold.editor"
+        }
+      ]
+    },
+    "desktime": {
+      "caskVersion": "6.3.0",
+      "sourceURL": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.3.0-arm64.dmg",
+      "artifactSHA256": "b0611f8513ee3c1eec6e700d77b9e21bd1ed1a74ea349b7314e1cac2f1a5396d",
+      "apps": [
+        {
+          "bundleName": "DeskTime.app",
+          "bundleIdentifier": "com.desktime.DeskTime"
+        }
+      ]
+    },
+    "deepchat": {
+      "caskVersion": "0.5.7",
+      "sourceURL": "https://github.com/ThinkInAIXYZ/deepchat/releases/download/v0.5.7/DeepChat-0.5.7-mac-arm64.dmg",
+      "artifactSHA256": "140c77991f92010c42db429941ac7f7c4f0011da78b8d0799f6d2d791c007580",
+      "apps": [
+        {
+          "bundleName": "DeepChat.app",
+          "bundleIdentifier": "com.wefonk.deepchat"
+        }
+      ]
+    },
+    "dcp-o-matic-kdm-creator": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-kdm&version=2.19.1",
+      "artifactSHA256": "4672d2871876c88458e6d6052476b1f23322f348b4c0846a0efa01de1e6ce511",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 KDM Creator.app",
+          "bundleIdentifier": "com.dcpomatic.kdm"
+        }
+      ]
+    },
+    "decentr": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://decentr.net/MacOS_arm_Decentr_1.9.1.dmg",
+      "artifactSHA256": "8640878b524afff5f290f42a8f26743f84b29e38963e7a64f50ef84b705ca190",
+      "apps": [
+        {
+          "bundleName": "Decentr.app",
+          "bundleIdentifier": "com.Decentr.Decentr"
+        }
+      ]
+    },
+    "deckset": {
+      "caskVersion": "2.0.51,2807",
+      "sourceURL": "https://dl.decksetapp.com/Deckset+2.0.51+(2807).dmg",
+      "artifactSHA256": "66320de74180db4fef1ce219c479ebe8c2ac70c51a3219f4996852a289896684",
+      "apps": [
+        {
+          "bundleName": "Deckset.app",
+          "bundleIdentifier": "com.unsignedinteger.Deckset-Paddle"
+        }
+      ]
+    },
+    "dcp-o-matic-combiner": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-combiner&version=2.19.1",
+      "artifactSHA256": "0a9c8f3204129f65145638e3a209866fd5cd1bccc6f86365efdfe8ba7df70fa4",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Combiner.app",
+          "bundleIdentifier": "com.dcpomatic.combiner"
+        }
+      ]
+    },
+    "dcp-o-matic-player": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-player&version=2.19.1",
+      "artifactSHA256": "270edb47911b25b2c686286eebb7aa8a7d8fed7274656358f7cd78dbb2c93b1f",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Player.app",
+          "bundleIdentifier": "com.dcpomatic.player"
+        }
+      ]
+    },
+    "deadbolt": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://github.com/alichtman/deadbolt/releases/download/v2.1.1/Deadbolt-2.1.1-arm64.dmg",
+      "artifactSHA256": "c8ce77caf427d24730fe0e9abd34cc49ebcb1650952cbbc79a2da180e7c8bee0",
+      "apps": [
+        {
+          "bundleName": "Deadbolt.app",
+          "bundleIdentifier": "org.alichtman.deadbolt"
+        }
+      ]
+    },
+    "dcp-o-matic-editor": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-editor&version=2.19.1",
+      "artifactSHA256": "7780501c4303e5216620e426f441f38887ffcfc4707d227c54fd90afd9136a37",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Editor.app",
+          "bundleIdentifier": "com.dcpomatic.editor"
+        }
+      ]
+    },
+    "deltawalker": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://deltawalker.s3.amazonaws.com/DeltaWalker-2.8.1_aarch64.dmg",
+      "artifactSHA256": "f5cc0843ca324f55e84ce7a0907b20349bbdef058440cb56aeb6c245efbb882e",
+      "apps": [
+        {
+          "bundleName": "DeltaWalker.app",
+          "bundleIdentifier": "com.deltopia.DeltaWalker"
+        }
+      ]
+    },
+    "dcp-o-matic-playlist-editor": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-playlist&version=2.19.1",
+      "artifactSHA256": "2db4b12f3866b05b19d6e6a798cabaaa02a32538434df752f94a750da516d5f9",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Playlist Editor.app",
+          "bundleIdentifier": "com.dcpomatic.playlist"
+        }
+      ]
+    },
+    "decrediton": {
+      "caskVersion": "2.1.6",
+      "sourceURL": "https://github.com/decred/decred-binaries/releases/download/v2.1.6/decrediton-darwin-arm64-v2.1.6.dmg",
+      "artifactSHA256": "1d9daf9a0ec5df743b516738c7a8842cbc79724be595e4ba0f97bbfd7d5365b5",
+      "apps": [
+        {
+          "bundleName": "Decrediton.app",
+          "bundleIdentifier": "com.Electron.Decrediton"
+        }
+      ]
+    },
+    "default-handler": {
+      "caskVersion": "1.1.1,8",
+      "sourceURL": "https://updates.edovia.com/com.edovia.Default-Handler/DefaultHandler_1.1.1b8.zip",
+      "artifactSHA256": "f35f3a171f99adf337d7be762ba4627186c26519c17683ddf15776a151c17602",
+      "apps": [
+        {
+          "bundleName": "Default Handler.app",
+          "bundleIdentifier": "com.edovia.Default-Handler"
+        }
+      ]
+    },
+    "devilutionx": {
+      "caskVersion": "1.5.5",
+      "sourceURL": "https://github.com/diasurgical/devilutionX/releases/download/1.5.5/devilutionx-macos-universal.dmg",
+      "artifactSHA256": "10ecd55caf4239d087bc91bce7538943705399b0b2abcff71c347ddbf01d30c6",
+      "apps": [
+        {
+          "bundleName": "devilutionX.app",
+          "bundleIdentifier": "com.macsourceports.devilutionX"
+        }
+      ]
+    },
+    "dcp-o-matic-encode-server": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-server&version=2.19.1",
+      "artifactSHA256": "b29891d7ec3c7f513da65f6839839aec0de6bee807bc7b3122b0f946b1b0bf7f",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2 Encode Server.app",
+          "bundleIdentifier": "com.dcpomatic.server"
+        }
+      ]
+    },
+    "desktop-composer": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://www.apptorium.com/public/products/desktop-composer/releases/DesktopComposer-1.2.zip",
+      "artifactSHA256": "37d89553ec8e0ac129d8469a1a86e7614219e770543eb3a3eaaa06dee61192d4",
+      "apps": [
+        {
+          "bundleName": "Desktop Composer.app",
+          "bundleIdentifier": "com.apptorium.DesktopComposer"
+        }
+      ]
     }
   }
 }
