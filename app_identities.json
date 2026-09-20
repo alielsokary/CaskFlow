@@ -24673,6 +24673,271 @@
           "bundleIdentifier": "com.imimot.Mitti.2"
         }
       ]
+    },
+    "mudlet": {
+      "caskVersion": "5.0.1",
+      "sourceURL": "https://github.com/Mudlet/Mudlet/releases/download/Mudlet-5.0.1/Mudlet-5.0.1-arm64.dmg",
+      "artifactSHA256": "1727fa51fe0ca388d95930bdf88be34e2d9314c148f1ee2d78331e6a4812bfd0",
+      "apps": [
+        {
+          "bundleName": "mudlet.app",
+          "bundleIdentifier": "org.mudlet.mudlet"
+        }
+      ]
+    },
+    "morgen": {
+      "caskVersion": "4.0.6,260519by9gmr661",
+      "sourceURL": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.0.6%20-%20Build%20260519by9gmr661-arm64.dmg",
+      "artifactSHA256": "a707db932ca1e9b3b7e2cfa2de91cbdeb0c3f99fb80e00df03758d3387424b2d",
+      "apps": [
+        {
+          "bundleName": "Morgen.app",
+          "bundleIdentifier": "com.todesktop.210203cqcj00tw1"
+        }
+      ]
+    },
+    "moose": {
+      "caskVersion": "0.6.2",
+      "sourceURL": "https://github.com/ritz078/moose/releases/download/v0.6.2/moose-0.6.2-mac.zip",
+      "artifactSHA256": "79c5eaee0187fc0b131ffabe9d6abd04c39d936c3b096919390aaf12abaecac3",
+      "apps": [
+        {
+          "bundleName": "moose.app",
+          "bundleIdentifier": "com.riteshkr.moose"
+        }
+      ]
+    },
+    "mumu-x": {
+      "caskVersion": "1.4.3,o9MCyhdQLC9HL3r1Yfks",
+      "sourceURL": "https://paddle.s3.amazonaws.com/fulfillment_downloads/116824/662730/o9MCyhdQLC9HL3r1Yfks_Mumu%20X%201.4.3.dmg",
+      "artifactSHA256": "c8840523becdb36476fde1c44aec735f0cc5c0572f4361e7b3c406691c4e561c",
+      "apps": [
+        {
+          "bundleName": "Mumu X.app",
+          "bundleIdentifier": "com.wilbertliu.mumu-x"
+        }
+      ]
+    },
+    "mp4tools": {
+      "caskVersion": "3.7.2",
+      "sourceURL": "https://www.emmgunn.com/downloads/mp4tools3.7.2.zip",
+      "artifactSHA256": "e4101837c5539f3f0441af3a1f02219636124a0f80e02f733f04cbf05ec11123",
+      "apps": []
+    },
+    "mozregression-gui": {
+      "caskVersion": "7.3.0",
+      "sourceURL": "https://github.com/mozilla/mozregression/releases/download/7.3.0/mozregression-gui.dmg",
+      "artifactSHA256": "9270673f7e78540f482ff04ba66bfb392bd6095d5a693f32023129188625e157",
+      "apps": []
+    },
+    "motionik": {
+      "caskVersion": "2.4.0",
+      "sourceURL": "https://assets.motionik.com/releases/Motionik-2.4.0-arm64.dmg",
+      "artifactSHA256": "cedf2ac64d42e76103e44bb3f01531e393ce105247996165978b41308e4faa2d",
+      "apps": [
+        {
+          "bundleName": "Motionik.app",
+          "bundleIdentifier": "com.motionik.screenrecorder"
+        }
+      ]
+    },
+    "monolingual": {
+      "caskVersion": "1.8.2",
+      "sourceURL": "https://github.com/IngmarStein/Monolingual/releases/download/v1.8.2/Monolingual-1.8.2.dmg",
+      "artifactSHA256": "d4acf912fa132d7615c88940f5a997505e1880a8d6f9af47f0da427d9e0cd13f",
+      "apps": [
+        {
+          "bundleName": "Monolingual.app",
+          "bundleIdentifier": "com.github.IngmarStein.Monolingual"
+        }
+      ]
+    },
+    "mumu": {
+      "caskVersion": "1.1.9,z1OGCA1HTEaGuREtlgxX",
+      "sourceURL": "https://paddle.s3.amazonaws.com/fulfillment_downloads/116824/597910/z1OGCA1HTEaGuREtlgxX_Mumu%201.1.9.dmg",
+      "artifactSHA256": "e957259d2eb69aaf0cf3ba6c09f06561784a538a3f81bc84ab8c91b3d2590438",
+      "apps": [
+        {
+          "bundleName": "Mumu.app",
+          "bundleIdentifier": "com.wilbertliu.mumu"
+        }
+      ]
+    },
+    "mqttfx": {
+      "caskVersion": "5.14.2",
+      "sourceURL": "https://download.softblade.net/mqttfx-5.14.2-macos-apple-silicon.dmg",
+      "artifactSHA256": "e2351d976349945ed432c6409624726cb27ba8a7a2d6a0c5bb586b4338b2e3f0",
+      "apps": [
+        {
+          "bundleName": "MQTT.fx.app",
+          "bundleIdentifier": "de.softblade.mqttfx"
+        }
+      ]
+    },
+    "monodraw": {
+      "caskVersion": "1.7.1,118",
+      "sourceURL": "https://updates.helftone.com/monodraw/downloads/Monodraw-b118.zip",
+      "artifactSHA256": "eed8bf157a3134c852615ed359378ff2602709daae908d12803756e91450b057",
+      "apps": [
+        {
+          "bundleName": "Monodraw.app",
+          "bundleIdentifier": "com.helftone.monodraw"
+        }
+      ]
+    },
+    "monofocus": {
+      "caskVersion": "1.0.beta36",
+      "sourceURL": "https://updates.monofocus.app/MonoFocus.1.0.beta36.dmg",
+      "artifactSHA256": "17a885fcba482c23e26539275f8bb75812d00675ac26e78879848bded435f69e",
+      "apps": [
+        {
+          "bundleName": "MonoFocus.app",
+          "bundleIdentifier": "com.zbudniewek.WorkingOn"
+        }
+      ]
+    },
+    "msgfiler": {
+      "caskVersion": "4.3.1.66,20251231,133402",
+      "sourceURL": "https://files.msgfiler.com/MsgFiler_4.3.1.66_20251231_133402.dmg",
+      "artifactSHA256": "4e4a719803828a23a2706daae9041188044bfed92b0d604c3abfb7fa855fb48c",
+      "apps": [
+        {
+          "bundleName": "MsgFiler 4.app",
+          "bundleIdentifier": "com.atow.MsgFiler4"
+        }
+      ]
+    },
+    "mps": {
+      "caskVersion": "2026.1.1,261.25134.877",
+      "sourceURL": "https://download.jetbrains.com/mps/2026.1/MPS-2026.1.1-macos-aarch64.dmg",
+      "artifactSHA256": "b9170dce0b47f55513ced9f81614064043ead0a5eef52aaf9487cf04fbd78c9b",
+      "apps": [
+        {
+          "bundleName": "MPS.app",
+          "bundleIdentifier": "com.jetbrains.mps"
+        }
+      ]
+    },
+    "moves": {
+      "caskVersion": "1.10.1",
+      "sourceURL": "https://github.com/mikker/Moves.app/releases/download/v1.10.1/Moves.app.zip",
+      "artifactSHA256": "fdf81e0d86d4ad078a16b7496ca35aaff0ad1b687a05368b85550fa41cfcbdd6",
+      "apps": [
+        {
+          "bundleName": "Moves.app",
+          "bundleIdentifier": "com.brnbw.Moves"
+        }
+      ]
+    },
+    "mp3gain-express": {
+      "caskVersion": "2.5",
+      "sourceURL": "https://projects.sappharad.com/mp3gain/mp3gain_mac25.zip",
+      "artifactSHA256": "4fe8ffc0b46f4076424fa845889045fc1f54b75cca0dafd42a6b72b083e7436b",
+      "apps": [
+        {
+          "bundleName": "MP3Gain Express.app",
+          "bundleIdentifier": "com.sappharad.MP3Gain-Express"
+        }
+      ]
+    },
+    "multiviewer": {
+      "caskVersion": "2.8.4,518108271",
+      "sourceURL": "https://releases.multiviewer.app/download/518108271/MultiViewer.for.F1-2.8.4-arm64.dmg",
+      "artifactSHA256": "2a561e370a88e26b08cf1af0e47f486e56dde148c947a8bc7267a23fa33921ae",
+      "apps": [
+        {
+          "bundleName": "MultiViewer.app",
+          "bundleIdentifier": "com.electron.multiviewer-for-f1"
+        }
+      ]
+    },
+    "mousepose": {
+      "caskVersion": "4.5.1,10309",
+      "sourceURL": "https://cdn.boinx.com/software/mousepose/Boinx_Mousepose_4.5.1-10309.app.zip",
+      "artifactSHA256": "fb9f44b6e80300c949f074410b730cb24373407daf4e19fe8fcbefbc0cc48ad4",
+      "apps": [
+        {
+          "bundleName": "Mouseposé.app",
+          "bundleIdentifier": "com.boinx.Mousepose4"
+        }
+      ]
+    },
+    "motion": {
+      "caskVersion": "0.117.0",
+      "sourceURL": "https://github.com/usemotion/desktopapp/releases/download/0.117.0/motion-0.117.0-mac-aarch64.zip",
+      "artifactSHA256": "6a74ed0749a5089f1303d99fa257cc28e05be1a82c26d7b9fcf37a13902fe199",
+      "apps": [
+        {
+          "bundleName": "Motion.app",
+          "bundleIdentifier": "com.electron.motion"
+        }
+      ]
+    },
+    "multitouch": {
+      "caskVersion": "1.48",
+      "sourceURL": "https://multitouch.app/downloads/multitouch1.48.dmg",
+      "artifactSHA256": "11c8ed3adaa03fcd7d7de67119e22749a88cb1bec1b607d63321b312e22a2b78",
+      "apps": [
+        {
+          "bundleName": "Multitouch.app",
+          "bundleIdentifier": "com.brassmonkery.Multitouch"
+        }
+      ]
+    },
+    "monologue": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://updates.jottle.ai/Monologue.dmg",
+      "artifactSHA256": "6615066e28f0547f635eaa484f1a6cff9570676303d0012ceb58d2f2e64503f2",
+      "apps": [
+        {
+          "bundleName": "Monologue.app",
+          "bundleIdentifier": "com.zeitalabs.jottleai"
+        }
+      ]
+    },
+    "monokle": {
+      "caskVersion": "2.4.8",
+      "sourceURL": "https://github.com/kubeshop/monokle/releases/download/v2.4.8/Monokle-mac-2.4.8-universal.dmg",
+      "artifactSHA256": "43e45f9d67ffec7bcfc4c23ad1adaef6ef81fe4a8d1b95837d18b0ef39b9df84",
+      "apps": [
+        {
+          "bundleName": "Monokle.app",
+          "bundleIdentifier": "io.kubeshop.monokle"
+        }
+      ]
+    },
+    "multipatch": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://projects.sappharad.com/multipatch/multipatch20.zip",
+      "artifactSHA256": "92d4077bc10802c7b4395d6716afc5c23bbdb34788be4a672fd5fef807a2072b",
+      "apps": [
+        {
+          "bundleName": "MultiPatch.app",
+          "bundleIdentifier": "com.sappharad.MultiPatch"
+        }
+      ]
+    },
+    "multi": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://github.com/hkgumbs/multi/releases/download/v3.0.2/Multi.3.0.2.dmg",
+      "artifactSHA256": "b0130645123e501cfe4d02c7de3c6d8cd9e0bf263af85671244de1d150d84916",
+      "apps": [
+        {
+          "bundleName": "Multi.app",
+          "bundleIdentifier": "llc.gumbs.multi"
+        }
+      ]
+    },
+    "mubu": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://assets.mubu.com/client/6.0.1/Mubu-6.0.1-arm64.dmg",
+      "artifactSHA256": "b9b548575a47c3d1a76d1fe8c521722a2055c157d8ed93121df6856169d068c5",
+      "apps": [
+        {
+          "bundleName": "幕布.app",
+          "bundleIdentifier": "com.mubu.desktop"
+        }
+      ]
     }
   }
 }
