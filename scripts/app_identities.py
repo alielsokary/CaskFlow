@@ -13,12 +13,14 @@ from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from unicodedata import normalize
 from xml.parsers.expat import ExpatError
+from xml.etree import ElementTree
 
 from style_standards import write_json
 
 MANIFEST = "app_identities.json"
 ROOT = Path(__file__).resolve().parent.parent
 IDENTIFIER = re.compile(r"[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+\Z")
+EXTRACTION_VERSION = 2
 
 
 def load_manifest(path: Path) -> dict:
@@ -30,11 +32,11 @@ def load_manifest(path: Path) -> dict:
     return data
 
 
-def _app_entries(stanza: object) -> list[tuple[str, str]]:
-    if not isinstance(stanza, dict) or not isinstance(stanza.get("app"), list):
+def _app_entries(stanza: object, kind: str = "app") -> list[tuple[str, str]]:
+    if not isinstance(stanza, dict) or not isinstance(stanza.get(kind), list):
         return []
     entries = []
-    for item in stanza["app"]:
+    for item in stanza[kind]:
         if isinstance(item, str):
             entries.append((item, PurePosixPath(item).name))
         elif isinstance(item, dict) and isinstance(item.get("target"), str) and entries:
@@ -54,52 +56,139 @@ def declared_apps(cask: dict) -> list[tuple[str, str]]:
 
 
 def _application_bundles(root: Path) -> list[Path]:
-    bundles = []
+    return [path for path in _directories(root) if path.name.endswith(".app")]
+
+
+def _directories(root: Path) -> list[Path]:
+    found = []
     for parent, directories, _ in os.walk(root, followlinks=False):
         for name in list(directories):
             path = Path(parent) / name
             if path.is_symlink():
                 directories.remove(name)
-            elif name.endswith(".app"):
-                bundles.append(path)
-                directories.remove(name)  # embedded helpers are not declared top-level apps
-    return bundles
+            else:
+                found.append(path)
+                if name.endswith(".app"):
+                    directories.remove(name)  # embedded helpers are not top-level apps
+    return found
 
 
-def _bundle_identifier(bundle: Path) -> str | None:
+def _bundle_identifier(bundle: Path) -> tuple[str | None, str | None]:
     info_path = bundle / "Contents" / "Info.plist"
     if info_path.is_symlink() or info_path.parent.is_symlink() or not info_path.resolve().is_relative_to(bundle.resolve()):
-        return None
+        return None, "symlinked or escaping Info.plist"
     try:
         data = info_path.read_bytes()
         # Valid XML plists may start with a DOCTYPE instead of an XML declaration.
         fmt = plistlib.FMT_BINARY if data.startswith(b"bplist00") else plistlib.FMT_XML
         info = plistlib.loads(data, fmt=fmt)
-    except (OSError, ValueError, plistlib.InvalidFileException, ExpatError):
-        return None
+    except (OSError, ValueError, plistlib.InvalidFileException, ExpatError) as error:
+        return None, f"unreadable Info.plist: {type(error).__name__}"
     identifier = info.get("CFBundleIdentifier") if isinstance(info, dict) else None
-    return identifier if isinstance(identifier, str) and IDENTIFIER.fullmatch(identifier) else None
+    if not isinstance(identifier, str) or not IDENTIFIER.fullmatch(identifier):
+        return None, f"unsupported CFBundleIdentifier: {identifier!r}"
+    return identifier, None
 
 
-def extract_identities(cask: dict, root: Path, artifact: Path) -> dict:
+def artifact_matches(path: Path, source: str) -> bool:
+    """Honor macOS case/Unicode equivalence while leaving duplicate checks to callers."""
+    parts = PurePosixPath(normalize("NFC", source).casefold()).parts
+    return bool(parts) and tuple(normalize("NFC", p).casefold() for p in path.parts[-len(parts):]) == parts
+
+
+def _safe_relative(source: str) -> bool:
+    path = PurePosixPath(source)
+    return bool(path.parts) and not path.is_absolute() and ".." not in path.parts and not any(
+        char in source for char in "$*?[]~")
+
+
+def _package_apps(root: Path, diagnostics: list[dict]) -> list[tuple[Path, str]]:
+    """Use package install locations, never icon guesses, to identify payload apps."""
+    candidates = []
+    infos = [path for path in root.rglob("PackageInfo")
+             if not path.is_symlink() and path.resolve().is_relative_to(root.resolve())
+             and "Payload" not in path.relative_to(root).parts
+             and not any(p.endswith(".app") for p in path.relative_to(root).parts)]
+    if not infos:
+        diagnostics.append({"artifact": "pkg", "reason": "no PackageInfo in expanded package"})
+    for info in sorted(infos):
+        try:
+            metadata = ElementTree.fromstring(info.read_bytes())
+            if metadata.tag != "pkg-info":
+                raise ElementTree.ParseError("not a package info document")
+        except (OSError, ElementTree.ParseError) as error:
+            diagnostics.append({"artifact": info.name, "reason": f"invalid PackageInfo: {type(error).__name__}"})
+            continue
+        location = PurePosixPath(metadata.get("install-location", "/"))
+        payload = info.parent / "Payload"
+        if (not location.is_absolute() or ".." in location.parts or payload.is_symlink()
+                or not payload.is_dir() or not payload.resolve().is_relative_to(root.resolve())):
+            diagnostics.append({"artifact": str(info.relative_to(root)), "reason": "unsafe or missing package payload"})
+            continue
+        # Some packages install Payload/Contents directly into /Applications/App.app.
+        bundles = [payload] if location.name.endswith(".app") else _application_bundles(payload)
+        for bundle in bundles:
+            installed = location / bundle.relative_to(payload)
+            if (not installed.is_relative_to("/Applications") or not installed.name.endswith(".app")
+                    or any(p.endswith(".app") for p in installed.parts[:-1])):
+                continue  # Library helpers and embedded apps are not application ownership evidence.
+            candidates.append((bundle, installed.name))
+    return candidates
+
+
+def extract_identities(cask: dict, root: Path, artifact: Path, *,
+                       package_roots: tuple[Path, ...] = (), diagnostics: tuple[dict, ...] = ()) -> dict:
     """Inspect every declared app; reject duplicates, symlinks and heuristic selections."""
-    bundles = _application_bundles(root)
+    directories = _directories(root)
+    bundles = [path for path in directories if path.name.endswith(".app")]
+    diagnostics = list(diagnostics)
+    candidates = []
     apps = []
     for source, target in declared_apps(cask):
-        parts = PurePosixPath(normalize("NFC", source)).parts
-        matches = [p for p in bundles
-                   if tuple(normalize("NFC", part) for part in p.parts[-len(parts):]) == parts]
+        matches = [p for p in bundles if artifact_matches(p, source)]
         if len(matches) != 1:
+            diagnostics.append({"artifact": source, "reason": f"declared app matched {len(matches)} bundles"})
             continue
-        identifier = _bundle_identifier(matches[0])
+        candidates.append((matches[0], target))
+    for stanza in cask.get("artifacts") or []:
+        for source, target in _app_entries(stanza, "suite"):
+            target_paths = [item["target"] for item in stanza["suite"]
+                            if isinstance(item, dict) and isinstance(item.get("target"), str)]
+            if (not _safe_relative(source) or not _safe_relative(target)
+                    or any(not _safe_relative(path) for path in target_paths)):
+                diagnostics.append({"artifact": source, "reason": "suite requires unsupported staging or target path"})
+                continue
+            matches = [p for p in directories if artifact_matches(p, source)]
+            if len(matches) != 1:
+                diagnostics.append({"artifact": source, "reason": f"declared suite matched {len(matches)} directories"})
+                continue
+            candidates.extend((p, p.name) for p in bundles if p.is_relative_to(matches[0]))
+    for package_root in package_roots:
+        candidates.extend(_package_apps(package_root, diagnostics))
+    # A basename alone cannot distinguish multiple installed app locations.
+    by_name: dict[str, set[Path]] = {}
+    for bundle, name in candidates:
+        by_name.setdefault(normalize("NFC", name).casefold(), set()).add(bundle)
+    for bundle, name in candidates:
+        if len(by_name[normalize("NFC", name).casefold()]) != 1:
+            diagnostics.append({"artifact": name, "reason": "ambiguous installed bundle name"})
+            continue
+        identifier, reason = _bundle_identifier(bundle)
         if identifier is not None:
-            apps.append({"bundleName": target, "bundleIdentifier": identifier})
+            record = {"bundleName": name, "bundleIdentifier": identifier}
+            if record not in apps:
+                apps.append(record)
+        else:
+            diagnostics.append({"artifact": name, "reason": reason})
+    if not apps and not diagnostics:
+        diagnostics.append({"artifact": cask["token"], "reason": "no supported application bundles in declared artifacts"})
     digest = hashlib.sha256()
     with artifact.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return {"caskVersion": cask.get("version"), "sourceURL": cask["url"],
-            "artifactSHA256": digest.hexdigest(), "apps": apps}
+            "artifactSHA256": digest.hexdigest(), "apps": apps,
+            "extractionVersion": EXTRACTION_VERSION, "diagnostics": diagnostics}
 
 
 def needs_refresh(cask: dict, entry: dict | None) -> bool:
@@ -107,14 +196,19 @@ def needs_refresh(cask: dict, entry: dict | None) -> bool:
         return True
     checksum = cask.get("sha256")
     return (entry.get("caskVersion") != cask.get("version")
+            or (not entry.get("apps") and entry.get("extractionVersion", 0) < EXTRACTION_VERSION)
             or entry.get("sourceURL") != cask.get("url")
             or (checksum not in (None, "no_check") and checksum != entry.get("artifactSHA256")))
 
 
-def record_extraction(cask: dict, root: Path, artifact: Path, output: Path) -> None:
+def record_extraction(cask: dict, root: Path, artifact: Path, output: Path, *,
+                      package_roots: tuple[Path, ...], diagnostics: tuple[dict, ...]) -> None:
     manifest = load_manifest(output / MANIFEST)
-    manifest["casks"][cask["token"]] = extract_identities(cask, root, artifact)
+    entry = extract_identities(cask, root, artifact, package_roots=package_roots, diagnostics=diagnostics)
+    manifest["casks"][cask["token"]] = entry
     write_json(output / MANIFEST, manifest, trailing_newline=True)
+    for diagnostic in entry["diagnostics"]:
+        print(f"  identity {cask['token']}: {diagnostic['artifact']} - {diagnostic['reason']}", flush=True)
 
 
 def merge_extractions(destination: Path, source: Path, dirty: set[str]) -> None:
@@ -147,8 +241,7 @@ def compose_release(categories: Path, extracted: Path, variants: Path, output: P
     reviewed = load_manifest(variants)["casks"]
     identities = {}
     for token in sorted(manifest["casks"].keys() | reviewed.keys()):
-        if token not in catalog["tokenToCategory"]:
-            continue
+        # Identity coverage must not wait for the separately reviewed category catalog.
         entry = manifest["casks"].setdefault(token, {"apps": []})
         entry["reviewedVariants"] = reviewed.get(token, [])
         records = entry.get("apps", []) + entry["reviewedVariants"]
