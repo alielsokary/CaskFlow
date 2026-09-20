@@ -689,6 +689,12 @@
     "attempts": 0,
     "updated": "2026-09-20"
   },
+  "gpg-suite-no-mail": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-09-20"
+  },
   "gpt4all": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/nomic-ai.png",

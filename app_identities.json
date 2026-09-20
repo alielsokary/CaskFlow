@@ -620,7 +620,7 @@
           "installedPath": "/Applications/Tailscale.app"
         }
       ],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": []
     },
     "raycast": {
@@ -810,11 +810,19 @@
       "sourceURL": "https://existential.audio/downloads/BlackHole2ch-0.7.1.pkg",
       "artifactSHA256": "57b540f27a3e29c37e310e01bee0fdfab76733087e47f997ef9dccf851400dcf",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "BlackHole.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     },
@@ -953,7 +961,7 @@
           "installedPath": "/Applications/.Karabiner-VirtualHIDDevice-Manager.app"
         }
       ],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": []
     },
     "dotnet-sdk": {
@@ -1077,11 +1085,47 @@
       "sourceURL": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.4.0/macfuse-5.4.0.dmg",
       "artifactSHA256": "861814f0ac7fa8f6547ea40cdd49a36ac84bcc7d34f38a1fa74e8cf68b0401c5",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "isChoiceEnabled('io.macfuse.installer.components.core')",
+            "start_selected": "isChoiceSelected('io.macfuse.installer.components.core')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "isChoiceEnabled('io.macfuse.installer.components.preferencepane')",
+            "start_selected": "isChoiceSelected('io.macfuse.installer.components.preferencepane')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "PreferencePane.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     },
@@ -1157,11 +1201,57 @@
       "sourceURL": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
       "artifactSHA256": "d76ed38a63f41a50a28d726d4efb5a72068a5eb2d86feba0b04e2cbc31bcbb1a",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "is_arm()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "is_intel()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Google Drive.app",
+          "reason": "ambiguous installed bundle name"
+        },
+        {
+          "artifact": "Google Drive.app",
+          "reason": "ambiguous installed bundle name"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Google Docs.app",
+          "bundleIdentifier": "com.google.drivefs.shortcuts.docs",
+          "packageIdentifier": "com.google.drivefs.shortcuts",
+          "installedPath": "/Applications/Google Docs.app"
+        },
+        {
+          "bundleName": "Google Sheets.app",
+          "bundleIdentifier": "com.google.drivefs.shortcuts.sheets",
+          "packageIdentifier": "com.google.drivefs.shortcuts",
+          "installedPath": "/Applications/Google Sheets.app"
+        },
+        {
+          "bundleName": "Google Slides.app",
+          "bundleIdentifier": "com.google.drivefs.shortcuts.slides",
+          "packageIdentifier": "com.google.drivefs.shortcuts",
+          "installedPath": "/Applications/Google Slides.app"
         }
       ]
     },
@@ -1191,7 +1281,70 @@
       "caskVersion": "26225.1706.5101.3140",
       "sourceURL": "https://statics.teams.cdn.office.net/production-osx/26225.1706.5101.3140/MicrosoftTeams.pkg",
       "artifactSHA256": "7286fc72255c3f765024f6c08fc8e054b3426780d28b7c4b2b3deda99ea64728",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "true",
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications",
+            "selected": "true",
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstallMicrosoftAutoUpdate()",
+            "selected": "choices['com.microsoft.autoupdate'].selected && shouldInstallMicrosoftAutoUpdate()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "shouldInstallSSADriver()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "MSTeamsAudioDevice.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Microsoft Teams.app",
+          "bundleIdentifier": "com.microsoft.teams2",
+          "packageIdentifier": "com.microsoft.teams2",
+          "installedPath": "/Applications/Microsoft Teams.app"
+        }
+      ]
     },
     "cmux": {
       "caskVersion": "0.64.25",
@@ -1286,11 +1439,37 @@
       "sourceURL": "https://cdn.zoom.us/prod/7.1.5.84650/arm64/zoomusInstallerFull.pkg",
       "artifactSHA256": "49cf70af674176f3708b9d3b519f585424c442ccf744fd9659327967971c8279",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "options",
+          "attributes": {
+            "customLocation": "Applications"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "zoom.us.app",
+          "bundleIdentifier": "us.zoom.xos",
+          "packageIdentifier": "us.zoom.pkg.videomeeting",
+          "installedPath": "/Applications/zoom.us.app"
         }
       ]
     },
@@ -1590,18 +1769,83 @@
       "caskVersion": "11.4.1",
       "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.4.1_installer.pkg",
       "artifactSHA256": "346b9cc2e97ce9d82bdff7c565983b9061f27c3aec38831d3c46e64a1bdfbc75",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "MauInstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "com.microsoft.rdc.installer.scripts.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Windows App.app",
+          "bundleIdentifier": "com.microsoft.rdc.macos",
+          "packageIdentifier": "com.microsoft.rdc.macos",
+          "installedPath": "/Applications/Windows App.app"
+        }
+      ]
     },
     "onedrive": {
       "caskVersion": "26.153.0809.0004",
       "sourceURL": "https://oneclient.sfx.ms/Mac/Installers/26.153.0809.0004/universal/OneDrive.pkg",
       "artifactSHA256": "35d67e76de8579fa0b533fff7ff3b618ea54f574a8a557bb9d3d736b14029f78",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "OneDrive.app",
+          "bundleIdentifier": "com.microsoft.OneDrive",
+          "packageIdentifier": "com.microsoft.OneDrive",
+          "installedPath": "/Applications/OneDrive.app"
         }
       ]
     },
@@ -2430,7 +2674,58 @@
       "caskVersion": "7.2.18,175117",
       "sourceURL": "https://download.virtualbox.org/virtualbox/7.2.18/VirtualBox-7.2.18-175117-macOSArm64.dmg",
       "artifactSHA256": "b8a0329d731d42fe1e0ec2ba1331149ba2f3f293443e0b5b493bcd7d54cc0b34",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "checkPrerequisite()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "VirtualBoxCLI.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "VirtualBox.app",
+          "bundleIdentifier": "org.virtualbox.app.VirtualBox",
+          "packageIdentifier": "org.virtualbox.pkg.virtualbox",
+          "installedPath": "/Applications/VirtualBox.app"
+        }
+      ]
     },
     "zcode": {
       "caskVersion": "3.14.0",
@@ -2548,11 +2843,59 @@
       "sourceURL": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121662/AcroRdrDC_2600121662_MUI.dmg",
       "artifactSHA256": "21821609bea4210e54b1844a1129cdafccea21f6d6d3d0797808f92e357d5705",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "VolumeCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "RdrServicesUpdater.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "entryPackage.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "exitPackage.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
         }
       ]
     },
@@ -2572,11 +2915,53 @@
       "sourceURL": "https://dl.teamviewer.com/download/version_15x/update/15.81.6/TeamViewer.pkg",
       "artifactSHA256": "39692047e9446a1e8d07461ffb22a2ce565d290584c513302e983847816eb2d0",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "shouldInstallRemotePrinting()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "FullSilentInstallerPackage.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "PriviledgedHelperPackage.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "UninstallerAppPackage.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "UninstallerHelperPackage.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "TeamViewer.app",
+          "bundleIdentifier": "com.teamviewer.TeamViewer",
+          "packageIdentifier": "com.teamviewer.teamviewer",
+          "installedPath": "/Applications/TeamViewer.app"
         }
       ]
     },
@@ -2607,11 +2992,21 @@
       "sourceURL": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.2.6009_signed.dmg",
       "artifactSHA256": "8d50036510859956d20d1f50e43171be53417431104c6befb1352ff5187c248a",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
         }
       ]
     },
@@ -3130,7 +3525,7 @@
           "installedPath": "/Applications/NordVPN.app"
         }
       ],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": []
     },
     "arduino-ide": {
@@ -3226,11 +3621,47 @@
       "sourceURL": "https://www.synaptics.com/sites/default/files/exe_files/2026-07/DisplayLink%20Manager%20Graphics%20Connectivity16.2-EXE.pkg",
       "artifactSHA256": "fd9eafab9542e592baa39984ed4e87e64e89f3de6b9a4429ab13a2334a7538e6",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "VolumeCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "true",
+            "selected": "true"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "DisplayLink Manager.app",
+          "bundleIdentifier": "com.displaylink.DisplayLinkUserAgent",
+          "packageIdentifier": "com.displaylink.displaylinkmanagerapp",
+          "installedPath": "/Applications/DisplayLink Manager.app"
         }
       ]
     },
@@ -35383,8 +35814,13 @@
           "installedPath": "/Applications/Airtool 2.app"
         }
       ],
-      "extractionVersion": 4,
-      "diagnostics": []
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "AirtoolHelper.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "golly": {
       "caskVersion": "5.0",
@@ -35417,11 +35853,29 @@
       "sourceURL": "https://edge.elgato.com/egc/macos/echm/2.3.0/CameraHub_2.3.0.7295.pkg",
       "artifactSHA256": "15d91783adf197d356515e604167597853bb1cba77fc73d6485b55d49842dcee",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Camera Hub.app",
+          "bundleIdentifier": "com.elgato.CameraHub",
+          "packageIdentifier": "com.elgato.CameraHub.Installer",
+          "installedPath": "/Applications/Camera Hub.app"
         }
       ]
     },
@@ -35430,11 +35884,25 @@
       "sourceURL": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal26.09.0.17.pkg",
       "artifactSHA256": "c0c9d44f622226b019e6406f3df8012da351b17e86f2dc42b62039df17d0a3df",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "compatibleOSVersionCheckAndPreventDowngrade();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "com.citrix.ICAClient.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     },
@@ -35443,11 +35911,91 @@
       "sourceURL": "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_6.4.14-1.dmg",
       "artifactSHA256": "446c6889ad5602827fe1a6f597067428ffdbdd9b4e0cb00930385d99b876fb06",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Wacom Center.app",
+          "bundleIdentifier": "com.wacom.WacomCenter",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/Wacom Center.app"
+        },
+        {
+          "bundleName": "Wacom Display Settings.app",
+          "bundleIdentifier": "com.wacom.Wacom-Display-Settings",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/Wacom Display Settings.app"
+        },
+        {
+          "bundleName": "Wacom Tablet Utility.app",
+          "bundleIdentifier": "com.wacom.RemoveWacomTablet",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/Wacom Tablet Utility.app"
+        },
+        {
+          "bundleName": "TabletDriver.app",
+          "bundleIdentifier": "com.wacom.TabletDriver",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/TabletDriver.app"
+        },
+        {
+          "bundleName": "FirmwareUpdater.app",
+          "bundleIdentifier": "com.wacom.FirmwareUpdater",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/FirmwareUpdater.app"
+        },
+        {
+          "bundleName": "UpgradeHelper.app",
+          "bundleIdentifier": "com.wacom.UpgradeHelper",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/UpgradeHelper.app"
+        },
+        {
+          "bundleName": "WacomTabletDriver.app",
+          "bundleIdentifier": "com.wacom.wacomtablet",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/WacomTabletDriver.app"
+        },
+        {
+          "bundleName": "WacomADCV.app",
+          "bundleIdentifier": "com.wacom.WacomADCV",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/WacomADCV.app"
+        },
+        {
+          "bundleName": "Wacom Experience Program.app",
+          "bundleIdentifier": "com.wacom.WacomExperienceProgram",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/Wacom Experience Program.app"
+        },
+        {
+          "bundleName": "WacomTouchDriver.app",
+          "bundleIdentifier": "com.wacom.WacomTouchDriver",
+          "packageIdentifier": "com.wacom.TabletInstaller",
+          "installedPath": "/Applications/Wacom Tablet.localized/.Tablet/WacomTouchDriver.app"
         }
       ]
     },
@@ -35469,11 +36017,23 @@
       "sourceURL": "https://github.com/pritunl/pritunl-client-electron/releases/download/1.4.4752.50/Pritunl.pkg.zip",
       "artifactSHA256": "afe32dba27c3ca669b95a0bac2147a18465b85384d7122c6900a4a077988ad27",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Pritunl.app",
+          "bundleIdentifier": "com.electron.pritunl",
+          "packageIdentifier": "com.pritunl.pkg.Pritunl",
+          "installedPath": "/Applications/Pritunl.app"
         }
       ]
     },
@@ -35482,11 +36042,37 @@
       "sourceURL": "https://www.arqbackup.com/download/arqbackup/Arq7.48.pkg",
       "artifactSHA256": "6aecf59ba6a2d7407fe8d293ac0fed1fafc7a827fdbbe683f24320077b19a2de",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Arq.app",
+          "bundleIdentifier": "com.haystacksoftware.Arq",
+          "packageIdentifier": "com.haystacksoftware.Arq",
+          "installedPath": "/Applications/Arq.app"
         }
       ]
     },
@@ -35521,11 +36107,205 @@
       "sourceURL": "https://releases.gpgtools.org/GPG_Suite-2023.3.dmg",
       "artifactSHA256": "57468a4adc55d954ead4fe1f88b07eac1b70ada40fcbc810765fd521ef21eef1",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_4_requirement(false,true)",
+            "start_selected": "installer_choice_4_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_5_requirement(false,true)",
+            "start_selected": "installer_choice_5_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_6_requirement(false,true)",
+            "start_selected": "installer_choice_6_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_7_requirement(false,true)",
+            "start_selected": "installer_choice_7_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_8_requirement(false,true)",
+            "start_selected": "installer_choice_8_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_9_requirement(false,true)",
+            "start_selected": "installer_choice_9_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "installer_choice_10_selected(false)",
+            "start_selected": "installer_choice_10_selected(true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "CheckPrivateKey.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGKeychain_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMailLoader_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_12_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_3_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_4_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_5_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_6_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_7_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGPreferences_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGServices_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "LibmacgpgXPC_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Libmacgpg_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "MacGPG2.1_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Updater_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "key.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "pinentry_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "preinstall.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "version.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     },
@@ -35534,11 +36314,21 @@
       "sourceURL": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-27.dmg",
       "artifactSHA256": "f8270edb890e66959382d8432c38469af35f0b1b4e6af96b4f8d5b845957d7a2",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Distribution",
-          "reason": "conditional package Distribution requires component selection"
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
         }
       ]
     },
@@ -35552,6 +36342,238 @@
         {
           "artifact": "alisma",
           "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "intune-company-portal": {
+      "caskVersion": "5.2606.0",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2606.0-Upgrade.pkg",
+      "artifactSHA256": "8bdc0084c29bc5898b638be1b07feb4c5c714bb90ee9bc061df3d0b19d0e3d0c",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Company Portal.app",
+          "bundleIdentifier": "com.microsoft.CompanyPortalMac",
+          "packageIdentifier": "com.microsoft.CompanyPortalMac",
+          "installedPath": "/Applications/Company Portal.app"
+        }
+      ]
+    },
+    "gpg-suite-no-mail": {
+      "caskVersion": "2023.3",
+      "sourceURL": "https://releases.gpgtools.org/GPG_Suite-2023.3.dmg",
+      "artifactSHA256": "57468a4adc55d954ead4fe1f88b07eac1b70ada40fcbc810765fd521ef21eef1",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_4_requirement(false,true)",
+            "start_selected": "installer_choice_4_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_5_requirement(false,true)",
+            "start_selected": "installer_choice_5_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_6_requirement(false,true)",
+            "start_selected": "installer_choice_6_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_7_requirement(false,true)",
+            "start_selected": "installer_choice_7_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_8_requirement(false,true)",
+            "start_selected": "installer_choice_8_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_9_requirement(false,true)",
+            "start_selected": "installer_choice_9_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "installer_choice_10_selected(false)",
+            "start_selected": "installer_choice_10_selected(true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "CheckPrivateKey.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGKeychain_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMailLoader_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_12_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_3_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_4_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_5_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_6_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGMail_7_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGPreferences_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "GPGServices_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "LibmacgpgXPC_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Libmacgpg_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "MacGPG2.1_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Updater_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "key.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "pinentry_Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "preinstall.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "version.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     }
