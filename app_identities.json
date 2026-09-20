@@ -11372,12 +11372,12 @@
       ]
     },
     "extradock": {
-      "caskVersion": "4.3.18",
-      "sourceURL": "https://github.com/AppitStudio/extra-dock-updates/releases/download/v4.3.18/extraDock.dmg",
-      "artifactSHA256": "4f50b445fcec4aa53840afbae4cf0fcb9965c4532fc64f1ae86ba909fbba4a32",
+      "caskVersion": "4.3.21",
+      "sourceURL": "https://github.com/AppitStudio/extra-dock-updates/releases/download/v4.3.21/extraDock.dmg",
+      "artifactSHA256": "ad35d4526ed72964c7625f17c9508f4c48a3c6ec9e1fb596de26d8166d68333d",
       "apps": [
         {
-          "bundleName": "extraDock.app",
+          "bundleName": "ExtraDock.app",
           "bundleIdentifier": "dignicy.extraDock"
         }
       ]
@@ -18782,6 +18782,265 @@
         {
           "bundleName": "Emailchemy.app",
           "bundleIdentifier": "com.install4j.6029-5726-8846-0121.357"
+        }
+      ]
+    },
+    "facescreen": {
+      "caskVersion": "3.1.2",
+      "sourceURL": "https://rampatra.github.io/facescreen-updates/FaceScreen-3.1.2.dmg",
+      "artifactSHA256": "6ebe874358d96630904727bc631db459a1fea4f24f6a24dbd5e216c5d10bf09e",
+      "apps": [
+        {
+          "bundleName": "FaceScreen.app",
+          "bundleIdentifier": "io.softal.FaceScreen"
+        }
+      ]
+    },
+    "enzymex": {
+      "caskVersion": "3.33",
+      "sourceURL": "https://downloads.nucleobytes.com/enzymex.dmg",
+      "artifactSHA256": "abbb5439e80c2c9d4038d7805d0c29e2d372b83fcd66dba44ce165b555d34772",
+      "apps": [
+        {
+          "bundleName": "EnzymeX.app",
+          "bundleIdentifier": "com.mekentosj.enzymex"
+        }
+      ]
+    },
+    "exactscan": {
+      "caskVersion": "26.6",
+      "sourceURL": "https://dl.exactcode.com/exactscan/ExactScan-26.6.dmg",
+      "artifactSHA256": "9ab96214b13fb976558768799cc224326ce4f67aa441babd6b2bc3e7e8299818",
+      "apps": [
+        {
+          "bundleName": "ExactScan.app",
+          "bundleIdentifier": "de.exactcode.ExactScan"
+        }
+      ]
+    },
+    "ethui": {
+      "caskVersion": "1.27.0",
+      "sourceURL": "https://github.com/ethui/ethui/releases/download/v1.27.0/ethui_1.27.0_universal.dmg",
+      "artifactSHA256": "7a5eb15dfc66556ee6f2ec0480605db587ef74b6a4f9e9e028df73d296b90623",
+      "apps": [
+        {
+          "bundleName": "ethui.app",
+          "bundleIdentifier": "dev.ethui"
+        }
+      ]
+    },
+    "expressions": {
+      "caskVersion": "1.3.10",
+      "sourceURL": "https://www.apptorium.com/public/products/expressions/releases/Expressions-1.3.10.zip",
+      "artifactSHA256": "bb6f033ca5eadb3fd60105c6c2bf2709cb987d78311e7cecdbb0ca14ee24e23a",
+      "apps": [
+        {
+          "bundleName": "Expressions.app",
+          "bundleIdentifier": "com.apptorium.Expressions-dm"
+        }
+      ]
+    },
+    "epilogue-playback": {
+      "caskVersion": "1.10.0",
+      "sourceURL": "https://releases.epilogue.co/desktop/playback/1.10.0/release/macos/Playback.dmg",
+      "artifactSHA256": "fa208044442a6341a04c17354caf018867217ce6cb35180c5ec5f0f0b6b4b65e",
+      "apps": [
+        {
+          "bundleName": "Playback.app",
+          "bundleIdentifier": "com.epilogue.playback"
+        }
+      ]
+    },
+    "eufymake-studio": {
+      "caskVersion": "1.5.26.2,1.8.0",
+      "sourceURL": "https://github.com/eufymake/eufyMake-PrusaSlicer-Release/releases/download/v1.5.26/eufyMake_Studio_V1.5.26.2_E1.8.0.dmg",
+      "artifactSHA256": "beaa5760814cc7dc09818efebfbbb7c13113b5128a7db33afcd04fbc2c7c9b2d",
+      "apps": []
+    },
+    "fanny": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/DanielStormApps/Fanny/releases/download/2.3.0/FannyWidget.zip",
+      "artifactSHA256": "adcd59e6839934959dc7ebb367f2f94e1b1542b83977a5117a6f670d23d2e053",
+      "apps": [
+        {
+          "bundleName": "Fanny.app",
+          "bundleIdentifier": "com.fannywidget"
+        }
+      ]
+    },
+    "epic": {
+      "caskVersion": "150.0.7871.24",
+      "sourceURL": "https://cdn.epicbrowser.com/v150/Epic_150.0.7871.24_arm.dmg",
+      "artifactSHA256": "18c33c72bfb215159321752da01f98adcddd500bf02ffb988fa22d42602d240b",
+      "apps": [
+        {
+          "bundleName": "Epic.app",
+          "bundleIdentifier": "com.hiddenreflex.Epic"
+        }
+      ]
+    },
+    "equinox": {
+      "caskVersion": "6.0",
+      "sourceURL": "https://github.com/rlxone/Equinox/releases/download/v6.0/Equinox-Installer.dmg",
+      "artifactSHA256": "1271dfb05af237d5f31d18c67b8755c3d57a8683257ea2eef5bddcd9bbd24261",
+      "apps": [
+        {
+          "bundleName": "Equinox.app",
+          "bundleIdentifier": "com.rlxone.equinox"
+        }
+      ]
+    },
+    "exifrenamer": {
+      "caskVersion": "2.4.0,15",
+      "sourceURL": "https://www.qdev.de/downloads/files/ExifRenamer.dmg",
+      "artifactSHA256": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c",
+      "apps": [
+        {
+          "bundleName": "ExifRenamer.app",
+          "bundleIdentifier": "de.qdev.ExifRenamer"
+        }
+      ]
+    },
+    "expressscribe": {
+      "caskVersion": "15.11",
+      "sourceURL": "https://www.nch.com.au/scribe/scribemaci.zip",
+      "artifactSHA256": "435dc428bcd08aff680699002187e378874670e18658aee6f2c0ba8c22bd8da7",
+      "apps": [
+        {
+          "bundleName": "ExpressScribe.app",
+          "bundleIdentifier": "com.nchsoftware.expressscribefree"
+        }
+      ]
+    },
+    "fastrawviewer": {
+      "caskVersion": "2.0.11.2088",
+      "sourceURL": "https://updates.fastrawviewer.com/data/FastRawViewer-2.0.11.2088.dmg",
+      "artifactSHA256": "93cfbbb3f896119b8193dead426e676d0cd373a02a59f345c1b44c774beb2cd1",
+      "apps": [
+        {
+          "bundleName": "FastRawViewer.app",
+          "bundleIdentifier": "com.libraw-llc.FastRawViewer"
+        }
+      ]
+    },
+    "expandrive": {
+      "caskVersion": "2026.09.15.885",
+      "sourceURL": "https://www.expandrive.com/api/download/expandrive?platform=macos",
+      "artifactSHA256": "237c3d24249755e412821b76b359b70fbbf233aee43c232e9bc594d9f23ae5c9",
+      "apps": [
+        {
+          "bundleName": "ExpanDrive.app",
+          "bundleIdentifier": "com.expandrive.ExpanDrive"
+        }
+      ]
+    },
+    "eve-online": {
+      "caskVersion": "1.16.1",
+      "sourceURL": "https://launcher.ccpgames.com/eve-online/release/darwin/universal/eve-online-darwin-universal-1.16.1.zip",
+      "artifactSHA256": "5029082cd6d77a565c166572e206d1400d7e0ee14c9c34beb8ba21a2236d69f2",
+      "apps": [
+        {
+          "bundleName": "eve-online.app",
+          "bundleIdentifier": "com.ccpgames.eve-online-launcher"
+        }
+      ]
+    },
+    "exelearning": {
+      "caskVersion": "4.0.5",
+      "sourceURL": "https://github.com/exelearning/exelearning/releases/download/v4.0.5/eXeLearning-4.0.5-universal.dmg",
+      "artifactSHA256": "69f2468784f5db06a7d8ccb60fefe2830ec0a837651d3838d07e572a461bca3a",
+      "apps": [
+        {
+          "bundleName": "eXeLearning.app",
+          "bundleIdentifier": "es.intef.exelearning"
+        }
+      ]
+    },
+    "fastmarks": {
+      "caskVersion": "1.3,8",
+      "sourceURL": "https://get.retina.studio/fastmarks/fastmarks_8.zip",
+      "artifactSHA256": "506bf22706c3ec6174964b0d4edf0093c228657585e6854bae60d7c564598be4",
+      "apps": [
+        {
+          "bundleName": "Fastmarks.app",
+          "bundleIdentifier": "com.clickontyler.Fastmarks"
+        }
+      ]
+    },
+    "espresso": {
+      "caskVersion": "25.12",
+      "sourceURL": "https://get.espressoapp.com/Espresso_25.12.zip",
+      "artifactSHA256": "6a04895bb1e55d637e5e5e61934f017d2b10b32c96c57cecbca865cc4de8275b",
+      "apps": [
+        {
+          "bundleName": "Espresso.app",
+          "bundleIdentifier": "au.ixian.espresso"
+        }
+      ]
+    },
+    "farrago": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://cdn.rogueamoeba.com/farrago/download/Farrago.zip",
+      "artifactSHA256": "0ac96af8888fbfc067ff0c6360d2d630f393434fa7f82f28560b2620cd8e3d8d",
+      "apps": [
+        {
+          "bundleName": "Farrago.app",
+          "bundleIdentifier": "com.rogueamoeba.farrago"
+        }
+      ]
+    },
+    "f-bar": {
+      "caskVersion": "6.2.0",
+      "sourceURL": "https://app.laravel-forge-menubar.com/storage/releases/F-Bar_6.2.0.zip",
+      "artifactSHA256": "817d6720837f39f59cb60bbeb4d7a113b6fef8f52cd43c132549313b095b48bc",
+      "apps": [
+        {
+          "bundleName": "F-Bar.app",
+          "bundleIdentifier": "se.eastwest.F-Bar"
+        }
+      ]
+    },
+    "fastdmg": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://sveinbjorn.org/files/software/fastdmg/FastDMG-1.0.3.zip",
+      "artifactSHA256": "71d0854f7ed483b7e5b9bdad84e93377a617a1b3eff0d52a54fc79149e4f48ae",
+      "apps": [
+        {
+          "bundleName": "FastDMG.app",
+          "bundleIdentifier": "org.sveinbjorn.FastDMG"
+        }
+      ]
+    },
+    "etrecheckpro": {
+      "caskVersion": "6.8.16",
+      "sourceURL": "https://cdn.etrecheck.com/EtreCheckPro.zip",
+      "artifactSHA256": "2511a0cee365e9bae8651338c40ecea560e02c61e8ad11081cb1625da7705fbc",
+      "apps": [
+        {
+          "bundleName": "EtreCheckPro.app",
+          "bundleIdentifier": "com.etresoft.EtreCheck4"
+        }
+      ]
+    },
+    "fabric-app": {
+      "caskVersion": "0.2.11",
+      "sourceURL": "https://download.todesktop.com/220930m1ahpjvoh/Fabric%200.2.11-arm64-mac.zip",
+      "artifactSHA256": "ce31662fda4eff528a7bdc8a02c3b20b76dfd2f692f1b68cfac7c3d2f8e7a12b",
+      "apps": [
+        {
+          "bundleName": "Fabric.app",
+          "bundleIdentifier": "com.todesktop.220930m1ahpjvoh"
+        }
+      ]
+    },
+    "ev3-classroom": {
+      "caskVersion": "1.5.0.1",
+      "sourceURL": "https://education.lego.com/_/downloads/EV3_1.5.0.1_Global.dmg",
+      "artifactSHA256": "2cc1ed0ec0164c5b0a806ec7ad2193251a415352b318ad66a922af10b8d88f82",
+      "apps": [
+        {
+          "bundleName": "EV3Classroom.app",
+          "bundleIdentifier": "com.lego.ev3"
         }
       ]
     }
