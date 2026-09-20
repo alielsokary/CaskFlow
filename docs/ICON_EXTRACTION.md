@@ -100,17 +100,41 @@ Stdlib + stock macOS tooling only - no extra dependencies.
 Each successful archive inspection also writes `app_identities.json`. This is
 independent of icon extraction success. Entries record the cask version, source
 URL, actual archive SHA-256, installed bundle name, and `CFBundleIdentifier`.
-Only uniquely matched, explicitly declared `app` artifacts qualify. Source/target
-renames are honored; embedded helpers, symlinks, ambiguous duplicates, suite/pkg
-name guesses, and icon-selection fallbacks cannot establish app identity.
-Unsupported or ambiguous artifacts produce an empty `apps` list.
+Explicit `app` paths match case-insensitively with Unicode normalization, and
+source/target renames are honored. Generic `artifact` entries also qualify when
+they move an explicitly named `.app` directly into `/Applications` or `$APPDIR`
+without renaming it. Other destinations and generic-artifact renames remain
+unsupported. Suites must match their declared directory;
+their contained apps qualify without following embedded helpers. Package apps
+must have a verified payload and a `PackageInfo` install location beneath
+`/Applications`, including packages that install `Payload/Contents` as the app
+itself. Declared packages inside archives are expanded without executing scripts.
+Package identities retain the component's `packageIdentifier` and verified
+`installedPath` in both the raw manifest and consumer projection. Product packages
+must have an unconditional Distribution choice outline; only referenced components
+qualify. Cask `pkg` choices, conditional Distribution attributes, relocation, and
+installer scripts that select components are not evaluated. These cases produce
+explicit diagnostics instead of assuming every bundled component is installed.
+Symlinks, ambiguous duplicates, name guesses, and icon-selection fallbacks cannot
+establish app identity. Unsupported or ambiguous artifacts produce an empty
+`apps` list with `diagnostics`, also printed in the extraction log. For example,
+missing declared paths, invalid plists, and unsupported bundle identifiers have
+distinct reasons. Custom Ruby staging is not executed to manufacture missing
+suite directories. Bundle identifiers may have a single component (for example,
+Blockbench's `blockbench`); reverse-DNS form is typical, not mandatory in
+[Apple's specification](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
+Malformed identifiers remain rejected. Extraction version 4 revisits older empty
+records and older package records once. This recovers previously rejected
+single-component identifiers and rechecks package component selection and provenance.
 
 The existing batch publisher merges only inspected tokens into the icons branch.
 Failed downloads leave previous evidence intact. Daily releases merge the
 checked-in seed with the branch manifest (fresh records win, including empty
 records), add reviewed App Store variants from `data/app_identity_variants.json`,
 and publish the resulting manifest. A compact `appIdentities` projection is
-embedded in `categories.json`, with `metadataUpdatedAt` allowing identity-only
+embedded in `categories.json` independently of `tokenToCategory`: a verified
+identity need not wait for category classification. No category is guessed or
+added by identity publication. `metadataUpdatedAt` allows identity-only
 updates when the classification date is unchanged. Variant records require
 review evidence; neither shared names nor identifier prefixes prove a relation.
 
@@ -123,12 +147,39 @@ python3 scripts/extract_icons.py --identity-backfill --limit 25 --output-dir /tm
 
 This reuses normal archive download and expansion, without installing apps.
 Backfill revisits missing records or changed cask versions, URLs, or checked
-SHA-256 values. An empty result is not retried until those inputs change. For
+SHA-256 values. The identity selector includes app, suite, package, and supported
+generic app artifacts. An older empty or package record is also reinspected once
+after an `extractionVersion` upgrade; an empty result from the current extractor is not retried until its
+inputs change. Extraction failures retain normal bounded retries. For
 rolling `no_check` archives, use `--tokens` to force a fresh inspection. Add
-`--publish` only when ready to update the icons branch. Package payload identities
-and coverage beyond inspected artifacts remain absent until verified.
+`--publish` only when ready to update the icons branch. Identity backfill remains
+manual; these changes do not add a schedule. Coverage beyond inspected artifacts
+remains absent until verified.
 
 CaskHub consumes the optional projection using its release loader and bundled
 fallback. Older releases without the field remain readable. Unverified apps stay
 unassigned; a verified App Store variant can be recognized without becoming
 adoptable while its receipt is present.
+Publishing a suite's identities does not itself add support for detecting or
+adopting applications nested inside suite directories in CaskHub.
+
+## Coverage audit
+
+Use saved snapshots to distinguish actual published coverage from work that still
+needs inspection. This command does not download artifacts or publish anything:
+
+```sh
+python3 scripts/audit_identity_coverage.py --casks casks.json \
+  --identities app_identities.json --categories categories.json \
+  --report icon_report.json --output coverage.json
+```
+
+The report separates published identities, extracted-but-unpublished identities,
+empty inspections, failures, unsupported cases, and software outside application
+bundle coverage. `needsReinspection` is independent of publication: an existing
+identity can remain published while its package evidence needs refreshing.
+Custom installers require inspection of each installer family before support can
+be added. Command-line tools, plugins, drivers, and other non-application artifacts
+need their own detection mechanisms; an app identity is not a universal cask ID.
+Flat bundles with a root-level `Info.plist` are not currently inspected. CaskHub
+also requires separate work for flat bundles and nested suite applications.

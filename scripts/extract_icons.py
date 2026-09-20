@@ -18,7 +18,7 @@ from urllib.request import urlopen
 
 from style_standards import write_json
 
-from app_identities import (MANIFEST, declared_apps, load_manifest, merge_extractions,
+from app_identities import (MANIFEST, _safe_relative, artifact_matches, declared_artifact_apps, load_manifest, merge_extractions,
                             needs_refresh, record_extraction)
 
 from icons_state import (  # noqa: F401  (re-exported for curate_icons/tests)
@@ -58,7 +58,7 @@ def app_names_from_artifacts(cask: dict) -> list[str]:
                     names.append(entry)
                 elif isinstance(entry, dict) and isinstance(entry.get("target"), str):
                     names.append(entry["target"])
-    return names
+    return names + [source for source, _ in declared_artifact_apps(cask)]
 
 
 def has_pkg_artifact(cask: dict) -> bool:
@@ -216,6 +216,7 @@ def _expand_zip(artifact: Path, out: Path) -> Path:
 
 
 def _expand_pkg(artifact: Path, workdir: Path) -> Path:
+    workdir.mkdir(parents=True, exist_ok=True)
     pkg_out = workdir / "pkg"
     proc = run(["pkgutil", "--expand-full", str(artifact), str(pkg_out)])
     if proc.returncode != 0:
@@ -450,8 +451,11 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
             return "no_icon", f"unsupported container: {artifact.name}"
 
         root = expand(artifact, kind, workdir, mounts)
-        hit = _locate_app(cask, root, kind, workdir, mounts)
-        record_extraction(cask, workdir, artifact, output_dir)
+        expanded_packages: dict[Path, Path] = {}
+        hit = _locate_app(cask, root, kind, workdir, mounts, expanded_packages)
+        package_roots, diagnostics = _identity_package_roots(cask, root, kind, workdir, expanded_packages)
+        record_extraction(cask, workdir, artifact, output_dir,
+                          package_roots=tuple(package_roots), diagnostics=tuple(diagnostics))
         if hit is None:
             # Deterministic outcome (e.g. suite/pkg of CLI binaries) - park it
             # rather than burning retries. --tokens bypasses parked entries.
@@ -468,7 +472,8 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
 
 
 def _locate_app(cask: dict, root: Path, kind: str,
-                workdir: Path, mounts: list[Path]) -> tuple[Path, str] | None:
+                workdir: Path, mounts: list[Path],
+                expanded_packages: dict[Path, Path]) -> tuple[Path, str] | None:
     """Find the icon-bearing .app: payload root, direct walk, then nested archive."""
     token = cask["token"]
     wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
@@ -484,8 +489,41 @@ def _locate_app(cask: dict, root: Path, kind: str,
         if nested:
             inner, inner_kind = nested
             inner_root = expand(inner, inner_kind, workdir / "nested", mounts)
+            if inner_kind == "pkg":
+                expanded_packages[inner] = inner_root
             hit = find_app(inner_root, wanted, token)
     return hit
+
+
+def _declared_package_sources(cask: dict) -> list[str]:
+    return [source for stanza in cask.get("artifacts") or [] if isinstance(stanza, dict)
+            for source in stanza.get("pkg", []) if isinstance(source, str)]
+
+
+def _matching_packages(workdir: Path, source: str) -> list[Path]:
+    if not _safe_relative(source):
+        return []
+    return [p for p in workdir.rglob("*") if artifact_matches(p, source)
+            and p.is_file() and not p.is_symlink() and p.resolve().is_relative_to(workdir.resolve())]
+
+
+def _identity_package_roots(cask: dict, root: Path, kind: str, workdir: Path,
+                            expanded: dict[Path, Path]) -> tuple[list[Path], list[dict]]:
+    if not has_pkg_artifact(cask):
+        return [], []
+    if kind == "pkg":
+        return [root], []
+    roots, diagnostics = [], []
+    for source in _declared_package_sources(cask):
+        matches = _matching_packages(workdir, source)
+        if len(matches) != 1:
+            diagnostics.append({"artifact": source, "reason": f"declared package matched {len(matches)} files"})
+            continue
+        package = matches[0]
+        if package not in expanded:
+            expanded[package] = _expand_pkg(package, workdir / f"identity-package-{len(expanded)}")
+        roots.append(expanded[package])
+    return roots, diagnostics
 
 
 def _icon_status(app: Path, selection: str, dest_png: Path) -> tuple[str, str]:
@@ -723,7 +761,7 @@ def main(argv: list[str] | None = None) -> int:
         identities = json.loads(show.stdout).get("casks", {}) if show.returncode == 0 else {}
         counts = load_install_counts()
         from classify_new_casks import is_main_cask
-        batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None and declared_apps(c)
+        batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None
                  and needs_refresh(c, identities.get(c["token"]))
                  and report.get(c["token"], {}).get("attempts", 0) < MAX_ATTEMPTS]
         batch.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)
