@@ -24,9 +24,9 @@
       ]
     },
     "privacynotes": {
-      "caskVersion": "0.505.1",
-      "sourceURL": "https://releases.privacynotes.app/0.505.1/PrivacyNotes_0.505.1_universal.dmg",
-      "artifactSHA256": "7348674850aeaa7bd33ce111ad5fc4ca8f11f4f217b3e8ffef9633514838f5f4",
+      "caskVersion": "0.518.1",
+      "sourceURL": "https://releases.privacynotes.app/0.518.1/PrivacyNotes_0.518.1_universal.dmg",
+      "artifactSHA256": "30c3ca7b12445d2c1cfcf7c5e420c8cf5da85c7b1890d80ca3eed722f3aa7201",
       "apps": [
         {
           "bundleName": "PrivacyNotes.app",
@@ -27422,6 +27422,270 @@
         {
           "bundleName": "Pomello.app",
           "bundleIdentifier": "com.tinynudge.pomello"
+        }
+      ]
+    },
+    "protokol": {
+      "caskVersion": "0.6.6,138",
+      "sourceURL": "https://hexler.net/pub/protokol/protokol-0.6.6.138-macos.dmg",
+      "artifactSHA256": "924151856d54434521144e03bdc2fc2f472436b345b5795f51c04086de5c601f",
+      "apps": [
+        {
+          "bundleName": "Protokol.app",
+          "bundleIdentifier": "net.hexler.Protokol"
+        }
+      ]
+    },
+    "pretzel": {
+      "caskVersion": "2.13.2",
+      "sourceURL": "https://download.pretzel.rocks/Pretzel-2.13.2-universal-mac.zip",
+      "artifactSHA256": "6c35608d13bd890926f08e0e83f08abb8b703e9e2b521401b3b24278c89fa23e",
+      "apps": [
+        {
+          "bundleName": "Pretzel.app",
+          "bundleIdentifier": "rocks.pretzel"
+        }
+      ]
+    },
+    "profind": {
+      "caskVersion": "1.41",
+      "sourceURL": "https://www.zeroonetwenty.com/profind/downloads/ProFind141.dmg",
+      "artifactSHA256": "384dd212746d79c374143468974b4f65cc0c7ad57c25ac9dc0917c61046bf969",
+      "apps": [
+        {
+          "bundleName": "ProFind.app",
+          "bundleIdentifier": "com.zeroonetwenty.ProFind"
+        }
+      ]
+    },
+    "profit": {
+      "caskVersion": "1.0.0.58-stable",
+      "sourceURL": "https://downloadserver-cdn.nelogica.com.br/content/mac/stable/arm64/profit.dmg",
+      "artifactSHA256": "7d0029469a660a4269727313467fb9d1f381482d80ba4e4fe2ac58bcd00824be",
+      "apps": [
+        {
+          "bundleName": "Profit.app",
+          "bundleIdentifier": "com.nelogica.profit"
+        }
+      ]
+    },
+    "prowritingaid": {
+      "caskVersion": "2.5.41290",
+      "sourceURL": "https://cdn.prowritingaid.com/prowritingaid-desktop/desktop_2_5_41290/ProWritingAid.dmg",
+      "artifactSHA256": "4ca07e66fd934a0d45f39469518f870aa5afee8b083fd61468265423b384b924",
+      "apps": [
+        {
+          "bundleName": "ProWritingAid.app",
+          "bundleIdentifier": "com.orpheus.prowritingaid.mac"
+        }
+      ]
+    },
+    "prepros": {
+      "caskVersion": "7.40.2",
+      "sourceURL": "https://downloads.prepros.io/v7/7.40.2/Prepros-Mac-7.40.2.zip",
+      "artifactSHA256": "734c5a86c92d02a67b0b7447be6896863ab93c293751d9f41b51d273ed02f015",
+      "apps": [
+        {
+          "bundleName": "Prepros.app",
+          "bundleIdentifier": "io.prepros.prepros"
+        }
+      ]
+    },
+    "protopie": {
+      "caskVersion": "9.0.0",
+      "sourceURL": "https://release.protopie.io/ProtoPie-9.0.0-universal.dmg",
+      "artifactSHA256": "f0324271712b257563b45c45f5cd7f4b2dfae30721f330c75a5f5c697f78c902",
+      "apps": [
+        {
+          "bundleName": "ProtoPie.app",
+          "bundleIdentifier": "io.protopie"
+        }
+      ]
+    },
+    "principle": {
+      "caskVersion": "6.43",
+      "sourceURL": "https://principleformac.com/download/Principle_6_43.zip",
+      "artifactSHA256": "e6a2def395492c476563e6dc99fcce1e3872166b235b072f2b963dceae13ca96",
+      "apps": [
+        {
+          "bundleName": "Principle.app",
+          "bundleIdentifier": "com.danielhooper.principle"
+        }
+      ]
+    },
+    "privadovpn": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://privadovpn.com/apps/osx/PrivadoVPN.dmg",
+      "artifactSHA256": "df422f2d61e9f5a4894f118315299f55058ef2d879c5bae895038b35841509db",
+      "apps": [
+        {
+          "bundleName": "PrivadoVPN.app",
+          "bundleIdentifier": "io.privado.main"
+        }
+      ]
+    },
+    "processmonitor": {
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://bitbucket.org/objective-see/deploy/downloads/ProcessMonitor_1.5.0.zip",
+      "artifactSHA256": "6c5721def426de77bff61d672d076314d89fb6bad28969f3b15b9f8c87cbd591",
+      "apps": [
+        {
+          "bundleName": "ProcessMonitor.app",
+          "bundleIdentifier": "com.objective-see.processmonitor"
+        }
+      ]
+    },
+    "prizmo": {
+      "caskVersion": "4.7.1",
+      "sourceURL": "https://creaceed.s3.amazonaws.com/downloads/prizmo4_4.7.1.zip",
+      "artifactSHA256": "71f085b54ec6dde38a25675a81a9e799661fcd82b27629b28bbf8e88907d6456",
+      "apps": [
+        {
+          "bundleName": "Prizmo.app",
+          "bundleIdentifier": "com.creaceed.prizmo2"
+        }
+      ]
+    },
+    "propresenter": {
+      "caskVersion": "21.4,352583705",
+      "sourceURL": "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_21.4_352583705.zip",
+      "artifactSHA256": "a428409c5a59c0e1f0ced0d8788d521c75672fadd50ec15e20992a1fffbd4b9d",
+      "apps": [
+        {
+          "bundleName": "ProPresenter.app",
+          "bundleIdentifier": "com.renewedvision.propresenter"
+        }
+      ]
+    },
+    "provisionql": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/ealeksandrov/ProvisionQL/releases/download/2.0.0/ProvisionQL.dmg",
+      "artifactSHA256": "949a7a69d2920c2f00a1246c65d0fd93b78ef8237a88af5ac4dd0f24245bd01a",
+      "apps": [
+        {
+          "bundleName": "ProvisionQL.app",
+          "bundleIdentifier": "com.ealeksandrov.ProvisionQL"
+        }
+      ]
+    },
+    "proxygen-app": {
+      "caskVersion": "6.4",
+      "sourceURL": "https://download.proxygen.app/Proxygen.dmg",
+      "artifactSHA256": "e06cd0a6094b616cab3693de1b75928536eb7c4fbef862a51a1643deb3dcaca5",
+      "apps": [
+        {
+          "bundleName": "Proxygen.app",
+          "bundleIdentifier": "freshbits.Proxygen"
+        }
+      ]
+    },
+    "proclaim": {
+      "caskVersion": "4.20.0.0135",
+      "sourceURL": "https://downloads.logoscdn.com/Proclaim/Installer/4.20.0.0135/Proclaim-arm.dmg",
+      "artifactSHA256": "1f6ce2dcc2b7936d216b343475fad32d75dd2616f9b680e5abd23822e5889e8d",
+      "apps": [
+        {
+          "bundleName": "Proclaim.app",
+          "bundleIdentifier": "com.logos.proclaim"
+        }
+      ]
+    },
+    "prisma-studio": {
+      "caskVersion": "0.458.0",
+      "sourceURL": "https://github.com/prisma/studio/releases/download/v0.458.0/Prisma-Studio.dmg",
+      "artifactSHA256": "00dd82a9f8ab8f193f4d60b635edaac9f75b341f53c1ca0957efd898db1ba952",
+      "apps": [
+        {
+          "bundleName": "Prisma Studio.app",
+          "bundleIdentifier": "io.prisma.studio"
+        }
+      ]
+    },
+    "preform": {
+      "caskVersion": "3.63.0,651_156560",
+      "sourceURL": "https://downloads.formlabs.com/PreForm/Release/3.63.0/PreForm_mac_3.63.0_release_releaser_651_156560.dmg",
+      "artifactSHA256": "87ceb99335708872bd9e253140f379454ed1d5b3227a1d4fbd3d7caaea114695",
+      "apps": [
+        {
+          "bundleName": "PreForm.app",
+          "bundleIdentifier": "com.formlabs.PreForm"
+        }
+      ]
+    },
+    "productive": {
+      "caskVersion": "1.17.4",
+      "sourceURL": "https://download.productive.io/desktop/electron/Productive-1.17.4-arm64.dmg",
+      "artifactSHA256": "ed065f75a0726e2a269d2fd8fe78f50335851adc833e34058e4b5d16ec724cb1",
+      "apps": [
+        {
+          "bundleName": "Productive.app",
+          "bundleIdentifier": "io.productive"
+        }
+      ]
+    },
+    "progressive-downloader": {
+      "caskVersion": "9.8",
+      "sourceURL": "https://www.macpsd.net/update/9.8/PSD.dmg",
+      "artifactSHA256": "053d7eb9f8c8354a5f5240db502edd80eef6eb11dc1a0c4d4a1f71fc6c59d7c0",
+      "apps": [
+        {
+          "bundleName": "Progressive Downloader.app",
+          "bundleIdentifier": "com.PS.PSD"
+        }
+      ]
+    },
+    "printopia": {
+      "caskVersion": "3.0.23",
+      "sourceURL": "https://download.decisivetactics.com/downloads/printopia/Printopia_3.0.23.zip",
+      "artifactSHA256": "3211bc9136eaa1db849df4109e04e51122032003c1717067d2db92561a54dfee",
+      "apps": [
+        {
+          "bundleName": "Printopia.app",
+          "bundleIdentifier": "com.decisivetactics.printopia"
+        }
+      ]
+    },
+    "protoio-overflow": {
+      "caskVersion": "3.5.405",
+      "sourceURL": "https://app-updates.overflow.io/packages/updates/osx_64/d37e5a83f1842cf59085310d43389b17dc73069b/Overflow-3.5.405.dmg",
+      "artifactSHA256": "22148f2248a47d4923e85b606130e13e6340bc9b61649ad583eda65182163cce",
+      "apps": [
+        {
+          "bundleName": "Overflow.app",
+          "bundleIdentifier": "io.overflow.mac.app"
+        }
+      ]
+    },
+    "proscoreboard": {
+      "caskVersion": "7.3.1,117637377",
+      "sourceURL": "https://renewedvision.com/downloads/ProScoreboard_7.3.1_117637377.zip",
+      "artifactSHA256": "00b177a9e818bdf41812e64113d03a301961e25a582d0652c34891d0dc5ca5ae",
+      "apps": [
+        {
+          "bundleName": "ProScoreboard.app",
+          "bundleIdentifier": "com.renewedvision.Scoreboard"
+        }
+      ]
+    },
+    "provideoplayer": {
+      "caskVersion": "3.8,50855942",
+      "sourceURL": "https://renewedvision.com/downloads/ProVideoPlayer_3.8_50855942.zip",
+      "artifactSHA256": "40c9f6397d6a3613906629f8fce70eafa5a342677c5c43436247d027f8f11911",
+      "apps": [
+        {
+          "bundleName": "ProVideoPlayer.app",
+          "bundleIdentifier": "com.renewedvision.pvp3"
+        }
+      ]
+    },
+    "prettyclean": {
+      "caskVersion": "0.1.39",
+      "sourceURL": "https://downloads.jmotor.org/prettyclean/v0.1.39/darwin-aarch64/PrettyClean_0.1.39_aarch64.dmg",
+      "artifactSHA256": "ba0cc38b5850b30e88ff62390e055e2508ec4d41052e709ecbd73b8c09911c1d",
+      "apps": [
+        {
+          "bundleName": "PrettyClean.app",
+          "bundleIdentifier": "cc.prettyclean.PrettyClean"
         }
       ]
     }
