@@ -449,17 +449,17 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "direqual": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "diskspace": {
     "status": "curated",
     "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
     "attempts": 0,
     "updated": "2026-07-09"
-  },
-  "display-pilot": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
-    "updated": "2026-09-20"
   },
   "dotnet-runtime": {
     "status": "curated",

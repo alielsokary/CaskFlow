@@ -17738,6 +17738,265 @@
           "bundleIdentifier": "com.apptorium.DesktopComposer"
         }
       ]
+    },
+    "diversion-app": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://download.todesktop.com/240506tnendbebc/Diversion%20Desktop%200.8.0-arm64.dmg",
+      "artifactSHA256": "bfee67bdc52f5a47b9d912fbbb14b69453409044ff6ffff87dedc39565add00c",
+      "apps": [
+        {
+          "bundleName": "Diversion Desktop.app",
+          "bundleIdentifier": "com.todesktop.240506tnendbebc"
+        }
+      ]
+    },
+    "ditto": {
+      "caskVersion": "1.11.10",
+      "sourceURL": "https://download.airsquirrels.com/Ditto/App/Mac/Ditto-1.11.10.dmg",
+      "artifactSHA256": "9882c093c86f12743b6fd1e8cf980f2a74d1ee5e887cd77c8ed7ca6d2e0ef9fb",
+      "apps": [
+        {
+          "bundleName": "Ditto.app",
+          "bundleIdentifier": "com.squirrels.Ditto"
+        }
+      ]
+    },
+    "disk-jockey": {
+      "caskVersion": "4.1.1",
+      "sourceURL": "https://diskjockey.onegeekarmy.eu/files/diskjockey/Disk-Jockey.app.zip",
+      "artifactSHA256": "90d9852e05bf18445d3ff1c92e7e8cdbd7b734e5a0a4cb500b99bce0169c87d0",
+      "apps": [
+        {
+          "bundleName": "Disk Jockey.app",
+          "bundleIdentifier": "One-Geek-Army.Disk-Jockey"
+        }
+      ]
+    },
+    "dictionaries": {
+      "caskVersion": "2.9",
+      "sourceURL": "https://download.dictionaries.io/mac/Dictionaries-2.9.zip",
+      "artifactSHA256": "c4c189f0f4a80874e30777457ef089af5bafb27f5ceebec5e382d80fea99133c",
+      "apps": [
+        {
+          "bundleName": "Dictionaries.app",
+          "bundleIdentifier": "io.dictionaries.Dictionaries"
+        }
+      ]
+    },
+    "digiexam": {
+      "caskVersion": "26.3.17",
+      "sourceURL": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
+      "artifactSHA256": "8ed5150e48b21ce5c507992ba3a60193926dd60dfa5a06a8a962f214b40a3c58",
+      "apps": [
+        {
+          "bundleName": "Digiexam.app",
+          "bundleIdentifier": "com.digiexam.student"
+        }
+      ]
+    },
+    "djstudio": {
+      "caskVersion": "4.2.13",
+      "sourceURL": "https://download.dj.studio/DJ.Studio-4.2.13-arm64.dmg",
+      "artifactSHA256": "eae2a0850479649ea541a1eb83f0134c6207e38de806b9bedc7a02884369fcb7",
+      "apps": [
+        {
+          "bundleName": "DJ.Studio.app",
+          "bundleIdentifier": "dj.studio.app"
+        }
+      ]
+    },
+    "diagnostics": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://github.com/macmade/Diagnostics/releases/download/1.4.1/Diagnostics.app.zip",
+      "artifactSHA256": "dac94f1e6b32224648d8d4a902acfb50e4b75a0cf295b508589858594899ef8f",
+      "apps": [
+        {
+          "bundleName": "Diagnostics.app",
+          "bundleIdentifier": "com.xs-labs.Diagnostics"
+        }
+      ]
+    },
+    "displaperture": {
+      "caskVersion": "3.0",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/displaperture300.dmg",
+      "artifactSHA256": "aae036ad827760d949791989125fd1c7cbe1dbdc30e5726836aa63ccde78aadc",
+      "apps": [
+        {
+          "bundleName": "Displaperture.app",
+          "bundleIdentifier": "com.manytricks.Displaperture"
+        }
+      ]
+    },
+    "dhs": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/objective-see/DylibHijackScanner/releases/download/v1.6.0/DHS_1.6.0.zip",
+      "artifactSHA256": "3e72ffa559332afb65a83bfbc3b5973064aac9a424dee9cc8bc57e63f86d728f",
+      "apps": [
+        {
+          "bundleName": "DHS.app",
+          "bundleIdentifier": "com.objective-see.DHS"
+        }
+      ]
+    },
+    "devonsphere-express": {
+      "caskVersion": "1.9.9",
+      "sourceURL": "https://download.devontechnologies.com/download/devonsphere/1.9.9/DEVONsphere_Express.app.zip",
+      "artifactSHA256": "2c09a34fa71398e6f248bc0c6bd34a8278d5d19a4ba8e0f4a9b3864070d962e9",
+      "apps": [
+        {
+          "bundleName": "DEVONsphere Express.app",
+          "bundleIdentifier": "com.devon-technologies.sphereexpress"
+        }
+      ]
+    },
+    "djv": {
+      "caskVersion": "3.6.0",
+      "sourceURL": "https://github.com/grizzlypeak3d/DJV/releases/download/3.6.0/DJV-3.6.0-macOS-arm64.dmg",
+      "artifactSHA256": "dcd355bb39325205db74d66d8223402c24101780339a3cc6563b585a20713bfe",
+      "apps": [
+        {
+          "bundleName": "djv.app",
+          "bundleIdentifier": "com.grizzlypeak3d.djv"
+        }
+      ]
+    },
+    "displays": {
+      "caskVersion": "1.9.10",
+      "sourceURL": "https://www.jibapps.com/ressources/displays/files/Displays.1.9.10.zip",
+      "artifactSHA256": "3e40e462fd9bf1a881c996cbc5695f1f1772dafeab8726a52be94d4410caf139",
+      "apps": [
+        {
+          "bundleName": "Displays.app",
+          "bundleIdentifier": "com.jibapps.Displays"
+        }
+      ]
+    },
+    "divvy": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://mizage.com/downloads/Divvy_1.5.1.zip",
+      "artifactSHA256": "2823c41a8d5e4f0e27760a87b1fdb8acf9b6a48eef4074421e6daa1119f89a53",
+      "apps": [
+        {
+          "bundleName": "Divvy.app",
+          "bundleIdentifier": "com.mizage.direct.Divvy"
+        }
+      ]
+    },
+    "displaybuddy": {
+      "caskVersion": "3.9.6",
+      "sourceURL": "https://displaybuddy.app/public/DisplayBuddy_3.9.6.dmg",
+      "artifactSHA256": "0bfb8db0fa598e137f3778f9e0a22f49e43593a252a4fce1d37d0b944c35d05a",
+      "apps": [
+        {
+          "bundleName": "DisplayBuddy.app",
+          "bundleIdentifier": "com.sids.DisplayBuddy"
+        }
+      ]
+    },
+    "disk-diet": {
+      "caskVersion": "5.6.3",
+      "sourceURL": "https://www.tunabellysoftware.com/resources/Disk%20Diet%205.6.3.dmg",
+      "artifactSHA256": "77a1c476fd0d9bb710b1fbccd45509a62f9839b5668a84c6336bdbbab0cda341",
+      "apps": [
+        {
+          "bundleName": "Disk Diet.app",
+          "bundleIdentifier": "com.tunabellysoftware.diskdiet"
+        }
+      ]
+    },
+    "disk-expert": {
+      "caskVersion": "6.0.2,572",
+      "sourceURL": "https://download.nektony.com/download/diskexpert/disk-space-analyzer.dmg?build=572",
+      "artifactSHA256": "5fb32114f9be3a236e5b92c04baea57e272b7a64e66b5ebfacb24e2c36660b19",
+      "apps": [
+        {
+          "bundleName": "Disk Expert 6.app",
+          "bundleIdentifier": "com.nektony.Disk-Expert-SIII"
+        }
+      ]
+    },
+    "display-pilot": {
+      "caskVersion": "1.12.8.0,260916093237",
+      "sourceURL": "https://esupportdownload.benq.com/esupport/VERTICAL%20&%20PROFESSIONAL%20DISPLAY/Software/Display%20Pilot%202/Display%20Pilot%202%20for%20Mac_V1.12.8.0_Mac_260916093237.zip",
+      "artifactSHA256": "20d0e1759afcb243c3348a241f954fa01a3b5dc77a8330c77e9cebedab09a7c4",
+      "apps": [
+        {
+          "bundleName": "Display Pilot 2.app",
+          "bundleIdentifier": "com.benq.DisplayPilot2"
+        }
+      ]
+    },
+    "devknife": {
+      "caskVersion": "1.18.1",
+      "sourceURL": "https://files.solotuna.com/devknife/DevKnife-1.18.1.dmg",
+      "artifactSHA256": "94df5154892c4b4053a59ee8d46bff6c46891f74c3f5493cc94b8d4558ab9e94",
+      "apps": [
+        {
+          "bundleName": "DevKnife.app",
+          "bundleIdentifier": "com.solotuna.devknife"
+        }
+      ]
+    },
+    "devkinsta": {
+      "caskVersion": "2.13.6",
+      "sourceURL": "https://devkinsta-updates.s3.amazonaws.com/DevKinsta-2.13.6-arm64.zip",
+      "artifactSHA256": "16dc1b81a1d8d45b6ae6611f9de899f6e7a5be59a2a8c80a0d0edd504afa0303",
+      "apps": [
+        {
+          "bundleName": "DevKinsta.app",
+          "bundleIdentifier": "org.kinsta.DevKinsta"
+        }
+      ]
+    },
+    "dmg-canvas": {
+      "caskVersion": "4.2.3",
+      "sourceURL": "https://arweb-assets.s3.amazonaws.com/downloads/dmgcanvas/versions/DMGCanvas4.2.3.zip",
+      "artifactSHA256": "38cc30ea79325142386f23b94302f1b9eb3fb0b4a8dbf05305ca11a82f0cd54a",
+      "apps": [
+        {
+          "bundleName": "DMG Canvas.app",
+          "bundleIdentifier": "com.araelium.dmgcanvas"
+        }
+      ]
+    },
+    "diskcatalogmaker": {
+      "caskVersion": "9.3.1",
+      "sourceURL": "https://diskcatalogmaker.com/download/zip/DiskCatalogMaker931.zip",
+      "artifactSHA256": "929f60b1000a7dae420ded33a1d8a1b68bbf53edb8ca84db3158931da00c5e70",
+      "apps": [
+        {
+          "bundleName": "DiskCatalogMaker.app",
+          "bundleIdentifier": "com.mac.fujisoft.DiskCatalogMaker"
+        }
+      ]
+    },
+    "devonagent": {
+      "caskVersion": "3.11.11",
+      "sourceURL": "https://download.devontechnologies.com/download/devonagent/3.11.11/DEVONagent_Pro.app.zip",
+      "artifactSHA256": "470cb01ae5543fd60c846973437610a0c90c3ffd62999bdb9df560f51d5a5cde",
+      "apps": [
+        {
+          "bundleName": "DEVONagent.app",
+          "bundleIdentifier": "com.devon-technologies.agent"
+        }
+      ]
+    },
+    "dintch": {
+      "caskVersion": "1.8,2025.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/07/dintch18.zip",
+      "artifactSHA256": "4f336dcfc77fcc2c253a1d3b0684a47a1281f6e9fb9bb1b70040b6d27f5edd41",
+      "apps": [
+        {
+          "bundleName": "Dintch.app",
+          "bundleIdentifier": "co.eclecticlight.Dintch"
+        }
+      ]
+    },
+    "dixa": {
+      "caskVersion": "4.0.12",
+      "sourceURL": "https://github.com/dixahq/dixa-desktop-app-release/releases/download/v4.0.12/dixa-4.0.12.dmg",
+      "artifactSHA256": "a4e1a30d074e724ba24e9e2674a72bc4050f00161fb7dc23295a2c189ecda5bb",
+      "apps": []
     }
   }
 }
