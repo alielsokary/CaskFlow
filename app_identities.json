@@ -372,9 +372,9 @@
       ]
     },
     "snapline": {
-      "caskVersion": "2.37.0",
-      "sourceURL": "https://snap-line.app/updates/Snapline-2.37.0.zip",
-      "artifactSHA256": "58f208c6b1021459a2b7301249ae52021e4645cb6b428ac96cf9b78f98ea903e",
+      "caskVersion": "2.38.0",
+      "sourceURL": "https://snap-line.app/updates/Snapline-2.38.0.zip",
+      "artifactSHA256": "b0b82582b9adb2c3c61cc8fa300de23935cd65de70e0ad3898db5b40363992d1",
       "apps": [
         {
           "bundleName": "Snapline.app",
@@ -29927,6 +29927,259 @@
         {
           "bundleName": "sleek.app",
           "bundleIdentifier": "com.todotxt.sleek"
+        }
+      ]
+    },
+    "snapmaker-luban": {
+      "caskVersion": "4.15.0",
+      "sourceURL": "https://github.com/snapmaker/luban/releases/download/v4.15.0/Snapmaker-Luban-4.15.0-mac-arm64.dmg",
+      "artifactSHA256": "19dfeb650f2b4eae56b1226ab99c36f79c61185895fcf56b9430c1d56f06cc3f",
+      "apps": [
+        {
+          "bundleName": "Snapmaker Luban.app",
+          "bundleIdentifier": "com.snapmaker.luban"
+        }
+      ]
+    },
+    "snippety": {
+      "caskVersion": "11.4.149",
+      "sourceURL": "https://snippety.app/releases/Snippety-11.4.149.dmg",
+      "artifactSHA256": "1edf0fde902c6acfe9d74dbf2a10480a4df94a0a0f8b06ae3a5b28384f0394fb",
+      "apps": [
+        {
+          "bundleName": "Snippety.app",
+          "bundleIdentifier": "pl.wojciechkulik.Snippety"
+        }
+      ]
+    },
+    "smartreporter-free": {
+      "caskVersion": "3.2.0",
+      "sourceURL": "https://www.corecode.io/downloads/smartreporter_3.2.0.zip",
+      "artifactSHA256": "5e22b45fea538245d2100b77d45180e3ff978a473e81a8e624bd497a94adefce",
+      "apps": [
+        {
+          "bundleName": "SMARTReporter Free.app",
+          "bundleIdentifier": "com.corecode.SMARTReporter"
+        }
+      ]
+    },
+    "socialstream": {
+      "caskVersion": "0.4.18",
+      "sourceURL": "https://github.com/steveseguin/social_stream/releases/download/v0.4.18/socialstreamninja_mac_v0.4.18_arm64.dmg",
+      "artifactSHA256": "6f45d36dff6ae4ace9e2b3b51ba326d17a4c32f2cc502bf1e4938b5e31629395",
+      "apps": [
+        {
+          "bundleName": "socialstream.app",
+          "bundleIdentifier": "socialstream.electron"
+        }
+      ]
+    },
+    "slideshower": {
+      "caskVersion": "4.10",
+      "sourceURL": "https://slideshower.com/slideshower_4_10.dmg",
+      "artifactSHA256": "e1866f8814e60cd1713036da1f664847d4c51db4654b17474eaf95569b7b18e7",
+      "apps": [
+        {
+          "bundleName": "Slideshower for macOS.app",
+          "bundleIdentifier": "trybulski.slideshower"
+        }
+      ]
+    },
+    "sofa-server": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://flavio.tordini.org/files/sofa/sofa-server.dmg",
+      "artifactSHA256": "16b04ce918489eafe8ed79c1a443b04fe127d27979ba85958ba2b59c7c0e0cc8",
+      "apps": [
+        {
+          "bundleName": "Sofa Server.app",
+          "bundleIdentifier": "org.tordini.flavio.sofa-server"
+        }
+      ]
+    },
+    "snapndrag": {
+      "caskVersion": "4.5.6",
+      "sourceURL": "https://yellowmug.com/download/SnapNDrag_4.5.6.dmg",
+      "artifactSHA256": "70c798897eda2b45e13f9b31258c197bed3e43f9364de199e1b5707fb6091f5f",
+      "apps": [
+        {
+          "bundleName": "SnapNDrag.app",
+          "bundleIdentifier": "com.yellowmug.SnapNDrag"
+        }
+      ]
+    },
+    "slite": {
+      "caskVersion": "1.6.1,260828mtti4851m",
+      "sourceURL": "https://download.todesktop.com/20062929x31pwfi/Slite%201.6.1%20-%20Build%20260828mtti4851m-arm64-mac.zip",
+      "artifactSHA256": "e7121a882260baaca19ec71e1a4504c9ed903b33aaa5a5892ff776dd2550ebf7",
+      "apps": [
+        {
+          "bundleName": "Slite.app",
+          "bundleIdentifier": "com.slite.desktop"
+        }
+      ]
+    },
+    "smooze-pro": {
+      "caskVersion": "2.2.8",
+      "sourceURL": "https://smooze.co/pro/updates/SmoozePro.dmg",
+      "artifactSHA256": "ab683325b49922221106551353359b57745f8c90632a229ee22ea6ae2787eb36",
+      "apps": [
+        {
+          "bundleName": "Smooze Pro.app",
+          "bundleIdentifier": "co.smoozepro.macos"
+        }
+      ]
+    },
+    "smoothcapture": {
+      "caskVersion": "1.2.62",
+      "sourceURL": "https://download.smoothcapture.app/SmoothCapture-1.2.62.dmg",
+      "artifactSHA256": "a10a59e46f998333da24fe58869ccfecd2d96a04d187cd34ce78fe5fbb8a7390",
+      "apps": [
+        {
+          "bundleName": "SmoothCapture.app",
+          "bundleIdentifier": "com.vu.SmoothCapture"
+        }
+      ]
+    },
+    "sms-plus": {
+      "caskVersion": "1.3.7",
+      "sourceURL": "https://www.bannister.org/software/dlh/smsplus-137.zip",
+      "artifactSHA256": "f9dfd7223102cb12df8d2fd8ac0b15aab2e2f699978ff9d68974c7cbd6b33c59",
+      "apps": [
+        {
+          "bundleName": "SMS Plus.app",
+          "bundleIdentifier": "com.bannister.SMSPlus"
+        }
+      ]
+    },
+    "smart-converter-pro": {
+      "caskVersion": "3.1.6",
+      "sourceURL": "https://download.shedworx.com/scp3/SmartConverterPro-3.1.6.dmg",
+      "artifactSHA256": "11dd10462c6823a63e46f935817f86e8e263c1e9a6a43c64a8dca56344b45b66",
+      "apps": [
+        {
+          "bundleName": "Smart Converter Pro 3.app",
+          "bundleIdentifier": "com.shedworx.smartconverterpro3"
+        }
+      ]
+    },
+    "sodamusic": {
+      "caskVersion": "3.7.0,452316191",
+      "sourceURL": "https://lf-luna-release.qishui.com/obj/luna-release/3.7.0/452316191/SodaMusic-v3.7.0-official-darwin_universal.dmg",
+      "artifactSHA256": "6f1aed0aba0e2b958a1f579acae5336e0bd2d5a27c35936604379dcc4169fc62",
+      "apps": [
+        {
+          "bundleName": "汽水音乐.app",
+          "bundleIdentifier": "com.soda.music"
+        }
+      ]
+    },
+    "smartsheet": {
+      "caskVersion": "1.0.54",
+      "sourceURL": "https://builds.desktopapp.smartsheet.com/public/darwin/Smartsheet-setup.dmg",
+      "artifactSHA256": "4a108900a0d6316cbefb7202d3461dc8006fb262d6e83ae9bc90010241505ce0",
+      "apps": [
+        {
+          "bundleName": "Smartsheet.app",
+          "bundleIdentifier": "com.smartsheet.desktopapp"
+        }
+      ]
+    },
+    "slidepilot": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://slidepilotapp.com/updates/SlidePilot-1.8.0.zip",
+      "artifactSHA256": "bc8bf077a504cdb2d09d7adee313e408d40063e66e2c0d8722c6678e4ee5cc20",
+      "apps": [
+        {
+          "bundleName": "SlidePilot.app",
+          "bundleIdentifier": "de.pascalbraband.SlidePilot"
+        }
+      ]
+    },
+    "smultron": {
+      "caskVersion": "14.5,14500",
+      "sourceURL": "https://www.peterborgapps.com/downloads/Smultron14.zip",
+      "artifactSHA256": "bf8cd653e6b0ec6b0c76f42731ddefe9dad2c57b43179898b9ba9e1dc784dbad",
+      "apps": [
+        {
+          "bundleName": "Smultron.app",
+          "bundleIdentifier": "com.peterborgapps.Smultron14"
+        }
+      ]
+    },
+    "snapmaker-orca": {
+      "caskVersion": "2.3.5",
+      "sourceURL": "https://github.com/snapmaker/orcaslicer/releases/download/v2.3.5/Snapmaker_Orca_Mac_universal_V2.3.5.dmg",
+      "artifactSHA256": "2fb75ef060556ed6a67863202e767842a4f778138f9ac2b464331ae0a424a663",
+      "apps": [
+        {
+          "bundleName": "Snapmaker Orca.app",
+          "bundleIdentifier": "com.snapmaker.snapmaker-orca"
+        }
+      ]
+    },
+    "sococo": {
+      "caskVersion": "6.12.2",
+      "sourceURL": "https://s.sococo.com/rs/client/mac/sococo-client-mac.dmg",
+      "artifactSHA256": "5f98f143fbbde959f35cb6d5fb3bab7caa5ec1659452fa5e82e5b306355f033a",
+      "apps": [
+        {
+          "bundleName": "Sococo.app",
+          "bundleIdentifier": "com.electron.sococo"
+        }
+      ]
+    },
+    "soduto": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://soduto.com/downloads/Soduto_v1.0.1.dmg",
+      "artifactSHA256": "ccd412fce497bb9b7822fc702c65792b5354711b6dfc1e028fb12cd7f202931f",
+      "apps": [
+        {
+          "bundleName": "Soduto.app",
+          "bundleIdentifier": "com.soduto.Soduto"
+        }
+      ]
+    },
+    "smartsynchronize": {
+      "caskVersion": "4.6.3",
+      "sourceURL": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-aarch64-4_6_3.dmg",
+      "artifactSHA256": "980d3d4d95d1f19a6eaa15d2564d852107e02ba07cc9c1097e69627b27731c83",
+      "apps": [
+        {
+          "bundleName": "SmartSynchronize.app",
+          "bundleIdentifier": "com.syntevo.smartsynchronize"
+        }
+      ]
+    },
+    "slippi-dolphin": {
+      "caskVersion": "3.6.4",
+      "sourceURL": "https://github.com/project-slippi/Ishiiruka/releases/download/v3.6.4/FM-Slippi-3.6.4-Mac.dmg",
+      "artifactSHA256": "f9732bc93370f74dc4dd52194a5182018b4272b1dfbb4cb001a972b9b89ae82f",
+      "apps": [
+        {
+          "bundleName": "Slippi Dolphin.app",
+          "bundleIdentifier": "com.project-slippi.dolphin"
+        }
+      ]
+    },
+    "smoothscroll": {
+      "caskVersion": "1.7.6",
+      "sourceURL": "https://www.smoothscroll.net/mac/download/SmoothScroll.app.zip",
+      "artifactSHA256": "f5802719ea63bd71d7f431740666aafb7e61b05cc9a0035ae07bbfb23747dcac",
+      "apps": [
+        {
+          "bundleName": "SmoothScroll.app",
+          "bundleIdentifier": "com.galambalazs.SmoothScroll"
+        }
+      ]
+    },
+    "snapmotion": {
+      "caskVersion": "5.3.0",
+      "sourceURL": "https://neededapps.com/appcasts/snapmotion/versions/5.3.0",
+      "artifactSHA256": "c5fbf20c42b388e81e8d01c73b3f6795bcc9e63d1f2b7690ebd77fe0ae151677",
+      "apps": [
+        {
+          "bundleName": "SnapMotion.app",
+          "bundleIdentifier": "com.jeremyvizzini.snapmotion-paddle"
         }
       ]
     }

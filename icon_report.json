@@ -1391,6 +1391,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "smartgit": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got fe4a8083e257...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "sonarqube-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
