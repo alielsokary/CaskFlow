@@ -20526,6 +20526,266 @@
           "bundleIdentifier": "org.ghostvm.ghostvm"
         }
       ]
+    },
+    "grs-bluewallet": {
+      "caskVersion": "6.4.5",
+      "sourceURL": "https://github.com/Groestlcoin/BlueWallet/releases/download/v6.4.5/GRS.BlueWallet.dmg",
+      "artifactSHA256": "adc4cbcd4bdbaf6dce36c701fb278ae52cd72b29b10d38aaf1a5d18719016496",
+      "apps": [
+        {
+          "bundleName": "GRS BlueWallet.app",
+          "bundleIdentifier": "org.groestlcoin.bluewallet123"
+        }
+      ]
+    },
+    "gplates": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://www.earthbyte.org/download/10116/",
+      "artifactSHA256": "5aff168e5011928fa717907ef3a8066ad2dc60011b1227f65aaa11b14d38c13a",
+      "apps": []
+    },
+    "gray": {
+      "caskVersion": "0.17.0",
+      "sourceURL": "https://github.com/zenangst/Gray/releases/download/0.17.0/Gray.zip",
+      "artifactSHA256": "631e13cf28bae804e7e1a77cddaf2277f91d2de0c45c6fd7805a7c0eac627edd",
+      "apps": [
+        {
+          "bundleName": "Gray.app",
+          "bundleIdentifier": "com.zenangst.Gray"
+        }
+      ]
+    },
+    "gyazmail": {
+      "caskVersion": "1.8",
+      "sourceURL": "https://gyazsquare.com/download/GyazMail-1.8.dmg",
+      "artifactSHA256": "6d8b78109cbd119f6b6dca20b23ed79ac820d6ea0f09c607ae21ea03acba67ea",
+      "apps": [
+        {
+          "bundleName": "GyazMail.app",
+          "bundleIdentifier": "jp.gyazsquare.GyazMail"
+        }
+      ]
+    },
+    "hapigo": {
+      "caskVersion": "2.22.1",
+      "sourceURL": "https://dl.hapigo.com/HapiGo_2.22.1.dmg",
+      "artifactSHA256": "3dea65cabd50e104a229aa6e70b9ec6ed9670a6dc37f4bf2e4e5e20659111352",
+      "apps": [
+        {
+          "bundleName": "HapiGo.app",
+          "bundleIdentifier": "com.xunyong.hapigo"
+        }
+      ]
+    },
+    "google-analytics-opt-out": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://dl.google.com/release2/Analytics-Opt-Out/akrwr324vy2vt735ezemhey3ui_1.0.2/GoogleAnalyticsOptOut.dmg",
+      "artifactSHA256": "3062d1470d6a18efe2afef62e57ab3632a80b29e6b94497f34332f47e960c748",
+      "apps": [
+        {
+          "bundleName": "Google Analytics Opt Out.app",
+          "bundleIdentifier": "com.google.AnalyticsOptOutSafari"
+        }
+      ]
+    },
+    "goodsync": {
+      "caskVersion": "12.11.6",
+      "sourceURL": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
+      "artifactSHA256": "8407f1e238c15610fbb4d588f061f4c2b9f26fdfcf45554f9d365836eeb7faaf",
+      "apps": [
+        {
+          "bundleName": "GoodSync.app",
+          "bundleIdentifier": "com.sibersystems.goodsyncmac2000"
+        }
+      ]
+    },
+    "ha-menu": {
+      "caskVersion": "2.7.1",
+      "sourceURL": "https://github.com/codechimp-org/ha-menu/releases/download/2.7.1/HA.Menu.zip",
+      "artifactSHA256": "762d0f68ca71aff675df74f3aa6ffb03580dadc6e37ee880ba8c9284a8d1b9b2",
+      "apps": [
+        {
+          "bundleName": "HA Menu.app",
+          "bundleIdentifier": "org.codechimp.HA-Menu"
+        }
+      ]
+    },
+    "grandtotal": {
+      "caskVersion": "9.5.1.29",
+      "sourceURL": "https://www.mediaatelier.com/GrandTotal9/GrandTotal_9.5.1.29.dmg",
+      "artifactSHA256": "3b467666934dd94c3a69691004ef5239ff3fa2ed12ae162f814f883d29fc3055",
+      "apps": [
+        {
+          "bundleName": "GrandTotal.app",
+          "bundleIdentifier": "com.mediaatelier.GrandTotal3"
+        }
+      ]
+    },
+    "goxel": {
+      "caskVersion": "0.15.1",
+      "sourceURL": "https://github.com/guillaumechereau/goxel/releases/download/v0.15.1/goxel-0.15.1-mac.zip",
+      "artifactSHA256": "5a9213166e77bbb80f839499943af37524f5866f37d1948bcaddf9a3fec8f27a",
+      "apps": []
+    },
+    "greenfoot": {
+      "caskVersion": "3.9.0",
+      "sourceURL": "https://www.greenfoot.org/download/files/Greenfoot-mac-aarch64-390.dmg",
+      "artifactSHA256": "410c7e749a41e55a56bb455cd36314da7192381be061dcb00b6467de037f40f3",
+      "apps": [
+        {
+          "bundleName": "Greenfoot.app",
+          "bundleIdentifier": "org.greenfoot.Greenfoot"
+        }
+      ]
+    },
+    "grayjay": {
+      "caskVersion": "17",
+      "sourceURL": "https://updater.grayjay.app/Apps/Grayjay.Desktop/17/Grayjay.Desktop-osx-arm64-v17.zip",
+      "artifactSHA256": "d19c6a57cd925424a92806d96796ab1a031b7e9ae9deaa312fe411a5b3d456aa",
+      "apps": [
+        {
+          "bundleName": "Grayjay.app",
+          "bundleIdentifier": "com.futo.grayjay.desktop"
+        }
+      ]
+    },
+    "gopanda": {
+      "caskVersion": "2.8.3",
+      "sourceURL": "https://pandanet-igs.com/gopanda2/download/GoPanda2.dmg",
+      "artifactSHA256": "154c789bc4820d1fd332accd01d1fbcb6f117335a792392995fc5e42499b76e3",
+      "apps": [
+        {
+          "bundleName": "GoPanda2.app",
+          "bundleIdentifier": "pandanet.gopanda"
+        }
+      ]
+    },
+    "guilded": {
+      "caskVersion": "1.0.9329126",
+      "sourceURL": "https://www.guilded.gg/AppBuilds/mac/Guilded-1.0.9329126-release.dmg",
+      "artifactSHA256": "9bc9cf6eba9db14351be4be5cf1f3f1f8f233671645cf5ffa93628d854fc70e6",
+      "apps": [
+        {
+          "bundleName": "Guilded.app",
+          "bundleIdentifier": "com.electron.guilded"
+        }
+      ]
+    },
+    "gologin": {
+      "caskVersion": "4.12.4",
+      "sourceURL": "https://releases-arm.gologin.com/Gologin-4.12.4-arm64.dmg",
+      "artifactSHA256": "7cfa4ddcaaabdde1d18e17ee0924c56762f7374745b5933658770b28548b09c6",
+      "apps": [
+        {
+          "bundleName": "Gologin.app",
+          "bundleIdentifier": "com.gologin.desktop"
+        }
+      ]
+    },
+    "google-web-designer": {
+      "caskVersion": "14.0.1.0",
+      "sourceURL": "https://dl.google.com/webdesigner/mac/shell/googlewebdesigner_mac.dmg",
+      "artifactSHA256": "177da082e2200f286d090e3ffbab12ca23bd1c7b3099072978b44874ae08e73a",
+      "apps": [
+        {
+          "bundleName": "Google Web Designer.app",
+          "bundleIdentifier": "com.google.WebDesigner"
+        }
+      ]
+    },
+    "hamrs-pro": {
+      "caskVersion": "2.52.0",
+      "sourceURL": "https://hamrs-dist.s3.amazonaws.com/hamrs-pro-2.52.0-mac-arm64.dmg",
+      "artifactSHA256": "33c268849918d54e4d4070a2320f36a4f8521ff6dfd476a1fbd8f27bd3fc1331",
+      "apps": [
+        {
+          "bundleName": "HAMRS Pro.app",
+          "bundleIdentifier": "app.hamrs.pro"
+        }
+      ]
+    },
+    "grid": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://macgrid.app/download/Grid-1.4.dmg",
+      "artifactSHA256": "46f415795003460d5da018aaaeb72317d3c6b654ebdde33c1556e6e8659f0cdc",
+      "apps": [
+        {
+          "bundleName": "Grid.app",
+          "bundleIdentifier": "app.macgrid.Grid"
+        }
+      ]
+    },
+    "groove-omnidialer": {
+      "caskVersion": "26.917.918",
+      "sourceURL": "https://groove-dialer.s3-us-west-2.amazonaws.com/electron/Groove%20OmniDialer-26.917.918-universal.dmg",
+      "artifactSHA256": "dd6d540ab38c62a21737c43230659bf6f9039d603bdfd5845eb3138f4809eaf7",
+      "apps": [
+        {
+          "bundleName": "Groove OmniDialer.app",
+          "bundleIdentifier": "com.electron.dialer"
+        }
+      ]
+    },
+    "google-ads-editor": {
+      "caskVersion": "2.13",
+      "sourceURL": "https://dl.google.com/adwords_editor/Google_AdWords_Editor.dmg",
+      "artifactSHA256": "3fc9a35f0c5efda1bfd4d76cd9f9d1663c7b21d19c81e5347d1d59a30a5d03c4",
+      "apps": [
+        {
+          "bundleName": "Google Ads Editor.app",
+          "bundleIdentifier": "com.google.googleadseditorlauncher"
+        }
+      ]
+    },
+    "greenery": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/GreenfireInc/Releases.Greenery/releases/download/v1.0.0/Greenery.1.0.0.zip",
+      "artifactSHA256": "c95bce16d9597234374504d081b77a332b67c5edb196a3116428f97384d90572",
+      "apps": [
+        {
+          "bundleName": "Greenery.app",
+          "bundleIdentifier": "com.greenery.app"
+        }
+      ]
+    },
+    "greensignal": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://releases.greensignal.app/releases/v1.0.2/GreenSignal_1.0.2_universal.dmg",
+      "artifactSHA256": "630614bcee392247a6ab127a4fc18f2ea2d589f139b6479da48b30cdb45e8d32",
+      "apps": [
+        {
+          "bundleName": "GreenSignal.app",
+          "bundleIdentifier": "app.greensignal.app"
+        }
+      ]
+    },
+    "gotomeeting": {
+      "caskVersion": "19950",
+      "sourceURL": "https://builds.cdn.getgo.com/builds/g2m/19950/GoToMeeting.dmg",
+      "artifactSHA256": "64c3b31b35f27027a93a092f3a1c36cf23d551b4bccd384fa45bdca4a672c91c",
+      "apps": [
+        {
+          "bundleName": "GoToMeeting.app",
+          "bundleIdentifier": "com.logmein.GoToMeeting"
+        }
+      ]
+    },
+    "gridtracker2": {
+      "caskVersion": "2.260909.0",
+      "sourceURL": "https://download2.gridtracker.org/GridTracker2-2.260909.0-universal-mac.zip",
+      "artifactSHA256": "a821edce194d88f07180ced8aaf6f90e1cb0346b1aa66776c2bf40f89b0c843c",
+      "apps": [
+        {
+          "bundleName": "GridTracker2.app",
+          "bundleIdentifier": "org.gridtracker.GridTracker2"
+        }
+      ]
+    },
+    "grids": {
+      "caskVersion": "8.5.8",
+      "sourceURL": "https://gridsapp.net/bin/Grids_8.5.8.zip",
+      "artifactSHA256": "61522452b57cfe5cfd023b4c01cdd5d3a8a491535fc9a15ea2940fe974c468c9",
+      "apps": []
     }
   }
 }
