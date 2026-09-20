@@ -32939,6 +32939,281 @@
           "bundleIdentifier": "com.vitalsource.bookshelf"
         }
       ]
+    },
+    "vocevista-video-pro": {
+      "caskVersion": "5.11.1.9379",
+      "sourceURL": "https://download.sygyt.com/5.11.1/VoceVistaVideoPro_macOS_5.11.1.9379.dmg",
+      "artifactSHA256": "fe2f00ba40362ee8c2e7b7929267c8eb91ce7d121a1e8262ea6287980f5037fb",
+      "apps": [
+        {
+          "bundleName": "VoceVista Video Pro.app",
+          "bundleIdentifier": "com.sygyt.mac.VoceVistaVideoPro"
+        }
+      ]
+    },
+    "voov-meeting": {
+      "caskVersion": "3.43.0.510,676602c370071da9c30765f945f41b83",
+      "sourceURL": "https://updatecdn.meeting.qq.com/cos/676602c370071da9c30765f945f41b83/VooVMeeting_1410000198_3.43.0.510.publish.arm64.dmg",
+      "artifactSHA256": "e0b770f1770557f72ac2869395304c1cc901bc519c93ccddb096349891467de7",
+      "apps": [
+        {
+          "bundleName": "VooV Meeting.app",
+          "bundleIdentifier": "com.tencent.tencentmeeting"
+        }
+      ]
+    },
+    "vv": {
+      "caskVersion": "2.6.2",
+      "sourceURL": "https://github.com/vv-vim/vv/releases/download/v2.6.2/VV-2.6.2-universal.dmg",
+      "artifactSHA256": "87fcc6b32ba68675974dc5771c99d73f71be23db20b5e47ea830d6e414edbd91",
+      "apps": [
+        {
+          "bundleName": "VV.app",
+          "bundleIdentifier": "app.vvim.vv"
+        }
+      ]
+    },
+    "vlcstreamer": {
+      "caskVersion": "5.25",
+      "sourceURL": "https://hobbyistsoftware.com/Downloads/VLCStreamer/Versions/VLCStreamer_5.25.dmg",
+      "artifactSHA256": "7f5d68a69af857804150c7d24209b38fd50a136d0cda42b0abb8626a4abe2797",
+      "apps": [
+        {
+          "bundleName": "VLCStreamer.app",
+          "bundleIdentifier": "com.HobbyistSoftware.VLCStreamer"
+        }
+      ]
+    },
+    "vsdx-annotator": {
+      "caskVersion": "1.16.1,563",
+      "sourceURL": "https://download.nektony.com/promo/vsdx-annotator/update/update_v1.16.1b563.zip",
+      "artifactSHA256": "87c9b3428831a535a0f1ef5cdf05bed85172fea2daccc01b43d668ee121ecb87",
+      "apps": [
+        {
+          "bundleName": "VSDX Annotator.app",
+          "bundleIdentifier": "com.nektony.vsdx-annotators"
+        }
+      ]
+    },
+    "vlc-setup": {
+      "caskVersion": "3.70",
+      "sourceURL": "https://hobbyistsoftware.com/Downloads/VLCRemote/Versions/VLCSetup_3.70.dmg",
+      "artifactSHA256": "61db4b11491cfffaa9c54184e99ae75dbf288a5f4ffff88a9f0f318c8b983d54",
+      "apps": [
+        {
+          "bundleName": "VLC Setup.app",
+          "bundleIdentifier": "com.HobbyistSoftware.VLCSetup"
+        }
+      ]
+    },
+    "voicenotes": {
+      "caskVersion": "2.0.7",
+      "sourceURL": "https://github.com/brewdotcom/vn-apps-release/releases/download/v2.0.7/Voicenotes-2.0.7-mac.zip",
+      "artifactSHA256": "1c87d7adf0bc526e071ecd46366c7146fc5cb42f7886f98ecdbc3e6fc8c84755",
+      "apps": [
+        {
+          "bundleName": "Voicenotes.app",
+          "bundleIdentifier": "com.voicenotes.app"
+        }
+      ]
+    },
+    "volanta": {
+      "caskVersion": "1.19.2,edd889be",
+      "sourceURL": "https://cdn.volanta.app/software/volanta-app/1.19.2-edd889be/volanta-1.19.2.dmg",
+      "artifactSHA256": "0a8d405c43f7b16ba57a079b54fc905aba2ceac4b02348521fea7a8811dc0cf4",
+      "apps": [
+        {
+          "bundleName": "Volanta.app",
+          "bundleIdentifier": "orbx.volanta"
+        }
+      ]
+    },
+    "vsee": {
+      "caskVersion": "4.28.2,52676",
+      "sourceURL": "https://d2q5hugz2rti4w.cloudfront.net/mac/52676/vseemac.dmg",
+      "artifactSHA256": "f9441e2259a2b0d9050e371336b5f439edb7284788857341460cbe2af68fde0c",
+      "apps": [
+        {
+          "bundleName": "VSee.app",
+          "bundleIdentifier": "com.vsee.VSee"
+        }
+      ]
+    },
+    "vk-calls": {
+      "caskVersion": "1.44.39190",
+      "sourceURL": "https://vkcalls-native-ac.vk-apps.com/1.44.39190/vk-calls.dmg",
+      "artifactSHA256": "a7abd88d126f2d3d46b4672a374d4c7b3d412be39b03942963d5dd879e0d2d36",
+      "apps": [
+        {
+          "bundleName": "VK Calls.app",
+          "bundleIdentifier": "com.vk.calls.native.1"
+        }
+      ]
+    },
+    "vivid-app": {
+      "caskVersion": "2.18.1",
+      "sourceURL": "https://lumen-digital.com/apps/vivid/releases/Vivid2.18.1.zip",
+      "artifactSHA256": "2e71ef01a5d707bb204a8755f27ba166228692bca9893d2df462e25c35670292",
+      "apps": [
+        {
+          "bundleName": "Vivid.app",
+          "bundleIdentifier": "com.goodsnooze.vivid"
+        }
+      ]
+    },
+    "vk-messenger": {
+      "caskVersion": "6.0.57,41",
+      "sourceURL": "https://upload.object2.vk-apps.com/vk-me-desktop-dev-5837a06d-5f28-484a-ac22-045903cb1b1a/6.0.57/vk-messenger-6.0.57-build.41-universal.dmg",
+      "artifactSHA256": "f2ea309b7d0e9941467c0e2715d56f463d1bcffeb548bc3d94556da861c50a2f",
+      "apps": [
+        {
+          "bundleName": "VK Мессенджер.app",
+          "bundleIdentifier": "com.vk.medesktop"
+        }
+      ]
+    },
+    "voiden": {
+      "caskVersion": "2.2.2",
+      "sourceURL": "https://voiden-releases.s3.eu-west-1.amazonaws.com/voiden/darwin/arm64/Voiden-darwin-arm64-2.2.2.zip",
+      "artifactSHA256": "bfbbb5238240ea67dee3d1e7d5fb0c796c632156c2fc287ce06f5b0d8cd55778",
+      "apps": [
+        {
+          "bundleName": "Voiden.app",
+          "bundleIdentifier": "com.electron.voiden"
+        }
+      ]
+    },
+    "vrew": {
+      "caskVersion": "4.6.1",
+      "sourceURL": "https://vrew-files.voyagerx.com/Vrew-4.6.1.dmg",
+      "artifactSHA256": "88713551d9686bfd6ff41cf417147242ebc61aa05ab0dd256fd7fa66d8547ae3",
+      "apps": [
+        {
+          "bundleName": "Vrew.app",
+          "bundleIdentifier": "com.voyagerx.vrew"
+        }
+      ]
+    },
+    "vox": {
+      "caskVersion": "3.7.7,3770.1",
+      "sourceURL": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
+      "artifactSHA256": "287159bc31c99a46f71bcad02b73edd2f8fa3926d4bc1bbcfaea3beb7e03a96d",
+      "apps": [
+        {
+          "bundleName": "VOX.app",
+          "bundleIdentifier": "com.coppertino.Vox"
+        }
+      ]
+    },
+    "vpn-tracker-365": {
+      "caskVersion": "26.8,122",
+      "sourceURL": "https://download.equinux.com/files/other/VPN%20Tracker%20365%20-%2026.8.122.zip",
+      "artifactSHA256": "579203c310c3997687789793832b32f7ff969f72d489decf0585537dd615be19",
+      "apps": [
+        {
+          "bundleName": "VPN Tracker 365.app",
+          "bundleIdentifier": "com.vpntracker.365mac"
+        }
+      ]
+    },
+    "vocaster-hub": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://releases.focusrite.com/com.focusrite.vocaster-hub/Vocaster%20Hub-1.6.0.dmg",
+      "artifactSHA256": "108253cabce65bc4cb16650f27af733bbb01981229c5cf22027edf1c93f9945a",
+      "apps": [
+        {
+          "bundleName": "Vocaster Hub.app",
+          "bundleIdentifier": "com.focusrite.vocaster-hub"
+        }
+      ]
+    },
+    "viz": {
+      "caskVersion": "2.3.3",
+      "sourceURL": "https://github.com/alienator88/Viz/releases/download/2.3.3/Viz.zip",
+      "artifactSHA256": "a08aeebb2e9ff76da5f36bfe1a3385811e58443f260f7d62b82e4d56dda0343f",
+      "apps": [
+        {
+          "bundleName": "Viz.app",
+          "bundleIdentifier": "com.alienator88.Viz"
+        }
+      ]
+    },
+    "void": {
+      "caskVersion": "1.99.30044",
+      "sourceURL": "https://github.com/voideditor/binaries/releases/download/1.99.30044/Void.arm64.1.99.30044.dmg",
+      "artifactSHA256": "fa066d553093c1c9b92e7cae0754c14cfa6e1cbdb958139a5b02569dd1d9e877",
+      "apps": [
+        {
+          "bundleName": "Void.app",
+          "bundleIdentifier": "com.void"
+        }
+      ]
+    },
+    "vocevista-video": {
+      "caskVersion": "5.11.1.9379",
+      "sourceURL": "https://download.sygyt.com/5.11.1/VoceVistaVideo_macOS_5.11.1.9379.dmg",
+      "artifactSHA256": "dac305877c9aa77d4923f9fab683ce119d06fe21c26b22bec4c4f61074155f0a",
+      "apps": [
+        {
+          "bundleName": "VoceVista Video.app",
+          "bundleIdentifier": "com.sygyt.mac.VoceVistaVideo"
+        }
+      ]
+    },
+    "vyprvpn": {
+      "caskVersion": "6.0.4.11438",
+      "sourceURL": "https://downloads.vyprvpn.com/downloads/vyprvpn/desktop/mac/production/6.0.4.11438/VyprVPN_v6.0.4.11438.dmg",
+      "artifactSHA256": "11429f4c5f35a9ffa3086a1b7ee4b9740405e5fdbcd1b912dbbfcc8f54c0ef98",
+      "apps": [
+        {
+          "bundleName": "VyprVPN.app",
+          "bundleIdentifier": "com.goldenfrog.vyprvpn.mac"
+        }
+      ]
+    },
+    "vrampro": {
+      "caskVersion": "2.1.4",
+      "sourceURL": "https://vrampro.com/updates/VRAMPro-2.1.4.zip",
+      "artifactSHA256": "2edaf0c8f1053a6c7cde80dbaad9d9d62d29951291754f1d82ebf95bd8029c95",
+      "apps": [
+        {
+          "bundleName": "VRAMPro.app",
+          "bundleIdentifier": "com.stepcap.VRAMPro"
+        }
+      ]
+    },
+    "vsd-viewer": {
+      "caskVersion": "6.16.1,563",
+      "sourceURL": "https://download.nektony.com/promo/vsd-viewer/update/update_v6.16.1b563.zip",
+      "artifactSHA256": "90f81fb301a0c9a72b67a715d2cac3e068d1b290472bc693cee568963bfbad69",
+      "apps": [
+        {
+          "bundleName": "VSD Viewer.app",
+          "bundleIdentifier": "com.nektony.vsdviewers"
+        }
+      ]
+    },
+    "voodoopad": {
+      "caskVersion": "5.4.0",
+      "sourceURL": "https://voodoopad.s3.amazonaws.com/VoodooPad-5.4.0.zip",
+      "artifactSHA256": "17f9bf20ade564f59cc65f7f6ca63419635f8350d1dee7e64ca9b8ba46fd9043",
+      "apps": [
+        {
+          "bundleName": "VoodooPad.app",
+          "bundleIdentifier": "com.flyingmeat.VoodooPad5"
+        }
+      ]
+    },
+    "vitamin-r": {
+      "caskVersion": "4.27",
+      "sourceURL": "https://www.publicspace.net/download/signedVitamin4.zip",
+      "artifactSHA256": "2ea64bcf495ef4573b1a57e63da86338087012dbb7317b60b40097f514f020c8",
+      "apps": [
+        {
+          "bundleName": "Vitamin-R 4.app",
+          "bundleIdentifier": "net.publicspace.dist.vitaminr4"
+        }
+      ]
     }
   }
 }
