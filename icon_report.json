@@ -1610,7 +1610,7 @@
   "unclack": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "unity-ios-support-for-editor": {
@@ -1706,7 +1706,7 @@
   "waveforms": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "wch-ch34x-usb-serial-driver": {
