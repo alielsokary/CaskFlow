@@ -615,10 +615,12 @@
       "apps": [
         {
           "bundleName": "Tailscale.app",
-          "bundleIdentifier": "io.tailscale.ipn.macsys"
+          "bundleIdentifier": "io.tailscale.ipn.macsys",
+          "packageIdentifier": "com.tailscale.ipn.macsys",
+          "installedPath": "/Applications/Tailscale.app"
         }
       ],
-      "extractionVersion": 2,
+      "extractionVersion": 4,
       "diagnostics": []
     },
     "raycast": {
@@ -807,7 +809,14 @@
       "caskVersion": "0.7.1",
       "sourceURL": "https://existential.audio/downloads/BlackHole2ch-0.7.1.pkg",
       "artifactSHA256": "57b540f27a3e29c37e310e01bee0fdfab76733087e47f997ef9dccf851400dcf",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "maccy": {
       "caskVersion": "2.7.1",
@@ -924,7 +933,28 @@
       "caskVersion": "16.3.0",
       "sourceURL": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg",
       "artifactSHA256": "19cce7bed3d48a722242ca683bd1bae406b6a87fed520728d1c91dee175b75e4",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Karabiner-Elements.app",
+          "bundleIdentifier": "org.pqrs.Karabiner-Elements.Settings",
+          "packageIdentifier": "org.pqrs.Karabiner-Elements",
+          "installedPath": "/Applications/Karabiner-Elements.app"
+        },
+        {
+          "bundleName": "Karabiner-EventViewer.app",
+          "bundleIdentifier": "org.pqrs.Karabiner-EventViewer",
+          "packageIdentifier": "org.pqrs.Karabiner-Elements",
+          "installedPath": "/Applications/Karabiner-EventViewer.app"
+        },
+        {
+          "bundleName": ".Karabiner-VirtualHIDDevice-Manager.app",
+          "bundleIdentifier": "org.pqrs.Karabiner-VirtualHIDDevice-Manager",
+          "packageIdentifier": "org.pqrs.Karabiner-DriverKit-VirtualHIDDevice",
+          "installedPath": "/Applications/.Karabiner-VirtualHIDDevice-Manager.app"
+        }
+      ],
+      "extractionVersion": 4,
+      "diagnostics": []
     },
     "dotnet-sdk": {
       "caskVersion": "10.0.401",
@@ -1046,7 +1076,14 @@
       "caskVersion": "5.4.0",
       "sourceURL": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.4.0/macfuse-5.4.0.dmg",
       "artifactSHA256": "861814f0ac7fa8f6547ea40cdd49a36ac84bcc7d34f38a1fa74e8cf68b0401c5",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "jordanbaird-ice": {
       "caskVersion": "0.11.12",
@@ -1119,7 +1156,14 @@
       "caskVersion": "131.0.2",
       "sourceURL": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
       "artifactSHA256": "d76ed38a63f41a50a28d726d4efb5a72068a5eb2d86feba0b04e2cbc31bcbb1a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "whatsapp": {
       "caskVersion": "26.37.22",
@@ -1241,7 +1285,14 @@
       "caskVersion": "7.1.5.84650",
       "sourceURL": "https://cdn.zoom.us/prod/7.1.5.84650/arm64/zoomusInstallerFull.pkg",
       "artifactSHA256": "49cf70af674176f3708b9d3b519f585424c442ccf744fd9659327967971c8279",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "bitwarden": {
       "caskVersion": "2026.9.0",
@@ -1545,7 +1596,14 @@
       "caskVersion": "26.153.0809.0004",
       "sourceURL": "https://oneclient.sfx.ms/Mac/Installers/26.153.0809.0004/universal/OneDrive.pkg",
       "artifactSHA256": "35d67e76de8579fa0b533fff7ff3b618ea54f574a8a557bb9d3d736b14029f78",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "alt-tab": {
       "caskVersion": "11.7.0",
@@ -2337,7 +2395,14 @@
       "caskVersion": "2.4.9",
       "sourceURL": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_darwin_arm64.dmg",
       "artifactSHA256": "8de08bd435ef8ae0fc5fbd6acefa9c68e62fb898c5ae0fbdacd26853bea9d4d6",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "vagrant",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
     },
     "maestro": {
       "caskVersion": "0.17.3",
@@ -2482,7 +2547,14 @@
       "caskVersion": "26.001.21662",
       "sourceURL": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121662/AcroRdrDC_2600121662_MUI.dmg",
       "artifactSHA256": "21821609bea4210e54b1844a1129cdafccea21f6d6d3d0797808f92e357d5705",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "openlens": {
       "caskVersion": "6.5.2-366",
@@ -2499,7 +2571,14 @@
       "caskVersion": "15.81.6",
       "sourceURL": "https://dl.teamviewer.com/download/version_15x/update/15.81.6/TeamViewer.pkg",
       "artifactSHA256": "39692047e9446a1e8d07461ffb22a2ce565d290584c513302e983847816eb2d0",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "bambu-studio": {
       "caskVersion": "02.08.02.61,20260820225108",
@@ -2527,7 +2606,14 @@
       "caskVersion": "3.8.2,6009",
       "sourceURL": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.2.6009_signed.dmg",
       "artifactSHA256": "8d50036510859956d20d1f50e43171be53417431104c6befb1352ff5187c248a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "redis-insight": {
       "caskVersion": "3.8.0",
@@ -3036,7 +3122,16 @@
       "caskVersion": "10.11.0",
       "sourceURL": "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/10.11.0/NordVPN.pkg",
       "artifactSHA256": "e5d6983aed416a8c3b005a3ea206a383bd46e81dc25b7b442ae3f0224aa84209",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "NordVPN.app",
+          "bundleIdentifier": "com.nordvpn.macos",
+          "packageIdentifier": "com.nordvpn.macos",
+          "installedPath": "/Applications/NordVPN.app"
+        }
+      ],
+      "extractionVersion": 4,
+      "diagnostics": []
     },
     "arduino-ide": {
       "caskVersion": "2.3.10",
@@ -3130,7 +3225,14 @@
       "caskVersion": "16.2,2026-07",
       "sourceURL": "https://www.synaptics.com/sites/default/files/exe_files/2026-07/DisplayLink%20Manager%20Graphics%20Connectivity16.2-EXE.pkg",
       "artifactSHA256": "fd9eafab9542e592baa39984ed4e87e64e89f3de6b9a4429ab13a2334a7538e6",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
     },
     "wailbrew": {
       "caskVersion": "0.13.0",
@@ -35276,10 +35378,12 @@
       "apps": [
         {
           "bundleName": "Airtool 2.app",
-          "bundleIdentifier": "com.intuitibits.airtool2"
+          "bundleIdentifier": "com.intuitibits.airtool2",
+          "packageIdentifier": "com.intuitibits.airtool2.pkg",
+          "installedPath": "/Applications/Airtool 2.app"
         }
       ],
-      "extractionVersion": 2,
+      "extractionVersion": 4,
       "diagnostics": []
     },
     "golly": {
@@ -35305,6 +35409,149 @@
         {
           "artifact": "QuakeSpasm",
           "reason": "declared suite matched 0 directories"
+        }
+      ]
+    },
+    "elgato-camera-hub": {
+      "caskVersion": "2.3.0.7295",
+      "sourceURL": "https://edge.elgato.com/egc/macos/echm/2.3.0/CameraHub_2.3.0.7295.pkg",
+      "artifactSHA256": "15d91783adf197d356515e604167597853bb1cba77fc73d6485b55d49842dcee",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "citrix-workspace": {
+      "caskVersion": "26.09.0.17",
+      "sourceURL": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal26.09.0.17.pkg",
+      "artifactSHA256": "c0c9d44f622226b019e6406f3df8012da351b17e86f2dc42b62039df17d0a3df",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "wacom-tablet": {
+      "caskVersion": "6.4.14-1",
+      "sourceURL": "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_6.4.14-1.dmg",
+      "artifactSHA256": "446c6889ad5602827fe1a6f597067428ffdbdd9b4e0cb00930385d99b876fb06",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "adguard-vpn": {
+      "caskVersion": "2.10.0.1130",
+      "sourceURL": "https://static.adguard-vpn.com/mac/release/AdGuardVPN-2.10.0.1130.dmg",
+      "artifactSHA256": "8b13e271f48ba68b89f1ab98a896e3d27ddc6d0745b41141e0f75952fd41f06d",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "adguard-vpn",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "pritunl": {
+      "caskVersion": "1.4.4752.50",
+      "sourceURL": "https://github.com/pritunl/pritunl-client-electron/releases/download/1.4.4752.50/Pritunl.pkg.zip",
+      "artifactSHA256": "afe32dba27c3ca669b95a0bac2147a18465b85384d7122c6900a4a077988ad27",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "arq": {
+      "caskVersion": "7.48",
+      "sourceURL": "https://www.arqbackup.com/download/arqbackup/Arq7.48.pkg",
+      "artifactSHA256": "6aecf59ba6a2d7407fe8d293ac0fed1fafc7a827fdbbe683f24320077b19a2de",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "adguard": {
+      "caskVersion": "2.19.0.2258",
+      "sourceURL": "https://static.adguard.com/mac/release/AdGuard-2.19.0.2258.dmg",
+      "artifactSHA256": "149344c273968ab48ceac5de6025fb5219480899fb3520c101e1ce86e83d3804",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "adguard",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "logitech-camera-settings": {
+      "caskVersion": "3.0.23",
+      "sourceURL": "https://download01.logi.com/web/ftp/pub/techsupport/cameras/Webcams/LogiCameraSettings_3.0.23.pkg",
+      "artifactSHA256": "ff8ce22aab2ef7a4e63044585e34497cffd8edb0cc077902ca0da3dbb40f5ea2",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Camera Settings.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
+    },
+    "gpg-suite": {
+      "caskVersion": "2023.3",
+      "sourceURL": "https://releases.gpgtools.org/GPG_Suite-2023.3.dmg",
+      "artifactSHA256": "57468a4adc55d954ead4fe1f88b07eac1b70ada40fcbc810765fd521ef21eef1",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "sf-symbols": {
+      "caskVersion": "27.0,140",
+      "sourceURL": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-27.dmg",
+      "artifactSHA256": "f8270edb890e66959382d8432c38469af35f0b1b4e6af96b4f8d5b845957d7a2",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "conditional package Distribution requires component selection"
+        }
+      ]
+    },
+    "alisma": {
+      "caskVersion": "4,2023.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/07/alisma4.zip",
+      "artifactSHA256": "159e543e92cc8b97f2375b06834d51ef4893e9213d2c490822cf41dcbbfd930a",
+      "apps": [],
+      "extractionVersion": 4,
+      "diagnostics": [
+        {
+          "artifact": "alisma",
+          "reason": "no supported application bundles in declared artifacts"
         }
       ]
     }

@@ -27,7 +27,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-20"
   },
   "anaconda": {
     "status": "curated",
@@ -171,7 +171,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-09-20"
   },
   "blackhole-64ch": {
     "status": "no_icon",
@@ -683,6 +683,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "gpg-suite": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-09-20"
+  },
   "gpt4all": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/nomic-ai.png",
@@ -915,7 +921,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-09-20"
   },
   "macfuse@dev": {
     "status": "no_icon",
@@ -1107,7 +1113,7 @@
     "status": "no_icon",
     "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-09-20"
   },
   "openzfs": {
     "status": "curated",
@@ -1593,7 +1599,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-09-20"
   },
   "vagrant-vmware-utility": {
     "status": "curated",
