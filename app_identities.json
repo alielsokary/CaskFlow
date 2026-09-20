@@ -24398,6 +24398,281 @@
           "bundleIdentifier": "blog.micro.mac"
         }
       ]
+    },
+    "moneydance": {
+      "caskVersion": "2024.4,5253",
+      "sourceURL": "https://infinitekind.com/stabledl/current/Moneydance.dmg",
+      "artifactSHA256": "017ac8d52de2734218027ef12290ea2ed25d0263cbee0a8dba62ae5f0f4f7934",
+      "apps": [
+        {
+          "bundleName": "Moneydance.app",
+          "bundleIdentifier": "com.infinitekind.MoneydanceOSX"
+        }
+      ]
+    },
+    "mochi": {
+      "caskVersion": "26.8.2",
+      "sourceURL": "https://download.mochi.cards/releases/Mochi-26.8.2-arm64.dmg",
+      "artifactSHA256": "c6640d334ba4d054189c9f9a7f1b03e86a11e87eed7c4f6d064d86b763b41c67",
+      "apps": [
+        {
+          "bundleName": "Mochi.app",
+          "bundleIdentifier": "com.msteedman.mochi"
+        }
+      ]
+    },
+    "mongodb-realm-studio": {
+      "caskVersion": "15.2.1",
+      "sourceURL": "https://github.com/realm/realm-studio/releases/download/v15.2.1/Realm.Studio-15.2.1.dmg",
+      "artifactSHA256": "cdc7af2ccd8de7055f3a7fef59db8a0bc7154eed7ddb2a3a70dc60231b7b7a58",
+      "apps": [
+        {
+          "bundleName": "Realm Studio.app",
+          "bundleIdentifier": "com.mongodb.realm-studio"
+        }
+      ]
+    },
+    "mochi-diffusion": {
+      "caskVersion": "6.0",
+      "sourceURL": "https://github.com/godly-devotion/MochiDiffusion/releases/download/v6.0/MochiDiffusion_6.0.dmg",
+      "artifactSHA256": "5cda53d49be49049cd7289b2e92d72bd4ef283503c7467520d85ec4791045c05",
+      "apps": [
+        {
+          "bundleName": "Mochi Diffusion.app",
+          "bundleIdentifier": "com.joshua-park.Mochi-Diffusion"
+        }
+      ]
+    },
+    "moneymoney": {
+      "caskVersion": "2.5.3",
+      "sourceURL": "https://service.moneymoney-app.com/1/MoneyMoney.zip",
+      "artifactSHA256": "0e94b9b49ee4f04b1036799b739d9fd71d8c5a4e2779bda71db773f26686c342",
+      "apps": [
+        {
+          "bundleName": "MoneyMoney.app",
+          "bundleIdentifier": "com.moneymoney-app.retail"
+        }
+      ]
+    },
+    "mobirise": {
+      "caskVersion": "6.1.12",
+      "sourceURL": "https://download.mobirise.com/MobiriseSetup-m.dmg",
+      "artifactSHA256": "407677724e5d8f03d6e98770d21c6d07a53e072b3b99510d647f4d5fc1f1bfe4",
+      "apps": [
+        {
+          "bundleName": "Mobirise.app",
+          "bundleIdentifier": "com.mobirise.Mobirise"
+        }
+      ]
+    },
+    "mixed-in-key": {
+      "caskVersion": "11.2.6.7433,67",
+      "sourceURL": "https://builds.mixedinkey.com/download/67/release/latest?key=public",
+      "artifactSHA256": "c57af0c5cea5421cd85323a178f9c51ed861086661e495fd19262aab21c5415c",
+      "apps": [
+        {
+          "bundleName": "Mixed In Key 11.app",
+          "bundleIdentifier": "com.mixedinkey.application"
+        }
+      ]
+    },
+    "mints": {
+      "caskVersion": "1.22,2026.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2026/07/mints122.zip",
+      "artifactSHA256": "9c6e7485e6f563a1913b457ed4b830f3dcc953a283edb2088e611e63658243b8",
+      "apps": [
+        {
+          "bundleName": "Mints.app",
+          "bundleIdentifier": "co.eclecticlight.Mints"
+        }
+      ]
+    },
+    "missive": {
+      "caskVersion": "11.33.0",
+      "sourceURL": "https://downloads.missiveapp.com/11.33.0/Missive-11.33.0.dmg",
+      "artifactSHA256": "73ec79f03940c6e1c50568e9eb30fba993dba60202cc22d27117f1d6db3bc57d",
+      "apps": [
+        {
+          "bundleName": "Missive.app",
+          "bundleIdentifier": "com.missiveapp.osx"
+        }
+      ]
+    },
+    "mockuuups-studio": {
+      "caskVersion": "3.7.0",
+      "sourceURL": "https://binaries.mockuuups.com/Mockuuups%20Studio-3.7.0-arm64-mac.zip",
+      "artifactSHA256": "deefb92a749360fc2c524c427b3c462f0220a8fa5797fe2d634a009f476a03da",
+      "apps": [
+        {
+          "bundleName": "Mockuuups Studio.app",
+          "bundleIdentifier": "com.mockuuups.studio-app"
+        }
+      ]
+    },
+    "monocle-app": {
+      "caskVersion": "3.5.1",
+      "sourceURL": "https://files.heyiam.dk/updates/monocle/Monocle-3-5-1.zip",
+      "artifactSHA256": "6c80a580d1b2e16fd956212efc71fc7e78adf10071b5cd53d3d29103fbbfb439",
+      "apps": [
+        {
+          "bundleName": "Monocle.app",
+          "bundleIdentifier": "dk.heyiam.monocle"
+        }
+      ]
+    },
+    "monarch": {
+      "caskVersion": "0.9.53",
+      "sourceURL": "https://storage.googleapis.com/monarchlauncher/v08/aarch64/monarch-0.9.53.dmg",
+      "artifactSHA256": "5b610234be5525adcc591b07dd3e022876b113acf40ae8e77af710605090255c",
+      "apps": [
+        {
+          "bundleName": "Monarch.app",
+          "bundleIdentifier": "com.monarch.macos"
+        }
+      ]
+    },
+    "moment": {
+      "caskVersion": "1.5.1,152",
+      "sourceURL": "https://fireball.studio/api/release_manager/downloads/studio.fireball.moment/152.zip",
+      "artifactSHA256": "e4d22bde68503708193d9b838f9517840b408aefa52ba8a930af10b03f456734",
+      "apps": [
+        {
+          "bundleName": "Moment.app",
+          "bundleIdentifier": "studio.fireball.moment"
+        }
+      ]
+    },
+    "moneymanager": {
+      "caskVersion": "1.8.19",
+      "sourceURL": "https://download.realbyteapps.com/MoneyManager-1.8.19.dmg",
+      "artifactSHA256": "d445c7cb2c51baf07b38363411d3ed86894898acdecc90473306dd732624ed79",
+      "apps": [
+        {
+          "bundleName": "MoneyManager.app",
+          "bundleIdentifier": "com.realbyteapps.moneymanagerpc"
+        }
+      ]
+    },
+    "mixin": {
+      "caskVersion": "6.1.0",
+      "sourceURL": "https://github.com/MixinNetwork/flutter-app/releases/download/v6.1.0/mixin-6.1.0.dmg",
+      "artifactSHA256": "e36f16f59ca040073dddc2afe0e92a6f82a6c92a5838d184e614a1146c23f21a",
+      "apps": [
+        {
+          "bundleName": "Mixin.app",
+          "bundleIdentifier": "one.mixin.messenger.desktop"
+        }
+      ]
+    },
+    "mongrel": {
+      "caskVersion": "5.72.10,6a2016c9-7818-4203-afeb-221d13c5eb95",
+      "sourceURL": "https://www.visorcraft.com/api/downloads/mongrel/6a2016c9-7818-4203-afeb-221d13c5eb95",
+      "artifactSHA256": "9e330783f9531301acda83108e6fb353d638aa67542691557453403b6036982c",
+      "apps": [
+        {
+          "bundleName": "Mongrel.app",
+          "bundleIdentifier": "com.mongrel.desktop"
+        }
+      ]
+    },
+    "mongodb-compass-isolated-edition": {
+      "caskVersion": "1.50.0",
+      "sourceURL": "https://downloads.mongodb.com/compass/mongodb-compass-isolated-1.50.0-darwin-arm64.dmg",
+      "artifactSHA256": "f087c80262fbd8f8805e20b56b6a06a7a48ea804dfaaddb986f7b729cb31db2f",
+      "apps": [
+        {
+          "bundleName": "MongoDB Compass Isolated Edition.app",
+          "bundleIdentifier": "com.mongodb.compass.isolated"
+        }
+      ]
+    },
+    "mission-control-plus": {
+      "caskVersion": "1.27",
+      "sourceURL": "https://github.com/ronyfadel/MissionControlPlusReleases/releases/download/v1.27/Mission.Control.Plus.tgz",
+      "artifactSHA256": "b52994e33ebbb05cddb6eea55b54fee377eed8a9e96a59d409ab11599de859d1",
+      "apps": [
+        {
+          "bundleName": "Mission Control Plus.app",
+          "bundleIdentifier": "io.fadel.MissionControlPlus"
+        }
+      ]
+    },
+    "mmex": {
+      "caskVersion": "1.9.4",
+      "sourceURL": "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.9.4/mmex-1.9.4-Darwin.dmg",
+      "artifactSHA256": "f5eb148c931025e1e49ee3e5f82c24d9157930b2bab0c237e0e37ac5fcd5c965",
+      "apps": [
+        {
+          "bundleName": "mmex.app",
+          "bundleIdentifier": "org.moneymanagerex.mmex"
+        }
+      ]
+    },
+    "molotov": {
+      "caskVersion": "7.0.0",
+      "sourceURL": "https://desktop-auto-upgrade.molotov.tv/mac/m1/Molotov-7.0.0-mac.zip",
+      "artifactSHA256": "3daaeb6a8526683d4cb411b5a747ee2fff51fd5ad2724c597860fe78f69db906",
+      "apps": [
+        {
+          "bundleName": "Molotov.app",
+          "bundleIdentifier": "tv.molotov.MolotovDesktopApp"
+        }
+      ]
+    },
+    "mixing-station": {
+      "caskVersion": "3.1.3",
+      "sourceURL": "https://mixingstation.app/backend/api/web/download/attachment/mixing-station-pc/release/macos-aarch64",
+      "artifactSHA256": "bb04a567c33914c9106f56215403b171c0dcef9e3b3f6323cd501bf8cfb2503c",
+      "apps": [
+        {
+          "bundleName": "Mixing Station.app",
+          "bundleIdentifier": "org.devcore.mixingstation.pc"
+        }
+      ]
+    },
+    "monal": {
+      "caskVersion": "1092",
+      "sourceURL": "https://downloads.monal-im.org/monal-im/stable/macOS/Monal-1092.zip",
+      "artifactSHA256": "559da3f9bba9a6c50d3a39ff0c38b01bf86a8e7da0e11eee323cc0e835aa0764",
+      "apps": [
+        {
+          "bundleName": "Monal.app",
+          "bundleIdentifier": "org.monal-im.prod.catalyst.monal"
+        }
+      ]
+    },
+    "mkvtools": {
+      "caskVersion": "3.7.2",
+      "sourceURL": "https://www.emmgunn.com/downloads/mkvtools3.7.2.zip",
+      "artifactSHA256": "c7b4ab1a0031146ad76660b526e3be778eefa2d1ffaf590023c9b1d839e433e1",
+      "apps": [
+        {
+          "bundleName": "MKVtools.app",
+          "bundleIdentifier": "com.emmgunn.MKVtools3"
+        }
+      ]
+    },
+    "mister-plimsoll": {
+      "caskVersion": "1.1.9",
+      "sourceURL": "https://www.misterplimsoll.app/downloads/MisterPlimsoll-1.1.9.dmg",
+      "artifactSHA256": "f3a922c4e05459ce4c135b99007664cc1febbfe52262fee737a340208b09e896",
+      "apps": [
+        {
+          "bundleName": "Mister Plimsoll.app",
+          "bundleIdentifier": "com.glennf.MisterPlimsoll"
+        }
+      ]
+    },
+    "mitti": {
+      "caskVersion": "2.8.18,1441",
+      "sourceURL": "https://dl.imimot.com/Mitti2.8.18_1441.dmg",
+      "artifactSHA256": "f05e2e3316d5bd2b39de0e34786fe89c367a86523915d7658bed219e590b0a66",
+      "apps": [
+        {
+          "bundleName": "Mitti.app",
+          "bundleIdentifier": "com.imimot.Mitti.2"
+        }
+      ]
     }
   }
 }
