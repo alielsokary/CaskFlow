@@ -230,6 +230,21 @@ def _installed_package_apps(payload: Path, location: PurePosixPath) -> list[tupl
     return candidates
 
 
+def _component_apps(info: Path, root: Path, attributes: dict, diagnostics: list[dict]) -> list[tuple[Path, str, dict]]:
+    identifier = attributes.get("identifier")
+    if not identifier or attributes.get("relocatable") == "true":
+        raise ValueError("missing package identifier or relocatable payload")
+    location = PurePosixPath(attributes.get("install-location", "/"))
+    payload = _package_payload(info, root, location)
+    installed_apps = _installed_package_apps(payload, location)
+    if not installed_apps:
+        diagnostics.append({"artifact": str(info.relative_to(root)),
+                            "reason": "no application payload under /Applications"})
+    return [(bundle, name, {"packageIdentifier": identifier,
+                           "installedPath": str(location / bundle.relative_to(payload))})
+            for bundle, name in installed_apps]
+
+
 def _package_apps(root: Path, diagnostics: list[dict], *, receipt_required: bool) -> tuple[list, list]:
     """Use package install locations, never icon guesses, to identify payload apps."""
     candidates = []
@@ -247,18 +262,7 @@ def _package_apps(root: Path, diagnostics: list[dict], *, receipt_required: bool
             attributes = _package_info(info)
             if components is not None and attributes.get("identifier") not in components:
                 continue
-            identifier = attributes.get("identifier")
-            if not identifier or attributes.get("relocatable") == "true":
-                raise ValueError("missing package identifier or relocatable payload")
-            location = PurePosixPath(attributes.get("install-location", "/"))
-            payload = _package_payload(info, root, location)
-            installed_apps = _installed_package_apps(payload, location)
-            if not installed_apps:
-                diagnostics.append({"artifact": str(info.relative_to(root)),
-                                    "reason": "no application payload under /Applications"})
-            candidates.extend((bundle, name, {"packageIdentifier": identifier,
-                                              "installedPath": str(location / bundle.relative_to(payload))})
-                              for bundle, name in installed_apps)
+            candidates.extend(_component_apps(info, root, attributes, diagnostics))
         except (OSError, ExpatError, ValueError) as error:
             diagnostics.append({"artifact": str(info.relative_to(root)), "reason": f"invalid PackageInfo: {error}"})
     return ([], candidates) if receipt_required or conditions else (candidates, [])

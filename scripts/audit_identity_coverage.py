@@ -44,11 +44,12 @@ def _inspection_status(cask: dict, raw: dict | None, report: dict) -> tuple[str,
 
 
 def classify(cask: dict, raw: dict | None, published: list, published_candidates: list, report: dict) -> tuple[str, str]:
+    raw = raw or {}
     if published:
         return "mapped", "published application identity"
-    if raw and raw.get("apps"):
+    if raw.get("apps"):
         return "extracted_unpublished", "verified raw identity is absent from the consumer projection"
-    if raw and raw.get("packageCandidates"):
+    if raw.get("packageCandidates"):
         return ("receipt_candidates" if published_candidates else "candidates_unpublished",
                 "package payload candidates require verification against installed component receipts")
     kinds = {key for stanza in cask.get("artifacts") or [] for key in stanza} - METADATA_STANZAS

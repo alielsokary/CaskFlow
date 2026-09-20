@@ -531,6 +531,7 @@ def test_parallel_backfill_isolates_outputs_and_uses_one_checkpoint_writer(monke
     monkeypatch.setattr(extract_icons, "select_candidates", lambda *args: casks)
     monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 2)
     monkeypatch.setattr(extract_icons, "purge_file", lambda _: None)
+
     def extract(cask, output):
         assert not (output / MANIFEST).exists()
         barrier.wait()
@@ -542,6 +543,7 @@ def test_parallel_backfill_isolates_outputs_and_uses_one_checkpoint_writer(monke
         write_json(output / MANIFEST, {"schemaVersion": 1, "casks": {token: record}})
         return "no_icon", "fixture"
     published = set()
+
     def publish(pngs, report, dirty, identity_file, **kwargs):
         assert threading.current_thread() is threading.main_thread()
         assert not pngs
@@ -562,7 +564,6 @@ def test_parallel_backfill_isolates_outputs_and_uses_one_checkpoint_writer(monke
 
 def test_package_diagnostic_archive_preserves_original_metadata_not_payload_or_symlinks(tmp_path):
     import os
-    import zipfile
     root = tmp_path / "expanded"
     root.mkdir()
     (root / "Distribution").write_bytes(b'<installer-gui-script><script>original</script></installer-gui-script>')
