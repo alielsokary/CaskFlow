@@ -1487,11 +1487,17 @@
     "attempts": 1,
     "updated": "2026-09-20"
   },
+  "swift-im": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Failed to connect to swift.im port 443 after 75008 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "sync-my-l2p": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-20"
   },
   "syncroom": {
     "status": "no_icon",
@@ -1510,6 +1516,12 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 5,
     "updated": "2026-09-01"
+  },
+  "tablen": {
+    "status": "failed",
+    "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B438:SSL routines:ST_CONNECT:tlsv1 alert internal error",
+    "attempts": 1,
+    "updated": "2026-09-20"
   },
   "tal-drum": {
     "status": "no_icon",

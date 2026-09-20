@@ -30954,6 +30954,249 @@
           "bundleIdentifier": "link.studio.standalone"
         }
       ]
+    },
+    "tableflip": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://update.christiantietze.de/tableflip/v1/TableFlip-v1.7.0.zip",
+      "artifactSHA256": "63ddd81524d22477176936492a34175d65bfb18ef00d2aa069badd0afddf639c",
+      "apps": [
+        {
+          "bundleName": "TableFlip.app",
+          "bundleIdentifier": "de.christiantietze.TableFlip"
+        }
+      ]
+    },
+    "taccy": {
+      "caskVersion": "1.15,2023.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/06/taccy115.zip",
+      "artifactSHA256": "d5f1f00ff105007c8a64f277aa230a0caf1ea89a19e742d972f329d067afd7c3",
+      "apps": [
+        {
+          "bundleName": "Taccy.app",
+          "bundleIdentifier": "co.eclecticlight.Taccy"
+        }
+      ]
+    },
+    "table-tool": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/jakob/TableTool/releases/download/v1.2.1/tabletool-1.2.1.zip",
+      "artifactSHA256": "e405f5aff5b74a8bb57f9e7dbc483a47d9c7d3d2ef095728d04e030e84017de1",
+      "apps": [
+        {
+          "bundleName": "Table Tool.app",
+          "bundleIdentifier": "at.eggerapps.tabletool"
+        }
+      ]
+    },
+    "sxitch": {
+      "caskVersion": "1.5.2",
+      "sourceURL": "https://pub-de38f9dc4d154d119d16caaa9a29824b.r2.dev/v1.5.2/Sxitch.app.zip",
+      "artifactSHA256": "e4fff1608b3e340bedab9660b3db14d4a1302402d59a4df13152cd3f655f80a5",
+      "apps": [
+        {
+          "bundleName": "Sxitch.app",
+          "bundleIdentifier": "com.umangsurana.sxitch"
+        }
+      ]
+    },
+    "sysex-librarian": {
+      "caskVersion": "1.5.2",
+      "sourceURL": "https://www.snoize.com/SysExLibrarian/SysExLibrarian_1_5_2.dmg",
+      "artifactSHA256": "c74596f1c235792931bfe77424976652e366d5c701afcbe4d2ac77d78eb416b5",
+      "apps": [
+        {
+          "bundleName": "SysEx Librarian.app",
+          "bundleIdentifier": "com.snoize.SysExLibrarian"
+        }
+      ]
+    },
+    "swift-publisher": {
+      "caskVersion": "5.7.8",
+      "sourceURL": "https://belightsoft.s3.amazonaws.com/SwiftPublisher.dmg",
+      "artifactSHA256": "9204368f7e8701c00b954640cba5ce0b1351ad5fd163e2a5381146c14bad0a4f",
+      "apps": [
+        {
+          "bundleName": "Swift Publisher 5.app",
+          "bundleIdentifier": "com.belightsoft.SwiftPublisher5"
+        }
+      ]
+    },
+    "switchy": {
+      "caskVersion": "1.1.6,82",
+      "sourceURL": "https://github.com/benhursenabathi/mangobuns/releases/download/switchy-v1.1.6-build82/Switchy-1.1.6.dmg",
+      "artifactSHA256": "0732cbe26c7caf19facc163e342d8c61fee7e30cfd222bd9197ace6dfab6b2a0",
+      "apps": [
+        {
+          "bundleName": "Switchy.app",
+          "bundleIdentifier": "com.mangobuns.Switchy"
+        }
+      ]
+    },
+    "sync": {
+      "caskVersion": "2.2.62",
+      "sourceURL": "https://www10.sync.com/download/apple/Sync-2.2.62.dmg",
+      "artifactSHA256": "458960bfed82fe409aae2727b4e122caa92388745c9deb74266066f25408a3cd",
+      "apps": [
+        {
+          "bundleName": "Sync.app",
+          "bundleIdentifier": "com.sync.desktop"
+        }
+      ]
+    },
+    "syncmate": {
+      "caskVersion": "8.11.604",
+      "sourceURL": "https://cdn.electronic.us/products/syncmate/mac/update/SyncMate_8.11.604.zip",
+      "artifactSHA256": "4ac24541b8c87cef6001b0c9c7063408d2c00b2299f9d112af8fa911772e8e14",
+      "apps": [
+        {
+          "bundleName": "SyncMate.app",
+          "bundleIdentifier": "com.eltima.SyncMate"
+        }
+      ]
+    },
+    "swifty": {
+      "caskVersion": "0.6.13",
+      "sourceURL": "https://github.com/swiftyapp/swifty/releases/download/v0.6.13/Swifty-0.6.13.dmg",
+      "artifactSHA256": "cc625c8c543bd8596694a5810e5db7967a6806b4511568cb6cda077bc02c3b4b",
+      "apps": [
+        {
+          "bundleName": "Swifty.app",
+          "bundleIdentifier": "com.electron.swifty"
+        }
+      ]
+    },
+    "swiftplantumlapp": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/download/1.6.0/SwiftPlantUMLApp.zip",
+      "artifactSHA256": "74b2c77abd793681f02e9ef310972aae0d601f290d708aaf8ba487c5a23f067d",
+      "apps": [
+        {
+          "bundleName": "SwiftPlantUMLApp.app",
+          "bundleIdentifier": "us.eidinger.SwiftPlantUML"
+        }
+      ]
+    },
+    "tabula": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/tabulapdf/tabula/releases/download/v1.2.1/tabula-mac-1.2.1.zip",
+      "artifactSHA256": "7f0270ce3db17cfa14a8a111de9fbf39fbdd330d9784796daf13019d08cac140",
+      "apps": [
+        {
+          "bundleName": "Tabula.app",
+          "bundleIdentifier": "org.nerdpower.tabula.Tabula"
+        }
+      ]
+    },
+    "sync-my-l2p": {
+      "caskVersion": "2.5.1a",
+      "sourceURL": "https://github.com/rwthmoodle/Sync-my-L2P/releases/download/v2.5.1a/SyncMyL2P-2.5.1-osx.dmg",
+      "artifactSHA256": "e7dd0afce765444f229c287bf40b67fe00a4692e1a441cda62fb9b88efc13351",
+      "apps": [
+        {
+          "bundleName": "Sync-my-L2P.app",
+          "bundleIdentifier": "de.rwth-aachen.Sync-my-L2P"
+        }
+      ]
+    },
+    "tabtab": {
+      "caskVersion": "2.2",
+      "sourceURL": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
+      "artifactSHA256": "ca8ed78dab5e986257047afb80cbe7dff36654a4f1e7803c52c16028e8c577f1",
+      "apps": [
+        {
+          "bundleName": "TabTab.app",
+          "bundleIdentifier": "riccqi.TabTab"
+        }
+      ]
+    },
+    "systhist": {
+      "caskVersion": "1.22,2026.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2026/06/systhist122.zip",
+      "artifactSHA256": "3a19d75b1f439bca183d538f7386f4499afad1bb09763fe3c8a63ccc9ca6390c",
+      "apps": [
+        {
+          "bundleName": "SystHist.app",
+          "bundleIdentifier": "co.eclecticlight.SystHist"
+        }
+      ]
+    },
+    "swama": {
+      "caskVersion": "2.4.0",
+      "sourceURL": "https://github.com/Trans-N-ai/swama/releases/download/v2.4.0/Swama.dmg",
+      "artifactSHA256": "e0927a6454a65c0608485f87cbb12457a1e3da95728be71efdca899db1a55f56",
+      "apps": [
+        {
+          "bundleName": "Swama.app",
+          "bundleIdentifier": "trans-n.ai.Swama"
+        }
+      ]
+    },
+    "synthesia": {
+      "caskVersion": "10.9",
+      "sourceURL": "https://synthesia.s3.amazonaws.com/files/Synthesia-10.9.dmg",
+      "artifactSHA256": "de6ed94576b990cf39809ee19d6351080738228f97ef0e16caed4d1a98a4d96a",
+      "apps": [
+        {
+          "bundleName": "Synthesia.app",
+          "bundleIdentifier": "com.synthesiallc.synthesia"
+        }
+      ]
+    },
+    "tag-app": {
+      "caskVersion": "1.0.5,017",
+      "sourceURL": "https://feisty-dog.s3.amazonaws.com/versions/binaries/000/000/017/Tag-1.0.5.zip",
+      "artifactSHA256": "3b3b21909dc00d4ff87a501c6451fb14e99ef1c10bea64d69ace5cfaa5bfe1a4",
+      "apps": [
+        {
+          "bundleName": "Tag.app",
+          "bundleIdentifier": "com.feisty-dog.Tag"
+        }
+      ]
+    },
+    "swiftpm-catalog": {
+      "caskVersion": "1.2.2,1238",
+      "sourceURL": "https://zeezide.com/en/products/swiftpmcatalog/archives/SwiftPM%20Catalog.app-1.2.2-v1238.zip",
+      "artifactSHA256": "f006f055b6eb620b0d9b5c882f9930450990fb43677f6915487818ec8bc6ee4f",
+      "apps": [
+        {
+          "bundleName": "SwiftPM Catalog.app",
+          "bundleIdentifier": "de.zeezide.swift.SwiftPMCatalog"
+        }
+      ]
+    },
+    "switch": {
+      "caskVersion": "14.08",
+      "sourceURL": "https://www.nch.com.au/components/switchmaci.zip",
+      "artifactSHA256": "e58d35346567b36bd350f685804dcf97a81d9935d00d651c6c310881017527fe",
+      "apps": [
+        {
+          "bundleName": "Switch.app",
+          "bundleIdentifier": "com.nchsoftware.switch"
+        }
+      ]
+    },
+    "synology-note-station-client": {
+      "caskVersion": "2.2.5,804",
+      "sourceURL": "https://global.download.synology.com/download/Utility/NoteStationClient/2.2.5-804/Mac/x86_64/synology-note-station-client-2.2.5-804-mac-x64.dmg",
+      "artifactSHA256": "a15b2ac632dfff5faa63c5e56cf32c2a118ee8c95846830e67a400dacbb2f377",
+      "apps": []
+    },
+    "synalyze-it-pro": {
+      "caskVersion": "1.32",
+      "sourceURL": "https://www.synalyze-it.com/Downloads/SynalyzeItProTA_1.32.zip",
+      "artifactSHA256": "cdf639e201a7e859050f61d0b31a598e71f1df9795613bed351e619596f31fc9",
+      "apps": [
+        {
+          "bundleName": "Synalyze It! Pro.app",
+          "bundleIdentifier": "com.synalyze-it.SynalyzeItPro"
+        }
+      ]
+    },
+    "synology-chat": {
+      "caskVersion": "1.2.4,0235",
+      "sourceURL": "https://global.download.synology.com/download/Utility/ChatClient/1.2.4-0235/Mac/Installer/Synology%20Chat%20Client-1.2.4-0235.dmg",
+      "artifactSHA256": "a040f79c5b65fad84b271f21be5fdc4805afc46d391ebca790e9f906fc710f89",
+      "apps": []
     }
   }
 }
