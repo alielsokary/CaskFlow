@@ -23848,6 +23848,281 @@
           "bundleIdentifier": "com.NeilSardesai.Manila"
         }
       ]
+    },
+    "meetingrecorder": {
+      "caskVersion": "1.6.3",
+      "sourceURL": "https://meetingsrecorder.com/downloads/MeetingRecorder-1.6.3.dmg",
+      "artifactSHA256": "4b0dc1f472866dea0362bdda7583bb5f68964140fa36fe170cc8118b552a3f26",
+      "apps": [
+        {
+          "bundleName": "MeetingRecorder.app",
+          "bundleIdentifier": "com.meetingrecorder.app"
+        }
+      ]
+    },
+    "memory-cleaner": {
+      "caskVersion": "5.5.3,271",
+      "sourceURL": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=271",
+      "artifactSHA256": "6b1097ccc760723e1c521a851ceef68b92c4a5647e1e1d5426f644f02d7517f3",
+      "apps": [
+        {
+          "bundleName": "Memory Cleaner 5.app",
+          "bundleIdentifier": "com.nektony.Memory-Cleaner-SIII"
+        }
+      ]
+    },
+    "metamer": {
+      "caskVersion": "1.6,2025.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/07/metamer16.zip",
+      "artifactSHA256": "ff4be4887d56764a4257f79be190217dcf5bdf556cca3e627e9757d76fab020e",
+      "apps": [
+        {
+          "bundleName": "Metamer.app",
+          "bundleIdentifier": "co.eclecticlight.Metamer"
+        }
+      ]
+    },
+    "meetmic": {
+      "caskVersion": "1.36.467",
+      "sourceURL": "https://meetmicdev.s3.us-west-002.backblazeb2.com/MeetMic-1.36.467.zip",
+      "artifactSHA256": "0aa51e93bc2653ceecc82a5b457d7f9237402f140c69f55bf23278881b35f423",
+      "apps": [
+        {
+          "bundleName": "MeetMic.app",
+          "bundleIdentifier": "ltd.iwt.QuickWhisper"
+        }
+      ]
+    },
+    "metaimage": {
+      "caskVersion": "2.6.7",
+      "sourceURL": "https://neededapps.com/appcasts/metaimage/versions/2.6.7",
+      "artifactSHA256": "851f9585b4137ce173dcce915d8252f8610ee001e9f8c88c3fa05bb39c5d24a8",
+      "apps": [
+        {
+          "bundleName": "MetaImage.app",
+          "bundleIdentifier": "com.jeremyvizzini.metaimage-paddle"
+        }
+      ]
+    },
+    "meru": {
+      "caskVersion": "3.61.0",
+      "sourceURL": "https://github.com/zoidsh/meru/releases/download/v3.61.0/Meru-3.61.0-arm64.dmg",
+      "artifactSHA256": "afba189afe79b288aace99910ef39f3a8a3e4a3a9f1c78d61b73e748f460e3b5",
+      "apps": [
+        {
+          "bundleName": "Meru.app",
+          "bundleIdentifier": "sh.zoid.meru"
+        }
+      ]
+    },
+    "mesh": {
+      "caskVersion": "2.20.10",
+      "sourceURL": "https://assets.me.sh/mesh-desktop/mac/Mesh-2.20.10-universal.dmg",
+      "artifactSHA256": "fae6b944ca1a14424e3a4e68356ecfa5a6849381649a4524dcf019fb06fc6b94",
+      "apps": [
+        {
+          "bundleName": "Mesh.app",
+          "bundleIdentifier": "com.clay.mac"
+        }
+      ]
+    },
+    "meridiem": {
+      "caskVersion": "1.0.26",
+      "sourceURL": "https://storage.googleapis.com/markwhen_binaries/Meridiem/darwin/arm64/Meridiem-darwin-arm64-1.0.26.zip",
+      "artifactSHA256": "7abf126ccaf1ff45d19c247ff27a2fb74ab262440c9e8603962b48688c442956",
+      "apps": [
+        {
+          "bundleName": "Meridiem.app",
+          "bundleIdentifier": "com.electron.meridiem"
+        }
+      ]
+    },
+    "meta": {
+      "caskVersion": "2.5.8",
+      "sourceURL": "https://www.nightbirdsevolve.com/meta/updates/bin/Meta%202.5.8.zip",
+      "artifactSHA256": "ab00579c8984b4e513c209c5edb3e1334a1971e2573b3d7ee705a424669837ce",
+      "apps": [
+        {
+          "bundleName": "Meta.app",
+          "bundleIdentifier": "com.nightbirdsevolve.Meta"
+        }
+      ]
+    },
+    "menubarx": {
+      "caskVersion": "1.7.6",
+      "sourceURL": "https://menubarx-1251679148.file.myqcloud.com/download/MenubarX-1.7.6.dmg",
+      "artifactSHA256": "63973867313ab0bfff6861b35d72fe91fc78c84085a2650b42b21d41cabba97e",
+      "apps": [
+        {
+          "bundleName": "MenubarX.app",
+          "bundleIdentifier": "com.app.menubarx"
+        }
+      ]
+    },
+    "mellel": {
+      "caskVersion": "6.7.1,67102",
+      "sourceURL": "https://d1riogbqt3a9uw.cloudfront.net/mellel_67102.dmg",
+      "artifactSHA256": "c29a8f555a43b504fa4ecbfa186cfa526ac29a1f1a67a6b25d48014f4af7400d",
+      "apps": [
+        {
+          "bundleName": "Mellel 6.app",
+          "bundleIdentifier": "com.redlex.mellel6"
+        }
+      ]
+    },
+    "melodics": {
+      "caskVersion": "5.0.1345,14A31989-BC1D-49F7-8D86-667ECADCEE90",
+      "sourceURL": "https://web-cdn.melodics.com/download/14A31989-BC1D-49F7-8D86-667ECADCEE90.zip",
+      "artifactSHA256": "88432913771cacdaf1a16e5403aaec063e2e3855399db7359061a23637a202c3",
+      "apps": [
+        {
+          "bundleName": "Melodics.app",
+          "bundleIdentifier": "com.melodics.melodics"
+        }
+      ]
+    },
+    "medibangpaintpro": {
+      "caskVersion": "29.1",
+      "sourceURL": "https://medibangpaint.com/static/installer/MediBangPaintPro/MediBangPaintPro-29.1.dmg",
+      "artifactSHA256": "c966c62fda937acc85c114e25202a113614d540ff493cde1eb42e7417335f3c8",
+      "apps": [
+        {
+          "bundleName": "MediBangPaintPro.app",
+          "bundleIdentifier": "com.medibang.cloudalpaca"
+        }
+      ]
+    },
+    "metarename": {
+      "caskVersion": "1.0.10",
+      "sourceURL": "https://neededapps.com/appcasts/metarename/versions/1.0.10",
+      "artifactSHA256": "8622ba6fbd7ed1cdda6dbdae782816b0557b7a92b2ed112c923f7a6dccf8303b",
+      "apps": [
+        {
+          "bundleName": "MetaRename.app",
+          "bundleIdentifier": "com.jeremyvizzini.metarename-paddle"
+        }
+      ]
+    },
+    "metashape": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://download.agisoft.com/metashape_2_3_2.dmg",
+      "artifactSHA256": "8e3c1cea20cd405661ae2e44adac5a41624084c471bbfacf801a9b6d79fe6b6d",
+      "apps": [
+        {
+          "bundleName": "Metashape.app",
+          "bundleIdentifier": "com.agisoft.metashape.standard"
+        }
+      ]
+    },
+    "memory-meter-3": {
+      "caskVersion": "1.0.81",
+      "sourceURL": "https://fiplab.com/updates/memorymeter3/Memory-Meter-3-1.0.81.zip",
+      "artifactSHA256": "b8113adf1b65656eb933e76cda601ac25f1ada6208ca49b641e9da266857850d",
+      "apps": [
+        {
+          "bundleName": "Memory Meter 3.app",
+          "bundleIdentifier": "com.fiplab.memoryclean3"
+        }
+      ]
+    },
+    "meituxiuxiu": {
+      "caskVersion": "2.2.80",
+      "sourceURL": "https://xiuxiupc-dl.meitudata.com/xiuxiumac_setup.dmg",
+      "artifactSHA256": "2729aac3195474f280b5aa8ba3747eb045fc16ab2c1539e6b9c4799fe96ee0b1",
+      "apps": [
+        {
+          "bundleName": "美图秀秀.app",
+          "bundleIdentifier": "com.meitu.mtxxpro"
+        }
+      ]
+    },
+    "mem": {
+      "caskVersion": "0.43.0",
+      "sourceURL": "https://storage.googleapis.com/mem-desktop-stable-releases/Mem-0.43.0.dmg",
+      "artifactSHA256": "8b6298f6dac699be5c160679d3759149a262cf1e41ea305084648dd591de41ae",
+      "apps": [
+        {
+          "bundleName": "Mem.app",
+          "bundleIdentifier": "org.memlabs.Mem"
+        }
+      ]
+    },
+    "merlin-project": {
+      "caskVersion": "9.2.1",
+      "sourceURL": "https://www.projectwizards.net/downloads/MerlinProject.zip",
+      "artifactSHA256": "ce388101c1b0a7b9a671d70f42b5998d55579561a0b7832998141151223e40f6",
+      "apps": [
+        {
+          "bundleName": "Merlin Project.app",
+          "bundleIdentifier": "net.projectwizards.merlinproject"
+        }
+      ]
+    },
+    "meld-studio": {
+      "caskVersion": "0.10.6.9",
+      "sourceURL": "https://packages.streamwithmeld.com/MeldStudioInstaller.dmg",
+      "artifactSHA256": "901ac00e4bd8e5b098070c153bc1d61d435d9b345cd13c4dee071501cf4c91e7",
+      "apps": [
+        {
+          "bundleName": "Meld Studio.app",
+          "bundleIdentifier": "co.meldstudio.MeldStudio"
+        }
+      ]
+    },
+    "menubar-stats": {
+      "caskVersion": "3.9.916",
+      "sourceURL": "https://seense.com/menubarstats/updateapp/mbs.zip",
+      "artifactSHA256": "b3cfe244cc0a5b1c3e22e076e820385c930b535e03e050a01b232956df345e84",
+      "apps": [
+        {
+          "bundleName": "MenuBar Stats.app",
+          "bundleIdentifier": "com.fabriceleyne.menubarstats"
+        }
+      ]
+    },
+    "menu-bar-splitter": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/jwhamilton99/menu-bar-splitter/releases/download/2.0.1/menu-bar-splitter.zip",
+      "artifactSHA256": "3a48c97cb3594933c5b2f97b0e31373a45847b8aefec7aeceaf7f0ea350b789e",
+      "apps": [
+        {
+          "bundleName": "Menu Bar Splitter.app",
+          "bundleIdentifier": "justinhamilton.Menu-Bar-Splitter"
+        }
+      ]
+    },
+    "menuwhere": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/menuwhere230.dmg",
+      "artifactSHA256": "26018be00b8d097e24c397c2f93996af47353dd1c8e54c7fcf28067fadd0dd3b",
+      "apps": [
+        {
+          "bundleName": "Menuwhere.app",
+          "bundleIdentifier": "com.manytricks.Menuwhere"
+        }
+      ]
+    },
+    "memory": {
+      "caskVersion": "2023.11",
+      "sourceURL": "https://memorymacapp.s3.amazonaws.com/Memory.zip",
+      "artifactSHA256": "68b9f675ebe9e9063e7d0817f6aa72d2f7e58ebe40575b75e9d37d88086b877c",
+      "apps": [
+        {
+          "bundleName": "Memory.app",
+          "bundleIdentifier": "com.timeapp.devlpmp.Timely-Mac-Tracker"
+        }
+      ]
+    },
+    "metashapepro": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://download.agisoft.com/metashape-pro_2_3_2.dmg",
+      "artifactSHA256": "8b6829b9c49e4b34658d04c41913047b1cd9d3e16abcf70c92295c492dd4a2c0",
+      "apps": [
+        {
+          "bundleName": "MetashapePro.app",
+          "bundleIdentifier": "com.agisoft.metashape.professional"
+        }
+      ]
     }
   }
 }
