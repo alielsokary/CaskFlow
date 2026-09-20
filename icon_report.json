@@ -62,8 +62,8 @@
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 27f943d2618b...)",
-    "attempts": 2,
-    "updated": "2026-09-19"
+    "attempts": 3,
+    "updated": "2026-09-20"
   },
   "appgate-sdp-client": {
     "status": "no_icon",
@@ -248,7 +248,7 @@
   "clash-mi": {
     "status": "failed",
     "reason": "sha256 mismatch (got ae5b918dd49f...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "claude-code": {
@@ -412,6 +412,12 @@
     "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
     "attempts": 0,
     "updated": "2026-07-09"
+  },
+  "display-pilot": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-09-20"
   },
   "dotnet-runtime": {
     "status": "curated",
@@ -782,7 +788,7 @@
   "latexit": {
     "status": "failed",
     "reason": "download failed: curl: (47) Maximum (50) redirects followed",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "lemonade-server": {
@@ -980,8 +986,8 @@
   "notchnook": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
-    "attempts": 1,
-    "updated": "2026-09-19"
+    "attempts": 2,
+    "updated": "2026-09-20"
   },
   "notion-cli": {
     "status": "no_icon",

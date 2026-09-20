@@ -10120,6 +10120,221 @@
           "bundleIdentifier": "com.yetone.alma"
         }
       ]
+    },
+    "duet": {
+      "caskVersion": "3.20.3.0",
+      "sourceURL": "https://duetdownload.com/Mac/3_x/duet-dd-3-20-3-0.dmg",
+      "artifactSHA256": "2edcc20b4238f1490579595956c1e18dfd441d0e6abbb69c9cba788640e80ab9",
+      "apps": [
+        {
+          "bundleName": "duet.app",
+          "bundleIdentifier": "com.kairos.duetMac"
+        }
+      ]
+    },
+    "vibe-island": {
+      "caskVersion": "1.0.49",
+      "sourceURL": "https://dl.vibeisland.app/VibeIsland-1.0.49.dmg",
+      "artifactSHA256": "c8d9af0e85cd6a9631ac848dab8b91ab0be6830250cc9f6ea4df94c7f9efb8ef",
+      "apps": [
+        {
+          "bundleName": "Vibe Island.app",
+          "bundleIdentifier": "app.vibeisland.macos"
+        }
+      ]
+    },
+    "onexrayse": {
+      "caskVersion": "26.9.3",
+      "sourceURL": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-macos-universal.zip",
+      "artifactSHA256": "78d2a0042fb993b93615bd22f8da77050cec1db96533037435a4c7cdf0699368",
+      "apps": [
+        {
+          "bundleName": "OneXraySE.app",
+          "bundleIdentifier": "net.yuandev.onexray.se"
+        }
+      ]
+    },
+    "thunder": {
+      "caskVersion": "5.80.8.66675",
+      "sourceURL": "https://down.sandai.net/mac/thunder_5.80.8.66675.dmg",
+      "artifactSHA256": "820b9023348d3923b0414cb63d9f5eb253a43e832112e1e38c9eaa66e6f9a32d",
+      "apps": [
+        {
+          "bundleName": "Thunder.app",
+          "bundleIdentifier": "com.xunlei.Thunder"
+        }
+      ]
+    },
+    "creality-print": {
+      "caskVersion": "7.2.2.5483,7.2.1",
+      "sourceURL": "https://github.com/CrealityOfficial/CrealityPrint/releases/download/v7.2.1/CrealityPrint-7.2.2.5483-macx-arm64-Release.dmg",
+      "artifactSHA256": "86c611740afc797a3f55d1c7f3f1e34ce0c3bf55cf5bcc6b93febe32d5b7df63",
+      "apps": [
+        {
+          "bundleName": "Creality Print.app",
+          "bundleIdentifier": "com.creality.crealityprint"
+        }
+      ]
+    },
+    "apparency": {
+      "caskVersion": "3.4",
+      "sourceURL": "https://www.mothersruin.com/software/archives/Apparency-3.4.dmg",
+      "artifactSHA256": "675eadfb33589e3ce6eac88265c8651f02c2db74dac85361f2034bc956e8fc61",
+      "apps": [
+        {
+          "bundleName": "Apparency.app",
+          "bundleIdentifier": "com.mothersruin.Apparency"
+        }
+      ]
+    },
+    "hopper-disassembler": {
+      "caskVersion": "6.6.0",
+      "sourceURL": "https://www.hopperapp.com/downloader/public/Hopper-6.6.0-demo.dmg",
+      "artifactSHA256": "4e678442f4afe283566c34fa359f025b0e754065787caa0cae52fd7faf2f0a7b",
+      "apps": [
+        {
+          "bundleName": "Hopper Disassembler.app",
+          "bundleIdentifier": "com.cryptic-apps.hopper-web-4"
+        }
+      ]
+    },
+    "spotmenu": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/kmikiy/SpotMenu/releases/download/v2.3.0/SpotMenu.app.zip",
+      "artifactSHA256": "00394a4ce7413e9fbb8d9df11c0154dde011a74fc1b013f4a9e613883c2dcb8c",
+      "apps": [
+        {
+          "bundleName": "SpotMenu.app",
+          "bundleIdentifier": "com.github.kmikiy.SpotMenu"
+        }
+      ]
+    },
+    "licecap": {
+      "caskVersion": "1.32",
+      "sourceURL": "https://www.cockos.com/licecap/licecap132.dmg",
+      "artifactSHA256": "115c40eb710085969a72a24d5d84ae2c05260192cc68a22e73e99e148c6638da",
+      "apps": [
+        {
+          "bundleName": "LICEcap.app",
+          "bundleIdentifier": "com.cockos.LICEcap"
+        }
+      ]
+    },
+    "bramble": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://github.com/flythenimbus/bramble/releases/download/0.8.0-desktop/Bramble_0.8.0_universal.dmg",
+      "artifactSHA256": "4a8763fe109d7ef3fc7b4253afe3b88484f53a9554333ebbed1e70cb5b39795b",
+      "apps": [
+        {
+          "bundleName": "Bramble.app",
+          "bundleIdentifier": "app.bramble.desktop"
+        }
+      ]
+    },
+    "jetbrains-gateway": {
+      "caskVersion": "2026.2.2,262.10315.114",
+      "sourceURL": "https://download.jetbrains.com/idea/gateway/JetBrainsGateway-2026.2.2-aarch64.dmg",
+      "artifactSHA256": "f4c129c2888e1f215cea5b1f28394bb3524267ea1b976353dba0b44902d7108b",
+      "apps": [
+        {
+          "bundleName": "JetBrains Gateway.app",
+          "bundleIdentifier": "com.jetbrains.gateway"
+        }
+      ]
+    },
+    "ableton-live-suite": {
+      "caskVersion": "12.4.6",
+      "sourceURL": "https://cdn-downloads.ableton.com/channels/12.4.6/ableton_live_suite_12.4.6_universal.dmg",
+      "artifactSHA256": "8260588be2e955f329c59d0c53d2fa8af31068c48dad17c571c0c610a94612c4",
+      "apps": [
+        {
+          "bundleName": "Ableton Live 12 Suite.app",
+          "bundleIdentifier": "com.ableton.live"
+        }
+      ]
+    },
+    "qobuz": {
+      "caskVersion": "8.2.0,033",
+      "sourceURL": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.2.0-b033/Qobuz.dmg",
+      "artifactSHA256": "a33b008770682ac90c1faa2f6b4a0886ca632f6043c5819389ad5bb5de259e19",
+      "apps": [
+        {
+          "bundleName": "Qobuz.app",
+          "bundleIdentifier": "com.qobuz.desktop"
+        }
+      ]
+    },
+    "androidtool": {
+      "caskVersion": "1.66",
+      "sourceURL": "https://github.com/mortenjust/androidtool-mac/releases/download/1.66/AndroidTool.zip",
+      "artifactSHA256": "4f432ad45660071a1f36c4878bd444dd8bedd520c7c70096e5d7a7907ff7c86a",
+      "apps": [
+        {
+          "bundleName": "AndroidTool.app",
+          "bundleIdentifier": "com.mortenjust.AndroidTool"
+        }
+      ]
+    },
+    "mirai": {
+      "caskVersion": "0.4.9",
+      "sourceURL": "https://assets.trymirai.com/app/mirai-0.4.9-aarch64-apple-darwin.dmg",
+      "artifactSHA256": "67f0bed87cd3a008b7d650264e68ee2e186fb6678b3818510efe36807ec22d75",
+      "apps": [
+        {
+          "bundleName": "Mirai.app",
+          "bundleIdentifier": "com.mirai.tech.chat"
+        }
+      ]
+    },
+    "brewy": {
+      "caskVersion": "0.26.0",
+      "sourceURL": "https://github.com/starhaven-io/Brewy/releases/download/0.26.0/Brewy-0.26.0.zip",
+      "artifactSHA256": "a7e603a69575602db6f891586457e3d28428d8c7c1b0df80d4b05c477e1d83ac",
+      "apps": [
+        {
+          "bundleName": "Brewy.app",
+          "bundleIdentifier": "io.linnane.brewy"
+        }
+      ]
+    },
+    "palmier-pro": {
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://github.com/palmier-io/palmier-pro/releases/download/v0.9.0/PalmierPro.dmg",
+      "artifactSHA256": "cc232de76eb815f9464eaf3cb5cba00360f2889c81ddd5b0094d2ba672fdeaee",
+      "apps": [
+        {
+          "bundleName": "PalmierPro.app",
+          "bundleIdentifier": "io.palmier.pro"
+        }
+      ]
+    },
+    "mediahuman-audio-converter": {
+      "caskVersion": "2.3.8",
+      "sourceURL": "https://www.mediahuman.com/files/MHAudioConverter-arm.dmg",
+      "artifactSHA256": "ee67a54648cde4debededa4ae995047557fad8274ca4598cf8f47b9c0f45486f",
+      "apps": []
+    },
+    "easy-move+resize": {
+      "caskVersion": "1.8.1",
+      "sourceURL": "https://github.com/dmarcotte/easy-move-resize/releases/download/1.8.1/EasyMoveResize-signed.zip",
+      "artifactSHA256": "34f48f465017d2aed58fb3c681aa0d132d0bf121f744f6864bd9819694e0ff76",
+      "apps": [
+        {
+          "bundleName": "Easy Move+Resize.app",
+          "bundleIdentifier": "org.dmarcotte.Easy-Move-Resize"
+        }
+      ]
+    },
+    "winzip": {
+      "caskVersion": "12.0.7282",
+      "sourceURL": "https://download.winzip.com/winzipmacedition12.dmg",
+      "artifactSHA256": "ac69719cdadcefcb75729831983d884f44e9e57e5cc608672b3d4a1c87963c0e",
+      "apps": [
+        {
+          "bundleName": "WinZip.app",
+          "bundleIdentifier": "com.winzip.WinZip-Mac"
+        }
+      ]
     }
   }
 }
