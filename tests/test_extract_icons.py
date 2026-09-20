@@ -363,7 +363,7 @@ def test_main_partial_failure_stays_green(monkeypatch, tmp_path):
 
 
 @pytest.mark.parametrize("mode", ["backfill", "icons", "manual"])
-def test_identity_backfill_requires_declared_apps_without_restricting_icon_modes(monkeypatch, tmp_path, mode):
+def test_identity_backfill_includes_packages_and_suites(monkeypatch, tmp_path, mode):
     from types import SimpleNamespace
 
     casks = [_cask(token="pkg", artifacts=[{"pkg": ["Installer.pkg"]}]),
@@ -380,7 +380,7 @@ def test_identity_backfill_requires_declared_apps_without_restricting_icon_modes
     flags = {"backfill": ["--identity-backfill"], "icons": [],
              "manual": ["--identity-backfill", "--tokens", "pkg", "suite"]}[mode]
     assert extract_icons.main(["--output-dir", str(tmp_path), "--limit", "2", *flags]) == 0
-    assert extracted == (["popular", "app"] if mode == "backfill" else ["pkg", "suite"])
+    assert extracted == ["pkg", "suite"]
 
 
 def test_main_reports_identities_independently_of_icon_success(monkeypatch, tmp_path, capsys):
