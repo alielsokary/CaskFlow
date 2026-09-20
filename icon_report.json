@@ -737,6 +737,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "huly": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "hy-rpe2": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -760,6 +766,12 @@
     "reason": "sha256 mismatch (got 5d09f7e8ded7...)",
     "attempts": 5,
     "updated": "2026-09-01"
+  },
+  "icollections": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-09-20"
   },
   "ijhttp": {
     "status": "no_icon",

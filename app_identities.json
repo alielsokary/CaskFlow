@@ -21051,6 +21051,254 @@
           "bundleIdentifier": "com.getharvest.harvestxapp"
         }
       ]
+    },
+    "iaito": {
+      "caskVersion": "6.2.2",
+      "sourceURL": "https://github.com/radareorg/iaito/releases/download/6.2.2/iaito_6.2.2_arm64.dmg",
+      "artifactSHA256": "dc47554a5f1da68ce53b750f1a89786aa25601eea5e208c769bdac47fbaf4f17",
+      "apps": [
+        {
+          "bundleName": "iaito.app",
+          "bundleIdentifier": "org.radare.iaito"
+        }
+      ]
+    },
+    "hytale": {
+      "caskVersion": "2026.09.15-261d405",
+      "sourceURL": "https://launcher.hytale.com/builds/release/darwin/arm64/hytale-launcher-2026.09.15-261d405.dmg",
+      "artifactSHA256": "9e82c8293d756feb6387ba09c5deccc064258d91f0ce0388df56223f756edd01",
+      "apps": [
+        {
+          "bundleName": "Hytale Launcher.app",
+          "bundleIdentifier": "com.hypixel.hytale-launcher"
+        }
+      ]
+    },
+    "iconscout": {
+      "caskVersion": "1.0.6",
+      "sourceURL": "https://github.com/Iconscout/iconscout-app/releases/download/v1.0.6/IconScout-1.0.6.dmg",
+      "artifactSHA256": "ce9290257210a46c3a2e8f0c584e0b1ff798fa66da0c054258a9848c0deb7ee2",
+      "apps": []
+    },
+    "hstracker": {
+      "caskVersion": "3.6.11",
+      "sourceURL": "https://github.com/HearthSim/HSTracker/releases/download/3.6.11/HSTracker.app.zip",
+      "artifactSHA256": "6066b67ca4d120102e7eaa0a35a1746b595be032eee79737d9f1c80029e8b0cb",
+      "apps": [
+        {
+          "bundleName": "HSTracker.app",
+          "bundleIdentifier": "net.hearthsim.hstracker"
+        }
+      ]
+    },
+    "hubstaff": {
+      "caskVersion": "1.9.6,12322",
+      "sourceURL": "https://app.hubstaff.com/download/12322-standard-mac-os-x-1-9-6-release/dmg?architecture=arm64",
+      "artifactSHA256": "f795e01fb8962bd2d2ff967ced823ec06757e32a1f8b2b308e1e890ac298320c",
+      "apps": [
+        {
+          "bundleName": "Hubstaff.app",
+          "bundleIdentifier": "com.netsoft.Hubstaff"
+        }
+      ]
+    },
+    "iconchanger": {
+      "caskVersion": "1.2.7,2022-12-22,11-45-17",
+      "sourceURL": "https://github.com/underthestars-zhy/IconChanger/releases/download/v1.2.7/IconChanger.2022-12-22.11-45-17.zip",
+      "artifactSHA256": "65952531d571375a60b8b1082f2d655040bf566d4e8692449476a8e2582e8b46",
+      "apps": [
+        {
+          "bundleName": "IconChanger.app",
+          "bundleIdentifier": "com.zhuhaoyu.IconChanger"
+        }
+      ]
+    },
+    "hyperwhisper": {
+      "caskVersion": "2.48.0",
+      "sourceURL": "https://builds.hyperwhisper.com/hyperwhisper-2.48.0.dmg",
+      "artifactSHA256": "7e9dfe88d38fb0bfb3569aebb8783fa8135d8c63bd17eba9b62afd40614554e2",
+      "apps": [
+        {
+          "bundleName": "HyperWhisper.app",
+          "bundleIdentifier": "com.hyperwhisper.hyperwhisper"
+        }
+      ]
+    },
+    "icon-shelf": {
+      "caskVersion": "0.1.28",
+      "sourceURL": "https://github.com/Icon-Shelf/icon-shelf/releases/download/v0.1.28/Icon-Shelf-0.1.28-arm64.dmg",
+      "artifactSHA256": "f1d730568828de64d564ef2e103abbb4e88599ddd52b971edcbbd84da7d08a25",
+      "apps": [
+        {
+          "bundleName": "Icon Shelf.app",
+          "bundleIdentifier": "com.IconShelf.app"
+        }
+      ]
+    },
+    "iconset": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://github.com/IconsetApp/iconset/releases/download/v2.5.0/Iconset-2.5.0-arm64-mac.zip",
+      "artifactSHA256": "ed567c877bb0b7ba6889edc857f7cc83deb1f4e8c6bfc692ae7eb97e9ef9452c",
+      "apps": [
+        {
+          "bundleName": "Iconset.app",
+          "bundleIdentifier": "io.iconset.app"
+        }
+      ]
+    },
+    "iconjar": {
+      "caskVersion": "2.11.4,50604",
+      "sourceURL": "https://geticonjar.com/releases/IconJar.app.50604.zip",
+      "artifactSHA256": "ee4b02ded14fb84e0d75ac7314f5336401f12f924d1b67410d7a541dc328d8df",
+      "apps": [
+        {
+          "bundleName": "IconJar.app",
+          "bundleIdentifier": "com.iconjar.iconjar2"
+        }
+      ]
+    },
+    "icanhazshortcut": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/deseven/icanhazshortcut/releases/download/2.0.1/ichs.dmg",
+      "artifactSHA256": "95de7bfaf4a986ec5426ca720e4eda80fb233ad93b8294d2e5b65c3fd2ae6e7d",
+      "apps": [
+        {
+          "bundleName": "iCanHazShortcut.app",
+          "bundleIdentifier": "info.deseven.icanhazshortcut"
+        }
+      ]
+    },
+    "hyperconnect": {
+      "caskVersion": "3.0.300",
+      "sourceURL": "https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/hyperconnect/HyperConnect-3.0.300.dmg",
+      "artifactSHA256": "651cdf44a1dbb4a969cf530feaa887566cfdad4cd30be9551d3da13c9ec35db0",
+      "apps": [
+        {
+          "bundleName": "小米互联服务.app",
+          "bundleIdentifier": "com.xiaomi.hyperConnect"
+        }
+      ]
+    },
+    "idagio": {
+      "caskVersion": "1.15.0",
+      "sourceURL": "https://dl.idagio.com/IDAGIO-1.15.0.dmg",
+      "artifactSHA256": "f5b8d8985c3f93765a96c1f85bdab54c84113cc3da22ee9e2b286b31d52115e2",
+      "apps": [
+        {
+          "bundleName": "IDAGIO.app",
+          "bundleIdentifier": "com.idagio.desktop"
+        }
+      ]
+    },
+    "ia-presenter": {
+      "caskVersion": "2.0.5,20037",
+      "sourceURL": "https://files.ia.net/presenter/release/iA-Presenter-2.0.5-20037.zip",
+      "artifactSHA256": "3fe5bcc53cccaba5189530eb7366c75742a985b55a7c70e87830f38bf22abc19",
+      "apps": [
+        {
+          "bundleName": "iA Presenter.app",
+          "bundleIdentifier": "net.ia.presenter"
+        }
+      ]
+    },
+    "hyperbackupexplorer": {
+      "caskVersion": "3.0.1-0156",
+      "sourceURL": "https://global.download.synology.com/download/Utility/HyperBackupExplorer/3.0.1-0156/Mac/x86_64/HyperBackupExplorer-3.0.1-0156-mac.dmg",
+      "artifactSHA256": "0aa5b7162acf104c7644e1e0355cb2ff309837fb60dff111bbc3c213f985e826",
+      "apps": [
+        {
+          "bundleName": "HyperBackupExplorer.app",
+          "bundleIdentifier": "com.synology.HyperBackupExplorer"
+        }
+      ]
+    },
+    "hp-easy-admin": {
+      "caskVersion": "2.16.0,251010",
+      "sourceURL": "https://ftp.hp.com/pub/softlib/software12/HP_Quick_Start/osx/Applications/HP_Easy_Admin.app.zip",
+      "artifactSHA256": "7ffa91a545a491bffc5e601bfd98da53a08fddc5fa82767fb3e5216cb2cd4479",
+      "apps": [
+        {
+          "bundleName": "HP Easy Admin.app",
+          "bundleIdentifier": "com.hp.hp-easy-admin"
+        }
+      ]
+    },
+    "ibackup-viewer": {
+      "caskVersion": "4.3220",
+      "sourceURL": "https://www.imactools.com/download/iBackupViewer.dmg",
+      "artifactSHA256": "b0b382eb8f65791a29a4ea1dbe9b3fcb25e771b1d13fd5412da6f66adba05ddf",
+      "apps": [
+        {
+          "bundleName": "iBackup Viewer.app",
+          "bundleIdentifier": "com.imactools.iBackup-Viewer"
+        }
+      ]
+    },
+    "hush": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://github.com/oblador/hush/releases/download/v1.0/Hush.dmg",
+      "artifactSHA256": "ed5050e0806d633a717807f90e28acf4b6c2ebcd789b68d3b1c4d461aba0dfc7",
+      "apps": [
+        {
+          "bundleName": "Hush.app",
+          "bundleIdentifier": "se.oblador.Hush"
+        }
+      ]
+    },
+    "iconchamp": {
+      "caskVersion": "1.3.6",
+      "sourceURL": "https://github.com/MacEnhance/appcast/raw/master/IconChamp/IconChamp.zip",
+      "artifactSHA256": "afecd202cfa774fd847c2882ff854e376efe5cecbf914ea4a8ce452054b25f49",
+      "apps": [
+        {
+          "bundleName": "IconChamp.app",
+          "bundleIdentifier": "com.macenhance.IconChamp"
+        }
+      ]
+    },
+    "ibettercharge": {
+      "caskVersion": "1.0.12,1568119585",
+      "sourceURL": "https://dl.devmate.com/com.softorino.iBetterCharge/1.0.12/1568119585/iBetterCharge-1.0.12.zip",
+      "artifactSHA256": "33de59c5a1157b23f9313348ef60e213200d007e2b16c4f53859ddcb4c66d696",
+      "apps": [
+        {
+          "bundleName": "iBetterCharge.app",
+          "bundleIdentifier": "com.softorino.iBetterCharge"
+        }
+      ]
+    },
+    "hype": {
+      "caskVersion": "4.1.21,780",
+      "sourceURL": "https://tumult.com/hype/download/Hype-780.dmg",
+      "artifactSHA256": "06ebcae431416dabfcd10bdc7a8906f6c96a3ab6b2d43eae212fab79eaec6a5e",
+      "apps": [
+        {
+          "bundleName": "Hype 4.app",
+          "bundleIdentifier": "com.tumult.Hype4"
+        }
+      ]
+    },
+    "ibored": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://files.tempel.org/iBored/iBored-Mac_1.2.1.zip",
+      "artifactSHA256": "f20c11204eed840c62ab2256004baba813e3514d5e237a71dd696595e11303e3",
+      "apps": [
+        {
+          "bundleName": "iBored.app",
+          "bundleIdentifier": "org.tempel.ibored"
+        }
+      ]
+    },
+    "ibabel": {
+      "caskVersion": "5.0.3,2023,02",
+      "sourceURL": "https://macinchem.org/wp-content/uploads/2023/02/iBabel.zip",
+      "artifactSHA256": "25e8c5a311e0a45b5e5cb519fe00ab8b6b9084f5045ee18639649295f39cbc19",
+      "apps": [
+        {
+          "bundleName": "iBabel.app",
+          "bundleIdentifier": "com.macinchem.iBabel"
+        }
+      ]
     }
   }
 }
