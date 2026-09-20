@@ -32426,6 +32426,265 @@
           "bundleIdentifier": "com.gingerlabs.bagel"
         }
       ]
+    },
+    "vbrokers": {
+      "caskVersion": "2.8.837,1110127,1788230398",
+      "sourceURL": "https://r.hstong.com/public/app/Mac/HSTONG_Mac_1110127_2.8.837_1788230398.dmg",
+      "artifactSHA256": "7101267cf6feaae2293ce94d6f8311a74f2f3fcb21a3287d7063a13ab941a4b7",
+      "apps": [
+        {
+          "bundleName": "VBrokers.app",
+          "bundleIdentifier": "com.hszb.hstongMac"
+        }
+      ]
+    },
+    "unpkg": {
+      "caskVersion": "5.0",
+      "sourceURL": "https://www.timdoug.com/unpkg/unpkg-5.0.dmg",
+      "artifactSHA256": "3a5936d16cf579cad9949af4673b7fc097b9aedc59d50b28c6f75c2b15a4631b",
+      "apps": [
+        {
+          "bundleName": "unpkg.app",
+          "bundleIdentifier": "org.timdoug.unpkg"
+        }
+      ]
+    },
+    "usage-app": {
+      "caskVersion": "1.4.6",
+      "sourceURL": "https://mediaatelier.com/Usage/Usage_1.4.6.dmg",
+      "artifactSHA256": "1a782b03b08b544eb1277c18576ce14e9388510f53f6e3bda4a6793bd2780c66",
+      "apps": [
+        {
+          "bundleName": "Usage.app",
+          "bundleIdentifier": "com.mediaatelier.Usage"
+        }
+      ]
+    },
+    "unraid-usb-creator": {
+      "caskVersion": "2.0.11,1",
+      "sourceURL": "https://github.com/unraid/usb-creator-next/releases/download/v2.0.11-unraid.1/Unraid.USB.Creator-v2.0.11-unraid.1.dmg",
+      "artifactSHA256": "ba85bee1b9e39bf09f829d3a87ceb76b7b4fb49cc7f72a3dce596431113f66aa",
+      "apps": [
+        {
+          "bundleName": "Unraid USB Creator.app",
+          "bundleIdentifier": "com.limetech.unraid-usb-creator"
+        }
+      ]
+    },
+    "unclutter": {
+      "caskVersion": "2.2.18d",
+      "sourceURL": "https://unclutterapp.com/files/Unclutter.zip",
+      "artifactSHA256": "228673e978d7db8b0958ef8c2f1b1fbedff65f0fd4902411277f9495ab77f928",
+      "apps": [
+        {
+          "bundleName": "Unclutter.app",
+          "bundleIdentifier": "com.softwareambience.Unclutter"
+        }
+      ]
+    },
+    "uu-booster": {
+      "caskVersion": "2.8.20",
+      "sourceURL": "https://adl.netease.com/d/g/uu/c/gw?type=mac&direct=1",
+      "artifactSHA256": "02a718983fa71089a6bbc1e17b99510dcb5dfcd43a7c13720102df7d1437efa6",
+      "apps": [
+        {
+          "bundleName": "UUBooster.app",
+          "bundleIdentifier": "com.netease.uumac"
+        }
+      ]
+    },
+    "unipro-ugene": {
+      "caskVersion": "53.1",
+      "sourceURL": "https://github.com/ugeneunipro/ugene/releases/download/53.1/ugene-53.1-mac-x86-64.dmg",
+      "artifactSHA256": "460a194a25e351d477891de812bab820231655778d7572e6b9fe343946c79ef6",
+      "apps": [
+        {
+          "bundleName": "Unipro UGENE.app",
+          "bundleIdentifier": "net.ugene.ugene"
+        }
+      ]
+    },
+    "ulbow": {
+      "caskVersion": "1.11,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/ulbow111.zip",
+      "artifactSHA256": "7665a3124538c08c52855a9863d1865507007095dfaac0d9ce8f89e4e53e30f8",
+      "apps": [
+        {
+          "bundleName": "Ulbow.app",
+          "bundleIdentifier": "co.eclecticlight.Ulbow"
+        }
+      ]
+    },
+    "ultdata": {
+      "caskVersion": "10.5.1.5",
+      "sourceURL": "https://download.tenorshare.com/downloads/ultdata-ios-mac.dmg",
+      "artifactSHA256": "2842f51191e19b1a42ebc9e2b56d13eb5757c5db5169d09dd710103b9854a32a",
+      "apps": [
+        {
+          "bundleName": "UltData.app",
+          "bundleIdentifier": "com.tenorshare.TenorshareUltData"
+        }
+      ]
+    },
+    "vapor-app": {
+      "caskVersion": "3.10.1",
+      "sourceURL": "https://github.com/NCAR/VAPOR/releases/download/3.10.1/VAPOR3-3.10.1-AppleSilicon.dmg",
+      "artifactSHA256": "2c5f41427f064318c7c4724478ee1aa4bbcaca47cba43b40ef5c8e52c6108c8a",
+      "apps": []
+    },
+    "unshaky": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/aahung/Unshaky/releases/download/v0.7.0/Unshaky_v0.7.0.zip",
+      "artifactSHA256": "722fdd718fe47e58f1ea9c60fbcaf81cb4bbd6173b9cf7a8c4a6425a977a9fd9",
+      "apps": [
+        {
+          "bundleName": "Unshaky.app",
+          "bundleIdentifier": "com.nestederror.Unshaky"
+        }
+      ]
+    },
+    "unite": {
+      "caskVersion": "6.6",
+      "sourceURL": "https://bzgdownloads.s3.amazonaws.com/Unite/Unite+6.6.zip",
+      "artifactSHA256": "3b6e006e91d61694262c807598c7c4c62938fa642757083ef224cbce6e36d5ff",
+      "apps": [
+        {
+          "bundleName": "Unite.app",
+          "bundleIdentifier": "com.BZG.unite"
+        }
+      ]
+    },
+    "vallum": {
+      "caskVersion": "5.1",
+      "sourceURL": "https://github.com/TheMurusTeam/Vallum/releases/download/v5.1/vallum-5.1.zip",
+      "artifactSHA256": "039e951b65eee1a7e3cc55c387c58861d450e217cc946f975733d056822d6e91",
+      "apps": [
+        {
+          "bundleName": "Vallum.app",
+          "bundleIdentifier": "it.murus.Vallum"
+        }
+      ]
+    },
+    "usmart-trade": {
+      "caskVersion": "4.6.7,20260804_161626,a20805e1-7a1e-45e7-8480-cb1a272354d0,2026-08-04",
+      "sourceURL": "https://hk-static.usmartglobal.com/admin/app-version-file/2026-08-04/a20805e1-7a1e-45e7-8480-cb1a272354d0/usmart_macapp_4.6.7_20260804_161626.dmg",
+      "artifactSHA256": "5cc1e7004c4f4fae55d8028368a5b457207c7a0f0173ecf4c15a870e086b91f1",
+      "apps": [
+        {
+          "bundleName": "uSMART Trade.app",
+          "bundleIdentifier": "com.usmart.mac.test"
+        }
+      ]
+    },
+    "unified-remote": {
+      "caskVersion": "3.14.0.2604",
+      "sourceURL": "https://www.unifiedremote.com/static/builds/server/macosx/2604/ServerSetup-3.14.0.2604.dmg",
+      "artifactSHA256": "30d4928fb40e0e711d6b66df955f714283b8f1db3000afbcfac7615724ca1d98",
+      "apps": [
+        {
+          "bundleName": "Unified Remote.app",
+          "bundleIdentifier": "com.unified.Unified-Remote"
+        }
+      ]
+    },
+    "usb-overdrive": {
+      "caskVersion": "5.4",
+      "sourceURL": "https://www.usboverdrive.com/download/USB-Overdrive-54.dmg",
+      "artifactSHA256": "f98da45246aa8c407f523feb45efd285ad604dcd326b70633ac174f0a1096d84",
+      "apps": [
+        {
+          "bundleName": "USB Overdrive.app",
+          "bundleIdentifier": "com.usboverdrive.app"
+        }
+      ]
+    },
+    "unicodechecker": {
+      "caskVersion": "1.25.1,862",
+      "sourceURL": "https://earthlingsoft.net/UnicodeChecker/UnicodeChecker%201.25.1%20(862).zip",
+      "artifactSHA256": "f6cc0c4e6904e3429e600db741a7bf26bbda2d7efb9eabac5f56b9475a6bfa6f",
+      "apps": [
+        {
+          "bundleName": "UnicodeChecker.app",
+          "bundleIdentifier": "net.earthlingsoft.UnicodeChecker"
+        }
+      ]
+    },
+    "vcamapp": {
+      "caskVersion": "0.15.5",
+      "sourceURL": "https://github.com/vcamapp/app/releases/download/0.15.5/VCam.0.15.5.dmg",
+      "artifactSHA256": "dc913671d0421b8f35604d885237b2caaab9713457fc1b6aa149a8ad85b00e4a",
+      "apps": [
+        {
+          "bundleName": "VCam.app",
+          "bundleIdentifier": "com.github.tattn.VCam"
+        }
+      ]
+    },
+    "usenapp": {
+      "caskVersion": "1.28.1",
+      "sourceURL": "https://www.usenapp.com/download/Usenapp-1.28.1.dmg",
+      "artifactSHA256": "1dad13d22acba87a0eeedd687a1f066ca0ead94034b42e4f90e9f1ea0d85d4f9",
+      "apps": [
+        {
+          "bundleName": "Usenapp.app",
+          "bundleIdentifier": "com.xoroxsoft.usenapp"
+        }
+      ]
+    },
+    "ulaa": {
+      "caskVersion": "2.48.2",
+      "sourceURL": "https://downloads.zohocdn.com/ulaa-browser/release/mac/stable/arm64/Ulaa-Browser-v2.48.2-arm64.dmg",
+      "artifactSHA256": "47ef34fd6986ce881fd342c39b8e008171cd8ae0da4ecd0a113005b7b9c20da0",
+      "apps": [
+        {
+          "bundleName": "Ulaa.app",
+          "bundleIdentifier": "com.primeum.Browser"
+        }
+      ]
+    },
+    "vellum": {
+      "caskVersion": "4.1.5,41500",
+      "sourceURL": "https://180g.s3.amazonaws.com/downloads/Vellum-41500.zip",
+      "artifactSHA256": "d46559e60994d63b8ed282089a881e12106f6de255c3990a7655cd43789fd166",
+      "apps": [
+        {
+          "bundleName": "Vellum.app",
+          "bundleIdentifier": "co.180g.Vellum"
+        }
+      ]
+    },
+    "veepn": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://download.veepn.com/mac/VeePN_v2.4.2.dmg",
+      "artifactSHA256": "36579dd3d5f0fbddc3ca32dd4e67aab9c3b981421365bcb6e9bc0fe4d6472ce1",
+      "apps": [
+        {
+          "bundleName": "VeePN.app",
+          "bundleIdentifier": "com.veepn.macos.direct"
+        }
+      ]
+    },
+    "vamiga": {
+      "caskVersion": "4.5",
+      "sourceURL": "https://github.com/dirkwhoffmann/vAmiga/releases/download/v4.5/vAmiga.app.zip",
+      "artifactSHA256": "8e4d98ee27cc1b10a478389c3f56da05ed60082114c3a249d8907b63a45e1bdb",
+      "apps": [
+        {
+          "bundleName": "vAmiga.app",
+          "bundleIdentifier": "dirkwhoffmann.vAmiga"
+        }
+      ]
+    },
+    "understand": {
+      "caskVersion": "8.0.1263",
+      "sourceURL": "https://latest.scitools.com/Understand/Understand-8.0.1263-macOS-Universal.dmg",
+      "artifactSHA256": "c4688a79bdd193cc5036e7da3da7066c96f174048f9ea1d600468ebcf0df388b",
+      "apps": [
+        {
+          "bundleName": "Understand.app",
+          "bundleIdentifier": "com.scitools.Understand"
+        }
+      ]
     }
   }
 }
