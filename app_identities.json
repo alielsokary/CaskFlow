@@ -24938,6 +24938,276 @@
           "bundleIdentifier": "com.mubu.desktop"
         }
       ]
+    },
+    "navicat-for-mariadb": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_mariadb_en.dmg",
+      "artifactSHA256": "3947a3a7a0eef140a3edb3892ce888087ba5eb76da2e179901a79da4368df8af",
+      "apps": [
+        {
+          "bundleName": "Navicat for MariaDB.app",
+          "bundleIdentifier": "com.navicat.NavicatForMariaDB"
+        }
+      ]
+    },
+    "mysteriumdark": {
+      "caskVersion": "10.17.10",
+      "sourceURL": "https://github.com/mysteriumnetwork/mysterium-vpn-desktop/releases/download/10.17.10/MysteriumDark-10.17.10-universal.dmg",
+      "artifactSHA256": "268aa1d0695aa4d6c65341c99902e0aeae85aadd8539f30aadb71e7c78057143",
+      "apps": [
+        {
+          "bundleName": "MysteriumDark.app",
+          "bundleIdentifier": "network.mysterium.mysterium-vpn-desktop"
+        }
+      ]
+    },
+    "nanosaur2": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/jorio/Nanosaur2/releases/download/v2.1.0/Nanosaur2-2.1.0-mac.dmg",
+      "artifactSHA256": "c2f81e0ac2b73f845d92a13d19b7fc6b83da8761d6453c2b8a34e2e2cfe1674b",
+      "apps": [
+        {
+          "bundleName": "Nanosaur 2.app",
+          "bundleIdentifier": "io.jor.nanosaur2"
+        }
+      ]
+    },
+    "music-remote": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg",
+      "artifactSHA256": "0ba36be82f2d5375f6ec4bd28f9799f5cd6ec66c3c0ffc0477f1e9dfd99dea11",
+      "apps": [
+        {
+          "bundleName": "Music Remote.app",
+          "bundleIdentifier": "com.marioaguzman.Music-Remote"
+        }
+      ]
+    },
+    "museeks": {
+      "caskVersion": "0.23.4",
+      "sourceURL": "https://github.com/martpie/museeks/releases/download/0.23.4/Museeks_0.23.4_universal.dmg",
+      "artifactSHA256": "ff8b3053fefdabb99c54868e74b4857087ac501bf91a026df60776bded2befb7",
+      "apps": [
+        {
+          "bundleName": "Museeks.app",
+          "bundleIdentifier": "io.museeks.app"
+        }
+      ]
+    },
+    "mylio": {
+      "caskVersion": "24.8.7901",
+      "sourceURL": "https://myliodownloads.com/Mylio.dmg",
+      "artifactSHA256": "ee69ee541f6104f801c672e1184ad9f5289928014f2618781b9108dc731a2de8",
+      "apps": [
+        {
+          "bundleName": "Mylio.app",
+          "bundleIdentifier": "mylollc.Mylio"
+        }
+      ]
+    },
+    "muzzle": {
+      "caskVersion": "1.9,426",
+      "sourceURL": "https://muzzleapp.com/binaries/muzzle-426.zip",
+      "artifactSHA256": "f1b4e3d75d8b8de5b6217594c627e58a35e43049267b4eb82716393adefc5fa5",
+      "apps": [
+        {
+          "bundleName": "Muzzle.app",
+          "bundleIdentifier": "com.incident57.Muzzle"
+        }
+      ]
+    },
+    "muteme": {
+      "caskVersion": "0.28.0",
+      "sourceURL": "https://downloads.muteme.com/download/0.28.0/osx_arm64",
+      "artifactSHA256": "ec22c7b9635e16de6a83b1a4bb4cb05d5c67264e34525801d3dc30a8a43ea282",
+      "apps": [
+        {
+          "bundleName": "MuteMe-Client.app",
+          "bundleIdentifier": "com.electron.muteme-client"
+        }
+      ]
+    },
+    "nao": {
+      "caskVersion": "0.16.8",
+      "sourceURL": "https://storage.googleapis.com/nao-releases/nao/darwin-arm64/0.16.8/nao.arm64.0.16.8.dmg",
+      "artifactSHA256": "b860eb8a2b9c20e91cc9d8a431ecbcdbeeb8d4d8d82949c5538ab316152cfa7a",
+      "apps": [
+        {
+          "bundleName": "nao.app",
+          "bundleIdentifier": "com.nao"
+        }
+      ]
+    },
+    "musictube": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://flavio.tordini.org/files/musictube/musictube.dmg",
+      "artifactSHA256": "154bc208fcccdf202d6c8ec27e41ef9056b387a99dfe059b7ae3dfedb577f439",
+      "apps": [
+        {
+          "bundleName": "Musictube.app",
+          "bundleIdentifier": "org.tordini.flavio.musictube"
+        }
+      ]
+    },
+    "nani": {
+      "caskVersion": "1.1.9",
+      "sourceURL": "https://nani-desktop.kiok.jp/artifacts/nani-1.1.9.dmg",
+      "artifactSHA256": "655f777753c6a9571e58059ae9c9c84a05afedfe5ea2782ab8eced7a50fc66e8",
+      "apps": [
+        {
+          "bundleName": "Nani.app",
+          "bundleIdentifier": "jp.kiok.nani"
+        }
+      ]
+    },
+    "nanosaur": {
+      "caskVersion": "1.4.4",
+      "sourceURL": "https://github.com/jorio/Nanosaur/releases/download/v1.4.4/Nanosaur-1.4.4-mac.dmg",
+      "artifactSHA256": "fac89eae8f51d3b4462e6aae1c858f017ed7b2738b4d8a99852933b1d5d7dc12",
+      "apps": [
+        {
+          "bundleName": "Nanosaur.app",
+          "bundleIdentifier": "io.jor.nanosaur"
+        }
+      ]
+    },
+    "namechanger": {
+      "caskVersion": "3.4.4",
+      "sourceURL": "https://www.mrrsoftware.com/Downloads/NameChanger/Updates/NameChanger-3_4_4.zip",
+      "artifactSHA256": "47c52b763eb4b2084cda5d616b6e30be57e2d1e75ec175d7091bff90066fa880",
+      "apps": [
+        {
+          "bundleName": "NameChanger.app",
+          "bundleIdentifier": "com.mrrsoftware.NameChanger"
+        }
+      ]
+    },
+    "music-widget": {
+      "caskVersion": "1.30.1",
+      "sourceURL": "https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg",
+      "artifactSHA256": "23a030d7e5eded3818eae3a19cc02772b668f0104e68fb0d1cdbd92646584fcf",
+      "apps": [
+        {
+          "bundleName": "Music Widget.app",
+          "bundleIdentifier": "com.marioaguzman.Music-Widget"
+        }
+      ]
+    },
+    "munkiadmin": {
+      "caskVersion": "1.10.1",
+      "sourceURL": "https://github.com/hjuutilainen/munkiadmin/releases/download/v1.10.1/MunkiAdmin-1.10.1.dmg",
+      "artifactSHA256": "29a4c5ba0ba9cddde9045a78098d7426d1972ff516707af77cd43c3b82b2222f",
+      "apps": [
+        {
+          "bundleName": "MunkiAdmin.app",
+          "bundleIdentifier": "com.hjuutilainen.MunkiAdmin"
+        }
+      ]
+    },
+    "mymonero": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://github.com/mymonero/mymonero-app-js/releases/download/v1.3.3/MyMonero-1.3.3.dmg",
+      "artifactSHA256": "39001378bdd5db86329b4b4bb70cdb876f632c82855ea53502f7824f9e114e05",
+      "apps": [
+        {
+          "bundleName": "MyMonero.app",
+          "bundleIdentifier": "com.mymonero.mymonero-desktop"
+        }
+      ]
+    },
+    "musiver": {
+      "caskVersion": "1.3.9",
+      "sourceURL": "https://github.com/gitbobobo/StreamMusic/releases/download/v1.3.9/Musiver_1.3.9.dmg",
+      "artifactSHA256": "02aaa916d89180c85929bbee713586fa953a9e46d41b7aefc1a894eaf289b6d2",
+      "apps": [
+        {
+          "bundleName": "Musiver.app",
+          "bundleIdentifier": "cn.aqzscn.streamMusic"
+        }
+      ]
+    },
+    "mweb-pro": {
+      "caskVersion": "4.8.2",
+      "sourceURL": "https://cdn.mwebapp.cn/MWebPro482.dmg",
+      "artifactSHA256": "e74ebb43dc51f456a3ba3aeb86df0ef2107993871c120f4df2da7850594aca3e",
+      "apps": [
+        {
+          "bundleName": "MWeb Pro.app",
+          "bundleIdentifier": "com.coderforart.MWeb3"
+        }
+      ]
+    },
+    "music-miniplayer": {
+      "caskVersion": "1.13",
+      "sourceURL": "https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg",
+      "artifactSHA256": "73a6cfd6921d7ba477d1bcd95da6e5fd401ed7d898ce1f4cccfd98688d2d8698",
+      "apps": [
+        {
+          "bundleName": "Music MiniPlayer.app",
+          "bundleIdentifier": "com.marioaguzman.Music-MiniPlayer"
+        }
+      ]
+    },
+    "mural": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://download.mural.co/mac-app/Mural-3.0.4.dmg",
+      "artifactSHA256": "7f92a2eb91e5824d6a5cd3eee8619cab2edb4fdce0da5a2bed7cf85a0a4846c9",
+      "apps": []
+    },
+    "mycard": {
+      "caskVersion": "3.0.87",
+      "sourceURL": "https://cdn02.moecube.com:444/downloads/MyCard-3.0.87.dmg",
+      "artifactSHA256": "ed302498dd66e3f0d42e428991ed1f93f953f3a7b295c568eab116a0d83a2634",
+      "apps": [
+        {
+          "bundleName": "MyCard.app",
+          "bundleIdentifier": "com.mycard.mycard"
+        }
+      ]
+    },
+    "murus": {
+      "caskVersion": "2.7",
+      "sourceURL": "https://github.com/TheMurusTeam/Murus/releases/download/v2.7/murus-2.7.zip",
+      "artifactSHA256": "e226ec090e678e2c2f7b8ccb49e32990b59e54fcf268eaa2bce443ecca902a4b",
+      "apps": [
+        {
+          "bundleName": "Murus.app",
+          "bundleIdentifier": "it.murus.Murus-Menulet"
+        }
+      ]
+    },
+    "name-mangler": {
+      "caskVersion": "3.9.3",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/namemangler393.dmg",
+      "artifactSHA256": "97cb71af1145bb5b7bec59d7350f3542c554db2569508fb159785ee370578b5f",
+      "apps": [
+        {
+          "bundleName": "Name Mangler.app",
+          "bundleIdentifier": "com.manytricks.NameMangler"
+        }
+      ]
+    },
+    "nanoleaf": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://desktop-app-prod-3.s3.us-west-2.amazonaws.com/Nanoleaf%20Desktop-2.5.0-arm64.dmg",
+      "artifactSHA256": "d05bde80876e0f132ea73f28b8739dd0bee7533322898666e4638cb19400d164",
+      "apps": [
+        {
+          "bundleName": "Nanoleaf Desktop.app",
+          "bundleIdentifier": "me.nanoleaf.desktop-app"
+        }
+      ]
+    },
+    "navicat-data-modeler": {
+      "caskVersion": "4.3.12,040",
+      "sourceURL": "https://download3.navicat.com/updater/navicatdatamodeler040_mac_en.zip",
+      "artifactSHA256": "b42a37e9ea7316cf18a317f38f0e92a9ff8817f5414ef82119a8d673d16eb42d",
+      "apps": [
+        {
+          "bundleName": "Navicat Data Modeler.app",
+          "bundleIdentifier": "com.navicat.NavicatDataModeler"
+        }
+      ]
     }
   }
 }
