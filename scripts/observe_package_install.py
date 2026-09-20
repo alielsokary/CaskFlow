@@ -40,11 +40,16 @@ def digest(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def matrix(tokens: str, architectures: str, census_batch: int = 0) -> list[dict]:
-    if census_batch < 0 or census_batch > len(CENSUS["batches"]) or (census_batch and tokens.strip()):
+def selected_tokens(tokens: str, census_batch: int) -> list[str]:
+    if not census_batch:
+        return tokens.split() or list(PILOT_TOKENS)
+    if tokens.strip() or not 1 <= census_batch <= len(CENSUS["batches"]):
         raise ValueError("Select one census batch or explicit tokens, not both")
-    selected = (CENSUS["batches"][census_batch - 1] if census_batch
-                else tokens.split() if tokens.strip() else list(PILOT_TOKENS))
+    return CENSUS["batches"][census_batch - 1]
+
+
+def matrix(tokens: str, architectures: str, census_batch: int = 0) -> list[dict]:
+    selected = selected_tokens(tokens, census_batch)
     if (not selected or len(selected) > 25 or len(set(selected)) != len(selected)
             or set(selected) - OBSERVATION_TOKENS):
         raise ValueError("Select at most 25 distinct tokens from the fixed observation allowlist")
