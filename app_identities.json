@@ -24123,6 +24123,281 @@
           "bundleIdentifier": "com.agisoft.metashape.professional"
         }
       ]
+    },
+    "mindmaster-cn": {
+      "caskVersion": "13.0.13,5379",
+      "sourceURL": "https://cc-download.edrawsoft.cn/cbs_down/mindmaster_cn_full5379.dmg",
+      "artifactSHA256": "b94f8d9596325306ed476f856f329c74c370405e7c664c37c68b2631268dc476",
+      "apps": [
+        {
+          "bundleName": "亿图脑图MindMaster.app",
+          "bundleIdentifier": "com.edrawsoft.mindmaster"
+        }
+      ]
+    },
+    "midiview": {
+      "caskVersion": "1.2.3,vD6vXdrn",
+      "sourceURL": "https://hautetechnique.com/apps/backend/v1/installers/vD6vXdrn",
+      "artifactSHA256": "b19a694f3ee6fc839760b7293df47eed87657bb463cafed6313971cd758d64a6",
+      "apps": [
+        {
+          "bundleName": "MidiView.app",
+          "bundleIdentifier": "com.hautetechnique.midiview"
+        }
+      ]
+    },
+    "midikeys": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://github.com/flit/MidiKeys/releases/download/v1.9.1/MidiKeys_1.9.1.zip",
+      "artifactSHA256": "c99bc47b141250b16672303a2530c99109bab9a6b52edfb5929433ece3c7cdf8",
+      "apps": [
+        {
+          "bundleName": "MidiKeys.app",
+          "bundleIdentifier": "com.immosw.MidiKeys"
+        }
+      ]
+    },
+    "mia-for-gmail": {
+      "caskVersion": "2.8.2",
+      "sourceURL": "https://www.sovapps.com/application/notifier-pro-for-gmail/mia.2.8.2.zip",
+      "artifactSHA256": "0270ca4ff60614806096c8889591d384da11c165b3a30559439ff6d5a0199470",
+      "apps": [
+        {
+          "bundleName": "Mia for Gmail.app",
+          "bundleIdentifier": "com.sovapps.gmailnotifier"
+        }
+      ]
+    },
+    "miditrail": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://github.com/wdmss/MIDITrail-macOS/releases/download/v2.1.1/MIDITrail-Ver.2.1.1-macOS.zip",
+      "artifactSHA256": "dbd51f788d34e21971d53d0881cd2528d4f90aed0287e8b7a9699efddb98b6f7",
+      "apps": [
+        {
+          "bundleName": "MIDITrail.app",
+          "bundleIdentifier": "jp.sourceforge.users.yknk.MIDITrail"
+        }
+      ]
+    },
+    "mighty-mike": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://github.com/jorio/MightyMike/releases/download/v3.0.2/MightyMike-3.0.2-mac.dmg",
+      "artifactSHA256": "7643e45f480ef148655ab76790b8fa5b7688f041bf174244f8741e285e6092d9",
+      "apps": [
+        {
+          "bundleName": "Mighty Mike.app",
+          "bundleIdentifier": "io.jor.mightymike"
+        }
+      ]
+    },
+    "mindmac": {
+      "caskVersion": "1.9.28",
+      "sourceURL": "https://github.com/MindMacApp/MindMac/releases/download/1.9.28/MindMac_1.9.28.dmg",
+      "artifactSHA256": "cc5f87c6b53d9f332c681ab6bc02befc2e3ed86a984b222581f75877e65665c0",
+      "apps": [
+        {
+          "bundleName": "MindMac.app",
+          "bundleIdentifier": "app.mindmac.macos"
+        }
+      ]
+    },
+    "minitube": {
+      "caskVersion": "4.0.3",
+      "sourceURL": "https://flavio.tordini.org/files/minitube/minitube.dmg",
+      "artifactSHA256": "59ea2a5d7edc1296b3f333477f05d9fdbd999d1500f0ef47264a0963cea42f5e",
+      "apps": [
+        {
+          "bundleName": "Minitube.app",
+          "bundleIdentifier": "org.tordini.flavio.minitube"
+        }
+      ]
+    },
+    "minstaller": {
+      "caskVersion": "3.2.5",
+      "sourceURL": "https://s3.motionvfx.com/mvfxpublic/mInstaller/sparkle/mInstaller-3.2.5.zip",
+      "artifactSHA256": "58bf762d53c0a30c6b7a685152f28591c5b1ac01519e03114c5e75b3ee12e5b4",
+      "apps": [
+        {
+          "bundleName": "mInstaller.app",
+          "bundleIdentifier": "com.motionvfx.mInstaller"
+        }
+      ]
+    },
+    "minecraft-education": {
+      "caskVersion": "1.26.32.0",
+      "sourceURL": "https://downloads.minecrafteduservices.com/retailbuilds/MacOS/Minecraft_Education_1.26.32.0.dmg",
+      "artifactSHA256": "8aaada426842ebc054acb70ecd0a44fcb9abe02988e98d5488f17376380e2960",
+      "apps": [
+        {
+          "bundleName": "Minecraft Education.app",
+          "bundleIdentifier": "com.microsoft.minecraft-edu"
+        }
+      ]
+    },
+    "minmaxcal": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://github.com/MikeMcQuaid/MinMaxCal/releases/download/0.9.1/MinMaxCal-0.9.1.zip",
+      "artifactSHA256": "580715be6c4068b63149f57889d0390676773f902f48b9b064b00b332ebe52af",
+      "apps": [
+        {
+          "bundleName": "MinMaxCal.app",
+          "bundleIdentifier": "com.mikemcquaid.MinMaxCal"
+        }
+      ]
+    },
+    "micro-snitch": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://sw-update.obdev.at/ftp/pub/Products/MicroSnitch/MicroSnitch-1.6.1.dmg",
+      "artifactSHA256": "700a265156ae7c8138d7764a0ce87feba098bcaf77deed9b8d9aaa0b3c4fa197",
+      "apps": [
+        {
+          "bundleName": "Micro Snitch.app",
+          "bundleIdentifier": "at.obdev.MicroSnitch"
+        }
+      ]
+    },
+    "mindmanager": {
+      "caskVersion": "25.2.105",
+      "sourceURL": "https://download.mindjet.com/MindManager_Mac_25.2.105.dmg",
+      "artifactSHA256": "99034e012d02e6ffd0f92a08e7b351afbe1940d9f8d6a858cec4d6f7a9568d47",
+      "apps": [
+        {
+          "bundleName": "MindManager.app",
+          "bundleIdentifier": "com.mindjet.mindmanager.25"
+        }
+      ]
+    },
+    "mi": {
+      "caskVersion": "3.9.6",
+      "sourceURL": "https://www.mimikaki.net/download/mi3.9.6.dmg",
+      "artifactSHA256": "dfc3380f179a67e2187fa7a72322985e544afad20fecd176c50c2b1e1d30d7b3",
+      "apps": [
+        {
+          "bundleName": "mi.app",
+          "bundleIdentifier": "net.mimikaki.mi"
+        }
+      ]
+    },
+    "middle": {
+      "caskVersion": "1.14",
+      "sourceURL": "https://middleclick.app/downloads/Middle1.14.dmg",
+      "artifactSHA256": "28bf5dd6ec0eaabdcf4bee181dd880d077b2f9e312e652e662dbfa7122a59a83",
+      "apps": [
+        {
+          "bundleName": "Middle.app",
+          "bundleIdentifier": "com.knollsoft.Middle"
+        }
+      ]
+    },
+    "miniwol": {
+      "caskVersion": "2.1.4",
+      "sourceURL": "https://www.tweaking4all.com/downloads/network/miniWOL-v2.1.4-arm64.dmg",
+      "artifactSHA256": "943d1df2842aec49ce3e6fe1b7cb37bc4977e28f0a8ea63467abacd98215799d",
+      "apps": [
+        {
+          "bundleName": "miniWOL.app",
+          "bundleIdentifier": "com.Tweaking4all.miniWOL"
+        }
+      ]
+    },
+    "minizincide": {
+      "caskVersion": "2.10.1",
+      "sourceURL": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.10.1/MiniZincIDE-2.10.1-aarch64-apple-darwin.dmg",
+      "artifactSHA256": "6ab899c06a06bd7542f4df2b39e5afaa1658d6af30a65548a249048d1b3468bc",
+      "apps": [
+        {
+          "bundleName": "MiniZincIDE.app",
+          "bundleIdentifier": "org.minizinc.MiniZincIDE"
+        }
+      ]
+    },
+    "mini-vmac": {
+      "caskVersion": "36.04",
+      "sourceURL": "https://www.gryphel.com/d/minivmac/minivmac-36.04/minivmac-36.04-mc64.bin.tgz",
+      "artifactSHA256": "e8564a9827fe6a616489e29ee89f4bae85d4ecde76ea982e4a86af56b0108662",
+      "apps": [
+        {
+          "bundleName": "Mini vMac.app",
+          "bundleIdentifier": "com.gryphel.minivmac"
+        }
+      ]
+    },
+    "metavideo": {
+      "caskVersion": "1.1.6",
+      "sourceURL": "https://neededapps.com/appcasts/metavideo/versions/1.1.6",
+      "artifactSHA256": "293faefc57d37057b3c36a9c64bf73a210d0a4887d91e34530340193733baa0f",
+      "apps": [
+        {
+          "bundleName": "MetaVideo.app",
+          "bundleIdentifier": "com.jeremyvizzini.metavideo-paddle"
+        }
+      ]
+    },
+    "mini-program-studio": {
+      "caskVersion": "3.11.0",
+      "sourceURL": "https://alipay-miniapp-public.oss-cn-hangzhou.aliyuncs.com/mfupload/MiniProgramStudio-3.11.0-arm64.dmg",
+      "artifactSHA256": "a32b5764862541a671cc9b0695a7e37575f5ac21637a536c794aa987964d0171",
+      "apps": [
+        {
+          "bundleName": "小程序开发者工具.app",
+          "bundleIdentifier": "com.ant.miniprogram"
+        }
+      ]
+    },
+    "milanote": {
+      "caskVersion": "3.18.128",
+      "sourceURL": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.128.dmg",
+      "artifactSHA256": "c78e3717790bb71b66d7343c8484293cc32babd259863d6d1d8da6e97793772d",
+      "apps": [
+        {
+          "bundleName": "Milanote.app",
+          "bundleIdentifier": "com.milanote.app"
+        }
+      ]
+    },
+    "miln-movie-splitter": {
+      "caskVersion": "1.7.2",
+      "sourceURL": "https://miln.eu/moviesplitter/milnmoviesplitter-172.dmg",
+      "artifactSHA256": "da83197ca6f7c9e079b1bc69667bd458c9b5e9dceb90c49a866c7a2fce096080",
+      "apps": [
+        {
+          "bundleName": "Movie Splitter.app",
+          "bundleIdentifier": "eu.miln.movie-splitter"
+        }
+      ]
+    },
+    "mindjet-mindmanager": {
+      "caskVersion": "25.2.105",
+      "sourceURL": "https://download.mindjet.com/MindManager_Mac_25.2.105.dmg",
+      "artifactSHA256": "99034e012d02e6ffd0f92a08e7b351afbe1940d9f8d6a858cec4d6f7a9568d47",
+      "apps": [
+        {
+          "bundleName": "MindManager.app",
+          "bundleIdentifier": "com.mindjet.mindmanager.25"
+        }
+      ]
+    },
+    "millie": {
+      "caskVersion": "2.16.0",
+      "sourceURL": "https://install.millie.co.kr/flutter/2.16.0/millie.dmg",
+      "artifactSHA256": "47446711439c7f783e64ea6261b4179d30398fb71d2e54a948792b53159894f3",
+      "apps": [
+        {
+          "bundleName": "밀리의서재.app",
+          "bundleIdentifier": "kr.co.millie.MillieShelf"
+        }
+      ]
+    },
+    "microblog": {
+      "caskVersion": "4.1",
+      "sourceURL": "https://s3.amazonaws.com/micro.blog/mac/Micro.blog_4.1.zip",
+      "artifactSHA256": "199252dc32a369966063d1ea456c0016af9b17eaa0f8fcebf69ad7c9eae045e4",
+      "apps": [
+        {
+          "bundleName": "Micro.blog.app",
+          "bundleIdentifier": "blog.micro.mac"
+        }
+      ]
     }
   }
 }
