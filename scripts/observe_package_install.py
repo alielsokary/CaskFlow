@@ -26,6 +26,8 @@ SHA = re.compile(r"[0-9a-f]{40}\Z")
 SETTLE_INTERVAL = 15
 SETTLE_TIMEOUT = 120
 SETTLE_EQUAL_INTERVALS = 3
+CENSUS = json.loads((Path(__file__).resolve().parents[1] / "data/package_observation_census.json").read_text())
+OBSERVATION_TOKENS = frozenset(PILOT_TOKENS).union(token for batch in CENSUS["batches"] for token in batch)
 
 
 def save_evidence(path: Path, value: dict) -> None:
@@ -38,15 +40,44 @@ def digest(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def matrix(tokens: str, architectures: str) -> list[dict]:
-    selected = tokens.split() if tokens.strip() else list(PILOT_TOKENS)
-    if not selected or len(set(selected)) != len(selected) or set(selected) - set(PILOT_TOKENS):
-        raise ValueError("Select distinct tokens from the fixed ten-cask pilot")
+def matrix(tokens: str, architectures: str, census_batch: int = 0) -> list[dict]:
+    if census_batch < 0 or census_batch > len(CENSUS["batches"]) or (census_batch and tokens.strip()):
+        raise ValueError("Select one census batch or explicit tokens, not both")
+    selected = (CENSUS["batches"][census_batch - 1] if census_batch
+                else tokens.split() if tokens.strip() else list(PILOT_TOKENS))
+    if (not selected or len(selected) > 25 or len(set(selected)) != len(selected)
+            or set(selected) - OBSERVATION_TOKENS):
+        raise ValueError("Select at most 25 distinct tokens from the fixed observation allowlist")
     arches = list(RUNNERS) if architectures == "both" else [architectures]
     if set(arches) - RUNNERS.keys():
         raise ValueError("Unsupported architecture")
     return [{"token": token, "architecture": arch, "runner": RUNNERS[arch]}
             for token in selected for arch in arches]
+
+
+def build_plan(args) -> None:
+    """Freeze every census batch to the same inputs; retain the small default pilot."""
+    jobs = matrix(args.tokens, args.architectures, args.census_batch)
+    args.output.mkdir(parents=True, exist_ok=False)
+    commands = Commands(args.output)
+    if args.census_batch or any(job["token"] not in PILOT_TOKENS for job in jobs):
+        revisions = CENSUS["revisions"]
+    else:
+        tag = commands.text("brew-tag", ["gh", "api", "repos/Homebrew/brew/releases/latest", "--jq", ".tag_name"])
+        revisions = {key: commands.text(key, ["gh", "api", f"repos/{repo}/commits/{ref}", "--jq", ".sha"])
+                     for key, repo, ref in (("brewRevision", "Homebrew/brew", tag),
+                                           ("caskRevision", "Homebrew/homebrew-cask", "HEAD"),
+                                           ("passiveRevision", os.environ["GITHUB_REPOSITORY"], "icons"))}
+    if not all(SHA.fullmatch(value) for value in revisions.values()):
+        raise ValueError("Planning requires immutable source revisions")
+    commands.run("passive-manifest", ["gh", "api",
+        f"repos/{os.environ['GITHUB_REPOSITORY']}/contents/app_identities.json?ref={revisions['passiveRevision']}",
+        "-H", "Accept: application/vnd.github.raw+json"])
+    args.output.joinpath("passive-identities.json").write_bytes(args.output.joinpath("passive-manifest.log").read_bytes())
+    save_evidence(args.output / "matrix.json", {"include": jobs})
+    save_evidence(args.output / "revisions.json", revisions)
+    if args.census_batch:
+        save_evidence(args.output / "census.json", {"batch": args.census_batch, **CENSUS})
 
 
 def require_disposable_runner(expected_arch: str) -> None:
@@ -262,8 +293,10 @@ def prepare(commands: Commands, token: str, brew_revision: str, cask_revision: s
     commands.run("brew-config", ["brew", "config"])
     payload = json.loads(commands.text("cask-info", ["brew", "info", "--json=v2", "--cask", token]))
     cask = payload["casks"][0]
-    if cask["token"] != token or not any("pkg" in entry for entry in cask.get("artifacts", [])):
-        raise ValueError("Pilot requires the selected official package cask")
+    if (cask["token"] != token
+            or not any("pkg" in entry or "suite" in entry for entry in cask.get("artifacts", []))
+            or any("installer" in entry for entry in cask.get("artifacts", []))):
+        raise ValueError("Observation requires the selected official package or suite cask")
     if cask.get("installed"):
         raise ValueError("Target cask is already installed on this runner")
     # ponytail: this pilot excludes dependencies; baseline them separately before expanding its scope.
@@ -394,6 +427,15 @@ def install_and_collect(commands: Commands, token: str, baseline: dict, roots: l
                                      "after": capture_install_history(commands.output, "after")}
     changed_apps = result["applicationChanges"]["added"] + result["applicationChanges"]["changed"]
     for index, app in enumerate(changed_apps):
+        if app.get("infoPath"):
+            try:
+                evidence = commands.output / f"app-{index}-Info.plist"
+                evidence.write_bytes(Path(app["infoPath"]).read_bytes())
+                app["infoPlistEvidence"] = {"file": evidence.name, "sha256": digest(evidence)}
+                if app["infoPlistEvidence"]["sha256"] != app["infoSHA256"]:
+                    result["errors"].append(f"Application plist changed during collection: {app['path']}")
+            except OSError as error:
+                result["errors"].append(f"Could not preserve application plist: {error}")
         app["signingInspection"] = commands.run(f"app-{index}-signing",
             ["/usr/bin/codesign", "--display", "--verbose=4", app["path"]], 30, check=False)
     changed_receipts = result["receiptChanges"]["added"] + result["receiptChanges"]["changed"]
@@ -404,8 +446,11 @@ def install_and_collect(commands: Commands, token: str, baseline: dict, roots: l
 
 
 def observe(args) -> int:
-    if args.token not in PILOT_TOKENS:
-        raise ValueError("Token is outside the reviewed pilot")
+    if args.token not in OBSERVATION_TOKENS:
+        raise ValueError("Token is outside the fixed observation allowlist")
+    if args.token not in PILOT_TOKENS and (args.cask_revision != CENSUS["revisions"]["caskRevision"]
+                                         or args.brew_revision != CENSUS["revisions"]["brewRevision"]):
+        raise ValueError("Census observations require the frozen census revisions")
     require_disposable_runner(args.architecture)
     output = args.output
     output.mkdir(parents=True, exist_ok=False)
@@ -443,15 +488,23 @@ def main() -> None:
     plan = sub.add_parser("matrix")
     plan.add_argument("--tokens", default="")
     plan.add_argument("--architectures", choices=["both", *RUNNERS], default="both")
+    plan.add_argument("--census-batch", type=int, default=0)
+    planning = sub.add_parser("plan")
+    planning.add_argument("--tokens", default="")
+    planning.add_argument("--architectures", choices=["both", *RUNNERS], default="both")
+    planning.add_argument("--census-batch", type=int, default=0)
+    planning.add_argument("--output", required=True, type=Path)
     run = sub.add_parser("observe")
-    run.add_argument("--token", required=True, choices=PILOT_TOKENS)
+    run.add_argument("--token", required=True, choices=sorted(OBSERVATION_TOKENS))
     run.add_argument("--architecture", required=True, choices=RUNNERS)
     run.add_argument("--brew-revision", required=True)
     run.add_argument("--cask-revision", required=True)
     run.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
     if args.command == "matrix":
-        print(json.dumps({"include": matrix(args.tokens, args.architectures)}))
+        print(json.dumps({"include": matrix(args.tokens, args.architectures, args.census_batch)}))
+    elif args.command == "plan":
+        build_plan(args)
     else:
         raise SystemExit(observe(args))
 

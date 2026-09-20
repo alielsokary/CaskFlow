@@ -7,7 +7,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from observe_package_install import PILOT_TOKENS, RUNNERS, observation_diagnostics, save_evidence, valid_application
+from observe_package_install import OBSERVATION_TOKENS, RUNNERS, observation_diagnostics, save_evidence, valid_application
 from style_standards import write_text
 
 OBSERVED = {"observed_applications", "no_application_observed"}
@@ -115,7 +115,7 @@ def build_report(directory: Path) -> dict:
     rows, observed_claims = [], defaultdict(list)
     for job in selected:
         token = job["token"]
-        if token not in PILOT_TOKENS or job["architecture"] not in RUNNERS:
+        if token not in OBSERVATION_TOKENS or job["architecture"] not in RUNNERS:
             raise ValueError("Unexpected pilot job")
         row, valid = observation_row(directory, job, revisions, passive.get(token, {}))
         rows.append(row)

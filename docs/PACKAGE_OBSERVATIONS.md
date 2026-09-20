@@ -1,6 +1,6 @@
 # Package installation observations
 
-The **Observe package installations** workflow is a finite manual pilot. It
+The **Observe package installations** workflow runs finite manual batches. It
 installs selected Homebrew package casks on disposable macOS runners and saves
 what actually appeared. It does not modify the icons branch, identity manifests,
 categories, releases, CaskHub, or any GitHub schedule.
@@ -25,6 +25,32 @@ The fixed pilot covers `airtool`, `microsoft-teams`,
 `microsoft-office-businesspro`, `onedrive`, `zoom`, `zoom-for-it-admins`,
 `adobe-acrobat-reader`, `openvpn-connect`, `wacom-tablet`, and `blackhole-2ch`.
 Arbitrary tokens and duplicate tokens are rejected.
+
+## Broader package and suite census
+
+`data/package_observation_census.json` freezes the CaskHub 0.8.3 catalog's
+549 package/suite records against one Homebrew commit. It queues 428 eligible
+tokens in 18 batches of at most 25, with suites first. Eight controls are covered
+by the settling pilot; both Zoom variants are deferred. The remaining records
+retain explicit reasons: 89 lack a declared checksum, 19 require dependencies,
+two require an older macOS, and one requires an Intel follow-up. These exclusions
+are uninspected records, not successful empty observations.
+
+Use Apple Silicon for this census and targeted Intel follow-ups. Each batch uses
+the same frozen Homebrew, cask and passive-manifest revisions. The default empty
+selection still runs the ten-cask pilot; a census is never started implicitly.
+
+```sh
+gh workflow run observe-packages.yml --repo alielsokary/CaskFlow \
+  --ref fix/package-observation-settling -f architectures=arm64 -f census_batch=1
+```
+
+Select either a numbered census batch or explicit allowlisted tokens. Both modes
+are capped at 25 casks. Runtime dependency, checksum, architecture and baseline
+checks still apply; eligibility in the frozen inventory is not proof that an
+installation will succeed. No next batch is dispatched by this workflow. Inspect
+and archive each result before manually dispatching another. Do not merge a
+branch or publish identities just to advance this evidence-only campaign.
 
 ## Isolation and provenance
 
@@ -67,6 +93,8 @@ and flat bundles but excluding embedded helper apps and symlinked app directorie
 It records bundle IDs, plist and executable hashes, versions, and changed receipts.
 For observed bundles it captures `codesign --display` output; this is signing
 information, not a claim that signature validity or product ownership was proved.
+It also preserves each observed bundle's raw Info.plist for later role analysis,
+and flags a mismatch if it changes after the final snapshot.
 For changed receipts it preserves native `pkgutil` metadata and file lists.
 
 Post-install snapshots are sampled every 15 seconds for at most 120 seconds,

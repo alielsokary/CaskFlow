@@ -39,6 +39,41 @@ def test_matrix_is_finite_and_uses_real_architecture_labels():
             pilot.matrix(tokens, "both")
 
 
+def test_census_batches_cover_only_the_frozen_allowlist_once():
+    selected = [job["token"] for number in range(1, len(pilot.CENSUS["batches"]) + 1)
+                for job in pilot.matrix("", "arm64", number)]
+    assert len(selected) == len(set(selected)) == 428
+    assert not set(selected).intersection(pilot.CENSUS["excluded"])
+    assert not set(selected).intersection({"zoom", "zoom-for-it-admins"})
+    for tokens, batch in (("zoom", 1), ("", -1), ("", 19), (" ".join(selected[:26]), 0)):
+        with pytest.raises(ValueError):
+            pilot.matrix(tokens, "arm64", batch)
+
+
+def test_census_plan_freezes_inputs_and_preserves_the_full_selection(tmp_path, monkeypatch):
+    monkeypatch.setenv("GITHUB_REPOSITORY", "alielsokary/CaskFlow")
+    calls = []
+
+    def fake_run(self, name, arguments):
+        calls.append(arguments)
+        (self.output / f"{name}.log").write_text('{"casks":{}}')
+
+    monkeypatch.setattr(pilot.Commands, "run", fake_run)
+    output = tmp_path / "plan"
+    pilot.build_plan(argparse.Namespace(tokens="", architectures="arm64", census_batch=1, output=output))
+    assert json.loads((output / "revisions.json").read_text()) == pilot.CENSUS["revisions"]
+    assert json.loads((output / "matrix.json").read_text())["include"] == pilot.matrix("", "arm64", 1)
+    assert json.loads((output / "census.json").read_text())["batch"] == 1
+    assert len(calls) == 1
+    assert pilot.CENSUS["revisions"]["passiveRevision"] in calls[0][2]
+    assert json.loads((output / "passive-identities.json").read_text()) == {"casks": {}}
+
+
+def test_census_observation_rejects_changed_source_before_installation():
+    with pytest.raises(ValueError, match="frozen census revisions"):
+        pilot.observe(argparse.Namespace(token="ampps", cask_revision="0" * 40, brew_revision="0" * 40))
+
+
 def test_installation_entrypoint_refuses_a_local_machine(monkeypatch):
     monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
     with pytest.raises(ValueError, match="GitHub-hosted"):
@@ -196,8 +231,9 @@ def test_successful_report_rejects_contradictory_install_evidence(tmp_path):
     assert build_report(tmp_path)["counts"] == {"invalid_evidence": 1}
 
 
-@pytest.mark.parametrize("failure", [None, "checksum", "dependencies", "installed", "no-check"])
-def test_prepare_pins_sources_and_requires_clean_checked_downloads(tmp_path, monkeypatch, failure):
+@pytest.mark.parametrize("failure", [None, "checksum", "dependencies", "installed", "no-check", "custom-installer"])
+@pytest.mark.parametrize("artifact", ["pkg", "suite"])
+def test_prepare_pins_sources_and_requires_clean_checked_downloads(tmp_path, monkeypatch, failure, artifact):
     tap = tmp_path / "Library/Taps/homebrew/homebrew-cask"
     source = tap / "Casks/a/airtool.rb"
     source.parent.mkdir(parents=True)
@@ -206,7 +242,7 @@ def test_prepare_pins_sources_and_requires_clean_checked_downloads(tmp_path, mon
     archive.write_bytes(b"package")
     output = tmp_path / "output"
     output.mkdir()
-    cask = {"token": "airtool", "artifacts": [{"pkg": ["Airtool.pkg"]}],
+    cask = {"token": "airtool", "artifacts": [{artifact: ["Airtool.pkg"]}],
             "ruby_source_path": "Casks/a/airtool.rb", "sha256": pilot.digest(archive), "installed": None}
     if failure == "checksum":
         cask["sha256"] = "0" * 64
@@ -214,6 +250,8 @@ def test_prepare_pins_sources_and_requires_clean_checked_downloads(tmp_path, mon
         cask["sha256"] = "no_check"
     if failure == "installed":
         cask["installed"] = "1"
+    if failure == "custom-installer":
+        cask["artifacts"].append({"installer": [{"manual": "Install.app"}]})
     calls, checkouts = [], []
 
     class FakeCommands:
@@ -254,9 +292,8 @@ def test_observation_entrypoint_collects_evidence_after_install_failure(tmp_path
             return {"returncode": exit_code if name == "install" else 0, "log": f"{name}.log", "timedOut": False}
 
     before, after = empty_snapshot(), empty_snapshot()
-    after["applications"]["/Applications/zoom.us.app"] = {
-        "path": "/Applications/zoom.us.app", "bundleName": "zoom.us.app", "bundleIdentifier": "us.zoom.xos",
-        "identifierAccepted": True, "executablePresent": True}
+    bundle = make_app(tmp_path / "Applications", "zoom.us.app", "us.zoom.xos")
+    after["applications"][str(bundle)] = pilot.app_record(bundle)
     snapshots = iter([before, after, after, after, after])
     monkeypatch.setattr(pilot, "Commands", FakeCommands)
     monkeypatch.setattr(pilot, "require_disposable_runner", lambda arch: None)
@@ -271,6 +308,7 @@ def test_observation_entrypoint_collects_evidence_after_install_failure(tmp_path
     assert code == exit_code
     assert result["status"] == expected
     assert (output / "after.json").exists()
+    assert (output / "app-0-Info.plist").read_bytes() == (bundle / "Contents/Info.plist").read_bytes()
     assert ["brew", "install", "--cask", "--require-sha", "zoom"] in calls
     assert all("uninstall" not in args and "--force" not in args for args in calls)
 
