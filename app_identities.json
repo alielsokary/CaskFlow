@@ -21828,6 +21828,274 @@
           "bundleIdentifier": "com.ivacy.mac"
         }
       ]
+    },
+    "jt-bridge": {
+      "caskVersion": "3.4.3",
+      "sourceURL": "https://jt-bridge.eller.nu/download/JT-Bridge.app-3.4.3.zip",
+      "artifactSHA256": "bce72da1bd44175b86f5eceec4716e212ad8eacbd2da999198112ab995b8d02f",
+      "apps": [
+        {
+          "bundleName": "JT-Bridge.app",
+          "bundleIdentifier": "nu.eller.JT-Bridge"
+        }
+      ]
+    },
+    "jamovi": {
+      "caskVersion": "28.3.0.0",
+      "sourceURL": "https://www.jamovi.org/downloads/jamovi-28.3.0.0-macos-arm64.dmg",
+      "artifactSHA256": "7682056e8bac1b8b10cfab78001aeabc588b0027918d5c409503e7a947d5e1fe",
+      "apps": [
+        {
+          "bundleName": "jamovi.app",
+          "bundleIdentifier": "org.jamovi.jamovi"
+        }
+      ]
+    },
+    "jottacloud": {
+      "caskVersion": "26.09.02.179064,befbd4950d549d6ae081f569ac43c79de2656d81c00403f442ce926d11da263e",
+      "sourceURL": "https://sw.jotta.cloud/desktop/download/data/befbd4950d549d6ae081f569ac43c79de2656d81c00403f442ce926d11da263e/Jottacloud.dmg",
+      "artifactSHA256": "befbd4950d549d6ae081f569ac43c79de2656d81c00403f442ce926d11da263e",
+      "apps": [
+        {
+          "bundleName": "Jottacloud.app",
+          "bundleIdentifier": "no.jotta.Jottacloud"
+        }
+      ]
+    },
+    "jprofiler": {
+      "caskVersion": "16.2.1",
+      "sourceURL": "https://download-gcdn.ej-technologies.com/jprofiler/jprofiler_macos_16_2_1.dmg",
+      "artifactSHA256": "14661c43bc71b899b0437317704eedf02a5155507018eb4c52047148b2a2de53",
+      "apps": [
+        {
+          "bundleName": "JProfiler.app",
+          "bundleIdentifier": "com.install4j.8435-0008-8661-5857.2"
+        }
+      ]
+    },
+    "jettison": {
+      "caskVersion": "1.9.7",
+      "sourceURL": "https://stclairsoft.com/download/Jettison-1.9.7.dmg",
+      "artifactSHA256": "5786bb0a0eed2b979bf1186c084d5bdcaa1416ebfe1e55d68b7544cc16411e7a",
+      "apps": [
+        {
+          "bundleName": "Jettison.app",
+          "bundleIdentifier": "com.stclairsoft.Jettison"
+        }
+      ]
+    },
+    "jslegendre-themeengine": {
+      "caskVersion": "1.0.0,119",
+      "sourceURL": "https://github.com/jslegendre/ThemeEngine/releases/download/v1.0.0(119)/ThemeEngine.zip",
+      "artifactSHA256": "d4330aeeaa354ecd9eb13c02661836262f97a28dedc3d8820f99714995eaaf77",
+      "apps": [
+        {
+          "bundleName": "ThemeEngine.app",
+          "bundleIdentifier": "com.alexzielenski.ThemeEngine"
+        }
+      ]
+    },
+    "jandi-statusbar": {
+      "caskVersion": "1.15",
+      "sourceURL": "https://github.com/techinpark/Jandi/releases/download/v1.15/jandi.dmg",
+      "artifactSHA256": "b2bf4a52247f171d19412b23e5d8a7f461b3d54c2cf3fc7b13bde5afe5457895",
+      "apps": [
+        {
+          "bundleName": "jandi.app",
+          "bundleIdentifier": "com.tmsae.jandi"
+        }
+      ]
+    },
+    "jalview": {
+      "caskVersion": "2.11.5.1",
+      "sourceURL": "https://www.jalview.org/downloads/installers/release/Jalview-2_11_5_1-macos-aarch64-java_8.dmg",
+      "artifactSHA256": "341a3b2e52cfc0512df6767892a9c1dc8a458dccab1256f3686b3ad9288a7f47",
+      "apps": [
+        {
+          "bundleName": "Jalview.app",
+          "bundleIdentifier": "org.jalview.jalview-desktop"
+        }
+      ]
+    },
+    "jbrowse": {
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://github.com/GMOD/jbrowse-components/releases/download/v4.3.0/jbrowse-desktop-v4.3.0-mac.dmg",
+      "artifactSHA256": "92174e68abf9bc088983c2c32f3d76921a56938436476fc46441b3b694d7b6d2",
+      "apps": [
+        {
+          "bundleName": "JBrowse 2.app",
+          "bundleIdentifier": "org.jbrowse2.app"
+        }
+      ]
+    },
+    "jami": {
+      "caskVersion": "2.42,2026082009",
+      "sourceURL": "https://dl.jami.net/mac_osx/jami2026082009.dmg",
+      "artifactSHA256": "8e9e1990ce3af57629a619991c91f08c0518273facbed5b3fcdd736ef11fa6e6",
+      "apps": [
+        {
+          "bundleName": "Jami.app",
+          "bundleIdentifier": "cx.ring"
+        }
+      ]
+    },
+    "jandi": {
+      "caskVersion": "1.7.7",
+      "sourceURL": "https://cdn.jandi.com/jandi-pc/download/JANDI-arm64.dmg",
+      "artifactSHA256": "38e60030a6dc2ced354651bed4461e5ebc57d1cbf4721fb24cc1dd19ec376a6c",
+      "apps": [
+        {
+          "bundleName": "JANDI.app",
+          "bundleIdentifier": "com.jandi.osx.JANDI"
+        }
+      ]
+    },
+    "jitsi-meet": {
+      "caskVersion": "2026.8.0",
+      "sourceURL": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.8.0/jitsi-meet.dmg",
+      "artifactSHA256": "9480833adebc35c0974e75bd2c45b07c154eca7816d83295403219f682bf3452",
+      "apps": [
+        {
+          "bundleName": "Jitsi Meet.app",
+          "bundleIdentifier": "org.jitsi.jitsi-meet"
+        }
+      ]
+    },
+    "jetbrains-space": {
+      "caskVersion": "2023.1.7",
+      "sourceURL": "https://download-cdn.jetbrains.com/space/jetbrains-space-2023.1.7.zip",
+      "artifactSHA256": "5fe5e8c36af378ed1b7a8c6e94b4becdd01110b69f04b97ffea53d1380508bd4",
+      "apps": [
+        {
+          "bundleName": "JetBrains Space.app",
+          "bundleIdentifier": "com.jetbrains.space.desktop"
+        }
+      ]
+    },
+    "journey": {
+      "caskVersion": "2.14.6",
+      "sourceURL": "https://github.com/2-App-Studio/journey-releases/releases/download/v2.14.6/Journey-darwin-2.14.6.zip",
+      "artifactSHA256": "19da0e4da7983f54c1dabd7bc8bfb03ff8d783ad02a4fb9701b4f2891450e44a",
+      "apps": [
+        {
+          "bundleName": "Journey.app",
+          "bundleIdentifier": "com.journey.mac2"
+        }
+      ]
+    },
+    "jaikoz": {
+      "caskVersion": "12.6",
+      "sourceURL": "https://www.jthink.net/jaikoz/jsp/manualdownload/jaikoz-osx-m1.dmg",
+      "artifactSHA256": "4bce0a640814d66dd15e866997ca0c1f99bfc86cb2d42870fae08ea357326f70",
+      "apps": [
+        {
+          "bundleName": "Jaikoz.app",
+          "bundleIdentifier": "com.jthink.jaikoz"
+        }
+      ]
+    },
+    "jet-pilot": {
+      "caskVersion": "1.35.0",
+      "sourceURL": "https://github.com/unxsist/jet-pilot/releases/download/v1.35.0/JET.Pilot_1.35.0_aarch64.dmg",
+      "artifactSHA256": "1c02e47d3ccade9abfa7851a53c7f4a1c279bb190144e5a9d1630c9244224530",
+      "apps": [
+        {
+          "bundleName": "JET Pilot.app",
+          "bundleIdentifier": "com.unxsist.jetpilot"
+        }
+      ]
+    },
+    "jamkazam": {
+      "caskVersion": "1.0.4048",
+      "sourceURL": "https://d34f55ppvvtgi3.cloudfront.net/artifacts/JamClient/MacOSX/1.0.4048/JamKazam-1.0.4048.dmg",
+      "artifactSHA256": "b8d4b024b9f779de4dd8e10e929b9425a765061bc6b1d3e1bd2b8491ae4e21e8",
+      "apps": [
+        {
+          "bundleName": "JamKazam.app",
+          "bundleIdentifier": "com.jamkazam.osx.client"
+        }
+      ]
+    },
+    "jamulus": {
+      "caskVersion": "3.11.0",
+      "sourceURL": "https://downloads.sourceforge.net/llcon/jamulus_3.11.0_mac.dmg",
+      "artifactSHA256": "4cf680b643dd1bbb2f52655f5fef71ce222024d3c19713997fbe2a3626cd7d6a",
+      "apps": [
+        {
+          "bundleName": "Jamulus.app",
+          "bundleIdentifier": "app.jamulussoftware.Jamulus"
+        },
+        {
+          "bundleName": "JamulusServer.app",
+          "bundleIdentifier": "app.jamulussoftware.JamulusServer"
+        }
+      ]
+    },
+    "jamie": {
+      "caskVersion": "5.7.16",
+      "sourceURL": "https://github.com/meetjamie/releases/releases/download/app-v5.7.16/Jamie_5.7.16_universal.app.tar.gz",
+      "artifactSHA256": "53bcfcf4cc44c503d1878d1b812e1906730df5eee171e7662a4103934a58723e",
+      "apps": [
+        {
+          "bundleName": "Jamie.app",
+          "bundleIdentifier": "com.jamie.app"
+        }
+      ]
+    },
+    "jasp": {
+      "caskVersion": "0.98.1.0",
+      "sourceURL": "https://github.com/jasp-stats/jasp-desktop/releases/download/v0.98.1/JASP-0.98.1.0-macOS-arm64.dmg",
+      "artifactSHA256": "e980236d1ec6d58571b1f120d48f6c4c8ffc71bc893250a4988e96637220f257",
+      "apps": [
+        {
+          "bundleName": "JASP.app",
+          "bundleIdentifier": "org.jaspstats.jasp"
+        }
+      ]
+    },
+    "jazzup": {
+      "caskVersion": "1.0b3,3",
+      "sourceURL": "https://www.irradiatedsoftware.com/downloads/JazzUp_1.0b3.zip",
+      "artifactSHA256": "23139ee856d79b6e78ad3badee82f20b1972f29ffb930a4dd7884d401311a3f8",
+      "apps": [
+        {
+          "bundleName": "JazzUp.app",
+          "bundleIdentifier": "com.irradiatedsoftware.JazzUp"
+        }
+      ]
+    },
+    "jitsi": {
+      "caskVersion": "2.10.5550",
+      "sourceURL": "https://github.com/jitsi/jitsi/releases/download/Jitsi-2.10/jitsi-2.10.5550.dmg",
+      "artifactSHA256": "d902af9dde7b1fde6f76af5f97e4f27d6b853bd9d3e83b2fec5292dda787a0da",
+      "apps": [
+        {
+          "bundleName": "Jitsi.app",
+          "bundleIdentifier": "org.jitsi"
+        }
+      ]
+    },
+    "jasper-app": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/jasperapp/jasper/releases/download/v2.0.0/jasper_v2.0.0_mac_arm64.zip",
+      "artifactSHA256": "8abec3cc20eec28f55df7d886927d325dfd1f1bb4479e73c9f36ac11edeace32",
+      "apps": [
+        {
+          "bundleName": "Jasper.app",
+          "bundleIdentifier": "io.jasperapp"
+        }
+      ]
+    },
+    "jclasslib-bytecode-viewer": {
+      "caskVersion": "7.1",
+      "sourceURL": "https://github.com/ingokegel/jclasslib/releases/download/7.1/jclasslib_macos_7_1.dmg",
+      "artifactSHA256": "e800e7ecf112d1e13ac46a1419cb27e5321a22250ff0db820db3962226df6927",
+      "apps": [
+        {
+          "bundleName": "jclasslib bytecode viewer.app",
+          "bundleIdentifier": "org.jclasslib.browser"
+        }
+      ]
     }
   }
 }
