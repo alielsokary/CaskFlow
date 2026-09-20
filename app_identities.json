@@ -31892,6 +31892,276 @@
           "bundleIdentifier": "info.eurocomp.Timing2"
         }
       ]
+    },
+    "transocks": {
+      "caskVersion": "3.0.9",
+      "sourceURL": "https://download.chuansuo.io/transocks/download/mac/3.0.9/Transocks_official_v3.0.9.dmg",
+      "artifactSHA256": "cfdcdf99b84b659f08ca4debbaf0c3d31126201acc753ebd6461abfdbdd04fc1",
+      "apps": [
+        {
+          "bundleName": "穿梭Transocks.app",
+          "bundleIdentifier": "com.transocks.mac.signed"
+        }
+      ]
+    },
+    "toolreleases": {
+      "caskVersion": "1.5.0,59",
+      "sourceURL": "https://github.com/DeveloperMaris/ToolReleases/releases/download/v1.5.0/ToolReleases_v1.5.0.b59.zip",
+      "artifactSHA256": "2097bafa9cfe648c259e5c81f98137e3e38217838deccfe262460773807dd8df",
+      "apps": [
+        {
+          "bundleName": "ToolReleases.app",
+          "bundleIdentifier": "com.developermaris.ToolReleases"
+        }
+      ]
+    },
+    "trailer": {
+      "caskVersion": "1.8.11",
+      "sourceURL": "https://github.com/ptsochantaris/trailer/releases/download/1.8.11/Trailer-1811.zip",
+      "artifactSHA256": "6b37ea88be391ba071200d45b1ba2cfde5acf351c84b0665fc9a38e2ecae94bc",
+      "apps": [
+        {
+          "bundleName": "Trailer.app",
+          "bundleIdentifier": "com.housetrip.Trailer"
+        }
+      ]
+    },
+    "triggerflo": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://triggerflo.app/downloads/TriggerFlo-2.1.0.dmg",
+      "artifactSHA256": "eebaa625666da57ff720d5934cdbfd8411fc43f0767619723da07dc5c22c15c0",
+      "apps": [
+        {
+          "bundleName": "TriggerFlo.app",
+          "bundleIdentifier": "app.triggerflo"
+        }
+      ]
+    },
+    "transcribex": {
+      "caskVersion": "10.2",
+      "sourceURL": "https://www.transcribex.io/download/TranscribeX.dmg",
+      "artifactSHA256": "5198e68ea4b804dd2611f21ef72d2a59d2087119e36e4f0586de84bac64f5d98",
+      "apps": [
+        {
+          "bundleName": "TranscribeX.app",
+          "bundleIdentifier": "com.wlly.janome.AudioTranscribe"
+        }
+      ]
+    },
+    "touchswitcher": {
+      "caskVersion": "1.4.8",
+      "sourceURL": "https://hazeover.com/touchswitcher/TouchSwitcher-1.4.8.txz",
+      "artifactSHA256": "78aa139d5b9e0ac16b340019d05cb897929c6e0a57733394496748e3724d5775",
+      "apps": [
+        {
+          "bundleName": "TouchSwitcher.app",
+          "bundleIdentifier": "com.pointum.TouchSwitcher"
+        }
+      ]
+    },
+    "treeviewer": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/arklumpus/TreeViewer/releases/download/v2.2.0/TreeViewer-Mac-arm64.dmg",
+      "artifactSHA256": "dd530a459a691df44463cf7f39ed8415657ec5847db1d7dededa96fb1063ef8f",
+      "apps": [
+        {
+          "bundleName": "TreeViewer.app",
+          "bundleIdentifier": "io.github.arklumpus.TreeViewer"
+        }
+      ]
+    },
+    "toontown-rewritten": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://download.toontownrewritten.com/launcher/mac/updates/1.5.1/ttr_launcher_1.5.1.zip",
+      "artifactSHA256": "c88cd534c903ffc0a5e8696de4f18455e1193b18afa607db54689283c951b4df",
+      "apps": [
+        {
+          "bundleName": "Toontown Rewritten.app",
+          "bundleIdentifier": "com.toontownrewritten.Toontown-Launcher"
+        }
+      ]
+    },
+    "tng-digital-mini-program-studio": {
+      "caskVersion": "3.9.1047",
+      "sourceURL": "https://ide-release.marmot-cloud.com/storage/miniprogram-studio/common/3.9/MiniProgramStudio-3.9.1047-arm64.dmg",
+      "artifactSHA256": "24fc887a78ce1766c8ff9c9d2ba8c0d7f80a30c6fd104ebfae0db74239a028d9",
+      "apps": [
+        {
+          "bundleName": "MiniProgramStudio.app",
+          "bundleIdentifier": "com.ant.miniprogram.intl.poc"
+        }
+      ]
+    },
+    "touchosc-bridge": {
+      "caskVersion": "1.7.3.152",
+      "sourceURL": "https://hexler.net/pub/touchosc/touchosc-bridge-1.7.3.152-macos.dmg",
+      "artifactSHA256": "fcc6d30e0c2fff5031c6ca8fa731fff832e0f0bb39e370c961b35d0d291c725a",
+      "apps": [
+        {
+          "bundleName": "TouchOSC Bridge.app",
+          "bundleIdentifier": "net.hexler.TouchOSCBridge"
+        }
+      ]
+    },
+    "touchosc-editor": {
+      "caskVersion": "1.8.9",
+      "sourceURL": "https://hexler.net/pub/touchosc/touchosc-editor-1.8.9-macos.zip",
+      "artifactSHA256": "018e651a6053e993b0017dd396f52a68de34545b25d2d4775d561b6527a9a1df",
+      "apps": [
+        {
+          "bundleName": "TouchOSC Editor.app",
+          "bundleIdentifier": "net.hexler.TouchOSCEditor"
+        }
+      ]
+    },
+    "transfer": {
+      "caskVersion": "2.4.4",
+      "sourceURL": "https://www.intuitibits.com/downloads/Transfer_2.4.4.dmg",
+      "artifactSHA256": "ec2a7e2abb38ab1459df4e956c9aa39b7abe68e66ef56c743f09a2c67870bc98",
+      "apps": [
+        {
+          "bundleName": "Transfer.app",
+          "bundleIdentifier": "com.adriangranados.Transfer"
+        }
+      ]
+    },
+    "transcribe": {
+      "caskVersion": "9.60.7",
+      "sourceURL": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.60.7.dmg",
+      "artifactSHA256": "e3c8ded09f3152bce8e2d552922079ae2f11dc4649a7a402747559903b4c0e40",
+      "apps": [
+        {
+          "bundleName": "Transcribe!.app",
+          "bundleIdentifier": "com.seventhstring.transcribe"
+        }
+      ]
+    },
+    "touch-portal": {
+      "caskVersion": "4.6,2",
+      "sourceURL": "https://www.touch-portal.com/downloads/releases/mac/TouchPortalMacReleaseM1.dmg",
+      "artifactSHA256": "0df7c2a84f557e2455a7b2e44fb297764f172b70014142a543ac949a5c30cfba",
+      "apps": [
+        {
+          "bundleName": "TouchPortal.app",
+          "bundleIdentifier": "org.eclipse.jdt.internal.jarinjarloader"
+        }
+      ]
+    },
+    "trickster": {
+      "caskVersion": "3.9.11",
+      "sourceURL": "https://dl.apparentsoft.com/TricksterUpdates/Trickster_3.9.11.zip",
+      "artifactSHA256": "3d0026adac43bf8d40584ee6150cbe327b46c609508f07f2ecc2a19692495232",
+      "apps": [
+        {
+          "bundleName": "Trickster.app",
+          "bundleIdentifier": "com.apparentsoft.trickster"
+        }
+      ]
+    },
+    "tm-error-logger": {
+      "caskVersion": "8.0.3",
+      "sourceURL": "https://carnationsoftware.com/ftp/TM_Error_Logger_Installer.dmg",
+      "artifactSHA256": "8c35d50b657a0c2ab754845791f8b74db987bd3423868fc333c6b276296b87c1",
+      "apps": [
+        {
+          "bundleName": "TM Error Logger.app",
+          "bundleIdentifier": "com.csw.TMErrorLogger"
+        }
+      ]
+    },
+    "trainerroad": {
+      "caskVersion": "2026.29.2.468",
+      "sourceURL": "https://trainrdtrcmn01un1softw01.blob.core.windows.net/installers/mac/v001/Production/TrainerRoad-2026.29.2.468.dmg",
+      "artifactSHA256": "49851b970827ce158b7cc7e2f8390e994ae5436cf44036be0eed7c4ef46d5b9a",
+      "apps": [
+        {
+          "bundleName": "TrainerRoad.app",
+          "bundleIdentifier": "com.trainerroad.mac"
+        }
+      ]
+    },
+    "tmpdisk": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/imothee/tmpdisk/releases/download/v2.3.0/TmpDisk.dmg",
+      "artifactSHA256": "b30c365aa5bd63efa7490078b807dd3274b0c28a89d04efe94b9e8def8ccf76f",
+      "apps": [
+        {
+          "bundleName": "TmpDisk.app",
+          "bundleIdentifier": "com.imothee.TmpDisk"
+        }
+      ]
+    },
+    "to-audio-converter": {
+      "caskVersion": "2.0.3,1373",
+      "sourceURL": "https://amvidia.com/downloads/to-audio-converter-mac.dmg",
+      "artifactSHA256": "2ecbed2e0f986286c686c627139c8087623bd4f415b3d623922c5e03b705c3c5",
+      "apps": []
+    },
+    "tiny-shield": {
+      "caskVersion": "1.15.1,11501",
+      "sourceURL": "https://download.proxyman.io/tinyshield/11501/Tiny_Shield_1.15.1.dmg",
+      "artifactSHA256": "9cb11df7d8722869262a4a7673a2f7dc0baa5a154f1c56fdd2151b16c22db15d",
+      "apps": [
+        {
+          "bundleName": "Tiny Shield.app",
+          "bundleIdentifier": "com.proxyman.ProxymanGuard"
+        }
+      ]
+    },
+    "touchosc": {
+      "caskVersion": "1.5.2,262",
+      "sourceURL": "https://hexler.net/pub/touchosc/touchosc-1.5.2.262-macos.dmg",
+      "artifactSHA256": "d6574fde38d530da27abc0eaa2da56ae9633176c7b7e825d709cc5b638ba9e16",
+      "apps": [
+        {
+          "bundleName": "TouchOSC.app",
+          "bundleIdentifier": "net.hexler.lex"
+        }
+      ]
+    },
+    "tresorit": {
+      "caskVersion": "3.5.3528.4860",
+      "sourceURL": "https://installer.tresorit.com/Tresorit.dmg",
+      "artifactSHA256": "a3180541f55c1468287f04b381f44bf26eeb92f4a63cb79d311fb73ec60b63e1",
+      "apps": [
+        {
+          "bundleName": "Tresorit.app",
+          "bundleIdentifier": "com.tresorit.mac"
+        }
+      ]
+    },
+    "tpvirtual": {
+      "caskVersion": "6",
+      "sourceURL": "https://virtual.trainingpeaks.com/TPVirtual-Installer_v6.dmg",
+      "artifactSHA256": "7a117865f86708f732dfacd6ec4bbe69656e75e4bf71d6801832b25fe52bef20",
+      "apps": [
+        {
+          "bundleName": "TPVirtual-Launcher.app",
+          "bundleIdentifier": "com.indieVelo.launcher"
+        }
+      ]
+    },
+    "toolhive-studio": {
+      "caskVersion": "0.40.0",
+      "sourceURL": "https://github.com/stacklok/toolhive-studio/releases/download/v0.40.0/ToolHive-arm64.dmg",
+      "artifactSHA256": "bb91250bce9f94dc48fed6cf32c96646ae5fc4e1078d5ec8b657fd36d7eef387",
+      "apps": [
+        {
+          "bundleName": "ToolHive.app",
+          "bundleIdentifier": "com.electron.toolhive"
+        }
+      ]
+    },
+    "todometer": {
+      "caskVersion": "3.0.3",
+      "sourceURL": "https://github.com/cassidoo/todometer/releases/download/v3.0.3/todometer-3.0.3-arm64-mac.zip",
+      "artifactSHA256": "862cdb44d5fc006d2c858add489c5c17796e4dbad7df154dd79f4c69ffd258da",
+      "apps": [
+        {
+          "bundleName": "todometer.app",
+          "bundleIdentifier": "co.cassidoo.todometer"
+        }
+      ]
     }
   }
 }
