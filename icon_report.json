@@ -1331,6 +1331,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "seamly2d": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-09-20"
+  },
   "securesafe": {
     "status": "failed",
     "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-securesafe-g_passt6/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",

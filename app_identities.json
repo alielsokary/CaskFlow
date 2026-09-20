@@ -29132,6 +29132,276 @@
           "bundleIdentifier": "com.apptorium.ScreenFocus-dm"
         }
       ]
+    },
+    "shadowsocksx-ng-r": {
+      "caskVersion": "1.4.4-r8-resigning",
+      "sourceURL": "https://github.com/qinyuhang/ShadowsocksX-NG-R/releases/download/1.4.4-r8-resigning/ShadowsocksX-NG-R8.dmg",
+      "artifactSHA256": "9353980f35f78a9d16951f28d036f5647a2f5a5c1a79f6480cc4b2852bc77e57",
+      "apps": [
+        {
+          "bundleName": "ShadowsocksX-NG-R8.app",
+          "bundleIdentifier": "com.qiuyuzhou.ShadowsocksX-NG"
+        }
+      ]
+    },
+    "seekfast": {
+      "caskVersion": "7.4",
+      "sourceURL": "https://seekfast.org/files_933/SeekFast_7.4.dmg",
+      "artifactSHA256": "446cf92a45b830f802b32e20204b42464aa242b213bec4adc9be400c1e8bb17d",
+      "apps": [
+        {
+          "bundleName": "SeekFast.app",
+          "bundleIdentifier": "org.seekfast.SeekFast"
+        }
+      ]
+    },
+    "sejda-pdf": {
+      "caskVersion": "7.9.10",
+      "sourceURL": "https://downloads.sejda-cdn.com/sejda-desktop_7.9.10_arm64.dmg",
+      "artifactSHA256": "8ad1a8fd744f36e2684ca024375acf96dec16b32a3a4fb190284a8779fded24b",
+      "apps": [
+        {
+          "bundleName": "Sejda PDF Desktop.app",
+          "bundleIdentifier": "com.sejda.sejda-desktop"
+        }
+      ]
+    },
+    "script-kit": {
+      "caskVersion": "3.45.1",
+      "sourceURL": "https://github.com/johnlindquist/kitapp/releases/download/v3.45.1/Script-Kit-macOS-3.45.1-arm64.dmg",
+      "artifactSHA256": "b6bf54b40525e70f90a01b84653c808b1fd8ca4eb2eeedd7097c060ccc3aaf2b",
+      "apps": [
+        {
+          "bundleName": "Script Kit.app",
+          "bundleIdentifier": "app.scriptkit"
+        }
+      ]
+    },
+    "screens-connect": {
+      "caskVersion": "5.4.3,22984",
+      "sourceURL": "https://updates.edovia.com/com.edovia.screens.connect.mac/ScreensConnect_5.4.3b22984.zip",
+      "artifactSHA256": "32ce6e900b2a4d6c3c1543628a5dbad155b8f8066fd4cf51852ac1c5b6257c10",
+      "apps": [
+        {
+          "bundleName": "Screens Connect.app",
+          "bundleIdentifier": "com.edovia.Screens-Connect"
+        }
+      ]
+    },
+    "scrub-utility": {
+      "caskVersion": "1.3,2023.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/06/scrub13.zip",
+      "artifactSHA256": "d4537bc05615fcb4ef2a00b042a494b071b9cfaeb4ced7e8884fd3945034655d",
+      "apps": [
+        {
+          "bundleName": "Scrub.app",
+          "bundleIdentifier": "co.eclecticlight.Scrub"
+        }
+      ]
+    },
+    "shadowsocksx": {
+      "caskVersion": "2.6.3",
+      "sourceURL": "https://github.com/shadowsocks/shadowsocks-iOS/releases/download/2.6.3/ShadowsocksX-2.6.3.dmg",
+      "artifactSHA256": "f0e263dd1d74b0b6977389f2b8b28c524bceccbc5ad24ca8a8164b92ede1c45a",
+      "apps": [
+        {
+          "bundleName": "ShadowsocksX.app",
+          "bundleIdentifier": "clowwindy.ShadowsocksX"
+        }
+      ]
+    },
+    "shapes": {
+      "caskVersion": "5.0",
+      "sourceURL": "https://shapesapp.com/dist/Shapes_5.0.zip",
+      "artifactSHA256": "ee6c2946acbd481c260b9894756057f51aff4f11cf9d9904a0d2b3b8524adb95",
+      "apps": [
+        {
+          "bundleName": "Shapes.app",
+          "bundleIdentifier": "com.celestialteapot.Shapes5"
+        }
+      ]
+    },
+    "screens-assist": {
+      "caskVersion": "2.2,32600,5.2",
+      "sourceURL": "https://updates.edovia.com/com.edovia.screens.connect.express/ScreensAssist_5.2b32600.zip",
+      "artifactSHA256": "15f24e0ea123082c7321df9e9782eff14a4ecc1ed494779dc0e461254b5b1c96",
+      "apps": [
+        {
+          "bundleName": "Screens Assist.app",
+          "bundleIdentifier": "com.edovia.screens.connect.express"
+        }
+      ]
+    },
+    "server-box": {
+      "caskVersion": "1.0.1617",
+      "sourceURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1617/ServerBox-1.0.1617-arm64.dmg",
+      "artifactSHA256": "5169e4179c3994da9d7d762f8ddef6f9a69b619516915bb592287f6aeccc7ecc",
+      "apps": [
+        {
+          "bundleName": "Server Box.app",
+          "bundleIdentifier": "com.lollipopkit.toolbox"
+        }
+      ]
+    },
+    "script-debugger": {
+      "caskVersion": "8.0.10-8A88",
+      "sourceURL": "https://s3.amazonaws.com/latenightsw.com/ScriptDebugger8.0.10-8A88.dmg",
+      "artifactSHA256": "4146e6ef549f3af64c50055f911fc0b3a0ab9dc9f12d181d4cf553b1243c4b53",
+      "apps": [
+        {
+          "bundleName": "Script Debugger.app",
+          "bundleIdentifier": "com.latenightsw.ScriptDebugger8"
+        }
+      ]
+    },
+    "screenmemory": {
+      "caskVersion": "2.6.6",
+      "sourceURL": "https://f005.backblazeb2.com/file/screenmemory/ScreenMemory.2.6.6.dmg",
+      "artifactSHA256": "216b87f5568be7aac3b71f5676641d707ccbea3f4a72988088a3a7ca7691aefd",
+      "apps": [
+        {
+          "bundleName": "ScreenMemory.app",
+          "bundleIdentifier": "com.jontelang.screenmemory"
+        }
+      ]
+    },
+    "shadow": {
+      "caskVersion": "9.9.10457",
+      "sourceURL": "https://update.shadow.tech/launcher/prod/mac/arm64/ShadowPC-9.9.10457.dmg",
+      "artifactSHA256": "c56ad9e2d39e6aa2f2612de9783b3b007956f521abd802c97de433736500f39e",
+      "apps": [
+        {
+          "bundleName": "Shadow PC.app",
+          "bundleIdentifier": "com.electron.shadow"
+        }
+      ]
+    },
+    "securityspy": {
+      "caskVersion": "6.21",
+      "sourceURL": "https://www.bensoftware.com/securityspy/releases/SecuritySpy.dmg",
+      "artifactSHA256": "3cd24299f6e7f39646d55d74b718272df946e43a65c57edc27057ddc9490df0c",
+      "apps": [
+        {
+          "bundleName": "SecuritySpy.app",
+          "bundleIdentifier": "com.bensoftware.SecuritySpy"
+        }
+      ]
+    },
+    "send-anywhere": {
+      "caskVersion": "24.6.1,1783999839",
+      "sourceURL": "https://update.send-anywhere.com/osx_downloads/SendAnywhere_1783999839.dmg",
+      "artifactSHA256": "d8a490fb48d2edcb91c9783f95648f2063262403a2a293b28617b068b8d08807",
+      "apps": [
+        {
+          "bundleName": "Send Anywhere.app",
+          "bundleIdentifier": "com.estmob.osx.sendanywhere"
+        }
+      ]
+    },
+    "scrolla": {
+      "caskVersion": "35",
+      "sourceURL": "https://releases.scrolla.app/Scrolla.zip",
+      "artifactSHA256": "7f8ed4a917945cc0381522e0c677e7b690a70f99e3eaede7c44329d50f766407",
+      "apps": [
+        {
+          "bundleName": "Scrolla.app",
+          "bundleIdentifier": "mo.com.sleeplessmind.Scrolla"
+        }
+      ]
+    },
+    "sessionrestore": {
+      "caskVersion": "4.0",
+      "sourceURL": "https://sweetpproductions.com/products/sessionrestore/SessionRestore.dmg",
+      "artifactSHA256": "b78a99f9a5016327401943d2851953e507ef60df674d0e72111da3b1d9413b17",
+      "apps": [
+        {
+          "bundleName": "SessionRestore.app",
+          "bundleIdentifier": "com.sweetpproductions.SessionRestore"
+        }
+      ]
+    },
+    "sculptor": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://imbue-sculptor-releases.s3.us-west-2.amazonaws.com/sculptor/zip/darwin/arm64/Sculptor-darwin-arm64-0.7.0.zip",
+      "artifactSHA256": "083cd0fd55940824e8d73b8679a11c93d03724a653ecbb929524860473d12e25",
+      "apps": [
+        {
+          "bundleName": "Sculptor.app",
+          "bundleIdentifier": "com.electron.sculptor"
+        }
+      ]
+    },
+    "second-life-viewer": {
+      "caskVersion": "26.3.0.31203661088",
+      "sourceURL": "https://viewer-download.secondlife.com/Viewer_26/Second_Life_26_3_0_31203661088_universal.dmg",
+      "artifactSHA256": "8db48984af434bbaeb89ec39af94bc846cb813cf19f6bee5edb91e151a545804",
+      "apps": [
+        {
+          "bundleName": "Second Life Viewer.app",
+          "bundleIdentifier": "com.secondlife.indra.viewer"
+        }
+      ]
+    },
+    "seamly2d": {
+      "caskVersion": "2026.9.14.145",
+      "sourceURL": "https://github.com/FashionFreedom/Seamly2D/releases/download/v2026.9.14.145/Seamly2D-macos.zip",
+      "artifactSHA256": "f8174dc35aa16aa89dce81c465ec4a4771e1ee840009bce44c57031b0908dd7f",
+      "apps": []
+    },
+    "seam-app": {
+      "caskVersion": "1.15.3",
+      "sourceURL": "https://releases.getseam.app/1.15.3/Seam.dmg",
+      "artifactSHA256": "950dd55ef41cf1398ca6e66bf0209066bf7121a2d33873920cd065683225723f",
+      "apps": [
+        {
+          "bundleName": "Seam.app",
+          "bundleIdentifier": "app.seam.Seam"
+        }
+      ]
+    },
+    "scroll": {
+      "caskVersion": "2.12",
+      "sourceURL": "https://ryanhanson.dev/scroll/downloads/Scroll2.12.dmg",
+      "artifactSHA256": "ce1abdea25668029b8726f8467f3e1588af88190cec2b62b304fd49817ec2296",
+      "apps": [
+        {
+          "bundleName": "Scroll.app",
+          "bundleIdentifier": "com.knollsoft.Scroll"
+        }
+      ]
+    },
+    "serverbuddy": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://updates.serverbuddy.app/download/2.0.0/ServerBuddy-2.0.0.dmg",
+      "artifactSHA256": "be6ff96b077fd51be8e4091cdcc63420d5daa0d7a1301842e29242a58fdb46a2",
+      "apps": [
+        {
+          "bundleName": "ServerBuddy.app",
+          "bundleIdentifier": "com.prabusoftware.serverbuddy"
+        }
+      ]
+    },
+    "serial-studio": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://github.com/Serial-Studio/Serial-Studio/releases/download/v4.1.0/Serial-Studio-Pro-4.1.0-macOS.dmg",
+      "artifactSHA256": "df72e6295bb4243dc4fc1892c421315d5104c50e91b42ea926b5cfcf1c5ba9a9",
+      "apps": [
+        {
+          "bundleName": "Serial Studio Pro.app",
+          "bundleIdentifier": "org.alexspataru.serial-studio"
+        }
+      ]
+    },
+    "sessionwatcher": {
+      "caskVersion": "7.3.12",
+      "sourceURL": "https://sessionwatcher-updates.vercel.app/downloads/SessionWatcher-7.3.12.dmg",
+      "artifactSHA256": "bf58b7b5e52357cb2f11e76cdac06e9281ef894fc56122ac8090c31c59523902",
+      "apps": [
+        {
+          "bundleName": "SessionWatcher.app",
+          "bundleIdentifier": "com.sessionwatcher.app"
+        }
+      ]
     }
   }
 }
