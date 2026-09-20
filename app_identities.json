@@ -959,9 +959,9 @@
       ]
     },
     "cursor": {
-      "caskVersion": "3.21.13,e44a49c17e334d442e58bbde931d791200f014a2",
-      "sourceURL": "https://downloads.cursor.com/production/e44a49c17e334d442e58bbde931d791200f014a2/darwin/arm64/Cursor-darwin-arm64.zip",
-      "artifactSHA256": "65ab5f4858e723e053657c1bd2c9dc0b8c6f9f9b40814ee27ddf7e7bb3d9f759",
+      "caskVersion": "3.21.16,8ae78e8eee1e63479c7e0504b664bc0a80c6800f",
+      "sourceURL": "https://downloads.cursor.com/production/8ae78e8eee1e63479c7e0504b664bc0a80c6800f/darwin/arm64/Cursor-darwin-arm64.zip",
+      "artifactSHA256": "7191e5c9dc6f77066011df21a19d0ac7145e1378da676958957cb34f59b7b70a",
       "apps": [
         {
           "bundleName": "Cursor.app",
@@ -16933,6 +16933,270 @@
         {
           "bundleName": "Color Oracle.app",
           "bundleIdentifier": "ch.ethz.ika.colororacle"
+        }
+      ]
+    },
+    "craft-agents": {
+      "caskVersion": "0.13.3",
+      "sourceURL": "https://github.com/lukilabs/craft-agents-oss/releases/download/v0.13.3/Craft-Agents-0.13.3-mac-arm64.dmg",
+      "artifactSHA256": "8c122a1e30c5051068150cf72e40cdf4dfdcea53eb205da09df8f2794c6bca0b",
+      "apps": [
+        {
+          "bundleName": "Craft Agents.app",
+          "bundleIdentifier": "com.lukilabs.craft-agent"
+        }
+      ]
+    },
+    "coq-platform": {
+      "caskVersion": "2025.01.0,8.20.2025.01",
+      "sourceURL": "https://github.com/rocq-prover/platform/releases/download/2025.01.0/coq-Platform-release-2025.01.0-version.8.20.2025.01-MacOS-arm64.dmg",
+      "artifactSHA256": "5bfced11017a61e6a0d71787e2a7a31ffbc09707792d783235caf99d0f41f0d3",
+      "apps": [
+        {
+          "bundleName": "Coq-Platform~8.20~2025.01.app",
+          "bundleIdentifier": "fr.inria.coq.coqide"
+        }
+      ]
+    },
+    "creality-slicer": {
+      "caskVersion": "4.8.2",
+      "sourceURL": "https://file-cdn.creality.com/CrealitySlicer/darwin/Creality_Slicer-4.8.2-Darwin.dmg",
+      "artifactSHA256": "7c9588826a8358c6e9cfecc33d3e325b4ad0826729e0d07144037c15628a10dd",
+      "apps": [
+        {
+          "bundleName": "Creality Slicer.app",
+          "bundleIdentifier": "com.creality.crealityslicer"
+        }
+      ]
+    },
+    "curio": {
+      "caskVersion": "32.0.4,32041",
+      "sourceURL": "https://www.zengobi.com/downloads/Curio32041.dmg",
+      "artifactSHA256": "8e87521d2b302d6a09e99d2c9d7cbb898cdfa228a307e8358a7e1a5f35208cae",
+      "apps": [
+        {
+          "bundleName": "Curio.app",
+          "bundleIdentifier": "com.zengobi.curio"
+        }
+      ]
+    },
+    "curiosity": {
+      "caskVersion": "0.5.5",
+      "sourceURL": "https://github.com/Dimillian/RedditOS/releases/download/0.5.5/Curiosity.zip",
+      "artifactSHA256": "cee2a11755b23c55d96a2226750e80ee991ae8bff74bda4ff757717bcbdf9cad",
+      "apps": [
+        {
+          "bundleName": "Curiosity.app",
+          "bundleIdentifier": "com.thomasricouard.curiosity"
+        }
+      ]
+    },
+    "coverload": {
+      "caskVersion": "2.4.2-802",
+      "sourceURL": "https://s3-us-west-2.amazonaws.com/coverloadapp.com/Uploads/CoverLoad-2.4.2-802.zip",
+      "artifactSHA256": "71fe1ff60856b2f1f978006246fc3873824b5215b7a15b9abf51ad8799014321",
+      "apps": [
+        {
+          "bundleName": "CoverLoad.app",
+          "bundleIdentifier": "com.happeningstudios.coverload"
+        }
+      ]
+    },
+    "contraste": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://contrasteapp.com/contraste-1.0.zip",
+      "artifactSHA256": "ab6ce81efcde8179f9fdf81baff46f90dae45bca580f8582d82c8d1e42aa2c4a",
+      "apps": [
+        {
+          "bundleName": "Contraste.app",
+          "bundleIdentifier": "com.13bold.Contraste"
+        }
+      ]
+    },
+    "cro-mag-rally": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://github.com/jorio/CroMagRally/releases/download/3.0.1/CroMagRally-3.0.1-mac.dmg",
+      "artifactSHA256": "fc039fc19df8a466c7c185490e7768a81760312a89fe415c4ddb2ebc08e601e9",
+      "apps": [
+        {
+          "bundleName": "Cro-Mag Rally.app",
+          "bundleIdentifier": "io.jor.cromagrally"
+        }
+      ]
+    },
+    "cookie": {
+      "caskVersion": "8.6.2",
+      "sourceURL": "https://sweetpproductions.com/products/cookie8/Cookie.dmg",
+      "artifactSHA256": "bc5b44f51e3d27337a621d7d6fe9b542fab98e804267ec848150a90feaabfe36",
+      "apps": [
+        {
+          "bundleName": "Cookie.app",
+          "bundleIdentifier": "com.sweetpproductions.cookie.app"
+        }
+      ]
+    },
+    "cpu-info": {
+      "caskVersion": "1.10.0",
+      "sourceURL": "https://github.com/kamgurgul/cpu-info/releases/download/jvm-1.10.0/CPU-Info-macos-arm64-1.10.0.dmg",
+      "artifactSHA256": "080acf4cfd55d4d677bd962e2ab399b303a1a898066d7b2634870900729faa31",
+      "apps": [
+        {
+          "bundleName": "CPU-Info.app",
+          "bundleIdentifier": "com.kgurgul.cpuinfo"
+        }
+      ]
+    },
+    "crystalviewer": {
+      "caskVersion": "11.4.4",
+      "sourceURL": "https://crystalmaker.com/downloads/crystalviewer11_mac.zip",
+      "artifactSHA256": "f6f8d8b6602817859bfb823e92d3f439fcb0713992bfafecce59e19e55e8e43a",
+      "apps": [
+        {
+          "bundleName": "CrystalViewer.app",
+          "bundleIdentifier": "com.crystalmaker.crystalviewer.v11"
+        }
+      ]
+    },
+    "cornerstone": {
+      "caskVersion": "4.2",
+      "sourceURL": "https://cornerstone.assembla.com/downloads/Cornerstone-4.2.zip",
+      "artifactSHA256": "c18a4ac6d21e3908942d438e23cfbf31635ad268d638960ca7862680aca4247a",
+      "apps": [
+        {
+          "bundleName": "Cornerstone.app",
+          "bundleIdentifier": "com.zennaware.cornerstone3"
+        }
+      ]
+    },
+    "crystalmaker": {
+      "caskVersion": "11.7.2",
+      "sourceURL": "https://crystalmaker.com/downloads/crystalmaker11_mac.zip",
+      "artifactSHA256": "41c37d5363fb22f1b8f5f115646e5318691644821d5eeb6a62c795cef0eda8f5",
+      "apps": [
+        {
+          "bundleName": "CrystalMaker.app",
+          "bundleIdentifier": "com.crystalmaker.crystalmaker.v11"
+        }
+      ]
+    },
+    "ctivo": {
+      "caskVersion": "3.6.5",
+      "sourceURL": "https://github.com/mackworth/cTiVo/releases/download/3.6.5/cTiVo-3.6.5.zip",
+      "artifactSHA256": "4c9ff3ace390bd4afc4f988fd2830435d9afa0ae2a052a12771fe61789bd309f",
+      "apps": [
+        {
+          "bundleName": "cTiVo.app",
+          "bundleIdentifier": "com.cTiVo.cTiVo"
+        }
+      ]
+    },
+    "cura-lulzbot": {
+      "caskVersion": "4.13.17",
+      "sourceURL": "https://software.lulzbot.com/Cura_LulzBot_Edition/MacOSX/4.13.17/Cura_LulzBot_Edition-4.13.17.dmg",
+      "artifactSHA256": "4bdf2bff36e824521bdabdadbe9e21c308110648cb12be4fe00b940509aad424",
+      "apps": [
+        {
+          "bundleName": "Cura LulzBot Edition.app",
+          "bundleIdentifier": "com.lulzbot.curale"
+        }
+      ]
+    },
+    "couchbase-server-enterprise": {
+      "caskVersion": "8.0.3",
+      "sourceURL": "https://packages.couchbase.com/releases/8.0.3/couchbase-server-enterprise_8.0.3-macos_arm64.dmg",
+      "artifactSHA256": "14a49cb6456898193bf73d993995f7669fbbd846b3fa382c6120205646cc8e9d",
+      "apps": [
+        {
+          "bundleName": "Couchbase Server.app",
+          "bundleIdentifier": "com.couchbase.couchbase-server"
+        }
+      ]
+    },
+    "crescendo": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/SuprHackerSteve/Crescendo/releases/download/v1.0.4/Crescendo.app.zip",
+      "artifactSHA256": "0eebe035b00975002240e7347a45f00291c1d057cf134e5a8cde7ac0f34d0709",
+      "apps": [
+        {
+          "bundleName": "Crescendo.app",
+          "bundleIdentifier": "com.suprhackersteve.crescendo"
+        }
+      ]
+    },
+    "crystaldiffract": {
+      "caskVersion": "7.2.6",
+      "sourceURL": "https://crystalmaker.com/downloads/crystaldiffract7_mac.zip",
+      "artifactSHA256": "8d1e55a0e1c7e97a29e108b1b960d0d3e3e40a997a793e3e5f41bde1093054ef",
+      "apps": [
+        {
+          "bundleName": "CrystalDiffract.app",
+          "bundleIdentifier": "com.crystalmaker.crystaldiffract.v7"
+        }
+      ]
+    },
+    "creative": {
+      "caskVersion": "1.5.3,103",
+      "sourceURL": "https://files.creative.com/manualdn/Applications/100396/0dGyI1IHqu/Creative%201.5.3%20build%20103.zip",
+      "artifactSHA256": "6f81b1d8b0cbcfc7cf57573f459bf29b680d1bb52ef413a8cf2b74364bbb0aed",
+      "apps": [
+        {
+          "bundleName": "Creative.app",
+          "bundleIdentifier": "com.creative.ios.creativeapp"
+        }
+      ]
+    },
+    "couchbase-server-community": {
+      "caskVersion": "8.0.2",
+      "sourceURL": "https://packages.couchbase.com/releases/8.0.2/couchbase-server-community_8.0.2-macos_arm64.dmg",
+      "artifactSHA256": "f1ea03e05c2342cb3e2d77b8c157507539607cb9beb955f2e7dd3cbb49900a0e",
+      "apps": [
+        {
+          "bundleName": "Couchbase Server.app",
+          "bundleIdentifier": "com.couchbase.couchbase-server"
+        }
+      ]
+    },
+    "contour": {
+      "caskVersion": "0.7.0.8982",
+      "sourceURL": "https://github.com/contour-terminal/contour/releases/download/v0.7.0.8982/contour-0.7.0.8982-macOS-arm.dmg",
+      "artifactSHA256": "fa71252eff85ef5b223861d3aa9918440a684fe3e71418698eacad538b40a383",
+      "apps": [
+        {
+          "bundleName": "contour.app",
+          "bundleIdentifier": "org.contourterminal.Contour"
+        }
+      ]
+    },
+    "cpuinfo": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/yusukeshib/cpuinfo/releases/download/v1.7.0/cpuinfo.zip",
+      "artifactSHA256": "9ba2008a1b7101bfae32ea33f03c5c9dc7759d5a48881a8cba446b7da7328293",
+      "apps": [
+        {
+          "bundleName": "cpuinfo.app",
+          "bundleIdentifier": "io.fata.shibata.cpuinfo"
+        }
+      ]
+    },
+    "coscreen": {
+      "caskVersion": "8.11.14",
+      "sourceURL": "https://update.coscreen.org/CoScreen-8.11.14-stable-arm64.dmg",
+      "artifactSHA256": "00a91e0532ad699c3eb9b1df6bd56334e161e255026b9776bbe761f65c1e28b5",
+      "apps": [
+        {
+          "bundleName": "CoScreen.app",
+          "bundleIdentifier": "org.coscreen.CoScreen"
+        }
+      ]
+    },
+    "core-tunnel": {
+      "caskVersion": "5.1,4849",
+      "sourceURL": "https://codinn.com/update/tunnel/Core%20Tunnel-5.1%20(4849).zip",
+      "artifactSHA256": "501c4096373bf3cebc7f1157af50eef6070e70d6a16bd825930d14cf56fdb728",
+      "apps": [
+        {
+          "bundleName": "Core Tunnel.app",
+          "bundleIdentifier": "io.coressh.tunnel-direct"
         }
       ]
     }
