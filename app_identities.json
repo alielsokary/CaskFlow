@@ -14650,6 +14650,265 @@
           "bundleIdentifier": "com.autoclaude.ui"
         }
       ]
+    },
+    "bbackupp": {
+      "caskVersion": "2.14.74",
+      "sourceURL": "https://github.com/Lakr233/BBackupp/releases/download/2.14.74/BBackupp.zip",
+      "artifactSHA256": "2870ff5a6c5c7b0a6c3af37d52eb6c2c6546dae8cb503aa579363d1d8bd260c5",
+      "apps": [
+        {
+          "bundleName": "BBackupp.app",
+          "bundleIdentifier": "wiki.qaq.BBackupp"
+        }
+      ]
+    },
+    "banktivity": {
+      "caskVersion": "10.1.1,432",
+      "sourceURL": "https://www.iggsoft.com/banktivity/Banktivity10.1.1-432.dmg",
+      "artifactSHA256": "dba44e8488a536cdfca357267de79a6b24592b7fabbf7b1fd76a674d8a0aa8b3",
+      "apps": [
+        {
+          "bundleName": "Banktivity.app",
+          "bundleIdentifier": "com.iggsoftware.banktivity"
+        }
+      ]
+    },
+    "backuploupe": {
+      "caskVersion": "3.15.1",
+      "sourceURL": "https://www.soma-zone.com/download/files/BackupLoupe-3.15.1.tar.xz",
+      "artifactSHA256": "c12454d6271c0855cfb807476ffb7b8dd98fcf43e26b0546e6f4925be55153c0",
+      "apps": [
+        {
+          "bundleName": "BackupLoupe.app",
+          "bundleIdentifier": "com.soma-zone.BackupLoupe"
+        }
+      ]
+    },
+    "bambu-connect": {
+      "caskVersion": "2.5.0-beta.15",
+      "sourceURL": "https://public-cdn.bblmw.com/upgrade/bambu-connect/updates/versions/2.5.0-beta.15/bambu-connect-v2.5.0-beta.15-darwin-arm64.dmg",
+      "artifactSHA256": "3f3398d1fc3f087f0317e82cf788b741b7ac83c9461a7ac3755d011a1f1890b6",
+      "apps": [
+        {
+          "bundleName": "Bambu Connect.app",
+          "bundleIdentifier": "com.bambulab.bambu-connect"
+        }
+      ]
+    },
+    "bazecor": {
+      "caskVersion": "1.10.0",
+      "sourceURL": "https://github.com/Dygmalab/Bazecor/releases/download/v1.10.0/Bazecor-1.10.0-arm64.dmg",
+      "artifactSHA256": "021ec9e364d63c4fb3d900f123c4b552cd20b356d8471a56897d5c808e15aa48",
+      "apps": [
+        {
+          "bundleName": "Bazecor.app",
+          "bundleIdentifier": "com.dygmalab.bazecor"
+        }
+      ]
+    },
+    "batchoutput-pdf": {
+      "caskVersion": "3.1.8",
+      "sourceURL": "https://zevrix.com/downloads/BatchOutputPDF.dmg",
+      "artifactSHA256": "9c5b5f3c88052cdda073c35837d0e7313935cd918d31b35fed9540184a982179",
+      "apps": []
+    },
+    "basecamp": {
+      "caskVersion": "5.1.5",
+      "sourceURL": "https://basecamp.com/desktop/Basecamp-5.1.5-mac.zip",
+      "artifactSHA256": "aa319d36950f5470fda77d62b5b6e91f61faf34ce41c5707e31b2a51a0ae08b7",
+      "apps": [
+        {
+          "bundleName": "Basecamp.app",
+          "bundleIdentifier": "com.basecamp.basecamp3"
+        }
+      ]
+    },
+    "bcut": {
+      "caskVersion": "3.11.24,23369602,a97c4192d11a838429fb9600044e67c8",
+      "sourceURL": "https://boss.hdslb.com/bcut_pc_pkg/static/a97c4192d11a838429fb9600044e67c8/BCUT-3.11.24-23369602-arm.dmg",
+      "artifactSHA256": "c2ffdf539aed7dd235a8dee7ad3547f32a2803380d8e64367f7b11792ca1ad9c",
+      "apps": [
+        {
+          "bundleName": "BCUT.app",
+          "bundleIdentifier": "com.bilibili.bcutcreator"
+        }
+      ]
+    },
+    "beardie": {
+      "caskVersion": "3.0.24.84.Release",
+      "sourceURL": "https://github.com/Stillness-2/beardie/releases/download/v3.0.24.84.Release/Beardie.app.zip",
+      "artifactSHA256": "d4361bc06beab9e868b746695506656603febe02c32539ffc15a5a7b642425dd",
+      "apps": [
+        {
+          "bundleName": "Beardie.app",
+          "bundleIdentifier": "com.calm-apps.mac.beardie"
+        }
+      ]
+    },
+    "bathyscaphe": {
+      "caskVersion": "3.2.1,1101",
+      "sourceURL": "https://bitbucket.org/bathyscaphe/public/downloads/BathyScaphe-321-v1101.zip",
+      "artifactSHA256": "d184edaabe6d8132063dad948665076277de8bb582529724d3c2d053c9af7f98",
+      "apps": [
+        {
+          "bundleName": "BathyScaphe.app",
+          "bundleIdentifier": "jp.tsawada2.BathyScaphe"
+        }
+      ]
+    },
+    "base": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://files.menial.co.uk/base/Base-3.3.0.zip",
+      "artifactSHA256": "1e943707779f277848aac9c430a4cf5fe0a67f1403f73334dd5781dccecfcbf6",
+      "apps": [
+        {
+          "bundleName": "Base.app",
+          "bundleIdentifier": "uk.co.menial.Base3"
+        }
+      ]
+    },
+    "banksiagui": {
+      "caskVersion": "0.58",
+      "sourceURL": "https://banksiagui.com/dl/banksiagui-0.58-applesilicon.zip",
+      "artifactSHA256": "1f058c0371d6a912d943f5e03d007628d0e03ff039c3481a5101bab19fdee492",
+      "apps": [
+        {
+          "bundleName": "banksiagui.app",
+          "bundleIdentifier": "softgaroo.banksia"
+        }
+      ]
+    },
+    "banana-cake-pop": {
+      "caskVersion": "17.0.0",
+      "sourceURL": "https://download.chillicream.com/bananacakepop/BananaCakePop-17.0.0-mac-arm64.dmg",
+      "artifactSHA256": "a3b12587a6cde3641037e43fbd07e1a56f32ab95394fdc4ee0ee1c0e6cbcb455",
+      "apps": [
+        {
+          "bundleName": "Banana Cake Pop.app",
+          "bundleIdentifier": "com.chillicream.bananacakepop"
+        }
+      ]
+    },
+    "badlion-client": {
+      "caskVersion": "4.5.4",
+      "sourceURL": "https://client-updates.badlion.net/Badlion%20Client-4.5.4-arm64.dmg",
+      "artifactSHA256": "12afdfe3a8bd5ed6143cd5d251cf051bed7a119cf2fd6ea3984185a0e36d3539",
+      "apps": [
+        {
+          "bundleName": "Badlion Client.app",
+          "bundleIdentifier": "net.badlion.client"
+        }
+      ]
+    },
+    "battery-buddy": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://batterybuddy.app/releases/Battery%20Buddy.zip",
+      "artifactSHA256": "def0274fed307463fea3cd7fb332c80922a5ae66f4a65853e0160279bf7ba3dd",
+      "apps": [
+        {
+          "bundleName": "Battery Buddy.app",
+          "bundleIdentifier": "com.NeilSardesai.Battery-Buddy"
+        }
+      ]
+    },
+    "beamer": {
+      "caskVersion": "4.3.6",
+      "sourceURL": "https://ushining.softorino.com/shine_uploads/beamermac_4.3.6.dmg",
+      "artifactSHA256": "5cb00e051355089e0b1e02feabfc6e040ac05e6869d34966a13ead67f9b115c4",
+      "apps": [
+        {
+          "bundleName": "Beamer.app",
+          "bundleIdentifier": "com.softorino.beamer"
+        }
+      ]
+    },
+    "backblaze-downloader": {
+      "caskVersion": "9.2.2.878",
+      "sourceURL": "https://secure.backblaze.com/mac_restore_downloader",
+      "artifactSHA256": "cea127b0b91a19f7c42b3ddd3680710446b3d97e64a0e16b823f1d3c40a45021",
+      "apps": [
+        {
+          "bundleName": "BackblazeDownloader.app",
+          "bundleIdentifier": "com.backblaze.BackblazeDownloader"
+        }
+      ]
+    },
+    "balsamiq-wireframes": {
+      "caskVersion": "4.8.6",
+      "sourceURL": "https://builds.balsamiq.com/bwd/Balsamiq%20Wireframes%204.8.6.dmg",
+      "artifactSHA256": "3817553ac4801b3a245b55f1996870371cd3599a8c99f0054dd796bc09ceeca7",
+      "apps": [
+        {
+          "bundleName": "Balsamiq Wireframes.app",
+          "bundleIdentifier": "com.balsamiq.wireframes"
+        }
+      ]
+    },
+    "balance-lock": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://www.tunabellysoftware.com/resources/Balance%20Lock%201.1.dmg",
+      "artifactSHA256": "c943838667974ad96ff8582334c18754f3c35ceba5692f431f5dfd1cd8284765",
+      "apps": [
+        {
+          "bundleName": "Balance Lock.app",
+          "bundleIdentifier": "com.tunabelly.balancelock"
+        }
+      ]
+    },
+    "bdash": {
+      "caskVersion": "1.35.2",
+      "sourceURL": "https://github.com/bdash-app/bdash/releases/download/v1.35.2/Bdash-1.35.2-universal-mac.zip",
+      "artifactSHA256": "31eb841fd8746bad9b8b785ec7cb04e8454a19439688ebd14f65e71e9cd28f74",
+      "apps": [
+        {
+          "bundleName": "Bdash.app",
+          "bundleIdentifier": "io.bdash"
+        }
+      ]
+    },
+    "bean": {
+      "caskVersion": "3.7.8",
+      "sourceURL": "https://www.bean-osx.com/releases/Bean-Install-3-7-8.zip",
+      "artifactSHA256": "1283262944ce064d9f966643c84d1f78e9ab18243727a4ddc3e6253b5db35d8c",
+      "apps": [
+        {
+          "bundleName": "Bean.app",
+          "bundleIdentifier": "com.bean-osx.Bean"
+        }
+      ]
+    },
+    "backblaze-restore": {
+      "caskVersion": "10.0.3.1076",
+      "sourceURL": "https://f000.backblazeb2.com/file/b2-computer-backup-public/macos/standalone-restore/backblaze_restore.dmg",
+      "artifactSHA256": "5625b508a96d8bba22c188ba3fba66fe73ac941342693bfbce1243a5f2045458",
+      "apps": [
+        {
+          "bundleName": "Backblaze Restore.app",
+          "bundleIdentifier": "com.backblaze.BackblazeRestore"
+        }
+      ]
+    },
+    "batteries": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://github.com/ronyfadel/BatteriesReleases/releases/download/v3.0.2/Batteries.dmg",
+      "artifactSHA256": "33f1cf5e6af2087f3720e80239f78f09d31734d11d3d60b54a41a0dbf566b9e2",
+      "apps": [
+        {
+          "bundleName": "Batteries.app",
+          "bundleIdentifier": "io.fadel.Batteries"
+        }
+      ]
+    },
+    "ball": {
+      "caskVersion": "1",
+      "sourceURL": "https://github.com/nate-parrott/ball/releases/download/v1/Ball.dmg",
+      "artifactSHA256": "f3b1794971cc34fadcd817c8c4ed1ad9e791143254696fb6e78fea1294bccbd1",
+      "apps": [
+        {
+          "bundleName": "Ball.app",
+          "bundleIdentifier": "com.nateparrott.Ball"
+        }
+      ]
     }
   }
 }

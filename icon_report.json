@@ -137,6 +137,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "backyard-ai": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: update.backyard.ai",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "baseline": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
