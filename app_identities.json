@@ -25699,6 +25699,177 @@
           "bundleIdentifier": "com.nvidia.devtools.Rebel"
         }
       ]
+    },
+    "onekey": {
+      "caskVersion": "6.5.2",
+      "sourceURL": "https://github.com/OneKeyHQ/app-monorepo/releases/download/v6.5.2/OneKey-Wallet-6.5.2-mac-arm64.dmg",
+      "artifactSHA256": "d4c02f3d26137285fc86545062f837532167998417b1d1de8a0ca034d598147c",
+      "apps": [
+        {
+          "bundleName": "OneKey.app",
+          "bundleIdentifier": "so.onekey.wallet.desktop"
+        }
+      ]
+    },
+    "onionshare": {
+      "caskVersion": "2.6.5",
+      "sourceURL": "https://onionshare.org/dist/2.6.5/OnionShare-2.6.5.dmg",
+      "artifactSHA256": "4426a52c9668799b4b1fa3823936e378f93ba01688b7e881bfdcf529e1b5c633",
+      "apps": []
+    },
+    "omnioutliner": {
+      "caskVersion": "6.3",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.3.dmg",
+      "artifactSHA256": "d66b4a6cc78d33698c50a3a6fd71ffcf90038a0e6f4cd7574cc9d27413cbee5b",
+      "apps": [
+        {
+          "bundleName": "OmniOutliner.app",
+          "bundleIdentifier": "com.omnigroup.OmniOutliner6"
+        }
+      ]
+    },
+    "onecast": {
+      "caskVersion": "3.4",
+      "sourceURL": "https://onecast.me/updates/release/OneCast-3.4.dmg",
+      "artifactSHA256": "f2ebdd44abe7d4b7da6715c672ff250978e29ca4a2db1a9e08df3a9db4fd5935",
+      "apps": [
+        {
+          "bundleName": "OneCast.app",
+          "bundleIdentifier": "com.onecast.macos"
+        }
+      ]
+    },
+    "omnigraffle": {
+      "caskVersion": "7.26",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/14/OmniGraffle-7.26.dmg",
+      "artifactSHA256": "2f7432ab290969413dfa6ab95f22797a7abef3eb44ec556fb8b95adb021b9ddf",
+      "apps": [
+        {
+          "bundleName": "OmniGraffle.app",
+          "bundleIdentifier": "com.omnigroup.OmniGraffle7"
+        }
+      ]
+    },
+    "onit-sidekick": {
+      "caskVersion": "3.0",
+      "sourceURL": "https://github.com/synth-inc/onit/releases/download/v3.0/SideKick-3.0.dmg",
+      "artifactSHA256": "1aaeee17ffb4b05ca2a9168a2319dd9b4d31f485868433a858acfda86a23a4d8",
+      "apps": [
+        {
+          "bundleName": "SideKick.app",
+          "bundleIdentifier": "inc.synth.onit.sidekick"
+        }
+      ]
+    },
+    "ondesoft-audiobook-converter": {
+      "caskVersion": "7.0.6",
+      "sourceURL": "https://www.ondesoft.com/download/odaudiobookconverter_mac.dmg",
+      "artifactSHA256": "353790721692739d37dd61eead265f9c702c9b99c111ff7786a714065bfb450b",
+      "apps": [
+        {
+          "bundleName": "Ondesoft AudioBook Converter.app",
+          "bundleIdentifier": "com.ondesoft-audiobook-converter"
+        }
+      ]
+    },
+    "onlook": {
+      "caskVersion": "0.2.32",
+      "sourceURL": "https://github.com/onlook-dev/onlook/releases/download/v0.2.32/Onlook-arm64.dmg",
+      "artifactSHA256": "73a06b8482ac02b5fd2bc3e2253dd7c89eadb617b21ad666aa958288ebf443cc",
+      "apps": [
+        {
+          "bundleName": "Onlook.app",
+          "bundleIdentifier": "dev.onlook.studio"
+        }
+      ]
+    },
+    "omniwm": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://github.com/OmniNull/OmniWM/releases/download/v0.7.1/OmniWM-v0.7.1.zip",
+      "artifactSHA256": "7135d520c05fd7012de8c9b75a0bd96d3fbfad8111be27bb5c3002b60cf76162",
+      "apps": [
+        {
+          "bundleName": "OmniWM.app",
+          "bundleIdentifier": "com.barut.OmniWM"
+        }
+      ]
+    },
+    "obscura-vpn": {
+      "caskVersion": "1.170",
+      "sourceURL": "https://pkgs.obscura.net/macos/obscura-1.170.dmg",
+      "artifactSHA256": "a0f920af5617e82cb5fef79a6ea40acf5fcf86b03c98a0200c1d7730aa0e46af",
+      "apps": [
+        {
+          "bundleName": "Obscura VPN.app",
+          "bundleIdentifier": "net.obscura.vpn-client-app"
+        }
+      ]
+    },
+    "omegat": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://downloads.sourceforge.net/omegat/OmegaT%20-%20Standard/OmegaT%206.0.1/OmegaT_6.0.1_macOS_Notarized.dmg",
+      "artifactSHA256": "49eb622bdcf32dcb0f4ee7ba2adc43f9837614d7b71435f33f86235c7c75a6bb",
+      "apps": [
+        {
+          "bundleName": "OmegaT.app",
+          "bundleIdentifier": "org.omegat.OmegaT"
+        }
+      ]
+    },
+    "omniplan": {
+      "caskVersion": "4.11",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.11.dmg",
+      "artifactSHA256": "8aef27a5f12fa83b6d8874ef2b853970473ea02e0939a225da6809d341f0c568",
+      "apps": [
+        {
+          "bundleName": "OmniPlan.app",
+          "bundleIdentifier": "com.omnigroup.OmniPlan4"
+        }
+      ]
+    },
+    "omnipresence": {
+      "caskVersion": "1.10",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/14/OmniPresence-1.10.dmg",
+      "artifactSHA256": "b2d81dfd14a38a4c41013c072da4099a71c9ce192167f63e837254f2720c2b9d",
+      "apps": [
+        {
+          "bundleName": "OmniPresence.app",
+          "bundleIdentifier": "com.omnigroup.OmniPresence"
+        }
+      ]
+    },
+    "october": {
+      "caskVersion": "1.12.2",
+      "sourceURL": "https://github.com/marcus-crane/october/releases/download/v1.12.2/october_1.12.2_darwin_arm64.zip",
+      "artifactSHA256": "abc5ae23a95455da184f4789d26e8624b798225d54508b37236bcd21ae7ee342",
+      "apps": [
+        {
+          "bundleName": "October.app",
+          "bundleIdentifier": "com.wails.October"
+        }
+      ]
+    },
+    "oka-unarchiver": {
+      "caskVersion": "2.1.6",
+      "sourceURL": "https://cdn.okaapps.com/resource/download/OkaUnarchiver.dmg",
+      "artifactSHA256": "21bbc2cb96988e67b2f70c7e3ab409d3ed8eb62bb322a234296ac13620984cde",
+      "apps": [
+        {
+          "bundleName": "Oka Unarchiver.app",
+          "bundleIdentifier": "com.chenhaowu.mac.utility.website.zip"
+        }
+      ]
+    },
+    "ok-json": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://okjson.app/download/okjson-latest.dmg",
+      "artifactSHA256": "bc2d1d7f8b60e18831c85e4cf3c0a4b34c7b5e915bcb47943cecfc1661e6dc51",
+      "apps": [
+        {
+          "bundleName": "OK JSON.app",
+          "bundleIdentifier": "net.shinystone.OKJSON"
+        }
+      ]
     }
   }
 }
