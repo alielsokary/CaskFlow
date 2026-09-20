@@ -10711,9 +10711,9 @@
       ]
     },
     "mailspring": {
-      "caskVersion": "1.24.1",
-      "sourceURL": "https://github.com/Foundry376/Mailspring/releases/download/1.24.1/Mailspring-AppleSilicon.zip",
-      "artifactSHA256": "68281e6c83bdba6059af8d91476afe3115072e26d037c848cc79a5c8f8f495fd",
+      "caskVersion": "1.25.0",
+      "sourceURL": "https://github.com/Foundry376/Mailspring/releases/download/1.25.0/Mailspring-AppleSilicon.zip",
+      "artifactSHA256": "cec7e47e237c8344e8dff365df961d5f0a213208b1ce267c435fb10906eaa216",
       "apps": [
         {
           "bundleName": "Mailspring.app",
@@ -23328,6 +23328,254 @@
         {
           "bundleName": "Luxury Yacht.app",
           "bundleIdentifier": "app.luxury-yacht.desktop"
+        }
+      ]
+    },
+    "mailmate": {
+      "caskVersion": "5673",
+      "sourceURL": "https://updates.mailmate-app.com/archives/MailMate_r5673.tbz",
+      "artifactSHA256": "2dc1069207d85a92c3a7000f019f8e4df88f123d2ffce4fdce17256d43c99cba",
+      "apps": [
+        {
+          "bundleName": "MailMate.app",
+          "bundleIdentifier": "com.freron.MailMate"
+        }
+      ]
+    },
+    "macwinzipper": {
+      "caskVersion": "2.7.2",
+      "sourceURL": "https://tida.co.jp/files/MacWinZipper-2.7.2.dmg",
+      "artifactSHA256": "c033ac0ccc79babfada6ea2902e5181d339c3bb793bc98e3203f90e626b62d38",
+      "apps": [
+        {
+          "bundleName": "MacWinZipper.app",
+          "bundleIdentifier": "bz.tida.MacWinZipper"
+        }
+      ]
+    },
+    "macpilot": {
+      "caskVersion": "18.0.1",
+      "sourceURL": "https://www.koingosw.com/products/macpilot/download/macpilot.dmg",
+      "artifactSHA256": "5e974b9c04be0047ebd7f8e946535bab6cd9f77cdb0789007ddf5174201cfd19",
+      "apps": [
+        {
+          "bundleName": "MacPilot.app",
+          "bundleIdentifier": "com.koingosw.MacPilot"
+        }
+      ]
+    },
+    "malus": {
+      "caskVersion": "5.0.1",
+      "sourceURL": "https://download.getmalus.com/uploads/Malus5_0_1.dmg",
+      "artifactSHA256": "44214970721df28f482a0ccde1d325addde7a1065a4e371c7694a7803e9a26d1",
+      "apps": [
+        {
+          "bundleName": "Malus.app",
+          "bundleIdentifier": "com.getmalus.malus"
+        }
+      ]
+    },
+    "makeracam": {
+      "caskVersion": "0.2.1.9",
+      "sourceURL": "https://github.com/MakeraInc/MakeraCAM/releases/download/v0.2.1.9/MakeraCAM_Mac_v0.2.1.9.dmg",
+      "artifactSHA256": "c591506cb661778a3dc08e56a86ad4e033780214ea17e9fc6a9955a1c973d2bd",
+      "apps": [
+        {
+          "bundleName": "MakeraCAM.app",
+          "bundleIdentifier": "com.makera.makeracam"
+        }
+      ]
+    },
+    "macrorecorder": {
+      "caskVersion": "4.0.51",
+      "sourceURL": "https://www.macrorecorder.com/MacroRecorderSetup.dmg",
+      "artifactSHA256": "eb95f1f7fe4b2f6ee9d8962de8a6ac8b3e3fc97de446fdbe246133290bbba67a",
+      "apps": []
+    },
+    "maestral": {
+      "caskVersion": "1.9.5",
+      "sourceURL": "https://github.com/SamSchott/maestral/releases/download/v1.9.5/Maestral-1.9.5.dmg",
+      "artifactSHA256": "cd8f393abba8a70794e527ee30c4d3f11b5da6e935fb315fbe6ff00bf8f79e4c",
+      "apps": [
+        {
+          "bundleName": "Maestral.app",
+          "bundleIdentifier": "com.samschott.maestral"
+        }
+      ]
+    },
+    "mailbird": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://download.getmailbird.com/installers/mailbird_next/macos/Mailbird-for-Mac-1.9.2.dmg",
+      "artifactSHA256": "1b77fcd1c04de9be968930e778c93de37557db3c53839bf2e0e95cb045a7a47e",
+      "apps": [
+        {
+          "bundleName": "Mailbird.app",
+          "bundleIdentifier": "com.getmailbird.Mailbird"
+        }
+      ]
+    },
+    "mail-assistant": {
+      "caskVersion": "0.5",
+      "sourceURL": "https://s3-us-west-2.amazonaws.com/downloads.agiletortoise.com/Mail+Assistant.app.zip",
+      "artifactSHA256": "9ebfcf22c1927d2ed2f7c70ad0428ef8f1f3acd64543b677ea6dd95c1cc012f1",
+      "apps": [
+        {
+          "bundleName": "Mail Assistant.app",
+          "bundleIdentifier": "com.agiletortoise.Mail-Assistant"
+        }
+      ]
+    },
+    "magicquit": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://magicquit.com/apps/MagicQuit_1.4.dmg",
+      "artifactSHA256": "2deebd8efc69f06ae51cbc17eecfa15310a8a6a46a800645b285d2be360fd922",
+      "apps": [
+        {
+          "bundleName": "MagicQuit.app",
+          "bundleIdentifier": "com.MagicQuit"
+        }
+      ]
+    },
+    "macloggerdx": {
+      "caskVersion": "6.62",
+      "sourceURL": "https://www.dogparksoftware.com/files/MacLoggerDX662.dmg",
+      "artifactSHA256": "78b19625c3dbf04cf8fc0dace65a1ed6093936525f0904881916e9bdf63171cb",
+      "apps": [
+        {
+          "bundleName": "MacLoggerDX.app",
+          "bundleIdentifier": "com.dogparksoftware.MacLoggerDX"
+        }
+      ]
+    },
+    "mangodisk": {
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://github.com/harry0703/MangoDisk/releases/download/v1.1.3/MangoDisk-1.1.3-macos.dmg",
+      "artifactSHA256": "dfb59ce08320a3b54b4813f78feded75f453c0c796c218b35403b9d1bdc9148b",
+      "apps": [
+        {
+          "bundleName": "MangoDisk.app",
+          "bundleIdentifier": "app.mangodisk.desktop"
+        }
+      ]
+    },
+    "mailsteward": {
+      "caskVersion": "18.2.2",
+      "sourceURL": "https://s3.amazonaws.com/mailsteward/images/MailSteward_18.2.2.zip",
+      "artifactSHA256": "dd1695e20fb7aedec3c495d2f5869ebeb1b9b33a5de5fd261ca428dcfe330c05",
+      "apps": [
+        {
+          "bundleName": "MailSteward.app",
+          "bundleIdentifier": "com.pubblog.MailSteward"
+        }
+      ]
+    },
+    "macshot-offline": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/sw33tLie/macshot/releases/download/v4.2.1/MacShot-Offline.dmg",
+      "artifactSHA256": "7ac2c3537dec1a3718fbbc51e9f26c95de9550fc07a430f0eef350cb86aaf9d7",
+      "apps": [
+        {
+          "bundleName": "macshot Offline.app",
+          "bundleIdentifier": "com.sw33tlie.macshot.offline"
+        }
+      ]
+    },
+    "macsymbolicator": {
+      "caskVersion": "2.6",
+      "sourceURL": "https://github.com/inket/MacSymbolicator/releases/download/2.6/MacSymbolicator.zip",
+      "artifactSHA256": "d92f53c23e69997974df3944aa9ab5feb0d9c320dce3e13b2e7088677cd2b509",
+      "apps": [
+        {
+          "bundleName": "MacSymbolicator.app",
+          "bundleIdentifier": "jp.mahdi.MacSymbolicator"
+        }
+      ]
+    },
+    "macpulse": {
+      "caskVersion": "1.2.14",
+      "sourceURL": "https://macpulse.app/downloads/MacPulse-1.2.14.dmg",
+      "artifactSHA256": "cda8ebd4f88958c0cc8d4d936af7b8a5aab9efb2c83a65cec554c1179d9a35f2",
+      "apps": [
+        {
+          "bundleName": "MacPulse.app",
+          "bundleIdentifier": "com.jupe.MacPulse"
+        }
+      ]
+    },
+    "macx-video-converter-pro": {
+      "caskVersion": "6.9.0",
+      "sourceURL": "https://www.macxdvd.com/download/macx-video-converter-pro.dmg",
+      "artifactSHA256": "0c894b9852619120f2a14f8800628df02b6a33a38824c7add12380358de0c18a",
+      "apps": [
+        {
+          "bundleName": "MacX Video Converter Pro.app",
+          "bundleIdentifier": "com.macxdvd.macxvdoconverterpro"
+        }
+      ]
+    },
+    "maestri": {
+      "caskVersion": "0.48.0",
+      "sourceURL": "https://pub-84eb0b1f3fb3420bbe57a88de7443b71.r2.dev/downloads/Maestri-0.48.0.zip",
+      "artifactSHA256": "766b4c290d049f0808ca902148535605452a02fce20dc3469ec6710868091e30",
+      "apps": [
+        {
+          "bundleName": "Maestri.app",
+          "bundleIdentifier": "com.evercraftlabs.Maestro"
+        }
+      ]
+    },
+    "mailplane": {
+      "caskVersion": "4.3.15,4962",
+      "sourceURL": "https://builds.mailplaneapp.com/Mailplane_4_4962.tbz",
+      "artifactSHA256": "265e66a042082406d094317e17603a880d5490367d53fec62503016ee77806cc",
+      "apps": [
+        {
+          "bundleName": "Mailplane.app",
+          "bundleIdentifier": "com.mailplaneapp.Mailplane3"
+        }
+      ]
+    },
+    "macintoshjs": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/felixrieseberg/macintosh.js/releases/download/v1.2.0/macintosh.js-darwin-arm64-1.2.0.zip",
+      "artifactSHA256": "0df67f2a3c8398f31840c54fad030b2ff9400fb1311774771ada3d8d9990443f",
+      "apps": [
+        {
+          "bundleName": "macintosh.js.app",
+          "bundleIdentifier": "com.felixrieseberg.macintoshjs"
+        }
+      ]
+    },
+    "magicplot": {
+      "caskVersion": "3.2",
+      "sourceURL": "https://magicplot.com/downloads/MagicPlot-3.2-macos-arm64.zip",
+      "artifactSHA256": "156fe5691e628415e0148e9c31504b9c1e158b0148d83760d96b39b8e17419f9",
+      "apps": [
+        {
+          "bundleName": "MagicPlot.app",
+          "bundleIdentifier": "com.magicplot.MagicPlot"
+        }
+      ]
+    },
+    "macx-dvd-ripper-pro": {
+      "caskVersion": "6.9.0",
+      "sourceURL": "https://www.macxdvd.com/download/macx-dvd-ripper-pro.dmg",
+      "artifactSHA256": "cad62c453d9913b1f2f8e50698a4579d442a19ae20be0f93e38d338ef91e1936",
+      "apps": [
+        {
+          "bundleName": "MacX DVD Ripper Pro.app",
+          "bundleIdentifier": "com.macxdvd.macxvideoconverterpro"
+        }
+      ]
+    },
+    "maintenance": {
+      "caskVersion": "3.5.3",
+      "sourceURL": "https://www.titanium-software.fr/download/26/Maintenance.dmg",
+      "artifactSHA256": "2af460c82e37b9020dca4df133c79fe0e10434aab7e3e1b1d24178d2bbdbe77c",
+      "apps": [
+        {
+          "bundleName": "Maintenance.app",
+          "bundleIdentifier": "com.titanium.Maintenance"
         }
       ]
     }

@@ -977,6 +977,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "mailmaster": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got f83fec4eb36e...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "mailtrackerblocker": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
