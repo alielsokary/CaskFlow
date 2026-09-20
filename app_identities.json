@@ -26367,6 +26367,260 @@
           "bundleIdentifier": "com.gorillized.outlinemac.standalone"
         }
       ]
+    },
+    "pastenow": {
+      "caskVersion": "2.32,761",
+      "sourceURL": "https://pastenow.app/api/release_manager/downloads/app.pastenow.PasteNow/761.zip",
+      "artifactSHA256": "f894ef1fce545beaeb1fbd9446cd391f5636c2d9a963eeb55a59c60f33cd10f0",
+      "apps": [
+        {
+          "bundleName": "PasteNow.app",
+          "bundleIdentifier": "app.pastenow.PasteNow"
+        }
+      ]
+    },
+    "paparazzi": {
+      "caskVersion": "1.0b11",
+      "sourceURL": "https://derailer.org/paparazzi/Paparazzi!%201.0b11.dmg",
+      "artifactSHA256": "106c31b4297f3a9671648db75adfbb79c929de3af306b537aa141b7bac668a7c",
+      "apps": [
+        {
+          "bundleName": "Paparazzi!.app",
+          "bundleIdentifier": "org.derailer.Paparazzi"
+        }
+      ]
+    },
+    "paperspace": {
+      "caskVersion": "13.0.3.494",
+      "sourceURL": "https://assets.paperspace.com/native-app/prod/darwin/Paperspace-13.0.3.494.dmg",
+      "artifactSHA256": "c1c7227ae3a734617184372d36eb996cb4b6c82208f5bf12373638a1f0ead10f",
+      "apps": [
+        {
+          "bundleName": "Paperspace.app",
+          "bundleIdentifier": "paperspace.Paperspace"
+        }
+      ]
+    },
+    "pareto-security": {
+      "caskVersion": "1.35.0",
+      "sourceURL": "https://github.com/ParetoSecurity/pareto-mac/releases/download/1.35.0/ParetoSecurity.dmg",
+      "artifactSHA256": "8233ff3d279083536f2d13ded28bc1282d789789ddb7ce1b64347abaf19de6a5",
+      "apps": [
+        {
+          "bundleName": "Pareto Security.app",
+          "bundleIdentifier": "niteo.co.Pareto"
+        }
+      ]
+    },
+    "pdf-pals": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://download.pdfpals.com/releases/PDFPals-1.9.0.dmg",
+      "artifactSHA256": "fe9bbb8521f21e4d1ae161b58aa7707d1b9001bbbf2ed0c890f84a00d905a91c",
+      "apps": [
+        {
+          "bundleName": "PDF Pals.app",
+          "bundleIdentifier": "co.podzim.PDFPals"
+        }
+      ]
+    },
+    "papers": {
+      "caskVersion": "4.37.2395",
+      "sourceURL": "https://update.readcube.com/desktop/updates/Papers_Setup_4.37.2395-arm64.zip",
+      "artifactSHA256": "f897a69ee2d983a8e737395230a2879c5580abfd658a7386963c7b9fc56b942e",
+      "apps": [
+        {
+          "bundleName": "Papers.app",
+          "bundleIdentifier": "com.ReadCube.Papers"
+        }
+      ]
+    },
+    "panoply": {
+      "caskVersion": "5.10.1",
+      "sourceURL": "https://www.giss.nasa.gov/tools/panoply/download/PanoplyMacOS-arm64-5.10.1.dmg",
+      "artifactSHA256": "286aeed3bdf797f0c49da92493c48cf65d19929993d61962435d23fe204b048e",
+      "apps": [
+        {
+          "bundleName": "Panoply.app",
+          "bundleIdentifier": "gov.nasa.giss.panoply"
+        }
+      ]
+    },
+    "paintcode": {
+      "caskVersion": "3.6.2",
+      "sourceURL": "https://www.pixelcut.com/paintcode3/paintcode_3.6.2.zip",
+      "artifactSHA256": "d420950ad28675040f23cfb5110784f9669d40d335aef2c816ea50ed9dc1c8a0",
+      "apps": [
+        {
+          "bundleName": "PaintCode.app",
+          "bundleIdentifier": "com.pixelcut.paintcode3"
+        }
+      ]
+    },
+    "pdfextractor": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://pdfextractor-app.com/PDFExtractor.dmg",
+      "artifactSHA256": "9d79e462740dd29eb78024eba2aa6caf6798a4474da34200759739e105bcdd63",
+      "apps": [
+        {
+          "bundleName": "PDFExtractor.app",
+          "bundleIdentifier": "com.bitgamma.pdfextractor"
+        }
+      ]
+    },
+    "pdfelement": {
+      "caskVersion": "13.0.4",
+      "sourceURL": "https://download.wondershare.com/cbs_down/mac-pdfelement_full5237.dmg",
+      "artifactSHA256": "83c4ea570a2a18aea11983963ce555700c66265f24a81ed21c293cdd89350c40",
+      "apps": [
+        {
+          "bundleName": "PDFelement.app",
+          "bundleIdentifier": "com.wondershare.PDFelement"
+        }
+      ]
+    },
+    "pcoipclient": {
+      "caskVersion": "26.01.2",
+      "sourceURL": "https://dl.anyware.hp.com/DeAdBCiUYInHcSTy/pcoip-client/raw/names/pcoip-client-dmg/versions/26.01.2/pcoip-client_26.01.2.dmg",
+      "artifactSHA256": "5a2adec5fa5664ac1142855b080c0dc53c5de0ddbce76c74ab64f8b895b726d5",
+      "apps": [
+        {
+          "bundleName": "PCoIPClient.app",
+          "bundleIdentifier": "com.teradici.pcoipclient"
+        }
+      ]
+    },
+    "pdf-over": {
+      "caskVersion": "4.4.9,2026,08",
+      "sourceURL": "https://technology.a-sit.at/wp-content/uploads/2026/08/PDF-Over-4.4.9-aarch64.dmg",
+      "artifactSHA256": "80b46027a64c36547de58a65ea6644ebe9f46daf531c9cbf2ceea59551c3f299",
+      "apps": [
+        {
+          "bundleName": "PDF-Over.app",
+          "bundleIdentifier": "at.a-sit.PDF-Over"
+        }
+      ]
+    },
+    "parsify": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/parsify-dev/desktop/releases/download/v2.0.1/Parsify-2.0.1-mac-arm64.zip",
+      "artifactSHA256": "d4f9027b297089ec755880e95b0d0f4998c4f6988b3f0a845720cbc514b36c38",
+      "apps": [
+        {
+          "bundleName": "Parsify.app",
+          "bundleIdentifier": "app.parsify.parsifydesktop"
+        }
+      ]
+    },
+    "pallotron-yubiswitch": {
+      "caskVersion": "0.19",
+      "sourceURL": "https://github.com/pallotron/yubiswitch/releases/download/v0.19/yubiswitch_0.19.dmg",
+      "artifactSHA256": "974d7481b388fe79b03f1eea2c39f45a2f74051b774a489a00e2fe00c9df1b31",
+      "apps": [
+        {
+          "bundleName": "yubiswitch.app",
+          "bundleIdentifier": "com.pallotron.yubiswitch"
+        }
+      ]
+    },
+    "parsehub": {
+      "caskVersion": "2.4.43",
+      "sourceURL": "https://parsehub.com/static/client/ParseHub-2.4.43-mac.zip",
+      "artifactSHA256": "0e300808d6523b0fdeb62afadd5eefd0767b4a7bddae47955ff00f8128881f83",
+      "apps": [
+        {
+          "bundleName": "ParseHub.app",
+          "bundleIdentifier": "com.parsehub.client"
+        }
+      ]
+    },
+    "pdf-reader-pro": {
+      "caskVersion": "5.3.0",
+      "sourceURL": "https://file.pdfreaderpro.com/download/PDFReaderPro_Apple_v5.3.0.dmg",
+      "artifactSHA256": "91db221c01cad0b5d0f599f6bff713d96a6adfda7f17de2740580b84310f6f12",
+      "apps": [
+        {
+          "bundleName": "PDF Reader Pro.app",
+          "bundleIdentifier": "com.brother.pdfreaderprofree.mac"
+        }
+      ]
+    },
+    "paragon-camptune": {
+      "caskVersion": "12.0.79",
+      "sourceURL": "https://dl.paragon-software.com/demo/camptune_demo_12.dmg",
+      "artifactSHA256": "6b5687b54976d482270566fe13cef6d8025a4e5a6ddce29fc896f1aae41e3b9f",
+      "apps": [
+        {
+          "bundleName": "Paragon CampTune.app",
+          "bundleIdentifier": "com.paragon-software.camptunex"
+        }
+      ]
+    },
+    "paletro": {
+      "caskVersion": "1.11.0",
+      "sourceURL": "https://appmakes.io/paletro/download/Paletro-1.11.0.dmg",
+      "artifactSHA256": "6b2d354e9d46d42c51011592940d1375e8e3d6da6953b6872d22958a8ff37430",
+      "apps": [
+        {
+          "bundleName": "Paletro.app",
+          "bundleIdentifier": "io.appmakes.Paletro"
+        }
+      ]
+    },
+    "paperpile": {
+      "caskVersion": "0.10.1",
+      "sourceURL": "https://cdn.paperpile.com/download/desktop/Paperpile-0.10.1-arm64.dmg",
+      "artifactSHA256": "75c29a3651c76c6844aa5d125618310214d88683e50131da76aaf1180522c910",
+      "apps": [
+        {
+          "bundleName": "Paperpile.app",
+          "bundleIdentifier": "com.paperpile.paperpile"
+        }
+      ]
+    },
+    "pastebot": {
+      "caskVersion": "3.1.1,31100",
+      "sourceURL": "https://tapbots.net/pastebot3/Pastebot.31100.dmg",
+      "artifactSHA256": "0480a08259564dce5e6c580511c01c25670040df1cca6021ad0970c2e9fbc23c",
+      "apps": [
+        {
+          "bundleName": "Pastebot.app",
+          "bundleIdentifier": "com.tapbots.Pastebot3Mac"
+        }
+      ]
+    },
+    "pdfelement-express": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://download.wondershare.com/cbs_down/mac-pdfelement-express_full4133.dmg",
+      "artifactSHA256": "dd60c96c53725e1165a951b5b8c6c82acfbf7d47b91f2ab06ed662326df7eb34",
+      "apps": [
+        {
+          "bundleName": "PDFelement Express.app",
+          "bundleIdentifier": "com.wondershare.PDFelement.Express"
+        }
+      ]
+    },
+    "pale-moon": {
+      "caskVersion": "35.0.0",
+      "sourceURL": "https://rm-us.palemoon.org/release/palemoon-35.0.0.arm64.dmg",
+      "artifactSHA256": "e953084a3a20aa1157bf4f7a9b8c7673c050bde6e127c5b25f3fd567e043c60a",
+      "apps": []
+    },
+    "pagico": {
+      "caskVersion": "10,20260518",
+      "sourceURL": "https://www.pagico.com/downloads/Pagico_macOS_r20260518.dmg",
+      "artifactSHA256": "02533c88810ba861d8785695b6369215f61d5ba4b86bb5f9671bab471d24d57a",
+      "apps": [
+        {
+          "bundleName": "Pagico.app",
+          "bundleIdentifier": "com.pagico.mac"
+        }
+      ]
+    },
+    "pally": {
+      "caskVersion": "1.99.1",
+      "sourceURL": "https://pally.com/sparkle/Pally-Installer-Latest.dmg",
+      "artifactSHA256": "812f411f63ae758a94c962b25235aece14cc0f73b7011dedac177c41a0bb668c",
+      "apps": []
     }
   }
 }

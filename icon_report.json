@@ -1199,6 +1199,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "pdf-converter-master": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75006 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "photozoom-pro": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
