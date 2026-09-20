@@ -13054,6 +13054,280 @@
           "bundleIdentifier": "io.zsa.keymapp"
         }
       ]
+    },
+    "dcp-o-matic": {
+      "caskVersion": "2.19.1",
+      "sourceURL": "https://download.dcpomatic.com/dl.php?id=osx-10.10-main&version=2.19.1",
+      "artifactSHA256": "b98e533de6452bf4d560d9b9a05caf8cbe7301697078a9c8cfe493dad3b4b310",
+      "apps": [
+        {
+          "bundleName": "DCP-o-matic 2.app",
+          "bundleIdentifier": "com.dcpomatic"
+        }
+      ]
+    },
+    "airtable": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://static.airtable.com/download/macos/Airtable-1.7.1.dmg",
+      "artifactSHA256": "590a50f422f4f053861bdf55d83ba0d664b657b19f43f4b77da0f9e561512825",
+      "apps": [
+        {
+          "bundleName": "Airtable.app",
+          "bundleIdentifier": "com.FormaGrid.Airtable"
+        }
+      ]
+    },
+    "pd": {
+      "caskVersion": "0.56-5",
+      "sourceURL": "https://msp.ucsd.edu/Software/pd-0.56-5.macos.zip",
+      "artifactSHA256": "e524e8d0c714399c699c6c02445215a408b2202c427b66e7866577310d6dab82",
+      "apps": [
+        {
+          "bundleName": "Pd-0.56-5.app",
+          "bundleIdentifier": "org.puredata.pd.pd-gui"
+        }
+      ]
+    },
+    "waves-central": {
+      "caskVersion": "17.0.4",
+      "sourceURL": "https://cf-installers.waves.com/WavesCentral/Install_Waves_Central.dmg",
+      "artifactSHA256": "3fbb3ea15c085751b669c355a37bcf160ebc48788a65ad7698dd7d01819e6ec6",
+      "apps": [
+        {
+          "bundleName": "Waves Central.app",
+          "bundleIdentifier": "com.WavesAudio.central"
+        }
+      ]
+    },
+    "bibdesk": {
+      "caskVersion": "1.9.13",
+      "sourceURL": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.13/BibDesk-1.9.13.dmg",
+      "artifactSHA256": "0435887d5f3fc7ae7ed735515a1290cf6efc479afeae755c1d1d0693c008004b",
+      "apps": [
+        {
+          "bundleName": "BibDesk.app",
+          "bundleIdentifier": "edu.ucsd.cs.mmccrack.bibdesk"
+        }
+      ]
+    },
+    "clarc": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://github.com/ttnear/Clarc/releases/download/v1.4.1/Clarc-1.4.1.zip",
+      "artifactSHA256": "ca7a69fcc74de547d53eaeb33725a8a1fb07ff21af7f2737c9408d1189906928",
+      "apps": [
+        {
+          "bundleName": "Clarc.app",
+          "bundleIdentifier": "com.idealapp.Clarc"
+        }
+      ]
+    },
+    "jellybeansoup-netflix": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://jellystyle-d5a.kxcdn.com/macos/netflix/Netflix.v1.0.5.zip",
+      "artifactSHA256": "6e62f4e8a5883f139a7259464e33039e7cd5c6040caf9dbb27d85f890b576c40",
+      "apps": [
+        {
+          "bundleName": "Netflix.app",
+          "bundleIdentifier": "com.jellystyle.Netflix-wrapper"
+        }
+      ]
+    },
+    "macmediakeyforwarder": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://github.com/quentinlesceller/macmediakeyforwarder/releases/download/v4.2.0/MacMediaKeyForwarder.dmg",
+      "artifactSHA256": "658bb67f587bc4d604178037287a7d1416345c7f297a6fb82ace5b47cce8a0d6",
+      "apps": [
+        {
+          "bundleName": "MacMediaKeyForwarder.app",
+          "bundleIdentifier": "com.quentinlesceller.macmediakeyforwarder"
+        }
+      ]
+    },
+    "hazeover": {
+      "caskVersion": "1.9.7",
+      "sourceURL": "https://hazeover.com/HazeOver.dmg",
+      "artifactSHA256": "ce741e46fecbd2e4c4db1878c1199a165c3ee86091fc6b382f409c98d4be7e87",
+      "apps": [
+        {
+          "bundleName": "HazeOver.app",
+          "bundleIdentifier": "com.pointum.hazeover"
+        }
+      ]
+    },
+    "contexts": {
+      "caskVersion": "3.9.0",
+      "sourceURL": "https://contexts.co/releases/Contexts-3.9.0.dmg",
+      "artifactSHA256": "c86a214d5ee7718453d0fb6442b3ef9a7fc02c5c1582b6d28ef0c2e621a6b6aa",
+      "apps": [
+        {
+          "bundleName": "Contexts.app",
+          "bundleIdentifier": "com.contextsformac.Contexts"
+        }
+      ]
+    },
+    "material-maker": {
+      "caskVersion": "1.7",
+      "sourceURL": "https://github.com/RodZill4/material-maker/releases/download/1.7/material_maker_1_7.dmg",
+      "artifactSHA256": "af07244151d890f2ee4863c0cb8cdc526b7ca226b8dfcfe14bb8ae6acbc98550",
+      "apps": [
+        {
+          "bundleName": "Material Maker.app",
+          "bundleIdentifier": "com.rodzlabs.materialmaker"
+        }
+      ]
+    },
+    "tablecruncher": {
+      "caskVersion": "1.8",
+      "sourceURL": "https://tablecruncher.com/download/v1.8/Tablecruncher-1.8-arm64.zip",
+      "artifactSHA256": "9980f46fea21e30491a6aa74bfa8d2787b3377eefe61a546ed92cd26c22fe619",
+      "apps": []
+    },
+    "yoink": {
+      "caskVersion": "3.7.6",
+      "sourceURL": "https://downloads.eternalstorms.at/Yoink.zip",
+      "artifactSHA256": "4dc3c9643722f2faf73ebc7a2f0503c9bdae7b6fd56805c5f9f31dbcaf91cfb6",
+      "apps": [
+        {
+          "bundleName": "Yoink.app",
+          "bundleIdentifier": "at.EternalStorms.Yoink-demo"
+        }
+      ]
+    },
+    "cemu": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://github.com/CE-Programming/CEmu/releases/download/v2.0/CEmu-v2.0_macOS_Qt6_arm.dmg",
+      "artifactSHA256": "e554ca753f263b2ebba75d36c1e724b5a31b35a24c19bd004c70c59b8135abc8",
+      "apps": [
+        {
+          "bundleName": "CEmu.app",
+          "bundleIdentifier": "com.yourcompany.CEmu"
+        }
+      ]
+    },
+    "badgeify": {
+      "caskVersion": "1.14.5",
+      "sourceURL": "https://api.badgeify.app/release/download/darwin/universal/1.14.5",
+      "artifactSHA256": "2f5bba9da48c106153aef493a9b22e950fec6dd252ea1ef5dd5272621ffa6d10",
+      "apps": [
+        {
+          "bundleName": "Badgeify.app",
+          "bundleIdentifier": "studio.techflow.badgeify"
+        }
+      ]
+    },
+    "airfoil": {
+      "caskVersion": "5.12.8",
+      "sourceURL": "https://cdn.rogueamoeba.com/airfoil/mac/download/Airfoil.zip",
+      "artifactSHA256": "25bf4f9bcfc38f3ad5daf91e180bc95d230b83607e882918575c9ea78fe5b914",
+      "apps": [
+        {
+          "bundleName": "Airfoil Satellite.app",
+          "bundleIdentifier": "com.rogueamoeba.AirfoilSpeakers"
+        },
+        {
+          "bundleName": "Airfoil.app",
+          "bundleIdentifier": "com.rogueamoeba.Airfoil"
+        }
+      ]
+    },
+    "mendeley-reference-manager": {
+      "caskVersion": "2.149.0",
+      "sourceURL": "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.149.0-universal.dmg",
+      "artifactSHA256": "97c5dba3fd0152e8f2a63f3fd828dff4b9d3730b6ae79e382ef7381ab8efb9d0",
+      "apps": [
+        {
+          "bundleName": "Mendeley Reference Manager.app",
+          "bundleIdentifier": "com.elsevier.mendeley"
+        }
+      ]
+    },
+    "aptakube": {
+      "caskVersion": "1.20.5",
+      "sourceURL": "https://releases.aptakube.com/Aptakube_1.20.5_universal.dmg",
+      "artifactSHA256": "a8869352f67544b0ae701d451bddab87cac0a65b6cb716aaf171176e59c52ab2",
+      "apps": [
+        {
+          "bundleName": "Aptakube.app",
+          "bundleIdentifier": "com.aptakube.Aptakube"
+        }
+      ]
+    },
+    "atext": {
+      "caskVersion": "3.21",
+      "sourceURL": "https://www.trankynam.com/atext/downloads/aText.dmg",
+      "artifactSHA256": "b2bf1d2d40300b056825b2ca7023b447d4436d30088cd08293311faad59da77c",
+      "apps": [
+        {
+          "bundleName": "aText.app",
+          "bundleIdentifier": "com.trankynam.aText"
+        }
+      ]
+    },
+    "glean": {
+      "caskVersion": "1.2026.21114",
+      "sourceURL": "https://storage.googleapis.com/glean-downloads/glean-desktop-app/Glean-darwin-universal-1.2026.21114.zip",
+      "artifactSHA256": "e61523c51e9186664508c40c4197faf0f099086f79b2d4a1de3735c478780f77",
+      "apps": [
+        {
+          "bundleName": "Glean.app",
+          "bundleIdentifier": "com.glean.desktop"
+        }
+      ]
+    },
+    "factory": {
+      "caskVersion": "0.180.0",
+      "sourceURL": "https://downloads.factory.ai/factory-desktop/releases/0.180.0/darwin/arm64/Factory-0.180.0-arm64.dmg",
+      "artifactSHA256": "1534cb59cb99e32fb28fbd7fd1c7fbad2de84685137849757991068e5de6dbb6",
+      "apps": [
+        {
+          "bundleName": "Factory.app",
+          "bundleIdentifier": "com.electron.factory"
+        }
+      ]
+    },
+    "wordpresscom-studio": {
+      "caskVersion": "1.21.0,21768",
+      "sourceURL": "https://appscdn.wordpress.com/downloads/wordpress-com-studio/mac-silicon/v1.21.0/21768/update/studio-arm64-v1.21.0.zip",
+      "artifactSHA256": "8d76e64c709fc9e673de548fb223f8882e321fc001b0438d04f3a0522fc607ee",
+      "apps": [
+        {
+          "bundleName": "Studio.app",
+          "bundleIdentifier": "com.electron.studio"
+        }
+      ]
+    },
+    "4k-video-downloader": {
+      "caskVersion": "4.33.5",
+      "sourceURL": "https://dl.4kdownload.com/app/4kvideodownloader_4.33.5_x64.dmg",
+      "artifactSHA256": "e16993ebb60f18612fa2444c8b60d95745f14d6fca226a00c5d10eee1fb8d78a",
+      "apps": [
+        {
+          "bundleName": "4K Video Downloader.app",
+          "bundleIdentifier": "com.openmedia.4kvideodownloader"
+        }
+      ]
+    },
+    "gopher64": {
+      "caskVersion": "1.1.36",
+      "sourceURL": "https://github.com/gopher64/gopher64/releases/download/v1.1.36/gopher64-macos-aarch64.zip",
+      "artifactSHA256": "3c943320f261c44d7f473a541247706cc19fa2d84b1b74bb1fb43f5278df6ff1",
+      "apps": [
+        {
+          "bundleName": "Gopher64.app",
+          "bundleIdentifier": "io.github.gopher64.gopher64"
+        }
+      ]
+    },
+    "wirecast": {
+      "caskVersion": "16.5.4",
+      "sourceURL": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.4.dmg",
+      "artifactSHA256": "47c30a13586ab4fcd4ee7aebeaa2db8d850fd34dbbff546799add01c777503f9",
+      "apps": [
+        {
+          "bundleName": "Wirecast.app",
+          "bundleIdentifier": "net.telestream.wirecast"
+        }
+      ]
     }
   }
 }
