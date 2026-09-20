@@ -9,7 +9,7 @@ import platform
 import plistlib
 import re
 import signal
-import subprocess
+import subprocess  # nosec B404 - fixed tool commands, argument lists, and no shell
 import time
 from pathlib import Path
 from xml.parsers.expat import ExpatError
@@ -55,6 +55,16 @@ def require_disposable_runner(expected_arch: str) -> None:
         raise ValueError("Installation observation requires a matching GitHub-hosted macOS runner")
 
 
+def executable_record(bundle: Path, info: Path, executable: str) -> dict:
+    if not isinstance(executable, str) or Path(executable).name != executable or executable in (".", ".."):
+        raise ValueError("Missing or unsafe CFBundleExecutable")
+    binary = info.parent / ("MacOS" if info.parent.name == "Contents" else "") / executable
+    if not binary.resolve().is_relative_to(bundle.resolve()):
+        raise ValueError("Escaping application executable")
+    return {"executablePath": str(binary), "executablePresent": binary.is_file(),
+            "executableSHA256": digest(binary) if binary.is_file() else None}
+
+
 def app_record(bundle: Path) -> dict:
     """Keep observations, including unsupported IDs, separate from accepted identities."""
     result = {"path": str(bundle), "bundleName": bundle.name}
@@ -75,32 +85,14 @@ def app_record(bundle: Path) -> dict:
             buildVersion=str(data.get("CFBundleVersion", "")),
             infoPath=str(info), infoSHA256=digest(info),
         )
-        executable = data.get("CFBundleExecutable")
-        if not isinstance(executable, str) or Path(executable).name != executable or executable in (".", ".."):
-            raise ValueError("Missing or unsafe CFBundleExecutable")
-        binary = info.parent / ("MacOS" if info.parent.name == "Contents" else "") / executable
-        if not binary.resolve().is_relative_to(bundle.resolve()):
-            raise ValueError("Escaping application executable")
-        result.update(executablePath=str(binary), executablePresent=binary.is_file(),
-                      executableSHA256=digest(binary) if binary.is_file() else None)
+        result.update(executable_record(bundle, info, data.get("CFBundleExecutable")))
     except (OSError, ValueError, plistlib.InvalidFileException, ExpatError) as error:
         result["error"] = f"{type(error).__name__}: {error}"
     return result
 
 
-def snapshot(application_roots: list[Path], receipt_root: Path) -> dict:
-    apps, receipts, errors = {}, {}, []
-    for root in application_roots:
-        if not root.exists():
-            continue
-        for parent, directories, _ in os.walk(root, followlinks=False, onerror=lambda e: errors.append(str(e))):
-            for name in list(directories):
-                path = Path(parent) / name
-                if path.is_symlink():
-                    directories.remove(name)
-                elif name.endswith(".app"):
-                    directories.remove(name)  # embedded helpers are not separately installed products
-                    apps[str(path)] = app_record(path)
+def receipt_snapshot(receipt_root: Path) -> tuple[dict, list[str]]:
+    receipts, errors = {}, []
     if not receipt_root.is_dir():
         errors.append(f"Receipt directory unavailable: {receipt_root}")
     try:
@@ -121,6 +113,23 @@ def snapshot(application_roots: list[Path], receipt_root: Path) -> dict:
                 errors.append(f"{path}: {error}")
     except OSError as error:
         errors.append(str(error))
+    return receipts, errors
+
+
+def snapshot(application_roots: list[Path], receipt_root: Path) -> dict:
+    receipts, errors = receipt_snapshot(receipt_root)
+    apps = {}
+    for root in application_roots:
+        if not root.exists():
+            continue
+        for parent, directories, _ in os.walk(root, followlinks=False, onerror=lambda e: errors.append(str(e))):
+            for name in list(directories):
+                path = Path(parent) / name
+                if path.is_symlink():
+                    directories.remove(name)
+                elif name.endswith(".app"):
+                    directories.remove(name)  # embedded helpers are not separately installed products
+                    apps[str(path)] = app_record(path)
     return {"applications": apps, "receipts": receipts, "errors": errors}
 
 
@@ -128,6 +137,10 @@ def changes(before: dict, after: dict) -> dict:
     return {"added": [after[key] for key in sorted(after.keys() - before.keys())],
             "changed": [after[key] for key in sorted(after.keys() & before.keys()) if before[key] != after[key]],
             "removed": [before[key] for key in sorted(before.keys() - after.keys())]}
+
+
+def valid_application(app: dict) -> bool:
+    return "error" not in app and app.get("identifierAccepted") is True and app.get("executablePresent") is True
 
 
 def observation(before: dict, after: dict, install: dict, registered: bool, stable: bool) -> dict:
@@ -139,11 +152,9 @@ def observation(before: dict, after: dict, install: dict, registered: bool, stab
         status = "install_timeout"
     elif install.get("returncode") != 0:
         status = "install_failed"
-    elif not registered or not stable or evidence_errors or any(
-            "error" in app or app.get("identifierAccepted") is not True
-            or app.get("executablePresent") is not True for app in observed):
+    elif not all((registered, stable, not evidence_errors, all(map(valid_application, observed)))):
         status = "incomplete_observation"
-    elif apps["changed"] or apps["removed"] or receipts["changed"] or receipts["removed"]:
+    elif any((apps["changed"], apps["removed"], receipts["changed"], receipts["removed"])):
         status = "preexisting_software_changed"
     elif observed:
         status = "observed_applications"
@@ -158,6 +169,7 @@ class Commands:
     """Small process boundary: bounded commands with complete on-disk output."""
 
     def __init__(self, output: Path):
+        """Keep command records and raw output in one evidence directory."""
         self.output = output
 
     def run(self, name: str, args: list[str], timeout: int = 300, *, check: bool = True) -> dict:
@@ -165,7 +177,8 @@ class Commands:
         log = self.output / f"{name}.log"
         error_log = self.output / f"{name}.stderr.log"
         with log.open("wb") as stream, error_log.open("wb") as error_stream:
-            process = subprocess.Popen(args, stdout=stream, stderr=error_stream, start_new_session=True)
+            process = subprocess.Popen(  # nosec B603 - fixed tools; validated tokens and revisions; no shell
+                args, stdout=stream, stderr=error_stream, start_new_session=True)
             timed_out = False
             try:
                 process.wait(timeout=timeout)
@@ -204,6 +217,24 @@ def checkout(commands: Commands, path: Path, repository: str, revision: str, nam
         raise ValueError(f"{name} revision mismatch")
 
 
+def archive_evidence(commands: Commands, cask: dict, tap_root: Path) -> dict:
+    expected = cask.get("sha256")
+    if not isinstance(expected, str) or not re.fullmatch(r"[0-9a-f]{64}", expected):
+        raise ValueError("Pilot requires a declared SHA-256 checksum")
+    token = cask["token"]
+    commands.run("fetch", ["brew", "fetch", "--cask", "--force", token], 900)
+    archive = Path(commands.text("download-path", ["brew", "--cache", "--cask", token]))
+    actual = digest(archive)
+    if actual != expected:
+        raise ValueError("Downloaded artifact differs from the declared checksum")
+    source = Path(cask["ruby_source_path"])
+    if source.is_absolute() or ".." in source.parts:
+        raise ValueError("Invalid cask source path")
+    commands.output.joinpath("cask.rb").write_bytes(tap_root.joinpath(source).read_bytes())
+    return {"cask": cask, "expectedSHA256": expected, "artifactSHA256": actual,
+            "checksumVerified": True, "caskSourceSHA256": digest(commands.output / "cask.rb")}
+
+
 def prepare(commands: Commands, token: str, brew_revision: str, cask_revision: str) -> dict:
     brew_root = Path(commands.text("brew-root", ["brew", "--repository"]))
     checkout(commands, brew_root, "Homebrew/brew", brew_revision, "brew")
@@ -220,20 +251,7 @@ def prepare(commands: Commands, token: str, brew_revision: str, cask_revision: s
     dependencies = commands.text("dependencies", ["brew", "deps", "--cask", "--include-implicit", token])
     if dependencies:
         raise ValueError("Pilot requires a dependency-free cask; see dependencies.log")
-    expected = cask.get("sha256")
-    if not isinstance(expected, str) or not re.fullmatch(r"[0-9a-f]{64}", expected):
-        raise ValueError("Pilot requires a declared SHA-256 checksum")
-    commands.run("fetch", ["brew", "fetch", "--cask", "--force", token], 900)
-    archive = Path(commands.text("download-path", ["brew", "--cache", "--cask", token]))
-    actual = digest(archive)
-    if actual != expected:
-        raise ValueError("Downloaded artifact differs from the declared checksum")
-    source = Path(cask["ruby_source_path"])
-    if source.is_absolute() or ".." in source.parts:
-        raise ValueError("Invalid cask source path")
-    commands.output.joinpath("cask.rb").write_bytes(tap_root.joinpath(source).read_bytes())
-    return {"cask": cask, "expectedSHA256": expected, "artifactSHA256": actual,
-            "checksumVerified": True, "caskSourceSHA256": digest(commands.output / "cask.rb")}
+    return archive_evidence(commands, cask, tap_root)
 
 
 def preexisting_targets(cask: dict, baseline: dict) -> list[str]:
@@ -249,6 +267,68 @@ def preexisting_targets(cask: dict, baseline: dict) -> list[str]:
                 if isinstance(path, str) and path.endswith(".app") and path in baseline["applications"]:
                     existing.append(path)
     return sorted(set(existing))
+
+
+def receipt_patterns(cask: dict) -> list[str]:
+    patterns = []
+    for stanza in cask.get("artifacts", []):
+        for uninstall in stanza.get("uninstall", []):
+            values = uninstall.get("pkgutil", []) if isinstance(uninstall, dict) else []
+            patterns.extend([values] if isinstance(values, str) else values)
+    return patterns
+
+
+def clean_baseline(commands: Commands, cask: dict, roots: list[Path]) -> dict:
+    baseline = snapshot(roots, Path("/var/db/receipts"))
+    save_evidence(commands.output / "before.json", baseline)
+    if baseline["errors"] or preexisting_targets(cask, baseline):
+        raise ValueError("Incomplete or contaminated baseline; see before.json")
+    # Native pkgutil keeps Homebrew's receipt regular-expression semantics.
+    for index, pattern in enumerate(receipt_patterns(cask)):
+        query = commands.run(f"baseline-receipt-{index}", ["/usr/sbin/pkgutil", f"--pkgs={pattern}"], check=False)
+        if query["timedOut"] or query["returncode"] not in (0, 1):
+            raise ValueError("Could not inspect baseline receipts")
+        if (commands.output / query["stderrLog"]).read_text().strip():
+            raise ValueError("Baseline receipt query reported a diagnostic")
+        if (commands.output / query["log"]).read_text().strip():
+            raise ValueError("A matching receipt predates installation; see baseline-receipt logs")
+    return baseline
+
+
+def collect_receipt_evidence(commands: Commands, receipts: list[dict]) -> list[str]:
+    errors = []
+    for index, receipt in enumerate(receipts):
+        identifier = receipt["identifier"]
+        receipt["infoQuery"] = commands.run(f"receipt-{index}-info",
+            ["/usr/sbin/pkgutil", "--pkg-info-plist", identifier], 30, check=False)
+        receipt["filesQuery"] = commands.run(f"receipt-{index}-files",
+            ["/usr/sbin/pkgutil", "--files", identifier], 30, check=False)
+        if any(receipt[key]["returncode"] != 0 or receipt[key]["timedOut"]
+               for key in ("infoQuery", "filesQuery")):
+            errors.append(f"Incomplete receipt evidence: {identifier}")
+    return errors
+
+
+def install_and_collect(commands: Commands, token: str, baseline: dict, roots: list[Path]) -> dict:
+    install = commands.run("install", ["brew", "install", "--cask", "--require-sha", token], 1800, check=False)
+    first = snapshot(roots, Path("/var/db/receipts"))
+    save_evidence(commands.output / "after-immediate.json", first)
+    time.sleep(15)
+    after = snapshot(roots, Path("/var/db/receipts"))
+    save_evidence(commands.output / "after.json", after)
+    listing = commands.run("installed-casks", ["brew", "list", "--cask"], check=False)
+    registered = listing["returncode"] == 0 and token in (commands.output / listing["log"]).read_text().splitlines()
+    result = observation(baseline, after, install, registered, first == after)
+    result["install"] = install
+    changed_apps = result["applicationChanges"]["added"] + result["applicationChanges"]["changed"]
+    for index, app in enumerate(changed_apps):
+        app["signingInspection"] = commands.run(f"app-{index}-signing",
+            ["/usr/bin/codesign", "--display", "--verbose=4", app["path"]], 30, check=False)
+    changed_receipts = result["receiptChanges"]["added"] + result["receiptChanges"]["changed"]
+    result["errors"].extend(collect_receipt_evidence(commands, changed_receipts))
+    if result["errors"] and result["status"] in ("observed_applications", "no_application_observed"):
+        result["status"] = "incomplete_observation"
+    return result
 
 
 def observe(args) -> int:
@@ -272,53 +352,10 @@ def observe(args) -> int:
         roots = [Path("/Applications"), Path.home() / "Applications"]
         result["applicationRoots"] = [str(root) for root in roots]
         result["settleSeconds"] = 15
-        baseline = snapshot(roots, Path("/var/db/receipts"))
-        save_evidence(output / "before.json", baseline)
-        if baseline["errors"] or preexisting_targets(result["cask"], baseline):
-            raise ValueError("Incomplete or contaminated baseline; see before.json")
-        # Native pkgutil keeps Homebrew's receipt regular-expression semantics.
-        for index, stanza in enumerate(result["cask"].get("artifacts", [])):
-            for entry_index, uninstall in enumerate(stanza.get("uninstall", [])):
-                patterns = uninstall.get("pkgutil", []) if isinstance(uninstall, dict) else []
-                patterns = [patterns] if isinstance(patterns, str) else patterns
-                for pattern_index, pattern in enumerate(patterns):
-                    name = f"baseline-receipt-{index}-{entry_index}-{pattern_index}"
-                    query = commands.run(name, ["/usr/sbin/pkgutil", f"--pkgs={pattern}"], check=False)
-                    if query["timedOut"] or query["returncode"] not in (0, 1):
-                        raise ValueError("Could not inspect baseline receipts")
-                    if (output / query["stderrLog"]).read_text().strip():
-                        raise ValueError("Baseline receipt query reported a diagnostic")
-                    if (output / query["log"]).read_text().strip():
-                        raise ValueError("A matching receipt predates installation; see baseline-receipt logs")
+        baseline = clean_baseline(commands, result["cask"], roots)
         result["status"] = "installing"
         save_evidence(output / "observation.json", result)
-        install = commands.run("install", ["brew", "install", "--cask", "--require-sha", args.token],
-                               1800, check=False)
-        result["install"] = install
-        first = snapshot(roots, Path("/var/db/receipts"))
-        save_evidence(output / "after-immediate.json", first)
-        time.sleep(15)
-        after = snapshot(roots, Path("/var/db/receipts"))
-        save_evidence(output / "after.json", after)
-        listing = commands.run("installed-casks", ["brew", "list", "--cask"], check=False)
-        registered = listing["returncode"] == 0 and args.token in (output / listing["log"]).read_text().splitlines()
-        result.update(observation(baseline, after, install, registered, first == after))
-        changed_apps = result["applicationChanges"]["added"] + result["applicationChanges"]["changed"]
-        for index, app in enumerate(changed_apps):
-            app["signingInspection"] = commands.run(f"app-{index}-signing",
-                ["/usr/bin/codesign", "--display", "--verbose=4", app["path"]], 30, check=False)
-        changed_receipts = result["receiptChanges"]["added"] + result["receiptChanges"]["changed"]
-        for index, receipt in enumerate(changed_receipts):
-            identifier = receipt["identifier"]
-            receipt["infoQuery"] = commands.run(f"receipt-{index}-info",
-                ["/usr/sbin/pkgutil", "--pkg-info-plist", identifier], 30, check=False)
-            receipt["filesQuery"] = commands.run(f"receipt-{index}-files",
-                ["/usr/sbin/pkgutil", "--files", identifier], 30, check=False)
-            if any(receipt[key]["returncode"] != 0 or receipt[key]["timedOut"]
-                   for key in ("infoQuery", "filesQuery")):
-                result["errors"].append(f"Incomplete receipt evidence: {identifier}")
-                if result["status"] in ("observed_applications", "no_application_observed"):
-                    result["status"] = "incomplete_observation"
+        result.update(install_and_collect(commands, args.token, baseline, roots))
     except (OSError, ValueError, RuntimeError, KeyError, IndexError) as error:
         result["error"] = f"{type(error).__name__}: {error}"
         result["status"] = "incomplete_observation"

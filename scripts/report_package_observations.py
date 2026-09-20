@@ -7,7 +7,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from observe_package_install import PILOT_TOKENS, RUNNERS, save_evidence
+from observe_package_install import PILOT_TOKENS, RUNNERS, save_evidence, valid_application
 from style_standards import write_text
 
 OBSERVED = {"observed_applications", "no_application_observed"}
@@ -39,69 +39,87 @@ def pairs_json(pairs: set[tuple[str, str]]) -> list[dict]:
     return [{"bundleName": name, "bundleIdentifier": identifier} for name, identifier in sorted(pairs)]
 
 
-def build_report(directory: Path) -> dict:
-    plan = directory / "package-observation-plan"
-    selected = read_json(plan / "matrix.json")["include"]
-    revisions = read_json(plan / "revisions.json")
-    passive = read_json(plan / "passive-identities.json")["casks"]
+def validate_success(data: dict) -> None:
+    install = data.get("install", {})
+    checks = (install.get("returncode") == 0, not install.get("timedOut"),
+              data.get("homebrewRegistered") is True, data.get("snapshotsStable") is True,
+              data.get("checksumVerified") is True,
+              bool(re.fullmatch(r"[0-9a-f]{64}", str(data.get("artifactSHA256", "")))),
+              data.get("artifactSHA256") == data.get("expectedSHA256"), not data.get("errors"))
+    if not all(checks):
+        raise ValueError("Successful status contradicts the collected evidence")
+
+
+def validate_provenance(data: dict, job: dict, revisions: dict) -> None:
+    expected = {"schemaVersion": 1, "token": job["token"], "architecture": job["architecture"],
+                "brewRevision": revisions["brewRevision"], "caskRevision": revisions["caskRevision"]}
+    if (any(data.get(key) != value for key, value in expected.items())
+            or data.get("ownershipVerified") is not False or data.get("status") not in STATUSES):
+        raise ValueError("Observation does not match the frozen plan")
+    if data["status"] in OBSERVED:
+        validate_success(data)
+
+
+def observation_row(directory: Path, job: dict, revisions: dict, baseline: dict) -> tuple[dict, set]:
+    token, architecture = job["token"], job["architecture"]
+    row = {"token": token, "architecture": architecture, "status": "missing_evidence"}
+    valid = set()
+    file = directory / f"package-observation-{token}-{architecture}" / "observation.json"
+    try:
+        data = read_json(file)
+        validate_provenance(data, job, revisions)
+        row["status"] = data["status"] if data["status"] != "installing" else "incomplete_observation"
+        row["seconds"] = data.get("seconds")
+        row["error"] = data.get("error")
+        changes = data.get("applicationChanges", {})
+        apps = changes.get("added", []) + changes.get("changed", [])
+        if not isinstance(apps, list) or any(not isinstance(app, dict) for app in apps):
+            raise ValueError("Invalid application observations")
+        actual = identities(apps)
+        valid = identities(list(filter(valid_application, apps)))
+        expected = identities(baseline.get("apps", []) + baseline.get("packageCandidates", []))
+        row.update(observedIdentities=pairs_json(actual), passiveNotObserved=pairs_json(expected - actual),
+                   newObservedIdentities=pairs_json(valid - expected),
+                   baselineRecordVersion=baseline.get("caskVersion"),
+                   observedCaskVersion=data.get("cask", {}).get("version"), ownershipVerified=False)
+    except FileNotFoundError:
+        pass
+    except (OSError, ValueError, KeyError, TypeError, AttributeError) as error:
+        row.update(status="invalid_evidence", error=str(error))
+    return row, valid
+
+
+def shared_identities(observed_claims: dict, passive: dict) -> list[dict]:
     known = defaultdict(set)
     for token, record in passive.items():
         for pair in identities(record.get("apps", []) + record.get("packageCandidates", [])):
             known[pair].add(token)
-    rows, observed_claims = [], defaultdict(set)
-    for job in selected:
-        token, architecture = job["token"], job["architecture"]
-        if token not in PILOT_TOKENS or architecture not in RUNNERS:
-            raise ValueError("Unexpected pilot job")
-        row = {"token": token, "architecture": architecture, "status": "missing_evidence"}
-        file = directory / f"package-observation-{token}-{architecture}" / "observation.json"
-        try:
-            data = read_json(file)
-            if (data.get("schemaVersion") != 1 or data.get("token") != token
-                    or data.get("architecture") != architecture or data.get("ownershipVerified") is not False
-                    or data.get("brewRevision") != revisions["brewRevision"]
-                    or data.get("caskRevision") != revisions["caskRevision"]
-                    or data.get("status") not in STATUSES):
-                raise ValueError("Observation does not match the frozen plan")
-            row["status"] = data["status"] if data["status"] != "installing" else "incomplete_observation"
-            if row["status"] in OBSERVED and (
-                    data.get("install", {}).get("returncode") != 0 or data["install"].get("timedOut")
-                    or data.get("homebrewRegistered") is not True or data.get("snapshotsStable") is not True
-                    or data.get("checksumVerified") is not True
-                    or not re.fullmatch(r"[0-9a-f]{64}", str(data.get("artifactSHA256", "")))
-                    or data.get("artifactSHA256") != data.get("expectedSHA256") or data.get("errors")):
-                raise ValueError("Successful status contradicts the collected evidence")
-            row["seconds"] = data.get("seconds")
-            row["error"] = data.get("error")
-            changes = data.get("applicationChanges", {})
-            apps = changes.get("added", []) + changes.get("changed", [])
-            if not isinstance(apps, list) or any(not isinstance(app, dict) for app in apps):
-                raise ValueError("Invalid application observations")
-            actual = identities(apps)
-            valid = identities([app for app in apps if app.get("identifierAccepted") is True
-                                and app.get("executablePresent") is True and "error" not in app])
-            baseline = passive.get(token, {})
-            expected = identities(baseline.get("apps", []) + baseline.get("packageCandidates", []))
-            row.update(observedIdentities=pairs_json(actual), passiveNotObserved=pairs_json(expected - actual),
-                       newObservedIdentities=pairs_json(valid - expected),
-                       baselineRecordVersion=baseline.get("caskVersion"),
-                       observedCaskVersion=data.get("cask", {}).get("version"), ownershipVerified=False)
-            if row["status"] in OBSERVED:
-                for pair in valid:
-                    observed_claims[pair].add(token)
-        except FileNotFoundError:
-            pass
-        except (OSError, ValueError, KeyError, TypeError, AttributeError) as error:
-            row.update(status="invalid_evidence", error=str(error))
-        rows.append(row)
     collisions = []
     for pair, tokens in sorted(observed_claims.items()):
         others = known[pair] | tokens
         if len(others) > 1:
             collisions.append({**pairs_json({pair})[0], "observedTokens": sorted(tokens),
                                "candidateTokens": sorted(others)})
+    return collisions
+
+
+def build_report(directory: Path) -> dict:
+    plan = directory / "package-observation-plan"
+    selected = read_json(plan / "matrix.json")["include"]
+    revisions = read_json(plan / "revisions.json")
+    passive = read_json(plan / "passive-identities.json")["casks"]
+    rows, observed_claims = [], defaultdict(set)
+    for job in selected:
+        token = job["token"]
+        if token not in PILOT_TOKENS or job["architecture"] not in RUNNERS:
+            raise ValueError("Unexpected pilot job")
+        row, valid = observation_row(directory, job, revisions, passive.get(token, {}))
+        rows.append(row)
+        if row["status"] in OBSERVED:
+            for pair in valid:
+                observed_claims[pair].add(token)
     return {"schemaVersion": 1, "revisions": revisions, "counts": dict(Counter(row["status"] for row in rows)),
-            "selectedJobs": len(selected), "observations": rows, "sharedIdentities": collisions,
+            "selectedJobs": len(selected), "observations": rows, "sharedIdentities": shared_identities(observed_claims, passive),
             "ownershipVerified": False,
             "limitations": "Results describe tested installs, not ownership or complete platform coverage. "
                            "An absent passive identity can be optional, stale, or unsupported; it is not automatically a regression."}
