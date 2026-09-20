@@ -28862,6 +28862,276 @@
           "bundleIdentifier": "eu.virtualtraining.rouvy.mac"
         }
       ]
+    },
+    "runelite": {
+      "caskVersion": "2.8.0",
+      "sourceURL": "https://github.com/runelite/launcher/releases/download/2.8.0/RuneLite-aarch64.dmg",
+      "artifactSHA256": "ab1ff4b62998dfcdca740dee08bf199f33cbcbfba57718803a66354722cf8c04",
+      "apps": [
+        {
+          "bundleName": "RuneLite.app",
+          "bundleIdentifier": "net.runelite.launcher"
+        }
+      ]
+    },
+    "runtimeviewer": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://github.com/MxIris-Reverse-Engineering/RuntimeViewer/releases/download/v2.1.2/RuntimeViewer-macOS.zip",
+      "artifactSHA256": "0cca9b3844135f8de175cf22c3fceebc668984b022b81565fede8aa976e325d2",
+      "apps": [
+        {
+          "bundleName": "RuntimeViewer.app",
+          "bundleIdentifier": "com.JH.RuntimeViewer"
+        }
+      ]
+    },
+    "scene-maestro": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://sceni.ca/download/scene-maestro/scene-maestro-1.3.3.zip",
+      "artifactSHA256": "0cc5ea56e0b885d5e5b876d00e0f0563052e7c5360db10661f076cc6b499ed3c",
+      "apps": [
+        {
+          "bundleName": "Scene Maestro.app",
+          "bundleIdentifier": "ca.sceni.SceneMaestro"
+        }
+      ]
+    },
+    "screenflick": {
+      "caskVersion": "3.3.3",
+      "sourceURL": "https://store.araelium.com/screenflick/downloads/versions/Screenflick3.3.3.zip",
+      "artifactSHA256": "564768ebfd4db626c460824f4ccaac39de8f136afc715afc0c5e731b07acde46",
+      "apps": [
+        {
+          "bundleName": "Screenflick.app",
+          "bundleIdentifier": "com.araeliumgroup.screenflick"
+        }
+      ]
+    },
+    "scilab": {
+      "caskVersion": "2026.1.0",
+      "sourceURL": "https://www.scilab.org/download/2026.1.0/scilab-2026.1.0-arm64.dmg",
+      "artifactSHA256": "a86e68b1a79488f124507bbcab896bfb3864c61a5b1ce97155ad5d49844638b7",
+      "apps": [
+        {
+          "bundleName": "scilab-2026.1.0.app",
+          "bundleIdentifier": "org.scilab.modules.jvm.Scilab"
+        }
+      ]
+    },
+    "sabaki": {
+      "caskVersion": "0.60.0",
+      "sourceURL": "https://github.com/SabakiHQ/Sabaki/releases/download/v0.60.0/sabaki-v0.60.0-mac-arm64.dmg",
+      "artifactSHA256": "b088788113a84748d75f63067efb99a98e95e0229dfb03d565295c70c524ed50",
+      "apps": [
+        {
+          "bundleName": "Sabaki.app",
+          "bundleIdentifier": "de.yichuanshen.sabaki"
+        }
+      ]
+    },
+    "scrapp": {
+      "caskVersion": "1.6",
+      "sourceURL": "https://scrap.blob.core.windows.net/download/1.6/Scrapp.zip",
+      "artifactSHA256": "fdc29a6f404d88b17cc73c2bccb0bde782be1f86d8d165d3f9b4c3b83f6fdf61",
+      "apps": [
+        {
+          "bundleName": "Scrapp.app",
+          "bundleIdentifier": "com.noArt.Scrapp"
+        }
+      ]
+    },
+    "sc-menu": {
+      "caskVersion": "2.1",
+      "sourceURL": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
+      "artifactSHA256": "13318245268a2ecc10a64d2fea561807e9f5bef69bf3e66b85ab44ef3157bbda",
+      "apps": [
+        {
+          "bundleName": "SC Menu.app",
+          "bundleIdentifier": "com.ttinc.sc-menu"
+        }
+      ]
+    },
+    "scenica-player": {
+      "caskVersion": "1.4.5",
+      "sourceURL": "https://sceni.ca/download/scenica-player/scenica-player-1.4.5.zip",
+      "artifactSHA256": "3bb893ff64e159253bfb94971671006ad4f4486adbd5a2a82691192ef902480f",
+      "apps": [
+        {
+          "bundleName": "Scenica Player.app",
+          "bundleIdentifier": "ca.sceni.Player"
+        }
+      ]
+    },
+    "sauerbraten": {
+      "caskVersion": "2020.11.29,2020.12.21",
+      "sourceURL": "https://downloads.sourceforge.net/sauerbraten/sauerbraten/2020_11_29/sauerbraten_2020_12_21_macos.dmg",
+      "artifactSHA256": "a7e26c85ff15be88b9ced26e64c2fa0e68bde1325c146763833abac591898bcb",
+      "apps": [
+        {
+          "bundleName": "Sauerbraten.app",
+          "bundleIdentifier": "com.dot3labs.sauerbraten"
+        }
+      ]
+    },
+    "runjs": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://github.com/lukehaas/RunJS/releases/download/v4.1.0/RunJS-4.1.0-universal.dmg",
+      "artifactSHA256": "e39fc1b495121f5808ddc50b570d933f1493066ecb247bfe94ce81a9ff082a07",
+      "apps": [
+        {
+          "bundleName": "RunJS.app",
+          "bundleIdentifier": "me.lukehaas.runjs"
+        }
+      ]
+    },
+    "runway": {
+      "caskVersion": "0.19.2",
+      "sourceURL": "https://runway-releases.s3.amazonaws.com/Runway-0.19.2.dmg",
+      "artifactSHA256": "25ef6c07a8c0c3832a35d414cfc11ee12f45a8f7c159dcc45129e1514041c474",
+      "apps": [
+        {
+          "bundleName": "Runway.app",
+          "bundleIdentifier": "com.runwayai.runway"
+        }
+      ]
+    },
+    "scenebuilder": {
+      "caskVersion": "26.0.0",
+      "sourceURL": "https://download2.gluonhq.com/scenebuilder/26.0.0/install/mac/SceneBuilder-26.0.0-aarch64.dmg",
+      "artifactSHA256": "0197a797d548c569e3e5e26b2dfaaad15db3a6a214780af6ee837717333dff99",
+      "apps": [
+        {
+          "bundleName": "SceneBuilder.app",
+          "bundleIdentifier": "com.gluonhq.scenebuilder"
+        }
+      ]
+    },
+    "satyrn": {
+      "caskVersion": "0.0.118",
+      "sourceURL": "https://satyrn-updates.s3.amazonaws.com/satyrn-0.0.118-arm64.dmg",
+      "artifactSHA256": "2d80f992f0f5f2673cf1b9f8ce351a69170877483857e151b7c24d41608cae25",
+      "apps": [
+        {
+          "bundleName": "satyrn.app",
+          "bundleIdentifier": "com.satyrn.app"
+        }
+      ]
+    },
+    "runescape": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://content.runescape.com/downloads/osx/RuneScape.dmg",
+      "artifactSHA256": "b446ea1c08dfcd70dba6a87463c29f8573856baf1d525486b7b28d4a8bf9edb6",
+      "apps": [
+        {
+          "bundleName": "RuneScape.app",
+          "bundleIdentifier": "com.jagex.RuneScape"
+        }
+      ]
+    },
+    "satellite-eyes": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://satellite-eyes.s3.amazonaws.com/satellite-eyes-2.1.2.zip",
+      "artifactSHA256": "2975aeed754ed060ff5bc7bfd05856e5d9bb90a37b08b1c4c80c0fe315fa828e",
+      "apps": [
+        {
+          "bundleName": "Satellite Eyes.app",
+          "bundleIdentifier": "uk.co.tomtaylor.SatelliteEyes"
+        }
+      ]
+    },
+    "scidavis": {
+      "caskVersion": "2.8",
+      "sourceURL": "https://downloads.sourceforge.net/scidavis/scidavis-2.8-mac-dist.dmg",
+      "artifactSHA256": "921b597237a97b3a734cb9b50aaa233822856c4fa90e42f90a7b25e8beaa6b23",
+      "apps": [
+        {
+          "bundleName": "scidavis.app",
+          "bundleIdentifier": "net.sourceforge.scidavis"
+        }
+      ]
+    },
+    "screenflow": {
+      "caskVersion": "10.5.2",
+      "sourceURL": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
+      "artifactSHA256": "00bb03b77cffcdee8d1ed12011c2e303bb9117021deee611a402090116d84263",
+      "apps": [
+        {
+          "bundleName": "ScreenFlow.app",
+          "bundleIdentifier": "net.telestream.screenflow10"
+        }
+      ]
+    },
+    "screaming-frog-log-file-analyser": {
+      "caskVersion": "7.1",
+      "sourceURL": "https://download.screamingfrog.co.uk/products/log-file-analyser/ScreamingFrogLogFileAnalyser-7.1-aarch64.dmg",
+      "artifactSHA256": "911b40730adc5450f0c360def36df9cf9b896b014d23308524838b2f840fb883",
+      "apps": [
+        {
+          "bundleName": "Screaming Frog Log File Analyser.app",
+          "bundleIdentifier": "uk.co.screamingfrog.logfileanalyser"
+        }
+      ]
+    },
+    "screenkite": {
+      "caskVersion": "2.0.3,719",
+      "sourceURL": "https://downloads.screenkite.com/mac-releases/ScreenKite-719.zip",
+      "artifactSHA256": "7dec9f0793a6e124fc2136764804cca55c36668e2a7d39c42d1c7e15c22dc54c",
+      "apps": [
+        {
+          "bundleName": "ScreenKite.app",
+          "bundleIdentifier": "com.screenkite.mac"
+        }
+      ]
+    },
+    "scatter": {
+      "caskVersion": "12.1.1",
+      "sourceURL": "https://github.com/GetScatter/ScatterDesktop/releases/download/12.1.1/mac-scatter-12.1.1.dmg",
+      "artifactSHA256": "b7db4b8bb63547e4313520fa906e149646ee4f7344d916921af5c57dc885ebc2",
+      "apps": []
+    },
+    "scoot": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://github.com/mjrusso/scoot/releases/download/v1.3/Scoot.app.zip",
+      "artifactSHA256": "805f45f365bf71f5cd28fb63dafff9acefbe4dae50912cb8e6dd3bca2bf74d31",
+      "apps": [
+        {
+          "bundleName": "Scoot.app",
+          "bundleIdentifier": "com.mjrusso.Scoot"
+        }
+      ]
+    },
+    "saleae-logic": {
+      "caskVersion": "2.4.46",
+      "sourceURL": "https://downloads2.saleae.com/logic2/Logic-2.4.46-macos-arm64.zip",
+      "artifactSHA256": "942d1a48f1d377345fbc06a8c00e892e4a8c59659c62ea42a941471ea3b7d94b",
+      "apps": [
+        {
+          "bundleName": "Saleae Logic.app",
+          "bundleIdentifier": "com.saleae.saleae"
+        }
+      ]
+    },
+    "scapple": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://scrivener.s3.amazonaws.com/Scapple.dmg",
+      "artifactSHA256": "a6f8842c5eb92c13ba7e40f2ddadd8a2a3b7804863333b7b41c310bb6dfbcf09",
+      "apps": [
+        {
+          "bundleName": "Scapple.app",
+          "bundleIdentifier": "com.literatureandlatte.scapple"
+        }
+      ]
+    },
+    "screenfocus": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://www.apptorium.com/public/products/screenfocus/releases/ScreenFocus-1.1.1.zip",
+      "artifactSHA256": "4b4bafc62e0f17896c11b3683cff2dbc7f4dc68f0d46a32c817bf9a6eb254959",
+      "apps": [
+        {
+          "bundleName": "ScreenFocus.app",
+          "bundleIdentifier": "com.apptorium.ScreenFocus-dm"
+        }
+      ]
     }
   }
 }
