@@ -1098,9 +1098,9 @@
       ]
     },
     "codexbar": {
-      "caskVersion": "0.61.0",
-      "sourceURL": "https://github.com/steipete/CodexBar/releases/download/v0.61.0/CodexBar-macos-universal-0.61.0.zip",
-      "artifactSHA256": "a6cb2a84b5eff40e4be5bcd5982f45f7ba234e4b8c40f2c911af335ccfebf7b8",
+      "caskVersion": "0.62.0",
+      "sourceURL": "https://github.com/steipete/CodexBar/releases/download/v0.62.0/CodexBar-macos-universal-0.62.0.zip",
+      "artifactSHA256": "ddf0039731630bfffb2958e6ddb63906200e9af1b02dcc1b04b04d062774fb06",
       "apps": [
         {
           "bundleName": "CodexBar.app",
@@ -16669,6 +16669,270 @@
         {
           "bundleName": "CodeExpander.app",
           "bundleIdentifier": "com.codeexpander.pro"
+        }
+      ]
+    },
+    "console": {
+      "caskVersion": "0.3.1",
+      "sourceURL": "https://github.com/macmade/Console/releases/download/0.3.1/Console.app.zip",
+      "artifactSHA256": "282455fda66cf8a84a551c2396649be8b668885b3a62819fbdd5033448934914",
+      "apps": [
+        {
+          "bundleName": "Console.app",
+          "bundleIdentifier": "com.xs-labs.Console"
+        }
+      ]
+    },
+    "colour-contrast-analyser": {
+      "caskVersion": "3.5.5",
+      "sourceURL": "https://github.com/ThePacielloGroup/CCAe/releases/download/v3.5.5/CCA-3.5.5.dmg",
+      "artifactSHA256": "d0e0922642a05149dd95f57e5b8814049149e94a0c7ea89fc9d56dfb60a813d9",
+      "apps": [
+        {
+          "bundleName": "Colour Contrast Analyser.app",
+          "bundleIdentifier": "com.electron.cca"
+        }
+      ]
+    },
+    "coderunner": {
+      "caskVersion": "4.5",
+      "sourceURL": "https://coderunnerapp.com/download/update/CodeRunner-4.5.zip",
+      "artifactSHA256": "d41c09e7d11226c0e0709ad55c04d4500adce9345568f4ef3da6c8e8190e4651",
+      "apps": [
+        {
+          "bundleName": "CodeRunner.app",
+          "bundleIdentifier": "com.krill.CodeRunner"
+        }
+      ]
+    },
+    "connect-fonts": {
+      "caskVersion": "28.1.8",
+      "sourceURL": "https://bin.extensis.com/ConnectFonts-M-28-1-8.dmg",
+      "artifactSHA256": "b3c9a9e67ded1a290575427b80fba365486ca08baa677b8a3711803255741b11",
+      "apps": [
+        {
+          "bundleName": "Connect Fonts.app",
+          "bundleIdentifier": "com.extensis.SuitcaseFusion"
+        }
+      ]
+    },
+    "compositor": {
+      "caskVersion": "1.28.0",
+      "sourceURL": "https://compositorapp.com/updates/Compositor_1.28.0.zip",
+      "artifactSHA256": "45257a424636ead2fcb6fad606fbd248723b4670283767ec4431a2648a48cc95",
+      "apps": [
+        {
+          "bundleName": "Compositor.app",
+          "bundleIdentifier": "com.microlarge.Compositor"
+        }
+      ]
+    },
+    "colorwell": {
+      "caskVersion": "8.1.5",
+      "sourceURL": "https://sweetpproductions.com/products/colorwell/ColorWell.dmg",
+      "artifactSHA256": "e58b9dc0f203e2748cba6d5defa4e183289e3ed48db58de62a6224c29ecf4967",
+      "apps": [
+        {
+          "bundleName": "ColorWell.app",
+          "bundleIdentifier": "com.sweetpproductions.ColorWell"
+        }
+      ]
+    },
+    "companion-satellite": {
+      "caskVersion": "3.4.0,722,8bc2f14",
+      "sourceURL": "https://s4.bitfocus.io/builds/companion-satellite/companion-satellite-arm64-722-8bc2f14.dmg",
+      "artifactSHA256": "dfd19ff649b72426ffaad6dd7fdba491e2ee2ab3d04b051e50150ae1febc4eea",
+      "apps": [
+        {
+          "bundleName": "Companion Satellite.app",
+          "bundleIdentifier": "remote.companion.bitfocus.no"
+        }
+      ]
+    },
+    "command-tab-plus": {
+      "caskVersion": "2.9.11",
+      "sourceURL": "https://macplus-software.com/downloads/Command-Tab%20Plus%202.zip",
+      "artifactSHA256": "3b1df4ca73a8adde73807a05f7ad928a34781e822cf6db8e9d3dc162702df5ab",
+      "apps": [
+        {
+          "bundleName": "Command-Tab Plus 2.app",
+          "bundleIdentifier": "com.sergey-gerasimenko.Command-Tab-Plus-2"
+        }
+      ]
+    },
+    "color-studio": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/bernaferrari/color-studio/releases/download/1.0.4/ColorStudio.zip",
+      "artifactSHA256": "95cb57fc7fdc8f5d0d3f7016e1b07b536295dc67ee3a7f674a84634e80e4ad63",
+      "apps": [
+        {
+          "bundleName": "Color Studio.app",
+          "bundleIdentifier": "com.bernaferrari.colorstudio"
+        }
+      ]
+    },
+    "colorsnapper": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://cs2-binaries.s3.amazonaws.com/ColorSnapper2-1_7_1.zip",
+      "artifactSHA256": "82617dffd3ddeda0eeeb30e75deab5249b5c667affd02bb2995ad57ffb9d3145",
+      "apps": [
+        {
+          "bundleName": "ColorSnapper2.app",
+          "bundleIdentifier": "com.koolesache.ColorSnapper2"
+        }
+      ]
+    },
+    "codexmonitor": {
+      "caskVersion": "0.7.66",
+      "sourceURL": "https://github.com/Dimillian/CodexMonitor/releases/download/v0.7.66/CodexMonitor.app.tar.gz",
+      "artifactSHA256": "e24ba50bb4e301693ec16705419bbca9f77b9c60ec3c0f8bf830b29d1494bc1f",
+      "apps": [
+        {
+          "bundleName": "Codex Monitor.app",
+          "bundleIdentifier": "com.dimillian.codexmonitor"
+        }
+      ]
+    },
+    "commander": {
+      "caskVersion": "0.7.998",
+      "sourceURL": "https://download.thecommander.app/release/Commander-0.7.998.zip",
+      "artifactSHA256": "83f594dfc67b97219cc124b7f0f6324ad750353fae7ee0c15b6a7e14b645aa05",
+      "apps": [
+        {
+          "bundleName": "Commander.app",
+          "bundleIdentifier": "com.krzyzanowskim.Commander"
+        }
+      ]
+    },
+    "codespace": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://codespace.app/download/1.6.1",
+      "artifactSHA256": "a0ea71a761820080493be13bb75f7651d38588203999b31e8c37c0164a0216b7",
+      "apps": [
+        {
+          "bundleName": "Codespace.app",
+          "bundleIdentifier": "me.tristanedwards.codespace"
+        }
+      ]
+    },
+    "commandpost": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/CommandPost/CommandPost/releases/download/2.1.0/CommandPost_2.1.0.dmg",
+      "artifactSHA256": "b1a3ca256053a083b59dd1d1db59b68d9b2ea8b83dc2e5214d0eba921eba5e64",
+      "apps": [
+        {
+          "bundleName": "CommandPost.app",
+          "bundleIdentifier": "org.latenitefilms.CommandPost"
+        }
+      ]
+    },
+    "command-pad": {
+      "caskVersion": "0.1.2",
+      "sourceURL": "https://github.com/supnate/command-pad/releases/download/v0.1.2/Command.Pad-0.1.2.dmg",
+      "artifactSHA256": "c889b42e9ec648f0b8cfc2cf65b56f5c40fc139486ef236eaa73b29fcc47db6a",
+      "apps": [
+        {
+          "bundleName": "Command Pad.app",
+          "bundleIdentifier": "com.webows.commandpad"
+        }
+      ]
+    },
+    "coherence-x": {
+      "caskVersion": "5.1.3",
+      "sourceURL": "https://bzgdownloads.s3.amazonaws.com/Coherence/Coherence+X+5.1.3.zip",
+      "artifactSHA256": "4bb10dced56d9a7828ae25a25e4f4b2446fe5e87e8128d295a73782e2f4c2bcd",
+      "apps": [
+        {
+          "bundleName": "Coherence X.app",
+          "bundleIdentifier": "com.BZG.CoherenceX5"
+        }
+      ]
+    },
+    "combine-pdfs": {
+      "caskVersion": "5.6.1",
+      "sourceURL": "https://www.monkeybreadsoftware.de/Software/CombinePDFs/CombinePDFs561.zip",
+      "artifactSHA256": "c0840985ce6a8ff8e90dc0d92137af57fb9229b1b53ad8728faf847f464f288f",
+      "apps": [
+        {
+          "bundleName": "Combine PDFs.app",
+          "bundleIdentifier": "de.monkeybreadsoftware.combinepdf"
+        }
+      ]
+    },
+    "confectionery": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://app-updates.vadimdemedes.com/confectionery/download/Confectionery-1.2.1-mac.dmg",
+      "artifactSHA256": "8f8d8e666a9809ddb171abe68b1d341327a13e4d649873648f129fdebd93d043",
+      "apps": [
+        {
+          "bundleName": "Confectionery.app",
+          "bundleIdentifier": "com.vadimdemedes.Confectionery"
+        }
+      ]
+    },
+    "commandq": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://get.retina.studio/commandq/commandq20_301.zip",
+      "artifactSHA256": "bfdc45adba4e61adcb4f630ebe59f869600eee3407e16e6023c5e27e7b8c5f8c",
+      "apps": [
+        {
+          "bundleName": "CommandQ.app",
+          "bundleIdentifier": "com.commandqapp.CommandQ"
+        }
+      ]
+    },
+    "conar": {
+      "caskVersion": "0.32.0,260626zr7mzvf8f",
+      "sourceURL": "https://download.todesktop.com/25112796k32u7/Conar%200.32.0%20-%20Build%20260626zr7mzvf8f-arm64-mac.zip",
+      "artifactSHA256": "1c024b63b492d8866b3c060a3a0be0d77e5e364b2e79cd033af9a99fe72cd863",
+      "apps": [
+        {
+          "bundleName": "Conar.app",
+          "bundleIdentifier": "com.wannabespace.conar"
+        }
+      ]
+    },
+    "coin-wallet": {
+      "caskVersion": "6.29.0",
+      "sourceURL": "https://github.com/CoinSpace/CoinSpace/releases/download/v6.29.0/Coin.Wallet.dmg",
+      "artifactSHA256": "04afee2a05d0d3a4c295e850a5ad28aa2f11dc33d209b966b3c32dc2e1ee6a38",
+      "apps": [
+        {
+          "bundleName": "Coin Wallet.app",
+          "bundleIdentifier": "com.coinspace.wallet"
+        }
+      ]
+    },
+    "codexia": {
+      "caskVersion": "0.50.2",
+      "sourceURL": "https://github.com/milisp/codexia/releases/download/v0.50.2/codexia_0.50.2_aarch64.dmg",
+      "artifactSHA256": "8d77980795809b94895722d331a7e32096ae56c738eff0b95e632dc25264b3a3",
+      "apps": [
+        {
+          "bundleName": "codexia.app",
+          "bundleIdentifier": "dev.milisp.codexia"
+        }
+      ]
+    },
+    "context": {
+      "caskVersion": "1.0.10",
+      "sourceURL": "https://github.com/indragiek/Context/releases/download/v1.0.10/Context_v1.0.10.dmg",
+      "artifactSHA256": "40279911df2fd5177c5c85f9fe2a0d7bc2b0ab4b0fab36f07b477e82f0eb751a",
+      "apps": [
+        {
+          "bundleName": "Context.app",
+          "bundleIdentifier": "com.indragie.Context"
+        }
+      ]
+    },
+    "color-oracle": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://colororacle.org/ColorOracleMac.zip",
+      "artifactSHA256": "ac295da8ccd4f428573e3c9e7d100ef84f2670729a5710e8e9caecca7d24fa2e",
+      "apps": [
+        {
+          "bundleName": "Color Oracle.app",
+          "bundleIdentifier": "ch.ethz.ika.colororacle"
         }
       ]
     }
