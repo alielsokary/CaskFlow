@@ -438,9 +438,9 @@
       ]
     },
     "colamd": {
-      "caskVersion": "2.4.4",
-      "sourceURL": "https://github.com/marswaveai/ColaMD/releases/download/v2.4.4/ColaMD-2.4.4-arm64.dmg",
-      "artifactSHA256": "a8d3c8fecad84567e3e7cea87475ff5b9bd64dfe2ee4db9c1820256f9a6f7bc0",
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://github.com/marswaveai/ColaMD/releases/download/v2.5.0/ColaMD-2.5.0-arm64.dmg",
+      "artifactSHA256": "a97bd0f106bded613d5448a6c3f557d6ecab1f3dad8d1b2df6db7b889dd595e2",
       "apps": [
         {
           "bundleName": "ColaMD.app",
@@ -2855,9 +2855,9 @@
       ]
     },
     "bettertouchtool": {
-      "caskVersion": "6.831,2026091804",
-      "sourceURL": "https://folivora.ai/releases/btt6.831-2026091804.zip",
-      "artifactSHA256": "05fbc16763f6b83eebc8a0234e64f08791b61ef3d8f61887dd12abdbf7895536",
+      "caskVersion": "6.836,2026091904",
+      "sourceURL": "https://folivora.ai/releases/btt6.836-2026091904.zip",
+      "artifactSHA256": "dfd6b57c93750616893f548c71efff9596645bfa4d5974fc97637cee06c29699",
       "apps": [
         {
           "bundleName": "BetterTouchTool.app",
@@ -3744,9 +3744,9 @@
       ]
     },
     "snapzy": {
-      "caskVersion": "1.32.2",
-      "sourceURL": "https://github.com/duongductrong/Snapzy/releases/download/v1.32.2/Snapzy-v1.32.2.dmg",
-      "artifactSHA256": "c25483a246a8c685e6ca0ca17ae0ae75630b33d07bab9c348de6380f3414c32f",
+      "caskVersion": "1.32.3",
+      "sourceURL": "https://github.com/duongductrong/Snapzy/releases/download/v1.32.3/Snapzy-v1.32.3.dmg",
+      "artifactSHA256": "0fd1f52d92df0bc8118f08d080ba6bf22047c10faac9a48aa5a174835321dadb",
       "apps": [
         {
           "bundleName": "Snapzy.app",
@@ -6751,9 +6751,9 @@
       ]
     },
     "miaoyan": {
-      "caskVersion": "4.2.0",
-      "sourceURL": "https://github.com/tw93/MiaoYan/releases/download/V4.2.0/MiaoYan_V4.2.0.zip",
-      "artifactSHA256": "d47cd9117800b50a427963fc396478d7ad70eb2c8d7633088f2f4d9e2bcb39a8",
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://github.com/tw93/MiaoYan/releases/download/V4.3.0/MiaoYan_V4.3.0.zip",
+      "artifactSHA256": "8ce9d4dfecc2facd96faa2bb3e1dcbe9c6c337e740e72982980c2d8763cab771",
       "apps": [
         {
           "bundleName": "MiaoYan.app",
@@ -11576,9 +11576,9 @@
       ]
     },
     "zedis": {
-      "caskVersion": "0.10.0",
-      "sourceURL": "https://github.com/vicanso/zedis/releases/download/v0.10.0/Zedis-aarch64.dmg",
-      "artifactSHA256": "dd135b108d0adfbeee9f9174fa5bf9d4b293949d2c63c2175f52b28da9545c26",
+      "caskVersion": "0.11.0",
+      "sourceURL": "https://github.com/vicanso/zedis/releases/download/v0.11.0/Zedis-aarch64.dmg",
+      "artifactSHA256": "7c006144e9ef1ae603e0e2af6a30455aac9f8e28db44558c22f1d338b853b55a",
       "apps": [
         {
           "bundleName": "Zedis.app",
@@ -11631,9 +11631,9 @@
       ]
     },
     "osu": {
-      "caskVersion": "2026.804.2-lazer",
-      "sourceURL": "https://github.com/ppy/osu/releases/download/2026.804.2-lazer/osu.app.Apple.Silicon.zip",
-      "artifactSHA256": "276919ec24cc75e0ab411cdb26436e683ce51d07b89916fae1d35079ce699a63",
+      "caskVersion": "2026.920.0-lazer",
+      "sourceURL": "https://github.com/ppy/osu/releases/download/2026.920.0-lazer/osu.app.Apple.Silicon.zip",
+      "artifactSHA256": "59ffd3ef6e17542b21b01cbb0f6ce4a13b7baa532739778f5e452dbfbc918a3d",
       "apps": [
         {
           "bundleName": "osu!.app",
@@ -19905,9 +19905,9 @@
       ]
     },
     "franz": {
-      "caskVersion": "6.8.0",
-      "sourceURL": "https://github.com/meetfranz/franz-6/releases/download/v6.8.0/Franz-arm64.dmg",
-      "artifactSHA256": "a0387b83fdbc3daa59603bcf864ca6299d15e41a32d6adad345b33071359f614",
+      "caskVersion": "6.8.1",
+      "sourceURL": "https://github.com/meetfranz/franz-6/releases/download/v6.8.1/Franz-arm64.dmg",
+      "artifactSHA256": "38856b7bb43062243cdb9f3bb6df801c467137a54caeb9129c1a32b81453c175",
       "apps": [
         {
           "bundleName": "Franz.app",
@@ -32081,9 +32081,9 @@
       ]
     },
     "tmpdisk": {
-      "caskVersion": "2.3.0",
-      "sourceURL": "https://github.com/imothee/tmpdisk/releases/download/v2.3.0/TmpDisk.dmg",
-      "artifactSHA256": "b30c365aa5bd63efa7490078b807dd3274b0c28a89d04efe94b9e8def8ccf76f",
+      "caskVersion": "2.3.1",
+      "sourceURL": "https://github.com/imothee/tmpdisk/releases/download/v2.3.1/TmpDisk.dmg",
+      "artifactSHA256": "a29db8c56be546e21edc9d6c4c733c4a82083aa9ac9802a579eb5fbf4d74417b",
       "apps": [
         {
           "bundleName": "TmpDisk.app",
@@ -32098,9 +32098,9 @@
       "apps": []
     },
     "tiny-shield": {
-      "caskVersion": "1.15.1,11501",
-      "sourceURL": "https://download.proxyman.io/tinyshield/11501/Tiny_Shield_1.15.1.dmg",
-      "artifactSHA256": "9cb11df7d8722869262a4a7673a2f7dc0baa5a154f1c56fdd2151b16c22db15d",
+      "caskVersion": "1.16.0,11600",
+      "sourceURL": "https://download.proxyman.io/tinyshield/11600/Tiny_Shield_1.16.0.dmg",
+      "artifactSHA256": "51097efe4e366dc89e26fb43cf179203265406da2badf6d6dbc872b237a43f26",
       "apps": [
         {
           "bundleName": "Tiny Shield.app",
@@ -34408,6 +34408,39 @@
         {
           "bundleName": "Zoho WorkDrive.app",
           "bundleIdentifier": "org.zoho.ZohoWorkDrive"
+        }
+      ]
+    },
+    "reolink": {
+      "caskVersion": "8.21.12,2026.07,230926448887f151e9d6d10f",
+      "sourceURL": "https://home-cdn.reolink.us/wp-content/uploads/2026/07/230926448887f151e9d6d10f.dmg",
+      "artifactSHA256": "a4b94c4fddcf4da25eee72bf421a1f790345c98b4675b1935ad1a37dab218103",
+      "apps": [
+        {
+          "bundleName": "Reolink.app",
+          "bundleIdentifier": "com.reolink.app"
+        }
+      ]
+    },
+    "youdaodict": {
+      "caskVersion": "11.3.16,1077",
+      "sourceURL": "https://codown.youdao.com/cidian/download/MacDict.dmg",
+      "artifactSHA256": "1a9ddb57ce93e04ebd67ce5b3a9c7c0a8df295ae1aec6ff4bf4b394458838ffd",
+      "apps": [
+        {
+          "bundleName": "网易有道翻译.app",
+          "bundleIdentifier": "com.youdao.YoudaoDict"
+        }
+      ]
+    },
+    "sirimote": {
+      "caskVersion": "1.4.6",
+      "sourceURL": "https://eternalstorms.at/sirimote/SiriMote.zip",
+      "artifactSHA256": "75f2f14de6526c0b6bc854851d6ebb9dd5a8604d790abe1b85c267c88c112401",
+      "apps": [
+        {
+          "bundleName": "SiriMote.app",
+          "bundleIdentifier": "at.EternalStorms.SiriMote-nonappstore"
         }
       ]
     }

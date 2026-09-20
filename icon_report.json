@@ -1375,14 +1375,8 @@
   },
   "simpletex": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600152 milliseconds with 2818048 out of 97747850 bytes received",
-    "attempts": 2,
-    "updated": "2026-09-20"
-  },
-  "sirimote": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Connection reset by peer",
-    "attempts": 2,
+    "reason": "download failed: curl: (28) Operation timed out after 600004 milliseconds with 3719114 out of 97747850 bytes received",
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "slack-cli": {
@@ -1394,7 +1388,7 @@
   "smartgit": {
     "status": "failed",
     "reason": "sha256 mismatch (got fe4a8083e257...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "sonarqube-cli": {
@@ -1484,13 +1478,13 @@
   "subtitle-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got c24ae5c5d854...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "swift-im": {
     "status": "failed",
     "reason": "download failed: curl: (35) Recv failure: Connection reset by peer",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "sync-my-l2p": {
@@ -1520,7 +1514,7 @@
   "tablen": {
     "status": "failed",
     "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B438:SSL routines:ST_CONNECT:tlsv1 alert internal error",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "tal-drum": {
@@ -1616,7 +1610,7 @@
   "unclack": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "unity-ios-support-for-editor": {
@@ -1712,7 +1706,7 @@
   "waveforms": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "wch-ch34x-usb-serial-driver": {
@@ -1750,12 +1744,6 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "youdaodict": {
-    "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600054 milliseconds with 23182585 out of 107504627 bytes received",
-    "attempts": 1,
-    "updated": "2026-09-20"
   },
   "yubihsm2-sdk": {
     "status": "no_icon",
