@@ -8520,6 +8520,270 @@
           "bundleIdentifier": "org.freac.freac"
         }
       ]
+    },
+    "plexamp": {
+      "caskVersion": "4.50.16",
+      "sourceURL": "https://plexamp.plex.tv/desktop/Plexamp-4.50.16-aarch64.dmg",
+      "artifactSHA256": "defd5160890d70e485a6f8699bf0014d7e09fd8c912469ad156e63cb89595617",
+      "apps": [
+        {
+          "bundleName": "Plexamp.app",
+          "bundleIdentifier": "tv.plex.plexamp"
+        }
+      ]
+    },
+    "ausweisapp": {
+      "caskVersion": "2.5.5",
+      "sourceURL": "https://github.com/Governikus/AusweisApp/releases/download/2.5.5/AusweisApp-2.5.5.dmg",
+      "artifactSHA256": "907d059ab4fed21986ca9960d6dbc0b816746b617d4a0fa1efc220ec69d7559f",
+      "apps": [
+        {
+          "bundleName": "AusweisApp.app",
+          "bundleIdentifier": "com.governikus.ausweisapp2"
+        }
+      ]
+    },
+    "airi": {
+      "caskVersion": "0.11.3",
+      "sourceURL": "https://github.com/moeru-ai/airi/releases/download/v0.11.3/AIRI-0.11.3-darwin-arm64.dmg",
+      "artifactSHA256": "99d224486692f3d85f0256009cdf317d74e7eeb1879be5d602b17ac10475137c",
+      "apps": [
+        {
+          "bundleName": "airi.app",
+          "bundleIdentifier": "ai.moeru.airi"
+        }
+      ]
+    },
+    "copilot-for-xcode": {
+      "caskVersion": "0.38.0",
+      "sourceURL": "https://github.com/intitni/CopilotForXcode/releases/download/0.38.0/Copilot.for.Xcode.app.zip",
+      "artifactSHA256": "e9c90f708427b98b7a3a9dac77f6d7b0188f7ec4d6a3dc122cf2b6555ad671ba",
+      "apps": [
+        {
+          "bundleName": "Copilot for Xcode.app",
+          "bundleIdentifier": "com.intii.CopilotForXcode"
+        }
+      ]
+    },
+    "cubicsdr": {
+      "caskVersion": "0.2.5",
+      "sourceURL": "https://github.com/cjcliffe/CubicSDR/releases/download/0.2.5/CubicSDR-0.2.5-Darwin.dmg",
+      "artifactSHA256": "9180e56e84a1d78935fb13ce362e3b8636a96b38d0695748078b43f9f6c3cb2c",
+      "apps": [
+        {
+          "bundleName": "CubicSDR.app",
+          "bundleIdentifier": "com.cubicproductions.cubicsdr"
+        }
+      ]
+    },
+    "logseq-og": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/logseq/og/releases/download/1.0.0/Logseq-OG-darwin-arm64-1.0.0.dmg",
+      "artifactSHA256": "82af43917c0aa0ce2e12949f741c527b8eaf71522223981317751c51487d7797",
+      "apps": [
+        {
+          "bundleName": "Logseq-OG.app",
+          "bundleIdentifier": "com.logseq.logseq-og"
+        }
+      ]
+    },
+    "fing": {
+      "caskVersion": "4.0.3",
+      "sourceURL": "https://get.fing.com/fing-desktop-releases/mac/Fing-4.0.3-mac.zip",
+      "artifactSHA256": "a82600762d494916fe0caed28621123d26f56bf5e369c76b2460661919c3d1bb",
+      "apps": [
+        {
+          "bundleName": "Fing.app",
+          "bundleIdentifier": "com.fing.app"
+        }
+      ]
+    },
+    "viscosity": {
+      "caskVersion": "1.13.1",
+      "sourceURL": "https://swupdate.sparklabs.com/download/mac/release/viscosity/Viscosity%201.13.1.dmg",
+      "artifactSHA256": "362b97f2b69e1b096a146b1eb4acde6ea7e4edb32a75bf3f68ae2048c550b0ed",
+      "apps": [
+        {
+          "bundleName": "Viscosity.app",
+          "bundleIdentifier": "com.viscosityvpn.Viscosity"
+        }
+      ]
+    },
+    "filefillet": {
+      "caskVersion": "2.11.1",
+      "sourceURL": "https://filefillet-releases.s3.eu-central-1.amazonaws.com/FileFillet_v2.11.1.zip",
+      "artifactSHA256": "2d844ba41bdd99863d409a860b631f0ab63112127523e3ecd55991578a3bad97",
+      "apps": [
+        {
+          "bundleName": "FileFillet.app",
+          "bundleIdentifier": "com.arensx.FileFillet"
+        }
+      ]
+    },
+    "foxglove": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://get.foxglove.dev/desktop/latest/foxglove-3.2.1-mac-arm64.dmg",
+      "artifactSHA256": "7a0e867980da1d5ee0d008788663d3221bc701b3401cd7a65b8a1c7e0407a288",
+      "apps": [
+        {
+          "bundleName": "Foxglove.app",
+          "bundleIdentifier": "dev.foxglove.studio"
+        }
+      ]
+    },
+    "screaming-frog-seo-spider": {
+      "caskVersion": "24.3",
+      "sourceURL": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-24.3-aarch64.dmg",
+      "artifactSHA256": "6487d07b0f16782a85f8080cfbef56a59df8dec9372940f2504b0d95df32fc7b",
+      "apps": [
+        {
+          "bundleName": "Screaming Frog SEO Spider.app",
+          "bundleIdentifier": "uk.co.screamingfrog.seo.spider"
+        }
+      ]
+    },
+    "burn": {
+      "caskVersion": "3.1.9",
+      "sourceURL": "https://downloads.sourceforge.net/burn-osx/Burn/3.1.9/burn-3.1.9.zip",
+      "artifactSHA256": "baa79cebc3f30224087a5f1a11b1fec4b9e749c5eb19a675d9c8bc7c1cf7dbcc",
+      "apps": [
+        {
+          "bundleName": "Burn.app",
+          "bundleIdentifier": "com.kiwifruitware.Burn"
+        }
+      ]
+    },
+    "pairpods": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/wozniakpawel/PairPods/releases/download/v0.7.0/PairPods-0.7.0.app.zip",
+      "artifactSHA256": "08c900877a33c2f3c54398001e129933a98d3e931d102929a97efc6c995bc1b0",
+      "apps": [
+        {
+          "bundleName": "PairPods.app",
+          "bundleIdentifier": "com.wozniakpawel.PairPods"
+        }
+      ]
+    },
+    "gzdoom": {
+      "caskVersion": "4.14.2",
+      "sourceURL": "https://github.com/ZDoom/gzdoom/releases/download/g4.14.2/gzdoom-4-14-2-macOS.zip",
+      "artifactSHA256": "0f2e638574ce2a2b5adec3613cf3fc1c66f63468019d412bb8dc8787ee78fb05",
+      "apps": [
+        {
+          "bundleName": "GZDoom.app",
+          "bundleIdentifier": "org.drdteam.gzdoom"
+        }
+      ]
+    },
+    "navicat-premium-lite": {
+      "caskVersion": "17.3.12",
+      "sourceURL": "https://dn.navicat.com/download/navicat17_premium_lite_en.dmg",
+      "artifactSHA256": "1a2ceb07f32e69680796a548343de37b2510cd75dfa5dc29eb6ad5f0e18e6c2f",
+      "apps": [
+        {
+          "bundleName": "Navicat Premium Lite.app",
+          "bundleIdentifier": "com.navicat.NavicatPremiumLite"
+        }
+      ]
+    },
+    "studio-3t": {
+      "caskVersion": "2026.13.1",
+      "sourceURL": "https://download.studio3t.com/studio-3t/mac-aarch64/2026.13.1/Studio-3T.dmg",
+      "artifactSHA256": "a3a88fa848fc6848621cfeb4bb3828990459f30d179fbd1c64a84346bdfa14d0",
+      "apps": [
+        {
+          "bundleName": "Studio 3T.app",
+          "bundleIdentifier": "com.install4j.0526-4458-1435-8154.837"
+        }
+      ]
+    },
+    "netspot": {
+      "caskVersion": "6.0.6016",
+      "sourceURL": "https://cdn.netspotapp.com/download/NetSpot.dmg",
+      "artifactSHA256": "45b2c98a30921d0adc6fd4a4df4c6c3dc9f60e4019a5e73e0f6cf23e0e9cb1bb",
+      "apps": [
+        {
+          "bundleName": "NetSpot.app",
+          "bundleIdentifier": "com.etwok.netspotwifi"
+        }
+      ]
+    },
+    "craft": {
+      "caskVersion": "3.6.7",
+      "sourceURL": "https://res.craft.do/native/sparkle/Craft.dmg",
+      "artifactSHA256": "2fe657623f026f788c87d68c7aa79b7f64c6980f092aabf696a9dca2dbfab9f9",
+      "apps": [
+        {
+          "bundleName": "Craft.app",
+          "bundleIdentifier": "com.lukilabs.lukiapp"
+        }
+      ]
+    },
+    "rcmd": {
+      "caskVersion": "3.6.1",
+      "sourceURL": "https://files.lowtechguys.com/releases/rcmd-3.6.1.dmg",
+      "artifactSHA256": "c323d5d3910478b98f210f901efb21f9349e1c7c10cb23c7e0ab9ec8b51acd88",
+      "apps": [
+        {
+          "bundleName": "rcmd.app",
+          "bundleIdentifier": "com.lowtechguys.rcmd"
+        }
+      ]
+    },
+    "macpass": {
+      "caskVersion": "0.8.2",
+      "sourceURL": "https://github.com/MacPass/MacPass/releases/download/0.8.2/MacPass-0.8.2.zip",
+      "artifactSHA256": "1e130f5322329ee75ed39c921ed4ea366101cd4bfb5c495d15735db90b961a73",
+      "apps": [
+        {
+          "bundleName": "MacPass.app",
+          "bundleIdentifier": "com.hicknhacksoftware.MacPass"
+        }
+      ]
+    },
+    "vimr": {
+      "caskVersion": "0.66.0,20260827.194249",
+      "sourceURL": "https://github.com/qvacua/vimr/releases/download/v0.66.0-20260827.194249/VimR-v0.66.0.tar.bz2",
+      "artifactSHA256": "afb4533be5db5f9aa051ec2810bd748ec46fa595915c0cd1da69a8643c0f9eb1",
+      "apps": [
+        {
+          "bundleName": "VimR.app",
+          "bundleIdentifier": "com.qvacua.VimR"
+        }
+      ]
+    },
+    "cog-app": {
+      "caskVersion": "3651,0213cb40f",
+      "sourceURL": "https://cogcdn.cog.losno.co/Cog-0213cb40f.zip",
+      "artifactSHA256": "f9b0f73b5fb65227286c05d924d8b14bc0165e2c9c3e24b97d39c3d99eaef9d1",
+      "apps": [
+        {
+          "bundleName": "Cog.app",
+          "bundleIdentifier": "org.cogx.cog"
+        }
+      ]
+    },
+    "gyroflow": {
+      "caskVersion": "1.6.3",
+      "sourceURL": "https://github.com/gyroflow/gyroflow/releases/download/v1.6.3/Gyroflow-mac-universal.dmg",
+      "artifactSHA256": "fbe26793c639f1410d8995debad188721587108cb6a74224e879f79e4bb8a1c0",
+      "apps": [
+        {
+          "bundleName": "Gyroflow.app",
+          "bundleIdentifier": "xyz.gyroflow"
+        }
+      ]
+    },
+    "8bitdo-firmware-updater": {
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://support.8bitdo.com/upfiles/Firmware-Updater/8BitDo_Firmware_Updater_macOS_v2.5.2.zip",
+      "artifactSHA256": "4f197854e6eca261a77b0a0fc03db60d9f0b860fcb511dadb8484f5d9edea887",
+      "apps": [
+        {
+          "bundleName": "8BitDo Firmware Updater.app",
+          "bundleIdentifier": "com.8bitdo.firmwareupdater"
+        }
+      ]
     }
   }
 }

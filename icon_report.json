@@ -773,6 +773,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "latexit": {
+    "status": "failed",
+    "reason": "download failed: curl: (47) Maximum (50) redirects followed",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "lemonade-server": {
     "status": "review",
     "reason": "non-exact .app selection: single",
