@@ -22812,6 +22812,265 @@
           "bundleIdentifier": "com.leigod.macacc"
         }
       ]
+    },
+    "lifesize": {
+      "caskVersion": "3.0.20",
+      "sourceURL": "https://download.lifesizecloud.com/Lifesize-3.0.20-mac.zip",
+      "artifactSHA256": "c2df41bb7d5179c46e308ccb40b3cb2b84effccb4722486f647b0ca78ec8635a",
+      "apps": [
+        {
+          "bundleName": "Lifesize.app",
+          "bundleIdentifier": "com.lifesize.cloud"
+        }
+      ]
+    },
+    "lolgato": {
+      "caskVersion": "1.7.3",
+      "sourceURL": "https://github.com/raine/Lolgato/releases/download/v1.7.3/Lolgato.dmg",
+      "artifactSHA256": "d5ce6fde0cf004a83a9a44f9075b5fe2e0b8b56ec8e54bc091cc60ad9e42b062",
+      "apps": [
+        {
+          "bundleName": "Lolgato.app",
+          "bundleIdentifier": "fi.zendit.Lolgato"
+        }
+      ]
+    },
+    "livebook": {
+      "caskVersion": "0.19.10",
+      "sourceURL": "https://github.com/livebook-dev/livebook/releases/download/v0.19.10/Livebook-darwin-aarch64.dmg",
+      "artifactSHA256": "c234425512ed992acc30eb06febf36707418185dffd1373f71baa810354d430f",
+      "apps": [
+        {
+          "bundleName": "Livebook.app",
+          "bundleIdentifier": "dev.livebook.Livebook"
+        }
+      ]
+    },
+    "litecoin": {
+      "caskVersion": "0.21.5.8",
+      "sourceURL": "https://download.litecoin.org/litecoin-0.21.5.8/osx/litecoin-0.21.5.8-osx.dmg",
+      "artifactSHA256": "6ea3b94379be34239a521b410260dc92b1fed0e436c2ffb1b72a5065ed5db5c1",
+      "apps": [
+        {
+          "bundleName": "Litecoin-Qt.app",
+          "bundleIdentifier": "org.litecoin.Litecoin-Qt"
+        }
+      ]
+    },
+    "linkandroid": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/modstart-lib/linkandroid/releases/download/v2.3.0/LinkAndroid-2.3.0-mac-arm64.dmg",
+      "artifactSHA256": "3107388eb8057d7c18cbd3c0478128dd76d7b4eef7c943c64035a080c7a96320",
+      "apps": []
+    },
+    "linguax": {
+      "caskVersion": "2025.12,5200",
+      "sourceURL": "https://st.deepzz.com/linguax/LinguaX2025.12.5200.zip",
+      "artifactSHA256": "97ee389b441401ca7307abf0d6b64f5b6fe36067d8ddbd7f9286f469128ca373",
+      "apps": [
+        {
+          "bundleName": "LinguaX.app",
+          "bundleIdentifier": "com.deepzz.LinguaX"
+        }
+      ]
+    },
+    "lingon-x": {
+      "caskVersion": "9.6.6",
+      "sourceURL": "https://www.peterborgapps.com/downloads/LingonX9.zip",
+      "artifactSHA256": "7cafd1fc98cd23662f0670eed996698dccc98762fe1a284036ee76132553e7f3",
+      "apps": [
+        {
+          "bundleName": "Lingon X.app",
+          "bundleIdentifier": "com.peterborgapps.LingonX9"
+        }
+      ]
+    },
+    "locu": {
+      "caskVersion": "0.33.2",
+      "sourceURL": "https://locu.sfo2.digitaloceanspaces.com/Locu-0.33.2-arm64-mac.zip",
+      "artifactSHA256": "733db35ac9e0049f40fef1e7ce5c9be394ec6c033f6b8f98d414abbc93d6b917",
+      "apps": [
+        {
+          "bundleName": "Locu.app",
+          "bundleIdentifier": "app.locu"
+        }
+      ]
+    },
+    "loginputmac": {
+      "caskVersion": "3.6.9,17611",
+      "sourceURL": "https://loginput-mac2.totest.top/LogInputMac3.app17611.zip",
+      "artifactSHA256": "91ba3a0257f5d1639ee0183b1159fb02dcfcea8095d5d936395b3fa1a33c421f",
+      "apps": [
+        {
+          "bundleName": "LogInputMac3.app",
+          "bundleIdentifier": "com.logcg.inputmethod.LogInputMac3"
+        }
+      ]
+    },
+    "lightworks": {
+      "caskVersion": "2025.2.56356",
+      "sourceURL": "https://cdn.lwks.com/releases/2025.2/Lightworks-2025.2-56356.dmg",
+      "artifactSHA256": "8771f90dfc4a1872567e320679729df1a9a06b14ad47f69a4b1200528eef0ef1",
+      "apps": [
+        {
+          "bundleName": "Lightworks.app",
+          "bundleIdentifier": "com.LWKS.lightworks"
+        }
+      ]
+    },
+    "localcan": {
+      "caskVersion": "3.2.0",
+      "sourceURL": "https://assets.localcan.com/download/LocalCan-3.2.0-arm64.dmg",
+      "artifactSHA256": "39fd9d8bb7d88723782b2cbc4ed01f19f1755dd4bdf0ba34b7afb4d244dbe7e0",
+      "apps": [
+        {
+          "bundleName": "LocalCan.app",
+          "bundleIdentifier": "com.electron.localcan"
+        }
+      ]
+    },
+    "llamachat": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/alexrozanski/LlamaChat/releases/download/1.2.0/LlamaChat.dmg",
+      "artifactSHA256": "dd423584428f4e80a4c2bb093bde132fc25699902c0b496037b3a951abb3348d",
+      "apps": [
+        {
+          "bundleName": "LlamaChat.app",
+          "bundleIdentifier": "com.alexrozanski.LlamaChat"
+        }
+      ]
+    },
+    "licensed-app": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://amarsagoo.info/licensed/Licensed.dmg",
+      "artifactSHA256": "2592b81c48ca0ecf02545f203daca8b4a821807d29d54d73d7d7df0f757e1f89",
+      "apps": [
+        {
+          "bundleName": "Licensed.app",
+          "bundleIdentifier": "com.asagoo.licensed"
+        }
+      ]
+    },
+    "loaf": {
+      "caskVersion": "2.0.9",
+      "sourceURL": "https://github.com/philipardeljan/getloaf/releases/download/v2.0.9/loaf.dmg",
+      "artifactSHA256": "e01953ba3fa4f84daf3a5b0ca0cfe730958f2f1d4a674bbaf7eab31bcfd0012e",
+      "apps": [
+        {
+          "bundleName": "Loaf.app",
+          "bundleIdentifier": "com.loaf.studio"
+        }
+      ]
+    },
+    "linqpad": {
+      "caskVersion": "9.10.20.2555936",
+      "sourceURL": "https://cdn.linqpad.net/public/LINQPad9.dmg?cache=9.10.20.2555936",
+      "artifactSHA256": "b92b951352d11dca658978e677d7574a8447be3a2519bc05be559ed81c9589d9",
+      "apps": [
+        {
+          "bundleName": "LINQPad 9.app",
+          "bundleIdentifier": "LINQPad9.macos"
+        }
+      ]
+    },
+    "liclipse": {
+      "caskVersion": "12.0.1,o9ccnc5f0ks4dgq",
+      "sourceURL": "https://www.mediafire.com/file_premium/o9ccnc5f0ks4dgq/liclipse_12.0.1_macosx.cocoa.aarch64.tar.gz",
+      "artifactSHA256": "d0ecbe035cf7a0684d5e2481ac967b23d6c2fc42330f062bb0485c09dc25d931",
+      "apps": [
+        {
+          "bundleName": "LiClipse.app",
+          "bundleIdentifier": "com.brainwy.liclipse.rcp.product"
+        }
+      ]
+    },
+    "loading": {
+      "caskVersion": "1.2.6",
+      "sourceURL": "https://bonzaiapps.com/loading/Loading.zip",
+      "artifactSHA256": "78d7448c76b99fc31505e6cf1b5cb21c021a40fe66b73349de43be46d9880c24",
+      "apps": [
+        {
+          "bundleName": "Loading.app",
+          "bundleIdentifier": "com.bonzaiapps.loading"
+        }
+      ]
+    },
+    "logmein-client": {
+      "caskVersion": "4.1.8073",
+      "sourceURL": "https://secure.logmein.com/LogMeInClientMac.dmg",
+      "artifactSHA256": "9918ace21a4daf5fa4b85fe31dacc4b87977880e2a3816692a9199279ee6a6a6",
+      "apps": [
+        {
+          "bundleName": "LogMeIn Client.app",
+          "bundleIdentifier": "com.logmein.ignition"
+        }
+      ]
+    },
+    "liviable": {
+      "caskVersion": "1b5,2024.01",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2024/01/liviable1b5.zip",
+      "artifactSHA256": "4a61b692c5d07ca06985edee3bc8e4f1bf82aa385aa3290d3418b01be3b63453",
+      "apps": [
+        {
+          "bundleName": "Liviable.app",
+          "bundleIdentifier": "co.eclecticlight.Liviable"
+        }
+      ]
+    },
+    "longbridge-pro": {
+      "caskVersion": "2.38.16",
+      "sourceURL": "https://download.lbkrs.com/longbridge-desktop/prod/longbridge-pro-2.38.16-mac-arm64.dmg",
+      "artifactSHA256": "e6f7b6d293e9c91430a2a200e0e2d75c7e7131d0a5fbccdca4d7376b9f830e8a",
+      "apps": [
+        {
+          "bundleName": "Longbridge Pro.app",
+          "bundleIdentifier": "global.longbridge.app.desktop"
+        }
+      ]
+    },
+    "lockrattler": {
+      "caskVersion": "4.37,2023.05",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/05/lockrattler437.zip",
+      "artifactSHA256": "e0313e7116136d98201c01b09eefe3a221889579debe68457e88488bfa60b78e",
+      "apps": [
+        {
+          "bundleName": "LockRattler.app",
+          "bundleIdentifier": "co.eclecticlight.LockRattler"
+        }
+      ]
+    },
+    "logos": {
+      "caskVersion": "53.1.0.0002",
+      "sourceURL": "https://downloads.logoscdn.com/LBS10/Installer/53.1.0.0002/LogosMac-arm.dmg",
+      "artifactSHA256": "d37a843c5a1fe5ee53bf9d774e07dcac8f1f5391e0e0c68a720f40c282970889",
+      "apps": [
+        {
+          "bundleName": "Logos.app",
+          "bundleIdentifier": "com.logos.desktop.logos"
+        }
+      ]
+    },
+    "live-home-3d": {
+      "caskVersion": "5.0",
+      "sourceURL": "https://belightsoft.s3.amazonaws.com/updates/LiveHome3D.zip",
+      "artifactSHA256": "859d5beb30433e04aeb97e7c2ea61367e0c685ab8c0e0c0923a83231fdfc8d3b",
+      "apps": [
+        {
+          "bundleName": "Live Home 3D.app",
+          "bundleIdentifier": "com.belightsoft.LiveHome3D"
+        }
+      ]
+    },
+    "lightburn": {
+      "caskVersion": "2.1.04",
+      "sourceURL": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.1.04/LightBurn.V2.1.04.dmg",
+      "artifactSHA256": "d888bced55faa15dadd687e15c8d1a51168ba8011ef21ac84b0172ea05e12c3a",
+      "apps": [
+        {
+          "bundleName": "LightBurn.app",
+          "bundleIdentifier": "com.LightBurnSoftware.LightBurn"
+        }
+      ]
     }
   }
 }
