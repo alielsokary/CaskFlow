@@ -168,9 +168,9 @@
       ]
     },
     "ghostex": {
-      "caskVersion": "9.5.1",
-      "sourceURL": "https://github.com/maddada/Ghostex/releases/download/v9.5.1/ghostex-9.5.1-arm64.dmg",
-      "artifactSHA256": "3810bc827b4f205e5fe9da02fd17e5aca5d3e1b056a993a59ef15cb20879559b",
+      "caskVersion": "9.8.5",
+      "sourceURL": "https://github.com/maddada/Ghostex/releases/download/v9.8.5/ghostex-9.8.5-arm64.dmg",
+      "artifactSHA256": "6ba03d97bc1b59de4c71f992f5f49cd8ff165b5e3589375dced714631a8d6e09",
       "apps": [
         {
           "bundleName": "Ghostex.app",
@@ -20265,6 +20265,265 @@
         {
           "bundleName": "Geneious Prime.app",
           "bundleIdentifier": "com.biomatters.Geneious"
+        }
+      ]
+    },
+    "ghostpepper": {
+      "caskVersion": "2.4.4",
+      "sourceURL": "https://github.com/matthartman/ghost-pepper/releases/download/v2.4.4/GhostPepper.dmg",
+      "artifactSHA256": "a8c09b24ce19613bb421c0dce06e6167d738a8295f05fa5e5a363551de6b8f06",
+      "apps": [
+        {
+          "bundleName": "GhostPepper.app",
+          "bundleIdentifier": "com.github.matthartman.ghostpepper"
+        }
+      ]
+    },
+    "gg": {
+      "caskVersion": "0.41.0",
+      "sourceURL": "https://github.com/gulbanana/gg/releases/download/v0.41.0/gg_0.41.0_universal.dmg",
+      "artifactSHA256": "84af4648a231b2cd883f950f1694ecd121e56cf82ab0e3d45aeec95f42ff2e33",
+      "apps": [
+        {
+          "bundleName": "gg.app",
+          "bundleIdentifier": "au.gulbanana.gg"
+        }
+      ]
+    },
+    "gitfox": {
+      "caskVersion": "5.0.0,12277",
+      "sourceURL": "https://update.gitfox.app/builds/retail/12277/Gitfox.12277.zip",
+      "artifactSHA256": "c0c5047089da3e08227086f85a68c18c54a66d24a868bb40fa0d32df90b93a1a",
+      "apps": [
+        {
+          "bundleName": "Gitfox.app",
+          "bundleIdentifier": "com.bytieful.Gitfox-retail"
+        }
+      ]
+    },
+    "go64": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://www.stclairsoft.com/download/Go64-1.5.1.zip",
+      "artifactSHA256": "db0e22b2c38b42d464e4e7a537b110ab03487a4846604ecc3aed1194b27721c6",
+      "apps": [
+        {
+          "bundleName": "Go64.app",
+          "bundleIdentifier": "com.stclairsoft.Go64"
+        }
+      ]
+    },
+    "glkvm": {
+      "caskVersion": "1.5.0,1782704518562,release1",
+      "sourceURL": "https://static.gl-inet.com/edge-app-staging/kvm-mac/1.5.0-release1/1782704518562/gl-kvm-1.5.0-release1.dmg",
+      "artifactSHA256": "5223d52f61a88e154e9233cf6e87f75baa5e5d3e8325e924f56b0b544771853d",
+      "apps": [
+        {
+          "bundleName": "GLKVM.app",
+          "bundleIdentifier": "com.glinet.kvmdesk"
+        }
+      ]
+    },
+    "get-backup-pro": {
+      "caskVersion": "3.7.3",
+      "sourceURL": "https://belightsoft.s3.amazonaws.com/updates/Get+Backup+Pro+3.zip",
+      "artifactSHA256": "248f6eae946f266318f687c02de7265089380b8e763701f8f0ff3f212829bdd6",
+      "apps": [
+        {
+          "bundleName": "Get Backup Pro 3.app",
+          "bundleIdentifier": "com.belightsoft.GetBackupPro3"
+        }
+      ]
+    },
+    "gitlight": {
+      "caskVersion": "0.17.6",
+      "sourceURL": "https://github.com/colinlienard/gitlight/releases/download/gitlight-v0.17.6/GitLight_0.17.6_aarch64.dmg",
+      "artifactSHA256": "939c3774cf3ea4e3b8e8b308d16dbdae7e07ee00778125633170c52559c812ce",
+      "apps": [
+        {
+          "bundleName": "GitLight.app",
+          "bundleIdentifier": "app.gitlight"
+        }
+      ]
+    },
+    "glide-browser": {
+      "caskVersion": "0.1.64a",
+      "sourceURL": "https://github.com/glide-browser/glide/releases/download/0.1.64a/glide.macos-aarch64.dmg",
+      "artifactSHA256": "966d7f5db31d130cccde23109725ea83b9006c08313dcc10c1c0bf6833e082a6",
+      "apps": [
+        {
+          "bundleName": "Glide.app",
+          "bundleIdentifier": "app.glide-browser.glide"
+        }
+      ]
+    },
+    "godspeed": {
+      "caskVersion": "1.9.22",
+      "sourceURL": "https://app-updates.godspeedapp.com/1.9.22%2FGodspeed.zip",
+      "artifactSHA256": "14b552d706ce31cf4eb8a8448856b47b95bd38973434676b607a78a6ea781002",
+      "apps": [
+        {
+          "bundleName": "Godspeed.app",
+          "bundleIdentifier": "com.godspeedapp.Godspeed"
+        }
+      ]
+    },
+    "glaze-app": {
+      "caskVersion": "2.1",
+      "sourceURL": "https://mirror.cs.uchicago.edu/fawkes/files/glaze/Glaze-2.1-arm64.dmg",
+      "artifactSHA256": "8fe831d650ffb4c8cf425bb77bb529148756e850368fff19315e8457c0fdbdde",
+      "apps": []
+    },
+    "glyphs": {
+      "caskVersion": "3.5.1,3534",
+      "sourceURL": "https://updates.glyphsapp.com/Glyphs3.5.1-3534.zip",
+      "artifactSHA256": "93b3bc3379a90afa91048865eb53f237b8e47639484683f42bea8185c0847886",
+      "apps": [
+        {
+          "bundleName": "Glyphs 3.app",
+          "bundleIdentifier": "com.GeorgSeifert.Glyphs3"
+        }
+      ]
+    },
+    "gitahead": {
+      "caskVersion": "2.7.1",
+      "sourceURL": "https://github.com/gitahead/gitahead/releases/download/v2.7.1/GitAhead-2.7.1.dmg",
+      "artifactSHA256": "32c17d345fedc869efd37080d0905aa1a85d8d5ba5a4509058fdd35f224f2a04",
+      "apps": [
+        {
+          "bundleName": "GitAhead.app",
+          "bundleIdentifier": "com.gitahead.GitAhead"
+        }
+      ]
+    },
+    "gnome": {
+      "caskVersion": "1.25,1",
+      "sourceURL": "https://lexfriedman.com/gnome/GAsInGnome.zip",
+      "artifactSHA256": "703a51ff47409fc654f661a2845b41644ebafc3ea8077cf7208a3ef81db67840",
+      "apps": [
+        {
+          "bundleName": "Gnome.app",
+          "bundleIdentifier": "com.lexfriedman.G-As-In-Gnome"
+        }
+      ]
+    },
+    "getoutline": {
+      "caskVersion": "1.10.0,260918efgmywp4a",
+      "sourceURL": "https://download.todesktop.com/2211128hgkdcltv/Outline%201.10.0%20-%20Build%20260918efgmywp4a-arm64.dmg",
+      "artifactSHA256": "76e8c55b6edac1b0f316d71a62203a8388de1b9adafce7bbc6871109757e12d6",
+      "apps": [
+        {
+          "bundleName": "Outline.app",
+          "bundleIdentifier": "com.generaloutline.outline"
+        }
+      ]
+    },
+    "go2tv": {
+      "caskVersion": "2.6.1",
+      "sourceURL": "https://github.com/alexballas/go2tv/releases/download/v2.6.1/go2tv_v2.6.1_macOS_arm64.zip",
+      "artifactSHA256": "d69db8495c3e0ce1c73ef3539e5a015f42ac583ef9f5e9935e80b20a8491bd8a",
+      "apps": [
+        {
+          "bundleName": "go2tv.app",
+          "bundleIdentifier": "app.go2tv.go2tv"
+        }
+      ]
+    },
+    "gifox": {
+      "caskVersion": "2.10.0+0,021000.00",
+      "sourceURL": "https://d1fqctmfkpkkcg.cloudfront.net/gifox/021000.00.dmg",
+      "artifactSHA256": "569da6cd7d344a9e7f2f4ddebbcbcd83a3dc41d86330197d34fa7ade19529346",
+      "apps": [
+        {
+          "bundleName": "Gifox.app",
+          "bundleIdentifier": "com.gifox.gifox2"
+        }
+      ]
+    },
+    "gitfiend": {
+      "caskVersion": "0.45.3",
+      "sourceURL": "https://github.com/GitFiend/Support/releases/download/v0.45.3/GitFiend-0.45.3-arm64.dmg",
+      "artifactSHA256": "f23c033b28516c6160566439d3217bb8d350dcf2441e29ac629219c6b42a54c5",
+      "apps": [
+        {
+          "bundleName": "GitFiend.app",
+          "bundleIdentifier": "com.tobysuggate.gitfiend"
+        }
+      ]
+    },
+    "gluemotion": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://neededapps.com/appcasts/gluemotion/versions/2.3.0",
+      "artifactSHA256": "1aef5581ac43f8480374b6f16696252318eb1f7c8ac0277854c3fedb50b4ada8",
+      "apps": [
+        {
+          "bundleName": "GlueMotion.app",
+          "bundleIdentifier": "com.jeremyvizzini.gluemotion-paddle"
+        }
+      ]
+    },
+    "gitfinder": {
+      "caskVersion": "1.7.11",
+      "sourceURL": "https://gitfinder.com/updates/GitFinder1_7_11.dmg",
+      "artifactSHA256": "7e44b01f839cbf3004af918a18d4479b0962450c7befcf5785ca4c4d28906cce",
+      "apps": [
+        {
+          "bundleName": "GitFinder.app",
+          "bundleIdentifier": "ag.zigz.GitFinder"
+        }
+      ]
+    },
+    "gitfit": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/rebelchris/git-fit/releases/download/v1.3.0/GitFit-1.3.0.dmg",
+      "artifactSHA256": "d5ccd1fa2f2c7506baa343accef09010de662815b41f769a940e6e5aa224fb64",
+      "apps": [
+        {
+          "bundleName": "GitFit.app",
+          "bundleIdentifier": "com.chrisbongers.GitFit"
+        }
+      ]
+    },
+    "gitkraken-on-premise-serverless": {
+      "caskVersion": "12.5.0",
+      "sourceURL": "https://api.gitkraken.dev/releases/standalone/production/darwin/arm64/12.5.0/GitKraken-v12.5.0.zip",
+      "artifactSHA256": "0dc7e62cd8dde9236750ef12c1836fcd35fd8b8dc9670e684924eb78417a323b",
+      "apps": [
+        {
+          "bundleName": "GitKraken.app",
+          "bundleIdentifier": "com.axosoft.gitkraken"
+        }
+      ]
+    },
+    "ghost-browser": {
+      "caskVersion": "2.4.1.2",
+      "sourceURL": "https://downloads.ghostbrowser.com/GhostBrowser-2.4.1.2_arm64.dmg",
+      "artifactSHA256": "20795a29d22017b475f3696ff5c4dae71ce3329802328f7c9aa8f761bd42030f",
+      "apps": [
+        {
+          "bundleName": "Ghost Browser.app",
+          "bundleIdentifier": "com.ghostbrowser.gb1"
+        }
+      ]
+    },
+    "get-iplayer-automator": {
+      "caskVersion": "1.29.6,202608131913",
+      "sourceURL": "https://github.com/Ascoware/get-iplayer-automator/releases/download/v1.29.6/Get.iPlayer.Automator.v1.29.6.b202608131913.zip",
+      "artifactSHA256": "8de169c394d87a84496fff180d535a11b2c1629d231180712759ff903627efe0",
+      "apps": [
+        {
+          "bundleName": "Get iPlayer Automator.app",
+          "bundleIdentifier": "com.ascoware.get-iplayer-automator"
+        }
+      ]
+    },
+    "ghostvm": {
+      "caskVersion": "2.11.0",
+      "sourceURL": "https://github.com/groundwater/GhostVM/releases/download/v2.11.0/GhostVM-2.11.0.dmg",
+      "artifactSHA256": "c974493ca79cf8c0071dbb72da39cedd5e35ab87f19cbd72de542989e619432d",
+      "apps": [
+        {
+          "bundleName": "GhostVM.app",
+          "bundleIdentifier": "org.ghostvm.ghostvm"
         }
       ]
     }
