@@ -15704,6 +15704,260 @@
           "bundleIdentifier": "com.github.buckets.application"
         }
       ]
+    },
+    "camtasia": {
+      "caskVersion": "2026.2.2",
+      "sourceURL": "https://download.techsmith.com/camtasiamac/releases/2026.2.2/Camtasia.dmg",
+      "artifactSHA256": "b2a51bfa66f9c067c15a6dd0992ba68ad620c656dfac4ab4c34f467adaec0e42",
+      "apps": [
+        {
+          "bundleName": "Camtasia.app",
+          "bundleIdentifier": "com.techsmith.camtasia"
+        }
+      ]
+    },
+    "captain": {
+      "caskVersion": "10.5.0",
+      "sourceURL": "https://github.com/RickWong/Captain/releases/download/v10.5.0/Captain-10.5.0-arm64.dmg",
+      "artifactSHA256": "fa9a7d9efb07c9ed837ab856be7ed9e503a01a7614c8bedaeb11420bc647bcfd",
+      "apps": [
+        {
+          "bundleName": "Captain.app",
+          "bundleIdentifier": "com.electron.captain"
+        }
+      ]
+    },
+    "castr": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://download.todesktop.com/210610elr9v3cm6/Castr%203.1.0-arm64-mac.zip",
+      "artifactSHA256": "bb1876f1ba051f08c7bf32e6681341bf03c8c410267294e4490c9e357fb16455",
+      "apps": [
+        {
+          "bundleName": "Castr.app",
+          "bundleIdentifier": "com.todesktop.210610elr9v3cm6"
+        }
+      ]
+    },
+    "bzflag": {
+      "caskVersion": "2.4.30",
+      "sourceURL": "https://download.bzflag.org/bzflag/macos/2.4.30/BZFlag-2.4.30-macOS.zip",
+      "artifactSHA256": "4a63f7ef575bb8e3e6507d8f999cbd43e9ccb92fcf4ebfb877d3c9ccb4bbc2b2",
+      "apps": [
+        {
+          "bundleName": "BZFlag-2.4.30.app",
+          "bundleIdentifier": "org.bzflag.BZFlag"
+        }
+      ]
+    },
+    "cad-assistant": {
+      "caskVersion": "1.6.0,2021-10-06",
+      "sourceURL": "https://www.opencascade.com/sites/default/files/private/occt/applications/cad_assistant_1.6.0_2021-10-06_arm64.dmg",
+      "artifactSHA256": "a1a21d2b3294ca556b7a0172df8ed1a8046450894033147be09a9fd1549f2b2d",
+      "apps": [
+        {
+          "bundleName": "CAD Assistant.app",
+          "bundleIdentifier": "org.opencascade.cadassistant"
+        }
+      ]
+    },
+    "cardo-update": {
+      "caskVersion": "4.7.0",
+      "sourceURL": "https://update.cardosystems.com/cardo-app/Cardo%20Update-4.7.0-mac.zip",
+      "artifactSHA256": "e5bb2a0c738f795a142cea450a1e8677d22663f1aeba07a60a10d697bc9faa32",
+      "apps": [
+        {
+          "bundleName": "Cardo Update.app",
+          "bundleIdentifier": "com.cardo.fwupdater"
+        }
+      ]
+    },
+    "calendar-366": {
+      "caskVersion": "2.16.0",
+      "sourceURL": "https://nspektor.com/downloads/Calendar366_v2.16.0.dmg",
+      "artifactSHA256": "864dbbbf02ed52b09791ea33dee5b7eed2cee68044886ada71910eadf46ae945",
+      "apps": [
+        {
+          "bundleName": "Calendar 366 II.app",
+          "bundleIdentifier": "com.nspektor.macos.Calendar-366-II"
+        }
+      ]
+    },
+    "candy-crisis": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/jorio/CandyCrisis/releases/download/v3.0.0/CandyCrisis-3.0.0-mac.dmg",
+      "artifactSHA256": "4c3359332d950e2836f9279c8ed1cb32e3c271e5dccb182134364976b4ef2095",
+      "apps": [
+        {
+          "bundleName": "Candy Crisis.app",
+          "bundleIdentifier": "io.jor.candycrisis"
+        }
+      ]
+    },
+    "captains-deck": {
+      "caskVersion": "1.5.2",
+      "sourceURL": "https://captains-deck.com/downloads/CaptainsDeck-1.5.2.dmg",
+      "artifactSHA256": "72699b2c3d564d39d172a2e790052e10733f0903236f9cfb30255e5f49d707b5",
+      "apps": [
+        {
+          "bundleName": "Captain's Deck.app",
+          "bundleIdentifier": "com.captainsdeck.app"
+        }
+      ]
+    },
+    "bwana": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://www.bruji.com/bwana/bwana.dmg",
+      "artifactSHA256": "c080fdda304dcd4f30758530dd39b01f48bdf34b6914dab770271a01e86b9223",
+      "apps": [
+        {
+          "bundleName": "Bwana.app",
+          "bundleIdentifier": "com.bruji.bwana"
+        }
+      ]
+    },
+    "cables": {
+      "caskVersion": "0.11.1",
+      "sourceURL": "https://github.com/cables-gl/cables_electron/releases/download/v0.11.1/cables-0.11.1-mac-arm64.dmg",
+      "artifactSHA256": "a03b1051f00061a991fcc11b3771fd09eb890f5febd313b912000ead380f3e01",
+      "apps": [
+        {
+          "bundleName": "cables.app",
+          "bundleIdentifier": "gl.cables.standalone"
+        }
+      ]
+    },
+    "calmly-writer": {
+      "caskVersion": "2.0.66",
+      "sourceURL": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.66-arm64.dmg",
+      "artifactSHA256": "68d4901681e4eb908ed34db32ae529bf93cccf1c52e0313482eaa91132006428",
+      "apps": []
+    },
+    "captin": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://raw.githubusercontent.com/cool8jay/public/master/captin/Captin.zip",
+      "artifactSHA256": "a56ee238b94f21d99c250ca95d11aba41f270ac68d6e888a4bff6628a361890a",
+      "apps": [
+        {
+          "bundleName": "Captin.app",
+          "bundleIdentifier": "com.100hps.captin"
+        }
+      ]
+    },
+    "cashnotify": {
+      "caskVersion": "3.8.2",
+      "sourceURL": "https://github.com/BaguetteEngineering/download.cashnotify.com/releases/download/v3.8.2/CashNotify-3.8.2-universal.dmg",
+      "artifactSHA256": "a799d2a91048533192375d72eeba9e4bbd0bae6987606065b7d59c9487d9c3a8",
+      "apps": [
+        {
+          "bundleName": "CashNotify.app",
+          "bundleIdentifier": "com.baguetteengineering.cashnotify"
+        }
+      ]
+    },
+    "capacities": {
+      "caskVersion": "1.70.2",
+      "sourceURL": "https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.70.2-arm64.dmg",
+      "artifactSHA256": "5ed2bc3a36343916214b9bcb88daeb252ea191c500aa00ef386fdb7c87b64e86",
+      "apps": [
+        {
+          "bundleName": "Capacities.app",
+          "bundleIdentifier": "io.capacities.app"
+        }
+      ]
+    },
+    "cadreader": {
+      "caskVersion": "5.2.3.15",
+      "sourceURL": "https://yuntu-f.kuaicad.com/app/CADReaderMac_5.2.3.15.dmg",
+      "artifactSHA256": "1b1c1a035cd438a6cfe42f0525923cafed0d2b864119ba087e3024a2bb68e5c4",
+      "apps": [
+        {
+          "bundleName": "CAD快速看图.app",
+          "bundleIdentifier": "com.glodonyuntu.cadreadermac"
+        }
+      ]
+    },
+    "cacher": {
+      "caskVersion": "2.47.9",
+      "sourceURL": "https://cacher-download.nyc3.digitaloceanspaces.com/Cacher-2.47.9-universal-mac.zip",
+      "artifactSHA256": "03e5268ab948e68135dbea2d25c7f2504992322fd8cf5ba1c12b08d8187b364a",
+      "apps": [
+        {
+          "bundleName": "Cacher.app",
+          "bundleIdentifier": "net.PenguinLabs.Cacher"
+        }
+      ]
+    },
+    "calibrite-profiler": {
+      "caskVersion": "3.1.2",
+      "sourceURL": "https://github.com/LUMESCA/calibrite-profiler-releases/releases/download/v3.1.2/calibrite-PROFILER-3.1.2.dmg",
+      "artifactSHA256": "b976a74bbe10aca00794aac225f3f7ca594e039ee82960793da526c3d097a52e",
+      "apps": [
+        {
+          "bundleName": "calibrite PROFILER.app",
+          "bundleIdentifier": "com.calibrite.profiler"
+        }
+      ]
+    },
+    "calcservice": {
+      "caskVersion": "3.5.1",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/calcservice/3.5.1/CalcService.app.zip",
+      "artifactSHA256": "844f46b54c7168fb8783a8a8ecb1055377927b540c2e27d6915b2d5432172daa",
+      "apps": [
+        {
+          "bundleName": "CalcService.app",
+          "bundleIdentifier": "org.grunenberg.CalcService"
+        }
+      ]
+    },
+    "capto": {
+      "caskVersion": "2.1.6,1002.1.6007",
+      "sourceURL": "https://d3l6g06uqih57x.cloudfront.net/Captomac/webstore/Capto.dmg",
+      "artifactSHA256": "4b5f7c4cead5ddbfd4a28f7e9f0a954f941a52fe974af08495b15076a58e9d90",
+      "apps": [
+        {
+          "bundleName": "Capto.app",
+          "bundleIdentifier": "com.globaldelight.Capto"
+        }
+      ]
+    },
+    "carbide-create": {
+      "caskVersion": "853",
+      "sourceURL": "https://carbide-downloads.website-us-east-1.linodeobjects.com/cc/stable/853/CarbideCreate-853.dmg",
+      "artifactSHA256": "35a06405128209a149480a0f73a54e8adfd694c97b20b11c30f1b87c1066e80e",
+      "apps": []
+    },
+    "cardhop": {
+      "caskVersion": "2.5",
+      "sourceURL": "https://cdn.flexibits.com/Cardhop_2.5.zip",
+      "artifactSHA256": "54dd8a4389b20ddf4f8d0274d2059758eb84f5926b5cbf75b5215f2759c56bf4",
+      "apps": [
+        {
+          "bundleName": "Cardhop.app",
+          "bundleIdentifier": "com.flexibits.cardhop.mac"
+        }
+      ]
+    },
+    "camerabag-photo": {
+      "caskVersion": "2026.1.0",
+      "sourceURL": "https://nevercenter.com/camerabag/download/filearchive/Install_CameraBag_Photo_2026_1_0_mac.dmg",
+      "artifactSHA256": "0ae7e7fca2d28d44960fdd6b11b51debe169d677487057d5117df0816d88664c",
+      "apps": [
+        {
+          "bundleName": "CameraBag Photo.app",
+          "bundleIdentifier": "com.nevercenter.camerabagphoto"
+        }
+      ]
+    },
+    "calhash": {
+      "caskVersion": "1.5.8",
+      "sourceURL": "https://www.titanium-software.fr/download/26/CalHash.dmg",
+      "artifactSHA256": "7fa4a01bb0a56d42142d62ab2b2aa775e5a4d85e3eb78893ce57c38c32536a20",
+      "apps": [
+        {
+          "bundleName": "CalHash.app",
+          "bundleIdentifier": "com.titanium.CalHash"
+        }
+      ]
     }
   }
 }

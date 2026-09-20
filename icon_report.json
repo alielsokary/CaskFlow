@@ -233,6 +233,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "cardpresso": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 4b251d7c469f...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "chatty": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/chatty.png",
