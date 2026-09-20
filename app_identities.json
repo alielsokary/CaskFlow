@@ -13328,6 +13328,270 @@
           "bundleIdentifier": "net.telestream.wirecast"
         }
       ]
+    },
+    "4k-image-compressor": {
+      "caskVersion": "26.0.0",
+      "sourceURL": "https://dl.4kdownload.com/app/4kimagecompressor_26.0.0_arm64.dmg",
+      "artifactSHA256": "fa61a084c3d901b7906dc9e03c94c372c6d2513bc447c6f1653164ac3c6c2447",
+      "apps": [
+        {
+          "bundleName": "4K Image Compressor.app",
+          "bundleIdentifier": "com.openmedia.4kimagecompressor"
+        }
+      ]
+    },
+    "5kplayer": {
+      "caskVersion": "6.11.0",
+      "sourceURL": "https://www.5kplayer.com/download/5kplayer-setup.dmg",
+      "artifactSHA256": "38cdb8aa671c65eb4505b515294a0ae81e889b2d4f47af93dfb0d92d868a3896",
+      "apps": [
+        {
+          "bundleName": "5KPlayer.app",
+          "bundleIdentifier": "com.digiarty.5KPlayer"
+        }
+      ]
+    },
+    "accessmenubarapps": {
+      "caskVersion": "2.6.1",
+      "sourceURL": "https://www.ortisoft.de/resources/AccessMenuBarApps2.6.1.zip",
+      "artifactSHA256": "fe8a08d721af4b9e5e71bb71f3b876169fecde8219b53c01938861c2781fb16c",
+      "apps": [
+        {
+          "bundleName": "AccessMenuBarApps.app",
+          "bundleIdentifier": "de.ortisoft.AccessMenubarApps"
+        }
+      ]
+    },
+    "ableton-live-intro": {
+      "caskVersion": "12.4.6",
+      "sourceURL": "https://cdn-downloads.ableton.com/channels/12.4.6/ableton_live_intro_12.4.6_universal.dmg",
+      "artifactSHA256": "c931dcef54423f6ff14a8758ed647ca3ae948a0c7d3f90c0d3d8b38e6022a550",
+      "apps": [
+        {
+          "bundleName": "Ableton Live 12 Intro.app",
+          "bundleIdentifier": "com.ableton.live"
+        }
+      ]
+    },
+    "8x8-work": {
+      "caskVersion": "8.37.2-1",
+      "sourceURL": "https://work-desktop-assets.8x8.com/prod-publish/ga/work-arm64-dmg-v8.37.2-1.dmg",
+      "artifactSHA256": "3915128bf0a3f8700781c55184254638f4b323d990668fe712f6742d1aecbe5c",
+      "apps": [
+        {
+          "bundleName": "8x8 Work.app",
+          "bundleIdentifier": "com.electron.8x8---virtual-office"
+        }
+      ]
+    },
+    "ableset": {
+      "caskVersion": "3.1.5",
+      "sourceURL": "https://s3.amazonaws.com/download.ableset.app/mac-arm64/AbleSet-3.1.5-arm64.dmg",
+      "artifactSHA256": "da0f4ef3317cd88f4089bcdd411220ed63fac97da9bb6fb934f5a88b0116419c",
+      "apps": [
+        {
+          "bundleName": "AbleSet.app",
+          "bundleIdentifier": "org.leolabs.ableset"
+        }
+      ]
+    },
+    "adapter": {
+      "caskVersion": "2.1.6",
+      "sourceURL": "https://assets.macroplant.com/download/4/Adapter-2.1.6.dmg",
+      "artifactSHA256": "ef2de9f0795cd446d26a4de1180b2580402abe8e5f13368e42d8da39eadde729",
+      "apps": [
+        {
+          "bundleName": "Adapter.app",
+          "bundleIdentifier": "com.macroplant.adapter"
+        }
+      ]
+    },
+    "4k-video-to-mp3": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://dl.4kdownload.com/app/4kvideotomp3_3.0.1.dmg",
+      "artifactSHA256": "3a9b4b9920a712e3e356ea09ca770b8d59c88926ae7a63bd530a2d9682a24a8b",
+      "apps": [
+        {
+          "bundleName": "4K Video to MP3.app",
+          "bundleIdentifier": "com.openmedia.4kvideotomp3"
+        }
+      ]
+    },
+    "8bitdo-ultimate-software": {
+      "caskVersion": "2.0.6",
+      "sourceURL": "https://tools.8bitdo.com/8BitdoUltimateSoftware/8BitDoUltimateSoftwareV2.0.6.zip",
+      "artifactSHA256": "21c0af67e6aad0cda117d0ded8d964abf51f2957ab1c7caf0258fdc3e0178abb",
+      "apps": [
+        {
+          "bundleName": "8BitDo Ultimate Software.app",
+          "bundleIdentifier": "com.8BitDo.Advance"
+        }
+      ]
+    },
+    "ableton-live-lite": {
+      "caskVersion": "12.4.6",
+      "sourceURL": "https://cdn-downloads.ableton.com/channels/12.4.6/ableton_live_lite_12.4.6_universal.dmg",
+      "artifactSHA256": "c2c022747d70f1324dcb8fceb1b1aac1476ebd22eead97cdcd5746fa0e40fc7e",
+      "apps": [
+        {
+          "bundleName": "Ableton Live 12 Lite.app",
+          "bundleIdentifier": "com.ableton.live"
+        }
+      ]
+    },
+    "ableton-live-standard": {
+      "caskVersion": "12.4.6",
+      "sourceURL": "https://cdn-downloads.ableton.com/channels/12.4.6/ableton_live_standard_12.4.6_universal.dmg",
+      "artifactSHA256": "4099818d785637e9b19dd20957ae73bad2a8e25e42bb372e4d39fc9864bff925",
+      "apps": [
+        {
+          "bundleName": "Ableton Live 12 Standard.app",
+          "bundleIdentifier": "com.ableton.live"
+        }
+      ]
+    },
+    "5ire": {
+      "caskVersion": "0.15.1",
+      "sourceURL": "https://github.com/nanbingxyz/5ire/releases/download/v0.15.1/5ire-0.15.1-arm64.dmg",
+      "artifactSHA256": "617a55c4b3fa5fd5872861cd5cda8f6dfdb8039b1468345dff8cc8d5411324cd",
+      "apps": [
+        {
+          "bundleName": "5ire.app",
+          "bundleIdentifier": "app.5ire.desktop"
+        }
+      ]
+    },
+    "accordance": {
+      "caskVersion": "14.1.2",
+      "sourceURL": "https://d366ra67x2bs56.cloudfront.net/mac/Acc_14.1.2.zip",
+      "artifactSHA256": "0ea778147a93b1e4fb20d8fe272859bb27bb624c12bdc99a44c1de2908d93aea",
+      "apps": [
+        {
+          "bundleName": "Accordance.app",
+          "bundleIdentifier": "com.OakTree.Accordance"
+        }
+      ]
+    },
+    "4k-tokkit": {
+      "caskVersion": "26.0.0",
+      "sourceURL": "https://dl.4kdownload.com/app/4ktokkit_26.0.0_arm64.dmg",
+      "artifactSHA256": "4240c983f775c86c4585413ed254a69d295c60f0d100f9c416434974daa7f70e",
+      "apps": [
+        {
+          "bundleName": "4K Tokkit.app",
+          "bundleIdentifier": "com.openmedia.4ktokkit"
+        }
+      ]
+    },
+    "activedock": {
+      "caskVersion": "2.882",
+      "sourceURL": "https://macplus-software.com/downloads/ActiveDock.zip",
+      "artifactSHA256": "427fca10f88337dd90306a7009015dedc795be3ca0018158e14784627f8e2f16",
+      "apps": [
+        {
+          "bundleName": "ActiveDock 2.app",
+          "bundleIdentifier": "com.sergey-gerasimenko.ActiveDock-2"
+        }
+      ]
+    },
+    "a-better-finder-attributes": {
+      "caskVersion": "7.49",
+      "sourceURL": "https://www.publicspace.net/download/signedABFA7.zip",
+      "artifactSHA256": "f89a69f17a2888e5696bdb525f077356039035ab20b10b92cd8eabe3fa5464a7",
+      "apps": [
+        {
+          "bundleName": "A Better Finder Attributes 7.app",
+          "bundleIdentifier": "net.publicspace.abfa7"
+        }
+      ]
+    },
+    "abbyy-finereader-pdf": {
+      "caskVersion": "1402.19",
+      "sourceURL": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
+      "artifactSHA256": "f837b1213f105f539c7d8d248351297dcba78eb77e65a1c3f2ac82b6ddac66d8",
+      "apps": [
+        {
+          "bundleName": "ABBYY FineReader PDF.app",
+          "bundleIdentifier": "com.abbyy.FineReader"
+        }
+      ]
+    },
+    "acreom": {
+      "caskVersion": "1.20.4",
+      "sourceURL": "https://github.com/Acreom/app/releases/download/v1.20.4/acreom-1.20.4-arm64.dmg",
+      "artifactSHA256": "91b673c58c1c531f3dd7c16d7a2c2f4a4bc7e5cde04e04fa54f54e50214e1233",
+      "apps": [
+        {
+          "bundleName": "acreom.app",
+          "bundleIdentifier": "com.acreom.acreom-desktop"
+        }
+      ]
+    },
+    "abyssoft-teleport": {
+      "caskVersion": "1.3.5",
+      "sourceURL": "https://github.com/abyssoft/teleport/releases/download/v1.3.5/teleport-v1.3.5.zip",
+      "artifactSHA256": "2fbb28b2ffe884521b222509b59f1006b751325922b936acb974d36a6622d897",
+      "apps": [
+        {
+          "bundleName": "teleport.app",
+          "bundleIdentifier": "com.abyssoft.teleport"
+        }
+      ]
+    },
+    "ace-studio": {
+      "caskVersion": "2.1.3,2202",
+      "sourceURL": "https://as-api-ws-cdn-1.tdacestudio.com/web/app/ACE_Studio_2.1.3_2202_arm64_general.dmg",
+      "artifactSHA256": "6982f42c10a982ab71aed21accf4b1b0998390e6ed7529f92a729d4273b93e35",
+      "apps": [
+        {
+          "bundleName": "ACE Studio.app",
+          "bundleIdentifier": "com.timedomain.AceStudio"
+        }
+      ]
+    },
+    "4k-stogram": {
+      "caskVersion": "4.9.0",
+      "sourceURL": "https://dl.4kdownload.com/app/4kstogram_4.9.0_arm64.dmg",
+      "artifactSHA256": "4aa6ff10b55fd46b9eda84ea83cc5e026c9ee376b93bdf7ce832bdc561deb2e3",
+      "apps": [
+        {
+          "bundleName": "4K Stogram.app",
+          "bundleIdentifier": "com.openmedia.4kstogram"
+        }
+      ]
+    },
+    "4peaks": {
+      "caskVersion": "1.8",
+      "sourceURL": "https://downloads.nucleobytes.com/4peaks.dmg",
+      "artifactSHA256": "cc87ace54d8d667681b7a9a51538f877d3800b8a521a700c3d054f45cc0586bb",
+      "apps": [
+        {
+          "bundleName": "4Peaks.app",
+          "bundleIdentifier": "com.mekentosj.4peaks"
+        }
+      ]
+    },
+    "accord": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/evelyneee/accord/releases/download/v1.7.1/Accord.app.zip",
+      "artifactSHA256": "6dacc0767a03265ea6e9103d40eab4f9c51c8ad7ab6c3b86f9f3d992c630ce80",
+      "apps": [
+        {
+          "bundleName": "Accord.app",
+          "bundleIdentifier": "red.evelyn.accord"
+        }
+      ]
+    },
+    "4k-slideshow-maker": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1.dmg",
+      "artifactSHA256": "4761cf9ebfde489f5aef14a2f6f28064111f0729d15246a97fb06fcde8666e67",
+      "apps": [
+        {
+          "bundleName": "4K Slideshow Maker.app",
+          "bundleIdentifier": "com.openmedia.4kslideshowmaker"
+        }
+      ]
     }
   }
 }

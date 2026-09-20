@@ -5,6 +5,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "abstract": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "acronis-true-image": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
