@@ -5332,7 +5332,14 @@
       "caskVersion": "4.2.1",
       "sourceURL": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
       "artifactSHA256": "25675fd3e6002d4768c26c1f938ccfcd4a5c0459cef0ae9cfa1e2f7193378cba",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Happ.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     },
     "linphone": {
       "caskVersion": "6.2.2",
@@ -5470,7 +5477,14 @@
       "caskVersion": "3.2.11",
       "sourceURL": "https://kimi-img.moonshot.cn/app/download/mac/kimi_3.2.11.dmg",
       "artifactSHA256": "9d1eb8690be9f4bdae3008d342355851979a7969cb867d4a39f2c02593720843",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Kimi Installer.app/Contents/Helpers/Kimi.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "reqable": {
       "caskVersion": "3.2.23",
@@ -9400,7 +9414,14 @@
       "caskVersion": "1.1.0",
       "sourceURL": "https://github.com/jkcoxson/idevice_pair/releases/download/v1.1.0/idevice_pair--macos-universal.dmg",
       "artifactSHA256": "9ff54171dccdb0a9b0e72ec89e43a479823c53ee54c2121fe9f053cc2cb940ce",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "idevice_pair.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.jkcoxson.idevice_pair'"
+        }
+      ]
     },
     "sakura": {
       "caskVersion": "3.2.0",
@@ -9577,7 +9598,14 @@
       "caskVersion": "1.3.0",
       "sourceURL": "https://github.com/legcord/legcord/releases/download/v1.3.0/legcord-1.3.0-mac-universal.dmg",
       "artifactSHA256": "02b3a74e859feaeaf4a872e096ba2dba2da72fa7d970215b8efe71edd32298b5",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "legcord.app",
+          "bundleIdentifier": "app.legcord.Legcord"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "repobar": {
       "caskVersion": "0.9.2",
@@ -12333,7 +12361,14 @@
       "caskVersion": "0.83.4",
       "sourceURL": "https://github.com/mayocream/koharu/releases/download/0.83.4/koharu_0.83.4_aarch64.dmg",
       "artifactSHA256": "731af6c2c1716ddb8a0bae49b5f5aee10e54563b919667b92e21b8ed28c2b10f",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "koharu.app",
+          "reason": "unsupported CFBundleIdentifier: 'Koharu'"
+        }
+      ]
     },
     "equibop": {
       "caskVersion": "3.3.1",
@@ -19806,7 +19841,14 @@
       "caskVersion": "4.49.0,251028.1453",
       "sourceURL": "https://downloads.poi.de/fotokasten/pgx-mac/de_DE/fotokasten_22153088_de_DE_4.49.0-251028.1453.dmg",
       "artifactSHA256": "c76b6736fc6a84bb6b71c0e81415031d09095172e82b9df0df81d280bab26ec5",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Fotokasten.app",
+          "bundleIdentifier": "de.designer.fotokasten.osx"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "focusany": {
       "caskVersion": "2.2.0",
@@ -19834,13 +19876,27 @@
       "caskVersion": "52",
       "sourceURL": "https://files.ipd.uw.edu/pub/foldit/Foldit-macos_x64.dmg",
       "artifactSHA256": "3578b46b4cc4e81c1873cffe93d423dc2df325efe291d2425fa644e34d777e99",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Foldit.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
     },
     "fontcreator": {
       "caskVersion": "16.0.0.3082",
       "sourceURL": "https://www.high-logic.com/previousrelease/FontCreator16.0.0.3082.dmg",
       "artifactSHA256": "41a17d2baa849142333acacf504ad3ef8b01ca2e01ee86a3bf223884cca04bd8",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "FontCreator.app",
+          "reason": "unsupported CFBundleIdentifier: 'FontCreator'"
+        }
+      ]
     },
     "fontfinagler": {
       "caskVersion": "2.0.3",
@@ -20330,7 +20386,14 @@
       "caskVersion": "2025.09.0,17.09.25_860732f",
       "sourceURL": "https://github.com/gama-platform/gama/releases/download/2025.09.0/GAMA_2025.09.0_MacOS_M1_with_JDK_17.09.25_860732f.dmg",
       "artifactSHA256": "239959e7c593fbb91814b8b4385d9fb11f3c861507f7f66e622d4f9efadddd50",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Gama.app",
+          "reason": "unsupported CFBundleIdentifier: 'Gama'"
+        }
+      ]
     },
     "gdevelop": {
       "caskVersion": "5.6.282",
@@ -20347,7 +20410,14 @@
       "caskVersion": "2025.09.0,17.09.25_860732f",
       "sourceURL": "https://github.com/gama-platform/gama/releases/download/2025.09.0/GAMA_2025.09.0_MacOS_M1_17.09.25_860732f.dmg",
       "artifactSHA256": "e88709354ba28b05b6cf01e879401b1d964a3f4a6bbd8026ae8afc9e7c55ca05",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Gama.app",
+          "reason": "unsupported CFBundleIdentifier: 'Gama'"
+        }
+      ]
     },
     "gamma-control": {
       "caskVersion": "6.3.5",
@@ -20551,7 +20621,14 @@
       "caskVersion": "2.1",
       "sourceURL": "https://mirror.cs.uchicago.edu/fawkes/files/glaze/Glaze-2.1-arm64.dmg",
       "artifactSHA256": "8fe831d650ffb4c8cf425bb77bb529148756e850368fff19315e8457c0fdbdde",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Glaze.app",
+          "reason": "unsupported CFBundleIdentifier: 'Glaze'"
+        }
+      ]
     },
     "glyphs": {
       "caskVersion": "3.5.1,3534",
@@ -20722,7 +20799,14 @@
       "caskVersion": "2.5.0",
       "sourceURL": "https://www.earthbyte.org/download/10116/",
       "artifactSHA256": "5aff168e5011928fa717907ef3a8066ad2dc60011b1227f65aaa11b14d38c13a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "GPlates/gplates.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "gray": {
       "caskVersion": "0.17.0",
@@ -20805,7 +20889,14 @@
       "caskVersion": "0.15.1",
       "sourceURL": "https://github.com/guillaumechereau/goxel/releases/download/v0.15.1/goxel-0.15.1-mac.zip",
       "artifactSHA256": "5a9213166e77bbb80f839499943af37524f5866f37d1948bcaddf9a3fec8f27a",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Goxel.app",
+          "bundleIdentifier": "com.noctuasoftware.goxel"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "greenfoot": {
       "caskVersion": "3.9.0",
@@ -20965,7 +21056,14 @@
       "caskVersion": "8.5.8",
       "sourceURL": "https://gridsapp.net/bin/Grids_8.5.8.zip",
       "artifactSHA256": "61522452b57cfe5cfd023b4c01cdd5d3a8a491535fc9a15ea2940fe974c468c9",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Grids.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     },
     "hdfview": {
       "caskVersion": "3.4.1",
@@ -20993,7 +21091,14 @@
       "caskVersion": "4.2.1",
       "sourceURL": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-mac-arm64.zip",
       "artifactSHA256": "073fb9b79225d516edf380fc2128083fcb8773e39d50e99cc4b9f9ea8ff33a68",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Headset.app",
+          "bundleIdentifier": "co.headsetapp.app"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "hoppscotch-selfhost": {
       "caskVersion": "26.8.1-0",
@@ -21219,7 +21324,14 @@
       "caskVersion": "0.1.0",
       "sourceURL": "https://chrislaffra.com/happymac/happymac.dmg",
       "artifactSHA256": "a3f5f4fda00e8bffcd81450f2978dd720b36bfccf7b6f1c204ace2bed41d6ed8",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "happymac.app",
+          "bundleIdentifier": "com.chrislaffra.osx.happymac"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "harvest": {
       "caskVersion": "3.0.13",
@@ -21258,7 +21370,14 @@
       "caskVersion": "1.0.6",
       "sourceURL": "https://github.com/Iconscout/iconscout-app/releases/download/v1.0.6/IconScout-1.0.6.dmg",
       "artifactSHA256": "ce9290257210a46c3a2e8f0c584e0b1ff798fa66da0c054258a9848c0deb7ee2",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Iconscout.app",
+          "bundleIdentifier": "com.electron.iconscout"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "hstracker": {
       "caskVersion": "3.6.11",
@@ -21792,7 +21911,14 @@
       "caskVersion": "5.15",
       "sourceURL": "https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-arm64.dmg",
       "artifactSHA256": "c4637b9bbfa075c9e25636203e0fda73bbf8ef0166ca35866dbdd13d9f589430",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "JabRef.app",
+          "reason": "unsupported CFBundleIdentifier: 'JabRef'"
+        }
+      ]
     },
     "istatistica-core": {
       "caskVersion": "1.0,202502191",
@@ -21985,7 +22111,22 @@
       "caskVersion": "9.7.1",
       "sourceURL": "https://www.jsoftware.com/download/j9.7/install/j9.7.1_mac.zip",
       "artifactSHA256": "fc34fe96fc19520c9f317ecb6b318aeb3bd83a4994b505dfa1216cf1775fd3e3",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "jbrk.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        },
+        {
+          "artifact": "jqt.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        },
+        {
+          "artifact": "jcon.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
     },
     "istat-server": {
       "caskVersion": "3.03",
@@ -22402,7 +22543,14 @@
       "caskVersion": "4.7.0",
       "sourceURL": "https://keymanager.trustasia.com/release/KeyManager-4.7.0-arm64.dmg",
       "artifactSHA256": "3f8f57626280fd077b8b87367e13b73d5ca8516c5466c0cb19ebd3e93b6f88ee",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "KeyManager.app",
+          "reason": "unsupported CFBundleIdentifier: 'keymanager'"
+        }
+      ]
     },
     "katalon-studio": {
       "caskVersion": "10.3.2",
@@ -22881,7 +23029,14 @@
       "caskVersion": "2.1.1",
       "sourceURL": "https://download.librepcb.org/releases/2.1.1/librepcb-2.1.1-mac-arm64.dmg",
       "artifactSHA256": "d3050399256c0d15cf7e561ca52e09b59facc25801d5bdf56d2df643236e3206",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "librepcb.app",
+          "bundleIdentifier": "org.librepcb.LibrePCB"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "leech": {
       "caskVersion": "3.2.1",
@@ -23041,7 +23196,14 @@
       "caskVersion": "2.3.0",
       "sourceURL": "https://github.com/modstart-lib/linkandroid/releases/download/v2.3.0/LinkAndroid-2.3.0-mac-arm64.dmg",
       "artifactSHA256": "3107388eb8057d7c18cbd3c0478128dd76d7b4eef7c943c64035a080c7a96320",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "LinkAndroid.app",
+          "reason": "unsupported CFBundleIdentifier: 'LinkAndroid'"
+        }
+      ]
     },
     "linguax": {
       "caskVersion": "2025.12,5200",
@@ -23476,7 +23638,14 @@
       "caskVersion": "1.8",
       "sourceURL": "https://www.mediahuman.com/download/LyricsFinder-arm.dmg",
       "artifactSHA256": "3af7901ac93081dfa44bcdff1718330a0194e0623668b8d430b63fe5afe80755",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "LyricsFinder.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.mediahuman.Lyrics Finder'"
+        }
+      ]
     },
     "lycheeslicer": {
       "caskVersion": "7.6.6",
@@ -23570,7 +23739,14 @@
       "caskVersion": "4.0.51",
       "sourceURL": "https://www.macrorecorder.com/MacroRecorderSetup.dmg",
       "artifactSHA256": "eb95f1f7fe4b2f6ee9d8962de8a6ac8b3e3fc97de446fdbe246133290bbba67a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "MacroRecorder.app",
+          "reason": "unsupported CFBundleIdentifier: 'MacroRecorder'"
+        }
+      ]
     },
     "maestral": {
       "caskVersion": "1.9.5",
@@ -34709,6 +34885,19 @@
         {
           "bundleName": "Airtool 2.app",
           "bundleIdentifier": "com.intuitibits.airtool2"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
+    },
+    "golly": {
+      "caskVersion": "5.0",
+      "sourceURL": "https://downloads.sourceforge.net/golly/golly/golly-5.0/golly-5.0-mac.dmg",
+      "artifactSHA256": "cf03c5b7941566f6222a519b984b6a6cd6e6e2107f61a31995be79a8b50c304e",
+      "apps": [
+        {
+          "bundleName": "Golly.app",
+          "bundleIdentifier": "net.sourceforge.golly"
         }
       ],
       "extractionVersion": 2,
