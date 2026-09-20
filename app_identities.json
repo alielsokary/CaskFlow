@@ -33462,6 +33462,271 @@
           "bundleIdentifier": "com.sieren.WidgetToggler"
         }
       ]
+    },
+    "wiso-steuer-2024": {
+      "caskVersion": "31.15.5330-HF1",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2024/Mac/Files/31.15.5330-HF1/SteuerMac2024-31.15.5330.dmg",
+      "artifactSHA256": "60d4d991179650b4e4f9c95182bf2b3235b6da3745170e5e72b1d70eb6acf418",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2024.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2024"
+        }
+      ]
+    },
+    "wiso-steuer-2023": {
+      "caskVersion": "30.17.5610-HF1",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2023/Mac/Files/30.17.5610-HF1/SteuerMac2023-30.17.5610.dmg",
+      "artifactSHA256": "0af66e1b300048513f84fa6185dd6d62f765054dd8168e32004405b56a61e070",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2023.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2023"
+        }
+      ]
+    },
+    "witsy": {
+      "caskVersion": "3.5.2",
+      "sourceURL": "https://github.com/Kochava-Studios/witsy/releases/download/v3.5.2/Witsy-3.5.2-darwin-arm64.dmg",
+      "artifactSHA256": "e9c8e371362c43b41812b17f7280807a5feb3cb9a4829ca0909824639ca23205",
+      "apps": [
+        {
+          "bundleName": "Witsy.app",
+          "bundleIdentifier": "com.nabocorp.witsy"
+        }
+      ]
+    },
+    "windows95": {
+      "caskVersion": "5.0.1",
+      "sourceURL": "https://github.com/felixrieseberg/windows95/releases/download/v5.0.1/windows95-darwin-arm64-5.0.1.zip",
+      "artifactSHA256": "93975a1de7f1268588438da922c2793c2dc2343b886d731a14d74e59c9d5367a",
+      "apps": [
+        {
+          "bundleName": "windows95.app",
+          "bundleIdentifier": "com.felixrieseberg.windows95"
+        }
+      ]
+    },
+    "wondershare-edrawmax": {
+      "caskVersion": "14.5.2",
+      "sourceURL": "https://download.edrawsoft.com/cbs_down/edraw-max_full5380.zip",
+      "artifactSHA256": "1171c6350a201de0ee0daedbb6c5106d5afb34b641b401f042dc475673a2da7f",
+      "apps": [
+        {
+          "bundleName": "Wondershare EdrawMax.app",
+          "bundleIdentifier": "com.edrawsoft.edrawmax"
+        }
+      ]
+    },
+    "wondershare-uniconverter": {
+      "caskVersion": "17.6.0",
+      "sourceURL": "https://download.wondershare.com/cbs_down/uniconverter-mac_arm_17.6.0_full14207.zip",
+      "artifactSHA256": "d56bf9bcfae047ad91ff2dc8124ed74cd761a1d411e6f50bf6d4897b73304a56",
+      "apps": [
+        {
+          "bundleName": "Wondershare UniConverter 17.app",
+          "bundleIdentifier": "com.Wondershare.UniConverter17"
+        }
+      ]
+    },
+    "wiso-steuer-2020": {
+      "caskVersion": "10.21.5040-RC1",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2020/Mac/Files/10.21.5040-RC1/steuerMac2020-10.21.5040.dmg",
+      "artifactSHA256": "6bfc96a1aedff7a9e21f576a075dcc11fd960570efcea180499215cf189c412e",
+      "apps": []
+    },
+    "wootility": {
+      "caskVersion": "5.4.2",
+      "sourceURL": "https://wootility-updates.ams3.cdn.digitaloceanspaces.com/wootility-mac/Wootility-5.4.2-arm64.dmg",
+      "artifactSHA256": "4d4e90b4169990900f7fb9d6aed16ead107aaeba72bed16a68a37d3c1f78912e",
+      "apps": [
+        {
+          "bundleName": "Wootility.app",
+          "bundleIdentifier": "com.wooting.wootility"
+        }
+      ]
+    },
+    "wiso-steuer-2022": {
+      "caskVersion": "29.17.5590-RC1",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2022/Mac/Files/29.17.5590-RC1/SteuerMac2022-29.17.5590.dmg",
+      "artifactSHA256": "8803ead7efbb4b3743b2716bc2627556d3e48569ac5f93449cb5ab403d16ceb9",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer-Mac 2022.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2022"
+        }
+      ]
+    },
+    "work-louder-input": {
+      "caskVersion": "0.18.4",
+      "sourceURL": "https://github.com/worklouder/input-releases/releases/download/v0.18.4/input-0.18.4-arm64.dmg",
+      "artifactSHA256": "8192f5170cac808e4ecd000c8494a5b9fd44c4a91a5bd773a802a086ddf43690",
+      "apps": [
+        {
+          "bundleName": "input.app",
+          "bundleIdentifier": "it.focusense.input-app"
+        }
+      ]
+    },
+    "workflowy": {
+      "caskVersion": "4.3.2609172106",
+      "sourceURL": "https://github.com/workflowy/desktop/releases/download/v4.3.2609172106/WorkFlowy.zip",
+      "artifactSHA256": "3653299167eacec3f94591fa5c807d0854f72111befcdcdfb3c025f31be39c2f",
+      "apps": [
+        {
+          "bundleName": "WorkFlowy.app",
+          "bundleIdentifier": "com.workflowy.desktop"
+        }
+      ]
+    },
+    "workbench": {
+      "caskVersion": "1.0.9",
+      "sourceURL": "https://github.com/mxcl/Workbench/releases/download/1.0.9/Workbench-1.0.9.zip",
+      "artifactSHA256": "7fec7bf1fb93854ed87cbaf4d9e21ef964adfc064d731b82a84a499f5b911e1f",
+      "apps": [
+        {
+          "bundleName": "Workbench.app",
+          "bundleIdentifier": "com.codebasesaga.macOS.Workbench"
+        }
+      ]
+    },
+    "wordservice": {
+      "caskVersion": "2.8.3",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/wordservice/2.8.3/WordService.app.zip",
+      "artifactSHA256": "35e553ec48d8dbae490142d184cd61396aed9a13e2c226580aba7683b1016d6e",
+      "apps": [
+        {
+          "bundleName": "WordService.app",
+          "bundleIdentifier": "org.grunenberg.WordService"
+        }
+      ]
+    },
+    "wiso-steuer-2026": {
+      "caskVersion": "33.10.3640-RC1,33.10.3640",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2026/Mac/Files/33.10.3640-RC1/SteuerMac2026-33.10.3640.dmg",
+      "artifactSHA256": "ed06affa6bd105a711ab86096f28a2760df851c4d2fb02690e75feac7ee0bf19",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2026.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2026"
+        }
+      ]
+    },
+    "winx-hd-video-converter": {
+      "caskVersion": "6.8.4",
+      "sourceURL": "https://www.winxdvd.com/download/winx-hd-video-converter-for-mac.dmg",
+      "artifactSHA256": "d59ce9cf3a5d6fffa8be6c45ef67c1a6a3583449cbf113e12cb6f62b9dee5c41",
+      "apps": [
+        {
+          "bundleName": "WinX HD Video Converter for Mac.app",
+          "bundleIdentifier": "com.winxdvd.hdvideoconverterformac"
+        }
+      ]
+    },
+    "wiso-steuer-2021": {
+      "caskVersion": "28.17.5070-RC1",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2021/Mac/Files/28.17.5070-RC1/SteuerMac2021-28.17.5070.dmg",
+      "artifactSHA256": "171a629e0c88e3aa9d3d847bc966eda9686ab645d88a3231b5f2bc757a0f6f80",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2021.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2021"
+        }
+      ]
+    },
+    "wordpresscom": {
+      "caskVersion": "8.2.4",
+      "sourceURL": "https://github.com/Automattic/wp-desktop/releases/download/v8.2.4/wordpress.com-macOS-dmg-8.2.4-arm64.dmg",
+      "artifactSHA256": "c18e0237290df62830c792ab95516effe5f54f7a0a774d8426de6a533f4c2e64",
+      "apps": [
+        {
+          "bundleName": "WordPress.com.app",
+          "bundleIdentifier": "com.automattic.wordpress"
+        }
+      ]
+    },
+    "wljs-notebook": {
+      "caskVersion": "3.1.3",
+      "sourceURL": "https://github.com/JerryI/wolfram-js-frontend/releases/download/v3.1.3/wljs-notebook-3.1.3-arm64-macos.dmg",
+      "artifactSHA256": "822791d020398bd4a9f1767bb36b74b1526354aa62d08f5d5f7ce5e1686bfe16",
+      "apps": []
+    },
+    "wins": {
+      "caskVersion": "3.6,55",
+      "sourceURL": "https://winswebsite.s3.us-east-005.backblazeb2.com/Wins.zip",
+      "artifactSHA256": "cf9b2d3f358a2fc87a6cae0f9f03a416f2978cd6e14065ad53357533a03ce8fb",
+      "apps": [
+        {
+          "bundleName": "Wins.app",
+          "bundleIdentifier": "cools.wins.main"
+        }
+      ]
+    },
+    "wooshy": {
+      "caskVersion": "49",
+      "sourceURL": "https://releases.wooshy.app/Wooshy.zip",
+      "artifactSHA256": "d51eec9a7d1ae9cb33e2846228314c402b801dda1384c1c4bbafa2a1f958b1f2",
+      "apps": [
+        {
+          "bundleName": "Wooshy.app",
+          "bundleIdentifier": "mo.com.sleeplessmind.Wooshy"
+        }
+      ]
+    },
+    "windowkeys": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://www.apptorium.com/public/products/windowkeys/releases/WindowKeys-3.0.1.zip",
+      "artifactSHA256": "38600e9ffc6488ec08a703bfeaa0f760efb4a26d6d1152e87e5f4f01355af8eb",
+      "apps": [
+        {
+          "bundleName": "WindowKeys.app",
+          "bundleIdentifier": "com.apptorium.WindowKeys"
+        }
+      ]
+    },
+    "wiznote": {
+      "caskVersion": "0.1.107",
+      "sourceURL": "https://get.wiz.cn/x/wiznote-desktop-0.1.107-mac-arm64.dmg",
+      "artifactSHA256": "72191dd13e51d1b00c9c1845b5bdd59a354ad6c3db219619c09666f15abf0513",
+      "apps": [
+        {
+          "bundleName": "WizNote.app",
+          "bundleIdentifier": "cn.wiznote.desktop"
+        }
+      ]
+    },
+    "wiso-steuer-2025": {
+      "caskVersion": "32.12.3380-HF1,32.12.3380",
+      "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2025/Mac/Files/32.12.3380-HF1/SteuerMac2025-32.12.3380.dmg",
+      "artifactSHA256": "2ac598c749da7c3d398e8924b2ffec4011f90e727d8eb8dd05df27ba7f398a02",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2025.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2025"
+        }
+      ]
+    },
+    "wolai": {
+      "caskVersion": "1.2.12",
+      "sourceURL": "https://cdn.wostatic.cn/dist/installers/wolai-1.2.12-arm64.dmg",
+      "artifactSHA256": "7f2265c01389c70fe5b2127ec06b92630f766737da9723fedf83cd06d0507555",
+      "apps": [
+        {
+          "bundleName": "wolai.app",
+          "bundleIdentifier": "com.wolai.app"
+        }
+      ]
+    },
+    "wondershare-filmora": {
+      "caskVersion": "13.0.25",
+      "sourceURL": "https://download.wondershare.com/cbs_down/filmora-mac_arm_13.0.25_full718.dmg",
+      "artifactSHA256": "c7bd2b1519fed1062cf9a20a4979d9a0a0321fd172be4f3e372108b2eeadcdb9",
+      "apps": [
+        {
+          "bundleName": "Wondershare Filmora Mac.app",
+          "bundleIdentifier": "com.wondershare.filmoramacos"
+        }
+      ]
     }
   }
 }
