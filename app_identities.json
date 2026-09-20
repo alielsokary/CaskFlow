@@ -28207,6 +28207,276 @@
           "bundleIdentifier": "readwise.Readwise-iBooks"
         }
       ]
+    },
+    "removebg": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://storage.googleapis.com/removebg-static/desktop/release/darwin/x64/remove.bg-darwin-x64-2.4.1.zip",
+      "artifactSHA256": "dab0c5105d9980dbd5406890bc3f8bcf3065340a59be2404a217e5a1c9d40fbf",
+      "apps": [
+        {
+          "bundleName": "remove.bg.app",
+          "bundleIdentifier": "bg.remove.mac.new"
+        }
+      ]
+    },
+    "retrace": {
+      "caskVersion": "0.8.7",
+      "sourceURL": "https://cdn.retrace.to/Retrace-v0.8.7.dmg",
+      "artifactSHA256": "f449fb6e15a82ef3b1b7c665b8535f915d102d8c634543ef0a4cce3122a8c3f4",
+      "apps": [
+        {
+          "bundleName": "Retrace.app",
+          "bundleIdentifier": "io.retrace.app"
+        }
+      ]
+    },
+    "repetier-host": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://download1.repetier.com/files/host-mac/Repetier-Host-Mac_1_2_1.dmg",
+      "artifactSHA256": "87aba4161581040c2e618b66887f0c192767ce193c4cd955967d3f4f3d53422d",
+      "apps": [
+        {
+          "bundleName": "Repetier-Host Mac.app",
+          "bundleIdentifier": "com.repetier.Repetier-Host-Mac"
+        }
+      ]
+    },
+    "renamer": {
+      "caskVersion": "7.3.3",
+      "sourceURL": "https://github.com/incbee/renamer-7-releases/releases/download/v7.3.3/Renamer-7.3.3-universal-mac.zip",
+      "artifactSHA256": "0a831dd865b662e94b55a5408643942f9017f6fb5b1a7d6d569f402933c528ef",
+      "apps": [
+        {
+          "bundleName": "Renamer.app",
+          "bundleIdentifier": "com.incrediblebee.Renamer"
+        }
+      ]
+    },
+    "reflect": {
+      "caskVersion": "3.3.6",
+      "sourceURL": "https://github.com/team-reflect/reflect-electron-updates/releases/download/v3.3.6/Reflect-darwin-universal-3.3.6.zip",
+      "artifactSHA256": "476bbf824f6d627a2c2b7acb385e01a606994195313af48fab90afc4d3c9f9ef",
+      "apps": [
+        {
+          "bundleName": "Reflect.app",
+          "bundleIdentifier": "app.reflect.ReflectDesktop"
+        }
+      ]
+    },
+    "renameclick": {
+      "caskVersion": "2.16.3",
+      "sourceURL": "https://github.com/noemaVision/renameclick/releases/download/v2.16.3/RenameClick-2.16.3-arm64.dmg",
+      "artifactSHA256": "110a83faa1681ff3d3dbf5fe7b7c2ef2b3edeac87b47752fdb432990f4c3836e",
+      "apps": [
+        {
+          "bundleName": "RenameClick.app",
+          "bundleIdentifier": "com.renameclick.app"
+        }
+      ]
+    },
+    "restic-browser": {
+      "caskVersion": "0.3.3",
+      "sourceURL": "https://github.com/emuell/restic-browser/releases/download/v0.3.3/Restic-Browser-v0.3.3-macOS.zip",
+      "artifactSHA256": "d2e772dd19912f0eed3053ba654cdd14ca44ea5039164be548362a8b0ab57e18",
+      "apps": []
+    },
+    "resolutionator": {
+      "caskVersion": "2.4",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/resolutionator240.dmg",
+      "artifactSHA256": "e9fb9b1946deddc62ff0bf5d46066a8cc91564c358e5d33bf85029f4ef75d5bb",
+      "apps": [
+        {
+          "bundleName": "Resolutionator.app",
+          "bundleIdentifier": "com.manytricks.Resolutionator"
+        }
+      ]
+    },
+    "replit": {
+      "caskVersion": "1.1.11",
+      "sourceURL": "https://desktop.replit.com/download/mac",
+      "artifactSHA256": "47e31c3da3e6ce701fe63e75ff5ca6a84ed72afa1e5ebae2b9447da480ba421e",
+      "apps": [
+        {
+          "bundleName": "Replit.app",
+          "bundleIdentifier": "com.electron.replit"
+        }
+      ]
+    },
+    "restream-chat": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://chat-client.restream.io/Restream+Chat-2.8.1.dmg",
+      "artifactSHA256": "9d97fbc52c80ca2537e8f63cc718154ed1cce6a9c63fbe56e21713eb97fd4877",
+      "apps": [
+        {
+          "bundleName": "Restream Chat.app",
+          "bundleIdentifier": "io.restream.chat"
+        }
+      ]
+    },
+    "remnote": {
+      "caskVersion": "1.28.28",
+      "sourceURL": "https://download2.remnote.io/remnote-desktop2/RemNote-1.28.28-arm64-mac.zip",
+      "artifactSHA256": "b9e3f83fd26927bffe5002a721068f4249f4e1a27fecc35b39401f1028743f32",
+      "apps": [
+        {
+          "bundleName": "RemNote.app",
+          "bundleIdentifier": "io.remnote"
+        }
+      ]
+    },
+    "remember-the-milk": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://www.rememberthemilk.com/download/mac/RememberTheMilk-1.7.1-arm64.zip",
+      "artifactSHA256": "59b834609e701523f6ce3d469088aadaf27be19b3c4b2b2ff5b4b38a26573d38",
+      "apps": [
+        {
+          "bundleName": "Remember The Milk.app",
+          "bundleIdentifier": "com.rememberthemilk.Deskmilk"
+        }
+      ]
+    },
+    "replicator": {
+      "caskVersion": "8.6.0",
+      "sourceURL": "https://github.com/jamf/Replicator/releases/download/v8.6.0/Replicator.zip",
+      "artifactSHA256": "6bc7bfa2557a6500d3ca8db68214493fbbb4531477160efa3c1ced756d44a51f",
+      "apps": [
+        {
+          "bundleName": "Replicator.app",
+          "bundleIdentifier": "com.jamf.jamf-migrator"
+        }
+      ]
+    },
+    "reflex-app": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://stuntsoftware.com/download/reflex_2.0.zip",
+      "artifactSHA256": "d827cd32cf730c5c8582b200ba1dfb6c1df03e30c3ac6b32c8563ae67d02b489",
+      "apps": [
+        {
+          "bundleName": "Reflex.app",
+          "bundleIdentifier": "com.stuntsoftware.Reflex"
+        }
+      ]
+    },
+    "remotehamradio": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://rhr-electron.s3.amazonaws.com/desktop-releases/RemoteHamRadio-2.4.1-universal-mac.zip",
+      "artifactSHA256": "2d2da356ac92d6ef7d163a5f806db9926b7b589a8d1be0ad6d62780a21914273",
+      "apps": [
+        {
+          "bundleName": "RemoteHamRadio.app",
+          "bundleIdentifier": "com.rst.rhr-desktop"
+        }
+      ]
+    },
+    "repo-prompt": {
+      "caskVersion": "2.1.33",
+      "sourceURL": "https://repoprompt.s3.us-east-2.amazonaws.com/RepoPrompt-2.1.33.dmg",
+      "artifactSHA256": "8931ec9450a0146e212f36a3f75a5b950a3d4b4d441746eb4f293ae7ba542c57",
+      "apps": [
+        {
+          "bundleName": "Repo Prompt.app",
+          "bundleIdentifier": "com.pvncher.repoprompt"
+        }
+      ]
+    },
+    "remote-buddy": {
+      "caskVersion": "2.7.3",
+      "sourceURL": "https://www.iospirit.com/products/remotebuddy/download/RemoteBuddy.zip",
+      "artifactSHA256": "bbac16001138f14a534ffae42464c3632f8fc2a964960df4d64c78ec5a35092a",
+      "apps": [
+        {
+          "bundleName": "Remote Buddy.app",
+          "bundleIdentifier": "com.iospirit.RemoteBuddy"
+        }
+      ]
+    },
+    "reflector": {
+      "caskVersion": "4.1.2",
+      "sourceURL": "https://download.airsquirrels.com/Reflector4/Mac/Reflector-4.1.2.dmg",
+      "artifactSHA256": "343c74569d8e6f5a0c33c76cd2fc6b7c4eb98db568e633d40c6f177b36294ce3",
+      "apps": [
+        {
+          "bundleName": "Reflector 4.app",
+          "bundleIdentifier": "com.squirrels.Reflector-4"
+        }
+      ]
+    },
+    "remote-wake-up": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://witt-software.com/downloads/remotewakeup/Remote%20Wake%20Up.dmg",
+      "artifactSHA256": "40990e095e07499cd46d6dd2f3d0a4a918a463000c0b3538d5aa055884acd4d3",
+      "apps": [
+        {
+          "bundleName": "Remote Wake Up.app",
+          "bundleIdentifier": "com.mac-attender.Remote-Wake-Up"
+        }
+      ]
+    },
+    "retcon": {
+      "caskVersion": "1.6.3",
+      "sourceURL": "https://downloads.lemon.garden/retcon/retcon-1.6.3.dmg",
+      "artifactSHA256": "09d1f705f03622013562196c4972e44635e70dce324c6aa2d782c1265e1337bd",
+      "apps": [
+        {
+          "bundleName": "Retcon.app",
+          "bundleIdentifier": "garden.lemon.Retcon"
+        }
+      ]
+    },
+    "retro-virtual-machine": {
+      "caskVersion": "2.1.20",
+      "sourceURL": "https://static.retrovm.org/release/2.1.20/RetroVirtualMachine.2.1.20.dmg",
+      "artifactSHA256": "01d3d60e419c1dcbaf7185aa465ea60dd072c0d3205792f0ea6adb97d4d78301",
+      "apps": [
+        {
+          "bundleName": "Retro Virtual Machine 2.1.app",
+          "bundleIdentifier": "com.madeinalacant.RetroVirtualMachine2"
+        }
+      ]
+    },
+    "restfox": {
+      "caskVersion": "0.40.0",
+      "sourceURL": "https://github.com/flawiddsouza/Restfox/releases/download/v0.40.0/Restfox-darwin-arm64-0.40.0.zip",
+      "artifactSHA256": "09d35033e323a9bae998643116dfbc391bcdf6f2128b6c98224c604e07982c56",
+      "apps": [
+        {
+          "bundleName": "Restfox.app",
+          "bundleIdentifier": "com.electron.restfox"
+        }
+      ]
+    },
+    "replaywebpage": {
+      "caskVersion": "2.5.3",
+      "sourceURL": "https://github.com/webrecorder/replayweb.page/releases/download/v2.5.3/ReplayWeb.page-2.5.3.dmg",
+      "artifactSHA256": "26374be14d413e454108b47772b4b4bc06f16bbc2a54835b75913051f85a5fcb",
+      "apps": [
+        {
+          "bundleName": "ReplayWeb.page.app",
+          "bundleIdentifier": "net.webrecorder.replaywebpage"
+        }
+      ]
+    },
+    "rescuetime": {
+      "caskVersion": "3.2.12.3",
+      "sourceURL": "https://assets.rescuetime.com/installers/RescueTimeInstaller_3.2.12.3.app.zip",
+      "artifactSHA256": "c7de80741554f19205d66bb7886b2183c02a761db7b8b0522d6d7a40a29d2e56",
+      "apps": [
+        {
+          "bundleName": "RescueTime.app",
+          "bundleIdentifier": "com.rescuetime.RescueTime"
+        }
+      ]
+    },
+    "refine": {
+      "caskVersion": "1.39",
+      "sourceURL": "https://refine.sh/release/stable/Refine_1.39.zip",
+      "artifactSHA256": "fdc989dfe2293ed495e87c9ba36803ce6af4b447e62c046d333328b956c639c0",
+      "apps": [
+        {
+          "bundleName": "Refine.app",
+          "bundleIdentifier": "com.runjuu.refine"
+        }
+      ]
     }
   }
 }
