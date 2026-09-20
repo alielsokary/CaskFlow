@@ -9509,7 +9509,14 @@
       "caskVersion": "3.9.23",
       "sourceURL": "https://www.mediahuman.net/files/YouTubeToMP3-arm.dmg",
       "artifactSHA256": "27f0e77915874d8697be62b8375f3191a9bfea27e0b6205d8493835e1da34f58",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "YouTube to MP3.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.mediahuman.YouTube to MP3'"
+        }
+      ]
     },
     "fresh": {
       "caskVersion": "4.0.7",
@@ -10121,7 +10128,14 @@
       "caskVersion": "3.6.9",
       "sourceURL": "https://www.intuitibits.com/downloads/WiFiExplorer_3.6.9.dmg",
       "artifactSHA256": "8c5841dcd4427ecb1bb6b77c05fb22ef1ccb082e73aa2701ff710ad00df9ceee",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "WiFi Explorer.app",
+          "reason": "unsupported CFBundleIdentifier: 'wifiexplorer'"
+        }
+      ]
     },
     "powerphotos": {
       "caskVersion": "3.4.7",
@@ -11618,7 +11632,14 @@
       "caskVersion": "0.8.136",
       "sourceURL": "https://github.com/xemu-project/xemu/releases/download/v0.8.136/xemu-0.8.136-macos-universal.zip",
       "artifactSHA256": "9b5f52240b12ff0d6ab3852b38a820dc92b99124db8a981ccf2ed2cb893f446e",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Xemu.app",
+          "bundleIdentifier": "xemu.app.0"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "stash": {
       "caskVersion": "4.3.0,545",
@@ -34232,7 +34253,14 @@
       "caskVersion": "10.21.5040-RC1",
       "sourceURL": "https://update.buhl-data.com/Updates/Steuer/2020/Mac/Files/10.21.5040-RC1/steuerMac2020-10.21.5040.dmg",
       "artifactSHA256": "6bfc96a1aedff7a9e21f576a075dcc11fd960570efcea180499215cf189c412e",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2020.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2020"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "wootility": {
       "caskVersion": "5.4.2",
@@ -34348,7 +34376,14 @@
       "caskVersion": "3.1.3",
       "sourceURL": "https://github.com/JerryI/wolfram-js-frontend/releases/download/v3.1.3/wljs-notebook-3.1.3-arm64-macos.dmg",
       "artifactSHA256": "822791d020398bd4a9f1767bb36b74b1526354aa62d08f5d5f7ce5e1686bfe16",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "WLJS Notebook.app",
+          "reason": "unsupported CFBundleIdentifier: 'wljs-notebook'"
+        }
+      ]
     },
     "wins": {
       "caskVersion": "3.6,55",
@@ -34453,7 +34488,14 @@
       "caskVersion": "2.1.1",
       "sourceURL": "https://updater.wrkspace.co/download/version/2.1.1/darwin-arm64",
       "artifactSHA256": "8c8646bc61c855adc27dbdfe6a94223954be904bee961cdc3545000a6c4053ff",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Wrkspace.app",
+          "reason": "unsupported CFBundleIdentifier: 'D7ZSWZ7KMM'"
+        }
+      ]
     },
     "xca": {
       "caskVersion": "2.9.0",
@@ -34811,7 +34853,14 @@
       "caskVersion": "8.2.81",
       "sourceURL": "https://artifact.lx.netease.com/download/ynote-electron/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0-8.2.81-arm64.dmg",
       "artifactSHA256": "8fd7681156693e19eff489b2ef65fabe48a19839e04f3d8d8a972e437a6659c7",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "有道云笔记.app",
+          "reason": "unsupported CFBundleIdentifier: 'ynote-desktop'"
+        }
+      ]
     },
     "yate": {
       "caskVersion": "9.2.2.1",
