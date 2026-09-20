@@ -1,0 +1,131 @@
+name: Observe package installations
+run-name: Observe package installations (${{ inputs.architectures }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      tokens:
+        description: "Space-separated pilot tokens; empty selects all ten"
+        default: ""
+      architectures:
+        description: "Hardware architectures to observe"
+        type: choice
+        options: [both, arm64, x86_64]
+        default: both
+
+permissions:
+  contents: read
+
+concurrency:
+  group: package-install-observation
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      brew_revision: ${{ steps.plan.outputs.brew_revision }}
+      cask_revision: ${{ steps.plan.outputs.cask_revision }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Freeze pilot inputs and passive baseline
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TOKENS: ${{ inputs.tokens }}
+          ARCHITECTURES: ${{ inputs.architectures }}
+        run: |
+          mkdir plan
+          python scripts/observe_package_install.py matrix --tokens "$TOKENS" --architectures "$ARCHITECTURES" > plan/matrix.json
+          brew_tag=$(gh api repos/Homebrew/brew/releases/latest --jq .tag_name)
+          brew_revision=$(gh api "repos/Homebrew/brew/commits/$brew_tag" --jq .sha)
+          cask_revision=$(gh api repos/Homebrew/homebrew-cask/commits/HEAD --jq .sha)
+          icons_revision=$(gh api "repos/$GITHUB_REPOSITORY/commits/icons" --jq .sha)
+          gh api "repos/$GITHUB_REPOSITORY/contents/app_identities.json?ref=$icons_revision" \
+            -H 'Accept: application/vnd.github.raw+json' > plan/passive-identities.json
+          jq -n --arg brew "$brew_revision" --arg cask "$cask_revision" --arg icons "$icons_revision" \
+            '{brewRevision:$brew,caskRevision:$cask,passiveRevision:$icons}' > plan/revisions.json
+          echo "matrix=$(cat plan/matrix.json)" >> "$GITHUB_OUTPUT"
+          echo "brew_revision=$brew_revision" >> "$GITHUB_OUTPUT"
+          echo "cask_revision=$cask_revision" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: package-observation-plan
+          path: plan/
+          if-no-files-found: error
+          retention-days: 30
+
+  observe:
+    needs: plan
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_FROM_API: "1"
+      HOMEBREW_NO_ANALYTICS: "1"
+      HOMEBREW_NO_ENV_HINTS: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+      HOMEBREW_GITHUB_API_TOKEN: ""
+      HOMEBREW_GITHUB_PACKAGES_TOKEN: ""
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Install and observe one package
+        env:
+          TOKEN: ${{ matrix.token }}
+          ARCHITECTURE: ${{ matrix.architecture }}
+          BREW_REVISION: ${{ needs.plan.outputs.brew_revision }}
+          CASK_REVISION: ${{ needs.plan.outputs.cask_revision }}
+        run: |
+          python scripts/observe_package_install.py observe --token "$TOKEN" --architecture "$ARCHITECTURE" \
+            --brew-revision "$BREW_REVISION" --cask-revision "$CASK_REVISION" --output evidence
+      - name: Preserve evidence even if installation fails
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: package-observation-${{ matrix.token }}-${{ matrix.architecture }}
+          path: evidence/
+          if-no-files-found: warn
+          retention-days: 30
+
+  report:
+    needs: [plan, observe]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: package-observation-*
+          path: observations
+      - name: Compare observations with passive extraction
+        run: |
+          python scripts/report_package_observations.py --directory observations --output report
+          cat report/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: package-pilot-report
+          path: report/
+          if-no-files-found: error
+          retention-days: 30
