@@ -20002,6 +20002,271 @@
           "bundleIdentifier": "com.spreaker.freepodcasttranscription"
         }
       ]
+    },
+    "fuwari": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/kentya6/Fuwari/releases/download/v1.0.0/Fuwari.v1.0.0.zip",
+      "artifactSHA256": "a294c82b3ec288b2adf828c42bdfa42144efed9aae5c66e03d0708ff9ba71acb",
+      "apps": [
+        {
+          "bundleName": "Fuwari.app",
+          "bundleIdentifier": "com.appknop.fuwari"
+        }
+      ]
+    },
+    "gb-studio": {
+      "caskVersion": "4.3.2",
+      "sourceURL": "https://github.com/chrismaltby/gb-studio/releases/download/v4.3.2/gb-studio-mac-apple-silicon.zip",
+      "artifactSHA256": "1b5e2c4402350223cf2810bd917a98025d85b350a48e449d1da3bb4486ff91eb",
+      "apps": [
+        {
+          "bundleName": "GB Studio.app",
+          "bundleIdentifier": "dev.gbstudio.gbstudio"
+        }
+      ]
+    },
+    "geektool": {
+      "caskVersion": "3.4-11,0097512",
+      "sourceURL": "https://s3.tynsoe.org/geektool/GeekTool.app-v3.4-11-g0097512.zip",
+      "artifactSHA256": "724fa310891f7fdaa0207dce4abddca9a7044153709d49e0b4faccb0e958cf6a",
+      "apps": [
+        {
+          "bundleName": "GeekTool.app",
+          "bundleIdentifier": "org.tynsoe.GeekTool"
+        }
+      ]
+    },
+    "gearsystem": {
+      "caskVersion": "3.9.18",
+      "sourceURL": "https://github.com/drhelius/Gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-desktop-macos-arm64.zip",
+      "artifactSHA256": "9ba96e263377821038b754f941406dbfb6270073043a8efb6f2db73f98e38cee",
+      "apps": [
+        {
+          "bundleName": "Gearsystem.app",
+          "bundleIdentifier": "com.drhelius.Gearsystem"
+        }
+      ]
+    },
+    "genesys-cloud": {
+      "caskVersion": "2.54.48,206",
+      "sourceURL": "https://app.mypurecloud.com/directory-mac/build-assets/2.54.48-206/genesys-cloud-mac-2.54.48.dmg",
+      "artifactSHA256": "4671acf6aec12922c52a4181cae06ac8213c460ed701199c58087486ee27a056",
+      "apps": [
+        {
+          "bundleName": "Genesys Cloud.app",
+          "bundleIdentifier": "com.inin.purecloud.directory"
+        }
+      ]
+    },
+    "geomap": {
+      "caskVersion": "3.7.7",
+      "sourceURL": "https://app.geomapapp.org/MapApp/GeoMapApp-3.7.7-Silicon.dmg",
+      "artifactSHA256": "01ebfd0a2d6a712676ffe125094cfb232640165641c67c09b663af326628496e",
+      "apps": [
+        {
+          "bundleName": "GeoMapApp.app",
+          "bundleIdentifier": "haxby.map"
+        }
+      ]
+    },
+    "gaphor": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://github.com/gaphor/gaphor/releases/download/3.3.2/Gaphor-3.3.2-arm.dmg",
+      "artifactSHA256": "f1b5ee8d31039af579445dc08ac8402f8da66c2e673099f4685fc90c71c3ab3d",
+      "apps": [
+        {
+          "bundleName": "Gaphor.app",
+          "bundleIdentifier": "org.gaphor.gaphor"
+        }
+      ]
+    },
+    "geoda": {
+      "caskVersion": "1.22.1",
+      "sourceURL": "https://github.com/GeoDaCenter/geoda/releases/download/v1.22.1/GeoDa1.22.1-arm64-Installer.dmg",
+      "artifactSHA256": "c58ca95992fc93391b02c4cb5fa1597ac0bb73b03884007685893a53a6ca0a38",
+      "apps": [
+        {
+          "bundleName": "GeoDa.app",
+          "bundleIdentifier": "edu.uchicago.spatial"
+        }
+      ]
+    },
+    "gargoyle": {
+      "caskVersion": "2026.1.1",
+      "sourceURL": "https://github.com/garglk/garglk/releases/download/2026.1.1/Gargoyle-2026.1.1.dmg",
+      "artifactSHA256": "d3c40f7f032fbdbe589f6a33c384071a860e6570388139cb4d18c291bd085119",
+      "apps": [
+        {
+          "bundleName": "Gargoyle.app",
+          "bundleIdentifier": "com.googlecode.garglk.Launcher"
+        }
+      ]
+    },
+    "garagesale": {
+      "caskVersion": "9.9.5",
+      "sourceURL": "https://downloads.iwascoding.com/downloads/GarageSale_9.9.5.dmg",
+      "artifactSHA256": "86345dc84e0dd21f7376d4363013014166bb028220fb5ee0e00714d1de331d96",
+      "apps": [
+        {
+          "bundleName": "GarageSale.app",
+          "bundleIdentifier": "com.iwascoding.garagesale9"
+        }
+      ]
+    },
+    "gearboy": {
+      "caskVersion": "3.8.15",
+      "sourceURL": "https://github.com/drhelius/Gearboy/releases/download/3.8.15/Gearboy-3.8.15-desktop-macos-arm64.zip",
+      "artifactSHA256": "4ce80c048e955becc8386dd8968e2b4c8cbc61c3887e3d4c9aecb8da5f1b9203",
+      "apps": [
+        {
+          "bundleName": "Gearboy.app",
+          "bundleIdentifier": "com.drhelius.Gearboy"
+        }
+      ]
+    },
+    "geburtstagschecker": {
+      "caskVersion": "1.9,240",
+      "sourceURL": "https://earthlingsoft.net/GeburtstagsChecker/GeburtstagsChecker%201.9%20(240).zip",
+      "artifactSHA256": "aadc2005c7a535107383ff6b517d09cd7859fcbb1dd4178420e895aff2643513",
+      "apps": [
+        {
+          "bundleName": "GeburtstagsChecker.app",
+          "bundleIdentifier": "earthlingsoft.GeburtstagsChecker"
+        }
+      ]
+    },
+    "genesis-plus": {
+      "caskVersion": "1.3.5",
+      "sourceURL": "https://www.bannister.org/software/dlh/gplus-135.zip",
+      "artifactSHA256": "bb7e8afd907de697efe639ceee90043eee30a402627b99224a80dd83c852be39",
+      "apps": [
+        {
+          "bundleName": "Genesis Plus.app",
+          "bundleIdentifier": "com.bannister.genesisplus"
+        }
+      ]
+    },
+    "gama-jdk": {
+      "caskVersion": "2025.09.0,17.09.25_860732f",
+      "sourceURL": "https://github.com/gama-platform/gama/releases/download/2025.09.0/GAMA_2025.09.0_MacOS_M1_with_JDK_17.09.25_860732f.dmg",
+      "artifactSHA256": "239959e7c593fbb91814b8b4385d9fb11f3c861507f7f66e622d4f9efadddd50",
+      "apps": []
+    },
+    "gdevelop": {
+      "caskVersion": "5.6.282",
+      "sourceURL": "https://github.com/4ian/GDevelop/releases/download/v5.6.282/GDevelop-5-5.6.282-universal.dmg",
+      "artifactSHA256": "f6e078e14d576412e173b322860229ba0b5de8213805d74710d41fb682c782ab",
+      "apps": [
+        {
+          "bundleName": "GDevelop 5.app",
+          "bundleIdentifier": "com.gdevelop-app.ide"
+        }
+      ]
+    },
+    "gama-platform": {
+      "caskVersion": "2025.09.0,17.09.25_860732f",
+      "sourceURL": "https://github.com/gama-platform/gama/releases/download/2025.09.0/GAMA_2025.09.0_MacOS_M1_17.09.25_860732f.dmg",
+      "artifactSHA256": "e88709354ba28b05b6cf01e879401b1d964a3f4a6bbd8026ae8afc9e7c55ca05",
+      "apps": []
+    },
+    "gamma-control": {
+      "caskVersion": "6.3.5",
+      "sourceURL": "https://littoral.michelf.ca/apps/gamma-control/gamma-control-6.3.5.zip",
+      "artifactSHA256": "dc4d44f8b74ff6f12a718356d10cd37f083c5c1b42ccb3ecfe00a0177c2953fe",
+      "apps": [
+        {
+          "bundleName": "Gamma Control.app",
+          "bundleIdentifier": "ca.michelf.GammaControl.6"
+        }
+      ]
+    },
+    "gcs": {
+      "caskVersion": "5.51.0",
+      "sourceURL": "https://github.com/richardwilkes/gcs/releases/download/v5.51.0/gcs-5.51.0-macos-arm64.dmg",
+      "artifactSHA256": "9804d9de14771a76ac3241e13ae51eed916606dc1e2395a85820a6e49b59304a",
+      "apps": [
+        {
+          "bundleName": "GCS.app",
+          "bundleIdentifier": "com.trollworks.gcs"
+        }
+      ]
+    },
+    "get-api": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://files.getapi.io/macos/3.0.0/Get%20API.dmg",
+      "artifactSHA256": "7b91542f3173984301b97144fba2a3d0f6ab5884f3e42e00b55732ae125fd226",
+      "apps": [
+        {
+          "bundleName": "Get API.app",
+          "bundleIdentifier": "com.getapi.GetAPI"
+        }
+      ]
+    },
+    "geotag-photos-pro": {
+      "caskVersion": "1.9.8",
+      "sourceURL": "https://github.com/tappytaps/geotag-desktop-app/releases/download/v1.9.8/Geotag-Photos-Pro-2-1.9.8-universal.dmg",
+      "artifactSHA256": "2a4bf21074fb45f51d69f3ce3744a3510dff87ae8de39451040552df5e7d6017",
+      "apps": [
+        {
+          "bundleName": "Geotag Photos Pro 2.app",
+          "bundleIdentifier": "com.tappytaps.geotagphotosdesktop"
+        }
+      ]
+    },
+    "geekbench-ai": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://cdn.geekbench.com/GeekbenchAI-1.7.0-Mac.zip",
+      "artifactSHA256": "04248377f5a6a9a268f8b84b9834f30b756943a352976e1414c6be1df932dc19",
+      "apps": [
+        {
+          "bundleName": "Geekbench AI.app",
+          "bundleIdentifier": "com.primatelabs.macos.geekbenchml"
+        }
+      ]
+    },
+    "geotag": {
+      "caskVersion": "6.0.2",
+      "sourceURL": "https://www.snafu.org/GeoTag/GeoTag-6.0.2.dmg",
+      "artifactSHA256": "0ff88045309d29f5227f8a4f83a536056d042b6f0f4e92e0c65349885c42e8ba",
+      "apps": [
+        {
+          "bundleName": "GeoTag.app",
+          "bundleIdentifier": "org.snafu.GeoTag"
+        }
+      ]
+    },
+    "general-software-fresh": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://download.general.software/fresh/1.0.5/Fresh.dmg",
+      "artifactSHA256": "10f98ac0fc06f865734d3154a6f5e16fb67236805d214ef5d6cc178506d20d3a",
+      "apps": [
+        {
+          "bundleName": "Fresh.app",
+          "bundleIdentifier": "com.generalsoftwarecorp.freshmac"
+        }
+      ]
+    },
+    "ganttproject": {
+      "caskVersion": "3.3.3316",
+      "sourceURL": "https://github.com/bardsoftware/ganttproject/releases/download/ganttproject-3.3.3316/ganttproject-3.3.3316-silicon.dmg",
+      "artifactSHA256": "fd5f8941b73bec53f1f08ef5696480a22f872fc2a098b6aef2defa99817bce25",
+      "apps": [
+        {
+          "bundleName": "GanttProject.app",
+          "bundleIdentifier": "com.bardsoftware.ganttproject"
+        }
+      ]
+    },
+    "geneious-prime": {
+      "caskVersion": "2026.1.3",
+      "sourceURL": "https://assets.geneious.com/installers/geneious/release/Geneious_Prime_mac64_2026_1_3_with_jre.dmg",
+      "artifactSHA256": "99dd812131ea50a53f698e5f50aa10633e4dba0bfa0204900f1c6d4a5b5e83b3",
+      "apps": [
+        {
+          "bundleName": "Geneious Prime.app",
+          "bundleIdentifier": "com.biomatters.Geneious"
+        }
+      ]
     }
   }
 }
