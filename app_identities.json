@@ -30441,6 +30441,281 @@
           "bundleIdentifier": "net.ccxvii.spatterlight"
         }
       ]
+    },
+    "sqlpro-for-sqlite": {
+      "caskVersion": "2026.247",
+      "sourceURL": "https://d3fwkemdw8spx3.cloudfront.net/sqlite/SQLProSQLite.2026.247.app.zip",
+      "artifactSHA256": "f23651b10654d4cb5f053df877f372ffed509cbfffb1f515c32a6579edfabfd7",
+      "apps": [
+        {
+          "bundleName": "SQLPro for SQLite.app",
+          "bundleIdentifier": "com.hankinsoft.osx.sqliteprofessional"
+        }
+      ]
+    },
+    "spundle": {
+      "caskVersion": "1.9,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/spundle19.zip",
+      "artifactSHA256": "bdeacea6b229c9fb51121c5e0f7180c23baa38a5be0c67eee6cb60714bb42ac4",
+      "apps": [
+        {
+          "bundleName": "Spundle.app",
+          "bundleIdentifier": "co.eclecticlight.Spundle"
+        }
+      ]
+    },
+    "squash": {
+      "caskVersion": "3.3.0,913",
+      "sourceURL": "https://dl.devant-cdn.io/v1/app/4ad73d1f-7ab7-4f7f-b9df-8d2d906ef718/Squash-913.zip/Squash.zip",
+      "artifactSHA256": "8c78625b22fb599e0a8bae839815db052d234d8ff70e4c4be86b0fd3e2a5c9f5",
+      "apps": [
+        {
+          "bundleName": "Squash.app",
+          "bundleIdentifier": "com.realmacsoftware.squash3"
+        }
+      ]
+    },
+    "spline": {
+      "caskVersion": "0.20.49",
+      "sourceURL": "https://ejtmihpcmqboccdhutyk.supabase.co/storage/v1/object/public/desktop-releases/Spline-0.20.49-arm64.mac.zip",
+      "artifactSHA256": "2c4a1aef9408d74bcfc3662c487f08cb5af78db6b91e67111a57ea0079fcafc7",
+      "apps": [
+        {
+          "bundleName": "Spline.app",
+          "bundleIdentifier": "com.design.spline"
+        }
+      ]
+    },
+    "spitfire-audio": {
+      "caskVersion": "3.4.17,1770184800",
+      "sourceURL": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg",
+      "artifactSHA256": "f478d88e4b58eac983e2b481122305b7d91525a047616999d2889f974237ed3a",
+      "apps": [
+        {
+          "bundleName": "Spitfire Audio.app",
+          "bundleIdentifier": "com.spitfireaudio.spitfireaudio"
+        }
+      ]
+    },
+    "stashpad": {
+      "caskVersion": "1.2.28",
+      "sourceURL": "https://github.com/stashpad/sp-desktop-release/releases/download/v1.2.28/Stashpad-1.2.28-arm64.dmg",
+      "artifactSHA256": "38631d69db2316ca513a4f7331fa3e15248720ea252e596a81e91842791ddd8b",
+      "apps": [
+        {
+          "bundleName": "Stashpad.app",
+          "bundleIdentifier": "com.stashpad.app"
+        }
+      ]
+    },
+    "sqleditor": {
+      "caskVersion": "4.0.3",
+      "sourceURL": "https://www.malcolmhardie.com/sqleditor/releases/4.0.3/SQLEditor-4-0-3.zip",
+      "artifactSHA256": "c737c67ad57a2c9be0168a5c7466a35e71669ed0ec908cd09cb678bc41db3fea",
+      "apps": [
+        {
+          "bundleName": "SQLEditor.app",
+          "bundleIdentifier": "com.malcolmhardie.sqleditor.cocoa"
+        }
+      ]
+    },
+    "splayer": {
+      "caskVersion": "4.9.4",
+      "sourceURL": "https://github.com/chiflix/splayerx/releases/download/4.9.4/SPlayer-4.9.4.dmg",
+      "artifactSHA256": "e91c8d39840039393d73a682e14ed5115dfa6f66ac582aeee482597525704fe5",
+      "apps": [
+        {
+          "bundleName": "SPlayer.app",
+          "bundleIdentifier": "org.splayer.splayerx"
+        }
+      ]
+    },
+    "sqlectron": {
+      "caskVersion": "1.39.0",
+      "sourceURL": "https://github.com/sqlectron/sqlectron-gui/releases/download/v1.39.0/sqlectron-1.39.0-arm64.dmg",
+      "artifactSHA256": "c4eb68ce51cf0fadbe30c67ffc309c71832461132aaffa3abfaeeb8bc9a72265",
+      "apps": [
+        {
+          "bundleName": "sqlectron.app",
+          "bundleIdentifier": "org.sqlectron.gui"
+        }
+      ]
+    },
+    "staruml": {
+      "caskVersion": "6.3.4",
+      "sourceURL": "https://files.staruml.io/releases-v6/StarUML-6.3.4-arm64.dmg",
+      "artifactSHA256": "91df4902c0923f6f41f24325584435f87297c42cf61ecca01c45eea0e31eac24",
+      "apps": [
+        {
+          "bundleName": "StarUML.app",
+          "bundleIdentifier": "io.staruml.staruml"
+        }
+      ]
+    },
+    "ssdreporter-free": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://www.corecode.io/downloads/ssdreporter_1.6.1.zip",
+      "artifactSHA256": "7a09701b721088ea28ef3a3906cccc66b754f8d3bdd200674d333716a1d4f576",
+      "apps": [
+        {
+          "bundleName": "SSDReporter.app",
+          "bundleIdentifier": "com.corecode.SSDReporter"
+        }
+      ]
+    },
+    "ssh-config-editor": {
+      "caskVersion": "2.6.11,112",
+      "sourceURL": "https://hejki.org/download/ssheditor/SSHConfigEditor-112.dmg",
+      "artifactSHA256": "cf73dcea2b6b52185ef4438f3b0911d96b11cc03896a0d60524e18d481932fd7",
+      "apps": [
+        {
+          "bundleName": "SSH Config Editor.app",
+          "bundleIdentifier": "org.hejki.osx.sshce"
+        }
+      ]
+    },
+    "sqlpro-for-postgres": {
+      "caskVersion": "2026.238",
+      "sourceURL": "https://d3fwkemdw8spx3.cloudfront.net/postgres/SQLProPostgres.2026.238.app.zip",
+      "artifactSHA256": "e5be77915d27dee0d6ac7d5fcc33f9143daf1a06d6cf8656ffe5b3e722dcc053",
+      "apps": [
+        {
+          "bundleName": "SQLPro for Postgres.app",
+          "bundleIdentifier": "com.hankinsoft.osx.SQLProPostgres"
+        }
+      ]
+    },
+    "spybuster": {
+      "caskVersion": "3.0.1,202,1711714226",
+      "sourceURL": "https://dl.devmate.com/com.macpaw-labs.snitch/202/1711714226/SpyBuster-202.zip",
+      "artifactSHA256": "fdbb1d0df481524348e35d0f9e349f5bb7ab72aa415b12c7e99ce0e831fa8098",
+      "apps": [
+        {
+          "bundleName": "SpyBuster.app",
+          "bundleIdentifier": "com.macpaw-labs.snitch"
+        }
+      ]
+    },
+    "sqlitemanager": {
+      "caskVersion": "4.9.2",
+      "sourceURL": "https://www.sqlabs.com/download/SQLiteManager.zip",
+      "artifactSHA256": "a0e8dc7af1d62411173a8eb94a4a4558ad7b5ce374543e9c6b3786dbe61df91c",
+      "apps": [
+        {
+          "bundleName": "SQLiteManager.app",
+          "bundleIdentifier": "com.sqlabs.sqlitemanager4"
+        }
+      ]
+    },
+    "sqlpro-studio": {
+      "caskVersion": "2026.238",
+      "sourceURL": "https://d3fwkemdw8spx3.cloudfront.net/studio/SQLProStudio.2026.238.app.zip",
+      "artifactSHA256": "59f808e0ce1943d8720dea2aaa43d40b9a7989b910b984ce2b85dcc11337db27",
+      "apps": [
+        {
+          "bundleName": "SQLPro Studio.app",
+          "bundleIdentifier": "com.hankinsoft.osx.sqlprostudio"
+        }
+      ]
+    },
+    "squidman": {
+      "caskVersion": "4.2",
+      "sourceURL": "https://squidman.net/resources/downloads/SquidMan4.2.dmg",
+      "artifactSHA256": "281e73b703b148448862fd3be8d31966f4c95339e4227d9ffc67ae698b2c9ef2",
+      "apps": [
+        {
+          "bundleName": "SquidMan.app",
+          "bundleIdentifier": "com.mac.adg.SquidMan"
+        }
+      ]
+    },
+    "sqlpro-for-mssql": {
+      "caskVersion": "2026.238",
+      "sourceURL": "https://d3fwkemdw8spx3.cloudfront.net/mssql/SQLProMSSQL.2026.238.app.zip",
+      "artifactSHA256": "01bc90bab8b63e0205d42edc610a7a88396052eb8d940e0ec9bda9bdd4c03ad4",
+      "apps": [
+        {
+          "bundleName": "SQLPro for MSSQL.app",
+          "bundleIdentifier": "com.hankinsoft.osx.tinysqlstudio"
+        }
+      ]
+    },
+    "stability-matrix": {
+      "caskVersion": "2.16.4",
+      "sourceURL": "https://github.com/LykosAI/StabilityMatrix/releases/download/v2.16.4/StabilityMatrix-macos-arm64.dmg",
+      "artifactSHA256": "3920d2a6bf2abc29bc6859a251556e7dc3f909b8c46ea72fe1091f2f30759ab0",
+      "apps": [
+        {
+          "bundleName": "Stability Matrix.app",
+          "bundleIdentifier": "ai.lykos.stabilitymatrix"
+        }
+      ]
+    },
+    "startupfolder": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://files.lowtechguys.com/releases/StartupFolder-1.2.1.dmg",
+      "artifactSHA256": "e76683b8e4332a5c928f4ea69436bd6e0f1b101a7073267faf7bfb7e6575c96f",
+      "apps": [
+        {
+          "bundleName": "StartupFolder.app",
+          "bundleIdentifier": "com.lowtechguys.StartupFolder"
+        }
+      ]
+    },
+    "sqlpro-for-mysql": {
+      "caskVersion": "2026.238",
+      "sourceURL": "https://d3fwkemdw8spx3.cloudfront.net/mysql/SQLProMySQL.2026.238.app.zip",
+      "artifactSHA256": "75433aa0d60e27c3ef76b7cc90d9e5e37cac9e61dfe50f4bbf3d10bc8cb39ac8",
+      "apps": [
+        {
+          "bundleName": "SQLPro for MySQL.app",
+          "bundleIdentifier": "com.hankinsoft.osx.mysql"
+        }
+      ]
+    },
+    "squeak": {
+      "caskVersion": "6.1,23976",
+      "sourceURL": "https://files.squeak.org/6.1/Squeak6.1-23976-64bit/Squeak6.1-23976-64bit-All-in-One.zip",
+      "artifactSHA256": "375fa6abc1bf2d3b6a20b7c31cef7c5218d797adda42291cd80b0ca6d40d528c",
+      "apps": [
+        {
+          "bundleName": "Squeak6.1-23976-64bit-All-in-One.app",
+          "bundleIdentifier": "org.squeak.squeak6.1-aio-64bit"
+        }
+      ]
+    },
+    "start": {
+      "caskVersion": "0.301.23903,10000000",
+      "sourceURL": "https://imgcdn.start.qq.com/cdn/mac.client/installer/0.301.23903/START-Installer-universal-0.301.23903-10000000.dmg",
+      "artifactSHA256": "df97ccd749000955f70288d3f00cce0196db4375c69203c539e1ff0a677b469e",
+      "apps": [
+        {
+          "bundleName": "START.app",
+          "bundleIdentifier": "com.tencent.start.mac.Start"
+        }
+      ]
+    },
+    "stand": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://f001.backblazeb2.com/file/stand-app/2.1.1/Stand.zip",
+      "artifactSHA256": "5fce7d525ea7154d1df58b25d1902731f533a18656330593a7d3d2456fc1f314",
+      "apps": [
+        {
+          "bundleName": "Stand.app",
+          "bundleIdentifier": "com.reddavis.Stand"
+        }
+      ]
+    },
+    "stack": {
+      "caskVersion": "6.0.3-20260619",
+      "sourceURL": "https://filehosting-client.transip.nl/packages/stack/v6.0.3-20260619/macos/stack-v6.0.3-20260619.arm64.dmg",
+      "artifactSHA256": "bf297418c881a822d97e8cde849c69d9f796fc99e4e6e12120f7599b83899143",
+      "apps": [
+        {
+          "bundleName": "stack.app",
+          "bundleIdentifier": "nl.transip.stack"
+        }
+      ]
     }
   }
 }
