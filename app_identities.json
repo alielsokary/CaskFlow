@@ -13592,6 +13592,276 @@
           "bundleIdentifier": "com.openmedia.4kslideshowmaker"
         }
       ]
+    },
+    "aimersoft-video-converter-ultimate": {
+      "caskVersion": "11.6.7.1",
+      "sourceURL": "https://download.aimersoft.com/cbs_down/aimer-mac-video-converter-ultimate_full747.dmg",
+      "artifactSHA256": "9c162452c19fde52567e08affa28b789e22eb5ee3104124ca477120b17d85bc2",
+      "apps": [
+        {
+          "bundleName": "Aimersoft Video Converter Ultimate.app",
+          "bundleIdentifier": "com.Aimersoft.Video-Converter-Ultimate"
+        }
+      ]
+    },
+    "airtame": {
+      "caskVersion": "4.16.0",
+      "sourceURL": "https://downloads-cdn.airtame.com/app/latest/mac/Airtame-4.16.0.dmg",
+      "artifactSHA256": "90b41d06290be8d80903f7be7d571a9eda2cf9325db4539c486632f784585236",
+      "apps": [
+        {
+          "bundleName": "Airtame.app",
+          "bundleIdentifier": "com.airtame.airtame-application"
+        }
+      ]
+    },
+    "airdroid": {
+      "caskVersion": "3.7.3.1",
+      "sourceURL": "https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.3.1.dmg",
+      "artifactSHA256": "f0d8199dedc6daa3a93ca672d5e1c8d33554b07bc7371ba4538802926ea1acba",
+      "apps": [
+        {
+          "bundleName": "AirDroid.app",
+          "bundleIdentifier": "com.sandstudio.airdroid"
+        }
+      ]
+    },
+    "aks-desktop": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://github.com/Azure/aks-desktop/releases/download/v0.9.1/aks-desktop-0.9.1-mac-arm64.dmg",
+      "artifactSHA256": "10b99dcfa30febe6f944eda9e24a5289f11fec80b3373c735c3d6f1e0d3779e8",
+      "apps": [
+        {
+          "bundleName": "AKS desktop.app",
+          "bundleIdentifier": "com.microsoft.aks-desktop"
+        }
+      ]
+    },
+    "airparrot": {
+      "caskVersion": "3.1.7",
+      "sourceURL": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.7.dmg",
+      "artifactSHA256": "acb42bb53c1dfde1fec6835fd8fd89a278b215a97f1e08545e45780cebb19409",
+      "apps": [
+        {
+          "bundleName": "AirParrot 3.app",
+          "bundleIdentifier": "com.squirrels.AirParrot-3"
+        }
+      ]
+    },
+    "advanced-renamer": {
+      "caskVersion": "4.25",
+      "sourceURL": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_25.dmg",
+      "artifactSHA256": "f9a5b139c8294cbd8b58bd8b5755526d676f32444ea383e7835c89edc8deecc1",
+      "apps": [
+        {
+          "bundleName": "Advanced Renamer.app",
+          "bundleIdentifier": "com.HulubuluSoftware.AdvancedRenamer"
+        }
+      ]
+    },
+    "agent-tars": {
+      "caskVersion": "1.0.0-alpha.10",
+      "sourceURL": "https://github.com/bytedance/UI-TARS-desktop/releases/download/Agent-TARS-v1.0.0-alpha.10/Agent-TARS-1.0.0-alpha.10-universal.dmg",
+      "artifactSHA256": "4499bd0b523bb89f8adfcd3536b13ad95c03d4bf77c9ae0c3f321eeca5a0f869",
+      "apps": [
+        {
+          "bundleName": "Agent TARS.app",
+          "bundleIdentifier": "com.electron.agent-tars"
+        }
+      ]
+    },
+    "agentide": {
+      "caskVersion": "0.9.5",
+      "sourceURL": "https://github.com/MikeMcQuaid/AgentIDE/releases/download/0.9.5/AgentIDE-0.9.5.zip",
+      "artifactSHA256": "6fed46b4954bcb5a280c31c8b0c1df877519ca4aa2250f7300a2c2b386dd0b7c",
+      "apps": [
+        {
+          "bundleName": "AgentIDE.app",
+          "bundleIdentifier": "com.mikemcquaid.AgentIDE"
+        }
+      ]
+    },
+    "airscroll": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://airscroll.net/releases/AirScroll.app.zip",
+      "artifactSHA256": "5259997a5ede196f998241765a5a0f4c6885f61ec793ffa7447a7c2293bb7362",
+      "apps": [
+        {
+          "bundleName": "AirScroll.app",
+          "bundleIdentifier": "com.Awesome.AirScroll"
+        }
+      ]
+    },
+    "airy": {
+      "caskVersion": "3.29.2",
+      "sourceURL": "https://cdn.airy-youtube-downloader.com/products/airy/mac/download/airy.dmg",
+      "artifactSHA256": "0fe4730fa9c2ebf7744e12e1ad5ccef554ace9d7542b8a59bf98228522e1287b",
+      "apps": [
+        {
+          "bundleName": "Airy.app",
+          "bundleIdentifier": "com.eltima.Airy"
+        }
+      ]
+    },
+    "alcom": {
+      "caskVersion": "1.1.8",
+      "sourceURL": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.8/ALCOM-1.1.8-universal.dmg",
+      "artifactSHA256": "583167060ed4369f7f16fe64db3bf25a115add6232eec5cab1f5cb2578bae65c",
+      "apps": [
+        {
+          "bundleName": "ALCOM.app",
+          "bundleIdentifier": "com.anatawa12.vrc-get-gui"
+        }
+      ]
+    },
+    "airdash": {
+      "caskVersion": "2.0.158",
+      "sourceURL": "https://github.com/simonbengtsson/airdash/releases/download/v2.0.158/airdash.dmg",
+      "artifactSHA256": "990a683d6200fe595da3963bbcb0ec806d7f4d755a1ec73bd1ae21e50a5079fd",
+      "apps": [
+        {
+          "bundleName": "AirDash158.app",
+          "bundleIdentifier": "io.flown.airdashn"
+        }
+      ]
+    },
+    "advantagescope": {
+      "caskVersion": "26.0.2",
+      "sourceURL": "https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v26.0.2/advantagescope-mac-arm64-v26.0.2.dmg",
+      "artifactSHA256": "01022c3e0f4df3ceb8831d23f9c5d9b36ee27d84a23e57ed1118d4125ea35434",
+      "apps": [
+        {
+          "bundleName": "AdvantageScope.app",
+          "bundleIdentifier": "org.littletonrobotics.advantagescope"
+        }
+      ]
+    },
+    "airserver": {
+      "caskVersion": "7.3.3",
+      "sourceURL": "https://dl.airserver.com/mac/AirServer-7.3.3.dmg",
+      "artifactSHA256": "e8a6ecd95e5ce8fa1ec92e6107c737e7c3c3ef5eaff6f32cadf1ffa7515faeb0",
+      "apps": [
+        {
+          "bundleName": "AirServer.app",
+          "bundleIdentifier": "com.pratikkumar.airserver-mac"
+        }
+      ]
+    },
+    "agentsmesh": {
+      "caskVersion": "0.44.7",
+      "sourceURL": "https://github.com/AgentsMesh/AgentsMesh/releases/download/v0.44.7/AgentsMesh-0.44.7-arm64.dmg",
+      "artifactSHA256": "8b016def312775f24c85c325c8d48eca8edf4b830ffb355437c7127d4ccc4954",
+      "apps": [
+        {
+          "bundleName": "AgentsMesh.app",
+          "bundleIdentifier": "ai.agentsmesh.desktop"
+        }
+      ]
+    },
+    "agi": {
+      "caskVersion": "3.3.3",
+      "sourceURL": "https://github.com/google/agi/releases/download/v3.3.3/agi-3.3.3-macos.dmg",
+      "artifactSHA256": "7b045ba934274eeced3d1f9df3101f0c67a6ec62d99a7d1986e54bec4de9d2af",
+      "apps": [
+        {
+          "bundleName": "AGI.app",
+          "bundleIdentifier": "com.google.agi"
+        }
+      ]
+    },
+    "aigcpanel": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/modstart-lib/aigcpanel/releases/download/v2.3.0/AigcPanel-2.3.0-mac-arm64.dmg",
+      "artifactSHA256": "7964cd2c083f5f1daa5a5493ad7007a21da9807e08af9def8bb3d0f82b8a1203",
+      "apps": []
+    },
+    "akiflow": {
+      "caskVersion": "2.81.8,443b090a",
+      "sourceURL": "https://download.akiflow.com/builds/Akiflow-2.81.8-443b090a-universal.dmg",
+      "artifactSHA256": "6d506a2bd9753c80d1394d9e9d77cc2f271dd61c0633df4c9588029570886ad5",
+      "apps": [
+        {
+          "bundleName": "Akiflow.app",
+          "bundleIdentifier": "com.akiflow.akiflow"
+        }
+      ]
+    },
+    "air-video-server-hd": {
+      "caskVersion": "2.3.0-beta1u1",
+      "sourceURL": "https://s3.amazonaws.com/AirVideoHD/Download/Air+Video+Server+HD+2.3.0-beta1u1.dmg",
+      "artifactSHA256": "1e45abf868349f1ad43b6f3a1234a254d31e943ef5c7d72b84eff9f955a15a33",
+      "apps": [
+        {
+          "bundleName": "Air Video Server HD.app",
+          "bundleIdentifier": "com.inmethod.AirVideoServerHD"
+        }
+      ]
+    },
+    "advancedrestclient": {
+      "caskVersion": "17.0.9",
+      "sourceURL": "https://github.com/advanced-rest-client/arc-electron/releases/download/v17.0.9/arc-macos.dmg",
+      "artifactSHA256": "817d54ee18e970fce4b16ead1422069e3c1f69c5f0edec73e01bc0fd3a210034",
+      "apps": [
+        {
+          "bundleName": "AdvancedRestClient.app",
+          "bundleIdentifier": "com.mulesoft.arc"
+        }
+      ]
+    },
+    "adium": {
+      "caskVersion": "1.5.10.4",
+      "sourceURL": "https://adiumx.cachefly.net/Adium_1.5.10.4.dmg",
+      "artifactSHA256": "31fa3fd32b86dd3381b60e0d5aafbc2a9452036f0fb4963bffbc2a6c64a9458b",
+      "apps": [
+        {
+          "bundleName": "Adium.app",
+          "bundleIdentifier": "com.adiumX.adiumX"
+        }
+      ]
+    },
+    "ai-studio": {
+      "caskVersion": "2026.1.1",
+      "sourceURL": "https://releases.rapidminer.com/archive/rapidminer-studio/2026.1.1/ai-studio-osx-2026.1.1.dmg",
+      "artifactSHA256": "39936193aac589e127535bc2660a1d744dac8d83ec16243b5b1af28332f305f1",
+      "apps": [
+        {
+          "bundleName": "AI Studio 2026.1.1.app",
+          "bundleIdentifier": "com.rapidminer.studio"
+        }
+      ]
+    },
+    "agentkube": {
+      "caskVersion": "0.0.12",
+      "sourceURL": "https://github.com/agentkube/agentkube/releases/download/v0.0.12/agentkube_0.0.12_aarch64.dmg",
+      "artifactSHA256": "c8c80699198b681ad79a31f8294df24e718e4f2aa935e90e2708f2535dd93dc4",
+      "apps": [
+        {
+          "bundleName": "Agentkube.app",
+          "bundleIdentifier": "platform.agentkube.app"
+        }
+      ]
+    },
+    "aleph-one": {
+      "caskVersion": "20250829",
+      "sourceURL": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250829/AlephOne-20250829-Mac.dmg",
+      "artifactSHA256": "0231ea75b24835ce421ed36af24623edeed711cf6a045863fe2eaf57ef4dfc9e",
+      "apps": [
+        {
+          "bundleName": "Aleph One.app",
+          "bundleIdentifier": "org.bungie.source.AlephOne"
+        }
+      ]
+    },
+    "aircall": {
+      "caskVersion": "3.1.66",
+      "sourceURL": "https://download-electron.aircall.io/Aircall-3.1.66.dmg",
+      "artifactSHA256": "d61c50d9f3466fe3751abe4945bc45d68cc9f6b71865b8ffa2a9bfd616fdb35b",
+      "apps": [
+        {
+          "bundleName": "Aircall.app",
+          "bundleIdentifier": "io.aircall.phone"
+        }
+      ]
     }
   }
 }
