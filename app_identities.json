@@ -57,9 +57,9 @@
       ]
     },
     "easymac-cleaner": {
-      "caskVersion": "1.3",
-      "sourceURL": "https://updates.martiancat.space/cleaner/EasyMacCleaner-1.3.zip",
-      "artifactSHA256": "ff507578f37e0e2afc3f19018c85a32e751cb199c1605bae0fb577cdbc788428",
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://updates.martiancat.space/cleaner/EasyMacCleaner-1.4.1.zip",
+      "artifactSHA256": "474668f2d7ad767c0c400ac4d625e346cc06caa13de8316516099953f8789c30",
       "apps": [
         {
           "bundleName": "EasyMac Cleaner.app",
@@ -12148,9 +12148,9 @@
       ]
     },
     "dusklight": {
-      "caskVersion": "2.0.0",
-      "sourceURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.0/Dusklight-v2.0.0-macos-arm64.zip",
-      "artifactSHA256": "d84531d9b3b94e8c90166f42dbe003338eea382c953e4ab29f92703ca1053da0",
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.1/Dusklight-v2.0.1-macos-arm64.zip",
+      "artifactSHA256": "b76dff320bb90d163280996ec06be6a094eda538c960b8d0a7817b167515c991",
       "apps": [
         {
           "bundleName": "Dusklight.app",
@@ -18269,6 +18269,254 @@
         {
           "bundleName": "Dropshare 6.app",
           "bundleIdentifier": "net.mkswap.Dropshare5"
+        }
+      ]
+    },
+    "eclipse-rcp": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-rcp-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "315629605f2316d9227ea7e4ee5a45962dccfe8817e94ffbfc77e104ed2f5a3a",
+      "apps": [
+        {
+          "bundleName": "Eclipse RCP.app",
+          "bundleIdentifier": "epp.package.rcp"
+        }
+      ]
+    },
+    "easydevo": {
+      "caskVersion": "0.3.4",
+      "sourceURL": "https://github.com/boring-design/EasyDevo-Distro/releases/download/v0.3.4/EasyDevo-Mac-0.3.4-Installer.dmg",
+      "artifactSHA256": "3795f382bcb765a11b83ddb66c3f860471f23518f26a85c08ed08426a7711b79",
+      "apps": [
+        {
+          "bundleName": "EasyDevo.app",
+          "bundleIdentifier": "dev.strrl.easydevo"
+        }
+      ]
+    },
+    "dwellclick": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://pilotmoon.com/downloads/DwellClick-2.3.2.zip",
+      "artifactSHA256": "0873f6aa1485eb617bb35ec5796b1258128befc18f99101ca6b494cff966b5bd",
+      "apps": [
+        {
+          "bundleName": "DwellClick.app",
+          "bundleIdentifier": "com.pilotmoon.DwellClick"
+        }
+      ]
+    },
+    "ecamm-live": {
+      "caskVersion": "4.5.12",
+      "sourceURL": "https://downloads.ecamm.com/EcammLive.zip",
+      "artifactSHA256": "4a7b6412a686e1e1b3e84fc9bff84b25b0efcf959064eb137fb8b8c903c3c1a9",
+      "apps": []
+    },
+    "dynobase": {
+      "caskVersion": "3.0.5,260918e3qb67fdo",
+      "sourceURL": "https://download.todesktop.com/220811zswf4aj4x/Dynobase%203.0.5%20-%20Build%20260918e3qb67fdo-arm64.dmg",
+      "artifactSHA256": "6d29b31873639f7118dfaa3dfa7641475d80f3bc74472ee2135b926edc1e558c",
+      "apps": [
+        {
+          "bundleName": "Dynobase.app",
+          "bundleIdentifier": "com.todesktop.220811zswf4aj4x"
+        }
+      ]
+    },
+    "eclipse-modeling": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-modeling-2026-09-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+      "artifactSHA256": "fe452427b98071e90a2fe6a4e4b60c52f3b32754bbde515c9dd7debaeda69796",
+      "apps": [
+        {
+          "bundleName": "Eclipse Modeling.app",
+          "bundleIdentifier": "epp.package.modeling"
+        }
+      ]
+    },
+    "dyad": {
+      "caskVersion": "1.15.0",
+      "sourceURL": "https://github.com/dyad-sh/dyad/releases/download/v1.15.0/dyad-darwin-arm64-1.15.0.zip",
+      "artifactSHA256": "6d8ee1711e0877085df052a74b341d99476708d0dbab5621927ae718d3db3943",
+      "apps": [
+        {
+          "bundleName": "dyad.app",
+          "bundleIdentifier": "com.electron.dyad"
+        }
+      ]
+    },
+    "duplicate-file-finder": {
+      "caskVersion": "9.2.2,1042",
+      "sourceURL": "https://download.nektony.com/download/duplicate-file-finder/duplicate-file-finder.dmg?build=1042",
+      "artifactSHA256": "186587b7b4806544e6fbffe13f2b371a1ba9b4a176c7a19b3c13090603e8a94c",
+      "apps": [
+        {
+          "bundleName": "Duplicate File Finder 9.app",
+          "bundleIdentifier": "com.nektony.Duplicate-File-Finder-SIII"
+        }
+      ]
+    },
+    "duplicateaudiofinder": {
+      "caskVersion": "0.1",
+      "sourceURL": "https://speechpulse.com/download/duplicateaudiofinder-macos.dmg",
+      "artifactSHA256": "05fb5cca1fad84005bc945be1f5028150bf48c8b92d07f2452aa86fa878aedf2",
+      "apps": [
+        {
+          "bundleName": "DuplicateAudioFinder.app",
+          "bundleIdentifier": "my.example.com"
+        }
+      ]
+    },
+    "eclipse-platform": {
+      "caskVersion": "4.41,202608281142",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.41-202608281142/eclipse-SDK-4.41-macosx-cocoa-aarch64.dmg&mirror_id=1",
+      "artifactSHA256": "5d293fc45363baf7c7d38c37a007f35a8c49b99f6c6396b98ab18b4464e59d7e",
+      "apps": [
+        {
+          "bundleName": "Eclipse Platform.app",
+          "bundleIdentifier": "org.eclipse.sdk.ide"
+        }
+      ]
+    },
+    "eez-studio": {
+      "caskVersion": "0.29.0",
+      "sourceURL": "https://github.com/eez-open/studio/releases/download/v0.29.0/EEZ.Studio-0.29.0-arm64-mac.zip",
+      "artifactSHA256": "4d93276d367b183c6959284ba06cc1b909e48594c821a292d541bc662359cf46",
+      "apps": [
+        {
+          "bundleName": "EEZ Studio.app",
+          "bundleIdentifier": "hr.envox.eez.studio"
+        }
+      ]
+    },
+    "eclipse-php": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-php-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "520a459e34a3d3e811d9b0bfd300b3bab617884d0744d9b9adc0124f5d094334",
+      "apps": [
+        {
+          "bundleName": "Eclipse PHP.app",
+          "bundleIdentifier": "epp.package.php"
+        }
+      ]
+    },
+    "eclipse-cpp": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-cpp-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "0c8dc7fdcdf9b49adb136a91088432aaa20e12fe267da2111c14fbce80ea467f",
+      "apps": [
+        {
+          "bundleName": "Eclipse CPP.app",
+          "bundleIdentifier": "epp.package.cpp"
+        }
+      ]
+    },
+    "ebmac": {
+      "caskVersion": "1.47.0",
+      "sourceURL": "https://ebstudio.info/download/ebpocket/EBMac1.47.0.dmg",
+      "artifactSHA256": "8038fbdd306a4c6eb10680bcfa04dca873c86cbe7c2b82c4875d73de1c3043d3",
+      "apps": [
+        {
+          "bundleName": "EBMac.app",
+          "bundleIdentifier": "info.ebstudio.EBMac"
+        }
+      ]
+    },
+    "eclipse-dsl": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-dsl-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "18048a3bc5dd75246b343c9f7721bd580b990abe31f364db9072c1dbe5e3f17f",
+      "apps": [
+        {
+          "bundleName": "Eclipse DSL.app",
+          "bundleIdentifier": "epp.package.dsl"
+        }
+      ]
+    },
+    "eclipse-installer": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-09/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
+      "artifactSHA256": "e67e0187f1df1ef18704d66f0227b7bef1bff3619446f6c76d14b346324ce390",
+      "apps": [
+        {
+          "bundleName": "Eclipse Installer.app",
+          "bundleIdentifier": "org.eclipse.oomph.setup.installer.product.with-jre.restricted"
+        }
+      ]
+    },
+    "duplicate-annihilator-for-photos": {
+      "caskVersion": "9.1.0,1",
+      "sourceURL": "https://brattoo.com/propaganda/downloadDap.php",
+      "artifactSHA256": "49acdaaf41cc4f8023e4acdad8091756c79c8539618b0eade0f39f8d25bc9672",
+      "apps": [
+        {
+          "bundleName": "Duplicate Annihilator for Photos.app",
+          "bundleIdentifier": "com.brattoo.Duplicate-Annihilator-for-Photos"
+        }
+      ]
+    },
+    "edrawmind": {
+      "caskVersion": "13.0.16",
+      "sourceURL": "https://download.wondershare.com/cbs_down/edrawmind_13.0.16_full5378.zip",
+      "artifactSHA256": "943a0fe84639788e9dfadf597f5ae67337d15621d8de402edbb6980a63e76087",
+      "apps": [
+        {
+          "bundleName": "EdrawMind.app",
+          "bundleIdentifier": "com.edrawsoft.mindmaster"
+        }
+      ]
+    },
+    "duefocus": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://web.duefocus.com/distribution/darwin/v3/DueFocus-2.5.0.dmg",
+      "artifactSHA256": "28c9029ee71701ecc1daa8d6ed070f33232d3a5c0c9cf878d916dbec63a8dc7a",
+      "apps": [
+        {
+          "bundleName": "DueFocus.app",
+          "bundleIdentifier": "com.qarea.duefocus"
+        }
+      ]
+    },
+    "duplicacy-web-edition": {
+      "caskVersion": "1.8.3",
+      "sourceURL": "https://acrosync.com/duplicacy-web/duplicacy_web_osx_arm64_1.8.3.dmg",
+      "artifactSHA256": "b9ea35f1be2717c44e5ec5dcd751c254f41105a81790ce1fd1a596a4769c2150",
+      "apps": [
+        {
+          "bundleName": "Duplicacy Web Edition.app",
+          "bundleIdentifier": "com.duplicacy.web"
+        }
+      ]
+    },
+    "eddie": {
+      "caskVersion": "2.26.2",
+      "sourceURL": "https://eddie.website/repository/eddie/2.26.2/eddie-ui_2.26.2_macos-10.15_arm64_disk.dmg",
+      "artifactSHA256": "783d5180c3d0c30524e4faf87e83e44ec20d293a1c3292eb222f52cb6c47f041",
+      "apps": [
+        {
+          "bundleName": "Eddie.app",
+          "bundleIdentifier": "org.airvpn.eddie.ui"
+        }
+      ]
+    },
+    "eaglefiler": {
+      "caskVersion": "1.9.21",
+      "sourceURL": "https://c-command.com/downloads/EagleFiler-1.9.21.dmg",
+      "artifactSHA256": "4a2b7b010eed6729a27a6c451b3c6c9100266ac9eda19357d03f059618e2b434",
+      "apps": [
+        {
+          "bundleName": "EagleFiler.app",
+          "bundleIdentifier": "com.c-command.EagleFiler"
+        }
+      ]
+    },
+    "ears": {
+      "caskVersion": "1.6,21",
+      "sourceURL": "https://get.retina.studio/ears/ears_21.zip",
+      "artifactSHA256": "59fb9296ac7f20d35375db18aa65fbe09e1f593f3279fcac59372d82cf545bc9",
+      "apps": [
+        {
+          "bundleName": "Ears.app",
+          "bundleIdentifier": "com.clickontyler.Ears"
         }
       ]
     }
