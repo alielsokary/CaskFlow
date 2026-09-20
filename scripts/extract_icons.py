@@ -18,7 +18,7 @@ from urllib.request import urlopen
 
 from style_standards import write_json
 
-from app_identities import (MANIFEST, _safe_relative, artifact_matches, load_manifest, merge_extractions,
+from app_identities import (MANIFEST, _safe_relative, artifact_matches, declared_artifact_apps, load_manifest, merge_extractions,
                             needs_refresh, record_extraction)
 
 from icons_state import (  # noqa: F401  (re-exported for curate_icons/tests)
@@ -58,7 +58,7 @@ def app_names_from_artifacts(cask: dict) -> list[str]:
                     names.append(entry)
                 elif isinstance(entry, dict) and isinstance(entry.get("target"), str):
                     names.append(entry["target"])
-    return names
+    return names + [source for source, _ in declared_artifact_apps(cask)]
 
 
 def has_pkg_artifact(cask: dict) -> bool:

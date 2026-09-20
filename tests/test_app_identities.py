@@ -278,7 +278,8 @@ def test_real_package_payload_and_nested_archive_through_extraction(tmp_path, mo
     monkeypatch.setattr(extract_icons, "_icon_status", lambda *a: ("no_icon", "fixture has no icon"))
     extract_icons.extract_one(source, output)
     entry = load_manifest(output / MANIFEST)["casks"]["sample"]
-    assert entry["apps"] == [{"bundleName": "Installed.app", "bundleIdentifier": "com.example.installed"}]
+    assert entry["apps"] == [{"bundleName": "Installed.app", "bundleIdentifier": "com.example.installed",
+                              "packageIdentifier": "com.example.pkg", "installedPath": "/Applications/Installed.app"}]
     assert entry["diagnostics"] == []
     assert not marker.exists()
 
@@ -294,13 +295,14 @@ def test_package_metadata_never_accepts_unsafe_locations_or_helpers(tmp_path, ca
         (package / "Payload").rename(tmp_path / "elsewhere")
         (package / "Payload").symlink_to(tmp_path / "elsewhere", target_is_directory=True)
     (package / "PackageInfo").write_text("<broken" if case == "malformed" else
-                                       f'<pkg-info install-location="{location}"/>')
+                                       f'<pkg-info identifier="org.example.package" install-location="{location}"/>')
     archive = tmp_path / "app.pkg"
     archive.write_bytes(b"archive")
     source = {**cask(), "artifacts": [{"pkg": ["app.pkg"]}]}
     result = extract_identities(source, package, archive, package_roots=(package,))
     assert result["apps"] == []
     assert result["diagnostics"]
+    assert all("missing package identifier" not in d["reason"] for d in result["diagnostics"])
 
 
 def test_package_expansion_failure_does_not_publish_a_fresh_empty_record(tmp_path, monkeypatch):
@@ -331,11 +333,107 @@ def test_package_expansion_failure_does_not_publish_a_fresh_empty_record(tmp_pat
 
 @pytest.mark.parametrize("encoding", ["utf-8", "utf-16"])
 def test_package_info_rejects_dtd_entities_before_interpreting_install_location(tmp_path, encoding):
-    from app_identities import _package_location
+    from app_identities import _package_info
     info = tmp_path / "PackageInfo"
     xml = f'''<?xml version="1.0" encoding="{encoding}"?>
 <!DOCTYPE pkg-info [<!ENTITY target "/Applications/Fake.app">]>
 <pkg-info install-location="&target;"/>'''
     info.write_bytes(xml.encode(encoding))
     with pytest.raises(ValueError, match="DTDs are not supported"):
-        _package_location(info)
+        _package_info(info)
+
+
+@pytest.mark.parametrize("target, accepted", [
+    ("$APPDIR/Original.app", True), ("/Applications/Original.app", True),
+    ("/Library/Original.app", False), ("/Applications/Suite/Original.app", False),
+    ("/Applications/../Library/Original.app", False), ("/Applications/*.app", False),
+    ("$HOMEBREW_PREFIX/Original.app", False), ("/Applications/Tool.jar", False), ("/Applications/Renamed.app", False)
+])
+def test_generic_app_artifact_through_extraction_and_publication(tmp_path, monkeypatch, target, accepted):
+    import extract_icons
+    import zipfile
+    app(tmp_path, "Original.app", "org.example.verified")
+    archive = tmp_path / "archive.zip"
+    with zipfile.ZipFile(archive, "w") as output:
+        output.write(tmp_path / "Original.app/Contents/Info.plist", "Original.app/Contents/Info.plist")
+    source = {**cask(), "artifacts": [{"artifact": ["Original.app", {"target": target}]}]}
+    monkeypatch.setattr(extract_icons, "download", lambda *a: archive)
+    monkeypatch.setattr(extract_icons, "_icon_status", lambda *a: ("no_icon", "fixture has no icon"))
+    output = tmp_path / "output"
+    output.mkdir()
+    extract_icons.extract_one(source, output)
+    entries = load_manifest(output / MANIFEST)["casks"]
+    if not accepted:
+        assert "sample" not in entries
+        return
+    assert entries["sample"]["apps"] == [
+        {"bundleName": "Original.app", "bundleIdentifier": "org.example.verified"}]
+    categories, variants = tmp_path / "categories.json", tmp_path / "variants.json"
+    write_json(categories, {"tokenToCategory": {}})
+    write_json(variants, {"schemaVersion": 1, "casks": {}})
+    compose_release(categories, output / MANIFEST, variants, tmp_path / "release.json")
+    assert json.loads(categories.read_text())["appIdentities"]["sample"] == entries["sample"]["apps"]
+
+
+@pytest.mark.parametrize("case", ["default", "cask-choices", "conditional", "script", "unreferenced", "malformed",
+                                 "symlink", "duplicate-choice", "duplicate-line", "relocated"])
+def test_product_components_require_unconditional_installation(tmp_path, case):
+    root = tmp_path / "expanded"
+    payload = root / "Main.pkg"
+    app(payload / "Payload/Applications", "Main.app", "org.example.main")
+    (payload / "PackageInfo").write_text('<pkg-info identifier="main" install-location="/"/>')
+    extra = root / "Extra.pkg"
+    app(extra / "Payload/Applications", "Extra.app", "org.example.extra")
+    (extra / "PackageInfo").write_text('<pkg-info identifier="extra" install-location="/"/>')
+    attribute = ' selected="system.someCondition"' if case == "conditional" else ''
+    script = '<script>function choose() { return true; }</script>' if case == "script" else ''
+    ref = 'missing' if case == "unreferenced" else 'main'
+    xml = f'''<installer-gui-script>{script}<choices-outline><line choice="main"/></choices-outline>
+    <choice id="main"{attribute}><pkg-ref id="{ref}"/></choice></installer-gui-script>'''
+    if case == "duplicate-choice":
+        xml = xml.replace('</installer-gui-script>', '<choice id="main"/></installer-gui-script>')
+    if case == "duplicate-line":
+        xml = xml.replace('</choices-outline>', '<line choice="main"/></choices-outline>')
+    if case == "relocated":
+        xml = xml.replace('<choice id="main"', '<choice customLocation="/opt" id="main"')
+    distribution = root / "Distribution"
+    distribution.write_text('<bad' if case == "malformed" else xml)
+    if case == "symlink":
+        distribution.rename(tmp_path / "external")
+        distribution.symlink_to(tmp_path / "external")
+    archive = tmp_path / "archive.pkg"
+    archive.write_bytes(b"fixture")
+    source = {**cask(), "artifacts": [{"pkg": ["archive.pkg"]}]}
+    if case == "cask-choices":
+        source["artifacts"][0]["pkg"].append({"choices": [{"choiceIdentifier": "main", "attributeSetting": 0}]})
+    result = extract_identities(source, root, archive, package_roots=(root,))
+    expected = [{"bundleName": "Main.app", "bundleIdentifier": "org.example.main",
+                 "packageIdentifier": "main", "installedPath": "/Applications/Main.app"}] if case == "default" else []
+    assert result["apps"] == expected
+    assert bool(result["diagnostics"]) == (case != "default")
+
+
+def test_successful_old_package_records_are_reinspected_for_component_selection():
+    from app_identities import needs_refresh
+    source = {**cask(), "artifacts": [{"pkg": ["Installer.pkg"]}]}
+    entry = {"caskVersion": source["version"], "sourceURL": source["url"], "apps": [1], "extractionVersion": 3}
+    assert needs_refresh(source, entry)
+    entry["extractionVersion"] = EXTRACTION_VERSION
+    assert not needs_refresh(source, entry)
+
+
+def test_package_provenance_survives_publication_only_with_valid_install_paths(tmp_path):
+    categories, extracted, variants = [tmp_path / name for name in ["categories.json", "extracted.json", "variants.json"]]
+    identity = {"bundleName": "Main.app", "bundleIdentifier": "org.example.main",
+                "packageIdentifier": "org.example.package", "installedPath": "/Applications/Main.app"}
+    write_json(categories, {"tokenToCategory": {}})
+    write_json(variants, {"schemaVersion": 1, "casks": {}})
+    write_json(extracted, {"schemaVersion": 1, "casks": {"main": {"apps": [identity]}}})
+    compose_release(categories, extracted, variants, tmp_path / "release.json")
+    assert json.loads(categories.read_text())["appIdentities"]["main"] == [identity]
+    for update in [{"packageIdentifier": None}, {"installedPath": None}, {"installedPath": "/Library/Main.app"},
+                   {"installedPath": "/Applications/../Library/Main.app"}, {"installedPath": "/Applications/Other.app"},
+                   {"installedPath": "/Applications/Outer.app/Main.app"}]:
+        write_json(extracted, {"schemaVersion": 1, "casks": {"main": {"apps": [{**identity, **update}]}}})
+        with pytest.raises(ValueError, match="package"):
+            compose_release(categories, extracted, variants, tmp_path / "release.json")
