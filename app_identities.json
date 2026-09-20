@@ -33986,6 +33986,265 @@
           "bundleIdentifier": "com.xmlmind.xmleditapp.desktop.App.xxe.perso"
         }
       ]
+    },
+    "youku": {
+      "caskVersion": "9.5.4.1001",
+      "sourceURL": "https://pcclient.download.youku.com/iku_electron_client/youkuclient_setup_9.5.4.1001.dmg",
+      "artifactSHA256": "90a7ddb4eb9d5e4179505ed60ce994c09ff331419cdf2cd5f2d8a65d3d4252c4",
+      "apps": [
+        {
+          "bundleName": "优酷.app",
+          "bundleIdentifier": "com.youku.mac"
+        }
+      ]
+    },
+    "yuque": {
+      "caskVersion": "4.2.1.1333,BJ573111a41a6d47e0a380a8cac832ae49",
+      "sourceURL": "https://app.nlark.com/yuque-desktop/4.2.1.1333/BJ573111a41a6d47e0a380a8cac832ae49/Yuque-4.2.1.1333.dmg",
+      "artifactSHA256": "671d849c158cd3e893d52d992b6cc855f3bd25f43caa73e776723c694c23a7b1",
+      "apps": [
+        {
+          "bundleName": "语雀.app",
+          "bundleIdentifier": "com.yuque.app"
+        }
+      ]
+    },
+    "yojimbo": {
+      "caskVersion": "4.6.3",
+      "sourceURL": "https://s3.amazonaws.com/BBSW-download/Yojimbo_4.6.3.dmg",
+      "artifactSHA256": "1496c28e14c86ef501d9e66caf1620abd2f80acb15ca78eb42a9cc03f1aba50f",
+      "apps": [
+        {
+          "bundleName": "Yojimbo.app",
+          "bundleIdentifier": "com.barebones.yojimbo4"
+        }
+      ]
+    },
+    "yandextelemost": {
+      "caskVersion": "2.42.4,9707",
+      "sourceURL": "https://telemost.yandex.com/download-desktop",
+      "artifactSHA256": "342b4546f8e75b95f7d3d613e963868c94690526c3055e5181173c07afe893ee",
+      "apps": [
+        {
+          "bundleName": "Yandex Telemost.app",
+          "bundleIdentifier": "ru.yandex.desktop.telemost"
+        }
+      ]
+    },
+    "yam-display": {
+      "caskVersion": "2.4.8.4",
+      "sourceURL": "https://www.yamdisplay.com/app/YamDisplay2.4.8.4.dmg",
+      "artifactSHA256": "49b67f195e23365559310c51e3d423c5d89d04ea58cad1ecf98e7292d19e121c",
+      "apps": [
+        {
+          "bundleName": "Yam Display.app",
+          "bundleIdentifier": "com.yamstu.yamdisplaymac"
+        }
+      ]
+    },
+    "xprocheck": {
+      "caskVersion": "1.7,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/xprocheck17.zip",
+      "artifactSHA256": "72178e9e80b36f84e4213926a9d26c9f909f81540efc5077bd8cdd82ac8ffe3f",
+      "apps": [
+        {
+          "bundleName": "XProCheck.app",
+          "bundleIdentifier": "co.eclecticlight.XProCheck"
+        }
+      ]
+    },
+    "zappy": {
+      "caskVersion": "5.0.0",
+      "sourceURL": "https://zappy.zapier.com/releases/zappy-5.0.0.dmg",
+      "artifactSHA256": "41304febfae4430d1015ec567ea204b9229dd37038e676cbbc38a64a92970572",
+      "apps": [
+        {
+          "bundleName": "Zappy.app",
+          "bundleIdentifier": "com.blackbeltlabs.Zappy"
+        }
+      ]
+    },
+    "yealink-meeting": {
+      "caskVersion": "4.7.43,03989b48eb2ca4178a3aa1e3c9dc0ec3",
+      "sourceURL": "https://download.ylyun.com/yealink-meeting/mac-arm/latest/Yealink-Meeting-arm.dmg?v=03989b48eb2ca4178a3aa1e3c9dc0ec3",
+      "artifactSHA256": "7f4e3cd07540cc36b77a28c26ea54a0c382e77ac800274cc37d90584161a0cb6",
+      "apps": [
+        {
+          "bundleName": "Yealink Meeting.app",
+          "bundleIdentifier": "com.yealink.meeting.app"
+        }
+      ]
+    },
+    "xnapper": {
+      "caskVersion": "1.17.1",
+      "sourceURL": "https://xnapper.com/dmg/Xnapper-1.17.1.dmg",
+      "artifactSHA256": "1cfbabf28fb49d117febcc81c77ced5989768f9150d451417cd4f526b048c7e7",
+      "apps": [
+        {
+          "bundleName": "Xnapper.app",
+          "bundleIdentifier": "com.devuap.beautyshotapp"
+        }
+      ]
+    },
+    "yousician": {
+      "caskVersion": "2.11.51",
+      "sourceURL": "https://public.yousician.com/Builds/Yousician.dmg",
+      "artifactSHA256": "85f655782d0e9abad0913dff411862d55a8f85ca21ef1316982a47b3ecef43f1",
+      "apps": [
+        {
+          "bundleName": "Yousician Launcher.app",
+          "bundleIdentifier": "com.yousician.launcher"
+        }
+      ]
+    },
+    "xscope": {
+      "caskVersion": "4.7.2,144",
+      "sourceURL": "https://downloads.iconfactory.com/xscope/xScope-4.7.2+144.zip",
+      "artifactSHA256": "5f2552030ea8ff74db1b9bea05fbf3ea7328fb1b780b216eec9e47ad80c24649",
+      "apps": [
+        {
+          "bundleName": "xScope.app",
+          "bundleIdentifier": "com.iconfactory.xScope"
+        }
+      ]
+    },
+    "youdaonote": {
+      "caskVersion": "8.2.81",
+      "sourceURL": "https://artifact.lx.netease.com/download/ynote-electron/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0-8.2.81-arm64.dmg",
+      "artifactSHA256": "8fd7681156693e19eff489b2ef65fabe48a19839e04f3d8d8a972e437a6659c7",
+      "apps": []
+    },
+    "yate": {
+      "caskVersion": "9.2.2.1",
+      "sourceURL": "https://2manyrobots.com/Updates/YateMain/Yate.zip",
+      "artifactSHA256": "e840aa9bbb4c974f4c34e54070fc2a6370b4d02f5fdd44b053d0aa32ba776126",
+      "apps": [
+        {
+          "bundleName": "Yate.app",
+          "bundleIdentifier": "com.2manyrobots.Yate"
+        }
+      ]
+    },
+    "yingfu-online": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://online.yingfu.com.cn/cdn/desktop-release/stable/darwin/arm64/%E8%8B%B1%E5%AD%9A%E4%B9%90%E5%AD%A6%201.2.2%20(arm64).dmg",
+      "artifactSHA256": "b39cc50bb72888577e330fd0cfe5e6a032d8b459e55052676459723b9b661d64",
+      "apps": [
+        {
+          "bundleName": "英孚乐学.app",
+          "bundleIdentifier": "cn.com.yingfu.online"
+        }
+      ]
+    },
+    "yandex-music-unofficial": {
+      "caskVersion": "1.8.1",
+      "sourceURL": "https://github.com/juvirez/yandex-music-app/releases/download/v1.8.1/Yandex-Music-Unofficial-1.8.1-arm64.dmg",
+      "artifactSHA256": "dfe7459432eb25870f1e01dc35cb6df10590e0bb7eeb9a1e7a07a644d8ac90a4",
+      "apps": [
+        {
+          "bundleName": "Yandex Music Unofficial.app",
+          "bundleIdentifier": "dev.juvs.yandex-music"
+        }
+      ]
+    },
+    "yep": {
+      "caskVersion": "4.0.4",
+      "sourceURL": "https://www.ironicsoftware.com/downloads/Yep.zip",
+      "artifactSHA256": "e05cfd1665637d81636016e66dd92ef8a4762ec8aa8ed69cf2540282fe62d579",
+      "apps": [
+        {
+          "bundleName": "Yep.app",
+          "bundleIdentifier": "com.ironic.yep4"
+        }
+      ]
+    },
+    "yakit": {
+      "caskVersion": "1.4.8-0919",
+      "sourceURL": "https://github.com/yaklang/yakit/releases/download/v1.4.8-0919/Yakit-1.4.8-0919-darwin-arm64.dmg",
+      "artifactSHA256": "79b92c7cd91baa9f9d446f48c7395e20b6831dd788e502292e47cd6ea117df42",
+      "apps": [
+        {
+          "bundleName": "Yakit.app",
+          "bundleIdentifier": "io.yaklang.yakit"
+        }
+      ]
+    },
+    "yes24-ebook": {
+      "caskVersion": "1.0.1.30",
+      "sourceURL": "https://ebookcdn.yes24.com/UPGRADE/PC_CREMA/mac/1.0.1.30/YES24eBook.dmg",
+      "artifactSHA256": "14887ae2776586f0e683bd306f13a790fd2f40a26bdf5c748623b04211aa739e",
+      "apps": [
+        {
+          "bundleName": "YES24_eBook.app",
+          "bundleIdentifier": "com.yes24.macEBook"
+        }
+      ]
+    },
+    "yojam": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://yoj.am/releases/Yojam-1.3.1.dmg",
+      "artifactSHA256": "17836ff02c90ad9b8fbeec8b3735442ffd4d6b4c66b31111294c067bf46e3243",
+      "apps": [
+        {
+          "bundleName": "Yojam.app",
+          "bundleIdentifier": "com.yojam.app"
+        }
+      ]
+    },
+    "yellowdot": {
+      "caskVersion": "2.6",
+      "sourceURL": "https://github.com/FuzzyIdeas/YellowDot/releases/download/v2.6/YellowDot-2.6.dmg",
+      "artifactSHA256": "f94b255f1cc580ab250541581104d1b5ee65542fdd7694c7f9b20c30b86b4659",
+      "apps": [
+        {
+          "bundleName": "YellowDot.app",
+          "bundleIdentifier": "com.lowtechguys.YellowDot"
+        }
+      ]
+    },
+    "yinxiangbiji": {
+      "caskVersion": "9.8.7_478777",
+      "sourceURL": "https://cdn.yinxiang.com/mac-smd/public/YinxiangBiji_RELEASE_9.8.7_478777.zip",
+      "artifactSHA256": "b8c2235c7bd64419d675a8cc809878f608987f6cfa57939eca3c65307e8d6fe9",
+      "apps": [
+        {
+          "bundleName": "印象笔记.app",
+          "bundleIdentifier": "com.yinxiang.Mac"
+        }
+      ]
+    },
+    "xtool-studio": {
+      "caskVersion": "1.2.11,121,c518d71e-2d6a-4494-851f-8e61b8a76949",
+      "sourceURL": "https://storage.atomm.com/efficacy/atomm-package/prod/packages/121/c518d71e-2d6a-4494-851f-8e61b8a76949/xTool-Studio-arm64-1.2.11.dmg",
+      "artifactSHA256": "07222ff336d46b907958bb776ed23663f0bf27d8dd6bf7f176675b6ed9dd37ed",
+      "apps": [
+        {
+          "bundleName": "xTool Studio.app",
+          "bundleIdentifier": "com.makeblock.xtool-studio"
+        }
+      ]
+    },
+    "xrg": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://download.gauchosoft.com/xrg/XRG-release-3.2.1.zip",
+      "artifactSHA256": "26892490b0b67c2baf6286e6360a7a88236fe16e4d94708ba8722037431a1de4",
+      "apps": [
+        {
+          "bundleName": "XRG.app",
+          "bundleIdentifier": "com.piatekjimenez.XRG"
+        }
+      ]
+    },
+    "zeitgeist": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://github.com/daneden/zeitgeist/releases/download/v2.3/Zeitgeist.app.zip",
+      "artifactSHA256": "437794ff91f9c8810580d1f07965b4100c28ef5fb162195bf8e87b5db7fd8308",
+      "apps": [
+        {
+          "bundleName": "Zeitgeist.app",
+          "bundleIdentifier": "me.daneden.Zeitgeist"
+        }
+      ]
     }
   }
 }

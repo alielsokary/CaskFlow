@@ -1751,6 +1751,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "youdaodict": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Operation timed out after 600054 milliseconds with 23182585 out of 107504627 bytes received",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "yubihsm2-sdk": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
