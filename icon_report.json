@@ -1217,6 +1217,12 @@
     "attempts": 4,
     "updated": "2026-09-01"
   },
+  "playonmac": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "podolski": {
     "status": "no_icon",
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",

@@ -26885,6 +26885,270 @@
           "bundleIdentifier": "com.jeremyvizzini.photosrevive-paddle"
         }
       ]
+    },
+    "pieces": {
+      "caskVersion": "6.1.0",
+      "sourceURL": "https://builds.pieces.app/stages/production/pieces_for_x/macos-arm64/download",
+      "artifactSHA256": "5f7d48d4f6d7bacd53a5e19184738854c5614cf64625d1e41f05387a7b19b88d",
+      "apps": [
+        {
+          "bundleName": "Pieces.app",
+          "bundleIdentifier": "com.pieces.x"
+        }
+      ]
+    },
+    "piezo": {
+      "caskVersion": "1.9.10",
+      "sourceURL": "https://cdn.rogueamoeba.com/piezo/download/Piezo.zip",
+      "artifactSHA256": "1a13a4ce72ee3eb06b3ead78197db613662c662ca7493e4d8f46f9b2e0706684",
+      "apps": [
+        {
+          "bundleName": "Piezo.app",
+          "bundleIdentifier": "com.rogueamoeba.Piezo"
+        }
+      ]
+    },
+    "planet": {
+      "caskVersion": "0.22.3",
+      "sourceURL": "https://github.com/Planetable/Planet/releases/download/release-0.22.3/Planet.zip",
+      "artifactSHA256": "3edb27834d250748f1b819601310bdf33e61729066d05182a88c85ce9570a4b6",
+      "apps": [
+        {
+          "bundleName": "Planet.app",
+          "bundleIdentifier": "xyz.planetable.Planet"
+        }
+      ]
+    },
+    "plasticity": {
+      "caskVersion": "26.1.4",
+      "sourceURL": "https://github.com/nkallen/plasticity/releases/download/v26.1.4/Plasticity-darwin-arm64-26.1.4.zip",
+      "artifactSHA256": "4f61f0d3199bc2aaee6ec468e5e72f20f4781fd240db94b22282c0fa9659f70a",
+      "apps": [
+        {
+          "bundleName": "Plasticity.app",
+          "bundleIdentifier": "com.electron.plasticity"
+        }
+      ]
+    },
+    "pictureview": {
+      "caskVersion": "2.3.4",
+      "sourceURL": "https://wl879.github.io/apps/picview/PictureView_2.3.4.dmg",
+      "artifactSHA256": "3975d6e10f8e04e4339eadeafd0af511611fd9ba852d4c3e724dbbb3d811abce",
+      "apps": [
+        {
+          "bundleName": "PictureView.app",
+          "bundleIdentifier": "com.zouke.PictureView"
+        }
+      ]
+    },
+    "playdate-mirror": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://download-cdn.panic.com/mirror/Mirror-1.4.0.zip",
+      "artifactSHA256": "9a963fc8769e4e81630347467787fff2d9c863f6efffc57c0aa4c8973867167e",
+      "apps": [
+        {
+          "bundleName": "Mirror.app",
+          "bundleIdentifier": "com.panic.Mirror"
+        }
+      ]
+    },
+    "pieces-os": {
+      "caskVersion": "12.6.2",
+      "sourceURL": "https://builds.pieces.app/stages/production/os_server/macos-arm64/download",
+      "artifactSHA256": "b016cf8c5140022e3550defec02022920d4465d1e347a06b2d2e52355979f6b9",
+      "apps": [
+        {
+          "bundleName": "Pieces OS.app",
+          "bundleIdentifier": "com.pieces.os"
+        }
+      ]
+    },
+    "pimosa": {
+      "caskVersion": "1.3.5",
+      "sourceURL": "https://pub-e98ac9d8ff7347b29207e39fd6b3cb89.r2.dev/Pimosa.zip",
+      "artifactSHA256": "ef934195390c35eeb1f10667e8325e559fe85bdc53de937d4b019629998bcd38",
+      "apps": [
+        {
+          "bundleName": "Pimosa.app",
+          "bundleIdentifier": "com.beta.pimosa"
+        }
+      ]
+    },
+    "piphero": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/pipheroapp/downloads/releases/download/v1.2.0/PiPHero-1.2.0-mac-arm64.dmg",
+      "artifactSHA256": "0ace00722786d40520f959a4aa08562b4e55cdcfccf138ca0101fd3341d59541",
+      "apps": [
+        {
+          "bundleName": "PiPHero.app",
+          "bundleIdentifier": "com.piphero.app"
+        }
+      ]
+    },
+    "pixelsnap": {
+      "caskVersion": "2.6.4",
+      "sourceURL": "https://updates.getpixelsnap.com/v2/PixelSnap-2-2.6.4.dmg",
+      "artifactSHA256": "0a3b1f964891900a2f7f7e6bd319651a1ed379275e7532bc32109a649fb6312d",
+      "apps": [
+        {
+          "bundleName": "PixelSnap 2.app",
+          "bundleIdentifier": "pl.maketheweb.pixelsnap2"
+        }
+      ]
+    },
+    "pingnoo": {
+      "caskVersion": "2021.04.30-develop",
+      "sourceURL": "https://github.com/nedrysoft/pingnoo/releases/download/2021.04.30-develop/Pingnoo.2021.04.30-develop.universal.dmg",
+      "artifactSHA256": "827db036cdc0535bac5b9a1fcf9de4bdaea54ecd5bded702c127303229f10378",
+      "apps": [
+        {
+          "bundleName": "Pingnoo.app",
+          "bundleIdentifier": "com.nedrysoft.pingnoo"
+        }
+      ]
+    },
+    "pile": {
+      "caskVersion": "0.9.9",
+      "sourceURL": "https://github.com/UdaraJay/Pile/releases/download/v0.9.9/Pile-0.9.9-arm64.dmg",
+      "artifactSHA256": "2de912e6c8fb688c00ed4539a20bdf6f3f227a754487c6234fe5ec3b5822efcf",
+      "apps": [
+        {
+          "bundleName": "Pile.app",
+          "bundleIdentifier": "pile.un.ms"
+        }
+      ]
+    },
+    "plover": {
+      "caskVersion": "5.4.1",
+      "sourceURL": "https://github.com/openstenoproject/plover/releases/download/v5.4.1/plover-5.4.1-macosx_12_0_universal2.dmg",
+      "artifactSHA256": "22a4fc885f947cb1b5954bd5e32b51c55c57b7eb9cb909f18ec7807f2ffa948c",
+      "apps": [
+        {
+          "bundleName": "Plover.app",
+          "bundleIdentifier": "org.openstenoproject.plover"
+        }
+      ]
+    },
+    "pluralplay-flclashx": {
+      "caskVersion": "0.4.2",
+      "sourceURL": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg",
+      "artifactSHA256": "4c440b3587c90d88a3fad3623122aa617d398dec70ac0269b5bf9d57d8e65826",
+      "apps": [
+        {
+          "bundleName": "FlClashX.app",
+          "bundleIdentifier": "com.follow.clash"
+        }
+      ]
+    },
+    "plex-htpc": {
+      "caskVersion": "1.71.1.346,f62ce923",
+      "sourceURL": "https://downloads.plex.tv/htpc/1.71.1.346-f62ce923/macos/PlexHTPC-1.71.1.346-f62ce923-universal.zip",
+      "artifactSHA256": "98d7fe76c010945f261ae5ad0f83253973aad834d743fe9d6135f7ae6db165da",
+      "apps": [
+        {
+          "bundleName": "Plex HTPC.app",
+          "bundleIdentifier": "tv.plex.htpc"
+        }
+      ]
+    },
+    "pitch": {
+      "caskVersion": "2.145.0,stable.4,8445583",
+      "sourceURL": "https://desktop-app-builds.pitch.com/Pitch-2.145.0-stable.4-ci8445583.dmg",
+      "artifactSHA256": "d87f6f227e0358b263db626e009ee02dd82650be86276875413765963dede655",
+      "apps": [
+        {
+          "bundleName": "Pitch.app",
+          "bundleIdentifier": "io.pitch.pitch-macos"
+        }
+      ]
+    },
+    "platinum-notes": {
+      "caskVersion": "10.5.0.1256,57",
+      "sourceURL": "https://builds.mixedinkey.com/download/57/release/latest?key=public",
+      "artifactSHA256": "1b7230f4553ea6a3706c4b953f9fc46c9dfafdf7f50be231bdc331d8315bcff9",
+      "apps": [
+        {
+          "bundleName": "Platinum Notes 10.app",
+          "bundleIdentifier": "com.mixedinkey.PlatinumNotes"
+        }
+      ]
+    },
+    "pinwheel": {
+      "caskVersion": "1.12.0,118",
+      "sourceURL": "https://cdn2.bjango.com/pinwheel/versions/Pinwheel_1_12_0-118.zip",
+      "artifactSHA256": "87e4c489580dd286294bef6862173dee28d0c10e999bfe6c783c871acd5210e4",
+      "apps": [
+        {
+          "bundleName": "Pinwheel.app",
+          "bundleIdentifier": "com.bjango.pinwheel"
+        }
+      ]
+    },
+    "plamo-translate": {
+      "caskVersion": "0.6.11",
+      "sourceURL": "https://storage.googleapis.com/plamo-translate-web-downloads-prd/desktop/plamo-translate-desktop-0.6.11.dmg",
+      "artifactSHA256": "c09aac65d519c477244bf8d0fa979e95af736c14813ba2ac1441fe3c76a5947d",
+      "apps": [
+        {
+          "bundleName": "PLaMo翻訳.app",
+          "bundleIdentifier": "com.pfn.plamo-translation"
+        }
+      ]
+    },
+    "plistedit-pro": {
+      "caskVersion": "1.10.0",
+      "sourceURL": "https://www.fatcatsoftware.com/plisteditpro/downloads/PlistEditPro_1100.zip",
+      "artifactSHA256": "0ad2f7a4066945b5a67db0667e946748cc4f33858f786554779c54f1a6608c4e",
+      "apps": [
+        {
+          "bundleName": "PlistEdit Pro.app",
+          "bundleIdentifier": "com.fatcatsoftware.pledpro"
+        }
+      ]
+    },
+    "pixieditor": {
+      "caskVersion": "2.1.2.4",
+      "sourceURL": "https://github.com/PixiEditor/PixiEditor/releases/download/2.1.2.4/PixiEditor-2.1.2.4-universal-macos.dmg",
+      "artifactSHA256": "6040e0c08270e357a06cd8942c50a1286edde72965e4043007fb5e540a5d66a8",
+      "apps": [
+        {
+          "bundleName": "PixiEditor.app",
+          "bundleIdentifier": "com.pixieditor"
+        }
+      ]
+    },
+    "pingplotter": {
+      "caskVersion": "5.27.13",
+      "sourceURL": "https://www.pingplotter.com/downloads/pingplotter_osx.zip",
+      "artifactSHA256": "e0a0a3ef54cb4be64517698a757c6552a3417a7a2bc81f4a40275fdf5220c1d3",
+      "apps": [
+        {
+          "bundleName": "PingPlotter.app",
+          "bundleIdentifier": "com.pingman.pingplotter.mac"
+        }
+      ]
+    },
+    "pikpak": {
+      "caskVersion": "2.5.1.2450",
+      "sourceURL": "https://static.mypikpak.com/mac/PikPak-v2.5.1.2450-arm64.zip",
+      "artifactSHA256": "4cf32ff5da4fac9611063b27ecf562c01bf092fbff64f99e34942ed6034c20b6",
+      "apps": [
+        {
+          "bundleName": "PikPak.app",
+          "bundleIdentifier": "com.pikcloud.pikpak.mac"
+        }
+      ]
+    },
+    "pinegrow": {
+      "caskVersion": "9.3",
+      "sourceURL": "https://github.com/Pinegrow/PinegrowReleases/releases/download/pg9.3/PinegrowMacARM64.9.3.dmg",
+      "artifactSHA256": "2bbdbe17643607e3aefc67322709f7f826cf72ffd1bd6198d40a7d496e5686f5",
+      "apps": [
+        {
+          "bundleName": "Pinegrow.app",
+          "bundleIdentifier": "com.pinegrow.pg"
+        }
+      ]
     }
   }
 }
