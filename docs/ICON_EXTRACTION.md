@@ -112,9 +112,14 @@ itself. Declared packages inside archives are expanded without executing scripts
 Package identities retain the component's `packageIdentifier` and verified
 `installedPath` in both the raw manifest and consumer projection. Product packages
 must have an unconditional Distribution choice outline; only referenced components
-qualify. Cask `pkg` choices, conditional Distribution attributes, relocation, and
-installer scripts that select components are not evaluated. These cases produce
-explicit diagnostics instead of assuming every bundled component is installed.
+qualify for `apps`. Cask `pkg` choices and conditional Distribution attributes
+are not evaluated. Their verified payload identities go into a separate
+`packageCandidates` list, projected as `packageAppCandidates` in `categories.json`.
+They never enter `appIdentities`. CaskHub must verify the exact installed component
+receipt, its file list and installation location, and the unique non-store app's
+bundle ID and physical path before using a candidate. Missing or conflicting
+evidence leaves the candidate unassigned. Relocatable payloads, invalid package
+XML, symlinks, and malformed identities remain rejected. No installer script runs.
 Symlinks, ambiguous duplicates, name guesses, and icon-selection fallbacks cannot
 establish app identity. Unsupported or ambiguous artifacts produce an empty
 `apps` list with `diagnostics`, also printed in the extraction log. For example,
@@ -123,9 +128,9 @@ distinct reasons. Custom Ruby staging is not executed to manufacture missing
 suite directories. Bundle identifiers may have a single component (for example,
 Blockbench's `blockbench`); reverse-DNS form is typical, not mandatory in
 [Apple's specification](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
-Malformed identifiers remain rejected. Extraction version 4 revisits older empty
-records and older package records once. This recovers previously rejected
-single-component identifiers and rechecks package component selection and provenance.
+Malformed identifiers remain rejected. Extraction version 5 revisits older empty
+records and older package records once to collect receipt-verifiable candidates.
+Distribution diagnostics retain the exact guarded element and selection attributes.
 
 The existing batch publisher merges only inspected tokens into the icons branch.
 Failed downloads leave previous evidence intact. Daily releases merge the
@@ -142,7 +147,7 @@ Already-published icons need an explicit identity backfill. Use the workflow's
 `identity_backfill` input, or run locally without publishing:
 
 ```sh
-python3 scripts/extract_icons.py --identity-backfill --limit 25 --output-dir /tmp/cask-identities
+python3 scripts/extract_icons.py --identity-backfill --limit 1000 --workers 4 --output-dir /tmp/cask-identities
 ```
 
 This reuses normal archive download and expansion, without installing apps.
@@ -155,6 +160,23 @@ rolling `no_check` archives, use `--tokens` to force a fresh inspection. Add
 `--publish` only when ready to update the icons branch. Identity backfill remains
 manual; these changes do not add a schedule. Coverage beyond inspected artifacts
 remains absent until verified.
+
+Manual workflow runs accept 1, 2, or 4 workers (default 4); scheduled runs retain
+one worker and never select the bulk identity queue. Workers have isolated output
+directories. One coordinator merges their results and publishes the existing
+25-result checkpoints. Rerunning the manual backfill skips current-version records,
+including completed empty results and conditional candidates; it resumes missing
+or stale work subject to the existing failure limits. Explicit `tokens` force
+reinspection. The final report separates confirmed apps, receipt candidates, empty
+results and failures.
+
+Each package inspection retains original `Distribution`, `PackageInfo`, and
+`Info.plist` files in a per-token diagnostic ZIP (1 MiB per file, 16 MiB total;
+larger files are listed as skipped). Symlinks and executables are excluded.
+The workflow uploads these archives, selected cask definitions, outcomes and the
+raw manifest as a 30-day artifact, even when extraction or publication fails.
+This evidence supports diagnosis without another vendor download. Local runs
+retain it under the output directory's `diagnostics` folder.
 
 CaskHub consumes the optional projection using its release loader and bundled
 fallback. Older releases without the field remain readable. Unverified apps stay

@@ -6,7 +6,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from app_identities import declared_artifact_apps, needs_refresh, package_selection_reason
+from app_identities import declared_artifact_apps, needs_refresh
 from classify_new_casks import is_main_cask
 from extract_icons import eligibility
 from style_standards import write_json
@@ -43,13 +43,14 @@ def _inspection_status(cask: dict, raw: dict | None, report: dict) -> tuple[str,
     return "needs_inspection", "newly supported or stale extraction"
 
 
-def classify(cask: dict, raw: dict | None, published: list, report: dict) -> tuple[str, str]:
+def classify(cask: dict, raw: dict | None, published: list, published_candidates: list, report: dict) -> tuple[str, str]:
     if published:
         return "mapped", "published application identity"
     if raw and raw.get("apps"):
         return "extracted_unpublished", "verified raw identity is absent from the consumer projection"
-    if reason := package_selection_reason(cask):
-        return "unsupported", reason
+    if raw and raw.get("packageCandidates"):
+        return ("receipt_candidates" if published_candidates else "candidates_unpublished",
+                "package payload candidates require verification against installed component receipts")
     kinds = {key for stanza in cask.get("artifacts") or [] for key in stanza} - METADATA_STANZAS
     if eligibility(cask) is not None:
         return _unsupported_reason(cask, kinds)
@@ -62,12 +63,15 @@ def audit(casks: list[dict], identities: dict, categories: dict, report: dict) -
         token = cask["token"]
         raw = identities.get("casks", {}).get(token)
         published = categories.get("appIdentities", {}).get(token, [])
-        status, reason = classify(cask, raw, published, report.get(token, {}))
+        published_candidates = categories.get("packageAppCandidates", {}).get(token, [])
+        status, reason = classify(cask, raw, published, published_candidates, report.get(token, {}))
         rows.append({"token": token, "status": status, "reason": reason,
                      "needsReinspection": eligibility(cask) is None and needs_refresh(cask, raw),
                      "declaredGenericApps": [name for _, name in declared_artifact_apps(cask)],
                      "diagnostics": (raw or {}).get("diagnostics", []),
-                     "rawIdentities": (raw or {}).get("apps", []), "publishedIdentities": published})
+                     "rawIdentities": (raw or {}).get("apps", []), "publishedIdentities": published,
+                     "packageCandidates": (raw or {}).get("packageCandidates", []),
+                     "publishedPackageCandidates": published_candidates})
     return {"scope": "macOS application bundles, not all installed software",
             "catalogCasks": len(rows), "counts": dict(Counter(row["status"] for row in rows)), "casks": rows}
 

@@ -376,7 +376,7 @@ def test_generic_app_artifact_through_extraction_and_publication(tmp_path, monke
 
 
 @pytest.mark.parametrize("case", ["default", "cask-choices", "conditional", "script", "unreferenced", "malformed",
-                                 "symlink", "duplicate-choice", "duplicate-line", "relocated"])
+                                 "symlink", "duplicate-choice", "duplicate-line", "relocated", "no-app"])
 def test_product_components_require_unconditional_installation(tmp_path, case):
     root = tmp_path / "expanded"
     payload = root / "Main.pkg"
@@ -385,7 +385,9 @@ def test_product_components_require_unconditional_installation(tmp_path, case):
     extra = root / "Extra.pkg"
     app(extra / "Payload/Applications", "Extra.app", "org.example.extra")
     (extra / "PackageInfo").write_text('<pkg-info identifier="extra" install-location="/"/>')
-    attribute = ' selected="system.someCondition"' if case == "conditional" else ''
+    attribute = ' selected="system.someCondition"' if case in {"conditional", "no-app"} else ''
+    if case == "no-app":
+        (payload / "Payload/Applications").rename(payload / "Payload/Library")
     script = '<script>function choose() { return true; }</script>' if case == "script" else ''
     ref = 'missing' if case == "unreferenced" else 'main'
     xml = f'''<installer-gui-script>{script}<choices-outline><line choice="main"/></choices-outline>
@@ -412,6 +414,86 @@ def test_product_components_require_unconditional_installation(tmp_path, case):
                  "packageIdentifier": "main", "installedPath": "/Applications/Main.app"}] if case == "default" else []
     assert result["apps"] == expected
     assert bool(result["diagnostics"]) == (case != "default")
+    if case in {"conditional", "script", "cask-choices", "relocated"}:
+        assert result["packageCandidates"] == [
+            {"bundleName": "Main.app", "bundleIdentifier": "org.example.main",
+             "packageIdentifier": "main", "installedPath": "/Applications/Main.app"}]
+    else:
+        assert not result.get("packageCandidates")
+    if case == "no-app":
+        assert {"artifact": "Main.pkg/PackageInfo", "reason": "no application payload under /Applications"} in result["diagnostics"]
+
+
+def test_conditional_candidate_publication_never_adds_generic_ownership(tmp_path):
+    identity = {"bundleName": "Optional.app", "bundleIdentifier": "org.example.optional",
+                "packageIdentifier": "org.example.component", "installedPath": "/Applications/Optional.app"}
+    categories, extracted, variants, output = [tmp_path / name for name in
+                                               ["categories.json", "extracted.json", "variants.json", "output.json"]]
+    write_json(categories, {"tokenToCategory": {}})
+    write_json(variants, {"schemaVersion": 1, "casks": {}})
+    write_json(extracted, {"schemaVersion": 1, "casks": {"optional": {"apps": [], "packageCandidates": [identity]}}})
+    compose_release(categories, extracted, variants, output)
+    catalog = json.loads(categories.read_text())
+    assert catalog["appIdentities"] == {}
+    assert catalog["packageAppCandidates"] == {"optional": [identity]}
+    assert load_manifest(output)["casks"]["optional"]["packageCandidates"] == [identity]
+    for field in ("packageIdentifier", "installedPath"):
+        invalid = {key: value for key, value in identity.items() if key != field}
+        write_json(extracted, {"schemaVersion": 1, "casks": {"optional": {"apps": [], "packageCandidates": [invalid]}}})
+        with pytest.raises(ValueError, match="package"):
+            compose_release(categories, extracted, variants, output)
+    write_json(extracted, {"schemaVersion": 1, "casks": {"optional": {"apps": []}}})
+    compose_release(categories, extracted, variants, output)
+    assert json.loads(categories.read_text())["packageAppCandidates"] == {}
+
+
+def test_distribution_with_scripts_is_fully_validated_before_candidates_are_accepted(tmp_path):
+    root = tmp_path / "expanded"
+    app(root / "Main.pkg/Payload/Applications", "Optional.app", "org.example.optional")
+    (root / "Main.pkg/PackageInfo").write_text('<pkg-info identifier="main" install-location="/"/>')
+    archive = tmp_path / "archive.pkg"
+    archive.write_bytes(b"fixture")
+    source = {**cask(), "artifacts": [{"pkg": ["archive.pkg"]}]}
+    for xml in ['<installer-gui-script><script>function choose(){}</script><bad',
+                '<!DOCTYPE installer-gui-script><installer-gui-script><script/></installer-gui-script>']:
+        (root / "Distribution").write_text(xml)
+        result = extract_identities(source, root, archive, package_roots=(root,))
+        assert result["apps"] == [] and not result.get("packageCandidates")
+        assert result["diagnostics"]
+
+
+def test_native_product_package_retains_conditional_identity_and_original_metadata(tmp_path, monkeypatch):
+    import subprocess
+    import zipfile
+    import extract_icons
+    payload = tmp_path / "payload"
+    app(payload / "Applications", "Optional.app", "org.example.optional")
+    component = tmp_path / "Main.pkg"
+    subprocess.run(["pkgbuild", "--root", str(payload), "--identifier", "org.example.component",
+                    "--install-location", "/", str(component)], check=True, capture_output=True)
+    distribution = tmp_path / "Distribution"
+    distribution.write_text('''<installer-gui-script minSpecVersion="1"><title>Fixture</title>
+    <script>function selected() { throw "must not execute"; }</script>
+    <choices-outline><line choice="main"/></choices-outline>
+    <choice id="main" selected="selected()"><pkg-ref id="org.example.component"/></choice>
+    <pkg-ref id="org.example.component" version="1" auth="Root">Main.pkg</pkg-ref></installer-gui-script>''')
+    archive = tmp_path / "Product.pkg"
+    subprocess.run(["productbuild", "--distribution", str(distribution), "--package-path", str(tmp_path), str(archive)],
+                   check=True, capture_output=True)
+    source = {**cask(), "url": archive.as_uri(), "artifacts": [{"pkg": ["Product.pkg"]}]}
+    output = tmp_path / "output"
+    output.mkdir()
+    monkeypatch.setattr(extract_icons, "download", lambda *a: archive)
+    extract_icons.extract_one(source, output)
+    result = load_manifest(output / MANIFEST)["casks"]["sample"]
+    assert result["apps"] == []
+    assert result["packageCandidates"] == [{"bundleName": "Optional.app", "bundleIdentifier": "org.example.optional",
+                                             "packageIdentifier": "org.example.component",
+                                             "installedPath": "/Applications/Optional.app"}]
+    assert any(d.get("attributes", {}).get("selected") == "selected()" for d in result["diagnostics"])
+    with zipfile.ZipFile(output / "diagnostics/sample.zip") as evidence:
+        assert any(name.endswith("Distribution") for name in evidence.namelist())
+        assert any(name.endswith("Info.plist") for name in evidence.namelist())
 
 
 def test_successful_old_package_records_are_reinspected_for_component_selection():

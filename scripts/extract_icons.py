@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import plistlib
 import re
 import shutil
@@ -12,6 +13,8 @@ import subprocess
 import sys
 import tempfile
 import time
+import zipfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
@@ -466,9 +469,38 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
             return "no_icon", "only installer/updater apps in artifact"
         return _icon_status(app, selection, output_dir / f"{token}.png")
     finally:
-        for mnt in mounts:
-            run(["hdiutil", "detach", str(mnt), "-force"])
-        shutil.rmtree(workdir, ignore_errors=True)
+        try:
+            if has_pkg_artifact(cask):
+                _save_package_metadata(workdir, output_dir / "diagnostics" / f"{token}.zip")
+        finally:
+            for mnt in mounts:
+                run(["hdiutil", "detach", str(mnt), "-force"])
+            shutil.rmtree(workdir, ignore_errors=True)
+
+
+def _save_package_metadata(root: Path, destination: Path) -> None:
+    """Retain small original metadata files, never payload executables or symlinks."""
+    total = 0
+    skipped = []
+    try:
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED, strict_timestamps=False) as archive:
+            for parent, directories, filenames in os.walk(root, followlinks=False):
+                directories[:] = [name for name in directories if not (Path(parent) / name).is_symlink()]
+                for name in sorted(set(filenames) & {"Distribution", "PackageInfo", "Info.plist"}):
+                    path = Path(parent) / name
+                    if path.is_symlink() or not path.resolve().is_relative_to(root.resolve()):
+                        continue
+                    relative = str(path.relative_to(root))
+                    size = path.stat().st_size
+                    if size > 1024 * 1024 or total + size > 16 * 1024 * 1024:
+                        skipped.append(relative)
+                        continue
+                    archive.write(path, relative)
+                    total += size
+            archive.writestr("metadata-limits.json", json.dumps({"skippedForSize": skipped}))
+    except OSError as error:
+        print(f"warning: package metadata archive failed: {error}", flush=True)
 
 
 def _locate_app(cask: dict, root: Path, kind: str,
@@ -721,6 +753,37 @@ def _extract_status(cask: dict, output_dir: Path) -> tuple[str, str]:
         return "failed", f"{type(e).__name__}: {e}"
 
 
+def _extractions(batch: list[dict], output: Path, workers: int):
+    """Workers own isolated files; only this coordinator updates the manifest."""
+    if workers == 1:
+        for cask in batch:
+            yield cask, *_extract_status(cask, output)
+        return
+    with tempfile.TemporaryDirectory(prefix="identity-workers-", dir=output) as temporary:
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            pending = {}
+            for index, cask in enumerate(batch):
+                directory = Path(temporary) / str(index)
+                directory.mkdir()
+                pending[executor.submit(_extract_status, cask, directory)] = (cask, directory)
+            try:
+                for future in as_completed(pending):
+                    cask, directory = pending[future]
+                    status, detail = future.result()
+                    token = cask["token"]
+                    merge_extractions(output / MANIFEST, directory / MANIFEST, {token})
+                    for source in [directory / f"{token}.png", directory / "diagnostics" / f"{token}.zip"]:
+                        if source.exists():
+                            target = output / source.relative_to(directory)
+                            target.parent.mkdir(parents=True, exist_ok=True)
+                            shutil.move(source, target)
+                    yield cask, status, detail
+            finally:
+                # Stop queued downloads if publication fails or the run is interrupted.
+                for future in pending:
+                    future.cancel()
+
+
 def _record_ok(token: str, detail: str, report: dict) -> None:
     report.pop(token, None)  # clear any prior failure/review
     if detail in ("single", "shallowest"):
@@ -745,6 +808,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--retry-parked", action="store_true",
                         help="Retry every failed-parked token (attempts >= MAX_ATTEMPTS)")
     parser.add_argument("--limit", type=int, default=50, help="Batch cap (default 50)")
+    parser.add_argument("--workers", type=int, choices=range(1, 5), default=1,
+                        help="Isolated extraction workers; one coordinator publishes (1-4)")
     parser.add_argument("--publish", action="store_true",
                         help="Publish cask-<token> pre-releases (requires gh auth)")
     parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "icons_out")
@@ -771,9 +836,9 @@ def main(argv: list[str] | None = None) -> int:
                              retry_parked=args.retry_parked)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    write_json(args.output_dir / "selected-casks.json", batch, trailing_newline=True)
     identity_file = args.output_dir / MANIFEST
     # Never republish stale local records from an earlier invocation after a failed download.
-    from style_standards import write_json
     write_json(identity_file, {"schemaVersion": 1, "casks": {}}, trailing_newline=True)
     print(f"Extracting {len(batch)} casks → {args.output_dir}"
           + (" (publishing)" if args.publish else " (local only)"))
@@ -784,10 +849,9 @@ def main(argv: list[str] | None = None) -> int:
     dirty: set[str] = set()  # tokens whose report entry this run may change
     start = time.time()
     try:
-        for i, cask in enumerate(batch, 1):
+        for i, (cask, status, detail) in enumerate(_extractions(batch, args.output_dir, args.workers), 1):
             token = cask["token"]
             dirty.add(token)
-            status, detail = _extract_status(cask, args.output_dir)
             if status == "ok":
                 ok += 1
                 _record_ok(token, detail, report)
@@ -795,9 +859,10 @@ def main(argv: list[str] | None = None) -> int:
                     pending[token] = args.output_dir / f"{token}.png"
             else:
                 record(report, token, status, detail)
+            outcomes.append((token, status, detail))
+            write_json(args.output_dir / "outcomes.json", outcomes, trailing_newline=True)
             if args.publish:
                 _flush_if_due(report, pending, dirty, identity_file)
-            outcomes.append((token, status, detail))
             note = ""
             if status == "failed":
                 attempts = report[token]["attempts"]
@@ -823,10 +888,15 @@ def main(argv: list[str] | None = None) -> int:
           f"{failed} failed, "
           f"{sum(1 for _, s, _ in outcomes if s in ('no_icon', 'car_only'))} skipped")
     identities = load_manifest(identity_file)["casks"]
-    empty = [c["token"] for c in batch if c["token"] in identities and not identities[c["token"]]["apps"]]
+    conditional = [token for token, entry in identities.items() if entry.get("packageCandidates")]
+    empty = [c["token"] for c in batch if c["token"] in identities
+             and not identities[c["token"]]["apps"] and c["token"] not in conditional]
     uninspected = [c["token"] for c in batch if c["token"] not in identities]
-    print(f"{len(batch) - len(empty) - len(uninspected)}/{len(batch)} casks with app identities; "
+    confirmed = sum(bool(entry.get("apps")) for entry in identities.values())
+    print(f"{confirmed}/{len(batch)} casks with app identities; "
           f"{len(empty)} inspected without identities; {len(uninspected)} not inspected")
+    if conditional:
+        print(f"{len(conditional)} casks with receipt-verifiable package candidates: {', '.join(sorted(conditional))}")
     if empty:
         print(f"Inspected without identities: {', '.join(empty)}")
     if uninspected:
