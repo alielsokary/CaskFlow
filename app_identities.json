@@ -11284,9 +11284,9 @@
       ]
     },
     "vibeproxy": {
-      "caskVersion": "1.8.303",
-      "sourceURL": "https://github.com/automazeio/vibeproxy/releases/download/v1.8.303/VibeProxy-arm64.dmg",
-      "artifactSHA256": "ac558beaaaf7404e755c56f748389e0742da8baeb10199fa527a3f6b8fc8b958",
+      "caskVersion": "1.8.304",
+      "sourceURL": "https://github.com/automazeio/vibeproxy/releases/download/v1.8.304/VibeProxy-arm64.dmg",
+      "artifactSHA256": "60737ec830ed7e057f4303f30d9a7c1d44f4d9c4533e8ed4ad8cf2a8e27ebe1e",
       "apps": [
         {
           "bundleName": "VibeProxy.app",
@@ -32683,6 +32683,260 @@
         {
           "bundleName": "Understand.app",
           "bundleIdentifier": "com.scitools.Understand"
+        }
+      ]
+    },
+    "vibe-notch": {
+      "caskVersion": "1.3.2",
+      "sourceURL": "https://github.com/farouqaldori/vibe-notch/releases/download/v1.3.2/VibeNotch-1.3.2.dmg",
+      "artifactSHA256": "c7595669d24cb7c05da490fae4fbee2b412c07ba0a215f86dad6d410cd0ddcc0",
+      "apps": [
+        {
+          "bundleName": "Vibe Notch.app",
+          "bundleIdentifier": "com.celestial.ClaudeIsland"
+        }
+      ]
+    },
+    "visualboyadvance-m": {
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.2.3/visualboyadvance-m-Mac-ARM64.zip",
+      "artifactSHA256": "8356a49d20e5d56e8e014ec537e2335e8c1904b8b22eb982d7190cf8d2d7973a",
+      "apps": []
+    },
+    "versions": {
+      "caskVersion": "2.4.5,2042",
+      "sourceURL": "https://updates.versionsapp.com/v2/prod/Versions-2.4.5-2042.zip",
+      "artifactSHA256": "38cd533eff8669046f9d4a886c5ebabfdb93e8c51f9bb94e43fa5f3d31af9ae4",
+      "apps": [
+        {
+          "bundleName": "Versions.app",
+          "bundleIdentifier": "com.versionsapp.v2"
+        }
+      ]
+    },
+    "vernier-spectral-analysis": {
+      "caskVersion": "5.1.0-2993",
+      "sourceURL": "https://software-releases.graphicalanalysis.com/sa/mac/release/Vernier-Spectral-Analysis-5.1.0-2993.dmg",
+      "artifactSHA256": "afd7f5c5b62b4c989b08c0166af2f652c2843592dbd2c48386bef317872da554",
+      "apps": [
+        {
+          "bundleName": "Vernier Spectral Analysis.app",
+          "bundleIdentifier": "Vernier.SpectralAnalysis"
+        }
+      ]
+    },
+    "vero": {
+      "caskVersion": "0.20.2549",
+      "sourceURL": "https://downloads.vero.co/vero-beta-0.20.2549.dmg",
+      "artifactSHA256": "c6205cac40954f3a908fea3948e0e26b717920969c2002de35b3f16071b34cf9",
+      "apps": [
+        {
+          "bundleName": "VERO.app",
+          "bundleIdentifier": "co.vero.desktop"
+        }
+      ]
+    },
+    "virtualhostx": {
+      "caskVersion": "2021.01.10,1017",
+      "sourceURL": "https://download.clickontyler.com/virtualhostx/virtualhostxpro_1017.zip",
+      "artifactSHA256": "3d86e05f0e4072d1180d06b9126e12c7943ffc6bdce9b754e6a1d417eb18fc0a",
+      "apps": [
+        {
+          "bundleName": "VirtualHostX.app",
+          "bundleIdentifier": "com.clickontyler.VirtualHostX"
+        }
+      ]
+    },
+    "visit": {
+      "caskVersion": "3.5.0",
+      "sourceURL": "https://github.com/visit-dav/visit/releases/download/v3.5.0/visit3_5_0.darwin24-arm64.dmg",
+      "artifactSHA256": "a22479b7349a215ace6887c8b624ec2313323a744544588e4132ceb28850a1fa",
+      "apps": [
+        {
+          "bundleName": "VisIt.app",
+          "bundleIdentifier": "gov.llnl.visit"
+        }
+      ]
+    },
+    "versatility": {
+      "caskVersion": "1.2,2026.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2026/06/versatility12.zip",
+      "artifactSHA256": "09693529932cfe8038136ba9ca6bbcc952e0f15049940bfeae555f74b2c21e4c",
+      "apps": [
+        {
+          "bundleName": "Versatility.app",
+          "bundleIdentifier": "co.eclecticlight.Versatility"
+        }
+      ]
+    },
+    "vidl": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://omz-software.com/vidl/ViDL102.zip",
+      "artifactSHA256": "af79d4f190fc9370abbd7c92e61be18b7c7c7bdd6cea235bd5e6c133ea153b2b",
+      "apps": [
+        {
+          "bundleName": "ViDL.app",
+          "bundleIdentifier": "com.omz-software.ViDL"
+        }
+      ]
+    },
+    "viable": {
+      "caskVersion": "1b12,2023.11",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/11/viable1b12.zip",
+      "artifactSHA256": "6613cf7f0ae9a6737eeec8a15f3110e53cb6986b51f3a236913046e8d3769d00",
+      "apps": [
+        {
+          "bundleName": "Viable.app",
+          "bundleIdentifier": "co.eclecticlight.Viable"
+        }
+      ]
+    },
+    "viso": {
+      "caskVersion": "8.9.4",
+      "sourceURL": "https://getviso.app/files/Viso.dmg",
+      "artifactSHA256": "09b9c028e138bb162a647e407a4b86eccd5b65a5bebcda8283359e7ce3178357",
+      "apps": [
+        {
+          "bundleName": "Viso.app",
+          "bundleIdentifier": "com.ephod.Viso"
+        }
+      ]
+    },
+    "videoduke": {
+      "caskVersion": "2.15.2",
+      "sourceURL": "https://cdn.video-downloader-mac.com/download/videoduke.dmg",
+      "artifactSHA256": "0c0be2736f0d5412b610cb4c3262104cd0c5c393a9a9e1d594686ecb5aa4da98",
+      "apps": [
+        {
+          "bundleName": "VideoDuke.app",
+          "bundleIdentifier": "com.eltima.VideoDuke"
+        }
+      ]
+    },
+    "vibetunnel": {
+      "caskVersion": "1.0.0-beta.18",
+      "sourceURL": "https://github.com/amantus-ai/vibetunnel/releases/download/v1.0.0-beta.18/VibeTunnel-1.0.0-beta.18.dmg",
+      "artifactSHA256": "3e42340e28c908bdc7e8ba20ee4e7f6ab3c32885832bf947e6e0935f9017b8cc",
+      "apps": [
+        {
+          "bundleName": "VibeTunnel.app",
+          "bundleIdentifier": "sh.vibetunnel.vibetunnel"
+        }
+      ]
+    },
+    "vernier-graphical-analysis": {
+      "caskVersion": "6.3.1-4464",
+      "sourceURL": "https://software-releases.graphicalanalysis.com/ga/mac/release/Vernier-Graphical-Analysis-6.3.1-4464.zip",
+      "artifactSHA256": "4743422c61d7930250dd07368407eaa72f7d8c42f02a22603200fb0f6dbde497",
+      "apps": [
+        {
+          "bundleName": "Vernier Graphical Analysis.app",
+          "bundleIdentifier": "Vernier.GraphicalAnalysis"
+        }
+      ]
+    },
+    "vezer": {
+      "caskVersion": "1.9.9,795",
+      "sourceURL": "https://dl.imimot.com/Vezer1.9.9_795.zip",
+      "artifactSHA256": "5d87ef2281885c5a5fb7c2aa6fcc4343fd14caa94aba4d4be095f7bbf116984d",
+      "apps": [
+        {
+          "bundleName": "Vezér.app",
+          "bundleIdentifier": "com.lov.Veze-r"
+        }
+      ]
+    },
+    "vesta": {
+      "caskVersion": "3.5.8",
+      "sourceURL": "https://jp-minerals.org/vesta/archives/3.5.8/VESTA.dmg",
+      "artifactSHA256": "2fcbe3dcc3701e8de6e703f5941c8d8c767855354e5929b4022c3522da2c6d2c",
+      "apps": []
+    },
+    "vimcal": {
+      "caskVersion": "1.0.48",
+      "sourceURL": "https://vimcal-m1.s3.amazonaws.com/Vimcal-1.0.48-arm64.dmg",
+      "artifactSHA256": "f77489563c93c56a98c78040b85883690711efb17b58c654291f4a6e06f64fe7",
+      "apps": [
+        {
+          "bundleName": "Vimcal.app",
+          "bundleIdentifier": "com.vimcal.app"
+        }
+      ]
+    },
+    "vienna": {
+      "caskVersion": "3.10.8",
+      "sourceURL": "https://downloads.sourceforge.net/vienna-rss/v_3.10.8/Vienna3.10.8.dmg",
+      "artifactSHA256": "6833fecb70c23c1ba98868086e2245c9a05a4f5a4960b019b64ca3728aaa85bd",
+      "apps": [
+        {
+          "bundleName": "Vienna.app",
+          "bundleIdentifier": "uk.co.opencommunity.vienna2"
+        }
+      ]
+    },
+    "virtualhereserver": {
+      "caskVersion": "4.8.8",
+      "sourceURL": "https://www.virtualhere.com/sites/default/files/usbserver/VirtualHereServerUniversal.dmg",
+      "artifactSHA256": "41193cf4b9f37063e53111b7d1759fe170805997c8182f8c1ee5dff6ac835192",
+      "apps": [
+        {
+          "bundleName": "VirtualHereServerUniversal.app",
+          "bundleIdentifier": "com.virtualhere.vhusbd"
+        }
+      ]
+    },
+    "viables": {
+      "caskVersion": "1b12,2023.11",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/11/viables1b12.zip",
+      "artifactSHA256": "a02832b91b2b1ab1d33698a5100947f956746f11a1ab56473d8ad6b44ffd9b4a",
+      "apps": [
+        {
+          "bundleName": "ViableS.app",
+          "bundleIdentifier": "co.eclecticlight.ViableS"
+        }
+      ]
+    },
+    "vimy": {
+      "caskVersion": "07,2023.11",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2023/11/vimy07.zip",
+      "artifactSHA256": "b1d9c5eee5d7c82985b88ff3a986e859f94aba4011343d42a6d96e5d818989b9",
+      "apps": [
+        {
+          "bundleName": "Vimy.app",
+          "bundleIdentifier": "co.eclecticlight.Vimy"
+        }
+      ]
+    },
+    "virtualc64": {
+      "caskVersion": "6.1",
+      "sourceURL": "https://github.com/dirkwhoffmann/virtualc64/releases/download/v6.1/VirtualC64.app.zip",
+      "artifactSHA256": "860a29ba0fc4d371679add11d50b95c6a3246b1e96d0a5aa2ebeb4eac8200b9b",
+      "apps": [
+        {
+          "bundleName": "VirtualC64.app",
+          "bundleIdentifier": "de.dirkwhoffmann.VC64"
+        }
+      ]
+    },
+    "virtualhere": {
+      "caskVersion": "6.0.2",
+      "sourceURL": "https://www.virtualhere.com/sites/default/files/usbclient/VirtualHereUniversal.dmg",
+      "artifactSHA256": "5ddea90c02d3ec1aadc5c53340243f0b943f2d45974bddb2dce0c36edf6aecbc",
+      "apps": [
+        {
+          "bundleName": "VirtualHereUniversal.app",
+          "bundleIdentifier": "com.virtualhere.client"
+        }
+      ]
+    },
+    "vitalsource-bookshelf": {
+      "caskVersion": "11.4.1.4053",
+      "sourceURL": "https://downloads.vitalbook.com/vsti/bookshelf/11.4.1/mac/bookshelf/VitalSource-Bookshelf_11.4.1.4053.dmg",
+      "artifactSHA256": "4caedecd7641b497eba313579fed36253ca77dc726cd8da610f8bdd4a0d15905",
+      "apps": [
+        {
+          "bundleName": "VitalSource Bookshelf.app",
+          "bundleIdentifier": "com.vitalsource.bookshelf"
         }
       ]
     }
