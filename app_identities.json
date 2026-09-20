@@ -8017,9 +8017,9 @@
       ]
     },
     "carbon-copy-cloner": {
-      "caskVersion": "7.2,8401",
-      "sourceURL": "https://bombich.download/ccc-7.2.8401.zip",
-      "artifactSHA256": "625c14349fea5c3b875edc280b5db5e839e6f976d04c101c49b17308089a9b11",
+      "caskVersion": "7.2,8408",
+      "sourceURL": "https://bombich.scdn1.secure.raxcdn.com/software/files/ccc-7.2.8408.zip",
+      "artifactSHA256": "cbaa9021d56070f617ee20236b70473eeef0df068c015e3c407c334b55027cbc",
       "apps": [
         {
           "bundleName": "Carbon Copy Cloner.app",
@@ -12506,9 +12506,9 @@
       ]
     },
     "adrafinil": {
-      "caskVersion": "1.7.0",
-      "sourceURL": "https://github.com/kageroumado/adrafinil/releases/download/v1.7.0/Adrafinil-1.7.0.dmg",
-      "artifactSHA256": "71de8cbe83cc9b8fd863d32347ba255d840ab299f5fde7082629ea20225ea783",
+      "caskVersion": "1.8",
+      "sourceURL": "https://github.com/kageroumado/adrafinil/releases/download/v1.8/Adrafinil-1.8.dmg",
+      "artifactSHA256": "4f954cf3e1749514c6df0df9875aa7c2e37b930d1d6967e9e0f44c769368ec8c",
       "apps": [
         {
           "bundleName": "Adrafinil.app",
@@ -16474,6 +16474,201 @@
         {
           "bundleName": "Cisdem Duplicate Finder.app",
           "bundleIdentifier": "com.cisdem.duplicatefinder"
+        }
+      ]
+    },
+    "cloudash": {
+      "caskVersion": "1.22.1",
+      "sourceURL": "https://github.com/cloudashdev/cloudash/releases/download/1.22.1/Cloudash-1.22.1-arm64.dmg",
+      "artifactSHA256": "94ce30488721f5511433994ed4fbc045fe6b4ec54b06e37f23cb343b19b33556",
+      "apps": [
+        {
+          "bundleName": "Cloudash.app",
+          "bundleIdentifier": "dev.cloudash.cloudash"
+        }
+      ]
+    },
+    "codekit": {
+      "caskVersion": "3.37.1,36775",
+      "sourceURL": "https://codekitapp.com/binaries/codekit-36775.zip",
+      "artifactSHA256": "5b9b5484f38504f4da15fa51ebb6db6b53383ba38d097bd7dab3ceea5a543349",
+      "apps": [
+        {
+          "bundleName": "CodeKit.app",
+          "bundleIdentifier": "com.incident57.CodeKit3"
+        }
+      ]
+    },
+    "cloudmounter": {
+      "caskVersion": "4.18",
+      "sourceURL": "https://cdn.electronic.us/products/cloudmounter/mac/download/cloudmounter.dmg",
+      "artifactSHA256": "65a63c7361e0ad6a602af105c1fb3a2cb42fe1e6ad5cb5d220855ab619e2cd08",
+      "apps": [
+        {
+          "bundleName": "CloudMounter.app",
+          "bundleIdentifier": "com.eltima.cloudmounter"
+        }
+      ]
+    },
+    "codebolt": {
+      "caskVersion": "1.1.26",
+      "sourceURL": "https://releasebuilds.codebolt.ai/CodeBolt-1.1.26-arm64.dmg",
+      "artifactSHA256": "74702dd66300878df3be51d42321dc58dc706bdbc81567f478f3bac43010c0e1",
+      "apps": [
+        {
+          "bundleName": "CodeBolt.app",
+          "bundleIdentifier": "org.codeboltai.editor"
+        }
+      ]
+    },
+    "clone-hero": {
+      "caskVersion": "1.1.0.6142,-final",
+      "sourceURL": "https://github.com/clonehero-game/releases/releases/download/v1.1.0.6142-final/CloneHero.v1.1.0.6142-final.dmg",
+      "artifactSHA256": "1b880f98a164d97a84bf09ee1b9636b8a67fe3ccfa0ec04ebfc0bb31561a2f39",
+      "apps": [
+        {
+          "bundleName": "Clone Hero.app",
+          "bundleIdentifier": "com.srylain.CloneHero"
+        }
+      ]
+    },
+    "cloud-pbx": {
+      "caskVersion": "46.8",
+      "sourceURL": "https://cpbx-hilfe.deutschland-lan.de/de/direkthilfe/hilfe-downloads/desktop-clients/cloud-pbx-2.0-arm_v46.8",
+      "artifactSHA256": "c9e122a96ddf47b18360aa466051609ba89eeb7dcf0f98fd6869822641f1349b",
+      "apps": [
+        {
+          "bundleName": "Cloud PBX 2.0.app",
+          "bundleIdentifier": "Cisco-Systems.Spark"
+        }
+      ]
+    },
+    "cloudnet": {
+      "caskVersion": "1.36.2.22",
+      "sourceURL": "https://pkgs.cloudnet.world/stable/macos/CloudNet_v1.36.2.22.dmg",
+      "artifactSHA256": "c8f685ff4414c9660068da2b060041ab929e7459a48992db1f8327f1f64fa332",
+      "apps": [
+        {
+          "bundleName": "CloudNet.app",
+          "bundleIdentifier": "world.cloudnet.client"
+        }
+      ]
+    },
+    "cocoarestclient": {
+      "caskVersion": "1.4.7",
+      "sourceURL": "https://github.com/mmattozzi/cocoa-rest-client/releases/download/1.4.7/CocoaRestClient-1.4.7.dmg",
+      "artifactSHA256": "8e974818e5b77e6e4291acbe09d439c3c17b01c23e48d2272f7817e2d18e9968",
+      "apps": [
+        {
+          "bundleName": "CocoaRestClient.app",
+          "bundleIdentifier": "org.restlesscode.cocoarestclient"
+        }
+      ]
+    },
+    "cmd": {
+      "caskVersion": "0.2.3",
+      "sourceURL": "https://github.com/getcmd-dev/cmd/releases/download/v0.2.3/cmd.dmg",
+      "artifactSHA256": "4353828e77a46e39c44041aebfb65474e41eb18c7237ac16e9fc21841959877a",
+      "apps": [
+        {
+          "bundleName": "cmd.app",
+          "bundleIdentifier": "dev.getcmd.command"
+        }
+      ]
+    },
+    "clock-signal": {
+      "caskVersion": "2026-07-23",
+      "sourceURL": "https://github.com/TomHarte/CLK/releases/download/2026-07-23/Clock.Signal.MacOS.2026-07-23.zip",
+      "artifactSHA256": "1a4578bc9e6c91aefc127a91963e6314f0e7b1605241322bb9f2327d8ce3191e",
+      "apps": [
+        {
+          "bundleName": "Clock Signal.app",
+          "bundleIdentifier": "TH.Clock-Signal"
+        }
+      ]
+    },
+    "cloudpouch": {
+      "caskVersion": "1.49.0",
+      "sourceURL": "https://github.com/CloudPouch/CloudPouch.dev/releases/download/v1.49.0/CloudPouch-1.49.0-universal-mac.zip",
+      "artifactSHA256": "407cbb258fedcc170c98175e6e83e23f9674855c9dbf59eebb6378140b713948",
+      "apps": [
+        {
+          "bundleName": "CloudPouch.app",
+          "bundleIdentifier": "dev.cloudpouch.cloudpouch"
+        }
+      ]
+    },
+    "cocoapacketanalyzer": {
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://appcast.tastycocoabytes.com/cpa/downloads/CPA_402.dmg",
+      "artifactSHA256": "6da15a9a558cc40c5930ff02b099f5325de5fd8e4fde783cf0903b36aebaea29",
+      "apps": [
+        {
+          "bundleName": "CocoaPacketAnalyzer.app",
+          "bundleIdentifier": "com.tastycocoabytes.CocoaPacketAnalyzer"
+        }
+      ]
+    },
+    "cmtrace-open": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/adamgell/cmtraceopen/releases/download/v1.6.0/CMTrace.Open_1.6.0_aarch64.dmg",
+      "artifactSHA256": "e0a5b55d64bf5d0c5aa2e62fad4aced7ee95865f89683a3cbd8fe4a8bcbe1ac1",
+      "apps": [
+        {
+          "bundleName": "CMTrace Open.app",
+          "bundleIdentifier": "com.cmtrace.open"
+        }
+      ]
+    },
+    "cockatrice": {
+      "caskVersion": "3.0.2,2026-06-26,Graduation-Day,3.0.2",
+      "sourceURL": "https://github.com/Cockatrice/Cockatrice/releases/download/2026-06-26-Release-3.0.2/Cockatrice-Graduation-Day-3.0.2-macOS15.dmg",
+      "artifactSHA256": "51705bcd11211ab1beb19ebb41931e64c16c1f2ec8d530473de57fdc0a9b764b",
+      "apps": [
+        {
+          "bundleName": "cockatrice.app",
+          "bundleIdentifier": "com.cockatrice.Cockatrice"
+        },
+        {
+          "bundleName": "oracle.app",
+          "bundleIdentifier": "com.cockatrice.Oracle"
+        },
+        {
+          "bundleName": "servatrice.app",
+          "bundleIdentifier": "com.cockatrice.Servatrice"
+        }
+      ]
+    },
+    "coconutid": {
+      "caskVersion": "3.4",
+      "sourceURL": "https://www.coconut-flavour.com/downloads/coconutID_3.4.zip",
+      "artifactSHA256": "f6a07574bc756f9f35cbc13e65a7220f8e082dc847ff78d5895b7624324a0fdb",
+      "apps": [
+        {
+          "bundleName": "coconutID.app",
+          "bundleIdentifier": "com.coconut-flavour.coconutID"
+        }
+      ]
+    },
+    "cloudup": {
+      "caskVersion": "1.15.5",
+      "sourceURL": "https://updates.cloudup.com/update?os=osx&app=Cloudup&format=zip&channel=release",
+      "artifactSHA256": "ebb385a738aacbe38865c27acf65ac8ab9290c8a0120c3acffeb2966371d5926",
+      "apps": [
+        {
+          "bundleName": "Cloudup.app",
+          "bundleIdentifier": "com.cloudup.Cloudup"
+        }
+      ]
+    },
+    "codeexpander": {
+      "caskVersion": "7.0.5",
+      "sourceURL": "https://download.floweb.cn/CodeExpander_latest_universal.dmg",
+      "artifactSHA256": "647c6b10d5bb7e8692951196ec7cec5672ddaa9cf04f569a5fe7fe50851b1f9c",
+      "apps": [
+        {
+          "bundleName": "CodeExpander.app",
+          "bundleIdentifier": "com.codeexpander.pro"
         }
       ]
     }

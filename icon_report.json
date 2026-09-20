@@ -8,7 +8,7 @@
   "abstract": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "acronis-true-image": {
@@ -104,7 +104,7 @@
   "audius": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8b8003506ed2...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "autodesk-fusion": {
@@ -116,7 +116,7 @@
   "avast-secure-browser": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "avast-security": {
@@ -140,7 +140,7 @@
   "backyard-ai": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: update.backyard.ai",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "baseline": {
@@ -236,13 +236,13 @@
   "cardpresso": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4b251d7c469f...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "chalk": {
     "status": "failed",
     "reason": "download failed: curl: (47) Maximum (50) redirects followed",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "chatty": {
