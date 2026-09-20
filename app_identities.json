@@ -15162,6 +15162,271 @@
           "bundleIdentifier": "BeerSmith-LLC.BeerSmith4"
         }
       ]
+    },
+    "bookmacster": {
+      "caskVersion": "3.3.9",
+      "sourceURL": "https://sheepsystems.com/bookmacster/BookMacster_3.3.9.zip",
+      "artifactSHA256": "beb0811eadbbc2efeef1e7a1fe157b691996faaef073561d65fdcb680cdc16cd",
+      "apps": [
+        {
+          "bundleName": "BookMacster.app",
+          "bundleIdentifier": "com.sheepsystems.BookMacster"
+        }
+      ]
+    },
+    "bookletcreator": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://www.bookletcreator.com/files/BookletCreator-2.1.0.dmg",
+      "artifactSHA256": "689c0497e469335b2440f55877281dec86ce035e3a00fc7035f9f989826fee64",
+      "apps": [
+        {
+          "bundleName": "BookletCreator.app",
+          "bundleIdentifier": "com.bookletcreator.BookletCreator"
+        }
+      ]
+    },
+    "blood-on-the-clocktower-online": {
+      "caskVersion": "3.57.2",
+      "sourceURL": "https://github.com/ThePandemoniumInstitute/botc-release/releases/download/v3.57.2/Blood.on.the.Clocktower.Online_3.57.2_aarch64.dmg",
+      "artifactSHA256": "6ead034fe1a5cb464e160a24fa0a46e21ad8642c893b91f565ab5f3dee0eaa24",
+      "apps": [
+        {
+          "bundleName": "Blood on the Clocktower Online.app",
+          "bundleIdentifier": "com.thepandemoniuminstitute.botc-app"
+        }
+      ]
+    },
+    "blink1control": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/todbot/Blink1Control2/releases/download/v2.3.0/Blink1Control2-2.3.0-mac-arm64.dmg",
+      "artifactSHA256": "4b05ba63024c00c1226acdd48337fc0258d6cfb045d6ae720e588e11da78d13c",
+      "apps": [
+        {
+          "bundleName": "Blink1Control2.app",
+          "bundleIdentifier": "com.thingm.blink1control2"
+        }
+      ]
+    },
+    "blender-benchmark": {
+      "caskVersion": "3.3.0,2.0",
+      "sourceURL": "https://download.blender.org/release/BlenderBenchmark2.0/launcher/benchmark-launcher-3.3.0-macos.dmg",
+      "artifactSHA256": "0e911651a26a8aa51bee8f09a4add8f7e56505a520a8a212b356bc908a47164c",
+      "apps": [
+        {
+          "bundleName": "Blender Benchmark Launcher.app",
+          "bundleIdentifier": "org.blenderfoundation.benchmark.release"
+        }
+      ]
+    },
+    "bome-network": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://download.bome.com/BomeNet1.7.0_macOS.dmg",
+      "artifactSHA256": "0c2f6d336c227f1dfcc9c6db88e8daa2de7503f3931fae0868f06630d3215ce3",
+      "apps": [
+        {
+          "bundleName": "Bome Network.app",
+          "bundleIdentifier": "com.bome.network"
+        }
+      ]
+    },
+    "blueharvest": {
+      "caskVersion": "8.5,850",
+      "sourceURL": "https://zeroonetwenty.com/blueharvest/downloads/BlueHarvest850.dmg",
+      "artifactSHA256": "db1e83ab27b5844f6fc47e9e58e5eb6e89beb38119971153d500b30221404444",
+      "apps": [
+        {
+          "bundleName": "BlueHarvest.app",
+          "bundleIdentifier": "com.zeroonetwenty.BlueHarvest5"
+        }
+      ]
+    },
+    "blitz-gg": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://blitz-main.blitz.gg/Blitz-universal-3.0.2.dmg",
+      "artifactSHA256": "30e913c6e31d0965f4ef621e983272b9ff8f308da341d765e86dc24aac2d7590",
+      "apps": [
+        {
+          "bundleName": "Blitz.app",
+          "bundleIdentifier": "com.blitz.app"
+        }
+      ]
+    },
+    "bookends": {
+      "caskVersion": "15.4.4",
+      "sourceURL": "https://www.sonnysoftware.com/bookends-for-mac/downloads/Bookends.dmg",
+      "artifactSHA256": "ff88299f95cc8b47fad2f062d061c628427f538495aaa7f3536ff66821b4db27",
+      "apps": [
+        {
+          "bundleName": "Bookends.app",
+          "bundleIdentifier": "com.sonnysoftware.bookends2"
+        }
+      ]
+    },
+    "bonjeff": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/lapcat/Bonjeff/releases/download/v2.0.1/Bonjeff2.0.1.zip",
+      "artifactSHA256": "def276e47c60d8ffa7922356c6b6c7a90671590d283b48fb46d78a15dbd43772",
+      "apps": [
+        {
+          "bundleName": "Bonjeff.app",
+          "bundleIdentifier": "com.lapcatsoftware.bonjeff"
+        }
+      ]
+    },
+    "bluej": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-6.0.1/BlueJ-mac-aarch64-6.0.1.dmg",
+      "artifactSHA256": "fd2a70a981a9e801f98efc9423a3c48e014c80e180612f37e6223e7bda9c45d2",
+      "apps": [
+        {
+          "bundleName": "BlueJ.app",
+          "bundleIdentifier": "org.bluej.BlueJ"
+        }
+      ]
+    },
+    "boom": {
+      "caskVersion": "1.7.20",
+      "sourceURL": "https://d13nae1tw8tdnq.cloudfront.net/Boom2mac/webstore/Boom2.dmg",
+      "artifactSHA256": "bb570348538c1231fc368c302605ac1c9760ccfda552745f0b0f80ea927d8fb1",
+      "apps": [
+        {
+          "bundleName": "Boom 2.app",
+          "bundleIdentifier": "com.globaldelight.Boom2"
+        }
+      ]
+    },
+    "bluos-controller": {
+      "caskVersion": "4.16.1",
+      "sourceURL": "https://content-bluesound-com.s3.amazonaws.com/uploads/BluOS-Controller-4.16.1-MacOS.zip",
+      "artifactSHA256": "9da45cb9bac5638b5e6cab67c409c2a3367df6fd73876c83b55bc3142f258073",
+      "apps": [
+        {
+          "bundleName": "BluOS Controller.app",
+          "bundleIdentifier": "com.bluesound.bluos"
+        }
+      ]
+    },
+    "blocs": {
+      "caskVersion": "5.2.9",
+      "sourceURL": "https://blocsapp.com/download/archives/blocs-5/Blocs5.2.9.zip",
+      "artifactSHA256": "326c8698ef845c177184dd41900f7697da05e58fcf6492c92f1db02c266866a7",
+      "apps": [
+        {
+          "bundleName": "Blocs.app",
+          "bundleIdentifier": "com.cazoobi.Blocs-5"
+        }
+      ]
+    },
+    "blu-ray-player": {
+      "caskVersion": "3.3.23,250315_0521",
+      "sourceURL": "https://cdn.macblurayplayer.com/mac-bluray-player-3/Blu-ray_Player_3.3.23_250315_0521.dmg",
+      "artifactSHA256": "ffac1323400359c074332611d1d8697b24ad417206c8a846236ca6588147c47d",
+      "apps": [
+        {
+          "bundleName": "Blu-ray Player.app",
+          "bundleIdentifier": "com.macblurayplayer.MacBlurayPlayer3"
+        }
+      ]
+    },
+    "bookwright": {
+      "caskVersion": "3.4.0",
+      "sourceURL": "https://software.blurb.com/bookwright_v2/3.4.0/BookWright.dmg",
+      "artifactSHA256": "54cb91fe7d7e09a23d17f12278c8134a823065621d77a561d1fb9e39e799213e",
+      "apps": [
+        {
+          "bundleName": "BookWright.app",
+          "bundleIdentifier": "com.blurb.bookwright"
+        }
+      ]
+    },
+    "bobhelper": {
+      "caskVersion": "0.1.0",
+      "sourceURL": "https://release.ripperhe.com/BobHelper/tag/v0.1.0/BobHelper.dmg",
+      "artifactSHA256": "1b888ec348cf28a509cca874e30688dab8975043d89dd6371aad04f565be9fbd",
+      "apps": [
+        {
+          "bundleName": "BobHelper.app",
+          "bundleIdentifier": "com.hezongyidev.BobHelper"
+        }
+      ]
+    },
+    "bluewallet": {
+      "caskVersion": "7.2.6",
+      "sourceURL": "https://github.com/BlueWallet/BlueWallet/releases/download/v7.2.6/BlueWallet.7.2.6.dmg",
+      "artifactSHA256": "38299c0800d1bf19656638ccf64266fa1d2e614f2845918fe544c0c1b3935328",
+      "apps": [
+        {
+          "bundleName": "BlueWallet.app",
+          "bundleIdentifier": "io.bluewallet.bluewallet"
+        }
+      ]
+    },
+    "black-light": {
+      "caskVersion": "3.0",
+      "sourceURL": "https://littoral.michelf.ca/apps/black-light/black-light-3.0.zip",
+      "artifactSHA256": "f74395a35574e1edf27fa6e58f1b79180c946de881e9fee1733de04586989b82",
+      "apps": []
+    },
+    "blu-ray-player-pro": {
+      "caskVersion": "3.3.23,250315_0521",
+      "sourceURL": "https://cdn.macblurayplayer.com/mac-bluray-player-pro3/Blu-ray_Player_Pro_3.3.23_250315_0521.dmg",
+      "artifactSHA256": "5b4aa7bc5a9007ed8aa5ca14c401f32e92e7a54801e4a0e68ad324352c8b4341",
+      "apps": [
+        {
+          "bundleName": "Blu-ray Player Pro.app",
+          "bundleIdentifier": "com.macblurayplayer.MacBlurayPlayer3-Pro"
+        }
+      ]
+    },
+    "blobby-volley2": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://downloads.sourceforge.net/blobby/blobby2-macosx-1.1.1.dmg",
+      "artifactSHA256": "a2e2a67a3c77a0ace49b4db3b4ee2eaeba8f9c5b02a15b3eec5b033bba36a879",
+      "apps": []
+    },
+    "blockstream": {
+      "caskVersion": "3.5.3",
+      "sourceURL": "https://github.com/Blockstream/green_qt/releases/download/release_3.5.3/Blockstream-arm64.dmg",
+      "artifactSHA256": "38d50624aa55ef6e8c08362711af99781643135b87b0479b0c5808711a8fa0d9",
+      "apps": [
+        {
+          "bundleName": "Blockstream.app",
+          "bundleIdentifier": "com.blockstream.App"
+        }
+      ]
+    },
+    "blankie": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://github.com/codybrom/blankie/releases/download/v2.0.2/Blankie.zip",
+      "artifactSHA256": "0a964ed8f8bd45c73c2a559097ec8f8401c3f8e4251a0e80af28b539d1588f79",
+      "apps": [
+        {
+          "bundleName": "Blankie.app",
+          "bundleIdentifier": "com.codybrom.blankie"
+        }
+      ]
+    },
+    "blisk": {
+      "caskVersion": "25.0.115.28",
+      "sourceURL": "https://bliskcloudstorage.blob.core.windows.net/mac-m1-installers/BliskInstaller_25.0.115.28.dmg",
+      "artifactSHA256": "0173afde0d441dc93bf4c2d9ea151981300d342c4d530790c6507a0efaae5392",
+      "apps": [
+        {
+          "bundleName": "Blisk.app",
+          "bundleIdentifier": "org.blisk.Blisk"
+        }
+      ]
+    },
+    "boltai": {
+      "caskVersion": "2.16.0",
+      "sourceURL": "https://updates.boltai.com/dmg/BoltAI-2.16.0.dmg",
+      "artifactSHA256": "a40bbe13c0256eea7b68d55728279eef1293cb939058b106fd79d2fb5e528ee8",
+      "apps": [
+        {
+          "bundleName": "BoltAI.app",
+          "bundleIdentifier": "co.podzim.boltai-mobile"
+        }
+      ]
     }
   }
 }
