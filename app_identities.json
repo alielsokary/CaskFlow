@@ -15958,6 +15958,260 @@
           "bundleIdentifier": "com.titanium.CalHash"
         }
       ]
+    },
+    "choragus": {
+      "caskVersion": "5.0",
+      "sourceURL": "https://github.com/scottwaters/Choragus/releases/download/v5.0/Choragus.dmg",
+      "artifactSHA256": "1b0b717906e7a7944c485a1794b6e13c07e261afc84060d7bb7996292931bec0",
+      "apps": [
+        {
+          "bundleName": "Choragus.app",
+          "bundleIdentifier": "com.choragus.app"
+        }
+      ]
+    },
+    "cc-pocket": {
+      "caskVersion": "1.133.1,251",
+      "sourceURL": "https://github.com/K9i-0/ccpocket/releases/download/macos/v1.133.1%2B251/CC-Pocket-macos-v1.133.1.dmg",
+      "artifactSHA256": "0a6d441951db52bd16585f625d4ee60b8471cd49dce8095c7696eef03dcdc633",
+      "apps": [
+        {
+          "bundleName": "CC Pocket.app",
+          "bundleIdentifier": "com.k9i.ccpocket"
+        }
+      ]
+    },
+    "ccmenu": {
+      "caskVersion": "15.0",
+      "sourceURL": "https://github.com/erikdoe/ccmenu/releases/download/v15.0/CCMenu.app.zip",
+      "artifactSHA256": "4ee3c5f65828c30c5cbe147064396d387a175042601076adf12b6c1a99792c1d",
+      "apps": [
+        {
+          "bundleName": "CCMenu.app",
+          "bundleIdentifier": "net.sourceforge.cruisecontrol.CCMenu"
+        }
+      ]
+    },
+    "changes": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://github.com/maoyama/Changes/releases/download/v2.3/Changes.zip",
+      "artifactSHA256": "576b77ccb39213141bf3225753179d5f234f172386d918ff3c00867396ae4f63",
+      "apps": [
+        {
+          "bundleName": "Changes.app",
+          "bundleIdentifier": "dev.aoyama.changes"
+        }
+      ]
+    },
+    "choice-financial-terminal": {
+      "caskVersion": "9.15.0.1",
+      "sourceURL": "https://choice-app.eastmoney.com/choice/OfflinePackage/ChoiceSetup_mac_arm.dmg",
+      "artifactSHA256": "62ac585db215010e665704fe11fc9877372ede09e2f7e4a39cc65c3815c13301",
+      "apps": [
+        {
+          "bundleName": "Choice金融终端.app",
+          "bundleIdentifier": "com.eastmoney.choice"
+        }
+      ]
+    },
+    "charmstone": {
+      "caskVersion": "1.44",
+      "sourceURL": "https://charmstone.app/downloads/Charmstone1.44.dmg",
+      "artifactSHA256": "04b9a560a395abd4d731c7d4ffa4b091e595d3892cd93289b08f8248f5e459de",
+      "apps": [
+        {
+          "bundleName": "Charmstone.app",
+          "bundleIdentifier": "com.knollsoft.CharmstonePro"
+        }
+      ]
+    },
+    "chatterino": {
+      "caskVersion": "2.5.5",
+      "sourceURL": "https://chatterino.fra1.digitaloceanspaces.com/bin/2.5.5/Chatterino.dmg",
+      "artifactSHA256": "eb2b4f48f1a96ad362c21bec6bec9ab02c662c652c963b8884dcad171ddad000",
+      "apps": [
+        {
+          "bundleName": "chatterino.app",
+          "bundleIdentifier": "com.chatterino"
+        }
+      ]
+    },
+    "chatglm": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://sfile.chatglm.cn/apk/xinyu/windows/chatglm_2.0.5_universal.dmg",
+      "artifactSHA256": "3cff6a913b089c00d896d75b9906a8aa6abfa0b8e06e24289f20a0e64d0c1c17",
+      "apps": [
+        {
+          "bundleName": "智谱清言.app",
+          "bundleIdentifier": "com.zhipu.chatglm"
+        }
+      ]
+    },
+    "chipmunk": {
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://github.com/esrlabs/chipmunk/releases/download/4.3.0/chipmunk@4.3.0-darwin-arm64-portable.tgz",
+      "artifactSHA256": "b3323285d314574365e3803f1c22791c4e60c6ca911965bebe3ce13619d6a123",
+      "apps": [
+        {
+          "bundleName": "chipmunk.app",
+          "bundleIdentifier": "com.esrlabs.chipmunk"
+        }
+      ]
+    },
+    "chatwork": {
+      "caskVersion": "2.25.3",
+      "sourceURL": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
+      "artifactSHA256": "499d5e791a2fc5955cd4a62fdae39df858cf87a752a6d9d29dd37a4167f50e10",
+      "apps": [
+        {
+          "bundleName": "Chatwork.app",
+          "bundleIdentifier": "com.electron.chatwork"
+        }
+      ]
+    },
+    "cheetah3d": {
+      "caskVersion": "8.1.3",
+      "sourceURL": "https://www.cheetah3d.com/download/Cheetah3D.dmg",
+      "artifactSHA256": "138c26a0ec742d20e4dcd05856a860d0953e58b5295f5d0e0eec44fd7c44dbc2",
+      "apps": [
+        {
+          "bundleName": "Cheetah3D.app",
+          "bundleIdentifier": "de.wengenmayer.Cheetah3D"
+        }
+      ]
+    },
+    "catch": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://github.com/mipstian/catch/releases/download/2.3/Catch-2.3.zip",
+      "artifactSHA256": "8e138ec2c3e2d2a9f66eabc534f32f3ca64a3cd967b8896a3feddd438b391411",
+      "apps": [
+        {
+          "bundleName": "Catch.app",
+          "bundleIdentifier": "org.giorgiocalderolla.Catch"
+        }
+      ]
+    },
+    "cave-story": {
+      "caskVersion": "0.1.0,2",
+      "sourceURL": "https://www.cavestory.org/downloads/cavestory_010_r2.dmg",
+      "artifactSHA256": "30e32c5123b984d0733a1e1e510a1255d511e69b694c4227119c69161ba1dc55",
+      "apps": [
+        {
+          "bundleName": "Cave Story.app",
+          "bundleIdentifier": "com.nakiwo.Doukutsu"
+        }
+      ]
+    },
+    "cd-to": {
+      "caskVersion": "3.1.3",
+      "sourceURL": "https://github.com/jbtule/cdto/releases/download/v3.1.3/cdto_3_1_3.zip",
+      "artifactSHA256": "821cf3b1f4a0af0d89e71317a5a3271b89e569adf84c9b609d6f159d643c568b",
+      "apps": [
+        {
+          "bundleName": "cd to.app",
+          "bundleIdentifier": "name.tuley.jay.cd-to"
+        }
+      ]
+    },
+    "chatwise": {
+      "caskVersion": "26.9.0",
+      "sourceURL": "https://releases.chatwise.app/26.9.0/ChatWise-26.9.0-arm64.dmg",
+      "artifactSHA256": "2b9367e2e81bd51b09d25e884961a80b59d8d9d2d0e4d02a5e6b0ebba0baf322",
+      "apps": [
+        {
+          "bundleName": "ChatWise.app",
+          "bundleIdentifier": "app.chatwise"
+        }
+      ]
+    },
+    "cate": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://github.com/0-AI-UG/cate/releases/download/v2.0.2/Cate-2.0.2-arm64.dmg",
+      "artifactSHA256": "683fac19eb02cdecd5351ce126f09d1795750f4f17eb586931424bb0f5b1b327",
+      "apps": [
+        {
+          "bundleName": "Cate.app",
+          "bundleIdentifier": "com.cate.app"
+        }
+      ]
+    },
+    "chatall": {
+      "caskVersion": "1.85.110",
+      "sourceURL": "https://github.com/sunner/ChatALL/releases/download/v1.85.110/ChatALL-1.85.110-mac-arm64.dmg",
+      "artifactSHA256": "6ee01d013d9b6f871ddbf9ab4518594b8e4c503f6f5d5c9f8a8bdd1cbf413855",
+      "apps": [
+        {
+          "bundleName": "ChatALL.app",
+          "bundleIdentifier": "ai.chatall"
+        }
+      ]
+    },
+    "chime": {
+      "caskVersion": "2.2.5,157",
+      "sourceURL": "https://updates.chimehq.com/com.chimehq.Edit/157/Chime.app.zip",
+      "artifactSHA256": "0a52a3cf970e38f07dd45c2854e1096926e4960219b438f3601b5af55a747453",
+      "apps": [
+        {
+          "bundleName": "Chime.app",
+          "bundleIdentifier": "com.chimehq.Edit"
+        }
+      ]
+    },
+    "celestia": {
+      "caskVersion": "1.6.4",
+      "sourceURL": "https://github.com/CelestiaProject/Celestia/releases/download/1.6.4/celestia-1.6.4-macOS.zip",
+      "artifactSHA256": "bfb0d0070be9a240a9e3df39495a43223a18dc7757f523ba71dbe8f0bdcaf9e3",
+      "apps": [
+        {
+          "bundleName": "Celestia.app",
+          "bundleIdentifier": "space.celestia.Celestia"
+        }
+      ]
+    },
+    "chiri": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/chiriapp/chiri/releases/download/app-v1.0.0/Chiri_1.0.0_aarch64.dmg",
+      "artifactSHA256": "058df7a9e1663045ad438697f070f7342e3852fd7455fea8f80db0f0df7d2316",
+      "apps": [
+        {
+          "bundleName": "Chiri.app",
+          "bundleIdentifier": "garden.chiri.Chiri"
+        }
+      ]
+    },
+    "channel-works": {
+      "caskVersion": "12.1.0",
+      "sourceURL": "https://github.com/channel-io/channel-works-macos/releases/download/v12.1.0/Channel.Works-darwin-universal-12.1.0.zip",
+      "artifactSHA256": "ceab8b3c2e1773fc91ad47feda7b02b503ee4b5bac2e8a1290441dc0389cd12e",
+      "apps": [
+        {
+          "bundleName": "Channel Works.app",
+          "bundleIdentifier": "com.zoyi.channel.desk.osx"
+        }
+      ]
+    },
+    "catlight": {
+      "caskVersion": "3.10.1",
+      "sourceURL": "https://download.catlight.io/rel/mac/release/CatLightSetup-3.10.1.dmg",
+      "artifactSHA256": "823a434d10c2360b82340a44c4a2cb53aa0d8794715acbd6bbce1ca5e088b40e",
+      "apps": []
+    },
+    "chia": {
+      "caskVersion": "2.7.4",
+      "sourceURL": "https://github.com/Chia-Network/chia-blockchain/releases/download/2.7.4/Chia-2.7.4-arm64.dmg",
+      "artifactSHA256": "447e61c99897ffb85381a92dff8df89d9b14453df2e84b50ed519cf976ef2aea",
+      "apps": [
+        {
+          "bundleName": "Chia.app",
+          "bundleIdentifier": "net.chia.blockchain"
+        }
+      ]
+    },
+    "chitubox": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://sac.chitubox.com/software/download.do?installerUrl=https%3A%2F%2Fdownload.chitubox.com%2F17952%2Fv1.3.1%2FCHITUBOX_Mac_Installer_v1.3.1.dmg&softwareId=17952&softwareVersionId=v1.3.1",
+      "artifactSHA256": "8458c436ab80912fee6c6aa0f4cd931fbc2638ab78159d01444930d0e7345f65",
+      "apps": []
     }
   }
 }
