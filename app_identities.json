@@ -12504,6 +12504,281 @@
           "bundleIdentifier": "com.dominiklevitsky.fontbase"
         }
       ]
+    },
+    "adrafinil": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/kageroumado/adrafinil/releases/download/v1.7.0/Adrafinil-1.7.0.dmg",
+      "artifactSHA256": "71de8cbe83cc9b8fd863d32347ba255d840ab299f5fde7082629ea20225ea783",
+      "apps": [
+        {
+          "bundleName": "Adrafinil.app",
+          "bundleIdentifier": "glass.kagerou.adrafinil"
+        }
+      ]
+    },
+    "amiberry": {
+      "caskVersion": "8.3.0",
+      "sourceURL": "https://github.com/BlitterStudio/amiberry/releases/download/v8.3.0/Amiberry-8.3.0-macOS-universal.dmg",
+      "artifactSHA256": "dd797299f70cec573a09b3f5d1bfbaba8f3b4a5421a776d2555e3b8ef897d718",
+      "apps": [
+        {
+          "bundleName": "Amiberry.app",
+          "bundleIdentifier": "com.blitterstudio.Amiberry"
+        }
+      ]
+    },
+    "teamviewer-quicksupport": {
+      "caskVersion": "15",
+      "sourceURL": "https://dl.teamviewer.com/download/version_15x/TeamViewerQS.dmg",
+      "artifactSHA256": "e1d6ff297d092d1b8bb66e10eef7984f52c2ac202746c79aacbe7479e37ca525",
+      "apps": [
+        {
+          "bundleName": "TeamViewer QuickSupport.app",
+          "bundleIdentifier": "com.teamviewer.TeamViewerQS"
+        }
+      ]
+    },
+    "graphicconverter": {
+      "caskVersion": "12.5.4,7351",
+      "sourceURL": "https://www.lemkesoft.info/files/graphicconverter/gc12_build7351.zip",
+      "artifactSHA256": "594ae6c5ea30b425796991f91e09b38183c7b6dcbf5ece97168dfe70df1dd2d1",
+      "apps": [
+        {
+          "bundleName": "GraphicConverter 12.app",
+          "bundleIdentifier": "com.lemkesoft.graphicconverter12"
+        }
+      ]
+    },
+    "ip-in-menu-bar": {
+      "caskVersion": "4.7.2",
+      "sourceURL": "https://www.monkeybreadsoftware.de/Software/IPinmenubar.dmg",
+      "artifactSHA256": "62d3bc3899f4a1a3a71508e703e678cd2597c6ae5892be80dfa23de047a4b324",
+      "apps": [
+        {
+          "bundleName": "IP in menu bar.app",
+          "bundleIdentifier": "de.monkeybreadsoftware.freeware.ipinmenubar"
+        }
+      ]
+    },
+    "meta-quest-developer-hub": {
+      "caskVersion": "6.5.2,3b34b595843ba33f451ec0b39a802b01",
+      "sourceURL": "https://www.oculus.com/x2asset/electron-apps/odh/3b34b595843ba33f451ec0b39a802b01/Meta%20Quest%20Developer%20Hub-6.5.2.zip",
+      "artifactSHA256": "4108c75a0d444622da70238b21e66094c4a19160c3738cd598b87dfd1615730c",
+      "apps": [
+        {
+          "bundleName": "Meta Quest Developer Hub.app",
+          "bundleIdentifier": "com.oculus.odh"
+        }
+      ]
+    },
+    "010-editor": {
+      "caskVersion": "16.0.4",
+      "sourceURL": "https://download.sweetscape.com/010EditorMacARM64Installer16.0.4.dmg",
+      "artifactSHA256": "fb253925d3cd4b605f8992ec04bcb20be89e54da9b2166daded7819532035ad9",
+      "apps": [
+        {
+          "bundleName": "010 Editor.app",
+          "bundleIdentifier": "com.SweetScape.010Editor"
+        }
+      ]
+    },
+    "processspy": {
+      "caskVersion": "1.15.1",
+      "sourceURL": "https://process-spy.app/archive/ProcessSpy_1.15.1.dmg",
+      "artifactSHA256": "7ddaf971c306decdbed1fe4b2e96f99f303d52987caa08488f23ff7e063b6f0c",
+      "apps": [
+        {
+          "bundleName": "ProcessSpy.app",
+          "bundleIdentifier": "com.itone.ProcessSpy"
+        }
+      ]
+    },
+    "scratch": {
+      "caskVersion": "3.32.1",
+      "sourceURL": "https://downloads.scratch.mit.edu/desktop/Scratch%203.32.1.dmg",
+      "artifactSHA256": "a0184df50e26ba3fbffd665b972108dfa3f0d7ce07b3fa7096a7c6749af3ff29",
+      "apps": [
+        {
+          "bundleName": "Scratch 3.app",
+          "bundleIdentifier": "edu.mit.scratch.scratch-desktop"
+        }
+      ]
+    },
+    "quicksilver": {
+      "caskVersion": "2.6.0",
+      "sourceURL": "https://github.com/quicksilver/Quicksilver/releases/download/v2.6.0/Quicksilver.2.6.0.dmg",
+      "artifactSHA256": "47d4fdfb128109e213ee21c272a100fa0408d389932c47f66b0440b5a0d32c8c",
+      "apps": [
+        {
+          "bundleName": "Quicksilver.app",
+          "bundleIdentifier": "com.blacktree.Quicksilver"
+        }
+      ]
+    },
+    "atlas-app": {
+      "caskVersion": "0.3.3",
+      "sourceURL": "https://github.com/pacifio/atlas/releases/download/alpha-0.3.3/Atlas_0.3.3_aarch64.dmg",
+      "artifactSHA256": "a11694ea1e0a1de613c47023588c6299dacd619bd0f1b7dec913fad675b07d4b",
+      "apps": [
+        {
+          "bundleName": "Atlas.app",
+          "bundleIdentifier": "dev.atlas.ide"
+        }
+      ]
+    },
+    "juicy": {
+      "caskVersion": "1.6.0,2609161119",
+      "sourceURL": "https://cdn.amore.computer/releases/io.sevendegrees.juicy.direct/1.6.0-2609161119/Juicy.dmg",
+      "artifactSHA256": "844933167016437f919c069ec942b747eeaf71911e03a7f33803fc914838ec59",
+      "apps": [
+        {
+          "bundleName": "Juicy.app",
+          "bundleIdentifier": "io.sevendegrees.juicy.direct"
+        }
+      ]
+    },
+    "leapp": {
+      "caskVersion": "0.26.1",
+      "sourceURL": "https://asset.noovolari.com/0.26.1/Leapp-0.26.1-arm64.dmg",
+      "artifactSHA256": "12219dced13feb0cb46e6f47dbda58588749de72b989635068af6cac338c1f8d",
+      "apps": [
+        {
+          "bundleName": "Leapp.app",
+          "bundleIdentifier": "com.leapp.app"
+        }
+      ]
+    },
+    "submariner": {
+      "caskVersion": "3.4",
+      "sourceURL": "https://github.com/NattyNarwhal/Submariner/releases/download/v3.4/Submariner-3.4.zip",
+      "artifactSHA256": "9f8808430999ed7bb1d237b6f5ffe2ab9a04d7bb6a4c7249602aa5172f60483a",
+      "apps": [
+        {
+          "bundleName": "Submariner.app",
+          "bundleIdentifier": "fr.read-write.Submariner"
+        }
+      ]
+    },
+    "studio-3t-community": {
+      "caskVersion": "2025.1.0",
+      "sourceURL": "https://download-ce.studio3t.com/studio-3t/mac-aarch64/2025.1.0/Studio-3T-Community-Edition.dmg",
+      "artifactSHA256": "8bb1055aacb27d40b56ee5183ef40a86d6d44d84e85602c6f0ad71bf997c5031",
+      "apps": [
+        {
+          "bundleName": "Studio 3T Community Edition.app",
+          "bundleIdentifier": "com.install4j.0526-4458-1435-8154.837"
+        }
+      ]
+    },
+    "sensiblesidebuttons": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://github.com/archagon/sensible-side-buttons/releases/download/1.0.7/SensibleSideButtons-1.0.7.dmg",
+      "artifactSHA256": "fb823f17eeedf367c7af5f969d9a569a6e432440baacdc2de23d26577459e27d",
+      "apps": [
+        {
+          "bundleName": "SensibleSideButtons.app",
+          "bundleIdentifier": "net.archagon.sensible-side-buttons"
+        }
+      ]
+    },
+    "neon-vision-editor": {
+      "caskVersion": "1.8.3",
+      "sourceURL": "https://github.com/h3pdesign/Neon-Vision-Editor/releases/download/v1.8.3/Neon.Vision.Editor.app.zip",
+      "artifactSHA256": "219e88a1460343ba2aedc9ff5cf2debf504fe5fadb29e6a69d0118dd6401f254",
+      "apps": [
+        {
+          "bundleName": "Neon Vision Editor.app",
+          "bundleIdentifier": "h3p.Neon-Vision-Editor"
+        }
+      ]
+    },
+    "poedit": {
+      "caskVersion": "3.9.1",
+      "sourceURL": "https://download.poedit.net/Poedit-3.9.1.zip",
+      "artifactSHA256": "76e4742e455ebd303fe85d613ba35452f857912ceee5494ef77628b0961f4221",
+      "apps": [
+        {
+          "bundleName": "Poedit.app",
+          "bundleIdentifier": "net.poedit.Poedit"
+        }
+      ]
+    },
+    "lunacy": {
+      "caskVersion": "14.1",
+      "sourceURL": "https://lcdn.icons8.com/setup/Lunacy_14.1.dmg",
+      "artifactSHA256": "451097a530421ece04b10a2b5100da8f02dc45497f8b969596b7620100d53509",
+      "apps": [
+        {
+          "bundleName": "Lunacy.app",
+          "bundleIdentifier": "com.icons8.Lunacy"
+        }
+      ]
+    },
+    "mediathekview": {
+      "caskVersion": "14.5.0",
+      "sourceURL": "https://download.mediathekview.de/stabil/MediathekView-14.5.0-mac-as.dmg",
+      "artifactSHA256": "21f269571bea732fbd478095cba64e74e40507a7e758d932d8e11f73585de07c",
+      "apps": [
+        {
+          "bundleName": "MediathekView.app",
+          "bundleIdentifier": "org.mediathekview.MediathekView"
+        }
+      ]
+    },
+    "picgo": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://github.com/Molunerfinn/PicGo/releases/download/v3.0.2/PicGo-3.0.2-arm64.dmg",
+      "artifactSHA256": "12e12ca0e6c85fac0a82532ea67e36e46a94b7331f1489bf800569d4bc262772",
+      "apps": [
+        {
+          "bundleName": "PicGo.app",
+          "bundleIdentifier": "com.molunerfinn.picgo"
+        }
+      ]
+    },
+    "qianwen": {
+      "caskVersion": "2.3.1,2602272247",
+      "sourceURL": "https://qianwen-portal-cdn.tongyi.com/native/app/2.3.1/darwin/universal/qwenclient_setup_2.3.1.2602272247.dmg",
+      "artifactSHA256": "85e5ac5742c4bc4ae296ae6a3d87b72a59a4e5b2570dec74592fc847aacdad65",
+      "apps": [
+        {
+          "bundleName": "Qianwen.app",
+          "bundleIdentifier": "com.alibaba.tongyi"
+        }
+      ]
+    },
+    "scrivener": {
+      "caskVersion": "3.5.2,17487,11",
+      "sourceURL": "https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip",
+      "artifactSHA256": "c925c4d3c44da3be479248603a42e2811352d21c97317c1324c1f7f707725758",
+      "apps": [
+        {
+          "bundleName": "Scrivener.app",
+          "bundleIdentifier": "com.literatureandlatte.scrivener3"
+        }
+      ]
+    },
+    "classicftp": {
+      "caskVersion": "5.00",
+      "sourceURL": "https://www.nchsoftware.com/classic/classicmaci.zip",
+      "artifactSHA256": "543dd28b8f7cb02aabd2329a602a0194caf8305300740d53de07e922b0263382",
+      "apps": [
+        {
+          "bundleName": "ClassicFTP.app",
+          "bundleIdentifier": "com.nchsoftware.classicftp"
+        }
+      ]
+    },
+    "swinsian": {
+      "caskVersion": "3.0.8",
+      "sourceURL": "https://www.swinsian.com/sparkle/Swinsian_3.0.8.zip",
+      "artifactSHA256": "05739cc1eeeae2a5a7eb6dd0eaaad7cba484c051e5c2a28f157a78f3f7670ad7",
+      "apps": [
+        {
+          "bundleName": "Swinsian.app",
+          "bundleIdentifier": "com.swinsian.Swinsian"
+        }
+      ]
     }
   }
 }
