@@ -21299,6 +21299,281 @@
           "bundleIdentifier": "com.macinchem.iBabel"
         }
       ]
+    },
+    "ios-app-signer": {
+      "caskVersion": "1.14",
+      "sourceURL": "https://github.com/DanTheMan827/ios-app-signer/releases/download/1.14/iOS.App.Signer.app.zip",
+      "artifactSHA256": "7738a2b75b72ca9493a6f9c8ee4a7a6118fbfc77c61ddf6f02d41bfac8c739d2",
+      "apps": [
+        {
+          "bundleName": "iOS App Signer.app",
+          "bundleIdentifier": "com.DanTheMan827.AppSigner"
+        }
+      ]
+    },
+    "image2icon": {
+      "caskVersion": "2.17",
+      "sourceURL": "https://sf-applications.s3.amazonaws.com/Image2Icon/app-releases/Image2icon2.17.zip",
+      "artifactSHA256": "653db224080c06b303a187e3048b6aa4dd07b7d0a5021623f038254e12baa81a",
+      "apps": [
+        {
+          "bundleName": "Image2Icon.app",
+          "bundleIdentifier": "net.shinyfrog.image2icon"
+        }
+      ]
+    },
+    "install-disk-creator": {
+      "caskVersion": "2.0,3",
+      "sourceURL": "https://macdaddy.io/InstallDiskCreator.zip",
+      "artifactSHA256": "4570e44f4df276e3142dd0d8c88572da1f88f34e08ca47781f4e347a62a410b6",
+      "apps": [
+        {
+          "bundleName": "Install Disk Creator.app",
+          "bundleIdentifier": "io.macdaddy.Install-Disk-Creator"
+        }
+      ]
+    },
+    "inmusic-software-center": {
+      "caskVersion": "1.39.1",
+      "sourceURL": "https://cdn.inmusicbrands.com/SI04/1391/inMusic%20Software%20Center-darwin-universal-1.39.1.zip",
+      "artifactSHA256": "96c4106e44e4964925402fc22f453c4793161883fd04d6a5a808bf50020650ce",
+      "apps": [
+        {
+          "bundleName": "inMusic Software Center.app",
+          "bundleIdentifier": "com.electron.inmusic-software-center"
+        }
+      ]
+    },
+    "infinity": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://downloads.startinfinity.com/desktop/production/1.2.2/infinity_1.2.2_darwin_universal.dmg",
+      "artifactSHA256": "49f43d5a3dbbeb0f51b627c9d654bafcbd928b30f794721f3643559b4c2c9a41",
+      "apps": [
+        {
+          "bundleName": "Infinity.app",
+          "bundleIdentifier": "com.electron.infinity"
+        }
+      ]
+    },
+    "instantview": {
+      "caskVersion": "3.24,R0004",
+      "sourceURL": "https://www.siliconmotion.com/downloads/macOS_InstantView_V3.24R0004.dmg",
+      "artifactSHA256": "968cd5ca428ad5e754425c3134acbf1b230a8ec41a5de47d5d5a1abbbd81c218",
+      "apps": [
+        {
+          "bundleName": "macOS InstantView.app",
+          "bundleIdentifier": "com.SMI-Inc.InstantView"
+        }
+      ]
+    },
+    "igv-desktop": {
+      "caskVersion": "2.19.8",
+      "sourceURL": "https://data.broadinstitute.org/igv/projects/downloads/2.19/IGV_MacApp_2.19.8.zip",
+      "artifactSHA256": "f0640b2877444dd8ab01b47b83215a7ca976481c66f8faad98c0563d7e0577b3",
+      "apps": [
+        {
+          "bundleName": "IGV_2.19.8.app",
+          "bundleIdentifier": "org.broad.igv.ui.Main"
+        }
+      ]
+    },
+    "internxt-drive": {
+      "caskVersion": "2.6.8.87",
+      "sourceURL": "https://github.com/internxt/drive-desktop-macos/releases/download/v2.6.8.87/Internxt_Drive_2.6.8.87.dmg",
+      "artifactSHA256": "3074ff07948a512ad09c754b8f4ab2d4671ad3206353d34749ac319d259ea130",
+      "apps": [
+        {
+          "bundleName": "Internxt Drive.app",
+          "bundleIdentifier": "internxt.InternxtDesktop"
+        }
+      ]
+    },
+    "invoker": {
+      "caskVersion": "2.14.1",
+      "sourceURL": "https://invokerdev.fra1.digitaloceanspaces.com/invoker/Invoker-2.14.1-arm64.dmg",
+      "artifactSHA256": "2d8bf2e9ed9eadcca26c7b5da2a5b9a917a62dd70d2f223133021d7d1c09ce06",
+      "apps": [
+        {
+          "bundleName": "Invoker.app",
+          "bundleIdentifier": "de.beyondco.invoker"
+        }
+      ]
+    },
+    "invisor-lite": {
+      "caskVersion": "3.27",
+      "sourceURL": "https://www.invisorapp.com/download/InvisorLite-3.27.dmg",
+      "artifactSHA256": "25675d8f42ff47b5cb8df461b88a8f1c06d873dc0efeff43de64ba6a2f7fb787",
+      "apps": [
+        {
+          "bundleName": "Invisor Lite.app",
+          "bundleIdentifier": "com.pozdeev.invisorfree"
+        }
+      ]
+    },
+    "inform": {
+      "caskVersion": "10.1.2,1_82_3",
+      "sourceURL": "https://github.com/ganelson/inform/releases/download/v10.1.2/Inform_10_1_2_macOS_1_82_3.dmg",
+      "artifactSHA256": "01160096f0d19b1674c56c2dd2c8dc6f39b09cdccc1452b549843690c82b4a94",
+      "apps": [
+        {
+          "bundleName": "Inform.app",
+          "bundleIdentifier": "com.inform7.inform-compiler"
+        }
+      ]
+    },
+    "intellidock": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://mightymac.app/intellidock/download/IntelliDock-1.0.dmg",
+      "artifactSHA256": "592ce456ddf29f3464c3dcdc530d86be92cadc72afd471d968f0f6fd07125e94",
+      "apps": [
+        {
+          "bundleName": "IntelliDock.app",
+          "bundleIdentifier": "app.mightymac.IntelliDock"
+        }
+      ]
+    },
+    "iexplorer": {
+      "caskVersion": "4.6.0,180",
+      "sourceURL": "https://assets.macroplant.com/download/180/iExplorer-4.6.0.dmg",
+      "artifactSHA256": "1234ab31439a7f3a35ba2c77e7a65977b75d15fb15d823b322adcefb221eed0f",
+      "apps": [
+        {
+          "bundleName": "iExplorer.app",
+          "bundleIdentifier": "com.macroplant.iExplorer"
+        }
+      ]
+    },
+    "integrity": {
+      "caskVersion": "12.13.0",
+      "sourceURL": "https://peacockmedia.software/mac/integrity/integrity.dmg",
+      "artifactSHA256": "37c8e63462d629bfa30dd84cf40287e28d9458e2d9f409f3f29e14a8118eee18",
+      "apps": [
+        {
+          "bundleName": "Integrity.app",
+          "bundleIdentifier": "com.peacockmedia.integrity"
+        }
+      ]
+    },
+    "imazing-profile-editor": {
+      "caskVersion": "2.2.1,393403",
+      "sourceURL": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.2.1.393403/iMazing_Profile_Editor_2.2.1.393403.dmg",
+      "artifactSHA256": "e870b87dfc66a491814b969cbbe818a62f51d68e09263ca5a315e5400362b487",
+      "apps": [
+        {
+          "bundleName": "iMazing Profile Editor.app",
+          "bundleIdentifier": "com.DigiDNA.iMazingProfileEditorMac"
+        }
+      ]
+    },
+    "inkdrop": {
+      "caskVersion": "6.1.4",
+      "sourceURL": "https://dist.inkdrop.app/releases/inkdrop-6.1.4-arm64-mac.zip",
+      "artifactSHA256": "b8d0d93991baf817689239aa2566504578a68b21b063a2f561e2ea061fc77c0c",
+      "apps": [
+        {
+          "bundleName": "Inkdrop.app",
+          "bundleIdentifier": "info.pkpk.inkdrop"
+        }
+      ]
+    },
+    "imgotv": {
+      "caskVersion": "6.5.9",
+      "sourceURL": "https://download.imgo.tv/app/mac/6.5.9/mgtv-mango-6.5.9.dmg",
+      "artifactSHA256": "d2c486468eea3304c83f1e56c14d7aae6395c555220667c2cbbc53bcd658b83c",
+      "apps": [
+        {
+          "bundleName": "芒果TV.app",
+          "bundleIdentifier": "com.mgtv.pcclientx"
+        }
+      ]
+    },
+    "input0": {
+      "caskVersion": "0.6.1",
+      "sourceURL": "https://github.com/10xChengTu/input0/releases/download/v0.6.1/Input0_0.6.1_aarch64.dmg",
+      "artifactSHA256": "8581c22c7bc8f5fa2d05ba84ee1f85ccd80f5d4af7bf07798af6f3d53c9f08e0",
+      "apps": [
+        {
+          "bundleName": "Input0.app",
+          "bundleIdentifier": "com.input0"
+        }
+      ]
+    },
+    "incident-io": {
+      "caskVersion": "1.4.3",
+      "sourceURL": "https://storage.googleapis.com/incident-io-production-downloads/incident.io-1.4.3.zip",
+      "artifactSHA256": "d439c362be60ac80f765b647f7d398ea2a79e70d8d0a4a71f213e87ceb8352f1",
+      "apps": [
+        {
+          "bundleName": "incident.io.app",
+          "bundleIdentifier": "com.incidentio.desktop"
+        }
+      ]
+    },
+    "inky": {
+      "caskVersion": "0.15.2",
+      "sourceURL": "https://github.com/inkle/inky/releases/download/0.15.2/inky.dmg",
+      "artifactSHA256": "7f2d6c69e63c12ae1467824655aecc17a24bc299fd2860e8f21b08f6551ac7d5",
+      "apps": [
+        {
+          "bundleName": "Inky.app",
+          "bundleIdentifier": "com.inkle.inky"
+        }
+      ]
+    },
+    "insync": {
+      "caskVersion": "3.9.9.60038",
+      "sourceURL": "https://cdn.insynchq.com/builds/mac/Insync-3.9.9.60038.dmg",
+      "artifactSHA256": "186f96c184fe0518ad8c4f3ae7fc7f81190fbb602b1366480277fc075b69f5cc",
+      "apps": [
+        {
+          "bundleName": "Insync.app",
+          "bundleIdentifier": "com.insynchq.insync"
+        }
+      ]
+    },
+    "intiface-central": {
+      "caskVersion": "3.1.1,43",
+      "sourceURL": "https://github.com/intiface/intiface-central/releases/download/v3.1.1%2B43/intiface-central-v3.1.1-macos-universal.dmg",
+      "artifactSHA256": "8d3ee725a830772262a4550b23b9fe913d7b28eaed370ea95bfc3a12f3bdd869",
+      "apps": [
+        {
+          "bundleName": "Intiface Central.app",
+          "bundleIdentifier": "com.nonpolynomial.intifacecentral"
+        }
+      ]
+    },
+    "infra": {
+      "caskVersion": "0.47.0",
+      "sourceURL": "https://download.infra.app/darwin/Infra-darwin-universal-0.47.0.zip",
+      "artifactSHA256": "41f2d71fe84935c4ec3eb13e73c91e9c5b33c38c599bf70a72756091356d13d1",
+      "apps": [
+        {
+          "bundleName": "Infra.app",
+          "bundleIdentifier": "app.infra.infra"
+        }
+      ]
+    },
+    "imazing-converter": {
+      "caskVersion": "2.0.14,586",
+      "sourceURL": "https://downloads.imazing.com/mac/iMazing-Converter/2.0.14.586/iMazing_Converter_2.0.14.586.dmg",
+      "artifactSHA256": "351acae944926f6fcc0888e34c0c1b44765e64ae57223c2440e607ec813f1961",
+      "apps": [
+        {
+          "bundleName": "iMazing Converter.app",
+          "bundleIdentifier": "com.DigiDNA.iMazingHEICConverterMac"
+        }
+      ]
+    },
+    "infinidesk": {
+      "caskVersion": "3.22",
+      "sourceURL": "https://infinidesk.app/static/download/v3.22/InfiniDesk.dmg",
+      "artifactSHA256": "0c3ed452b430202d9c92f705e14f94319d84db9e7394947d9069565c0c35c685",
+      "apps": [
+        {
+          "bundleName": "InfiniDesk.app",
+          "bundleIdentifier": "app.infinidesk.InfiniDesk"
+        }
+      ]
     }
   }
 }
