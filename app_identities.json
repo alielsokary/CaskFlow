@@ -251,9 +251,9 @@
       ]
     },
     "bitmuse": {
-      "caskVersion": "1.3.33",
-      "sourceURL": "https://updates.bitmuse.app/BitMuse-1.3.33.dmg",
-      "artifactSHA256": "e0fd09f714e1e2744ab6a550559f17ee68579a2c4901acb46d0d067c095db27c",
+      "caskVersion": "1.3.37",
+      "sourceURL": "https://updates.bitmuse.app/BitMuse-1.3.37.dmg",
+      "artifactSHA256": "c7459fceedd3b4616fff3bbc62c0f684023659695dcb57e0b02a38b7942cf1ac",
       "apps": [
         {
           "bundleName": "BitMuse.app",
@@ -383,9 +383,9 @@
       ]
     },
     "bettermacwidgets": {
-      "caskVersion": "2.3.0",
-      "sourceURL": "https://bettermacwidgets.de/BetterMacWidgets-2.3.0.dmg",
-      "artifactSHA256": "cddd2990a8e5d43edd948ecc7611006c9951fce1b1f90165ee42c8c6df459a98",
+      "caskVersion": "2.3.4",
+      "sourceURL": "https://bettermacwidgets.de/BetterMacWidgets-2.3.4.dmg",
+      "artifactSHA256": "dc18078df26bbb61a35551da46cfffbdb9e99fea3e41df758c7d06408b6fff1b",
       "apps": [
         {
           "bundleName": "BetterMacWidgets.app",
@@ -14907,6 +14907,259 @@
         {
           "bundleName": "Ball.app",
           "bundleIdentifier": "com.nateparrott.Ball"
+        }
+      ]
+    },
+    "binary-ninja-free": {
+      "caskVersion": "6.0.10601",
+      "sourceURL": "https://cdn.binary.ninja/installers/binaryninja_free_macosx.dmg",
+      "artifactSHA256": "b23aa5c0927e0c90ac3a7dd32f49d732dda529b0f64cef669c1ddb22932e68c2",
+      "apps": [
+        {
+          "bundleName": "Binary Ninja.app",
+          "bundleIdentifier": "com.vector35.binaryninja"
+        }
+      ]
+    },
+    "beatunes": {
+      "caskVersion": "5.2.36",
+      "sourceURL": "https://coxy.beatunes.com/download/beaTunes-5-2-36.dmg",
+      "artifactSHA256": "c0420fec7f20decb52a27909bd0c27a572a735624b5a2a4e9a55f67f39db7b31",
+      "apps": [
+        {
+          "bundleName": "beaTunes5.app",
+          "bundleIdentifier": "com.tagtraum.beatunes"
+        }
+      ]
+    },
+    "bit-slicer": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://github.com/zorgiepoo/Bit-Slicer/releases/download/1.9.2/Bit.Slicer.dmg",
+      "artifactSHA256": "7bb4b491a48e9cd7fd171e5a5a4ff31fdb040d220ab698427321bac57aa84fce",
+      "apps": [
+        {
+          "bundleName": "Bit Slicer.app",
+          "bundleIdentifier": "com.zgcoder.BitSlicer"
+        }
+      ]
+    },
+    "bike": {
+      "caskVersion": "1.22.2,196",
+      "sourceURL": "https://www.hogbaysoftware.com/bike/releases/196.dmg",
+      "artifactSHA256": "59222704a85850ddd58d16994f87ec5f8d7cb687a20b50014306f8f328b3e609",
+      "apps": [
+        {
+          "bundleName": "Bike.app",
+          "bundleIdentifier": "com.hogbaysoftware.Bike"
+        }
+      ]
+    },
+    "bespoke": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/BespokeSynth/BespokeSynth/releases/download/v1.3.0/BespokeSynth-Mac-1_3_0.dmg",
+      "artifactSHA256": "f31f37593fb4e1981701775be8bc1b700608d1ce3ddbdc4da336615d5eff79b6",
+      "apps": [
+        {
+          "bundleName": "BespokeSynth.app",
+          "bundleIdentifier": "com.ryanchallinor.bespokesynth"
+        }
+      ]
+    },
+    "birdfont": {
+      "caskVersion": "6.15.1",
+      "sourceURL": "https://birdfont.org/download/birdfont-6.15.1-free.dmg",
+      "artifactSHA256": "74756add690766520565133d2bdd5f1767f0414e20b25e5381f9d44fec39aa22",
+      "apps": [
+        {
+          "bundleName": "BirdFontNonCommercial.app",
+          "bundleIdentifier": "org.birdfont.birdfont"
+        }
+      ]
+    },
+    "bitwig-studio": {
+      "caskVersion": "6.1.1",
+      "sourceURL": "https://www.bitwig.com/dl/Bitwig%20Studio/6.1.1/installer_mac",
+      "artifactSHA256": "4f01577988819e7a79a28b6fce6746ff0cec3424fd576b95ad7afcb3daed7076",
+      "apps": [
+        {
+          "bundleName": "Bitwig Studio.app",
+          "bundleIdentifier": "com.bitwig.studio"
+        }
+      ]
+    },
+    "biscuit": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://github.com/agata/dl.biscuit/releases/download/2.1.2/Biscuit-2.1.2-arm64.dmg",
+      "artifactSHA256": "89609c221bb8b5ea5d027b95bed1c00dc4001b07dfec165f4e740b7da047aa69",
+      "apps": [
+        {
+          "bundleName": "Biscuit.app",
+          "bundleIdentifier": "com.eatbiscult.biscult"
+        }
+      ]
+    },
+    "betterandbetter": {
+      "caskVersion": "2.7.9,2026062701",
+      "sourceURL": "https://cdn.better365.cn/BetterAndBetter/2026/BetterAndBetter_2.7.9_2026062701.zip",
+      "artifactSHA256": "34f19dbf4149a62325c7cf0de1e1090b6f6e8b24c18373688318a44bf827b124",
+      "apps": [
+        {
+          "bundleName": "BetterAndBetter.app",
+          "bundleIdentifier": "cn.better365.BetterAndBetter"
+        }
+      ]
+    },
+    "billings-pro": {
+      "caskVersion": "1.8.1,39116,2026-04-06-1244",
+      "sourceURL": "https://www.marketcircle.com/appcasts/releases/billingspro-releases-1.8.1.b39116.2026-04-06-1244.zip",
+      "artifactSHA256": "e98801c189677736216217753a5b2355c8a613fbfa42c45b6e45aedee118a24a",
+      "apps": [
+        {
+          "bundleName": "Billings Pro.app",
+          "bundleIdentifier": "com.marketcircle.BillingsPro"
+        }
+      ]
+    },
+    "big-mean-folder-machine": {
+      "caskVersion": "2.43",
+      "sourceURL": "https://www.publicspace.net/download/BMFM.dmg",
+      "artifactSHA256": "27e87d0ec2d7db24a63af249d476c420064fc0d875f574e0bbebd7593746244c",
+      "apps": [
+        {
+          "bundleName": "Big Mean Folder Machine 2.app",
+          "bundleIdentifier": "net.publicspace.dist.bmfm2"
+        }
+      ]
+    },
+    "black-ink": {
+      "caskVersion": "2.4.8",
+      "sourceURL": "https://redsweater.com/blackink/BlackInk2.4.8.zip",
+      "artifactSHA256": "75a2443cc34e2a2b7241023c3545bdc48250669259d82aaaa0280ff3a7638f36",
+      "apps": [
+        {
+          "bundleName": "Black Ink.app",
+          "bundleIdentifier": "com.red-sweater.blackink2"
+        }
+      ]
+    },
+    "bitbox": {
+      "caskVersion": "4.52.0",
+      "sourceURL": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.52.0/BitBox-4.52.0-macOS.dmg",
+      "artifactSHA256": "fc3e13bf8aedf2df375a4d63a8b8af38651b70835be691928e6b796156c4809d",
+      "apps": [
+        {
+          "bundleName": "BitBox.app",
+          "bundleIdentifier": "ch.shiftcrypto.wallet"
+        }
+      ]
+    },
+    "beid-viewer": {
+      "caskVersion": "5.1.31",
+      "sourceURL": "https://eid.belgium.be/sites/default/files/software/eID%20Viewer-5.1.31.dmg",
+      "artifactSHA256": "afa0795da0c1d49b4af0c9de0f38a6f66c4930ab4cc785822ca2eb7fd8773b5b",
+      "apps": [
+        {
+          "bundleName": "eID Viewer.app",
+          "bundleIdentifier": "be.fedict.eid.eID-Viewer"
+        }
+      ]
+    },
+    "billy": {
+      "caskVersion": "1.2.0,43",
+      "sourceURL": "https://cdn.amore.computer/releases/com.simonlou.Billy/1.2.0-43/Billy.dmg",
+      "artifactSHA256": "96c9e0e3a0b8d26fd6d4b298b5d06271f2c9120aa0d23e85eedf18a5b2916982",
+      "apps": [
+        {
+          "bundleName": "Billy.app",
+          "bundleIdentifier": "com.simonlou.Billy"
+        }
+      ]
+    },
+    "bezel": {
+      "caskVersion": "5.0.0",
+      "sourceURL": "https://download.nonstrict.eu/bezel/Bezel-5.0.0.zip",
+      "artifactSHA256": "317fb57a010dfdebcd346b705e6b12604734f4f05cff38cd1100609e780310f5",
+      "apps": [
+        {
+          "bundleName": "Bezel.app",
+          "bundleIdentifier": "com.nonstrict.Bezel-direct"
+        }
+      ]
+    },
+    "berrycast": {
+      "caskVersion": "0.39.4",
+      "sourceURL": "https://media.berrycast.app/desktop-installer/Berrycast-0.39.4-latest.dmg",
+      "artifactSHA256": "64d1c4c8ac4efb4e10c367a02efd5b38b97ee61c70089014312eb4210fa0ab32",
+      "apps": [
+        {
+          "bundleName": "Berrycast.app",
+          "bundleIdentifier": "com.openmindt.berrycast"
+        }
+      ]
+    },
+    "billy-frontier": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://github.com/jorio/BillyFrontier/releases/download/v1.1.1/BillyFrontier-1.1.1-mac.dmg",
+      "artifactSHA256": "d8200ed658786406d0f8ef3ad56ed9eb3a0c4223a689685888e1454d1bb2de1e",
+      "apps": [
+        {
+          "bundleName": "Billy Frontier.app",
+          "bundleIdentifier": "io.jor.billyfrontier"
+        }
+      ]
+    },
+    "beutl": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/b-editor/beutl/releases/download/v1.1.0/Beutl.osx_arm64.app.zip",
+      "artifactSHA256": "9c35670dd53ea49dd9757ad86994076773f5dd8cd832ced4cc1c36ced882dc8b",
+      "apps": [
+        {
+          "bundleName": "Beutl.app",
+          "bundleIdentifier": "net.beditor.beutl"
+        }
+      ]
+    },
+    "bitrix24": {
+      "caskVersion": "23.0.32.91",
+      "sourceURL": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
+      "artifactSHA256": "3578bbe884b8f6a003160aa02b84be612fb84c54f447156f581e117e5fba03f8",
+      "apps": [
+        {
+          "bundleName": "Bitrix24.app",
+          "bundleIdentifier": "com.bitrixsoft.bitrix24desktop"
+        }
+      ]
+    },
+    "bitcoin-core": {
+      "caskVersion": "31.1",
+      "sourceURL": "https://bitcoincore.org/bin/bitcoin-core-31.1/bitcoin-31.1-arm64-apple-darwin.zip",
+      "artifactSHA256": "f6e7c185c4b81d5f53fb7471a438f58cc1b55c10c407095afef340e03289b504",
+      "apps": [
+        {
+          "bundleName": "Bitcoin Core.app",
+          "bundleIdentifier": "org.bitcoinfoundation.Bitcoin-Qt"
+        }
+      ]
+    },
+    "beaver-notes": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/Beaver-Notes/Beaver-Notes/releases/download/4.4.0/Beaver-notes-4.4.0-universal.dmg",
+      "artifactSHA256": "c2b83192c2b25542e8c8d5ffcaa4152e0175208de1d5caefa83095c6fd064f43",
+      "apps": [
+        {
+          "bundleName": "Beaver Notes.app",
+          "bundleIdentifier": "com.danielerolli.beaver-notes"
+        }
+      ]
+    },
+    "beersmith": {
+      "caskVersion": "4.0.22",
+      "sourceURL": "https://beersmith4.s3.amazonaws.com/BeerSmith_4.0.22.dmg",
+      "artifactSHA256": "97fe0d9eee2e8be6d677f340af8de36067b075f7981aaa85194df4050bea903f",
+      "apps": [
+        {
+          "bundleName": "BeerSmith4.app",
+          "bundleIdentifier": "BeerSmith-LLC.BeerSmith4"
         }
       ]
     }
