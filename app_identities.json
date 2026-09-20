@@ -107,9 +107,9 @@
       ]
     },
     "psysonic": {
-      "caskVersion": "1.52.0",
-      "sourceURL": "https://github.com/Psysonic/psysonic/releases/download/app-v1.52.0/Psysonic_1.52.0_aarch64.dmg",
-      "artifactSHA256": "048945387a139bdc8e8cc70bd25be6bd364ccb974880dfd93d6ad748107d4b28",
+      "caskVersion": "1.54.0",
+      "sourceURL": "https://github.com/Psysonic/psysonic/releases/download/app-v1.54.0/Psysonic_1.54.0_aarch64.dmg",
+      "artifactSHA256": "bf190fb803f506288e8a7bacfc508a1901d4e545b35517c6f21a87727ecff06b",
       "apps": [
         {
           "bundleName": "Psysonic.app",
@@ -27688,6 +27688,260 @@
           "bundleIdentifier": "cc.prettyclean.PrettyClean"
         }
       ]
+    },
+    "qctools": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://mediaarea.net/download/binary/qctools/1.4.1/QCTools_1.4.1_mac.dmg",
+      "artifactSHA256": "bafce2600d2dfc6efefecfa156b550b6383f26a9739cba4f83a62255bcf51975",
+      "apps": [
+        {
+          "bundleName": "QCTools.app",
+          "bundleIdentifier": "net.mediaarea.qctools.mac"
+        }
+      ]
+    },
+    "qbserve": {
+      "caskVersion": "1.91",
+      "sourceURL": "https://qotoqot.com/qbserve/app/Qbserve-1.91.zip",
+      "artifactSHA256": "1e9536d366497f5014aba15e2f3b9fc11b6ab52038a64a4854baa586e1f32a78",
+      "apps": [
+        {
+          "bundleName": "Qbserve.app",
+          "bundleIdentifier": "com.QotoQot.Qbserve"
+        }
+      ]
+    },
+    "qqlive": {
+      "caskVersion": "2.185.0.55868",
+      "sourceURL": "https://dldir1.qq.com/qqtv/mac/TencentVideo2.185.0.55868.dmg",
+      "artifactSHA256": "87b48f6ff4fe043b1c707dae8ed6b47df1a678a782c3c1d9d536acbffaf00328",
+      "apps": [
+        {
+          "bundleName": "QQLive.app",
+          "bundleIdentifier": "com.tencent.tenvideo"
+        }
+      ]
+    },
+    "qlab": {
+      "caskVersion": "5.6.3",
+      "sourceURL": "https://qlab.app/downloads/archive/QLab-5.6.3.zip",
+      "artifactSHA256": "fa655221b20f5add503faedfacd1d8d3b37a24f0ac7b05736c3e61e905300dea",
+      "apps": [
+        {
+          "bundleName": "QLab.app",
+          "bundleIdentifier": "com.figure53.QLab.5"
+        }
+      ]
+    },
+    "pxplay": {
+      "caskVersion": "2.0.0,8.1.1",
+      "sourceURL": "https://github.com/streamingdv/PSPlay-Application-Hosting/releases/download/v2.0.0_v8.1.1/PXPlay_2.0.0_macOSX_arm64.dmg",
+      "artifactSHA256": "eecdf35a9508fe07e6994dc253cead5b7734f26f5e91408d6bbf3d48a48e88da",
+      "apps": [
+        {
+          "bundleName": "PXPlay.app",
+          "bundleIdentifier": "com.grill.psplay.PXPlay"
+        }
+      ]
+    },
+    "qqnews": {
+      "caskVersion": "2.4.20",
+      "sourceURL": "https://h5.news.qq.com/qqnews-desk/mac-arm64/qqnews_2.4.20_arm64_signed.zip",
+      "artifactSHA256": "dcee666e5ceb4b4d755cb664040cf777f3e7b329222a4851ecfb856ab2315805",
+      "apps": [
+        {
+          "bundleName": "腾讯新闻.app",
+          "bundleIdentifier": "com.tencent.macNet"
+        }
+      ]
+    },
+    "prudent": {
+      "caskVersion": "29",
+      "sourceURL": "https://github.com/PrudentMe/main/releases/download/29/Prudent.zip",
+      "artifactSHA256": "375970eadf59bab17e8add0057ea967b0376eb1385889d5b64f84a720e4dd4cb",
+      "apps": [
+        {
+          "bundleName": "Prudent.app",
+          "bundleIdentifier": "com.runningroot.prudent"
+        }
+      ]
+    },
+    "purei-play": {
+      "caskVersion": "0.72",
+      "sourceURL": "https://purei.org/downloads/play/stable/0.72/Play.dmg",
+      "artifactSHA256": "ad9e03164a5bfe79c99e6d9d8c04db7b706a749eba29b33bef39bb7db2a36f36",
+      "apps": [
+        {
+          "bundleName": "Play.app",
+          "bundleIdentifier": "com.virtualapplications.Play"
+        }
+      ]
+    },
+    "qr-journal": {
+      "caskVersion": "3.0",
+      "sourceURL": "https://www.joshjacob.com/mac-development/QRJournal3.0.dmg",
+      "artifactSHA256": "f4b0692cee9eedc2b06688f0210be0126865bcd90f538b0fd695fc8bf647dd3b",
+      "apps": [
+        {
+          "bundleName": "QR Journal.app",
+          "bundleIdentifier": "com.joshjacob.qrjournal"
+        }
+      ]
+    },
+    "pycharm-oss": {
+      "caskVersion": "2026.2.3",
+      "sourceURL": "https://github.com/JetBrains/intellij-community/releases/download/pycharm%2F2026.2.3/pycharm-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "262c1b411ffe4df76f49db142a0ee64f69b23bc998bb56cad7c4cb4d665e056f",
+      "apps": [
+        {
+          "bundleName": "PyCharm OSS.app",
+          "bundleIdentifier": "com.jetbrains.pycharm.ce"
+        }
+      ]
+    },
+    "quba": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://github.com/ZUGFeRD/quba-viewer/releases/download/v1.5.1/Quba-1.5.1-universal.dmg",
+      "artifactSHA256": "7558b83c03847c872a80fe658eabcde17db2e1f02eab5a79c43141508fd85ba2",
+      "apps": [
+        {
+          "bundleName": "Quba.app",
+          "bundleIdentifier": "org.quba-viewer.viewer"
+        }
+      ]
+    },
+    "pulse-sms": {
+      "caskVersion": "4.5.3",
+      "sourceURL": "https://github.com/maplemedia/pulse-sms-desktop/releases/download/v4.5.3/pulse-sms-4.5.3.dmg",
+      "artifactSHA256": "9e12b4a0b794ee4903ee59c57b10c5951a357f739c90bda387a81a55b9bdd73f",
+      "apps": [
+        {
+          "bundleName": "Pulse SMS.app",
+          "bundleIdentifier": "xyz.klinker.messenger"
+        }
+      ]
+    },
+    "qobuz-downloader": {
+      "caskVersion": "2.0.0,1",
+      "sourceURL": "https://apps.qobuz.com/downloader/releases/macos/2.0.0+1/qobuz_downloader.dmg",
+      "artifactSHA256": "914c782dd7d25e9a17865a48eeead7ffa43fba7acb638b062a1f8eefe40c0a01",
+      "apps": [
+        {
+          "bundleName": "Qobuz Downloader.app",
+          "bundleIdentifier": "com.qobuz.downloader"
+        }
+      ]
+    },
+    "quakenotch": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://github.com/rohanrhu/QuakeNotch/releases/download/v3.3.2/QuakeNotch.zip",
+      "artifactSHA256": "070185185f3f688d9c645cabc640018b98d47bb4f203ccb94b818b365a8714dd",
+      "apps": [
+        {
+          "bundleName": "QuakeNotch.app",
+          "bundleIdentifier": "MeowingCat.QuakeNotch"
+        }
+      ]
+    },
+    "qlc+": {
+      "caskVersion": "5.2.2",
+      "sourceURL": "https://www.qlcplus.org/downloads/5.2.2/QLC+_5.2.2_arm64.dmg",
+      "artifactSHA256": "116b83e96be1bbc66b89f3bbc98dc79be8766f4a123bb7347658b34d07eb1c18",
+      "apps": []
+    },
+    "pyzo": {
+      "caskVersion": "4.22.0",
+      "sourceURL": "https://github.com/pyzo/pyzo/releases/download/v4.22.0/pyzo-4.22.0-macos_arm64.dmg",
+      "artifactSHA256": "a71fca9dc8bbc42ced3b3de324f03096eb4dd9f140a20c35c2f9b83bb3c249ea",
+      "apps": [
+        {
+          "bundleName": "pyzo.app",
+          "bundleIdentifier": "org.pyzo.app"
+        }
+      ]
+    },
+    "publii": {
+      "caskVersion": "0.47.9,17481",
+      "sourceURL": "https://getpublii.com/download/Publii-0.47.9-arm64.dmg",
+      "artifactSHA256": "e031b7829ecf1b9eb53fa1c89292f099acc198086233e7c97471495a5a3c42d0",
+      "apps": [
+        {
+          "bundleName": "Publii.app",
+          "bundleIdentifier": "com.tidycustoms.publii"
+        }
+      ]
+    },
+    "qidistudio": {
+      "caskVersion": "2.07.02.60",
+      "sourceURL": "https://github.com/QIDITECH/QIDIStudio/releases/download/v2.07.02.60/QIDIStudio_v02.07.02.60_MacOS_universal.dmg",
+      "artifactSHA256": "c815493bb382d21d365a0b3648ec5a5b7e62c3f42ff11f6126937a35ee05742a",
+      "apps": [
+        {
+          "bundleName": "QIDIStudio.app",
+          "bundleIdentifier": "com.qiditech.qidi-studio"
+        }
+      ]
+    },
+    "quickbooks": {
+      "caskVersion": "22.0.8.906,2023",
+      "sourceURL": "https://http-download.intuit.com/http.intuit/Downloads/2023/Latest/QuickBooksMac2023.dmg",
+      "artifactSHA256": "fa91fe214fc5d1ff8d33a7aa8ccbb8738f341d42bade97c0f6fd0499aa8df8e4",
+      "apps": [
+        {
+          "bundleName": "QuickBooks 2023.app",
+          "bundleIdentifier": "com.intuit.QuickBooks2023"
+        }
+      ]
+    },
+    "quicken": {
+      "caskVersion": "9.2.2,902.61860.100",
+      "sourceURL": "https://download.quicken.com/mac/Quicken/001/Release/031A96D9-EFE6-4520-8B6A-7F465DDAA3E4/Quicken-902.61860.100/Quicken-902.61860.100.zip",
+      "artifactSHA256": "e61613b2552dda5ce4f4022b0dad70138d2233e2ac194d43cb99e408b20f480b",
+      "apps": [
+        {
+          "bundleName": "Quicken.app",
+          "bundleIdentifier": "com.quicken.Quicken"
+        }
+      ]
+    },
+    "quicktune": {
+      "caskVersion": "7.6.1",
+      "sourceURL": "https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg",
+      "artifactSHA256": "5d93eeef2bfd63cfb8300c4a302571bfdc6c681c86de6b728f8436ef8609b4c4",
+      "apps": [
+        {
+          "bundleName": "QuickTune.app",
+          "bundleIdentifier": "com.marioaguzman.QuickTune"
+        }
+      ]
+    },
+    "querious": {
+      "caskVersion": "4.2.4",
+      "sourceURL": "https://www.araelium.com/querious/downloads/versions/Querious4.2.4.zip",
+      "artifactSHA256": "137d6a1856af015b15807837428a1e18b1f2c850b8ce852c9a13e3fdfd5b674b",
+      "apps": [
+        {
+          "bundleName": "Querious.app",
+          "bundleIdentifier": "com.araeliumgroup.querious"
+        }
+      ]
+    },
+    "pym-player": {
+      "caskVersion": "8.2.4,8C148",
+      "sourceURL": "https://pym.uce.pl/download/pliki/PYMPlayer8C148.dmg",
+      "artifactSHA256": "9e3b380b4f3e736c9043203c7f6d99b34031aa6abadb90738519cb1200c4ffd9",
+      "apps": [
+        {
+          "bundleName": "PYM Player.app",
+          "bundleIdentifier": "pl.uce.pym.pymplayer8"
+        }
+      ]
+    },
+    "psiphon-conduit": {
+      "caskVersion": "1.8.0-RC.2",
+      "sourceURL": "https://github.com/Psiphon-Inc/conduit/releases/download/release-mac-1.8.0-RC.2/conduit.dmg",
+      "artifactSHA256": "56a6be1708a2e458965fcc31743cfd8ecd186f3b6e739baaa9e027996bbf1ae4",
+      "apps": []
     }
   }
 }
