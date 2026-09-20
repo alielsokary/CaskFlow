@@ -1709,6 +1709,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "waveforms": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "wch-ch34x-usb-serial-driver": {
     "status": "review",
     "reason": "non-exact .app selection: single",
