@@ -18519,6 +18519,271 @@
           "bundleIdentifier": "com.clickontyler.Ears"
         }
       ]
+    },
+    "elephas": {
+      "caskVersion": "12.0001",
+      "sourceURL": "https://assets.elephas.app/Elephas_12.0001.dmg",
+      "artifactSHA256": "085c4188f1a797e737490ff9f09b67ca88f6355d8fa4b21c61522fbdd4de1d42",
+      "apps": [
+        {
+          "bundleName": "Elephas.app",
+          "bundleIdentifier": "com.kamban.elephas"
+        }
+      ]
+    },
+    "empoche": {
+      "caskVersion": "0.4.5",
+      "sourceURL": "https://empoche-desktop.s3.amazonaws.com/Empoche-0.4.5-mac.zip",
+      "artifactSHA256": "8a4c57928da42a3ed60b1e0648b24614f84ecc582f3b9c9ee04cd5323e58ea4f",
+      "apps": [
+        {
+          "bundleName": "Empoche.app",
+          "bundleIdentifier": "com.empoche.app"
+        }
+      ]
+    },
+    "elemental": {
+      "caskVersion": "7.7.0",
+      "sourceURL": "https://github.com/evolvedbinary/elemental/releases/download/elemental-7.7.0/elemental-7.7.0.dmg",
+      "artifactSHA256": "a7b4e02d5eeb591816c43007d9a9f3a498d3a9a5e248f2bfbef8550a589a17f4",
+      "apps": [
+        {
+          "bundleName": "Elemental.app",
+          "bundleIdentifier": "org.exist.start.Main"
+        }
+      ]
+    },
+    "egnyte": {
+      "caskVersion": "1.20.1,2383",
+      "sourceURL": "https://egnyte-cdn.egnyte.com/desktopapp/mac/en-us/1.20.1/Egnyte_1.20.1_2383.dmg",
+      "artifactSHA256": "81667458b6130282b5bbaedf88fc3e7c3893443d59a565458d8360c756d4e8e7",
+      "apps": [
+        {
+          "bundleName": "Egnyte.app",
+          "bundleIdentifier": "com.egnyte.DesktopApp"
+        }
+      ]
+    },
+    "elan": {
+      "caskVersion": "7.1",
+      "sourceURL": "https://www.mpi.nl/tools/elan/ELAN_7-1_M1_mac.zip",
+      "artifactSHA256": "71106952d5a1d301c6f4f764a10e654d2581cc8922e8d451a0c091ecf000d99c",
+      "apps": [
+        {
+          "bundleName": "ELAN_7.1.app",
+          "bundleIdentifier": "nl.mpi.elan"
+        }
+      ]
+    },
+    "elegoo-slicer": {
+      "caskVersion": "1.5.3.5",
+      "sourceURL": "https://github.com/ELEGOO-3D/ElegooSlicer/releases/download/v1.5.3.5/ElegooSlicer_Mac_arm64_V1.5.3.5.dmg",
+      "artifactSHA256": "2ff9db9d398af552738f447ad63710d61407b69a7140457238d1507c978b5d9f",
+      "apps": [
+        {
+          "bundleName": "ElegooSlicer.app",
+          "bundleIdentifier": "com.elegoo3d.elegoo-slicer"
+        }
+      ]
+    },
+    "eigent": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/eigent-ai/eigent/releases/download/v1.0.4/Eigent-1.0.4-arm64.dmg",
+      "artifactSHA256": "2f05a18ea7f5d7c1d62add5ce7aacf1c0330af7d7bc07e98902c3860a44480dd",
+      "apps": [
+        {
+          "bundleName": "Eigent.app",
+          "bundleIdentifier": "com.eigent.app"
+        }
+      ]
+    },
+    "electrum-ltc": {
+      "caskVersion": "4.2.2.1",
+      "sourceURL": "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1.dmg",
+      "artifactSHA256": "dc71b45bc9cb965578cb819e5c68b027ed80002e5f86195b85259a009fe24373",
+      "apps": []
+    },
+    "elgato-game-capture-hd": {
+      "caskVersion": "2.11.14",
+      "sourceURL": "https://edge.elgato.com/egc/macos/egcm/2.11.14/final/Game_Capture_HD_2.11.14.zip",
+      "artifactSHA256": "e00efce3433cad902400c610f4816fbecce414868a53aec70ef2d8ded9c1ba74",
+      "apps": [
+        {
+          "bundleName": "Game Capture HD.app",
+          "bundleIdentifier": "com.elgato.GameCaptureHD"
+        }
+      ]
+    },
+    "effect-house": {
+      "caskVersion": "5.14.0,7219,08192026,104",
+      "sourceURL": "https://sf16-va.tiktokcdn.com/obj/eden-va2/olaa_ajlmml_zlp/ljhwZthlaukjlkulzlp/V5140External_Release_Builds_08192026/Effect_House_v5.14.0.7219_Applesilicon_104.dmg",
+      "artifactSHA256": "186817e3eae8f4a2cf27d9fb7733dc62e4096ba08299f9e9d8157a05b3c2ecd2",
+      "apps": [
+        {
+          "bundleName": "Effect House.app",
+          "bundleIdentifier": "com.ies.orion"
+        }
+      ]
+    },
+    "envkey": {
+      "caskVersion": "1.5.10",
+      "sourceURL": "https://github.com/envkey/envkey-app/releases/download/darwin-x64-prod-v1.5.10/EnvKey-1.5.10-mac.zip",
+      "artifactSHA256": "97f672b9473b1f213cb068de147fb2c8b7f01beb2c2d747910dfcde29c0efb7a",
+      "apps": [
+        {
+          "bundleName": "EnvKey.app",
+          "bundleIdentifier": "com.envkey.EnvKeyApp"
+        }
+      ]
+    },
+    "elgato-studio": {
+      "caskVersion": "1.1.0.1170",
+      "sourceURL": "https://edge.elgato.com/egc/macos/estm/release/ElgatoStudio-1.1.0.1170.dmg",
+      "artifactSHA256": "90eb81b1b06b166f69e309e0861f176e99159555aaccd86993f79f1563e54795",
+      "apps": [
+        {
+          "bundleName": "Elgato Studio.app",
+          "bundleIdentifier": "com.elgato.studio"
+        }
+      ]
+    },
+    "elgato-capture-device-utility": {
+      "caskVersion": "1.3.1,684",
+      "sourceURL": "https://edge.elgato.com/egc/macos/ecdu/1.3.1/ElgatoCaptureDeviceUtility-1.3.1.684.app.zip",
+      "artifactSHA256": "4a7885e0cbb85ba94847c43a5b59cc62b7b129c2607626c7233344570f35e154",
+      "apps": [
+        {
+          "bundleName": "Elgato Capture Device Utility.app",
+          "bundleIdentifier": "com.elgato.CaptureDeviceUtility"
+        }
+      ]
+    },
+    "electrumsv": {
+      "caskVersion": "1.3.16",
+      "sourceURL": "https://github.com/electrumsv/electrumsv/releases/download/sv-1.3.16/ElectrumSV-1.3.16.dmg",
+      "artifactSHA256": "d1910e583813bfc8cbe5d815d0df1059a1d144df6d96fc6bc6c0ae3dccc4bc7e",
+      "apps": [
+        {
+          "bundleName": "ElectrumSV.app",
+          "bundleIdentifier": "io.electrumsv.ElectrumSV"
+        }
+      ]
+    },
+    "electron-cash": {
+      "caskVersion": "4.4.6",
+      "sourceURL": "https://electroncash.org/downloads/4.4.6/mac/Electron-Cash-4.4.6-macosx-silicon.dmg",
+      "artifactSHA256": "f76cb700e972179bba131e12eaeae72bde7fec9eb8c2eb904d7a87a8080578e2",
+      "apps": [
+        {
+          "bundleName": "Electron-Cash.app",
+          "bundleIdentifier": "org.electroncash.Electron-Cash"
+        }
+      ]
+    },
+    "elpass": {
+      "caskVersion": "2.0.0,529",
+      "sourceURL": "https://elpass.app/macos/Elpass-2.0.0-529.zip",
+      "artifactSHA256": "936f4a3ec8151931169d3a242485510d9e7e10802851a805ebf25c1b3a11d326",
+      "apps": [
+        {
+          "bundleName": "Elpass.app",
+          "bundleIdentifier": "app.elpass.macos"
+        }
+      ]
+    },
+    "electron-fiddle": {
+      "caskVersion": "0.39.0",
+      "sourceURL": "https://github.com/electron/fiddle/releases/download/v0.39.0/Electron.Fiddle-darwin-arm64-0.39.0.zip",
+      "artifactSHA256": "98206b1b49729c0bb011c3302f06bc84c1b79bd8805c908f43a8dc196eaf7fda",
+      "apps": [
+        {
+          "bundleName": "Electron Fiddle.app",
+          "bundleIdentifier": "com.electron.fiddle"
+        }
+      ]
+    },
+    "egovframedev": {
+      "caskVersion": "5.0.2",
+      "sourceURL": "https://maven.egovframe.go.kr/publist/HDD1/public/egovframework_v5.0/2_DevelopmentEnvironment/eGovFrame-Dev/5.0.2/eGovFrameDev-5.0.2-macOS-AArch64.dmg",
+      "artifactSHA256": "17aa276ec0775afc5169c9dbfab56bbdd94d4f74940a371c1b46608d59e57c32",
+      "apps": [
+        {
+          "bundleName": "eGovFrameDev-5.0.2-macOS-AArch64.app",
+          "bundleIdentifier": "epp.package.jee"
+        }
+      ]
+    },
+    "energiza": {
+      "caskVersion": "1.3.5",
+      "sourceURL": "https://appgineers.de/energiza/files/Energiza.zip",
+      "artifactSHA256": "e9c07458a62419f28d716a662aaf0b69e4f8b19734fd74bd3bf3e6d1a96bdf7e",
+      "apps": [
+        {
+          "bundleName": "Energiza.app",
+          "bundleIdentifier": "de.appgineers.energiza"
+        }
+      ]
+    },
+    "elephicon": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://github.com/sprout2000/elephicon/releases/download/v4.2.0/Elephicon-4.2.0-darwin-arm64.dmg",
+      "artifactSHA256": "d804a29ef776b2f7a860d1931fdd407c826f5f612bfb3e63db21727165ac6cd4",
+      "apps": [
+        {
+          "bundleName": "Elephicon.app",
+          "bundleIdentifier": "jp.wassabie64.Elephicon"
+        }
+      ]
+    },
+    "embyserver": {
+      "caskVersion": "4.10.0.40",
+      "sourceURL": "https://github.com/MediaBrowser/Emby.Releases/releases/download/4.10.0.40/embyserver-osx-arm64-4.10.0.40.zip",
+      "artifactSHA256": "3c30533e647266ba7d10c6e53e5bce5f1d0e3cd006b77f3f9fdc769818efa21f",
+      "apps": [
+        {
+          "bundleName": "EmbyServer.app",
+          "bundleIdentifier": "com.embyapp.embymediaserver"
+        }
+      ]
+    },
+    "elgato-video-capture": {
+      "caskVersion": "2.0.9.8722",
+      "sourceURL": "https://edge.elgato.com/video-capture/macos/2.0.9/Video_Capture_2.0.9.8722.zip",
+      "artifactSHA256": "f101b8c948025c057c57795af38c7c38e73e32c8befbdeece8c5a30d2fe2f57c",
+      "apps": [
+        {
+          "bundleName": "Elgato Video Capture.app",
+          "bundleIdentifier": "com.elgato.VideoCapture"
+        }
+      ]
+    },
+    "electrum-grs": {
+      "caskVersion": "4.5.4",
+      "sourceURL": "https://github.com/groestlcoin/electrum-grs/releases/download/v4.5.4/electrum-grs-4.5.4.dmg",
+      "artifactSHA256": "87fd71fe9cf8e2f185664778fd0106056c34a5c545d40b50322b91c705702cd1",
+      "apps": []
+    },
+    "emmetapp": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://s3.amazonaws.com/emmet.app/emmetapp.dmg",
+      "artifactSHA256": "04d6374ef6f1b35978b7d38901c7ca48a38005ed8eab4543f6d98a05dd872633",
+      "apps": [
+        {
+          "bundleName": "emmetapp.app",
+          "bundleIdentifier": "com.speedyhill.emmetapp"
+        }
+      ]
+    },
+    "emailchemy": {
+      "caskVersion": "15.0",
+      "sourceURL": "https://wksdownload.s3.amazonaws.com/emailchemy/Emailchemy-Mac-AppleSilicon.dmg",
+      "artifactSHA256": "a9bd5528b1ff5f115e4970f2998af4424191facc6628ae1efaba3ee79bab0271",
+      "apps": [
+        {
+          "bundleName": "Emailchemy.app",
+          "bundleIdentifier": "com.install4j.6029-5726-8846-0121.357"
+        }
+      ]
     }
   }
 }
