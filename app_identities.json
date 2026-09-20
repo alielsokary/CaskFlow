@@ -185,9 +185,9 @@
       "apps": []
     },
     "tungsten-edge": {
-      "caskVersion": "0.11.4",
-      "sourceURL": "https://tungstenedge.app/download/Tungsten-Edge-0.11.4.zip",
-      "artifactSHA256": "63904741c7aa4f42e4dd5b135d99383f8fae195a07916d36f30938eea470a6b2",
+      "caskVersion": "0.12.1",
+      "sourceURL": "https://tungstenedge.app/download/Tungsten-Edge-0.12.1.zip",
+      "artifactSHA256": "0c6dde68f6aa81ebbed7f3c6aa789b8478a96508314fef78c204e2540ee407ac",
       "apps": [
         {
           "bundleName": "Tungsten Edge.app",
@@ -32160,6 +32160,270 @@
         {
           "bundleName": "todometer.app",
           "bundleIdentifier": "co.cassidoo.todometer"
+        }
+      ]
+    },
+    "ugg": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://static.bigbrain.gg/electron-app-lol/U.GG-1.7.4.dmg",
+      "artifactSHA256": "cc8f7339f49632e9afaa764a156a5c2b30461a320f719db10494fa4100765d46",
+      "apps": [
+        {
+          "bundleName": "U.GG.app",
+          "bundleIdentifier": "com.electron.u.gg"
+        }
+      ]
+    },
+    "turbotax-2024": {
+      "caskVersion": "2024.000.0192,27A6F8163D974F8CD3F72EA23A5142D4",
+      "sourceURL": "https://downloadpatch.esd.intuit.com/ESD/Files/CTG/comp/27A6F8163D974F8CD3F72EA23A5142D4/v1/Content/Mac_TurboTax_Download2024.dmg",
+      "artifactSHA256": "eabec3010127afc2aa876b6500e992dc5af07b2dca380e22a3defee8e6120f1f",
+      "apps": [
+        {
+          "bundleName": "TurboTax 2024.app",
+          "bundleIdentifier": "com.intuit.turbotax.2024"
+        }
+      ]
+    },
+    "tunein": {
+      "caskVersion": "1.33.0",
+      "sourceURL": "https://cdn-desktop.tunein.com/release/TuneIn-1.33.0-universal.dmg",
+      "artifactSHA256": "477a6709cc21e8fe220b1646ff520aadef26f33fdd9bc9ada28898bc127f9136",
+      "apps": [
+        {
+          "bundleName": "TuneIn.app",
+          "bundleIdentifier": "com.tunein.desktop"
+        }
+      ]
+    },
+    "trivial": {
+      "caskVersion": "1.0.10",
+      "sourceURL": "https://download.decisivetactics.com/downloads/trivial/Trivial_1.0.10.zip",
+      "artifactSHA256": "21f9b6a83f2eaa7c6f36c717b09723d4f66ae4d359b06a9fbf2c75fc244e1c84",
+      "apps": [
+        {
+          "bundleName": "Trivial.app",
+          "bundleIdentifier": "com.decisivetactics.trivial"
+        }
+      ]
+    },
+    "twist": {
+      "caskVersion": "1.0.9",
+      "sourceURL": "https://downloads.twist.com/mac/Twist-1.0.9.dmg",
+      "artifactSHA256": "a4c87eabaf7b47bc8da2b7498c2358ba9df287e0ce521b84830c4add31d66c31",
+      "apps": [
+        {
+          "bundleName": "Twist.app",
+          "bundleIdentifier": "com.twistapp.mac-sparkle.Twist"
+        }
+      ]
+    },
+    "trim-enabler": {
+      "caskVersion": "4.3.6,26,1609590590",
+      "sourceURL": "https://dl.devmate.com/org.cindori.TrimEnabler4/26/1609590590/TrimEnabler-26.zip",
+      "artifactSHA256": "e26f27030303c41cfcfe59fe72ad43202db666bcaaf9047ebf52cbad87896db5",
+      "apps": [
+        {
+          "bundleName": "Trim Enabler.app",
+          "bundleIdentifier": "org.cindori.TrimEnabler4"
+        }
+      ]
+    },
+    "typefully": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://download.todesktop.com/2304250k2av6yux/Typefully%201.3.1-arm64-mac.zip",
+      "artifactSHA256": "607d2a6b83a052813776b47818441b34de1083ac2a2a9873e48a60c829bf8e8a",
+      "apps": [
+        {
+          "bundleName": "Typefully.app",
+          "bundleIdentifier": "com.todesktop.2304250k2av6yux"
+        }
+      ]
+    },
+    "ubar": {
+      "caskVersion": "4.2.5",
+      "sourceURL": "https://data.brawersoftware.com/downloads/ubar/ubar425.zip",
+      "artifactSHA256": "a42e291dd832e773a4be194cb70106c19e18f2ca765781b7c71b57cc37b20938",
+      "apps": [
+        {
+          "bundleName": "uBar.app",
+          "bundleIdentifier": "ca.brawer.uBar"
+        }
+      ]
+    },
+    "typeface": {
+      "caskVersion": "4.5.0,5255",
+      "sourceURL": "https://dcdn.typefaceapp.com/Typeface-4.5.0-5255/Typeface-4.5.0-5255.dmg",
+      "artifactSHA256": "8a539cf69714c61d38b5f955fe464c724515f9313261eeaa9cfb1e7786a9adfc",
+      "apps": [
+        {
+          "bundleName": "Typeface.app",
+          "bundleIdentifier": "com.criminalbird.typeface.standalone"
+        }
+      ]
+    },
+    "uhk-agent": {
+      "caskVersion": "10.1.0",
+      "sourceURL": "https://github.com/UltimateHackingKeyboard/agent/releases/download/v10.1.0/UHK.Agent-10.1.0-mac.dmg",
+      "artifactSHA256": "d4e89a27272ecdb8b0252be470dc6ed007c659dd4883978b83e22fe28714faa7",
+      "apps": [
+        {
+          "bundleName": "UHK Agent.app",
+          "bundleIdentifier": "com.ultimategadgetlabs.agent"
+        }
+      ]
+    },
+    "twake": {
+      "caskVersion": "5.5.0",
+      "sourceURL": "https://github.com/cozy-labs/cozy-desktop/releases/download/v5.5.0/Twake-Desktop-arm64.dmg",
+      "artifactSHA256": "62550ad6e9f34ce8f831019932ccbce74a39c59a585b61f24c47ad159cfce206",
+      "apps": [
+        {
+          "bundleName": "Twake Desktop.app",
+          "bundleIdentifier": "io.cozy.desktop"
+        }
+      ]
+    },
+    "tunetag": {
+      "caskVersion": "1.14",
+      "sourceURL": "https://sweetpproductions.com/products/tunetag/TuneTag.dmg",
+      "artifactSHA256": "dee0d59559123eba97a6e45a9d0044535cb8c9942956495f631006114bf0d779",
+      "apps": [
+        {
+          "bundleName": "TuneTag.app",
+          "bundleIdentifier": "com.sweetpproductions.TuneTag"
+        }
+      ]
+    },
+    "tritium": {
+      "caskVersion": "0.2.59",
+      "sourceURL": "https://tritium.legal/static/releases/tritium-macos-arm64.0.2.59.zip",
+      "artifactSHA256": "45b38e20d7259b619aeca7cbd92027926c63a3f10a93b570ff52518b9fb0576a",
+      "apps": [
+        {
+          "bundleName": "tritium.app",
+          "bundleIdentifier": "legal.tritium.tritium"
+        }
+      ]
+    },
+    "typeit4me": {
+      "caskVersion": "6.3.9,258",
+      "sourceURL": "https://ettoresoftware.store/download/TypeIt4Me6.3.9b258.zip",
+      "artifactSHA256": "7205f7e0ea0290b5d18d914abffc8efd994b9e74ffe8792c71a1907c09f86352",
+      "apps": [
+        {
+          "bundleName": "TypeIt4Me.app",
+          "bundleIdentifier": "com.typeit4me.TypeIt4MeMenu"
+        }
+      ]
+    },
+    "typinator": {
+      "caskVersion": "10.2",
+      "sourceURL": "https://storage.ergonis.com/apps/production/typinator/archive/Typinator_102.dmg",
+      "artifactSHA256": "381d0a71931f08de2f588185ae9647d59692389d04735c0835322ed5fb3b9694",
+      "apps": [
+        {
+          "bundleName": "Typinator.app",
+          "bundleIdentifier": "com.macility.typinator2"
+        }
+      ]
+    },
+    "truhu": {
+      "caskVersion": "400",
+      "sourceURL": "https://truhu-mobile-builds.s3.amazonaws.com/TruHu+Desktop+400.dmg",
+      "artifactSHA256": "af43851e500af8a1878a5ea1266995e8357b9ea919deb79ebe461a0ac7eb1b85",
+      "apps": [
+        {
+          "bundleName": "TruHu Mac Desktop.app",
+          "bundleIdentifier": "Seboya.TruHu.MacApp"
+        }
+      ]
+    },
+    "tyme": {
+      "caskVersion": "2026.9",
+      "sourceURL": "https://www.tyme-app.com/app/Tyme.dmg",
+      "artifactSHA256": "0d420fcfd53b280b038af50bb5e438e8fb20fd0a68cd2f03644354bb5041c1cc",
+      "apps": [
+        {
+          "bundleName": "Tyme.app",
+          "bundleIdentifier": "com.tyme-app.Tyme3-macOS"
+        }
+      ]
+    },
+    "tunarr": {
+      "caskVersion": "1.3.15",
+      "sourceURL": "https://github.com/chrisbenincasa/tunarr/releases/download/v1.3.15/Tunarr-v1.3.15-macos-arm64.dmg",
+      "artifactSHA256": "6f8e8ded3ff452bdee769d881673eddcbd9fe8ec43d9d33c8e5683a8b7872800",
+      "apps": [
+        {
+          "bundleName": "Tunarr.app",
+          "bundleIdentifier": "com.cbenincasa.Tunarr"
+        }
+      ]
+    },
+    "ua-midi-control": {
+      "caskVersion": "5.12.1",
+      "sourceURL": "https://fonoflow.com/files/ua-midi-control/UA%20Midi%20Control.zip",
+      "artifactSHA256": "d7cb84874b81cde1628b7177d5aeed31a0ef79a459e6e994ecb7c08c4f69ce76",
+      "apps": [
+        {
+          "bundleName": "UA Midi Control.app",
+          "bundleIdentifier": "raduvarga.UA-Midi-Control"
+        }
+      ]
+    },
+    "tripmode": {
+      "caskVersion": "3.2.4,1385",
+      "sourceURL": "https://tripmode-updates.ch/app/TripMode-3.2.4-1385.zip",
+      "artifactSHA256": "2a5a21ac4c13b5a1a5d43e6aeb2b7588ea9af0116e41829fca19cf9752265410",
+      "apps": [
+        {
+          "bundleName": "TripMode.app",
+          "bundleIdentifier": "ch.tripmode.TripMode"
+        }
+      ]
+    },
+    "trimmy": {
+      "caskVersion": "0.11.1",
+      "sourceURL": "https://github.com/steipete/Trimmy/releases/download/v0.11.1/Trimmy-0.11.1.zip",
+      "artifactSHA256": "a7c75d6bf4aa4b085635f0390524575d3d9d71cc744abb105c9c51209c0ccbcc",
+      "apps": [
+        {
+          "bundleName": "Trimmy.app",
+          "bundleIdentifier": "com.steipete.trimmy"
+        }
+      ]
+    },
+    "tuneinstructor": {
+      "caskVersion": "3.7v5",
+      "sourceURL": "https://www.tune-instructor.de/resources/downloads/TuneInstructor3.7v5.zip",
+      "artifactSHA256": "bbd0255f809da259b6c4a9d7f7fc27de2bceb5dc7caca32adc61769d9d98f9de",
+      "apps": [
+        {
+          "bundleName": "Tune•Instructor.app",
+          "bundleIdentifier": "de.tune-instructor.Tune-Instructor"
+        }
+      ]
+    },
+    "tropy": {
+      "caskVersion": "1.17.3",
+      "sourceURL": "https://github.com/tropy/tropy/releases/download/v1.17.3/tropy-1.17.3-arm64.dmg",
+      "artifactSHA256": "1073ee59e09635aa879eb59f981cf9de949b8c3207124869cde816bd0cfe532c",
+      "apps": [
+        {
+          "bundleName": "Tropy.app",
+          "bundleIdentifier": "org.tropy.tropy"
+        }
+      ]
+    },
+    "twobird": {
+      "caskVersion": "1.0.52",
+      "sourceURL": "https://www.twobird.com/download/mac-arm64",
+      "artifactSHA256": "6522541a98fb3be93f21a07ab4511dd75393e4edc8518c87f9ea7e99b90bddd7",
+      "apps": [
+        {
+          "bundleName": "Twobird.app",
+          "bundleIdentifier": "com.gingerlabs.bagel"
         }
       ]
     }
