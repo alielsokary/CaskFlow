@@ -815,11 +815,23 @@
     "attempts": 5,
     "updated": "2026-09-01"
   },
+  "ipremoteutility": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "itunes-producer": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "j": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-09-20"
   },
   "jetdrive-toolbox": {
     "status": "no_icon",

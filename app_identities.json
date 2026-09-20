@@ -21574,6 +21574,260 @@
           "bundleIdentifier": "app.infinidesk.InfiniDesk"
         }
       ]
+    },
+    "itraffic": {
+      "caskVersion": "0.2.2",
+      "sourceURL": "https://github.com/foamzou/ITraffic-monitor-for-mac/releases/download/v0.2.2/ITraffic-v0.2.2.zip",
+      "artifactSHA256": "fc21435a44e3e4e68d4fad70b5ca82740942bd9425f7ea7cde9c312cb4155ae2",
+      "apps": [
+        {
+          "bundleName": "ITraffic.app",
+          "bundleIdentifier": "com.foamzou.ITrafficMonitorForMac"
+        }
+      ]
+    },
+    "ivideonserver": {
+      "caskVersion": "3.14.0",
+      "sourceURL": "https://updates.iv-cdn.com/bundles/ivideon_server/3.14.0/IvideonServer_3.14.0_macosx-x86-64.dmg",
+      "artifactSHA256": "2728954313606436037da60d8f15510e7f50cebab87e4de667adde50b5d85396",
+      "apps": [
+        {
+          "bundleName": "IvideonServer.app",
+          "bundleIdentifier": "com.ivideon.IvideonServer"
+        }
+      ]
+    },
+    "ipfs-desktop": {
+      "caskVersion": "0.50.1",
+      "sourceURL": "https://github.com/ipfs/ipfs-desktop/releases/download/v0.50.1/ipfs-desktop-0.50.1-mac.dmg",
+      "artifactSHA256": "d06f4a74f9a368300f653d71c9bb0145a8740ac36c5f14a3f4c818975dbb067b",
+      "apps": [
+        {
+          "bundleName": "IPFS Desktop.app",
+          "bundleIdentifier": "io.ipfs.desktop"
+        }
+      ]
+    },
+    "jabref": {
+      "caskVersion": "5.15",
+      "sourceURL": "https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-arm64.dmg",
+      "artifactSHA256": "c4637b9bbfa075c9e25636203e0fda73bbf8ef0166ca35866dbdd13d9f589430",
+      "apps": []
+    },
+    "istatistica-core": {
+      "caskVersion": "1.0,202502191",
+      "sourceURL": "https://www.imagetasks.com/updates/iStatisticaCore202502191.zip",
+      "artifactSHA256": "4c69487609e62487bc64e6b21b16edf38b2bf6f9f284dc5faeae4921209776c7",
+      "apps": [
+        {
+          "bundleName": "iStatistica Core.app",
+          "bundleIdentifier": "com.imagetasks.iStatistica-Core"
+        }
+      ]
+    },
+    "iplay": {
+      "caskVersion": "1.2.14",
+      "sourceURL": "https://artifact.saltpi.cn/build/iPlay/macOS/latest.dmg",
+      "artifactSHA256": "f59dd2c6e03fafe121ffe8991f49a4e8a7e29b1db41fffc2f40e07ff115cfc26",
+      "apps": [
+        {
+          "bundleName": "iPlay.app",
+          "bundleIdentifier": "top.ourfor.app.iPlayClient"
+        }
+      ]
+    },
+    "ipvanish-vpn": {
+      "caskVersion": "5.3.0,169679",
+      "sourceURL": "https://www.ipvanish.com/software/osx/IPVanish_v5.3.0_169679.zip",
+      "artifactSHA256": "87262ee5dc9cb33b87d3d922403e1bf92620ac4ef4591b7db88ff8a6e205964b",
+      "apps": [
+        {
+          "bundleName": "IPVanish VPN.app",
+          "bundleIdentifier": "com.ipvanish.IPVanish"
+        }
+      ]
+    },
+    "iris": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://raw.githubusercontent.com/danielng01/product-builds/master/iris/macos/Iris-1.2.2-OSX.zip",
+      "artifactSHA256": "ce7dd246b849b1c7af0436e8bc4d3fb0cc51e4563db361b480769ed6788c65ae",
+      "apps": [
+        {
+          "bundleName": "Iris.app",
+          "bundleIdentifier": "co.iristech.Iris"
+        }
+      ]
+    },
+    "ivolume": {
+      "caskVersion": "3.9.0",
+      "sourceURL": "https://www.mani.de/download/ivolume/iVolume3Mac.dmg",
+      "artifactSHA256": "4a8da7806a357ec806586fcb11a451eb00d86628d6c03f1d4381e18ad84eb312",
+      "apps": [
+        {
+          "bundleName": "iVolume.app",
+          "bundleIdentifier": "de.ivolume.mac"
+        }
+      ]
+    },
+    "ishowu-instant": {
+      "caskVersion": "1.4.21",
+      "sourceURL": "https://www.shinywhitebox.com/downloads/instant/iShowU_Instant_1.4.21.dmg",
+      "artifactSHA256": "e6769386a8381aa2a90c189e555de4cbdbdb019e0785542cdb25b32ce58382f3",
+      "apps": [
+        {
+          "bundleName": "iShowU Instant.app",
+          "bundleIdentifier": "com.shinywhitebox.iShowU-Instant"
+        }
+      ]
+    },
+    "isubtitle": {
+      "caskVersion": "3.4.6",
+      "sourceURL": "https://www.bitfield.se/isubtitle3/download/iSubtitle_3.4.6.zip",
+      "artifactSHA256": "41b7bdaa76d1658bea862822521678f3e8432dd5e941101c4ab045eec17c3ca8",
+      "apps": [
+        {
+          "bundleName": "iSubtitle.app",
+          "bundleIdentifier": "se.bitfield.iSubtitle-3.sw"
+        }
+      ]
+    },
+    "ipsecuritas": {
+      "caskVersion": "5.0.1",
+      "sourceURL": "https://www.lobotomo.com/download/ipsecuritas-5.0.1.dmg",
+      "artifactSHA256": "b58bc8f3583a34287a3b1987dec37b89fc30eabce54523aaa37f8b21e6390190",
+      "apps": [
+        {
+          "bundleName": "IPSecuritas.app",
+          "bundleIdentifier": "com.lobotomo.IPSecuritas"
+        }
+      ]
+    },
+    "istherenet": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://files.lowtechguys.com/releases/IsThereNet-1.7.1.dmg",
+      "artifactSHA256": "dd2febaa9a8991e252153b4114921746947cb2c5b5a673ec4e285427837ceb4c",
+      "apps": [
+        {
+          "bundleName": "IsThereNet.app",
+          "bundleIdentifier": "com.lowtechguys.IsThereNet"
+        }
+      ]
+    },
+    "itau": {
+      "caskVersion": "2.3.2.22",
+      "sourceURL": "https://guardiao.itau.com.br/UpdateServer/aplicativoitau_m1.dmg",
+      "artifactSHA256": "c7df6e4bb2be5fddcd56c7601b4bd38979bce6e9f5905a1ef78bb1614fdd9280",
+      "apps": [
+        {
+          "bundleName": "Itau.app",
+          "bundleIdentifier": "br.com.itau.aplicativoitau"
+        }
+      ]
+    },
+    "itk-snap": {
+      "caskVersion": "4.4.0,20250909",
+      "sourceURL": "https://downloads.sourceforge.net/itk-snap/itksnap-4.4.0-20250909-Darwin-arm64.dmg",
+      "artifactSHA256": "9d12dc5a437e3d0979ce62ad0550fe5c150337160e5417d80bf6396f2f716ee8",
+      "apps": [
+        {
+          "bundleName": "ITK-SNAP.app",
+          "bundleIdentifier": "org.itksnap"
+        }
+      ]
+    },
+    "ishare": {
+      "caskVersion": "4.2.6",
+      "sourceURL": "https://github.com/castdrian/ishare/releases/download/v4.2.6/ishare.dmg",
+      "artifactSHA256": "32d07f4703ec45dc00b6cd5e92df289b90c99e236aaa85d302ccb88b6dabb76b",
+      "apps": [
+        {
+          "bundleName": "ishare.app",
+          "bundleIdentifier": "dev.adrian.ishare"
+        }
+      ]
+    },
+    "islide": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://static.islide.cc/site/product/package/dmg/iSlide-1.2.0.dmg",
+      "artifactSHA256": "c91552583cb784c1a0e7d6e2db132c54e0b7065be54a93aad828470844c99e19",
+      "apps": [
+        {
+          "bundleName": "iSlide.app",
+          "bundleIdentifier": "com.islide.islidetools"
+        }
+      ]
+    },
+    "itch": {
+      "caskVersion": "26.20.0",
+      "sourceURL": "https://github.com/itchio/itch/releases/download/v26.20.0/itch-v26.20.0-darwin-arm64.tar.gz",
+      "artifactSHA256": "2510857d6854fa538157b001fc6d577cf42addc2f2974abc81c91cb1eae47f80",
+      "apps": [
+        {
+          "bundleName": "itch.app",
+          "bundleIdentifier": "io.itch.mac"
+        }
+      ]
+    },
+    "itermcompanion": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://iterm2.com/downloads/companion-plugin/iTermCompanion-1.0.zip",
+      "artifactSHA256": "2a6cea5e99a75d53ae673476ea5042ced6e4b2cad3ccbdbf5e54c89065f6e748",
+      "apps": [
+        {
+          "bundleName": "iTermCompanion.app",
+          "bundleIdentifier": "com.googlecode.iterm2.iTermCompanion"
+        }
+      ]
+    },
+    "ivpn": {
+      "caskVersion": "3.15.15",
+      "sourceURL": "https://repo.ivpn.net/macos/bin/IVPN-3.15.15-arm64.dmg",
+      "artifactSHA256": "8212b21653c665faef41f2234ed535bf3e29c678d9cee768c8f26bd0c1f7b438",
+      "apps": [
+        {
+          "bundleName": "IVPN.app",
+          "bundleIdentifier": "com.electron.ivpn-ui"
+        }
+      ]
+    },
+    "ireal-pro": {
+      "caskVersion": "2026.6.3,20260631",
+      "sourceURL": "https://ireal-pro.s3.amazonaws.com/iReal%20Pro-2026.6.3-20260631.dmg",
+      "artifactSHA256": "08143479bbc73c30a2da9c8df263115d43b480289eb7969c38e8dbbade0df38f",
+      "apps": [
+        {
+          "bundleName": "iReal Pro.app",
+          "bundleIdentifier": "com.massimobiolcati.irealbookmac"
+        }
+      ]
+    },
+    "j": {
+      "caskVersion": "9.7.1",
+      "sourceURL": "https://www.jsoftware.com/download/j9.7/install/j9.7.1_mac.zip",
+      "artifactSHA256": "fc34fe96fc19520c9f317ecb6b318aeb3bd83a4994b505dfa1216cf1775fd3e3",
+      "apps": []
+    },
+    "istat-server": {
+      "caskVersion": "3.03",
+      "sourceURL": "https://files.bjango.com/istatserver3/istatserver3.03.zip",
+      "artifactSHA256": "0d6df9abe88aa7b29f53abb63413ede2853823cf6fd75b75818ef0190a07e8c7",
+      "apps": [
+        {
+          "bundleName": "iStat Server.app",
+          "bundleIdentifier": "com.bjango.iStatServer"
+        }
+      ]
+    },
+    "ivacy": {
+      "caskVersion": "7.0.1",
+      "sourceURL": "https://apps-ivacy.s3.amazonaws.com/mac/Ivacy.dmg",
+      "artifactSHA256": "acffe67634fcadd7bd8f46a51794212c50045c28ec5f758e1622ef8703f4631b",
+      "apps": [
+        {
+          "bundleName": "Ivacy.app",
+          "bundleIdentifier": "com.ivacy.mac"
+        }
+      ]
     }
   }
 }
