@@ -390,12 +390,13 @@ def test_product_components_require_unconditional_installation(tmp_path, case):
     ref = 'missing' if case == "unreferenced" else 'main'
     xml = f'''<installer-gui-script>{script}<choices-outline><line choice="main"/></choices-outline>
     <choice id="main"{attribute}><pkg-ref id="{ref}"/></choice></installer-gui-script>'''
-    if case == "duplicate-choice":
-        xml = xml.replace('</installer-gui-script>', '<choice id="main"/></installer-gui-script>')
-    if case == "duplicate-line":
-        xml = xml.replace('</choices-outline>', '<line choice="main"/></choices-outline>')
-    if case == "relocated":
-        xml = xml.replace('<choice id="main"', '<choice customLocation="/opt" id="main"')
+    changes = {
+        "duplicate-choice": ('</installer-gui-script>', '<choice id="main"/></installer-gui-script>'),
+        "duplicate-line": ('</choices-outline>', '<line choice="main"/></choices-outline>'),
+        "relocated": ('<choice id="main"', '<choice customLocation="/opt" id="main"')
+    }
+    if case in changes:
+        xml = xml.replace(*changes[case])
     distribution = root / "Distribution"
     distribution.write_text('<bad' if case == "malformed" else xml)
     if case == "symlink":

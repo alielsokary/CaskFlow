@@ -54,6 +54,17 @@ def declared_apps(cask: dict) -> list[tuple[str, str]]:
     return result + declared_artifact_apps(cask)
 
 
+def _artifact_app_name(source: str, target: str) -> str | None:
+    destination = target.replace("$APPDIR/", "/Applications/", 1)
+    path = PurePosixPath(destination)
+    if (_safe_relative(source) and source.endswith(".app") and path.name.endswith(".app")
+            and destination.split("/") == ["", "Applications", path.name] and _safe_relative(path.name)
+            and path.name == PurePosixPath(source).name):
+        # Renamed generic apps need source/target provenance in adoption first.
+        return path.name
+    return None
+
+
 def declared_artifact_apps(cask: dict) -> list[tuple[str, str]]:
     """Generic artifacts qualify only when explicitly moved to the app directory."""
     result = []
@@ -69,13 +80,8 @@ def declared_artifact_apps(cask: dict) -> list[tuple[str, str]]:
         target = options.get("target", "")
         if not isinstance(target, str):
             continue
-        destination = target.replace("$APPDIR/", "/Applications/", 1)
-        path = PurePosixPath(destination)
-        if (_safe_relative(source) and source.endswith(".app") and path.name.endswith(".app")
-                and destination.split("/") == ["", "Applications", path.name] and _safe_relative(path.name)
-                and path.name == PurePosixPath(source).name):
-            # Renamed generic apps need source/target provenance in adoption first.
-            result.append((source, path.name))
+        if name := _artifact_app_name(source, target):
+            result.append((source, name))
     return result
 
 
@@ -169,6 +175,7 @@ def _distribution_components(root: Path) -> set[str] | None:
     if not distribution.exists():
         return None
     stack, components, outlined, choices = [], set(), set(), set()
+    choice_ids = {"line": ("choice", outlined), "choice": ("id", choices)}
 
     def start_element(name, attrs):
         if not stack and name != "installer-gui-script":
@@ -176,16 +183,12 @@ def _distribution_components(root: Path) -> set[str] | None:
         if name == "script" or attrs.keys() & {"selected", "start_selected", "enabled", "start_enabled",
                                               "active", "script", "customLocation"}:
             raise ValueError("conditional package Distribution requires component selection")
-        if name == "line":
-            choice = attrs.get("choice", "")
-            if choice in outlined:
-                raise ValueError("duplicate package Distribution outline choice")
-            outlined.add(choice)
-        if name == "choice":
-            choice = attrs.get("id", "")
-            if choice in choices:
+        if name in choice_ids:
+            attribute, seen = choice_ids[name]
+            choice = attrs.get(attribute, "")
+            if choice in seen:
                 raise ValueError("duplicate package Distribution choice")
-            choices.add(choice)
+            seen.add(choice)
         if name == "pkg-ref" and stack and stack[-1] == "choice":
             components.add(attrs.get("id", ""))
         stack.append(name)

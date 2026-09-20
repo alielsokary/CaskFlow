@@ -33,6 +33,16 @@ def _unsupported_reason(cask: dict, kinds: set[str]) -> tuple[str, str]:
     return "unsupported", "no verified application install path: " + ", ".join(sorted(kinds))
 
 
+def _inspection_status(cask: dict, raw: dict | None, report: dict) -> tuple[str, str]:
+    if report.get("reason", "").startswith("unsupported container:"):
+        return "unsupported", report["reason"]
+    if report.get("status") == "failed":
+        return "failed", report.get("reason", "extraction failed")
+    if raw and not needs_refresh(cask, raw):
+        return "empty", "inspected without an accepted application identity"
+    return "needs_inspection", "newly supported or stale extraction"
+
+
 def classify(cask: dict, raw: dict | None, published: list, report: dict) -> tuple[str, str]:
     if published:
         return "mapped", "published application identity"
@@ -43,13 +53,7 @@ def classify(cask: dict, raw: dict | None, published: list, report: dict) -> tup
     kinds = {key for stanza in cask.get("artifacts") or [] for key in stanza} - METADATA_STANZAS
     if eligibility(cask) is not None:
         return _unsupported_reason(cask, kinds)
-    if report.get("reason", "").startswith("unsupported container:"):
-        return "unsupported", report["reason"]
-    if report.get("status") == "failed":
-        return "failed", report.get("reason", "extraction failed")
-    if raw and not needs_refresh(cask, raw):
-        return "empty", "inspected without an accepted application identity"
-    return "needs_inspection", "newly supported or stale extraction"
+    return _inspection_status(cask, raw, report)
 
 
 def audit(casks: list[dict], identities: dict, categories: dict, report: dict) -> dict:
