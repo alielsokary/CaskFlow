@@ -19043,6 +19043,270 @@
           "bundleIdentifier": "com.lego.ev3"
         }
       ]
+    },
+    "finbar": {
+      "caskVersion": "1.22",
+      "sourceURL": "https://roeybiran.com/apps/finbar/Finbar%201.22.dmg",
+      "artifactSHA256": "d5cad0638817288b363158d174b3158f6d6e64b94640fc0af08cb2bf2a687cbf",
+      "apps": [
+        {
+          "bundleName": "Finbar.app",
+          "bundleIdentifier": "com.roeybiran.Finbar"
+        }
+      ]
+    },
+    "file-juicer": {
+      "caskVersion": "4.115",
+      "sourceURL": "https://echoone.com/filejuicer/FileJuicer-4.115.zip",
+      "artifactSHA256": "643302c62484e136858824a59ba9bc1e2668197d93bbba8a62361faf54111465",
+      "apps": [
+        {
+          "bundleName": "File Juicer.app",
+          "bundleIdentifier": "com.echoone.FileJuicer"
+        }
+      ]
+    },
+    "filen": {
+      "caskVersion": "3.0.53",
+      "sourceURL": "https://cdn.filen.io/@filen/desktop/release/v3.0.53/Filen_mac_arm64.dmg",
+      "artifactSHA256": "d2a34dc111746abacdf27a684d8e7f9987e0d7279d1989d89a6dcef25842b233",
+      "apps": [
+        {
+          "bundleName": "Filen.app",
+          "bundleIdentifier": "io.filen.desktop"
+        }
+      ]
+    },
+    "firealpaca": {
+      "caskVersion": "2.16.3",
+      "sourceURL": "https://firealpaca.com/download/mac",
+      "artifactSHA256": "0922db28764db058a63a0532e9003b692e5f16df77294eb684e1364ca0c1be3b",
+      "apps": [
+        {
+          "bundleName": "FireAlpaca.app",
+          "bundleIdentifier": "com.firealpaca"
+        }
+      ]
+    },
+    "favro": {
+      "caskVersion": "1.0.196",
+      "sourceURL": "https://download.favro.com/FavroDesktop/macOS/x64/Favro-1.0.196.dmg",
+      "artifactSHA256": "66558a20fc9a924bffb1298580959d8d0ed450be04478575a6466cde47bdaf4e",
+      "apps": [
+        {
+          "bundleName": "Favro.app",
+          "bundleIdentifier": "com.favro.desktop-app"
+        }
+      ]
+    },
+    "firebird-emu": {
+      "caskVersion": "1.6",
+      "sourceURL": "https://github.com/nspire-emus/firebird/releases/download/v1.6/firebird-emu_macOS.zip",
+      "artifactSHA256": "c68aae5b077bd447845f476316fed93cf261ac7221fac0a38dfc0a575a3392d2",
+      "apps": [
+        {
+          "bundleName": "firebird-emu.app",
+          "bundleIdentifier": "com.yourcompany.firebird-emu"
+        }
+      ]
+    },
+    "find-empty-folders": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://files.tempel.org/FindEmptyFolders/FindEmptyFolders-1.3.1.zip",
+      "artifactSHA256": "3b494e5015d16bf8658b0685f34a79098f23bb166f8881d27ae6bca6668ce77b",
+      "apps": [
+        {
+          "bundleName": "Find Empty Folders.app",
+          "bundleIdentifier": "org.tempel.findemptyfolders"
+        }
+      ]
+    },
+    "fedistar": {
+      "caskVersion": "1.13.2",
+      "sourceURL": "https://github.com/h3poteto/fedistar/releases/download/v1.13.2/fedistar_1.13.2_universal.dmg",
+      "artifactSHA256": "e2f2f520918abe3c730c78f5a3e4bf0acab57aa58f3db6c9551260ddee14f9ef",
+      "apps": [
+        {
+          "bundleName": "fedistar.app",
+          "bundleIdentifier": "net.fedistar"
+        }
+      ]
+    },
+    "firecamp": {
+      "caskVersion": "2.6.1",
+      "sourceURL": "https://firecamp.ams3.digitaloceanspaces.com/versions/mac/Firecamp-2.6.1.dmg",
+      "artifactSHA256": "8b7df7244da0e577a7a5793822af6144548a65024e6b1f8166513ec2435ccb08",
+      "apps": [
+        {
+          "bundleName": "Firecamp.app",
+          "bundleIdentifier": "com.firecamp.app"
+        }
+      ]
+    },
+    "filemaker-pro": {
+      "caskVersion": "26.0.2.212",
+      "sourceURL": "https://downloads.claris.com/esd/fmp_26.0.2.212.dmg",
+      "artifactSHA256": "f534d928a08c688042b7ff7c26c2ef6bf8997dfddcf75eb1ed762c12ba6ce23e",
+      "apps": [
+        {
+          "bundleName": "FileMaker Pro.app",
+          "bundleIdentifier": "com.filemaker.client.pro12"
+        }
+      ]
+    },
+    "fido2-manage": {
+      "caskVersion": "0.2.1",
+      "sourceURL": "https://www.token2.swiss/soft/fido2-manage.dmg",
+      "artifactSHA256": "35ae836a170bbb17df437aa29b581debfafa9d94fed79b3c76b4c8ed28ba1c41",
+      "apps": [
+        {
+          "bundleName": "fido2-manage.app",
+          "bundleIdentifier": "com.token2.fido2-manager"
+        }
+      ]
+    },
+    "fastscripts": {
+      "caskVersion": "3.3.8",
+      "sourceURL": "https://redsweater.com/fastscripts/FastScripts3.3.8.zip",
+      "artifactSHA256": "9c83004c7c44314238991074e8c842ef296eeb5de3435015eaa34c4995e35b0d",
+      "apps": [
+        {
+          "bundleName": "FastScripts.app",
+          "bundleIdentifier": "com.red-sweater.fastscripts3"
+        }
+      ]
+    },
+    "ff-works": {
+      "caskVersion": "5.3",
+      "sourceURL": "https://www.ffworks.net/ffWorks.dmg",
+      "artifactSHA256": "42c931bc29b7749657e72d27a2149bf6c122af44b5bda82e4641f3f436d25cb2",
+      "apps": [
+        {
+          "bundleName": "ff·Works.app",
+          "bundleIdentifier": "com.osbytes.ffworks5"
+        }
+      ]
+    },
+    "find-my-ports": {
+      "caskVersion": "1.4.0,KmCUblOLkztgxfVd3uaPti8c5i6BnM",
+      "sourceURL": "https://12tlni7vrjp0srft.public.blob.vercel-storage.com/find-my-ports/Find%20My%20Ports%201.4.0-KmCUblOLkztgxfVd3uaPti8c5i6BnM.dmg",
+      "artifactSHA256": "da35357bc51cc776854b60606f36258b70fb4d350ae7330f17f602beed285753",
+      "apps": [
+        {
+          "bundleName": "Find My Ports.app",
+          "bundleIdentifier": "com.benny.FindMyPorts"
+        }
+      ]
+    },
+    "firefly-iota-desktop": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://dl.firefly.iota.org/firefly-iota-desktop-2.1.2.dmg",
+      "artifactSHA256": "261da02d338d2a904c1119eb0d808b40a698f81b1614f9727187619d31c26a63",
+      "apps": [
+        {
+          "bundleName": "Firefly.app",
+          "bundleIdentifier": "org.iota.firefly"
+        }
+      ]
+    },
+    "fellow": {
+      "caskVersion": "5.7.7",
+      "sourceURL": "https://cdn.fellow.app/desktop/5.7.7/darwin/stable/universal/Fellow-5.7.7-universal.dmg",
+      "artifactSHA256": "d46b7f3a4e52989402f6e6b9ca12dc86c6f9288ea12c120e116ab5d83fadfd8a",
+      "apps": [
+        {
+          "bundleName": "Fellow.app",
+          "bundleIdentifier": "com.electron.fellow"
+        }
+      ]
+    },
+    "filemonitor": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://bitbucket.org/objective-see/deploy/downloads/FileMonitor_1.3.0.zip",
+      "artifactSHA256": "0c2317ba192ec7f768a51787e7486f60a04ddee42071e9168af9b8454fe762b7",
+      "apps": [
+        {
+          "bundleName": "FileMonitor.app",
+          "bundleIdentifier": "com.objective-see.filemonitor"
+        }
+      ]
+    },
+    "filo": {
+      "caskVersion": "2.3.4",
+      "sourceURL": "https://download.filomail.com/mac_upgrade/versions/latest/prod/arm64/Filo-arm64.dmg",
+      "artifactSHA256": "a3f42a4944d80b3a283b955053b38ef0181c2621d35800270dc2a574312cdfc4",
+      "apps": [
+        {
+          "bundleName": "Filo.app",
+          "bundleIdentifier": "com.filo.client"
+        }
+      ]
+    },
+    "feed-the-beast": {
+      "caskVersion": "1.30.1",
+      "sourceURL": "https://piston.feed-the-beast.com/app/ftb-app-macos-1.30.1-arm64.dmg",
+      "artifactSHA256": "926e7fa8dcfc2fd783f95a8ee8b6c603e3b3991e20d00e4af9a6b9b8af8c667b",
+      "apps": [
+        {
+          "bundleName": "FTB Electron App.app",
+          "bundleIdentifier": "dev.ftb.app"
+        }
+      ]
+    },
+    "firefly-shimmer": {
+      "caskVersion": "2.2.2",
+      "sourceURL": "https://github.com/iotaledger/firefly/releases/download/desktop-shimmer-2.2.2/firefly-shimmer-desktop-2.2.2.dmg",
+      "artifactSHA256": "123a710a8e42a717c29df2f96b722e2507b2ee5593aa699893aee4947dedbb06",
+      "apps": [
+        {
+          "bundleName": "Firefly Shimmer.app",
+          "bundleIdentifier": "org.iota.firefly-shimmer"
+        }
+      ]
+    },
+    "filefaker": {
+      "caskVersion": "1.1,37",
+      "sourceURL": "https://filefaker.com/archive/FileFaker-v1.1.37-Installer.dmg",
+      "artifactSHA256": "15d0a1cbb98a344b508f82fa3b7ace9c5fe6383c229a72ccc683b29a760d33e9",
+      "apps": [
+        {
+          "bundleName": "FileFaker.app",
+          "bundleIdentifier": "com.filefaker.native.FileFaker"
+        }
+      ]
+    },
+    "feather": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://github.com/feather-wallet/feather/releases/download/2.8.1/feather-2.8.1-mac-arm64.zip",
+      "artifactSHA256": "a35f19be74ca59bad96f7331d3ca8e4f56ec47e82c193f5fc50ddbebce017233",
+      "apps": [
+        {
+          "bundleName": "Feather.app",
+          "bundleIdentifier": "org.monero-project.feather"
+        }
+      ]
+    },
+    "fetch-app": {
+      "caskVersion": "5.8.3",
+      "sourceURL": "https://fetchsoftworks.com/fetch/download/Fetch_5.8.3.zip",
+      "artifactSHA256": "249b7d870fd8feb480285efaea57cfc00f062f4d55bd8d2ae202856275da1065",
+      "apps": [
+        {
+          "bundleName": "Fetch.app",
+          "bundleIdentifier": "com.fetchsoftworks.Fetch"
+        }
+      ]
+    },
+    "final-fantasy-xiv-online": {
+      "caskVersion": "pnvdkzgk77dj10",
+      "sourceURL": "https://gdl.square-enix.com/ffxiv/inst/pnvdkzgk77dj10/FINAL_FANTASY_XIV_ONLINE_x64.dmg",
+      "artifactSHA256": "bbf756f78e9606779972d3c8d0864d665eecfcda4dfbe6260ae0a6b63f84cb65",
+      "apps": [
+        {
+          "bundleName": "FINAL FANTASY XIV ONLINE.app",
+          "bundleIdentifier": "com.square-enix.finalfantasyxiv"
+        }
+      ]
     }
   }
 }
