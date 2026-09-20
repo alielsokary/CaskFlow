@@ -11425,6 +11425,276 @@
           "bundleIdentifier": "com.sempliva.Tiles"
         }
       ]
+    },
+    "kando": {
+      "caskVersion": "2.3.1",
+      "sourceURL": "https://github.com/kando-menu/kando/releases/download/v2.3.1/Kando-2.3.1-arm64.dmg",
+      "artifactSHA256": "69a8e7699366a490146646dd221dfa30c13b7e30308390f3987120c7ce8bc766",
+      "apps": [
+        {
+          "bundleName": "Kando.app",
+          "bundleIdentifier": "com.electron.kando"
+        }
+      ]
+    },
+    "pocket-casts": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://cdn.a8c-ci.services/pocket-casts-desktop/pocket-casts-desktop-darwin-universal-v2.4.1.dmg",
+      "artifactSHA256": "43c5065aeb3a7e26357afb707c409c7b1b664b5f161185658ebcf2737a5a2e53",
+      "apps": [
+        {
+          "bundleName": "Pocket Casts.app",
+          "bundleIdentifier": "com.electron.pocket-casts"
+        }
+      ]
+    },
+    "psychopy": {
+      "caskVersion": "2026.2.4",
+      "sourceURL": "https://github.com/psychopy/psychopy/releases/download/2026.2.4/StandalonePsychoPy-2026.2.4-macOS-arm64-3.11.dmg",
+      "artifactSHA256": "1a99836dc552964693cb824e1d0d9e0e1fe39c3b4e202859181dc4a4c63f1487",
+      "apps": [
+        {
+          "bundleName": "PsychoPy.app",
+          "bundleIdentifier": "org.opensciencetools.psychopy"
+        }
+      ]
+    },
+    "stay": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://cordlessdog.com/stay/versions/Stay%201.5.1.dmg",
+      "artifactSHA256": "f6a1a3a935ac237381360f463080bf9043676907fc7ec835eb39914b4440582d",
+      "apps": [
+        {
+          "bundleName": "Stay.app",
+          "bundleIdentifier": "com.cordlessdog.Stay"
+        }
+      ]
+    },
+    "swift-shift": {
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://github.com/pablopunk/SwiftShift/releases/download/1.5.0/SwiftShift.zip",
+      "artifactSHA256": "69fef40288963a3e75788298fe9cd0a42b5fee63b92a2b4412fa57f5d67beaee",
+      "apps": [
+        {
+          "bundleName": "Swift Shift.app",
+          "bundleIdentifier": "com.pablopunk.Swift-Shift"
+        }
+      ]
+    },
+    "xemu": {
+      "caskVersion": "0.8.136",
+      "sourceURL": "https://github.com/xemu-project/xemu/releases/download/v0.8.136/xemu-0.8.136-macos-universal.zip",
+      "artifactSHA256": "9b5f52240b12ff0d6ab3852b38a820dc92b99124db8a981ccf2ed2cb893f446e",
+      "apps": []
+    },
+    "stash": {
+      "caskVersion": "4.3.0,545",
+      "sourceURL": "https://mac-release-static.stash.ws/Stash-build-545.zip",
+      "artifactSHA256": "594a3b6e8fd44392e71297233c5cb7e053b34894bc65aec60ecf771357aa2176",
+      "apps": [
+        {
+          "bundleName": "Stash.app",
+          "bundleIdentifier": "ws.stash.app.mac"
+        }
+      ]
+    },
+    "rocket-chat": {
+      "caskVersion": "4.17.1",
+      "sourceURL": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.17.1/rocketchat-4.17.1-mac.dmg",
+      "artifactSHA256": "6617e47f6df5b737ed3591a0f81deae0ed51b18e4ef512a10b2dd2142134155b",
+      "apps": [
+        {
+          "bundleName": "Rocket.Chat.app",
+          "bundleIdentifier": "chat.rocket"
+        }
+      ]
+    },
+    "naver-whale": {
+      "caskVersion": "4.39.410.14",
+      "sourceURL": "https://installer-whale.pstatic.net/downloads/installers/NaverWhale.dmg",
+      "artifactSHA256": "3f22c06e572998c2612c2c3c409804c8db5cd3cec9a3b08ec29ce73f191fbfbe",
+      "apps": [
+        {
+          "bundleName": "Whale.app",
+          "bundleIdentifier": "com.naver.Whale"
+        }
+      ]
+    },
+    "taskbar": {
+      "caskVersion": "1.6.3,2026,09",
+      "sourceURL": "https://lawand.io/wp-content/uploads/2026/09/taskbar-1.6.3.zip",
+      "artifactSHA256": "6754d2b90b9201685fb6bcb978c96274e626fbda91446b70ed361d29048ebb01",
+      "apps": [
+        {
+          "bundleName": "Taskbar.app",
+          "bundleIdentifier": "com.fpfxtknjju.wbgcdolfev"
+        }
+      ]
+    },
+    "simplenote": {
+      "caskVersion": "2.27.1",
+      "sourceURL": "https://github.com/Automattic/simplenote-electron/releases/download/v2.27.1/Simplenote-macOS-2.27.1.dmg",
+      "artifactSHA256": "6ff36e3488ea2fb1e8c4bb20f6646a76c3caeb91b7d90c7d31ec421383e68903",
+      "apps": [
+        {
+          "bundleName": "Simplenote.app",
+          "bundleIdentifier": "com.automattic.simplenote"
+        }
+      ]
+    },
+    "pock": {
+      "caskVersion": "0.9.0-22",
+      "sourceURL": "https://pock.app/builds/pock_0_9_0__22.zip",
+      "artifactSHA256": "c190b719a4ecd98680fcea6a8095432012a2b9e0067adac9d4e7b2c92dc8ca6b",
+      "apps": [
+        {
+          "bundleName": "Pock.app",
+          "bundleIdentifier": "com.pigigaldi.pock"
+        }
+      ]
+    },
+    "lunarbar": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://github.com/LunarBar-app/LunarBar/releases/download/v1.9.2/LunarBar-1.9.2-apple-silicon.dmg",
+      "artifactSHA256": "183b8850fa274aca126fff12088add85c4191108a79c8948837753df45cae915",
+      "apps": [
+        {
+          "bundleName": "LunarBar.app",
+          "bundleIdentifier": "app.cyan.lunarbar"
+        }
+      ]
+    },
+    "rive": {
+      "caskVersion": "0.8.5879",
+      "sourceURL": "https://releases.rive.app/macos/0.8.5879/Rive.dmg",
+      "artifactSHA256": "d24b09784a590c892f4a0610bb38f3629abcd23f9169938149645c7b6020071b",
+      "apps": [
+        {
+          "bundleName": "Rive.app",
+          "bundleIdentifier": "app.rive.editor"
+        }
+      ]
+    },
+    "zedis": {
+      "caskVersion": "0.10.0",
+      "sourceURL": "https://github.com/vicanso/zedis/releases/download/v0.10.0/Zedis-aarch64.dmg",
+      "artifactSHA256": "dd135b108d0adfbeee9f9174fa5bf9d4b293949d2c63c2175f52b28da9545c26",
+      "apps": [
+        {
+          "bundleName": "Zedis.app",
+          "bundleIdentifier": "com.bigtree.zedis"
+        }
+      ]
+    },
+    "opcode": {
+      "caskVersion": "0.2.0",
+      "sourceURL": "https://github.com/getAsterisk/opcode/releases/download/v0.2.0/opcode_v0.2.0_macOS_universal.dmg",
+      "artifactSHA256": "9868d20b46fa3fba134049e931ef745571805b0e1919e7bad807ca454f5932f8",
+      "apps": [
+        {
+          "bundleName": "opcode.app",
+          "bundleIdentifier": "opcode.asterisk.so"
+        }
+      ]
+    },
+    "tuta-mail": {
+      "caskVersion": "359.260904.0",
+      "sourceURL": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
+      "artifactSHA256": "974335a7ff4734e4bb674fa58e70de5f47877b22c773aacce3ffc48c3b16ce8e",
+      "apps": [
+        {
+          "bundleName": "Tuta Mail.app",
+          "bundleIdentifier": "de.tutao.tutanota"
+        }
+      ]
+    },
+    "aqua-voice": {
+      "caskVersion": "0.17.2",
+      "sourceURL": "https://updates.aquavoice.com/stable/darwin/arm64/Aqua%20Voice-darwin-arm64-0.17.2.zip",
+      "artifactSHA256": "1cd75f0e6c58cf5ea4a4fc35689aaa003d4fa26726cc24abbb7fef2d39aca648",
+      "apps": [
+        {
+          "bundleName": "Aqua Voice.app",
+          "bundleIdentifier": "com.electron.aqua-voice"
+        }
+      ]
+    },
+    "115browser": {
+      "caskVersion": "36.0.1",
+      "sourceURL": "https://down.115.com/client/mac/115br_v36.0.1_arm64.dmg",
+      "artifactSHA256": "3f44fb753709f950e61196f7df2195bb19b2f13f1758a777accaabeb041bf94f",
+      "apps": [
+        {
+          "bundleName": "115Browser.app",
+          "bundleIdentifier": "org.115browser.115Browser"
+        }
+      ]
+    },
+    "osu": {
+      "caskVersion": "2026.804.2-lazer",
+      "sourceURL": "https://github.com/ppy/osu/releases/download/2026.804.2-lazer/osu.app.Apple.Silicon.zip",
+      "artifactSHA256": "276919ec24cc75e0ab411cdb26436e683ce51d07b89916fae1d35079ce699a63",
+      "apps": [
+        {
+          "bundleName": "osu!.app",
+          "bundleIdentifier": "sh.ppy.osu.lazer"
+        }
+      ]
+    },
+    "pomatez": {
+      "caskVersion": "1.11.0",
+      "sourceURL": "https://github.com/zidoro/pomatez/releases/download/v1.11.0/Pomatez-v1.11.0-mac-arm64.dmg",
+      "artifactSHA256": "7c24b6ddf6f913ec4eec26f097788d42eb0ead3c96560f579d0fd8babb6f405b",
+      "apps": [
+        {
+          "bundleName": "Pomatez.app",
+          "bundleIdentifier": "com.roldanjr.pomatez"
+        }
+      ]
+    },
+    "kobo": {
+      "caskVersion": "latest",
+      "sourceURL": "https://cdn.kobo.com/downloads/desktop/kobodesktop/kobosetup.dmg",
+      "artifactSHA256": "3879210b594fc20a0faf7ffadbd14b7fc85255966172e007951118c74097ee6f",
+      "apps": [
+        {
+          "bundleName": "Kobo.app",
+          "bundleIdentifier": "com.kobo.desktop.Kobo"
+        }
+      ]
+    },
+    "tuple": {
+      "caskVersion": "3.3.3,2026-09-17,146484ebfd",
+      "sourceURL": "https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/tuple-3.3.3-2026-09-17-146484ebfd.zip",
+      "artifactSHA256": "e408128807a7a203f10ff6f5905bea8b047c4127fe6ef5080cd71c778c33d057",
+      "apps": [
+        {
+          "bundleName": "Tuple.app",
+          "bundleIdentifier": "app.tuple.app"
+        }
+      ]
+    },
+    "nova": {
+      "caskVersion": "14.1",
+      "sourceURL": "https://panic.com/download/nova/Nova%2014.1.zip",
+      "artifactSHA256": "80d090495a4b43b78e8558ddc161fd30adafdac287b7a8cafdd9c7fd9cc9940f",
+      "apps": [
+        {
+          "bundleName": "Nova.app",
+          "bundleIdentifier": "com.panic.Nova"
+        }
+      ]
+    },
+    "apidog": {
+      "caskVersion": "2.8.47",
+      "sourceURL": "https://file-assets.apidog.com/download/2.8.47/legacy-Apidog-macOS-arm64-2.8.47.dmg",
+      "artifactSHA256": "59a1d88a8c54ca15fa5676a9957769111da11a47f973467a2469a5ad21420f67",
+      "apps": [
+        {
+          "bundleName": "Apidog.app",
+          "bundleIdentifier": "com.apidog.app"
+        }
+      ]
     }
   }
 }
