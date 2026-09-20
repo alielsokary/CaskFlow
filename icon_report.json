@@ -380,7 +380,7 @@
   "dadroit-json-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "dante-controller": {
@@ -452,7 +452,7 @@
   "direqual": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "diskspace": {
@@ -644,7 +644,7 @@
   "filepane": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "finch": {
@@ -740,7 +740,7 @@
   "huly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "hy-rpe2": {
@@ -770,7 +770,7 @@
   "icollections": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "ijhttp": {
@@ -818,7 +818,7 @@
   "ipremoteutility": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "itunes-producer": {
@@ -842,7 +842,7 @@
   "jiba": {
     "status": "failed",
     "reason": "sha256 mismatch (got 41310668b371...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "kimi": {
@@ -868,12 +868,6 @@
     "reason": "official vendor asset: https://github.com/Kotlin.png",
     "attempts": 0,
     "updated": "2026-07-09"
-  },
-  "latexit": {
-    "status": "failed",
-    "reason": "download failed: curl: (47) Maximum (50) redirects followed",
-    "attempts": 2,
-    "updated": "2026-09-20"
   },
   "lemonade-server": {
     "status": "review",

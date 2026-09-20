@@ -146,9 +146,9 @@
       "apps": []
     },
     "langdock": {
-      "caskVersion": "1.0.5",
-      "sourceURL": "https://desktop.langdock.com/global/stable/Langdock-1.0.5-universal.dmg",
-      "artifactSHA256": "41f4a6267fdb582eea458de4a22218193e33adf0043e4816d2167d320e784f41",
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://desktop.langdock.com/global/stable/Langdock-1.0.7-universal.dmg",
+      "artifactSHA256": "af59ee0f749a72d6f45be30c7aaab2c2acebf6f172e1fb80a27790e22a81767b",
       "apps": [
         {
           "bundleName": "Langdock.app",
@@ -22628,6 +22628,188 @@
         {
           "bundleName": "Klokki.app",
           "bundleIdentifier": "com.klokki.macos"
+        }
+      ]
+    },
+    "last-window-quits": {
+      "caskVersion": "1.1.4,2024,12",
+      "sourceURL": "https://lawand.io/wp-content/uploads/2024/12/last-window-quits-1.1.4.zip",
+      "artifactSHA256": "10938d6cd6e201914d3041673509891f80e102c6fa78be8ddf1c3caed1fd862d",
+      "apps": [
+        {
+          "bundleName": "Last Window Quits.app",
+          "bundleIdentifier": "io.lawand.last-window-quits"
+        }
+      ]
+    },
+    "lasso-app": {
+      "caskVersion": "1.8.2",
+      "sourceURL": "https://f003.backblazeb2.com/file/lasso-app/Lasso.dmg",
+      "artifactSHA256": "9fec312c79c0fcb238d8b457bd60b78e025f99d9ab50ade59dc0701eded486e1",
+      "apps": [
+        {
+          "bundleName": "Lasso.app",
+          "bundleIdentifier": "com.heavylightapps.lasso"
+        }
+      ]
+    },
+    "lexicon-dj": {
+      "caskVersion": "1.11.14",
+      "sourceURL": "https://update.rekord.cloud/releases/lexicon/latest/lexicon-1.11.14-mac-aarch64.zip",
+      "artifactSHA256": "24aa8c81d5371e86c14ce5a70aaefc8a89c6690fbaee79ab0abbf79d14db1f66",
+      "apps": [
+        {
+          "bundleName": "Lexicon.app",
+          "bundleIdentifier": "com.rekord.cloud.lexicon"
+        }
+      ]
+    },
+    "lectrote": {
+      "caskVersion": "1.5.6",
+      "sourceURL": "https://github.com/erkyrath/lectrote/releases/download/lectrote-1.5.6/Lectrote-1.5.6-macos-arm64.dmg",
+      "artifactSHA256": "61db23a78ebae789f10f0c4fad5d57dcb36e285ebd3b8c76f146d552d72c4b9a",
+      "apps": [
+        {
+          "bundleName": "Lectrote.app",
+          "bundleIdentifier": "com.eblong.lectrote"
+        }
+      ]
+    },
+    "launchbar": {
+      "caskVersion": "6.24",
+      "sourceURL": "https://www.obdev.at/downloads/launchbar/LaunchBar-6.24.dmg",
+      "artifactSHA256": "8f71c28e8ac9d9d283ad7cda1f2f3d89a8b0b12a386b97277b197eb283886d1c",
+      "apps": [
+        {
+          "bundleName": "LaunchBar.app",
+          "bundleIdentifier": "at.obdev.LaunchBar"
+        }
+      ]
+    },
+    "lehreroffice": {
+      "caskVersion": "2026.3.2",
+      "sourceURL": "https://www.cmi-bildung.ch/lo/dateien/easy/lo_desktop_macos.dmg",
+      "artifactSHA256": "d47f394efa60da0a2d745d684de0a85a4c5e5ee64ed7c32a39bce73ab64a8a5d",
+      "apps": [
+        {
+          "bundleName": "LehrerOffice.app",
+          "bundleIdentifier": "ch.rothsoft.lehreroffice.desktop"
+        }
+      ]
+    },
+    "librepcb": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://download.librepcb.org/releases/2.1.1/librepcb-2.1.1-mac-arm64.dmg",
+      "artifactSHA256": "d3050399256c0d15cf7e561ca52e09b59facc25801d5bdf56d2df643236e3206",
+      "apps": []
+    },
+    "leech": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/leech321.dmg",
+      "artifactSHA256": "91616cf08e302e2c5226f15dede92e2f308aac57a575ef9fbe719ed49a883e99",
+      "apps": [
+        {
+          "bundleName": "Leech.app",
+          "bundleIdentifier": "com.manytricks.Leech"
+        }
+      ]
+    },
+    "lantern": {
+      "caskVersion": "latest",
+      "sourceURL": "https://s3.amazonaws.com/lantern/lantern-installer.dmg",
+      "artifactSHA256": "48e6e5fe734c46c2e32565888df24b86b756c3512ef95d5a67b13e56ed8a507f",
+      "apps": [
+        {
+          "bundleName": "Lantern.app",
+          "bundleIdentifier": "org.getlantern.lantern"
+        }
+      ]
+    },
+    "lagrange": {
+      "caskVersion": "1.21.1",
+      "sourceURL": "https://git.skyjake.fi/gemini/lagrange/releases/download/v1.21.1/lagrange_v1.21.1_macos11.0-arm64.tbz",
+      "artifactSHA256": "c8e8e879e4cd9b5c96143440b54bf6d2d1fa75dab7689fe250295eb0417cf670",
+      "apps": [
+        {
+          "bundleName": "Lagrange.app",
+          "bundleIdentifier": "fi.skyjake.lagrange"
+        }
+      ]
+    },
+    "latexit": {
+      "caskVersion": "2.16.6",
+      "sourceURL": "https://pierre.chachatelier.fr/latexit/downloads/LaTeXiT-2_16_6.dmg",
+      "artifactSHA256": "db4e82a20f495161cba15c72cfdfd646652af7c8c54d4a6543aa0fb3acad246a",
+      "apps": [
+        {
+          "bundleName": "LaTeXiT.app",
+          "bundleIdentifier": "fr.chachatelier.pierre.LaTeXiT"
+        }
+      ]
+    },
+    "launchpad-manager": {
+      "caskVersion": "1.0.14",
+      "sourceURL": "https://launchpadmanager.com/appyos/1.0.14/LaunchpadManager.dmg",
+      "artifactSHA256": "e972bc4605138c9b036d4386a23da397b609981dff2f291d17985162df9f5372",
+      "apps": [
+        {
+          "bundleName": "Launchpad Manager.app",
+          "bundleIdentifier": "com.attilamiklosi.yos.launchpadmanager"
+        }
+      ]
+    },
+    "launchie": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://github.com/nick-friedrich/launchie-launchpad-replacement-mac-os/releases/download/1.6.1/Launchie_1.6.1.dmg",
+      "artifactSHA256": "f4278ef54c9ad99ee505c6c7a51ab49cf72d9016c4d681ec5729092213faace3",
+      "apps": [
+        {
+          "bundleName": "Launchie.app",
+          "bundleIdentifier": "de.nick-friedrich.Launchie"
+        }
+      ]
+    },
+    "laserpecker-design-space": {
+      "caskVersion": "2.12.1",
+      "sourceURL": "https://laserpecker-prod.oss-cn-hongkong.aliyuncs.com/apply/software/pc/LaserPecker-Design-Space-M1-2.12.1.dmg",
+      "artifactSHA256": "1493e198c3c397e5e7d712441f9c89e3bd8a9fafe38fa50df2abdc771cf3b69c",
+      "apps": [
+        {
+          "bundleName": "LaserPecker Design Space.app",
+          "bundleIdentifier": "com.laserpecker.pc"
+        }
+      ]
+    },
+    "lazycat": {
+      "caskVersion": "2.0.25",
+      "sourceURL": "https://dl.lazycatmicroserver.com/client/desktop/stable/lzc-client-desktop_v2.0.25_arm64.dmg",
+      "artifactSHA256": "2b975b903b9137e91bade6e44d62713ad206f17057c97ff08899494a5b15ad73",
+      "apps": [
+        {
+          "bundleName": "懒猫微服.app",
+          "bundleIdentifier": "cloud.lazycat.client"
+        }
+      ]
+    },
+    "landrop": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/LANDrop/LANDrop/releases/download/v0.4.0/LANDrop-0.4.0-macos.dmg",
+      "artifactSHA256": "069f7ce4d43647a8e968de77ae1dd277e984d6ded6bf7cdac5caf979a7ac7123",
+      "apps": [
+        {
+          "bundleName": "LANDrop.app",
+          "bundleIdentifier": "app.landrop.landrop"
+        }
+      ]
+    },
+    "leigod": {
+      "caskVersion": "1.1.4",
+      "sourceURL": "https://update.leigod.com/soft/leigod/osx/1.0.0.0/LeiGodSetup_1.1.4_arm64.dmg",
+      "artifactSHA256": "a8acf2522d2f997aa02bbe8c6cc473cfd2044e6c3ea63d12c4ba0522cd85c4e4",
+      "apps": [
+        {
+          "bundleName": "雷神加速器.app",
+          "bundleIdentifier": "com.leigod.macacc"
         }
       ]
     }
