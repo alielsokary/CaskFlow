@@ -495,6 +495,18 @@ def _locate_app(cask: dict, root: Path, kind: str,
     return hit
 
 
+def _declared_package_sources(cask: dict) -> list[str]:
+    return [source for stanza in cask.get("artifacts") or [] if isinstance(stanza, dict)
+            for source in stanza.get("pkg", []) if isinstance(source, str)]
+
+
+def _matching_packages(workdir: Path, source: str) -> list[Path]:
+    if not _safe_relative(source):
+        return []
+    return [p for p in workdir.rglob("*") if artifact_matches(p, source)
+            and p.is_file() and not p.is_symlink() and p.resolve().is_relative_to(workdir.resolve())]
+
+
 def _identity_package_roots(cask: dict, root: Path, kind: str, workdir: Path,
                             expanded: dict[Path, Path]) -> tuple[list[Path], list[dict]]:
     if not has_pkg_artifact(cask):
@@ -502,11 +514,8 @@ def _identity_package_roots(cask: dict, root: Path, kind: str, workdir: Path,
     if kind == "pkg":
         return [root], []
     roots, diagnostics = [], []
-    sources = [source for stanza in cask.get("artifacts") or [] if isinstance(stanza, dict)
-               for source in stanza.get("pkg", []) if isinstance(source, str)]
-    for source in sources:
-        matches = [p for p in workdir.rglob("*") if _safe_relative(source) and artifact_matches(p, source)
-                   and p.is_file() and not p.is_symlink() and p.resolve().is_relative_to(workdir.resolve())]
+    for source in _declared_package_sources(cask):
+        matches = _matching_packages(workdir, source)
         if len(matches) != 1:
             diagnostics.append({"artifact": source, "reason": f"declared package matched {len(matches)} files"})
             continue

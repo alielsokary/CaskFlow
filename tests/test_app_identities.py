@@ -307,3 +307,15 @@ def test_package_expansion_failure_does_not_publish_a_fresh_empty_record(tmp_pat
     monkeypatch.setattr(extract_icons, "_expand_pkg", fail)
     assert extract_icons._extract_status(source, output) == ("failed", "pkgutil failed")
     assert not (output / MANIFEST).exists()
+
+
+@pytest.mark.parametrize("encoding", ["utf-8", "utf-16"])
+def test_package_info_rejects_dtd_entities_before_interpreting_install_location(tmp_path, encoding):
+    from app_identities import _package_location
+    info = tmp_path / "PackageInfo"
+    xml = f'''<?xml version="1.0" encoding="{encoding}"?>
+<!DOCTYPE pkg-info [<!ENTITY target "/Applications/Fake.app">]>
+<pkg-info install-location="&target;"/>'''
+    info.write_bytes(xml.encode(encoding))
+    with pytest.raises(ValueError, match="DTDs are not supported"):
+        _package_location(info)

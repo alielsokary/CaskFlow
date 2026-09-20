@@ -12,8 +12,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from unicodedata import normalize
-from xml.parsers.expat import ExpatError
-from xml.etree import ElementTree
+from xml.parsers.expat import ExpatError, ParserCreate
 
 from style_standards import write_json
 
@@ -102,60 +101,95 @@ def _safe_relative(source: str) -> bool:
         char in source for char in "$*?[]~")
 
 
-def _package_apps(root: Path, diagnostics: list[dict]) -> list[tuple[Path, str]]:
-    """Use package install locations, never icon guesses, to identify payload apps."""
+def _package_location(info: Path) -> PurePosixPath:
+    """Read only root attributes; reject DTDs before any entity can expand."""
+    attributes = None
+
+    def start_element(name, attrs):
+        nonlocal attributes
+        if attributes is None:
+            if name != "pkg-info":
+                raise ValueError("not a package info document")
+            attributes = attrs
+
+    def reject_doctype(*args):
+        raise ValueError("PackageInfo DTDs are not supported")
+
+    parser = ParserCreate()
+    parser.StartElementHandler = start_element
+    parser.StartDoctypeDeclHandler = reject_doctype
+    with info.open("rb") as source:
+        parser.ParseFile(source)
+    return PurePosixPath(attributes.get("install-location", "/"))
+
+
+def _package_info_files(root: Path) -> list[Path]:
+    return sorted(path for path in root.rglob("PackageInfo")
+                  if not path.is_symlink() and path.resolve().is_relative_to(root.resolve())
+                  and "Payload" not in path.relative_to(root).parts
+                  and not any(p.endswith(".app") for p in path.relative_to(root).parts))
+
+
+def _package_payload(info: Path, root: Path, location: PurePosixPath) -> Path:
+    payload = info.parent / "Payload"
+    if (not location.is_absolute() or ".." in location.parts or payload.is_symlink()
+            or not payload.is_dir() or not payload.resolve().is_relative_to(root.resolve())):
+        raise ValueError("unsafe or missing package payload")
+    return payload
+
+
+def _installed_package_apps(payload: Path, location: PurePosixPath) -> list[tuple[Path, str]]:
+    # Some packages install Payload/Contents directly into /Applications/App.app.
+    bundles = [payload] if location.name.endswith(".app") else _application_bundles(payload)
     candidates = []
-    infos = [path for path in root.rglob("PackageInfo")
-             if not path.is_symlink() and path.resolve().is_relative_to(root.resolve())
-             and "Payload" not in path.relative_to(root).parts
-             and not any(p.endswith(".app") for p in path.relative_to(root).parts)]
-    if not infos:
-        diagnostics.append({"artifact": "pkg", "reason": "no PackageInfo in expanded package"})
-    for info in sorted(infos):
-        try:
-            metadata = ElementTree.fromstring(info.read_bytes())
-            if metadata.tag != "pkg-info":
-                raise ElementTree.ParseError("not a package info document")
-        except (OSError, ElementTree.ParseError) as error:
-            diagnostics.append({"artifact": info.name, "reason": f"invalid PackageInfo: {type(error).__name__}"})
-            continue
-        location = PurePosixPath(metadata.get("install-location", "/"))
-        payload = info.parent / "Payload"
-        if (not location.is_absolute() or ".." in location.parts or payload.is_symlink()
-                or not payload.is_dir() or not payload.resolve().is_relative_to(root.resolve())):
-            diagnostics.append({"artifact": str(info.relative_to(root)), "reason": "unsafe or missing package payload"})
-            continue
-        # Some packages install Payload/Contents directly into /Applications/App.app.
-        bundles = [payload] if location.name.endswith(".app") else _application_bundles(payload)
-        for bundle in bundles:
-            installed = location / bundle.relative_to(payload)
-            if (not installed.is_relative_to("/Applications") or not installed.name.endswith(".app")
-                    or any(p.endswith(".app") for p in installed.parts[:-1])):
-                continue  # Library helpers and embedded apps are not application ownership evidence.
-            candidates.append((bundle, installed.name))
+    for bundle in bundles:
+        installed = location / bundle.relative_to(payload)
+        if (not installed.is_relative_to("/Applications") or not installed.name.endswith(".app")
+                or any(p.endswith(".app") for p in installed.parts[:-1])):
+            continue  # Library helpers and embedded apps are not application ownership evidence.
+        candidates.append((bundle, installed.name))
     return candidates
 
 
-def extract_identities(cask: dict, root: Path, artifact: Path, *,
-                       package_roots: tuple[Path, ...] = (), diagnostics: tuple[dict, ...] = ()) -> dict:
-    """Inspect every declared app; reject duplicates, symlinks and heuristic selections."""
-    directories = _directories(root)
-    bundles = [path for path in directories if path.name.endswith(".app")]
-    diagnostics = list(diagnostics)
+def _package_apps(root: Path, diagnostics: list[dict]) -> list[tuple[Path, str]]:
+    """Use package install locations, never icon guesses, to identify payload apps."""
     candidates = []
-    apps = []
+    infos = _package_info_files(root)
+    if not infos:
+        diagnostics.append({"artifact": "pkg", "reason": "no PackageInfo in expanded package"})
+    for info in infos:
+        try:
+            location = _package_location(info)
+            payload = _package_payload(info, root, location)
+            candidates.extend(_installed_package_apps(payload, location))
+        except (OSError, ExpatError, ValueError) as error:
+            diagnostics.append({"artifact": str(info.relative_to(root)), "reason": f"invalid PackageInfo: {error}"})
+    return candidates
+
+
+def _declared_app_candidates(cask: dict, bundles: list[Path], diagnostics: list[dict]) -> list[tuple[Path, str]]:
+    candidates = []
     for source, target in declared_apps(cask):
         matches = [p for p in bundles if artifact_matches(p, source)]
         if len(matches) != 1:
             diagnostics.append({"artifact": source, "reason": f"declared app matched {len(matches)} bundles"})
             continue
         candidates.append((matches[0], target))
+    return candidates
+
+
+def _safe_suite(stanza: dict, source: str, target: str) -> bool:
+    target_paths = [item["target"] for item in stanza["suite"]
+                    if isinstance(item, dict) and isinstance(item.get("target"), str)]
+    return _safe_relative(source) and _safe_relative(target) and all(_safe_relative(p) for p in target_paths)
+
+
+def _suite_candidates(cask: dict, directories: list[Path], bundles: list[Path],
+                      diagnostics: list[dict]) -> list[tuple[Path, str]]:
+    candidates = []
     for stanza in cask.get("artifacts") or []:
         for source, target in _app_entries(stanza, "suite"):
-            target_paths = [item["target"] for item in stanza["suite"]
-                            if isinstance(item, dict) and isinstance(item.get("target"), str)]
-            if (not _safe_relative(source) or not _safe_relative(target)
-                    or any(not _safe_relative(path) for path in target_paths)):
+            if not _safe_suite(stanza, source, target):
                 diagnostics.append({"artifact": source, "reason": "suite requires unsupported staging or target path"})
                 continue
             matches = [p for p in directories if artifact_matches(p, source)]
@@ -163,12 +197,15 @@ def extract_identities(cask: dict, root: Path, artifact: Path, *,
                 diagnostics.append({"artifact": source, "reason": f"declared suite matched {len(matches)} directories"})
                 continue
             candidates.extend((p, p.name) for p in bundles if p.is_relative_to(matches[0]))
-    for package_root in package_roots:
-        candidates.extend(_package_apps(package_root, diagnostics))
+    return candidates
+
+
+def _verified_apps(candidates: list[tuple[Path, str]], diagnostics: list[dict]) -> list[dict]:
     # A basename alone cannot distinguish multiple installed app locations.
     by_name: dict[str, set[Path]] = {}
     for bundle, name in candidates:
         by_name.setdefault(normalize("NFC", name).casefold(), set()).add(bundle)
+    apps = []
     for bundle, name in candidates:
         if len(by_name[normalize("NFC", name).casefold()]) != 1:
             diagnostics.append({"artifact": name, "reason": "ambiguous installed bundle name"})
@@ -180,6 +217,20 @@ def extract_identities(cask: dict, root: Path, artifact: Path, *,
                 apps.append(record)
         else:
             diagnostics.append({"artifact": name, "reason": reason})
+    return apps
+
+
+def extract_identities(cask: dict, root: Path, artifact: Path, *,
+                       package_roots: tuple[Path, ...] = (), diagnostics: tuple[dict, ...] = ()) -> dict:
+    """Inspect declared apps, suites and payloads without heuristic identity selection."""
+    directories = _directories(root)
+    bundles = [path for path in directories if path.name.endswith(".app")]
+    diagnostics = list(diagnostics)
+    candidates = _declared_app_candidates(cask, bundles, diagnostics)
+    candidates.extend(_suite_candidates(cask, directories, bundles, diagnostics))
+    for package_root in package_roots:
+        candidates.extend(_package_apps(package_root, diagnostics))
+    apps = _verified_apps(candidates, diagnostics)
     if not apps and not diagnostics:
         diagnostics.append({"artifact": cask["token"], "reason": "no supported application bundles in declared artifacts"})
     digest = hashlib.sha256()
