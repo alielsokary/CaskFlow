@@ -79,9 +79,9 @@
       ]
     },
     "zentty": {
-      "caskVersion": "0.3.0",
-      "sourceURL": "https://github.com/dedene/zentty/releases/download/v0.3.0/Zentty.dmg",
-      "artifactSHA256": "718601bdaf4dc00e58dab12557cb8f29d15e3924edb4093b3e4d19b0fd492ea0",
+      "caskVersion": "0.3.2",
+      "sourceURL": "https://github.com/dedene/zentty/releases/download/v0.3.2/Zentty.dmg",
+      "artifactSHA256": "5dd34df98e2b7a91484c84714dad4c4af4e0c7403e21c59c3ef0e80c21fea721",
       "apps": [
         {
           "bundleName": "Zentty.app",
@@ -34243,6 +34243,171 @@
         {
           "bundleName": "Zeitgeist.app",
           "bundleIdentifier": "me.daneden.Zeitgeist"
+        }
+      ]
+    },
+    "zxpinstaller": {
+      "caskVersion": "1.8.2",
+      "sourceURL": "https://github.com/elements-storage/ZXPInstaller/releases/download/v1.8.2/ZXPInstaller-1.8.2.dmg",
+      "artifactSHA256": "0d42ee30105096529bc89394c67733069c56b2139fd09dea69944d7e188f0972",
+      "apps": [
+        {
+          "bundleName": "ZXPInstaller.app",
+          "bundleIdentifier": "com.electron.zxpinstaller"
+        }
+      ]
+    },
+    "zspace": {
+      "caskVersion": "2.45.2026082601,1789110817,082619",
+      "sourceURL": "https://update.zenithspace.net/app/APP_ZSPACE_DESKTOP_MACARM/V2.45.2026082601/zspace/1789110817/zspace_mac_arm64_2.45.2026082601_082619.dmg",
+      "artifactSHA256": "580b02464a898ad966acf54e8c812902cf7ff89966a55667541c3f5a3b1c7ed9",
+      "apps": [
+        {
+          "bundleName": "极空间.app",
+          "bundleIdentifier": "com.zentraedi.zspaceMacApp"
+        }
+      ]
+    },
+    "znote": {
+      "caskVersion": "4.9.3",
+      "sourceURL": "https://github.com/alagrede/znote-app/releases/download/v4.9.3/znote-4.9.3-arm64.dmg",
+      "artifactSHA256": "8350661896479e58303f3296ad2681cf7339074b82b606ef984ab9c49bda4122",
+      "apps": [
+        {
+          "bundleName": "znote.app",
+          "bundleIdentifier": "com.tony.znote"
+        }
+      ]
+    },
+    "zeplin": {
+      "caskVersion": "10.33.1",
+      "sourceURL": "https://pkg.zeplin.io/macos/latest/zeplin-darwin-universal.zip",
+      "artifactSHA256": "5ebfa057f6207a485208be7b0573974773ea79c788e68126aedddfa4c34bd2fd",
+      "apps": [
+        {
+          "bundleName": "Zeplin.app",
+          "bundleIdentifier": "io.zeplin.osx"
+        }
+      ]
+    },
+    "zen-privacy": {
+      "caskVersion": "0.25.1",
+      "sourceURL": "https://github.com/ZenPrivacy/zen-desktop/releases/download/v0.25.1/Zen_darwin_arm64_noselfupdate.tar.gz",
+      "artifactSHA256": "fba2842091d28dd9c61b34576ab68173afc63562c39f8dc4fb403c0635622397",
+      "apps": [
+        {
+          "bundleName": "Zen.app",
+          "bundleIdentifier": "net.zenprivacy.zen"
+        }
+      ]
+    },
+    "zui": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://github.com/brimdata/zui/releases/download/v1.18.0/Zui-1.18.0-arm64.dmg",
+      "artifactSHA256": "d28bd3144781cf1d8b6d2ba654e4c65b826c945004d480f2c0497235dfda4390",
+      "apps": [
+        {
+          "bundleName": "Zui.app",
+          "bundleIdentifier": "io.brimdata.zui"
+        }
+      ]
+    },
+    "zush": {
+      "caskVersion": "3.11.7",
+      "sourceURL": "https://zushapp.com/releases/Zush-3.11.7.dmg",
+      "artifactSHA256": "bfd0dd915191f319a2709432880e508b770143b670615ff60be416676edd5cee",
+      "apps": [
+        {
+          "bundleName": "Zush.app",
+          "bundleIdentifier": "com.lirik.Zush"
+        }
+      ]
+    },
+    "zoc": {
+      "caskVersion": "9.04.2",
+      "sourceURL": "https://www.emtec.com/downloads/zoc/zoc9042.dmg",
+      "artifactSHA256": "90d37ef92c1e2e2422f66dc18adf1c6fc09d6f7da1af6ff93af7bf2a58d5ecff",
+      "apps": [
+        {
+          "bundleName": "zoc9.app",
+          "bundleIdentifier": "com.emtec.zoc9"
+        }
+      ]
+    },
+    "zight": {
+      "caskVersion": "8.7.3,3645",
+      "sourceURL": "https://downloads.zight.com/mac/Zight-8.7.3.3645.zip",
+      "artifactSHA256": "02724436bfa1d61aa69119e10e5b767a27002fe5e852bef7e8a360e3c0685e65",
+      "apps": [
+        {
+          "bundleName": "Zight.app",
+          "bundleIdentifier": "com.linebreak.CloudAppMacOSX"
+        }
+      ]
+    },
+    "zoom-m3-edit-and-play": {
+      "caskVersion": "1.1.2,2850",
+      "sourceURL": "https://zoomcorp.com/documents/2850/M3_Edit__Play_Mac_v1.1.2_E.zip",
+      "artifactSHA256": "babd77d9864ac67233fcfb1f3324067fc455048dce529419f119a2803af9d448",
+      "apps": [
+        {
+          "bundleName": "ZOOM M3 Edit & Play.app",
+          "bundleIdentifier": "jp.co.zoom.M3EditPlay"
+        }
+      ]
+    },
+    "zipic": {
+      "caskVersion": "1.10.1",
+      "sourceURL": "https://releases.5km.tech/zipic/Zipic%201.10.1.dmg",
+      "artifactSHA256": "4f80cf34bb8efeb5b10047e3af24605e9c1ae28a921e33e95e651be243f11e49",
+      "apps": [
+        {
+          "bundleName": "Zipic.app",
+          "bundleIdentifier": "studio.5km.zipic"
+        }
+      ]
+    },
+    "zerobranestudio": {
+      "caskVersion": "2.01",
+      "sourceURL": "https://download.zerobrane.com/ZeroBraneStudioEduPack-2.01-macos.dmg",
+      "artifactSHA256": "1a56db6433b6111d24a9853975a5232c07d491a99fee699469c78b342e97440c",
+      "apps": [
+        {
+          "bundleName": "ZeroBraneStudio.app",
+          "bundleIdentifier": "com.ZeroBrane.ZeroBraneStudio"
+        }
+      ]
+    },
+    "zoo-design-studio": {
+      "caskVersion": "1.0.18",
+      "sourceURL": "https://dl.zoo.dev/releases/modeling-app/Zoo%20Design%20Studio-1.0.18-arm64-mac.zip",
+      "artifactSHA256": "fc49bc91bbbf2b8cf478f497c09b52502da58d8ffe467466eea20a442b160c45",
+      "apps": [
+        {
+          "bundleName": "Zoo Design Studio.app",
+          "bundleIdentifier": "dev.zoo.modeling-app"
+        }
+      ]
+    },
+    "zo": {
+      "caskVersion": "1.5.13",
+      "sourceURL": "https://github.com/zocomputer/Zo/releases/download/v1.5.13/Zo-1.5.13-universal-mac.zip",
+      "artifactSHA256": "880711377370a3d55a1631a70c74bedc3257733172bb3f115862a78694801221",
+      "apps": [
+        {
+          "bundleName": "Zo.app",
+          "bundleIdentifier": "computer.zo.desktop"
+        }
+      ]
+    },
+    "zoho-workdrive": {
+      "caskVersion": "2.7.48",
+      "sourceURL": "https://files-accl.zohopublic.com/public/wdbin/download/46f971e4fc4a32b68ad5d7dade38a7d2",
+      "artifactSHA256": "bd04537ffe1eee737734a960cb0227ca160ba95e8aeafaf2ff6eef2467b72233",
+      "apps": [
+        {
+          "bundleName": "Zoho WorkDrive.app",
+          "bundleIdentifier": "org.zoho.ZohoWorkDrive"
         }
       ]
     }
