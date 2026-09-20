@@ -30175,6 +30175,13 @@
     "og_desc": "Jitsi Meet desktop application powered by :electron: - jitsi/jitsi-meet-electron"
   },
   {
+    "token": "jlcone",
+    "homepage": "https://jlcone.com/download",
+    "title": "Download JLCONE - JLCPCB Desktop & Mobile App for a Faster Ordering Experience",
+    "meta_desc": "Download JLCONE, JLCPCB's official desktop and mobile app, for a faster, smarter ordering experience. Track orders, upload Gerbers, and manage projects easily.",
+    "og_desc": ""
+  },
+  {
     "token": "jollysfastvnc",
     "homepage": "https://www.jinx.de/JollysFastVNC.html",
     "title": "",
@@ -39686,6 +39693,13 @@
     "og_desc": ""
   },
   {
+    "token": "reolink",
+    "homepage": "https://reolink.com/software-and-manual/",
+    "title": "Reolink App & Client Download",
+    "meta_desc": "Get the Reolink app for Windows, Mac, and mobile devices. Download the Reolink client on your desktop to log in, view live feeds, and manage your cameras securely.",
+    "og_desc": "Get the Reolink app for Windows, Mac, and mobile devices. Download the Reolink client on your desktop to log in, view live feeds, and manage your cameras securely."
+  },
+  {
     "token": "repetier-host",
     "homepage": "https://www.repetier.com/",
     "title": "- Repetier Software",
@@ -40385,6 +40399,13 @@
     "title": "RustRover: Rust IDE by JetBrains",
     "meta_desc": "Try the new Rust IDE from JetBrains with a debugger, on-the-fly analysis, and quick-fixes.",
     "og_desc": "Try the new Rust IDE from JetBrains with a debugger, on-the-fly analysis, and quick-fixes."
+  },
+  {
+    "token": "ruswitcher",
+    "homepage": "https://github.com/rashn/RuSwitcher",
+    "title": "GitHub - rashn/RuSwitcher: Fix a wrong keyboard layout on macOS - Latin, Cyrillic and Hebrew (RTL) - by a tap or automatically, locally and over Screen Sharing. Menu-bar app, clipboard-free, free & open-source. · GitHub",
+    "meta_desc": "Fix a wrong keyboard layout on macOS - Latin, Cyrillic and Hebrew (RTL) - by a tap or automatically, locally and over Screen Sharing. Menu-bar app, clipboard-free, free & open-source. - rashn/RuSwitcher",
+    "og_desc": "Fix a wrong keyboard layout on macOS - Latin, Cyrillic and Hebrew (RTL) - by a tap or automatically, locally and over Screen Sharing. Menu-bar app, clipboard-free, free &amp; open-source. - rashn/R..."
   },
   {
     "token": "rwts-pdfwriter",
