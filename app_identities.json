@@ -96,9 +96,9 @@
       "apps": []
     },
     "wsl-manager": {
-      "caskVersion": "2.0.3",
-      "sourceURL": "https://github.com/bostrot/wsl2-distro-manager/releases/download/v2.0.3/wsl2-distro-manager-v2.0.3-macos.dmg",
-      "artifactSHA256": "0b8713c328ac7cc3311334bd1f41651a679aee98f736ff3f0eac95beb973e82d",
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/bostrot/wsl2-distro-manager/releases/download/v2.3.0/wsl2-distro-manager-v2.3.0-macos.dmg",
+      "artifactSHA256": "9b20f18ad55f8d68b52e0c6ef50c6be8099e1193492e1c33ba5df928f5084459",
       "apps": [
         {
           "bundleName": "WSL Manager.app",
@@ -33725,6 +33725,265 @@
         {
           "bundleName": "Wondershare Filmora Mac.app",
           "bundleIdentifier": "com.wondershare.filmoramacos"
+        }
+      ]
+    },
+    "writemapper": {
+      "caskVersion": "4.6.0",
+      "sourceURL": "https://writemapper.sfo3.cdn.digitaloceanspaces.com/writemapper-4/mac/WriteMapper-4.6.0-universal.dmg",
+      "artifactSHA256": "b5feebe6de35bf0cf1e6c1165278038ef2cdc71e4cb046b4772ad141658396b9",
+      "apps": [
+        {
+          "bundleName": "WriteMapper.app",
+          "bundleIdentifier": "com.gx.writemapper4"
+        }
+      ]
+    },
+    "xmenu": {
+      "caskVersion": "1.9.11",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/xmenu/1.9.11/XMenu.app.zip",
+      "artifactSHA256": "dec29c0006cae59f2720df4628891a8f8d157a598897892b763521beb3f3105d",
+      "apps": [
+        {
+          "bundleName": "XMenu.app",
+          "bundleIdentifier": "com.devon-technologies.XMenu"
+        }
+      ]
+    },
+    "wrkspace": {
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://updater.wrkspace.co/download/version/2.1.1/darwin-arm64",
+      "artifactSHA256": "8c8646bc61c855adc27dbdfe6a94223954be904bee961cdc3545000a6c4053ff",
+      "apps": []
+    },
+    "xca": {
+      "caskVersion": "2.9.0",
+      "sourceURL": "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-2.9.0-Darwin.dmg",
+      "artifactSHA256": "90df40a56bb57bbf46158b4db1c9fddd8a2d7cc48477b5522b457ec4e12cd45a",
+      "apps": [
+        {
+          "bundleName": "xca.app",
+          "bundleIdentifier": "de.hohnstaedt.xca"
+        }
+      ]
+    },
+    "xattred": {
+      "caskVersion": "1.7,2025.12",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/12/xattred17.zip",
+      "artifactSHA256": "74ef7894a18bd6ea828a300fb8b3ca583826ce99e3b54939ec87a3d56a5ba803",
+      "apps": [
+        {
+          "bundleName": "xattred.app",
+          "bundleIdentifier": "co.eclecticlight.xattred"
+        }
+      ]
+    },
+    "wrike": {
+      "caskVersion": "4.6.2",
+      "sourceURL": "https://dl.wrike.com/download/WrikeDesktopApp_ARM.v4.6.2.dmg",
+      "artifactSHA256": "b8796829ac6d884df0bd65e9f5b399375c827852dbb51cfdd4420a091194c9bd",
+      "apps": [
+        {
+          "bundleName": "Wrike for Mac.app",
+          "bundleIdentifier": "com.wrike.Wrike"
+        }
+      ]
+    },
+    "ximalaya": {
+      "caskVersion": "4.0.14,GAqhT9EONlx6ACAAAAS7RMEd,be1d,9A,7E",
+      "sourceURL": "https://nativedl.pcdn.xmcdn.com/storages/be1d-audiofreehighqps/9A/7E/GAqhT9EONlx6ACAAAAS7RMEd.dmg?ct=application/octet-stream&filename=Ximalaya_4.0.14_x64_c_99",
+      "artifactSHA256": "1edc155a7672add926d602974dd8a39a6238928a383d926608c74f353903701e",
+      "apps": [
+        {
+          "bundleName": "喜马拉雅.app",
+          "bundleIdentifier": "com.gemd.iting"
+        }
+      ]
+    },
+    "xliff-editor": {
+      "caskVersion": "4.1",
+      "sourceURL": "https://sweetpproductions.com/products/xliffeditor/XliffEditor.dmg",
+      "artifactSHA256": "43a2f213cd54dd8ede424ca44fe80856a638bb3ca69f0e3a0cbfcecb494d69c5",
+      "apps": [
+        {
+          "bundleName": "Xliff Editor.app",
+          "bundleIdentifier": "com.sweetpproductions.Xliff-Editor"
+        }
+      ]
+    },
+    "x32-edit": {
+      "caskVersion": "4.4.1,2f082091ef134225b3095541559bfb41",
+      "sourceURL": "https://cdn-media.empowertribe.com/2f082091ef134225b3095541559bfb41/X32-Edit_MAC_4.4.1.zip",
+      "artifactSHA256": "65ad5512474beb5c54da421185d9a7e9479c95237fd6ca6c6f914c30b3dcd5ef",
+      "apps": [
+        {
+          "bundleName": "X32-Edit.app",
+          "bundleIdentifier": "com.Musictribe.X32-Edit"
+        }
+      ]
+    },
+    "xcodepilot": {
+      "caskVersion": "1.5.0,27",
+      "sourceURL": "https://raw.githubusercontent.com/TMTBO/XcodePilotPages/refs/heads/main/docs/packages/appcast/XcodePilot.v1.5.0_27.zip",
+      "artifactSHA256": "3de58f7b2ef6f19d6a4202421dfdfe8ec9a1456e7e0c170871725969c064c15b",
+      "apps": [
+        {
+          "bundleName": "XcodePilot.app",
+          "bundleIdentifier": "fun.thriller.XcodePilot"
+        }
+      ]
+    },
+    "xlplayer": {
+      "caskVersion": "3.1.4.66056",
+      "sourceURL": "https://down.sandai.net/mac/player_3.1.4.66056.dmg",
+      "artifactSHA256": "97773dd9ed4accf943aee65a5805efd8519adab5fb38fcdde7a73443d1d1090b",
+      "apps": [
+        {
+          "bundleName": "XLPlayer.app",
+          "bundleIdentifier": "com.xunlei.XLPlayer"
+        }
+      ]
+    },
+    "xdeck": {
+      "caskVersion": "3.2",
+      "sourceURL": "https://github.com/morishin/XDeck/releases/download/3.2/XDeck-3.2.zip",
+      "artifactSHA256": "db8bd49328c72ef4e4cb91fa2b0f9c1c2660c572c89dfc23492f8601b2c16e52",
+      "apps": [
+        {
+          "bundleName": "XDeck.app",
+          "bundleIdentifier": "me.morishin.XDeck"
+        }
+      ]
+    },
+    "wxmacmolplt": {
+      "caskVersion": "7.7.3,026tyu30ck2xeldbxhgjkmmuxvwg87mc",
+      "sourceURL": "https://uofi.box.com/shared/static/026tyu30ck2xeldbxhgjkmmuxvwg87mc.gz",
+      "artifactSHA256": "5a822760b8f3160cfcac0ab24a32a3aff5af8fc7d16d78ea736651df1e9145df",
+      "apps": [
+        {
+          "bundleName": "wxMacMolPlt.app",
+          "bundleIdentifier": "gov.ameslab.wxMacMolplt"
+        }
+      ]
+    },
+    "xee": {
+      "caskVersion": "3.5.4,69,1640101604",
+      "sourceURL": "https://dl.devmate.com/cx.c3.Xee3/69/1640101604/Xee-69.zip",
+      "artifactSHA256": "12db74f58ee04f28193e18df964b6a8a8715dfe3f47c7dadc9fea44ead39be0c",
+      "apps": [
+        {
+          "bundleName": "Xee³.app",
+          "bundleIdentifier": "cx.c3.Xee3"
+        }
+      ]
+    },
+    "wwdc": {
+      "caskVersion": "7.5,1044",
+      "sourceURL": "https://github.com/insidegui/WWDC/releases/download/7.5/WWDC_v7.5-1044.dmg",
+      "artifactSHA256": "539aead52153a6decde115ba75f5a60848cbbdbd7bca3472347e5fc9d449d20c",
+      "apps": [
+        {
+          "bundleName": "WWDC.app",
+          "bundleIdentifier": "io.wwdc.app"
+        }
+      ]
+    },
+    "wowup": {
+      "caskVersion": "2.23.1",
+      "sourceURL": "https://github.com/WowUp/WowUp/releases/download/v2.23.1/WowUp-2.23.1-arm64.dmg",
+      "artifactSHA256": "7c82a0a144f8d8ebd31be1883de93110ec4be524e572ee718de32a21dd441719",
+      "apps": [
+        {
+          "bundleName": "WowUp.app",
+          "bundleIdentifier": "io.wowup.jliddev"
+        }
+      ]
+    },
+    "x-air-edit": {
+      "caskVersion": "1.8.1,f592010e1fca4b82b1c5f410004c2cb8",
+      "sourceURL": "https://cdn-media.empowertribe.com/f592010e1fca4b82b1c5f410004c2cb8/X-AIR-Edit_MAC_1.8.1.zip",
+      "artifactSHA256": "30cf6ada86da5b90fb3115b39b4c8983829e9695a16258aeca5c2656bdc1d2d3",
+      "apps": [
+        {
+          "bundleName": "X-AIR-Edit.app",
+          "bundleIdentifier": "com.musictribe.X-AIR-Edit"
+        }
+      ]
+    },
+    "xiaomi-cloud": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://cdn.cnbj1.fds.api.mi-img.com/archive/update-server/public/darwin/arm64/XiaomiCloud-3.0.2.dmg",
+      "artifactSHA256": "805dba3c4713d77e32b464b463a6277898b5af2db9f92ad3673ad89ac6ade339",
+      "apps": [
+        {
+          "bundleName": "小米云服务.app",
+          "bundleIdentifier": "micloud.pc.xiaomi"
+        }
+      ]
+    },
+    "x-swiftformat": {
+      "caskVersion": "2.1",
+      "sourceURL": "https://github.com/ruiaureliano/X-SwiftFormat/releases/download/2.1/x-swiftformat_2.1.zip",
+      "artifactSHA256": "06569a2abac144e1c3b9cee75fec9e3d6f4d70c41d3d55f48aa8bd924cb4cb75",
+      "apps": [
+        {
+          "bundleName": "X-SwiftFormat.app",
+          "bundleIdentifier": "com.ruiaureliano.xswiftformat"
+        }
+      ]
+    },
+    "wowup-cf": {
+      "caskVersion": "2.23.1",
+      "sourceURL": "https://github.com/WowUp/WowUp.CF/releases/download/v2.23.1/WowUp-CF-2.23.1-arm64.dmg",
+      "artifactSHA256": "fd03196d792fdb71d71141f6c4f2ed6215880afc6d7d237ca066d1fe786a3c2e",
+      "apps": [
+        {
+          "bundleName": "WowUp-CF.app",
+          "bundleIdentifier": "io.wowupcf.jliddev"
+        }
+      ]
+    },
+    "workspaces": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://www.apptorium.com/public/products/workspaces/releases/Workspaces-2.3.zip",
+      "artifactSHA256": "eff13cfff0c139eeb7c457297c07a16a65253ad56f9c88a592d228fcae8e6336",
+      "apps": [
+        {
+          "bundleName": "Workspaces.app",
+          "bundleIdentifier": "com.apptorium.Workspaces2-paddle"
+        }
+      ]
+    },
+    "xmplify": {
+      "caskVersion": "1.11.11",
+      "sourceURL": "https://xmplifyapp.com/releases/Xmplify-1.11.11.dmg",
+      "artifactSHA256": "ed2bbb1f77bf83fd64f209ad487495cb03c05d7f61512e40e2e6b98dc93910ee",
+      "apps": [
+        {
+          "bundleName": "Xmplify.app",
+          "bundleIdentifier": "au.com.moso.Xmplify"
+        }
+      ]
+    },
+    "xiv-on-mac": {
+      "caskVersion": "5.5.1",
+      "sourceURL": "https://softwareupdate.xivmac.com/sites/default/files/update_data/XIV%20on%20Mac5.5.1.tar.xz",
+      "artifactSHA256": "b478b4c8865e773f82803a5aad9bbb67e179943f0da216a3d45b9193c218cfaa",
+      "apps": [
+        {
+          "bundleName": "XIV on Mac.app",
+          "bundleIdentifier": "dezent.XIV-on-Mac"
+        }
+      ]
+    },
+    "xmlmind-editor": {
+      "caskVersion": "11.2.0",
+      "sourceURL": "https://www.xmlmind.com/xmleditor/_download/xxe-perso-11_2_0.dmg",
+      "artifactSHA256": "229bbafb806c3180a6da01030eca62ec6930f250199e4f58c6f9073d3820294b",
+      "apps": [
+        {
+          "bundleName": "XMLmind.app",
+          "bundleIdentifier": "com.xmlmind.xmleditapp.desktop.App.xxe.perso"
         }
       ]
     }
