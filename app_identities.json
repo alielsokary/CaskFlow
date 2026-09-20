@@ -10880,6 +10880,281 @@
           "bundleIdentifier": "self.Kiwix"
         }
       ]
+    },
+    "nextcloud-talk": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://github.com/nextcloud-releases/talk-desktop/releases/download/v2.3.2/Nextcloud.Talk-macos-universal.dmg",
+      "artifactSHA256": "d3f43ac9b245331220bb0a690305d5ca5c9ebdd46a70ad71ac8fdda70ac58660",
+      "apps": [
+        {
+          "bundleName": "Nextcloud Talk.app",
+          "bundleIdentifier": "com.nextcloud.talk.mac"
+        }
+      ]
+    },
+    "valkey-admin": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://github.com/valkey-io/valkey-admin/releases/download/v1.1.1/Valkey.Admin-1.1.1-arm64.dmg",
+      "artifactSHA256": "b1244e74c7feca7b1eb1c2b20582e12e9f23aa5b9cbcc0541d4b9cb2fdb19a3a",
+      "apps": [
+        {
+          "bundleName": "Valkey Admin.app",
+          "bundleIdentifier": "com.valkey.admin"
+        }
+      ]
+    },
+    "menumeters": {
+      "caskVersion": "2.1.6.1",
+      "sourceURL": "https://github.com/yujitach/MenuMeters/releases/download/2.1.6.1/MenuMeters_2.1.6.1.zip",
+      "artifactSHA256": "6c8a1a62e5f84ca043898e2503f4750c8cd8447588c6fb52d3be9c505a5cdff8",
+      "apps": [
+        {
+          "bundleName": "MenuMeters.app",
+          "bundleIdentifier": "com.yujitach.MenuMeters"
+        }
+      ]
+    },
+    "kaleidoscope": {
+      "caskVersion": "7.0.1,10509",
+      "sourceURL": "https://updates.kaleidoscope.app/v7/prod/Kaleidoscope-7.0.1-10509.app.zip",
+      "artifactSHA256": "56834d2ac91c14eaf5109e37f971a03903489674e26b2c7db9d2ea7cdc834e77",
+      "apps": [
+        {
+          "bundleName": "Kaleidoscope.app",
+          "bundleIdentifier": "app.kaleidoscope.v4"
+        }
+      ]
+    },
+    "spectra-app": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/kaochenlong/spectra-app/releases/download/v3.0.0/Spectra_3.0.0_aarch64.dmg",
+      "artifactSHA256": "ac751081de41f86ff3493e826f64fc1acc7b60180c9c7ef90cace72aa23af267",
+      "apps": [
+        {
+          "bundleName": "Spectra.app",
+          "bundleIdentifier": "app.spectra.dev"
+        }
+      ]
+    },
+    "elgato-control-center": {
+      "caskVersion": "1.9,20829",
+      "sourceURL": "https://edge.elgato.com/egc/macos/eccm/1.9/ElgatoControlCenter-1.9.20829.app.zip",
+      "artifactSHA256": "0bb521ee9413ca48aa0fa85db07fd98f1301490bab9001d003a06960681fc0a1",
+      "apps": [
+        {
+          "bundleName": "Elgato Control Center.app",
+          "bundleIdentifier": "com.corsair.ControlCenter"
+        }
+      ]
+    },
+    "yattee": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://github.com/yattee/yattee/releases/download/v1.5.1/Yattee-1.5.1-macOS.zip",
+      "artifactSHA256": "46def4264ad5f8d5dfdf38ff0f503e38e1a62e2c510059960b0c292ec3dc1e62",
+      "apps": [
+        {
+          "bundleName": "Yattee.app",
+          "bundleIdentifier": "stream.yattee.app"
+        }
+      ]
+    },
+    "crosspaste": {
+      "caskVersion": "2.2.0.2544",
+      "sourceURL": "https://github.com/CrossPaste/crosspaste-desktop/releases/download/2.2.0.2544/crosspaste-2.2.0-2544-mac-aarch64.zip",
+      "artifactSHA256": "c4a6e3b4fae2b91ffa06e9d1f8b113e5240fe1b8b2e1f2e1a545e1c2155526a5",
+      "apps": [
+        {
+          "bundleName": "CrossPaste.app",
+          "bundleIdentifier": "com.crosspaste.mac"
+        }
+      ]
+    },
+    "macx-youtube-downloader": {
+      "caskVersion": "5.5.1",
+      "sourceURL": "https://www.macxdvd.com/download/macx-youtube-downloader-free.dmg",
+      "artifactSHA256": "e8b8eddb379d4fe99796fa15efab769459433fe34a1101083dce3d16fb6c600f",
+      "apps": [
+        {
+          "bundleName": "MacX YouTube Downloader.app",
+          "bundleIdentifier": "com.digiarty.youtubedownloader5"
+        }
+      ]
+    },
+    "boop": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/IvanMathy/Boop/releases/download/1.4.0/Boop.zip",
+      "artifactSHA256": "8c4492baf6d5b1d26d157877f53d063259e615d784e8ab4d046d3ee67fb9b345",
+      "apps": [
+        {
+          "bundleName": "Boop.app",
+          "bundleIdentifier": "com.okatbest.boop"
+        }
+      ]
+    },
+    "springtoolsforeclipse": {
+      "caskVersion": "5.4.0,4.41.0",
+      "sourceURL": "https://cdn.spring.io/spring-tools/release/dist/5.4.0.RELEASE/e4.41/spring-tools-for-eclipse-5.4.0.RELEASE-e4.41.0-macosx.cocoa.aarch64.dmg",
+      "artifactSHA256": "4be8795b7ef568d05b817691290b6433730ba88be0faf7d426bc1e51a7ef5c00",
+      "apps": [
+        {
+          "bundleName": "SpringToolsForEclipse.app",
+          "bundleIdentifier": "org.springframework.boot.ide.branding.springtools"
+        }
+      ]
+    },
+    "shapr3d": {
+      "caskVersion": "26.170.0.11783",
+      "sourceURL": "https://download.shapr3d.com/mac/Shapr3D-26.170.0.11783.dmg",
+      "artifactSHA256": "55e98309f5219d7229a82b35678def7b64845fc09ffac278915ef14d5c7a43ea",
+      "apps": [
+        {
+          "bundleName": "Shapr3D.app",
+          "bundleIdentifier": "com.shapr3d.shapr"
+        }
+      ]
+    },
+    "fluor": {
+      "caskVersion": "2.5.1",
+      "sourceURL": "https://github.com/Pyroh/Fluor/releases/download/2.5.1/Fluor.2.5.1.dmg",
+      "artifactSHA256": "adcb2651ab81bc10e4682ef264724b27137444f10f1bbb867e7d0bd7b6063d46",
+      "apps": [
+        {
+          "bundleName": "Fluor.app",
+          "bundleIdentifier": "com.pyrolyse.Fluor"
+        }
+      ]
+    },
+    "music-presence": {
+      "caskVersion": "2.3.6",
+      "sourceURL": "https://github.com/ungive/discord-music-presence/releases/download/v2.3.6/musicpresence-2.3.6-mac-arm64.dmg",
+      "artifactSHA256": "22f532cd1f5a98c87258746e853baa50500b084dd04d18c79ac0122b27678fc4",
+      "apps": [
+        {
+          "bundleName": "Music Presence.app",
+          "bundleIdentifier": "app.musicpresence.desktop"
+        }
+      ]
+    },
+    "tunnelbear": {
+      "caskVersion": "5.10.0",
+      "sourceURL": "https://tunnelbear.s3.amazonaws.com/downloads/mac/TunnelBear-5.10.0.zip",
+      "artifactSHA256": "f1a4ff16be2945bd766d3c796a6da8fb55319a086437a53fc5bb3e0d3dd66044",
+      "apps": [
+        {
+          "bundleName": "TunnelBear.app",
+          "bundleIdentifier": "com.tunnelbear.mac.TunnelBear"
+        }
+      ]
+    },
+    "drawpen": {
+      "caskVersion": "0.0.57",
+      "sourceURL": "https://github.com/DmytroVasin/DrawPen/releases/download/v0.0.57/DrawPen-0.0.57-arm64.dmg",
+      "artifactSHA256": "91798abc1fdc38453d65c8bafaecde781ceb5708248a4dc8c0a6ca5337ed7ace",
+      "apps": [
+        {
+          "bundleName": "DrawPen.app",
+          "bundleIdentifier": "dmytro.vasin.drawpen"
+        }
+      ]
+    },
+    "ksnip": {
+      "caskVersion": "1.10.1",
+      "sourceURL": "https://github.com/ksnip/ksnip/releases/download/v1.10.1/ksnip-1.10.1.dmg",
+      "artifactSHA256": "a029364951e0377f3e625a7af70313d1266145a62185e8e127286b5564b11e08",
+      "apps": [
+        {
+          "bundleName": "ksnip.app",
+          "bundleIdentifier": "org.ksnip.ksnip"
+        }
+      ]
+    },
+    "au-lab": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://www.apple.com/apple-music/apple-digital-masters/docs/au_lab.zip",
+      "artifactSHA256": "b23969830c2d685e2576bf042370a9cdba1a8beede623f0bbeb06359fedc8459",
+      "apps": [
+        {
+          "bundleName": "AU Lab.app",
+          "bundleIdentifier": "com.apple.audio.aulab"
+        }
+      ]
+    },
+    "a-better-finder-rename": {
+      "caskVersion": "12.34",
+      "sourceURL": "https://www.publicspace.net/download/ABFRX12.dmg",
+      "artifactSHA256": "8218bd9e276cbc5c96a86c4b98cdc14c95f93792d4c2755bf55819a26f7a78ca",
+      "apps": [
+        {
+          "bundleName": "A Better Finder Rename 12.app",
+          "bundleIdentifier": "net.publicspace.abfr12"
+        }
+      ]
+    },
+    "diskboard": {
+      "caskVersion": "1.0.8",
+      "sourceURL": "https://www.diskboard.com/downloads/1.0.8/DiskBoard.app.zip",
+      "artifactSHA256": "21fedd4226b6c0be9b69c115c8ceb5c37a4f737eabdb56c5bd796c94e73751e1",
+      "apps": [
+        {
+          "bundleName": "DiskBoard.app",
+          "bundleIdentifier": "com.futonica.diskboard"
+        }
+      ]
+    },
+    "wox": {
+      "caskVersion": "2.4.4",
+      "sourceURL": "https://github.com/Wox-launcher/Wox/releases/download/v2.4.4/wox-mac-arm64.dmg",
+      "artifactSHA256": "dfa2a016fb2bdaa4a65f2ed3647924705cca10f5972e08847e7d8683a0916a2d",
+      "apps": [
+        {
+          "bundleName": "Wox.app",
+          "bundleIdentifier": "com.github.wox"
+        }
+      ]
+    },
+    "lastpass": {
+      "caskVersion": "4.116.0",
+      "sourceURL": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
+      "artifactSHA256": "e57596149e25c5edc4f4997e12b553f1e02b790824cc9cf6ef3f270b5488ef8e",
+      "apps": [
+        {
+          "bundleName": "LastPass.app",
+          "bundleIdentifier": "com.lastpass.lastpassmacdesktop"
+        }
+      ]
+    },
+    "ea": {
+      "caskVersion": "13.791.0.6304",
+      "sourceURL": "https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EA%20app.dmg",
+      "artifactSHA256": "1b1b8543914351d54f288a7d80a1d18d10db0db213245bef1cf14baff47106e4",
+      "apps": [
+        {
+          "bundleName": "EA app.app",
+          "bundleIdentifier": "com.ea.mac.eaapp"
+        }
+      ]
+    },
+    "opera-gx": {
+      "caskVersion": "135.0.5973.153",
+      "sourceURL": "https://get.geo.opera.com/pub/opera_gx/135.0.5973.153/mac/Opera_GX_135.0.5973.153_Setup.dmg",
+      "artifactSHA256": "47f39a1c68e772105420a2e6e8a8ce4b42cf6c2a8b519ac85adf851377c2cb31",
+      "apps": [
+        {
+          "bundleName": "Opera GX.app",
+          "bundleIdentifier": "com.operasoftware.OperaGX"
+        }
+      ]
+    },
+    "clibor": {
+      "caskVersion": "1.7",
+      "sourceURL": "https://chigusa-web.com/clibor-for-mac-en/dl/clibor-for-mac/",
+      "artifactSHA256": "b4054afc574aeb65aa3a517e14e42173ec1f4fc8ea8b3a929efb4204e54bed45",
+      "apps": [
+        {
+          "bundleName": "Clibor.app",
+          "bundleIdentifier": "com.chigusa-web.Clibor"
+        }
+      ]
     }
   }
 }
