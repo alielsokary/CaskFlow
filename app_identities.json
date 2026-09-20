@@ -29402,6 +29402,281 @@
           "bundleIdentifier": "com.sessionwatcher.app"
         }
       ]
+    },
+    "shortwave": {
+      "caskVersion": "2026.2.1",
+      "sourceURL": "https://storage.googleapis.com/shortwave-downloads/desktop_app/darwin/universal/Shortwave-darwin-universal-2026.2.1.zip",
+      "artifactSHA256": "69dddc3f5e51e1f571b45a22f5d382d21bfd10d4e787d29c03940066dc226620",
+      "apps": [
+        {
+          "bundleName": "Shortwave.app",
+          "bundleIdentifier": "com.electron.shortwave"
+        }
+      ]
+    },
+    "signet": {
+      "caskVersion": "1.3,2020.09",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2020/09/signet13.zip",
+      "artifactSHA256": "ea48e77577e46848d5a3861782ddaaf05a725e6a4f14802ee29bc20bd88aeb50",
+      "apps": [
+        {
+          "bundleName": "Signet.app",
+          "bundleIdentifier": "co.eclecticlight.Signet"
+        }
+      ]
+    },
+    "shearwater-cloud": {
+      "caskVersion": "2.12.10",
+      "sourceURL": "https://downloads.shearwater.com/livedownloads/ShearwaterCloudInstaller_2.12.10.dmg",
+      "artifactSHA256": "f5c19f5f61db66a03cb9f71eaedae3a4a5f58c61a306c3403b61d05e868cb79e",
+      "apps": [
+        {
+          "bundleName": "Shearwater Cloud.app",
+          "bundleIdentifier": "research.shearwater.cloud"
+        }
+      ]
+    },
+    "sherlock-app": {
+      "caskVersion": "2.12.0",
+      "sourceURL": "https://sherlock-macos-releases.s3.amazonaws.com/Sherlock+2.12.0.dmg",
+      "artifactSHA256": "97ca67d876eb3524c1bfdb74248a686097957f598c233d1458d19588a732348d",
+      "apps": [
+        {
+          "bundleName": "Sherlock.app",
+          "bundleIdentifier": "io.inspiredcode.Sherlock"
+        }
+      ]
+    },
+    "shop-different": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://files.departmentmap.store/file/AppleStoreTimeMachine/Shop+Different+1.0.1.dmg",
+      "artifactSHA256": "513f2d0a9492ca7efd36dfc921229be4771bf86f3734faf5a13218e6a6d8173c",
+      "apps": [
+        {
+          "bundleName": "Shop Different.app",
+          "bundleIdentifier": "com.MichaelSteeber.ShopDifferent"
+        }
+      ]
+    },
+    "showmeyourhotkeys": {
+      "caskVersion": "1.9,22",
+      "sourceURL": "https://showmeyourhotkeys.moxadventu.com/update/ShowMeYourHotKeys-prod-stable-1.9-(22).zip",
+      "artifactSHA256": "a046039265122a043938a90bfe26c46792f2db95bd3a2e53d9213d367fe5d7d9",
+      "apps": [
+        {
+          "bundleName": "ShowMeYourHotKeys.app",
+          "bundleIdentifier": "com.moxadventu.ShowMeYourHotKeys"
+        }
+      ]
+    },
+    "shield": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://github.com/theevilbit/Shield/releases/download/1.2/Shield.app_1.2.zip",
+      "artifactSHA256": "fa0162763caaf7e9bd2bbeae5a43ccd8193fdf9885f183590d1612479b267487",
+      "apps": [
+        {
+          "bundleName": "Shield.app",
+          "bundleIdentifier": "com.csaba.fitzl.shield"
+        }
+      ]
+    },
+    "sigmaos": {
+      "caskVersion": "1.19.0.4",
+      "sourceURL": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
+      "artifactSHA256": "70d308c4ed1a9830fff186c0c6edced1d5bab1369a1fca2bd4b7b93f58879d18",
+      "apps": [
+        {
+          "bundleName": "SigmaOS.app",
+          "bundleIdentifier": "com.sigmaos.sigmaos.macos"
+        }
+      ]
+    },
+    "shureplus-motiv": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://content-files.shure.com/Software/shure_plus_motiv_desktop/1-5-4/MOTIV-Desktop-macOS-1.5.4.dmg",
+      "artifactSHA256": "df52cd040a1485046f65228768e3cc3b2c25a0a40520f34c37c8a1c2a5028843",
+      "apps": [
+        {
+          "bundleName": "ShurePlus MOTIV.app",
+          "bundleIdentifier": "com.shure.motiv.desktop"
+        }
+      ]
+    },
+    "silhouette-studio": {
+      "caskVersion": "5.0.539.001_M6R",
+      "sourceURL": "https://d62nvtdcnsm38.cloudfront.net/files/softwares/ss/SS_V5.0.539.001_M6R.dmg",
+      "artifactSHA256": "ee60bd3721440873e3c42b1c9873c5a17519122ade0a0a1300fcc3c45064a70d",
+      "apps": [
+        {
+          "bundleName": "Silhouette Studio.app",
+          "bundleIdentifier": "com.silhouettesoftware.Silhouette-Studio"
+        }
+      ]
+    },
+    "sharemouse": {
+      "caskVersion": "7.0.28",
+      "sourceURL": "https://www.sharemouse.com/ShareMouseSetup.dmg",
+      "artifactSHA256": "94a763beda0820d441fb3e7c3209ae3bbf37e3925d10fa0743113950ad71ddfa",
+      "apps": [
+        {
+          "bundleName": "ShareMouse.app",
+          "bundleIdentifier": "com.bartelsmedia.ShareMouse"
+        }
+      ]
+    },
+    "sidenotes": {
+      "caskVersion": "1.6.5",
+      "sourceURL": "https://www.apptorium.com/public/products/sidenotes/releases/SideNotes-1.6.5.zip",
+      "artifactSHA256": "16326ccfa63c95fdb67e34f1b1938440d336a0cb27c8b1645ad52ae2208093fd",
+      "apps": [
+        {
+          "bundleName": "SideNotes.app",
+          "bundleIdentifier": "com.apptorium.SideNotes-paddle"
+        }
+      ]
+    },
+    "silo": {
+      "caskVersion": "2026.2.0",
+      "sourceURL": "https://nevercenter.com/silo/download/filearchive/Install_Silo_2026_2_0_mac.dmg",
+      "artifactSHA256": "007d0b62134745336ffa3781549c12957290873282f330d4e6c2bc23ce493548",
+      "apps": [
+        {
+          "bundleName": "Silo.app",
+          "bundleIdentifier": "com.nevercenter.silo"
+        }
+      ]
+    },
+    "shell360": {
+      "caskVersion": "0.2.7",
+      "sourceURL": "https://github.com/nashaofu/shell360/releases/download/v0.2.7/Shell360_0.2.7_aarch64.dmg",
+      "artifactSHA256": "f86d16b35d8e41ca34365d65fa93989bee86ce98e37c2c136d7529f482ec91d0",
+      "apps": [
+        {
+          "bundleName": "Shell360.app",
+          "bundleIdentifier": "com.nashaofu.shell360"
+        }
+      ]
+    },
+    "showyedge": {
+      "caskVersion": "6.4.0",
+      "sourceURL": "https://github.com/pqrs-org/ShowyEdge/releases/download/v6.4.0/ShowyEdge-6.4.0.dmg",
+      "artifactSHA256": "c0bc769204c53c8729a35c74161fb08f089cb517bf00832fc386ba29c5cc6feb",
+      "apps": [
+        {
+          "bundleName": "ShowyEdge.app",
+          "bundleIdentifier": "org.pqrs.ShowyEdge"
+        }
+      ]
+    },
+    "shortcutor": {
+      "caskVersion": "2021.1.4",
+      "sourceURL": "https://cdn.shortcutor.com/download/darwin/Shortcutor-2021.1.4.dmg",
+      "artifactSHA256": "9acacb652a31e4dfd1343184976f64fedfe1a0f01b56a3190a9ae42bff30bc08",
+      "apps": [
+        {
+          "bundleName": "Shortcutor.app",
+          "bundleIdentifier": "com.shortcutor.shortcutor"
+        }
+      ]
+    },
+    "shimonote": {
+      "caskVersion": "3.1.1,6d78b4a",
+      "sourceURL": "https://as.smvm.cn/panther/shimo/release/darwin/arm64/%e7%9f%b3%e5%a2%a8%e6%96%87%e6%a1%a3_v3.1.1-release.6d78b4a.shimo_darwin-arm64.zip",
+      "artifactSHA256": "ec741ed9d38b2df97925c4ea001c4d71a00dc5a5fd58b60cc1fd256fc36fa6d8",
+      "apps": [
+        {
+          "bundleName": "石墨文档.app",
+          "bundleIdentifier": "com.shimo.desktop.main"
+        }
+      ]
+    },
+    "shichizip-zs": {
+      "caskVersion": "0.3.2",
+      "sourceURL": "https://github.com/idawnlight/ShichiZip/releases/download/v0.3.2/ShichiZipZS-v0.3.2-arm64.zip",
+      "artifactSHA256": "251ef25fb53b38393509de15b010eeaf2f29e425849bd4fa45b026ce6e849b04",
+      "apps": [
+        {
+          "bundleName": "ShichiZip ZS.app",
+          "bundleIdentifier": "ee.dawn.ShichiZipZS"
+        }
+      ]
+    },
+    "sharepod": {
+      "caskVersion": "4.3.2",
+      "sourceURL": "https://assets.macroplant.com/download/32/Sharepod-4.3.2.dmg",
+      "artifactSHA256": "1e6799be8764fb6f57ff87fef79de86d0391d63d349f68999f02729a72529211",
+      "apps": [
+        {
+          "bundleName": "Sharepod.app",
+          "bundleIdentifier": "com.macroplant.Sharepod"
+        }
+      ]
+    },
+    "silentknight": {
+      "caskVersion": "3.02,2026.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2026/07/sk302.zip",
+      "artifactSHA256": "41be69cccdcedb325edbe825b86bdea24b1bcfbbcde8bea9e57e7a82326ea157",
+      "apps": [
+        {
+          "bundleName": "SilentKnight3.app",
+          "bundleIdentifier": "co.eclecticlight.SilentKnight3"
+        }
+      ]
+    },
+    "shattered-pixel-dungeon": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v4.0.0/ShatteredPD-v4.0.0-macOS.zip",
+      "artifactSHA256": "9578898d01de54246846cd3b77ffc931bcbe7a6ca76294fd5710acbc65cc55d7",
+      "apps": [
+        {
+          "bundleName": "Shattered Pixel Dungeon.app",
+          "bundleIdentifier": "com.shatteredpixel.shatteredpixeldungeon.apple"
+        }
+      ]
+    },
+    "shifty": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://github.com/thompsonate/Shifty/releases/download/v1.2/Shifty-1.2.zip",
+      "artifactSHA256": "111b1df97cf5cbca91f4130e6d68d409dbefeffa9fde5f5c92f30f712a7215e9",
+      "apps": [
+        {
+          "bundleName": "Shifty.app",
+          "bundleIdentifier": "io.natethompson.Shifty"
+        }
+      ]
+    },
+    "shimo": {
+      "caskVersion": "6.0.8b4,9127",
+      "sourceURL": "https://s3.eu-central-1.amazonaws.com/shimo.jaeger.apps/Shimo_6.0.8b4_9127.zip",
+      "artifactSHA256": "b6e4a02d80f18ed04f22a3ae104625d65b714a30800f12fa6b34ee47de273431",
+      "apps": [
+        {
+          "bundleName": "Shimo.app",
+          "bundleIdentifier": "com.feingeist.Shimo"
+        }
+      ]
+    },
+    "shift": {
+      "caskVersion": "9.6.8.1270",
+      "sourceURL": "https://updates.tryshift.com/v9.6.8/stable/shift-v9.6.8.1270-stable-arm64.dmg",
+      "artifactSHA256": "1b567995c2dd75168dee38118a79ff807f7a9622c68efd34e923b9bc9862a981",
+      "apps": [
+        {
+          "bundleName": "Shift.app",
+          "bundleIdentifier": "com.rdbrck.shift"
+        }
+      ]
+    },
+    "silicon-app": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://github.com/DigiDNA/Silicon/releases/download/1.0.5/Silicon.app.zip",
+      "artifactSHA256": "f8f6acfdc8378bca0429d52e34d48275c22213617dbe09055798132921c10586",
+      "apps": [
+        {
+          "bundleName": "Silicon.app",
+          "bundleIdentifier": "com.DigiDNA.Silicon"
+        }
+      ]
     }
   }
 }
