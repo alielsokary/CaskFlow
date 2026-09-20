@@ -20786,6 +20786,271 @@
       "sourceURL": "https://gridsapp.net/bin/Grids_8.5.8.zip",
       "artifactSHA256": "61522452b57cfe5cfd023b4c01cdd5d3a8a491535fc9a15ea2940fe974c468c9",
       "apps": []
+    },
+    "hdfview": {
+      "caskVersion": "3.4.1",
+      "sourceURL": "https://github.com/HDFGroup/hdfview/releases/download/v3.4.1/HDFView-3.4.1App-Darwin-arm64.tar.gz",
+      "artifactSHA256": "a1669bb6cbd32f65cfd3f0c1839a094cd29bcec1ad3697cfb95d704dfaefd603",
+      "apps": [
+        {
+          "bundleName": "HDFView.app",
+          "bundleIdentifier": "hdf.view"
+        }
+      ]
+    },
+    "hive-app": {
+      "caskVersion": "1.2.43",
+      "sourceURL": "https://github.com/morapelker/hive/releases/download/v1.2.43/Hive-1.2.43-arm64.dmg",
+      "artifactSHA256": "a73609a03807251f8c838bcf83ad8084830e685fef434285f62e69df342dca53",
+      "apps": [
+        {
+          "bundleName": "Hive.app",
+          "bundleIdentifier": "com.hive.app"
+        }
+      ]
+    },
+    "headset": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-mac-arm64.zip",
+      "artifactSHA256": "073fb9b79225d516edf380fc2128083fcb8773e39d50e99cc4b9f9ea8ff33a68",
+      "apps": []
+    },
+    "hoppscotch-selfhost": {
+      "caskVersion": "26.8.1-0",
+      "sourceURL": "https://github.com/hoppscotch/releases/releases/download/v26.8.1-0/Hoppscotch_SelfHost_mac_aarch64.dmg",
+      "artifactSHA256": "e91c3c57b15a019066a70213d7298cd81024a770289137effb3949a32340b5f8",
+      "apps": [
+        {
+          "bundleName": "Hoppscotch.app",
+          "bundleIdentifier": "io.hoppscotch.desktop"
+        }
+      ]
+    },
+    "heptabase": {
+      "caskVersion": "1.111.0",
+      "sourceURL": "https://github.com/heptameta/project-meta/releases/download/v1.111.0/Heptabase-1.111.0-arm64-mac.zip",
+      "artifactSHA256": "33aa43cb4b296ccbeb948f385bb839a8359ce11e16543be823d09bdfb5237d84",
+      "apps": [
+        {
+          "bundleName": "Heptabase.app",
+          "bundleIdentifier": "app.projectmeta.projectmeta"
+        }
+      ]
+    },
+    "helo": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://helo.fra1.digitaloceanspaces.com/helo/HELO-1.7.0-arm64.dmg",
+      "artifactSHA256": "f06465971d21e38c5a96c5d4f1689440a2673bf00bc38e963fd182af2bc0fe83",
+      "apps": [
+        {
+          "bundleName": "HELO.app",
+          "bundleIdentifier": "de.beyondco.helo"
+        }
+      ]
+    },
+    "honto": {
+      "caskVersion": "6.73.0",
+      "sourceURL": "https://dl.honto.jp/macapp/honto.dmg",
+      "artifactSHA256": "eb66045d1117173afc85f4cc43ba900175f97c36b8a4449bc1714c8d8ff01f6e",
+      "apps": [
+        {
+          "bundleName": "honto.app",
+          "bundleIdentifier": "jp.co.dnp.hontoformac"
+        }
+      ]
+    },
+    "helpwire-operator": {
+      "caskVersion": "2.2",
+      "sourceURL": "https://get.helpwire.app/downloads/operator/mac/helpwire.dmg",
+      "artifactSHA256": "c6f3029df6c8bb735d5290ade5e2fcccc8334836d4484023fa73752f7c21fc62",
+      "apps": [
+        {
+          "bundleName": "HelpWire Operator.app",
+          "bundleIdentifier": "us.electronic.hw2.operator"
+        }
+      ]
+    },
+    "hightop": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://hightop.app/downloads/HighTop1.4.dmg",
+      "artifactSHA256": "6e7981e7734c2107e528f9885f67711fcdbca98f9f30ccd5bfff53127e347fbf",
+      "apps": [
+        {
+          "bundleName": "HighTop.app",
+          "bundleIdentifier": "com.knollsoft.HighTop"
+        }
+      ]
+    },
+    "hey-desktop": {
+      "caskVersion": "1.3.7",
+      "sourceURL": "https://hey.com/desktop/HEY-1.3.7-arm64-mac.zip",
+      "artifactSHA256": "39e1342c4f6aee1b4bb5202ffe723828e15a36f77869f89d9a05633c7b90780f",
+      "apps": [
+        {
+          "bundleName": "HEY.app",
+          "bundleIdentifier": "com.hey.app.desktop"
+        }
+      ]
+    },
+    "historyhound": {
+      "caskVersion": "2.3.7",
+      "sourceURL": "https://www.stclairsoft.com/download/HistoryHound-2.3.7.dmg",
+      "artifactSHA256": "d2f7b578529fa3bf3d7b10578a6fc4ed5e3274752c510e0894fee6eb8c0acef2",
+      "apps": [
+        {
+          "bundleName": "HistoryHound.app",
+          "bundleIdentifier": "com.stclairsoft.HistoryHound"
+        }
+      ]
+    },
+    "heynote": {
+      "caskVersion": "2.9.1",
+      "sourceURL": "https://github.com/heyman/heynote/releases/download/v2.9.1/Heynote_2.9.1_arm64.dmg",
+      "artifactSHA256": "6db5ca77fb01004b6d041fc2a22660c1b25de8b16f6323598aaf163f7efe90d8",
+      "apps": [
+        {
+          "bundleName": "Heynote.app",
+          "bundleIdentifier": "com.heynote.app"
+        }
+      ]
+    },
+    "hides": {
+      "caskVersion": "7.4",
+      "sourceURL": "https://sweetpproductions.com/products/hides/Hides.dmg",
+      "artifactSHA256": "99324b93a5e88334d77a55fae78d2e4902e7c7f8a480537a9c906ba42d52c1c8",
+      "apps": [
+        {
+          "bundleName": "Hides.app",
+          "bundleIdentifier": "com.sweetpproductions.Hides"
+        }
+      ]
+    },
+    "highlight-ai": {
+      "caskVersion": "1.3.284",
+      "sourceURL": "https://cdn.highlightai.com/releases/darwin/arm64/Highlight-1.3.284-arm64.dmg",
+      "artifactSHA256": "6ae6babcbec2860991e1aa18fd028f5cdf9b604a5b45bcd412097919d21b3908",
+      "apps": [
+        {
+          "bundleName": "Highlight.app",
+          "bundleIdentifier": "tv.medal.highlight"
+        }
+      ]
+    },
+    "hovrly": {
+      "caskVersion": "2.4.5",
+      "sourceURL": "https://github.com/tarutin/hovrly/releases/download/v2.4.5/Hovrly-2.4.5-universal.dmg",
+      "artifactSHA256": "2cd4d3fc696a7a59446fea3c0a1d9f77b23cfed8bcd53c6992ffb5dc78711b88",
+      "apps": [
+        {
+          "bundleName": "Hovrly.app",
+          "bundleIdentifier": "com.treasy.hovrly"
+        }
+      ]
+    },
+    "houdahspot": {
+      "caskVersion": "6.8.4,a0b1d3c4-dff8-4f7d-b39e-4caed1924756",
+      "sourceURL": "https://dl.houdah.com/houdahSpot/updates/cast_assets/a0b1d3c4-dff8-4f7d-b39e-4caed1924756/HoudahSpot_6.8.4.dmg",
+      "artifactSHA256": "2dfda1d96451680781fa5dff8c8869efe0bab076f6b3c573404d0bca03dcb047",
+      "apps": [
+        {
+          "bundleName": "HoudahSpot.app",
+          "bundleIdentifier": "com.houdah.HoudahSpot4"
+        }
+      ]
+    },
+    "hidock": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://hidock.app/HiDock_1.4.zip",
+      "artifactSHA256": "29e95a7eb061236658ccccbc86c1ba0ee872bf5e627c0fff0a37ca29b056f60e",
+      "apps": [
+        {
+          "bundleName": "HiDock.app",
+          "bundleIdentifier": "design.rafa.HiDock"
+        }
+      ]
+    },
+    "holavpn": {
+      "caskVersion": "4.1,1.259.51",
+      "sourceURL": "https://cdn4.hola.org/static/HolaVPN2E-4.1-1.259.51.dmg",
+      "artifactSHA256": "41593458221970354722561189e052581d2221b20e70c5a49f72d8f16e736161",
+      "apps": [
+        {
+          "bundleName": "HolaVPN2E.app",
+          "bundleIdentifier": "org.hola.hola2e"
+        }
+      ]
+    },
+    "hotovo-aider-desk": {
+      "caskVersion": "0.83.0",
+      "sourceURL": "https://github.com/hotovo/aider-desk/releases/download/v0.83.0/aider-desk-0.83.0-macos-arm64.dmg",
+      "artifactSHA256": "c7c584090a5fafaec548c3097d81258a4c23010cb35f08d2fa8b47817f78e570",
+      "apps": [
+        {
+          "bundleName": "aider-desk.app",
+          "bundleIdentifier": "com.hotovo.aider-desk"
+        }
+      ]
+    },
+    "helio": {
+      "caskVersion": "3.18",
+      "sourceURL": "https://ci.helio.fm/helio-3.18.dmg",
+      "artifactSHA256": "b84ffd9b5015e8eca193e76799c49eb86ee8f4bb8c0ea3ff63f50b9a6e96bb61",
+      "apps": [
+        {
+          "bundleName": "Helio.app",
+          "bundleIdentifier": "fm.helio"
+        }
+      ]
+    },
+    "heaven": {
+      "caskVersion": "4.0",
+      "sourceURL": "https://assets.unigine.com/d/Unigine_Heaven-4.0.dmg",
+      "artifactSHA256": "421cd620f86eb00f1d89a63e267115318c344ab51c71a8b0dd037219e4107386",
+      "apps": [
+        {
+          "bundleName": "Heaven.app",
+          "bundleIdentifier": "com.Unigine.Heaven"
+        }
+      ]
+    },
+    "hedy": {
+      "caskVersion": "3.11.1",
+      "sourceURL": "https://dl.hedy.ai/Hedy-MacOS-3.11.1.dmg",
+      "artifactSHA256": "d164d94dc3325ea703de74eb536cc8a70cf64275427517198c34784a034b881c",
+      "apps": [
+        {
+          "bundleName": "Hedy.app",
+          "bundleIdentifier": "bot.hedy.mobile"
+        }
+      ]
+    },
+    "hookmark": {
+      "caskVersion": "7.3",
+      "sourceURL": "https://updates.hookproductivity.com/downloads/Hookmark-app-7.3.dmg",
+      "artifactSHA256": "434251ce24a1e3a9ea54ea50e883c2be5c5c47abc325aae62aecdef5536f4c06",
+      "apps": [
+        {
+          "bundleName": "Hookmark.app",
+          "bundleIdentifier": "com.cogsciapps.hook"
+        }
+      ]
+    },
+    "happymac": {
+      "caskVersion": "0.1.0",
+      "sourceURL": "https://chrislaffra.com/happymac/happymac.dmg",
+      "artifactSHA256": "a3f5f4fda00e8bffcd81450f2978dd720b36bfccf7b6f1c204ace2bed41d6ed8",
+      "apps": []
+    },
+    "harvest": {
+      "caskVersion": "3.0.13",
+      "sourceURL": "https://downloads.harvestfiles.com/harvest-desktop/darwin/universal/Harvest-darwin-universal-3.0.13.zip",
+      "artifactSHA256": "8ce01b9a10b8a2932400bcba3c8ed00fda69a92da4930a5e870661f15444bbb1",
+      "apps": [
+        {
+          "bundleName": "Harvest.app",
+          "bundleIdentifier": "com.getharvest.harvestxapp"
+        }
+      ]
     }
   }
 }
