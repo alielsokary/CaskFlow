@@ -7,7 +7,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from observe_package_install import PILOT_TOKENS, RUNNERS, save_evidence, valid_application
+from observe_package_install import PILOT_TOKENS, RUNNERS, observation_diagnostics, save_evidence, valid_application
 from style_standards import write_text
 
 OBSERVED = {"observed_applications", "no_application_observed"}
@@ -81,11 +81,14 @@ def observation_row(directory: Path, job: dict, revisions: dict, baseline: dict)
         row.update(observedIdentities=pairs_json(actual), passiveNotObserved=pairs_json(expected - actual),
                    newObservedIdentities=pairs_json(valid - expected),
                    baselineRecordVersion=baseline.get("caskVersion"),
-                   observedCaskVersion=data.get("cask", {}).get("version"), ownershipVerified=False)
+                   observedCaskVersion=data.get("cask", {}).get("version"), ownershipVerified=False,
+                   diagnostics=observation_diagnostics(data), settling=data.get("settling"),
+                   installationHistory=data.get("installationHistory"))
     except FileNotFoundError:
         pass
     except (OSError, ValueError, KeyError, TypeError, AttributeError) as error:
         row.update(status="invalid_evidence", error=str(error))
+        valid = set()
     return row, valid
 
 
@@ -95,11 +98,12 @@ def shared_identities(observed_claims: dict, passive: dict) -> list[dict]:
         for pair in identities(record.get("apps", []) + record.get("packageCandidates", [])):
             known[pair].add(token)
     collisions = []
-    for pair, tokens in sorted(observed_claims.items()):
+    for pair, observations in sorted(observed_claims.items()):
+        tokens = {item["token"] for item in observations}
         others = known[pair] | tokens
         if len(others) > 1:
             collisions.append({**pairs_json({pair})[0], "observedTokens": sorted(tokens),
-                               "candidateTokens": sorted(others)})
+                               "candidateTokens": sorted(others), "observations": observations})
     return collisions
 
 
@@ -108,21 +112,30 @@ def build_report(directory: Path) -> dict:
     selected = read_json(plan / "matrix.json")["include"]
     revisions = read_json(plan / "revisions.json")
     passive = read_json(plan / "passive-identities.json")["casks"]
-    rows, observed_claims = [], defaultdict(set)
+    rows, observed_claims = [], defaultdict(list)
     for job in selected:
         token = job["token"]
         if token not in PILOT_TOKENS or job["architecture"] not in RUNNERS:
             raise ValueError("Unexpected pilot job")
         row, valid = observation_row(directory, job, revisions, passive.get(token, {}))
         rows.append(row)
-        if row["status"] in OBSERVED:
-            for pair in valid:
-                observed_claims[pair].add(token)
+        for pair in valid:
+            observed_claims[pair].append({"token": token, "architecture": job["architecture"],
+                                         "status": row["status"],
+                                         "evidenceQuality": "stable" if row["status"] in OBSERVED else "partial"})
     return {"schemaVersion": 1, "revisions": revisions, "counts": dict(Counter(row["status"] for row in rows)),
             "selectedJobs": len(selected), "observations": rows, "sharedIdentities": shared_identities(observed_claims, passive),
             "ownershipVerified": False,
             "limitations": "Results describe tested installs, not ownership or complete platform coverage. "
                            "An absent passive identity can be optional, stale, or unsupported; it is not automatically a regression."}
+
+
+def markdown_row(row: dict) -> str:
+    # Diagnostic codes are derived from evidence flags, never raw installer messages.
+    reasons = ", ".join(row.get("diagnostics", [])) or "-"
+    settling = row.get("settling")
+    changed = str(settling.get("changedAfterInstall", "unknown")).lower() if isinstance(settling, dict) else "unknown"
+    return f"| {row['token']} | {row['architecture']} | {row['status']} | {reasons} | {changed} |"
 
 
 def main() -> None:
@@ -134,9 +147,11 @@ def main() -> None:
     args.output.mkdir(parents=True, exist_ok=True)
     save_evidence(args.output / "summary.json", report)
     lines = ["# Package installation observations", "", report["limitations"], "",
-             "| Cask | Architecture | Outcome |", "|---|---|---|"]
-    lines.extend(f"| {row['token']} | {row['architecture']} | {row['status']} |" for row in report["observations"])
+             "| Cask | Architecture | Outcome | Diagnostics | Changed after install |",
+             "|---|---|---|---|---|"]
+    lines.extend(markdown_row(row) for row in report["observations"])
     lines += ["", f"Shared identity groups: {len(report['sharedIdentities'])}.",
+              "Shared groups include partial observations; each source retains its status in summary.json.",
               "", "No ownership mappings or release assets were published."]
     write_text(args.output / "summary.md", "\n".join(lines) + "\n")
 

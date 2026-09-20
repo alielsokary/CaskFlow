@@ -257,11 +257,12 @@ def test_observation_entrypoint_collects_evidence_after_install_failure(tmp_path
     after["applications"]["/Applications/zoom.us.app"] = {
         "path": "/Applications/zoom.us.app", "bundleName": "zoom.us.app", "bundleIdentifier": "us.zoom.xos",
         "identifierAccepted": True, "executablePresent": True}
-    snapshots = iter([before, after, after])
+    snapshots = iter([before, after, after, after, after])
     monkeypatch.setattr(pilot, "Commands", FakeCommands)
     monkeypatch.setattr(pilot, "require_disposable_runner", lambda arch: None)
     monkeypatch.setattr(pilot, "prepare", lambda *a: {"cask": {"artifacts": []}})
     monkeypatch.setattr(pilot, "snapshot", lambda *a: next(snapshots))
+    monkeypatch.setattr(pilot, "capture_install_history", lambda *a: {"entryCount": 0})
     monkeypatch.setattr(pilot.time, "sleep", lambda seconds: None)
     output = tmp_path / "evidence"
     code = pilot.observe(argparse.Namespace(token="zoom", architecture="arm64", brew_revision="b" * 40,
@@ -272,3 +273,52 @@ def test_observation_entrypoint_collects_evidence_after_install_failure(tmp_path
     assert (output / "after.json").exists()
     assert ["brew", "install", "--cask", "--require-sha", "zoom"] in calls
     assert all("uninstall" not in args and "--force" not in args for args in calls)
+
+
+@pytest.mark.parametrize("keeps_changing", [False, True])
+def test_settling_preserves_updater_changes_and_stops_at_a_deadline(tmp_path, monkeypatch, keeps_changing):
+    clock = [0]
+    def read_snapshot(*unused):
+        value = empty_snapshot()
+        version = str(clock[0]) if keeps_changing else str(min(clock[0], 15))
+        value["applications"]["/Applications/OneDrive.app"] = {"bundleIdentifier": "com.microsoft.OneDrive", "version": version}
+        return value
+    monkeypatch.setattr(pilot, "snapshot", read_snapshot)
+    monkeypatch.setattr(pilot.time, "monotonic", lambda: clock[0])
+    monkeypatch.setattr(pilot.time, "sleep", lambda seconds: clock.__setitem__(0, clock[0] + seconds))
+    after, settling = pilot.settle_snapshots(tmp_path, [])
+    assert settling["stable"] is not keeps_changing
+    assert clock[0] == (120 if keeps_changing else 60)
+    assert settling["changedAfterInstall"] is True
+    change = settling["samples"][1]["changes"][0]
+    assert change["changedFields"] == ["version"]
+    assert change["before"]["version"] == "0" and change["after"]["version"] == "15"
+    assert json.loads((tmp_path / "after.json").read_text()) == after
+    assert all((tmp_path / sample["snapshot"]).exists() for sample in settling["samples"])
+
+
+def test_report_keeps_partial_office_overlap_and_explains_unstable_state(tmp_path):
+    report_plan(tmp_path)
+    save_observation(tmp_path, "microsoft-teams")
+    path, record = save_observation(tmp_path, "microsoft-office-businesspro", "incomplete_observation")
+    record["snapshotsStable"] = False
+    write_json(path, record)
+    report = build_report(tmp_path)
+    assert report["observations"][1]["diagnostics"] == ["post_install_state_not_settled"]
+    collision = report["sharedIdentities"][0]
+    assert collision["candidateTokens"] == ["microsoft-office-businesspro", "microsoft-teams"]
+    assert {item["evidenceQuality"] for item in collision["observations"]} == {"stable", "partial"}
+    assert report["ownershipVerified"] is False
+
+
+def test_install_history_keeps_original_groups_and_reports_missing_evidence(tmp_path):
+    source = tmp_path / "history.plist"
+    records = [{"displayName": "Suite", "packageIdentifiers": ["com.example.app", "com.example.helper"]}]
+    source.write_bytes(plistlib.dumps(records))
+    captured = pilot.capture_install_history(tmp_path, "before", source)
+    assert captured["entryCount"] == 1
+    assert (tmp_path / captured["file"]).read_bytes() == source.read_bytes()
+    source.write_bytes(b"not a plist")
+    assert "error" in pilot.capture_install_history(tmp_path, "after", source)
+    source.unlink()
+    assert "error" in pilot.capture_install_history(tmp_path, "after", source)

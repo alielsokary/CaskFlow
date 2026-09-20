@@ -69,13 +69,22 @@ For observed bundles it captures `codesign --display` output; this is signing
 information, not a claim that signature validity or product ownership was proved.
 For changed receipts it preserves native `pkgutil` metadata and file lists.
 
-Two post-install snapshots, 15 seconds apart, must agree. This bounded check detects
-some unfinished work but cannot prove that a delayed updater will never run.
+Post-install snapshots are sampled every 15 seconds for at most 120 seconds,
+requiring three consecutive unchanged intervals before accepting a settled result.
+Every sample is retained. `settling.json` records exact changed fields, the old
+and new records, sample times, and whether any mutation happened after installation.
+Later stability does not erase evidence that an updater replaced the original
+package's files. This bounded check cannot prove that a delayed updater will never run.
 `no_application_observed` means no new or changed application was found in the
 scanned roots during this observation; it is not a claim about every install path
 or configuration. A nonzero installer exit, timeout, unreadable evidence, missing
 Homebrew registration, or unstable snapshots cannot become a successful empty
 result. Changed pre-existing software is reported separately.
+
+Native `InstallHistory.plist` copies before and after installation preserve
+transaction-level receipt groups for investigation. Missing or unreadable history
+is recorded explicitly as supplementary evidence; history does not itself prove
+current application ownership. It is collected only inside the disposable runner.
 
 Raw JSON evidence preserves exact filenames and identifiers using ASCII JSON
 escapes; typography normalization is only appropriate for authored report prose.
@@ -86,7 +95,10 @@ and interrupted evidence instead of silently omitting it.
 ## Interpreting the result
 
 The report compares observed identities with the frozen passive manifest and
-lists identities shared with other casks. A new observed identity is not necessarily
+lists identities shared with other casks, including partial observations whose
+source status and evidence quality remain explicit. Diagnostic codes explain
+incomplete results, including artifacts from the original two-snapshot pilot.
+A new observed identity is not necessarily
 the primary product; it can be an updater or shared component. A passive identity
 not observed can be optional, version-dependent, or unsupported in that environment.
 Neither difference is automatically published as a correction.

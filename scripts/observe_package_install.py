@@ -23,6 +23,9 @@ PILOT_TOKENS = (
 )
 RUNNERS = {"arm64": "macos-15", "x86_64": "macos-15-intel"}
 SHA = re.compile(r"[0-9a-f]{40}\Z")
+SETTLE_INTERVAL = 15
+SETTLE_TIMEOUT = 120
+SETTLE_EQUAL_INTERVALS = 3
 
 
 def save_evidence(path: Path, value: dict) -> None:
@@ -141,6 +144,22 @@ def changes(before: dict, after: dict) -> dict:
 
 def valid_application(app: dict) -> bool:
     return "error" not in app and app.get("identifierAccepted") is True and app.get("executablePresent") is True
+
+
+def observation_diagnostics(data: dict) -> list[str]:
+    """Explain recorded failures, including artifacts produced by the first pilot."""
+    install = data.get("install", {})
+    apps = data.get("applicationChanges", {})
+    invalid_apps = any(not valid_application(app) for app in apps.get("added", []) + apps.get("changed", []))
+    checks = ((install.get("timedOut"), "installer_timed_out"),
+              (install.get("returncode", 0) != 0, "installer_failed"),
+              (data.get("homebrewRegistered") is False, "homebrew_registration_missing"),
+              (data.get("snapshotsStable") is False, "post_install_state_not_settled"),
+              (bool(data.get("errors")), "evidence_read_errors"),
+              (invalid_apps, "application_metadata_invalid"),
+              (data.get("status") == "preexisting_software_changed", "preexisting_software_changed"),
+              (bool(data.get("error")), "collection_failed"))
+    return [reason for failed, reason in checks if failed]
 
 
 def observation(before: dict, after: dict, install: dict, registered: bool, stable: bool) -> dict:
@@ -309,17 +328,70 @@ def collect_receipt_evidence(commands: Commands, receipts: list[dict]) -> list[s
     return errors
 
 
+def snapshot_differences(before: dict, after: dict) -> list[dict]:
+    differences = []
+    for kind in ("applications", "receipts"):
+        for key in sorted(before[kind].keys() | after[kind].keys()):
+            old, new = before[kind].get(key, {}), after[kind].get(key, {})
+            if old != new:
+                fields = [field for field in sorted(old.keys() | new.keys()) if old.get(field) != new.get(field)]
+                differences.append({"kind": kind, "key": key, "changedFields": fields, "before": old, "after": new})
+    return differences
+
+
+def settle_snapshots(output: Path, roots: list[Path]) -> tuple[dict, dict]:
+    """Require consecutive quiet intervals without erasing earlier mutations."""
+    started = time.monotonic()
+    previous = snapshot(roots, Path("/var/db/receipts"))
+    save_evidence(output / "after-immediate.json", previous)
+    samples = [{"snapshot": "after-immediate.json", "seconds": round(time.monotonic() - started, 2), "changes": []}]
+    equal_intervals = 0
+    while time.monotonic() - started + SETTLE_INTERVAL <= SETTLE_TIMEOUT:
+        time.sleep(SETTLE_INTERVAL)
+        current = snapshot(roots, Path("/var/db/receipts"))
+        name = f"after-{len(samples):03d}.json"
+        save_evidence(output / name, current)
+        samples.append({"snapshot": name, "seconds": round(time.monotonic() - started, 2),
+                        "changes": snapshot_differences(previous, current)})
+        equal_intervals = equal_intervals + 1 if current == previous else 0
+        previous = current
+        if equal_intervals >= SETTLE_EQUAL_INTERVALS:
+            break
+    save_evidence(output / "after.json", previous)
+    settling = {"intervalSeconds": SETTLE_INTERVAL, "timeoutSeconds": SETTLE_TIMEOUT,
+                "requiredEqualIntervals": SETTLE_EQUAL_INTERVALS, "equalIntervals": equal_intervals,
+                "stable": equal_intervals >= SETTLE_EQUAL_INTERVALS,
+                "changedAfterInstall": any(sample["changes"] for sample in samples), "samples": samples}
+    save_evidence(output / "settling.json", settling)
+    return previous, settling
+
+
+def capture_install_history(output: Path, phase: str,
+                            source: Path = Path("/Library/Receipts/InstallHistory.plist")) -> dict:
+    """Keep native transaction groups as supporting evidence, not current ownership."""
+    target = output / f"install-history-{phase}.plist"
+    try:
+        raw = source.read_bytes()
+        records = plistlib.loads(raw)
+        if not isinstance(records, list):
+            raise ValueError("Expected installation history array")
+        target.write_bytes(raw)
+        return {"file": target.name, "sha256": digest(target), "entryCount": len(records)}
+    except (OSError, ValueError, plistlib.InvalidFileException, ExpatError) as error:
+        return {"error": f"{type(error).__name__}: {error}"}
+
+
 def install_and_collect(commands: Commands, token: str, baseline: dict, roots: list[Path]) -> dict:
+    history_before = capture_install_history(commands.output, "before")
     install = commands.run("install", ["brew", "install", "--cask", "--require-sha", token], 1800, check=False)
-    first = snapshot(roots, Path("/var/db/receipts"))
-    save_evidence(commands.output / "after-immediate.json", first)
-    time.sleep(15)
-    after = snapshot(roots, Path("/var/db/receipts"))
-    save_evidence(commands.output / "after.json", after)
+    after, settling = settle_snapshots(commands.output, roots)
     listing = commands.run("installed-casks", ["brew", "list", "--cask"], check=False)
     registered = listing["returncode"] == 0 and token in (commands.output / listing["log"]).read_text().splitlines()
-    result = observation(baseline, after, install, registered, first == after)
+    result = observation(baseline, after, install, registered, settling["stable"])
     result["install"] = install
+    result["settling"] = settling
+    result["installationHistory"] = {"before": history_before,
+                                     "after": capture_install_history(commands.output, "after")}
     changed_apps = result["applicationChanges"]["added"] + result["applicationChanges"]["changed"]
     for index, app in enumerate(changed_apps):
         app["signingInspection"] = commands.run(f"app-{index}-signing",
@@ -351,7 +423,6 @@ def observe(args) -> int:
         result.update(prepare(commands, args.token, args.brew_revision, args.cask_revision))
         roots = [Path("/Applications"), Path.home() / "Applications"]
         result["applicationRoots"] = [str(root) for root in roots]
-        result["settleSeconds"] = 15
         baseline = clean_baseline(commands, result["cask"], roots)
         result["status"] = "installing"
         save_evidence(output / "observation.json", result)
@@ -360,6 +431,7 @@ def observe(args) -> int:
         result["error"] = f"{type(error).__name__}: {error}"
         result["status"] = "incomplete_observation"
     finally:
+        result["diagnostics"] = observation_diagnostics(result)
         result["seconds"] = round(time.monotonic() - started, 2)
         save_evidence(output / "observation.json", result)
     return 0 if result["status"] in ("observed_applications", "no_application_observed") else 1
