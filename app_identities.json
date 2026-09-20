@@ -11695,6 +11695,281 @@
           "bundleIdentifier": "com.apidog.app"
         }
       ]
+    },
+    "sigil": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.8.1/Sigil.app-2.8.1-Mac-arm64.txz",
+      "artifactSHA256": "285addb9abee1d69c913d6a6b504240946b5274fd2193942ed59697536279afe",
+      "apps": [
+        {
+          "bundleName": "Sigil.app",
+          "bundleIdentifier": "com.sigil-ebook.Sigil.app"
+        }
+      ]
+    },
+    "8bitdo-ultimate-software-v2": {
+      "caskVersion": "1.0.20",
+      "sourceURL": "https://support.8bitdo.com/bd-uploads/files/ultimate_soft/8BitDo_Ultimate_Software_V2_macOS_V1.0.20.zip",
+      "artifactSHA256": "653e19ce2d704079885e9c4784f2bcaf93e3851b2ebaf4f9ca3e9a6cbecb53ae",
+      "apps": [
+        {
+          "bundleName": "8BitDo Ultimate Software V2.app",
+          "bundleIdentifier": "com.8BitDo.UltimateV2"
+        }
+      ]
+    },
+    "rubymine": {
+      "caskVersion": "2026.2.3,262.10968.66",
+      "sourceURL": "https://download.jetbrains.com/ruby/RubyMine-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "e4f301ae01c2c6ae8df05dc1617fb795b037827efcd4868a3a8c2c3b85d8e232",
+      "apps": [
+        {
+          "bundleName": "RubyMine.app",
+          "bundleIdentifier": "com.jetbrains.rubymine"
+        }
+      ]
+    },
+    "mongodb-compass-readonly": {
+      "caskVersion": "1.50.0",
+      "sourceURL": "https://downloads.mongodb.com/compass/mongodb-compass-readonly-1.50.0-darwin-arm64.dmg",
+      "artifactSHA256": "53b08689807ba6c8a649015a47be8b5321bb1f237e7ac0106b2a2bd9a5d7f64c",
+      "apps": [
+        {
+          "bundleName": "MongoDB Compass Readonly.app",
+          "bundleIdentifier": "com.mongodb.compass.readonly"
+        }
+      ]
+    },
+    "satdump": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://github.com/SatDump/SatDump/releases/download/1.2.2/SatDump-macOS-Silicon.dmg",
+      "artifactSHA256": "a84cdf81b27a8b484b654ccafe6072cd5b3e7dc06fc3280dd2b801a2ffeef93c",
+      "apps": [
+        {
+          "bundleName": "SatDump.app",
+          "bundleIdentifier": "com.altillimity.satdump"
+        }
+      ]
+    },
+    "deltachat": {
+      "caskVersion": "2.59.1",
+      "sourceURL": "https://download.delta.chat/desktop/v2.59.1/DeltaChat-2.59.1-arm64.dmg",
+      "artifactSHA256": "1dc32427bbc4f4b6e133c33c9f435c254d5caf598675ccbde8846162ae54942b",
+      "apps": [
+        {
+          "bundleName": "DeltaChat.app",
+          "bundleIdentifier": "chat.delta.desktop.electron"
+        }
+      ]
+    },
+    "izip": {
+      "caskVersion": "26.07",
+      "sourceURL": "https://www.izip.com/izip.dmg",
+      "artifactSHA256": "c42ca657027988429e4238fe5c6d2f311a940c3bc05cfa154f6dd9bdb83e870d",
+      "apps": [
+        {
+          "bundleName": "iZip.app",
+          "bundleIdentifier": "com.codeius.izip"
+        }
+      ]
+    },
+    "mactracker": {
+      "caskVersion": "8.2.5",
+      "sourceURL": "https://mactracker.ca/downloads/Mactracker_8.2.5.zip",
+      "artifactSHA256": "596a7c8ff1d8e9c6d3419a54019591b698fed441a645998fcab9c432076678f0",
+      "apps": [
+        {
+          "bundleName": "Mactracker.app",
+          "bundleIdentifier": "com.mactrackerapp.Mactracker"
+        }
+      ]
+    },
+    "ente": {
+      "caskVersion": "1.7.29",
+      "sourceURL": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.29/ente-1.7.29-universal.dmg",
+      "artifactSHA256": "9fd4e6514129188bbefef9b8ac0c4d720a72ed039f9584f5ccec7a7f30d9a850",
+      "apps": [
+        {
+          "bundleName": "ente.app",
+          "bundleIdentifier": "io.ente.bhari-frame"
+        }
+      ]
+    },
+    "smoothcsv": {
+      "caskVersion": "3.25.0",
+      "sourceURL": "https://github.com/kohii/smoothcsv3/releases/download/v3.25.0/SmoothCSV_3.25.0_universal.dmg",
+      "artifactSHA256": "90d934991c325d39aa6e0d4f332db56c5b9ef7adbdf96f50a65682f0bdfea8e7",
+      "apps": [
+        {
+          "bundleName": "SmoothCSV.app",
+          "bundleIdentifier": "com.smoothcsv.desktop"
+        }
+      ]
+    },
+    "audiorelay": {
+      "caskVersion": "0.27.5",
+      "sourceURL": "https://dl.audiorelay.net/setups/macos/AudioRelay-0.27.5-aarch64.dmg",
+      "artifactSHA256": "858f25bf5d6a9057349e70bb0472919d687d42ed158f07f468682dd6066ce20d",
+      "apps": [
+        {
+          "bundleName": "AudioRelay.app",
+          "bundleIdentifier": "com.azefsw.audioconnect"
+        }
+      ]
+    },
+    "sonic-pi": {
+      "caskVersion": "5.0.0",
+      "sourceURL": "https://sonic-pi.net/files/releases/v5.0.0/Sonic-Pi-for-Mac-arm64-v5.0.0.dmg",
+      "artifactSHA256": "3dd0b9873a74aa274d3723be098622fdea73896ceba29a1423af9e7b46a7c291",
+      "apps": [
+        {
+          "bundleName": "Sonic Pi.app",
+          "bundleIdentifier": "net.sonic-pi.app"
+        }
+      ]
+    },
+    "gonhanh": {
+      "caskVersion": "1.0.162",
+      "sourceURL": "https://github.com/khaphanspace/gonhanh.org/releases/download/v1.0.162/GoNhanh.dmg",
+      "artifactSHA256": "3b6470ff581fc269c08a1e94b0b5ae6e42b9481b7b8ffd2f8a496dae6cc0cd00",
+      "apps": [
+        {
+          "bundleName": "GoNhanh.app",
+          "bundleIdentifier": "org.gonhanh.GoNhanh"
+        }
+      ]
+    },
+    "descript": {
+      "caskVersion": "114.0.4-release.20250509.32955",
+      "sourceURL": "https://electron.descript.com/Descript-114.0.4-release.20250509.32955-arm64.dmg",
+      "artifactSHA256": "ab3537b015e60c19500c47cd1a2c59c0932c05240178bbc718d068e23393ca0c",
+      "apps": [
+        {
+          "bundleName": "Descript.app",
+          "bundleIdentifier": "com.descript.beachcube"
+        }
+      ]
+    },
+    "nrf-connect": {
+      "caskVersion": "5.4.0",
+      "sourceURL": "https://github.com/NordicSemiconductor/pc-nrfconnect-launcher/releases/download/v5.4.0/nrfconnect-5.4.0-arm64.dmg",
+      "artifactSHA256": "aa1c3154d40258c2fb4a82a923629efc837772e2754f5eb4c24d9c53d1457ef7",
+      "apps": [
+        {
+          "bundleName": "nRF Connect for Desktop.app",
+          "bundleIdentifier": "com.nordicsemi.nrfconnect"
+        }
+      ]
+    },
+    "openaudible": {
+      "caskVersion": "4.8.8",
+      "sourceURL": "https://github.com/openaudible/openaudible/releases/download/v4.8.8/OpenAudible_4.8.8.dmg",
+      "artifactSHA256": "a9197f15293e9fac29a4ace0412423d24ff63ad411a54ef7da3d901f83990acc",
+      "apps": [
+        {
+          "bundleName": "OpenAudible.app",
+          "bundleIdentifier": "org.openaudible.openaudible"
+        }
+      ]
+    },
+    "gather": {
+      "caskVersion": "1.39.2",
+      "sourceURL": "https://github.com/gathertown/gather-town-desktop-releases/releases/download/v1.39.2/Gather-1.39.2-arm64-mac.zip",
+      "artifactSHA256": "292a6f5d7f20a865218055fd3de75f2facc4ce07ca8a35854e348ec069b7cd2f",
+      "apps": [
+        {
+          "bundleName": "Gather.app",
+          "bundleIdentifier": "com.gather.Gather"
+        }
+      ]
+    },
+    "wolfram-engine": {
+      "caskVersion": "15.0.0.0",
+      "sourceURL": "https://files.wolframcdn.com/packages/Homebrew/15.0.0.0/WolframEngine_15.0.0_MAC.dmg",
+      "artifactSHA256": "ca3f0252b0df22d87d139dee1371a2a53be9784106b5974787dd024ef6ef959b",
+      "apps": [
+        {
+          "bundleName": "Wolfram Engine.app",
+          "bundleIdentifier": "com.wolfram.WolframEngine"
+        }
+      ]
+    },
+    "cavalry": {
+      "caskVersion": "2.7.2",
+      "sourceURL": "https://cavalry.studio/downloads/latest/Cavalry.dmg",
+      "artifactSHA256": "ff78ea40467d2aebacf354dcc73146d44d3e3f04531486f35bdfcf79e44a86b5",
+      "apps": [
+        {
+          "bundleName": "Cavalry.app",
+          "bundleIdentifier": "com.scenegroup.cavalry"
+        }
+      ]
+    },
+    "spacedrive": {
+      "caskVersion": "0.4.3",
+      "sourceURL": "https://github.com/spacedriveapp/spacedrive/releases/download/0.4.3/Spacedrive-darwin-aarch64.dmg",
+      "artifactSHA256": "d018fa1a3b312d480b972700df7a5722f22da2a16d6ad8c997667f6708e70b47",
+      "apps": [
+        {
+          "bundleName": "Spacedrive.app",
+          "bundleIdentifier": "com.spacedrive.desktop"
+        }
+      ]
+    },
+    "folder-preview-pro": {
+      "caskVersion": "3.1",
+      "sourceURL": "https://anybox.ltd/folder-preview-pro/download/folder-preview-pro-latest.zip",
+      "artifactSHA256": "e5e4f8f744e892500bca1ed851ae486890c835a875e4f64a1df394ae9c360078",
+      "apps": [
+        {
+          "bundleName": "Folder Preview Pro.app",
+          "bundleIdentifier": "ltd.anybox.FolderPreview.Pro"
+        }
+      ]
+    },
+    "monero-wallet": {
+      "caskVersion": "0.18.5.2",
+      "sourceURL": "https://downloads.getmonero.org/gui/monero-gui-mac-armv8-v0.18.5.2.dmg",
+      "artifactSHA256": "26efb1be1a409b4dd9090b1c0ca2ee95ef4a3d0a42fdfb83cddbba6c048e1cc0",
+      "apps": [
+        {
+          "bundleName": "monero-wallet-gui.app",
+          "bundleIdentifier": "org.monero-project.monero-wallet-gui"
+        }
+      ]
+    },
+    "textsniper": {
+      "caskVersion": "1.12.1",
+      "sourceURL": "https://s3.amazonaws.com/textsniper.app/Gumroad/TextSniper1.12.1.dmg",
+      "artifactSHA256": "1169237a1fd8bb1055c9e6bc62a098d2e6f5ee218dfcca963e2eb99e34ef48fe",
+      "apps": [
+        {
+          "bundleName": "TextSniper.app",
+          "bundleIdentifier": "com.valerijs.boguckis.gumroad.TextSniper"
+        }
+      ]
+    },
+    "acorn": {
+      "caskVersion": "8.6.3",
+      "sourceURL": "https://flyingmeat.com/download/Acorn-8.6.3.zip",
+      "artifactSHA256": "d1fdbb9325d01983c09d25d5cbef36b80a0d429c0bc8688672e96ae99c2c5414",
+      "apps": [
+        {
+          "bundleName": "Acorn.app",
+          "bundleIdentifier": "com.flyingmeat.Acorn8"
+        }
+      ]
+    },
+    "swish": {
+      "caskVersion": "1.13.3",
+      "sourceURL": "https://github.com/chrenn/swish-dl/releases/download/1.13.3/Swish.dmg",
+      "artifactSHA256": "8e968454db7617b6a293f3e0e551c214c5aa86f443bc669b3e1316114a18d52c",
+      "apps": [
+        {
+          "bundleName": "Swish.app",
+          "bundleIdentifier": "co.highlyopinionated.swish"
+        }
+      ]
     }
   }
 }
