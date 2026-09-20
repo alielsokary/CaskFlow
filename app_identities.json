@@ -68,9 +68,9 @@
       ]
     },
     "flick": {
-      "caskVersion": "1.0.1",
-      "sourceURL": "https://getflick.dev/Flick-1.0.1.dmg",
-      "artifactSHA256": "aace17c24548cd758c95eec6ee801c676f64a6e8db73f1ca93285d4523f4e81a",
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://getflick.dev/Flick-1.1.0.dmg",
+      "artifactSHA256": "d2387d5db352700eb5420aa660834ee0bbebf08e63b0fe5ffee3121643dde8a2",
       "apps": [
         {
           "bundleName": "Flick.app",
@@ -19305,6 +19305,265 @@
         {
           "bundleName": "FINAL FANTASY XIV ONLINE.app",
           "bundleIdentifier": "com.square-enix.finalfantasyxiv"
+        }
+      ]
+    },
+    "flowdown": {
+      "caskVersion": "5.1.5",
+      "sourceURL": "https://github.com/Lakr233/FlowDown/releases/download/5.1.5/FlowDown-5.1.5.zip",
+      "artifactSHA256": "b614c9ce8286bca8a7ea9243aafca93442b09720330a4b48993d19f97a0de0b1",
+      "apps": [
+        {
+          "bundleName": "FlowDown.app",
+          "bundleIdentifier": "wiki.qaq.flow"
+        }
+      ]
+    },
+    "fireworks": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://www.fireworksapp.xyz/public/fireworks.zip",
+      "artifactSHA256": "925774f32399c6b11e8e07cab5fb39f30c5bf7df6896540992065e5bac0327cd",
+      "apps": [
+        {
+          "bundleName": "Fireworks.app",
+          "bundleIdentifier": "com.Besher-Al-Maleh.fireworks"
+        }
+      ]
+    },
+    "flow5": {
+      "caskVersion": "7.57",
+      "sourceURL": "https://github.com/techwinder/flow5/releases/download/v7.57/flow5_v7.57.dmg",
+      "artifactSHA256": "f39b23e9fca651c3200f8a8d75eaffbf37d7727c9124a992e261cd660178d548",
+      "apps": [
+        {
+          "bundleName": "flow5.app",
+          "bundleIdentifier": "tech.cere-aero.flow5"
+        }
+      ]
+    },
+    "fluid": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://fluidapp.com/dist/Fluid_2.1.2.zip",
+      "artifactSHA256": "cf58c480f631d2adc050b423e65776e253f52989ade9c1aaf8d77b8ced63a653",
+      "apps": [
+        {
+          "bundleName": "Fluid.app",
+          "bundleIdentifier": "com.fluidapp.Fluid2"
+        }
+      ]
+    },
+    "flrig": {
+      "caskVersion": "2.0.12",
+      "sourceURL": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-2.0.12.dmg",
+      "artifactSHA256": "0ec96340ffb656058aefadfc54a39bcf0a2712a1768000b9db85175b9a811ff2",
+      "apps": [
+        {
+          "bundleName": "flrig-2.0.12.app",
+          "bundleIdentifier": "com.w1hkj.flrig"
+        }
+      ]
+    },
+    "flickr-uploadr": {
+      "caskVersion": "1.2,2142",
+      "sourceURL": "https://downloads.flickr.com/uploadr/FlickrUploadr.dmg",
+      "artifactSHA256": "734f203ab57c14541640d4aa6125258c64d8763cc7c37e1f811f3b199b1967a4",
+      "apps": [
+        {
+          "bundleName": "Flickr Uploadr.app",
+          "bundleIdentifier": "com.flickr.flickrmac"
+        }
+      ]
+    },
+    "flixtools": {
+      "caskVersion": "3.3.1,667",
+      "sourceURL": "https://www.flixtools.com/download/FlixTools.dmg",
+      "artifactSHA256": "445519173c69bf9f2a33b4e6d48d272a9fd5143ca2b38ddfd45bed88b09600ff",
+      "apps": [
+        {
+          "bundleName": "FlixTools.app",
+          "bundleIdentifier": "com.flixtools.flixtools"
+        }
+      ]
+    },
+    "fitbit-os-simulator": {
+      "caskVersion": "0.9.4",
+      "sourceURL": "https://simulator-updates.fitbit.com/Fitbit%20OS%20Simulator-stable-0.9.4.dmg",
+      "artifactSHA256": "b948c2b0e44d69b257215233e8b7018fdaa42d8e65ede2145f2d58145fbe86f3",
+      "apps": [
+        {
+          "bundleName": "Fitbit OS Simulator.app",
+          "bundleIdentifier": "com.fitbit.os.simulator"
+        }
+      ]
+    },
+    "firezone": {
+      "caskVersion": "1.5.20",
+      "sourceURL": "https://github.com/firezone/firezone/releases/download/apple-client-1.5.20/firezone-macos-client-1.5.20.dmg",
+      "artifactSHA256": "ba76ecbfb4cfc39ca10916689d6446bcfcb78b8ade8add7fa4371f47f5a0a36d",
+      "apps": [
+        {
+          "bundleName": "Firezone.app",
+          "bundleIdentifier": "dev.firezone.firezone"
+        }
+      ]
+    },
+    "fmail": {
+      "caskVersion": "2.7.6",
+      "sourceURL": "https://arievanboxel.fr/fmail/sparkle/FMail_276.zip",
+      "artifactSHA256": "bdbcef213dbf2a92ad5404a5f56326bc22218bd95c40d8f1bd98eb9c1d78762f",
+      "apps": [
+        {
+          "bundleName": "FMail.app",
+          "bundleIdentifier": "fr.arievanboxel.FMail"
+        }
+      ]
+    },
+    "flying-carpet": {
+      "caskVersion": "10.0.4,10.0.0",
+      "sourceURL": "https://github.com/spieglt/FlyingCarpet/releases/download/v10.0.0/macOS_FlyingCarpet_10.0.4.zip",
+      "artifactSHA256": "b6db75afed626081275fd56215330fcfaf16af3070ddcfeda09c91a8c9ba2771",
+      "apps": [
+        {
+          "bundleName": "FlyingCarpet.app",
+          "bundleIdentifier": "dev.spiegl.FlyingCarpet"
+        }
+      ]
+    },
+    "flutterflow": {
+      "caskVersion": "7.0.81",
+      "sourceURL": "https://storage.googleapis.com/flutterflow-downloads/macos/flutterflow-7.0.81-macos.zip",
+      "artifactSHA256": "4a30e3fe732deaa00efc37c1a58d22147bc342d0f2919e03b31419622d69d487",
+      "apps": [
+        {
+          "bundleName": "FlutterFlow.app",
+          "bundleIdentifier": "io.flutterflow.prod.mac"
+        }
+      ]
+    },
+    "flic": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://misc-scl-cdn.s3.amazonaws.com/Flic.2.1.0.zip",
+      "artifactSHA256": "8fceaa6d5eedf4a3013519c9e372e3c640419abc28a2dafc00f0219094933309",
+      "apps": [
+        {
+          "bundleName": "Flic.app",
+          "bundleIdentifier": "com.shortcutlabs.FlicMac"
+        }
+      ]
+    },
+    "flacon": {
+      "caskVersion": "13.0.1",
+      "sourceURL": "https://github.com/flacon/flacon/releases/download/v13.0.1/Flacon_13.0.1.dmg",
+      "artifactSHA256": "e185f6be7896bb2679a51dc7676b8a63a45d45648c7819bb21ffeb23d5125519",
+      "apps": [
+        {
+          "bundleName": "Flacon.app",
+          "bundleIdentifier": "io.github.flacon"
+        }
+      ]
+    },
+    "fmail3": {
+      "caskVersion": "2.7.3",
+      "sourceURL": "https://fmail3.appmac.fr/update/sparkle/FMail3-2.7.3.dmg",
+      "artifactSHA256": "be78746fadc64c0dd3d93be06608718b94d0cbcb78b69547743c77fa006190cc",
+      "apps": [
+        {
+          "bundleName": "FMail3.app",
+          "bundleIdentifier": "fr.arievanboxel.FMail3"
+        }
+      ]
+    },
+    "firestorm": {
+      "caskVersion": "7.2.4.80712",
+      "sourceURL": "https://downloads.firestormviewer.org/release/mac/Phoenix-Firestorm-Releasex64_AVX2-7-2-4-80712.dmg",
+      "artifactSHA256": "5d1eab751bd5283f6529f6625a5b59cd3cb3b2761c049e16fe68fa33db84dbfb",
+      "apps": [
+        {
+          "bundleName": "Firestorm-Releasex64.app",
+          "bundleIdentifier": "org.firestormviewer.firestorm"
+        }
+      ]
+    },
+    "fixkey": {
+      "caskVersion": "2.9.3",
+      "sourceURL": "https://fixkey.download/fixkey%202.9.3.dmg",
+      "artifactSHA256": "571e6cc6fe1d6f95e41bc68d5aaad5d6b1ecc943ec8efd43062646d7314ff520",
+      "apps": []
+    },
+    "flyenv": {
+      "caskVersion": "4.18.3",
+      "sourceURL": "https://github.com/xpf0000/FlyEnv/releases/download/v4.18.3/FlyEnv-4.18.3-arm64-mac.zip",
+      "artifactSHA256": "d0fc566af0af3d923861ea381b19bf88d709222c8e3497d678ab67085f37d673",
+      "apps": [
+        {
+          "bundleName": "FlyEnv.app",
+          "bundleIdentifier": "phpstudy.xpfme.com"
+        }
+      ]
+    },
+    "fluent-reader": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://github.com/yang991178/fluent-reader/releases/download/v1.2.2/Fluent.Reader.1.2.2.dmg",
+      "artifactSHA256": "f966116db2ad855c30d5c710ec3c9d8408d867b81ca156b639539010e56ad906",
+      "apps": [
+        {
+          "bundleName": "Fluent Reader.app",
+          "bundleIdentifier": "me.hyliu.fluentreader"
+        }
+      ]
+    },
+    "fldigi": {
+      "caskVersion": "4.2.13",
+      "sourceURL": "https://downloads.sourceforge.net/fldigi/fldigi/fldigi-4.2.13.dmg",
+      "artifactSHA256": "7d458a6eeb863047efc48f4a234197d16231fde4ed232ed1e1d67622b91467b6",
+      "apps": [
+        {
+          "bundleName": "fldigi-4.2.13.app",
+          "bundleIdentifier": "com.w1hkj.fldigi"
+        }
+      ]
+    },
+    "flexoptix": {
+      "caskVersion": "5.68.0-latest",
+      "sourceURL": "https://flexbox.reconfigure.me/download/electron/mac/arm64/FLEXOPTIX%20App-5.68.0-latest-arm64.dmg",
+      "artifactSHA256": "dd0a2ce559eb9295a52b674f91e924acf07adc7a4bcdd9136573632d73c0b26e",
+      "apps": [
+        {
+          "bundleName": "FLEXOPTIX App.app",
+          "bundleIdentifier": "net.flexoptix.flexoptix.app"
+        }
+      ]
+    },
+    "flirc": {
+      "caskVersion": "3.27.19",
+      "sourceURL": "https://flirc.com/software/flirc-usb/GUI/release/mac/Flirc-3.27.19.dmg",
+      "artifactSHA256": "da00f51a8b64f1e7fbb75bc229e715428efe5059d06607fe5571a4e1bc011454",
+      "apps": [
+        {
+          "bundleName": "Flirc.app",
+          "bundleIdentifier": "com.flirc.Flirc"
+        }
+      ]
+    },
+    "flykey": {
+      "caskVersion": "1.7.2,2026043002",
+      "sourceURL": "https://cdn.better365.cn/FlyKey/2026/FlyKey1.7.2_2026043002.zip",
+      "artifactSHA256": "e89ce587dcdbbd9a47f638d9cea53e8bb40701a9f1e9ce13006ca3a0c881341c",
+      "apps": [
+        {
+          "bundleName": "FlyKey.app",
+          "bundleIdentifier": "cn.better365.FlyKey"
+        }
+      ]
+    },
+    "flock-app": {
+      "caskVersion": "2.2.513",
+      "sourceURL": "https://updates.flock.co/fl_mac_electron/Flock-macOS-2.2.513.dmg",
+      "artifactSHA256": "610d73f1792905a4dd6c0dbbd27dd83a40e3c7d482784a298d4623ada8621ff6",
+      "apps": [
+        {
+          "bundleName": "Flock.app",
+          "bundleIdentifier": "to.go.osx"
         }
       ]
     }
