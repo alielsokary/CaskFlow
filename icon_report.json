@@ -377,6 +377,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "dadroit-json-viewer": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "dante-controller": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
