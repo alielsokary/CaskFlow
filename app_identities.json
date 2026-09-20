@@ -13,9 +13,9 @@
       ]
     },
     "open-science": {
-      "caskVersion": "0.31.0",
-      "sourceURL": "https://github.com/aipoch/open-science/releases/download/v0.31.0/aipoch-open-science-0.31.0-mac-arm64.dmg",
-      "artifactSHA256": "9554cc29f86f7ae2efc169df90479cecaa816565f930952edc5deeff51323460",
+      "caskVersion": "0.31.1",
+      "sourceURL": "https://github.com/aipoch/open-science/releases/download/v0.31.1/aipoch-open-science-0.31.1-mac-arm64.dmg",
+      "artifactSHA256": "93879b60f183010c3cbe25e0ea13df70f689692ce3a5aa1ecb0cbfc53d46cf7f",
       "apps": [
         {
           "bundleName": "Open-Science.app",
@@ -438,9 +438,9 @@
       ]
     },
     "colamd": {
-      "caskVersion": "2.4.3",
-      "sourceURL": "https://github.com/marswaveai/ColaMD/releases/download/v2.4.3/ColaMD-2.4.3-arm64.dmg",
-      "artifactSHA256": "e3874048e44baa8f6a98c6c6c450fa07a057ff0c69eb28af3259d4c5a98ca2c6",
+      "caskVersion": "2.4.4",
+      "sourceURL": "https://github.com/marswaveai/ColaMD/releases/download/v2.4.4/ColaMD-2.4.4-arm64.dmg",
+      "artifactSHA256": "a8d3c8fecad84567e3e7cea87475ff5b9bd64dfe2ee4db9c1820256f9a6f7bc0",
       "apps": [
         {
           "bundleName": "ColaMD.app",
@@ -2645,9 +2645,9 @@
       ]
     },
     "radix": {
-      "caskVersion": "1.7.0",
-      "sourceURL": "https://github.com/colinvkim/Radix/releases/download/v1.7.0/Radix.zip",
-      "artifactSHA256": "69eb62f9cc318bcb0f04c56c2cfd4d4b89640ccb51ed75b663970d81c87aebca",
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/colinvkim/Radix/releases/download/v1.8.0/Radix.zip",
+      "artifactSHA256": "4105b6b830562c1049390d0052488e38fc6cfd822f2bada286997fee4533b1ad",
       "apps": [
         {
           "bundleName": "Radix.app",
@@ -9566,9 +9566,9 @@
       "apps": []
     },
     "repobar": {
-      "caskVersion": "0.9.1",
-      "sourceURL": "https://github.com/steipete/RepoBar/releases/download/v0.9.1/RepoBar-0.9.1.zip",
-      "artifactSHA256": "eca1798e517d778a27841d88d38e376bb050dd12d0f60bd9b6f0add25e3bb9c3",
+      "caskVersion": "0.9.2",
+      "sourceURL": "https://github.com/steipete/RepoBar/releases/download/v0.9.2/RepoBar-0.9.2.zip",
+      "artifactSHA256": "bb2b7f96bd7d3b692569f60ae27831c07645d78d4c1c33bd4f23b0ad7f6bb898",
       "apps": [
         {
           "bundleName": "RepoBar.app",
@@ -10221,9 +10221,9 @@
       ]
     },
     "bramble": {
-      "caskVersion": "0.8.0",
-      "sourceURL": "https://github.com/flythenimbus/bramble/releases/download/0.8.0-desktop/Bramble_0.8.0_universal.dmg",
-      "artifactSHA256": "4a8763fe109d7ef3fc7b4253afe3b88484f53a9554333ebbed1e70cb5b39795b",
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://github.com/flythenimbus/bramble/releases/download/0.9.0-desktop/Bramble_0.9.0_universal.dmg",
+      "artifactSHA256": "feb53c0190b9de43159fc6f8b872112863b12bd70eec26bbeafb47f30730318e",
       "apps": [
         {
           "bundleName": "Bramble.app",
@@ -16838,9 +16838,9 @@
       ]
     },
     "coherence-x": {
-      "caskVersion": "5.1.3",
-      "sourceURL": "https://bzgdownloads.s3.amazonaws.com/Coherence/Coherence+X+5.1.3.zip",
-      "artifactSHA256": "4bb10dced56d9a7828ae25a25e4f4b2446fe5e87e8128d295a73782e2f4c2bcd",
+      "caskVersion": "5.1.4",
+      "sourceURL": "https://bzgdownloads.s3.amazonaws.com/Coherence/Coherence+X+5.1.4.zip",
+      "artifactSHA256": "25321db4c6925dac527211e8a176118adf32840a351d3870b553492bad6a4a99",
       "apps": [
         {
           "bundleName": "Coherence X.app",
@@ -28739,6 +28739,127 @@
         {
           "bundleName": "RoboFont.app",
           "bundleIdentifier": "com.typemytype.robofont4"
+        }
+      ]
+    },
+    "rotki": {
+      "caskVersion": "1.44.0",
+      "sourceURL": "https://github.com/rotki/rotki/releases/download/v1.44.0/rotki-darwin_arm64-v1.44.0.dmg",
+      "artifactSHA256": "253669c869c455bd1756d3a86a7a7716a737cb4adf4ad7e8dc5f5f05b00f8ef8",
+      "apps": [
+        {
+          "bundleName": "rotki.app",
+          "bundleIdentifier": "com.rotki.app"
+        }
+      ]
+    },
+    "roku-remote-tool": {
+      "caskVersion": "5.0.5",
+      "sourceURL": "https://devtools.web.roku.com/RokuRemote/app/mac/roku-remote-tool-mac-arm64.zip",
+      "artifactSHA256": "f0bddcef47c6671b389688be5a508b117e63766c91eca122e1341f3ed49fc5f7",
+      "apps": [
+        {
+          "bundleName": "roku_remote_tool.app",
+          "bundleIdentifier": "com.electron.rokuremotetool"
+        }
+      ]
+    },
+    "roboform": {
+      "caskVersion": "9.9.5",
+      "sourceURL": "https://www.roboform.com/dist/roboform-mac-v9.dmg",
+      "artifactSHA256": "f0104c3b6e5cb00f1c4826adba18ed61f40aedd234a4a5f6c595964da52065bb",
+      "apps": [
+        {
+          "bundleName": "RoboForm.app",
+          "bundleIdentifier": "com.SiberSystems.RoboForm"
+        }
+      ]
+    },
+    "routine": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://releases.routine.co/routine/osx-arm64/Routine-2.3.2.zip",
+      "artifactSHA256": "4fa76fc355eaff79a55cb59a8d573d8a249cef85381c8b4264097faedd3ba17e",
+      "apps": [
+        {
+          "bundleName": "Routine.app",
+          "bundleIdentifier": "co.routine.desktop"
+        }
+      ]
+    },
+    "rocket-typist": {
+      "caskVersion": "3.3.1",
+      "sourceURL": "https://witt-software.com/downloads/rockettypist/Rocket%20Typist.dmg",
+      "artifactSHA256": "3acf0ebd95cd9bde88c032bdff6801c78f1d579c9714b12e6d0c848fbdd18f80",
+      "apps": [
+        {
+          "bundleName": "Rocket Typist.app",
+          "bundleIdentifier": "com.witt-software.Rocket-Typist-2"
+        }
+      ]
+    },
+    "rowmote-helper": {
+      "caskVersion": "4.2.5",
+      "sourceURL": "https://regularrateandrhythm.com/rowmote-pro/rh/rowmote-helper-4.2.5.zip",
+      "artifactSHA256": "acf5bf794d7b7b0da253d33a7dd5bdf6b33f0af83a9411c6e86a8816f899794d",
+      "apps": [
+        {
+          "bundleName": "Rowmote Helper.app",
+          "bundleIdentifier": "com.regularrateandrhythm.rowmotehelper"
+        }
+      ]
+    },
+    "rotato": {
+      "caskVersion": "154.11",
+      "sourceURL": "https://download.rota.to/Rotato-154.11.dmg",
+      "artifactSHA256": "4f61946df2d43afcc9f41f872c4e375da304a1f4b140d2cff03c29f40cf6204f",
+      "apps": [
+        {
+          "bundleName": "Rotato.app",
+          "bundleIdentifier": "com.mortenjust.Rendermock"
+        }
+      ]
+    },
+    "rowboat": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://github.com/rowboatlabs/rowboat/releases/download/v1.0.3/Rowboat-darwin-arm64-1.0.3.zip",
+      "artifactSHA256": "8dc86bcd3265f588ba21649dbdb094dc5d040a9cb432869f05fff0be7e92929e",
+      "apps": [
+        {
+          "bundleName": "Rowboat.app",
+          "bundleIdentifier": "com.rowboat.app"
+        }
+      ]
+    },
+    "roslynpad": {
+      "caskVersion": "22.1",
+      "sourceURL": "https://github.com/roslynpad/roslynpad/releases/download/22.1/RoslynPad-macos-arm64.dmg",
+      "artifactSHA256": "b8bfb0f5ab2874bfe7aa369d8f0eeb388545a24cca7a1afb37df66fd9063f2a0",
+      "apps": [
+        {
+          "bundleName": "RoslynPad.app",
+          "bundleIdentifier": "net.roslynpad"
+        }
+      ]
+    },
+    "roon": {
+      "caskVersion": "2.71",
+      "sourceURL": "https://download.roonlabs.net/builds/Roon.dmg",
+      "artifactSHA256": "2f08ee0c65dedf3fa91145da18e94c7caf318377542e2a22d9e9d69fd9f3a10b",
+      "apps": [
+        {
+          "bundleName": "Roon.app",
+          "bundleIdentifier": "com.roon.Roon"
+        }
+      ]
+    },
+    "rouvy": {
+      "caskVersion": "4.7.2",
+      "sourceURL": "https://cdn.rouvy.com/update/Rouvy_Installer.dmg",
+      "artifactSHA256": "a12216d0d733bacf68b5903b00f87fbf6f2e32581f100cfb6822b10f91af1d4a",
+      "apps": [
+        {
+          "bundleName": "Rouvy.app",
+          "bundleIdentifier": "eu.virtualtraining.rouvy.mac"
         }
       ]
     }

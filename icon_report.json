@@ -896,7 +896,7 @@
   "lo-rain": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "logi-options+": {
@@ -938,7 +938,7 @@
   "macdive": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "macfuse": {
@@ -980,7 +980,7 @@
   "mailmaster": {
     "status": "failed",
     "reason": "sha256 mismatch (got f83fec4eb36e...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "mailtrackerblocker": {
@@ -1058,7 +1058,7 @@
   "navigraph-charts": {
     "status": "failed",
     "reason": "sha256 mismatch (got 55d8c67e2a88...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "nessus": {
@@ -1076,7 +1076,7 @@
   "nisus-thesaurus": {
     "status": "failed",
     "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "nomachine": {
@@ -1201,8 +1201,8 @@
   },
   "pdf-converter-master": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75006 ms: Couldn't connect to server",
-    "attempts": 1,
+    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75005 ms: Couldn't connect to server",
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "photozoom-pro": {
@@ -1220,7 +1220,7 @@
   "playonmac": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "podolski": {
@@ -1310,7 +1310,7 @@
   "roaringapps": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "roonbridge": {
