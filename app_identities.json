@@ -22096,6 +22096,276 @@
           "bundleIdentifier": "org.jclasslib.browser"
         }
       ]
+    },
+    "juice": {
+      "caskVersion": "2017.06.08170217",
+      "sourceURL": "https://github.com/brianmichel/Juice/releases/download/builds%2Fbeta%2F2017.06.08170217/Juice-Beta-2017.06.08170217.dmg",
+      "artifactSHA256": "ee308adbd3ee827c2735931844a10f0f779f8953204aeaacb0eb64705244b310",
+      "apps": [
+        {
+          "bundleName": "Juice.app",
+          "bundleIdentifier": "com.bsm.macos.Juice"
+        }
+      ]
+    },
+    "keypad-layout": {
+      "caskVersion": "1.12",
+      "sourceURL": "https://github.com/janten/keypad-layout/releases/download/1.12/Keypad-Layout.zip",
+      "artifactSHA256": "3c4ec7dbe0d50918b4bfb126347d33e29bd7af0a5ae31aa48d68eb91c03e4ad0",
+      "apps": [
+        {
+          "bundleName": "Keypad Layout.app",
+          "bundleIdentifier": "com.jan-gerd.keypad-layout"
+        }
+      ]
+    },
+    "keep-it": {
+      "caskVersion": "1.11.16",
+      "sourceURL": "https://reinventedsoftware.com/keepit/downloads/KeepIt_1.11.16.dmg",
+      "artifactSHA256": "a8a9e26114f7f1e4cf70bb6e0c5315b4fe37ff03cb06d0d0a9102624b5640cf3",
+      "apps": [
+        {
+          "bundleName": "Keep It.app",
+          "bundleIdentifier": "com.reinvented.KeepIt"
+        }
+      ]
+    },
+    "keeperdb": {
+      "caskVersion": "2.5.1",
+      "sourceURL": "https://keepersecurity.com/pam/keeperdb/v2.5.1/KeeperDB_2.5.1_universal.dmg",
+      "artifactSHA256": "2bfe45f2aa48f98cfb6aaa2d24e296b66fad8c13a9e08b97f409ba2500d065a0",
+      "apps": [
+        {
+          "bundleName": "KeeperDB.app",
+          "bundleIdentifier": "com.keepersecurity.keeperdb"
+        }
+      ]
+    },
+    "keyguard": {
+      "caskVersion": "3.2.3,20260916",
+      "sourceURL": "https://github.com/AChep/keyguard-app/releases/download/r20260916/Keyguard-3.2.3-apple.dmg",
+      "artifactSHA256": "76ecec1a85961f10f57a8954358034b16cc721c9613ffd41e10ea2d93a37f605",
+      "apps": [
+        {
+          "bundleName": "Keyguard.app",
+          "bundleIdentifier": "com.artemchep.keyguard"
+        }
+      ]
+    },
+    "kactus": {
+      "caskVersion": "0.3.35",
+      "sourceURL": "https://github.com/kactus-io/kactus/releases/download/v0.3.35/Kactus-macos.zip",
+      "artifactSHA256": "e264d004747c21e5332202c1f1337dddeb1f42d6a6c7fe00c3753031ea87b745",
+      "apps": [
+        {
+          "bundleName": "Kactus.app",
+          "bundleIdentifier": "io.kactus.KactusClient"
+        }
+      ]
+    },
+    "juxtacode": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://appcast.juxtacode.app/juxtacode-1.4.1.zip",
+      "artifactSHA256": "b28da660bf2faa178a35c24f4e4ccc2c6ab843928df930f153e8d2064b0be134",
+      "apps": [
+        {
+          "bundleName": "JuxtaCode.app",
+          "bundleIdentifier": "com.naiveapps.juxtacode"
+        }
+      ]
+    },
+    "jukebox": {
+      "caskVersion": "0.9.5",
+      "sourceURL": "https://github.com/Jaysce/Jukebox/releases/download/v0.9.5/Jukebox.0.9.5.dmg",
+      "artifactSHA256": "51b939faee653015932fbe8cb32b9ac6d06482c3b3fdc73d9fb46ed67857ace7",
+      "apps": [
+        {
+          "bundleName": "Jukebox.app",
+          "bundleIdentifier": "dev.jaysce.Jukebox"
+        }
+      ]
+    },
+    "keyboard-cowboy": {
+      "caskVersion": "3.28.4",
+      "sourceURL": "https://github.com/zenangst/KeyboardCowboy/releases/download/3.28.4/Keyboard.Cowboy.3.28.4.dmg",
+      "artifactSHA256": "e95e4cc8fd5438215da659acfe20cd901081edcf7aa99824b6fc4001d5b5fc52",
+      "apps": [
+        {
+          "bundleName": "Keyboard Cowboy.app",
+          "bundleIdentifier": "com.zenangst.Keyboard-Cowboy"
+        }
+      ]
+    },
+    "jumpshare": {
+      "caskVersion": "3.5.4",
+      "sourceURL": "https://d21hi1or3tbtjm.cloudfront.net/desktop/mac/updates/Jumpshare-3.5.4.tar.bz2",
+      "artifactSHA256": "9fb5e5b180116ce6f00f048902b0c1cce5c67aa9dad11bb5bfc543f678bf47b2",
+      "apps": [
+        {
+          "bundleName": "Jumpshare.app",
+          "bundleIdentifier": "com.jumpshare.Jumpshare"
+        }
+      ]
+    },
+    "keycombiner": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://keycombiner.com/download/KeyCombiner-0.8.0-universal.dmg",
+      "artifactSHA256": "1e8d9fad195472cea75e47491a59e10a8fb3d734fcdd3c1eb2364591a3ff8a53",
+      "apps": [
+        {
+          "bundleName": "KeyCombiner.app",
+          "bundleIdentifier": "com.keycombiner.app"
+        }
+      ]
+    },
+    "keymanager": {
+      "caskVersion": "4.7.0",
+      "sourceURL": "https://keymanager.trustasia.com/release/KeyManager-4.7.0-arm64.dmg",
+      "artifactSHA256": "3f8f57626280fd077b8b87367e13b73d5ca8516c5466c0cb19ebd3e93b6f88ee",
+      "apps": []
+    },
+    "katalon-studio": {
+      "caskVersion": "10.3.2",
+      "sourceURL": "https://download.katalon.com/free/10.3.2/release/Katalon%20Studio%20Arm64.dmg",
+      "artifactSHA256": "bcf33c66a2048578af4c59525fd882c0e412e1ea5e00930bd313704c261fbe62",
+      "apps": [
+        {
+          "bundleName": "Katalon Studio.app",
+          "bundleIdentifier": "com.kms.katalon.product.free.product"
+        }
+      ]
+    },
+    "jumpcloud-password-manager": {
+      "caskVersion": "3.3.55",
+      "sourceURL": "https://cdn.pwm.jumpcloud.com/DA/release/arm64/JumpCloud-Password-Manager-3.3.55.dmg",
+      "artifactSHA256": "96211cdebd13f37de5da81bbff115d244c1b08d938fbf11ed52465efd65cf12c",
+      "apps": [
+        {
+          "bundleName": "JumpCloud Password Manager.app",
+          "bundleIdentifier": "com.jumpcloud.pwm.desktop.live"
+        }
+      ]
+    },
+    "keet": {
+      "caskVersion": "4.22.3",
+      "sourceURL": "https://static.keet.io/downloads/4.22.3/Keet.dmg",
+      "artifactSHA256": "b47668fef9f334f9518c5a592a88f1f75549f98879596e99f2d7dec56b7f4a29",
+      "apps": [
+        {
+          "bundleName": "Keet.app",
+          "bundleIdentifier": "io.keet.app"
+        }
+      ]
+    },
+    "kameleo": {
+      "caskVersion": "5.2.1",
+      "sourceURL": "https://github.com/kameleo-io/kameleo/releases/download/5.2.1/kameleo-5.2.1-osx-arm64.dmg",
+      "artifactSHA256": "fd793e7310064584fc17eb82857a93acb06d15e7a27ef758453cc63c324a6cd2",
+      "apps": [
+        {
+          "bundleName": "Kameleo.app",
+          "bundleIdentifier": "io.kameleo.client"
+        }
+      ]
+    },
+    "k6-studio": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/grafana/k6-studio/releases/download/v2.1.0/k6.Studio-2.1.0-arm64.dmg",
+      "artifactSHA256": "380133688e774540a974ea037cdefaf1340b12284c77092ff06fd2390e3348a8",
+      "apps": [
+        {
+          "bundleName": "k6 Studio.app",
+          "bundleIdentifier": "com.electron.k6-studio"
+        }
+      ]
+    },
+    "kdocs": {
+      "caskVersion": "3.11.2,1001",
+      "sourceURL": "https://qn.cache.wpscdn.cn/kdocs/apk/kdesktopmac/KDocs_1001_v3.11.2.dmg",
+      "artifactSHA256": "9fe64f666405af7761e2858dcc486fbfb6a3ee58c242122155d989f5446de681",
+      "apps": [
+        {
+          "bundleName": "金山文档.app",
+          "bundleIdentifier": "com.kingsoft.kdocs.mac"
+        }
+      ]
+    },
+    "jubler": {
+      "caskVersion": "10.0.0",
+      "sourceURL": "https://github.com/teras/Jubler/releases/download/v10.0.0/Jubler-10.0.0-arm64.dmg",
+      "artifactSHA256": "68b241a9fa4dd1d1d9c747871664d506be01df9fdd8b683976ed5cf107fc9ccb",
+      "apps": [
+        {
+          "bundleName": "Jubler.app",
+          "bundleIdentifier": "com.jubler.Jubler"
+        }
+      ]
+    },
+    "key-codes": {
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/keycodes223.dmg",
+      "artifactSHA256": "1228476da2fe3ad32fed885405c6b96dcdcdc3eea5dd77caf2337149b4895b87",
+      "apps": [
+        {
+          "bundleName": "Key Codes.app",
+          "bundleIdentifier": "com.manytricks.KeyCodes"
+        }
+      ]
+    },
+    "kextviewr": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/objective-see/KextViewr/releases/download/v2.0.0/KextViewr_2.0.0.zip",
+      "artifactSHA256": "cd92141750812797cffd626f697c133fac84b615b5d4cd5dae56a8160320968e",
+      "apps": [
+        {
+          "bundleName": "KextViewr.app",
+          "bundleIdentifier": "com.objective-see.KextViewr"
+        }
+      ]
+    },
+    "k8studio": {
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://releases.k8studio.io/K8Studio-4.0.2-arm64.dmg",
+      "artifactSHA256": "063cba51ce24debb2ad3933fb0bd2f38708899c42fc1cdd15728cc60084914d0",
+      "apps": [
+        {
+          "bundleName": "K8Studio.app",
+          "bundleIdentifier": "ide.k8studio.io"
+        }
+      ]
+    },
+    "karafun": {
+      "caskVersion": "2.18.2",
+      "sourceURL": "https://www.karafun.com/download/mac.html",
+      "artifactSHA256": "a295579b89a1f6bb1d67ac72e3096e2b6d6ac2d7a80c097114b8edc61db8c767",
+      "apps": [
+        {
+          "bundleName": "KaraFun.app",
+          "bundleIdentifier": "com.recisio.kfiphone"
+        }
+      ]
+    },
+    "keycue": {
+      "caskVersion": "11.2.1",
+      "sourceURL": "https://www.ergonis.com/downloads/products/keycue/KeyCue1121-Install.dmg",
+      "artifactSHA256": "22cd3f36c7327b92405569ab9d548e0fbc8d834d7cab99be84ef5176e0b5abff",
+      "apps": [
+        {
+          "bundleName": "KeyCue.app",
+          "bundleIdentifier": "com.macility.keycue"
+        }
+      ]
+    },
+    "keeweb": {
+      "caskVersion": "1.18.7",
+      "sourceURL": "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.mac.arm64.dmg",
+      "artifactSHA256": "6e4870b1660b91e735eaf30e7d751c7bb8dfae623d5b6c47899bd4d5ab1e6cae",
+      "apps": [
+        {
+          "bundleName": "KeeWeb.app",
+          "bundleIdentifier": "net.antelle.keeweb"
+        }
+      ]
     }
   }
 }
