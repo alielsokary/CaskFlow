@@ -31451,6 +31451,271 @@
           "bundleIdentifier": "com.taobao.desktop"
         }
       ]
+    },
+    "textexpander": {
+      "caskVersion": "8.4.7,847.4",
+      "sourceURL": "https://cdn.textexpander.com/mac/847.4/TextExpander_8.4.7.dmg",
+      "artifactSHA256": "c07be7ffac1ca1b058a9ec0ff5a6ae11326a32b9ac53f27d97070369c424b929",
+      "apps": [
+        {
+          "bundleName": "TextExpander.app",
+          "bundleIdentifier": "com.smileonmymac.textexpander"
+        }
+      ]
+    },
+    "the-battle-for-wesnoth": {
+      "caskVersion": "1.18.7",
+      "sourceURL": "https://downloads.sourceforge.net/wesnoth/Wesnoth_1.18.7.dmg",
+      "artifactSHA256": "258f797ad4ae1f82b4479706875a372857c17130e221689c56647234513eca5f",
+      "apps": [
+        {
+          "bundleName": "The Battle for Wesnoth.app",
+          "bundleIdentifier": "org.wesnoth.Wesnoth"
+        }
+      ]
+    },
+    "the-archive": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://dlyfuw95744jo.cloudfront.net/TheArchive-v1.9.1.dmg",
+      "artifactSHA256": "ff9149e3c68b017829fb95ee9f4cac816184464c4afa7826be0eca0107ae9c45",
+      "apps": [
+        {
+          "bundleName": "The Archive.app",
+          "bundleIdentifier": "de.zettelkasten.TheArchive"
+        }
+      ]
+    },
+    "ths": {
+      "caskVersion": "5.3.5",
+      "sourceURL": "https://sp.thsi.cn/staticS3/mobileweb-upload-static-server.file/app_6/downloadcenter/ThsMac5.3.5.dmg",
+      "artifactSHA256": "14d228c77743771cb43d9f9796b666c6e36c9e43dc8d2ff61f97cd7aefa53dbc",
+      "apps": [
+        {
+          "bundleName": "同花顺.app",
+          "bundleIdentifier": "cn.com.10jqka.macstock"
+        }
+      ]
+    },
+    "thor": {
+      "caskVersion": "1.5.16",
+      "sourceURL": "https://github.com/gbammc/Thor/releases/download/1.5.16/Thor_1.5.16.zip",
+      "artifactSHA256": "07bd68a6378ac66d00fe39e0f0f0589694b19a46d89120b5934173a8c3b41a5a",
+      "apps": [
+        {
+          "bundleName": "Thor.app",
+          "bundleIdentifier": "me.alvinzhu.Thor"
+        }
+      ]
+    },
+    "the-clock": {
+      "caskVersion": "4.9.11",
+      "sourceURL": "https://seense.com/the_clock/updateapp/the_clock.zip",
+      "artifactSHA256": "afbbec3bf70ca595eba981a401a98b52c9b8bcbc832ac1dba8b75675d553e856",
+      "apps": [
+        {
+          "bundleName": "The Clock.app",
+          "bundleIdentifier": "com.fabriceleyne.theclock"
+        }
+      ]
+    },
+    "texturepacker": {
+      "caskVersion": "8.3.0",
+      "sourceURL": "https://www.codeandweb.com/download/texturepacker/8.3.0/TexturePacker-8.3.0.dmg",
+      "artifactSHA256": "77891a9afa52c0e67cb26f7bb915b3e3ee77a9558a77681e69d1e7545eae782d",
+      "apps": [
+        {
+          "bundleName": "TexturePacker.app",
+          "bundleIdentifier": "de.code-and-web.TexturePacker"
+        }
+      ]
+    },
+    "texmacs": {
+      "caskVersion": "2.1.5",
+      "sourceURL": "https://ftp.texmacs.org/TeXmacs/tmftp/macos/TeXmacs-2.1.5-arm-os11.0.dmg",
+      "artifactSHA256": "a2eee6a1cb47bfa8f770fc8160e871e882e29588befd3f639cd3885e62a3ae4a",
+      "apps": [
+        {
+          "bundleName": "TeXmacs.app",
+          "bundleIdentifier": "org.texmacs.TeXmacs"
+        }
+      ]
+    },
+    "thebrain": {
+      "caskVersion": "15.0.625",
+      "sourceURL": "https://updater.thebrain.com/files/TheBrain-15.0.625-arm64.dmg",
+      "artifactSHA256": "60733f0423b2f0ab395fd54526e0f0377e288173874c6dd8f46e2b02ed434fbb",
+      "apps": [
+        {
+          "bundleName": "TheBrain 15.app",
+          "bundleIdentifier": "com.thebrain.dekutron"
+        }
+      ]
+    },
+    "thinlinc-client": {
+      "caskVersion": "4.21.0_4588",
+      "sourceURL": "https://www.cendio.com/downloads/clients/tl-4.21.0_4588-client-macos.dmg",
+      "artifactSHA256": "e398bce58c233fc6626fc0ace72e467f313d21082734d8839d552a3124427ec6",
+      "apps": [
+        {
+          "bundleName": "ThinLinc Client.app",
+          "bundleIdentifier": "se.cendio.tlclient"
+        }
+      ]
+    },
+    "there": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/dena-sohrabi/There/releases/download/v2.0.0/There.zip",
+      "artifactSHA256": "5a9dd8eebbb385f6fa09309b559f4d0341231519f39527bea2315140f7301c7f",
+      "apps": [
+        {
+          "bundleName": "There.app",
+          "bundleIdentifier": "pm.there.There"
+        }
+      ]
+    },
+    "textbuddy": {
+      "caskVersion": "1.4.3,28",
+      "sourceURL": "https://get.retina.studio/textbuddy/textbuddy_28.zip",
+      "artifactSHA256": "d86d9102d1c2b815ef4f5d762886ef45f68026cec7960f94202b866d5ffdbd2a",
+      "apps": [
+        {
+          "bundleName": "TextBuddy.app",
+          "bundleIdentifier": "com.clickontyler.TextBuddy"
+        }
+      ]
+    },
+    "thangs-sync": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://storage.googleapis.com/production-thangs-public/sync/darwin/latest/Thangs%20Sync-1.9.1-mac.zip",
+      "artifactSHA256": "da4cc7959f46b07780cfbf2c97f364a2096828465e874f24df4499037672d498",
+      "apps": [
+        {
+          "bundleName": "Thangs Sync.app",
+          "bundleIdentifier": "com.ThangsSyncClient.app"
+        }
+      ]
+    },
+    "threema-work": {
+      "caskVersion": "1.2.50",
+      "sourceURL": "https://releases.threema.ch/web-electron/v1/release/Threema-Work-Latest.dmg",
+      "artifactSHA256": "2033484988e09524cfa909e750bf6d429ecf40a4731c9e479843f1bcc7e59422",
+      "apps": []
+    },
+    "thumbhost3mf": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/DavidPhillipOster/ThumbHost3mf/releases/download/1.7.1/ThumbHost3mf1.7.1.zip",
+      "artifactSHA256": "76c6ad0cb2cefb2ef88efd96949afe0b8f03573871d0192146a6083df5d6e19e",
+      "apps": [
+        {
+          "bundleName": "ThumbHost3mf.app",
+          "bundleIdentifier": "com.turbozen.-mfQuickLook"
+        }
+      ]
+    },
+    "theiaide": {
+      "caskVersion": "1.75.0",
+      "sourceURL": "https://download.eclipse.org/theia/ide/1.75.0/macos-arm/TheiaIDE.dmg",
+      "artifactSHA256": "63679ee3612fdd6ec2d12b0c60b07d07913cc58651181cdf905d4caf179fd5b2",
+      "apps": [
+        {
+          "bundleName": "TheiaIDE.app",
+          "bundleIdentifier": "eclipse.theia"
+        }
+      ]
+    },
+    "the-archive-browser": {
+      "caskVersion": "1.11.2,111,1504018288",
+      "sourceURL": "https://dl.devmate.com/cx.c3.thearchivebrowser/111/1504018288/TheArchiveBrowser-111.zip",
+      "artifactSHA256": "a9cffc4d7a4e9869c9b7542dff7b9614c487623fce6404ce779b0c4b654eb72b",
+      "apps": [
+        {
+          "bundleName": "The Archive Browser.app",
+          "bundleIdentifier": "cx.c3.thearchivebrowser"
+        }
+      ]
+    },
+    "thedesk": {
+      "caskVersion": "25.6.0",
+      "sourceURL": "https://github.com/cutls/thedesk-next/releases/download/v25.6.0/TheDesk-25.6.0-arm64.dmg",
+      "artifactSHA256": "cac4d400fe09c9f3237b29f769a9bde84102cef89d968a69bcbe8823c7ae0c7a",
+      "apps": [
+        {
+          "bundleName": "TheDesk.app",
+          "bundleIdentifier": "next.top.thedesk"
+        }
+      ]
+    },
+    "textgrabber2": {
+      "caskVersion": "1.11.1",
+      "sourceURL": "https://github.com/TextGrabber2-app/TextGrabber2/releases/download/v1.11.1/TextGrabber2-1.11.1.dmg",
+      "artifactSHA256": "161fb268d79e19fb46d4bfbe2443963391a44da25cf72d87d7b7a1f26dc18360",
+      "apps": [
+        {
+          "bundleName": "TextGrabber2.app",
+          "bundleIdentifier": "app.cyan.textgrabber2"
+        }
+      ]
+    },
+    "thetimemachinemechanic": {
+      "caskVersion": "2.03,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/t2m2203.zip",
+      "artifactSHA256": "d1eafe2bb10465822d24b15ed42a5c618364cb2a36816326a63b0babceaa6247",
+      "apps": [
+        {
+          "bundleName": "TheTimeMachineMechanic.app",
+          "bundleIdentifier": "co.eclecticlight.TheTimeMachineMechanic2"
+        }
+      ]
+    },
+    "thumbsup": {
+      "caskVersion": "4.5.3",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/thumbsup/4.5.3/ThumbsUp.app.zip",
+      "artifactSHA256": "05e1bbefd09e098eeb7faec29ea7556f76cf17b49be719af93e443d993beeb8c",
+      "apps": [
+        {
+          "bundleName": "ThumbsUp.app",
+          "bundleIdentifier": "com.devon-technologies.ThumbsUp"
+        }
+      ]
+    },
+    "ti-connect-ce": {
+      "caskVersion": "6.0.4.688,4A6786493CA947879440842241901349",
+      "sourceURL": "https://education.ti.com/download/en/ed-tech/68CEDD34FDC94622B4DBD173E6A0D8C3/4A6786493CA947879440842241901349/TIConnectCE-6.0.4.688.dmg",
+      "artifactSHA256": "3412d77aace33a6ef7f520a8013797fe1d509c1bdcfd24c149459a165c2cc360",
+      "apps": [
+        {
+          "bundleName": "TI Connect CE.app",
+          "bundleIdentifier": "com.ti.et.elg.tiConnect.TIConnectApplication"
+        }
+      ]
+    },
+    "threema": {
+      "caskVersion": "1.2.50",
+      "sourceURL": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
+      "artifactSHA256": "1ef99f4043ed1b24d9e182bce4fbc142952e97ca37a2842f49e809035615bf48",
+      "apps": []
+    },
+    "thingsmacsandboxhelper": {
+      "caskVersion": "3.48",
+      "sourceURL": "https://static.culturedcode.com/things/thingssandboxhelper/3.48/ThingsHelper.zip",
+      "artifactSHA256": "5a2c4bab5f050e5413e93b90b94e5a0ef736c391bdb52ae54b7e0bd514a9a15e",
+      "apps": [
+        {
+          "bundleName": "ThingsMacSandboxHelper.app",
+          "bundleIdentifier": "com.culturedcode.ThingsMacSandboxHelper"
+        }
+      ]
+    },
+    "thecommander": {
+      "caskVersion": "1.10.0",
+      "sourceURL": "https://die-gutbrods.de/thecommander/updates/TheCommander-1.10.0.dmg",
+      "artifactSHA256": "c035c2447bc49878794abc0cdf4dcdb8aa9e2481768d7c17e1665962ae148120",
+      "apps": [
+        {
+          "bundleName": "TheCommander.app",
+          "bundleIdentifier": "de.die-gutbrods.TheCommander"
+        }
+      ]
     }
   }
 }
