@@ -284,7 +284,7 @@
   "clash-mi": {
     "status": "failed",
     "reason": "sha256 mismatch (got ae5b918dd49f...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "claude-code": {

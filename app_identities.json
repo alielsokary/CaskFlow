@@ -16212,6 +16212,270 @@
       "sourceURL": "https://sac.chitubox.com/software/download.do?installerUrl=https%3A%2F%2Fdownload.chitubox.com%2F17952%2Fv1.3.1%2FCHITUBOX_Mac_Installer_v1.3.1.dmg&softwareId=17952&softwareVersionId=v1.3.1",
       "artifactSHA256": "8458c436ab80912fee6c6aa0f4cd931fbc2638ab78159d01444930d0e7345f65",
       "apps": []
+    },
+    "clickcharts": {
+      "caskVersion": "9.50",
+      "sourceURL": "https://www.nchsoftware.com/chart/clickchartspmaci.zip",
+      "artifactSHA256": "7efb9bb19a6573d154cc82d3e7e1a527694a78a6771c99613a72f595bce7fa0e",
+      "apps": [
+        {
+          "bundleName": "ClickCharts.app",
+          "bundleIdentifier": "com.nchsoftware.clickcharts"
+        }
+      ]
+    },
+    "clips-ide": {
+      "caskVersion": "6.4.2",
+      "sourceURL": "https://downloads.sourceforge.net/clipsrules/clips_macos_executable_642.dmg",
+      "artifactSHA256": "48dbe73f5e91e5941648df5c9636717b858728953a98311a000927e6a91db223",
+      "apps": [
+        {
+          "bundleName": "CLIPS IDE.app",
+          "bundleIdentifier": "com.SSoP.CLIPSIDE"
+        }
+      ]
+    },
+    "clipbook": {
+      "caskVersion": "1.36.0",
+      "sourceURL": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.36.0-arm64.dmg",
+      "artifactSHA256": "d59ad57f6bb8026c026e392e996eea2523fc8c9180e6a48be4981a491764d767",
+      "apps": [
+        {
+          "bundleName": "ClipBook.app",
+          "bundleIdentifier": "com.ikryanov.clipbook"
+        }
+      ]
+    },
+    "chronoid": {
+      "caskVersion": "1.0.102",
+      "sourceURL": "https://download.chronoid.app/Chronoid-1.0.102.dmg",
+      "artifactSHA256": "229bdca27a2303ee280c1dbead0c912c8aaffb317834d1c53efe17f3903c12f6",
+      "apps": [
+        {
+          "bundleName": "Chronoid.app",
+          "bundleIdentifier": "com.vu.Chronoid"
+        }
+      ]
+    },
+    "cirrus": {
+      "caskVersion": "1.16,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/cirrus116.zip",
+      "artifactSHA256": "bcdeeaaf734fa9359336f65033d81a51bf405a91b431fe7f33d7626d1ad46ccf",
+      "apps": [
+        {
+          "bundleName": "Cirrus.app",
+          "bundleIdentifier": "co.eclecticlight.CirrusMac"
+        }
+      ]
+    },
+    "cinderella": {
+      "caskVersion": "3.0.2136",
+      "sourceURL": "https://beta.cinderella.de/Cinderella-3.0.2136.dmg",
+      "artifactSHA256": "69d1bf77310b8708fa3e1f0d435ca5c4a621133bce81e46b2f72b7ca4c267e9e",
+      "apps": [
+        {
+          "bundleName": "Cinderella.app",
+          "bundleIdentifier": "de.cinderella.Cindy3"
+        }
+      ]
+    },
+    "clicker-for-netflix": {
+      "caskVersion": "2.13.0",
+      "sourceURL": "https://www.dbklabs.com/clicker-for-netflix/appcast/Clicker%20for%20Netflix%202.13.0.dmg",
+      "artifactSHA256": "3e852a75f61d2091fc1f63a167431200022c13e48d9de3a3c8b0f10950956e22",
+      "apps": [
+        {
+          "bundleName": "Clicker for Netflix.app",
+          "bundleIdentifier": "com.dbklabs.clicker-for-netflix"
+        }
+      ]
+    },
+    "clickshare": {
+      "caskVersion": "4.51.1,4",
+      "sourceURL": "https://assets.cloud.barco.com/clickshare/release/ClickShare-4.51.1-b4_mac.zip",
+      "artifactSHA256": "c819d03dd1c19ef4d3a8f26bce7f30fa259c00d9262c4adced93afdeb5206dd2",
+      "apps": [
+        {
+          "bundleName": "ClickShare.app",
+          "bundleIdentifier": "com.barco.clickshare.updater"
+        }
+      ]
+    },
+    "chrysalis": {
+      "caskVersion": "0.13.3",
+      "sourceURL": "https://github.com/keyboardio/Chrysalis/releases/download/v0.13.3/Chrysalis-0.13.3-universal.dmg",
+      "artifactSHA256": "307c17836e901fb26bccfdbfad50744ea1b3c00536306c1dd06a63c430602f06",
+      "apps": [
+        {
+          "bundleName": "Chrysalis.app",
+          "bundleIdentifier": "keyboardio.chrysalis"
+        }
+      ]
+    },
+    "classroom-mode-for-minecraft": {
+      "caskVersion": "1.83",
+      "sourceURL": "https://downloads.minecrafteduservices.com/retailbuilds/ClassroomMode/mac/Classroom_Mode_1_83.dmg",
+      "artifactSHA256": "5eaf55eb603229f003c02a4addde4e50eb5665d8c02de098d4586bf5f04e4ef0",
+      "apps": [
+        {
+          "bundleName": "Classroom Mode for Minecraft.app",
+          "bundleIdentifier": "com.microsoft.mc-classroommode"
+        }
+      ]
+    },
+    "cleanapp": {
+      "caskVersion": "5.1.3",
+      "sourceURL": "https://download.syniumsoftware.com/CleanApp/CleanApp%205.1.3.dmg",
+      "artifactSHA256": "a3c806fb1246d326a6e96990a7760a7f15d030ee36857b74bd57417c173bd634",
+      "apps": [
+        {
+          "bundleName": "CleanApp.app",
+          "bundleIdentifier": "com.syniumsoftware.CleanApp"
+        }
+      ]
+    },
+    "clearvpn": {
+      "caskVersion": "3.4.5,202609.16.1823,1789583603",
+      "sourceURL": "https://dl.devmate.com/com.macpaw.clearvpn.macos-site-ver/202609.16.1823/1789583603/ClearVPN-202609.16.1823.zip",
+      "artifactSHA256": "e9506926d2caaa04bb4c5a6fbeb0f8cc1413b7a0629ac1a5f6e996383c2d20e7",
+      "apps": [
+        {
+          "bundleName": "ClearVPN.app",
+          "bundleIdentifier": "com.macpaw.clearvpn.macos-site-ver"
+        }
+      ]
+    },
+    "cleanmymac-zh": {
+      "caskVersion": "4.15.14",
+      "sourceURL": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
+      "artifactSHA256": "c39b42a128b3b5542e7b9a6fcc51eb26d1ab2d123d991dc17e314b092ce671b4",
+      "apps": [
+        {
+          "bundleName": "CleanMyMac-X.app",
+          "bundleIdentifier": "com.macpaw.zh.CleanMyMac4"
+        }
+      ]
+    },
+    "cisdem-pdf-converter-ocr": {
+      "caskVersion": "9.7.0",
+      "sourceURL": "https://download.cisdem.com/cisdem-pdfconverterocr.dmg",
+      "artifactSHA256": "b1214d0f4d9486b4e3fd3ea8d2a07e4d9f9d4bafe6559cac7770589370c949bf",
+      "apps": [
+        {
+          "bundleName": "Cisdem PDF Converter OCR.app",
+          "bundleIdentifier": "com.cisdem.pdfconverterocr"
+        }
+      ]
+    },
+    "clicker-for-youtube": {
+      "caskVersion": "1.22",
+      "sourceURL": "https://www.dbklabs.com/clicker-for-youtube/appcast/Clicker%20for%20YouTube%201.22.dmg",
+      "artifactSHA256": "5ebdc7c2f4d9e25895512193ae89dedafb86625f30ca341871d053e595957dbf",
+      "apps": [
+        {
+          "bundleName": "Clicker for YouTube.app",
+          "bundleIdentifier": "com.dbklabs.clicker-for-youtube"
+        }
+      ]
+    },
+    "clariti": {
+      "caskVersion": "1.2.0,81",
+      "sourceURL": "https://d3dsf8uz95lw15.cloudfront.net/builds/macos/Clariti-1.2.0.81.dmg",
+      "artifactSHA256": "94c4f3a78c71c9014f615887a4027d2d00733a14a56b17dc6c81e991cb523055",
+      "apps": [
+        {
+          "bundleName": "Clariti.app",
+          "bundleIdentifier": "io.clariti"
+        }
+      ]
+    },
+    "cisdem-data-recovery": {
+      "caskVersion": "20.6.0",
+      "sourceURL": "https://download.cisdem.com/cisdem-datarecovery.dmg",
+      "artifactSHA256": "9ad503c5a6831776b03d8399e9e88c7978939988b432a981877637f5715d0982",
+      "apps": [
+        {
+          "bundleName": "Cisdem Data Recovery.app",
+          "bundleIdentifier": "com.easeus.datarecoveryloaderapp"
+        }
+      ]
+    },
+    "clipaste": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://www.ntwind.com/files/Clipaste_1.0.5-mac.dmg",
+      "artifactSHA256": "89daed9982e60c560730e3c2edbffc0098c6aebdca208c23563f17e355e88ee8",
+      "apps": [
+        {
+          "bundleName": "Clipaste.app",
+          "bundleIdentifier": "com.ntwind.clipaste"
+        }
+      ]
+    },
+    "clearance": {
+      "caskVersion": "1.3.5",
+      "sourceURL": "https://github.com/prime-radiant-inc/clearance/releases/download/v1.3.5/Clearance-1.3.5-macOS.dmg",
+      "artifactSHA256": "ff6f8fdd2358e316d855cd61229e1c40dfddbe4af790cdbacab9ce1d2be42b72",
+      "apps": [
+        {
+          "bundleName": "Clearance.app",
+          "bundleIdentifier": "com.primeradiant.Clearance"
+        }
+      ]
+    },
+    "cisdem-document-reader": {
+      "caskVersion": "6.0.0",
+      "sourceURL": "https://download.cisdem.com/cisdem-documentreader.dmg",
+      "artifactSHA256": "9907c28c37c71b714f31389b040b762f6a4dd559e2b138f51f9f1a8c3322c50b",
+      "apps": [
+        {
+          "bundleName": "Cisdem Document Reader.app",
+          "bundleIdentifier": "com.cisdem.documentreader"
+        }
+      ]
+    },
+    "cityofzion-neon": {
+      "caskVersion": "2.25.1",
+      "sourceURL": "https://github.com/CityOfZion/neon-wallet/releases/download/v2.25.1/Neon.2.25.1.arm64.dmg",
+      "artifactSHA256": "6b4b6008d2984484e2848d352616ef3263529ca5d0f0738ebf04300e6e6beb02",
+      "apps": [
+        {
+          "bundleName": "Neon.app",
+          "bundleIdentifier": "com.electron.neon"
+        }
+      ]
+    },
+    "clarify": {
+      "caskVersion": "1.7.10",
+      "sourceURL": "https://github.com/clarifyhq/desktop-app-releases/releases/download/v1.7.10/Clarify.dmg",
+      "artifactSHA256": "a007ac22e37a77a4b13d532ca3b67d0dd79aea05df786d630d86df9f5b2dab7a",
+      "apps": [
+        {
+          "bundleName": "Clarify.app",
+          "bundleIdentifier": "com.clarify.desktop"
+        }
+      ]
+    },
+    "cleaneronepro": {
+      "caskVersion": "6.7.7,5499",
+      "sourceURL": "https://files.trendmicro.com/products/CleanerOnePro/COPG0001/5499/CleanerOnePro_6_7_7.zip",
+      "artifactSHA256": "d3d341b79753b03e9c6c1fda075b28e08b30c1db9da460be7fdf41936e04b94f",
+      "apps": [
+        {
+          "bundleName": "CleanerOnePro.app",
+          "bundleIdentifier": "com.trendmicro.TrendCleanerPro"
+        }
+      ]
+    },
+    "cisdem-duplicate-finder": {
+      "caskVersion": "6.5.0",
+      "sourceURL": "https://download.cisdem.com/cisdem-duplicatefinder.dmg",
+      "artifactSHA256": "c76c28798425d341bcc85d3c92f04fe40d6d6ba5b08588c37197e385e9e07159",
+      "apps": [
+        {
+          "bundleName": "Cisdem Duplicate Finder.app",
+          "bundleIdentifier": "com.cisdem.duplicatefinder"
+        }
+      ]
     }
   }
 }
