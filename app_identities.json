@@ -8245,6 +8245,281 @@
           "bundleIdentifier": "com.googlecode.iterm2.iTermBrowserPlugin"
         }
       ]
+    },
+    "vuescan": {
+      "caskVersion": "9.8.58",
+      "sourceURL": "https://www.hamrick.com/files/vuea6498.dmg",
+      "artifactSHA256": "aca7414122fba1b737503913f018429cd33ea23954f507185edb9db2aacde6b1",
+      "apps": [
+        {
+          "bundleName": "VueScan.app",
+          "bundleIdentifier": "com.hamrick.vuescan"
+        }
+      ]
+    },
+    "netron": {
+      "caskVersion": "9.2.9",
+      "sourceURL": "https://github.com/lutzroeder/netron/releases/download/v9.2.9/Netron-9.2.9-mac.zip",
+      "artifactSHA256": "915885d330e3765570f466222f0e337ec4d8986eef38c2ae7bb91bb506ac97c1",
+      "apps": [
+        {
+          "bundleName": "Netron.app",
+          "bundleIdentifier": "com.lutzroeder.netron"
+        }
+      ]
+    },
+    "4k-video-downloader+": {
+      "caskVersion": "26.3.3",
+      "sourceURL": "https://dl.4kdownload.com/app/4kvideodownloaderplus_26.3.3_arm64.dmg",
+      "artifactSHA256": "25e1d4f6970434143c3d4fc16a8cfa5df8a45def5c8d9890cb54a2f13c922621",
+      "apps": [
+        {
+          "bundleName": "4K Video Downloader+.app",
+          "bundleIdentifier": "com.openmedia.4kvideodownloaderplus"
+        }
+      ]
+    },
+    "annotate": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/epilande/Annotate/releases/download/v1.6.0/Annotate-1.6.0.dmg",
+      "artifactSHA256": "50136d9f53abf1f9e4b78db0c4d072d3e632cd7fdf90baf820560537272b35b6",
+      "apps": [
+        {
+          "bundleName": "Annotate.app",
+          "bundleIdentifier": "com.epilande.Annotate"
+        }
+      ]
+    },
+    "subtitle-edit": {
+      "caskVersion": "5.2.0",
+      "sourceURL": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.2.0/SubtitleEdit-macOS-ARM64.dmg",
+      "artifactSHA256": "40e1dd630d35c97914ef6d828293e6c0ee61097eb6d4b7d2032239d5ad123b2f",
+      "apps": [
+        {
+          "bundleName": "Subtitle Edit.app",
+          "bundleIdentifier": "dk.nikse.subtitleedit"
+        }
+      ]
+    },
+    "proxy-audio-device": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://github.com/briankendall/proxy-audio-device/releases/download/v1.0.7/ProxyAudioDevice_v1.0.7.zip",
+      "artifactSHA256": "6bdfca3e8a61f6931770de3f6813fa787891dfa8cad674f1af1f7011909c323c",
+      "apps": [
+        {
+          "bundleName": "Proxy Audio Device Settings.app",
+          "bundleIdentifier": "net.briankendall.Proxy-Audio-Device-Settings"
+        }
+      ]
+    },
+    "maczip": {
+      "caskVersion": "2.4",
+      "sourceURL": "https://cdn.awehunt.com/ezip/release/MacZip_V2.4.dmg",
+      "artifactSHA256": "4d5ab6cc2ca41415930d3d82decdff677591de53574bdda42f04c7a659915cde",
+      "apps": [
+        {
+          "bundleName": "MacZip.app",
+          "bundleIdentifier": "com.jinghaoshe.ezip"
+        }
+      ]
+    },
+    "macmd-viewer": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://macmdviewer.com/downloads/v1.6.2/MacMDViewer.dmg",
+      "artifactSHA256": "f38d641dc993e13fa9fac01ddbb51c863a6762523c39a0ea1d672813b51883d5",
+      "apps": [
+        {
+          "bundleName": "MacMD Viewer.app",
+          "bundleIdentifier": "com.arthur.MarkdownViewer"
+        }
+      ]
+    },
+    "trae": {
+      "caskVersion": "2.3.61406",
+      "sourceURL": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.61406/darwin/Trae-darwin-arm64.dmg",
+      "artifactSHA256": "b8064ce3461dd899dbfa6e3b46ebdaf5ae045c1eaad580eff3513947dbc336f8",
+      "apps": [
+        {
+          "bundleName": "Trae.app",
+          "bundleIdentifier": "com.trae.app"
+        }
+      ]
+    },
+    "qspace-pro": {
+      "caskVersion": "6.3.2",
+      "sourceURL": "https://cdn.awehunt.com/qs/rel/QSpace%20Pro_V6.3.2.dmg",
+      "artifactSHA256": "542dc46e729db2c0ad0ff1507d990220c78111a87535f240bd38f7c99c739bdd",
+      "apps": [
+        {
+          "bundleName": "QSpace Pro.app",
+          "bundleIdentifier": "com.jinghaoshe.qspace.pro"
+        }
+      ]
+    },
+    "opendisplay": {
+      "caskVersion": "1.21.0",
+      "sourceURL": "https://github.com/peetzweg/opendisplay/releases/download/v1.21.0/OpenDisplay.dmg",
+      "artifactSHA256": "a462aae49babc5b3625adadb75bf7e51fbd140cbbbe56c4c7d7c6636b61a26f5",
+      "apps": [
+        {
+          "bundleName": "OpenDisplay.app",
+          "bundleIdentifier": "com.peetzweg.opensidecar.mac"
+        }
+      ]
+    },
+    "flowvision": {
+      "caskVersion": "1.7.6",
+      "sourceURL": "https://github.com/netdcy/FlowVision/releases/download/1.7.6/FlowVision.1.7.6.zip",
+      "artifactSHA256": "be9d3f34592ee279ccb59d8b25c637ed1665c7c59699a197c3bc93bb8cd981b9",
+      "apps": [
+        {
+          "bundleName": "FlowVision.app",
+          "bundleIdentifier": "netdcy.FlowVision"
+        }
+      ]
+    },
+    "passepartout": {
+      "caskVersion": "3.11.2",
+      "sourceURL": "https://github.com/partout-io/passepartout/releases/download/v3.11.2/Passepartout.arm64.dmg",
+      "artifactSHA256": "534f0425d6e94e3fcb84464daefd11a042c57a20cae7ad2c442e30ed45646a25",
+      "apps": [
+        {
+          "bundleName": "Passepartout.app",
+          "bundleIdentifier": "com.algoritmico.mac.Passepartout"
+        }
+      ]
+    },
+    "itermai": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://iterm2.com/downloads/ai-plugin/iTermAI-1.1.zip",
+      "artifactSHA256": "6e5547505909df1b1e9355e61f97c4ddc575373d8ef24074c320788426f99f42",
+      "apps": [
+        {
+          "bundleName": "iTermAI.app",
+          "bundleIdentifier": "com.googlecode.iterm2.iTermAI"
+        }
+      ]
+    },
+    "mouseless": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/croian/mouseless/releases/download/v1.0.0/mouseless-installer_v1.0.0.dmg",
+      "artifactSHA256": "6893aede575f47665bb37c127f0f1372e007ad7cad692c44c75e19803f08560b",
+      "apps": [
+        {
+          "bundleName": "Mouseless.app",
+          "bundleIdentifier": "net.sonuscape.mouseless"
+        }
+      ]
+    },
+    "jetbrains-air": {
+      "caskVersion": "262.834.44",
+      "sourceURL": "https://download.jetbrains.com/air/installers/macos_aarch64/Air-262.834.44-aarch64.dmg",
+      "artifactSHA256": "7281d46e9eccfbdee552daf4a0467c0e1cbb902fb3f6697ddbce3f920597595a",
+      "apps": [
+        {
+          "bundleName": "Air.app",
+          "bundleIdentifier": "com.jetbrains.air"
+        }
+      ]
+    },
+    "scummvm-app": {
+      "caskVersion": "2026.3.0",
+      "sourceURL": "https://downloads.scummvm.org/frs/scummvm/2026.3.0/scummvm-2026.3.0-macosx.dmg",
+      "artifactSHA256": "d483f41a67d389a3bf50832b9a1a054fbeded56fc148216e4f84a06d330d2172",
+      "apps": [
+        {
+          "bundleName": "ScummVM.app",
+          "bundleIdentifier": "org.scummvm.app"
+        }
+      ]
+    },
+    "browseros": {
+      "caskVersion": "0.50.5",
+      "sourceURL": "https://github.com/browseros-ai/BrowserOS/releases/download/v0.50.5/BrowserOS_v0.50.5_arm64.dmg",
+      "artifactSHA256": "853ac4a86ea8551b7e1091e24b6f90c5a6f21ad502a257334885363839cab70c",
+      "apps": [
+        {
+          "bundleName": "BrowserOS.app",
+          "bundleIdentifier": "com.browseros.BrowserOS"
+        }
+      ]
+    },
+    "actual": {
+      "caskVersion": "26.9.0",
+      "sourceURL": "https://github.com/actualbudget/actual/releases/download/v26.9.0/Actual-mac-arm64.dmg",
+      "artifactSHA256": "d6c01a7fc830d28ef6e476073a1574ae356222cc524c9097e74387017212247b",
+      "apps": [
+        {
+          "bundleName": "Actual.app",
+          "bundleIdentifier": "com.actualbudget.actual"
+        }
+      ]
+    },
+    "offset-explorer": {
+      "caskVersion": "4.0.4",
+      "sourceURL": "https://www.kafkatool.com/download4/offsetexplorer.dmg",
+      "artifactSHA256": "bd3ba75fdc069d41e08d57b9dc80aaeec5a797d515ff1d2b4e6f74b5d5948b37",
+      "apps": [
+        {
+          "bundleName": "Offset Explorer 4.app",
+          "bundleIdentifier": "com.install4j.8590-9381-8680-5625.23"
+        }
+      ]
+    },
+    "sabnzbd": {
+      "caskVersion": "5.1.3",
+      "sourceURL": "https://github.com/sabnzbd/sabnzbd/releases/download/5.1.3/SABnzbd-5.1.3-macos.dmg",
+      "artifactSHA256": "a6ec86a423206a0780b8e204ac35aae6ada43d23c35fd0291f4b239e94446c5a",
+      "apps": [
+        {
+          "bundleName": "SABnzbd.app",
+          "bundleIdentifier": "org.sabnzbd.sabnzbd"
+        }
+      ]
+    },
+    "freeplane": {
+      "caskVersion": "1.13.3",
+      "sourceURL": "https://downloads.sourceforge.net/freeplane/Freeplane-1.13.3-apple.dmg",
+      "artifactSHA256": "f6c8639cbe91ca431c84b44eb64ab0b3f984454ec0203e1132e49586265a2347",
+      "apps": [
+        {
+          "bundleName": "Freeplane.app",
+          "bundleIdentifier": "org.freeplane.launcher"
+        }
+      ]
+    },
+    "slicer": {
+      "caskVersion": "5.12.4,6aa2063bce9de556d30132d8",
+      "sourceURL": "https://slicer-packages.kitware.com/api/v1/item/6aa2063bce9de556d30132d8/download",
+      "artifactSHA256": "a15ea10dc67db53c477fc7cb80b2c64a2cfb2516a9a67056a6432c5272c223e4",
+      "apps": [
+        {
+          "bundleName": "Slicer.app",
+          "bundleIdentifier": "org.slicer.slicer"
+        }
+      ]
+    },
+    "ukelele": {
+      "caskVersion": "3.6.1",
+      "sourceURL": "https://software.sil.org/downloads/r/ukelele/Ukelele_3.6.1.dmg",
+      "artifactSHA256": "ffa11a15824f4ac9bf3cc9807e8bc9b0d4247efebf03d7a55d052dbfaafac501",
+      "apps": [
+        {
+          "bundleName": "Ukelele.app",
+          "bundleIdentifier": "org.sil.ukelele"
+        }
+      ]
+    },
+    "freac": {
+      "caskVersion": "1.1.7",
+      "sourceURL": "https://github.com/enzo1982/freac/releases/download/v1.1.7/freac-1.1.7-macos11.dmg",
+      "artifactSHA256": "22e29d73bdaf6dcb851a03bfe344028e38457c85b21e7378ffac8625a8ed4f12",
+      "apps": [
+        {
+          "bundleName": "freac.app",
+          "bundleIdentifier": "org.freac.freac"
+        }
+      ]
     }
   }
 }
