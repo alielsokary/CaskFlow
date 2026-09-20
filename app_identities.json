@@ -8784,6 +8784,289 @@
           "bundleIdentifier": "com.8bitdo.firmwareupdater"
         }
       ]
+    },
+    "ppsspp-emulator": {
+      "caskVersion": "1.20.4",
+      "sourceURL": "https://www.ppsspp.org/files/1_20_4/PPSSPP_macOS.dmg",
+      "artifactSHA256": "bad86fc544a2c2fc5795d6a5832a8925d6db43e5789fe507f742305aaa357e17",
+      "apps": [
+        {
+          "bundleName": "PPSSPPSDL.app",
+          "bundleIdentifier": "org.ppsspp.ppsspp"
+        }
+      ]
+    },
+    "moom": {
+      "caskVersion": "4.6.0",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/moom460.dmg",
+      "artifactSHA256": "45217254124fce56c48c84687c9abf78507e84e2df4a860ad3801433357b87e9",
+      "apps": [
+        {
+          "bundleName": "Moom.app",
+          "bundleIdentifier": "com.manytricks.Moom"
+        }
+      ]
+    },
+    "notesnook": {
+      "caskVersion": "3.4.8",
+      "sourceURL": "https://github.com/streetwriters/notesnook/releases/download/v3.4.8/notesnook_mac_arm64.dmg",
+      "artifactSHA256": "94f23dc0423303f0e48c148a03f12793745d1be9f0f7011b632ce6a7bc900f2d",
+      "apps": [
+        {
+          "bundleName": "Notesnook.app",
+          "bundleIdentifier": "org.streetwriters.notesnook"
+        }
+      ]
+    },
+    "paste": {
+      "caskVersion": "7.0.0",
+      "sourceURL": "https://downloads.pasteapp.io/dist/stable/Paste-7.0.0.zip",
+      "artifactSHA256": "15ea297597921ae22a6f20de62eca65507509ed2fb7d67fbf1545bc2f1b14e42",
+      "apps": [
+        {
+          "bundleName": "Paste.app",
+          "bundleIdentifier": "com.wiheads.paste-direct"
+        }
+      ]
+    },
+    "ui-tars": {
+      "caskVersion": "0.2.4",
+      "sourceURL": "https://github.com/bytedance/UI-TARS-desktop/releases/download/v0.2.4/UI-TARS-0.2.4-arm64.dmg",
+      "artifactSHA256": "30d06c29db88afb7295edb0ae557f8fbac2f47df137232ddbb9999a5a017dfd0",
+      "apps": [
+        {
+          "bundleName": "UI TARS.app",
+          "bundleIdentifier": "com.electron.ui-tars"
+        }
+      ]
+    },
+    "tad": {
+      "caskVersion": "0.14.0",
+      "sourceURL": "https://github.com/antonycourtney/tad/releases/download/v0.14.0/Tad-0.14.0-arm64.dmg",
+      "artifactSHA256": "18004712674bbd7072137937f2ad02231f71b2b326d48079e72f9a536660d588",
+      "apps": [
+        {
+          "bundleName": "Tad.app",
+          "bundleIdentifier": "com.antonycourtney.tad"
+        }
+      ]
+    },
+    "steermouse": {
+      "caskVersion": "5.8",
+      "sourceURL": "https://plentycom.jp/ctrl/files_sm/SteerMouse5.8.dmg",
+      "artifactSHA256": "f3166054704323c6cdcf7ce25398e92670978e540e4dd30cbb4418ed5548537f",
+      "apps": [
+        {
+          "bundleName": "SteerMouse.app",
+          "bundleIdentifier": "jp.plentycom.app.SteerMouse"
+        }
+      ]
+    },
+    "caido": {
+      "caskVersion": "0.58.3",
+      "sourceURL": "https://caido.download/releases/v0.58.3/caido-desktop-v0.58.3-mac-aarch64.dmg",
+      "artifactSHA256": "4a116836e12a4bf93805f1eed0b181254e9abe3a1aebdf3d7dcab34697955696",
+      "apps": [
+        {
+          "bundleName": "Caido.app",
+          "bundleIdentifier": "io.caido.Caido"
+        }
+      ]
+    },
+    "sloth": {
+      "caskVersion": "3.6",
+      "sourceURL": "https://sveinbjorn.org/files/software/sloth/sloth-3.6.zip",
+      "artifactSHA256": "d3997c364c0b5f58e8676d336b78943cfcbc54e6c78cab348bd1580c29332da6",
+      "apps": [
+        {
+          "bundleName": "Sloth.app",
+          "bundleIdentifier": "org.sveinbjorn.Sloth"
+        }
+      ]
+    },
+    "86box": {
+      "caskVersion": "6.0,9001",
+      "sourceURL": "https://github.com/86Box/86Box/releases/download/v6.0/86Box-macOS-x86_64+arm64-b9001.zip",
+      "artifactSHA256": "fc66fc97225012af20145ae04193911bbf689fc75f89590774a904483140a5a9",
+      "apps": [
+        {
+          "bundleName": "86Box.app",
+          "bundleIdentifier": "net.86Box.86Box"
+        }
+      ]
+    },
+    "picview": {
+      "caskVersion": "5.1.1",
+      "sourceURL": "https://github.com/Ruben2776/PicView/releases/download/5.1.1/PicView-5.1.1-macOS-arm64.dmg",
+      "artifactSHA256": "8986be39e23360d4e53a6183fcc267f03f1bd142d1f37e4db1922236e6903141",
+      "apps": [
+        {
+          "bundleName": "PicView.app",
+          "bundleIdentifier": "com.ruben2776.picview"
+        }
+      ]
+    },
+    "mixxx": {
+      "caskVersion": "2.5.6",
+      "sourceURL": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg",
+      "artifactSHA256": "f724cd8b0048a60963f11694acbffb2438a89c1cf732117559ac3031f8486e27",
+      "apps": [
+        {
+          "bundleName": "Mixxx.app",
+          "bundleIdentifier": "org.mixxx.mixxx"
+        }
+      ]
+    },
+    "rustrover": {
+      "caskVersion": "2026.2.3,262.10968.75",
+      "sourceURL": "https://download.jetbrains.com/rustrover/RustRover-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "7f5ca1ad7578606c182671b987160efd80884c3be9b55e9feb76b1150d8029dd",
+      "apps": [
+        {
+          "bundleName": "RustRover.app",
+          "bundleIdentifier": "com.jetbrains.rustrover"
+        }
+      ]
+    },
+    "siyuan": {
+      "caskVersion": "3.8.4",
+      "sourceURL": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.4/siyuan-3.8.4-mac-arm64.dmg",
+      "artifactSHA256": "ccab152bc5b44586c5f9595f323d409b30eb7fd518cb9a58675e437ea5ffe1fc",
+      "apps": [
+        {
+          "bundleName": "SiYuan.app",
+          "bundleIdentifier": "org.b3log.siyuan"
+        }
+      ]
+    },
+    "p4v": {
+      "caskVersion": "2026.2,3029854",
+      "sourceURL": "https://filehost.perforce.com/perforce/r26.2/bin.macosx12u/P4V.dmg",
+      "artifactSHA256": "9bec7eefac9fd1aa747fbee6602a1720a4ab82177a290358780e63f2edf9d1de",
+      "apps": [
+        {
+          "bundleName": "p4v.app",
+          "bundleIdentifier": "com.perforce.p4v"
+        },
+        {
+          "bundleName": "p4merge.app",
+          "bundleIdentifier": "com.perforce.p4merge"
+        },
+        {
+          "bundleName": "p4admin.app",
+          "bundleIdentifier": "com.perforce.p4admin"
+        }
+      ]
+    },
+    "codebuddy": {
+      "caskVersion": "4.12.0.37847260,b4c35ed0",
+      "sourceURL": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/darwin-arm64/CodeBuddy-darwin-arm64-4.12.0.37847260-b4c35ed0.zip",
+      "artifactSHA256": "59c61e2cd4416b66ead867f3f0918d247d26be72d226c5427713825deb0d578d",
+      "apps": [
+        {
+          "bundleName": "CodeBuddy.app",
+          "bundleIdentifier": "com.tencent.codebuddy"
+        }
+      ]
+    },
+    "twine-app": {
+      "caskVersion": "2.12.0",
+      "sourceURL": "https://github.com/klembot/twinejs/releases/download/2.12.0/Twine-2.12.0-macOS.dmg",
+      "artifactSHA256": "918c55e1ccb4131db6f64f7586d024875075331211c2a1d03c73d2f3ed77bddc",
+      "apps": [
+        {
+          "bundleName": "Twine.app",
+          "bundleIdentifier": "org.twinery.twine"
+        }
+      ]
+    },
+    "session": {
+      "caskVersion": "1.18.1",
+      "sourceURL": "https://github.com/session-foundation/session-desktop/releases/download/v1.18.1/session-desktop-mac-arm64-1.18.1.dmg",
+      "artifactSHA256": "c07fd0d944de540f5e6a408cea351b82579edde28dd49ffa79ceabd82c134080",
+      "apps": [
+        {
+          "bundleName": "Session.app",
+          "bundleIdentifier": "com.loki-project.messenger-desktop"
+        }
+      ]
+    },
+    "airsync": {
+      "caskVersion": "4.0.1",
+      "sourceURL": "https://github.com/sameerasw/airsync-mac/releases/download/v4.0.1/AirSync.dmg",
+      "artifactSHA256": "00df559b02b1ec3103abcc317fb49a4423478c41121c5dbb52244d58bbd9e9fd",
+      "apps": [
+        {
+          "bundleName": "AirSync.app",
+          "bundleIdentifier": "sameerasw.airsync-mac"
+        }
+      ]
+    },
+    "asset-catalog-tinkerer": {
+      "caskVersion": "2.9",
+      "sourceURL": "https://github.com/insidegui/AssetCatalogTinkerer/releases/download/2.9/AssetCatalogTinkerer_v2.9-290.zip",
+      "artifactSHA256": "ab18ece5d597960f9002c84cc800b61b2b22f4f61a63d6695dac378340ded5c0",
+      "apps": [
+        {
+          "bundleName": "Asset Catalog Tinkerer.app",
+          "bundleIdentifier": "br.com.guilhermerambo.Asset-Catalog-Tinkerer"
+        }
+      ]
+    },
+    "cleanupbuddy": {
+      "caskVersion": "1.3.1,15",
+      "sourceURL": "https://sparkle.cleanupbuddy.app/CleanupBuddy_v1.3.1-15.dmg",
+      "artifactSHA256": "d64b1a2567612da30c8e6a902ae4ae215da7cfb4261f187f46957409429535ba",
+      "apps": [
+        {
+          "bundleName": "CleanupBuddy.app",
+          "bundleIdentifier": "codes.rambo.CleanupBuddy"
+        }
+      ]
+    },
+    "gnucash": {
+      "caskVersion": "5.16-3",
+      "sourceURL": "https://github.com/Gnucash/gnucash/releases/download/5.16/Gnucash-Arm-5.16-3.dmg",
+      "artifactSHA256": "26ae2e340edf2a58fdb906962cc48eb4ec1cf1a7b5862b72108f9a5401fd664b",
+      "apps": [
+        {
+          "bundleName": "Gnucash.app",
+          "bundleIdentifier": "org.gnucash.Gnucash"
+        }
+      ]
+    },
+    "codebuddy-cn": {
+      "caskVersion": "4.12.0.37847260,b4c35ed0",
+      "sourceURL": "https://acc-1258344699.cos.accelerate.myqcloud.com/aiide/darwin-arm64/CodeBuddy-darwin-arm64-4.12.0.37847260-b4c35ed0-cn.zip",
+      "artifactSHA256": "b35419e267fe7cbb4b5f1b1f748141860531fb399ee32a2e9e8121ada2285e2a",
+      "apps": [
+        {
+          "bundleName": "CodeBuddy CN.app",
+          "bundleIdentifier": "com.tencent.codebuddycn"
+        }
+      ]
+    },
+    "clawd-on-desk": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/rullerzhou-afk/clawd-on-desk/releases/download/v1.1.0/Clawd-on-Desk-1.1.0-arm64.dmg",
+      "artifactSHA256": "2b3554531b135a85aab9d36d94bcad13a4f5626b932dd2f45481508b81d297b6",
+      "apps": [
+        {
+          "bundleName": "Clawd on Desk.app",
+          "bundleIdentifier": "com.clawd.on-desk"
+        }
+      ]
+    },
+    "ollamac": {
+      "caskVersion": "3.0.3",
+      "sourceURL": "https://github.com/kevinhermawan/Ollamac/releases/download/v3.0.3/Ollamac-3.0.3.dmg",
+      "artifactSHA256": "f93012c37e5cc9858ea9eef06d74037b08080f9e23cf129504981d3de8305e9c",
+      "apps": [
+        {
+          "bundleName": "Ollamac.app",
+          "bundleIdentifier": "com.kevinhermawan.Ollamac"
+        }
+      ]
     }
   }
 }
