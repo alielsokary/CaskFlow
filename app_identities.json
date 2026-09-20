@@ -9067,6 +9067,276 @@
           "bundleIdentifier": "com.kevinhermawan.Ollamac"
         }
       ]
+    },
+    "vysor": {
+      "caskVersion": "5.0.7",
+      "sourceURL": "https://github.com/koush/vysor.io/releases/download/v5.0.7/Vysor-mac-5.0.7.zip",
+      "artifactSHA256": "b3db71a61e6b46df7242038335b0ff6be961fcfd3e31250fda0488236bcadd6f",
+      "apps": [
+        {
+          "bundleName": "Vysor.app",
+          "bundleIdentifier": "com.electron.vysor"
+        }
+      ]
+    },
+    "dockey": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://dockey.publicspace.co/download/Dockey-latest.zip",
+      "artifactSHA256": "8a7928c91bcb47b81bf91061dbc0f0710054abbe4ec99325bf07c7c5a733a37f",
+      "apps": []
+    },
+    "atv-remote": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "https://github.com/bsharper/atv-desktop-remote/releases/download/v2.2.1/ATV.Remote-2.2.1-arm64.dmg",
+      "artifactSHA256": "0f3cfca6a7cc68261ff302f7b5163cfd9b8b6cc6c30417580c0d537a35c84629",
+      "apps": [
+        {
+          "bundleName": "ATV Remote.app",
+          "bundleIdentifier": "com.electron.atvMacRemote"
+        }
+      ]
+    },
+    "superhuman": {
+      "caskVersion": "1041.0.61",
+      "sourceURL": "https://storage.googleapis.com/download.superhuman.com/supertron-update/Superhuman-1041.0.61-arm64-latest-mac.zip",
+      "artifactSHA256": "8c6b9989c4ffef7a8697b2126c37215190b57c3fc34a068e6175528c36eea918",
+      "apps": [
+        {
+          "bundleName": "Superhuman.app",
+          "bundleIdentifier": "com.superhuman.electron"
+        }
+      ]
+    },
+    "dockspace": {
+      "caskVersion": "0.9",
+      "sourceURL": "https://s4.getdockspace.app/releases/Dockspace-0.9.zip",
+      "artifactSHA256": "3bfe9ac33d22da5ca365435d12ee432fd96aa0aca618fb1c03211d3cab3d6e02",
+      "apps": [
+        {
+          "bundleName": "Dockspace.app",
+          "bundleIdentifier": "getdockspace.app"
+        }
+      ]
+    },
+    "gramps": {
+      "caskVersion": "6.0.8,1",
+      "sourceURL": "https://github.com/gramps-project/gramps/releases/download/v6.0.8/Gramps-Arm-6.0.8-1.dmg",
+      "artifactSHA256": "8465bbb6a3dbf23ca7a49cebd121db0d1490ee39a8d3c545161324dd2edc0848",
+      "apps": [
+        {
+          "bundleName": "Gramps.app",
+          "bundleIdentifier": "org.gramps-project.gramps"
+        }
+      ]
+    },
+    "qgroundcontrol": {
+      "caskVersion": "5.1.4",
+      "sourceURL": "https://github.com/mavlink/qgroundcontrol/releases/download/v5.1.4/QGroundControl.dmg",
+      "artifactSHA256": "25fa8fc92f3e6ed9b80fe7046aac0e163bf74e0ece5d6149a0b12a5faca1502d",
+      "apps": [
+        {
+          "bundleName": "QGroundControl.app",
+          "bundleIdentifier": "org.mavlink.qgroundcontrol"
+        }
+      ]
+    },
+    "neo4j-desktop": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "https://dist.neo4j.org/neo4j-desktop-2/mac/neo4j-desktop-2.2.1-universal.dmg",
+      "artifactSHA256": "f4d2b1324af3aeaf008de29e0ed1aff13ebd23c4850ef5ff154ff2992128711a",
+      "apps": [
+        {
+          "bundleName": "Neo4j Desktop 2.app",
+          "bundleIdentifier": "com.neo4j.neo4j-desktop-2"
+        }
+      ]
+    },
+    "moonfin": {
+      "caskVersion": "2.5.1",
+      "sourceURL": "https://github.com/Moonfin-Client/Moonfin-Core/releases/download/2.5.1/Moonfin_macOS_v2.5.1.dmg",
+      "artifactSHA256": "2105316137ba140fc41d0976281ef75bddac8b29ab3e55c7f6e4d6ce72542475",
+      "apps": [
+        {
+          "bundleName": "Moonfin.app",
+          "bundleIdentifier": "org.moonfin.app"
+        }
+      ]
+    },
+    "selfcontrol": {
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://downloads.selfcontrolapp.com/SelfControl-4.0.2.zip",
+      "artifactSHA256": "15d8fd17839746c608d0c4e929b650d741e691ebee6f893320c783e86ac75926",
+      "apps": [
+        {
+          "bundleName": "SelfControl.app",
+          "bundleIdentifier": "org.eyebeam.SelfControl"
+        }
+      ]
+    },
+    "taskexplorer": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/objective-see/TaskExplorer/releases/download/v3.0.0/TaskExplorer_3.0.0.zip",
+      "artifactSHA256": "4a97769ce5d185c45545e1fe8b5652774baf5ec29bf41a865c5b2a7bec961a02",
+      "apps": [
+        {
+          "bundleName": "TaskExplorer.app",
+          "bundleIdentifier": "com.objective-see.taskexplorer"
+        }
+      ]
+    },
+    "tower": {
+      "caskVersion": "17.3,558,d611d30c",
+      "sourceURL": "https://www.git-tower.com/apps/tower3-mac/558-d611d30c/Tower-17.3-558.zip",
+      "artifactSHA256": "1aa7f9f461ea6d1bd3f89982223f6fba0da4be54018086d6a5ab9d07d966f492",
+      "apps": [
+        {
+          "bundleName": "Tower.app",
+          "bundleIdentifier": "com.fournova.Tower3"
+        }
+      ]
+    },
+    "native-access": {
+      "caskVersion": "3.25.2",
+      "sourceURL": "https://na-update.native-instruments.com/arm64/Native-Access-arm64-mac-latest.zip",
+      "artifactSHA256": "0e56b681bf287865f7ed7c390d0a352e6f81cc883906a7f2027340227c29cc50",
+      "apps": [
+        {
+          "bundleName": "Native Access.app",
+          "bundleIdentifier": "com.native-instruments.nativeaccess2"
+        }
+      ]
+    },
+    "plaud": {
+      "caskVersion": "1.3.8",
+      "sourceURL": "https://client-download.plaud.ai/desktop/v1/Plaud-1.3.8-arm64.dmg",
+      "artifactSHA256": "8ccf2ab4f671b16ae651e9c5c3b83e9421f10c39cbfc2eb3ab90d294228732b9",
+      "apps": [
+        {
+          "bundleName": "Plaud.app",
+          "bundleIdentifier": "ai.plaud.desktop.plaud"
+        }
+      ]
+    },
+    "batfi": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://files.micropixels.software/batfi/BatFi-latest.zip",
+      "artifactSHA256": "f5dce64502725c5a21d7740b8e55b21cc0fdb81638e0b244228c0ed58022b6b5",
+      "apps": [
+        {
+          "bundleName": "BatFi.app",
+          "bundleIdentifier": "software.micropixels.BatFi"
+        }
+      ]
+    },
+    "fujifilm-x-raw-studio": {
+      "caskVersion": "1.28.0,10wt23dg",
+      "sourceURL": "https://dl.fujifilm-x.com/support/software/x-raw-studio-mac1280-10wt23dg/XRawStudio1280.dmg",
+      "artifactSHA256": "9963268c999cd9b96c102fcf3673248a6f5c6dd3c428f9da69d8827e163fa634",
+      "apps": [
+        {
+          "bundleName": "FUJIFILM X RAW STUDIO.app",
+          "bundleIdentifier": "com.fujifilm.denji.X-RAW-STUDIO"
+        }
+      ]
+    },
+    "bentobox": {
+      "caskVersion": "1.1.10",
+      "sourceURL": "https://releases.bentobox.friendlyventures.org/1.1.10/bentobox-macos-universal.zip",
+      "artifactSHA256": "2a02591fcd74286dfdfd992b8e7a7fed1272a4579d2412c3eeb5fb2d167a7125",
+      "apps": [
+        {
+          "bundleName": "BentoBox.app",
+          "bundleIdentifier": "org.friendlyventures.BentoBox"
+        }
+      ]
+    },
+    "deezer": {
+      "caskVersion": "7.1.340",
+      "sourceURL": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.340",
+      "artifactSHA256": "f39ec43d1d46ec72cef73762e079c4c9792468fd7b254c0f16861252e5cfde4c",
+      "apps": [
+        {
+          "bundleName": "Deezer.app",
+          "bundleIdentifier": "com.deezer.deezer-desktop"
+        }
+      ]
+    },
+    "kekaexternalhelper": {
+      "caskVersion": "1.2.0,1.4.4",
+      "sourceURL": "https://github.com/aonez/Keka/releases/download/v1.4.4/KekaExternalHelper-v1.2.0.zip",
+      "artifactSHA256": "6857bb22694b6f6c01a13c40953b0a04b1704acf90da414a7476be63961d9827",
+      "apps": [
+        {
+          "bundleName": "KekaExternalHelper.app",
+          "bundleIdentifier": "com.aone.KekaExternalHelper"
+        }
+      ]
+    },
+    "mythic": {
+      "caskVersion": "0.6.0,92033dfd-7a35-4629-9ca5-60d66576fb65",
+      "sourceURL": "https://dl.getmythic.app/updates/92033dfd-7a35-4629-9ca5-60d66576fb65/Mythic.zip",
+      "artifactSHA256": "bcdb543d56e71e6ae3e102ff5bebbbdecdb1066549228d4c5f1a3c5cfa82c816",
+      "apps": [
+        {
+          "bundleName": "Mythic.app",
+          "bundleIdentifier": "xyz.blackxfiied.Mythic"
+        }
+      ]
+    },
+    "snagit": {
+      "caskVersion": "2026.3.3",
+      "sourceURL": "https://download.techsmith.com/snagitmac/releases/2026.3.3/snagit.dmg",
+      "artifactSHA256": "45dc05db293a5f3e0e769ba6c8466da67da91c772a9e10b86f2675e027a23df0",
+      "apps": [
+        {
+          "bundleName": "Snagit.app",
+          "bundleIdentifier": "com.TechSmith.Snagit"
+        }
+      ]
+    },
+    "permute": {
+      "caskVersion": "4.0.11,4168",
+      "sourceURL": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4168.dmg",
+      "artifactSHA256": "56cd4e9592a40ceb6d11afdf89adf9faad51080ed74f2cbac0565e4277917d75",
+      "apps": [
+        {
+          "bundleName": "Permute 4.app",
+          "bundleIdentifier": "com.charliemonroe.Permute-4"
+        }
+      ]
+    },
+    "serial": {
+      "caskVersion": "2.0.18",
+      "sourceURL": "https://download.decisivetactics.com/downloads/serial/Serial_2.0.18.zip",
+      "artifactSHA256": "508a3fa86bafc216f6d0cef95d9142c3a0281b4ff65f1f765f81571b6b38509c",
+      "apps": [
+        {
+          "bundleName": "Serial.app",
+          "bundleIdentifier": "com.decisivetactics.serial.direct"
+        }
+      ]
+    },
+    "dayflow": {
+      "caskVersion": "2.5.4",
+      "sourceURL": "https://github.com/JerryZLiu/Dayflow/releases/download/v2.5.4/Dayflow.dmg",
+      "artifactSHA256": "d3c3f87c761239c39c35988f96c7da01934a68ce646787987d4c02fd19b84b89",
+      "apps": [
+        {
+          "bundleName": "Dayflow.app",
+          "bundleIdentifier": "teleportlabs.com.Dayflow"
+        }
+      ]
+    },
+    "medis": {
+      "caskVersion": "2.16.1",
+      "sourceURL": "https://api.getmedis.com/medis/medis-2.16.1.zip",
+      "artifactSHA256": "f9cef8fb4637d9a0f5a101246a20830c081452f49dfc7006b992bb6b4c561943",
+      "apps": [
+        {
+          "bundleName": "Medis.app",
+          "bundleIdentifier": "li.zihua.medis2"
+        }
+      ]
     }
   }
 }
