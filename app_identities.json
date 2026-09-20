@@ -11970,6 +11970,281 @@
           "bundleIdentifier": "co.highlyopinionated.swish"
         }
       ]
+    },
+    "tex-live-utility": {
+      "caskVersion": "1.57",
+      "sourceURL": "https://github.com/amaxwell/tlutility/releases/download/1.57/TeX.Live.Utility.app-1.57.zip",
+      "artifactSHA256": "e738c49250a1b62568bdf9d8333e6cfbd57b08185659073f2ab7a6103881dce4",
+      "apps": [
+        {
+          "bundleName": "TeX Live Utility.app",
+          "bundleIdentifier": "com.googlecode.mactlmgr.tlu"
+        }
+      ]
+    },
+    "willow-voice": {
+      "caskVersion": "2.3.26",
+      "sourceURL": "https://github.com/LiuLawrence45/stt-sparkle-update/releases/download/v2.3.26/Willow.Installer.dmg",
+      "artifactSHA256": "a8a21cb73f34136c218cf76f715fa3d14b2361fe96254a1d8827ed995bcdc3f9",
+      "apps": [
+        {
+          "bundleName": "Willow Voice.app",
+          "bundleIdentifier": "com.seewillow.WillowMac"
+        }
+      ]
+    },
+    "cleanclip": {
+      "caskVersion": "2.4.7",
+      "sourceURL": "https://cleanclip.cc/releases/download/v2.4.7/CleanClip.dmg",
+      "artifactSHA256": "a5e4d694dbd97a1b5371e88bef148dc4e31311bf1f05fdda7693285bdafb088b",
+      "apps": [
+        {
+          "bundleName": "CleanClip.app",
+          "bundleIdentifier": "com.antiless.cleanclip.mac"
+        }
+      ]
+    },
+    "canario": {
+      "caskVersion": "2026.09.18.35",
+      "sourceURL": "https://github.com/canarioterm/releases/releases/download/v2026.09.18.35/Canario.dmg",
+      "artifactSHA256": "1d13d7e8c0b1b223e1c4ba69abbef95be96f4436ef9f56cda71336b2dca9094c",
+      "apps": [
+        {
+          "bundleName": "Canario.app",
+          "bundleIdentifier": "com.raphaelamorim.canario"
+        }
+      ]
+    },
+    "flightgear": {
+      "caskVersion": "2024.1.7",
+      "sourceURL": "https://mirrors.ibiblio.org/flightgear/ftp/release-2024.1/flightgear-2024.1.7-macos-universal.dmg",
+      "artifactSHA256": "302e9e068342eed1aac6808b2966b5b0e70fa40cef4bb92bddfef709d098d6fc",
+      "apps": [
+        {
+          "bundleName": "FlightGear.app",
+          "bundleIdentifier": "org.flightgear.mac"
+        }
+      ]
+    },
+    "lobehub": {
+      "caskVersion": "2.2.17",
+      "sourceURL": "https://github.com/lobehub/lobe-chat/releases/download/v2.2.17/LobeHub-2.2.17-arm64-mac.zip",
+      "artifactSHA256": "64725d9574aafccc6f7e86a8fe77ab4bfabdaa94cf6ebe83ec8716feb88333a1",
+      "apps": [
+        {
+          "bundleName": "LobeHub.app",
+          "bundleIdentifier": "com.lobehub.lobehub-desktop"
+        }
+      ]
+    },
+    "julia-app": {
+      "caskVersion": "1.13.0",
+      "sourceURL": "https://julialang-s3.julialang.org/bin/mac/aarch64/1.13/julia-1.13.0-macaarch64.dmg",
+      "artifactSHA256": "07ed044eff0afd4031c6cfe7330d82b5101f617ccec57ad7118c953de99f0489",
+      "apps": [
+        {
+          "bundleName": "Julia-1.13.app",
+          "bundleIdentifier": "org.julialang.launcherapp"
+        }
+      ]
+    },
+    "frescobaldi": {
+      "caskVersion": "4.0.7",
+      "sourceURL": "https://github.com/frescobaldi/frescobaldi/releases/download/v4.0.7/Frescobaldi-4.0.7.dmg",
+      "artifactSHA256": "fb872fae88b651f4e61cdad72c802d67f39735effbf34f5f0966ad6888b2b0eb",
+      "apps": [
+        {
+          "bundleName": "Frescobaldi.app",
+          "bundleIdentifier": "org.frescobaldi.frescobaldi"
+        }
+      ]
+    },
+    "yandex-disk": {
+      "caskVersion": "3.2.51,3346",
+      "sourceURL": "https://disk.yandex.ru/download/Yandex.Disk.dmg/?instant=1",
+      "artifactSHA256": "42b4d51752b35ef7f9b04f7ed3dce67044a91f83be0134d620324fbf276b535e",
+      "apps": [
+        {
+          "bundleName": "Yandex.Disk.2.app",
+          "bundleIdentifier": "ru.yandex.desktop.disk2"
+        }
+      ]
+    },
+    "dockside": {
+      "caskVersion": "2.9.31",
+      "sourceURL": "https://github.com/PrajwalSD/Dockside/releases/download/v2.9.31/Dockside.dmg",
+      "artifactSHA256": "3baf5f42bdf530c4dc533080af50a329fea2ca0e7404548a18661cfc08dcc2a1",
+      "apps": [
+        {
+          "bundleName": "Dockside.app",
+          "bundleIdentifier": "com.hachipoo.Dockside"
+        }
+      ]
+    },
+    "kreya": {
+      "caskVersion": "1.21.0",
+      "sourceURL": "https://stable-downloads.kreya.app/1.21.0/Kreya-osx-arm64.zip",
+      "artifactSHA256": "1787baafc8cdc8f70df10fdf92dff9b145b25690b9376c05f8def1d9d4e7bbf6",
+      "apps": [
+        {
+          "bundleName": "Kreya.app",
+          "bundleIdentifier": "app.kreya.Kreya"
+        }
+      ]
+    },
+    "sensei": {
+      "caskVersion": "2.1.2,139",
+      "sourceURL": "https://cdn.cindori.com/apps/sensei/updates/2.1.2-139/Sensei.dmg",
+      "artifactSHA256": "7a966316472666be061a444078bf0cf8c7c5a6837fc7ed23694691195adef5b0",
+      "apps": [
+        {
+          "bundleName": "Sensei.app",
+          "bundleIdentifier": "org.cindori.Sensei"
+        }
+      ]
+    },
+    "executor": {
+      "caskVersion": "1.6.10",
+      "sourceURL": "https://github.com/RhysSullivan/executor/releases/download/v1.6.10/executor-desktop-mac-arm64.dmg",
+      "artifactSHA256": "41d106f74fb74701d308ace94990a903201592f74adcfdf93106298d6bae73ff",
+      "apps": [
+        {
+          "bundleName": "Executor.app",
+          "bundleIdentifier": "sh.executor.desktop"
+        }
+      ]
+    },
+    "sidequest": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/SideQuestVR/SideQuest/releases/download/v1.2.1/SideQuest-1.2.1-arm64.dmg",
+      "artifactSHA256": "3689dcf1a0d309376f777478787eab85f8833abf3916811abd30ecf638b1c1f9",
+      "apps": [
+        {
+          "bundleName": "SideQuest.app",
+          "bundleIdentifier": "com.sidequestvr.app"
+        }
+      ]
+    },
+    "updf": {
+      "caskVersion": "2.5.7",
+      "sourceURL": "https://download.updf.com/updf/basic/mac/apple/updf-mac-full.dmg",
+      "artifactSHA256": "0b43cb1521face8d8082066b0365bcc627de830b104018387023936014ad39b8",
+      "apps": [
+        {
+          "bundleName": "UPDF.app",
+          "bundleIdentifier": "com.superace.updf.mac"
+        }
+      ]
+    },
+    "bifrost": {
+      "caskVersion": "2.1.4",
+      "sourceURL": "https://github.com/zacharee/Bifrost/releases/download/2.1.4/bifrost-2.1.4-mac-aarch64.zip",
+      "artifactSHA256": "b9edc029e6f9c7f8a2ec4f9ca66bcf6067fa40f7db876da7e9ceb38705ad2bb2",
+      "apps": [
+        {
+          "bundleName": "Bifrost.app",
+          "bundleIdentifier": "tk.zwander.samsungfirmwaredownloader"
+        }
+      ]
+    },
+    "dusklight": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.0/Dusklight-v2.0.0-macos-arm64.zip",
+      "artifactSHA256": "d84531d9b3b94e8c90166f42dbe003338eea382c953e4ab29f92703ca1053da0",
+      "apps": [
+        {
+          "bundleName": "Dusklight.app",
+          "bundleIdentifier": "dev.twilitrealm.dusk"
+        }
+      ]
+    },
+    "gfxcardstatus": {
+      "caskVersion": "2.5",
+      "sourceURL": "https://github.com/codykrieger/gfxCardStatus/releases/download/v2.5/gfxCardStatus-2.5.zip",
+      "artifactSHA256": "70d94cbf5d691c9530e974b5512a106e0bf532ab345fd911199928b8b11a3688",
+      "apps": [
+        {
+          "bundleName": "gfxCardStatus.app",
+          "bundleIdentifier": "com.codykrieger.gfxCardStatus"
+        }
+      ]
+    },
+    "cadran": {
+      "caskVersion": "1.3.12",
+      "sourceURL": "https://github.com/Ilyomix/Cadran-releases/releases/download/v1.3.12/Cadran-1.3.12.dmg",
+      "artifactSHA256": "e994edaed3113413e4aeffd3d769bdd3329f18e0582986050bcbda5533245ac6",
+      "apps": [
+        {
+          "bundleName": "Cadran.app",
+          "bundleIdentifier": "ilyomix.Cadran"
+        }
+      ]
+    },
+    "adobe-creative-cloud-cleaner-tool": {
+      "caskVersion": "4.3.0.1322",
+      "sourceURL": "https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg",
+      "artifactSHA256": "45a9ee2394e3dea8505ddc1d07a1d9c11c91383eebe525423a23787793935f21",
+      "apps": [
+        {
+          "bundleName": "Adobe Creative Cloud Cleaner Tool.app",
+          "bundleIdentifier": "com.Adobe.Installers.AdobeCreativeCloudCleanerTool"
+        }
+      ]
+    },
+    "path-finder": {
+      "caskVersion": "26.1.8",
+      "sourceURL": "https://get.cocoatech.com/PathFinder.dmg",
+      "artifactSHA256": "098da75c45cc191db70eb00950b1acebac97b997bcd27b0c5c868b6b826b1d50",
+      "apps": [
+        {
+          "bundleName": "Path Finder.app",
+          "bundleIdentifier": "com.cocoatech.PathFinder"
+        }
+      ]
+    },
+    "movist-pro": {
+      "caskVersion": "2.19.0",
+      "sourceURL": "https://update.cocoable.com/MovistPro_2.19.0.dmg",
+      "artifactSHA256": "ca648559d9d65582768aa30d01195a990b5cf5c59b8b930fa8c8c38d38c89712",
+      "apps": [
+        {
+          "bundleName": "Movist Pro.app",
+          "bundleIdentifier": "com.movist.MovistPro"
+        }
+      ]
+    },
+    "smartsvn": {
+      "caskVersion": "14.5.1",
+      "sourceURL": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-aarch64-14_5_1.dmg",
+      "artifactSHA256": "bc39635559d13a9fbe49f132e6753705c44b11eff697845c3b685a1bcaf64cca",
+      "apps": [
+        {
+          "bundleName": "SmartSVN.app",
+          "bundleIdentifier": "com.syntevo.smartsvn"
+        }
+      ]
+    },
+    "fission": {
+      "caskVersion": "2.9.5",
+      "sourceURL": "https://cdn.rogueamoeba.com/fission/download/Fission.zip",
+      "artifactSHA256": "ec35f8d8928862c7f973f021e8e8c312ef88833676e5347861d75f85bb6fc71e",
+      "apps": [
+        {
+          "bundleName": "Fission.app",
+          "bundleIdentifier": "com.rogueamoeba.Fission"
+        }
+      ]
+    },
+    "texifier": {
+      "caskVersion": "1.9.33,855,ddb6e02",
+      "sourceURL": "https://download.texifier.com/apps/osx/updates/Texifier_1_9_33__855__ddb6e02.dmg",
+      "artifactSHA256": "4361dacc275a5e4a786899ef3e3e63abf650d5ec2c4746303d6dfd14761b813e",
+      "apps": [
+        {
+          "bundleName": "Texifier.app",
+          "bundleIdentifier": "com.vallettaventures.Texpad"
+        }
+      ]
     }
   }
 }
