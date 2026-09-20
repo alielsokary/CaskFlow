@@ -11155,6 +11155,276 @@
           "bundleIdentifier": "com.chigusa-web.Clibor"
         }
       ]
+    },
+    "omnifocus": {
+      "caskVersion": "4.9.1",
+      "sourceURL": "https://downloads.omnigroup.com/software/macOS/15/OmniFocus-4.9.1.dmg",
+      "artifactSHA256": "a73f4e389932e1bb53e5a716c224b55025f7ddc1938e3e132123036f60d0c478",
+      "apps": [
+        {
+          "bundleName": "OmniFocus.app",
+          "bundleIdentifier": "com.omnigroup.OmniFocus4"
+        }
+      ]
+    },
+    "synologyassistant": {
+      "caskVersion": "7.0.7,50095",
+      "sourceURL": "https://global.download.synology.com/download/Utility/Assistant/7.0.7-50095/Mac/synology-assistant-7.0.7-50095.dmg",
+      "artifactSHA256": "12c67dcf2bd77398941b51183e693fe88d9a79da212652c8a0f0a13682848b5e",
+      "apps": [
+        {
+          "bundleName": "SynologyAssistant.app",
+          "bundleIdentifier": "com.synology.DSAssistant"
+        }
+      ]
+    },
+    "4k-youtube-to-mp3": {
+      "caskVersion": "26.3.3",
+      "sourceURL": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.3.3_arm64.dmg",
+      "artifactSHA256": "7a6cd84de6d78ddfcc5f9fa4f73a77b31d1fcb942ffa4f768fd5a250e10436a6",
+      "apps": [
+        {
+          "bundleName": "4K YouTube to MP3.app",
+          "bundleIdentifier": "com.openmedia.4kyoutubetomp3"
+        }
+      ]
+    },
+    "devcleaner": {
+      "caskVersion": "2.8.0-511",
+      "sourceURL": "https://github.com/vashpan/xcode-dev-cleaner/releases/download/2.8.0/DevCleaner-2.8.0-511.zip",
+      "artifactSHA256": "52714f13cbd0f4bd41b6f45acfc9ab7f179fe2bbe64dc5dbe497b084f27389b0",
+      "apps": [
+        {
+          "bundleName": "DevCleaner.app",
+          "bundleIdentifier": "com.oneminutegames.XcodeCleaner"
+        }
+      ]
+    },
+    "splice": {
+      "caskVersion": "5.4.12",
+      "sourceURL": "https://desktop.splice.com/conveyor/stable/splice-5.4.12-mac-aarch64.zip",
+      "artifactSHA256": "913e4f4b7d65bb3ee1393d9751b1f339750ca575e6c368b170a959902ceace86",
+      "apps": [
+        {
+          "bundleName": "Splice.app",
+          "bundleIdentifier": "com.splice.Splice"
+        }
+      ]
+    },
+    "sdm": {
+      "caskVersion": "24.59.0,E5C2ACBF1160BF160A9279167AD3A50FE4EE321B",
+      "sourceURL": "https://downloads.strongdm.com/builds/desktop/24.59.0/darwin-universal/E5C2ACBF1160BF160A9279167AD3A50FE4EE321B/SDM-24.59.0.universal.zip",
+      "artifactSHA256": "f2643912ca0fbb60c884676aea46715e979ab8b68caa626cc0b43027921a6ba3",
+      "apps": [
+        {
+          "bundleName": "SDM.app",
+          "bundleIdentifier": "com.electron.sdm"
+        }
+      ]
+    },
+    "octarine": {
+      "caskVersion": "0.52.2",
+      "sourceURL": "https://pub-3d35bc018fc54f11bde129e3e73e8002.r2.dev/0.52.2/arm/octarine_0.52.2_aarch64.dmg",
+      "artifactSHA256": "4ff37cc5f75984a6988efc5c51e9e6b80ab76c99734490356f66dd825b5889c9",
+      "apps": []
+    },
+    "xkey": {
+      "caskVersion": "1.2.25,20260919.1",
+      "sourceURL": "https://github.com/xmannv/xkey/releases/download/v1.2.25-20260919.1/XKey.dmg",
+      "artifactSHA256": "976112f467e9581bd790511bbf2329376d2598f0b73511ee24775eed8ada4174",
+      "apps": [
+        {
+          "bundleName": "XKey.app",
+          "bundleIdentifier": "com.codetay.XKey"
+        }
+      ]
+    },
+    "snes9x": {
+      "caskVersion": "1.63",
+      "sourceURL": "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-Mac.zip",
+      "artifactSHA256": "dce88223b0b373357249bfb604415a379dcba6a996ca254bdeca5b16a8564c69",
+      "apps": [
+        {
+          "bundleName": "Snes9x.app",
+          "bundleIdentifier": "com.snes9x.macos.snes9x"
+        }
+      ]
+    },
+    "languagetool-desktop": {
+      "caskVersion": "3.3.13",
+      "sourceURL": "https://languagetool.org/download/mac-app/LanguageToolDesktop-3.3.13.dmg",
+      "artifactSHA256": "e79eae8653f3e394552bd4374ad12beb2ae82a999d7fd7f865cde195999d24ba",
+      "apps": [
+        {
+          "bundleName": "LanguageTool for Desktop.app",
+          "bundleIdentifier": "org.languagetool.desktop"
+        }
+      ]
+    },
+    "connectmenow": {
+      "caskVersion": "4.0.18",
+      "sourceURL": "https://www.tweaking4all.com/downloads/network/ConnectMeNow4-v4.0.18-macOS-arm64.dmg",
+      "artifactSHA256": "001648f6418d472be39900af2decf4d9687c2992374312696073c159faa5dbbe",
+      "apps": [
+        {
+          "bundleName": "ConnectMeNow4.app",
+          "bundleIdentifier": "com.Tweaking4all.ConnectMeNow4"
+        }
+      ]
+    },
+    "uniclipboard": {
+      "caskVersion": "0.19.3",
+      "sourceURL": "https://github.com/UniClipboard/UniClipboard/releases/download/v0.19.3/UniClipboard_0.19.3_aarch64.dmg",
+      "artifactSHA256": "f633f6b9a999babb8ef76e9ea453b2556568a7e1eb26db630f479bb1e3a85152",
+      "apps": [
+        {
+          "bundleName": "UniClipboard.app",
+          "bundleIdentifier": "app.uniclipboard.desktop"
+        }
+      ]
+    },
+    "vibeproxy": {
+      "caskVersion": "1.8.303",
+      "sourceURL": "https://github.com/automazeio/vibeproxy/releases/download/v1.8.303/VibeProxy-arm64.dmg",
+      "artifactSHA256": "ac558beaaaf7404e755c56f748389e0742da8baeb10199fa527a3f6b8fc8b958",
+      "apps": [
+        {
+          "bundleName": "VibeProxy.app",
+          "bundleIdentifier": "com.vibeproxy.app"
+        }
+      ]
+    },
+    "ogdesign-eagle": {
+      "caskVersion": "4.0,23",
+      "sourceURL": "https://r2-app.eagle.cool/releases/Eagle-4.0-arm64-build23.dmg",
+      "artifactSHA256": "899cf880a15a17bb1fe54939110ec56a6a9f8af4a321de0d55c1670c6bee5377",
+      "apps": [
+        {
+          "bundleName": "Eagle.app",
+          "bundleIdentifier": "tw.ogdesign.eagle"
+        }
+      ]
+    },
+    "keyboard-cleaner": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://jan.prima.de/u/Keyboard-Cleaner-64bit-universal.zip",
+      "artifactSHA256": "114a1ce32107dc8e056f2b2293224e716d17136ff62fc6ce40eee7d49f4dc2cc",
+      "apps": [
+        {
+          "bundleName": "Keyboard Cleaner.app",
+          "bundleIdentifier": "io.jan.Keyboard-Cleaner"
+        }
+      ]
+    },
+    "framer": {
+      "caskVersion": "2026.34.0",
+      "sourceURL": "https://updates.framer.com/electron/darwin/arm64/Framer-2026.34.0.zip",
+      "artifactSHA256": "b6a3fc4811ece95f7ddc11a58d61849d18d29779ae91c16e323b789e6949c6a2",
+      "apps": [
+        {
+          "bundleName": "Framer.app",
+          "bundleIdentifier": "com.framer.electron"
+        }
+      ]
+    },
+    "midi-monitor": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://www.snoize.com/MIDIMonitor/MIDIMonitor_1_5_4.dmg",
+      "artifactSHA256": "6deea9673e2947c59ef4f2c57446366930989ea2688cc5d5b8265401a38a3971",
+      "apps": [
+        {
+          "bundleName": "MIDI Monitor.app",
+          "bundleIdentifier": "com.snoize.MIDIMonitor"
+        }
+      ]
+    },
+    "utools": {
+      "caskVersion": "7.8.0",
+      "sourceURL": "https://open.u-tools.cn/download/uTools-7.8.0-arm64.dmg",
+      "artifactSHA256": "95adb70a33782936d87acd03f92dc616ce0fb71e40636203371336f3ea9c6ca0",
+      "apps": [
+        {
+          "bundleName": "uTools.app",
+          "bundleIdentifier": "org.yuanli.utools"
+        }
+      ]
+    },
+    "videofusion": {
+      "caskVersion": "11.4.2.13179",
+      "sourceURL": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_4_2_13179_jianyingpro_0_creatortool.dmg",
+      "artifactSHA256": "acce6c0ca015917758166fd5f401e16ef335524bb4a566fe1965f0ee4628f44b",
+      "apps": [
+        {
+          "bundleName": "VideoFusion-macOS.app",
+          "bundleIdentifier": "com.lemon.lvpro"
+        }
+      ]
+    },
+    "codeedit": {
+      "caskVersion": "0.3.6",
+      "sourceURL": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.6/CodeEdit.dmg",
+      "artifactSHA256": "fa5478f80d591c15f08f5e7a93662b5baf33012718768bf0ae800b44ac4eeac9",
+      "apps": [
+        {
+          "bundleName": "CodeEdit.app",
+          "bundleIdentifier": "app.codeedit.CodeEdit"
+        }
+      ]
+    },
+    "extradock": {
+      "caskVersion": "4.3.18",
+      "sourceURL": "https://github.com/AppitStudio/extra-dock-updates/releases/download/v4.3.18/extraDock.dmg",
+      "artifactSHA256": "4f50b445fcec4aa53840afbae4cf0fcb9965c4532fc64f1ae86ba909fbba4a32",
+      "apps": [
+        {
+          "bundleName": "extraDock.app",
+          "bundleIdentifier": "dignicy.extraDock"
+        }
+      ]
+    },
+    "focusrite-control-2": {
+      "caskVersion": "1.1139.0.0",
+      "sourceURL": "https://releases.focusrite.com/com.focusrite.focusrite-control/release/Focusrite-Control-2-1.1139.0.0.dmg",
+      "artifactSHA256": "37e1fc8e24b3a091036113babf69f897ebc237bdb78f159bccfb65339d922f66",
+      "apps": [
+        {
+          "bundleName": "Focusrite Control 2.app",
+          "bundleIdentifier": "com.focusrite.control"
+        }
+      ]
+    },
+    "zulip": {
+      "caskVersion": "5.13.1",
+      "sourceURL": "https://github.com/zulip/zulip-desktop/releases/download/v5.13.1/Zulip-5.13.1-arm64.dmg",
+      "artifactSHA256": "bbbcbd5eb6ddd33a9e22a71db4263a486be813f1590e387bcb932fe672be8d5f",
+      "apps": [
+        {
+          "bundleName": "Zulip.app",
+          "bundleIdentifier": "org.zulip.zulip-electron"
+        }
+      ]
+    },
+    "duplicati": {
+      "caskVersion": "2.4.0.0,2026-09-03",
+      "sourceURL": "https://updates.duplicati.com/stable/duplicati-2.4.0.0_stable_2026-09-03-osx-arm64-gui.dmg",
+      "artifactSHA256": "dc8c8539741159551069f17150265d47367982fbb2e51bce9e39f6320e83bf2f",
+      "apps": [
+        {
+          "bundleName": "Duplicati.app",
+          "bundleIdentifier": "com.duplicati.app"
+        }
+      ]
+    },
+    "tiles": {
+      "caskVersion": "1.3.2,03b500a8",
+      "sourceURL": "https://updates.sempliva.com/tiles/Tiles-03b500a8.dmg",
+      "artifactSHA256": "b051ea7e5048bac0f7a72b6dd893bb1a02cf47ecde6def9f103d2be8e122f01e",
+      "apps": [
+        {
+          "bundleName": "Tiles.app",
+          "bundleIdentifier": "com.sempliva.Tiles"
+        }
+      ]
     }
   }
 }
