@@ -306,9 +306,9 @@
       ]
     },
     "telari": {
-      "caskVersion": "0.5.5",
-      "sourceURL": "https://dl.telari.app/Telari-0.5.5.dmg",
-      "artifactSHA256": "73ae49adfa42d0dad54661ac3def970fb3c1449223f7048da871092580c7a494",
+      "caskVersion": "0.5.7",
+      "sourceURL": "https://dl.telari.app/Telari-0.5.7.dmg",
+      "artifactSHA256": "c437ce2e4325d2d07f5731636530d0586e2caf07cb53c19b0012f0cb64f5555b",
       "apps": [
         {
           "bundleName": "Telari.app",
@@ -31197,6 +31197,260 @@
       "sourceURL": "https://global.download.synology.com/download/Utility/ChatClient/1.2.4-0235/Mac/Installer/Synology%20Chat%20Client-1.2.4-0235.dmg",
       "artifactSHA256": "a040f79c5b65fad84b271f21be5fdc4805afc46d391ebca790e9f906fc710f89",
       "apps": []
+    },
+    "tartelet": {
+      "caskVersion": "0.12.0",
+      "sourceURL": "https://github.com/shapehq/tartelet/releases/download/0.12.0/Tartelet.zip",
+      "artifactSHA256": "2733db56fb15835df2e22cf8191d4f9cfc385d9779aa02d88649631fb85b016a",
+      "apps": [
+        {
+          "bundleName": "Tartelet.app",
+          "bundleIdentifier": "dk.shape.Tartelet"
+        }
+      ]
+    },
+    "tana": {
+      "caskVersion": "1.529.0",
+      "sourceURL": "https://github.com/tanainc/tana-desktop-releases/releases/download/v1.529.0/Tana.Outliner-1.529.0-universal.dmg",
+      "artifactSHA256": "afd3b4e8fb08c12f63e9e1906c60a1d72974cd8b5db46aec645c4fef74ad4c43",
+      "apps": [
+        {
+          "bundleName": "Tana Outliner.app",
+          "bundleIdentifier": "inc.tana.desktop"
+        }
+      ]
+    },
+    "teensy": {
+      "caskVersion": "1.59-beta3",
+      "sourceURL": "https://www.pjrc.com/teensy/teensy.dmg",
+      "artifactSHA256": "82411158ce920454125af49a7b0eb049782b2cea24b2750e6c4a62444fce304e",
+      "apps": []
+    },
+    "tella": {
+      "caskVersion": "2.34,255",
+      "sourceURL": "https://mac.tella.tv/Tella-2.34-255.dmg",
+      "artifactSHA256": "fe63cce96fc3e27b1a75eed34d9c7871e5328b214c7a127479d0e6d469066f70",
+      "apps": [
+        {
+          "bundleName": "Tella.app",
+          "bundleIdentifier": "tv.tella.Tella"
+        }
+      ]
+    },
+    "taskade": {
+      "caskVersion": "4.6.15",
+      "sourceURL": "https://apps.taskade.com/updates/Taskade-4.6.15-universal.dmg",
+      "artifactSHA256": "0670e20d19c1bedd3d0c8361296197dcd4843c1d934975c72859c7dad69eb724",
+      "apps": [
+        {
+          "bundleName": "Taskade.app",
+          "bundleIdentifier": "com.taskade"
+        }
+      ]
+    },
+    "teamviewermeeting": {
+      "caskVersion": "15.57.4",
+      "sourceURL": "https://dl.teamviewer.com/teamviewermeeting/installer/mac/15.57.4/TeamViewerMeeting.dmg",
+      "artifactSHA256": "60d74992f33f36f5329f8c31e686a7033929bfdb95d2b425005fd2f446ce284f",
+      "apps": [
+        {
+          "bundleName": "TeamViewerMeeting.app",
+          "bundleIdentifier": "com.teamviewer.blizz"
+        }
+      ]
+    },
+    "tentacle-sync-studio": {
+      "caskVersion": "1.37",
+      "sourceURL": "https://cms.tentaclesync.com/assets/downloads/download-files/ttsyncstudio-v1_37.dmg",
+      "artifactSHA256": "383cd519b647594254ffc6deb744e47c5f939932d96711a60158e6e40d2fe16e",
+      "apps": [
+        {
+          "bundleName": "Tentacle Sync Studio.app",
+          "bundleIdentifier": "com.tentaclesync.Tentacle-Sync-Studio"
+        }
+      ]
+    },
+    "telegram-a": {
+      "caskVersion": "10.9.51",
+      "sourceURL": "https://github.com/Ajaxy/telegram-tt/releases/download/v10.9.51/Telegram-A-arm64.dmg",
+      "artifactSHA256": "9299cc0b54a6ed896f07d0347476084401e2e96ae01476c3c9fac222ce528e09",
+      "apps": [
+        {
+          "bundleName": "Telegram A.app",
+          "bundleIdentifier": "org.telegram.TelegramA"
+        }
+      ]
+    },
+    "tauritavern": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/Darkatse/TauriTavern/releases/download/v2.3.0/TauriTavern-2.3.0-macos-arm64.dmg",
+      "artifactSHA256": "1d843252a49ba0093fe2bd7a24042a4f9a290097006c7ce8ae76707a59ed4ad7",
+      "apps": [
+        {
+          "bundleName": "TauriTavern.app",
+          "bundleIdentifier": "com.tauritavern.client"
+        }
+      ]
+    },
+    "testfully": {
+      "caskVersion": "1.192.0,547",
+      "sourceURL": "https://releases.testfully.io/desktop/build-547/Testfully.app.zip",
+      "artifactSHA256": "fcf7a81abd5377c531799291bb686cd708eabde2418a0f4e4669c8f4a5595015",
+      "apps": [
+        {
+          "bundleName": "Testfully.app",
+          "bundleIdentifier": "io.testfully.app"
+        }
+      ]
+    },
+    "teamviewer-quickjoin": {
+      "caskVersion": "15",
+      "sourceURL": "https://download.teamviewer.com//download/version_15x/TeamViewerQJ.dmg",
+      "artifactSHA256": "7139f81ea018ea11581d2dff50222d34b8fc4aa396f87b84f0b7f9e1ddac7b26",
+      "apps": [
+        {
+          "bundleName": "TeamViewer QuickJoin.app",
+          "bundleIdentifier": "com.teamviewer.TeamViewerQJ"
+        }
+      ]
+    },
+    "tencent-ugit": {
+      "caskVersion": "5.53.0",
+      "sourceURL": "https://ugit.qq.com/downloads/ugit_public/UGit-arm64-5.53.0.dmg",
+      "artifactSHA256": "d616420d6e01176255074fe9fb711e8557391bd93f9b1ef5035ffbb2789a90b3",
+      "apps": [
+        {
+          "bundleName": "UGit.app",
+          "bundleIdentifier": "com.tencent.ugit"
+        }
+      ]
+    },
+    "tastytrade": {
+      "caskVersion": "2.60.2",
+      "sourceURL": "https://download.tastytrade.com/desktop-2.x.x/2.60.2/tastytrade-2.60.2-aarch64.dmg",
+      "artifactSHA256": "8774dc3797d55ed3a3a5f026c45e9152e19937f82bedd35c8e6cc485dc721e9d",
+      "apps": [
+        {
+          "bundleName": "tastytrade.app",
+          "bundleIdentifier": "com.tastytrade.desktop"
+        }
+      ]
+    },
+    "teacode": {
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://www.apptorium.com/public/products/teacode/releases/TeaCode-1.1.3.zip",
+      "artifactSHA256": "2e2545beafe4c77ef52e76ff49edf1d4dbceed2a6bf6c8c1b22424112480478b",
+      "apps": [
+        {
+          "bundleName": "TeaCode.app",
+          "bundleIdentifier": "com.apptorium.TeaCode-dm"
+        }
+      ]
+    },
+    "taskpaper": {
+      "caskVersion": "3.9.4",
+      "sourceURL": "https://www.taskpaper.com/assets/app/TaskPaper-3.9.4.dmg",
+      "artifactSHA256": "7f392d83857d96d5ee3c2a0792e8a24befb5094928ce850283da86bfa0684f7e",
+      "apps": [
+        {
+          "bundleName": "TaskPaper.app",
+          "bundleIdentifier": "com.hogbaysoftware.TaskPaper3.direct"
+        }
+      ]
+    },
+    "teamspeak-client": {
+      "caskVersion": "3.6.2",
+      "sourceURL": "https://files.teamspeak-services.com/releases/client/3.6.2/TeamSpeak3-Client-macosx-3.6.2.dmg",
+      "artifactSHA256": "8a6873589aeb98fdbd9509f2a1163662770f1426aed0757704203de40d71d4d6",
+      "apps": [
+        {
+          "bundleName": "TeamSpeak 3 Client.app",
+          "bundleIdentifier": "com.teamspeak.TeamSpeak3"
+        }
+      ]
+    },
+    "teambition": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://tongyongxiezuo.oss-cn-zhangjiakou.aliyuncs.com/desktop/Teambition/2.0.3/installer/darwin/x64/Teambition-2.0.3-mac.dmg",
+      "artifactSHA256": "3125ea6240885a0e472d407234ad89e64899c6e79c7e0403f9b288ad19dac33e",
+      "apps": [
+        {
+          "bundleName": "Teambition.app",
+          "bundleIdentifier": "com.teambition.Teambition-Mac"
+        }
+      ]
+    },
+    "tap-forms": {
+      "caskVersion": "5.3.45,sVRdq8QqvjZ3jBJUQNwZ",
+      "sourceURL": "https://paddle.s3.amazonaws.com/fulfillment_downloads/9234/503174/sVRdq8QqvjZ3jBJUQNwZ_Tap%20Forms%20Install%205.3.45.dmg",
+      "artifactSHA256": "82a6e945b233e1202373393919e97dca891fc5a0f472ff2ebcc71cefacbaf991",
+      "apps": [
+        {
+          "bundleName": "Tap Forms Mac 5.app",
+          "bundleIdentifier": "com.tapzapp.tapforms-mac"
+        }
+      ]
+    },
+    "tandem": {
+      "caskVersion": "3.0.0,251226zduiutrs9",
+      "sourceURL": "https://download.todesktop.com/200527auaqaacsy/Tandem%203.0.0%20-%20Build%20251226zduiutrs9-arm64.dmg",
+      "artifactSHA256": "752cb298635d614c59737806fb8ed13ba485d87d3a8ecc2b6eb03dc2f9c1503c",
+      "apps": [
+        {
+          "bundleName": "Tandem.app",
+          "bundleIdentifier": "tandem.app"
+        }
+      ]
+    },
+    "tev": {
+      "caskVersion": "2.14.0",
+      "sourceURL": "https://github.com/Tom94/tev/releases/download/v2.14.0/tev.dmg",
+      "artifactSHA256": "cef00c8a54bebcdeb1de5c03b7384f18da0bcaa2cb67c0ad5773c3c5da305671",
+      "apps": [
+        {
+          "bundleName": "tev.app",
+          "bundleIdentifier": "org.tom94.tev"
+        }
+      ]
+    },
+    "tagspaces": {
+      "caskVersion": "6.13.12",
+      "sourceURL": "https://github.com/tagspaces/tagspaces/releases/download/v6.13.12/tagspaces-mac-arm64-6.13.12.dmg",
+      "artifactSHA256": "7e092dd98027c637afbabf0ef709d1e130e401c5b848072e210322688fb0d73e",
+      "apps": [
+        {
+          "bundleName": "TagSpaces.app",
+          "bundleIdentifier": "org.tagspaces.desktopapp"
+        }
+      ]
+    },
+    "talon": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://talonvoice.com/dl/latest/talon-mac.dmg",
+      "artifactSHA256": "402f8b4ac172d97360e3b60c3753e652bdacc408f92b79547f96c34e1acb67bd",
+      "apps": [
+        {
+          "bundleName": "Talon.app",
+          "bundleIdentifier": "com.talonvoice.Talon"
+        }
+      ]
+    },
+    "tageditor": {
+      "caskVersion": "2.0.5,1373",
+      "sourceURL": "https://amvidia.com/downloads/tag-editor-mac.dmg",
+      "artifactSHA256": "3be79476a6695ffdd0f196d1669ca4c1c3093572fe24960aa175ca603b743fe5",
+      "apps": []
+    },
+    "taobao": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://tblifecdn.taobao.com/taobaopc/shop/taobao-setup-darwin-arm64-2.1.0.dmg",
+      "artifactSHA256": "2200655677636c6d5ffd0cfd156ceda3fa49382b8fdbbba870236f5ddb7c1c81",
+      "apps": [
+        {
+          "bundleName": "淘宝桌面版.app",
+          "bundleIdentifier": "com.taobao.desktop"
+        }
+      ]
     }
   }
 }
