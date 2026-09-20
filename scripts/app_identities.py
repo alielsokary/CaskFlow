@@ -19,7 +19,7 @@ from style_standards import write_json
 MANIFEST = "app_identities.json"
 ROOT = Path(__file__).resolve().parent.parent
 IDENTIFIER = re.compile(r"[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\Z")
-EXTRACTION_VERSION = 4
+EXTRACTION_VERSION = 5
 
 
 def load_manifest(path: Path) -> dict:
@@ -163,26 +163,29 @@ def package_selection_reason(cask: dict) -> str | None:
     if any(isinstance(option, dict) and option.get("choices")
            for stanza in cask.get("artifacts") or [] if isinstance(stanza, dict)
            for option in stanza.get("pkg", [])):
-        return "package choices require component selection; identity inspection deferred"
+        return "package choices require installed receipt verification"
     return None
 
 
-def _distribution_components(root: Path) -> set[str] | None:
-    """Accept only unconditional product choices; never evaluate installer scripts."""
+def _distribution_components(root: Path) -> tuple[set[str] | None, list[dict]]:
+    """Separate payload evidence from selection; never evaluate installer scripts."""
     distribution = root / "Distribution"
     if distribution.is_symlink():
         raise ValueError("symlinked Distribution")
     if not distribution.exists():
-        return None
+        return None, []
     stack, components, outlined, choices = [], set(), set(), set()
     choice_ids = {"line": ("choice", outlined), "choice": ("id", choices)}
+    conditions = []
 
     def start_element(name, attrs):
         if not stack and name != "installer-gui-script":
             raise ValueError("not a package Distribution")
-        if name == "script" or attrs.keys() & {"selected", "start_selected", "enabled", "start_enabled",
-                                              "active", "script", "customLocation"}:
-            raise ValueError("conditional package Distribution requires component selection")
+        conditional = attrs.keys() & {"selected", "start_selected", "enabled", "start_enabled",
+                                     "active", "script", "customLocation"}
+        if name == "script" or conditional:
+            conditions.append({"artifact": "Distribution", "reason": "package selection requires installed receipt verification",
+                               "element": name, "attributes": {key: attrs[key] for key in sorted(conditional)}})
         if name in choice_ids:
             attribute, seen = choice_ids[name]
             choice = attrs.get(attribute, "")
@@ -196,7 +199,7 @@ def _distribution_components(root: Path) -> set[str] | None:
     _parse_package_xml(distribution, start_element, lambda _: stack.pop())
     if not components or "" in components | choices | outlined or choices != outlined:
         raise ValueError("ambiguous package Distribution choices")
-    return components
+    return components, conditions
 
 
 def _package_info_files(root: Path) -> list[Path]:
@@ -227,14 +230,30 @@ def _installed_package_apps(payload: Path, location: PurePosixPath) -> list[tupl
     return candidates
 
 
-def _package_apps(root: Path, diagnostics: list[dict]) -> list[tuple[Path, str, dict]]:
+def _component_apps(info: Path, root: Path, attributes: dict, diagnostics: list[dict]) -> list[tuple[Path, str, dict]]:
+    identifier = attributes.get("identifier")
+    if not identifier or attributes.get("relocatable") == "true":
+        raise ValueError("missing package identifier or relocatable payload")
+    location = PurePosixPath(attributes.get("install-location", "/"))
+    payload = _package_payload(info, root, location)
+    installed_apps = _installed_package_apps(payload, location)
+    if not installed_apps:
+        diagnostics.append({"artifact": str(info.relative_to(root)),
+                            "reason": "no application payload under /Applications"})
+    return [(bundle, name, {"packageIdentifier": identifier,
+                           "installedPath": str(location / bundle.relative_to(payload))})
+            for bundle, name in installed_apps]
+
+
+def _package_apps(root: Path, diagnostics: list[dict], *, receipt_required: bool) -> tuple[list, list]:
     """Use package install locations, never icon guesses, to identify payload apps."""
     candidates = []
     try:
-        components = _distribution_components(root)
+        components, conditions = _distribution_components(root)
+        diagnostics.extend(conditions)
     except (OSError, ExpatError, ValueError) as error:
         diagnostics.append({"artifact": "Distribution", "reason": str(error)})
-        return []
+        return [], []
     infos = _package_info_files(root)
     if not infos:
         diagnostics.append({"artifact": "pkg", "reason": "no PackageInfo in expanded package"})
@@ -243,17 +262,10 @@ def _package_apps(root: Path, diagnostics: list[dict]) -> list[tuple[Path, str, 
             attributes = _package_info(info)
             if components is not None and attributes.get("identifier") not in components:
                 continue
-            identifier = attributes.get("identifier")
-            if not identifier or attributes.get("relocatable") == "true":
-                raise ValueError("missing package identifier or relocatable payload")
-            location = PurePosixPath(attributes.get("install-location", "/"))
-            payload = _package_payload(info, root, location)
-            candidates.extend((bundle, name, {"packageIdentifier": identifier,
-                                              "installedPath": str(location / bundle.relative_to(payload))})
-                              for bundle, name in _installed_package_apps(payload, location))
+            candidates.extend(_component_apps(info, root, attributes, diagnostics))
         except (OSError, ExpatError, ValueError) as error:
             diagnostics.append({"artifact": str(info.relative_to(root)), "reason": f"invalid PackageInfo: {error}"})
-    return candidates
+    return ([], candidates) if receipt_required or conditions else (candidates, [])
 
 
 def _declared_app_candidates(cask: dict, bundles: list[Path], diagnostics: list[dict]) -> list[tuple[Path, str, dict]]:
@@ -320,19 +332,25 @@ def extract_identities(cask: dict, root: Path, artifact: Path, *,
     package_reason = package_selection_reason(cask)
     if package_reason:
         diagnostics.append({"artifact": "pkg", "reason": package_reason})
-    else:
-        for package_root in package_roots:
-            candidates.extend(_package_apps(package_root, diagnostics))
+    package_candidates = []
+    for package_root in package_roots:
+        confirmed, conditional = _package_apps(package_root, diagnostics, receipt_required=bool(package_reason))
+        candidates.extend(confirmed)
+        package_candidates.extend(conditional)
     apps = _verified_apps(candidates, diagnostics)
-    if not apps and not diagnostics:
+    conditional_apps = _verified_apps(package_candidates, diagnostics)
+    if not apps and not conditional_apps and not diagnostics:
         diagnostics.append({"artifact": cask["token"], "reason": "no supported application bundles in declared artifacts"})
     digest = hashlib.sha256()
     with artifact.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
-    return {"caskVersion": cask.get("version"), "sourceURL": cask["url"],
+    result = {"caskVersion": cask.get("version"), "sourceURL": cask["url"],
             "artifactSHA256": digest.hexdigest(), "apps": apps,
             "extractionVersion": EXTRACTION_VERSION, "diagnostics": diagnostics}
+    if conditional_apps:
+        result["packageCandidates"] = conditional_apps
+    return result
 
 
 def needs_refresh(cask: dict, entry: dict | None) -> bool:
@@ -396,6 +414,7 @@ def compose_release(categories: Path, extracted: Path, variants: Path, output: P
     manifest["casks"].update(load_manifest(extracted)["casks"])
     reviewed = load_manifest(variants)["casks"]
     identities = {}
+    package_candidates = {}
     for token in sorted(manifest["casks"].keys() | reviewed.keys()):
         # Identity coverage must not wait for the separately reviewed category catalog.
         entry = manifest["casks"].setdefault(token, {"apps": []})
@@ -408,7 +427,17 @@ def compose_release(categories: Path, extracted: Path, variants: Path, output: P
                 valid.append(projected)
         if valid:
             identities[token] = valid
+        candidates = []
+        for record in entry.get("packageCandidates", []):
+            projected = _project_identity(token, record, [])
+            if not projected.get("packageIdentifier") or not projected.get("installedPath"):
+                raise ValueError(f"Incomplete package candidate for {token}")
+            if projected not in candidates:
+                candidates.append(projected)
+        if candidates:
+            package_candidates[token] = candidates
     catalog["appIdentities"] = identities
+    catalog["packageAppCandidates"] = package_candidates
     catalog["metadataUpdatedAt"] = datetime.now(timezone.utc).isoformat(timespec="microseconds")
     write_json(categories, catalog, trailing_newline=True)
     write_json(output, manifest, trailing_newline=True)

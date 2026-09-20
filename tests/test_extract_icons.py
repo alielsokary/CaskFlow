@@ -516,3 +516,66 @@ def test_purge_failure_warns_without_failing_publication(monkeypatch, capsys):
     monkeypatch.setattr(extract_icons, "urlopen", unavailable)
     extract_icons.purge_file("antinote.png")
     assert "warning: CDN purge failed for antinote" in capsys.readouterr().out
+
+
+def test_parallel_backfill_isolates_outputs_and_uses_one_checkpoint_writer(monkeypatch, tmp_path):
+    import json
+    import threading
+    from app_identities import EXTRACTION_VERSION, MANIFEST, load_manifest, needs_refresh
+    from style_standards import write_json
+
+    casks = [_cask(token=f"parallel-{i}", version="1", sha256="no_check") for i in range(4)]
+    barrier = threading.Barrier(2, timeout=5)
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "load_report", lambda: {})
+    monkeypatch.setattr(extract_icons, "select_candidates", lambda *args: casks)
+    monkeypatch.setattr(extract_icons, "FLUSH_EVERY", 2)
+    monkeypatch.setattr(extract_icons, "purge_file", lambda _: None)
+
+    def extract(cask, output):
+        assert not (output / MANIFEST).exists()
+        barrier.wait()
+        token = cask["token"]
+        if token.endswith("3"):
+            return "failed", "fixture download failure"
+        record = {"apps": [], "packageCandidates": [{"bundleName": token + ".app"}],
+                  "caskVersion": cask["version"], "sourceURL": cask["url"], "extractionVersion": EXTRACTION_VERSION}
+        write_json(output / MANIFEST, {"schemaVersion": 1, "casks": {token: record}})
+        return "no_icon", "fixture"
+    published = set()
+
+    def publish(pngs, report, dirty, identity_file, **kwargs):
+        assert threading.current_thread() is threading.main_thread()
+        assert not pngs
+        published.update(dirty)
+        if "parallel-3" in dirty:
+            assert report["parallel-3"]["status"] == "failed"
+    monkeypatch.setattr(extract_icons, "_extract_status", extract)
+    monkeypatch.setattr(extract_icons, "publish_batch", publish)
+    assert extract_icons.main(["--output-dir", str(tmp_path), "--workers", "2", "--publish"]) == 0
+    records = load_manifest(tmp_path / MANIFEST)["casks"]
+    assert set(records) == {c["token"] for c in casks[:3]}
+    assert published == {c["token"] for c in casks}
+    assert all(not needs_refresh(c, records[c["token"]]) for c in casks[:3])
+    assert needs_refresh(casks[3], records.get(casks[3]["token"]))
+    assert len(json.loads((tmp_path / "outcomes.json").read_text())) == 4
+    assert not list(tmp_path.glob("identity-workers-*"))
+
+
+def test_package_diagnostic_archive_preserves_original_metadata_not_payload_or_symlinks(tmp_path):
+    import os
+    root = tmp_path / "expanded"
+    root.mkdir()
+    (root / "Distribution").write_bytes(b'<installer-gui-script><script>original</script></installer-gui-script>')
+    os.utime(root / "Distribution", (0, 0))  # Vendor archives can predate ZIP's 1980 timestamp minimum.
+    (root / "binary").write_bytes(b'not diagnostic metadata')
+    external = tmp_path / "external"
+    external.mkdir()
+    (external / "Info.plist").write_bytes(b'outside')
+    (root / "link").symlink_to(external)
+    (root / "PackageInfo").symlink_to(external / "Info.plist")
+    destination = tmp_path / "output/diagnostics/test.zip"
+    extract_icons._save_package_metadata(root, destination)
+    with zipfile.ZipFile(destination) as archive:
+        assert set(archive.namelist()) == {"Distribution", "metadata-limits.json"}
+        assert archive.read("Distribution") == (root / "Distribution").read_bytes()

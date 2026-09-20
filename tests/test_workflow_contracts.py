@@ -85,9 +85,10 @@ def test_icon_workflow_routes_scheduled_and_manual_extraction(cron, backfill, to
     result = subprocess.run(
         ["bash", "-c", 'python3() { printf "%s\\n" "$*"; };\n' + script],
         env={**os.environ, "CRON": cron, "IDENTITY_BACKFILL": backfill,
-             "TOKENS": tokens, "RETRY_PARKED": retry, "LIMIT": "300"},
+             "TOKENS": tokens, "RETRY_PARKED": retry, "LIMIT": "300", "WORKERS": "1" if cron else "4"},
         capture_output=True, text=True, check=True,
     )
-    assert result.stdout.strip() == f"scripts/extract_icons.py --publish {expected}"
+    workers = "1" if cron else "4"
+    assert result.stdout.strip() == f"scripts/extract_icons.py --publish --workers {workers} {expected}"
     if cron:
         assert f'cron: "{cron}"' in workflow
