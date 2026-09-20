@@ -34509,6 +34509,17 @@
           "bundleIdentifier": "com.Musictribe.M32-Edit"
         }
       ]
+    },
+    "toneprint": {
+      "caskVersion": "4.7.2,4580aa8802a3c5cccde223bc3eaeca51",
+      "sourceURL": "https://cdn-media.empowertribe.com/4580aa8802a3c5cccde223bc3eaeca51/TonePrint_4.7.2.dmg",
+      "artifactSHA256": "ff9db220fb31272071959d98d7424d7ed76ee3501d6f0c6452b2a439733f9da9",
+      "apps": [
+        {
+          "bundleName": "TonePrint.app",
+          "bundleIdentifier": "com.tcelectronic.toneprint"
+        }
+      ]
     }
   }
 }

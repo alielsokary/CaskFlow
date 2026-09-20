@@ -1370,8 +1370,8 @@
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-09-20"
   },
   "soothe2": {
     "status": "no_icon",
@@ -1535,12 +1535,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "toneprint": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 5,
-    "updated": "2026-09-01"
-  },
   "toshiba-color-mfp": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1646,14 +1640,14 @@
   "visual-paradigm": {
     "status": "failed",
     "reason": "sha256 mismatch (got fc3c40f94cf8...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-09-20"
   },
   "visual-paradigm-ce": {
     "status": "failed",
-    "reason": "sha256 mismatch (got f604ac24a23e...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "reason": "sha256 mismatch (got 69adca19150b...)",
+    "attempts": 6,
+    "updated": "2026-09-20"
   },
   "vnc-viewer": {
     "status": "failed",
@@ -1688,8 +1682,8 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-09-20"
   },
   "wizcli": {
     "status": "no_icon",
