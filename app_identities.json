@@ -19727,6 +19727,281 @@
           "bundleIdentifier": "fm.overcast.forecast-encoder"
         }
       ]
+    },
+    "fspy": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.3/fSpy-1.0.3.dmg",
+      "artifactSHA256": "3aca686ea9d976580936279fbb3637698a3ba832d3cdd74dbbf79129b4dd2f56",
+      "apps": [
+        {
+          "bundleName": "fSpy.app",
+          "bundleIdentifier": "com.stuffmatic.fspy"
+        }
+      ]
+    },
+    "funter": {
+      "caskVersion": "7.1.2,377",
+      "sourceURL": "https://download.nektony.com/download/funter/Funter.dmg?build=377",
+      "artifactSHA256": "8f160d43fb50191b4e1bc9fe74a6c979a1be14faff9b8c2ce564506e75e8844f",
+      "apps": [
+        {
+          "bundleName": "Funter 7.app",
+          "bundleIdentifier": "com.nektony.Funter-SIII"
+        }
+      ]
+    },
+    "freeshow": {
+      "caskVersion": "1.6.5",
+      "sourceURL": "https://github.com/ChurchApps/FreeShow/releases/download/v1.6.5/FreeShow-1.6.5-arm64.zip",
+      "artifactSHA256": "1de2c724b4a05717aa3a6ed74d7c30da9c1b4ae67fb031897b4220d75a63a270",
+      "apps": [
+        {
+          "bundleName": "FreeShow.app",
+          "bundleIdentifier": "app.freeshow"
+        }
+      ]
+    },
+    "fsmonitor": {
+      "caskVersion": "2.0,158",
+      "sourceURL": "https://tristan-software.ch/FSMonitor/Archives/FSMonitor_2.0(158).zip",
+      "artifactSHA256": "9e9b73568bfcd91ef64980782b847e1fc721b001ae38a0fa03fbf5de08bef6ef",
+      "apps": [
+        {
+          "bundleName": "FSMonitor.app",
+          "bundleIdentifier": "com.tristan.FSMonitor"
+        }
+      ]
+    },
+    "fs-uae-launcher": {
+      "caskVersion": "3.2.35",
+      "sourceURL": "https://github.com/FrodeSolheim/fs-uae-launcher/releases/download/v3.2.35/FS-UAE-Launcher_3.2.35_macOS_ARM64.dmg",
+      "artifactSHA256": "859a5889e82df6d59b3e23ea6f96313e3ab59ee4bedc9ee0ff9aa86a1113fa71",
+      "apps": [
+        {
+          "bundleName": "FS-UAE Launcher.app",
+          "bundleIdentifier": "no.fengestad.fs-uae-launcher"
+        }
+      ]
+    },
+    "freeyourmusic": {
+      "caskVersion": "9.33.0",
+      "sourceURL": "https://fym-app-production.s3.nl-ams.scw.cloud/FreeYourMusic-9.33.0.dmg",
+      "artifactSHA256": "0459b4fa216ce96696bca9d5a710c109092fe2f4f70e67df729474dfc8d37a2e",
+      "apps": [
+        {
+          "bundleName": "FreeYourMusic.app",
+          "bundleIdentifier": "com.freeyourmusic.app"
+        }
+      ]
+    },
+    "futubull": {
+      "caskVersion": "16.33.17808",
+      "sourceURL": "https://softwaredownload.futunn.com/FTNN_desktop_16.33.17808_Website.dmg",
+      "artifactSHA256": "9a9142b54bdca871db217e85b7ed7fe8766106db9828152f0b951b76b8b924c7",
+      "apps": [
+        {
+          "bundleName": "Futubull.app",
+          "bundleIdentifier": "cn.futu.niuniu.nx"
+        }
+      ]
+    },
+    "fractal-bot": {
+      "caskVersion": "3.00.24",
+      "sourceURL": "https://www.fractalaudio.com/downloads/fractal-bot/Fractal-Bot-OSX-v3p00p24.dmg",
+      "artifactSHA256": "9776c928ad66a9ff3bd62b0556b466458e450def8f6982b3a53e7cecf45e16f6",
+      "apps": [
+        {
+          "bundleName": "Fractal-Bot.app",
+          "bundleIdentifier": "com.fractalaudio.fractalbot"
+        }
+      ]
+    },
+    "freeze": {
+      "caskVersion": "4.0,316",
+      "sourceURL": "https://www.freezeapp.net/download/Freeze-4.0-316.zip",
+      "artifactSHA256": "0145982cf6c97910a299cc06487d4fb1f74d7b2c9090ed9bac220fd487c3cd94",
+      "apps": [
+        {
+          "bundleName": "Freeze.app",
+          "bundleIdentifier": "seb.GlacierMac"
+        }
+      ]
+    },
+    "fredm-fuse": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://downloads.sourceforge.net/fuse-for-macosx/fuse-for-macosx/1.9.2/FuseForMacOS-1.9.2.zip",
+      "artifactSHA256": "d9a4545bf907e626b115e2cb00d056b4904a81469ef52cb92fb04cb3b15025b6",
+      "apps": [
+        {
+          "bundleName": "Fuse.app",
+          "bundleIdentifier": "net.sourceforge.fuse-for-macosx.Fuse"
+        }
+      ]
+    },
+    "free-ruler": {
+      "caskVersion": "2.0.19",
+      "sourceURL": "https://github.com/pascalpp/FreeRuler/releases/download/v2.0.19/free-ruler-2.0.19.zip",
+      "artifactSHA256": "b261c6bb152fdef376844e88c3e2b32938077ca7cdd1ccc9d9f60b97d3294e0d",
+      "apps": [
+        {
+          "bundleName": "Free Ruler.app",
+          "bundleIdentifier": "com.pascal.freeruler"
+        }
+      ]
+    },
+    "free42-decimal": {
+      "caskVersion": "3.3.12",
+      "sourceURL": "https://thomasokken.com/free42/download/Free42Mac.zip",
+      "artifactSHA256": "4220885ee94786c871e00d85b45e67869a12b2d702cca394d3a1c5b6434f17fd",
+      "apps": [
+        {
+          "bundleName": "Free42 Decimal.app",
+          "bundleIdentifier": "com.thomasokken.Free42"
+        }
+      ]
+    },
+    "freedom": {
+      "caskVersion": "2.26.0",
+      "sourceURL": "https://cdn.freedom.to/installers/updates/mac/2.26.0/Freedom.zip",
+      "artifactSHA256": "1c46bb9bb19e93edc44cc886b4487c09efd97aa55c9627096eb168904a8c39f0",
+      "apps": [
+        {
+          "bundleName": "Freedom.app",
+          "bundleIdentifier": "com.80pct.FreedomPlatform"
+        }
+      ]
+    },
+    "frappe-books": {
+      "caskVersion": "0.36.0",
+      "sourceURL": "https://github.com/frappe/books/releases/download/v0.36.0/Frappe-Books-v0.36.0-mac-arm64.dmg",
+      "artifactSHA256": "26ffa956c54a3de41f8768046b6c9c63c7772a0c0b3096578ae06a69f999c8bd",
+      "apps": [
+        {
+          "bundleName": "Frappe Books.app",
+          "bundleIdentifier": "io.frappe.books"
+        }
+      ]
+    },
+    "foxmail": {
+      "caskVersion": "1.5.8.95111",
+      "sourceURL": "https://www.foxmail.com/mac/download",
+      "artifactSHA256": "09ea332fe49a29c8ad782efc2e52d6cc15827c4fd1ee6b080857eca00a63f10f",
+      "apps": [
+        {
+          "bundleName": "Foxmail.app",
+          "bundleIdentifier": "com.tencent.Foxmail"
+        }
+      ]
+    },
+    "fs-uae-emulator": {
+      "caskVersion": "3.2.35",
+      "sourceURL": "https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_macOS_ARM64.dmg",
+      "artifactSHA256": "ef8115986c0ddb987dc024f159da59f788b96d20f7b77ca97b465a9f4492eff8",
+      "apps": [
+        {
+          "bundleName": "FS-UAE.app",
+          "bundleIdentifier": "no.fengestad.fs-uae"
+        }
+      ]
+    },
+    "franz": {
+      "caskVersion": "6.8.0",
+      "sourceURL": "https://github.com/meetfranz/franz-6/releases/download/v6.8.0/Franz-arm64.dmg",
+      "artifactSHA256": "a0387b83fdbc3daa59603bcf864ca6299d15e41a32d6adad345b33071359f614",
+      "apps": [
+        {
+          "bundleName": "Franz.app",
+          "bundleIdentifier": "com.meetfranz.franz"
+        }
+      ]
+    },
+    "freetex": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/zstar1003/FreeTex/releases/download/v1.0.0/FreeTex-Installer-1.0.0.dmg",
+      "artifactSHA256": "072bf0a4db144fb2a44c0fbaffe9ef7368dcb93d42aa21de10f5119d53239444",
+      "apps": [
+        {
+          "bundleName": "FreeTex.app",
+          "bundleIdentifier": "com.freetex.app"
+        }
+      ]
+    },
+    "front": {
+      "caskVersion": "3.77.0",
+      "sourceURL": "https://dl.frontapp.com/desktop/builds/3.77.0/Front-3.77.0-arm64.zip",
+      "artifactSHA256": "e8fb367c9746626f08afe7a7d0f40fb458097d028281daa1b65d3ba29d2f6af8",
+      "apps": [
+        {
+          "bundleName": "Front.app",
+          "bundleIdentifier": "com.frontapp.Front"
+        }
+      ]
+    },
+    "frame0": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://files.frame0.app/releases/darwin/arm64/Frame0-1.7.0-arm64.dmg",
+      "artifactSHA256": "08721df258085aeea0d3d4b09bf9f53d8941a4496359c522c11b2f9b0dcb7d4f",
+      "apps": [
+        {
+          "bundleName": "Frame0.app",
+          "bundleIdentifier": "com.electron.frame0"
+        }
+      ]
+    },
+    "free42-binary": {
+      "caskVersion": "3.3.12",
+      "sourceURL": "https://thomasokken.com/free42/download/Free42Mac.zip",
+      "artifactSHA256": "4220885ee94786c871e00d85b45e67869a12b2d702cca394d3a1c5b6434f17fd",
+      "apps": [
+        {
+          "bundleName": "Free42 Binary.app",
+          "bundleIdentifier": "com.thomasokken.Free42b"
+        }
+      ]
+    },
+    "furtherance": {
+      "caskVersion": "26.7.0",
+      "sourceURL": "https://github.com/unobserved-io/Furtherance/releases/download/26.7.0/furtherance-26.7.0.dmg",
+      "artifactSHA256": "8b57438402f37bc648f34eb62c95efac42d67fc3121ae914a6d3f6a7b34071c2",
+      "apps": [
+        {
+          "bundleName": "Furtherance.app",
+          "bundleIdentifier": "io.unobserved.furtherance"
+        }
+      ]
+    },
+    "freepdf": {
+      "caskVersion": "5.1.2",
+      "sourceURL": "https://github.com/zstar1003/FreePDF/releases/download/v5.1.2/FreePDF_v5.1.2_macOS.dmg",
+      "artifactSHA256": "82a762465d00b4a7dd15f8c36cb724fabc3f5e2180d6f4b61c662a3cb8488a6e",
+      "apps": [
+        {
+          "bundleName": "FreePDF.app",
+          "bundleIdentifier": "com.zstar.freepdf"
+        }
+      ]
+    },
+    "frhelper": {
+      "caskVersion": "latest",
+      "sourceURL": "https://static.eudic.net/pkg/fhmac.dmg",
+      "artifactSHA256": "1475679fba51f6b1070bd73cddc323192f1a0012774de80ae9d717ac5ad6ca33",
+      "apps": [
+        {
+          "bundleName": "Frhelper.app",
+          "bundleIdentifier": "com.eusoft.frhelper"
+        }
+      ]
+    },
+    "free-podcast-transcription": {
+      "caskVersion": "0.0.4,20230417.152948",
+      "sourceURL": "https://freepodcasttranscription.com/desktop-builds/darwin/aarch64/Free%20Podcast%20Transcription.dmg",
+      "artifactSHA256": "bd9177f88e23a179776d416e2d5912f9c5dc9b3979f796ed708522944ce2f81d",
+      "apps": [
+        {
+          "bundleName": "Free Podcast Transcription.app",
+          "bundleIdentifier": "com.spreaker.freepodcasttranscription"
+        }
+      ]
     }
   }
 }
