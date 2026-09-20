@@ -10335,6 +10335,281 @@
           "bundleIdentifier": "com.winzip.WinZip-Mac"
         }
       ]
+    },
+    "geolibre": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/opengeos/GeoLibre/releases/download/v3.0.0/GeoLibre.Desktop_3.0.0_aarch64.dmg",
+      "artifactSHA256": "9bbc215e6aa0e8719cac69a0235f17685214fd20a6771ce4cba91026679d0b49",
+      "apps": [
+        {
+          "bundleName": "GeoLibre Desktop.app",
+          "bundleIdentifier": "org.geolibre.desktop"
+        }
+      ]
+    },
+    "keychron-assistant": {
+      "caskVersion": "1.1.6",
+      "sourceURL": "https://launcher.keychron.com/static/assist/KeychronAssist-1.1.6.dmg",
+      "artifactSHA256": "19ff27030e2ab17810179931c9d848e039d066b629243b253d8f5ebf9d07040d",
+      "apps": [
+        {
+          "bundleName": "Keychron-Assistant.app",
+          "bundleIdentifier": "com.keychron.assist"
+        }
+      ]
+    },
+    "fathom": {
+      "caskVersion": "3.8.1",
+      "sourceURL": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.8.1.dmg",
+      "artifactSHA256": "6863bc3e084b34cd9fe3b8fe8363a26381a8bf2d1f5f4dd24dd9fb70dffc2fb4",
+      "apps": [
+        {
+          "bundleName": "Fathom.app",
+          "bundleIdentifier": "video.fathom.electron"
+        }
+      ]
+    },
+    "nvidia-sync": {
+      "caskVersion": "0.117.3-12",
+      "sourceURL": "https://workbench.download.nvidia.com/stable/nvidia-sync/0.117.3-12/nvidia-sync.dmg",
+      "artifactSHA256": "37cb749aef179626b3658f5ad50ff88ad83b445433e9bce7e6e277bb234841f1",
+      "apps": [
+        {
+          "bundleName": "NVIDIA Sync.app",
+          "bundleIdentifier": "com.nvidia.nvidia-sync"
+        }
+      ]
+    },
+    "minisim": {
+      "caskVersion": "0.10.0",
+      "sourceURL": "https://github.com/okwasniewski/MiniSim/releases/download/v0.10.0/MiniSim.app.zip",
+      "artifactSHA256": "b6af5775f0afb1b3c12a438fc35c1f4207a87341fbd39e256e6d3fbfa5aca64d",
+      "apps": [
+        {
+          "bundleName": "MiniSim.app",
+          "bundleIdentifier": "com.oskarkwasniewski.MiniSim"
+        }
+      ]
+    },
+    "transnomino": {
+      "caskVersion": "10.1.0",
+      "sourceURL": "https://www.transnomino.com/download/Transnomino-10.1.0.dmg",
+      "artifactSHA256": "a18c27bfbb56b9eb949d4da45c047becd2b082f00e0d84cc3325a66a76e67ca1",
+      "apps": [
+        {
+          "bundleName": "Transnomino.app",
+          "bundleIdentifier": "com.bastiaanverreijt.Transnomino"
+        }
+      ]
+    },
+    "portfolioperformance": {
+      "caskVersion": "0.87.0",
+      "sourceURL": "https://github.com/buchen/portfolio/releases/download/0.87.0/PortfolioPerformance-0.87.0-aarch64.dmg",
+      "artifactSHA256": "1ed3bdf3ee5b0c828a0da606df05fa1509668b41176683347ddd7d64a2078fa3",
+      "apps": [
+        {
+          "bundleName": "PortfolioPerformance.app",
+          "bundleIdentifier": "name.abuchen.portfolio.distro.product"
+        }
+      ]
+    },
+    "openrefine": {
+      "caskVersion": "3.10.1",
+      "sourceURL": "https://github.com/OpenRefine/OpenRefine/releases/download/3.10.1/openrefine-mac-3.10.1.dmg",
+      "artifactSHA256": "5aeedcd9eaca5aef3b938bb7766d28a85dffb19550635196c38586d24ffb93f3",
+      "apps": [
+        {
+          "bundleName": "OpenRefine.app",
+          "bundleIdentifier": "com.google.refine.Refine"
+        }
+      ]
+    },
+    "touchdesigner": {
+      "caskVersion": "2025.33230",
+      "sourceURL": "https://download.derivative.ca/TouchDesigner.2025.33230.arm64.dmg",
+      "artifactSHA256": "d53e49b0e7ade48ddfeda6cf7dd7f6baeb249266691692279c2122f4e05c62fd",
+      "apps": [
+        {
+          "bundleName": "TouchDesigner.app",
+          "bundleIdentifier": "ca.derivative.TouchDesigner"
+        }
+      ]
+    },
+    "gns3": {
+      "caskVersion": "3.0.6",
+      "sourceURL": "https://github.com/GNS3/gns3-gui/releases/download/v3.0.6/GNS3-3.0.6.dmg",
+      "artifactSHA256": "0b557edb15127ac942f422ff9bff57640bb7c10e4c0e1db331653a2a05dd12ea",
+      "apps": [
+        {
+          "bundleName": "GNS3.app",
+          "bundleIdentifier": "com.gns3.gns3"
+        }
+      ]
+    },
+    "yandex-music": {
+      "caskVersion": "5.120.0",
+      "sourceURL": "https://desktop.app.music.yandex.net/stable/Yandex_Music_universal_5.120.0.dmg",
+      "artifactSHA256": "bd8f2070320ad4d6f38e6628a416314ebb27697b066076ed31859ef149d2531f",
+      "apps": [
+        {
+          "bundleName": "Yandex Music.app",
+          "bundleIdentifier": "ru.yandex.desktop.music"
+        }
+      ]
+    },
+    "evernote": {
+      "caskVersion": "10.105.4,20240910164757,a2e60a8d876a07eded5d212fa56ba45214114ad0",
+      "sourceURL": "https://mac.desktop.evernote.com/builds/Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",
+      "artifactSHA256": "98d1f6d52718a0b05222b7cdce14a3755ece619edf0a1b8557af75afbfe2cd73",
+      "apps": [
+        {
+          "bundleName": "Evernote.app",
+          "bundleIdentifier": "com.evernote.Evernote"
+        }
+      ]
+    },
+    "reader": {
+      "caskVersion": "0.1.3229",
+      "sourceURL": "https://github.com/readwiseio/reader-desktop-releases/releases/download/reader-desktop-v0.1.3229/Reader_0.1.3229_universal.dmg",
+      "artifactSHA256": "58a1c55884dd4ef68cf967dd06f7310f68fde90e13d886ecea803fecba8c4555",
+      "apps": [
+        {
+          "bundleName": "Reader.app",
+          "bundleIdentifier": "io.readwise.read"
+        }
+      ]
+    },
+    "donut": {
+      "caskVersion": "0.30.0",
+      "sourceURL": "https://github.com/zhom/donutbrowser/releases/download/v0.30.0/Donut_0.30.0_aarch64.dmg",
+      "artifactSHA256": "76190a9133190925fb7c40440bbdf64b6901d00af17b1054636d35dc8d3cbebc",
+      "apps": [
+        {
+          "bundleName": "Donut.app",
+          "bundleIdentifier": "com.donutbrowser"
+        }
+      ]
+    },
+    "jollysfastvnc": {
+      "caskVersion": "1.66,26010802",
+      "sourceURL": "https://www.jinx.de/JollysFastVNC_files/JollysFastVNC.1.66.(26010802).11.0.dmg",
+      "artifactSHA256": "061ab6792ec0574420752a422c123b9325557bd130f65c0ab4acc42c37f8a74d",
+      "apps": [
+        {
+          "bundleName": "JollysFastVNC.app",
+          "bundleIdentifier": "de.jinx.JollysFastVNC"
+        }
+      ]
+    },
+    "letos": {
+      "caskVersion": "4.0.3",
+      "sourceURL": "https://github.com/pawelsalawa/letos/releases/download/4.0.3/letos-4.0.3-macos-universal.dmg",
+      "artifactSHA256": "86a6ccfaa110fcdb570c245f15986a7e79c462457128c5450ebb669a252f20fb",
+      "apps": [
+        {
+          "bundleName": "Letos.app",
+          "bundleIdentifier": "org.letos.Letos"
+        }
+      ]
+    },
+    "hp-easy-start": {
+      "caskVersion": "2.16.7,260722",
+      "sourceURL": "https://ftp.hp.com/pub/softlib/software12/HP_Quick_Start/osx/HP_Easy_Start.app.zip",
+      "artifactSHA256": "af7c3549c57dd2fca64ed538b92fe377ed5dfd4c10c4f5ea5be569fb6a690c80",
+      "apps": [
+        {
+          "bundleName": "HP Easy Start.app",
+          "bundleIdentifier": "com.hp.hp-easy-start"
+        }
+      ]
+    },
+    "quarkclouddrive": {
+      "caskVersion": "7.2.0.792,3172746",
+      "sourceURL": "https://umcdn.quark.cn/download/37213/quarkclouddrivemac/pckk@product_guanwang/QuarkCloudDriveMac_V7.2.0.792_mac_pf30003_(zh-cn)_abiarm64_(Build3172746).dmg",
+      "artifactSHA256": "529f2836c2dfbf95add095667e5a56187237aa3142f8c238fa12bd97471237c5",
+      "apps": [
+        {
+          "bundleName": "QuarkCloudDrive.app",
+          "bundleIdentifier": "com.quark.clouddrive.desktop"
+        }
+      ]
+    },
+    "cocktail": {
+      "caskVersion": "20.1",
+      "sourceURL": "https://www.maintain.se/downloads/Cocktail20GG.dmg",
+      "artifactSHA256": "48ad80dd8b26693b48dc03ea766094afb261238545038c94e7e89d6ca303123e",
+      "apps": [
+        {
+          "bundleName": "Cocktail.app",
+          "bundleIdentifier": "com.maintain.cocktail.goldengate"
+        }
+      ]
+    },
+    "raycast-glaze": {
+      "caskVersion": "0.14.2,3a82800216",
+      "sourceURL": "https://glaze.raycast-releases.com/Glaze_0.14.2_CI_Production_3a82800216_arm64.dmg",
+      "artifactSHA256": "0746524c98035f388120c7523d777040ee405a479380238be5404b8eb382d60c",
+      "apps": [
+        {
+          "bundleName": "Glaze.app",
+          "bundleIdentifier": "app.glaze.macos.main"
+        }
+      ]
+    },
+    "ibm-notifier": {
+      "caskVersion": "3.2.4,136",
+      "sourceURL": "https://github.com/IBM/mac-ibm-notifications/releases/download/v-3.2.4-b-136/IBM.Notifier.zip",
+      "artifactSHA256": "27eebdca2301aea50c9a2a8610b1a8c11c59245883be39fde9ec9c3d894ef4de",
+      "apps": [
+        {
+          "bundleName": "IBM Notifier.app",
+          "bundleIdentifier": "com.ibm.cio.notifier"
+        }
+      ]
+    },
+    "bluetility": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/jnross/Bluetility/releases/download/1.6.0/Bluetility.app.zip",
+      "artifactSHA256": "6df16eb0f4912226a411bfcd1d8eb833e02dc7596026127fc6f2576152933584",
+      "apps": [
+        {
+          "bundleName": "Bluetility.app",
+          "bundleIdentifier": "com.rossible.Bluetility"
+        }
+      ]
+    },
+    "resilio-sync": {
+      "caskVersion": "3.1.2.1076",
+      "sourceURL": "https://download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg",
+      "artifactSHA256": "840318bb65c7f614f4e86b0275718bcfac94c6720f71f7d6d076b183d65106ec",
+      "apps": [
+        {
+          "bundleName": "Resilio Sync.app",
+          "bundleIdentifier": "com.resilio.Sync"
+        }
+      ]
+    },
+    "itsytv": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://github.com/nickustinov/itsytv-macos/releases/download/v1.6.1/Itsytv-1.6.1.dmg",
+      "artifactSHA256": "cdd88872d840d1c8b121e5452bb3623b724a6f826902eaf3708f49b8d7f546b3",
+      "apps": [
+        {
+          "bundleName": "Itsytv.app",
+          "bundleIdentifier": "com.itsytv.app"
+        }
+      ]
+    },
+    "json-viewer": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://jsonviewer.app/releases/JSON-Viewer-2.0.0.dmg",
+      "artifactSHA256": "0c642692c6a9aebc1b750a00302c93a3508c1000f21d0be56f621f380c16d506",
+      "apps": [
+        {
+          "bundleName": "JSON Viewer.app",
+          "bundleIdentifier": "dev.pascalgiguere.jsonviewer"
+        }
+      ]
     }
   }
 }
