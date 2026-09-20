@@ -23578,6 +23578,276 @@
           "bundleIdentifier": "com.titanium.Maintenance"
         }
       ]
+    },
+    "media-center": {
+      "caskVersion": "36.00.35",
+      "sourceURL": "https://files.jriver-cdn.com/mediacenter/channels/v36/stable/MediaCenter360035-Universal.dmg",
+      "artifactSHA256": "d78bf0daf75ca7872181855009751594e22a2c33b18f41f44d90b66ebb4ce3ca",
+      "apps": [
+        {
+          "bundleName": "Media Center 36.app",
+          "bundleIdentifier": "com.jriver.MediaCenter36"
+        }
+      ]
+    },
+    "markright": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/dvcrn/markright/releases/download/1.0.0/MarkRight_1.0.0.dmg",
+      "artifactSHA256": "b92b8542d61cf04621d49897e83796e8369f6a9f037a633dbb0df507e81183ac",
+      "apps": [
+        {
+          "bundleName": "MarkRight.app",
+          "bundleIdentifier": "sh.d.markright"
+        }
+      ]
+    },
+    "media-converter": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://downloads.sourceforge.net/media-converter/media-converter/3.0.2/media-converter-3.0.2.zip",
+      "artifactSHA256": "e7753762138c2b5552b606d02ece75bb40969d626ea5027dd8165d78fb078369",
+      "apps": [
+        {
+          "bundleName": "Media Converter.app",
+          "bundleIdentifier": "com.kiwifruitware.Media-Converter"
+        }
+      ]
+    },
+    "manico": {
+      "caskVersion": "3.14,543",
+      "sourceURL": "https://manico.im/api/release_manager/downloads/im.manico.Manico/543.zip",
+      "artifactSHA256": "5b8e3bc05c2e3e3fcf202af07f39daff8c135ba9055162af08b013a62479a36d",
+      "apps": [
+        {
+          "bundleName": "Manico.app",
+          "bundleIdentifier": "im.manico.Manico"
+        }
+      ]
+    },
+    "mcloud": {
+      "caskVersion": "4.2.0,000",
+      "sourceURL": "https://yun.mcloud.139.com/mCloudPc/macV420/mCloud-4.2.0-000.dmg",
+      "artifactSHA256": "d0dadba4141efafba59f9ca3a620645cb965ea4b500ba3a9ba42201c81147cb6",
+      "apps": [
+        {
+          "bundleName": "中国移动云盘.app",
+          "bundleIdentifier": "com.cmic.mcloudForMacOSV2"
+        }
+      ]
+    },
+    "mathpix-snipping-tool": {
+      "caskVersion": "3.4.21.4",
+      "sourceURL": "https://mathpix.com/dmg/SnippingTool-v3.4.21.4.dmg",
+      "artifactSHA256": "fc197bae9c337aaccc7121dca3295e156e73613bd4af934fe0741be184e4e586",
+      "apps": [
+        {
+          "bundleName": "Mathpix Snipping Tool.app",
+          "bundleIdentifier": "com.mathpix.snipping-tool-noappstore"
+        }
+      ]
+    },
+    "master-pdf-editor": {
+      "caskVersion": "5.9.99",
+      "sourceURL": "https://code-industry.net/public/MasterPDFEditor.dmg",
+      "artifactSHA256": "52fdac79a497b486f84975dc5e1939ce5297955438038fcc526ccea1b90da71d",
+      "apps": [
+        {
+          "bundleName": "Master PDF Editor.app",
+          "bundleIdentifier": "net.code-industry.MasterPDFEditor5"
+        }
+      ]
+    },
+    "mcpbundler": {
+      "caskVersion": "1.0,27",
+      "sourceURL": "https://mcp-bundler.com/downloads/MCPBundler-1.0-27.zip",
+      "artifactSHA256": "304a07eb6a5dca7f854839cd40b0e1beb02ec8bb2a78abe9267da2781fd4c7c1",
+      "apps": [
+        {
+          "bundleName": "MCPBundler.app",
+          "bundleIdentifier": "Lifeisgoodlabs.MCP-Bundler"
+        }
+      ]
+    },
+    "marvel": {
+      "caskVersion": "11.5",
+      "sourceURL": "https://storage.googleapis.com/sketch-plugin/11.5/Marvel.zip",
+      "artifactSHA256": "fd6a3bb8a24ce9f4a44f6b3129ccdf37c532ba95e00ae6537f6d9a6699654911",
+      "apps": [
+        {
+          "bundleName": "Marvel.app",
+          "bundleIdentifier": "com.marvelprototyping.marvelmacos"
+        }
+      ]
+    },
+    "mediahuman-youtube-downloader": {
+      "caskVersion": "3.9.23",
+      "sourceURL": "https://www.mediahuman.net/files/YouTubeDownloader-arm.dmg",
+      "artifactSHA256": "1c60a38cdfbdb7bb36b6ee02c46a52f1c4013a8962917413795aaa5beba8d891",
+      "apps": []
+    },
+    "mathcha-notebook": {
+      "caskVersion": "1.0.463",
+      "sourceURL": "https://notebook-downloads.mathcha.io/public/Mathcha%20Notebook-1.0.463-arm64-mac.zip",
+      "artifactSHA256": "9756c366cc009c8d31188fe2b7c044cda3443df3afb2c10aac2c56367aa03adf",
+      "apps": [
+        {
+          "bundleName": "Mathcha Notebook.app",
+          "bundleIdentifier": "mathcha.com.mathnotebook"
+        }
+      ]
+    },
+    "masscode": {
+      "caskVersion": "5.12.0",
+      "sourceURL": "https://github.com/massCodeIO/massCode/releases/download/v5.12.0/massCode-5.12.0-arm64.dmg",
+      "artifactSHA256": "34402cc04fc956e9ec2113a3ee7aabe69880710e29117da43267c0f4284148e8",
+      "apps": [
+        {
+          "bundleName": "massCode.app",
+          "bundleIdentifier": "io.masscode.app"
+        }
+      ]
+    },
+    "marginnote": {
+      "caskVersion": "4.4.6",
+      "sourceURL": "https://dist.marginnote.cn/MarginNote4.4.6.dmg",
+      "artifactSHA256": "2e6f0f4cace14aa7033592febefc65bde042c4fa5033978a82b9581399dd1c20",
+      "apps": [
+        {
+          "bundleName": "MarginNote 4.app",
+          "bundleIdentifier": "QReader.MarginStudy.easy"
+        }
+      ]
+    },
+    "mdb-accdb-viewer": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://downloads.eggerapps.at/mdbviewer/mdbviewer-2.3.2.zip",
+      "artifactSHA256": "5897a9d1bcfbb4711189716aedc88ca47f5ade821a67f5195a2d03c46bc22ece",
+      "apps": [
+        {
+          "bundleName": "MDB ACCDB Viewer.app",
+          "bundleIdentifier": "at.eggerapps.mdbviewer"
+        }
+      ]
+    },
+    "marvin": {
+      "caskVersion": "1.70.0",
+      "sourceURL": "https://amarm.s3.amazonaws.com/Marvin-1.70.0-arm64-mac.zip",
+      "artifactSHA256": "770c7b55c6c7fd42dc5de48bc8d04e0461b954eb99756b9ce85fc72a50d76c0e",
+      "apps": [
+        {
+          "bundleName": "Marvin.app",
+          "bundleIdentifier": "com.amazingmarvin.marvindesktop"
+        }
+      ]
+    },
+    "mater": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://github.com/jasonlong/mater/releases/download/v3.0.1/Mater-v3.0.1-macos.zip",
+      "artifactSHA256": "a535092df0f30d1dc677c55a8892e139384db447ada8c12b1f00008efd781300",
+      "apps": [
+        {
+          "bundleName": "Mater.app",
+          "bundleIdentifier": "me.jasonlong.mater"
+        }
+      ]
+    },
+    "marathon": {
+      "caskVersion": "20250829",
+      "sourceURL": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250829/Marathon-20250829-Mac.dmg",
+      "artifactSHA256": "487cef80a18073f7110365b721f8520bed3ad766894f29e8a01d45414290c7bc",
+      "apps": [
+        {
+          "bundleName": "Classic Marathon.app",
+          "bundleIdentifier": "org.bungie.source.Marathon"
+        }
+      ]
+    },
+    "massreplaceit": {
+      "caskVersion": "4.0",
+      "sourceURL": "https://www.hexmonkeysoftware.com/files/MassReplaceIt.dmg",
+      "artifactSHA256": "7a845dc746cbc1956ca71b175538da01acfde879cb94c7b2dd20441be7740bc0",
+      "apps": [
+        {
+          "bundleName": "MassReplaceIt.app",
+          "bundleIdentifier": "com.hexmonkey.massreplaceit"
+        }
+      ]
+    },
+    "marathon-infinity": {
+      "caskVersion": "20250829",
+      "sourceURL": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250829/MarathonInfinity-20250829-Mac.dmg",
+      "artifactSHA256": "1a87729341ddb5358b77e6aed3c38009e1f857e9cfd704ec03a5d1babf3a5433",
+      "apps": [
+        {
+          "bundleName": "Classic Marathon Infinity.app",
+          "bundleIdentifier": "org.bungie.source.MarathonInfinity"
+        }
+      ]
+    },
+    "marsedit": {
+      "caskVersion": "5.4.5",
+      "sourceURL": "https://redsweater.com/marsedit/MarsEdit5.4.5.zip",
+      "artifactSHA256": "fab98bd0b517e915cbcf3deb72017d4408ecc2e73814c41f3cec1906012fcb94",
+      "apps": [
+        {
+          "bundleName": "MarsEdit.app",
+          "bundleIdentifier": "com.red-sweater.marsedit5"
+        }
+      ]
+    },
+    "mcreator": {
+      "caskVersion": "2026.2.33518",
+      "sourceURL": "https://github.com/MCreator/MCreator/releases/download/2026.2.33518/MCreator.2026.2.Mac.aarch64.dmg",
+      "artifactSHA256": "e4750f18a4a0b3f26cdf10e5fae338b373acdcb1e8b6906db5bbae37ee328c62",
+      "apps": [
+        {
+          "bundleName": "MCreator.app",
+          "bundleIdentifier": "net.mcreator"
+        }
+      ]
+    },
+    "mdrp": {
+      "caskVersion": "14.2.1",
+      "sourceURL": "https://www.macdvdripperpro.com/MDRP_v1421.zip",
+      "artifactSHA256": "9c7044b2b26957d3877d3ad93933e8e72d14a15f89b4347ae71085712833b4f6",
+      "apps": [
+        {
+          "bundleName": "MDRP.app",
+          "bundleIdentifier": "com.mdrp.MDRP"
+        }
+      ]
+    },
+    "mediamate": {
+      "caskVersion": "3.8.4,321",
+      "sourceURL": "https://github.com/Wouter01/MediaMate-Releases/releases/download/v3.8.4_321/MediaMate_v3.8.4-321.zip",
+      "artifactSHA256": "461abee47383cffaa14a9a4d5e1ccee409d97306f300dd4dc705c3d76828b74e",
+      "apps": [
+        {
+          "bundleName": "MediaMate.app",
+          "bundleIdentifier": "com.tweety.MediaMate"
+        }
+      ]
+    },
+    "marathon-2": {
+      "caskVersion": "20250829",
+      "sourceURL": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250829/Marathon2-20250829-Mac.dmg",
+      "artifactSHA256": "33a3dd12ed1415b966ed6beb564f38613cfef2ccfc53c75b1a7b16bd73516372",
+      "apps": [
+        {
+          "bundleName": "Classic Marathon 2.app",
+          "bundleIdentifier": "org.bungie.source.Marathon2"
+        }
+      ]
+    },
+    "manila": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://github.com/neilsardesai/Manila/releases/download/v1.0.1/Manila.zip",
+      "artifactSHA256": "269e11c4f069293f3cd8b93f96f127ef3b62014983f7685efa9e50200796e43c",
+      "apps": [
+        {
+          "bundleName": "Manila.app",
+          "bundleIdentifier": "com.NeilSardesai.Manila"
+        }
+      ]
     }
   }
 }
