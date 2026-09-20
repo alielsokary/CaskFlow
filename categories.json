@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-19",
-  "totalCasks": 3970,
+  "generatedDate": "2026-09-20",
+  "totalCasks": 3971,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1298,13 +1298,6 @@
     "backuploupe": {
       "primary": "utilities",
       "secondary": []
-    },
-    "backyard-ai": {
-      "primary": "developerTools",
-      "secondary": [
-        "productivity",
-        "ai"
-      ]
     },
     "badgeify": {
       "primary": "menuBar",
@@ -7106,6 +7099,12 @@
       "primary": "communication",
       "secondary": []
     },
+    "jlcone": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "jollysfastvnc": {
       "primary": "utilities",
       "secondary": []
@@ -10036,10 +10035,6 @@
         "ai"
       ]
     },
-    "notchnook": {
-      "primary": "utilities",
-      "secondary": []
-    },
     "notebooks": {
       "primary": "productivity",
       "secondary": []
@@ -12520,6 +12515,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "reolink": {
+      "primary": "videoMedia",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "repetier-host": {
       "primary": "designGraphics",
       "secondary": []
@@ -12910,6 +12911,12 @@
     "rustrover": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "ruswitcher": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "rwts-pdfwriter": {
       "primary": "productivity",
