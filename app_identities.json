@@ -27149,6 +27149,281 @@
           "bundleIdentifier": "com.pinegrow.pg"
         }
       ]
+    },
+    "precize": {
+      "caskVersion": "1.16,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/precize116.zip",
+      "artifactSHA256": "e798832aa867e017a7be4d0dd53ed9c9785155820264c851e2ee552ab767e049",
+      "apps": [
+        {
+          "bundleName": "Precize.app",
+          "bundleIdentifier": "co.eclecticlight.Precize"
+        }
+      ]
+    },
+    "postman-agent": {
+      "caskVersion": "0.5.1",
+      "sourceURL": "https://dl-agent.pstmn.io/download/version/0.5.1/osx_arm64",
+      "artifactSHA256": "b6ab6579572f00c9f5d52f4a28fa13715b1ce9171b88d6f0c5a34ef3349f41dd",
+      "apps": [
+        {
+          "bundleName": "Postman Agent.app",
+          "bundleIdentifier": "com.postmanlabs.agent.mac"
+        }
+      ]
+    },
+    "pokemon-tcg-live": {
+      "caskVersion": "1.41.0,1167182",
+      "sourceURL": "https://installer.studio-prod.pokemon.com/installer/PokemonTCGLiveInstaller_Mac.dmg",
+      "artifactSHA256": "030809e0807d8e5065e6c5d156da34bb3b5936bad2cc381a3d2d37904c94c214",
+      "apps": [
+        {
+          "bundleName": "Pokemon TCG Live.app",
+          "bundleIdentifier": "com.pokemon.pokemontcgl"
+        }
+      ]
+    },
+    "popo": {
+      "caskVersion": "4.35.2,1789474439656",
+      "sourceURL": "https://popo.netease.com/file/popomac/POPO-setup_4.35.2_arm_prod_1789474439656.dmg",
+      "artifactSHA256": "b166299beb78d2bb93d1415e605b407e55835e8eeeca6d47d04e6062b678aadc",
+      "apps": [
+        {
+          "bundleName": "popo_mac.app",
+          "bundleIdentifier": "com.netease.game.popo"
+        }
+      ]
+    },
+    "poe": {
+      "caskVersion": "1.1.45",
+      "sourceURL": "https://desktop-app.poecdn.net/updates/darwin_arm64/1.1.45.zip",
+      "artifactSHA256": "14260ec8e9c8d1c9a364b05c524724a93fa499488f2b59b4ac04ac73a5683bed",
+      "apps": [
+        {
+          "bundleName": "Poe.app",
+          "bundleIdentifier": "com.quora.poe.electron"
+        }
+      ]
+    },
+    "pokerstars": {
+      "caskVersion": "83.080",
+      "sourceURL": "https://download.pokerstars.net/PokerStars.net.app.zip",
+      "artifactSHA256": "61f8723a91b64e1490f5573479259afcfd18f5394ceb799157ae828a0e715a4f",
+      "apps": [
+        {
+          "bundleName": "PokerStars.app",
+          "bundleIdentifier": "com.pokerstars.PokerStars"
+        }
+      ]
+    },
+    "plus42-binary": {
+      "caskVersion": "1.3.15",
+      "sourceURL": "https://thomasokken.com/plus42/download/Plus42Mac.zip",
+      "artifactSHA256": "c0171dedd1a26a8b8f5fb83d733e9205e0fc241e779ec00c0a23f6979b1ba0a0",
+      "apps": [
+        {
+          "bundleName": "Plus42 Binary.app",
+          "bundleIdentifier": "com.thomasokken.Plus42b"
+        }
+      ]
+    },
+    "post-haste": {
+      "caskVersion": "2.8.3,2832",
+      "sourceURL": "https://download.digitalrebellion.com/posthaste/Post_Haste_for_Mac_2832.dmg",
+      "artifactSHA256": "a3a2b9f73f99a880b3155fa24e3b0ce6a2fee32d822dcfb2e80a135c29f2b64e",
+      "apps": [
+        {
+          "bundleName": "Post Haste.app",
+          "bundleIdentifier": "com.digitalrebellion.PostHaste"
+        }
+      ]
+    },
+    "preferencecleaner": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://echomist.co.uk/software/downloads/PreferenceCleaner_2.0.dmg",
+      "artifactSHA256": "800f1df5ca2519eaf66e0efc383a7a3f76018f8f8760058c3cee08b5ec75bd8e",
+      "apps": [
+        {
+          "bundleName": "PreferenceCleaner 2.app",
+          "bundleIdentifier": "uk.co.echomist.PreferenceCleaner2"
+        }
+      ]
+    },
+    "portalbox": {
+      "caskVersion": "0.2.6",
+      "sourceURL": "https://releases.portalbox.friendlyventures.org/0.2.6/portalbox-macos-universal.zip",
+      "artifactSHA256": "65f8c3d7dd998e3465dbe4175619dce65756e1e28adac7f27a04622b3417300e",
+      "apps": [
+        {
+          "bundleName": "PortalBox.app",
+          "bundleIdentifier": "org.friendlyventures.PortalBox"
+        }
+      ]
+    },
+    "popchar": {
+      "caskVersion": "10.5",
+      "sourceURL": "https://www.ergonis.com/downloads/products/popcharx/PopCharX105-Install.dmg",
+      "artifactSHA256": "c9c5fbc5cca8250445232d6118b79ae64d188b30a2f7bcf13f765f13f1825a92",
+      "apps": [
+        {
+          "bundleName": "PopChar.app",
+          "bundleIdentifier": "com.macility.popchar3"
+        }
+      ]
+    },
+    "polymail": {
+      "caskVersion": "2.4.3006",
+      "sourceURL": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3006.dmg",
+      "artifactSHA256": "620a1a5b0ed5923b86c7be1541df1566242a26c411eaf426b9cfcfa7ab46c539",
+      "apps": [
+        {
+          "bundleName": "Polymail.app",
+          "bundleIdentifier": "io.polymail.osx"
+        }
+      ]
+    },
+    "power-manager": {
+      "caskVersion": "5.14.1",
+      "sourceURL": "https://www.dssw.co.uk/powermanager/dsswpowermanager-5141.dmg",
+      "artifactSHA256": "8c527addd80e9ef57e329410100fa5063a9c96c5ca3d697b04c8099a51b5a1da",
+      "apps": [
+        {
+          "bundleName": "Power Manager.app",
+          "bundleIdentifier": "uk.co.dssw.powermanager.standard"
+        }
+      ]
+    },
+    "plus42-decimal": {
+      "caskVersion": "1.3.15",
+      "sourceURL": "https://thomasokken.com/plus42/download/Plus42Mac.zip",
+      "artifactSHA256": "c0171dedd1a26a8b8f5fb83d733e9205e0fc241e779ec00c0a23f6979b1ba0a0",
+      "apps": [
+        {
+          "bundleName": "Plus42 Decimal.app",
+          "bundleIdentifier": "com.thomasokken.Plus42"
+        }
+      ]
+    },
+    "poker-copilot": {
+      "caskVersion": "8.23,10259",
+      "sourceURL": "https://static.pokercopilot.com/pokercopilot_macos_universal_8_23_build_10259.dmg",
+      "artifactSHA256": "4d2ee12fb2f6be8875c05d5a9676abb81ccf4c2eb224d029f75bcc664ec203b7",
+      "apps": [
+        {
+          "bundleName": "Poker Copilot.app",
+          "bundleIdentifier": "com.install4j.4318-8431-7919-3424.23"
+        }
+      ]
+    },
+    "ppduck": {
+      "caskVersion": "3.10.20",
+      "sourceURL": "https://ppduck.com/static/downloads/PPDuck3_3.10.20.dmg",
+      "artifactSHA256": "6a433d9ed5e742229deb5ce222815a568041177244eedf591f537111388d1bba",
+      "apps": [
+        {
+          "bundleName": "PPDuck3.app",
+          "bundleIdentifier": "com.weiju.ppduck"
+        }
+      ]
+    },
+    "preference-manager": {
+      "caskVersion": "4.5.4,4540",
+      "sourceURL": "https://download.digitalrebellion.com/prefman/Preference_Manager_4540.dmg",
+      "artifactSHA256": "dcaa511f529cf5e659e86f0e6ae49f4bbcd63669a4e66ebf6ccfee4a9a9b7295",
+      "apps": [
+        {
+          "bundleName": "Preference Manager.app",
+          "bundleIdentifier": "com.digitalrebellion.PreferenceManager"
+        }
+      ]
+    },
+    "posture-pal": {
+      "caskVersion": "1.3,19",
+      "sourceURL": "https://macwhisper-site.vercel.app/posturepal/releases/Posture%20Pal-19.zip",
+      "artifactSHA256": "420d48a7cbf5a6f2585b3e4192da65d258ad3bf6beaafa4cb607b0ab15519483",
+      "apps": [
+        {
+          "bundleName": "Posture Pal.app",
+          "bundleIdentifier": "com.goodsnooze.sebby-gum"
+        }
+      ]
+    },
+    "pppc-utility": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/jamf/PPPC-Utility/releases/download/2.0.0/PPPC-Utility.zip",
+      "artifactSHA256": "acf3bf97f79f1a9cbd51b5bc13eb88e7608eb55a32b3e281042824b04a8a98c5",
+      "apps": [
+        {
+          "bundleName": "PPPC Utility.app",
+          "bundleIdentifier": "com.jamf.opensource.pppcutility"
+        }
+      ]
+    },
+    "polypane": {
+      "caskVersion": "30.1.0",
+      "sourceURL": "https://github.com/firstversionist/polypane/releases/download/v30.1.0/Polypane-30.1.0-arm64.dmg",
+      "artifactSHA256": "f7e551ce47ab13cc99c01d2c34f53f49e26961c08070140cd293508fc5a68b99",
+      "apps": [
+        {
+          "bundleName": "Polypane.app",
+          "bundleIdentifier": "com.firstversionist.polypane"
+        }
+      ]
+    },
+    "podpisuj": {
+      "caskVersion": "5.7.151",
+      "sourceURL": "https://www.podpisuj.sk/staticweb/install/podpisuj-5.7.151.dmg",
+      "artifactSHA256": "83bad3e7ee13cdd8f7dc30f7b63814e2feac509959ee3d47a7a0ee6ca76d863a",
+      "apps": [
+        {
+          "bundleName": "Podpisuj.app",
+          "bundleIdentifier": "com.archimetes.podpisuj.desktopapp.Podpisuj"
+        }
+      ]
+    },
+    "pocket-bard": {
+      "caskVersion": "3.1.17,236",
+      "sourceURL": "https://downloads.pocketbard.app/desktop/channels/stable/pocketbard-3.1.17-236-mac-aarch64.zip",
+      "artifactSHA256": "7676c3631d1ec7046b86e3d0a5d4966f1d338e54712fd1af4b5c8f4a6fc72f89",
+      "apps": [
+        {
+          "bundleName": "Pocket Bard.app",
+          "bundleIdentifier": "com.pocketbard.pocketbard"
+        }
+      ]
+    },
+    "portx": {
+      "caskVersion": "2.3.0,10.79",
+      "sourceURL": "https://cdn.netsarang.net/0ac7ea20/PortX-2.3.0-arm64.dmg",
+      "artifactSHA256": "fe0080499e07837efcadc1d11fce231d7383d7083add87e2ceb17f991a8cc7fe",
+      "apps": [
+        {
+          "bundleName": "PortX.app",
+          "bundleIdentifier": "com.netsarang.portx"
+        }
+      ]
+    },
+    "pop-app": {
+      "caskVersion": "8.0.21",
+      "sourceURL": "https://download.pop.com/desktop-app/darwin/8.0.21/Pop.dmg",
+      "artifactSHA256": "821aeb5b2106233623f68eecf0ed4ffe6955edfac18fe281ae8a4d62b6969c6f",
+      "apps": [
+        {
+          "bundleName": "Pop.app",
+          "bundleIdentifier": "com.pop.pop.app"
+        }
+      ]
+    },
+    "pomello": {
+      "caskVersion": "0.10.17",
+      "sourceURL": "https://pomelloapp.com/download/mac/latest",
+      "artifactSHA256": "37f41ee4bb4385e21b1e7696f7781700e0ad7e1434ff43aebfec87659327697a",
+      "apps": [
+        {
+          "bundleName": "Pomello.app",
+          "bundleIdentifier": "com.tinynudge.pomello"
+        }
+      ]
     }
   }
 }
