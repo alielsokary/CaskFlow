@@ -22,6 +22,11 @@ on:
         description: "Manually backfill apps with missing or outdated identity metadata"
         type: boolean
         default: false
+      workers:
+        description: "Parallel extraction workers (publication remains serialized)"
+        type: choice
+        options: ["1", "2", "4"]
+        default: "4"
       retry_parked:
         description: "Retry all failed-parked tokens (overrides limit/tokens)"
         type: boolean
@@ -55,17 +60,18 @@ jobs:
           RETRY_PARKED: ${{ inputs.retry_parked }}
           IDENTITY_BACKFILL: ${{ inputs.identity_backfill }}
           CRON: ${{ github.event.schedule }}
+          WORKERS: ${{ github.event_name == 'workflow_dispatch' && inputs.workers || '1' }}
         run: |
           if [ "$RETRY_PARKED" = "true" ] || [ "$CRON" = "7 3 1 * *" ]; then
-            python3 scripts/extract_icons.py --publish --retry-parked
+            python3 scripts/extract_icons.py --publish --workers "$WORKERS" --retry-parked
           elif [ -n "$TOKENS" ]; then
             # word-splitting intended: TOKENS is space-separated; the script
             # rejects anything that isn't a known cask token.
-            python3 scripts/extract_icons.py --publish --tokens $TOKENS
+            python3 scripts/extract_icons.py --publish --workers "$WORKERS" --tokens $TOKENS
           elif [ "$IDENTITY_BACKFILL" = "true" ]; then
-            python3 scripts/extract_icons.py --publish --identity-backfill --limit "$LIMIT"
+            python3 scripts/extract_icons.py --publish --workers "$WORKERS" --identity-backfill --limit "$LIMIT"
           else
-            python3 scripts/extract_icons.py --publish --limit "$LIMIT"
+            python3 scripts/extract_icons.py --publish --workers "$WORKERS" --limit "$LIMIT"
           fi
 
       # Keep legacy iconTokens and app identities fresh for existing consumers.
@@ -74,3 +80,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run release.yml
+
+      - name: Preserve extraction evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: identity-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            icons_out/*.json
+            icons_out/diagnostics/*.zip
+          retention-days: 30

@@ -8,6 +8,7 @@ def test_audit_distinguishes_publication_gaps_failures_and_non_applicable_casks(
         "mapped": {"app": ["Known.app"]}, "unpublished": {"app": ["Known.app"]},
         "failed": {"pkg": ["Installer.pkg"]}, "empty": {"app": ["Known.app"]},
         "pkg-choices": {"pkg": ["Installer.pkg", {"choices": [{"attributeSetting": 0}]}]},
+        "conditional": {"pkg": ["Installer.pkg"]}, "conditional-unpublished": {"pkg": ["Installer.pkg"]},
         "custom": {"installer": [{"manual": "Installer.app"}]},
         "generic": {"artifact": ["Known.app", {"target": "$APPDIR/Known.app"}]},
         "binary": {"binary": ["tool"]}, "plugin": {"screen_saver": ["Clock.saver"]},
@@ -18,20 +19,26 @@ def test_audit_distinguishes_publication_gaps_failures_and_non_applicable_casks(
     casks = [{"token": token, "version": "1", "url": "https://example.com/source.zip", "artifacts": [stanza]}
              for token, stanza in artifacts.items()]
     identity = {"bundleName": "Known.app", "bundleIdentifier": "org.example.known"}
+    candidate = {**identity, "packageIdentifier": "org.example.component", "installedPath": "/Applications/Known.app"}
     raw = {"casks": {"mapped": {"apps": [identity]}, "unpublished": {"apps": [identity]},
+                     "conditional": {"apps": [], "packageCandidates": [candidate]},
+                     "conditional-unpublished": {"apps": [], "packageCandidates": [candidate]},
                      "empty": {"apps": [], "caskVersion": "1", "sourceURL": casks[0]["url"],
                                "extractionVersion": EXTRACTION_VERSION, "diagnostics": [{"reason": "missing ID"}]}}}
-    result = audit(casks, raw, {"appIdentities": {"mapped": [identity]}},
+    result = audit(casks, raw, {"appIdentities": {"mapped": [identity]}, "packageAppCandidates": {"conditional": [candidate]}},
                    {"failed": {"status": "failed", "reason": "checksum mismatch"},
                     "archive": {"status": "no_icon", "reason": "unsupported container: download.7z"}})
     rows = {row["token"]: row for row in result["casks"]}
     assert {token: row["status"] for token, row in rows.items()} == {
         "mapped": "mapped", "unpublished": "extracted_unpublished", "failed": "failed", "empty": "empty",
-        "pkg-choices": "unsupported", "custom": "unsupported", "generic": "needs_inspection",
+        "pkg-choices": "needs_inspection", "custom": "unsupported", "generic": "needs_inspection",
+        "conditional": "receipt_candidates", "conditional-unpublished": "candidates_unpublished",
         "binary": "not_applicable", "plugin": "not_applicable", "linux": "not_applicable", "unknown": "unsupported",
         "archive": "unsupported"
     }
     assert rows["failed"]["reason"] == "checksum mismatch"
     assert rows["empty"]["diagnostics"] == [{"reason": "missing ID"}]
     assert rows["generic"]["declaredGenericApps"] == ["Known.app"]
-    assert result["catalogCasks"] == sum(result["counts"].values()) == 12
+    assert rows["conditional"]["rawIdentities"] == rows["conditional"]["publishedIdentities"] == []
+    assert rows["conditional"]["packageCandidates"] == rows["conditional"]["publishedPackageCandidates"] == [candidate]
+    assert result["catalogCasks"] == sum(result["counts"].values()) == 14
