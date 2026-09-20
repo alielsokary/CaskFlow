@@ -23071,6 +23071,265 @@
           "bundleIdentifier": "com.LightBurnSoftware.LightBurn"
         }
       ]
+    },
+    "luminance-hdr": {
+      "caskVersion": "2.6.0",
+      "sourceURL": "https://downloads.sourceforge.net/qtpfsgui/luminance/LuminanceHDR_2.6.0-Qt5.13.dmg",
+      "artifactSHA256": "14b201123036f826a3d4f2f2d5c00a7ef60938adf8f8cf35ca58f38ee8ef6642",
+      "apps": [
+        {
+          "bundleName": "Luminance HDR 2.6.0.app",
+          "bundleIdentifier": "com.luminance-hdr"
+        }
+      ]
+    },
+    "loop-messenger": {
+      "caskVersion": "6.0.3",
+      "sourceURL": "https://artifacts.wilix.dev/repository/loop-files/loop-6.0.3/loop-desktop-6.0.3-mac-m1.dmg",
+      "artifactSHA256": "e0cc5604ba65178b1064769e6d72d38d5944bf46fba87e8103443873b2d8ce49",
+      "apps": [
+        {
+          "bundleName": "LOOP.app",
+          "bundleIdentifier": "Loop.Desktop"
+        }
+      ]
+    },
+    "longplay": {
+      "caskVersion": "1.1.9",
+      "sourceURL": "https://download.longplay.app/mac/Longplay-1.1.9.dmg",
+      "artifactSHA256": "c50f4bff671c0822956bb4f9645cb8d915915d253e3aedce648cc40c9c0623eb",
+      "apps": [
+        {
+          "bundleName": "Longplay.app",
+          "bundleIdentifier": "app.longplay.Longplay-Mac"
+        }
+      ]
+    },
+    "macforge": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/w0lfschild/app_updates/raw/master/MacForge1/MacForge.1.1.0.zip",
+      "artifactSHA256": "5a28c4f43b9b9bb868e26e45096804a1b7ae604fbf3ae857bed63d495a43ec50",
+      "apps": [
+        {
+          "bundleName": "MacForge.app",
+          "bundleIdentifier": "com.macenhance.MacForge"
+        }
+      ]
+    },
+    "macgdbp": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://www.bluestatic.org/downloads/macgdbp/macgdbp-2.1.2.zip",
+      "artifactSHA256": "2951d17fadbdb50df79f50a386265d0cdcd8fb5526348712a86e2a801d4064cc",
+      "apps": [
+        {
+          "bundleName": "MacGDBp.app",
+          "bundleIdentifier": "org.bluestatic.macgdbp"
+        }
+      ]
+    },
+    "luna-secondary": {
+      "caskVersion": "5.3.8,4999",
+      "sourceURL": "https://downloads.astropad.com/luna-secondary/mac/LunaSecondary-5.3.8.4999.dmg",
+      "artifactSHA256": "323ba42f288f301c8d015121a0cf4e4676b26a9d2424e1618f486a823eece98e",
+      "apps": [
+        {
+          "bundleName": "Luna Secondary.app",
+          "bundleIdentifier": "com.astro-hq.LunaSecondaryMac"
+        }
+      ]
+    },
+    "m3unify": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://dougscripts.com/itunes/scrx/M3Unify_3.0.0.dmg",
+      "artifactSHA256": "093714e18978c2fb8c5a2704ba66932d99dbc8137bed2802cdb677842e1f9c0b",
+      "apps": [
+        {
+          "bundleName": "M3Unify.app",
+          "bundleIdentifier": "com.dougscripts.M3Unify"
+        }
+      ]
+    },
+    "luna-display": {
+      "caskVersion": "5.3.8,4999",
+      "sourceURL": "https://downloads.astropad.com/luna/mac/LunaDisplay-5.3.8.4999.dmg",
+      "artifactSHA256": "71a05fdfad47ce6fbd2be5dd4b95f192a4ddff0b80d1e4536ba12ccb91a0604f",
+      "apps": [
+        {
+          "bundleName": "Luna Display.app",
+          "bundleIdentifier": "com.astro-hq.LunaDisplayMac"
+        }
+      ]
+    },
+    "macgamestore": {
+      "caskVersion": "5.7.13,7046",
+      "sourceURL": "https://www.macgamestore.com/api_clientapp/clientupdates/public/core7/MacGameStore_5.7.13_7046.zip",
+      "artifactSHA256": "4eb28e9b27ccc80fd652958d7a3812fd48cc643052f7b26b15409e34f6862a5f",
+      "apps": [
+        {
+          "bundleName": "MacGameStore.app",
+          "bundleIdentifier": "com.macgamestore.Client2"
+        }
+      ]
+    },
+    "lyn": {
+      "caskVersion": "2.4.10",
+      "sourceURL": "https://www.lynapp.com/downloads/Lyn-2.4.10.dmg",
+      "artifactSHA256": "188036e178af08100bbc95d0d9d958479ec6191acde29403152146a7ef98d20b",
+      "apps": [
+        {
+          "bundleName": "Lyn.app",
+          "bundleIdentifier": "com.lynapp.lyn"
+        }
+      ]
+    },
+    "lyrics-master": {
+      "caskVersion": "2.5.5.4",
+      "sourceURL": "https://github.com/LyricsMaster/releases/releases/download/v2.5.5.4/LyricsMaster2554-macos.dmg",
+      "artifactSHA256": "99743770dbc45f465a00610f6f00206be1648e4ea15c1c68a43a14a895fae97a",
+      "apps": [
+        {
+          "bundleName": "Lyrics Master.app",
+          "bundleIdentifier": "com.kenichimaehashi.lyricsmaster"
+        }
+      ]
+    },
+    "macgesture": {
+      "caskVersion": "3.2.0",
+      "sourceURL": "https://github.com/MacGesture/MacGesture/releases/download/3.2.0/MacGesture-3.2.0.zip",
+      "artifactSHA256": "dd1dafaa4958524f5cf7e3ba35d3235c11f4348d429be63df03a0f6cf8aa0000",
+      "apps": [
+        {
+          "bundleName": "MacGesture.app",
+          "bundleIdentifier": "com.codefalling.MacGesture"
+        }
+      ]
+    },
+    "lookin": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://cdn.lookin.work/release/Lookin-1-0-7.zip",
+      "artifactSHA256": "45e0f5b0714e0ff41edcde8e0d2a95a174e5ffd1d4e3f22138446df3bb6013a5",
+      "apps": [
+        {
+          "bundleName": "Lookin.app",
+          "bundleIdentifier": "hughkli.Lookin"
+        }
+      ]
+    },
+    "mace": {
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://github.com/MACE-App/MACE/releases/download/v1.1.3/M.A.C.E.V1.1.3.dmg",
+      "artifactSHA256": "11a384a4cd4ca7587a818783e5d49e016abbc49811e9d02f982ae7d336879b73",
+      "apps": [
+        {
+          "bundleName": "MACE.app",
+          "bundleIdentifier": "com.mace.app"
+        }
+      ]
+    },
+    "lunatask": {
+      "caskVersion": "2.1.29",
+      "sourceURL": "https://github.com/lunatask/lunatask/releases/download/v2.1.29/Lunatask-2.1.29-universal.dmg",
+      "artifactSHA256": "93dedebb249e12250c798738d50599b60a14d1adcc60a2cf0714ef2d6c1ec2e9",
+      "apps": [
+        {
+          "bundleName": "Lunatask.app",
+          "bundleIdentifier": "com.mikekreeki.tasks"
+        }
+      ]
+    },
+    "maciasl": {
+      "caskVersion": "1.6.5",
+      "sourceURL": "https://github.com/acidanthera/MaciASL/releases/download/1.6.5/MaciASL-1.6.5-RELEASE.dmg",
+      "artifactSHA256": "67071f4e91167360e4881ed2532cf6cc3cdcc4850b1ccbcaf4e13f270465f878",
+      "apps": [
+        {
+          "bundleName": "MaciASL.app",
+          "bundleIdentifier": "org.acidanthera.MaciASL"
+        }
+      ]
+    },
+    "maa": {
+      "caskVersion": "6.17.5",
+      "sourceURL": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.17.5/MAA-v6.17.5-macos-universal.dmg",
+      "artifactSHA256": "e365fd8422976bcc212b1adb61e8bac2a2fe7ba6a6fb839c133a88c141852904",
+      "apps": [
+        {
+          "bundleName": "MAA.app",
+          "bundleIdentifier": "com.hguandl.MeoAsstMac"
+        }
+      ]
+    },
+    "macbreakz": {
+      "caskVersion": "5.48",
+      "sourceURL": "https://www.publicspace.net/download/MacBreakZ5.dmg",
+      "artifactSHA256": "711867e43d35f513d8ad95f3ad8cef4a053b93eff78ed835e71522b772c6a82e",
+      "apps": [
+        {
+          "bundleName": "MacBreakZ 5.app",
+          "bundleIdentifier": "net.publicspace.mb5"
+        }
+      ]
+    },
+    "lunar-client": {
+      "caskVersion": "3.4.9",
+      "sourceURL": "https://launcherupdates.lunarclientcdn.com/Lunar%20Client%20v3.4.9.dmg",
+      "artifactSHA256": "0864cbb798533f7a6a8728379f2308e7bf30ef5c2455731c5bd5ccb7630c37fa",
+      "apps": [
+        {
+          "bundleName": "Lunar Client.app",
+          "bundleIdentifier": "com.moonsworth.client"
+        }
+      ]
+    },
+    "ltx-desktop": {
+      "caskVersion": "1.2.7",
+      "sourceURL": "https://github.com/Lightricks/LTX-Desktop/releases/download/v1.2.7/LTX-Desktop-arm64.dmg",
+      "artifactSHA256": "cb340e0c5bed4cbdc7f41c961198f7798896dd82f5ca966393ca270e59101567",
+      "apps": [
+        {
+          "bundleName": "LTX Desktop.app",
+          "bundleIdentifier": "com.lightricks.ltx-desktop"
+        }
+      ]
+    },
+    "lyricsfinder": {
+      "caskVersion": "1.8",
+      "sourceURL": "https://www.mediahuman.com/download/LyricsFinder-arm.dmg",
+      "artifactSHA256": "3af7901ac93081dfa44bcdff1718330a0194e0623668b8d430b63fe5afe80755",
+      "apps": []
+    },
+    "lycheeslicer": {
+      "caskVersion": "7.6.6",
+      "sourceURL": "https://mango-lychee.nyc3.cdn.digitaloceanspaces.com/LycheeSlicer-7.6.6.dmg",
+      "artifactSHA256": "70fd494199795476e5c5feeaa9822e0253e13d93cdade2dd45d0a7ca14cf15c0",
+      "apps": [
+        {
+          "bundleName": "LycheeSlicer.app",
+          "bundleIdentifier": "com.mango3d.lychee"
+        }
+      ]
+    },
+    "lumide": {
+      "caskVersion": "0.21.0",
+      "sourceURL": "https://github.com/SoFluffyOS/lumide/releases/download/0.21.0/Lumide-macOS-0.21.0.dmg",
+      "artifactSHA256": "0e5bb29e349fd54ff97183e977180a617be82c18b5d9945c1c44e2b0b07f58c5",
+      "apps": [
+        {
+          "bundleName": "Lumide.app",
+          "bundleIdentifier": "io.sofluffy.lumide"
+        }
+      ]
+    },
+    "luxury-yacht": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://github.com/luxury-yacht/app/releases/download/v2.4.2/luxury-yacht-v2.4.2-macos-arm64.dmg",
+      "artifactSHA256": "7a7f63c0f0b8ae01fa9d15f3d478ecce71c7491b51cf06c893726e13013cb418",
+      "apps": [
+        {
+          "bundleName": "Luxury Yacht.app",
+          "bundleIdentifier": "app.luxury-yacht.desktop"
+        }
+      ]
     }
   }
 }
