@@ -6078,7 +6078,14 @@
       "caskVersion": "2.13.2",
       "sourceURL": "https://www.simulation.openfields.fr/phocadownload/CloudCompare_2.13.2__arm64.dmg",
       "artifactSHA256": "490f16a203f2196e64d562750bd815d1bb3e1ba5a206dcebfd32ecc882dfd554",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "CloudCompare.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
     },
     "popsql": {
       "caskVersion": "1.0.135",
@@ -9083,7 +9090,14 @@
       "caskVersion": "1.2",
       "sourceURL": "https://dockey.publicspace.co/download/Dockey-latest.zip",
       "artifactSHA256": "8a7928c91bcb47b81bf91061dbc0f0710054abbe4ec99325bf07c7c5a733a37f",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "dockey.app",
+          "bundleIdentifier": "com.igorstumberger.dockey"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "atv-remote": {
       "caskVersion": "2.2.1",
@@ -9624,7 +9638,14 @@
       "caskVersion": "4.8.2",
       "sourceURL": "https://download.electrum.org/4.8.2/electrum-4.8.2.dmg",
       "artifactSHA256": "d0715488995ea671a3ac3f382a0ebf9aefb0c1430871940b35718a56a01d5311",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Electrum.app",
+          "reason": "unsupported CFBundleIdentifier: 'Electrum'"
+        }
+      ]
     },
     "sameboy": {
       "caskVersion": "1.0.3",
@@ -10780,7 +10801,14 @@
       "caskVersion": "5.2.0",
       "sourceURL": "https://github.com/JannisX11/blockbench/releases/download/v5.2.0/Blockbench_arm64_5.2.0.dmg",
       "artifactSHA256": "9f9fa9813b2845390b5c056e901f8c0c3a19cc5e78918bd2614f76b330424f25",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Blockbench.app",
+          "reason": "unsupported CFBundleIdentifier: 'blockbench'"
+        }
+      ]
     },
     "netiquette": {
       "caskVersion": "2.3.0",
@@ -13773,7 +13801,14 @@
       "caskVersion": "2.3.0",
       "sourceURL": "https://github.com/modstart-lib/aigcpanel/releases/download/v2.3.0/AigcPanel-2.3.0-mac-arm64.dmg",
       "artifactSHA256": "7964cd2c083f5f1daa5a5493ad7007a21da9807e08af9def8bb3d0f82b8a1203",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "AigcPanel.app",
+          "reason": "unsupported CFBundleIdentifier: 'AigcPanel'"
+        }
+      ]
     },
     "akiflow": {
       "caskVersion": "2.81.8,443b090a",
@@ -14087,7 +14122,14 @@
       "caskVersion": "10.01.06M",
       "sourceURL": "https://download.alicdn.com/wangwang/AliWangWang_(10.01.06M).dmg",
       "artifactSHA256": "9957c3b7bdd031868af0187c0cb912f4c926f82221bbe34fb05f6eb1396fa5b0",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "AliWangwang.app",
+          "bundleIdentifier": "com.taobao.Aliwangwang"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "amethyst-nostr": {
       "caskVersion": "1.16.0",
@@ -14280,7 +14322,14 @@
       "caskVersion": "8.2.7",
       "sourceURL": "https://www.apipost.cn/dl.php?client=Mac&arch=arm64&version=8.2.7",
       "artifactSHA256": "947e85bd8dd471b52ff2a9e98a3e47713d37e259d1c8c99f0ef2ff9ceffa1e3d",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "ApiPost.app",
+          "bundleIdentifier": "com.apipost.apipost.fe.desctop.cn.8.x"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "arcbox": {
       "caskVersion": "1.37.0",
@@ -14473,7 +14522,14 @@
       "caskVersion": "1.2.0",
       "sourceURL": "https://speechpulse.com/download/avbeam.dmg",
       "artifactSHA256": "254e16c5973ceefa5c1c27a8b311585ea7fb2a064d26d377377a8dbc27404590",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "avbeam.app",
+          "reason": "unsupported CFBundleIdentifier: 'avbeam'"
+        }
+      ]
     },
     "audiocupcake": {
       "caskVersion": "1.0.19",
@@ -14710,7 +14766,14 @@
       "caskVersion": "3.1.8",
       "sourceURL": "https://zevrix.com/downloads/BatchOutputPDF.dmg",
       "artifactSHA256": "9c5b5f3c88052cdda073c35837d0e7313935cd918d31b35fed9540184a982179",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "BatchOutput PDF.app",
+          "reason": "declared app matched 2 bundles"
+        }
+      ]
     },
     "basecamp": {
       "caskVersion": "5.1.5",
@@ -15365,7 +15428,14 @@
       "caskVersion": "3.0",
       "sourceURL": "https://littoral.michelf.ca/apps/black-light/black-light-3.0.zip",
       "artifactSHA256": "f74395a35574e1edf27fa6e58f1b79180c946de881e9fee1733de04586989b82",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "BLack Light.app",
+          "bundleIdentifier": "ca.michelf.BlackLight.3"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "blu-ray-player-pro": {
       "caskVersion": "3.3.23,250315_0521",
@@ -15382,7 +15452,14 @@
       "caskVersion": "1.1.1",
       "sourceURL": "https://downloads.sourceforge.net/blobby/blobby2-macosx-1.1.1.dmg",
       "artifactSHA256": "a2e2a67a3c77a0ace49b4db3b4ee2eaeba8f9c5b02a15b3eec5b033bba36a879",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "blobby.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
     },
     "blockstream": {
       "caskVersion": "3.5.3",
@@ -15487,7 +15564,26 @@
       "caskVersion": "4.32",
       "sourceURL": "https://e3.boxcdn.net/box-installers/boxedit/mac/currentrelease/BoxToolsInstaller.dmg",
       "artifactSHA256": "7bb419fe65b27bce9dec60d2803f82b470cb0a9fe87621700dc760effab1a8a7",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Install Box Tools.app/Contents/Resources/Box Device Trust.app",
+          "reason": "declared app matched 0 bundles"
+        },
+        {
+          "artifact": "Install Box Tools.app/Contents/Resources/Box Edit.app",
+          "reason": "declared app matched 0 bundles"
+        },
+        {
+          "artifact": "Install Box Tools.app/Contents/Resources/Box Local Com Server.app",
+          "reason": "declared app matched 0 bundles"
+        },
+        {
+          "artifact": "Install Box Tools.app/Contents/Resources/Box Tools Custom Apps.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "brightness-sync": {
       "caskVersion": "2.3.2",
@@ -15670,7 +15766,14 @@
       "caskVersion": "6.8.8,131080",
       "sourceURL": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.8_131080.dmg",
       "artifactSHA256": "bce3749db091916ffc4441ee3e854684b7ff7c01aa7818f443d476bc16572986",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Bria.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.CounterPath_Corporation.Bria'"
+        }
+      ]
     },
     "butt": {
       "caskVersion": "1.47.0",
@@ -15830,7 +15933,14 @@
       "caskVersion": "2.0.66",
       "sourceURL": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.66-arm64.dmg",
       "artifactSHA256": "68d4901681e4eb908ed34db32ae529bf93cccf1c52e0313482eaa91132006428",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Calmly Writer.app",
+          "reason": "unsupported CFBundleIdentifier: 'calmlywriter'"
+        }
+      ]
     },
     "captin": {
       "caskVersion": "2.0.1",
@@ -15924,7 +16034,14 @@
       "caskVersion": "853",
       "sourceURL": "https://carbide-downloads.website-us-east-1.linodeobjects.com/cc/stable/853/CarbideCreate-853.dmg",
       "artifactSHA256": "35a06405128209a149480a0f73a54e8adfd694c97b20b11c30f1b87c1066e80e",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Carbide Create.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.carbide3d.Carbide Create'"
+        }
+      ]
     },
     "cardhop": {
       "caskVersion": "2.5",
@@ -16194,7 +16311,14 @@
       "caskVersion": "3.10.1",
       "sourceURL": "https://download.catlight.io/rel/mac/release/CatLightSetup-3.10.1.dmg",
       "artifactSHA256": "823a434d10c2360b82340a44c4a2cb53aa0d8794715acbd6bbce1ca5e088b40e",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Catlight.app",
+          "reason": "unsupported CFBundleIdentifier: 'Catlight'"
+        }
+      ]
     },
     "chia": {
       "caskVersion": "2.7.4",
@@ -16211,7 +16335,14 @@
       "caskVersion": "1.3.1",
       "sourceURL": "https://sac.chitubox.com/software/download.do?installerUrl=https%3A%2F%2Fdownload.chitubox.com%2F17952%2Fv1.3.1%2FCHITUBOX_Mac_Installer_v1.3.1.dmg&softwareId=17952&softwareVersionId=v1.3.1",
       "artifactSHA256": "8458c436ab80912fee6c6aa0f4cd931fbc2638ab78159d01444930d0e7345f65",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "CHITUBOX.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     },
     "clickcharts": {
       "caskVersion": "9.50",
@@ -17996,7 +18127,14 @@
       "caskVersion": "4.0.12",
       "sourceURL": "https://github.com/dixahq/dixa-desktop-app-release/releases/download/v4.0.12/dixa-4.0.12.dmg",
       "artifactSHA256": "a4e1a30d074e724ba24e9e2674a72bc4050f00161fb7dc23295a2c189ecda5bb",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Dixa.app",
+          "reason": "unsupported CFBundleIdentifier: 'dixa'"
+        }
+      ]
     },
     "drata-agent": {
       "caskVersion": "3.9.0",
@@ -18127,7 +18265,14 @@
       "caskVersion": "2.19.9",
       "sourceURL": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.19.9/Doubao_universal_2.19.9.dmg",
       "artifactSHA256": "7ef9fee0d1b0202a4ad60a316ce9b9d06aab188203b983cae122cdaae1382a5b",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "doubao.app",
+          "bundleIdentifier": "com.bot.pc.doubao"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     },
     "dremel-slicer": {
       "caskVersion": "1.2.3",
@@ -18309,7 +18454,14 @@
       "caskVersion": "4.5.12",
       "sourceURL": "https://downloads.ecamm.com/EcammLive.zip",
       "artifactSHA256": "4a7b6412a686e1e1b3e84fc9bff84b25b0efcf959064eb137fb8b8c903c3c1a9",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Ecamm/Ecamm Live.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
     },
     "dynobase": {
       "caskVersion": "3.0.5,260918e3qb67fdo",
@@ -18601,7 +18753,14 @@
       "caskVersion": "4.2.2.1",
       "sourceURL": "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1.dmg",
       "artifactSHA256": "dc71b45bc9cb965578cb819e5c68b027ed80002e5f86195b85259a009fe24373",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Electrum-LTC.app",
+          "reason": "unsupported CFBundleIdentifier: 'Electrum-LTC'"
+        }
+      ]
     },
     "elgato-game-capture-hd": {
       "caskVersion": "2.11.14",
@@ -18761,7 +18920,14 @@
       "caskVersion": "4.5.4",
       "sourceURL": "https://github.com/groestlcoin/electrum-grs/releases/download/v4.5.4/electrum-grs-4.5.4.dmg",
       "artifactSHA256": "87fd71fe9cf8e2f185664778fd0106056c34a5c545d40b50322b91c705702cd1",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "Electrum-GRS.app",
+          "reason": "unsupported CFBundleIdentifier: 'Electrum-GRS'"
+        }
+      ]
     },
     "emmetapp": {
       "caskVersion": "1.5.1",
@@ -18855,7 +19021,14 @@
       "caskVersion": "1.5.26.2,1.8.0",
       "sourceURL": "https://github.com/eufymake/eufyMake-PrusaSlicer-Release/releases/download/v1.5.26/eufyMake_Studio_V1.5.26.2_E1.8.0.dmg",
       "artifactSHA256": "beaa5760814cc7dc09818efebfbbb7c13113b5128a7db33afcd04fbc2c7c9b2d",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "eufyMake Studio.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.anker.pceufyMake/'"
+        }
+      ]
     },
     "fanny": {
       "caskVersion": "2.3.0",
@@ -19488,7 +19661,14 @@
       "caskVersion": "2.9.3",
       "sourceURL": "https://fixkey.download/fixkey%202.9.3.dmg",
       "artifactSHA256": "571e6cc6fe1d6f95e41bc68d5aaad5d6b1ecc943ec8efd43062646d7314ff520",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 2,
+      "diagnostics": [
+        {
+          "artifact": "fixkey.app",
+          "reason": "unsupported CFBundleIdentifier: 'fixkey'"
+        }
+      ]
     },
     "flyenv": {
       "caskVersion": "4.18.3",
@@ -34520,6 +34700,19 @@
           "bundleIdentifier": "com.tcelectronic.toneprint"
         }
       ]
+    },
+    "airtool": {
+      "caskVersion": "2.7.9",
+      "sourceURL": "https://www.intuitibits.com/downloads/Airtool_2.7.9.pkg",
+      "artifactSHA256": "4b39127605d1a17e9b3758e4a048145a7f70ea53cdf8747c034449417ac1ec26",
+      "apps": [
+        {
+          "bundleName": "Airtool 2.app",
+          "bundleIdentifier": "com.intuitibits.airtool2"
+        }
+      ],
+      "extractionVersion": 2,
+      "diagnostics": []
     }
   }
 }
