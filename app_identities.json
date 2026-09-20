@@ -14402,6 +14402,254 @@
           "bundleIdentifier": "com.astrogaming.acc"
         }
       ]
+    },
+    "aw-edid-editor": {
+      "caskVersion": "3.0.20",
+      "sourceURL": "https://s3.eu-west-3.amazonaws.com/aw.store01/Site+Internet/Software/AW+EDID+Editor/Software/Setup+Application/awedideditor_3_0_20_macos.zip",
+      "artifactSHA256": "489fcd0fd08fb4a2633bf5fef4dd36e022f5947f425a15a1c49612b3dbb62336",
+      "apps": [
+        {
+          "bundleName": "AW EDID Editor.app",
+          "bundleIdentifier": "com.analogway.AW-EDID-EDITOR"
+        }
+      ]
+    },
+    "aya": {
+      "caskVersion": "1.14.2",
+      "sourceURL": "https://github.com/liriliri/aya/releases/download/v1.14.2/AYA-1.14.2-mac-arm64.dmg",
+      "artifactSHA256": "44343bea5e4bcbba09deae815698765a7831bfcde358bf6a32a5f5162619577d",
+      "apps": [
+        {
+          "bundleName": "AYA.app",
+          "bundleIdentifier": "io.liriliri.aya"
+        }
+      ]
+    },
+    "avitools": {
+      "caskVersion": "3.7.2",
+      "sourceURL": "https://www.emmgunn.com/downloads/avitools3.7.2.zip",
+      "artifactSHA256": "2a338b816efe6b861da3131cd263a99aebee7bb3e63459a600c901c1c1cfa0a7",
+      "apps": [
+        {
+          "bundleName": "AVItools.app",
+          "bundleIdentifier": "com.emmgunn.AVItools3"
+        }
+      ]
+    },
+    "autodmg": {
+      "caskVersion": "1.9",
+      "sourceURL": "https://github.com/MagerValp/AutoDMG/releases/download/v1.9/AutoDMG-1.9.dmg",
+      "artifactSHA256": "92c10590ef5569797f1879f3b123e0a1f5a0434654a9cc6f6dbb517e779e6a79",
+      "apps": [
+        {
+          "bundleName": "AutoDMG.app",
+          "bundleIdentifier": "se.gu.it.AutoDMG"
+        }
+      ]
+    },
+    "audirvana": {
+      "caskVersion": "3.5.50",
+      "sourceURL": "https://audirvana.com/delivery/Audirvana_3.5.50.dmg",
+      "artifactSHA256": "c1adb7d7efdd67f72ffc0a8819cc5b579ffe32363d0e502e1e7264f79c5792e7",
+      "apps": [
+        {
+          "bundleName": "Audirvana.app",
+          "bundleIdentifier": "com.audirvana.Audirvana"
+        }
+      ]
+    },
+    "atemosc": {
+      "caskVersion": "5.0.17",
+      "sourceURL": "https://atemosc.com/download/atemOSC-5.0.17-arm64.dmg",
+      "artifactSHA256": "6c80abd14332454355f98fa46c26d7d41e443b2425a58c73e1bb0926ddf651c1",
+      "apps": [
+        {
+          "bundleName": "atemOSC.app",
+          "bundleIdentifier": "dev.steffey.atemOSC"
+        }
+      ]
+    },
+    "avbeam": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://speechpulse.com/download/avbeam.dmg",
+      "artifactSHA256": "254e16c5973ceefa5c1c27a8b311585ea7fb2a064d26d377377a8dbc27404590",
+      "apps": []
+    },
+    "audiocupcake": {
+      "caskVersion": "1.0.19",
+      "sourceURL": "https://audiocupcake.com/wp-content/uploads/2020/02/AudioCupcake-1.0.19.dmg",
+      "artifactSHA256": "2b2472daf32dbd9512794a93dc6675159d920eb3950694e1588bc167a04b4dd3",
+      "apps": [
+        {
+          "bundleName": "AudioCupcake.app",
+          "bundleIdentifier": "com.sottovoce.AudioCupcake"
+        }
+      ]
+    },
+    "astrofox": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/astrofox-io/astrofox/releases/download/v2.0.0/Astrofox-mac-arm64.dmg",
+      "artifactSHA256": "f6678d95fe67cb23b1e5ad7bd76a20f835c70ff7c79db1986a81e510e645794f",
+      "apps": [
+        {
+          "bundleName": "Astrofox.app",
+          "bundleIdentifier": "io.astrofox.app"
+        }
+      ]
+    },
+    "ba-connected": {
+      "caskVersion": "1.85.0",
+      "sourceURL": "https://downloads.bsn.cloud/BA%20connected-1.85.0.dmg",
+      "artifactSHA256": "3628c2eab7ee4d36a7e1247e4d2ae5fc8f81e5c671c734dcb0e7912ff3e3a686",
+      "apps": [
+        {
+          "bundleName": "BA connected.app",
+          "bundleIdentifier": "com.brightsign.BrightAuthor"
+        }
+      ]
+    },
+    "athas": {
+      "caskVersion": "0.14.2",
+      "sourceURL": "https://github.com/athasdev/athas/releases/download/v0.14.2/Athas_0.14.2_aarch64.dmg",
+      "artifactSHA256": "a4a3c278dbe3bfc2f6912949aff01e198a987672048194ff46d26b195beabe64",
+      "apps": [
+        {
+          "bundleName": "Athas.app",
+          "bundleIdentifier": "com.code.athas"
+        }
+      ]
+    },
+    "audiobook-builder": {
+      "caskVersion": "2.2.9",
+      "sourceURL": "https://www.splasm.com/downloads/audiobookbuilder/Audiobook%20Builder%202.2.9.dmg",
+      "artifactSHA256": "31b4f51cbbd1ac329243207dc431eff2d455033c55cd79374af5321697f012b4",
+      "apps": [
+        {
+          "bundleName": "Audiobook Builder.app",
+          "bundleIdentifier": "com.splasm.audiobookbuilder2"
+        }
+      ]
+    },
+    "astropad-studio": {
+      "caskVersion": "5.5.2,4987",
+      "sourceURL": "https://downloads.astropad.com/studio/mac/AstropadStudio-5.5.2.4987.dmg",
+      "artifactSHA256": "d7e3c5ecbc1a59e5e62d6d649ab8e8416e522b5e92bf95293a4bbef7d51dc6cc",
+      "apps": [
+        {
+          "bundleName": "Astropad Studio.app",
+          "bundleIdentifier": "com.astro-hq.AstropadStudioMac"
+        }
+      ]
+    },
+    "atomic-wallet": {
+      "caskVersion": "2.104.7",
+      "sourceURL": "https://releases.atomicwallet.io/AtomicWallet-2.104.7.dmg",
+      "artifactSHA256": "0708734fa9f4b5b9ef3e2ca0d633ff258166deb3166459655029637b15cbb263",
+      "apps": [
+        {
+          "bundleName": "Atomic Wallet.app",
+          "bundleIdentifier": "io.atomicwallet"
+        }
+      ]
+    },
+    "axure-rp": {
+      "caskVersion": "11.0.0.4137",
+      "sourceURL": "https://axure.cachefly.net/versions/11-0/AxureRP-Setup-4137.dmg",
+      "artifactSHA256": "fc9a4b3e46b835bab9f4450a382f8fea0e4e4bd2dd2602886f36da38ff9571b4",
+      "apps": [
+        {
+          "bundleName": "Axure RP 11.app",
+          "bundleIdentifier": "com.axure.AxureRP11"
+        }
+      ]
+    },
+    "atuin-desktop": {
+      "caskVersion": "0.2.20",
+      "sourceURL": "https://github.com/atuinsh/desktop/releases/download/v0.2.20/Atuin_0.2.20_aarch64.dmg",
+      "artifactSHA256": "ac5444d6df2dff182da4db4fe9f65bac1a49337739b1c913d71304d28c4e45d3",
+      "apps": [
+        {
+          "bundleName": "Atuin.app",
+          "bundleIdentifier": "sh.atuin.app"
+        }
+      ]
+    },
+    "babeledit": {
+      "caskVersion": "5.6.0",
+      "sourceURL": "https://www.codeandweb.com/download/babeledit/5.6.0/BabelEdit-5.6.0.dmg",
+      "artifactSHA256": "dfb0fd93fd9340be328e3aae5e95cb9db29075174df1eede8871e6096e57669c",
+      "apps": [
+        {
+          "bundleName": "BabelEdit.app",
+          "bundleIdentifier": "de.code-and-web.BabelEdit"
+        }
+      ]
+    },
+    "autopkgr": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://github.com/lindegroup/autopkgr/releases/download/v2.0/AutoPkgr-2.0.dmg",
+      "artifactSHA256": "05955ffd7cc7e6e18b099aae1c3e2a373350543366e604bd540958148ce729e7",
+      "apps": [
+        {
+          "bundleName": "AutoPkgr.app",
+          "bundleIdentifier": "com.lindegroup.AutoPkgr"
+        }
+      ]
+    },
+    "automattic-texts": {
+      "caskVersion": "0.84.17,1306a54b77",
+      "sourceURL": "https://texts-binaries.texts.com/builds/Texts-macOS-arm64-v0.84.17-1306a54b77.zip",
+      "artifactSHA256": "e472e1af22b5b189a248328476c2ddd334801fe9eaa821df380ad8bb60f6b574",
+      "apps": [
+        {
+          "bundleName": "Texts.app",
+          "bundleIdentifier": "com.kishanbagaria.jack"
+        }
+      ]
+    },
+    "astro-editor": {
+      "caskVersion": "1.0.17",
+      "sourceURL": "https://github.com/dannysmith/astro-editor/releases/download/v1.0.17/Astro.Editor_1.0.17_universal.dmg",
+      "artifactSHA256": "f7ed25372e8c4279ba950ed46445bc709ca52d63c84350882888a64ae1e5715b",
+      "apps": [
+        {
+          "bundleName": "Astro Editor.app",
+          "bundleIdentifier": "is.danny.astroeditor"
+        }
+      ]
+    },
+    "aurora-hdr": {
+      "caskVersion": "1.0.2,6495",
+      "sourceURL": "https://downloads.skylum.com/aurorahdr/mac/AuroraHDR_Distribution_v1_0_2_6495.zip",
+      "artifactSHA256": "af6fe2c085ec14bad9370604147050d0f431541de0f9badf11dacf7d56f2e5a3",
+      "apps": [
+        {
+          "bundleName": "Aurora HDR.app",
+          "bundleIdentifier": "com.macphun.aurorahdr2019"
+        }
+      ]
+    },
+    "avtouchbar": {
+      "caskVersion": "3.0.7,2021,08",
+      "sourceURL": "https://www.avtouchbar.com/wp-content/uploads/2021/08/AVTouchBar-3.0.7.zip",
+      "artifactSHA256": "d04c1a6685e7ce59e10bae4464b6a113aa7bf302f5b515768055aa8326ecb8e1",
+      "apps": [
+        {
+          "bundleName": "AVTouchBar.app",
+          "bundleIdentifier": "com.jakefishman.TouchBarVisualizer"
+        }
+      ]
+    },
+    "auto-claude": {
+      "caskVersion": "2.7.6",
+      "sourceURL": "https://github.com/AndyMik90/Aperant/releases/download/v2.7.6/Auto-Claude-2.7.6-darwin-arm64.dmg",
+      "artifactSHA256": "c8469a7b83344aad7cb830a16fd01a91b8369ffebcb785196d136fa50045505e",
+      "apps": [
+        {
+          "bundleName": "Auto-Claude.app",
+          "bundleIdentifier": "com.autoclaude.ui"
+        }
+      ]
     }
   }
 }

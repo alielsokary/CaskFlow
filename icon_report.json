@@ -101,11 +101,23 @@
     "attempts": 5,
     "updated": "2026-09-01"
   },
+  "audius": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 8b8003506ed2...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "autodesk-fusion": {
     "status": "review",
     "reason": "installer-badged product icon (manual salvage) -- consider re-shoot",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "avast-secure-browser": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-09-20"
   },
   "avast-security": {
     "status": "curated",
