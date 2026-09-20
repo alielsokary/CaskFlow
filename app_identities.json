@@ -8061,9 +8061,9 @@
       ]
     },
     "phosphene": {
-      "caskVersion": "1.6",
-      "sourceURL": "https://github.com/kageroumado/phosphene/releases/download/v1.6/Phosphene-1.6.dmg",
-      "artifactSHA256": "2fa406e16e61117f4552061475566f11ea7ef20f44202d850e7c47f1060bf9e7",
+      "caskVersion": "1.7",
+      "sourceURL": "https://github.com/kageroumado/phosphene/releases/download/v1.7/Phosphene-1.7.dmg",
+      "artifactSHA256": "9666c6edb0731062bdf7db8078373143d2debf9db844cb7f6a963c0e670a446f",
       "apps": [
         {
           "bundleName": "Phosphene.app",
@@ -26621,6 +26621,270 @@
       "sourceURL": "https://pally.com/sparkle/Pally-Installer-Latest.dmg",
       "artifactSHA256": "812f411f63ae758a94c962b25235aece14cc0f73b7011dedac177c41a0bb668c",
       "apps": []
+    },
+    "pia": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://github.com/LINCnil/pia/releases/download/v4.1.0/pia-4.1.0-universal.dmg",
+      "artifactSHA256": "eb8a25db8c2ad67fbaad39100e48102f18a436cb6a99bc0db9829a95e8e6e283",
+      "apps": [
+        {
+          "bundleName": "pia.app",
+          "bundleIdentifier": "com.atnos.pia"
+        }
+      ]
+    },
+    "phocus": {
+      "caskVersion": "4.1.1",
+      "sourceURL": "https://cdn.hasselblad.com/software/Phocus_for_Mac/4.1.1/Phocus_4.1.1.dmg",
+      "artifactSHA256": "b6870f12c9c8e880bc2d2db19627acaf8152f06ad372c834f980ea726b34007b",
+      "apps": [
+        {
+          "bundleName": "Phocus.app",
+          "bundleIdentifier": "dk.hasselblad.phocus"
+        }
+      ]
+    },
+    "phoenix-slides": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://github.com/gobbledegook/creevey/releases/download/v1.6.2/phoenix-slides-162.dmg",
+      "artifactSHA256": "0abfb07aca4dbfce3c35dc4263d0ad52c803ced67f90449bdc0bd07a65334298",
+      "apps": [
+        {
+          "bundleName": "Phoenix Slides.app",
+          "bundleIdentifier": "net.blyt.phoenixslides"
+        }
+      ]
+    },
+    "pgen": {
+      "caskVersion": "1.19.0",
+      "sourceURL": "https://pgendb.com/download/v1.19.0/pgen.dmg",
+      "artifactSHA256": "aec4233a016b46bcfbb55f2e6c8e4cee436254143dcaae85bf3fd7bfee67514a",
+      "apps": [
+        {
+          "bundleName": "pgen.app",
+          "bundleIdentifier": "com.tragen.pgendb"
+        }
+      ]
+    },
+    "photostickies": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/photostickies/6.0.1/PhotoStickies.app.zip",
+      "artifactSHA256": "8b653653c51bea69e0b46f177da770fdee8dc3a41e01a18a68165f226a618236",
+      "apps": [
+        {
+          "bundleName": "PhotoStickies.app",
+          "bundleIdentifier": "org.grunenberg.PhotoStickies"
+        }
+      ]
+    },
+    "peninsula": {
+      "caskVersion": "0.1.0",
+      "sourceURL": "https://github.com/Celve/Peninsula/releases/download/v0.1.0/Peninsula.zip",
+      "artifactSHA256": "e95654889d4e390e3bcad594cd1c0e2b1a4314958aedb1d1bcec608ff9700890",
+      "apps": [
+        {
+          "bundleName": "Peninsula.app",
+          "bundleIdentifier": "Celve.Peninsula"
+        }
+      ]
+    },
+    "piclist": {
+      "caskVersion": "3.5.0",
+      "sourceURL": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-3.5.0-arm64.dmg",
+      "artifactSHA256": "783eab8c9413a8a8ad2ef7a6ee0524cbc89e16f2dba0a5219eda638063e63884",
+      "apps": [
+        {
+          "bundleName": "PicList.app",
+          "bundleIdentifier": "com.kuingsmile.piclist"
+        }
+      ]
+    },
+    "pictogram": {
+      "caskVersion": "0.1,13",
+      "sourceURL": "https://pictogramapp.com/updates/v0.1%20%28Build%2013%29.zip",
+      "artifactSHA256": "fb35a21dcc548f0226453701632ebaa478ab8cb68fccfd0ae995cbb5c80d741b",
+      "apps": [
+        {
+          "bundleName": "Pictogram.app",
+          "bundleIdentifier": "com.NeilSardesai.Pictogram"
+        }
+      ]
+    },
+    "pdl": {
+      "caskVersion": "0.9.3",
+      "sourceURL": "https://github.com/IBM/prompt-declaration-language/releases/download/v0.9.3/PDL_0.9.3_universal.dmg",
+      "artifactSHA256": "e01c41cb198f05dec7c3fb08b479ae50ee90e385406c1b95561f55d400bf76d9",
+      "apps": [
+        {
+          "bundleName": "PDL.app",
+          "bundleIdentifier": "com.ibm.prompt-declaration-language.app"
+        }
+      ]
+    },
+    "pdfkey-pro": {
+      "caskVersion": "4.5.0",
+      "sourceURL": "https://pdfkey.com/PDFKeyPro.dmg",
+      "artifactSHA256": "5ab37787d1baf2cf0dd2d94608273864cab86a787f9b2bff744814b32b3b4d34",
+      "apps": [
+        {
+          "bundleName": "PDFKey Pro.app",
+          "bundleIdentifier": "com.pdfkey.pdfkeypro"
+        }
+      ]
+    },
+    "petdex": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://github.com/crafter-station/petdex/releases/download/desktop-v0.9.1/Petdex-arm64.dmg",
+      "artifactSHA256": "6eb74b775c635d20a6f9645afa680198b89491f1f8e974cff5b942a798740f8a",
+      "apps": [
+        {
+          "bundleName": "Petdex.app",
+          "bundleIdentifier": "dev.petdex.desktop-native"
+        }
+      ]
+    },
+    "pdfify": {
+      "caskVersion": "5.2,52004",
+      "sourceURL": "https://pdfify.app/get/cask/download/macos/PDFify-5.2-52004.zip",
+      "artifactSHA256": "25ef8931b33f497119c146fb7a42c865846d8a7e28585dc79c0ff07a2ae406a4",
+      "apps": [
+        {
+          "bundleName": "PDFify.app",
+          "bundleIdentifier": "de.holtwick.mac.homebrew.PDFify"
+        }
+      ]
+    },
+    "phoenix": {
+      "caskVersion": "4.0.1",
+      "sourceURL": "https://github.com/kasper/phoenix/releases/download/4.0.1/phoenix-4.0.1.tar.gz",
+      "artifactSHA256": "7d194ca75f33f6c018fe8fb974e372544a61a058222d62d57e6c929fe91949c3",
+      "apps": [
+        {
+          "bundleName": "Phoenix.app",
+          "bundleIdentifier": "org.khirviko.Phoenix"
+        }
+      ]
+    },
+    "pecunia": {
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://pecuniabanking.de/downloads/2.2.3/Pecunia.zip",
+      "artifactSHA256": "4f3bda657fcc3be192cd4fc384c13fad46f63cca44bf2b78771d9b29e941df93",
+      "apps": [
+        {
+          "bundleName": "Pecunia.app",
+          "bundleIdentifier": "de.pecuniabanking.pecunia"
+        }
+      ]
+    },
+    "photosweeper-x": {
+      "caskVersion": "5.5.5",
+      "sourceURL": "https://overmacs.com/downloads/PhotoSweeper_X.dmg",
+      "artifactSHA256": "3ef92b723a26aab02d39e4ae0cd8b76cc94d88cba61883098ca81a9d84e99f20",
+      "apps": [
+        {
+          "bundleName": "PhotoSweeper X.app",
+          "bundleIdentifier": "com.overmacs.photosweeperpaddle"
+        }
+      ]
+    },
+    "physics-101": {
+      "caskVersion": "9.2.2",
+      "sourceURL": "https://praetersoftware.com/download/physics101/Physics101.dmg",
+      "artifactSHA256": "898e3da4eb374e5bc7d452d57cab2eec3b9a090fd6696c61e8d8995f43d1e5b8",
+      "apps": [
+        {
+          "bundleName": "Physics 101.app",
+          "bundleIdentifier": "com.praetersoftware.physics101se"
+        }
+      ]
+    },
+    "pencil2d": {
+      "caskVersion": "0.7.2",
+      "sourceURL": "https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-mac-v0.7.2.dmg",
+      "artifactSHA256": "9d65cb23326c0b0bc9f86995e70c74d6745212c61d8f535fd340866854f64fe0",
+      "apps": [
+        {
+          "bundleName": "Pencil2D.app",
+          "bundleIdentifier": "org.pencil2d.Pencil2D"
+        }
+      ]
+    },
+    "pichon": {
+      "caskVersion": "1.12.0",
+      "sourceURL": "https://desktop.icons8.com/updates/pichon/Pichon.dmg",
+      "artifactSHA256": "cb95ba32ee3ea84e936742ad3f55649504102f3a1fdb0feca054f66b951c60cd",
+      "apps": [
+        {
+          "bundleName": "Pichon.app",
+          "bundleIdentifier": "com.icons8.Pichon"
+        }
+      ]
+    },
+    "penc": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/dgurkaynak/Penc/releases/download/1.0.0/Penc-1.0.0.dmg",
+      "artifactSHA256": "67e53ad3f05031473021676e32b001824d754d757818fd8fd44751462cf3e812",
+      "apps": [
+        {
+          "bundleName": "Penc.app",
+          "bundleIdentifier": "com.denizgurkaynak.Penc"
+        }
+      ]
+    },
+    "photosync": {
+      "caskVersion": "4.2",
+      "sourceURL": "https://download.photosync-app.com/mac/photosync_4_2.zip",
+      "artifactSHA256": "20e6e268697a0b8b3841ed30b12e738cdb0a6452b86537dfa258793bbf65d63d",
+      "apps": [
+        {
+          "bundleName": "PhotoSync.app",
+          "bundleIdentifier": "com.touchbyte.mac.PhotoSync"
+        }
+      ]
+    },
+    "pibar": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://amiantos.s3.amazonaws.com/PiBar-1.2.1.zip",
+      "artifactSHA256": "a36a898bc4f933c700e9d42d4a589b4253b504d460bbbd63929b492f44f5c6f3",
+      "apps": [
+        {
+          "bundleName": "PiBar.app",
+          "bundleIdentifier": "net.amiantos.PiBar"
+        }
+      ]
+    },
+    "picfindr": {
+      "caskVersion": "1.6.13",
+      "sourceURL": "https://ushining.softorino.com/shine_uploads/picfindr_1.6.13.dmg",
+      "artifactSHA256": "93c939e551036805295a59105cc479a3b8b8e522cfdff11ae6b67d85c5900144",
+      "apps": [
+        {
+          "bundleName": "PicFindr.app",
+          "bundleIdentifier": "com.softorino.picfindr"
+        }
+      ]
+    },
+    "phoenix-code": {
+      "caskVersion": "5.2.5",
+      "sourceURL": "https://github.com/phcode-dev/phoenix-desktop/releases/download/prod-app-v5.2.5/Phoenix.Code_5.2.5_aarch64.dmg",
+      "artifactSHA256": "a1e49fc187df97e0e8e122ff1733439a1809ceda74cf643d70d9338b3475268d",
+      "apps": [
+        {
+          "bundleName": "Phoenix Code.app",
+          "bundleIdentifier": "io.phcode"
+        }
+      ]
+    },
+    "photosrevive": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://neededapps.com/appcasts/photosrevive/versions/2.2.0",
+      "artifactSHA256": "d289c25c67c495156b7b7f95b80838bf06207ccafb91eec45e7668aa6044db24",
+      "apps": [
+        {
+          "bundleName": "PhotosRevive.app",
+          "bundleIdentifier": "com.jeremyvizzini.photosrevive-paddle"
+        }
+      ]
     }
   }
 }
