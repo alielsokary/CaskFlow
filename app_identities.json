@@ -4856,9 +4856,9 @@
       ]
     },
     "sol": {
-      "caskVersion": "2.1.361",
-      "sourceURL": "https://github.com/ospfranco/sol/releases/download/2.1.361/2.1.361.zip",
-      "artifactSHA256": "265d8465be0fd0a8a7ac21fc594491388cd201c9164b8643b8a04bfcdd5a3137",
+      "caskVersion": "2.1.362",
+      "sourceURL": "https://github.com/ospfranco/sol/releases/download/2.1.362/2.1.362.zip",
+      "artifactSHA256": "8b0d4022c2bd3e2e677fc6b2e4acac7f247a481890560e01ea2d9151c1703007",
       "apps": [
         {
           "bundleName": "Sol.app",
@@ -30180,6 +30180,265 @@
         {
           "bundleName": "SnapMotion.app",
           "bundleIdentifier": "com.jeremyvizzini.snapmotion-paddle"
+        }
+      ]
+    },
+    "soulver": {
+      "caskVersion": "3.16.3,541",
+      "sourceURL": "https://soulver.app/mac/sparkle/soulver-3.16.3-541.zip",
+      "artifactSHA256": "5412bb0f5aecf456b2c767ae9ce19e0a34ccaa9c3c0c1d9fe217749eef799d9c",
+      "apps": [
+        {
+          "bundleName": "Soulver 3.app",
+          "bundleIdentifier": "app.soulver.mac"
+        }
+      ]
+    },
+    "speechify-voice-ai": {
+      "caskVersion": "3.16.0",
+      "sourceURL": "https://storage.googleapis.com/speechifymobile.appspot.com/macAgentSparkle/SpeechifyVoiceAssistant.dmg",
+      "artifactSHA256": "0cfd783036c495a5f887763039ccb5ffc8f456ee92806d5ecdfc2eb1dcab5598",
+      "apps": [
+        {
+          "bundleName": "Speechify Voice AI.app",
+          "bundleIdentifier": "com.cliffweitzman.speechifymacagent"
+        }
+      ]
+    },
+    "sourcenote": {
+      "caskVersion": "1.3.2",
+      "sourceURL": "https://www.sourcenoteapp.com/releases/SourceNote_1.3.2.dmg",
+      "artifactSHA256": "842bc3b739fbc361d19378b40a4115a4c4e4661bd95f61776063b6f9707c211e",
+      "apps": [
+        {
+          "bundleName": "SourceNote.app",
+          "bundleIdentifier": "com.devinabbott.SourceNote"
+        }
+      ]
+    },
+    "sparkplate": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/GreenfireInc/homebrew-sparkplate/releases/download/v1.0.0/Sparkplate.zip",
+      "artifactSHA256": "f9bff9256c4c95bf1a53b9c074e6a3f44d35e75043a404f306c1bd09121e93e7",
+      "apps": [
+        {
+          "bundleName": "Sparkplate.app",
+          "bundleIdentifier": "io.greenfire.sparkplate"
+        }
+      ]
+    },
+    "soqlxplorer": {
+      "caskVersion": "4.6",
+      "sourceURL": "https://www.pocketsoap.com/osx/soqlx/SoqlXplorer_v4.6.zip",
+      "artifactSHA256": "49e55f93a56a6e0cbe17164f73b8e7ad08539e0488864c4730916b820efb7ec7",
+      "apps": [
+        {
+          "bundleName": "SoqlXplorer.app",
+          "bundleIdentifier": "com.pocketsoap.osx.SoqlXplorer"
+        }
+      ]
+    },
+    "sound-control": {
+      "caskVersion": "3.3.3",
+      "sourceURL": "https://s3.amazonaws.com/staticz.net/downloads/soundcontrol/SoundControl_3.3.3.dmg",
+      "artifactSHA256": "0d00495d22ae5e5bd25b29647023a124a02c85cb1005e9da5973a7c083f54aa9",
+      "apps": [
+        {
+          "bundleName": "Sound Control.app",
+          "bundleIdentifier": "com.staticz.SoundControl"
+        }
+      ]
+    },
+    "space-capsule": {
+      "caskVersion": "1.26",
+      "sourceURL": "https://spacecapsule.app/downloads/Space%20Capsule%201.26.dmg",
+      "artifactSHA256": "5b760e7728f2b3228c851f3858276b0200a8f0f27f2f6bd9ccbd06ffcd6d8fc4",
+      "apps": [
+        {
+          "bundleName": "Space Capsule.app",
+          "bundleIdentifier": "com.knollsoft.Space-Capsule"
+        }
+      ]
+    },
+    "sparsity": {
+      "caskVersion": "1.4,2025.07",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/07/sparsity14.zip",
+      "artifactSHA256": "cd214e08c569ebe324e7fa6e972d63587cfa2ec62224e174ba100e0f0b301762",
+      "apps": [
+        {
+          "bundleName": "Sparsity.app",
+          "bundleIdentifier": "co.eclecticlight.Sparsity"
+        }
+      ]
+    },
+    "spacewalker": {
+      "caskVersion": "1.8.6",
+      "sourceURL": "https://static.viture.dev/external-file/macOS/SpaceWalker-Installer_v1.8.6.dmg",
+      "artifactSHA256": "5b6af56070925145d2e616bd2b38bec52f6d3b1350aa9d3daeb1cec02c0bc279",
+      "apps": [
+        {
+          "bundleName": "SpaceWalker.app",
+          "bundleIdentifier": "com.viture.spacewalker"
+        }
+      ]
+    },
+    "spike": {
+      "caskVersion": "3.6.1",
+      "sourceURL": "https://education.lego.com/_/downloads/SPIKE_APP_3_macOS__3.6.1_Global.dmg",
+      "artifactSHA256": "3ada0f885232dd5bf1255f1a7fa64d196bfbc5638fbb2b328b80fa5d82205f9e",
+      "apps": []
+    },
+    "sparrow": {
+      "caskVersion": "2.5.5",
+      "sourceURL": "https://github.com/sparrowwallet/sparrow/releases/download/2.5.5/Sparrow-2.5.5-aarch64.dmg",
+      "artifactSHA256": "02be94466d92bef4b81b6b9c3efaf6ef4910f713330065309750e92679f711cd",
+      "apps": [
+        {
+          "bundleName": "Sparrow.app",
+          "bundleIdentifier": "com.sparrowwallet.sparrow"
+        }
+      ]
+    },
+    "softraid": {
+      "caskVersion": "9.0.2",
+      "sourceURL": "https://downloads.owc.com/softraid/mac/9/softraid-9.0.2.dmg",
+      "artifactSHA256": "069a565830c5213ad9c76a201fea0e2f34711a0c8b0d1c287edaac822b47cfcb",
+      "apps": [
+        {
+          "bundleName": "SoftRAID.app",
+          "bundleIdentifier": "com.softraid.SoftRAID"
+        }
+      ]
+    },
+    "songkong": {
+      "caskVersion": "12.9.1",
+      "sourceURL": "https://www.jthink.net/songkong/downloads/current/songkong-osx-m1.dmg",
+      "artifactSHA256": "9c9bfb01eaaab73573af2ecf57fc57e47766f1fb916940dc7f54b96a086e0fd4",
+      "apps": [
+        {
+          "bundleName": "SongKong.app",
+          "bundleIdentifier": "com.jthink.songkong"
+        }
+      ]
+    },
+    "solvespace": {
+      "caskVersion": "3.2",
+      "sourceURL": "https://github.com/solvespace/solvespace/releases/download/v3.2/solvespace.dmg",
+      "artifactSHA256": "714ca23cc6989c1fd842b353412ef9ba24a23eb2f17446c1bc91740d79869b51",
+      "apps": [
+        {
+          "bundleName": "SolveSpace.app",
+          "bundleIdentifier": "com.solvespace"
+        }
+      ]
+    },
+    "soundanchor": {
+      "caskVersion": "1.8.3",
+      "sourceURL": "https://cdn.kopiro.me/soundanchor/soundanchor-1.8.3.dmg",
+      "artifactSHA256": "6647785c1ddf776f40408f0b824425d5706d200acb1bc8cd6cc68f44e4f3b74f",
+      "apps": [
+        {
+          "bundleName": "SoundAnchor.app",
+          "bundleIdentifier": "me.kopiro.soundanchor"
+        }
+      ]
+    },
+    "spamsieve": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://c-command.com/downloads/SpamSieve-3.3.2.dmg",
+      "artifactSHA256": "aee0d32e4b5a7c3c8fd955cf9682ab554af03104da557b3bdccea404bf6e51f6",
+      "apps": [
+        {
+          "bundleName": "SpamSieve.app",
+          "bundleIdentifier": "com.c-command.SpamSieve"
+        }
+      ]
+    },
+    "specter": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://github.com/cryptoadvance/specter-desktop/releases/download/v2.0.5/Specter-v2.0.5.dmg",
+      "artifactSHA256": "2419d08e0cc32c6c1e8d7f09af90e4e867d786bc51ee238f62ff741785caccc3",
+      "apps": [
+        {
+          "bundleName": "Specter.app",
+          "bundleIdentifier": "solutions.specter.desktop"
+        }
+      ]
+    },
+    "spacelauncher": {
+      "caskVersion": "3.5.2",
+      "sourceURL": "https://spacelauncherapp.com/download/SpaceLauncher.zip",
+      "artifactSHA256": "544c4cc48f91b41c9c66f1dd9aab5db86f6f5defe98f603c0e61d86d77465913",
+      "apps": [
+        {
+          "bundleName": "SpaceLauncher.app",
+          "bundleIdentifier": "name.guoc.SpaceLauncher"
+        }
+      ]
+    },
+    "spires": {
+      "caskVersion": "2.0.12",
+      "sourceURL": "https://member.ipmu.jp/yuji.tachikawa/spires/zips/spires_2.0.12.zip",
+      "artifactSHA256": "21e1ce6de6605ad0b0ee6ec85e801fcd876428bfa10681baa4ccb138d0bd1d24",
+      "apps": [
+        {
+          "bundleName": "spires.app",
+          "bundleIdentifier": "com.yujitach.spires"
+        }
+      ]
+    },
+    "sonos-s1-controller": {
+      "caskVersion": "57.23-74170,DILU1Q33hC",
+      "sourceURL": "https://update-software.sonos.com/software/DILU1Q33hC/Sonos_57.23-74170.dmg",
+      "artifactSHA256": "3f3495441881b7767d1724aeabed595aa053cdf4780b156dbece56943f023377",
+      "apps": [
+        {
+          "bundleName": "Sonos S1 Controller.app",
+          "bundleIdentifier": "com.sonos.macController"
+        }
+      ]
+    },
+    "sound-siphon": {
+      "caskVersion": "3.8.4",
+      "sourceURL": "https://staticz.com/download/1837/",
+      "artifactSHA256": "af54da95c0bf1724f32b3d25343bef4fe8c23cd7c9429b665eb4745be68701fe",
+      "apps": [
+        {
+          "bundleName": "Sound Siphon.app",
+          "bundleIdentifier": "com.staticz.SoundSiphon3"
+        }
+      ]
+    },
+    "spectrolite": {
+      "caskVersion": "1.4.5",
+      "sourceURL": "https://spectrolite.app/downloads/Spectrolite-1.4.5-arm64.zip",
+      "artifactSHA256": "45b35a72b9f78430aed1c973cd4327fd86fe9ea83410d3dd77bf7417b9d71f6b",
+      "apps": [
+        {
+          "bundleName": "Spectrolite.app",
+          "bundleIdentifier": "com.electron.spectrolite"
+        }
+      ]
+    },
+    "softorino-youtube-converter": {
+      "caskVersion": "4.0.22",
+      "sourceURL": "https://ushining.softorino.com/shine_uploads/softorinoyoutubeconverter2mac_4.0.22.dmg",
+      "artifactSHA256": "de3a41bed8fc157b6b82607556213a4fe28fc8ec8370bef28a99670950fb5f36",
+      "apps": [
+        {
+          "bundleName": "Softorino YouTube Converter 2.app",
+          "bundleIdentifier": "com.softorino.syc2"
+        }
+      ]
+    },
+    "spatterlight": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://github.com/angstsmurf/spatterlight/releases/download/v1.5.4/Spatterlight.zip",
+      "artifactSHA256": "8b35128d471df4255df23300f025d5ab3c29d0430dd247b3d53af74846cb52a0",
+      "apps": [
+        {
+          "bundleName": "Spatterlight.app",
+          "bundleIdentifier": "net.ccxvii.spatterlight"
         }
       ]
     }
