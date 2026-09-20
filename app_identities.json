@@ -26107,6 +26107,266 @@
           "bundleIdentifier": "net.openchrom.rcp.compilation.community.product.id"
         }
       ]
+    },
+    "p2p-kiwi": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://github.com/dont-be-evil-company/p2p.kiwi/releases/download/v3.0.1/p2p-kiwi_universal.dmg",
+      "artifactSHA256": "87c3e448d36a5e561fd0d3b4033483587d08a7cccbfa8e026d8643e89f8b95e6",
+      "apps": [
+        {
+          "bundleName": "p2p.kiwi.app",
+          "bundleIdentifier": "kiwi.p2p.desktop"
+        }
+      ]
+    },
+    "ossapp": {
+      "caskVersion": "0.3.5",
+      "sourceURL": "https://gui.pkgx.dev/release/ossapp-0.3.5-arm64-mac.zip",
+      "artifactSHA256": "c8a4b3d9b11d6e2e04b2e2161d28af8695aa7fc7fa25d27ec2fdb2d71c5220aa",
+      "apps": [
+        {
+          "bundleName": "ossapp.app",
+          "bundleIdentifier": "xyz.tea.gui"
+        }
+      ]
+    },
+    "packetproxy": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/DeNA/PacketProxy/releases/download/2.3.0/PacketProxy-2.3.0-Installer-Mac-Signed.dmg",
+      "artifactSHA256": "b7d913af29ccd2032b19cea65b724a67d47fe03028eb7cfded529cf5dac500d0",
+      "apps": []
+    },
+    "output-factory": {
+      "caskVersion": "3.2.6",
+      "sourceURL": "https://zevrix.com/downloads/OutputFactory.dmg",
+      "artifactSHA256": "fd47ca146302b8568a4effdf7e3bc292abf308e89d2b979c8562c19c39caf4d0",
+      "apps": []
+    },
+    "ovito": {
+      "caskVersion": "3.16.1",
+      "sourceURL": "https://www.ovito.org/download/master/ovito-basic-3.16.1-macos-arm64.dmg",
+      "artifactSHA256": "6cbbc8337e2fa9956769e9b35f14b6eafe03795c2c7a298e92f0a98de461e616",
+      "apps": [
+        {
+          "bundleName": "Ovito.app",
+          "bundleIdentifier": "org.ovito"
+        }
+      ]
+    },
+    "orka-desktop": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/macstadium/orka-desktop/releases/download/3.1.0/OrkaDesktop-3.1.0.dmg",
+      "artifactSHA256": "9c3389511bc9fae3572a79c08f6a8dfaeb21f4b5ed79f7a0b428554659d44c51",
+      "apps": [
+        {
+          "bundleName": "Orka Desktop.app",
+          "bundleIdentifier": "com.macstadium.OrkaDesktop"
+        }
+      ]
+    },
+    "ovice": {
+      "caskVersion": "1.18.8",
+      "sourceURL": "https://assets.ovice.io/desktop-apps/staging/darwin/arm64/ovice-darwin-arm64-1.18.8.zip",
+      "artifactSHA256": "347fc2848b5da27844633178b7ae274ea69be85c534ce94ab17d4dcf1399fbf2",
+      "apps": [
+        {
+          "bundleName": "ovice.app",
+          "bundleIdentifier": "com.ovice.desktop.prod"
+        }
+      ]
+    },
+    "overtone-analyzer": {
+      "caskVersion": "5.11.1.9379",
+      "sourceURL": "https://download.sygyt.com/5.11.1/OvertoneAnalyzer_macOS_5.11.1.9379.dmg",
+      "artifactSHA256": "e5d57ca258173391fc7efdc19328e9cb87a123c4ecd1215e539ae8133bbee410",
+      "apps": [
+        {
+          "bundleName": "Overtone Analyzer.app",
+          "bundleIdentifier": "com.sygyt.mac.OvertoneAnalyzer"
+        }
+      ]
+    },
+    "owocr": {
+      "caskVersion": "1.26.8",
+      "sourceURL": "https://github.com/AuroraWright/owocr/releases/download/1.26.8/owocr-mac_applesilicon.dmg",
+      "artifactSHA256": "61fa4060365e73bde2eaa1fa51e8a4cffa8a7aaaddff12619c9fa42cdd431c68",
+      "apps": []
+    },
+    "overflow": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://stunt.s3.amazonaws.com/overflow_3.2.1.zip",
+      "artifactSHA256": "61c40e5d497a0f0e26dfb4062fbb958cbb9a0ea7895a7fcff64edca3e265f034",
+      "apps": [
+        {
+          "bundleName": "Overflow 3.app",
+          "bundleIdentifier": "com.stuntsoftware.Overflow3"
+        }
+      ]
+    },
+    "ovito-pro": {
+      "caskVersion": "3.16.1",
+      "sourceURL": "https://www.ovito.org/download/master/ovito-pro-3.16.1-macos-arm64.dmg",
+      "artifactSHA256": "7121d37d29a1697438690dc785bf0d0a512aee03145fe0d5bde2f33c57aa101e",
+      "apps": [
+        {
+          "bundleName": "Ovito.app",
+          "bundleIdentifier": "org.ovito"
+        }
+      ]
+    },
+    "overlayed": {
+      "caskVersion": "0.6.2",
+      "sourceURL": "https://github.com/overlayeddev/overlayed/releases/download/v0.6.2/overlayed_0.6.2_universal.dmg",
+      "artifactSHA256": "b47a390708350d98e524bdc87a06d7e634bdc95e0c4092d06b9f92702b7ed946",
+      "apps": [
+        {
+          "bundleName": "Overlayed.app",
+          "bundleIdentifier": "com.overlayed.dev"
+        }
+      ]
+    },
+    "origami-studio": {
+      "caskVersion": "228.0.0.0.0",
+      "sourceURL": "https://facebook.com/designtools/origami/",
+      "artifactSHA256": "bbbdf2997708e77aecd5f352f454c36ff344ac8e355cd06a5eb1cc7d02d783d4",
+      "apps": [
+        {
+          "bundleName": "Origami Studio.app",
+          "bundleIdentifier": "com.facebook.Origami-Studio"
+        }
+      ]
+    },
+    "oscilloscope": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/kritzikratzi/Oscilloscope/releases/download/1.1.0/oscilloscope-1.1.0-osx.zip",
+      "artifactSHA256": "5fe6fd174777d28b729704b94d034b5c1ba450b65b841a72928b15412a7c32fb",
+      "apps": [
+        {
+          "bundleName": "Oscilloscope.app",
+          "bundleIdentifier": "org.sd.oscilloscope"
+        }
+      ]
+    },
+    "owlocr": {
+      "caskVersion": "7.18.2",
+      "sourceURL": "https://owlocr.com/updates/mac/OwlOCR-7.18.2-universal.dmg",
+      "artifactSHA256": "c22834dad4898564e132db3399b3d36b07a061b26bb1a485edb46e88290e9d61",
+      "apps": [
+        {
+          "bundleName": "OwlOCR.app",
+          "bundleIdentifier": "JonLuca-DeCaro.OwlOCR"
+        }
+      ]
+    },
+    "pacifist": {
+      "caskVersion": "4.1.4",
+      "sourceURL": "https://www.charlessoft.com/pacifist_download/Pacifist_4.1.4.dmg",
+      "artifactSHA256": "d76e51f10a98460809c7f5711e7f44742a7cc7ed7372d7f1f4c14a8e41c249ea",
+      "apps": [
+        {
+          "bundleName": "Pacifist.app",
+          "bundleIdentifier": "com.charlessoft.pacifist"
+        }
+      ]
+    },
+    "packetsender": {
+      "caskVersion": "8.11.1",
+      "sourceURL": "https://github.com/dannagle/PacketSender/releases/download/v8.11.1/PacketSender_v8.11.1.dmg",
+      "artifactSHA256": "f573d24fa1245e5572bc578d4fa9b1865dccd802e8fe333b7dc0512eb5bb5a30",
+      "apps": [
+        {
+          "bundleName": "PacketSender.app",
+          "bundleIdentifier": "com.packetsender.desktop"
+        }
+      ]
+    },
+    "overview": {
+      "caskVersion": "1.2.3-beta",
+      "sourceURL": "https://williampierce.io/overview/releases/v1.2.3-beta/Overview.dmg",
+      "artifactSHA256": "cb5a741a155fc709e4179675d2651df0ead64a1d78ed8091bf5a1e298acf044f",
+      "apps": [
+        {
+          "bundleName": "Overview.app",
+          "bundleIdentifier": "io.williampierce.Overview"
+        }
+      ]
+    },
+    "ossia-score": {
+      "caskVersion": "3.8.2",
+      "sourceURL": "https://github.com/ossia/score/releases/download/v3.8.2/ossia.score-3.8.2-macOS-AppleSilicon.dmg",
+      "artifactSHA256": "48a2e953bb175f0524f4466572c3a27beb88180dc19c44d16bf3ea8913976e95",
+      "apps": [
+        {
+          "bundleName": "ossia score.app",
+          "bundleIdentifier": "io.ossia.score"
+        }
+      ]
+    },
+    "outerbase-studio": {
+      "caskVersion": "0.1.29",
+      "sourceURL": "https://github.com/outerbase/studio-desktop/releases/download/v0.1.29/outerbase-mac-0.1.29.dmg",
+      "artifactSHA256": "0d1345573e15296285f8fb3fb0c8bb3b617afe55e2beaef73c87f1f338f976a3",
+      "apps": [
+        {
+          "bundleName": "Outerbase Studio.app",
+          "bundleIdentifier": "com.outerbase.studio"
+        }
+      ]
+    },
+    "padloc": {
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://github.com/padloc/padloc/releases/download/v4.3.0/padloc_4.3.0_macos_electron_arm64.dmg",
+      "artifactSHA256": "0b20d0941d2c54a3201269954e92662444fef14baf06c2bd8410df9eb50158fb",
+      "apps": [
+        {
+          "bundleName": "Padloc.app",
+          "bundleIdentifier": "app.padloc"
+        }
+      ]
+    },
+    "overt": {
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://github.com/GetOvert/Overt/releases/download/v0.6.0/Overt-darwin-arm64-0.6.0.zip",
+      "artifactSHA256": "ba1a584b1c0a3afcefdb4dc25aebd829d8395c744b8def525bcf63b1af24d1cf",
+      "apps": [
+        {
+          "bundleName": "Overt.app",
+          "bundleIdentifier": "app.getovert.Overt"
+        }
+      ]
+    },
+    "otto-matic": {
+      "caskVersion": "4.0.1",
+      "sourceURL": "https://github.com/jorio/OttoMatic/releases/download/4.0.1/OttoMatic-4.0.1-mac.dmg",
+      "artifactSHA256": "2936a98e6f7d44c31cd08be7ecd11c817a83feaf80c307f77863812083c477ca",
+      "apps": [
+        {
+          "bundleName": "Otto Matic.app",
+          "bundleIdentifier": "io.jor.ottomatic"
+        }
+      ]
+    },
+    "outline-manager": {
+      "caskVersion": "1.21.0,1",
+      "sourceURL": "https://s3.amazonaws.com/outline-releases/manager/macos/1.21.0/1/Outline-Manager.dmg",
+      "artifactSHA256": "9a0298fb5a6f434443146500a3fb43281d8bc2522586689f563094419c15cd4b",
+      "apps": [
+        {
+          "bundleName": "Outline Manager.app",
+          "bundleIdentifier": "com.electron.outlineservermanager"
+        }
+      ]
+    },
+    "outline": {
+      "caskVersion": "6.2609.2",
+      "sourceURL": "https://static.outline.app/direct/main/Outline_6.2609.2.zip",
+      "artifactSHA256": "8617541ed03b8e7092e63910b8e926d3dd12e9dc1de5f20134506f200f91b0f5",
+      "apps": [
+        {
+          "bundleName": "Outline.app",
+          "bundleIdentifier": "com.gorillized.outlinemac.standalone"
+        }
+      ]
     }
   }
 }
