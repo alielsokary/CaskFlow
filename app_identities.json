@@ -11686,9 +11686,9 @@
       ]
     },
     "apidog": {
-      "caskVersion": "2.8.47",
-      "sourceURL": "https://file-assets.apidog.com/download/2.8.47/legacy-Apidog-macOS-arm64-2.8.47.dmg",
-      "artifactSHA256": "59a1d88a8c54ca15fa5676a9957769111da11a47f973467a2469a5ad21420f67",
+      "caskVersion": "2.8.48",
+      "sourceURL": "https://file-assets.apidog.com/download/2.8.48/legacy-Apidog-macOS-arm64-2.8.48.dmg",
+      "artifactSHA256": "d1baaa5d544638b32061234ebe8e64c2882eb207b5027eb79c6ad33c8ecc918a",
       "apps": [
         {
           "bundleName": "Apidog.app",
@@ -14211,9 +14211,9 @@
       ]
     },
     "apidog-europe": {
-      "caskVersion": "2.8.47",
-      "sourceURL": "https://file-assets.eu.apidog.com/download/2.8.47/Apidog%20Europe-macOS-arm64-2.8.47.dmg",
-      "artifactSHA256": "c1211ed0cfd897f31c8c2834a5fa451ec1344208ec60819388ab79776cf77852",
+      "caskVersion": "2.8.48",
+      "sourceURL": "https://file-assets.eu.apidog.com/download/2.8.48/Apidog%20Europe-macOS-arm64-2.8.48.dmg",
+      "artifactSHA256": "2cf93f46784557dff7adc03ca57c814ac7b4f2edc7123c44ea62ccdccaddda07",
       "apps": [
         {
           "bundleName": "Apidog Europe.app",
@@ -34441,6 +34441,72 @@
         {
           "bundleName": "SiriMote.app",
           "bundleIdentifier": "at.EternalStorms.SiriMote-nonappstore"
+        }
+      ]
+    },
+    "cinebench": {
+      "caskVersion": "2026",
+      "sourceURL": "https://mx-app-blob-prod.maxon.net/mx-package-production/website/macos/maxon/cinebench/Cinebench2026_macOS.dmg",
+      "artifactSHA256": "302a8dcff1830a7c08eb809db3f818eb63a745892e72d0c88341308654d1a1b9",
+      "apps": [
+        {
+          "bundleName": "Cinebench.app",
+          "bundleIdentifier": "net.maxon.cinebench"
+        }
+      ]
+    },
+    "dbvr": {
+      "caskVersion": "26.2.0",
+      "sourceURL": "https://downloads.dbeaver.net/dbvr/pro/26.2.0/dbvr-pro-26.2.0-macos-aarch64.dmg",
+      "artifactSHA256": "4d26cf7e12d8b552c5f091eefd8ea36e131efcf435b9cc74e7d600dddf274df8",
+      "apps": [
+        {
+          "bundleName": "dbvr.app",
+          "bundleIdentifier": "org.dbvr.app.pro.product"
+        }
+      ]
+    },
+    "dbeaverteam": {
+      "caskVersion": "26.2.0",
+      "sourceURL": "https://downloads.dbeaver.net/team/26.2.0/dbeaver-te-26.2.0-macos-aarch64.dmg",
+      "artifactSHA256": "84a29cae302cf698ba3da92fa584a7636adf356110d1606ab49757d499d6e92b",
+      "apps": [
+        {
+          "bundleName": "DBeaverTeam.app",
+          "bundleIdentifier": "com.dbeaver.product.team"
+        }
+      ]
+    },
+    "dbeaver-enterprise": {
+      "caskVersion": "26.2.0",
+      "sourceURL": "https://downloads.dbeaver.net/enterprise/26.2.0/dbeaver-ee-26.2.0-macos-aarch64.dmg",
+      "artifactSHA256": "5d84f78aa23e90ce7c7ad4f7d235b5e950e0b090f67ed8dca7164e865959da97",
+      "apps": [
+        {
+          "bundleName": "DBeaverEE.app",
+          "bundleIdentifier": "com.dbeaver.product.enterprise"
+        }
+      ]
+    },
+    "pixcake": {
+      "caskVersion": "9.9.5-38",
+      "sourceURL": "https://download.pixcakeai.com/package/9.9.5-38/%E5%83%8F%E7%B4%A0%E8%9B%8B%E7%B3%95-9.9.5-38_arm64.dmg",
+      "artifactSHA256": "59c6324d695fdcb6ee50b32ac52b4b4c16547b91484e0b5c14dcbb3973d57e27",
+      "apps": [
+        {
+          "bundleName": "像素蛋糕.app",
+          "bundleIdentifier": "com.xiangtian.pixcakepc"
+        }
+      ]
+    },
+    "m32-edit": {
+      "caskVersion": "4.4.1,936caeda1eaa4bf388c329a4b4d651f1",
+      "sourceURL": "https://cdn-media.empowertribe.com/936caeda1eaa4bf388c329a4b4d651f1/M32-Edit_MAC_4.4.1.zip",
+      "artifactSHA256": "6c508f2160d4a34f9d124e503e66263d726f3258b492c590c2beb69aa4fc5f22",
+      "apps": [
+        {
+          "bundleName": "M32-Edit.app",
+          "bundleIdentifier": "com.Musictribe.M32-Edit"
         }
       ]
     }
