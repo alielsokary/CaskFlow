@@ -10610,6 +10610,276 @@
           "bundleIdentifier": "dev.pascalgiguere.jsonviewer"
         }
       ]
+    },
+    "thoughtdag": {
+      "caskVersion": "0.4.16",
+      "sourceURL": "https://github.com/chenxiachan/thoughtdag/releases/download/v0.4.16/ThoughtDAG-0.4.16-arm64.dmg",
+      "artifactSHA256": "848ba0e2b2551535dc7915c72b3e2bd12870999bdbe5dbc9bca330594ea0e03f",
+      "apps": [
+        {
+          "bundleName": "ThoughtDAG.app",
+          "bundleIdentifier": "io.github.chenxiachan.thoughtdag"
+        }
+      ]
+    },
+    "praat": {
+      "caskVersion": "7.0.02,7002",
+      "sourceURL": "https://github.com/praat/praat.github.io/releases/download/v7.0.02/praat7002_mac.dmg",
+      "artifactSHA256": "9e4d1d220cff32ccfa4521114d23c11ebbfd792db61884f6019a44bd4aba19d4",
+      "apps": [
+        {
+          "bundleName": "Praat.app",
+          "bundleIdentifier": "org.praat.Praat"
+        }
+      ]
+    },
+    "find-any-file": {
+      "caskVersion": "2.6.1,423",
+      "sourceURL": "https://s3.amazonaws.com/files.tempel.org/FindAnyFile_2.6.1.zip",
+      "artifactSHA256": "39f0254f41447d8e013cbf6ff59b5351beb48370013e1bbb54e812d14ab31f4b",
+      "apps": [
+        {
+          "bundleName": "Find Any File.app",
+          "bundleIdentifier": "org.tempel.findanyfile"
+        }
+      ]
+    },
+    "pangolin": {
+      "caskVersion": "0.11.1",
+      "sourceURL": "https://pangolin.net/api/downloads/proxy?url=https%3A%2F%2Fgithub.com%2Ffosrl%2Fapple%2Freleases%2Fdownload%2Fmac-0.11.1%2FPangolin_Installer_0.11.1.dmg",
+      "artifactSHA256": "02a4a1bb76c6ed7525aef1f576f77344bee9367658797afb8f35e44d49c698e9",
+      "apps": [
+        {
+          "bundleName": "Pangolin.app",
+          "bundleIdentifier": "net.pangolin.Pangolin"
+        }
+      ]
+    },
+    "presentify": {
+      "caskVersion": "8.1.4",
+      "sourceURL": "https://rampatra.github.io/presentify-updates/Presentify-8.1.4.dmg",
+      "artifactSHA256": "58ebb945db724ada06160723b6a94ba4cec9f736c61061a91bf27a8ff181d878",
+      "apps": [
+        {
+          "bundleName": "Presentify.app",
+          "bundleIdentifier": "com.rampatra.presentify"
+        }
+      ]
+    },
+    "pronotes": {
+      "caskVersion": "0.7.8.2",
+      "sourceURL": "https://assets.pronotes.app/downloads/ProNotes-0.7.8.2.zip",
+      "artifactSHA256": "c4f8ff1beae55203453e3c674cfb161828f91223a10d23e3891916646331de59",
+      "apps": [
+        {
+          "bundleName": "ProNotes.app",
+          "bundleIdentifier": "com.dexterleng.ProNotes"
+        }
+      ]
+    },
+    "intellij-idea-oss": {
+      "caskVersion": "2026.2.3",
+      "sourceURL": "https://github.com/JetBrains/intellij-community/releases/download/idea%2F2026.2.3/idea-2026.2.3-aarch64.dmg",
+      "artifactSHA256": "14d0e3bc182d5f3352943f9d1af8f5242e141ea21cca9af7af4a1b37b7973227",
+      "apps": [
+        {
+          "bundleName": "IntelliJ IDEA OSS.app",
+          "bundleIdentifier": "com.jetbrains.intellij.ce"
+        }
+      ]
+    },
+    "uninstallpkg": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://www.corecode.io/downloads/uninstallpkg_1.2.2.zip",
+      "artifactSHA256": "acb66ab1885b213dd22cab0cea9405ef657649cec7d1cedf56079f1eb57f9418",
+      "apps": [
+        {
+          "bundleName": "UninstallPKG.app",
+          "bundleIdentifier": "com.corecode.UninstallPKG"
+        }
+      ]
+    },
+    "processing": {
+      "caskVersion": "4.5.6,1434",
+      "sourceURL": "https://github.com/processing/processing4/releases/download/processing-1434-4.5.6/processing-4.5.6-macos-aarch64.dmg",
+      "artifactSHA256": "f543a70d06fa43ea4f57955368734296c49960b71b24b2220da18d14806ed3fa",
+      "apps": [
+        {
+          "bundleName": "Processing.app",
+          "bundleIdentifier": "org.processing.app"
+        }
+      ]
+    },
+    "mailspring": {
+      "caskVersion": "1.24.1",
+      "sourceURL": "https://github.com/Foundry376/Mailspring/releases/download/1.24.1/Mailspring-AppleSilicon.zip",
+      "artifactSHA256": "68281e6c83bdba6059af8d91476afe3115072e26d037c848cc79a5c8f8f495fd",
+      "apps": [
+        {
+          "bundleName": "Mailspring.app",
+          "bundleIdentifier": "com.mailspring.mailspring"
+        }
+      ]
+    },
+    "gephi": {
+      "caskVersion": "0.11.3",
+      "sourceURL": "https://github.com/gephi/gephi/releases/download/v0.11.3/gephi-0.11.3-macos-aarch64.dmg",
+      "artifactSHA256": "4210bef140f5c8d4d5e1c66d6f664ca23d563b9901f91a140374305db6e7e2b1",
+      "apps": [
+        {
+          "bundleName": "Gephi.app",
+          "bundleIdentifier": "org.gephi"
+        }
+      ]
+    },
+    "eudic": {
+      "caskVersion": "latest",
+      "sourceURL": "https://static.frdic.com/pkg/eudicmac.dmg?version",
+      "artifactSHA256": "2846c0f440811152e4dc102a65616b451fc37a92d97372d16b2634e9ea718c8f",
+      "apps": [
+        {
+          "bundleName": "Eudic.app",
+          "bundleIdentifier": "com.eusoft.eudic"
+        }
+      ]
+    },
+    "butler": {
+      "caskVersion": "4.4.9",
+      "sourceURL": "https://manytricks.com/download/_do_not_hotlink_/butler449.dmg",
+      "artifactSHA256": "fe01992fa005bc4162f7b38d9d8521b713a48f4e43fc3ebf7e787f570803fab1",
+      "apps": [
+        {
+          "bundleName": "Butler.app",
+          "bundleIdentifier": "com.manytricks.Butler"
+        }
+      ]
+    },
+    "replacicon": {
+      "caskVersion": "2.1.1,54",
+      "sourceURL": "https://replacicon.app/builds/Replacicon_54.zip",
+      "artifactSHA256": "e1cdf6f6568bba307b85e2600ecb465ac0272c447ea979a938c5df80bc4682b6",
+      "apps": [
+        {
+          "bundleName": "Replacicon.app",
+          "bundleIdentifier": "com.Replacicon.Replacicon"
+        }
+      ]
+    },
+    "nvidia-nsight-systems": {
+      "caskVersion": "2026.5.1.161-3889610",
+      "sourceURL": "https://developer.nvidia.com/downloads/assets/tools/secure/nsight-systems/2026_5/NsightSystems-macos-arm64-public-2026.5.1.161-3889610.dmg",
+      "artifactSHA256": "e2c4edff136ded49b5fc42bad6b1d7d5ab5e57d3e59f9dd38034128dd25a3df8",
+      "apps": [
+        {
+          "bundleName": "NVIDIA Nsight Systems.app",
+          "bundleIdentifier": "com.nvidia.devtools.QuadD"
+        }
+      ]
+    },
+    "blockbench": {
+      "caskVersion": "5.2.0",
+      "sourceURL": "https://github.com/JannisX11/blockbench/releases/download/v5.2.0/Blockbench_arm64_5.2.0.dmg",
+      "artifactSHA256": "9f9fa9813b2845390b5c056e901f8c0c3a19cc5e78918bd2614f76b330424f25",
+      "apps": []
+    },
+    "netiquette": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/objective-see/Netiquette/releases/download/v2.3.0/Netiquette_2.3.0.zip",
+      "artifactSHA256": "e204ac0c268942b9005f4f17be78b97a7b2d3b19803330d432c196021a0e8d4a",
+      "apps": [
+        {
+          "bundleName": "Netiquette.app",
+          "bundleIdentifier": "com.objective-see.Netiquette"
+        }
+      ]
+    },
+    "uefitool": {
+      "caskVersion": "A75",
+      "sourceURL": "https://github.com/LongSoft/UEFITool/releases/download/A75/UEFITool_NE_A75_universal_mac.dmg",
+      "artifactSHA256": "34140173de7f5c8bcdcab98b354d350179831282bdd10a21058b93f8af26b772",
+      "apps": [
+        {
+          "bundleName": "UEFITool.app",
+          "bundleIdentifier": "me.coderush.UEFITool"
+        }
+      ]
+    },
+    "webcatalog": {
+      "caskVersion": "79.1.1",
+      "sourceURL": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-79.1.1-universal.dmg",
+      "artifactSHA256": "7adf29dd47c15f026cb7f5c43c079fa241b6375b1b6f43d3e4db7e1c69fe37aa",
+      "apps": [
+        {
+          "bundleName": "WebCatalog.app",
+          "bundleIdentifier": "com.webcatalog.jordan"
+        }
+      ]
+    },
+    "prefs-editor": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://files.tempel.org/Various/OSX_Prefs_Editor/PrefsEditor-1.4.2.zip",
+      "artifactSHA256": "72b99db5da69f1a35a727dbcf7b82afdc482b40ba1b5b612b8e91f8512b23c2d",
+      "apps": [
+        {
+          "bundleName": "Prefs Editor.app",
+          "bundleIdentifier": "org.tempel.prefseditor"
+        }
+      ]
+    },
+    "eclipse-jee": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-jee-2026-09-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+      "artifactSHA256": "22de8232c406639290353f42c1dd91710598e8d528008a61f99734ff30d6372a",
+      "apps": [
+        {
+          "bundleName": "Eclipse JEE.app",
+          "bundleIdentifier": "epp.package.jee"
+        }
+      ]
+    },
+    "kubecontext": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/turkenh/KubeContext/releases/download/v2.0.1/KubeContext.zip",
+      "artifactSHA256": "9b815995123dcf8a6e90c65600db68fdb38d1e9e362695922b2ec2aad7d74fc2",
+      "apps": [
+        {
+          "bundleName": "KubeContext.app",
+          "bundleIdentifier": "com.ht.kubecontext"
+        }
+      ]
+    },
+    "textual": {
+      "caskVersion": "7.2.7,87084841d",
+      "sourceURL": "https://cached.codeux.com/textual/downloads/builds/stable/Textual-87084841d/universal/Textual.zip",
+      "artifactSHA256": "5feec0c92ae08df269d368677cd501b048f2741c8612bd5108bc07ea48f57864",
+      "apps": [
+        {
+          "bundleName": "Textual.app",
+          "bundleIdentifier": "com.codeux.apps.textual"
+        }
+      ]
+    },
+    "yuanbao": {
+      "caskVersion": "2.85.1.625,9489beea49c8f994642cf74a0c5814e9",
+      "sourceURL": "https://cdn-hybrid-prod.hunyuan.tencent.com/Desktop/official/9489beea49c8f994642cf74a0c5814e9/yuanbao_2.85.1.625_universal.dmg",
+      "artifactSHA256": "a142ef397c695c407f2d617b52c515be9a2137862b80dab5229a2963e5fb4e83",
+      "apps": [
+        {
+          "bundleName": "元宝.app",
+          "bundleIdentifier": "com.tencent.yuanbao"
+        }
+      ]
+    },
+    "kiwix": {
+      "caskVersion": "3.16.1",
+      "sourceURL": "https://download.kiwix.org/release/kiwix-macos/kiwix-macos_3.16.1.dmg",
+      "artifactSHA256": "67582b16c2660ad4d364ff30863008483f18270ad4d3289e679c9cc43cdc8861",
+      "apps": [
+        {
+          "bundleName": "Kiwix.app",
+          "bundleIdentifier": "self.Kiwix"
+        }
+      ]
     }
   }
 }
