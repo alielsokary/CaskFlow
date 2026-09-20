@@ -12779,6 +12779,281 @@
           "bundleIdentifier": "com.swinsian.Swinsian"
         }
       ]
+    },
+    "lyric-fever": {
+      "caskVersion": "3.3",
+      "sourceURL": "https://github.com/aviwad/LyricFever/releases/download/v3.3/Lyric.Fever.3.3.dmg",
+      "artifactSHA256": "48f0ea7f02301534575355b6476156b1bbf615f839ba34943146f50a3cb93df2",
+      "apps": [
+        {
+          "bundleName": "Lyric Fever.app",
+          "bundleIdentifier": "com.aviwadhwa.SpotifyLyricsInMenubar"
+        }
+      ]
+    },
+    "tla+-toolbox": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/tlaplus/tlaplus/releases/download/v1.7.4/TLAToolbox-1.7.4-macosx.cocoa.x86_64.zip",
+      "artifactSHA256": "258677703e28a65d2d85c75388756a51198041a2555923e52ad5d6925f5c5bd7",
+      "apps": [
+        {
+          "bundleName": "TLA+ Toolbox.app",
+          "bundleIdentifier": "org.lamport.tla.toolbox.product.product"
+        }
+      ]
+    },
+    "one-switch": {
+      "caskVersion": "1.35.4,440",
+      "sourceURL": "https://fireball.studio/media/uploads/files/OneSwitchOfficial-440.dmg",
+      "artifactSHA256": "3c52cfa634a0806385527aea1053bf09ef556d50e97a18ba4349d9a5b481ce9a",
+      "apps": [
+        {
+          "bundleName": "One Switch.app",
+          "bundleIdentifier": "studio.fireball.OneSwitch"
+        }
+      ]
+    },
+    "oscar": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://www.sleepfiles.com/OSCAR/2.0.1/OSCAR20-2.0.1-ARM.dmg",
+      "artifactSHA256": "78cd674ba7755ddcf505dd870c6e1d366c6e658a57482d91593eb191e611c769",
+      "apps": [
+        {
+          "bundleName": "OSCAR20.app",
+          "bundleIdentifier": "org.oscar-team.OSCAR20"
+        }
+      ]
+    },
+    "altersend": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/denislupookov/altersend/releases/download/v2.0.0/AlterSend-2.0.0-arm64.dmg",
+      "artifactSHA256": "cbca1e14c05bca7d5d9d4af45f1762b5e78d0e8b8a286afd92b6e4796d537c41",
+      "apps": [
+        {
+          "bundleName": "AlterSend.app",
+          "bundleIdentifier": "com.altersend.desktop"
+        }
+      ]
+    },
+    "simplex": {
+      "caskVersion": "7.0.2",
+      "sourceURL": "https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.2/simplex-desktop-macos-aarch64.dmg",
+      "artifactSHA256": "c07fbdc37ad9dc5ca834784946a39df24df0719ed5e8aed301dc4322b37242a1",
+      "apps": [
+        {
+          "bundleName": "SimpleX.app",
+          "bundleIdentifier": "chat.simplex.app"
+        }
+      ]
+    },
+    "chronycontrol": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://www.whatroute.net/software/chronycontrol-1.7.0.zip",
+      "artifactSHA256": "a2b346b7d85df993de2b7f8d2b893bfec92e6b8109ab9dd546e35aeb9ea60abb",
+      "apps": [
+        {
+          "bundleName": "ChronyControl.app",
+          "bundleIdentifier": "net.whatroute.ChronyControl"
+        }
+      ]
+    },
+    "breaktimer": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.3/BreakTimer.dmg",
+      "artifactSHA256": "2b5d3d3a8b9b85c5f41b4eb4384a341ecf6d7d2c0b377619e051a97ceb9ebfdd",
+      "apps": [
+        {
+          "bundleName": "BreakTimer.app",
+          "bundleIdentifier": "com.tomjwatson.breaktimer"
+        }
+      ]
+    },
+    "gpgfrontend": {
+      "caskVersion": "2.2.2",
+      "sourceURL": "https://github.com/saturneric/GpgFrontend/releases/download/v2.2.2/GpgFrontend-2.2.2-macos-26.dmg",
+      "artifactSHA256": "e2503c724975578eec19d25bd34dd94f3281bd3c70b80bb40550cacff41be917",
+      "apps": [
+        {
+          "bundleName": "GpgFrontend.app",
+          "bundleIdentifier": "com.bktus.gpgfrontend"
+        }
+      ]
+    },
+    "ua-connect": {
+      "caskVersion": "1.10.0,3844",
+      "sourceURL": "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_1_10_0_3844_Mac.dmg",
+      "artifactSHA256": "9d0ca1af99bd7c16148f96f05f6f33aecc5ee2089c0554219f888b2331598470",
+      "apps": [
+        {
+          "bundleName": "UA Connect.app",
+          "bundleIdentifier": "com.uaudio.ua-connect"
+        }
+      ]
+    },
+    "simple-comic": {
+      "caskVersion": "1.9.9",
+      "sourceURL": "https://github.com/MaddTheSane/Simple-Comic/releases/download/App-Store-1.9.9/Simple.Comic.1.9.9.zip",
+      "artifactSHA256": "34fa1777c0643d145b8e8ba90b6c6eeb096b21c3beb34728c9df97dad9a1f1ac",
+      "apps": [
+        {
+          "bundleName": "Simple Comic.app",
+          "bundleIdentifier": "com.ToWatchList.SimpleComic"
+        }
+      ]
+    },
+    "supertuxkart": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-mac-signed.zip",
+      "artifactSHA256": "c266acdb8a63a3fe30f52652d9b749f5beba4abeb9e54382fbb934b00c53b303",
+      "apps": [
+        {
+          "bundleName": "SuperTuxKart.app",
+          "bundleIdentifier": "net.sourceforge.supertuxkart"
+        }
+      ]
+    },
+    "amical": {
+      "caskVersion": "1.11.3",
+      "sourceURL": "https://github.com/amicalhq/amical/releases/download/v1.11.3/Amical-macos-arm64.dmg",
+      "artifactSHA256": "971985d4ccb3dc89d37be0a6d8661908e5a73092ab4163a9627a866f23424a02",
+      "apps": [
+        {
+          "bundleName": "Amical.app",
+          "bundleIdentifier": "ai.amical.desktop"
+        }
+      ]
+    },
+    "miktex-console": {
+      "caskVersion": "22.1",
+      "sourceURL": "https://miktex.org/download/ctan/systems/win32/miktex/setup/darwin-x86_64/miktex-22.1-darwin-x86_64.dmg",
+      "artifactSHA256": "a5b531a60fc51c1f01c1af46bf859863c6974ef8d71213e476642acb788a4e4f",
+      "apps": [
+        {
+          "bundleName": "MiKTeX Console.app",
+          "bundleIdentifier": "org.miktex.console"
+        }
+      ]
+    },
+    "mountmate": {
+      "caskVersion": "5.19",
+      "sourceURL": "https://github.com/homielab/mountmate/releases/download/v5.19/MountMate_5.19.dmg",
+      "artifactSHA256": "e8b835600522be82f5c19e86458e4fb399e25eade548922baa1acaa7eda6d28b",
+      "apps": [
+        {
+          "bundleName": "MountMate.app",
+          "bundleIdentifier": "com.homielab.mountmate"
+        }
+      ]
+    },
+    "vanilla": {
+      "caskVersion": "2.2,61",
+      "sourceURL": "https://macrelease.matthewpalmer.net/distribution/appcasts/Vanilla-61.dmg",
+      "artifactSHA256": "249ce3e326fad5f89580803574fbe4229a1c0796b4483e650fc27941c00cfe22",
+      "apps": [
+        {
+          "bundleName": "Vanilla.app",
+          "bundleIdentifier": "net.matthewpalmer.Vanilla"
+        }
+      ]
+    },
+    "langflow": {
+      "caskVersion": "1.12.0,v1.12.0",
+      "sourceURL": "https://github.com/langflow-ai/langflow/releases/download/v1.12.0/Langflow_1.12.0_aarch64.dmg",
+      "artifactSHA256": "da1a7275dd19105d2d3ddae304370db65f8303eb80387ef0e6cb11b72da472d3",
+      "apps": [
+        {
+          "bundleName": "Langflow .app",
+          "bundleIdentifier": "com.LangflowDesktop"
+        }
+      ]
+    },
+    "feedflow": {
+      "caskVersion": "1.17.0,all",
+      "sourceURL": "https://github.com/prof18/feed-flow/releases/download/1.17.0-all/FeedFlow-1.17.0.dmg",
+      "artifactSHA256": "37dfe909fe9fae4435bffbf6cce25c31e8ffbeb0e4ca301e9cd666e3a0dc8a6b",
+      "apps": [
+        {
+          "bundleName": "FeedFlow.app",
+          "bundleIdentifier": "com.prof18.feedflow"
+        }
+      ]
+    },
+    "safe-exam-browser": {
+      "caskVersion": "3.7.1",
+      "sourceURL": "https://github.com/SafeExamBrowser/seb-mac/releases/download/3.7.1/SafeExamBrowser-3.7.1.dmg",
+      "artifactSHA256": "d9a11b2f5f35f5681b0f0f204a217bdcb90413481748f34cbff2ae86044e6086",
+      "apps": [
+        {
+          "bundleName": "Safe Exam Browser.app",
+          "bundleIdentifier": "org.safeexambrowser.SafeExamBrowser"
+        }
+      ]
+    },
+    "adrive": {
+      "caskVersion": "6.9.3",
+      "sourceURL": "https://cdn.aliyundrive.net/downloads/apps/desktop/aDrive-6.9.3-arm64.dmg",
+      "artifactSHA256": "dbf432bf09a4f6669fb9a74c56d082833b751d1b036d627550f6cf55ef7f32f4",
+      "apps": [
+        {
+          "bundleName": "aDrive.app",
+          "bundleIdentifier": "com.alicloud.smartdrive"
+        }
+      ]
+    },
+    "nosqlbooster-for-mongodb": {
+      "caskVersion": "11.1.6",
+      "sourceURL": "https://s3.nosqlbooster.com/download/releasesv11/nosqlbooster4mongo-11.1.6-arm64.dmg",
+      "artifactSHA256": "8d248fca1bf868f0d38185e41be9c1aa7c8d0d7f8780fd1fad5e08a68291899b",
+      "apps": [
+        {
+          "bundleName": "NoSQLBooster for MongoDB.app",
+          "bundleIdentifier": "com.nosqlbooster.mongodb"
+        }
+      ]
+    },
+    "labplot": {
+      "caskVersion": "2.12.1",
+      "sourceURL": "https://download.kde.org/stable/labplot/labplot-2.12.1-arm64.dmg",
+      "artifactSHA256": "6f6f8675189059d08a6a6cfe33b14ff8b864ce18ea2987d412f120a31e32aa56",
+      "apps": [
+        {
+          "bundleName": "LabPlot.app",
+          "bundleIdentifier": "org.kde.labplot"
+        }
+      ]
+    },
+    "ankerwork": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://ankerwork.s3.amazonaws.com/electron/AnkerWork-Setup-arm64.dmg",
+      "artifactSHA256": "d56a3b64f25daec7f4d4d41b42c14087e90244949ec520bfbd7defcb2faa143d",
+      "apps": [
+        {
+          "bundleName": "AnkerWork.app",
+          "bundleIdentifier": "com.anker.pcankerwork"
+        }
+      ]
+    },
+    "yed": {
+      "caskVersion": "3.25.1",
+      "sourceURL": "https://www.yworks.com/resources/yed/demo/yEd-3.25.1_with-JRE21_arm64.dmg",
+      "artifactSHA256": "db6870a59f3128b3e9b42afb80723963478378cb6e05e6dd9cd3c8a3d99e903b",
+      "apps": [
+        {
+          "bundleName": "yEd.app",
+          "bundleIdentifier": "com.yworks.yEd"
+        }
+      ]
+    },
+    "keymapp": {
+      "caskVersion": "1.3.7",
+      "sourceURL": "https://oryx.nyc3.cdn.digitaloceanspaces.com/keymapp/keymapp-latest.dmg",
+      "artifactSHA256": "1fac516aeee95ae485e406ba95b9708bf2e0e4ac42f87337aed50c8d7fa1104f",
+      "apps": [
+        {
+          "bundleName": "Keymapp.app",
+          "bundleIdentifier": "io.zsa.keymapp"
+        }
+      ]
     }
   }
 }
