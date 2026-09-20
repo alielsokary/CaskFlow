@@ -14132,6 +14132,276 @@
           "bundleIdentifier": "com.anydo.mac"
         }
       ]
+    },
+    "araxis-merge": {
+      "caskVersion": "2026.0",
+      "sourceURL": "https://www.araxis.com/download/Merge2026.0-macOS.dmg",
+      "artifactSHA256": "f76e3759b0e5bdd01aa6f67f16f27975b332f147dd84f8583dedc621a8cae124",
+      "apps": [
+        {
+          "bundleName": "Araxis Merge.app",
+          "bundleIdentifier": "com.araxis.merge"
+        }
+      ]
+    },
+    "appexindexer": {
+      "caskVersion": "108,2025.04",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/04/appexindexer108.zip",
+      "artifactSHA256": "9ee82b423ffdf998d75f945599bfb4e21abe6185591dc77e682f853cd975121f",
+      "apps": [
+        {
+          "bundleName": "AppexIndexer.app",
+          "bundleIdentifier": "co.eclecticlight.AppexIndexer"
+        }
+      ]
+    },
+    "archivewebpage": {
+      "caskVersion": "0.17.1",
+      "sourceURL": "https://github.com/webrecorder/archiveweb.page/releases/download/v0.17.1/ArchiveWeb.page-0.17.1.dmg",
+      "artifactSHA256": "244d566e1697e28b7f9520f98ec5bea50f4c0b4baa2d8f5611e0fc6807178fc3",
+      "apps": [
+        {
+          "bundleName": "ArchiveWeb.page.app",
+          "bundleIdentifier": "net.webrecorder.archivewebpage"
+        }
+      ]
+    },
+    "artisan": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://github.com/artisan-roaster-scope/artisan/releases/download/v4.2.0/artisan-mac-arm-4.2.0.dmg",
+      "artifactSHA256": "ef4abc2a8db4efee94d89703d150b033555f3c19164ba34665ba39854e1492a2",
+      "apps": [
+        {
+          "bundleName": "Artisan.app",
+          "bundleIdentifier": "org.artisan-scope.artisan"
+        }
+      ]
+    },
+    "appzapper": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://appzapper.com/downloads/appzapper205.zip",
+      "artifactSHA256": "cfca80dd9deabb9fc5168397ec5467ec60f348a778b19f3596927e47742544d7",
+      "apps": [
+        {
+          "bundleName": "AppZapper.app",
+          "bundleIdentifier": "com.appzapper.appzapper2"
+        }
+      ]
+    },
+    "appbox": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/getappbox/AppBox-iOSAppsWirelessInstallation/releases/download/4.0.0/AppBox.app.zip",
+      "artifactSHA256": "30f346b0dc685b3ad8ce870213974618f0997d5d18081ca41f03bef0b8789aad",
+      "apps": [
+        {
+          "bundleName": "AppBox.app",
+          "bundleIdentifier": "com.developerinsider.AppBox"
+        }
+      ]
+    },
+    "approf": {
+      "caskVersion": "14.1.3",
+      "sourceURL": "https://github.com/moderato-app/approf/releases/download/v14.1.3/approf-14.1.3.app.zip",
+      "artifactSHA256": "cc6317df3877668b94d88643ae57b974e30c713ff2593e4f8d7755c9f58f28c2",
+      "apps": [
+        {
+          "bundleName": "approf.app",
+          "bundleIdentifier": "the.future.app.approf.approf"
+        }
+      ]
+    },
+    "apidog-europe": {
+      "caskVersion": "2.8.47",
+      "sourceURL": "https://file-assets.eu.apidog.com/download/2.8.47/Apidog%20Europe-macOS-arm64-2.8.47.dmg",
+      "artifactSHA256": "c1211ed0cfd897f31c8c2834a5fa451ec1344208ec60819388ab79776cf77852",
+      "apps": [
+        {
+          "bundleName": "Apidog Europe.app",
+          "bundleIdentifier": "com.apidog.eu.app"
+        }
+      ]
+    },
+    "appgridmac": {
+      "caskVersion": "1.2.11",
+      "sourceURL": "https://zekalogic.com/appgrid/app/AppGridMac-1.2.11.zip",
+      "artifactSHA256": "52536bc4bfa30b5833ade5b9a073c62bae4b387e9bd20c997b43826af056e439",
+      "apps": [
+        {
+          "bundleName": "AppGridMac.app",
+          "bundleIdentifier": "com.zekalogic.appgrid.app.direct"
+        }
+      ]
+    },
+    "arctic": {
+      "caskVersion": "26.1.1,71,20260709162100",
+      "sourceURL": "https://updates.hedge.video/arctic/macos/updates/production/Arctic_20260709162100_v26.1.1b71/Arctic-71.zip",
+      "artifactSHA256": "0ec879d446670e127582c645b530f7b9ab9fcfb08d76e966bd1ccc5bb241abfc",
+      "apps": [
+        {
+          "bundleName": "Arctic.app",
+          "bundleIdentifier": "video.hedge.Arctic.Mac"
+        }
+      ]
+    },
+    "aquamacs": {
+      "caskVersion": "3.6",
+      "sourceURL": "https://github.com/aquamacs-emacs/aquamacs-emacs/releases/download/aquamacs-3.6/Aquamacs-3.6.dmg",
+      "artifactSHA256": "463ff60fffdd4e3c5d234b4aee3eaa1c91c286806cc32179f90ed2c2a52328d0",
+      "apps": [
+        {
+          "bundleName": "Aquamacs.app",
+          "bundleIdentifier": "org.gnu.Aquamacs"
+        }
+      ]
+    },
+    "app-fair": {
+      "caskVersion": "0.8.137",
+      "sourceURL": "https://github.com/App-Fair/App/releases/download/0.8.137/App-Fair-macOS.zip",
+      "artifactSHA256": "c4a99410058cef2a3c7ac6bb073cf4cac06fb64f7c597140cbf0958e37fe2480",
+      "apps": [
+        {
+          "bundleName": "App Fair.app",
+          "bundleIdentifier": "app.App-Fair"
+        }
+      ]
+    },
+    "ape": {
+      "caskVersion": "3.1.10.1",
+      "sourceURL": "https://jorgensen.biology.utah.edu/wayned/ape/Download/Mac/ApE_OSX_modern_current.dmg",
+      "artifactSHA256": "21d131e6ebf4c12dbe29f7ee8902c2cd3084737cb1fdb2f5b865df172606449c",
+      "apps": [
+        {
+          "bundleName": "ApE.app",
+          "bundleIdentifier": "com.tcltk.ape"
+        }
+      ]
+    },
+    "apipost": {
+      "caskVersion": "8.2.7",
+      "sourceURL": "https://www.apipost.cn/dl.php?client=Mac&arch=arm64&version=8.2.7",
+      "artifactSHA256": "947e85bd8dd471b52ff2a9e98a3e47713d37e259d1c8c99f0ef2ff9ceffa1e3d",
+      "apps": []
+    },
+    "arcbox": {
+      "caskVersion": "1.37.0",
+      "sourceURL": "https://release.arcboxcdn.com/desktop/v1.37.0/ArcBox-1.37.0-arm64.dmg",
+      "artifactSHA256": "a23732d819c891bf32480ea1b0a819456838c2fdb7b5d734b7ef487a9d92fd79",
+      "apps": [
+        {
+          "bundleName": "ArcBox.app",
+          "bundleIdentifier": "com.arcboxlabs.desktop"
+        }
+      ]
+    },
+    "archaeology": {
+      "caskVersion": "1.7,306",
+      "sourceURL": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
+      "artifactSHA256": "9bdb9eea72849e740547a9e3711a02fd6f4e4d4c59a954e2dcea2090a2828d58",
+      "apps": [
+        {
+          "bundleName": "Archaeology.app",
+          "bundleIdentifier": "com.mothersruin.Archaeology"
+        }
+      ]
+    },
+    "ariax": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://github.com/saltpi/Aria.X/releases/download/1.0.7/AriaX.dmg",
+      "artifactSHA256": "f6495f4ad5e753e19b7e796abc9738293232e190290ffc26a74ea35689a08698",
+      "apps": [
+        {
+          "bundleName": "AriaX.app",
+          "bundleIdentifier": "cn.saltpi.app.AriaX"
+        }
+      ]
+    },
+    "app-buddy": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/sindresorhus/app-buddy-meta/releases/download/v1.3.0/App.Buddy.zip",
+      "artifactSHA256": "1dacbc9ed625e80c16db054cc98ac6023f3ad3ed302acbab46f7dda694310289",
+      "apps": [
+        {
+          "bundleName": "App Buddy.app",
+          "bundleIdentifier": "com.sindresorhus.App-Buddy"
+        }
+      ]
+    },
+    "archipelago": {
+      "caskVersion": "6.0.8",
+      "sourceURL": "https://github.com/npezza93/archipelago/releases/download/v6.0.8/Archipelago.zip",
+      "artifactSHA256": "58e394886db7e5a32feeb48d7b78951ee230689bf79279e67f79c881df42bb1f",
+      "apps": [
+        {
+          "bundleName": "Archipelago.app",
+          "bundleIdentifier": "dev.archipelago"
+        }
+      ]
+    },
+    "app-tamer": {
+      "caskVersion": "2.8.4",
+      "sourceURL": "https://www.stclairsoft.com/download/AppTamer-2.8.4.dmg",
+      "artifactSHA256": "1f371c349fd30af106469a3ce21fc09070fc740725a1096bce9533bda10a1424",
+      "apps": [
+        {
+          "bundleName": "App Tamer.app",
+          "bundleIdentifier": "com.stclairsoft.AppTamer"
+        }
+      ]
+    },
+    "as-timer": {
+      "caskVersion": "6.2",
+      "sourceURL": "https://downloads.alinofsoftware.ch/current/macos/astimer.dmg",
+      "artifactSHA256": "aab8c03edd23d23121c0e846af7d787337762b049761dd75e41cdfa44b4fba67",
+      "apps": [
+        {
+          "bundleName": "AS Timer.app",
+          "bundleIdentifier": "com.alinofsoftware.alinoftimer"
+        }
+      ]
+    },
+    "aphera": {
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://releases.aphera.app/Aphera.1.5.0.dmg",
+      "artifactSHA256": "66f200e709dbd55cb4549cb5b21bc98b9eac1ccea14a518c65ecfeb3ecae91a8",
+      "apps": [
+        {
+          "bundleName": "Aphera.app",
+          "bundleIdentifier": "co.latentco.Aphera"
+        }
+      ]
+    },
+    "archiver-app": {
+      "caskVersion": "5.0.11",
+      "sourceURL": "https://github.com/incbee/archiver-5-releases/releases/download/v5.0.11/Archiver-5.0.11-universal-mac.zip",
+      "artifactSHA256": "8cf64162fb96598182c08a63142cf842ac9745e2a6c511f9b7cd0ec1ab673be1",
+      "apps": [
+        {
+          "bundleName": "Archiver.app",
+          "bundleIdentifier": "com.incrediblebee.Archiver"
+        }
+      ]
+    },
+    "aqua-data-studio": {
+      "caskVersion": "26.0.0",
+      "sourceURL": "https://downloads.aquafold.com/v26.0.0/osx/ads-osx-26.0.0.tar.gz",
+      "artifactSHA256": "56eb1f06f01008f5d307f522ed4327b4c174cbea3c34e15645300d32c577514c",
+      "apps": [
+        {
+          "bundleName": "Aqua Data Studio.app",
+          "bundleIdentifier": "com.aquafold.datastudio.DataStudio"
+        }
+      ]
+    },
+    "astro-command-center": {
+      "caskVersion": "latest",
+      "sourceURL": "https://update.astrogaming.com/kuiper/ASTROCommandCenter.dmg",
+      "artifactSHA256": "87734ec976a6a0c57a8528d4f97a1db4e3fb4df9de30068b7a9ea1cc6d52b283",
+      "apps": [
+        {
+          "bundleName": "ASTRO Command Center.app",
+          "bundleIdentifier": "com.astrogaming.acc"
+        }
+      ]
     }
   }
 }
