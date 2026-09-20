@@ -13,12 +13,12 @@
       ]
     },
     "open-science": {
-      "caskVersion": "0.26.0",
-      "sourceURL": "https://github.com/aipoch/open-science/releases/download/v0.26.0/aipoch-open-science-0.26.0-mac-arm64.dmg",
-      "artifactSHA256": "d6d38790a5a0e94b1406914cea2546775d1ebfde42042fd0cff5f699955af8d8",
+      "caskVersion": "0.31.0",
+      "sourceURL": "https://github.com/aipoch/open-science/releases/download/v0.31.0/aipoch-open-science-0.31.0-mac-arm64.dmg",
+      "artifactSHA256": "9554cc29f86f7ae2efc169df90479cecaa816565f930952edc5deeff51323460",
       "apps": [
         {
-          "bundleName": "Open Science.app",
+          "bundleName": "Open-Science.app",
           "bundleIdentifier": "com.aipoch.open-science"
         }
       ]
@@ -676,9 +676,9 @@
       ]
     },
     "openlogi": {
-      "caskVersion": "0.8.5",
-      "sourceURL": "https://updates.openlogi.org/releases/v0.8.5/OpenLogi-v0.8.5-macos-arm64.dmg",
-      "artifactSHA256": "b1ee45bfa752712e9aecd90f8c1b8154b73a361c4813e211585ebcbf6331dda3",
+      "caskVersion": "0.8.6",
+      "sourceURL": "https://updates.openlogi.org/releases/v0.8.6/OpenLogi-v0.8.6-macos-arm64.dmg",
+      "artifactSHA256": "ba1cf960055606c6c48839f437dad82da1a62877cf1f17f16571fa275c4664cc",
       "apps": [
         {
           "bundleName": "OpenLogi.app",
@@ -5946,9 +5946,9 @@
       ]
     },
     "only-switch": {
-      "caskVersion": "2.7.5",
-      "sourceURL": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_2.7.5/OnlySwitch.dmg",
-      "artifactSHA256": "5924bd59dc0e304bac28e246a047c19af6e2989b9648106fa87a487803dbc33d",
+      "caskVersion": "2.7.6",
+      "sourceURL": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_2.7.6/OnlySwitch.dmg",
+      "artifactSHA256": "25eb0c2bb2285063465bae50430467a60a58df9b0b0bc5e925946611f0567cd0",
       "apps": [
         {
           "bundleName": "Only Switch.app",
@@ -25868,6 +25868,243 @@
         {
           "bundleName": "OK JSON.app",
           "bundleIdentifier": "net.shinystone.OKJSON"
+        }
+      ]
+    },
+    "openrocket": {
+      "caskVersion": "24.12",
+      "sourceURL": "https://github.com/openrocket/openrocket/releases/download/release-24.12/OpenRocket-24.12-installer-macOS-AppleSilicon.dmg",
+      "artifactSHA256": "4f82e5a6b008232d6164d5cdca6c94e41c2b20a5d9ccec6d7891d19c99eb2357",
+      "apps": [
+        {
+          "bundleName": "OpenRocket.app",
+          "bundleIdentifier": "com.install4j.8434-9327-1469-6373.59"
+        }
+      ]
+    },
+    "opal-composer": {
+      "caskVersion": "2.0.0,24",
+      "sourceURL": "https://updates.opal.camera/release/Opal_Composer_2.0.0_24.dmg",
+      "artifactSHA256": "4eaa1225a203b057dbabaa7b17d7bbff91512cac32e942359b651dbef06928b3",
+      "apps": [
+        {
+          "bundleName": "Opal Composer.app",
+          "bundleIdentifier": "com.opalcamera.Opal.v2"
+        }
+      ]
+    },
+    "openboard": {
+      "caskVersion": "1.7.7",
+      "sourceURL": "https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.7/OpenBoard-1.7.7.dmg",
+      "artifactSHA256": "23a0c2eb78a21f7edf36649c6cd99890a819a757d4f5f8b0498e13dac0353a88",
+      "apps": [
+        {
+          "bundleName": "OpenBoard.app",
+          "bundleIdentifier": "org.oe-f.OpenBoard"
+        }
+      ]
+    },
+    "orange": {
+      "caskVersion": "3.40.0",
+      "sourceURL": "https://download.biolab.si/download/files/Orange3-3.40.0-Python3.12.10-arm64.dmg",
+      "artifactSHA256": "ff226be4cabf87442cc83168cad2341b673d2ee42e68536769c862c37a149ce3",
+      "apps": [
+        {
+          "bundleName": "Orange.app",
+          "bundleIdentifier": "si.biolab.orange"
+        }
+      ]
+    },
+    "opensoundmeter": {
+      "caskVersion": "1.5.2",
+      "sourceURL": "https://github.com/psmokotnin/osm/releases/download/v1.5.2/OpenSoundMeter_arm.dmg",
+      "artifactSHA256": "ce076c369c45175d9841c69dbb1aebfebf4c85568c2dcf37f3d6ad7f804a2a9c",
+      "apps": [
+        {
+          "bundleName": "OpenSoundMeter.app",
+          "bundleIdentifier": "com.opensoundmeter.OpenSoundMeter"
+        }
+      ]
+    },
+    "opencomic": {
+      "caskVersion": "1.6.5",
+      "sourceURL": "https://github.com/ollm/OpenComic/releases/download/v1.6.5/OpenComic-1.6.5-arm64.dmg",
+      "artifactSHA256": "7c324fecbf12a2ad9180e603a36de405fe1753ac5cfb8efb01ea950e1c82e346",
+      "apps": []
+    },
+    "ontime": {
+      "caskVersion": "4.13.0",
+      "sourceURL": "https://github.com/cpvalente/ontime/releases/download/v4.13.0/ontime-macOS-arm64.dmg",
+      "artifactSHA256": "7cd8a4a296b122064a717681787c995e56f1845690f58eaa1b31a6d0d2f5cdb7",
+      "apps": [
+        {
+          "bundleName": "ontime.app",
+          "bundleIdentifier": "no.lightdev.ontime"
+        }
+      ]
+    },
+    "openin": {
+      "caskVersion": "4.4.4",
+      "sourceURL": "https://loshadki.app/openin4/releases/OpenIn-4.4.4.app.zip",
+      "artifactSHA256": "c1e23ac64714f83701186444cc28392d2523505d5031419c5e2f09370fdbcb94",
+      "apps": [
+        {
+          "bundleName": "OpenIn.app",
+          "bundleIdentifier": "app.loshadki.OpenIn"
+        }
+      ]
+    },
+    "openhv": {
+      "caskVersion": "20250725",
+      "sourceURL": "https://github.com/OpenHV/OpenHV/releases/download/20250725/OpenHV-20250725.dmg",
+      "artifactSHA256": "7ccb58351554bbabf2181c6330cfabd139ba555b7f71ee91d9880c7c8110c60f",
+      "apps": [
+        {
+          "bundleName": "OpenHV.app",
+          "bundleIdentifier": "net.openra.mod.hv"
+        }
+      ]
+    },
+    "orcasheets": {
+      "caskVersion": "26.9.2",
+      "sourceURL": "https://github.com/dataorchestration/homebrew-orcasheets/releases/download/26.9.2/orcasheets_26.9.2_arm64.dmg",
+      "artifactSHA256": "4a05507bba305fc90547223afe78f54f2c45013ca2a7b7590a8c33677bbd9436",
+      "apps": [
+        {
+          "bundleName": "orcasheets.app",
+          "bundleIdentifier": "ai.orcasheets.OrcaSheets"
+        }
+      ]
+    },
+    "openlist-app": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://github.com/OpenListTeam/OpenList-Desktop/releases/download/v0.9.1/OpenList-Desktop_0.9.1_aarch64.dmg",
+      "artifactSHA256": "961ac84fdec16ea7e2734763f1528159cad32a82281bbb786e905748c74d802b",
+      "apps": [
+        {
+          "bundleName": "OpenList-Desktop.app",
+          "bundleIdentifier": "io.github.openlistteam.openlist.desktop"
+        }
+      ]
+    },
+    "orbit": {
+      "caskVersion": "1.1.10",
+      "sourceURL": "https://orbitformac.com/downloads/Orbit-1.1.10.dmg",
+      "artifactSHA256": "58832a38b9f33c5d63472e65a9d4bec015f260f19fbc7bf441982f823ba862ba",
+      "apps": [
+        {
+          "bundleName": "Orbit.app",
+          "bundleIdentifier": "com.dearnode.orbit"
+        }
+      ]
+    },
+    "oracle-data-modeler": {
+      "caskVersion": "24.3.1.351.0831",
+      "sourceURL": "https://download.oracle.com/otn_software/java/sqldeveloper/datamodeler-24.3.1.351.0831-macos-aarch64.app.zip",
+      "artifactSHA256": "de5b9b79aa197499314d215d94edf496843076b3e9d95192380538407765d9bc",
+      "apps": [
+        {
+          "bundleName": "OracleDataModeler.app",
+          "bundleIdentifier": "com.oracle.OracleDataModeler"
+        }
+      ]
+    },
+    "opgg": {
+      "caskVersion": "3.1.4",
+      "sourceURL": "https://desktop-patch.op.gg/update/general/OP.GG-3.1.4-universal.dmg",
+      "artifactSHA256": "e6b38cf5c4af4d7cb95c7928c32166dc28ebcc40a98d97bb5aba9d18deaf6bd3",
+      "apps": [
+        {
+          "bundleName": "OP.GG.app",
+          "bundleIdentifier": "desktop.op.gg"
+        }
+      ]
+    },
+    "open-data-editor": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/okfn/opendataeditor/releases/download/v1.7.1/opendataeditor-macos-1.7.1.dmg",
+      "artifactSHA256": "4a0eb1d422caa7fc03edf129f88a10187c5469cea4a64f2f4e9aaa8a0c58d58e",
+      "apps": [
+        {
+          "bundleName": "Open Data Editor.app",
+          "bundleIdentifier": "org.okfn.opendataeditor"
+        }
+      ]
+    },
+    "opal-app": {
+      "caskVersion": "1.5.7",
+      "sourceURL": "https://downloads.opal.so/mac/Opal%201.5.7.dmg",
+      "artifactSHA256": "2b506a6a8305672128fe778bc18e9c58fa2dbc4dc3cf4631e29f5a19f8925eb9",
+      "apps": [
+        {
+          "bundleName": "Opal.app",
+          "bundleIdentifier": "com.withopal.opalmacos"
+        }
+      ]
+    },
+    "opencat": {
+      "caskVersion": "26.8.0,2528",
+      "sourceURL": "https://releases.opencat.app/OpenCat-26.8.0.2528.dmg",
+      "artifactSHA256": "4833f3b424f0486544435be6108693717cce7f0bda8b0d44affbedf4997016e2",
+      "apps": [
+        {
+          "bundleName": "OpenCat.app",
+          "bundleIdentifier": "tech.baye.OpenCat"
+        }
+      ]
+    },
+    "optimus-player": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://download.optimusplayer.com/Optimus%20Player%201.5.dmg",
+      "artifactSHA256": "7f9e9ca3ec2a7dde8beeb5a34238449cc94aa9e1d7041260ef0b78526b60b112",
+      "apps": [
+        {
+          "bundleName": "Optimus Player.app",
+          "bundleIdentifier": "mo.darren.optimus.player.mac"
+        }
+      ]
+    },
+    "optimage": {
+      "caskVersion": "3.5.1",
+      "sourceURL": "https://optimage.app/download/optimage-mac.zip",
+      "artifactSHA256": "a1c0ace343c9044c529c3fb3fca4fec5f4a10ef093e5e55abb904d86d63fb48a",
+      "apps": [
+        {
+          "bundleName": "Optimage.app",
+          "bundleIdentifier": "com.vmdanilov.optimage"
+        }
+      ]
+    },
+    "opera-air": {
+      "caskVersion": "135.0.5973.145",
+      "sourceURL": "https://get.geo.opera.com/pub/opera_air/135.0.5973.145/mac/Opera_Air_135.0.5973.145_Setup.dmg",
+      "artifactSHA256": "bbc65421d328023aca252d2e63c04118f847c2807e6969b1a1ccc0d0b8ff19b0",
+      "apps": [
+        {
+          "bundleName": "Opera Air.app",
+          "bundleIdentifier": "com.operasoftware.OperaAir"
+        }
+      ]
+    },
+    "openpht": {
+      "caskVersion": "1.8.0.148-573b6d73",
+      "sourceURL": "https://github.com/RasPlex/OpenPHT/releases/download/v1.8.0.148-573b6d73/OpenPHT-1.8.0.148-573b6d73-macosx-x86_64.zip",
+      "artifactSHA256": "153cbba8d9bb7f61c646fc4221f4ab107a15809d7bf5da41204dac49fbba0553",
+      "apps": [
+        {
+          "bundleName": "OpenPHT.app",
+          "bundleIdentifier": "tv.openpht.openpht"
+        }
+      ]
+    },
+    "openchrom": {
+      "caskVersion": "1.6.33",
+      "sourceURL": "https://products.lablicate.com/openchrom/1.6.33/OpenChrom_1.6.33_aarch64.dmg",
+      "artifactSHA256": "5561065ca68124b05ff1e59b9c2ddded0f5d101729712df5b03b427f3d122608",
+      "apps": [
+        {
+          "bundleName": "OpenChrom.app",
+          "bundleIdentifier": "net.openchrom.rcp.compilation.community.product.id"
         }
       ]
     }
