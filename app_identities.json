@@ -9337,6 +9337,266 @@
           "bundleIdentifier": "li.zihua.medis2"
         }
       ]
+    },
+    "itsypad": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://github.com/nickustinov/itsypad-macos/releases/download/v1.18.0/Itsypad-1.18.0.dmg",
+      "artifactSHA256": "d93d98de4e33bffa071f19264bb1f5ed10c3bbde654370b721a4ec6f2cff7bbe",
+      "apps": [
+        {
+          "bundleName": "Itsypad.app",
+          "bundleIdentifier": "com.nickustinov.itsypad"
+        }
+      ]
+    },
+    "dash": {
+      "caskVersion": "8.1.1",
+      "sourceURL": "https://kapeli.com/downloads/v8/Dash.zip",
+      "artifactSHA256": "bf66b0fa12fa8b800e5233c06aa41373f6444d3c8cf9635aca1eb6a528a01513",
+      "apps": [
+        {
+          "bundleName": "Dash.app",
+          "bundleIdentifier": "com.kapeli.dashdoc"
+        }
+      ]
+    },
+    "lapce": {
+      "caskVersion": "0.4.6",
+      "sourceURL": "https://github.com/lapce/lapce/releases/download/v0.4.6/Lapce-macos.dmg",
+      "artifactSHA256": "d4ba42218148446c265c6a823107a969b3b0dca5e14df834563f2859927228f5",
+      "apps": [
+        {
+          "bundleName": "Lapce.app",
+          "bundleIdentifier": "io.lapce"
+        }
+      ]
+    },
+    "stellarium": {
+      "caskVersion": "26.2",
+      "sourceURL": "https://github.com/Stellarium/stellarium/releases/download/v26.2/Stellarium-26.2-qt6-macOS.zip",
+      "artifactSHA256": "960cdf1526a2989d213bc2c75f4b5747fd77f5a580345286a4913825ad192978",
+      "apps": [
+        {
+          "bundleName": "Stellarium.app",
+          "bundleIdentifier": "org.stellarium.Stellarium"
+        }
+      ]
+    },
+    "idevice-pair": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/jkcoxson/idevice_pair/releases/download/v1.1.0/idevice_pair--macos-universal.dmg",
+      "artifactSHA256": "9ff54171dccdb0a9b0e72ec89e43a479823c53ee54c2121fe9f053cc2cb940ce",
+      "apps": []
+    },
+    "sakura": {
+      "caskVersion": "3.2.0",
+      "sourceURL": "https://nya.globalslb.net/natfrp/client/launcher-macos/3.2.0/SakuraLauncher_macOS_arm64.dmg",
+      "artifactSHA256": "ecc60a99c75b3c83e35c7a9c470576dd27e80b30bbe0d91255341fec69df8957",
+      "apps": [
+        {
+          "bundleName": "SakuraLauncher.app",
+          "bundleIdentifier": "com.natfrp.launcher.ui"
+        }
+      ]
+    },
+    "httpie-desktop": {
+      "caskVersion": "2025.2.0",
+      "sourceURL": "https://github.com/httpie/desktop/releases/download/v2025.2.0/HTTPie-2025.2.0-arm64.dmg",
+      "artifactSHA256": "4c0c73f115f37729124601c3843a74a38b45bbc9f82db3901cc53a6eae377b05",
+      "apps": [
+        {
+          "bundleName": "HTTPie.app",
+          "bundleIdentifier": "io.httpie.desktop"
+        }
+      ]
+    },
+    "awa": {
+      "caskVersion": "1.5.7",
+      "sourceURL": "https://download-d.awa.io/mac/stable/AWASetup-v1.5.7.dmg",
+      "artifactSHA256": "2d1bba828ca64afb19511b6d770414e06659af97a85ca05dbc7cde36d1b79e01",
+      "apps": [
+        {
+          "bundleName": "AWA.app",
+          "bundleIdentifier": "fm.awa.liverpool"
+        }
+      ]
+    },
+    "youtube-to-mp3": {
+      "caskVersion": "3.9.23",
+      "sourceURL": "https://www.mediahuman.net/files/YouTubeToMP3-arm.dmg",
+      "artifactSHA256": "27f0e77915874d8697be62b8375f3191a9bfea27e0b6205d8493835e1da34f58",
+      "apps": []
+    },
+    "fresh": {
+      "caskVersion": "4.0.7",
+      "sourceURL": "https://ironicsoftware.com/downloads/Fresh.zip",
+      "artifactSHA256": "7ac2f99ce3638b42760d0425846bafa37d00f6014a3fc1b9a1332638e0525edc",
+      "apps": [
+        {
+          "bundleName": "Fresh.app",
+          "bundleIdentifier": "com.ironic.fresh4"
+        }
+      ]
+    },
+    "fsnotes": {
+      "caskVersion": "7.3.2",
+      "sourceURL": "https://github.com/glushchenko/fsnotes/releases/download/v7.3.2/FSNotes_v7.3.2.zip",
+      "artifactSHA256": "42e8f83adf178695f2d3f4148a5f9b377666f0b4468889d02d3c11372a6825ff",
+      "apps": [
+        {
+          "bundleName": "FSNotes.app",
+          "bundleIdentifier": "co.fluder.FSNotes"
+        }
+      ]
+    },
+    "ocenaudio": {
+      "caskVersion": "3.21.0",
+      "sourceURL": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
+      "artifactSHA256": "401bd7cc5aa95371fe267bda9dd62af3e189806121fb221bb86f1e23610843bb",
+      "apps": [
+        {
+          "bundleName": "ocenaudio.app",
+          "bundleIdentifier": "com.ocenaudio"
+        }
+      ]
+    },
+    "nordpass": {
+      "caskVersion": "7.10.9",
+      "sourceURL": "https://downloads.npass.app/mac/arm/NordPass.dmg",
+      "artifactSHA256": "fcc6317634531a24db1357c9d056db1c34fcc12d4180d4f2fd785036b18fba74",
+      "apps": [
+        {
+          "bundleName": "NordPass.app",
+          "bundleIdentifier": "com.nordsec.nordpass"
+        }
+      ]
+    },
+    "marked-app": {
+      "caskVersion": "3.2.5,1220",
+      "sourceURL": "https://updates.markedapp.com/updates/Marked%203.2.5-1220.zip",
+      "artifactSHA256": "8a87810d349dd9c4f6683be6161b4dfa157f261bbb3bb813d7d5927fc223df96",
+      "apps": [
+        {
+          "bundleName": "Marked.app",
+          "bundleIdentifier": "com.brettterpstra.marked"
+        }
+      ]
+    },
+    "mucommander": {
+      "caskVersion": "1.6.2-1",
+      "sourceURL": "https://github.com/mucommander/mucommander/releases/download/1.6.2-1/muCommander-1.6.2-1-aarch64.dmg",
+      "artifactSHA256": "212a290fbf48040a6f4fff04b7a050ff81527e3ecb81bcde7155d52dca2103c0",
+      "apps": [
+        {
+          "bundleName": "muCommander.app",
+          "bundleIdentifier": "com.mucommander.muCommander"
+        }
+      ]
+    },
+    "space-rabbit": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://github.com/Tahul/space-rabbit/releases/download/v2.5.0/Space-Rabbit.dmg",
+      "artifactSHA256": "bcaa29f19ee3ed811831360f0e1f7a8b91fab0fb287c464199398dff6d7cf76a",
+      "apps": [
+        {
+          "bundleName": "Space Rabbit.app",
+          "bundleIdentifier": "app.spacerabbit"
+        }
+      ]
+    },
+    "music-decoy": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://github.com/FuzzyIdeas/MusicDecoy/releases/download/v1.3/MusicDecoy.zip",
+      "artifactSHA256": "14132d0a14057e3288f8c4446829e15daa512c17e8e85d5d4e396c3722ef128f",
+      "apps": [
+        {
+          "bundleName": "Music Decoy.app",
+          "bundleIdentifier": "com.apple.Music"
+        }
+      ]
+    },
+    "react-native-debugger": {
+      "caskVersion": "0.14.0",
+      "sourceURL": "https://github.com/jhen0409/react-native-debugger/releases/download/v0.14.0/rn-debugger-macos-universal.zip",
+      "artifactSHA256": "3be2e2b0d0fdac91f77905bbdcb835316ef8995aec1de91f55838cf0a8da6625",
+      "apps": [
+        {
+          "bundleName": "React Native Debugger.app",
+          "bundleIdentifier": "com.electron.react-native-debugger"
+        }
+      ]
+    },
+    "standard-notes": {
+      "caskVersion": "3.202.0",
+      "sourceURL": "https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.202.0/standard-notes-3.202.0-mac-arm64.zip",
+      "artifactSHA256": "13c6e69c20954dfde5b7063b824dee4cb6eaf521450378f3e615405e284a26b7",
+      "apps": [
+        {
+          "bundleName": "Standard Notes.app",
+          "bundleIdentifier": "org.standardnotes.standardnotes"
+        }
+      ]
+    },
+    "trilium-notes": {
+      "caskVersion": "0.105.0",
+      "sourceURL": "https://github.com/TriliumNext/Trilium/releases/download/v0.105.0/TriliumNotes-v0.105.0-macos-arm64.dmg",
+      "artifactSHA256": "8c282f94c3e5c1243e3ec1f41ad4d6990a07bf6dce2f9eb8aee04f64deb35dc1",
+      "apps": [
+        {
+          "bundleName": "Trilium Notes.app",
+          "bundleIdentifier": "com.electron.trilium-notes"
+        }
+      ]
+    },
+    "pandora": {
+      "caskVersion": "15.0.3",
+      "sourceURL": "https://p-desktop-app.s3.amazonaws.com/releases/Pandora-15.0.3.dmg",
+      "artifactSHA256": "1858152de9d5fe18c876093a95c39c92fe878fba633c3e54e27fcdeb70a06c15",
+      "apps": [
+        {
+          "bundleName": "Pandora.app",
+          "bundleIdentifier": "com.pandora.desktop"
+        }
+      ]
+    },
+    "legcord": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/legcord/legcord/releases/download/v1.3.0/legcord-1.3.0-mac-universal.dmg",
+      "artifactSHA256": "02b3a74e859feaeaf4a872e096ba2dba2da72fa7d970215b8efe71edd32298b5",
+      "apps": []
+    },
+    "repobar": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://github.com/steipete/RepoBar/releases/download/v0.9.1/RepoBar-0.9.1.zip",
+      "artifactSHA256": "eca1798e517d778a27841d88d38e376bb050dd12d0f60bd9b6f0add25e3bb9c3",
+      "apps": [
+        {
+          "bundleName": "RepoBar.app",
+          "bundleIdentifier": "com.steipete.repobar"
+        }
+      ]
+    },
+    "tuna": {
+      "caskVersion": "0.99,2147",
+      "sourceURL": "https://tunaformac.com/download/releases/2147",
+      "artifactSHA256": "503d06b1e400b8e3d6d6f0e256b4b62758b8005f850d8ad2d1df0419044c8cb8",
+      "apps": [
+        {
+          "bundleName": "Tuna.app",
+          "bundleIdentifier": "com.brnbw.Tuna"
+        }
+      ]
+    },
+    "responsively": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://github.com/responsively-org/responsively-app-releases/releases/download/v1.18.0/ResponsivelyApp-1.18.0-arm64.dmg",
+      "artifactSHA256": "870ef97ae7b23758411841f0c35058ddd36ba2dce51b1f8a48063664dc12d92b",
+      "apps": [
+        {
+          "bundleName": "ResponsivelyApp.app",
+          "bundleIdentifier": "app.responsively"
+        }
+      ]
     }
   }
 }
