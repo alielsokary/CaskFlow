@@ -7971,6 +7971,280 @@
           "bundleIdentifier": "info.filesmanager.Files"
         }
       ]
+    },
+    "altair-graphql-client": {
+      "caskVersion": "8.5.9",
+      "sourceURL": "https://github.com/imolorhe/altair/releases/download/v8.5.9/altair_8.5.9_arm64_mac.zip",
+      "artifactSHA256": "5dbf5a58be50922965bc30d5ed5dc38ee3607b89b01c3777827aeab8a27d7d3c",
+      "apps": [
+        {
+          "bundleName": "Altair GraphQL Client.app",
+          "bundleIdentifier": "com.xkoji.altair"
+        }
+      ]
+    },
+    "thorium": {
+      "caskVersion": "3.4.0",
+      "sourceURL": "https://github.com/edrlab/thorium-reader/releases/download/v3.4.0/Thorium-3.4.0-arm64.dmg",
+      "artifactSHA256": "2f19dcaf4b717330626ebce7148653da399945467699bef7f0843d7b5f512030",
+      "apps": [
+        {
+          "bundleName": "Thorium.app",
+          "bundleIdentifier": "io.github.edrlab.thorium"
+        }
+      ]
+    },
+    "requestly": {
+      "caskVersion": "26.6.29",
+      "sourceURL": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.6.29/Requestly-26.6.29-arm64.dmg",
+      "artifactSHA256": "e8eebb6db725b079306973f74a453c2b707924d8a44c641b3a531eac83758bfc",
+      "apps": [
+        {
+          "bundleName": "Requestly.app",
+          "bundleIdentifier": "io.requestly.beta"
+        }
+      ]
+    },
+    "dbgate": {
+      "caskVersion": "7.3.0",
+      "sourceURL": "https://github.com/dbgate/dbgate/releases/download/v7.3.0/dbgate-7.3.0-mac_universal.dmg",
+      "artifactSHA256": "cc7f572f630591d8643c7855e72baa8dfcb9fd2ead07f102f4fc789faccd4288",
+      "apps": [
+        {
+          "bundleName": "DbGate.app",
+          "bundleIdentifier": "org.dbgate"
+        }
+      ]
+    },
+    "carbon-copy-cloner": {
+      "caskVersion": "7.2,8401",
+      "sourceURL": "https://bombich.download/ccc-7.2.8401.zip",
+      "artifactSHA256": "625c14349fea5c3b875edc280b5db5e839e6f976d04c101c49b17308089a9b11",
+      "apps": [
+        {
+          "bundleName": "Carbon Copy Cloner.app",
+          "bundleIdentifier": "com.bombich.ccc"
+        }
+      ]
+    },
+    "rclone-ui": {
+      "caskVersion": "3.7.5",
+      "sourceURL": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.5/Rclone.UI_aarch64.dmg",
+      "artifactSHA256": "0fe8367034b14a9ed28a4fedfd1cda17c75c3a531ac159ef6eb0ea92f9ae500b",
+      "apps": [
+        {
+          "bundleName": "Rclone UI.app",
+          "bundleIdentifier": "com.rclone.ui"
+        }
+      ]
+    },
+    "supercollider": {
+      "caskVersion": "3.14.1",
+      "sourceURL": "https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1-macOS-universal.dmg",
+      "artifactSHA256": "ed264b32752d27fc86e506dd0a7eb36de7c19ebce73c3fdf2ed5514f8c73f02e",
+      "apps": [
+        {
+          "bundleName": "SuperCollider.app",
+          "bundleIdentifier": "net.sourceforge.supercollider"
+        }
+      ]
+    },
+    "raindropio": {
+      "caskVersion": "5.7.9",
+      "sourceURL": "https://github.com/raindropio/desktop/releases/download/v5.7.9/Raindrop-arm64.dmg",
+      "artifactSHA256": "be2f654e5e978de6925a8636ea11540d783caef3379eb820965b55d06b13c44d",
+      "apps": [
+        {
+          "bundleName": "Raindrop.io.app",
+          "bundleIdentifier": "io.raindrop.macapp"
+        }
+      ]
+    },
+    "phosphene": {
+      "caskVersion": "1.6",
+      "sourceURL": "https://github.com/kageroumado/phosphene/releases/download/v1.6/Phosphene-1.6.dmg",
+      "artifactSHA256": "2fa406e16e61117f4552061475566f11ea7ef20f44202d850e7c47f1060bf9e7",
+      "apps": [
+        {
+          "bundleName": "Phosphene.app",
+          "bundleIdentifier": "glass.kagerou.phosphene"
+        }
+      ]
+    },
+    "tldraw": {
+      "caskVersion": "1.19.1",
+      "sourceURL": "https://github.com/tldraw/tldraw-offline/releases/download/v1.19.1/tldraw-offline-mac-universal.dmg",
+      "artifactSHA256": "be40c42a2e72f1859eefe9c381cc7e536a8c291eaa4a1594805dae95869d1d39",
+      "apps": [
+        {
+          "bundleName": "tldraw offline.app",
+          "bundleIdentifier": "com.tldraw.desktop"
+        }
+      ]
+    },
+    "megasync": {
+      "caskVersion": "6.6.1.0",
+      "sourceURL": "https://mega.nz/MEGAsyncSetupArm64.dmg",
+      "artifactSHA256": "2a550037c934600b0a19d6562c705a6325a680c0e771459fcb5cf656ea17454a",
+      "apps": [
+        {
+          "bundleName": "MEGAsync.app",
+          "bundleIdentifier": "mega.mac"
+        }
+      ]
+    },
+    "devutils": {
+      "caskVersion": "1.17.0",
+      "sourceURL": "https://devutils.com/archives/DevUtils-1.17.0.dmg",
+      "artifactSHA256": "2e14de0f2b5f6c3a4611b808d05a3ae1408d3c1c0caa9b1dd7d887c9f33d717e",
+      "apps": [
+        {
+          "bundleName": "DevUtils.app",
+          "bundleIdentifier": "tonyapp.devutils"
+        }
+      ]
+    },
+    "vorta": {
+      "caskVersion": "0.11.6",
+      "sourceURL": "https://github.com/borgbase/vorta/releases/download/v0.11.6/Vorta-v0.11.6-arm.dmg",
+      "artifactSHA256": "5e8c736b8f4a96ffd870a8f81bfbda2f68568beaf63c932ff33b9f91f2e84c08",
+      "apps": [
+        {
+          "bundleName": "Vorta.app",
+          "bundleIdentifier": "com.borgbase.client.macos"
+        }
+      ]
+    },
+    "eclipse-ide": {
+      "caskVersion": "4.41,2026-09",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-09/R/eclipse-committers-2026-09-R-macosx-cocoa-aarch64.dmg&r=1",
+      "artifactSHA256": "940fa9fe7feee5d3cbb3aff3904944d81a5fadbefc48d069881f7e5073e5ebd1",
+      "apps": [
+        {
+          "bundleName": "Eclipse.app",
+          "bundleIdentifier": "epp.package.committers"
+        }
+      ]
+    },
+    "camunda-modeler": {
+      "caskVersion": "5.51.1",
+      "sourceURL": "https://downloads.camunda.cloud/release/camunda-modeler/5.51.1/camunda-modeler-5.51.1-mac-arm64.dmg",
+      "artifactSHA256": "a3e3ad3632f8bab5d3dbb31e06c3301d6f50ab406cae442f0ecb52920b60acf6",
+      "apps": [
+        {
+          "bundleName": "Camunda Modeler.app",
+          "bundleIdentifier": "com.camunda.CamundaModeler"
+        }
+      ]
+    },
+    "airbuddy": {
+      "caskVersion": "3.0.1,1008",
+      "sourceURL": "https://su.airbuddy.app/lleMaylxgd/AirBuddy_v3.0.1-1008.dmg",
+      "artifactSHA256": "0c8e2b7349629f8176d7af8d2460cd06e37d1721edff6a925109914b53992700",
+      "apps": [
+        {
+          "bundleName": "AirBuddy.app",
+          "bundleIdentifier": "codes.rambo.AirBuddy"
+        }
+      ]
+    },
+    "genymotion": {
+      "caskVersion": "3.10.0",
+      "sourceURL": "https://dl.genymotion.com/releases/genymotion-3.10.0/genymotion-3.10.0.dmg",
+      "artifactSHA256": "38516b5ffd4b5e66990277e40537cd71b3c096260edc448033dfdd816770d35e",
+      "apps": [
+        {
+          "bundleName": "Genymotion.app",
+          "bundleIdentifier": "com.genymobile.Genymotion"
+        },
+        {
+          "bundleName": "Genymotion Shell.app",
+          "bundleIdentifier": "com.genymobile.GenymotionShell"
+        }
+      ]
+    },
+    "ultimaker-cura": {
+      "caskVersion": "5.13.0",
+      "sourceURL": "https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
+      "artifactSHA256": "1483806486a19728bc0f363f847d75be3f179ea43c7f074bfc327f5b5c6e05ad",
+      "apps": []
+    },
+    "jumpcut": {
+      "caskVersion": "0.84",
+      "sourceURL": "https://github.com/snark/jumpcut/releases/download/v0.84/Jumpcut-0.84.tar.bz2",
+      "artifactSHA256": "ef43d3fee801188a3f6fb9ba14bf738aa2d103bd4986b390e9820e7390c6178c",
+      "apps": [
+        {
+          "bundleName": "Jumpcut.app",
+          "bundleIdentifier": "net.sf.Jumpcut"
+        }
+      ]
+    },
+    "subler": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://github.com/SublerApp/Subler/releases/download/1.9.2/Subler-1.9.2.zip",
+      "artifactSHA256": "72846b93d1b890364716b1da75545915810f2f184bd99d0e77d41d41102388e9",
+      "apps": [
+        {
+          "bundleName": "Subler.app",
+          "bundleIdentifier": "org.galad.Subler"
+        }
+      ]
+    },
+    "tint": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://assets.beyondco.de/tint/Tint-1.0.0.dmg",
+      "artifactSHA256": "6e7e265a49eda86c83f74d7b7d629e7c9f6d0d061088d3e58587e14db5846f90",
+      "apps": [
+        {
+          "bundleName": "Tint.app",
+          "bundleIdentifier": "de.beyondco.tint"
+        }
+      ]
+    },
+    "audio-hijack": {
+      "caskVersion": "4.6.0",
+      "sourceURL": "https://cdn.rogueamoeba.com/audiohijack/download/AudioHijack.zip",
+      "artifactSHA256": "87d5d718f91fbeb2607beea3a46686adf8db38c091ceb14a85463e064ea7cccd",
+      "apps": [
+        {
+          "bundleName": "Audio Hijack.app",
+          "bundleIdentifier": "com.rogueamoeba.audiohijack"
+        }
+      ]
+    },
+    "anarlog": {
+      "caskVersion": "1.4.24",
+      "sourceURL": "https://github.com/fastrepl/anarlog/releases/download/desktop_v1.4.24/anarlog-macos-aarch64.dmg",
+      "artifactSHA256": "188298a814e84ed5df8e6f54f2c7567f4b514859084400641eb6701eeb2d1b32",
+      "apps": [
+        {
+          "bundleName": "Anarlog.app",
+          "bundleIdentifier": "com.hyprnote.stable"
+        }
+      ]
+    },
+    "luanti": {
+      "caskVersion": "5.17.0,12.3",
+      "sourceURL": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti_5.17.0_macos12.3_arm64.zip",
+      "artifactSHA256": "0ba118b537d3cc6fd07cd2268fef25e515fc6d87c27ad69b476144a8e28dba3c",
+      "apps": [
+        {
+          "bundleName": "luanti.app",
+          "bundleIdentifier": "org.luanti.luanti"
+        }
+      ]
+    },
+    "itermbrowserplugin": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://iterm2.com/downloads/browser-plugin/iTermBrowserPlugin-1.0.zip",
+      "artifactSHA256": "6d41bd32fd1022cf935d3fdf92bc530f90c4d17666b981137efdfcfe42128fbd",
+      "apps": [
+        {
+          "bundleName": "iTermBrowserPlugin.app",
+          "bundleIdentifier": "com.googlecode.iterm2.iTermBrowserPlugin"
+        }
+      ]
     }
   }
 }
