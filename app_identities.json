@@ -17997,6 +17997,280 @@
       "sourceURL": "https://github.com/dixahq/dixa-desktop-app-release/releases/download/v4.0.12/dixa-4.0.12.dmg",
       "artifactSHA256": "a4e1a30d074e724ba24e9e2674a72bc4050f00161fb7dc23295a2c189ecda5bb",
       "apps": []
+    },
+    "drata-agent": {
+      "caskVersion": "3.9.0",
+      "sourceURL": "https://github.com/drata/agent-releases/releases/download/3.9.0/Drata-Agent-mac.dmg",
+      "artifactSHA256": "1a312c713b2b6bdd94638121345db14c339089a686b208e684b2f5a3d3d2edf8",
+      "apps": [
+        {
+          "bundleName": "Drata Agent.app",
+          "bundleIdentifier": "com.drata.agent"
+        }
+      ]
+    },
+    "dockview": {
+      "caskVersion": "1.7.5",
+      "sourceURL": "https://macplus-software.com/downloads/DockViewStandard.zip",
+      "artifactSHA256": "f79bf80f5bd89ba4aacf1337f456a7d32fc67890f7a4d32872d63156b7177af2",
+      "apps": [
+        {
+          "bundleName": "DockView.app",
+          "bundleIdentifier": "com.sergey-gerasimenko.DockView"
+        }
+      ]
+    },
+    "doomsday-engine": {
+      "caskVersion": "2.3.1",
+      "sourceURL": "https://files.dengine.net/archive/doomsday_2.3.1_x86_64.dmg",
+      "artifactSHA256": "2966e93058969177005d6acf233c434fee9b82e6e92b34dfdda8ea0a7fcaa136",
+      "apps": [
+        {
+          "bundleName": "Doomsday.app",
+          "bundleIdentifier": "net.dengine.doomsday"
+        },
+        {
+          "bundleName": "Doomsday Shell.app",
+          "bundleIdentifier": "net.dengine.shell"
+        }
+      ]
+    },
+    "dnclient": {
+      "caskVersion": "0.9.8,f9e8d295",
+      "sourceURL": "https://dl.defined.net/f9e8d295/v0.9.8/macos/DNClient-Desktop.dmg",
+      "artifactSHA256": "362febd84f96105889dd986aacbf3ccae758f1465844c00fc46f44aad6fc98c9",
+      "apps": [
+        {
+          "bundleName": "DNClient Desktop.app",
+          "bundleIdentifier": "net.defined.dnclient-desktop"
+        }
+      ]
+    },
+    "dockmate": {
+      "caskVersion": "0.8.7",
+      "sourceURL": "https://raw.githubusercontent.com/w0lfschild/app_updates/master/DockMate/DockMate.0.8.7.zip",
+      "artifactSHA256": "0bff2c4b3c915bbd8719a57fd8f2b6c7251af01ceb625bd554fc0326e3fcaf35",
+      "apps": [
+        {
+          "bundleName": "DockMate.app",
+          "bundleIdentifier": "com.macenhance.dockmate"
+        }
+      ]
+    },
+    "douyin-chat": {
+      "caskVersion": "1.1.28,183979140",
+      "sourceURL": "https://lf-impc.douyinstatic.com/obj/tos-aweme-im-pc/7094550955558967563/releases/183979140/1.1.28/darwin-x64/DouyinChat.dmg",
+      "artifactSHA256": "8ef9c4f432699460573135895275c62b4af5ed6374e97e692024c8f3fb7fdeb2",
+      "apps": [
+        {
+          "bundleName": "抖音聊天.app",
+          "bundleIdentifier": "com.bytedance.awemeim.desktop"
+        }
+      ]
+    },
+    "drovio": {
+      "caskVersion": "3.6.2",
+      "sourceURL": "https://repository.drovio.com/stable/drovio/macos_universal/3.x/3.6.2/drovio.dmg",
+      "artifactSHA256": "da44a497594b49f33e9cdcc632454d692d6f1347e64badf50479bf9c1c1e1803",
+      "apps": [
+        {
+          "bundleName": "Drovio.app",
+          "bundleIdentifier": "com.drovio.drovio-app"
+        }
+      ]
+    },
+    "dockx": {
+      "caskVersion": "1.1.21",
+      "sourceURL": "https://d-1251679148.file.myqcloud.com/download/DockX-1.1.21.dmg",
+      "artifactSHA256": "dca9f337c81fe2a44b51a2fbdd454e6d2222a982491de8d3d5217b1d3e7b58ae",
+      "apps": [
+        {
+          "bundleName": "DockX.app",
+          "bundleIdentifier": "com.6x.DockX"
+        }
+      ]
+    },
+    "doxygen-app": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://www.doxygen.nl/files/Doxygen-1.18.0-arm.dmg",
+      "artifactSHA256": "59f42b0b991766380a6b0a42afca226e0fc172ef4525145eaef044e3a6663259",
+      "apps": [
+        {
+          "bundleName": "Doxygen.app",
+          "bundleIdentifier": "nl.doxygen.Doxygen"
+        }
+      ]
+    },
+    "dropzone": {
+      "caskVersion": "4.80.76",
+      "sourceURL": "https://aptonic.com/releases/Dropzone-4.80.76.zip",
+      "artifactSHA256": "fd663d10572781e54ef394fbea34df26f434e69a085867205182ee2842a1c08a",
+      "apps": [
+        {
+          "bundleName": "Dropzone 4.app",
+          "bundleIdentifier": "com.aptonic.Dropzone4"
+        }
+      ]
+    },
+    "doughnut": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/dyerc/Doughnut/releases/download/v2.0.1/Doughnut-2.0.1.dmg",
+      "artifactSHA256": "56e2a41087ee9793b667feaa1bef2e96e20cee6ff7cd8bee4a9acbd1ca1e8aeb",
+      "apps": [
+        {
+          "bundleName": "Doughnut.app",
+          "bundleIdentifier": "com.cdyer.doughnut"
+        }
+      ]
+    },
+    "doubao": {
+      "caskVersion": "2.19.9",
+      "sourceURL": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.19.9/Doubao_universal_2.19.9.dmg",
+      "artifactSHA256": "7ef9fee0d1b0202a4ad60a316ce9b9d06aab188203b983cae122cdaae1382a5b",
+      "apps": []
+    },
+    "dremel-slicer": {
+      "caskVersion": "1.2.3",
+      "sourceURL": "https://dremel3d.blob.core.windows.net/dremel3dslicer/1.2.3/Dremel3DSlicer-1.2.3-mac.zip",
+      "artifactSHA256": "d2d78f1f7d45af36e446ff0ea7f0b5f99b442aca72d354522945d38a90ab5d51",
+      "apps": [
+        {
+          "bundleName": "Dremel DigiLab 3D Slicer.app",
+          "bundleIdentifier": "com.eht3.slicer"
+        }
+      ]
+    },
+    "drivethrurpg": {
+      "caskVersion": "3.6.3",
+      "sourceURL": "https://dtrpg-library-app.s3.amazonaws.com/DriveThruRPG_3.6.3.dmg",
+      "artifactSHA256": "5b576c20918712c3d807cb8d744bfc5a0338fde1a0c6dd8091d12c34e0c0268f",
+      "apps": [
+        {
+          "bundleName": "DriveThruRPG.app",
+          "bundleIdentifier": "com.drivethrurpg"
+        }
+      ]
+    },
+    "dorso": {
+      "caskVersion": "1.15.1",
+      "sourceURL": "https://github.com/tldev/dorso/releases/download/v1.15.1/Dorso-v1.15.1.dmg",
+      "artifactSHA256": "1daabab81b3b0233a5664ec1133f5d0c6706699f66e9dc6a9547d0575c849d6a",
+      "apps": [
+        {
+          "bundleName": "Dorso.app",
+          "bundleIdentifier": "com.thelazydeveloper.posturr"
+        }
+      ]
+    },
+    "ds4-control": {
+      "caskVersion": "1.8.2",
+      "sourceURL": "https://github.com/notatestuser/ds4-control/releases/download/v1.8.2/DS4-Control-v1.8.2.dmg",
+      "artifactSHA256": "f97fdd97a8ce3a678896dba5bce0dff12592390c4a04e4198e5628d5a5b0dc4a",
+      "apps": [
+        {
+          "bundleName": "DS4 Control.app",
+          "bundleIdentifier": "sg.embeddedtech.ds4control"
+        }
+      ]
+    },
+    "dnsmonitor": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/objective-see/DNSMonitor/releases/download/v1.3.0/DNSMonitor_1.3.0.zip",
+      "artifactSHA256": "2d70c45f55e67d4e71823acd7232e7ad1aa41ca7a2223f8d0263a1474c647e8d",
+      "apps": [
+        {
+          "bundleName": "DNSMonitor.app",
+          "bundleIdentifier": "com.objective-see.dnsmonitor.app"
+        }
+      ]
+    },
+    "dropbox-dash": {
+      "caskVersion": "3.179.22",
+      "sourceURL": "https://edge.dropboxstatic.com/dbx-releng/products/dash-tesla/3.179.22/mac.x86_64/Dropbox%20Dash-3.179.22.dmg",
+      "artifactSHA256": "57542ae101f8be0fe99032437b8b55985fffd0997b2e8d3400b05ece477f9b34",
+      "apps": [
+        {
+          "bundleName": "Dropbox Dash.app",
+          "bundleIdentifier": "io.hypertools.Dropbox-Dash"
+        }
+      ]
+    },
+    "dockfix": {
+      "caskVersion": "5.2.0",
+      "sourceURL": "https://www.dockfix.app/downloads/DockFix.dmg",
+      "artifactSHA256": "14124d330a1904f7944950d9f0e51981052cfa68453295cce659f78845578afe",
+      "apps": [
+        {
+          "bundleName": "DockFix.app",
+          "bundleIdentifier": "dk.FIrstForm.DockFix"
+        }
+      ]
+    },
+    "dockdoor-pro": {
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://downloads.dockdoor.net/v/1.5.0/DockDoorPro.dmg",
+      "artifactSHA256": "6a6224e70ace71ed846470e79029a0aa43d49559adea46609439fcad27c6ac67",
+      "apps": [
+        {
+          "bundleName": "DockDoor Pro.app",
+          "bundleIdentifier": "com.ejbills.DockDoorPro"
+        }
+      ]
+    },
+    "dropdmg": {
+      "caskVersion": "3.7.1",
+      "sourceURL": "https://c-command.com/downloads/DropDMG-3.7.1.dmg",
+      "artifactSHA256": "de2f4a0ea35a9efe054c810fa1326308a5ed93599f0a51d8e6a830c351ab5e8b",
+      "apps": [
+        {
+          "bundleName": "DropDMG.app",
+          "bundleIdentifier": "com.c-command.DropDMG"
+        }
+      ]
+    },
+    "drawbot": {
+      "caskVersion": "3.132",
+      "sourceURL": "https://github.com/typemytype/drawbot/releases/download/3.132/DrawBot.dmg",
+      "artifactSHA256": "e7e39a6b4d2345ed7e81d84914c7681bcc7ee9601a5f4d09e6f3dfce64d1903d",
+      "apps": [
+        {
+          "bundleName": "DrawBot.app",
+          "bundleIdentifier": "com.drawbot"
+        }
+      ]
+    },
+    "dropshelf": {
+      "caskVersion": "1729",
+      "sourceURL": "https://pilotmoon.com/downloads/beta/Dropshelf-build-1729.zip",
+      "artifactSHA256": "452ed83a900eb989a0a5e114fa31bc0eee32da8b71b55eb6ba4ad420c72f6ca9",
+      "apps": [
+        {
+          "bundleName": "Dropshelf.app",
+          "bundleIdentifier": "com.pilotmoon.Dropshelf"
+        }
+      ]
+    },
+    "doxie": {
+      "caskVersion": "3.5.1",
+      "sourceURL": "https://download.getdoxie.com/Doxie-3.5.1.dmg",
+      "artifactSHA256": "f461a68ef142991d4f02db81992e3e9e8fe2896583d4d35c035df708190f2b78",
+      "apps": [
+        {
+          "bundleName": "Doxie.app",
+          "bundleIdentifier": "com.getdoxie.doxie"
+        }
+      ]
+    },
+    "dropshare": {
+      "caskVersion": "6.14,6257",
+      "sourceURL": "https://d2wvuuix8c9e48.cloudfront.net/Dropshare6-6257.app.zip",
+      "artifactSHA256": "629302d962e890fdd32887dbf7915e734d6d6703774ad60423d93030935ee66f",
+      "apps": [
+        {
+          "bundleName": "Dropshare 6.app",
+          "bundleIdentifier": "net.mkswap.Dropshare5"
+        }
+      ]
     }
   }
 }

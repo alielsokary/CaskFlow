@@ -473,6 +473,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "dremel-slicer": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-09-20"
+  },
   "droid": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
