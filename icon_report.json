@@ -245,6 +245,12 @@
     "attempts": 5,
     "updated": "2026-09-01"
   },
+  "clash-mi": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got ae5b918dd49f...)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "claude-code": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",

@@ -9861,6 +9861,265 @@
           "bundleIdentifier": "com.luckymarmot.Paw"
         }
       ]
+    },
+    "lookaway": {
+      "caskVersion": "2.4.8",
+      "sourceURL": "https://github.com/mysticalbits/lookaway-releases/releases/download/2.4.8/LookAway.dmg",
+      "artifactSHA256": "9ae63225261047d3b8620c1b4bfd34eca07b60ffbd006d45eabca9a922534f97",
+      "apps": [
+        {
+          "bundleName": "LookAway.app",
+          "bundleIdentifier": "com.mysticalbits.lookaway"
+        }
+      ]
+    },
+    "es-de": {
+      "caskVersion": "3.4.1,288889626",
+      "sourceURL": "https://gitlab.com/es-de/emulationstation-de/-/package_files/288889626/download",
+      "artifactSHA256": "e7b2f404a3df47f299884177d2b76cd45c2d1550807b32e7829f37a25a53776f",
+      "apps": [
+        {
+          "bundleName": "ES-DE.app",
+          "bundleIdentifier": "3.4.1"
+        }
+      ]
+    },
+    "stillcolor": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/aiaf/Stillcolor/releases/download/v1.1/Stillcolor-v1.1.zip",
+      "artifactSHA256": "dfa8c046540764df4bc462479190aafc60ecc6b25d43c54feeab65b2c29ee0f6",
+      "apps": [
+        {
+          "bundleName": "Stillcolor.app",
+          "bundleIdentifier": "com.makkuk.Stillcolor"
+        }
+      ]
+    },
+    "nosql-workbench": {
+      "caskVersion": "3.20.3",
+      "sourceURL": "https://nosql-workbench.s3.amazonaws.com/NoSQL%20Workbench-mac-arm64-3.20.3.dmg",
+      "artifactSHA256": "726ec7b443748caa4f7a8bc4d5bc9a79e78da943359db0e34728884b0b5f5f45",
+      "apps": [
+        {
+          "bundleName": "NoSQL Workbench.app",
+          "bundleIdentifier": "com.dynamodb.workbench"
+        }
+      ]
+    },
+    "rocket": {
+      "caskVersion": "1.9.5,88",
+      "sourceURL": "https://macrelease.matthewpalmer.net/distribution/appcasts/Rocket-88.dmg",
+      "artifactSHA256": "a6050156f5cf583fdd8d7f2714967d0d06f9547f91ef9d3ba094f076e0a58c34",
+      "apps": [
+        {
+          "bundleName": "Rocket.app",
+          "bundleIdentifier": "net.matthewpalmer.Rocket"
+        }
+      ]
+    },
+    "spacejump": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://pub-2f1e73dd67bd462192b6592baa57a0ce.r2.dev/SpaceJump-v2.1.2.dmg",
+      "artifactSHA256": "edfb488dd3f0208f664a59c7ec9c57d520c3d1259f039816089580a5a1384aa4",
+      "apps": [
+        {
+          "bundleName": "SpaceJump.app",
+          "bundleIdentifier": "com.ideabridge.spacejump"
+        }
+      ]
+    },
+    "xnconvert": {
+      "caskVersion": "1.116.0",
+      "sourceURL": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.116.0-mac.dmg",
+      "artifactSHA256": "4d3d4ef552155a5bf85cdfea363f88af0dbb23b697ce1ed720e0705d70a96b2d",
+      "apps": [
+        {
+          "bundleName": "XnConvert.app",
+          "bundleIdentifier": "com.xnview.XnConvert"
+        }
+      ]
+    },
+    "ping-island": {
+      "caskVersion": "0.32.0",
+      "sourceURL": "https://github.com/erha19/ping-island/releases/download/v0.32.0/PingIsland-0.32.0.dmg",
+      "artifactSHA256": "b3177eb8685352b338793c987b9a7970a1a12a9fda0aa75476bef076d6a476c2",
+      "apps": [
+        {
+          "bundleName": "Ping Island.app",
+          "bundleIdentifier": "com.wudanwu.PingIsland"
+        }
+      ]
+    },
+    "dbvisualizer": {
+      "caskVersion": "26.2.3",
+      "sourceURL": "https://www.dbvis.com/product_download/dbvis-26.2.3/media/dbvis_macos-aarch64_26_2_3.dmg",
+      "artifactSHA256": "be71a96a3d490067c2ace768be6a870bb0d7c45cb53033b110d6e6ba5cd744f7",
+      "apps": [
+        {
+          "bundleName": "DbVisualizer.app",
+          "bundleIdentifier": "com.dbvis.DbVisualizer"
+        }
+      ]
+    },
+    "nimbalyst": {
+      "caskVersion": "0.77.5",
+      "sourceURL": "https://github.com/Nimbalyst/nimbalyst/releases/download/v0.77.5/Nimbalyst-macOS-arm64.dmg",
+      "artifactSHA256": "2e5945e9fd624bdb2b54b43236930cf40959f1ea8819e4928c607303fe306043",
+      "apps": [
+        {
+          "bundleName": "Nimbalyst.app",
+          "bundleIdentifier": "com.nimbalyst.electron"
+        }
+      ]
+    },
+    "strawberry": {
+      "caskVersion": "0.1.49",
+      "sourceURL": "https://strawberrybucket.com/strawberry-0.1.49.dmg",
+      "artifactSHA256": "0475e64eb05f80f66ae3f8207ae4667d84aa105adedb5cda8eb44bf024865b91",
+      "apps": [
+        {
+          "bundleName": "Strawberry.app",
+          "bundleIdentifier": "com.mirror-browser"
+        }
+      ]
+    },
+    "superduper": {
+      "caskVersion": "4.0.7",
+      "sourceURL": "https://www.shirt-pocket.com/downloads/SuperDuper-4.0.7.dmg",
+      "artifactSHA256": "9b9a8c508832f5208ffe464e110ed5e6df1bd2e982d232545aa51efa5eda6674",
+      "apps": [
+        {
+          "bundleName": "SuperDuper!.app",
+          "bundleIdentifier": "com.shirtpocket.SuperDuper4"
+        }
+      ]
+    },
+    "adze": {
+      "caskVersion": "1.4.12",
+      "sourceURL": "https://getadze.com/static/main/releases/Adze.zip",
+      "artifactSHA256": "a158f69e9dbc1e2ffbd6fc412395b2d62a9cbfdf669acf1125e9b706c791eb4f",
+      "apps": [
+        {
+          "bundleName": "Adze.app",
+          "bundleIdentifier": "com.Kobot.Adze"
+        }
+      ]
+    },
+    "wifi-explorer": {
+      "caskVersion": "3.6.9",
+      "sourceURL": "https://www.intuitibits.com/downloads/WiFiExplorer_3.6.9.dmg",
+      "artifactSHA256": "8c5841dcd4427ecb1bb6b77c05fb22ef1ccb082e73aa2701ff710ad00df9ceee",
+      "apps": []
+    },
+    "powerphotos": {
+      "caskVersion": "3.4.7",
+      "sourceURL": "https://www.fatcatsoftware.com/powerphotos/PowerPhotos.zip",
+      "artifactSHA256": "7e3c0bb9fc5b56ea33d34783e40b061c7398f693b24c4bf439b1e59fe762b9f6",
+      "apps": [
+        {
+          "bundleName": "PowerPhotos.app",
+          "bundleIdentifier": "com.fatcatsoftware.PowerPhotos"
+        }
+      ]
+    },
+    "harper-desktop": {
+      "caskVersion": "2.11.0",
+      "sourceURL": "https://github.com/Automattic/harper/releases/download/v2.11.0/Harper_2.11.0_universal.dmg",
+      "artifactSHA256": "78dac0b045bdf2908cc7e5281d003e22748aa7f6f9e05544d0a5dff151cd7e89",
+      "apps": [
+        {
+          "bundleName": "Harper.app",
+          "bundleIdentifier": "com.elijahpotter.harper-desktop"
+        }
+      ]
+    },
+    "ares-emulator": {
+      "caskVersion": "148",
+      "sourceURL": "https://github.com/ares-emulator/ares/releases/download/v148/ares-macos-universal.zip",
+      "artifactSHA256": "1ae232ab6de341210f171f51d84b311527eb1399060706589334a8a7de136bb0",
+      "apps": [
+        {
+          "bundleName": "ares.app",
+          "bundleIdentifier": "dev.ares.ares"
+        }
+      ]
+    },
+    "universal-media-server": {
+      "caskVersion": "15.8.1",
+      "sourceURL": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/15.8.1/UMS-macOS-15.8.1-arm.dmg",
+      "artifactSHA256": "218fd23abbf94a91f31ebfbc6e9949449da82f069127221c25775269504767c3",
+      "apps": [
+        {
+          "bundleName": "Universal Media Server.app",
+          "bundleIdentifier": "net.pms.PMS"
+        }
+      ]
+    },
+    "eul": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://github.com/gao-sun/eul/releases/download/v1.6.2/eul.app.zip",
+      "artifactSHA256": "09b036f1e934472d55a0417e2a3ce736559caf81a38537c94ab2c6331f258851",
+      "apps": [
+        {
+          "bundleName": "eul.app",
+          "bundleIdentifier": "com.gaosun.eul"
+        }
+      ]
+    },
+    "douyin": {
+      "caskVersion": "8.5.1,7044145585217083655,469669512",
+      "sourceURL": "https://www.douyin.com/download/pc/obj/douyin-pc-web//douyin-pc-client/7044145585217083655/releases/469669512/8.5.1/darwin-universal/douyin-v8.5.1-darwin-universal.dmg",
+      "artifactSHA256": "b3400bbf2655f2e000f063804a2524de4ff208a06a6838ead184cfc9812b9741",
+      "apps": [
+        {
+          "bundleName": "抖音.app",
+          "bundleIdentifier": "com.bytedance.douyin.desktop"
+        }
+      ]
+    },
+    "radiola": {
+      "caskVersion": "13.2.0",
+      "sourceURL": "https://github.com/SokoloffA/radiola/releases/download/v13.2.0/Radiola-13.2.0.dmg",
+      "artifactSHA256": "4ac600e3729f324d7d2769c11a8810c8ff584af21dbbf29eda9420ca3b1b88d3",
+      "apps": [
+        {
+          "bundleName": "Radiola.app",
+          "bundleIdentifier": "com.github.SokoloffA.Radiola"
+        }
+      ]
+    },
+    "easyfind": {
+      "caskVersion": "5.0.2",
+      "sourceURL": "https://download.devontechnologies.com/download/freeware/easyfind/5.0.2/EasyFind.app.zip",
+      "artifactSHA256": "1539a562539e3b3a243da864fddee0351a4c7d109aa9dcae436775ecbb288fc9",
+      "apps": [
+        {
+          "bundleName": "EasyFind.app",
+          "bundleIdentifier": "org.grunenberg.EasyFind"
+        }
+      ]
+    },
+    "elgato-wave-link": {
+      "caskVersion": "3.2.2,2896",
+      "sourceURL": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.2.2.2896.dmg",
+      "artifactSHA256": "a1d57ef953a418cf188ec13335a8ee4d40d55df3b28219f5da69c191ffa47636",
+      "apps": [
+        {
+          "bundleName": "Elgato Wave Link.app",
+          "bundleIdentifier": "com.elgato.WaveLink3"
+        }
+      ]
+    },
+    "alma": {
+      "caskVersion": "0.4.60",
+      "sourceURL": "https://updates.alma.now/alma-0.4.60-mac-arm64.dmg",
+      "artifactSHA256": "f07056279c0277a52e1e1e1e51973b9054118c1bd1f82584a353d0fc95fdbc6a",
+      "apps": [
+        {
+          "bundleName": "Alma.app",
+          "bundleIdentifier": "com.yetone.alma"
+        }
+      ]
     }
   }
 }
