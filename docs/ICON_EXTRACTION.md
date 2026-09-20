@@ -111,7 +111,11 @@ establish app identity. Unsupported or ambiguous artifacts produce an empty
 `apps` list with `diagnostics`, also printed in the extraction log. For example,
 missing declared paths, invalid plists, and unsupported bundle identifiers have
 distinct reasons. Custom Ruby staging is not executed to manufacture missing
-suite directories, and the existing reverse-DNS identifier validation remains.
+suite directories. Bundle identifiers may have a single component (for example,
+Blockbench's `blockbench`); reverse-DNS form is typical, not mandatory in
+[Apple's specification](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
+Malformed identifiers remain rejected. Extraction version 3 revisits older empty
+records once so identifiers rejected by the previous dot requirement can recover.
 
 The existing batch publisher merges only inspected tokens into the icons branch.
 Failed downloads leave previous evidence intact. Daily releases merge the

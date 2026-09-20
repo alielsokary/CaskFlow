@@ -191,10 +191,30 @@ def test_case_equivalent_artifact_name_and_empty_diagnostics(tmp_path):
     bundle = app(tmp_path, "original.app", "com.example.actual")
     result = extract_identities(cask(), tmp_path, archive)
     assert result["apps"] == [{"bundleName": "Renamed.app", "bundleIdentifier": "com.example.actual"}]
-    (bundle / "Contents/Info.plist").write_bytes(plistlib.dumps({"CFBundleIdentifier": "blockbench"}))
+    (bundle / "Contents/Info.plist").write_bytes(plistlib.dumps({"CFBundleIdentifier": "invalid_id"}))
     result = extract_identities(cask(), tmp_path, archive)
     assert result["apps"] == []
-    assert result["diagnostics"] == [{"artifact": "Renamed.app", "reason": "unsupported CFBundleIdentifier: 'blockbench'"}]
+    assert result["diagnostics"] == [{"artifact": "Renamed.app", "reason": "unsupported CFBundleIdentifier: 'invalid_id'"}]
+
+
+@pytest.mark.parametrize("identifier", ["blockbench", "AigcPanel", "com.example.app",
+                                       "", "invalid_id", "white space", "path/app", "trailing\n"])
+def test_identifier_validation_from_extraction_through_release(tmp_path, identifier):
+    app(tmp_path, "Original.app", identifier)
+    archive = tmp_path / "app.zip"
+    archive.write_bytes(b"archive")
+    result = extract_identities(cask(), tmp_path, archive)
+    valid = identifier in {"blockbench", "AigcPanel", "com.example.app"}
+    expected = [{"bundleName": "Renamed.app", "bundleIdentifier": identifier}] if valid else []
+    assert result["apps"] == expected
+    assert bool(result["diagnostics"]) == (not valid)
+    categories, extracted, variants, output = [tmp_path / name for name in
+        ["categories.json", "extracted.json", "variants.json", "output.json"]]
+    write_json(categories, {"tokenToCategory": {}})
+    write_json(extracted, {"schemaVersion": 1, "casks": {"sample": result}})
+    write_json(variants, {"schemaVersion": 1, "casks": {}})
+    compose_release(categories, extracted, variants, output)
+    assert json.loads(categories.read_text())["appIdentities"] == ({"sample": expected} if valid else {})
 
 
 @pytest.mark.parametrize("case", ["valid", "ambiguous", "staged", "unsafe-target"])

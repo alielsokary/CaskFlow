@@ -18,8 +18,8 @@ from style_standards import write_json
 
 MANIFEST = "app_identities.json"
 ROOT = Path(__file__).resolve().parent.parent
-IDENTIFIER = re.compile(r"[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+\Z")
-EXTRACTION_VERSION = 2
+IDENTIFIER = re.compile(r"[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\Z")
+EXTRACTION_VERSION = 3
 
 
 def load_manifest(path: Path) -> dict:
