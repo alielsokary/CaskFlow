@@ -12245,6 +12245,265 @@
           "bundleIdentifier": "com.vallettaventures.Texpad"
         }
       ]
+    },
+    "copilot-money": {
+      "caskVersion": "6.4.4,332-80a7fa78",
+      "sourceURL": "https://storage.googleapis.com/copilot-mac-releases/images/Copilot-6.4.4-332-80a7fa78.dmg",
+      "artifactSHA256": "80a7fa78efbb42bcd2db13c040c051146d466dc46df7398712ef2cd914486fe2",
+      "apps": [
+        {
+          "bundleName": "Copilot.app",
+          "bundleIdentifier": "com.copilot.production"
+        }
+      ]
+    },
+    "tinymediamanager": {
+      "caskVersion": "5.3.2",
+      "sourceURL": "https://release.tinymediamanager.org/v5/dist/tinyMediaManager-5.3.2-macos-aarch64.dmg",
+      "artifactSHA256": "9e2e282b76cde6dd790f92899a2691cb23ed39103ce6434ae52d088764f12640",
+      "apps": [
+        {
+          "bundleName": "tinyMediaManager.app",
+          "bundleIdentifier": "org.tinyMediaManager.tinymediamanager"
+        }
+      ]
+    },
+    "clockify": {
+      "caskVersion": "2.12.6",
+      "sourceURL": "https://clockify.me/downloads/ClockifyDesktop.zip",
+      "artifactSHA256": "f6a43df036101d63f228831a12a36d7071a6d7df31f1ef7352a90336016be24f",
+      "apps": [
+        {
+          "bundleName": "Clockify Desktop.app",
+          "bundleIdentifier": "coing.ClockifyDesktop"
+        }
+      ]
+    },
+    "mx-power-gadget": {
+      "caskVersion": "1.6.4",
+      "sourceURL": "https://www.seense.com/menubarstats/mxpg/updateapp/mxpg.zip",
+      "artifactSHA256": "56d7f26b89775f209c1c325850353a09fb2643a96d97b9b17515f47fec5f50b7",
+      "apps": [
+        {
+          "bundleName": "Mx Power Gadget.app",
+          "bundleIdentifier": "com.fabriceleyne.MxPowerGadget"
+        }
+      ]
+    },
+    "mujoco": {
+      "caskVersion": "3.13.0",
+      "sourceURL": "https://github.com/google-deepmind/mujoco/releases/download/3.13.0/mujoco-3.13.0-macos-universal2.dmg",
+      "artifactSHA256": "623bb99cdfdeb5a53ebb142e1c100b1cb548277c310a1d0f7d475e9447d7656c",
+      "apps": [
+        {
+          "bundleName": "MuJoCo.app",
+          "bundleIdentifier": "org.mujoco.mujoco"
+        }
+      ]
+    },
+    "koharu": {
+      "caskVersion": "0.83.4",
+      "sourceURL": "https://github.com/mayocream/koharu/releases/download/0.83.4/koharu_0.83.4_aarch64.dmg",
+      "artifactSHA256": "731af6c2c1716ddb8a0bae49b5f5aee10e54563b919667b92e21b8ed28c2b10f",
+      "apps": []
+    },
+    "equibop": {
+      "caskVersion": "3.3.1",
+      "sourceURL": "https://github.com/Equicord/Equibop/releases/download/v3.3.1/Equibop-3.3.1-universal.dmg",
+      "artifactSHA256": "32023d2a0b92be7d347d1ddd4e0fb8fa021b8923c1a79382f1e01cacd91b8fb6",
+      "apps": [
+        {
+          "bundleName": "equibop.app",
+          "bundleIdentifier": "org.equicord.equibop"
+        }
+      ]
+    },
+    "gitx": {
+      "caskVersion": "1.6",
+      "sourceURL": "https://github.com/gitx/gitx/releases/download/1.6/GitX-arm64.dmg",
+      "artifactSHA256": "6645fa2b59564475b04dc41f867c12777665496a83cc941d8dd86a2f9b090de7",
+      "apps": [
+        {
+          "bundleName": "GitX.app",
+          "bundleIdentifier": "net.phere.GitX"
+        }
+      ]
+    },
+    "losslessswitcher": {
+      "caskVersion": "2.0,2",
+      "sourceURL": "https://github.com/vincentneo/LosslessSwitcher/releases/download/2.0/LosslessSwitcher2.app.zip",
+      "artifactSHA256": "bf2cd61b9afa1a0caa7a491b25ccb2cc12f09db3b9831c0d814854083dceae8a",
+      "apps": [
+        {
+          "bundleName": "LosslessSwitcher.app",
+          "bundleIdentifier": "com.vincent-neo.LosslessSwitcher"
+        }
+      ]
+    },
+    "avogadro": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/OpenChemistry/avogadrolibs/releases/download/2.0.0/Avogadro2-2.0.0-Darwin-arm64.dmg",
+      "artifactSHA256": "6605ec8934ff3206b60bde53f9a3624faf1bda73aa140ba6fbaa0593378b3a42",
+      "apps": [
+        {
+          "bundleName": "Avogadro2.app",
+          "bundleIdentifier": "cc.avogadro"
+        }
+      ]
+    },
+    "manus": {
+      "caskVersion": "1.7.6",
+      "sourceURL": "https://download.manus.im/Manus-Setup-1.7.6.dmg",
+      "artifactSHA256": "41e9915db4bde4ce3234deba5df6e762b1e2a73b5490abe35769c51a14c94ba0",
+      "apps": [
+        {
+          "bundleName": "Manus.app",
+          "bundleIdentifier": "im.manus.desktop"
+        }
+      ]
+    },
+    "prism": {
+      "caskVersion": "11.1.0",
+      "sourceURL": "https://cdn.graphpad.com/downloads/prism/11/11.1.0/InstallPrism11.dmg",
+      "artifactSHA256": "3a3e6700325df42937fe560b473d02bc881f4878b3fad11785004374870012f5",
+      "apps": [
+        {
+          "bundleName": "Prism 11.app",
+          "bundleIdentifier": "com.GraphPad.Prism"
+        }
+      ]
+    },
+    "sonic-visualiser": {
+      "caskVersion": "5.2.1",
+      "sourceURL": "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v5.2.1/Sonic.Visualiser.5.2.1.dmg",
+      "artifactSHA256": "bb86819411875cc8128fc49c3899a3c419fba6ff8286ad145bdec02c4bd212f0",
+      "apps": [
+        {
+          "bundleName": "Sonic Visualiser.app",
+          "bundleIdentifier": "org.sonicvisualiser.SonicVisualiser"
+        }
+      ]
+    },
+    "macsvg": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/dsward2/macSVG/releases/download/v1.2.0/macSVG-v1.2.zip",
+      "artifactSHA256": "c25105533150f5f9d28e6b08ac20f346f49999f70af55fa0a3aa4d6093aa37ec",
+      "apps": [
+        {
+          "bundleName": "macSVG.app",
+          "bundleIdentifier": "com.arkphone.macsvg"
+        }
+      ]
+    },
+    "trezor-suite": {
+      "caskVersion": "26.9.2",
+      "sourceURL": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.9.2-mac-arm64.dmg",
+      "artifactSHA256": "f0c621541da6038e031c47ce6a51667be4affd6841230c99daab6dad1011cfac",
+      "apps": [
+        {
+          "bundleName": "Trezor Suite.app",
+          "bundleIdentifier": "io.trezor.TrezorSuite"
+        }
+      ]
+    },
+    "shichizip": {
+      "caskVersion": "0.3.2",
+      "sourceURL": "https://github.com/idawnlight/ShichiZip/releases/download/v0.3.2/ShichiZip-v0.3.2-arm64.zip",
+      "artifactSHA256": "b7511b42cac66bd5e9d4de0f6e345a391bf3229a34ff7ecc62bf11c27361132c",
+      "apps": [
+        {
+          "bundleName": "ShichiZip.app",
+          "bundleIdentifier": "ee.dawn.ShichiZip"
+        }
+      ]
+    },
+    "airflow": {
+      "caskVersion": "3.3.10",
+      "sourceURL": "https://cdn.downloads.iocave.net/Airflow/Airflow%203.3.10.zip",
+      "artifactSHA256": "76a5da7cebebe651fc849d7510c948d960163bdcdcded0d1abb8c061da447c78",
+      "apps": [
+        {
+          "bundleName": "Airflow.app",
+          "bundleIdentifier": "com.bitcavehq.Airflow"
+        }
+      ]
+    },
+    "proton-meet": {
+      "caskVersion": "1.0.11",
+      "sourceURL": "https://proton.me/download/meet/macos/1.0.11/ProtonMeet-desktop.dmg",
+      "artifactSHA256": "750635f0920359a4c5c93bd2bae0cb6931e5762de606daca2d490942a202960e",
+      "apps": [
+        {
+          "bundleName": "Proton Meet.app",
+          "bundleIdentifier": "ch.protonmeet.desktop"
+        }
+      ]
+    },
+    "folo": {
+      "caskVersion": "1.14.0",
+      "sourceURL": "https://github.com/RSSNext/Folo/releases/download/desktop%2Fv1.14.0/Folo-1.14.0-macos-arm64.dmg",
+      "artifactSHA256": "2829948fed174a03f7e51e0b75b8882882f86eb0da5e8618ff7eb7a06d141d20",
+      "apps": [
+        {
+          "bundleName": "Folo.app",
+          "bundleIdentifier": "is.follow"
+        }
+      ]
+    },
+    "spark-app": {
+      "caskVersion": "3.3.2",
+      "sourceURL": "https://www.shadowlab.org/softwares/Spark/Spark.zip",
+      "artifactSHA256": "6f3cee4cccbec78fd413df0f68e66ca489707347be59a293ac6e82c0185d4fd1",
+      "apps": [
+        {
+          "bundleName": "Spark.app",
+          "bundleIdentifier": "com.xenonium.Spark"
+        }
+      ]
+    },
+    "monet": {
+      "caskVersion": "2.2.8",
+      "sourceURL": "https://github.com/zenolab124/monet/releases/download/v2.2.8/Monet_2.2.8_aarch64.dmg",
+      "artifactSHA256": "b77897c47f56bd36a3cbbed202cc87f86e686ddecca08101b0c8aa1c3381d3e8",
+      "apps": [
+        {
+          "bundleName": "Monet.app",
+          "bundleIdentifier": "io.github.zenolab124.monet"
+        }
+      ]
+    },
+    "binance": {
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://ftp.binance.com/electron-desktop/mac/production/binance-2.5.2-arm64.dmg",
+      "artifactSHA256": "c4941332e3a2d4c79bd99e78292e0ecfad5ef1da075b63b8f9e8f8700d586bcd",
+      "apps": [
+        {
+          "bundleName": "Binance.app",
+          "bundleIdentifier": "com.binance.BinanceDesktop"
+        }
+      ]
+    },
+    "gotiengviet": {
+      "caskVersion": "2.4",
+      "sourceURL": "https://www.trankynam.com/gotv/downloads/GoTiengViet.dmg",
+      "artifactSHA256": "c3be5eb6ad582674489fee63b45bfd97b34bd5501f4c766616a818a002138c18",
+      "apps": [
+        {
+          "bundleName": "GoTiengViet.app",
+          "bundleIdentifier": "com.trankynam.GoTiengViet"
+        }
+      ]
+    },
+    "fontbase": {
+      "caskVersion": "2026.5.23",
+      "sourceURL": "https://releases.fontba.se/mac/FontBase-2026.5.23.dmg",
+      "artifactSHA256": "a83df8f6babc9243618dce027865590c11f108d236e29a636f1d310cb8c05e8a",
+      "apps": [
+        {
+          "bundleName": "FontBase.app",
+          "bundleIdentifier": "com.dominiklevitsky.fontbase"
+        }
+      ]
     }
   }
 }

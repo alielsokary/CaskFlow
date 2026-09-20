@@ -870,10 +870,10 @@
     "updated": "2026-09-01"
   },
   "macsvg": {
-    "status": "curated",
-    "reason": "project artwork (hand-supplied)",
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-09-20"
   },
   "mactex": {
     "status": "review",
@@ -1147,9 +1147,9 @@
   },
   "qt-design-studio": {
     "status": "no_icon",
-    "reason": "unsupported container: 4.8.2-0-202604291709opensource.7z",
+    "reason": "unsupported container: 4.8.3-0-202609070646opensource.7z",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-09-20"
   },
   "quarto": {
     "status": "no_icon",
