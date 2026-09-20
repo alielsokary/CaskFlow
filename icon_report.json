@@ -8,7 +8,7 @@
   "abstract": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "acronis-true-image": {
@@ -104,7 +104,7 @@
   "audius": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8b8003506ed2...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "autodesk-fusion": {
@@ -116,7 +116,7 @@
   "avast-secure-browser": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "avast-security": {
@@ -140,7 +140,7 @@
   "backyard-ai": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: update.backyard.ai",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "baseline": {
@@ -236,13 +236,13 @@
   "cardpresso": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4b251d7c469f...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "chalk": {
     "status": "failed",
     "reason": "download failed: curl: (47) Maximum (50) redirects followed",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "chatty": {
@@ -380,7 +380,7 @@
   "dadroit-json-viewer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "dante-controller": {
@@ -452,7 +452,7 @@
   "direqual": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "diskspace": {
@@ -644,7 +644,7 @@
   "filepane": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-09-20"
   },
   "finch": {

@@ -19566,6 +19566,167 @@
           "bundleIdentifier": "to.go.osx"
         }
       ]
+    },
+    "focusatwill": {
+      "caskVersion": "3.4.0",
+      "sourceURL": "https://faw-desktop.s3.amazonaws.com/focusatwill-3.4.0-universal.dmg",
+      "artifactSHA256": "b5e2cfdd30e1f4ba69f41c06cc5c2e7c803b28541d24954d454b91e7af892524",
+      "apps": [
+        {
+          "bundleName": "focusatwill.app",
+          "bundleIdentifier": "com.focusatwill.desktop"
+        }
+      ]
+    },
+    "focus": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://heyfocus.com/uploads/Focus-v2.4.1.zip",
+      "artifactSHA256": "afb2ba7e2e1893aa03a6898603e26f115c7ecce6787635e074b023eb5b84e3c5",
+      "apps": [
+        {
+          "bundleName": "Focus.app",
+          "bundleIdentifier": "BradJasper.focus"
+        }
+      ]
+    },
+    "fontgoggles": {
+      "caskVersion": "1.9.4",
+      "sourceURL": "https://github.com/justvanrossum/fontgoggles/releases/download/v1.9.4/FontGoggles.dmg",
+      "artifactSHA256": "4d85f265c164fbcd9c4de948b0d323cd8a2b1a7655749ca8fbf59e8f44e4a8e6",
+      "apps": [
+        {
+          "bundleName": "FontGoggles.app",
+          "bundleIdentifier": "com.github.justvanrossum.FontGoggles"
+        }
+      ]
+    },
+    "fontstand": {
+      "caskVersion": "3.0.11,16",
+      "sourceURL": "https://api.fontstand.com/assets/Uploads/Website/App/Fontstand-v16.zip",
+      "artifactSHA256": "c8f688de49cc7d06779d65087f9f684369d4d0c9beb84bebac95cab29a53feed",
+      "apps": [
+        {
+          "bundleName": "Fontstand.app",
+          "bundleIdentifier": "com.fontstand-bv.mac.Fontstand"
+        }
+      ]
+    },
+    "focu": {
+      "caskVersion": "0.13.0",
+      "sourceURL": "https://github.com/focu-app/focu-app/releases/download/v0.13.0/Focu_0.13.0_aarch64.dmg",
+      "artifactSHA256": "628c05c7f7b16b9af1f042d9c3d5bbbf1e0ed0731b585bb4519dd1c06bb15df0",
+      "apps": [
+        {
+          "bundleName": "Focu.app",
+          "bundleIdentifier": "app.focu.Focu"
+        }
+      ]
+    },
+    "fotokasten": {
+      "caskVersion": "4.49.0,251028.1453",
+      "sourceURL": "https://downloads.poi.de/fotokasten/pgx-mac/de_DE/fotokasten_22153088_de_DE_4.49.0-251028.1453.dmg",
+      "artifactSHA256": "c76b6736fc6a84bb6b71c0e81415031d09095172e82b9df0df81d280bab26ec5",
+      "apps": []
+    },
+    "focusany": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/modstart-lib/focusany/releases/download/v2.2.0/FocusAny-2.2.0-mac-arm64.dmg",
+      "artifactSHA256": "2b783943d15e55e632ea56ea1185d1eb4790f452ab2b833ab646863f4fafbe96",
+      "apps": [
+        {
+          "bundleName": "FocusAny.app",
+          "bundleIdentifier": "com.focusany.app"
+        }
+      ]
+    },
+    "folder-colorizer": {
+      "caskVersion": "4.11.8",
+      "sourceURL": "https://ushining.softorino.com/shine_uploads/foldercolorizermac_4.11.8.dmg",
+      "artifactSHA256": "bc94f79a953d7682648d29f3740a77096bb94b638d83ef0ced0e5e4f5797c3c8",
+      "apps": [
+        {
+          "bundleName": "Folder Colorizer.app",
+          "bundleIdentifier": "com.softorino.foldercolorizer"
+        }
+      ]
+    },
+    "foldit": {
+      "caskVersion": "52",
+      "sourceURL": "https://files.ipd.uw.edu/pub/foldit/Foldit-macos_x64.dmg",
+      "artifactSHA256": "3578b46b4cc4e81c1873cffe93d423dc2df325efe291d2425fa644e34d777e99",
+      "apps": []
+    },
+    "fontcreator": {
+      "caskVersion": "16.0.0.3082",
+      "sourceURL": "https://www.high-logic.com/previousrelease/FontCreator16.0.0.3082.dmg",
+      "artifactSHA256": "41a17d2baa849142333acacf504ad3ef8b01ca2e01ee86a3bf223884cca04bd8",
+      "apps": []
+    },
+    "fontfinagler": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://markdouma.com/fontfinagler/FontFinagler2.0.3.dmg",
+      "artifactSHA256": "40898491baaafcfc06df8a132ba3d161675d2df492c8a133bc807008469c106a",
+      "apps": [
+        {
+          "bundleName": "Font Finagler.app",
+          "bundleIdentifier": "com.markdouma.FontFinagler"
+        }
+      ]
+    },
+    "fontra-pak": {
+      "caskVersion": "2026.9.0",
+      "sourceURL": "https://github.com/fontra/fontra-pak/releases/download/2026.9.0/FontraPak-macOS.dmg",
+      "artifactSHA256": "c3e916f833e2ff2dacbfc982f0665a22691c19b0a58a0405281a5c2396240b67",
+      "apps": [
+        {
+          "bundleName": "Fontra Pak.app",
+          "bundleIdentifier": "xyz.fontra.fontra-pak"
+        }
+      ]
+    },
+    "fontlab": {
+      "caskVersion": "8.4.2.8950",
+      "sourceURL": "https://fontlab.s3.amazonaws.com/fontlab-8/8950/FontLab-8-Mac-Install-8950.dmg",
+      "artifactSHA256": "7891000fb57e699ed9067905efeee3b09a0e421b857234b12eafe65d06a46562",
+      "apps": [
+        {
+          "bundleName": "FontLab 8.app",
+          "bundleIdentifier": "com.fontlab.fontlab8"
+        }
+      ]
+    },
+    "focused": {
+      "caskVersion": "3.6,1853",
+      "sourceURL": "https://dl.devant.io/v1/ffbdbfd0-ecfc-11e9-9897-1b1ad6ec37c4/1853/Focused.zip",
+      "artifactSHA256": "88000db9b6d1304c9968d08ad4bd3ccd6125e2ca53ed3b2a718782368d2fa688",
+      "apps": [
+        {
+          "bundleName": "Focused.app",
+          "bundleIdentifier": "com.71squared.focused"
+        }
+      ]
+    },
+    "fman": {
+      "caskVersion": "1.7.3",
+      "sourceURL": "https://fman.io/updates/mac/1.7.3.zip",
+      "artifactSHA256": "27e9aa2ffae66f448a45c025a1fb1b9e06903aab5d2f117b951612deeee09531",
+      "apps": [
+        {
+          "bundleName": "fman.app",
+          "bundleIdentifier": "io.fman.fman"
+        }
+      ]
+    },
+    "forecast": {
+      "caskVersion": "0.9.6,139",
+      "sourceURL": "https://d2uzvmey2c90kn.cloudfront.net/appcast_download/Forecast_0.9.6_139.zip",
+      "artifactSHA256": "5323c8afcc5114ebeb3d97c02e7f367e2c7e7a776a4e8b57809ef8c305272501",
+      "apps": [
+        {
+          "bundleName": "Forecast.app",
+          "bundleIdentifier": "fm.overcast.forecast-encoder"
+        }
+      ]
     }
   }
 }
