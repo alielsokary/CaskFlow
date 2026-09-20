@@ -7696,6 +7696,281 @@
           "bundleIdentifier": "com.ledger.live"
         }
       ]
+    },
+    "elmedia-player": {
+      "caskVersion": "8.24",
+      "sourceURL": "https://cdn.electronic.us/products/elmedia/mac/download/elmediaplayer.dmg",
+      "artifactSHA256": "6f4921532a8a924af4d949a08b9bcfe13330654d7408b90f57f560c1b525849f",
+      "apps": [
+        {
+          "bundleName": "Elmedia Player.app",
+          "bundleIdentifier": "com.Eltima.ElmediaPlayer"
+        }
+      ]
+    },
+    "alienator88-sentinel": {
+      "caskVersion": "3.1.4",
+      "sourceURL": "https://github.com/alienator88/Sentinel/releases/download/3.1.4/Sentinel.zip",
+      "artifactSHA256": "fd329451f8d747b4af065036219d75893e6a98c6f3c33b48e3e766a0caa762eb",
+      "apps": [
+        {
+          "bundleName": "Sentinel.app",
+          "bundleIdentifier": "com.alienator88.Sentinel"
+        }
+      ]
+    },
+    "maltego": {
+      "caskVersion": "4.13.0",
+      "sourceURL": "https://downloads.maltego.com/maltego-v4/mac/Maltego.v4.13.0.dmg",
+      "artifactSHA256": "7a8b8a9c3518f3638cd990ca810a4c33cabf77891f466558a56ccc148394f4b7",
+      "apps": [
+        {
+          "bundleName": "Maltego.app",
+          "bundleIdentifier": "com.maltego.macapp"
+        }
+      ]
+    },
+    "droppy": {
+      "caskVersion": "14.2.0",
+      "sourceURL": "https://droppy-releases.jordylegrand.workers.dev/app-releases/Droppy-14.2.0.dmg",
+      "artifactSHA256": "4a35effe7755549dc5edb4dc385851b436851633da8584454e1896aa755d0c51",
+      "apps": [
+        {
+          "bundleName": "Droppy.app",
+          "bundleIdentifier": "iordv.Droppy"
+        }
+      ]
+    },
+    "pulsar": {
+      "caskVersion": "1.132.1",
+      "sourceURL": "https://github.com/pulsar-edit/pulsar/releases/download/v1.132.1/Silicon.Mac.Pulsar-1.132.1-arm64.dmg",
+      "artifactSHA256": "a8e89b56872b40a1f23dadd547c13a74463b0271cf2ac9fb44306c4342756ce6",
+      "apps": [
+        {
+          "bundleName": "Pulsar.app",
+          "bundleIdentifier": "dev.pulsar-edit.pulsar"
+        }
+      ]
+    },
+    "screen-studio": {
+      "caskVersion": "3.7.5-4595",
+      "sourceURL": "https://screenstudioassets.com/releases/3.7.5-4595/Screen%20Studio-3.7.5-4595-arm64-mac.zip",
+      "artifactSHA256": "287530005db8ca3f505101cbc1bb386986b3bfbe351b6cb158222279a48cc6ef",
+      "apps": [
+        {
+          "bundleName": "Screen Studio.app",
+          "bundleIdentifier": "com.timpler.screenstudio"
+        }
+      ]
+    },
+    "gitcomet": {
+      "caskVersion": "0.2.5",
+      "sourceURL": "https://github.com/Auto-Explore/GitComet/releases/download/v0.2.5/gitcomet-v0.2.5-macos-arm64.dmg",
+      "artifactSHA256": "8e6b46b641c5206c233534c723ddc6e127673b64a86654ac0f635d072e8a3255",
+      "apps": [
+        {
+          "bundleName": "GitComet.app",
+          "bundleIdentifier": "ai.autoexplore.gitcomet"
+        }
+      ]
+    },
+    "scribus": {
+      "caskVersion": "1.6.6",
+      "sourceURL": "https://downloads.sourceforge.net/scribus/scribus/1.6.6/scribus-1.6.6-arm64.dmg",
+      "artifactSHA256": "0666a15e843575dea51233f874f2a840c73dc1cc5cbdf676fcff2e8978a71815",
+      "apps": [
+        {
+          "bundleName": "Scribus.app",
+          "bundleIdentifier": "net.scribus"
+        }
+      ]
+    },
+    "open-island": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/Octane0411/open-vibe-island/releases/download/v1.2.1/Open.Island.dmg",
+      "artifactSHA256": "1ac791b91603e88140a8146cb2d6f0faf3f35f2fb470b39abb158dbc596e2c0d",
+      "apps": [
+        {
+          "bundleName": "Open Island.app",
+          "bundleIdentifier": "app.openisland.OpenIsland"
+        }
+      ]
+    },
+    "diffusionbee": {
+      "caskVersion": "2.5.3",
+      "sourceURL": "https://github.com/divamgupta/diffusionbee-stable-diffusion-ui/releases/download/2.5.3/DiffusionBee_MPS_arm64-2.5.3.dmg",
+      "artifactSHA256": "1c6deb9f4c745ca86631cc830951b69d5359a13bad13e87e34712617881c2977",
+      "apps": [
+        {
+          "bundleName": "DiffusionBee.app",
+          "bundleIdentifier": "com.diffusionbee.diffusionbee"
+        }
+      ]
+    },
+    "paper-design": {
+      "caskVersion": "0.5.11,260918wsvtkwn81",
+      "sourceURL": "https://download.todesktop.com/2601167vjw8xe/Paper%200.5.11%20-%20Build%20260918wsvtkwn81-arm64.dmg",
+      "artifactSHA256": "03a027b2b1bc1df2e54f8db3d4cd5c1c404bf56994926113efe223e0b2a27079",
+      "apps": [
+        {
+          "bundleName": "Paper.app",
+          "bundleIdentifier": "com.todesktop.2601167vjw8xe"
+        }
+      ]
+    },
+    "gitify": {
+      "caskVersion": "7.8.0",
+      "sourceURL": "https://github.com/gitify-app/gitify/releases/download/v7.8.0/Gitify-7.8.0-universal-mac.zip",
+      "artifactSHA256": "c1358151eed4666e7a1514c9bcb0f50edf66821581927fa0d373af496cc811ee",
+      "apps": [
+        {
+          "bundleName": "Gitify.app",
+          "bundleIdentifier": "com.electron.gitify"
+        }
+      ]
+    },
+    "neodisk": {
+      "caskVersion": "2.71.0",
+      "sourceURL": "https://github.com/tkslucas/Neodisk/releases/download/v2.71.0/Neodisk-2.71.0.dmg",
+      "artifactSHA256": "627d7a7fbe51298f5751e730b27dba62c149b2b555dba2a486e606640fa1a5ff",
+      "apps": [
+        {
+          "bundleName": "Neodisk.app",
+          "bundleIdentifier": "com.lucastakayasu.Neodisk"
+        }
+      ]
+    },
+    "applepi-baker": {
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://www.tweaking4all.com/downloads/raspberrypi/ApplePi-Baker-v2.2.3.dmg",
+      "artifactSHA256": "5b6c89392a2bae26ad235d647bba7f857e82a34f2e9a4d8d6e33cf4396d94775",
+      "apps": [
+        {
+          "bundleName": "ApplePiBaker.app",
+          "bundleIdentifier": "com.tweaking4all.ApplePiBaker"
+        }
+      ]
+    },
+    "supasidebar": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://github.com/auspy/supasidebar-updates/releases/download/v1.0.1/supasidebar_v1.0.1.dmg",
+      "artifactSHA256": "0b332f5530fc1ef05a040d05e8f2e5ac902be53fa027690a86fd82ce57ea3714",
+      "apps": [
+        {
+          "bundleName": "supasidebar.app",
+          "bundleIdentifier": "com.supasidebar"
+        }
+      ]
+    },
+    "flashspace": {
+      "caskVersion": "4.18.79",
+      "sourceURL": "https://github.com/wojciech-kulik/FlashSpace/releases/download/v4.18.79/FlashSpace.app.zip",
+      "artifactSHA256": "83d7e120009f805150d9fef765662467feeeff31062f34b1e7a14f13317128ea",
+      "apps": [
+        {
+          "bundleName": "FlashSpace.app",
+          "bundleIdentifier": "pl.wojciechkulik.FlashSpace"
+        }
+      ]
+    },
+    "hyper": {
+      "caskVersion": "3.4.1",
+      "sourceURL": "https://github.com/vercel/hyper/releases/download/v3.4.1/Hyper-3.4.1-mac-arm64.zip",
+      "artifactSHA256": "7d2440fdd93fde4101e603fe2de46732b54292a868ad17dbcb55288e6f8430a8",
+      "apps": [
+        {
+          "bundleName": "Hyper.app",
+          "bundleIdentifier": "co.zeit.hyper"
+        }
+      ]
+    },
+    "clipgrab": {
+      "caskVersion": "3.9.16",
+      "sourceURL": "https://download.clipgrab.org/ClipGrab-3.9.16.dmg",
+      "artifactSHA256": "cb0b5b47ac8c3de64487994bd03519cd5f99a63221100ac97370138802e5dd2c",
+      "apps": [
+        {
+          "bundleName": "ClipGrab.app",
+          "bundleIdentifier": "de.clipgrab.ClipGrab"
+        }
+      ]
+    },
+    "openttd": {
+      "caskVersion": "15.3",
+      "sourceURL": "https://cdn.openttd.org/openttd-releases/15.3/openttd-15.3-macos-universal.zip",
+      "artifactSHA256": "c2ac22ab3ac9ac1e82a8d9029b7e4ab069e425904420076605d860e64460f579",
+      "apps": [
+        {
+          "bundleName": "OpenTTD.app",
+          "bundleIdentifier": "org.openttd.openttd"
+        }
+      ]
+    },
+    "speedify": {
+      "caskVersion": "17.2.0,4119",
+      "sourceURL": "https://downloads.speedify.com/Speedify-17.2.0.4119.dmg",
+      "artifactSHA256": "8b9c920e3769cb2aaaee372d310e6b2a20295879a9baa1da201a661554ca5d3f",
+      "apps": [
+        {
+          "bundleName": "Speedify.app",
+          "bundleIdentifier": "com.connectify.Speedify"
+        }
+      ]
+    },
+    "surge": {
+      "caskVersion": "6.9.1,12290,fb384eba25d82267269116bf821f4643",
+      "sourceURL": "https://dl.nssurge.com/mac/v6/Surge-6.9.1-12290-fb384eba25d82267269116bf821f4643.zip",
+      "artifactSHA256": "0b99014d5137b814ecec94479af42f4f1fe1f958151cf54a9215fe73829627dd",
+      "apps": [
+        {
+          "bundleName": "Surge.app",
+          "bundleIdentifier": "com.nssurge.surge-mac"
+        }
+      ]
+    },
+    "curseforge": {
+      "caskVersion": "1.321.1-39714",
+      "sourceURL": "https://curseforge.overwolf.com/electron/mac/CurseForge-1.321.1-39714-universal-mac.zip",
+      "artifactSHA256": "de3bc68efb4e57e10c6766c40334166afb01c13917fa3016894fff14de01c06d",
+      "apps": [
+        {
+          "bundleName": "CurseForge.app",
+          "bundleIdentifier": "com.overwolf.curseforge"
+        }
+      ]
+    },
+    "calendr": {
+      "caskVersion": "1.25.3",
+      "sourceURL": "https://github.com/pakerwreah/Calendr/releases/download/v1.25.3/Calendr.zip",
+      "artifactSHA256": "c88c9c8581998b4e2b5d01b841c60c348ef536b3b1d55094c1ab25a34a1e340c",
+      "apps": [
+        {
+          "bundleName": "Calendr.app",
+          "bundleIdentifier": "br.paker.Calendr"
+        }
+      ]
+    },
+    "thelowtechguys-cling": {
+      "caskVersion": "2.7.3",
+      "sourceURL": "https://files.lowtechguys.com/releases/Cling-2.7.3.dmg",
+      "artifactSHA256": "faa2fe121f7a9d84455aeb8c9caf7333455d6b916b434944025f176f640dd365",
+      "apps": [
+        {
+          "bundleName": "Cling.app",
+          "bundleIdentifier": "com.lowtechguys.Cling"
+        }
+      ]
+    },
+    "nimble-commander": {
+      "caskVersion": "1.8.0,4282",
+      "sourceURL": "https://magnumbytes.com/downloads/releases/nimble-commander-1.8.0(4282).dmg",
+      "artifactSHA256": "b827bbed9a9c3243c1a80e07abb2504d55b3e33fcfc3c3e4df62828727553471",
+      "apps": [
+        {
+          "bundleName": "Nimble Commander.app",
+          "bundleIdentifier": "info.filesmanager.Files"
+        }
+      ]
     }
   }
 }
