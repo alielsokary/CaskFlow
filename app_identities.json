@@ -15427,6 +15427,283 @@
           "bundleIdentifier": "co.podzim.boltai-mobile"
         }
       ]
+    },
+    "bose-updater": {
+      "caskVersion": "7.1.13.5404",
+      "sourceURL": "https://downloads.bose.com/ced/boseupdater/mac/BoseUpdater_7.1.13.5404.dmg",
+      "artifactSHA256": "9281944be4a50bc383a691fd630a32da9b3b7aaf0b766f6d590a8a6eccaae9f8",
+      "apps": [
+        {
+          "bundleName": "Bose Updater.app",
+          "bundleIdentifier": "com.bose.BoseUpdater"
+        }
+      ]
+    },
+    "bootstrap-studio": {
+      "caskVersion": "8.0.1",
+      "sourceURL": "https://releases.bootstrapstudio.io/8.0.1/Bootstrap%20Studio%20(arm64).dmg",
+      "artifactSHA256": "7a8fe9122381fb2dbc137dc0d8d34a318645a2e11fb710c3625642911cc5d544",
+      "apps": [
+        {
+          "bundleName": "Bootstrap Studio.app",
+          "bundleIdentifier": "bg.zine.bootstrapstudio"
+        }
+      ]
+    },
+    "browser-actions": {
+      "caskVersion": "2026.1.1,5352",
+      "sourceURL": "https://downloads.actions.work/browser-actions/Browser_Actions_2026.1.1_(5352).dmg",
+      "artifactSHA256": "941da868df6b618b69c42b369eb7bd9d7d3732c6dac687ae9b5ac59bb8c8d48d",
+      "apps": [
+        {
+          "bundleName": "Browser Actions.app",
+          "bundleIdentifier": "co.zottmann.BrowserActions"
+        }
+      ]
+    },
+    "bunch": {
+      "caskVersion": "1.4.19,188",
+      "sourceURL": "https://brettterpstra.com/updates/bunch/Bunch1.4.19188.dmg",
+      "artifactSHA256": "8755ef0fe80d3aca8d39c8a0b300a23ba90682c7fa2eb5ade40f11ed5722063c",
+      "apps": [
+        {
+          "bundleName": "Bunch.app",
+          "bundleIdentifier": "com.brettterpstra.Bunch"
+        }
+      ]
+    },
+    "brightvpn": {
+      "caskVersion": "1.605.415",
+      "sourceURL": "https://brightdata.com/static/BrightVPN-1.605.415.dmg",
+      "artifactSHA256": "797ca04856ae4a281bf91b623b21e7974bfff086c1bea0727313ab7b6799f64c",
+      "apps": [
+        {
+          "bundleName": "BrightVPN.app",
+          "bundleIdentifier": "brightvpn.com"
+        }
+      ]
+    },
+    "box-tools": {
+      "caskVersion": "4.32",
+      "sourceURL": "https://e3.boxcdn.net/box-installers/boxedit/mac/currentrelease/BoxToolsInstaller.dmg",
+      "artifactSHA256": "7bb419fe65b27bce9dec60d2803f82b470cb0a9fe87621700dc760effab1a8a7",
+      "apps": []
+    },
+    "brightness-sync": {
+      "caskVersion": "2.3.2",
+      "sourceURL": "https://github.com/OCJvanDijk/Brightness-Sync/releases/download/v2.3.2/Brightness.Sync.app.zip",
+      "artifactSHA256": "b194bc3d3dbb6f05d855c293497019aa7f90bc8c6f794d0296d50e109470344e",
+      "apps": [
+        {
+          "bundleName": "Brightness Sync.app",
+          "bundleIdentifier": "dev.vandijk.Brightness-Sync"
+        }
+      ]
+    },
+    "browserstacklocal": {
+      "caskVersion": "3.7.8",
+      "sourceURL": "https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.tar.gz",
+      "artifactSHA256": "e340efec9e6d9d238f22405988c0bafbfd5276954f64d7436232a520dcd0d79f",
+      "apps": [
+        {
+          "bundleName": "BrowserStackLocal.app",
+          "bundleIdentifier": "com.browserstack.local"
+        }
+      ]
+    },
+    "boxy-suite": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://boxysuite.s3.amazonaws.com/release/Boxy%20Suite.dmg",
+      "artifactSHA256": "76a1d0c3df05e3a840b556c507b88b1d3a144628040b6e3a0a004695a22a9e5a",
+      "apps": [
+        {
+          "bundleName": "Boxy for Gmail.app",
+          "bundleIdentifier": "com.boxysuite.gmail"
+        },
+        {
+          "bundleName": "Boxy for Calendar.app",
+          "bundleIdentifier": "com.boxysuite.calendar"
+        },
+        {
+          "bundleName": "Boxy for Keep.app",
+          "bundleIdentifier": "com.boxysuite.keep"
+        },
+        {
+          "bundleName": "Boxy for Contacts.app",
+          "bundleIdentifier": "com.boxysuite.contacts"
+        }
+      ]
+    },
+    "boosteroid": {
+      "caskVersion": "1.10.23",
+      "sourceURL": "https://boosteroid.com/macos_ARM/installer/boosteroid-install-arm64.dmg",
+      "artifactSHA256": "21512947d65e26e2c223b603fbf12de993e2604e251c91744fdb804ee04a2d66",
+      "apps": [
+        {
+          "bundleName": "Boosteroid.app",
+          "bundleIdentifier": "com.boosteroid.macclient"
+        }
+      ]
+    },
+    "boom-3d": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://dfvk972795zr9.cloudfront.net/Boom3Dmac/webstore/Boom3D.dmg",
+      "artifactSHA256": "bfec3a78aa7e975b8c61333b3f869088b200af5eee2c7adc765a5bc1f3ad3ad4",
+      "apps": [
+        {
+          "bundleName": "Boom 3D.app",
+          "bundleIdentifier": "com.globaldelight.Boom3D"
+        }
+      ]
+    },
+    "buildsettingextractor": {
+      "caskVersion": "1.4.8",
+      "sourceURL": "https://github.com/dempseyatgithub/BuildSettingExtractor/releases/download/v1.4.8/BuildSettingExtractor_1.4.8.dmg",
+      "artifactSHA256": "ae7d0c66c830a18d3f6483b102dc2c8eec302e05d3454dc2d526a01b95a91cd0",
+      "apps": [
+        {
+          "bundleName": "BuildSettingExtractor.app",
+          "bundleIdentifier": "com.tapas-software.buildsettingextractor"
+        }
+      ]
+    },
+    "breitbandmessung": {
+      "caskVersion": "3.12.1",
+      "sourceURL": "https://download.breitbandmessung.de/bbm/Breitbandmessung-3.12.1-mac.dmg",
+      "artifactSHA256": "f33cec43ceae7577f835e4d8af182b6f6f0de70c11698ac002d6791ffd53e70e",
+      "apps": [
+        {
+          "bundleName": "Breitbandmessung.app",
+          "bundleIdentifier": "com.zafaco.breitbandmessung"
+        }
+      ]
+    },
+    "brilliant": {
+      "caskVersion": "0.1.0-beta.81",
+      "sourceURL": "https://api.brilliant.design/v1/download/macos/0.1.0-beta.81",
+      "artifactSHA256": "f16b9325519c5823c03634afe7ef27a5062cfa59f49af88feeb1f8935a613f4b",
+      "apps": [
+        {
+          "bundleName": "brilliant.app",
+          "bundleIdentifier": "design.brilliant"
+        }
+      ]
+    },
+    "btcpayserver-vault": {
+      "caskVersion": "3.0.1",
+      "sourceURL": "https://github.com/btcpayserver/BTCPayServer.Vault/releases/download/Vault%2Fv3.0.1/BTCPayServerVault-osx-arm64-3.0.1.dmg",
+      "artifactSHA256": "a5349bf725938f38b8ede8204e253ce1b2b97385005207d485d277c9138dc4fd",
+      "apps": [
+        {
+          "bundleName": "BTCPayServer Vault.app",
+          "bundleIdentifier": "org.btcpayserver.vault"
+        }
+      ]
+    },
+    "bugdom2": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/jorio/Bugdom2/releases/download/v4.0.0/Bugdom2-4.0.0-mac.dmg",
+      "artifactSHA256": "c962aa3f135d829c2d4409a757480aebac0d1d6dd3fadfcf578503f85445175f",
+      "apps": [
+        {
+          "bundleName": "Bugdom 2.app",
+          "bundleIdentifier": "io.jor.bugdom2"
+        }
+      ]
+    },
+    "brainfm": {
+      "caskVersion": "0.0.309",
+      "sourceURL": "https://download.brain.fm/darwin/arm64/Brain.fm-0.0.309-arm64.dmg",
+      "artifactSHA256": "c421818a5ce9629fbcb5b323ec2ca6b970cec0f28a0db7f5393086a855808b62",
+      "apps": [
+        {
+          "bundleName": "Brain.fm.app",
+          "bundleIdentifier": "com.electron.brain.fm"
+        }
+      ]
+    },
+    "boss": {
+      "caskVersion": "9.5.21",
+      "sourceURL": "https://github.com/risa-labs-inc/BOSS-Releases/releases/download/v9.5.21/BOSS-9.5.21-Universal.dmg",
+      "artifactSHA256": "fb40095b835f9c81eb53ab81ac684b3993a1a2a55017d77c43e419c92552304f",
+      "apps": [
+        {
+          "bundleName": "BOSS.app",
+          "bundleIdentifier": "ai.rever.boss"
+        }
+      ]
+    },
+    "brickstore": {
+      "caskVersion": "2026.9.1",
+      "sourceURL": "https://github.com/rgriebl/brickstore/releases/download/v2026.9.1/macOS-BrickStore-2026.9.1.dmg",
+      "artifactSHA256": "f581288a7a20accc28e180377a499d7475e2ed4d9293233d4efe5637935ccb91",
+      "apps": [
+        {
+          "bundleName": "BrickStore.app",
+          "bundleIdentifier": "de.brickforge.brickstore"
+        }
+      ]
+    },
+    "browser-deputy": {
+      "caskVersion": "1.10",
+      "sourceURL": "https://anybox.ltd/browser-deputy/download/browserdeputy-latest.zip",
+      "artifactSHA256": "0a0e1b6d559baea798ae80512ad1cf9e27ac219197c00d2761704a663b4c22af",
+      "apps": [
+        {
+          "bundleName": "Browser Deputy.app",
+          "bundleIdentifier": "ltd.anybox.BrowserDeputy"
+        }
+      ]
+    },
+    "butterkit": {
+      "caskVersion": "2.4.06",
+      "sourceURL": "https://download.butterkit.app/updates/ButterKit-Direct-2.4.06-macOS.zip",
+      "artifactSHA256": "17fdde25c8620c894d00f62230dc30b58934ed44f9bec4e5750cccb936b5426e",
+      "apps": [
+        {
+          "bundleName": "ButterKit.app",
+          "bundleIdentifier": "app.butterkit.direct"
+        }
+      ]
+    },
+    "bria": {
+      "caskVersion": "6.8.8,131080",
+      "sourceURL": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.8_131080.dmg",
+      "artifactSHA256": "bce3749db091916ffc4441ee3e854684b7ff7c01aa7818f443d476bc16572986",
+      "apps": []
+    },
+    "butt": {
+      "caskVersion": "1.47.0",
+      "sourceURL": "https://danielnoethen.de/butt/release/1.47.0/butt-1.47.0.dmg",
+      "artifactSHA256": "09523c292c84a9aa6394173440c64ea70c451c9f9d4bd813e15d870895583f7b",
+      "apps": [
+        {
+          "bundleName": "butt.app",
+          "bundleIdentifier": "de.danielnoethen.butt"
+        }
+      ]
+    },
+    "bugdom": {
+      "caskVersion": "1.3.4",
+      "sourceURL": "https://github.com/jorio/Bugdom/releases/download/1.3.4/Bugdom-1.3.4-mac.dmg",
+      "artifactSHA256": "9797091290e29336e74f8d3692589acd5accc53bccf085e6aeb8636552349644",
+      "apps": [
+        {
+          "bundleName": "Bugdom.app",
+          "bundleIdentifier": "io.jor.bugdom"
+        }
+      ]
+    },
+    "buckets": {
+      "caskVersion": "0.80.0",
+      "sourceURL": "https://github.com/buckets/application/releases/download/v0.80.0/Buckets-arm64-0.80.0.dmg",
+      "artifactSHA256": "2d7ec7a7d5cf1845c9f2c7adfb37426c7886ae10abec4cca7545cc022277b9c9",
+      "apps": [
+        {
+          "bundleName": "Buckets.app",
+          "bundleIdentifier": "com.github.buckets.application"
+        }
+      ]
     }
   }
 }
