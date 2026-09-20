@@ -28477,6 +28477,270 @@
           "bundleIdentifier": "com.runjuu.refine"
         }
       ]
+    },
+    "retrobatch": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://flyingmeat.com/download/Retrobatch-2.4.1.zip",
+      "artifactSHA256": "36d18c815292156351a94d9a22b67c7e342156e9b7411d019e0b4c401dc82de5",
+      "apps": [
+        {
+          "bundleName": "Retrobatch.app",
+          "bundleIdentifier": "com.flyingmeat.Retrobatch"
+        }
+      ]
+    },
+    "riverscript": {
+      "caskVersion": "1.2.5",
+      "sourceURL": "https://downloads.riverscript.com/releases/v1.2.5/riverscript_1.2.5_universal.dmg",
+      "artifactSHA256": "134b5c2054a260638a66fe8545414c9546de7275be69f42e4b71c674ce3bce4c",
+      "apps": [
+        {
+          "bundleName": "RiverScript client.app",
+          "bundleIdentifier": "com.riverscript.desktop"
+        }
+      ]
+    },
+    "reverso": {
+      "caskVersion": "2.16.1,669",
+      "sourceURL": "https://cdn.reverso.net/download/reverso/desktop/macos/distrib/Reverso_2.16.1.669.zip",
+      "artifactSHA256": "4412378fe20249463ee855fdbc3f86ec3cf3dd0f3c182dcd623f317395d9bdee",
+      "apps": [
+        {
+          "bundleName": "Reverso.app",
+          "bundleIdentifier": "com.softissimo.ReversoContext.macosapp"
+        }
+      ]
+    },
+    "rize": {
+      "caskVersion": "3.0.45",
+      "sourceURL": "https://github.com/rize-io/lua/releases/download/v3.0.45/Rize-3.0.45-arm64.dmg",
+      "artifactSHA256": "e632dcf1155811f907a044463a0317be6ed6fcf37ad4ea8392a3d8c5cb5beb42",
+      "apps": [
+        {
+          "bundleName": "Rize.app",
+          "bundleIdentifier": "io.rize"
+        }
+      ]
+    },
+    "ripcord": {
+      "caskVersion": "0.4.29",
+      "sourceURL": "https://cancel.fm/dl/Ripcord_Mac_0.4.29.zip",
+      "artifactSHA256": "bacfb539fac9df2004a926ff57232622e53b668cbdbc6c2201b3ac87b91d2550",
+      "apps": [
+        {
+          "bundleName": "Ripcord.app",
+          "bundleIdentifier": "com.cancelfm.Ripcord"
+        }
+      ]
+    },
+    "reunion": {
+      "caskVersion": "14.0.0,260412unr",
+      "sourceURL": "https://store.leisterpro.com/updates/reunion14/Reunion-14-0-0-260412unr.zip",
+      "artifactSHA256": "149d0de26fa8a9e930c1663dbcaa8e0493c2f0b97f9b23bfe282ae9979ffbb71",
+      "apps": [
+        {
+          "bundleName": "Reunion 14.app",
+          "bundleIdentifier": "com.leisterpro.reunion14"
+        }
+      ]
+    },
+    "roam": {
+      "caskVersion": "231.0.3-beta001",
+      "sourceURL": "https://download.ro.am/Roam/8a86d88cfc9da3551063102e9a4e2a83/latest/darwin/arm64/Roam.dmg",
+      "artifactSHA256": "7f0b0f5b936c24ce76879dcb53c4c6b867d04be3bcc89c0d787bdbb37535fe5e",
+      "apps": [
+        {
+          "bundleName": "Roam.app",
+          "bundleIdentifier": "inc.wonder.roam"
+        }
+      ]
+    },
+    "revolver-office": {
+      "caskVersion": "8.13.0",
+      "sourceURL": "https://download.revolver.info/r8/13/0/mac/revolveroffice8130.dmg",
+      "artifactSHA256": "507532311d2e0826ff1756a5b1cf64a52130dfc3d429d39ff0fb756e03666b41",
+      "apps": [
+        {
+          "bundleName": "Revolver Office.app",
+          "bundleIdentifier": "info.revolver.office"
+        }
+      ]
+    },
+    "ricochet-refresh": {
+      "caskVersion": "3.0.45",
+      "sourceURL": "https://github.com/blueprint-freespeech/ricochet-refresh/releases/download/v3.0.45-release/ricochet-refresh-3.0.45-macos-aarch64.dmg",
+      "artifactSHA256": "a5ef666b2a60718cf00d1823f7fbd09249648de9e983594e2649572f3b197995",
+      "apps": [
+        {
+          "bundleName": "Ricochet Refresh.app",
+          "bundleIdentifier": "net.ricochetrefresh"
+        }
+      ]
+    },
+    "rhino-app": {
+      "caskVersion": "8.35.26251.13002",
+      "sourceURL": "https://files.mcneel.com/rhino/8/mac/releases/rhino_8.35.26251.13002.dmg",
+      "artifactSHA256": "d13dcb084ad356ab03be054e0cac510caed9f50702afcde10059b8bf0e3c805f",
+      "apps": [
+        {
+          "bundleName": "Rhino 8.app",
+          "bundleIdentifier": "com.mcneel.rhinoceros.8"
+        }
+      ]
+    },
+    "rnote": {
+      "caskVersion": "0.14.2+239",
+      "sourceURL": "https://gitlab.com/api/v4/projects/44053427/packages/generic/rnote_macos/0.14.2+239/Rnote-0.14.2+239_arm64.dmg",
+      "artifactSHA256": "6db9e55b9a2c7ca19f4f02f779f930926da289ead4f6086915dc48e70159410b",
+      "apps": [
+        {
+          "bundleName": "Rnote.app",
+          "bundleIdentifier": "net.flxzt.Rnote"
+        }
+      ]
+    },
+    "rightfont": {
+      "caskVersion": "10.2",
+      "sourceURL": "https://rightfontapp.com/update/rightfont.zip",
+      "artifactSHA256": "d854a2adaff4f454e4846934e24bea95176b922a68b0e66bd3a867c7fc86257a",
+      "apps": [
+        {
+          "bundleName": "RightFont.app",
+          "bundleIdentifier": "com.rightfontapp.RightFont5"
+        }
+      ]
+    },
+    "reveal": {
+      "caskVersion": "59",
+      "sourceURL": "https://download.revealapp.com/Reveal.app-59.zip",
+      "artifactSHA256": "2d9dfffe08c90dac77ab5bb44abbbfb3bb912f84556df04510606404651d3841",
+      "apps": [
+        {
+          "bundleName": "Reveal.app",
+          "bundleIdentifier": "com.ittybittyapps.Reveal2"
+        }
+      ]
+    },
+    "rewritebar": {
+      "caskVersion": "2.33.0",
+      "sourceURL": "https://rewritebar.com/download/v2.33.0.zip",
+      "artifactSHA256": "cf7c46b632e49c3e2aa391ef379bd27db375a46f636372c8d488ad9fdfaf1da1",
+      "apps": [
+        {
+          "bundleName": "RewriteBar.app",
+          "bundleIdentifier": "com.m91michel.rewritebar"
+        }
+      ]
+    },
+    "retrospective": {
+      "caskVersion": "7.3.0",
+      "sourceURL": "https://resources.centeractive.com/software/7.3.0/retrospective-7_3_0-macos-jre.dmg",
+      "artifactSHA256": "5c30c1f3baf1fc29b5c7330fb3955b13675ace6ec198edd310d8a3c6cea8fbf0",
+      "apps": [
+        {
+          "bundleName": "Retrospective.app",
+          "bundleIdentifier": "com.retrospective.product"
+        }
+      ]
+    },
+    "ringcentral-classic": {
+      "caskVersion": "20.4.30",
+      "sourceURL": "https://downloads.ringcentral.com/glip/rc/20.4.30/mac/RingCentral%20Classic-20.4.30.dmg",
+      "artifactSHA256": "d3bd1958f80f0ca9df2de574f37f8ed0f954e6b618091cbf07141a2699a739f6",
+      "apps": [
+        {
+          "bundleName": "RingCentral Classic.app",
+          "bundleIdentifier": "com.Glip.Glip"
+        }
+      ]
+    },
+    "riverside-studio": {
+      "caskVersion": "1.32.0",
+      "sourceURL": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
+      "artifactSHA256": "9c981a4795382e6b1fb8e23d30c71af64104e098f080337c2b677bf457ba7eed",
+      "apps": [
+        {
+          "bundleName": "Riverside Studio.app",
+          "bundleIdentifier": "RVS-Riverside.fm-Mac"
+        }
+      ]
+    },
+    "rivet": {
+      "caskVersion": "1.11.3",
+      "sourceURL": "https://github.com/Ironclad/rivet/releases/download/app-v1.11.3/Rivet.dmg",
+      "artifactSHA256": "1bce3186f73bbf7d19701321259e425a89707aa2d82f2c1c8c218b93ac12eba0",
+      "apps": [
+        {
+          "bundleName": "Rivet.app",
+          "bundleIdentifier": "com.ironcladapp.rivet"
+        }
+      ]
+    },
+    "ricoh-theta": {
+      "caskVersion": "3.21.0",
+      "sourceURL": "https://theta360-statics.s3.amazonaws.com/app/viewer/SphericalViewerUpdate/RICOH%20THETA.3.21.0.app.zip",
+      "artifactSHA256": "4c1d58b4bb1087c9129b99ac9cce1ff4cdc0439d1fa269b683b7f8b9e608f7a3",
+      "apps": [
+        {
+          "bundleName": "RICOH THETA.app",
+          "bundleIdentifier": "com.ricoh.thetasphericalviewer"
+        }
+      ]
+    },
+    "ridibooks": {
+      "caskVersion": "0.11.7",
+      "sourceURL": "https://viewer-ota.ridicdn.net/pc_electron/Ridibooks-0.11.7-universal.dmg",
+      "artifactSHA256": "a4a5e72fb33f8d9c47e86383717531a7c81de1f877a8a0ae9c7a0b67b60687fb",
+      "apps": [
+        {
+          "bundleName": "Ridibooks.app",
+          "bundleIdentifier": "com.ridi.books"
+        }
+      ]
+    },
+    "rippling": {
+      "caskVersion": "3.6.53",
+      "sourceURL": "https://public-assets.ripplingcdn.com/global/hardware-public/device_release/electron-installer/3.6.53/macos/Rippling.dmg",
+      "artifactSHA256": "c0ab5768116e9020a8bc4668b32247b892f39be6e6397e81d383053992707716",
+      "apps": [
+        {
+          "bundleName": "Rippling.app",
+          "bundleIdentifier": "com.rippling.client"
+        }
+      ]
+    },
+    "roam-research": {
+      "caskVersion": "0.0.38",
+      "sourceURL": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.38-arm64.dmg",
+      "artifactSHA256": "32b84c73888498760a7bb4504e141ac25e6d7f26d954d62e468642335cde7bf9",
+      "apps": [
+        {
+          "bundleName": "Roam Research.app",
+          "bundleIdentifier": "com.roam-research.desktop-app"
+        }
+      ]
+    },
+    "revisionist": {
+      "caskVersion": "1.10,2025.06",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/06/revisionist110.zip",
+      "artifactSHA256": "e01335c4fb1fa61b03f8d4714e758d206aa439ff260ae2cd1c0c84e307b63c0f",
+      "apps": [
+        {
+          "bundleName": "Revisionist.app",
+          "bundleIdentifier": "co.eclecticlight.Revisionist"
+        }
+      ]
+    },
+    "robofont": {
+      "caskVersion": "4.6,2602231550",
+      "sourceURL": "https://static.typemytype.com/robofont/versionHistory/RoboFont_4.6_2602231550.dmg",
+      "artifactSHA256": "d4f84518091be37aa9e4d7695a4154200bf28a9ca98825eb8ad49cf19e1a44a1",
+      "apps": [
+        {
+          "bundleName": "RoboFont.app",
+          "bundleIdentifier": "com.typemytype.robofont4"
+        }
+      ]
     }
   }
 }
