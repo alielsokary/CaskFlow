@@ -1073,6 +1073,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "nisus-thesaurus": {
+    "status": "failed",
+    "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "nomachine": {
     "status": "review",
     "reason": "installer-badged product icon (manual salvage) -- consider re-shoot",
@@ -1085,10 +1091,16 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "northern-softworks-cache-cleaner": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-09-20"
+  },
   "notchnook": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-09-20"
   },
   "notion-cli": {

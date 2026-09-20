@@ -6602,9 +6602,9 @@
       ]
     },
     "notchi": {
-      "caskVersion": "1.2.6",
-      "sourceURL": "https://github.com/sk-ruban/notchi/releases/download/v1.2.6/Notchi-1.2.6.dmg",
-      "artifactSHA256": "49fb639e65ed0ad3e374b71d2107ab9396266dfb6553e0459067b0c8dde7ac38",
+      "caskVersion": "1.2.7",
+      "sourceURL": "https://github.com/sk-ruban/notchi/releases/download/v1.2.7/Notchi-1.2.7.dmg",
+      "artifactSHA256": "63888131c126aaf9b004467d1a015f9fa5f41345e7362a2207b9c9fbeb6b43d8",
       "apps": [
         {
           "bundleName": "Notchi.app",
@@ -25460,6 +25460,243 @@
         {
           "bundleName": "Navigraph Simlink.app",
           "bundleIdentifier": "Navigraph.NavigraphSimlink"
+        }
+      ]
+    },
+    "now-tv-player": {
+      "caskVersion": "8.15.0",
+      "sourceURL": "https://web.static.nowtv.com/watch/player/nowtv/gb/8.15.0/NOWTVPlayer-Mac.dmg",
+      "artifactSHA256": "dbc52d496e7f17cc0f8d20aef8c2fe447934217c0dec1e750b8058ce1bbbb1b8",
+      "apps": [
+        {
+          "bundleName": "NOW TV Player.app",
+          "bundleIdentifier": "com.electron.now-tv-player"
+        }
+      ]
+    },
+    "nkoda": {
+      "caskVersion": "2.1.22",
+      "sourceURL": "https://nkodaprodappcenterbuilds.blob.core.windows.net/web-download/nkoda-app-mac.zip",
+      "artifactSHA256": "4179b570e2ab89cfac564c958fdb89e7135d26a38e8a949a7cbd852fd78e8d40",
+      "apps": [
+        {
+          "bundleName": "nkoda.app",
+          "bundleIdentifier": "com.nkoda.macapp"
+        }
+      ]
+    },
+    "nitro-pdf-pro": {
+      "caskVersion": "26.0",
+      "sourceURL": "https://downloads.gonitro.com/macos/Nitro%20PDF%20Pro_26.0.dmg",
+      "artifactSHA256": "5f1e9f846bca80a95b0faa43b11f6daf04d40be5301a3a9b8255541a5cf0f0f2",
+      "apps": [
+        {
+          "bundleName": "Nitro PDF Pro.app",
+          "bundleIdentifier": "com.gonitro.NitroPDFPro"
+        }
+      ]
+    },
+    "nuclino": {
+      "caskVersion": "1.6.8",
+      "sourceURL": "https://s3-eu-central-1.amazonaws.com/repository.nuclino.com/mac/Nuclino-1.6.8-universal.dmg",
+      "artifactSHA256": "dcebeef913bdb8b7f1b3badd418b3599069aac9cceb9b31916f88999d814b927",
+      "apps": [
+        {
+          "bundleName": "Nuclino.app",
+          "bundleIdentifier": "com.nuclino.desktop"
+        }
+      ]
+    },
+    "novabench": {
+      "caskVersion": "6.2.0",
+      "sourceURL": "https://novabench.com/files/novabench.dmg",
+      "artifactSHA256": "20c9de056f7d8e120db95db5d4175588f3f777b65c29ef5fb0b7a2005f564461",
+      "apps": [
+        {
+          "bundleName": "Novabench.app",
+          "bundleIdentifier": "com.novabench.client"
+        }
+      ]
+    },
+    "nota": {
+      "caskVersion": "0.41.0",
+      "sourceURL": "https://github.com/notaapp/releases/releases/download/0.41.0/Nota-0.41.0-arm64-mac.zip",
+      "artifactSHA256": "727571f727486376127f0a52b8b460f2bc6ab152e3f2c7377eb7154ef5ec88dd",
+      "apps": [
+        {
+          "bundleName": "Nota.app",
+          "bundleIdentifier": "md.nota.macos"
+        }
+      ]
+    },
+    "notesollama": {
+      "caskVersion": "0.2.6",
+      "sourceURL": "https://smallest.app/notesollama/dist/NotesOllama-0.2.6.zip",
+      "artifactSHA256": "9b2a94e5d366686bee91942bad9967e6e00558024d78438b05efd92f3bee79b1",
+      "apps": [
+        {
+          "bundleName": "NotesOllama.app",
+          "bundleIdentifier": "app.smallest.NotesOllama"
+        }
+      ]
+    },
+    "northern-softworks-cache-cleaner": {
+      "caskVersion": "26.6",
+      "sourceURL": "https://www.northernsoftworks.com/downloads/nscc.dmg",
+      "artifactSHA256": "cf75f8cee3f0cde373b34a915ec86008697af9783a3c1daccdabdbd9dacccd26",
+      "apps": []
+    },
+    "noto": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://www.brunophilipe.com/software/noto/releases/noto-1.2.dmg",
+      "artifactSHA256": "b7fc339543e08374b673e84293bf9819271c8bcc66003ca5c0834bca396949f3",
+      "apps": [
+        {
+          "bundleName": "Noto.app",
+          "bundleIdentifier": "com.brunophilipe.Noto"
+        }
+      ]
+    },
+    "nozbe": {
+      "caskVersion": "2026.16",
+      "sourceURL": "https://builds.nozbe.com/mac/2026.16/Nozbe.app.zip",
+      "artifactSHA256": "53ec983db7126a944c1c5688ee2a01a04fbcdf3911e7d644fff9aafe5db44f21",
+      "apps": [
+        {
+          "bundleName": "Nozbe.app",
+          "bundleIdentifier": "com.nozbe4mac"
+        }
+      ]
+    },
+    "nteract": {
+      "caskVersion": "2.7.6,202608280705",
+      "sourceURL": "https://github.com/nteract/desktop/releases/download/v2.7.6-stable.202608280705/nteract-stable-darwin-arm64.dmg",
+      "artifactSHA256": "355d19221eb5de3e66b2cd872d4ea06836d8bff4058ad49d7f780ab1e2fe29dc",
+      "apps": [
+        {
+          "bundleName": "nteract.app",
+          "bundleIdentifier": "org.nteract.desktop"
+        }
+      ]
+    },
+    "nostalgiapp": {
+      "caskVersion": "1.2.0.17,184",
+      "sourceURL": "https://www.nostalgi.app/downloads/NostalgiApp-1.2.0.17-b184.dmg",
+      "artifactSHA256": "4c117696585ba3337b90995ce9abb123a2cc450c7c38a1a49e09e5d7edfc91ac",
+      "apps": [
+        {
+          "bundleName": "NostalgiApp.app",
+          "bundleIdentifier": "com.nostalgi.app"
+        }
+      ]
+    },
+    "nucleo": {
+      "caskVersion": "4.2.0",
+      "sourceURL": "https://downloads.nucleoapp.com/mac-silicon/Nucleo_4.2.0.zip",
+      "artifactSHA256": "47bb642f3d0491326ae71096be3a5f97f5c3c997bdd2017669a1109bd90c10fd",
+      "apps": [
+        {
+          "bundleName": "Nucleo.app",
+          "bundleIdentifier": "co.ambercreative.nucleo"
+        }
+      ]
+    },
+    "notebooks": {
+      "caskVersion": "4.1.1",
+      "sourceURL": "https://www.notebooksapp.com/Download/macOS/v4/Notebooks.dmg",
+      "artifactSHA256": "bc32a138b06cb8ae5a1c559792a6d65a4d1e5d7e3d7ab0f1421cc76b11a123b6",
+      "apps": [
+        {
+          "bundleName": "Notebooks.app",
+          "bundleIdentifier": "com.aschmid.notebooks2"
+        }
+      ]
+    },
+    "nugget": {
+      "caskVersion": "7.4",
+      "sourceURL": "https://github.com/leminlimez/Nugget/releases/download/v7.4/Nugget_macOS_arm.dmg",
+      "artifactSHA256": "f48118b2e3bf4236560e769746f11e851ad124e9be7007c898eba7119c0630d8",
+      "apps": [
+        {
+          "bundleName": "Nugget.app",
+          "bundleIdentifier": "com.leemin.Nugget"
+        }
+      ]
+    },
+    "notes-better": {
+      "caskVersion": "2.3.1",
+      "sourceURL": "https://github.com/nuttyartist/notes/releases/download/v2.3.1/Notes.2.3.1.dmg",
+      "artifactSHA256": "c89fde7f77137c3d19170191c775b3ce097021d3d74741429d166b7f9686e272",
+      "apps": [
+        {
+          "bundleName": "Notes Better.app",
+          "bundleIdentifier": "io.github.nuttyartist.notes"
+        }
+      ]
+    },
+    "notion-mail": {
+      "caskVersion": "0.0.45",
+      "sourceURL": "https://mail-desktop-release.notion-static.com/Notion%20Mail-0.0.45-arm64.zip",
+      "artifactSHA256": "5fe12f7844399b65424351e647cdf7b25bbee1e01ae1a6ae28bd27509481acce",
+      "apps": [
+        {
+          "bundleName": "Notion Mail.app",
+          "bundleIdentifier": "notion.mail.id"
+        }
+      ]
+    },
+    "novation-components": {
+      "caskVersion": "1.71.0",
+      "sourceURL": "https://components-updates.novationmusic.com/download/version/1.71.0/osx_64?filetype=zip",
+      "artifactSHA256": "c531ae27e03b12705e3d1c8f5d186b0a47b7aae41880539be33d3a2543ebdc49",
+      "apps": [
+        {
+          "bundleName": "Components.app",
+          "bundleIdentifier": "com.novationmusic.circuitcomponents"
+        }
+      ]
+    },
+    "nook": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://github.com/nook-browser/Nook/releases/download/v1.0.7/Nook-v1.0.7.dmg",
+      "artifactSHA256": "b6f9e47ddadcffe54e49fb3d4af86833c6ac478071b12c7b1f411bb56c6de914",
+      "apps": [
+        {
+          "bundleName": "Nook.app",
+          "bundleIdentifier": "io.browsewithnook.nook"
+        }
+      ]
+    },
+    "noun-project": {
+      "caskVersion": "2.3",
+      "sourceURL": "https://nounproject.s3.amazonaws.com/mac/NounProject.dmg",
+      "artifactSHA256": "07b00d337ff6ff12ac6efa059ff789bfb64707adaa8cdf3aca01e4e7e724052a",
+      "apps": [
+        {
+          "bundleName": "Noun Project.app",
+          "bundleIdentifier": "com.thenounproject.Noun-Project"
+        }
+      ]
+    },
+    "nodebox": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/nodebox/nodebox/releases/download/v3.1.0/NodeBox-3.1.0.dmg",
+      "artifactSHA256": "b46328edcd6fdf2f3f6dcbb87995d53b2eb4efeb6afaa36fff55943bd3873b4e",
+      "apps": [
+        {
+          "bundleName": "NodeBox.app",
+          "bundleIdentifier": "be.emrg.nodebox"
+        }
+      ]
+    },
+    "nvidia-nsight-compute": {
+      "caskVersion": "2026.3.1.2",
+      "sourceURL": "https://developer.nvidia.com/downloads/assets/tools/secure/nsight-compute/2026_3_1/nsight_compute-mac-arm64-2026.3.1.2.dmg",
+      "artifactSHA256": "fba5201ddd8a42294dba708e3595c2599d603fb0430e82fcdb2b7cf5680b564b",
+      "apps": [
+        {
+          "bundleName": "NVIDIA Nsight Compute.app",
+          "bundleIdentifier": "com.nvidia.devtools.Rebel"
         }
       ]
     }
