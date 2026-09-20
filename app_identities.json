@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "casks": {
     "stockbit": {
-      "caskVersion": "2.2.0",
-      "sourceURL": "https://sda-release-v2.stockbit.com/release/2.2.0/macos/Stockbit.dmg",
-      "artifactSHA256": "026dc5b525f4a30d90888d4cd584948e15f3c947eaf48ec49110864bb9be1b6d",
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://sda-release-v2.stockbit.com/release/2.4.2/macos/Stockbit.dmg",
+      "artifactSHA256": "15015e452bb4348344db81c362e1d0ed476ae1f00772d60d117dfb76446ad195",
       "apps": [
         {
           "bundleName": "Stockbit.app",
@@ -30714,6 +30714,244 @@
         {
           "bundleName": "stack.app",
           "bundleIdentifier": "nl.transip.stack"
+        }
+      ]
+    },
+    "structuredlogviewer": {
+      "caskVersion": "2.3.246",
+      "sourceURL": "https://github.com/KirillOsenkov/MSBuildStructuredLog/releases/download/v2.3.246/StructuredLogViewer-arm64.dmg",
+      "artifactSHA256": "4a4b08d1bbd706c06bffa960de435251d03ca052b882749e3f17cb03c8d1b765",
+      "apps": [
+        {
+          "bundleName": "StructuredLogViewer.app",
+          "bundleIdentifier": "com.msbuildlog.viewer"
+        }
+      ]
+    },
+    "superlist": {
+      "caskVersion": "1.57.4",
+      "sourceURL": "https://storage.googleapis.com/superlist-appcast/beta/updates/Superlist-1.57.4.zip",
+      "artifactSHA256": "c1445210208c61c203a16cd42077135d784e04aa592f331df9eec09b9459f79e",
+      "apps": [
+        {
+          "bundleName": "Superlist.app",
+          "bundleIdentifier": "com.superlist.superlist"
+        }
+      ]
+    },
+    "suuntodm5": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://dm5.movescount.com/SuuntoDM5.dmg",
+      "artifactSHA256": "955e9a3c3f4f1b8f71ca8fd4009270d40d2b2f3aad03ff293ec851ba8b805b71",
+      "apps": []
+    },
+    "superkey": {
+      "caskVersion": "1.66",
+      "sourceURL": "https://superkey.app/downloads/Superkey1.66.dmg",
+      "artifactSHA256": "cf2e19a2ed79cf2230efa5a6b1baf19da4278e5e3b834c62043fec65790cc918",
+      "apps": [
+        {
+          "bundleName": "Superkey.app",
+          "bundleIdentifier": "com.knollsoft.Superkey"
+        }
+      ]
+    },
+    "subethaedit": {
+      "caskVersion": "5.2.4",
+      "sourceURL": "https://subethaedit.net/Releases/SubEthaEdit-5.2.4.zip",
+      "artifactSHA256": "11f9cce3e33988a912f9c1df085ebd0d58b65fc856dc7806041b70bcd30c5043",
+      "apps": [
+        {
+          "bundleName": "SubEthaEdit.app",
+          "bundleIdentifier": "de.codingmonkeys.SubEthaEdit.MacFULL"
+        }
+      ]
+    },
+    "supernotes": {
+      "caskVersion": "3.2.4",
+      "sourceURL": "https://download.supernotes.app/Supernotes-3.2.4-arm64.dmg",
+      "artifactSHA256": "c58f92f63b5282382e2af9317cc001064662fb14dc2c8343f1e331c0c5677230",
+      "apps": [
+        {
+          "bundleName": "Supernotes.app",
+          "bundleIdentifier": "app.supernotes.SupernotesDesktop"
+        }
+      ]
+    },
+    "stationtv-link": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://www.pixela.co.jp/products/tv_capture/stationtv_link/data/stationtvlink_111.dmg",
+      "artifactSHA256": "0254447381c1c41d797180ab373fb426c5143e8bf226d1c4ee09cfe0d19305d9",
+      "apps": [
+        {
+          "bundleName": "StationTV Link.app",
+          "bundleIdentifier": "jp.co.pixela.StationTV-Link"
+        }
+      ]
+    },
+    "stringz": {
+      "caskVersion": "0.7.5",
+      "sourceURL": "https://github.com/mohakapt/Stringz/releases/download/v0.7.5/Stringz-0.7.5.dmg",
+      "artifactSHA256": "12b4172a1c98802fdadcd22777d6d9574906acdd09184019664fd3aef3edd722",
+      "apps": [
+        {
+          "bundleName": "Stringz.app",
+          "bundleIdentifier": "dev.stringz.stringz"
+        }
+      ]
+    },
+    "sunsama": {
+      "caskVersion": "3.4.11,260714l3e0cmg9r",
+      "sourceURL": "https://download.todesktop.com/2003096gmmnl0g1/Sunsama%203.4.11%20-%20Build%20260714l3e0cmg9r-arm64-mac.zip",
+      "artifactSHA256": "9fc1b6cd27ece812f1d9315dd6e7272222b3730764cac47941deba126b92feb2",
+      "apps": [
+        {
+          "bundleName": "Sunsama.app",
+          "bundleIdentifier": "com.sunsama.native-app"
+        }
+      ]
+    },
+    "support": {
+      "caskVersion": "3.0.5",
+      "sourceURL": "https://github.com/root3nl/SupportApp/releases/download/v3.0.5/Support.3.0.5.zip",
+      "artifactSHA256": "b19fde9f2e86d84a335d6f550dae2cc9b662b4311f9ef0f31eb7ff40610460cf",
+      "apps": [
+        {
+          "bundleName": "Support.app",
+          "bundleIdentifier": "nl.root3.support"
+        }
+      ]
+    },
+    "strongvpn": {
+      "caskVersion": "2.4.5,142651",
+      "sourceURL": "https://static.colomovers.com/mac/StrongVPN_v2.4.5_b142651.zip",
+      "artifactSHA256": "ad782f44f67e6bb442a988b4deb1bdc88c7179568cfa2e92b36f6440909324ef",
+      "apps": [
+        {
+          "bundleName": "StrongVPN.app",
+          "bundleIdentifier": "com.strongvpn.StrongVPN2-Client"
+        }
+      ]
+    },
+    "storyboarder": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/wonderunit/storyboarder/releases/download/v3.0.0/Storyboarder-3.0.0-arm64.dmg",
+      "artifactSHA256": "72fe80f916b6a01b65311f480776af68ec919eff87c33ca4807c9049dcaa8f73",
+      "apps": [
+        {
+          "bundleName": "Storyboarder.app",
+          "bundleIdentifier": "com.wonderunit.storyboarder"
+        }
+      ]
+    },
+    "svp": {
+      "caskVersion": "4.7.321",
+      "sourceURL": "https://www.svp-team.com/files/svp4-mac.4.7.321.dmg",
+      "artifactSHA256": "1925a6bc3f913957fab9a0acd9a3336da2f791bba82c7eb2cd4366c41670b263",
+      "apps": [
+        {
+          "bundleName": "SVP 4 Mac.app",
+          "bundleIdentifier": "com.svp-team.svpmanager"
+        }
+      ]
+    },
+    "status": {
+      "caskVersion": "2.38.2,3ef171",
+      "sourceURL": "https://github.com/status-im/status-desktop/releases/download/2.38.2/StatusIm-Desktop-2.38.2-3ef171-aarch64.dmg",
+      "artifactSHA256": "af412ec0060a6075b485359f9299a72001a55c17dbd5da80e4bfdb60eaa3e64b",
+      "apps": [
+        {
+          "bundleName": "Status.app",
+          "bundleIdentifier": "im.Status.NimStatusClient"
+        }
+      ]
+    },
+    "stratoshark": {
+      "caskVersion": "0.10.3",
+      "sourceURL": "https://www.wireshark.org/download/osx/all-versions/Stratoshark%200.10.3.dmg",
+      "artifactSHA256": "157087e97de2686e2f95936244240e877bbff1110bed2229c366c21fc0a151e0",
+      "apps": [
+        {
+          "bundleName": "Stratoshark.app",
+          "bundleIdentifier": "org.wireshark.Stratoshark"
+        }
+      ]
+    },
+    "supremo": {
+      "caskVersion": "4.12.0.2999",
+      "sourceURL": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
+      "artifactSHA256": "458a2263b9164f7cfddfd7df16379d9a38c3109ac65421dfae54290a1abed61a",
+      "apps": []
+    },
+    "stravu-crystal": {
+      "caskVersion": "0.3.5",
+      "sourceURL": "https://github.com/stravu/crystal/releases/download/v0.3.5/Crystal-0.3.5-macOS-universal.dmg",
+      "artifactSHA256": "5e7df5646f426c19f808fd3e4e4e4288ef00d708c7cf6c51fcb10068490b4d6e",
+      "apps": [
+        {
+          "bundleName": "Crystal.app",
+          "bundleIdentifier": "com.stravu.crystal"
+        }
+      ]
+    },
+    "subsurface": {
+      "caskVersion": "6.0.5707",
+      "sourceURL": "https://subsurface-divelog.org/downloads/Subsurface-6.0.5707-CICD-release.dmg",
+      "artifactSHA256": "9fa5b1c5cc9c8f12f18ed841d3b1c60220ccd8b184d7adf5f3901703eab74901",
+      "apps": [
+        {
+          "bundleName": "Subsurface.app",
+          "bundleIdentifier": "org.subsurface-divelog"
+        }
+      ]
+    },
+    "stremioservice": {
+      "caskVersion": "0.1.22",
+      "sourceURL": "https://github.com/Stremio/stremio-service/releases/download/v0.1.22/StremioService.dmg",
+      "artifactSHA256": "0b2aaf882823d16132bf1d49900d377d22f57741768ffdaa2958a8b6cef9c4f8",
+      "apps": []
+    },
+    "streamlabs": {
+      "caskVersion": "1.21.6",
+      "sourceURL": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop-1.21.6-arm64.dmg",
+      "artifactSHA256": "60be6614cf6e32d065cb04b63e29e54f7af25539604296ca17eb3b7b48d2c569",
+      "apps": [
+        {
+          "bundleName": "Streamlabs Desktop.app",
+          "bundleIdentifier": "com.streamlabs.slobs"
+        }
+      ]
+    },
+    "supaterm": {
+      "caskVersion": "26.4.0",
+      "sourceURL": "https://supaterm.com/download/v26.4.0/supaterm.dmg",
+      "artifactSHA256": "10b02a1b93ee618462dd6dce7664848d6ffb8a37a4acbb68ead7e7c903de07e4",
+      "apps": [
+        {
+          "bundleName": "supaterm.app",
+          "bundleIdentifier": "app.supabit.supaterm"
+        }
+      ]
+    },
+    "stoplight-studio": {
+      "caskVersion": "2.10.0,9587.git-0533c10",
+      "sourceURL": "https://github.com/stoplightio/studio/releases/download/v2.10.0-stable.9587.git-0533c10/stoplight-studio-mac-arm64.dmg",
+      "artifactSHA256": "4e2d57b4cb6471995af03e770bdec2900c8c97ebffc61beb731d47611aba24ee",
+      "apps": [
+        {
+          "bundleName": "Stoplight Studio.app",
+          "bundleIdentifier": "com.stoplight.studio"
+        }
+      ]
+    },
+    "studiolinkstandalone": {
+      "caskVersion": "21.07.0",
+      "sourceURL": "https://download.studio.link/releases/v21.07.0-stable/macos_x86_64/signed/studio-link-standalone-v21.07.0-stable.zip",
+      "artifactSHA256": "13e1e57eb209e451469ec8c973af4ff290306316a7e766a11d8595125abb8608",
+      "apps": [
+        {
+          "bundleName": "StudioLinkStandalone.app",
+          "bundleIdentifier": "link.studio.standalone"
         }
       ]
     }
