@@ -1373,6 +1373,18 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "simpletex": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Operation timed out after 600151 milliseconds with 3538908 out of 97747850 bytes received",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
+  "sirimote": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Operation timed out",
+    "attempts": 1,
+    "updated": "2026-09-20"
+  },
   "slack-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",

@@ -29677,6 +29677,258 @@
           "bundleIdentifier": "com.DigiDNA.Silicon"
         }
       ]
+    },
+    "slashy": {
+      "caskVersion": "1.3.57",
+      "sourceURL": "https://dl.slashy.com/Slashy-1.3.57-universal.dmg",
+      "artifactSHA256": "048c9fd34f772a9f4f17922bf7a0ff6ed3fcfd1d4556c5cf2e237191db8501db",
+      "apps": [
+        {
+          "bundleName": "Slashy.app",
+          "bundleIdentifier": "com.slashy.email"
+        }
+      ]
+    },
+    "sitesucker-pro": {
+      "caskVersion": "6.2.1",
+      "sourceURL": "https://ricks-apps.com/osx/sitesucker/archive/6.x/6.2.x/6.2.1/SiteSucker_Pro_6.2.1.dmg",
+      "artifactSHA256": "01439505e8b15bfe7831f238737a0c95ab8d6553454fcaeeb65dc54ee733bb16",
+      "apps": [
+        {
+          "bundleName": "SiteSucker Pro.app",
+          "bundleIdentifier": "us.sitesucker.mac.sitesucker-pro"
+        }
+      ]
+    },
+    "sip-app": {
+      "caskVersion": "5.1",
+      "sourceURL": "https://sipapp.fra1.digitaloceanspaces.com/updates/v5/sip-5.1.dmg",
+      "artifactSHA256": "349ebb7e9bcf26a883287fd28053f532a6804fab39e229f7c27dc5180791e8b0",
+      "apps": [
+        {
+          "bundleName": "Sip.app",
+          "bundleIdentifier": "io.sipapp.Sip-paddle"
+        }
+      ]
+    },
+    "sipgate-softphone": {
+      "caskVersion": "1.17.19",
+      "sourceURL": "https://sipgate-desktop-app-dev.s3.amazonaws.com/sipgate-softphone-1.17.19.dmg",
+      "artifactSHA256": "2f979c72825f127013191af782cdca9caa40381135343b46ff151691f919833e",
+      "apps": [
+        {
+          "bundleName": "sipgate softphone.app",
+          "bundleIdentifier": "com.sipgate.desktop"
+        }
+      ]
+    },
+    "sim-genie": {
+      "caskVersion": "2026.2,347",
+      "sourceURL": "https://d1b3av25dd6jdq.cloudfront.net/releases/macos/SimGenie.2026.2.347.zip",
+      "artifactSHA256": "65ae1e1f6900b7e298613b15135ff510eca3a1e0b26d479a196576c07b4360e9",
+      "apps": [
+        {
+          "bundleName": "Sim Genie.app",
+          "bundleIdentifier": "com.consumedbycode.simgenie"
+        }
+      ]
+    },
+    "singlecrystal": {
+      "caskVersion": "5.4.0",
+      "sourceURL": "https://crystalmaker.com/downloads/singlecrystal5_mac.zip",
+      "artifactSHA256": "993df09e42e0a1ec5fa13987fe262851320fde670f5b2e2e8ddb791ae7f72590",
+      "apps": [
+        {
+          "bundleName": "SingleCrystal.app",
+          "bundleIdentifier": "com.crystalmaker.singlecrystal.v5"
+        }
+      ]
+    },
+    "simpholders": {
+      "caskVersion": "3.0.12,2366",
+      "sourceURL": "https://simpholders.com/site/assets/files/2366/simpholders_3_0_12.dmg",
+      "artifactSHA256": "0f74633bd6bd9723063af0be550364882b93fbb5cd67bac6e2066083174e5f0d",
+      "apps": [
+        {
+          "bundleName": "SimPholders.app",
+          "bundleIdentifier": "com.kf-interactive.simpholders.SimPholders"
+        }
+      ]
+    },
+    "sim-daltonism": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://littoral.michelf.ca/apps/sim-daltonism/sim-daltonism-2.0.5.zip",
+      "artifactSHA256": "f094aa0fbcd7b9b29c4a0af34f1e6b4789467946d3b1eadcacb1085fccb6da72",
+      "apps": [
+        {
+          "bundleName": "Sim Daltonism.app",
+          "bundleIdentifier": "com.michelf.sim-daltonism"
+        }
+      ]
+    },
+    "sizeup": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://www.irradiatedsoftware.com/downloads/SizeUp_1.7.4.zip",
+      "artifactSHA256": "5f2e9514627c0dc867ece0665fef790f01f3874d7765cc459e3a7676b78a02cf",
+      "apps": [
+        {
+          "bundleName": "SizeUp.app",
+          "bundleIdentifier": "com.irradiatedsoftware.SizeUp"
+        }
+      ]
+    },
+    "sky": {
+      "caskVersion": "0.5.3",
+      "sourceURL": "https://github.com/jcsalterego/Sky.app/releases/download/0.5.3/Sky.0.5.3.dmg",
+      "artifactSHA256": "1cbf4cd430ef7ff9a6aa1d42c4bf491b02b6c84952644eada20c7ac2ddf971d5",
+      "apps": [
+        {
+          "bundleName": "Sky.app",
+          "bundleIdentifier": "jcsalterego.Sky"
+        }
+      ]
+    },
+    "sixtyforce": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://sixtyforce.com/download/sixtyforce_202.zip",
+      "artifactSHA256": "c83a2b3a194e5c62647b2be503ea331cf9e4a29baa5d5626fd63f1f9c7a7eab4",
+      "apps": [
+        {
+          "bundleName": "sixtyforce.app",
+          "bundleIdentifier": "com.Gerrit.sixtyforce"
+        }
+      ]
+    },
+    "simplemind": {
+      "caskVersion": "2.10.0,b3379",
+      "sourceURL": "https://modelmakertools.com/simplemind/SM2Mac_G7Ynr4BfJYzhbHtCCTr/SimpleMindMacOS2100b3379.dmg",
+      "artifactSHA256": "7b2cb2bcfa6741d120e82b76edfd4846a99bd413e04df9cc274fc099d2ec91d1",
+      "apps": [
+        {
+          "bundleName": "SimpleMind Pro.app",
+          "bundleIdentifier": "com.modelmakertools.simplemindosx"
+        }
+      ]
+    },
+    "sipgate": {
+      "caskVersion": "2.44.3",
+      "sourceURL": "https://s3-eu-central-1.amazonaws.com/desktop.download.sipgate.com/sipgate-2.44.3.zip",
+      "artifactSHA256": "da4558577e9270185ef66fcfea3b02bb3a0a965e188d8ccb209e8880f83d1020",
+      "apps": [
+        {
+          "bundleName": "sipgate.app",
+          "bundleIdentifier": "com.sipgate.desktop"
+        }
+      ]
+    },
+    "slidepad": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://f002.backblazeb2.com/file/Slidepad/Slidepad_1_6_2.zip",
+      "artifactSHA256": "6d7e7999bd505e67debb810be67bd88593916dc263d1bdc4992bb59c13041904",
+      "apps": [
+        {
+          "bundleName": "Slidepad.app",
+          "bundleIdentifier": "com.slidepad.slidepad"
+        }
+      ]
+    },
+    "singlebox": {
+      "caskVersion": "67.7.0",
+      "sourceURL": "https://cdn-2.webcatalog.io/singlebox2/Singlebox-67.7.0-universal.dmg",
+      "artifactSHA256": "48134a278c560f903a65ce8231bc2074e542aab676d6af89ffd2cc212b57217f",
+      "apps": [
+        {
+          "bundleName": "Singlebox.app",
+          "bundleIdentifier": "com.webcatalog.singlebox2"
+        }
+      ]
+    },
+    "sina-finance": {
+      "caskVersion": "1.2.3",
+      "sourceURL": "https://file.finance.sina.com.cn/sinafinancedesktop/install/sinafinancedesktop-1.2.3-arm64.dmg",
+      "artifactSHA256": "11a921f6782409fbf0f31943b596b68c7a715494e0b5234dba4b2a4184574854",
+      "apps": [
+        {
+          "bundleName": "新浪财经APP.app",
+          "bundleIdentifier": "com.sina.stock.desktop"
+        }
+      ]
+    },
+    "sizzy": {
+      "caskVersion": "75.5.0",
+      "sourceURL": "https://proxy.sizzy.co/updates/download/mac?arch=arm64",
+      "artifactSHA256": "61f811718008620991e7038f15ed188dc83f9bd7767d85840e68d1bb5d5d47ce",
+      "apps": [
+        {
+          "bundleName": "Sizzy.app",
+          "bundleIdentifier": "com.kitze.sizzy"
+        }
+      ]
+    },
+    "skint": {
+      "caskVersion": "1.09,2025.09",
+      "sourceURL": "https://eclecticlight.co/wp-content/uploads/2025/09/skint109.zip",
+      "artifactSHA256": "5e626d28b51882330e793679c3e442654f99616e26ecfa5b9dfa21d8ed6bd48a",
+      "apps": [
+        {
+          "bundleName": "Skint.app",
+          "bundleIdentifier": "co.eclecticlight.Skint"
+        },
+        {
+          "bundleName": "SkintM.app",
+          "bundleIdentifier": "co.eclecticlight.SkintM"
+        }
+      ]
+    },
+    "simpledemviewer": {
+      "caskVersion": "8.6.1",
+      "sourceURL": "https://jizoh.jp/program/SDVr_861.zip",
+      "artifactSHA256": "cca95230db8e0758a6c6a68b39554b69db3849991974e0d77346dcb085b03834",
+      "apps": [
+        {
+          "bundleName": "SimpleDEMViewer.app",
+          "bundleIdentifier": "jp.jizoh.SDVr8"
+        }
+      ]
+    },
+    "sjmcl": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://github.com/UNIkeEN/SJMCL/releases/download/v1.3.1/SJMCL_1.3.1_macos_aarch64.dmg",
+      "artifactSHA256": "815fff70148c26b113218af9fb88c010f80ea67dc1c506b43943dce835bcaefd",
+      "apps": []
+    },
+    "slab": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/slab/desktop-releases/releases/download/v1.8.0/Slab-1.8.0-darwin-arm64.dmg",
+      "artifactSHA256": "d11ed9ee57487132d098e8d424bba0ccca0c67c13cee4c1a6709174b5ea729a7",
+      "apps": [
+        {
+          "bundleName": "Slab.app",
+          "bundleIdentifier": "com.slab.slab"
+        }
+      ]
+    },
+    "simple-web-server": {
+      "caskVersion": "1.2.17",
+      "sourceURL": "https://github.com/terreng/simple-web-server/releases/download/v1.2.17/Simple-Web-Server-macOS-1.2.17-arm64.dmg",
+      "artifactSHA256": "66f8252715f9942238c6fe850ea02abbc7f741efb2bc4e9f25e7c8ee09590eac",
+      "apps": [
+        {
+          "bundleName": "Simple Web Server.app",
+          "bundleIdentifier": "org.simplewebserver.simplewebserver"
+        }
+      ]
+    },
+    "sleek-app": {
+      "caskVersion": "2.0.29",
+      "sourceURL": "https://github.com/ransome1/sleek/releases/download/v2.0.29/sleek-2.0.29-mac-arm64.dmg",
+      "artifactSHA256": "f4a48c0cb561e974b3047d23b18efdfa423fad6c1b89d48f231bfb44a92c90a9",
+      "apps": [
+        {
+          "bundleName": "sleek.app",
+          "bundleIdentifier": "com.todotxt.sleek"
+        }
+      ]
     }
   }
 }
