@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-20",
-  "totalCasks": 3971,
+  "generatedDate": "2026-09-21",
+  "totalCasks": 3972,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5789,6 +5789,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "gloomberb": {
+      "primary": "financeCrypto",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "gluemotion": {
       "primary": "videoMedia",
       "secondary": []
@@ -7967,10 +7973,6 @@
         "ai",
         "developerTools"
       ]
-    },
-    "lo-rain": {
-      "primary": "utilities",
-      "secondary": []
     },
     "loading": {
       "primary": "utilities",
@@ -12399,6 +12401,12 @@
     "recents": {
       "primary": "productivity",
       "secondary": []
+    },
+    "recordly": {
+      "primary": "videoMedia",
+      "secondary": [
+        "designGraphics"
+      ]
     },
     "rectangle": {
       "primary": "utilities",
