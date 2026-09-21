@@ -27723,6 +27723,13 @@
     "og_desc": "Setup and manage your GL.iNet devices at your fingertips!"
   },
   {
+    "token": "gloomberb",
+    "homepage": "https://gloom.sh/",
+    "title": "Open-Source Finance Terminal for Desktop & TUI | Gloomberb",
+    "meta_desc": "Gloomberb is a free, open-source finance terminal for desktop and TUI with charts, news, filings, portfolios, alerts, and plugins.",
+    "og_desc": "A fast, keyboard-driven market research workspace with desktop and terminal interfaces."
+  },
+  {
     "token": "gluemotion",
     "homepage": "https://neededapps.com/gluemotion/",
     "title": "GlueMotion | NeededApps",
@@ -39474,6 +39481,13 @@
     "title": "Recents - A file launcher designed for Mac",
     "meta_desc": "Recents is a file launcher designed for Mac. It boosts productivity by putting your recent files at your fingertips.",
     "og_desc": "Recents is a file launcher designed for Mac. It boosts productivity by putting your recent files at your fingertips."
+  },
+  {
+    "token": "recordly",
+    "homepage": "https://github.com/webadderallorg/Recordly",
+    "title": "GitHub - webadderallorg/Recordly: Create polished demo videos without editing skills. Mac/Windows/Linux · GitHub",
+    "meta_desc": "Create polished demo videos without editing skills. Mac/Windows/Linux - webadderallorg/Recordly",
+    "og_desc": "Create polished demo videos without editing skills. Mac/Windows/Linux - webadderallorg/Recordly"
   },
   {
     "token": "rectangle",
