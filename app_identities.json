@@ -36615,6 +36615,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "recordly": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/webadderallorg/Recordly/releases/download/v1.4.0/Recordly-arm64.dmg",
+      "artifactSHA256": "520ee1d5570f2342e126306eda84b95e442c844b6f0e84c6e81c208445be8cc4",
+      "apps": [
+        {
+          "bundleName": "Recordly.app",
+          "bundleIdentifier": "dev.recordly.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gloomberb": {
+      "caskVersion": "0.14.1",
+      "sourceURL": "https://github.com/gloom-sh/gloomberb/releases/download/v0.14.1/stable-macos-arm64-Gloomberb.app.zip",
+      "artifactSHA256": "f33010efb95a97123245dc1a33138d3a130b63783f1c0cecb118640f7c77e06e",
+      "apps": [
+        {
+          "bundleName": "Gloomberb.app",
+          "bundleIdentifier": "com.vincelwt.gloomberb"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
