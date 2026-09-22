@@ -47923,6 +47923,13 @@
     "og_desc": "Free video calls and meetings right in your browser. No sign-up required. Join easily from computer or phone. For work, school, and everyday calls."
   },
   {
+    "token": "yap-app",
+    "homepage": "https://frigade.com/yap",
+    "title": "Yap voice dictation for macOS",
+    "meta_desc": "Yap turns speech into text anywhere you can type, entirely on your Mac. No account, no API key, no audio leaving your machine. Free and open source, built by Frigade.",
+    "og_desc": "Yap turns speech into text anywhere you can type, entirely on your Mac. No account, no API key, no audio leaving your machine. Free and open source, built by Frigade."
+  },
+  {
     "token": "yate",
     "homepage": "https://2manyrobots.com/yate/",
     "title": "Yate | 2ManyRobots",
