@@ -36641,6 +36641,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "openclip": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://github.com/ganeshmshetty/openclip/releases/download/v1.6.2/OpenClip-v1.6.2.zip",
+      "artifactSHA256": "883d70308410d2169311d3c71743016d08b0d56290a7df346d0c66555e4f7fb3",
+      "apps": [
+        {
+          "bundleName": "OpenClip.app",
+          "bundleIdentifier": "com.openclip.OpenClip"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "yap-app": {
+      "caskVersion": "0.1.12",
+      "sourceURL": "https://github.com/FrigadeHQ/yap/releases/download/v0.1.12/Yap.dmg",
+      "artifactSHA256": "c600cad9120cbd7ec463d001f002ba3e6cfdf2445577cb957d4166d62824b28e",
+      "apps": [
+        {
+          "bundleName": "Yap.app",
+          "bundleIdentifier": "com.frigade.Yap"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
