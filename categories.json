@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-21",
-  "totalCasks": 3972,
+  "generatedDate": "2026-09-22",
+  "totalCasks": 3973,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -17109,6 +17109,12 @@
     "yandextelemost": {
       "primary": "communication",
       "secondary": []
+    },
+    "yap-app": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "yate": {
       "primary": "audioMusic",
