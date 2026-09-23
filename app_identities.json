@@ -36667,6 +36667,105 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "cline-app": {
+      "caskVersion": "0.0.34",
+      "sourceURL": "https://github.com/cline/cline/releases/download/desktop-v0.0.34/Cline_0.0.34_universal.dmg",
+      "artifactSHA256": "d27298295e0db030bfd9b43b3381325f884bf498ac44031db54f545e7cd57237",
+      "apps": [
+        {
+          "bundleName": "Cline.app",
+          "bundleIdentifier": "bot.cline.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "caldera-amp": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://releases.caldera.homes/music/amp/macos/v1.1.1/CalderaAmp-1.1.1.dmg",
+      "artifactSHA256": "5b1b2d1760c2ba346e87e6d08ca2d63a93aa8a5a8f9315e5e7349024de9adeb8",
+      "apps": [
+        {
+          "bundleName": "Caldera Amp.app",
+          "bundleIdentifier": "com.nextamp.CalderaAmp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ssl-360": {
+      "caskVersion": "2.1.12.72214",
+      "sourceURL": "https://s3.dualstack.eu-west-2.amazonaws.com/zendesk.download.solidstatelogic.com/SSL%20360/SSL_360_v2.1.12.72214.dmg",
+      "artifactSHA256": "f107d1d8f45df087ff0e0ae73f50e4bc0df5e694abf8ab65b017da6936368201",
+      "apps": [
+        {
+          "bundleName": "SSL 360.app",
+          "bundleIdentifier": "com.solidstatelogic.ssl360",
+          "packageIdentifier": "com.sslcontrolroominstaller.pkg",
+          "installedPath": "/Applications/SSL 360.app"
+        },
+        {
+          "bundleName": "SSL 360 Uninstaller.app",
+          "bundleIdentifier": "com.solidstatelogic.SSL-360-Uninstaller",
+          "packageIdentifier": "com.sslcontrolroominstaller.pkg",
+          "installedPath": "/Applications/SSL/SSL 360 Uninstaller.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hol-guard": {
+      "caskVersion": "3.0.97",
+      "sourceURL": "https://hol.org/api/guard/desktop/download?platform=macos&version=3.0.97",
+      "artifactSHA256": "852d0697a9865322053f6f8f0e276c3baf30c6e65051658af474ce3413959a54",
+      "apps": [
+        {
+          "bundleName": "HOL Guard.app",
+          "bundleIdentifier": "org.hol.guard.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "look": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://github.com/kunkka19xx/look/releases/download/v0.7.1/Look-0.7.1-macOS.zip",
+      "artifactSHA256": "dfe0b638227ae9c7b8b817d40ae2b8ed6a75670eaa91ba96b1891b8844b1d2f8",
+      "apps": [
+        {
+          "bundleName": "Look.app",
+          "bundleIdentifier": "noah-code.Look"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deviceshelf": {
+      "caskVersion": "1.9.53",
+      "sourceURL": "https://downloads.deviceshelf.app/DeviceShelf-1.9.53.dmg",
+      "artifactSHA256": "bd7fd7d3ddbbd4b362fe2c76130f72932b6501f343a62bc88ee0925b1931d5fb",
+      "apps": [
+        {
+          "bundleName": "DeviceShelf.app",
+          "bundleIdentifier": "com.wails.DeviceShelf"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "highball": {
+      "caskVersion": "0.9.35",
+      "sourceURL": "https://github.com/gauthierpiarrette/highball/releases/download/v0.9.35/Highball.dmg",
+      "artifactSHA256": "8c6779227f3060e694fad08b76cf6ba5d9e6d67b060b2af08b9377d8c68c8429",
+      "apps": [
+        {
+          "bundleName": "Highball.app",
+          "bundleIdentifier": "app.highball.Highball"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
