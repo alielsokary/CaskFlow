@@ -3548,6 +3548,13 @@
     "og_desc": "A little collection of free utilities for the Mac to make your life easier."
   },
   {
+    "token": "caldera-amp",
+    "homepage": "https://caldera.homes/music/amp/",
+    "title": "Caldera Amp: desktop Plex player",
+    "meta_desc": "Caldera Amp, the desktop Plex music player. Lives in your menu bar / tray, pops out a MilkDrop visualizer window. macOS, Windows, Linux.",
+    "og_desc": ""
+  },
+  {
     "token": "caldigit-docking-utility",
     "homepage": "https://www.caldigit.com/",
     "title": "",
@@ -4494,6 +4501,13 @@
     "title": "ClickUp™ | Maximize productivity • Software, AI, and humans converge",
     "meta_desc": "Our mission is to make the world more productive. To do this, we built the everything app for work - Tasks, Docs, Goals, and Chat.",
     "og_desc": ""
+  },
+  {
+    "token": "cline-app",
+    "homepage": "https://cline.bot/",
+    "title": "Cline - AI Coding, Open Source and Open Choice",
+    "meta_desc": "Open-source AI coding agent with Plan/Act modes, MCP integration, and terminal-first workflows. Trusted by 11M+ developers worldwide.",
+    "og_desc": "Open-source AI coding agent with Plan/Act modes, MCP integration, and terminal-first workflows. Trusted by 11M+ developers worldwide."
   },
   {
     "token": "clion",
@@ -6166,6 +6180,13 @@
     "title": "GitHub - kimar/DeveloperExcuses: A Mac OS X Screensaver which shows quotes from http://developerexcuses.com, inofficial · GitHub",
     "meta_desc": "A Mac OS X Screensaver which shows quotes from http://developerexcuses.com, inofficial - kimar/DeveloperExcuses",
     "og_desc": "A Mac OS X Screensaver which shows quotes from http://developerexcuses.com, inofficial - kimar/DeveloperExcuses"
+  },
+  {
+    "token": "deviceshelf",
+    "homepage": "https://deviceshelf.app/",
+    "title": "Network Scanner & IP Scanner for Wi-Fi and LAN | DeviceShelf",
+    "meta_desc": "Scan your Wi-Fi or LAN and find every device with IP, vendor, name, open ports and risks. Local monitoring included, no account, no telemetry.",
+    "og_desc": "Scan your Wi-Fi or LAN and find every device with IP, vendor, name, open ports and risks. Local monitoring included, no account, no telemetry."
   },
   {
     "token": "devilutionx",
@@ -28672,6 +28693,13 @@
     "og_desc": "Custom Dock settings for different displays"
   },
   {
+    "token": "highball",
+    "homepage": "https://github.com/gauthierpiarrette/highball",
+    "title": "GitHub - gauthierpiarrette/highball: Run Windows games on Apple Silicon - free, open source, with an open compatibility database that tells you what actually works. · GitHub",
+    "meta_desc": "Run Windows games on Apple Silicon - free, open source, with an open compatibility database that tells you what actually works. - gauthierpiarrette/highball",
+    "og_desc": "Run Windows games on Apple Silicon - free, open source, with an open compatibility database that tells you what actually works. - gauthierpiarrette/highball"
+  },
+  {
     "token": "highlight-ai",
     "homepage": "https://highlightai.com/",
     "title": "Highlight AI | The AI That Works Everywhere You Do",
@@ -28703,6 +28731,13 @@
     "token": "hma-vpn",
     "homepage": "https://www.hidemyass.com/index.html",
     "error": "[Errno 54] Connection reset by peer"
+  },
+  {
+    "token": "hol-guard",
+    "homepage": "https://hol.org/guard",
+    "title": "HOL Guard | Security for AI Agents",
+    "meta_desc": "HOL Guard gives you control over risky actions AI agents try to take. On supported integrations, allow, ask, or block actions before they run and keep a record of what happened.",
+    "og_desc": "Control risky AI actions on supported integrations, from commands and tool calls to installs and configuration changes."
   },
   {
     "token": "holavpn",
@@ -31849,6 +31884,13 @@
     "title": "Longplay - Rediscover Your Album Collection",
     "meta_desc": "Longplay is the iOS and visionOS app for music lovers who enjoy listening to full albums but have a hard time finding them in their music library. Rediscover, enjoy and organise your album collection.",
     "og_desc": "Longplay is the iOS and visionOS app for music lovers who enjoy listening to full albums but have a hard time finding them in their music library. Rediscover, enjoy and organise your album collection."
+  },
+  {
+    "token": "look",
+    "homepage": "https://github.com/kunkka19xx/look",
+    "title": "GitHub - kunkka19xx/look: An open-source, cross OS, community-driven launcher. A lightweight alternative to Spotlight and Raycast. Made with ❤️ from Viet Nam 🇻🇳 · GitHub",
+    "meta_desc": "An open-source, cross OS, community-driven launcher. A lightweight alternative to Spotlight and Raycast. Made with ❤️ from Viet Nam 🇻🇳 - kunkka19xx/look",
+    "og_desc": "An open-source, cross OS, community-driven launcher. A lightweight alternative to Spotlight and Raycast. Made with ❤️ from Viet Nam 🇻🇳 - kunkka19xx/look"
   },
   {
     "token": "lookaway",
@@ -36125,6 +36167,13 @@
     "title": "OpenClaw - Personal AI Assistant",
     "meta_desc": "OpenClaw - The AI that actually does things. Your personal assistant on any platform.",
     "og_desc": "OpenClaw - The AI that actually does things. Your personal assistant on any platform."
+  },
+  {
+    "token": "openclip",
+    "homepage": "https://www.getopenclip.app/",
+    "title": "OpenClip - Floating Action Bar for macOS",
+    "meta_desc": "Turn selected text into instant actions on macOS. Copy, calculate, transform text, or run custom scripts from a floating action bar. Free, fast & open source.",
+    "og_desc": "Turn selected text into instant actions on macOS. Copy, calculate, transform text, or run custom scripts from a floating action bar. Free, fast & open source."
   },
   {
     "token": "opencloud",
