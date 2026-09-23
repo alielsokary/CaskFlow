@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-22",
-  "totalCasks": 3973,
+  "generatedDate": "2026-09-23",
+  "totalCasks": 3980,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2057,6 +2057,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "caldera-amp": {
+      "primary": "audioMusic",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "caldigit-docking-utility": {
       "primary": "other",
       "secondary": []
@@ -2639,6 +2645,12 @@
     "clickup": {
       "primary": "productivity",
       "secondary": []
+    },
+    "cline-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "clion": {
       "primary": "developerTools",
@@ -3627,6 +3639,12 @@
     "developerexcuses": {
       "primary": "screensaverWallpaper",
       "secondary": []
+    },
+    "deviceshelf": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
     },
     "devilutionx": {
       "primary": "games",
@@ -6283,6 +6301,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "highball": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "highlight-ai": {
       "primary": "productivity",
       "secondary": [
@@ -6306,6 +6330,13 @@
     "hma-vpn": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "hol-guard": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
     },
     "holavpn": {
       "primary": "securityPrivacy",
@@ -8073,6 +8104,12 @@
     "longplay": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "look": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "lookaway": {
       "primary": "productivity",
@@ -10462,6 +10499,12 @@
       "secondary": [
         "developerTools",
         "ai"
+      ]
+    },
+    "openclip": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
       ]
     },
     "opencloud": {
