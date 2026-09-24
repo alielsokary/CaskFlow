@@ -3382,6 +3382,13 @@
     "og_desc": "Track down the Bully Bee and get your knapsack back!"
   },
   {
+    "token": "buholaunchpad",
+    "homepage": "https://www.drbuho.com/buholaunchpad",
+    "title": "BuhoLaunchpad - Get the Launchpad Back on macOS 27",
+    "meta_desc": "Missing Launchpad on macOS 27? BuhoLaunchpad brings it back, better than ever. Enjoy the classic experience with superior performance, seamless layout import, and powerful new features.",
+    "og_desc": "Missing Launchpad on macOS 27? BuhoLaunchpad brings it back, better than ever. Enjoy the classic experience with superior performance, seamless layout import, and powerful new features."
+  },
+  {
     "token": "buildsettingextractor",
     "homepage": "https://github.com/dempseyatgithub/BuildSettingExtractor",
     "title": "GitHub - dempseyatgithub/BuildSettingExtractor: Extracts the build settings of an Xcode project into xcconfig build configuration files. · GitHub",
@@ -42770,6 +42777,13 @@
     "title": "GitHub - libfuse/sshfs: A network filesystem client to connect to SSH servers · GitHub",
     "meta_desc": "A network filesystem client to connect to SSH servers - libfuse/sshfs",
     "og_desc": "A network filesystem client to connect to SSH servers - libfuse/sshfs"
+  },
+  {
+    "token": "ssl-360",
+    "homepage": "https://www.solidstatelogic.com/products/ssl-360",
+    "title": "SSL 360",
+    "meta_desc": "SSL 360° is the command centre and brains behind UC1 and UF8. SSL 360° allows you acess to the Plug-in Mixer, a place to view and control of your Channel Strips and Bus Compressors from one place. The Plug-in Mixer offers a new and exciting way of interacting with the plug-ins, allowing you to adopt a true console-like approach to mixing in-the-box.\r\n<br>",
+    "og_desc": "SSL 360° is the command centre and brains behind UC1 and UF8. SSL 360° allows you acess to the Plug-in Mixer, a place to view and control of your Channel Strips and Bus Compressors from one place. The Plug-in Mixer offers a new and exciting way of interacting with the plug-ins, allowing you to adopt a true console-like approach to mixing in-the-box.\r\n<br>"
   },
   {
     "token": "ssokit",
