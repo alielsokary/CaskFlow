@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-23",
-  "totalCasks": 3980,
+  "generatedDate": "2026-09-24",
+  "totalCasks": 3982,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1971,6 +1971,12 @@
     "bugdom2": {
       "primary": "games",
       "secondary": []
+    },
+    "buholaunchpad": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "buildsettingextractor": {
       "primary": "developerTools",
@@ -14232,6 +14238,12 @@
       "primary": "utilities",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "ssl-360": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
       ]
     },
     "stability-matrix": {
