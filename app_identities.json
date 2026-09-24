@@ -36766,6 +36766,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "buholaunchpad": {
+      "caskVersion": "1.10.2",
+      "sourceURL": "https://pub-assets1.drbuho.com/buholaunchpad/releases/buholaunchpad.dmg",
+      "artifactSHA256": "0a1440b367f06d853ebb95e79a8fb928debd5c48f1bae60e7f61e24a660c7849",
+      "apps": [
+        {
+          "bundleName": "BuhoLaunchpad.app",
+          "bundleIdentifier": "com.drbuho.BuhoLaunchpad.Launcher"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
