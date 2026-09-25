@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-24",
-  "totalCasks": 3982,
+  "generatedDate": "2026-09-25",
+  "totalCasks": 3985,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -673,6 +673,12 @@
       "primary": "developerTools",
       "secondary": [
         "utilities"
+      ]
+    },
+    "amp-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "ampps": {
@@ -9122,6 +9128,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "mindroom": {
+      "primary": "communication",
+      "secondary": [
+        "ai"
+      ]
+    },
     "mindwtr": {
       "primary": "productivity",
       "secondary": []
@@ -12815,6 +12827,10 @@
     },
     "roaringapps": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "robbietilton-compositor": {
+      "primary": "designGraphics",
       "secondary": []
     },
     "roblox": {

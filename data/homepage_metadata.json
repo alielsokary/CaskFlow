@@ -1109,6 +1109,13 @@
     "og_desc": "Self-publish your macOS apps outside the App Store. Amore handles Sparkle updates, code signing, notarization, and DMG creation."
   },
   {
+    "token": "amp-app",
+    "homepage": "https://ampcode.com/app",
+    "title": "Download Amp",
+    "meta_desc": "Download the Amp coding agent beta apps for Mac, iPhone, and iPad to run threads, orbs, and Puck from any device.",
+    "og_desc": "Get the Amp apps for Mac, iPhone, and iPad."
+  },
+  {
     "token": "ampps",
     "homepage": "https://www.ampps.com/",
     "title": "AMPPS - WAMP, MAMP and LAMP Stack",
@@ -33713,6 +33720,13 @@
     "og_desc": ""
   },
   {
+    "token": "mindroom",
+    "homepage": "https://github.com/mindroom-ai/mindroom",
+    "title": "GitHub - mindroom-ai/mindroom: Your AI is trapped in apps. We set it free - Self-hostable AI stack for multi-user, multi-agent workflows on Matrix. · GitHub",
+    "meta_desc": "Your AI is trapped in apps. We set it free - Self-hostable AI stack for multi-user, multi-agent workflows on Matrix. - mindroom-ai/mindroom",
+    "og_desc": "Your AI is trapped in apps. We set it free - Self-hostable AI stack for multi-user, multi-agent workflows on Matrix. - mindroom-ai/mindroom"
+  },
+  {
     "token": "mindwtr",
     "homepage": "https://github.com/dongdongbh/Mindwtr",
     "title": "GitHub - dongdongbh/Mindwtr: A complete Getting Things Done (GTD) productivity system for desktop and mobile. · GitHub",
@@ -40181,6 +40195,13 @@
     "title": "Compatibility checker Mac app - RoaringApps",
     "meta_desc": "Download the RoaringApps Mac app",
     "og_desc": ""
+  },
+  {
+    "token": "robbietilton-compositor",
+    "homepage": "https://github.com/robbietilton/Compositor",
+    "title": "GitHub - robbietilton/Compositor: The Photoshop alternative for Mac · GitHub",
+    "meta_desc": "The Photoshop alternative for Mac. Contribute to robbietilton/Compositor development by creating an account on GitHub.",
+    "og_desc": "The Photoshop alternative for Mac. Contribute to robbietilton/Compositor development by creating an account on GitHub."
   },
   {
     "token": "roblox",
