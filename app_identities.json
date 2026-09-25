@@ -36779,6 +36779,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "mindroom": {
+      "caskVersion": "2026.9.300",
+      "sourceURL": "https://github.com/mindroom-ai/mindroom/releases/download/v2026.9.300/MindRoom.dmg",
+      "artifactSHA256": "9d21f49671015fe7dabf0e3314b641ffe1887d82efb0afac05b141090a8221a8",
+      "apps": [
+        {
+          "bundleName": "MindRoom.app",
+          "bundleIdentifier": "chat.mindroom.menubar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "robbietilton-compositor": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://github.com/robbietilton/Compositor/releases/download/v1.3/Compositor.dmg",
+      "artifactSHA256": "0fa75b833bb33a32897ef316a335df9053eb7bc3eedb50f5124e5dc8e391f4de",
+      "apps": [
+        {
+          "bundleName": "Compositor.app",
+          "bundleIdentifier": "com.wonderassembly.compositor"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "amp-app": {
+      "caskVersion": "1.0,560",
+      "sourceURL": "https://static.ampcode.com/mac/Amp-1.0-560.dmg",
+      "artifactSHA256": "6f5c06e3268bf66f9eb6224aedeafa9477bac7247a2316ba3febaae05f6aa59d",
+      "apps": [
+        {
+          "bundleName": "Amp.app",
+          "bundleIdentifier": "com.ampcode.amp.macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
