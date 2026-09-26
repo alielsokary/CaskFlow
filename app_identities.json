@@ -36818,6 +36818,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "local-studio": {
+      "caskVersion": "2.16.0",
+      "sourceURL": "https://github.com/sybil-solutions/local-studio/releases/download/v2.16.0/Local-Studio-2.16.0-arm64.dmg",
+      "artifactSHA256": "fa057b06194c7ecece04f96a86ca44e1db34333ed94a06b0624091b937523691",
+      "apps": [
+        {
+          "bundleName": "Local Studio.app",
+          "bundleIdentifier": "org.local.studio.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ssl-download-manager": {
+      "caskVersion": "1.6.10",
+      "sourceURL": "https://softwareupdate.solidstatelogic.com/DownloadManager/appReleases/latest/SSL%20Download%20Manager-1.6.10-universal.dmg",
+      "artifactSHA256": "e56832df5bc61ba642ec24546ecf961522cd603e621225457fbc01141e558417",
+      "apps": [
+        {
+          "bundleName": "SSL Download Manager.app",
+          "bundleIdentifier": "com.solidstatelogic.downloadmanager"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
