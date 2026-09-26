@@ -31748,6 +31748,13 @@
     "og_desc": ""
   },
   {
+    "token": "local-studio",
+    "homepage": "https://localstudio.ai/",
+    "title": "Local Studio",
+    "meta_desc": "One operating surface for controllers, GPUs, models, providers, and local coding agents.",
+    "og_desc": "AI workspace built to help you go local."
+  },
+  {
     "token": "local@beta",
     "homepage": "https://localwp.com/",
     "title": "arrow",
@@ -42805,6 +42812,13 @@
     "title": "SSL 360",
     "meta_desc": "SSL 360° is the command centre and brains behind UC1 and UF8. SSL 360° allows you acess to the Plug-in Mixer, a place to view and control of your Channel Strips and Bus Compressors from one place. The Plug-in Mixer offers a new and exciting way of interacting with the plug-ins, allowing you to adopt a true console-like approach to mixing in-the-box.\r\n<br>",
     "og_desc": "SSL 360° is the command centre and brains behind UC1 and UF8. SSL 360° allows you acess to the Plug-in Mixer, a place to view and control of your Channel Strips and Bus Compressors from one place. The Plug-in Mixer offers a new and exciting way of interacting with the plug-ins, allowing you to adopt a true console-like approach to mixing in-the-box.\r\n<br>"
+  },
+  {
+    "token": "ssl-download-manager",
+    "homepage": "https://www.solidstatelogic.com/ssl-download-manager",
+    "title": "Solid State Logic Download Manager",
+    "meta_desc": "The SSL Download Manager application allows you to easily manage all SSL plug-in installations all from one place, on both macOS and Windows. ",
+    "og_desc": "The SSL Download Manager application allows you to easily manage all SSL plug-in installations all from one place, on both macOS and Windows. "
   },
   {
     "token": "ssokit",
