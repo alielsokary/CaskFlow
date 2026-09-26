@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-25",
-  "totalCasks": 3985,
+  "generatedDate": "2026-09-26",
+  "totalCasks": 3987,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8033,6 +8033,13 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "local-studio": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
     "localcan": {
       "primary": "developerTools",
       "secondary": []
@@ -14257,6 +14264,12 @@
       ]
     },
     "ssl-360": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ssl-download-manager": {
       "primary": "audioMusic",
       "secondary": [
         "utilities"
