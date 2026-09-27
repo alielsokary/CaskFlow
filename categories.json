@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-26",
-  "totalCasks": 3987,
+  "generatedDate": "2026-09-27",
+  "totalCasks": 3989,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7178,6 +7178,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "jpki": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "jprofiler": {
       "primary": "developerTools",
       "secondary": []
@@ -7487,6 +7493,12 @@
     "kindavim": {
       "primary": "utilities",
       "secondary": []
+    },
+    "kindle-comic-converter": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
     },
     "kindle-create": {
       "primary": "productivity",
@@ -11489,10 +11501,6 @@
     },
     "plasticity": {
       "primary": "designGraphics",
-      "secondary": []
-    },
-    "plasticscm-cloud-edition": {
-      "primary": "developerTools",
       "secondary": []
     },
     "platinum-notes": {
@@ -15958,6 +15966,10 @@
       "secondary": [
         "games"
       ]
+    },
+    "unity-version-control": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "unity-webgl-support-for-editor": {
       "primary": "developerTools",
