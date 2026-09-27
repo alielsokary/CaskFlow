@@ -68,6 +68,7 @@ def test_identity_release_merges_seed_and_publishes_manifest():
     assert "git fetch --depth=1 origin icons" in release
     assert "            app_identities.json" in release
     assert "data/app_identity_variants.json" in release
+    assert "data/package_product_reviews.json" in release
     assert "--identity-backfill" in _workflow("extract-icons.yml")
 
 

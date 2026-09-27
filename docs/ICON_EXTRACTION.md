@@ -143,6 +143,32 @@ added by identity publication. `metadataUpdatedAt` allows identity-only
 updates when the classification date is unchanged. Variant records require
 review evidence; neither shared names nor identifier prefixes prove a relation.
 
+Reviewed package products live in `data/package_product_reviews.json`. These are
+manual product-association decisions backed by installation observations, not
+claims about which installer originally put an app on a user's Mac. Each review
+retains its run URL, source and recipe revisions/hashes, artifact hash, observation
+hash, and (for a product) the recorded app plist hash. The first review set is
+Apple Silicon only; pilot plist hashes were recorded by the collector, while the
+later census also archived the plist bytes.
+
+The release composer publishes them separately as `packageProductIdentities`:
+a token with one identity requires that exact app, path and installed component
+receipt; an empty list explicitly withholds automatic external detection for a
+reviewed shared suite, ambiguous variant, or package without a product app. An
+absent token is unreviewed and preserves the client's existing behavior. Raw
+provenance is retained in `app_identities.json` under `packageProductReviews`.
+Reviews never become legacy `appIdentities` or `packageAppCandidates`, so older
+clients ignore them. Publication alone does not deploy the CaskHub consumer.
+
+CaskHub must retain managed Homebrew registrations, enforce the same product
+association for detection, version and Open, and reject conflicting reviewed
+matches. App Store copies require an exact product name and bundle ID plus a
+local App Store receipt; package receipts and vendor prefixes are not substitutes.
+Omitting a review revokes it and returns that token to legacy behavior, so removal
+requires a coverage review. Keep unresolved entries instead of silently deleting
+them. Extending the reviewed list requires inspecting the original evidence and
+replaying the existing catalog before release; never promote census output in bulk.
+
 Already-published icons need an explicit identity backfill. Use the workflow's
 `identity_backfill` input, or run locally without publishing:
 
