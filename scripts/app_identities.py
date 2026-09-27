@@ -406,28 +406,34 @@ def _project_identity(token: str, record: dict, reviewed: list[dict]) -> dict:
     return projected
 
 
+def _validate_package_review(token: str, review: dict) -> None:
+    decision = review.get("decision")
+    identities = review.get("products")
+    evidence = review.get("evidence", {})
+    if (decision not in {"product", "shared-components", "ambiguous-variant", "no-product-app"}
+            or not isinstance(identities, list)):
+        raise ValueError(f"Invalid package product review for {token}")
+    if not all((len(identities) == (1 if decision == "product" else 0),
+                review.get("reason"), review.get("reviewedDate"), evidence.get("architecture") == "arm64",
+                re.fullmatch(r"https://github\.com/alielsokary/CaskFlow/actions/runs/[0-9]+", evidence.get("runURL", "")))):
+        raise ValueError(f"Invalid package product review for {token}")
+    for field, length in (("sourceRevision", 40), ("caskRevision", 40), ("caskSourceSHA256", 64),
+                          ("artifactSHA256", 64), ("observationSHA256", 64)):
+        if not re.fullmatch(r"[a-f0-9]{%d}" % length, evidence.get(field, "")):
+            raise ValueError(f"Missing package review provenance for {token}: {field}")
+    if decision == "product" and not re.fullmatch(r"[a-f0-9]{64}", evidence.get("infoSHA256", "")):
+        raise ValueError(f"Incomplete package product evidence for {token}")
+
+
 def project_package_products(reviews: dict) -> dict:
     """Project reviewed product associations, never installer-origin claims."""
     products = {}
     for token, review in reviews.items():
-        decision = review.get("decision")
-        identities = review.get("products")
-        evidence = review.get("evidence", {})
-        if (decision not in {"product", "shared-components", "ambiguous-variant", "no-product-app"}
-                or not isinstance(identities, list) or len(identities) != (1 if decision == "product" else 0)
-                or not review.get("reason") or not review.get("reviewedDate")
-                or evidence.get("architecture") != "arm64"
-                or not re.fullmatch(r"https://github\.com/alielsokary/CaskFlow/actions/runs/[0-9]+", evidence.get("runURL", ""))):
-            raise ValueError(f"Invalid package product review for {token}")
-        for field, length in (("sourceRevision", 40), ("caskRevision", 40), ("caskSourceSHA256", 64),
-                              ("artifactSHA256", 64), ("observationSHA256", 64)):
-            if not re.fullmatch(r"[a-f0-9]{%d}" % length, evidence.get(field, "")):
-                raise ValueError(f"Missing package review provenance for {token}: {field}")
-        projected = [_project_identity(token, identity, []) for identity in identities]
+        _validate_package_review(token, review)
+        projected = [_project_identity(token, identity, []) for identity in review["products"]]
         for identity in projected:
             if (not identity.get("packageIdentifier")
-                    or identity.get("installedPath") != f"/Applications/{identity['bundleName']}"
-                    or not re.fullmatch(r"[a-f0-9]{64}", evidence.get("infoSHA256", ""))):
+                    or identity.get("installedPath") != f"/Applications/{identity['bundleName']}"):
                 raise ValueError(f"Incomplete package product evidence for {token}")
         # Empty is deliberate: reviewed, but no standalone product association.
         products[token] = projected
