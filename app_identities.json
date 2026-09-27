@@ -36844,6 +36844,115 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "jpki": {
+      "caskVersion": "3.9,01-01",
+      "sourceURL": "https://www.jpki.go.jp/client/download/101/JPKIMac_03-09_01-01.dmg",
+      "artifactSHA256": "ee7eddf29860eacd7406c91c5113c32a11e51a0e0a8abda387dd728f43255d80",
+      "apps": [
+        {
+          "bundleName": "JPKI.app",
+          "bundleIdentifier": "jp.go.jpki",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/JPKI.app"
+        },
+        {
+          "bundleName": "JPKIRegistBCA.app",
+          "bundleIdentifier": "JPKIRegistBCA",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIRegistBCA.app"
+        },
+        {
+          "bundleName": "JPKIChangePassword.app",
+          "bundleIdentifier": "jp.go.jpki.JPKIChangePassword",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIChangePassword.app"
+        },
+        {
+          "bundleName": "JPKIUtility.app",
+          "bundleIdentifier": "jp.go.jpki.JPKIUtility",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIUtility.app"
+        },
+        {
+          "bundleName": "JPKIProxySetting.app",
+          "bundleIdentifier": "JPKIProxySetting",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIProxySetting.app"
+        },
+        {
+          "bundleName": "JPKIUninstall.app",
+          "bundleIdentifier": "jp.go.jpki.JPKIUninstall",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIUninstall.app"
+        },
+        {
+          "bundleName": "JPKIChangeAllPassword.app",
+          "bundleIdentifier": "jp.go.jpki.JPKIAllChangePassword",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIChangeAllPassword.app"
+        },
+        {
+          "bundleName": "JPKIUpdateReminderSetting.app",
+          "bundleIdentifier": "jp.go.jpki.JPKIUpdateReminderSetting",
+          "packageIdentifier": "jp.go.jpki",
+          "installedPath": "/Applications/Utilities/JPKI.localized/JPKIUpdateReminderSetting.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kindle-comic-converter": {
+      "caskVersion": "12.0.0",
+      "sourceURL": "https://github.com/ciromattia/kcc/releases/download/v12.0.0/kcc_macos_arm_12.0.0.dmg",
+      "artifactSHA256": "bbfd451af6c215949b5b6e040152e577da2023b3684ace726c6b9e777ad7540b",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Kindle Comic Converter.app",
+          "reason": "unsupported CFBundleIdentifier: 'Kindle Comic Converter'"
+        }
+      ]
+    },
+    "unity-version-control": {
+      "caskVersion": "11.0.16.10371",
+      "sourceURL": "https://d26z97tczqnlef.cloudfront.net/releases/11.0.16.10371/plasticscm/osx/unity-vcs-11.0.16.10371-mac-arm.pkg.zip",
+      "artifactSHA256": "da963db4880910eb520fbf65ec25757d4ca569f02895b69486db392b3eb08f5e",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "PlasticSCM.app",
+          "bundleIdentifier": "com.codicesoftware.plasticscm",
+          "packageIdentifier": "com.codicesoftware.plasticscm.macplastic",
+          "installedPath": "/Applications/PlasticSCM.app"
+        },
+        {
+          "bundleName": "PlasticSCMServer.app",
+          "bundleIdentifier": "com.codicesoftware.plasticscm.server",
+          "packageIdentifier": "com.codicesoftware.plasticscm.server",
+          "installedPath": "/Applications/PlasticSCMServer.app"
+        }
+      ]
     }
   }
 }

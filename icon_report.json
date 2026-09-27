@@ -1595,6 +1595,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "unity-version-control": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-09-27"
+  },
   "unity-webgl-support-for-editor": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
