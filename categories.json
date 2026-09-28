@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-27",
+  "generatedDate": "2026-09-28",
   "totalCasks": 3989,
   "categories": {
     "developerTools": {
@@ -3315,10 +3315,6 @@
       "secondary": [
         "developerTools"
       ]
-    },
-    "dadroit-json-viewer": {
-      "primary": "developerTools",
-      "secondary": []
     },
     "daedalus-mainnet": {
       "primary": "financeCrypto",
@@ -8769,6 +8765,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "mdhero": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "mdrp": {
       "primary": "videoMedia",
       "secondary": []
@@ -11018,7 +11020,7 @@
       "primary": "menuBar",
       "secondary": []
     },
-    "pally": {
+    "pallycompanion": {
       "primary": "productivity",
       "secondary": []
     },
@@ -11493,6 +11495,12 @@
       "secondary": [
         "ai",
         "scienceEducation"
+      ]
+    },
+    "plane": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "planet": {
@@ -13792,10 +13800,6 @@
     },
     "smartreporter-free": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "smartsheet": {
-      "primary": "productivity",
       "secondary": []
     },
     "smartsvn": {

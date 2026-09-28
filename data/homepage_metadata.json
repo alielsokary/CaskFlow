@@ -33008,6 +33008,13 @@
     "og_desc": ""
   },
   {
+    "token": "mdhero",
+    "homepage": "https://mdhero.app/",
+    "title": "MDHero - Free Open Source Markdown Viewer, Under 8MB",
+    "meta_desc": "A free, open-source markdown viewer and lightweight editor. Under 8MB, native, no account. Syntax highlighting, math, diagrams, and LLM paste mode.",
+    "og_desc": "A free, open-source markdown viewer and lightweight editor. Under 8MB, native, no account. Syntax highlighting, math, diagrams, and LLM paste mode."
+  },
+  {
     "token": "mdrp",
     "homepage": "https://www.macdvdripperpro.com/",
     "title": "MDRP: Process DVDs and videos on your Mac - Free Trial!",
@@ -37905,6 +37912,13 @@
     "title": "PLaMo翻訳",
     "meta_desc": "Preferred Networksが開発する日本語生成AI基盤モデルを用いた翻訳サービス。豊富な日本語知識を用いて高品質かつ自然な訳文を生成します。",
     "og_desc": "Preferred Networksが開発する日本語生成AI基盤モデルを用いた翻訳サービス。豊富な日本語知識を用いて高品質かつ自然な訳文を生成します。"
+  },
+  {
+    "token": "plane",
+    "homepage": "https://plane.so/",
+    "title": "AI-native project management | Plane",
+    "meta_desc": "Project management for teams and AI agents. Plan, track, and ship with Projects, Wiki, and AI. Available on cloud, self-hosted, and air-gapped.",
+    "og_desc": "Project management for teams and AI agents. Plan, track, and ship with Projects, Wiki, and AI. Available on cloud, self-hosted, and air-gapped."
   },
   {
     "token": "planet",
