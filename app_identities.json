@@ -36953,6 +36953,45 @@
           "installedPath": "/Applications/PlasticSCMServer.app"
         }
       ]
+    },
+    "mdhero": {
+      "caskVersion": "0.2.10",
+      "sourceURL": "https://github.com/vaibhav-kakde-in/mdhero/releases/download/v0.2.10/MDHero_0.2.10_aarch64.dmg",
+      "artifactSHA256": "ecad9453ef0fb7333408a3d4faf16a438bced2597fa2ceb3e1caa852a7834309",
+      "apps": [
+        {
+          "bundleName": "MDHero.app",
+          "bundleIdentifier": "com.mdhero.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "plane": {
+      "caskVersion": "3.0.1,260806s32btpf34",
+      "sourceURL": "https://download.todesktop.com/260130r75i625/Plane%203.0.1%20-%20Build%20260806s32btpf34-arm64.dmg",
+      "artifactSHA256": "da589a6977e88d17082a66b7f22ea2787909b4660935dc3af5aa63317b6b5e99",
+      "apps": [
+        {
+          "bundleName": "Plane.app",
+          "bundleIdentifier": "com.todesktop.2405288gp0ar3qc"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pallycompanion": {
+      "caskVersion": "0.1.53,276.1",
+      "sourceURL": "https://downloads.pally.com/companion/Pally-0.1.53-276.1.dmg",
+      "artifactSHA256": "812f411f63ae758a94c962b25235aece14cc0f73b7011dedac177c41a0bb668c",
+      "apps": [
+        {
+          "bundleName": "PallyCompanion.app",
+          "bundleIdentifier": "com.pally.companion-kit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
