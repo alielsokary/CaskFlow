@@ -1,29 +1,28 @@
 # Daily classification update
 
-Generated 2026-09-27
+Generated 2026-09-28
 
 ## Summary
 
 - 2 new casks classified
-- 1 classifications require manual review (confidence below 0.75)
+- 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 1 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 0 casks deprecated/disabled in Homebrew (pruned)
+- 2 casks deprecated/disabled in Homebrew (pruned)
 
 ## Renamed (classification migrated)
 
-- `plasticscm-cloud-edition` → `unity-version-control`
+- `pally` → `pallycompanion`
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `jpki` | securityPrivacy | productivity | 0.75 | It's a digital certificate authentication client for Japan's My Number Card, focused on identity verification and digital signatures. |
-| `kindle-comic-converter` | utilities | designGraphics | 0.60 | A file conversion tool for comics/manga targeting ebook readers, best fit as a system/utility converter. |
+| `mdhero` | productivity | developerTools | 0.80 | A lightweight markdown viewer/editor primarily used for writing and note-related tasks, with developer-relevant features like syntax highlighting and diagrams. |
+| `plane` | productivity | ai | 0.85 | Plane is a project management and task tracking tool with AI features. |
 
-## Manual review required
+## Deprecated/disabled (pruned)
 
-| token | primary | secondary | confidence | reason |
-|---|---|---|---|---|
-| `kindle-comic-converter` | utilities | designGraphics | 0.60 | A file conversion tool for comics/manga targeting ebook readers, best fit as a system/utility converter. |
+- `dadroit-json-viewer`
+- `smartsheet`
