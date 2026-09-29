@@ -1313,6 +1313,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "scansnap-home": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-09-29"
+  },
   "seamly2d": {
     "status": "review",
     "reason": "non-exact .app selection: single",

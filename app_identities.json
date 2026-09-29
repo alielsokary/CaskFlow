@@ -36992,6 +36992,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "markpad": {
+      "caskVersion": "2.8.0",
+      "sourceURL": "https://github.com/sftwrdotdev/Markpad/releases/download/v2.8.0/Markpad_2.8.0_universal.dmg",
+      "artifactSHA256": "f424d66a5c04e23c63edaaa793e7f0c9f2d3503e228de7dee4a4cb31e19645c1",
+      "apps": [
+        {
+          "bundleName": "Markpad.app",
+          "bundleIdentifier": "com.alecdotdev.markpad"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dmenu-mac": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://github.com/oNaiPs/dmenu-mac/releases/download/0.8.0/dmenu-mac.zip",
+      "artifactSHA256": "e922338acc509a35882026fb66f6b94679e588cd867fa4eb5729420b6c59a8b0",
+      "apps": [
+        {
+          "bundleName": "dmenu-mac.app",
+          "bundleIdentifier": "com.onaips.dmenu-macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "scansnap-home": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://origin.pfultd.com/downloads/ss/sshinst/m-410/MacSSHOfflineInstaller_4_1_0.dmg",
+      "artifactSHA256": "7b5c5ad3caa7a9f7d370d6be2057fc571319407e34f8159250f06d40bb0f7a82",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "ScanSnap Home.pkg",
+          "reason": "declared package matched 0 files"
+        }
+      ]
     }
   }
 }
