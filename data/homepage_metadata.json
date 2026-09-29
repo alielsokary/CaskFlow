@@ -6560,6 +6560,13 @@
     "og_desc": "Free EXR file viewer. DJV is a free, open-source high bit-depth image sequence player built for professional film, VFX & animation workflows. Use it for frame-accurate dailies, shot review, and A/B comparisons. Available for Linux, macOS, and Windows."
   },
   {
+    "token": "dmenu-mac",
+    "homepage": "https://github.com/oNaiPs/dmenu-mac",
+    "title": "GitHub - oNaiPs/dmenu-mac: Dmenu inspired mac port · GitHub",
+    "meta_desc": "Dmenu inspired mac port. Contribute to oNaiPs/dmenu-mac development by creating an account on GitHub.",
+    "og_desc": "Dmenu inspired mac port. Contribute to oNaiPs/dmenu-mac development by creating an account on GitHub."
+  },
+  {
     "token": "dmg-canvas",
     "homepage": "https://www.araelium.com/dmgcanvas",
     "title": "DMG Canvas - Disk Image Layout and Building for macOS",
@@ -32838,6 +32845,13 @@
     "title": "GitHub - MarkEdit-app/MarkEdit: Just like TextEdit on Mac but dedicated to Markdown. · GitHub",
     "meta_desc": "Just like TextEdit on Mac but dedicated to Markdown. - MarkEdit-app/MarkEdit",
     "og_desc": "Just like TextEdit on Mac but dedicated to Markdown. - MarkEdit-app/MarkEdit"
+  },
+  {
+    "token": "markpad",
+    "homepage": "https://markpad.dev/",
+    "title": "Markpad - Simple Markdown Editor & Notepad Alternative",
+    "meta_desc": "A simple, lightweight markdown viewer, editor, and tabbed notepad alternative for Windows, macOS, and Linux. The perfect simple text editor.",
+    "og_desc": "A simple, lightweight markdown viewer, editor, and tabbed Notepad alternative for Windows, macOS, and Linux. The perfect simple text editor with real-time markdown preview."
   },
   {
     "token": "markright",
