@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-28",
-  "totalCasks": 3989,
+  "generatedDate": "2026-09-29",
+  "totalCasks": 3991,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3864,6 +3864,12 @@
         "videoMedia"
       ]
     },
+    "dmenu-mac": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "dmg-canvas": {
       "primary": "utilities",
       "secondary": []
@@ -5448,10 +5454,6 @@
     },
     "fujifilm-x-raw-studio": {
       "primary": "designGraphics",
-      "secondary": []
-    },
-    "fujitsu-scansnap-home": {
-      "primary": "other",
       "secondary": []
     },
     "funter": {
@@ -8662,6 +8664,12 @@
     "markedit": {
       "primary": "productivity",
       "secondary": []
+    },
+    "markpad": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "markright": {
       "primary": "productivity",
@@ -13102,6 +13110,10 @@
     },
     "sc-menu": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "scansnap-home": {
+      "primary": "other",
       "secondary": []
     },
     "scapple": {
