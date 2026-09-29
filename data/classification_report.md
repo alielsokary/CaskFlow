@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-09-28
+Generated 2026-09-29
 
 ## Summary
 
@@ -9,20 +9,15 @@ Generated 2026-09-28
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 1 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 2 casks deprecated/disabled in Homebrew (pruned)
+- 0 casks deprecated/disabled in Homebrew (pruned)
 
 ## Renamed (classification migrated)
 
-- `pally` → `pallycompanion`
+- `fujitsu-scansnap-home` → `scansnap-home`
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `mdhero` | productivity | developerTools | 0.80 | A lightweight markdown viewer/editor primarily used for writing and note-related tasks, with developer-relevant features like syntax highlighting and diagrams. |
-| `plane` | productivity | ai | 0.85 | Plane is a project management and task tracking tool with AI features. |
-
-## Deprecated/disabled (pruned)
-
-- `dadroit-json-viewer`
-- `smartsheet`
+| `dmenu-mac` | utilities | productivity | 0.80 | A keyboard-only application launcher is a system utility for productivity. |
+| `markpad` | productivity | developerTools | 0.85 | Markpad is a markdown editor/viewer and notepad alternative, fitting productivity writing tools with developer tools overlap. |
