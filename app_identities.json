@@ -37031,6 +37031,32 @@
           "reason": "declared package matched 0 files"
         }
       ]
+    },
+    "manus-cue": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://download.cue.im/Cue-1.0.3-mac-arm64.dmg",
+      "artifactSHA256": "871298be947d95804202931906158aec91c86ef7f074df03f17657b6ab7c4ea9",
+      "apps": [
+        {
+          "bundleName": "Cue.app",
+          "bundleIdentifier": "ai.manus.agents"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deepseek-harness": {
+      "caskVersion": "0.2.0-rc.2",
+      "sourceURL": "https://download.deepseek.com/dsh-desk/bin/mac-arm64/deepseek-harness-0.2.0-rc.2-mac-arm64.zip",
+      "artifactSHA256": "b83daf23e482d96c4c039a2a786daf3a7082e867ea4ad93c51468020defa8a2a",
+      "apps": [
+        {
+          "bundleName": "DeepSeek Harness.app",
+          "bundleIdentifier": "com.deepseek.dsh"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
