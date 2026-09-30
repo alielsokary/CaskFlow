@@ -6056,6 +6056,13 @@
     "og_desc": "Explore our complete AI suite: Translate speech and text, integrate our API, or automate tasks with the new DeepL Agent."
   },
   {
+    "token": "deepseek-harness",
+    "homepage": "https://www.deepseek.com/harness/",
+    "title": "DeepSeek Harness｜共探智能上限",
+    "meta_desc": "使用 DeepSeek Harness 整理文档、分析表格、编写代码和安排定时任务，通过可自由组合的插件拓展 Agent 能力。",
+    "og_desc": "使用 DeepSeek Harness 整理文档、分析表格、编写代码和安排定时任务，通过可自由组合的插件拓展 Agent 能力。"
+  },
+  {
     "token": "deezer",
     "homepage": "https://www.deezer.com/download",
     "title": "Download Deezer free | Get the mobile & desktop music app",
@@ -32775,6 +32782,13 @@
     "title": "Download desktop app - Manus",
     "meta_desc": "With My Computer on desktop, Manus can manage your local files, execute commands, and interact directly with your workspace to automate any workflow.",
     "og_desc": "With My Computer on desktop, Manus can manage your local files, execute commands, and interact directly with your workspace to automate any workflow."
+  },
+  {
+    "token": "manus-cue",
+    "homepage": "https://cue.im/",
+    "title": "Cue - Your Personal Agents, With Their Own Identity",
+    "meta_desc": "Whatever life brings, your personal agents on Cue handle it - each with its own email, phone number, wallet and computer to get real work done.",
+    "og_desc": "Whatever life brings, your personal agents on Cue handle it - each with its own email, phone number, wallet and computer to get real work done."
   },
   {
     "token": "manuskript",

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-29",
-  "totalCasks": 3991,
+  "generatedDate": "2026-09-30",
+  "totalCasks": 3993,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3568,6 +3568,13 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "deepseek-harness": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
       ]
     },
     "deezer": {
@@ -8626,6 +8633,12 @@
       "secondary": []
     },
     "manus": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "manus-cue": {
       "primary": "productivity",
       "secondary": [
         "ai"
