@@ -37135,6 +37135,58 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "subtitle-studio": {
+      "caskVersion": "1.11.8",
+      "sourceURL": "https://assets.subtitlestudio.ai/releases/Subtitle%20Studio-arm64-1.11.8.dmg",
+      "artifactSHA256": "a28328bbee6288a9651cc779903014b696dec98c27f3e3816d74c0038e43446b",
+      "apps": [
+        {
+          "bundleName": "Subtitle Studio.app",
+          "bundleIdentifier": "ai.subtitlestudio.subtitlestudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "swift-im": {
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://swift.im/downloads/releases/swift-4.0.2/Swift-4.0.2.dmg",
+      "artifactSHA256": "7fc8ed6911f91f0888b4b9ec3c26df41325cb4d8c2fc588fbacd35a0be7f772b",
+      "apps": [
+        {
+          "bundleName": "Swift.app",
+          "bundleIdentifier": "im.swift.Swift"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "visual-paradigm": {
+      "caskVersion": "18.1,20260914",
+      "sourceURL": "https://eu8.dl.visual-paradigm.com/visual-paradigm/vp18.1/20260914/Visual_Paradigm_18_1_20260914_OSX_AArch64.dmg",
+      "artifactSHA256": "069b0e7a7b53942c4f4022ac42044080a8fd582c6a613fa34999573d7b0d20ea",
+      "apps": [
+        {
+          "bundleName": "Visual Paradigm.app",
+          "bundleIdentifier": "com.install4j.1106-5897-7327-6550.5"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "visual-paradigm-ce": {
+      "caskVersion": "18.1,20260914",
+      "sourceURL": "https://eu8.dl.visual-paradigm.com/visual-paradigm/vpce18.1/20260914/Visual_Paradigm_CE_18_1_20260914_OSX_AArch64.dmg",
+      "artifactSHA256": "b93c12e0efbb8463c40bb32cae5a5b579bedf6ebdf949fcd86d4a7273dad9933",
+      "apps": [
+        {
+          "bundleName": "Visual Paradigm CE.app",
+          "bundleIdentifier": "com.install4j.1106-5897-7327-6550.5"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
