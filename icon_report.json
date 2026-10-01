@@ -8,8 +8,8 @@
   "abstract": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "acronis-true-image": {
     "status": "no_icon",
@@ -20,8 +20,8 @@
   "algodoo": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "alisma": {
     "status": "no_icon",
@@ -68,8 +68,8 @@
   "apache-directory-studio": {
     "status": "failed",
     "reason": "sha256 mismatch (got 27f943d2618b...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "appgate-sdp-client": {
     "status": "no_icon",
@@ -98,14 +98,14 @@
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "audius": {
     "status": "failed",
-    "reason": "sha256 mismatch (got 8b8003506ed2...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "reason": "sha256 mismatch (got 0f51ba01e4a6...)",
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "autodesk-fusion": {
     "status": "review",
@@ -116,8 +116,8 @@
   "avast-secure-browser": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "avast-security": {
     "status": "curated",
@@ -138,10 +138,10 @@
     "updated": "2026-07-08"
   },
   "backyard-ai": {
-    "status": "failed",
-    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: update.backyard.ai",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 3,
-    "updated": "2026-09-20"
+    "updated": "2026-10-01"
   },
   "baseline": {
     "status": "no_icon",
@@ -217,9 +217,9 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-canon-mg2500-driver-bde4pdvw/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/36/tjdph2t965j8snz9_vkdnw0r0000gn/T/icon-canon-mg2500-driver-hcqdibad/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 6,
+    "updated": "2026-10-01"
   },
   "canon-ufrii-driver": {
     "status": "no_icon",
@@ -236,14 +236,8 @@
   "cardpresso": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4b251d7c469f...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
-  },
-  "chalk": {
-    "status": "failed",
-    "reason": "download failed: curl: (47) Maximum (50) redirects followed",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "chatty": {
     "status": "curated",
@@ -257,12 +251,6 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
-  "chemdoodle": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got dc0914ba279d...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
-  },
   "chordpotion": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -274,12 +262,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "clash-mi": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got ae5b918dd49f...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
   },
   "claude-code": {
     "status": "no_icon",
@@ -296,8 +278,8 @@
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B42E:SSL routines:ST_CONNECT:tlsv1 alert protocol version",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "cmpxat": {
     "status": "no_icon",
@@ -372,10 +354,10 @@
     "updated": "2026-07-08"
   },
   "dadroit-json-viewer": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 3,
-    "updated": "2026-09-20"
+    "updated": "2026-10-01"
   },
   "dante-controller": {
     "status": "no_icon",
@@ -428,8 +410,8 @@
   "direqual": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "diskspace": {
     "status": "curated",
@@ -506,8 +488,8 @@
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "epoccam": {
     "status": "no_icon",
@@ -620,8 +602,8 @@
   "filepane": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "finch": {
     "status": "curated",
@@ -710,8 +692,8 @@
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337...)",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "halion-sonic": {
     "status": "no_icon",
@@ -728,8 +710,8 @@
   "huly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "hy-rpe2": {
     "status": "no_icon",
@@ -752,14 +734,14 @@
   "icab": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5d09f7e8ded7...)",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "icollections": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "ijhttp": {
     "status": "no_icon",
@@ -800,14 +782,14 @@
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "ipremoteutility": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "itunes-producer": {
     "status": "no_icon",
@@ -833,12 +815,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "jiba": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 41310668b371...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
-  },
   "kimi": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -848,8 +824,8 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-10-01"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
