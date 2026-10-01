@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-30",
-  "totalCasks": 3993,
+  "generatedDate": "2026-10-01",
+  "totalCasks": 3992,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9690,12 +9690,6 @@
     "musaicfm": {
       "primary": "screensaverWallpaper",
       "secondary": []
-    },
-    "muse": {
-      "primary": "productivity",
-      "secondary": [
-        "ai"
-      ]
     },
     "muse-code": {
       "primary": "developerTools",
