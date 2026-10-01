@@ -830,8 +830,8 @@
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-10-01"
   },
   "kotlin-lsp": {
     "status": "curated",
@@ -864,10 +864,10 @@
     "updated": "2026-09-19"
   },
   "lo-rain": {
-    "status": "failed",
-    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 3,
-    "updated": "2026-09-20"
+    "updated": "2026-10-01"
   },
   "logi-options+": {
     "status": "review",
@@ -890,20 +890,20 @@
   "lotus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "macdive": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "macfuse": {
     "status": "no_icon",
@@ -918,10 +918,10 @@
     "updated": "2026-07-07"
   },
   "macpar-deluxe": {
-    "status": "failed",
-    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 5,
-    "updated": "2026-09-01"
+    "updated": "2026-10-01"
   },
   "macsvg": {
     "status": "no_icon",
@@ -941,12 +941,6 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
-  "mailmaster": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got f83fec4eb36e...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
-  },
   "mailtrackerblocker": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -956,14 +950,14 @@
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "meteorologist": {
     "status": "failed",
     "reason": "sha256 mismatch (got aa08cb7f2d0d...)",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "micro-sniff": {
     "status": "no_icon",
@@ -986,8 +980,8 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "miniconda": {
     "status": "curated",
@@ -1022,8 +1016,8 @@
   "navigraph-charts": {
     "status": "failed",
     "reason": "sha256 mismatch (got 55d8c67e2a88...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "nessus": {
     "status": "no_icon",
@@ -1040,8 +1034,8 @@
   "nisus-thesaurus": {
     "status": "failed",
     "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "nomachine": {
     "status": "review",
@@ -1062,10 +1056,10 @@
     "updated": "2026-09-20"
   },
   "notchnook": {
-    "status": "failed",
-    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
+    "status": "no_icon",
+    "reason": "deprecated/disabled",
     "attempts": 3,
-    "updated": "2026-09-20"
+    "updated": "2026-10-01"
   },
   "notion-cli": {
     "status": "no_icon",
@@ -1088,8 +1082,8 @@
   "openframeworks": {
     "status": "failed",
     "reason": "sha256 mismatch (got e4a2dd6e7580...)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "attempts": 6,
+    "updated": "2026-10-01"
   },
   "opensc-app": {
     "status": "curated",
@@ -1165,9 +1159,9 @@
   },
   "pdf-converter-master": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75016 ms: Couldn't connect to server",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75014 ms: Couldn't connect to server",
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "photozoom-pro": {
     "status": "no_icon",
@@ -1178,8 +1172,8 @@
   "playonmac": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "podolski": {
     "status": "no_icon",
@@ -1190,8 +1184,8 @@
   "postbox": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "postman-cli": {
     "status": "no_icon",
@@ -1250,8 +1244,8 @@
   "raven-reader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "restic-browser": {
     "status": "no_icon",
@@ -1262,20 +1256,20 @@
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "roaringapps": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "roonbridge": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "salt": {
     "status": "no_icon",
@@ -1303,9 +1297,9 @@
   },
   "securesafe": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/df/djsxfhc17x95674wsm_g8s980000gn/T/icon-securesafe-g_passt6/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
-    "attempts": 5,
-    "updated": "2026-09-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/36/tjdph2t965j8snz9_vkdnw0r0000gn/T/icon-securesafe-b8ofliey/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 6,
+    "updated": "2026-10-01"
   },
   "segger-jlink": {
     "status": "curated",
@@ -1339,21 +1333,15 @@
   },
   "simpletex": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600004 milliseconds with 3719114 out of 97747850 bytes received",
-    "attempts": 3,
-    "updated": "2026-09-20"
+    "reason": "download failed: curl: (28) Operation timed out after 600019 milliseconds with 5406720 out of 97747850 bytes received",
+    "attempts": 4,
+    "updated": "2026-10-01"
   },
   "slack-cli": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "smartgit": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got fe4a8083e257...)",
-    "attempts": 3,
-    "updated": "2026-09-20"
   },
   "sonarqube-cli": {
     "status": "no_icon",
@@ -1363,9 +1351,9 @@
   },
   "sonic-lineup": {
     "status": "failed",
-    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 5563 ms: Couldn't connect to server",
-    "attempts": 6,
-    "updated": "2026-09-20"
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 5168 ms: Couldn't connect to server",
+    "attempts": 7,
+    "updated": "2026-10-01"
   },
   "sonic3air": {
     "status": "failed",

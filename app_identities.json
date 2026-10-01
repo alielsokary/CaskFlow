@@ -37109,6 +37109,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "mailmaster": {
+      "caskVersion": "5.7.3.1521",
+      "sourceURL": "https://res.126.net/dl/client/macmail/dashi/mail5.dmg",
+      "artifactSHA256": "5ff3f1f2e573501fc2d05310b42e3340951628079cf67a37803d2789c96ed4f7",
+      "apps": [
+        {
+          "bundleName": "MailMaster.app",
+          "bundleIdentifier": "com.netease.macmail"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "smartgit": {
+      "caskVersion": "26.1.056",
+      "sourceURL": "https://download.smartgit.dev/smartgit/smartgit-26_1_056-macos-arm64.dmg",
+      "artifactSHA256": "02bbef14d3674706503b0f30e6b6635c068bc4483fa2bcecb0a6c17780fa365b",
+      "apps": [
+        {
+          "bundleName": "SmartGit.app",
+          "bundleIdentifier": "com.syntevo.smartgit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
