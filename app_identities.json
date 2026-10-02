@@ -37187,6 +37187,162 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "ideashell-cn": {
+      "caskVersion": "0.9.21",
+      "sourceURL": "https://static.ideashell.cn/desktop/artifacts/stable/darwin/arm64/0.9.21/ideaShell-darwin-arm64-0.9.21.zip",
+      "artifactSHA256": "06dceb73e424cbdef4d26262ef1620e68b4f01b9c120e0818a6f95d714871e0d",
+      "apps": [
+        {
+          "bundleName": "ideaShell CN.app",
+          "bundleIdentifier": "com.rrd.ideashell"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ideashell": {
+      "caskVersion": "0.9.20",
+      "sourceURL": "https://static.ideashell.com/desktop/artifacts/stable/darwin/arm64/0.9.20/ideaShell-global-darwin-arm64-0.9.20.zip",
+      "artifactSHA256": "91def17ae8ab951a358d4c05c603b3560937d2840eafee3519d9ecf7d28f9483",
+      "apps": [
+        {
+          "bundleName": "ideaShell.app",
+          "bundleIdentifier": "com.rrd.ideashell.global"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hagimimonitordirect": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/Acerola-1/hagimi-monitor/releases/download/v1.7.0/HagimiMonitor.dmg",
+      "artifactSHA256": "da1c70f5edcb7360ce9941dbf649ea22ba8f46bd18aba66b7880f30308adab53",
+      "apps": [
+        {
+          "bundleName": "HagimiMonitorDirect.app",
+          "bundleIdentifier": "com.acerola.hagimi-monitor.direct"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ruffle": {
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://github.com/ruffle-rs/ruffle/releases/download/v0.6.0/ruffle-0.6.0-macos-universal.tar.gz",
+      "artifactSHA256": "83d26cae9d0217cbaeef2095b7e7a104e8cd48aa2dfb327dea07d28f46962805",
+      "apps": [
+        {
+          "bundleName": "Ruffle.app",
+          "bundleIdentifier": "rs.ruffle.ruffle"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wheelwizard": {
+      "caskVersion": "2.5.9",
+      "sourceURL": "https://github.com/TeamWheelWizard/WheelWizard/releases/download/v2.5.9/WheelWizard-macOSarm64.dmg",
+      "artifactSHA256": "155adcda68a8b2453e93410275ae5ae1edc0cbbcb8085ba70d8b2fd425d928e4",
+      "apps": [
+        {
+          "bundleName": "WheelWizard.app",
+          "bundleIdentifier": "ga.gabema.WheelWizard"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cuadriver": {
+      "caskVersion": "0.32.0",
+      "sourceURL": "https://github.com/trycua/cua/releases/download/cua-driver-rs-v0.32.0/cua-driver-rs-0.32.0-darwin-universal.tar.gz",
+      "artifactSHA256": "8ea16a3f533c056c0aaeb86e6dbf7f792c9cf43532f24595427d7ccde6921a3d",
+      "apps": [
+        {
+          "bundleName": "CuaDriver.app",
+          "bundleIdentifier": "com.trycua.driver"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "volumehud": {
+      "caskVersion": "3.3.3",
+      "sourceURL": "https://github.com/dannystewart/volumeHUD/releases/download/v3.3.3/volumeHUD-3.3.3.dmg",
+      "artifactSHA256": "3ec487fb1b9854159477573ffdce4106843d232e6932500b92764bc4a2d38e57",
+      "apps": [
+        {
+          "bundleName": "volumeHUD.app",
+          "bundleIdentifier": "com.dannystewart.volumehud"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "napari": {
+      "caskVersion": "0.9.2",
+      "sourceURL": "https://github.com/napari/napari/releases/download/v0.9.2/napari-0.9.2-macOS-arm64.pkg",
+      "artifactSHA256": "cd303953bfa2c5ddc71a3d7985003c9f29a2700fb0afb176505f79d4d4c82649",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "options",
+          "attributes": {
+            "customLocation": "/"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "cacheclean.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "prepare_installation.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "run_installation.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "shortcuts.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        }
+      ]
     }
   }
 }
