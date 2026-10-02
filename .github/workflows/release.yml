@@ -6,6 +6,7 @@ on:
     paths:
       - categories.json
       - data/app_identity_variants.json
+      - data/package_product_reviews.json
       - app_identities.json
       - scripts/app_identities.py
   # Recently Added is independent of classification. Refresh its mined dates
