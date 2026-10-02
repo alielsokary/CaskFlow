@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-01",
-  "totalCasks": 3992,
+  "generatedDate": "2026-10-02",
+  "totalCasks": 3999,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -856,10 +856,6 @@
       "secondary": []
     },
     "app-cleaner": {
-      "primary": "utilities",
-      "secondary": []
-    },
-    "app-fair": {
       "primary": "utilities",
       "secondary": []
     },
@@ -3250,6 +3246,12 @@
       "primary": "videoMedia",
       "secondary": [
         "utilities"
+      ]
+    },
+    "cuadriver": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "cubicsdr": {
@@ -6141,6 +6143,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "hagimimonitordirect": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "halion-sonic": {
       "primary": "audioMusic",
       "secondary": []
@@ -6598,6 +6606,18 @@
     "idagio": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "ideashell": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ideashell-cn": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "idevice-pair": {
       "primary": "developerTools",
@@ -9823,6 +9843,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "napari": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "naps2": {
       "primary": "productivity",
       "secondary": []
@@ -12986,6 +13012,12 @@
     "rubymine": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "ruffle": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
     },
     "runelite": {
       "primary": "games",
@@ -16470,6 +16502,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "volumehud": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "voodoopad": {
       "primary": "productivity",
       "secondary": []
@@ -16737,6 +16775,12 @@
     "whatsyoursign": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "wheelwizard": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
     },
     "whichspace": {
       "primary": "menuBar",
