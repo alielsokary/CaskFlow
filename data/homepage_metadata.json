@@ -5522,6 +5522,13 @@
     "og_desc": "TiVo Show Downloads for MacOS. Contribute to mackworth/cTiVo development by creating an account on GitHub."
   },
   {
+    "token": "cuadriver",
+    "homepage": "https://cua.ai/cua-driver",
+    "title": "Cua Driver | Cua",
+    "meta_desc": "Cua Driver lets agents control desktop software on macOS, Windows, and Linux through MCP or the CLI.",
+    "og_desc": ""
+  },
+  {
     "token": "cubicsdr",
     "homepage": "https://cubicsdr.com/",
     "error": "HTTP 403"
@@ -6056,6 +6063,13 @@
     "og_desc": "Explore our complete AI suite: Translate speech and text, integrate our API, or automate tasks with the new DeepL Agent."
   },
   {
+    "token": "deepseek-harness",
+    "homepage": "https://www.deepseek.com/harness/",
+    "title": "DeepSeek Harness｜共探智能上限",
+    "meta_desc": "使用 DeepSeek Harness 整理文档、分析表格、编写代码和安排定时任务，通过可自由组合的插件拓展 Agent 能力。",
+    "og_desc": "使用 DeepSeek Harness 整理文档、分析表格、编写代码和安排定时任务，通过可自由组合的插件拓展 Agent 能力。"
+  },
+  {
     "token": "deezer",
     "homepage": "https://www.deezer.com/download",
     "title": "Download Deezer free | Get the mobile & desktop music app",
@@ -6558,6 +6572,13 @@
     "title": "DJV | Free EXR file viewer. DJV is a free, open-source high bit-depth image sequence player built for professional film, VFX & animation workflows. Use it for frame-accurate dailies, shot review, and A/B comparisons. Available for Linux, macOS, and Windows.",
     "meta_desc": "Free EXR file viewer. DJV is a free, open-source high bit-depth image sequence player built for professional film, VFX & animation workflows. Use it for frame-accurate dailies, shot review, and A/B comparisons. Available for Linux, macOS, and Windows.",
     "og_desc": "Free EXR file viewer. DJV is a free, open-source high bit-depth image sequence player built for professional film, VFX & animation workflows. Use it for frame-accurate dailies, shot review, and A/B comparisons. Available for Linux, macOS, and Windows."
+  },
+  {
+    "token": "dmenu-mac",
+    "homepage": "https://github.com/oNaiPs/dmenu-mac",
+    "title": "GitHub - oNaiPs/dmenu-mac: Dmenu inspired mac port · GitHub",
+    "meta_desc": "Dmenu inspired mac port. Contribute to oNaiPs/dmenu-mac development by creating an account on GitHub.",
+    "og_desc": "Dmenu inspired mac port. Contribute to oNaiPs/dmenu-mac development by creating an account on GitHub."
   },
   {
     "token": "dmg-canvas",
@@ -28385,6 +28406,13 @@
     "og_desc": ""
   },
   {
+    "token": "hagimimonitordirect",
+    "homepage": "https://acerola-1.github.io/hagimi-monitor/",
+    "title": "Hagimi Monitor",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "hakuneko",
     "homepage": "https://hakuneko.download/",
     "title": "Manga & Anime Downloader  - HakuNeko",
@@ -29184,6 +29212,20 @@
     "title": "The Ultimate Classical Music Streaming App | IDAGIO",
     "meta_desc": "The ultimate classical music collection in one app ✓Exclusive video concerts ✓Lossless sound quality  ✓Best search ✓Curated by performers and experts ▷ Discover IDAGIO now",
     "og_desc": "The ultimate classical music collection in one app ✓Exclusive video concerts ✓Lossless sound quality  ✓Best search ✓Curated by performers and experts ▷ Discover IDAGIO now"
+  },
+  {
+    "token": "ideashell",
+    "homepage": "https://ideashell.com/",
+    "title": "ideaShell - Your AI Thinking Partner",
+    "meta_desc": "ideaShell remembers for you, and gets things done for you. Capture on your watch, phone or computer - then let AI think it through and turn it into real work.",
+    "og_desc": "You talk. It does the rest."
+  },
+  {
+    "token": "ideashell-cn",
+    "homepage": "https://ideashell.cn/",
+    "title": "闪念贝壳 - 你的 AI 思维伙伴",
+    "meta_desc": "闪念贝壳 ideaShell：帮你记，帮你做。手表、手机、电脑随手记录，AI 帮你思考、直接产出成果。",
+    "og_desc": "帮你记，帮你做。"
   },
   {
     "token": "idevice-pair",
@@ -30287,6 +30329,13 @@
     "og_desc": ""
   },
   {
+    "token": "jpki",
+    "homepage": "https://www.jpki.go.jp/",
+    "title": "公的個人認証サービスとは | 公的個人認証サービス ポータルサイト",
+    "meta_desc": "公的個人認証サービスとは、電子証明書などの安全性が高い技術を利用し、他人によるなりすまし申請や電子データが通信途中で改ざんされることを防ぐための機能を、安い費用で提供するものです。",
+    "og_desc": ""
+  },
+  {
     "token": "jprofiler",
     "homepage": "https://www.ej-technologies.com/jprofiler",
     "title": "ej-technologies - JProfiler",
@@ -30841,6 +30890,13 @@
     "title": "kindaVim",
     "meta_desc": "it's kinda like Vim but not really.",
     "og_desc": ""
+  },
+  {
+    "token": "kindle-comic-converter",
+    "homepage": "https://github.com/ciromattia/kcc",
+    "title": "GitHub - ciromattia/kcc: KCC (a.k.a. Kindle Comic Converter) is a comic and manga converter for ebook readers. · GitHub",
+    "meta_desc": "KCC (a.k.a. Kindle Comic Converter) is a comic and manga converter for ebook readers. - ciromattia/kcc",
+    "og_desc": "KCC (a.k.a. Kindle Comic Converter) is a comic and manga converter for ebook readers. - ciromattia/kcc"
   },
   {
     "token": "kindle-create",
@@ -32756,6 +32812,13 @@
     "og_desc": "With My Computer on desktop, Manus can manage your local files, execute commands, and interact directly with your workspace to automate any workflow."
   },
   {
+    "token": "manus-cue",
+    "homepage": "https://cue.im/",
+    "title": "Cue - Your Personal Agents, With Their Own Identity",
+    "meta_desc": "Whatever life brings, your personal agents on Cue handle it - each with its own email, phone number, wallet and computer to get real work done.",
+    "og_desc": "Whatever life brings, your personal agents on Cue handle it - each with its own email, phone number, wallet and computer to get real work done."
+  },
+  {
     "token": "manuskript",
     "homepage": "https://www.theologeek.ch/manuskript/",
     "title": "Manuskript - Open-source tool for writers",
@@ -32824,6 +32887,13 @@
     "title": "GitHub - MarkEdit-app/MarkEdit: Just like TextEdit on Mac but dedicated to Markdown. · GitHub",
     "meta_desc": "Just like TextEdit on Mac but dedicated to Markdown. - MarkEdit-app/MarkEdit",
     "og_desc": "Just like TextEdit on Mac but dedicated to Markdown. - MarkEdit-app/MarkEdit"
+  },
+  {
+    "token": "markpad",
+    "homepage": "https://markpad.dev/",
+    "title": "Markpad - Simple Markdown Editor & Notepad Alternative",
+    "meta_desc": "A simple, lightweight markdown viewer, editor, and tabbed notepad alternative for Windows, macOS, and Linux. The perfect simple text editor.",
+    "og_desc": "A simple, lightweight markdown viewer, editor, and tabbed Notepad alternative for Windows, macOS, and Linux. The perfect simple text editor with real-time markdown preview."
   },
   {
     "token": "markright",
@@ -32992,6 +33062,13 @@
     "title": "MDB/ACCDB Viewer for Mac",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "mdhero",
+    "homepage": "https://mdhero.app/",
+    "title": "MDHero - Free Open Source Markdown Viewer, Under 8MB",
+    "meta_desc": "A free, open-source markdown viewer and lightweight editor. Under 8MB, native, no account. Syntax highlighting, math, diagrams, and LLM paste mode.",
+    "og_desc": "A free, open-source markdown viewer and lightweight editor. Under 8MB, native, no account. Syntax highlighting, math, diagrams, and LLM paste mode."
   },
   {
     "token": "mdrp",
@@ -34910,6 +34987,13 @@
     "title": "nao | Open Source Analytics Agent Builder",
     "meta_desc": "nao is the analytics agent builder for context engineering. Build, evaluate, and deploy reliable analytics agents with your own data stack.",
     "og_desc": "nao is the analytics agent builder for context engineering. Build, evaluate, and deploy reliable analytics agents with your own data stack."
+  },
+  {
+    "token": "napari",
+    "homepage": "https://napari.org/",
+    "title": "napari - napari",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "naps2",
@@ -37893,6 +37977,13 @@
     "og_desc": "Preferred Networksが開発する日本語生成AI基盤モデルを用いた翻訳サービス。豊富な日本語知識を用いて高品質かつ自然な訳文を生成します。"
   },
   {
+    "token": "plane",
+    "homepage": "https://plane.so/",
+    "title": "AI-native project management | Plane",
+    "meta_desc": "Project management for teams and AI agents. Plan, track, and ship with Projects, Wiki, and AI. Available on cloud, self-hosted, and air-gapped.",
+    "og_desc": "Project management for teams and AI agents. Plan, track, and ship with Projects, Wiki, and AI. Available on cloud, self-hosted, and air-gapped."
+  },
+  {
     "token": "planet",
     "homepage": "https://www.planetable.xyz/",
     "title": "Planet",
@@ -40441,6 +40532,13 @@
     "title": "The Ruby on Rails IDE by JetBrains",
     "meta_desc": "Cross-platform Ruby on Rails IDE with first-class support for Ruby-related technologies. Download now!",
     "og_desc": "Cross-platform Ruby on Rails IDE with first-class support for Ruby-related technologies. Download now!\n"
+  },
+  {
+    "token": "ruffle",
+    "homepage": "https://ruffle.rs/",
+    "title": "Ruffle - Flash Emulator",
+    "meta_desc": "Ruffle is a Flash Player emulator written in Rust. Ruffle targets both desktop and the web using WebAssembly.",
+    "og_desc": ""
   },
   {
     "token": "runelite",
@@ -46725,6 +46823,13 @@
     "og_desc": "Successor of iTunes Volume Control. Contribute to alberti42/Volume-Control development by creating an account on GitHub."
   },
   {
+    "token": "volumehud",
+    "homepage": "https://github.com/dannystewart/volumeHUD",
+    "title": "GitHub - dannystewart/volumeHUD: Bring back the pre-Tahoe macOS volume and brightness HUDs · GitHub",
+    "meta_desc": "Bring back the pre-Tahoe macOS volume and brightness HUDs - dannystewart/volumeHUD",
+    "og_desc": "Bring back the pre-Tahoe macOS volume and brightness HUDs - dannystewart/volumeHUD"
+  },
+  {
     "token": "voodoopad",
     "homepage": "https://www.voodoopad.com/",
     "title": "VoodooPad",
@@ -47192,6 +47297,13 @@
     "title": "Objective-See: What's Your Sign",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "wheelwizard",
+    "homepage": "https://github.com/TeamWheelWizard/WheelWizard",
+    "title": "GitHub - TeamWheelWizard/WheelWizard: WheelWizard, Retro Rewind Launcher · GitHub",
+    "meta_desc": "WheelWizard, Retro Rewind Launcher. Contribute to TeamWheelWizard/WheelWizard development by creating an account on GitHub.",
+    "og_desc": "WheelWizard, Retro Rewind Launcher. Contribute to TeamWheelWizard/WheelWizard development by creating an account on GitHub."
   },
   {
     "token": "whichspace",

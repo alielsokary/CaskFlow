@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-09-26",
-  "totalCasks": 3987,
+  "generatedDate": "2026-10-02",
+  "totalCasks": 3999,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -856,10 +856,6 @@
       "secondary": []
     },
     "app-cleaner": {
-      "primary": "utilities",
-      "secondary": []
-    },
-    "app-fair": {
       "primary": "utilities",
       "secondary": []
     },
@@ -3252,6 +3248,12 @@
         "utilities"
       ]
     },
+    "cuadriver": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "cubicsdr": {
       "primary": "scienceEducation",
       "secondary": []
@@ -3315,10 +3317,6 @@
       "secondary": [
         "developerTools"
       ]
-    },
-    "dadroit-json-viewer": {
-      "primary": "developerTools",
-      "secondary": []
     },
     "daedalus-mainnet": {
       "primary": "financeCrypto",
@@ -3572,6 +3570,13 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "deepseek-harness": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
       ]
     },
     "deezer": {
@@ -3866,6 +3871,12 @@
       "primary": "designGraphics",
       "secondary": [
         "videoMedia"
+      ]
+    },
+    "dmenu-mac": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
       ]
     },
     "dmg-canvas": {
@@ -5454,10 +5465,6 @@
       "primary": "designGraphics",
       "secondary": []
     },
-    "fujitsu-scansnap-home": {
-      "primary": "other",
-      "secondary": []
-    },
     "funter": {
       "primary": "utilities",
       "secondary": []
@@ -6136,6 +6143,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "hagimimonitordirect": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "halion-sonic": {
       "primary": "audioMusic",
       "secondary": []
@@ -6593,6 +6606,18 @@
     "idagio": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "ideashell": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ideashell-cn": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "idevice-pair": {
       "primary": "developerTools",
@@ -7178,6 +7203,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "jpki": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "jprofiler": {
       "primary": "developerTools",
       "secondary": []
@@ -7487,6 +7518,12 @@
     "kindavim": {
       "primary": "utilities",
       "secondary": []
+    },
+    "kindle-comic-converter": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
     },
     "kindle-create": {
       "primary": "productivity",
@@ -8621,6 +8658,12 @@
         "ai"
       ]
     },
+    "manus-cue": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "marathon": {
       "primary": "games",
       "secondary": []
@@ -8654,6 +8697,12 @@
     "markedit": {
       "primary": "productivity",
       "secondary": []
+    },
+    "markpad": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "markright": {
       "primary": "productivity",
@@ -8756,6 +8805,12 @@
     "mdb-accdb-viewer": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "mdhero": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "mdrp": {
       "primary": "videoMedia",
@@ -9656,12 +9711,6 @@
       "primary": "screensaverWallpaper",
       "secondary": []
     },
-    "muse": {
-      "primary": "productivity",
-      "secondary": [
-        "ai"
-      ]
-    },
     "muse-code": {
       "primary": "developerTools",
       "secondary": [
@@ -9793,6 +9842,12 @@
     "nao": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "napari": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "designGraphics"
+      ]
     },
     "naps2": {
       "primary": "productivity",
@@ -11006,7 +11061,7 @@
       "primary": "menuBar",
       "secondary": []
     },
-    "pally": {
+    "pallycompanion": {
       "primary": "productivity",
       "secondary": []
     },
@@ -11483,16 +11538,18 @@
         "scienceEducation"
       ]
     },
+    "plane": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "planet": {
       "primary": "developerTools",
       "secondary": []
     },
     "plasticity": {
       "primary": "designGraphics",
-      "secondary": []
-    },
-    "plasticscm-cloud-edition": {
-      "primary": "developerTools",
       "secondary": []
     },
     "platinum-notes": {
@@ -12956,6 +13013,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "ruffle": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "runelite": {
       "primary": "games",
       "secondary": []
@@ -13086,6 +13149,10 @@
     },
     "sc-menu": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "scansnap-home": {
+      "primary": "other",
       "secondary": []
     },
     "scapple": {
@@ -13784,10 +13851,6 @@
     },
     "smartreporter-free": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "smartsheet": {
-      "primary": "productivity",
       "secondary": []
     },
     "smartsvn": {
@@ -15959,6 +16022,10 @@
         "games"
       ]
     },
+    "unity-version-control": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "unity-webgl-support-for-editor": {
       "primary": "developerTools",
       "secondary": [
@@ -16435,6 +16502,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "volumehud": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "voodoopad": {
       "primary": "productivity",
       "secondary": []
@@ -16702,6 +16775,12 @@
     "whatsyoursign": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "wheelwizard": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
     },
     "whichspace": {
       "primary": "menuBar",
