@@ -5522,6 +5522,13 @@
     "og_desc": "TiVo Show Downloads for MacOS. Contribute to mackworth/cTiVo development by creating an account on GitHub."
   },
   {
+    "token": "cuadriver",
+    "homepage": "https://cua.ai/cua-driver",
+    "title": "Cua Driver | Cua",
+    "meta_desc": "Cua Driver lets agents control desktop software on macOS, Windows, and Linux through MCP or the CLI.",
+    "og_desc": ""
+  },
+  {
     "token": "cubicsdr",
     "homepage": "https://cubicsdr.com/",
     "error": "HTTP 403"
@@ -28399,6 +28406,13 @@
     "og_desc": ""
   },
   {
+    "token": "hagimimonitordirect",
+    "homepage": "https://acerola-1.github.io/hagimi-monitor/",
+    "title": "Hagimi Monitor",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "hakuneko",
     "homepage": "https://hakuneko.download/",
     "title": "Manga & Anime Downloader  - HakuNeko",
@@ -29198,6 +29212,20 @@
     "title": "The Ultimate Classical Music Streaming App | IDAGIO",
     "meta_desc": "The ultimate classical music collection in one app ✓Exclusive video concerts ✓Lossless sound quality  ✓Best search ✓Curated by performers and experts ▷ Discover IDAGIO now",
     "og_desc": "The ultimate classical music collection in one app ✓Exclusive video concerts ✓Lossless sound quality  ✓Best search ✓Curated by performers and experts ▷ Discover IDAGIO now"
+  },
+  {
+    "token": "ideashell",
+    "homepage": "https://ideashell.com/",
+    "title": "ideaShell - Your AI Thinking Partner",
+    "meta_desc": "ideaShell remembers for you, and gets things done for you. Capture on your watch, phone or computer - then let AI think it through and turn it into real work.",
+    "og_desc": "You talk. It does the rest."
+  },
+  {
+    "token": "ideashell-cn",
+    "homepage": "https://ideashell.cn/",
+    "title": "闪念贝壳 - 你的 AI 思维伙伴",
+    "meta_desc": "闪念贝壳 ideaShell：帮你记，帮你做。手表、手机、电脑随手记录，AI 帮你思考、直接产出成果。",
+    "og_desc": "帮你记，帮你做。"
   },
   {
     "token": "idevice-pair",
@@ -34961,6 +34989,13 @@
     "og_desc": "nao is the analytics agent builder for context engineering. Build, evaluate, and deploy reliable analytics agents with your own data stack."
   },
   {
+    "token": "napari",
+    "homepage": "https://napari.org/",
+    "title": "napari - napari",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "naps2",
     "homepage": "https://www.naps2.com/",
     "title": "NAPS2 - Scan documents to PDF and more",
@@ -40497,6 +40532,13 @@
     "title": "The Ruby on Rails IDE by JetBrains",
     "meta_desc": "Cross-platform Ruby on Rails IDE with first-class support for Ruby-related technologies. Download now!",
     "og_desc": "Cross-platform Ruby on Rails IDE with first-class support for Ruby-related technologies. Download now!\n"
+  },
+  {
+    "token": "ruffle",
+    "homepage": "https://ruffle.rs/",
+    "title": "Ruffle - Flash Emulator",
+    "meta_desc": "Ruffle is a Flash Player emulator written in Rust. Ruffle targets both desktop and the web using WebAssembly.",
+    "og_desc": ""
   },
   {
     "token": "runelite",
@@ -46781,6 +46823,13 @@
     "og_desc": "Successor of iTunes Volume Control. Contribute to alberti42/Volume-Control development by creating an account on GitHub."
   },
   {
+    "token": "volumehud",
+    "homepage": "https://github.com/dannystewart/volumeHUD",
+    "title": "GitHub - dannystewart/volumeHUD: Bring back the pre-Tahoe macOS volume and brightness HUDs · GitHub",
+    "meta_desc": "Bring back the pre-Tahoe macOS volume and brightness HUDs - dannystewart/volumeHUD",
+    "og_desc": "Bring back the pre-Tahoe macOS volume and brightness HUDs - dannystewart/volumeHUD"
+  },
+  {
     "token": "voodoopad",
     "homepage": "https://www.voodoopad.com/",
     "title": "VoodooPad",
@@ -47248,6 +47297,13 @@
     "title": "Objective-See: What's Your Sign",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "wheelwizard",
+    "homepage": "https://github.com/TeamWheelWizard/WheelWizard",
+    "title": "GitHub - TeamWheelWizard/WheelWizard: WheelWizard, Retro Rewind Launcher · GitHub",
+    "meta_desc": "WheelWizard, Retro Rewind Launcher. Contribute to TeamWheelWizard/WheelWizard development by creating an account on GitHub.",
+    "og_desc": "WheelWizard, Retro Rewind Launcher. Contribute to TeamWheelWizard/WheelWizard development by creating an account on GitHub."
   },
   {
     "token": "whichspace",
