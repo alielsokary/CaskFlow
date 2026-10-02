@@ -23,6 +23,11 @@ PILOT_TOKENS = (
 )
 RUNNERS = {"arm64": "macos-15", "x86_64": "macos-15-intel"}
 SHA = re.compile(r"[0-9a-f]{40}\Z")
+SETTLE_INTERVAL = 15
+SETTLE_TIMEOUT = 120
+SETTLE_EQUAL_INTERVALS = 3
+CENSUS = json.loads((Path(__file__).resolve().parents[1] / "data/package_observation_census.json").read_text())
+OBSERVATION_TOKENS = frozenset(PILOT_TOKENS).union(token for batch in CENSUS["batches"] for token in batch)
 
 
 def save_evidence(path: Path, value: dict) -> None:
@@ -35,15 +40,49 @@ def digest(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def matrix(tokens: str, architectures: str) -> list[dict]:
-    selected = tokens.split() if tokens.strip() else list(PILOT_TOKENS)
-    if not selected or len(set(selected)) != len(selected) or set(selected) - set(PILOT_TOKENS):
-        raise ValueError("Select distinct tokens from the fixed ten-cask pilot")
+def selected_tokens(tokens: str, census_batch: int) -> list[str]:
+    if not census_batch:
+        return tokens.split() or list(PILOT_TOKENS)
+    if tokens.strip() or not 1 <= census_batch <= len(CENSUS["batches"]):
+        raise ValueError("Select one census batch or explicit tokens, not both")
+    return CENSUS["batches"][census_batch - 1]
+
+
+def matrix(tokens: str, architectures: str, census_batch: int = 0) -> list[dict]:
+    selected = selected_tokens(tokens, census_batch)
+    if (not selected or len(selected) > 25 or len(set(selected)) != len(selected)
+            or set(selected) - OBSERVATION_TOKENS):
+        raise ValueError("Select at most 25 distinct tokens from the fixed observation allowlist")
     arches = list(RUNNERS) if architectures == "both" else [architectures]
     if set(arches) - RUNNERS.keys():
         raise ValueError("Unsupported architecture")
     return [{"token": token, "architecture": arch, "runner": RUNNERS[arch]}
             for token in selected for arch in arches]
+
+
+def build_plan(args) -> None:
+    """Freeze every census batch to the same inputs; retain the small default pilot."""
+    jobs = matrix(args.tokens, args.architectures, args.census_batch)
+    args.output.mkdir(parents=True, exist_ok=False)
+    commands = Commands(args.output)
+    if args.census_batch or any(job["token"] not in PILOT_TOKENS for job in jobs):
+        revisions = CENSUS["revisions"]
+    else:
+        tag = commands.text("brew-tag", ["gh", "api", "repos/Homebrew/brew/releases/latest", "--jq", ".tag_name"])
+        revisions = {key: commands.text(key, ["gh", "api", f"repos/{repo}/commits/{ref}", "--jq", ".sha"])
+                     for key, repo, ref in (("brewRevision", "Homebrew/brew", tag),
+                                           ("caskRevision", "Homebrew/homebrew-cask", "HEAD"),
+                                           ("passiveRevision", os.environ["GITHUB_REPOSITORY"], "icons"))}
+    if not all(SHA.fullmatch(value) for value in revisions.values()):
+        raise ValueError("Planning requires immutable source revisions")
+    commands.run("passive-manifest", ["gh", "api",
+        f"repos/{os.environ['GITHUB_REPOSITORY']}/contents/app_identities.json?ref={revisions['passiveRevision']}",
+        "-H", "Accept: application/vnd.github.raw+json"])
+    args.output.joinpath("passive-identities.json").write_bytes(args.output.joinpath("passive-manifest.log").read_bytes())
+    save_evidence(args.output / "matrix.json", {"include": jobs})
+    save_evidence(args.output / "revisions.json", revisions)
+    if args.census_batch:
+        save_evidence(args.output / "census.json", {"batch": args.census_batch, **CENSUS})
 
 
 def require_disposable_runner(expected_arch: str) -> None:
@@ -141,6 +180,22 @@ def changes(before: dict, after: dict) -> dict:
 
 def valid_application(app: dict) -> bool:
     return "error" not in app and app.get("identifierAccepted") is True and app.get("executablePresent") is True
+
+
+def observation_diagnostics(data: dict) -> list[str]:
+    """Explain recorded failures, including artifacts produced by the first pilot."""
+    install = data.get("install", {})
+    apps = data.get("applicationChanges", {})
+    invalid_apps = any(not valid_application(app) for app in apps.get("added", []) + apps.get("changed", []))
+    checks = ((install.get("timedOut"), "installer_timed_out"),
+              (install.get("returncode", 0) != 0, "installer_failed"),
+              (data.get("homebrewRegistered") is False, "homebrew_registration_missing"),
+              (data.get("snapshotsStable") is False, "post_install_state_not_settled"),
+              (bool(data.get("errors")), "evidence_read_errors"),
+              (invalid_apps, "application_metadata_invalid"),
+              (data.get("status") == "preexisting_software_changed", "preexisting_software_changed"),
+              (bool(data.get("error")), "collection_failed"))
+    return [reason for failed, reason in checks if failed]
 
 
 def observation(before: dict, after: dict, install: dict, registered: bool, stable: bool) -> dict:
@@ -243,8 +298,10 @@ def prepare(commands: Commands, token: str, brew_revision: str, cask_revision: s
     commands.run("brew-config", ["brew", "config"])
     payload = json.loads(commands.text("cask-info", ["brew", "info", "--json=v2", "--cask", token]))
     cask = payload["casks"][0]
-    if cask["token"] != token or not any("pkg" in entry for entry in cask.get("artifacts", [])):
-        raise ValueError("Pilot requires the selected official package cask")
+    if (cask["token"] != token
+            or not any("pkg" in entry or "suite" in entry for entry in cask.get("artifacts", []))
+            or any("installer" in entry for entry in cask.get("artifacts", []))):
+        raise ValueError("Observation requires the selected official package or suite cask")
     if cask.get("installed"):
         raise ValueError("Target cask is already installed on this runner")
     # ponytail: this pilot excludes dependencies; baseline them separately before expanding its scope.
@@ -309,19 +366,81 @@ def collect_receipt_evidence(commands: Commands, receipts: list[dict]) -> list[s
     return errors
 
 
+def snapshot_differences(before: dict, after: dict) -> list[dict]:
+    differences = []
+    for kind in ("applications", "receipts"):
+        for key in sorted(before[kind].keys() | after[kind].keys()):
+            old, new = before[kind].get(key, {}), after[kind].get(key, {})
+            if old != new:
+                fields = [field for field in sorted(old.keys() | new.keys()) if old.get(field) != new.get(field)]
+                differences.append({"kind": kind, "key": key, "changedFields": fields, "before": old, "after": new})
+    return differences
+
+
+def settle_snapshots(output: Path, roots: list[Path]) -> tuple[dict, dict]:
+    """Require consecutive quiet intervals without erasing earlier mutations."""
+    started = time.monotonic()
+    previous = snapshot(roots, Path("/var/db/receipts"))
+    save_evidence(output / "after-immediate.json", previous)
+    samples = [{"snapshot": "after-immediate.json", "seconds": round(time.monotonic() - started, 2), "changes": []}]
+    equal_intervals = 0
+    while time.monotonic() - started + SETTLE_INTERVAL <= SETTLE_TIMEOUT:
+        time.sleep(SETTLE_INTERVAL)
+        current = snapshot(roots, Path("/var/db/receipts"))
+        name = f"after-{len(samples):03d}.json"
+        save_evidence(output / name, current)
+        samples.append({"snapshot": name, "seconds": round(time.monotonic() - started, 2),
+                        "changes": snapshot_differences(previous, current)})
+        equal_intervals = equal_intervals + 1 if current == previous else 0
+        previous = current
+        if equal_intervals >= SETTLE_EQUAL_INTERVALS:
+            break
+    save_evidence(output / "after.json", previous)
+    settling = {"intervalSeconds": SETTLE_INTERVAL, "timeoutSeconds": SETTLE_TIMEOUT,
+                "requiredEqualIntervals": SETTLE_EQUAL_INTERVALS, "equalIntervals": equal_intervals,
+                "stable": equal_intervals >= SETTLE_EQUAL_INTERVALS,
+                "changedAfterInstall": any(sample["changes"] for sample in samples), "samples": samples}
+    save_evidence(output / "settling.json", settling)
+    return previous, settling
+
+
+def capture_install_history(output: Path, phase: str,
+                            source: Path = Path("/Library/Receipts/InstallHistory.plist")) -> dict:
+    """Keep native transaction groups as supporting evidence, not current ownership."""
+    target = output / f"install-history-{phase}.plist"
+    try:
+        raw = source.read_bytes()
+        records = plistlib.loads(raw)
+        if not isinstance(records, list):
+            raise ValueError("Expected installation history array")
+        target.write_bytes(raw)
+        return {"file": target.name, "sha256": digest(target), "entryCount": len(records)}
+    except (OSError, ValueError, plistlib.InvalidFileException, ExpatError) as error:
+        return {"error": f"{type(error).__name__}: {error}"}
+
+
 def install_and_collect(commands: Commands, token: str, baseline: dict, roots: list[Path]) -> dict:
+    history_before = capture_install_history(commands.output, "before")
     install = commands.run("install", ["brew", "install", "--cask", "--require-sha", token], 1800, check=False)
-    first = snapshot(roots, Path("/var/db/receipts"))
-    save_evidence(commands.output / "after-immediate.json", first)
-    time.sleep(15)
-    after = snapshot(roots, Path("/var/db/receipts"))
-    save_evidence(commands.output / "after.json", after)
+    after, settling = settle_snapshots(commands.output, roots)
     listing = commands.run("installed-casks", ["brew", "list", "--cask"], check=False)
     registered = listing["returncode"] == 0 and token in (commands.output / listing["log"]).read_text().splitlines()
-    result = observation(baseline, after, install, registered, first == after)
+    result = observation(baseline, after, install, registered, settling["stable"])
     result["install"] = install
+    result["settling"] = settling
+    result["installationHistory"] = {"before": history_before,
+                                     "after": capture_install_history(commands.output, "after")}
     changed_apps = result["applicationChanges"]["added"] + result["applicationChanges"]["changed"]
     for index, app in enumerate(changed_apps):
+        if app.get("infoPath"):
+            try:
+                evidence = commands.output / f"app-{index}-Info.plist"
+                evidence.write_bytes(Path(app["infoPath"]).read_bytes())
+                app["infoPlistEvidence"] = {"file": evidence.name, "sha256": digest(evidence)}
+                if app["infoPlistEvidence"]["sha256"] != app["infoSHA256"]:
+                    result["errors"].append(f"Application plist changed during collection: {app['path']}")
+            except OSError as error:
+                result["errors"].append(f"Could not preserve application plist: {error}")
         app["signingInspection"] = commands.run(f"app-{index}-signing",
             ["/usr/bin/codesign", "--display", "--verbose=4", app["path"]], 30, check=False)
     changed_receipts = result["receiptChanges"]["added"] + result["receiptChanges"]["changed"]
@@ -332,8 +451,11 @@ def install_and_collect(commands: Commands, token: str, baseline: dict, roots: l
 
 
 def observe(args) -> int:
-    if args.token not in PILOT_TOKENS:
-        raise ValueError("Token is outside the reviewed pilot")
+    if args.token not in OBSERVATION_TOKENS:
+        raise ValueError("Token is outside the fixed observation allowlist")
+    if args.token not in PILOT_TOKENS and (args.cask_revision != CENSUS["revisions"]["caskRevision"]
+                                         or args.brew_revision != CENSUS["revisions"]["brewRevision"]):
+        raise ValueError("Census observations require the frozen census revisions")
     require_disposable_runner(args.architecture)
     output = args.output
     output.mkdir(parents=True, exist_ok=False)
@@ -351,7 +473,6 @@ def observe(args) -> int:
         result.update(prepare(commands, args.token, args.brew_revision, args.cask_revision))
         roots = [Path("/Applications"), Path.home() / "Applications"]
         result["applicationRoots"] = [str(root) for root in roots]
-        result["settleSeconds"] = 15
         baseline = clean_baseline(commands, result["cask"], roots)
         result["status"] = "installing"
         save_evidence(output / "observation.json", result)
@@ -360,6 +481,7 @@ def observe(args) -> int:
         result["error"] = f"{type(error).__name__}: {error}"
         result["status"] = "incomplete_observation"
     finally:
+        result["diagnostics"] = observation_diagnostics(result)
         result["seconds"] = round(time.monotonic() - started, 2)
         save_evidence(output / "observation.json", result)
     return 0 if result["status"] in ("observed_applications", "no_application_observed") else 1
@@ -371,15 +493,23 @@ def main() -> None:
     plan = sub.add_parser("matrix")
     plan.add_argument("--tokens", default="")
     plan.add_argument("--architectures", choices=["both", *RUNNERS], default="both")
+    plan.add_argument("--census-batch", type=int, default=0)
+    planning = sub.add_parser("plan")
+    planning.add_argument("--tokens", default="")
+    planning.add_argument("--architectures", choices=["both", *RUNNERS], default="both")
+    planning.add_argument("--census-batch", type=int, default=0)
+    planning.add_argument("--output", required=True, type=Path)
     run = sub.add_parser("observe")
-    run.add_argument("--token", required=True, choices=PILOT_TOKENS)
+    run.add_argument("--token", required=True, choices=sorted(OBSERVATION_TOKENS))
     run.add_argument("--architecture", required=True, choices=RUNNERS)
     run.add_argument("--brew-revision", required=True)
     run.add_argument("--cask-revision", required=True)
     run.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
     if args.command == "matrix":
-        print(json.dumps({"include": matrix(args.tokens, args.architectures)}))
+        print(json.dumps({"include": matrix(args.tokens, args.architectures, args.census_batch)}))
+    elif args.command == "plan":
+        build_plan(args)
     else:
         raise SystemExit(observe(args))
 

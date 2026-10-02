@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "scope": "CaskHub 0.8.3 categorized pkg and suite artifacts; Apple Silicon first; Zoom deferred",
+  "catalogSHA256": "31e4cc5c04beb91be3cf6787a1c8b4f09859a0d11d164fa8553ab3610910e4f6",
+  "apiSHA256": "6836450a494232652811be41d98dccc5e0e24ed32cbe4b965283858799a6afee",
+  "revisions": {
+    "brewRevision": "edb70f031e4170c780799633a1226ff73e1077f4",
+    "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+    "passiveRevision": "b542b97d8ad828501a5bbc4774292972047b3af7"
+  },
+  "batchSize": 25,
+  "batches": [
+    [
+      "ampps",
+      "beast2",
+      "chatty",
+      "chemdoodle",
+      "cinder",
+      "digital",
+      "dwarf-fortress-lmp",
+      "enigma-game",
+      "factor",
+      "fiji",
+      "flutter",
+      "freesurfer",
+      "golly",
+      "kicad",
+      "klayout",
+      "maccleaner-pro",
+      "magicavoxel",
+      "netlogo",
+      "openframeworks",
+      "outfox",
+      "quakespasm",
+      "racket",
+      "renpy",
+      "sketchup",
+      "solar2d"
+    ],
+    [
+      "xonotic",
+      "adguard",
+      "adguard-vpn",
+      "adobe-digital-editions",
+      "adobe-dng-converter",
+      "airmedia",
+      "alfaview",
+      "alisma",
+      "amazon-workspaces",
+      "amneziavpn",
+      "anka-build-cloud-controller",
+      "anka-build-cloud-registry",
+      "anka-virtualization",
+      "appgate-sdp-client",
+      "appvolume",
+      "aquaskk",
+      "arm-performix",
+      "arq",
+      "arturia-software-center",
+      "astah-professional",
+      "astah-uml",
+      "atok",
+      "auto-subs",
+      "autogram",
+      "awesun"
+    ],
+    [
+      "aws-vpn-client",
+      "azookey",
+      "background-music",
+      "bankid",
+      "baoliandeng",
+      "basictex",
+      "beid-token",
+      "bias-fx",
+      "bindiff",
+      "bing-wallpaper",
+      "bitfocus-buttons",
+      "blackhole-16ch",
+      "blackhole-64ch",
+      "bluestacks",
+      "box-drive",
+      "bricklink-studio",
+      "busycal",
+      "canon-eos-utility",
+      "canon-mg2500-driver",
+      "canon-ufrii-driver",
+      "capsomnia",
+      "cardinal",
+      "ccleaner",
+      "cernbox",
+      "chef-workstation"
+    ],
+    [
+      "choosy",
+      "chordpotion",
+      "cisco-jabber",
+      "citrix-workspace",
+      "clamxav",
+      "clash-party",
+      "cloudflare-warp",
+      "clover-chord-systems",
+      "cmpxat",
+      "colorchecker-camera-calibration",
+      "concept2-utility",
+      "corretto",
+      "crashplan",
+      "crypto-native-app-ng",
+      "daedalus-mainnet",
+      "dante-controller",
+      "dante-via",
+      "ddpm",
+      "desktoppr",
+      "dexed",
+      "dfu-blaster-pro",
+      "digicheck-ng",
+      "dingtalk",
+      "diskspace",
+      "displaylink"
+    ],
+    [
+      "djuced",
+      "dotnet-runtime",
+      "dotnet-sdk",
+      "droplr",
+      "duo-connect",
+      "duo-desktop",
+      "dyalog",
+      "dymo-connect",
+      "eagle",
+      "earnapp",
+      "elecom-mouse-util",
+      "elektron-overbridge",
+      "elgato-camera-hub",
+      "elgato-stream-deck",
+      "emclient",
+      "enclave",
+      "enfusegui",
+      "engine-dj",
+      "enpass",
+      "entry",
+      "epoccam",
+      "epson-print-layout",
+      "eset-cyber-security",
+      "excire-foto",
+      "excire-search"
+    ],
+    [
+      "fabfilter-micro",
+      "fabfilter-one",
+      "fabfilter-pro-c",
+      "fabfilter-pro-ds",
+      "fabfilter-pro-g",
+      "fabfilter-pro-l",
+      "fabfilter-pro-mb",
+      "fabfilter-pro-q",
+      "fabfilter-pro-r",
+      "fabfilter-saturn",
+      "fabfilter-simplon",
+      "fabfilter-timeless",
+      "fabfilter-twin",
+      "fabfilter-volcano",
+      "fbreader",
+      "fender-universal-control",
+      "filebot",
+      "finch",
+      "flox",
+      "fme",
+      "focusrite-control",
+      "folding-at-home",
+      "foxit-pdf-editor",
+      "foxitreader",
+      "freefilesync"
+    ],
+    [
+      "fujifilm-tether-app",
+      "fujitsu-scansnap-home",
+      "fuse",
+      "fuse-t",
+      "gamemaker",
+      "gams",
+      "garmin-basecamp",
+      "gcc-aarch64-embedded",
+      "gcc-arm-embedded",
+      "geph",
+      "git-credential-manager",
+      "gog-galaxy",
+      "gpg-suite",
+      "gpg-suite-no-mail",
+      "gpg-suite-pinentry",
+      "gretl",
+      "gureumkim",
+      "hackolade",
+      "hhkb",
+      "hhkb-studio",
+      "hiarcs-chess-explorer",
+      "i1profiler",
+      "ibm-aspera-connect",
+      "ibm-cloud-cli",
+      "idrive"
+    ],
+    [
+      "iem-plugin-suite",
+      "ik-product-manager",
+      "imaging-edge",
+      "imaging-edge-webcam",
+      "insta360-link-controller",
+      "insta360-studio",
+      "intune-company-portal",
+      "iriunwebcam",
+      "jedit-omega",
+      "jetdrive-toolbox",
+      "jgrasp",
+      "jitouch",
+      "jump-desktop-connect",
+      "jyutping",
+      "karabiner-elements",
+      "kdrive",
+      "konica-minolta-bizhub-c750i-driver",
+      "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver",
+      "krisp",
+      "lemonade-server",
+      "letter-opener",
+      "lg-onscreen-control",
+      "libifd-cyberjack",
+      "lightkey",
+      "logitech-camera-settings"
+    ],
+    [
+      "lookingglassstudio",
+      "loupedeck",
+      "low-profile",
+      "lrtimelapse",
+      "luniistore",
+      "mac-monitor",
+      "mac-performance-monitor",
+      "macfuse",
+      "macskk",
+      "mailbutler",
+      "malwarebytes",
+      "mamp",
+      "manictime",
+      "mds",
+      "mega",
+      "meta-quest-remote-desktop",
+      "microsoft-365-copilot",
+      "microsoft-auto-update",
+      "microsoft-excel",
+      "microsoft-office",
+      "microsoft-onenote",
+      "microsoft-openjdk",
+      "microsoft-outlook",
+      "microsoft-powerpoint",
+      "microsoft-remote-help"
+    ],
+    [
+      "microsoft-word",
+      "middledrag",
+      "mist",
+      "mono-mdk",
+      "monotype",
+      "morisawa-desktop-manager",
+      "mosaic",
+      "motu-m-series",
+      "mozilla-vpn",
+      "mpluginmanager",
+      "mullvad-vpn",
+      "multipass",
+      "munki",
+      "my-image-garden",
+      "mysql-shell",
+      "naps2",
+      "nessus",
+      "netbeans",
+      "network-weather",
+      "nextcloud",
+      "ninja-download-manager-ndm",
+      "nomachine",
+      "nomachine-enterprise-client",
+      "nordlayer",
+      "nordvpn"
+    ],
+    [
+      "nperf",
+      "nudge",
+      "nx-studio",
+      "ob-xf",
+      "objectivesharpie",
+      "odrive",
+      "okta-advanced-server-access",
+      "okta-verify",
+      "omnissa-horizon-client",
+      "open-eid",
+      "opencloud",
+      "opencore-patcher",
+      "opencpn",
+      "opensc-app",
+      "opensong",
+      "openzfs",
+      "oracle-jdk",
+      "orka",
+      "orka-vm-tools",
+      "orka3",
+      "osquery",
+      "outset",
+      "owncloud",
+      "packages",
+      "papercut-mobility-print-client"
+    ],
+    [
+      "parallels-client",
+      "paranoia-file-text-encryption",
+      "paulxstretch",
+      "perimeter81",
+      "philips-hue-sync",
+      "photoninja",
+      "picoscope",
+      "pique",
+      "pixel-shift-combiner",
+      "plasticscm-cloud-edition",
+      "playdate-simulator",
+      "playmemories-home",
+      "plugdata",
+      "podolski",
+      "power-monitor",
+      "powerpanel",
+      "presentation",
+      "prezi-video",
+      "prisma-access-browser",
+      "pritunl",
+      "privileges",
+      "prolific-pl2303",
+      "proxybridge",
+      "ptpwebcam",
+      "qfinder-pro"
+    ],
+    [
+      "qingg",
+      "quarto",
+      "qudedup-extract-tool",
+      "r-app",
+      "r-rig-app",
+      "radio-silence",
+      "realvnc-connect",
+      "realvnc-connect-viewer",
+      "redcine-x-pro",
+      "rekordbox",
+      "resolume-arena",
+      "restapia",
+      "ripx",
+      "rocketman-choices-packager",
+      "rwts-pdfwriter",
+      "safari-technology-preview",
+      "sage",
+      "salt",
+      "santa",
+      "seadrive",
+      "securesafe",
+      "segger-embedded-studio",
+      "segger-jlink",
+      "segger-ozone",
+      "semeru-jdk-open"
+    ],
+    [
+      "senadevicemanager",
+      "serviio",
+      "session-manager-plugin",
+      "sfm",
+      "shade",
+      "sharefile",
+      "silkypix-developer-studio-se",
+      "silnite",
+      "simplysign",
+      "sitala",
+      "sleep-aid",
+      "smallstepagent",
+      "snowflake-snowsql",
+      "sokim",
+      "sonobus",
+      "soothe2",
+      "soundtoys",
+      "splashtop-business",
+      "splashtop-personal",
+      "splashtop-streamer",
+      "spyder",
+      "squirrel-app",
+      "starnet2",
+      "steelseries-gg",
+      "steinberg-activation-manager"
+    ],
+    [
+      "steinberg-library-manager",
+      "steinberg-mediabay",
+      "sunlogincontrol",
+      "supportcompanion",
+      "surge-xt",
+      "swiftdialog",
+      "syncovery",
+      "syncroom",
+      "synology-drive",
+      "synology-image-assistant",
+      "synology-surveillance-station-client",
+      "sys-pc-tool",
+      "tableau",
+      "tableau-prep",
+      "tableau-public",
+      "tableau-reader",
+      "tailscale-app",
+      "tdr-kotelnikov",
+      "tdr-molotok",
+      "tdr-nova",
+      "tdr-prism",
+      "tdr-vos-slickeq",
+      "teamviewer",
+      "teleport-suite",
+      "temurin"
+    ],
+    [
+      "tenable-nessus-agent",
+      "thonny",
+      "ti-smartview-ce-for-the-ti-84-plus-family",
+      "tone3000",
+      "topaz-gigapixel",
+      "topaz-photo",
+      "topaz-video",
+      "torguard",
+      "toshiba-color-mfp",
+      "tourbox-console",
+      "tqsl",
+      "trezor-bridge-app",
+      "triplecheese",
+      "turbovnc-viewer",
+      "twingate",
+      "twonkyserver",
+      "unblocked",
+      "unifi-identity-endpoint",
+      "unifi-identity-enterprise",
+      "uuremote",
+      "vagrant",
+      "vagrant-vmware-utility",
+      "valhalla-freq-echo",
+      "valhalla-space-modulator",
+      "valhalla-supermassive"
+    ],
+    [
+      "vb-cable",
+      "vcam",
+      "vcv-rack",
+      "virtualbox",
+      "virtualdj",
+      "virtualgl",
+      "vnc-server",
+      "voicemod",
+      "weasis",
+      "whatsize",
+      "wifi-explorer-pro",
+      "wifiman",
+      "winclone",
+      "windows-app",
+      "wireless-workbench",
+      "wireshark-app",
+      "wireshark-chmodbpf",
+      "worksheetcrafter",
+      "xppen-pentablet",
+      "xquartz",
+      "xscreensaver",
+      "xsplit-vcam",
+      "youlean-loudness-meter",
+      "yubihsm2-sdk",
+      "zerotier-one"
+    ],
+    [
+      "zoho-cliq",
+      "zulu",
+      "zulufx"
+    ]
+  ],
+  "excluded": {
+    "acronis-true-image": [
+      "requires_dependencies"
+    ],
+    "actual-odbc-pack": [
+      "no_declared_sha256"
+    ],
+    "adlock": [
+      "no_declared_sha256"
+    ],
+    "adobe-acrobat-pro": [
+      "no_declared_sha256"
+    ],
+    "adobe-acrobat-reader": [
+      "covered_by_settling_pilot"
+    ],
+    "airtool": [
+      "covered_by_settling_pilot"
+    ],
+    "apple-hewlett-packard-printer-drivers": [
+      "requires_older_macos"
+    ],
+    "aptible": [
+      "requires_dependencies"
+    ],
+    "arq-cloud-backup": [
+      "no_declared_sha256"
+    ],
+    "avg-antivirus": [
+      "no_declared_sha256"
+    ],
+    "aviatrix-vpn-client": [
+      "no_declared_sha256"
+    ],
+    "banking-4": [
+      "no_declared_sha256"
+    ],
+    "baseline": [
+      "requires_dependencies"
+    ],
+    "blackhole-2ch": [
+      "covered_by_settling_pilot"
+    ],
+    "blurscreen": [
+      "no_declared_sha256"
+    ],
+    "bricklink-partdesigner": [
+      "requires_dependencies"
+    ],
+    "busycontacts": [
+      "no_declared_sha256"
+    ],
+    "caldigit-docking-utility": [
+      "no_declared_sha256"
+    ],
+    "caldigit-thunderbolt-charging": [
+      "no_declared_sha256"
+    ],
+    "caldigit-usb-hub-support-driver": [
+      "no_declared_sha256"
+    ],
+    "captainplugins": [
+      "no_declared_sha256"
+    ],
+    "chrome-remote-desktop-host": [
+      "no_declared_sha256"
+    ],
+    "chronoagent": [
+      "no_declared_sha256"
+    ],
+    "chronosync": [
+      "no_declared_sha256"
+    ],
+    "cold-turkey-blocker": [
+      "no_declared_sha256"
+    ],
+    "crushftp": [
+      "no_declared_sha256"
+    ],
+    "dialpad": [
+      "no_declared_sha256"
+    ],
+    "dorico": [
+      "requires_dependencies"
+    ],
+    "droidcam-obs": [
+      "requires_dependencies"
+    ],
+    "ecodms-client": [
+      "no_declared_sha256"
+    ],
+    "endnote": [
+      "no_declared_sha256"
+    ],
+    "eobcanka": [
+      "no_declared_sha256"
+    ],
+    "eu": [
+      "no_declared_sha256"
+    ],
+    "eusamanager": [
+      "no_declared_sha256"
+    ],
+    "fidelity-trader+": [
+      "no_declared_sha256"
+    ],
+    "fxfactory": [
+      "no_declared_sha256"
+    ],
+    "garmin-express": [
+      "no_declared_sha256"
+    ],
+    "google-drive": [
+      "no_declared_sha256"
+    ],
+    "google-earth-pro": [
+      "no_declared_sha256"
+    ],
+    "google-japanese-ime": [
+      "no_declared_sha256"
+    ],
+    "halion-sonic": [
+      "requires_dependencies"
+    ],
+    "hancom-docs": [
+      "no_declared_sha256"
+    ],
+    "hancom-word": [
+      "no_declared_sha256"
+    ],
+    "hy-rpe2": [
+      "no_declared_sha256"
+    ],
+    "ilok-license-manager": [
+      "no_declared_sha256"
+    ],
+    "infocert-sign": [
+      "no_declared_sha256"
+    ],
+    "inkstitch": [
+      "requires_dependencies"
+    ],
+    "itunes-producer": [
+      "no_declared_sha256"
+    ],
+    "jabra-direct": [
+      "no_declared_sha256"
+    ],
+    "kindle-create": [
+      "no_declared_sha256"
+    ],
+    "kindle-previewer": [
+      "no_declared_sha256"
+    ],
+    "libndi": [
+      "no_declared_sha256"
+    ],
+    "ltspice": [
+      "no_declared_sha256"
+    ],
+    "lynx-whiteboard": [
+      "no_declared_sha256"
+    ],
+    "mactex": [
+      "requires_dependencies"
+    ],
+    "mactex-no-gui": [
+      "requires_dependencies"
+    ],
+    "mailtrackerblocker": [
+      "requires_older_macos"
+    ],
+    "maru-jan": [
+      "no_declared_sha256"
+    ],
+    "mbed-studio": [
+      "no_declared_sha256"
+    ],
+    "microsoft-office-businesspro": [
+      "covered_by_settling_pilot"
+    ],
+    "microsoft-teams": [
+      "covered_by_settling_pilot"
+    ],
+    "mipony": [
+      "no_declared_sha256"
+    ],
+    "mixed-in-key-live": [
+      "no_declared_sha256"
+    ],
+    "moradownloader": [
+      "no_declared_sha256"
+    ],
+    "ndi-tools": [
+      "no_declared_sha256"
+    ],
+    "nexonplug": [
+      "no_declared_sha256"
+    ],
+    "nordic-nrf-command-line-tools": [
+      "requires_dependencies"
+    ],
+    "nordlocker": [
+      "no_declared_sha256"
+    ],
+    "odbc-manager": [
+      "no_declared_sha256"
+    ],
+    "onedrive": [
+      "covered_by_settling_pilot"
+    ],
+    "openvpn-connect": [
+      "covered_by_settling_pilot"
+    ],
+    "oxygen-xml-developer": [
+      "no_declared_sha256"
+    ],
+    "oxygen-xml-editor": [
+      "no_declared_sha256"
+    ],
+    "paragon-extfs": [
+      "no_declared_sha256"
+    ],
+    "parsec": [
+      "no_declared_sha256"
+    ],
+    "photozoom-pro": [
+      "no_declared_sha256"
+    ],
+    "pingid": [
+      "no_declared_sha256"
+    ],
+    "publish-or-perish": [
+      "no_declared_sha256"
+    ],
+    "purevpn": [
+      "no_declared_sha256"
+    ],
+    "ringcentral": [
+      "no_declared_sha256"
+    ],
+    "rode-central": [
+      "no_declared_sha256"
+    ],
+    "rode-connect": [
+      "no_declared_sha256"
+    ],
+    "rode-unify": [
+      "no_declared_sha256"
+    ],
+    "rode-virtual-channels": [
+      "no_declared_sha256"
+    ],
+    "rodecaster": [
+      "no_declared_sha256"
+    ],
+    "sdformatter": [
+      "no_declared_sha256"
+    ],
+    "send-to-kindle": [
+      "no_declared_sha256"
+    ],
+    "sf-symbols": [
+      "no_declared_sha256"
+    ],
+    "shutter-encoder": [
+      "no_declared_sha256"
+    ],
+    "softmaker-freeoffice": [
+      "no_declared_sha256"
+    ],
+    "softube-central": [
+      "requires_dependencies"
+    ],
+    "sony-ps-remote-play": [
+      "no_declared_sha256"
+    ],
+    "sshfs-mac": [
+      "requires_dependencies"
+    ],
+    "tal-drum": [
+      "no_declared_sha256"
+    ],
+    "tau": [
+      "no_declared_sha256"
+    ],
+    "teamviewer-host": [
+      "no_declared_sha256"
+    ],
+    "tigerjython": [
+      "no_declared_sha256"
+    ],
+    "timemachineeditor": [
+      "no_declared_sha256"
+    ],
+    "tiptoi-manager": [
+      "no_declared_sha256"
+    ],
+    "turbo-boost-switcher": [
+      "requires_intel_followup"
+    ],
+    "tuxera-ntfs": [
+      "no_declared_sha256"
+    ],
+    "unity": [
+      "requires_dependencies"
+    ],
+    "unity-ios-support-for-editor": [
+      "requires_dependencies"
+    ],
+    "unity-webgl-support-for-editor": [
+      "requires_dependencies"
+    ],
+    "unity-windows-support-for-editor": [
+      "requires_dependencies"
+    ],
+    "utterly": [
+      "no_declared_sha256"
+    ],
+    "veracrypt": [
+      "requires_dependencies"
+    ],
+    "veracrypt-fuse-t": [
+      "requires_dependencies"
+    ],
+    "vienna-assistant": [
+      "no_declared_sha256"
+    ],
+    "vip-access": [
+      "no_declared_sha256"
+    ],
+    "virtual-desktop-streamer": [
+      "no_declared_sha256"
+    ],
+    "voicepeak": [
+      "no_declared_sha256"
+    ],
+    "wacom-tablet": [
+      "covered_by_settling_pilot"
+    ],
+    "warsaw": [
+      "no_declared_sha256"
+    ],
+    "wch-ch34x-usb-serial-driver": [
+      "no_declared_sha256"
+    ],
+    "webex-meetings": [
+      "no_declared_sha256"
+    ],
+    "workspace-one-intelligent-hub": [
+      "no_declared_sha256"
+    ],
+    "zenbeats": [
+      "no_declared_sha256"
+    ],
+    "zoom": [
+      "deferred_by_user"
+    ],
+    "zoom-for-it-admins": [
+      "deferred_by_user"
+    ],
+    "zwift": [
+      "no_declared_sha256"
+    ]
+  }
+}
