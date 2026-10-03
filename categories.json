@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-02",
-  "totalCasks": 3999,
+  "generatedDate": "2026-10-03",
+  "totalCasks": 3998,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -197,10 +197,6 @@
     },
     "ableton-live-suite": {
       "primary": "audioMusic",
-      "secondary": []
-    },
-    "abstract": {
-      "primary": "designGraphics",
       "secondary": []
     },
     "abyssoft-teleport": {
@@ -989,6 +985,10 @@
     },
     "ares-emulator": {
       "primary": "games",
+      "secondary": []
+    },
+    "argo-books": {
+      "primary": "financeCrypto",
       "secondary": []
     },
     "ariax": {
@@ -4505,10 +4505,6 @@
       "primary": "scienceEducation",
       "secondary": []
     },
-    "energia": {
-      "primary": "designGraphics",
-      "secondary": []
-    },
     "energiza": {
       "primary": "utilities",
       "secondary": []
@@ -6460,10 +6456,6 @@
       "secondary": []
     },
     "hubstaff": {
-      "primary": "productivity",
-      "secondary": []
-    },
-    "huly": {
       "primary": "productivity",
       "secondary": []
     },
@@ -11207,10 +11199,6 @@
       "primary": "audioMusic",
       "secondary": []
     },
-    "pdf-converter-master": {
-      "primary": "productivity",
-      "secondary": []
-    },
     "pdf-expert": {
       "primary": "productivity",
       "secondary": []
@@ -12993,6 +12981,10 @@
         "ai"
       ]
     },
+    "rowel": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
     "rowmote-helper": {
       "primary": "utilities",
       "secondary": []
@@ -13112,6 +13104,12 @@
     "samsung-magician": {
       "primary": "utilities",
       "secondary": []
+    },
+    "sandisk": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
+      ]
     },
     "sanesidebuttons": {
       "primary": "menuBar",
@@ -13284,6 +13282,12 @@
     "sdm": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "sdrmm-app": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "seadrive": {
       "primary": "cloudStorage",
@@ -14704,10 +14708,6 @@
     },
     "swiftpm-catalog": {
       "primary": "developerTools",
-      "secondary": []
-    },
-    "swifty": {
-      "primary": "securityPrivacy",
       "secondary": []
     },
     "swinsian": {

@@ -1656,6 +1656,13 @@
     "og_desc": ""
   },
   {
+    "token": "argo-books",
+    "homepage": "https://argorobots.com/",
+    "title": "Argo Books: Free Accounting Software for Small Business",
+    "meta_desc": "Argo Books is free accounting and invoicing software for small business. Track income and expenses, send invoices, and scan receipts in minutes.",
+    "og_desc": "Free accounting and invoicing software for small business. Track income and expenses, send invoices, and scan receipts in minutes."
+  },
+  {
     "token": "aria-maestosa",
     "homepage": "https://ariamaestosa.github.io/ariamaestosa/docs/index.html",
     "title": "Aria Maestosa",
@@ -40709,6 +40716,13 @@
     "og_desc": "Bringing AI to your desktop 🖥️. Fully encrypted, stored locally, runs on your device."
   },
   {
+    "token": "sandisk",
+    "homepage": "https://www.sandisk.com/topics/accessories/sandisk-app-for-backups",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "sanesidebuttons",
     "homepage": "https://janhuelsmann.com/sanesidebuttons",
     "title": "SaneSideButtons",
@@ -41009,6 +41023,13 @@
     "title": "StrongDM: Your Partner in Zero Trust Privileged Access",
     "meta_desc": "Secure and simplify infrastructure access with StrongDM's Zero Trust PAM platform. Control, audit, and manage access across cloud, databases, servers, and apps from a single, unified solution.",
     "og_desc": "Secure and simplify infrastructure access with StrongDM's Zero Trust PAM platform. Control, audit, and manage access across cloud, databases, servers, and apps from a single, unified solution."
+  },
+  {
+    "token": "sdrmm-app",
+    "homepage": "https://github.com/Newspicel/sdrmm",
+    "title": "GitHub - Newspicel/sdrmm: modular, client-server software-defined radio · GitHub",
+    "meta_desc": "modular, client-server software-defined radio. Contribute to Newspicel/sdrmm development by creating an account on GitHub.",
+    "og_desc": "modular, client-server software-defined radio. Contribute to Newspicel/sdrmm development by creating an account on GitHub."
   },
   {
     "token": "seadrive",
