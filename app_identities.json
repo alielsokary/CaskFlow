@@ -37343,6 +37343,58 @@
           "reason": "invalid PackageInfo: unsafe or missing package payload"
         }
       ]
+    },
+    "sandisk": {
+      "caskVersion": "3.4.1,2601",
+      "sourceURL": "https://downloads.sandisk.com/downloads/sandiskapp-mac.dmg",
+      "artifactSHA256": "ae95fd5e8abcc78b284a3117c481e5c24384c579090f9d2350ad2f5f93d15f18",
+      "apps": [
+        {
+          "bundleName": "SANDISK.app",
+          "bundleIdentifier": "com.sandisk.smz2.mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sdrmm-app": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/Newspicel/sdrmm/releases/download/v2.0.0/SDR--_2.0.0_aarch64.dmg",
+      "artifactSHA256": "15bbadc049203871deb3e3b93182833cf06e8f477cb84dd009b3fed8e58f433a",
+      "apps": [
+        {
+          "bundleName": "SDR--.app",
+          "bundleIdentifier": "dev.newspicel.sdrmm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "rowel": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/fwdai/rowel/releases/download/v1.0.0/Rowel_1.0.0_universal.dmg",
+      "artifactSHA256": "71fa49bff88d06db007cf2ae7e27db5abba8fb232b6945777e619a0db0ac6a68",
+      "apps": [
+        {
+          "bundleName": "Rowel.app",
+          "bundleIdentifier": "app.rowel.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "argo-books": {
+      "caskVersion": "2.0.18",
+      "sourceURL": "https://argorobots.com/resources/downloads/2.0.18/ArgoBooks-2.0.18-osx-arm64.zip",
+      "artifactSHA256": "01cccf804de5199562827aeb6d3768183deb87c6855b69a6f7599d12b3f4126d",
+      "apps": [
+        {
+          "bundleName": "Argo Books.app",
+          "bundleIdentifier": "com.argobooks.ArgoBooks"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
