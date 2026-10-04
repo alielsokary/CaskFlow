@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-03",
-  "totalCasks": 3998,
+  "generatedDate": "2026-10-04",
+  "totalCasks": 4001,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7436,6 +7436,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "keyecho": {
+      "primary": "utilities",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
     "keyguard": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -11406,6 +11412,13 @@
       "primary": "other",
       "secondary": []
     },
+    "picsart-ai-playground": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai",
+        "videoMedia"
+      ]
+    },
     "pictogram": {
       "primary": "designGraphics",
       "secondary": []
@@ -14688,6 +14701,10 @@
     },
     "swiftbar": {
       "primary": "menuBar",
+      "secondary": []
+    },
+    "swiftcord": {
+      "primary": "communication",
       "secondary": []
     },
     "swiftdefaultappsprefpane": {
