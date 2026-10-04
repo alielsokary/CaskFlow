@@ -37395,6 +37395,58 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "swiftcord": {
+      "caskVersion": "1.7.1,71",
+      "sourceURL": "https://cdn.swiftcord.app/Swiftcord-71.dmg",
+      "artifactSHA256": "a04d3c2204ffe61b1f94457ebb93c00d484e67a09c29eab5405148372e7ba3e9",
+      "apps": [
+        {
+          "bundleName": "Swiftcord.app",
+          "bundleIdentifier": "app.swiftcord"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lody": {
+      "caskVersion": "0.103.0",
+      "sourceURL": "https://updates.lody.ai/production/Lody-0.103.0-arm64.dmg",
+      "artifactSHA256": "020dbeb5386442c352a602955225c1d0d31b44bac3c9811e13c33f040d10b882",
+      "apps": [
+        {
+          "bundleName": "Lody.app",
+          "bundleIdentifier": "ai.lody.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "picsart-ai-playground": {
+      "caskVersion": "2.65.0",
+      "sourceURL": "https://picsart.com/ai-playground/desktop/update/AI-Playground-2.65.0.zip",
+      "artifactSHA256": "b903ce111c20ff423b4ffeb770823d70545148f9ea2ebd12f48b2092c7a51ccc",
+      "apps": [
+        {
+          "bundleName": "AI Playground.app",
+          "bundleIdentifier": "com.picsart.apps.aiplayground"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "keyecho": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://github.com/ZacharyL2/KeyEcho/releases/download/v1.1.1/KeyEcho_1.1.1_aarch64.dmg",
+      "artifactSHA256": "b182ec028e2d8bcdf8f7c30def2c3aaa02bd893a654a994c2ac39d1f11b0542e",
+      "apps": [
+        {
+          "bundleName": "KeyEcho.app",
+          "bundleIdentifier": "app.keyecho.keyecho"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
