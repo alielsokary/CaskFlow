@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-04",
+  "generatedDate": "2026-10-05",
   "totalCasks": 4001,
   "categories": {
     "developerTools": {
@@ -6363,6 +6363,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "holst": {
+      "primary": "productivity",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "home-assistant": {
       "primary": "utilities",
       "secondary": []
@@ -7107,10 +7113,6 @@
     },
     "jellyfin-media-player": {
       "primary": "videoMedia",
-      "secondary": []
-    },
-    "jet-pilot": {
-      "primary": "developerTools",
       "secondary": []
     },
     "jetbrains-air": {
@@ -8017,6 +8019,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "littlebird": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "live-home-3d": {
       "primary": "designGraphics",
       "secondary": []
@@ -8100,6 +8108,12 @@
     "locu": {
       "primary": "productivity",
       "secondary": []
+    },
+    "lody": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "logi-options+": {
       "primary": "other",
@@ -14883,10 +14897,6 @@
       "primary": "scienceEducation",
       "secondary": []
     },
-    "tablen": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "tableplus": {
       "primary": "developerTools",
       "secondary": []
@@ -16599,10 +16609,6 @@
     },
     "vysor": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "wacom-inkspace": {
-      "primary": "designGraphics",
       "secondary": []
     },
     "wacom-tablet": {

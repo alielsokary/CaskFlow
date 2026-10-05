@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-10-04
+Generated 2026-10-05
 
 ## Summary
 
@@ -9,12 +9,18 @@ Generated 2026-10-04
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 0 casks deprecated/disabled in Homebrew (pruned)
+- 3 casks deprecated/disabled in Homebrew (pruned)
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `keyecho` | utilities | audioMusic | 0.75 | A lightweight system utility that plays keyboard sounds, blending utility and audio functionality. |
-| `picsart-ai-playground` | designGraphics | ai, videoMedia | 0.80 | AI-powered workspace for creating images, video, and audio, with design/graphics as the core focus. |
-| `swiftcord` | communication | - | 0.97 | Native Discord client for chat and voice/video communication. |
+| `holst` | productivity | designGraphics | 0.75 | Online whiteboard for visual team collaboration, similar to Miro, fits productivity with design overlap. |
+| `littlebird` | productivity | ai | 0.85 | AI assistant that captures meetings and work context for recall and productivity, powered by AI. |
+| `lody` | developerTools | ai | 0.85 | A tool for managing AI coding agent sessions with Git integration, aimed at developers. |
+
+## Deprecated/disabled (pruned)
+
+- `jet-pilot`
+- `tablen`
+- `wacom-inkspace`
