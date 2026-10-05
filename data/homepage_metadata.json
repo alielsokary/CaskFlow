@@ -28796,6 +28796,13 @@
     "og_desc": "Wish you could access worldwide content anytime, anywhere? With Hola you can! Experience uninterrupted content at the tip of your fingers! Discover more."
   },
   {
+    "token": "holst",
+    "homepage": "https://holst.so/",
+    "title": "Онлайн-доска Holst. Визуальное рабочее пространство для команд",
+    "meta_desc": "Holst - это российская онлайн-доска, полнофункциональная замена Miro, в которой сосредоточены лучшие инструменты для визуального сотрудничества и креативного обмена идеями.",
+    "og_desc": "Holst - это российская онлайн-доска, полнофункциональная замена Miro, в которой сосредоточены лучшие инструменты для визуального сотрудничества и креативного обмена идеями."
+  },
+  {
     "token": "home-assistant",
     "homepage": "https://companion.home-assistant.io/",
     "title": "Home Assistant Companion Docs",
@@ -31727,6 +31734,13 @@
     "og_desc": "Protects your privacy and prevents your private data from being sent out to the Internet without your knowledge."
   },
   {
+    "token": "littlebird",
+    "homepage": "https://littlebird.ai/",
+    "title": "Littlebird: AI assistant with a memory of your work",
+    "meta_desc": "Littlebird remembers everything across your meetings, messages, docs, and apps, then takes action so you can recall any detail and never lose context.",
+    "og_desc": "Littlebird remembers everything across your meetings, messages, docs, and apps, then takes action so you can recall any detail and never lose context."
+  },
+  {
     "token": "live-home-3d",
     "homepage": "https://www.livehome3d.com/mac/live-home-3d",
     "title": "Live Home 3D - Home Design Software for Mac",
@@ -31872,6 +31886,13 @@
     "title": "Locu - Focus Timer, To-Do List & Notes for Daily Execution",
     "meta_desc": "Daily execution system for developers: plan priorities, focus in 90‑minute sessions on one task, and track time naturally. Integrates with Jira & Linear.",
     "og_desc": "Daily execution system for developers: plan priorities, focus in 90‑minute sessions on one task, and track time naturally. Integrates with Jira & Linear."
+  },
+  {
+    "token": "lody",
+    "homepage": "https://lody.ai/",
+    "title": "Z.ai",
+    "meta_desc": "Lody is a team workspace for running AI coding agents in parallel with isolated Git worktrees, live diff review, GitHub integration, and mobile access.",
+    "og_desc": "Lody is a team workspace for running AI coding agents in parallel with isolated Git worktrees, live diff review, GitHub integration, and mobile access."
   },
   {
     "token": "lofi",
