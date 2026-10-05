@@ -37447,6 +37447,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "littlebird": {
+      "caskVersion": "0.86.21",
+      "sourceURL": "https://downloads.littlebird.ai/arm64/Littlebird-Mac-arm64-0.86.21-Installer.dmg",
+      "artifactSHA256": "d000db757a35545668bd24f155f30c10bcb61c8cf81c7d4b0adf89abcdc0a3f9",
+      "apps": [
+        {
+          "bundleName": "Littlebird.app",
+          "bundleIdentifier": "com.genos.littlebird"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
