@@ -37460,6 +37460,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "holst": {
+      "caskVersion": "0.0.6",
+      "sourceURL": "https://storage.yandexcloud.net/holst-desktop-application/mac/Holst-0.0.6-universal.dmg",
+      "artifactSHA256": "be4138e2ea413e234965b2227eaeb193f7f08463485bd63fea9bda2be7458fe2",
+      "apps": [
+        {
+          "bundleName": "Holst.app",
+          "bundleIdentifier": "com.holst.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

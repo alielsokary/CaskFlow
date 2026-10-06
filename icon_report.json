@@ -707,12 +707,6 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
-  "holst": {
-    "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600003 milliseconds with 133424960 out of 226196436 bytes received",
-    "attempts": 1,
-    "updated": "2026-10-05"
-  },
   "huly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
