@@ -1977,6 +1977,13 @@
     "og_desc": "On-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects. - tmoroney/auto-subs"
   },
   {
+    "token": "auto-tune-central",
+    "homepage": "https://www.antarestech.com/",
+    "title": "AutoTune: The Best Pitch Correction & Vocal Chain Plugins | AutoTune",
+    "meta_desc": "Get professional vocals with AutoTune-the original pitch correction plugin and industry standard for vocal processing. Shop AutoTune Pro, EFX+, Vocal EQ, Vocal Reverb, Harmony Engine, Mic Mod and more.",
+    "og_desc": "Get professional vocals with AutoTune-the original pitch correction plugin and industry standard for vocal processing. Shop AutoTune Pro, EFX+, Vocal EQ, Vocal Reverb, Harmony Engine, Mic Mod and more."
+  },
+  {
     "token": "autodesk-fusion",
     "homepage": "https://www.autodesk.com/products/fusion-360/overview",
     "title": "Autodesk Fusion | 3D CAD, CAM, CAE, & PCB Cloud-Based Software | Autodesk",
@@ -3401,6 +3408,13 @@
     "title": "BuhoLaunchpad - Get the Launchpad Back on macOS 27",
     "meta_desc": "Missing Launchpad on macOS 27? BuhoLaunchpad brings it back, better than ever. Enjoy the classic experience with superior performance, seamless layout import, and powerful new features.",
     "og_desc": "Missing Launchpad on macOS 27? BuhoLaunchpad brings it back, better than ever. Enjoy the classic experience with superior performance, seamless layout import, and powerful new features."
+  },
+  {
+    "token": "buildin",
+    "homepage": "https://buildin.ai/",
+    "title": "Buildin - Your AI Workspace to Build, Manage & Sell",
+    "meta_desc": "Built with Buildin.AI, your knowledge platform that empowers publishing",
+    "og_desc": ""
   },
   {
     "token": "buildsettingextractor",
@@ -8648,6 +8662,13 @@
     "og_desc": ""
   },
   {
+    "token": "fl-studio",
+    "homepage": "https://www.image-line.com/fl-studio/",
+    "title": "FL Studio by Image-Line",
+    "meta_desc": "Create, arrange, record, edit, mix and master music with FL Studio. Explore editions, features and plugins, all with Lifetime Free Updates.",
+    "og_desc": "Create, arrange, record, edit, mix and master music with FL Studio. Explore editions, features and plugins, all with Lifetime Free Updates."
+  },
+  {
     "token": "flacon",
     "homepage": "https://flacon.github.io/",
     "title": "Flacon - Audio File Encoder",
@@ -8828,6 +8849,13 @@
     "title": "f.lux: software to make your life better",
     "meta_desc": "Is your computer keeping you up late? f.lux is a free download that warms up your computer display at night, to match your indoor lighting.",
     "og_desc": "Software to warm up your computer display at night, to match your indoor lighting."
+  },
+  {
+    "token": "fluxer",
+    "homepage": "https://fluxer.app/",
+    "title": "Fluxer - A chat app that puts you first",
+    "meta_desc": "Free and open source chat for friends, groups, and communities, with text, voice, video, screen sharing, and self-hosting.",
+    "og_desc": "Free and open source chat for friends, groups, and communities, with text, voice, video, screen sharing, and self-hosting."
   },
   {
     "token": "flycut",
@@ -33085,6 +33113,13 @@
     "og_desc": "MCPBundler proxy saves hours by centralizing, managing, and optimizing all your local and remote MCP servers with one-click setup, bundles, logs, skills support, and seamless imports."
   },
   {
+    "token": "mcplinker",
+    "homepage": "https://github.com/milisp/mcp-linker",
+    "title": "GitHub - milisp/mcp-linker: mcp store manager, add & syncs MCP server configurations across clients like Claude code, Cursor💡mcphub · GitHub",
+    "meta_desc": "mcp store manager, add & syncs MCP server configurations across clients like Claude code, Cursor💡mcphub - milisp/mcp-linker",
+    "og_desc": "mcp store manager, add & syncs MCP server configurations across clients like Claude code, Cursor💡mcphub - milisp/mcp-linker"
+  },
+  {
     "token": "mcreator",
     "homepage": "https://mcreator.net/",
     "title": "MCreator - The Best Minecraft Mod Maker Ever",
@@ -42358,6 +42393,13 @@
     "og_desc": "Solar2D - Awesome 2D game engine"
   },
   {
+    "token": "solidtime",
+    "homepage": "https://www.solidtime.io/",
+    "title": "Solidtime - Open source time tracking for teams",
+    "meta_desc": "The modern Open-Source Time Tracker for Freelancers and Agencies. Manage Projects, Tasks, Clients and Billing in one place.",
+    "og_desc": "The modern Open-Source Time Tracker for Freelancers and Agencies. Manage Projects, Tasks, Clients and Billing in one place."
+  },
+  {
     "token": "solvespace",
     "homepage": "https://solvespace.com/index.pl/",
     "title": "SolveSpace - parametric 3d CAD",
@@ -43050,6 +43092,13 @@
     "title": "Stash - Simple & Powerful Network Tool",
     "meta_desc": "Thanks to Stash's user-friendly interface, you can monitor, capture and control all your network traffic like never before! Stash can handle all traffic with Apple's Network Extension Framework. You can redirect or deny network traffic with Stash. With built-in HTTP Engine, you can capture or modify request and response. You can even handle your web requests via JavaScript.",
     "og_desc": "Thanks to Stash's user-friendly interface, you can monitor, capture and control all your network traffic like never before! Stash can handle all traffic with Apple's Network Extension Framework. You can redirect or deny network traffic with Stash. With built-in HTTP Engine, you can capture or modify request and response. You can even handle your web requests via JavaScript."
+  },
+  {
+    "token": "stashcat",
+    "homepage": "https://stashcat.com/",
+    "title": "stashcat: stashcat",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "stashpad",
