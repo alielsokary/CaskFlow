@@ -37473,6 +37473,145 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "fl-studio": {
+      "caskVersion": "26.1.7.5419",
+      "sourceURL": "https://install.image-line.com/flstudio/flstudio_mac_26.1.7.5419.dmg",
+      "artifactSHA256": "b93e2936efd9474a0168c071d80c3b4b1c4b8b313ddbbdd944ce662a1e684619",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "FL Studio 2026.app",
+          "reason": "ambiguous installed bundle name"
+        },
+        {
+          "artifact": "FL Studio 2026.app",
+          "reason": "ambiguous installed bundle name"
+        }
+      ]
+    },
+    "buildin": {
+      "caskVersion": "2.0.4",
+      "sourceURL": "https://cdn2.buildin.ai/website-oversea/download/Buildin-2.0.4-arm64.dmg",
+      "artifactSHA256": "95b932e0aca932604611ddd6a13eeeeb469ad190189bfa4f84e6ab8eb1cd4cb9",
+      "apps": [
+        {
+          "bundleName": "Buildin.app",
+          "bundleIdentifier": "com.coasis.buildin.ai"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "stashcat": {
+      "caskVersion": "6.55.0",
+      "sourceURL": "https://stashcat.s3-de-central.profitbricks.com/releases/darwin/stashcat-6.55.0-darwin.zip",
+      "artifactSHA256": "4fe1269fca1708ae08210edb83978ca88e56dcea971ef8d7f6312e16309db173",
+      "apps": [
+        {
+          "bundleName": "Stashcat.app",
+          "bundleIdentifier": "de.heinekingmedia.stashcatdesktopmessenger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "photocraft": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/storytold/photocraft/releases/download/v0.3.0/photocraft-0.3.0-macos-universal.dmg",
+      "artifactSHA256": "c0b0223cddb18dd7f5607fb4d6cc6a925a62f5b5b47457997d61ad0f72aa5911",
+      "apps": [
+        {
+          "bundleName": "PhotoCraft.app",
+          "bundleIdentifier": "ai.storyteller.photocraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "auto-tune-central": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://antares.sfo2.cdn.digitaloceanspaces.com/auto-tune-central/auto-update/mac/Auto_Tune_Central_2.0.2_universal_x7555.dmg",
+      "artifactSHA256": "c2c6096172832c96b71d240240ce85855ee7a6ed3e20a643ce439b2158e6ceba",
+      "apps": [
+        {
+          "bundleName": "Auto-Tune Central.app",
+          "bundleIdentifier": "com.Antares.AutoTuneCentral"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mcplinker": {
+      "caskVersion": "2.2.4",
+      "sourceURL": "https://github.com/milisp/mcp-linker/releases/download/v2.2.4/MCPLinker_2.2.4_aarch64.dmg",
+      "artifactSHA256": "05b041bf433562a2ec99348a6552865bba7a842777da92da2ede24a0f08d0f90",
+      "apps": [
+        {
+          "bundleName": "MCPLinker.app",
+          "bundleIdentifier": "dev.milisp.mcplinker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fluxer": {
+      "caskVersion": "2026.1006.171735",
+      "sourceURL": "https://pkgs.fluxer.com/desktop/stable/darwin/arm64/2026.1006.171735/dmg",
+      "artifactSHA256": "7d8900e351cae5285500a9c205fbb2ed21985d1ef6297c90ecacd840b8dfa22f",
+      "apps": [
+        {
+          "bundleName": "Fluxer.app",
+          "bundleIdentifier": "app.fluxer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "solidtime": {
+      "caskVersion": "0.3.2",
+      "sourceURL": "https://github.com/solidtime-io/solidtime-desktop/releases/download/v0.3.2/solidtime-arm64.dmg",
+      "artifactSHA256": "1b0ef86d94e7a45c512f3c395e9ac8ce0dadb070c8f5a99e5c796c007ec7a7c9",
+      "apps": [
+        {
+          "bundleName": "solidtime.app",
+          "bundleIdentifier": "io.solidtime.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
