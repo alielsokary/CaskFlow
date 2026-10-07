@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-05",
-  "totalCasks": 4001,
+  "generatedDate": "2026-10-07",
+  "totalCasks": 4007,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1173,6 +1173,12 @@
         "ai"
       ]
     },
+    "auto-tune-central": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "autodesk-fusion": {
       "primary": "designGraphics",
       "secondary": []
@@ -1978,6 +1984,12 @@
       "primary": "utilities",
       "secondary": [
         "productivity"
+      ]
+    },
+    "buildin": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "buildsettingextractor": {
@@ -5033,6 +5045,10 @@
         "ai"
       ]
     },
+    "fl-studio": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
     "flacon": {
       "primary": "audioMusic",
       "secondary": []
@@ -5143,6 +5159,10 @@
     },
     "flux-app": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "fluxer": {
+      "primary": "communication",
       "secondary": []
     },
     "flycut": {
@@ -7125,10 +7145,6 @@
       "primary": "developerTools",
       "secondary": []
     },
-    "jetbrains-space": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "jetbrains-toolbox": {
       "primary": "developerTools",
       "secondary": []
@@ -8809,6 +8825,12 @@
     "mcpbundler": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "mcplinker": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "mcreator": {
       "primary": "developerTools",
@@ -14034,6 +14056,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "solidtime": {
+      "primary": "productivity",
+      "secondary": [
+        "financeCrypto"
+      ]
+    },
     "solvespace": {
       "primary": "designGraphics",
       "secondary": []
@@ -14410,6 +14438,12 @@
     "stash": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "stashcat": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "stashpad": {
       "primary": "productivity",
