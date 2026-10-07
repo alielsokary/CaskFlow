@@ -1,5 +1,6 @@
 """Regression tests for data-publication and classification workflow contracts."""
 from pathlib import Path
+import json
 import os
 import subprocess
 import textwrap
@@ -70,6 +71,17 @@ def test_identity_release_merges_seed_and_publishes_manifest():
     assert "data/app_identity_variants.json" in release
     assert "data/package_product_reviews.json" in release
     assert "--identity-backfill" in _workflow("extract-icons.yml")
+
+
+def test_release_stamps_curated_cli_tokens():
+    release = _workflow("release.yml")
+    assert "      - data/cli_tokens.json" in release
+    assert "--slurpfile cli data/cli_tokens.json" in release
+    assert "cliTokens: $cli[0]" in release
+
+    tokens = json.loads((REPO_ROOT / "data" / "cli_tokens.json").read_text(encoding="utf-8"))
+    assert tokens == sorted(set(tokens))
+    assert all(isinstance(token, str) and token for token in tokens)
 
 
 @pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
