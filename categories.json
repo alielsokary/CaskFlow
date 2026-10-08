@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-07",
-  "totalCasks": 4007,
+  "generatedDate": "2026-10-08",
+  "totalCasks": 4012,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1272,6 +1272,12 @@
     "azookey": {
       "primary": "utilities",
       "secondary": []
+    },
+    "azure-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
     },
     "ba-connected": {
       "primary": "utilities",
@@ -10127,6 +10133,12 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "nodeterm": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "nomachine": {
       "primary": "utilities",
       "secondary": []
@@ -11379,6 +11391,10 @@
       "secondary": [
         "videoMedia"
       ]
+    },
+    "photocraft": {
+      "primary": "designGraphics",
+      "secondary": []
     },
     "photoninja": {
       "primary": "designGraphics",
@@ -15359,6 +15375,12 @@
         "ai"
       ]
     },
+    "threat-dragon": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "threema": {
       "primary": "securityPrivacy",
       "secondary": [
@@ -17452,6 +17474,12 @@
       ]
     },
     "zed": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "zed-delta": {
       "primary": "developerTools",
       "secondary": [
         "ai"
