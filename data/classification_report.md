@@ -1,28 +1,22 @@
 # Daily classification update
 
-Generated 2026-10-07
+Generated 2026-10-08
 
 ## Summary
 
-- 7 new casks classified
+- 5 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 1 casks deprecated/disabled in Homebrew (pruned)
+- 0 casks deprecated/disabled in Homebrew (pruned)
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `auto-tune-central` | audioMusic | utilities | 0.85 | Manages downloads/installation for Antares Auto-Tune audio plugins, tied to music production software. |
-| `buildin` | productivity | ai | 0.75 | Collaborative notes/wiki workspace with AI-powered features positions it as a productivity tool with an AI trait. |
-| `fl-studio` | audioMusic | - | 0.98 | FL Studio is a well-known digital audio workstation for music production. |
-| `fluxer` | communication | - | 0.95 | Fluxer is a chat app offering text, voice, and video communication for communities. |
-| `mcplinker` | developerTools | ai | 0.75 | A tool for managing MCP server configurations across AI coding clients like Claude Code and Cursor, targeting developers. |
-| `solidtime` | productivity | financeCrypto | 0.80 | A time-tracking tool for projects, tasks, and billing fits productivity with finance/billing overtones. |
-| `stashcat` | communication | securityPrivacy | 0.85 | Stashcat is a secure messaging app for organisations, fitting communication with a security trait. |
-
-## Deprecated/disabled (pruned)
-
-- `jetbrains-space`
+| `azure-cli` | developerTools | cloudStorage | 0.90 | Azure CLI is a cloud management command-line tool, matching developerTools' cloud CLI guidance. |
+| `nodeterm` | developerTools | ai | 0.85 | A terminal manager for coding agents on a node-based canvas is a developer tool with strong AI integration. |
+| `photocraft` | designGraphics | - | 0.95 | PhotoCraft is a native image editor with layers, masks, and brushes, fitting design/graphics tools. |
+| `threat-dragon` | securityPrivacy | developerTools | 0.85 | OWASP Threat Dragon is a threat modeling tool used for security design analysis. |
+| `zed-delta` | developerTools | ai | 0.85 | A coding environment for building/reviewing software with AI agents, fitting developer tools with AI trait. |

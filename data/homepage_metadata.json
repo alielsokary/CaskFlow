@@ -2146,6 +2146,13 @@
     "og_desc": "azooKey-Desktop is an open-source Japanese input method for macOS, written in Swift and powered by the Zenzai neural kana-kanji converter. It provides live conversion, optional LLM-based \"Magic Con..."
   },
   {
+    "token": "azure-cli",
+    "homepage": "https://docs.microsoft.com/cli/azure/overview",
+    "title": "Azure Command-Line Interface (CLI) documentation | Microsoft Learn",
+    "meta_desc": "Official product documentation for Azure command-line interface (Azure CLI). Azure CLI is a cross-platform command-line tool for managing Azure resources with interactive commands or scripts.",
+    "og_desc": "Official product documentation for Azure command-line interface (Azure CLI). Azure CLI is a cross-platform command-line tool for managing Azure resources with interactive commands or scripts."
+  },
+  {
     "token": "ba-connected",
     "homepage": "https://www.brightsign.biz/resources/software-downloads/",
     "title": "BrightSign Software Downloads | BrightSign®",
@@ -35526,6 +35533,13 @@
     "og_desc": ""
   },
   {
+    "token": "nodeterm",
+    "homepage": "https://nodeterm.dev/",
+    "title": "nodeterm - run your coding agents on a canvas",
+    "meta_desc": "A node-based terminal manager for macOS and Linux. Real terminals and coding agents as live nodes on an infinite canvas - watch Claude, Codex and Gemini work, wire them together, and never lose a session to a reboot.",
+    "og_desc": "Terminals and coding agents as live nodes on an infinite canvas. macOS & Linux."
+  },
+  {
     "token": "nomachine",
     "homepage": "https://www.nomachine.com/",
     "title": "Free Remote Desktop for Everybody - NoMachine",
@@ -37725,6 +37739,13 @@
     "title": "Phosphene - video wallpapers for macOS",
     "meta_desc": "I reverse engineered Apple's private WallpaperExtensionKit so any video can be your desktop and lock screen wallpaper. Free, open source, MIT.",
     "og_desc": "I reverse engineered Apple's video wallpapers. Any video, desktop and lock screen, through Apple's own extension path. Free, open source, MIT."
+  },
+  {
+    "token": "photocraft",
+    "homepage": "https://getartcraft.com/apps/photocraft",
+    "title": "PhotoCraft: The image editor you already know how to use. - ArtCraft",
+    "meta_desc": "Layers, masks, adjustment layers, layer styles, type, vectors and brushes in a native app written entirely in Rust. Open source, offline, and yours.",
+    "og_desc": "The open-source image editor you already know how to use."
   },
   {
     "token": "photoninja",
@@ -44809,6 +44830,13 @@
     "og_desc": "A local-first, open-source canvas where the graph determines what the model sees."
   },
   {
+    "token": "threat-dragon",
+    "homepage": "https://owasp.org/projects/threat-dragon",
+    "title": "OWASP Foundation",
+    "meta_desc": "OWASP Threat Dragon is a free, open-source, cross-platform threat modeling application used to draw threat modeling diagrams and to list threats for elements in the diagram. Threat Dragon is designed...",
+    "og_desc": "OWASP Threat Dragon is a free, open-source, cross-platform threat modeling application used to draw threat modeling diagrams and to list threats for elements in the diagram. Threat Dragon is designed..."
+  },
+  {
     "token": "threema",
     "homepage": "https://threema.ch/",
     "title": "Threema - Secure Communication For Individuals and Companies - Threema",
@@ -48439,6 +48467,13 @@
     "title": "Zed - Love your editor again",
     "meta_desc": "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "og_desc": "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+  },
+  {
+    "token": "zed-delta",
+    "homepage": "https://delta.dev/",
+    "title": "Delta - A Multiplayer Environment for Coding with Agents",
+    "meta_desc": "Build and review software with teammates and agents in shared threads, with every conversation and code change kept in context.",
+    "og_desc": "Build and review software with teammates and agents in shared threads, with every conversation and code change kept in context."
   },
   {
     "token": "zed@preview",
