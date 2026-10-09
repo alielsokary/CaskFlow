@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-08",
-  "totalCasks": 4012,
+  "generatedDate": "2026-10-09",
+  "totalCasks": 4017,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3214,6 +3214,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "crest": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "crisp": {
       "primary": "utilities",
       "secondary": [
@@ -4956,6 +4962,12 @@
     "filepane": {
       "primary": "utilities",
       "secondary": []
+    },
+    "filmcraft": {
+      "primary": "videoMedia",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "filo": {
       "primary": "communication",
@@ -7984,6 +7996,12 @@
     "lightburn": {
       "primary": "other",
       "secondary": []
+    },
+    "lightcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
     },
     "lightkey": {
       "primary": "audioMusic",
@@ -13378,6 +13396,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "secure-pipes": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "securesafe": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -16265,6 +16289,10 @@
     },
     "vcv-rack": {
       "primary": "audioMusic",
+      "secondary": []
+    },
+    "vectorcraft": {
+      "primary": "designGraphics",
       "secondary": []
     },
     "veepn": {
