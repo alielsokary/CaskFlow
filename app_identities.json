@@ -37651,6 +37651,71 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "secure-pipes": {
+      "caskVersion": "2.0.10",
+      "sourceURL": "https://secure-pipes.app/api/v1/releases/versions/2.0.10/download",
+      "artifactSHA256": "7bd92608515bc70967e7821beb54c5445fa7f8cd2454247515695a698869a033",
+      "apps": [
+        {
+          "bundleName": "Secure Pipes.app",
+          "bundleIdentifier": "net.edgeservices.secure-pipes"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "crest": {
+      "caskVersion": "6.4.1",
+      "sourceURL": "https://crestnotch.app/downloads/Crest-6.4.1.dmg",
+      "artifactSHA256": "7b9152e78cb78cced5eaa0d0331368584eecb4b37205d3d745c73476b64bc26d",
+      "apps": [
+        {
+          "bundleName": "Crest.app",
+          "bundleIdentifier": "com.zack40x.crest"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "filmcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/filmcraft/releases/download/v0.4.0/filmcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "81feeedd6294579fe51f07acff2f8bac57c2ca72a0b49977ef76be67c7c45237",
+      "apps": [
+        {
+          "bundleName": "FilmCraft.app",
+          "bundleIdentifier": "ai.storyteller.filmcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lightcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/lightcraft/releases/download/v0.4.0/lightcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "c74e45230a54bce09bf86cecee7e22f3374ee46f8ba779ddda3f4ee7910d3f5c",
+      "apps": [
+        {
+          "bundleName": "LightCraft.app",
+          "bundleIdentifier": "ai.storyteller.lightcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vectorcraft": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/storytold/vectorcraft/releases/download/v0.7.0/vectorcraft-0.7.0-macos-universal.dmg",
+      "artifactSHA256": "c9976419f038c0ecec2da569a4afc1717c2ffdaf54c7ab40d26b0c7f066ffa9e",
+      "apps": [
+        {
+          "bundleName": "VectorCraft.app",
+          "bundleIdentifier": "ai.storyteller.vectorcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
