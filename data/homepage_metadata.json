@@ -5466,6 +5466,13 @@
     "og_desc": "Crescendo is a swift based, real time event viewer for macOS. It utilizes Apple's Endpoint Security Framework. - SuprHackerSteve/Crescendo"
   },
   {
+    "token": "crest",
+    "homepage": "https://crestnotch.app/",
+    "title": "Crest Suite: Crest, Take and Minutes for macOS. Pay once.",
+    "meta_desc": "A free notch app, a screen recorder and an AI note taker for your Mac. All three for $24.99 once, or $2.99 a month.",
+    "og_desc": "A free notch app, a screen recorder and an AI note taker for your Mac. All three for $24.99 once, or $2.99 a month."
+  },
+  {
     "token": "crisp",
     "homepage": "https://crispmac.app/",
     "title": "Crisp: Free BetterDisplay & Lunar alternative for macOS",
@@ -8480,6 +8487,13 @@
     "title": "FilePane - file management utility",
     "meta_desc": "Expand the power of drag-and-drop. Image editor and converter, file manager, word counter and more",
     "og_desc": "Expand the power of drag-and-drop. Image editor and converter, file manager, word counter and more"
+  },
+  {
+    "token": "filmcraft",
+    "homepage": "https://getartcraft.com/apps/filmcraft",
+    "title": "FilmCraft: Professional video editing, rebuilt from scratch. - ArtCraft",
+    "meta_desc": "Source and program monitors, a real timeline and every trim mode, in a native editor written in pure Rust - down to its own codecs.",
+    "og_desc": "Professional, open-source video editing, rebuilt from scratch in Rust."
   },
   {
     "token": "filo",
@@ -31650,6 +31664,13 @@
     "og_desc": "LightBurn laser engraving and cutting software for personal and professional laser cutters."
   },
   {
+    "token": "lightcraft",
+    "homepage": "https://getartcraft.com/apps/lightcraft",
+    "title": "LightCraft: Your photos. Your pixels. Your machine. - ArtCraft",
+    "meta_desc": "A fast photo library and non-destructive raw developer, written from scratch in pure Rust. No account, no cloud, no telemetry, no subscription.",
+    "og_desc": "An open-source photo library and raw developer that runs on your machine."
+  },
+  {
     "token": "lightkey",
     "homepage": "https://lightkeyapp.com/",
     "title": "Lightkey - Professional DMX lighting control. Mac style.",
@@ -41165,6 +41186,13 @@
     "og_desc": "Protect your SSH keys with your Mac's Secure Enclave - maxgoedjen/secretive"
   },
   {
+    "token": "secure-pipes",
+    "homepage": "https://secure-pipes.app/",
+    "title": "Secure Pipes | SSH Tunnels for macOS",
+    "meta_desc": "Secure Pipes is a native SSH tunnel and connection manager for macOS.",
+    "og_desc": ""
+  },
+  {
     "token": "securesafe",
     "homepage": "https://www.securesafe.com/",
     "title": "Business-Cloud für Dokumente & Passwörter | SecureSafe Bundle",
@@ -46396,6 +46424,13 @@
     "title": "VCV Rack - The Eurorack Simulator for Windows/Mac/Linux",
     "meta_desc": "VCV Rack - Virtual Eurorack Studio",
     "og_desc": ""
+  },
+  {
+    "token": "vectorcraft",
+    "homepage": "https://getartcraft.com/apps/vectorcraft",
+    "title": "VectorCraft: Vector illustration, reimagined in pure Rust. - ArtCraft",
+    "meta_desc": "The pen, panels and shortcuts working illustrators expect, in a native app that keeps up with you. Open source, and in your browser too.",
+    "og_desc": "Fast, open-source vector illustration, reimagined in pure Rust."
   },
   {
     "token": "veepn",

@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-10-08
+Generated 2026-10-09
 
 ## Summary
 
@@ -15,8 +15,8 @@ Generated 2026-10-08
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `azure-cli` | developerTools | cloudStorage | 0.90 | Azure CLI is a cloud management command-line tool, matching developerTools' cloud CLI guidance. |
-| `nodeterm` | developerTools | ai | 0.85 | A terminal manager for coding agents on a node-based canvas is a developer tool with strong AI integration. |
-| `photocraft` | designGraphics | - | 0.95 | PhotoCraft is a native image editor with layers, masks, and brushes, fitting design/graphics tools. |
-| `threat-dragon` | securityPrivacy | developerTools | 0.85 | OWASP Threat Dragon is a threat modeling tool used for security design analysis. |
-| `zed-delta` | developerTools | ai | 0.85 | A coding environment for building/reviewing software with AI agents, fitting developer tools with AI trait. |
+| `crest` | menuBar | utilities | 0.75 | Crest is a notch utility providing widgets, which is primarily a menu-bar/notch-area enhancement tool. |
+| `filmcraft` | videoMedia | developerTools | 0.90 | FilmCraft is a professional video editing application. |
+| `lightcraft` | designGraphics | utilities | 0.85 | A raw photo library manager and non-destructive image developer fits design/graphics photo editing tools. |
+| `secure-pipes` | developerTools | utilities | 0.85 | SSH tunnel and connection manager, which falls under developer tools for SSH/SFTP clients. |
+| `vectorcraft` | designGraphics | - | 0.95 | VectorCraft is a native vector illustration editor, fitting design/graphics tools. |
