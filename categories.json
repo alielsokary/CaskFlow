@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-09",
-  "totalCasks": 4017,
+  "generatedDate": "2026-10-10",
+  "totalCasks": 4026,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3568,6 +3568,12 @@
       "primary": "browsers",
       "secondary": []
     },
+    "deckcraft": {
+      "primary": "officeTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "deckset": {
       "primary": "productivity",
       "secondary": []
@@ -3641,6 +3647,12 @@
       "primary": "audioMusic",
       "secondary": [
         "ai"
+      ]
+    },
+    "designcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "productivity"
       ]
     },
     "deskpad": {
@@ -4355,6 +4367,12 @@
       "primary": "designGraphics",
       "secondary": [
         "videoMedia"
+      ]
+    },
+    "effectcraft": {
+      "primary": "videoMedia",
+      "secondary": [
+        "designGraphics"
       ]
     },
     "egnyte": {
@@ -5659,6 +5677,12 @@
       "primary": "communication",
       "secondary": []
     },
+    "genoffice": {
+      "primary": "officeTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "genymotion": {
       "primary": "developerTools",
       "secondary": []
@@ -6114,6 +6138,12 @@
     "grid-clock": {
       "primary": "screensaverWallpaper",
       "secondary": []
+    },
+    "gridcraft": {
+      "primary": "officeTools",
+      "secondary": [
+        "productivity"
+      ]
     },
     "grids": {
       "primary": "communication",
@@ -11293,6 +11323,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "pdfcraft": {
+      "primary": "productivity",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "pdfelement": {
       "primary": "productivity",
       "secondary": []
@@ -14136,6 +14172,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "sononym": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
     "sonos": {
       "primary": "other",
       "secondary": []
@@ -14182,6 +14224,12 @@
     "soundanchor": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "soundcraft": {
+      "primary": "audioMusic",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "soundsource": {
       "primary": "audioMusic",
@@ -17094,6 +17142,12 @@
     "wootility": {
       "primary": "utilities",
       "secondary": []
+    },
+    "wordcraft": {
+      "primary": "productivity",
+      "secondary": [
+        "officeTools"
+      ]
     },
     "wordpresscom": {
       "primary": "productivity",

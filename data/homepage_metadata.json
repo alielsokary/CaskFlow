@@ -6056,6 +6056,13 @@
     "og_desc": "Decentr.net delivers privacy‑focused apps that safeguard your digital identity, encrypt personal data, and give you full control over online footprints. Secure, decentralized identity protection for everyday users."
   },
   {
+    "token": "deckcraft",
+    "homepage": "https://github.com/storytold/deckcraft",
+    "title": "GitHub - storytold/deckcraft: Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps. · GitHub",
+    "meta_desc": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps. - storytold/deckcraft",
+    "og_desc": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps. - storytold/deckcraft"
+  },
+  {
     "token": "deckset",
     "homepage": "https://www.decksetapp.com/",
     "title": "Deckset for macOS and iOS: Presentations from Markdown in No Time",
@@ -6180,6 +6187,13 @@
     "title": "Descript - AI Video & Podcast Editor | Free, Online",
     "meta_desc": "Descript makes editing video and audio as easy as editing text. Record, transcribe, edit, and publish in one tool. Try for free, with powerful upgrades for creators & teams.",
     "og_desc": "Descript makes editing video and audio as easy as editing text. Record, transcribe, edit, and publish in one tool. Try for free, with powerful upgrades for creators & teams."
+  },
+  {
+    "token": "designcraft",
+    "homepage": "https://getartcraft.com/apps/designcraft",
+    "title": "DesignCraft: Page layout and publishing, rebuilt in pure Rust. - ArtCraft",
+    "meta_desc": "Spreads and parent pages, threaded stories, styles, swatches and text wrap in a native layout app with a professional paragraph composer. No subscription, no licence server, no telemetry.",
+    "og_desc": "Open-source page layout and publishing, rebuilt in pure Rust."
   },
   {
     "token": "deskpad",
@@ -7387,6 +7401,13 @@
     "title": "Create TikTok effects | TikTok effect house",
     "meta_desc": "Create fun TikTok effects, filters, games, and interactive AR experiences with TikTok effect house desktop app. Start creating your own TikTok effects today.",
     "og_desc": ""
+  },
+  {
+    "token": "effectcraft",
+    "homepage": "https://getartcraft.com/apps/effectcraft",
+    "title": "EffectCraft: Motion graphics and visual effects, in pure Rust. - ArtCraft",
+    "meta_desc": "Compositions, layers, keyframes, 259 effects, expressions, 3D cameras and lights, and a render queue in a native compositor written in pure Rust. Young, moving fast, and already usable.",
+    "og_desc": "Open-source motion graphics and visual effects, built in pure Rust."
   },
   {
     "token": "egnyte",
@@ -27450,6 +27471,13 @@
     "og_desc": ""
   },
   {
+    "token": "genoffice",
+    "homepage": "https://genoffice.ai/",
+    "title": "GenOffice - Free, Open-Source AI Office Suite",
+    "meta_desc": "Edit Word, Excel, PowerPoint and PDF files with built-in AI. Free, open-source desktop office apps for macOS, Windows and Linux. Download GenOffice.",
+    "og_desc": "Edit Word, Excel, PowerPoint and PDF files with built-in AI. Free, open-source desktop office apps for macOS, Windows and Linux. Download GenOffice."
+  },
+  {
     "token": "genymotion",
     "homepage": "https://www.genymotion.com/",
     "title": "Genymotion - Android Emulator in the Cloud and for PC & Mac",
@@ -28320,6 +28348,13 @@
     "title": "GitHub - chrstphrknwtn/grid-clock-screensaver: Grid clock macOS screensaver · GitHub",
     "meta_desc": "Grid clock macOS screensaver. Contribute to chrstphrknwtn/grid-clock-screensaver development by creating an account on GitHub.",
     "og_desc": "Grid clock macOS screensaver. Contribute to chrstphrknwtn/grid-clock-screensaver development by creating an account on GitHub."
+  },
+  {
+    "token": "gridcraft",
+    "homepage": "https://github.com/storytold/gridcraft",
+    "title": "GitHub - storytold/gridcraft: GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft. · GitHub",
+    "meta_desc": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft. - storytold/gridcraft",
+    "og_desc": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft. - storytold/gridcraft"
   },
   {
     "token": "gridea",
@@ -37582,6 +37617,13 @@
     "og_desc": "With PDF Toolbox for Mac, you can combine, split, compress, encrypt or convert PDF and more with ease. It provides a set of PDF utility tools for you."
   },
   {
+    "token": "pdfcraft",
+    "homepage": "https://getartcraft.com/apps/pdfcraft",
+    "title": "PdfCraft: The open-source PDF workbench. - ArtCraft",
+    "meta_desc": "Read, organize, combine, split and secure PDFs in a fast, native app written in Rust from the ground up. No account, no telemetry, no cloud.",
+    "og_desc": "The open-source PDF workbench: read, organize, combine, split and secure."
+  },
+  {
     "token": "pdfelement",
     "homepage": "https://pdf.wondershare.com/",
     "title": "Easy PDF Solution to Create, Convert, Edit PDF -Wondershare PDFelement",
@@ -42519,6 +42561,13 @@
     "og_desc": ""
   },
   {
+    "token": "sononym",
+    "homepage": "https://www.sononym.net/",
+    "title": "Sononym - Searchable Sound",
+    "meta_desc": "Sononym is using machine learning to automatically organize your sounds and explore how they are related to one another. Available for Windows, MacOS and Linux.",
+    "og_desc": "Sononym is an innovative sample browser for Windows, MacOS and Linux."
+  },
+  {
     "token": "sonos",
     "homepage": "https://www.sonos.com/",
     "title": "Menu",
@@ -42592,6 +42641,13 @@
     "title": "SoundAnchor",
     "meta_desc": "Control the priority of your audio devices to keep your best microphone in charge",
     "og_desc": "Control the priority of your audio devices to keep your best\n      microphone in charge"
+  },
+  {
+    "token": "soundcraft",
+    "homepage": "https://github.com/storytold/soundcraft",
+    "title": "GitHub - storytold/soundcraft: An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust · GitHub",
+    "meta_desc": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust - storytold/soundcraft",
+    "og_desc": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust - storytold/soundcraft"
   },
   {
     "token": "soundsource",
@@ -47815,6 +47871,13 @@
     "title": "Wootility | Wooting",
     "meta_desc": "The Wooting Wootility is used to configure your Wooting keyboard. Get the most out of your keyboard.",
     "og_desc": "The Wooting Wootility is used to configure your Wooting keyboard. Get the most out of your keyboard."
+  },
+  {
+    "token": "wordcraft",
+    "homepage": "https://github.com/storytold/wordcraft",
+    "title": "GitHub - storytold/wordcraft: An open-source, clean-room reimplementation of Microsoft Word in pure Rust · GitHub",
+    "meta_desc": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust - storytold/wordcraft",
+    "og_desc": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust - storytold/wordcraft"
   },
   {
     "token": "wordpresscom",
