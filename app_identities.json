@@ -37716,6 +37716,149 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "soundcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/soundcraft/releases/download/v0.4.0/soundcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "3397597d156c8504f104d904ee8236bc8a4926234800a034449b0826d17b8051",
+      "apps": [
+        {
+          "bundleName": "SoundCraft.app",
+          "bundleIdentifier": "ai.storyteller.soundcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gridcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/gridcraft/releases/download/v0.4.0/gridcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "4cb75d8a8e9ad87d75768151d89eb3a252e3527db0853e9470495cb424019a7b",
+      "apps": [
+        {
+          "bundleName": "GridCraft.app",
+          "bundleIdentifier": "ai.storyteller.gridcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cadcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/cadcraft/releases/download/v0.4.0/cadcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "f227cd05f056455654ce08a8ea646f6166eb610ba033e7635a0638d2ad2fa402",
+      "apps": [
+        {
+          "bundleName": "CADCraft.app",
+          "bundleIdentifier": "ai.storyteller.cadcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wordcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/wordcraft/releases/download/v0.4.0/wordcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "90d30b23b7f1f3873f108db61218d514d8ca5465ef7ed3baa539a8ed24e98655",
+      "apps": [
+        {
+          "bundleName": "WordCraft.app",
+          "bundleIdentifier": "ai.storyteller.wordcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "designcraft": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/storytold/designcraft/releases/download/v0.5.0/designcraft-0.5.0-macos-universal.dmg",
+      "artifactSHA256": "8af67201c8d2c5493c76aaf0357e16bce3bc2aa0454d64439f29fc4a9a55a725",
+      "apps": [
+        {
+          "bundleName": "DesignCraft.app",
+          "bundleIdentifier": "ai.storyteller.designcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pdfcraft": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/storytold/pdfcraft/releases/download/v0.5.0/pdfcraft-0.5.0-macos-universal.dmg",
+      "artifactSHA256": "36bfd4fb1d6fd22321f92263dbc97b41cc266b5275f7aac63064464b6be982cd",
+      "apps": [
+        {
+          "bundleName": "PdfCraft.app",
+          "bundleIdentifier": "ai.storyteller.pdfcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sononym": {
+      "caskVersion": "1.6.15",
+      "sourceURL": "https://www.sononym.net/download/Sononym-1.6.15-arm64.dmg",
+      "artifactSHA256": "d84afbeee6e04d9820e927b3fb59568edaf4419158683402e80e725e064ebe82",
+      "apps": [
+        {
+          "bundleName": "Sononym.app",
+          "bundleIdentifier": "com.sononym.sononym"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "artcraft": {
+      "caskVersion": "0.41.0",
+      "sourceURL": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.0/ArtCraft_0.41.0_universal.dmg",
+      "artifactSHA256": "3cf1df2e56345e603c5d0180e5b563dd5eca25d9e3c3959d9554012f510916c1",
+      "apps": [
+        {
+          "bundleName": "ArtCraft.app",
+          "bundleIdentifier": "ai.artcraft.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deckcraft": {
+      "caskVersion": "0.4.0",
+      "sourceURL": "https://github.com/storytold/deckcraft/releases/download/v0.4.0/deckcraft-0.4.0-macos-universal.dmg",
+      "artifactSHA256": "d41169c6c1d0d35229fe66ada3856cd669b8917c82c3571236bdfb9cb24c7f90",
+      "apps": [
+        {
+          "bundleName": "DeckCraft.app",
+          "bundleIdentifier": "ai.storyteller.deckcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "effectcraft": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/storytold/effectcraft/releases/download/v0.7.0/effectcraft-0.7.0-macos-universal.dmg",
+      "artifactSHA256": "d394fd0c04372aad89fb99a160bf2eeecf7e6035b26bf2da209cd7819b1bcb5d",
+      "apps": [
+        {
+          "bundleName": "EffectCraft.app",
+          "bundleIdentifier": "ai.storyteller.effectcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "genoffice": {
+      "caskVersion": "0.11.505",
+      "sourceURL": "https://github.com/genspark-ai/genoffice/releases/download/v0.11.505/GenOffice-0.11.505-arm64.dmg",
+      "artifactSHA256": "9e23ec7bb1b2c7577fdd0af5f6c2dff4903d2d98318f88244432fd2ddbbec245",
+      "apps": [
+        {
+          "bundleName": "GenOffice.app",
+          "bundleIdentifier": "com.genoffice.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
