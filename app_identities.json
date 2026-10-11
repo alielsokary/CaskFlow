@@ -37859,6 +37859,34 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "betteraudio": {
+      "caskVersion": "26.6.2",
+      "sourceURL": "https://github.com/rokartur/BetterAudio/releases/download/26.6.2/BetterAudio-26.6.2.dmg",
+      "artifactSHA256": "5f7234ef92e612ec41062b09d554bea8fbbc856dc35efd5d75ee749a07998315",
+      "apps": [
+        {
+          "bundleName": "BetterAudio.app",
+          "bundleIdentifier": "pro.betteraudio.BetterAudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tnas-pc": {
+      "caskVersion": "5.2.548",
+      "sourceURL": "https://download3.terra-master.com/Apps/TNAS%20PC/macOS/arm/TNAS%20PC-arm64-5.2.548.pkg",
+      "artifactSHA256": "e88f58fbff948d9aa2bc4bfb3606a0c2bffad6366f02c1351c210687a2643e58",
+      "apps": [
+        {
+          "bundleName": "TNAS PC.app",
+          "bundleIdentifier": "com.terramaster.tnaspc5",
+          "packageIdentifier": "com.terramaster.tnaspc6",
+          "installedPath": "/Applications/TNAS PC.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
