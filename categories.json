@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-10",
-  "totalCasks": 4026,
+  "generatedDate": "2026-10-11",
+  "totalCasks": 4029,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1013,6 +1013,13 @@
       "primary": "cloudStorage",
       "secondary": []
     },
+    "artcraft": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai",
+        "designGraphics"
+      ]
+    },
     "artisan": {
       "primary": "designGraphics",
       "secondary": []
@@ -1520,6 +1527,12 @@
     "betterandbetter": {
       "primary": "utilities",
       "secondary": []
+    },
+    "betteraudio": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
     },
     "bettercapture": {
       "primary": "videoMedia",
@@ -2060,6 +2073,12 @@
     "cad-assistant": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "cadcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "cadran": {
       "primary": "screensaverWallpaper",
@@ -5215,10 +5234,6 @@
     },
     "flykey": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "fmail": {
-      "primary": "communication",
       "secondary": []
     },
     "fmail3": {
@@ -15626,6 +15641,12 @@
     "tmpdisk": {
       "primary": "utilities",
       "secondary": []
+    },
+    "tnas-pc": {
+      "primary": "cloudStorage",
+      "secondary": [
+        "utilities"
+      ]
     },
     "tng-digital-mini-program-studio": {
       "primary": "developerTools",

@@ -1701,6 +1701,13 @@
     "og_desc": ""
   },
   {
+    "token": "artcraft",
+    "homepage": "https://getartcraft.com/",
+    "title": "ArtCraft - Controllable AI for Artists",
+    "meta_desc": "ArtCraft is the open-source desktop app for generating AI video and images - built for artists who want real control.",
+    "og_desc": "ArtCraft is the open-source desktop app for generating AI video and images - built for artists who want real control."
+  },
+  {
     "token": "artisan",
     "homepage": "https://artisan-scope.org/",
     "title": "artisan | Leading coffee roasting software",
@@ -2574,6 +2581,13 @@
     "title": "",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "betteraudio",
+    "homepage": "https://betteraudio.pro/",
+    "title": "BetterAudio - Master your Mac's Audio",
+    "meta_desc": "Per-app volume control, local AI transcription, and professional audio routing for macOS. Native, fast, and private. The ultimate audio control app for Mac.",
+    "og_desc": "Per-app volume control, local AI transcription, and professional audio routing for macOS. Native, fast, and private."
   },
   {
     "token": "bettercapture",
@@ -3546,6 +3560,13 @@
     "title": "CAD Assistant - Open Cascade",
     "meta_desc": "Get a powerful offline 3D CAD viewer and converter with simple and intuitive interface free for both personal and commercial use. This fast and handy viewer can employ the most of popular 3D formats.",
     "og_desc": "Backing your path to digital future"
+  },
+  {
+    "token": "cadcraft",
+    "homepage": "https://github.com/storytold/cadcraft",
+    "title": "GitHub - storytold/cadcraft: CADCraft: computer-aided design and drafting - an open-source, clean-room AutoCAD-style app in pure Rust · GitHub",
+    "meta_desc": "CADCraft: computer-aided design and drafting - an open-source, clean-room AutoCAD-style app in pure Rust - storytold/cadcraft",
+    "og_desc": "CADCraft: computer-aided design and drafting - an open-source, clean-room AutoCAD-style app in pure Rust - storytold/cadcraft"
   },
   {
     "token": "cadran",
@@ -45256,6 +45277,13 @@
     "title": "GitHub - imothee/tmpdisk: Ram Disk Management App for OSX · GitHub",
     "meta_desc": "Ram Disk Management App for OSX. Contribute to imothee/tmpdisk development by creating an account on GitHub.",
     "og_desc": "Ram Disk Management App for OSX. Contribute to imothee/tmpdisk development by creating an account on GitHub."
+  },
+  {
+    "token": "tnas-pc",
+    "homepage": "https://help.terra-master.com/docs/TOS7/application/tnas-pc",
+    "title": "TNAS PC | TerraMaster",
+    "meta_desc": "TerraMaster's TNAS PC is a meticulously designed desktop assistant, aimed at streamlining the user experience with TNAS devices. It offers swift capabilities for locating and connecting to TNAS devices, simplifying login processes, and facilitating basic configurations. Furthermore, TNAS PC provides practical features including remote access, Wake-on-LAN (WOL) for network wakeup, and computer data backup and synchronization. Available in both Windows and macOS versions, TNAS PC continues to evol",
+    "og_desc": "TerraMaster's TNAS PC is a meticulously designed desktop assistant, aimed at streamlining the user experience with TNAS devices. It offers swift capabilities for locating and connecting to TNAS devices, simplifying login processes, and facilitating basic configurations. Furthermore, TNAS PC provides practical features including remote access, Wake-on-LAN (WOL) for network wakeup, and computer data backup and synchronization. Available in both Windows and macOS versions, TNAS PC continues to evol"
   },
   {
     "token": "tng-digital-mini-program-studio",
