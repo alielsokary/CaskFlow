@@ -4437,6 +4437,13 @@
     "og_desc": "A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance. - tddworks/ClaudeBar"
   },
   {
+    "token": "claudoscope",
+    "homepage": "https://claudoscope.com/",
+    "title": "Claudoscope | Claude Code Session Viewer & Visualizer for macOS",
+    "meta_desc": "Free, open-source Claude Code session viewer and visualizer for macOS. Browse every transcript with per-message cost, replay sessions on a timeline, catch leaked secrets. 100% local.",
+    "og_desc": "Free, open-source Claude Code session viewer and visualizer for your Mac. Browse every transcript with per-message cost, search conversations, catch leaked secrets, and harden ~/.claude/ in one click."
+  },
+  {
     "token": "clawd-on-desk",
     "homepage": "https://github.com/rullerzhou-afk/clawd-on-desk",
     "title": "GitHub - rullerzhou-afk/clawd-on-desk: A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents - so you don't have to. · GitHub",
@@ -5492,6 +5499,13 @@
     "title": "Crest Suite: Crest, Take and Minutes for macOS. Pay once.",
     "meta_desc": "A free notch app, a screen recorder and an AI note taker for your Mac. All three for $24.99 once, or $2.99 a month.",
     "og_desc": "A free notch app, a screen recorder and an AI note taker for your Mac. All three for $24.99 once, or $2.99 a month."
+  },
+  {
+    "token": "crest-browser",
+    "homepage": "https://crestbrowser.com/",
+    "title": "Crest - The browser for life after Arc",
+    "meta_desc": "Crest is an independent browser for Mac, iPad, and iPhone, made by an Arc user who wanted Spaces, Peek, and the sidebar to have a future.",
+    "og_desc": "An independent browser made with a love for Arc's best ideas, including Spaces, a calm sidebar, and Peek."
   },
   {
     "token": "crisp",
@@ -26813,6 +26827,13 @@
     "og_desc": ""
   },
   {
+    "token": "forel",
+    "homepage": "https://forel-app.github.io/",
+    "title": "Forel - File automation for macOS",
+    "meta_desc": "Forel is an open-source macOS file automation app that watches folders and organizes files with local rules.",
+    "og_desc": "Forel is an open-source macOS file automation app that watches folders and organizes files with local rules."
+  },
+  {
     "token": "fork",
     "homepage": "https://fork.dev/",
     "title": "Fork - a fast and friendly git client for Mac and Windows",
@@ -35505,6 +35526,13 @@
     "og_desc": "The most popular open source content collaboration platform for tens of millions of users at thousands of organizations across the globe"
   },
   {
+    "token": "nextdns-app",
+    "homepage": "https://nextdns.io/",
+    "title": "NextDNS - The new firewall for the modern Internet",
+    "meta_desc": "NextDNS protects you from all kinds of security threats, blocks ads and trackers on websites and in apps and provides a safe and supervised Internet for kids - on all devices and on all networks.",
+    "og_desc": "The new firewall for the modern Internet"
+  },
+  {
     "token": "ngrok",
     "homepage": "https://ngrok.com/",
     "title": "Decoration",
@@ -37881,6 +37909,13 @@
     "og_desc": "Explore the PhpStorm IDE for web projects. Get everything you need for PHP, JavaScript, and SQL coding out of the box\n"
   },
   {
+    "token": "phtv",
+    "homepage": "https://phamhungtien.com/PHTV/",
+    "title": "PHTV - Bộ gõ tiếng Việt cho macOS | Miễn phí, Nhanh & Bảo mật",
+    "meta_desc": "PHTV (Precision Hybrid Typing Vietnamese): Bộ gõ tiếng Việt 100% Swift tối ưu cho macOS 14+. Hỗ trợ Telex, VNI, gõ tắt Macro, Emoji Picker. Hoàn toàn miễn phí, mã nguồn mở và bảo mật.",
+    "og_desc": "Bộ gõ tiếng Việt 100% Swift. Hoàn toàn miễn phí, offline, không thu thập dữ liệu. Hỗ trợ Telex/VNI, macOS 14+."
+  },
+  {
     "token": "physics-101",
     "homepage": "https://www.praetersoftware.com/new/physics101/",
     "title": "Physics 101 - Praeter Software",
@@ -39134,6 +39169,13 @@
     "token": "purevpn",
     "homepage": "https://www.purevpn.com/",
     "error": "[Errno 54] Connection reset by peer"
+  },
+  {
+    "token": "purge",
+    "homepage": "https://purgemac.com/",
+    "title": "Purge for Mac: Free, Open-Source Mac Cleaner",
+    "meta_desc": "Free open-source Mac cleaner for caches, Xcode junk, and app leftovers. Trash-first, no telemetry. Install with Homebrew or download for macOS 13+.",
+    "og_desc": "Free open-source Mac cleaner for caches, Xcode junk, and app leftovers. Trash-first, no telemetry. Install with Homebrew or download for macOS 13+."
   },
   {
     "token": "pxplay",
@@ -40812,6 +40854,13 @@
     "title": "SABnzbd -\n        \n        \n        The free and easy binary newsreader",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "sacnview",
+    "homepage": "https://sacnview.org/",
+    "title": "sACNView | sACNView, a tool for sending and receiving the Streaming ACN control protocol",
+    "meta_desc": "sACNView, a tool for sending and receiving the Streaming ACN control protocol",
+    "og_desc": "sACNView, a tool for sending and receiving the Streaming ACN control protocol"
   },
   {
     "token": "saega",
