@@ -37887,6 +37887,97 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "phtv": {
+      "caskVersion": "3.6.6",
+      "sourceURL": "https://github.com/PhamHungTien/PHTV/releases/download/v3.6.6/PHTV-3.6.6-arm64.dmg",
+      "artifactSHA256": "db72614bfe64beeda28170b8dabfd3c6f9b1ce9ccfb03dc3e8633ea76fc193c1",
+      "apps": [
+        {
+          "bundleName": "PHTV.app",
+          "bundleIdentifier": "com.phamhungtien.phtv"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "claudoscope": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/cordwainersmith/Claudoscope/releases/download/v1.4.0/Claudoscope.dmg",
+      "artifactSHA256": "59b1712cc95f27403a7c85b5f286e302b1fe9139833c5abd21a3dde0afa04ebe",
+      "apps": [
+        {
+          "bundleName": "Claudoscope.app",
+          "bundleIdentifier": "com.claudoscope.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nextdns-app": {
+      "caskVersion": "2.1.5",
+      "sourceURL": "https://storage.googleapis.com/nextdns_macos/NextDNS-2.1.5.dmg",
+      "artifactSHA256": "1f34a63da08bd17695533a5fd55ca007c2d60a24edebec8c6ebeb01824111e4a",
+      "apps": [
+        {
+          "bundleName": "NextDNS.app",
+          "bundleIdentifier": "io.nextdns.NextDNSMac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "purge": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://github.com/jithin-sabu/purge-app/releases/download/v1.9.0/Purgev1.9.0.dmg",
+      "artifactSHA256": "03f396756cfa54c97e31823d84d4ef85cd31b4ac3bde2a05d203c7bc03fa7755",
+      "apps": [
+        {
+          "bundleName": "Purge.app",
+          "bundleIdentifier": "io.getpurge.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "forel": {
+      "caskVersion": "1.0.9",
+      "sourceURL": "https://github.com/lab421/forel/releases/download/v1.0.9/Forel-v1.0.9.dmg",
+      "artifactSHA256": "dc99deddc6feba08f04ceda451bf4677bbb7ac646a6b3c28f3e054b102fd65f3",
+      "apps": [
+        {
+          "bundleName": "Forel.app",
+          "bundleIdentifier": "com.lab421.forel"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sacnview": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/docsteer/sacnview/releases/download/v3.1.0/sACNView.dmg",
+      "artifactSHA256": "1f6e1ba203876214a147618fb5c93376d13c02090c4bfe17cbb6a7cffbc21d45",
+      "apps": [
+        {
+          "bundleName": "sACNView.app",
+          "bundleIdentifier": "net.tomsteer.sacnview"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "crest-browser": {
+      "caskVersion": "0.7.2",
+      "sourceURL": "https://github.com/pauljoda/Crest/releases/download/v0.7.2/Installer-Crest-0.7.2-arm64.dmg",
+      "artifactSHA256": "ac81e43de2a894ec28884fcb692a151c3946bf156c50ecebf600da9634671d54",
+      "apps": [
+        {
+          "bundleName": "Crest.app",
+          "bundleIdentifier": "com.pauldavis.crest"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
