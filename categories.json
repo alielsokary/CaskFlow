@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-11",
-  "totalCasks": 4029,
+  "generatedDate": "2026-10-12",
+  "totalCasks": 4005,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -506,10 +506,6 @@
       "primary": "developerTools",
       "secondary": []
     },
-    "aladin": {
-      "primary": "scienceEducation",
-      "secondary": []
-    },
     "alcom": {
       "primary": "developerTools",
       "secondary": []
@@ -676,10 +672,6 @@
       "secondary": [
         "ai"
       ]
-    },
-    "ampps": {
-      "primary": "developerTools",
-      "secondary": []
     },
     "anaconda": {
       "primary": "scienceEducation",
@@ -1953,10 +1945,6 @@
       "primary": "designGraphics",
       "secondary": []
     },
-    "brooklyn": {
-      "primary": "screensaverWallpaper",
-      "secondary": []
-    },
     "browser-actions": {
       "primary": "utilities",
       "secondary": []
@@ -2495,10 +2483,6 @@
       "primary": "other",
       "secondary": []
     },
-    "cinder": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "cinderella": {
       "primary": "scienceEducation",
       "secondary": []
@@ -2607,6 +2591,13 @@
     "claudebar": {
       "primary": "menuBar",
       "secondary": [
+        "ai"
+      ]
+    },
+    "claudoscope": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
         "ai"
       ]
     },
@@ -2957,10 +2948,6 @@
       "primary": "other",
       "secondary": []
     },
-    "colorpicker-materialdesign": {
-      "primary": "designGraphics",
-      "secondary": []
-    },
     "colorpicker-propicker": {
       "primary": "designGraphics",
       "secondary": []
@@ -3238,6 +3225,10 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "crest-browser": {
+      "primary": "browsers",
+      "secondary": []
     },
     "crisp": {
       "primary": "utilities",
@@ -3707,10 +3698,6 @@
       "secondary": [
         "utilities"
       ]
-    },
-    "developerexcuses": {
-      "primary": "screensaverWallpaper",
-      "secondary": []
     },
     "deviceshelf": {
       "primary": "securityPrivacy",
@@ -4236,10 +4223,6 @@
       "primary": "games",
       "secondary": []
     },
-    "dwarf-fortress-lmp": {
-      "primary": "games",
-      "secondary": []
-    },
     "dwellclick": {
       "primary": "utilities",
       "secondary": [
@@ -4578,10 +4561,6 @@
       "primary": "audioMusic",
       "secondary": []
     },
-    "enigma-game": {
-      "primary": "games",
-      "secondary": []
-    },
     "enpass": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -4624,10 +4603,6 @@
     },
     "epoccam": {
       "primary": "videoMedia",
-      "secondary": []
-    },
-    "epoch-flip-clock": {
-      "primary": "screensaverWallpaper",
       "secondary": []
     },
     "epson-print-layout": {
@@ -5350,6 +5325,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "forel": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "fork": {
       "primary": "developerTools",
       "secondary": []
@@ -5462,10 +5443,6 @@
     },
     "freeshow": {
       "primary": "productivity",
-      "secondary": []
-    },
-    "freesurfer": {
-      "primary": "scienceEducation",
       "secondary": []
     },
     "freetex": {
@@ -6015,10 +5992,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "google-trends": {
-      "primary": "screensaverWallpaper",
-      "secondary": []
-    },
     "google-web-designer": {
       "primary": "designGraphics",
       "secondary": [
@@ -6148,10 +6121,6 @@
     },
     "grid": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "grid-clock": {
-      "primary": "screensaverWallpaper",
       "secondary": []
     },
     "gridcraft": {
@@ -6965,10 +6934,6 @@
       "primary": "videoMedia",
       "secondary": []
     },
-    "isabelle": {
-      "primary": "scienceEducation",
-      "secondary": []
-    },
     "ishare": {
       "primary": "utilities",
       "secondary": []
@@ -7084,10 +7049,6 @@
       "primary": "audioMusic",
       "secondary": []
     },
-    "j": {
-      "primary": "scienceEducation",
-      "secondary": []
-    },
     "jabra-direct": {
       "primary": "utilities",
       "secondary": []
@@ -7106,10 +7067,6 @@
     },
     "jalview": {
       "primary": "scienceEducation",
-      "secondary": []
-    },
-    "jameica": {
-      "primary": "developerTools",
       "secondary": []
     },
     "jami": {
@@ -7656,10 +7613,6 @@
         "utilities",
         "ai"
       ]
-    },
-    "klayout": {
-      "primary": "designGraphics",
-      "secondary": []
     },
     "klogg": {
       "primary": "utilities",
@@ -8655,10 +8608,6 @@
         "ai"
       ]
     },
-    "magicavoxel": {
-      "primary": "designGraphics",
-      "secondary": []
-    },
     "magicplot": {
       "primary": "scienceEducation",
       "secondary": []
@@ -8782,10 +8731,6 @@
       "secondary": [
         "utilities"
       ]
-    },
-    "markdown-service-tools": {
-      "primary": "productivity",
-      "secondary": []
     },
     "marked-app": {
       "primary": "productivity",
@@ -9273,10 +9218,6 @@
     },
     "mimestream": {
       "primary": "communication",
-      "secondary": []
-    },
-    "mindjet-mindmanager": {
-      "primary": "productivity",
       "secondary": []
     },
     "mindmac": {
@@ -10133,6 +10074,12 @@
       "primary": "communication",
       "secondary": []
     },
+    "nextdns-app": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "ngrok": {
       "primary": "developerTools",
       "secondary": []
@@ -10730,12 +10677,6 @@
         "videoMedia"
       ]
     },
-    "openforis-collect": {
-      "primary": "developerTools",
-      "secondary": [
-        "scienceEducation"
-      ]
-    },
     "openframeworks": {
       "primary": "developerTools",
       "secondary": []
@@ -11094,14 +11035,6 @@
     },
     "owocr": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "oxygen-xml-developer": {
-      "primary": "developerTools",
-      "secondary": []
-    },
-    "oxygen-xml-editor": {
-      "primary": "developerTools",
       "secondary": []
     },
     "p2p-kiwi": {
@@ -11491,6 +11424,10 @@
     },
     "phpstorm": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "phtv": {
+      "primary": "utilities",
       "secondary": []
     },
     "physics-101": {
@@ -12234,6 +12171,10 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "purge": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "pxplay": {
       "primary": "games",
       "secondary": []
@@ -12374,10 +12315,6 @@
     },
     "quakenotch": {
       "primary": "utilities",
-      "secondary": []
-    },
-    "quakespasm": {
-      "primary": "games",
       "secondary": []
     },
     "quarkclouddrive": {
@@ -12766,10 +12703,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "renpy": {
-      "primary": "designGraphics",
-      "secondary": []
-    },
     "reolink": {
       "primary": "videoMedia",
       "secondary": [
@@ -12995,10 +12928,6 @@
         "ai"
       ]
     },
-    "rnnoise": {
-      "primary": "utilities",
-      "secondary": []
-    },
     "rnote": {
       "primary": "designGraphics",
       "secondary": []
@@ -13200,6 +13129,12 @@
     "sabnzbd": {
       "primary": "utilities",
       "secondary": []
+    },
+    "sacnview": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "saega": {
       "primary": "productivity",
@@ -13803,10 +13738,6 @@
     },
     "simple-web-server": {
       "primary": "developerTools",
-      "secondary": []
-    },
-    "simpleclock": {
-      "primary": "screensaverWallpaper",
       "secondary": []
     },
     "simpledemviewer": {
@@ -15152,10 +15083,6 @@
       "primary": "financeCrypto",
       "secondary": []
     },
-    "tau": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "tauritavern": {
       "primary": "productivity",
       "secondary": [
@@ -15524,10 +15451,6 @@
     },
     "tiger-trade": {
       "primary": "financeCrypto",
-      "secondary": []
-    },
-    "tigerjython": {
-      "primary": "scienceEducation",
       "secondary": []
     },
     "tigervnc": {
@@ -16898,10 +16821,6 @@
       "primary": "financeCrypto",
       "secondary": []
     },
-    "webviewscreensaver": {
-      "primary": "screensaverWallpaper",
-      "secondary": []
-    },
     "wechat": {
       "primary": "communication",
       "secondary": []
@@ -17285,10 +17204,6 @@
       "primary": "audioMusic",
       "secondary": []
     },
-    "xampp": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "xattred": {
       "primary": "developerTools",
       "secondary": []
@@ -17375,10 +17290,6 @@
     },
     "xnviewmp": {
       "primary": "designGraphics",
-      "secondary": []
-    },
-    "xonotic": {
-      "primary": "games",
       "secondary": []
     },
     "xppen-pentablet": {
