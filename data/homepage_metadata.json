@@ -45567,6 +45567,13 @@
     "og_desc": ""
   },
   {
+    "token": "tracexy",
+    "homepage": "https://rockxy.io/tracexy",
+    "title": "Tracexy - Trace the failure back to the app | Rockxy",
+    "meta_desc": "Trace the failure back to the app. Tracexy is open-source packet analysis, native to macOS: capture live traffic or open PCAP/PCAPNG files, group traffic into app-aware sessions, decode protocols, and keep packet evidence local by default.",
+    "og_desc": "Trace the failure back to the app. Open-source packet analysis, native to macOS - trace live traffic and saved PCAP/PCAPNG captures from the app to the session to the packet, and keep evidence local by default."
+  },
+  {
     "token": "trackerzapper",
     "homepage": "https://rknight.me/apps/tracker-zapper",
     "title": "TrackerZapper for Mac • Robb Knight",
