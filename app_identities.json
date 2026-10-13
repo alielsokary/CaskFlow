@@ -39291,6 +39291,44 @@
           "reason": "no supported application bundles in declared artifacts"
         }
       ]
+    },
+    "tracexy": {
+      "caskVersion": "0.9.1,16",
+      "sourceURL": "https://github.com/RockxyApp/Tracexy/releases/download/v0.9.1/Tracexy-0.9.1-16.dmg",
+      "artifactSHA256": "f16fb7abca49be65eef20a5210feb86eed4c13a14b252b876004ebd10c47c849",
+      "apps": [
+        {
+          "bundleName": "Tracexy.app",
+          "bundleIdentifier": "com.amunx.tracexy.community"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ntfstool": {
+      "caskVersion": "4.6.11",
+      "sourceURL": "https://github.com/ntfstool/ntfstool/releases/download/4.6.11/Ntfstool_4.6.11_release.pkg",
+      "artifactSHA256": "0ff72d720506d7809fbf5931531aab1a3116154348b24963e62f57b4a1db5cd3",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Ntfstool.app",
+          "bundleIdentifier": "com.ntfstool.aile",
+          "packageIdentifier": "com.ntfstool.aile",
+          "installedPath": "/Applications/Ntfstool.app"
+        }
+      ]
     }
   }
 }
