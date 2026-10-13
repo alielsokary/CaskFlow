@@ -1,9 +1,4 @@
-"""Install casks on a disposable runner and harvest the icon of the app they add.
-
-Covers casks whose download holds no inspectable app: installer scripts and
-packages that create the app while installing. Publication validates every
-runner result, because the runner executed vendor code.
-"""
+"""Install casks on a disposable runner and harvest the icon of the app they add."""
 from __future__ import annotations
 
 import argparse
