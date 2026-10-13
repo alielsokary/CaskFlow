@@ -516,14 +516,16 @@ def _locate_app(cask: dict, root: Path, kind: str,
             hit = (bundle, "payload_root")  # deterministic - no review needed
     if hit is None:
         hit = find_app(root, wanted, token)
-    if hit is None:
+    # An uninstaller beside the real payload (Fender: Uninstaller.app + .pkg on
+    # one DMG) must not end the search before the nested archive is opened.
+    if hit is None or hit[1] == "installer_only":
         nested = find_nested_archive(root)
         if nested:
             inner, inner_kind = nested
             inner_root = expand(inner, inner_kind, workdir / "nested", mounts)
             if inner_kind == "pkg":
                 expanded_packages[inner] = inner_root
-            hit = find_app(inner_root, wanted, token)
+            hit = find_app(inner_root, wanted, token) or hit
     return hit
 
 

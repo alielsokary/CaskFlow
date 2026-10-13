@@ -180,6 +180,30 @@ import zipfile
 from extract_icons import icns_to_png, sniff_container
 
 
+def test_locate_app_opens_nested_archive_beside_an_uninstaller(tmp_path):
+    root = tmp_path / "dmg"
+    _mk_app(root, "Fender Hardware Uninstaller.app")
+    with zipfile.ZipFile(root / "Fender Universal Control.zip", "w") as archive:
+        archive.writestr("Universal Control.app/Contents/Info.plist", "")
+    cask = {"token": "fender-universal-control", "artifacts": []}
+
+    app, selection = extract_icons._locate_app(cask, root, "dmg", tmp_path / "work", [], {})
+
+    assert (app.name, selection) == ("Universal Control.app", "token")
+
+
+def test_locate_app_keeps_installer_only_when_nested_archive_has_no_app(tmp_path):
+    root = tmp_path / "dmg"
+    _mk_app(root, "Install TeamViewer.app")
+    with zipfile.ZipFile(root / "Docs.zip", "w") as archive:
+        archive.writestr("README.txt", "")
+    cask = {"token": "teamviewer", "artifacts": []}
+
+    _, selection = extract_icons._locate_app(cask, root, "dmg", tmp_path / "work", [], {})
+
+    assert selection == "installer_only"
+
+
 def test_sniff_zip(tmp_path):
     f = tmp_path / "stable"  # VS Code style: no extension
     with zipfile.ZipFile(f, "w") as z:
