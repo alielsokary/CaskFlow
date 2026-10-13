@@ -5,8 +5,11 @@ on:
   workflow_dispatch:
     inputs:
       tokens:
-        description: "Space-separated pilot tokens; empty selects all ten"
+        description: "Space-separated allowlisted tokens; empty with batch 0 selects the ten-cask pilot"
         default: ""
+      census_batch:
+        description: "Frozen census batch number (1-18); 0 selects pilot or explicit tokens"
+        default: "0"
       architectures:
         description: "Hardware architectures to observe"
         type: choice
@@ -41,20 +44,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TOKENS: ${{ inputs.tokens }}
           ARCHITECTURES: ${{ inputs.architectures }}
+          CENSUS_BATCH: ${{ inputs.census_batch || '0' }}
         run: |
-          mkdir plan
-          python scripts/observe_package_install.py matrix --tokens "$TOKENS" --architectures "$ARCHITECTURES" > plan/matrix.json
-          brew_tag=$(gh api repos/Homebrew/brew/releases/latest --jq .tag_name)
-          brew_revision=$(gh api "repos/Homebrew/brew/commits/$brew_tag" --jq .sha)
-          cask_revision=$(gh api repos/Homebrew/homebrew-cask/commits/HEAD --jq .sha)
-          icons_revision=$(gh api "repos/$GITHUB_REPOSITORY/commits/icons" --jq .sha)
-          gh api "repos/$GITHUB_REPOSITORY/contents/app_identities.json?ref=$icons_revision" \
-            -H 'Accept: application/vnd.github.raw+json' > plan/passive-identities.json
-          jq -n --arg brew "$brew_revision" --arg cask "$cask_revision" --arg icons "$icons_revision" \
-            '{brewRevision:$brew,caskRevision:$cask,passiveRevision:$icons}' > plan/revisions.json
-          echo "matrix=$(cat plan/matrix.json)" >> "$GITHUB_OUTPUT"
-          echo "brew_revision=$brew_revision" >> "$GITHUB_OUTPUT"
-          echo "cask_revision=$cask_revision" >> "$GITHUB_OUTPUT"
+          python scripts/observe_package_install.py plan --tokens "$TOKENS" --architectures "$ARCHITECTURES" \
+            --census-batch "$CENSUS_BATCH" --output plan
+          echo "matrix=$(jq -c . plan/matrix.json)" >> "$GITHUB_OUTPUT"
+          echo "brew_revision=$(jq -r .brewRevision plan/revisions.json)" >> "$GITHUB_OUTPUT"
+          echo "cask_revision=$(jq -r .caskRevision plan/revisions.json)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: package-observation-plan
