@@ -1,0 +1,97 @@
+name: Harvest installed icons
+run-name: Harvest installed icons (${{ inputs.tokens }})
+
+# For casks whose download holds no inspectable app (installer scripts,
+# packages that create the app while installing): install each on a
+# disposable runner and publish the icon of the app it added.
+on:
+  workflow_dispatch:
+    inputs:
+      tokens:
+        description: "Space-separated cask tokens (at most 50)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Validate tokens
+        id: plan
+        env:
+          TOKENS: ${{ inputs.tokens }}
+        run: echo "matrix=$(python scripts/harvest_installed_icons.py matrix --tokens "$TOKENS")" >> "$GITHUB_OUTPUT"
+
+  harvest:
+    needs: plan
+    runs-on: macos-15
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_ANALYTICS: "1"
+      HOMEBREW_NO_ENV_HINTS: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Install and harvest one cask
+        env:
+          TOKEN: ${{ matrix.token }}
+        run: python scripts/harvest_installed_icons.py harvest --token "$TOKEN" --output "harvest-$TOKEN"
+      - name: Preserve evidence even if installation fails
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: harvest-${{ matrix.token }}
+          path: harvest-${{ matrix.token }}/
+          if-no-files-found: warn
+          retention-days: 30
+
+  publish:
+    needs: [plan, harvest]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    # Shares the icons branch's single writer with extract-icons.yml.
+    concurrency:
+      group: extract-icons
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: harvest-*
+          path: harvest
+      - name: Publish validated icons
+        env:
+          TOKENS: ${{ inputs.tokens }}
+        run: python scripts/harvest_installed_icons.py publish --tokens "$TOKENS" --directory harvest
+      - name: Refresh legacy category metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run release.yml
