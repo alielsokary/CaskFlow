@@ -6,6 +6,7 @@ on:
     paths:
       - categories.json
       - data/app_identity_variants.json
+      - data/cli_tokens.json
       - data/package_product_reviews.json
       - app_identities.json
       - scripts/app_identities.py
@@ -48,7 +49,8 @@ jobs:
                [.tree[].path | select(endswith(".png")) | rtrimstr(".png")]
              end' > /tmp/icon_manifest.json || echo null > /tmp/icon_manifest.json
           jq --arg tag "$TAG" --slurpfile icons /tmp/icon_manifest.json \
-            '. + {releaseTag: $tag}
+            --slurpfile cli data/cli_tokens.json \
+            '. + {releaseTag: $tag, cliTokens: $cli[0]}
              + (if $icons[0] then {iconTokens: ($icons[0] | sort)} else {} end)' \
             categories.json > /tmp/stamped.json
           mv /tmp/stamped.json categories.json
