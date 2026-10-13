@@ -84,6 +84,18 @@ def test_release_stamps_curated_cli_tokens():
     assert all(isinstance(token, str) and token for token in tokens)
 
 
+def test_install_harvest_isolates_vendor_code_from_the_icons_writer():
+    workflow = _workflow("harvest-installed-icons.yml")
+    harvest = workflow.split("  harvest:\n", 1)[1].split("  publish:\n", 1)[0]
+    publish = workflow.split("  publish:\n", 1)[1]
+
+    assert workflow.count("contents: write") == 1 and "contents: write" in publish
+    assert "persist-credentials: false" in harvest and "secrets." not in workflow
+    assert "group: extract-icons" in publish
+    assert 'TOKENS: ${{ inputs.tokens }}' in publish
+    assert "run: gh workflow run release.yml" in publish
+
+
 @pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
     ("43 15 * * *", "", "", "", "--limit 300"),
     ("7 3 1 * *", "", "", "", "--retry-parked"),

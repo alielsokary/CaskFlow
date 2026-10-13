@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-12",
+  "generatedDate": "2026-10-13",
   "totalCasks": 4005,
   "categories": {
     "developerTools": {
@@ -10162,7 +10162,7 @@
       "secondary": []
     },
     "nordic-nrf-command-line-tools": {
-      "primary": "designGraphics",
+      "primary": "developerTools",
       "secondary": []
     },
     "nordlayer": {
