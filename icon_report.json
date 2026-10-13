@@ -325,9 +325,9 @@
   },
   "corelocationcli": {
     "status": "no_icon",
-    "reason": "no .icns in Resources",
+    "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-10-13"
   },
   "corretto": {
     "status": "curated",
@@ -384,10 +384,10 @@
     "updated": "2026-07-08"
   },
   "desktoppr": {
-    "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg/wrapper-based CLI, no GUI ships",
+    "status": "no_icon",
+    "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-10-13"
   },
   "devin-cli": {
     "status": "no_icon",
@@ -414,10 +414,10 @@
     "updated": "2026-10-01"
   },
   "diskspace": {
-    "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg-based CLI, no GUI ships",
+    "status": "no_icon",
+    "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-10-13"
   },
   "dotnet-runtime": {
     "status": "curated",
@@ -1050,10 +1050,10 @@
     "updated": "2026-07-08"
   },
   "nordic-nrf-command-line-tools": {
-    "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg/wrapper-based CLI, no GUI ships",
+    "status": "no_icon",
+    "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 0,
-    "updated": "2026-07-09"
+    "updated": "2026-10-13"
   },
   "northern-softworks-cache-cleaner": {
     "status": "review",
@@ -1308,10 +1308,10 @@
     "updated": "2026-10-01"
   },
   "segger-jlink": {
-    "status": "curated",
-    "reason": "CaskHub CLI tile -- pkg/wrapper-based CLI, no GUI ships",
+    "status": "no_icon",
+    "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 1,
-    "updated": "2026-07-09"
+    "updated": "2026-10-13"
   },
   "semeru-jdk-open": {
     "status": "no_icon",
