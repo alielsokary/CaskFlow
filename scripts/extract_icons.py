@@ -84,6 +84,31 @@ def eligibility(cask: dict) -> str | None:
     return None
 
 
+def _stanza_entries(cask: dict, key: str) -> list:
+    return [entry for stanza in cask.get("artifacts") or [] if isinstance(stanza, dict)
+            and isinstance(stanza.get(key), list) for entry in stanza[key]]
+
+
+def bundle_sources(cask: dict) -> list[str]:
+    """`input_method` bundles carry an icon but are not apps the identity pipeline tracks."""
+    return [entry for entry in _stanza_entries(cask, "input_method") if isinstance(entry, str)]
+
+
+def manual_packages(cask: dict) -> list[str]:
+    """`installer manual:` packages: Homebrew never runs them, but the payload is inspectable."""
+    return [entry["manual"] for entry in _stanza_entries(cask, "installer")
+            if isinstance(entry, dict) and isinstance(entry.get("manual"), str)
+            and entry["manual"].lower().endswith((".pkg", ".mpkg"))]
+
+
+def icon_eligibility(cask: dict) -> str | None:
+    """eligibility() plus icon-only sources; identity coverage keeps using eligibility()."""
+    reason = eligibility(cask)
+    if reason == "no app/suite/pkg artifact" and (bundle_sources(cask) or manual_packages(cask)):
+        return None
+    return reason
+
+
 def container_type(cask: dict, filename: str) -> str | None:
     """Container type - dmg | zip | pkg | tar - from the download filename or `container` hint."""
     name = filename.lower()
@@ -441,7 +466,7 @@ def extract_one(cask: dict, output_dir: Path) -> tuple[str, str]:
     """Extract one cask's icon; returns (status, detail), raises ExtractError for `failed`."""
     # status: ok (detail = .app selection mode) | no_icon | car_only.
     token = cask["token"]
-    reason = eligibility(cask)
+    reason = icon_eligibility(cask)
     if reason:
         return "no_icon", reason
 
@@ -506,9 +531,17 @@ def _save_package_metadata(root: Path, destination: Path) -> None:
 def _locate_app(cask: dict, root: Path, kind: str,
                 workdir: Path, mounts: list[Path],
                 expanded_packages: dict[Path, Path]) -> tuple[Path, str] | None:
-    """Find the icon-bearing .app: payload root, direct walk, then nested archive."""
+    """Find the icon-bearing .app: declared path, payload root, direct walk, then nested archive."""
     token = cask["token"]
-    wanted = [n if n.endswith(".app") else f"{n}.app" for n in app_names_from_artifacts(cask)]
+    root, kind = _declared_nested_root(cask, root, kind, workdir, mounts, expanded_packages)
+    sources = bundle_sources(cask)
+    for source in sources:
+        bundle = root / source
+        if (_safe_relative(source) and bundle.is_dir() and not bundle.is_symlink()
+                and bundle.resolve().is_relative_to(root.resolve())):
+            return bundle, "exact"
+    names = app_names_from_artifacts(cask) + [Path(source).name for source in sources]
+    wanted = [n if n.endswith(".app") else f"{n}.app" for n in names]
     hit = None
     if kind == "pkg":
         bundle = payload_bundle(root)
@@ -516,15 +549,35 @@ def _locate_app(cask: dict, root: Path, kind: str,
             hit = (bundle, "payload_root")  # deterministic - no review needed
     if hit is None:
         hit = find_app(root, wanted, token)
-    if hit is None:
+    # An uninstaller beside the real payload (Fender: Uninstaller.app + .pkg on
+    # one DMG) must not end the search before the nested archive is opened.
+    if hit is None or hit[1] == "installer_only":
         nested = find_nested_archive(root)
         if nested:
             inner, inner_kind = nested
             inner_root = expand(inner, inner_kind, workdir / "nested", mounts)
             if inner_kind == "pkg":
                 expanded_packages[inner] = inner_root
-            hit = find_app(inner_root, wanted, token)
+            hit = find_app(inner_root, wanted, token) or hit
     return hit
+
+
+def _declared_nested_root(cask: dict, root: Path, kind: str, workdir: Path, mounts: list[Path],
+                          expanded_packages: dict[Path, Path]) -> tuple[Path, str]:
+    """Homebrew's `container nested:` names the real archive inside the download."""
+    nested = (cask.get("container") or {}).get("nested")
+    if not isinstance(nested, str) or not _safe_relative(nested):
+        return root, kind
+    inner = root / nested
+    if not inner.is_file() or inner.is_symlink() or not inner.resolve().is_relative_to(root.resolve()):
+        return root, kind
+    inner_kind = container_type({}, inner.name) or sniff_container(inner)
+    if inner_kind is None:
+        return root, kind
+    inner_root = expand(inner, inner_kind, workdir / "declared-nested", mounts)
+    if inner_kind == "pkg":
+        expanded_packages[inner] = inner_root
+    return inner_root, inner_kind
 
 
 def _declared_package_sources(cask: dict) -> list[str]:
@@ -709,7 +762,7 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
         # bypasses this for manual runs)
         if is_main_cask(c)
         and c["token"] not in done and c["token"] not in parked
-        and eligibility(c) is None
+        and icon_eligibility(c) is None
     ]
     counts = load_install_counts()
     candidates.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)

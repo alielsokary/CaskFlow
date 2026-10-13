@@ -1,5 +1,6 @@
 """Regression tests for data-publication and classification workflow contracts."""
 from pathlib import Path
+import json
 import os
 import subprocess
 import textwrap
@@ -70,6 +71,29 @@ def test_identity_release_merges_seed_and_publishes_manifest():
     assert "data/app_identity_variants.json" in release
     assert "data/package_product_reviews.json" in release
     assert "--identity-backfill" in _workflow("extract-icons.yml")
+
+
+def test_release_stamps_curated_cli_tokens():
+    release = _workflow("release.yml")
+    assert "      - data/cli_tokens.json" in release
+    assert "--slurpfile cli data/cli_tokens.json" in release
+    assert "cliTokens: $cli[0]" in release
+
+    tokens = json.loads((REPO_ROOT / "data" / "cli_tokens.json").read_text(encoding="utf-8"))
+    assert tokens == sorted(set(tokens))
+    assert all(isinstance(token, str) and token for token in tokens)
+
+
+def test_install_harvest_isolates_vendor_code_from_the_icons_writer():
+    workflow = _workflow("harvest-installed-icons.yml")
+    harvest = workflow.split("  harvest:\n", 1)[1].split("  publish:\n", 1)[0]
+    publish = workflow.split("  publish:\n", 1)[1]
+
+    assert workflow.count("contents: write") == 1 and "contents: write" in publish
+    assert "persist-credentials: false" in harvest and "secrets." not in workflow
+    assert "group: extract-icons" in publish
+    assert 'TOKENS: ${{ inputs.tokens }}' in publish
+    assert "run: gh workflow run release.yml" in publish
 
 
 @pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
