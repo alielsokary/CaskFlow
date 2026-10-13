@@ -11,6 +11,12 @@
     "attempts": 4,
     "updated": "2026-10-01"
   },
+  "adobe-air": {
+    "status": "failed",
+    "reason": "install harvest: brew install failed",
+    "attempts": 1,
+    "updated": "2026-10-13"
+  },
   "algodoo": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -22,6 +28,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-09-20"
+  },
+  "amazon-music": {
+    "status": "failed",
+    "reason": "install harvest: brew install failed",
+    "attempts": 1,
+    "updated": "2026-10-13"
   },
   "anaconda": {
     "status": "curated",
@@ -76,6 +88,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-09-01"
+  },
+  "arm-performance-libraries": {
+    "status": "no_icon",
+    "reason": "install harvest: install added no app",
+    "attempts": 0,
+    "updated": "2026-10-13"
   },
   "atok": {
     "status": "no_icon",
@@ -773,6 +791,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "libreoffice-still-language-pack": {
+    "status": "failed",
+    "reason": "install harvest: brew install failed",
+    "attempts": 1,
+    "updated": "2026-10-13"
+  },
   "lidanglesensor": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -923,6 +947,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "mutedeck": {
+    "status": "no_icon",
+    "reason": "install harvest: install added no app",
+    "attempts": 0,
+    "updated": "2026-10-13"
+  },
   "mysql-shell": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/mysql.png (pkg ships CLI only; CDN blocks scripted downloads)",
@@ -989,6 +1019,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "nvs": {
+    "status": "no_icon",
+    "reason": "install harvest: install added no app",
+    "attempts": 0,
+    "updated": "2026-10-13"
+  },
   "nx-studio": {
     "status": "no_icon",
     "reason": "Nikon installer app (download-arrow badge) with a name the installer regex misses (manual audit 2026-07-07)",
@@ -1000,6 +1036,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "openforis-collect": {
+    "status": "no_icon",
+    "reason": "install harvest: install added no app",
+    "attempts": 0,
+    "updated": "2026-10-13"
   },
   "openframeworks": {
     "status": "failed",
@@ -1234,6 +1276,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "sencha": {
+    "status": "no_icon",
+    "reason": "install harvest: install added no app",
+    "attempts": 0,
+    "updated": "2026-10-13"
   },
   "session-manager-plugin": {
     "status": "no_icon",
@@ -1552,6 +1600,12 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "xampp": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-10-13"
   },
   "xppen-pentablet": {
     "status": "no_icon",
