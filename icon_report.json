@@ -11,12 +11,6 @@
     "attempts": 4,
     "updated": "2026-10-01"
   },
-  "acronis-true-image": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "algodoo": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
@@ -70,12 +64,6 @@
     "reason": "sha256 mismatch (got 27f943d2618b...)",
     "attempts": 4,
     "updated": "2026-10-01"
-  },
-  "appgate-sdp-client": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "apple-hewlett-packard-printer-drivers": {
     "status": "no_icon",
@@ -155,12 +143,6 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
-  "bias-fx": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "blackhole-16ch": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -183,7 +165,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-09-20"
+    "updated": "2026-10-13"
   },
   "brooklyn": {
     "status": "no_icon",
@@ -335,12 +317,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "crashplan": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "crushftp": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -358,18 +334,6 @@
     "reason": "deprecated/disabled",
     "attempts": 3,
     "updated": "2026-10-01"
-  },
-  "dante-controller": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "dante-via": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "datadog-agent": {
     "status": "curated",
@@ -479,12 +443,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "endnote": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
@@ -501,13 +459,13 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-10-13"
   },
   "excire-search": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-10-13"
   },
   "fabfilter-micro": {
     "status": "no_icon",
@@ -593,12 +551,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "fender-universal-control": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-08-30"
-  },
   "filepane": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -665,17 +617,11 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "gpg-suite": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-09-20"
-  },
   "gpg-suite-no-mail": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
-    "updated": "2026-09-20"
+    "updated": "2026-10-13"
   },
   "gpt4all": {
     "status": "curated",
@@ -694,12 +640,6 @@
     "reason": "sha256 mismatch (got 7e5bf0886337...)",
     "attempts": 7,
     "updated": "2026-10-01"
-  },
-  "halion-sonic": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "hma-vpn": {
     "status": "review",
@@ -749,29 +689,11 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "ik-product-manager": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "ilok-license-manager": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "imaging-edge": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "imaging-edge-webcam": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-10-13"
   },
   "inso": {
     "status": "no_icon",
@@ -790,12 +712,6 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
     "attempts": 4,
     "updated": "2026-10-01"
-  },
-  "itunes-producer": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
   },
   "j": {
     "status": "review",
@@ -909,7 +825,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-09-20"
+    "updated": "2026-10-13"
   },
   "macfuse@dev": {
     "status": "no_icon",
@@ -1143,7 +1059,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-09-20"
+    "updated": "2026-10-13"
   },
   "p4": {
     "status": "no_icon",
@@ -1379,24 +1295,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "splashtop-business": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "splashtop-personal": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
-  "splashtop-streamer": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "spyder": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1429,9 +1327,9 @@
   },
   "steinberg-mediabay": {
     "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
+    "reason": "no .icns in Resources",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-10-13"
   },
   "sync-my-l2p": {
     "status": "no_icon",

@@ -16238,7 +16238,7 @@
       "sourceURL": "https://e3.boxcdn.net/box-installers/boxedit/mac/currentrelease/BoxToolsInstaller.dmg",
       "artifactSHA256": "7bb419fe65b27bce9dec60d2803f82b470cb0a9fe87621700dc760effab1a8a7",
       "apps": [],
-      "extractionVersion": 2,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Install Box Tools.app/Contents/Resources/Box Device Trust.app",
@@ -27205,7 +27205,7 @@
       "sourceURL": "https://zevrix.com/downloads/OutputFactory.dmg",
       "artifactSHA256": "fd47ca146302b8568a4effdf7e3bc292abf308e89d2b979c8562c19c39caf4d0",
       "apps": [],
-      "extractionVersion": 2,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "Output Factory Installer.app/Contents/Resources/appPackage/Output Factory.app",
@@ -37978,6 +37978,1021 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "itunes-producer": {
+      "caskVersion": "3.1.4",
+      "sourceURL": "https://itunespartner.apple.com/assets/downloads/iTunesProducer.dmg",
+      "artifactSHA256": "dc93523031d0f20d2a00c82a1fc8fb6883ef1e37c9e7b95483ae5468f9fd6767",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "iTunesProducer.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: missing package identifier or relocatable payload"
+        }
+      ]
+    },
+    "steinberg-mediabay": {
+      "caskVersion": "1.4.10.19,1437f559-ca55-3aa1-b51a-3e557188cbbd",
+      "sourceURL": "https://download.steinberg.net/static_content/runtime-components/steinberg-media-bay/1.4.10.19-1437f559-ca55-3aa1-b51a-3e557188cbbd/MediaBay_Installer_mac.dmg",
+      "artifactSHA256": "349afb3a838f1981eebf036dd3df196b71f5bdef258fb93b7eecca7580fc8649",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/MediaBay/",
+            "selected": "choiceIsADowngrade(false)",
+            "start_enabled": "true",
+            "start_selected": "true && choiceIsADowngrade(false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/MediaBay/",
+            "selected": "choiceIsADowngrade(false)",
+            "start_enabled": "true",
+            "start_selected": "true && choiceIsADowngrade(false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/Content/VST Sound/VST Sound Updates/",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "MediaBayInstallScripts.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "MediaClient.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "SteinbergMediaBayServer.app.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "vstsounds_VST_Sound_Content_Update.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "ilok-license-manager": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://installers.ilok.com/iloklicensemanager/LicenseSupportInstallerMac.zip",
+      "artifactSHA256": "5be29e9122e0c87ad6b0b215f4943dad2b2e967c76037638689188a3da1a914c",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_3_requirement(false,true)",
+            "start_selected": "installer_choice_3_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Activation_Experience.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "License_Service.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "iLok License Manager.app",
+          "bundleIdentifier": "com.paceap.eden.iLokLicenseManager",
+          "packageIdentifier": "com.paceap.pkg.eden.iLokLicenseManager",
+          "installedPath": "/Applications/iLok License Manager.app"
+        }
+      ]
+    },
+    "dante-controller": {
+      "caskVersion": "4.18.1.1",
+      "sourceURL": "https://audinate-software-updates.sgp1.cdn.digitaloceanspaces.com/DanteController/4/4.18/apple_silicon/DanteController-4.18.1.1-macos-arm64.dmg",
+      "artifactSHA256": "4515cd12b4b185e4b6317db6de7ea5306ba33381baa2fce4ee08f5fc1b6538ff",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "ConMon.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "DanteControllerPackage.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "DanteUpdateHelper.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "DanteUpdateHelperFwDb.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Dante_Activator_Legacy.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Dante Controller.app",
+          "bundleIdentifier": "com.audinate.dante.DanteController",
+          "packageIdentifier": "com.audinate.dante.pkg.DanteController",
+          "installedPath": "/Applications/Dante Controller.app"
+        },
+        {
+          "bundleName": "Dante Updater.app",
+          "bundleIdentifier": "com.audinate.dante.DanteUpdater",
+          "packageIdentifier": "com.audinate.dante.pkg.DanteUpdater",
+          "installedPath": "/Applications/Dante Updater.app"
+        },
+        {
+          "bundleName": "Dante Activator.app",
+          "bundleIdentifier": "com.audinate.dante.DanteActivator",
+          "packageIdentifier": "com.audinate.dante.pkg.DanteActivator",
+          "installedPath": "/Applications/Dante Activator.app"
+        }
+      ]
+    },
+    "fender-universal-control": {
+      "caskVersion": "5.1.1.113315,10153",
+      "sourceURL": "https://www.fmicassets.com/Damroot/Original/10153/Fender_Universal_Control_v5_1_1_113315.dmg",
+      "artifactSHA256": "37734bd937d40ed5a4e19b9c3d916202641e144da812b3b629cadd9026e1fbf8",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installationCheck ()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "useKextDriver ()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "useDextDriver ()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Daemon.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "DefaultPresets.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "TB Driver (kext).pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "TB Driver.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "ik-product-manager": {
+      "caskVersion": "1.1.16",
+      "sourceURL": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.16.dmg",
+      "artifactSHA256": "8240a9bd17f60442caa028fe827ce584a21ff9a2239829a97ed5f0f57eee82f9",
+      "apps": [
+        {
+          "bundleName": "IK Product Manager.app",
+          "bundleIdentifier": "com.ikmultimedia.productmanager",
+          "packageIdentifier": "com.ikmultimedia.productmanager",
+          "installedPath": "/Applications/IK Product Manager.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bias-fx": {
+      "caskVersion": "2.7.0.6600",
+      "sourceURL": "https://dlcf.positivegrid.com/BIAS_FX_2_Mac_Standalone_v2_7_0_6600.dmg",
+      "artifactSHA256": "f79a9286a5cdf9d1fee30d55aceac37f330f54b2af2d51b2b361b966e666c795",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "BIAS FX 2.app",
+          "bundleIdentifier": "com.positivegrid.BiasFx2Standalone",
+          "packageIdentifier": "com.positivegrid.pkg.BIASFX2App",
+          "installedPath": "/Applications/BIAS FX 2.app"
+        }
+      ]
+    },
+    "appgate-sdp-client": {
+      "caskVersion": "6.7.3",
+      "sourceURL": "https://bin.appgate-sdp.com/6.7/client/Appgate-SDP-6.7.3-Installer.dmg",
+      "artifactSHA256": "b6c2e83cc790f70edb1ceec3ffa276370cbb535b217f4ac99f4a530d36f7dc24",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "selected": "true"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "AppGate SDP.app",
+          "bundleIdentifier": "com.appgate.sdp",
+          "packageIdentifier": "com.appgate.pkg.appgatetun.component",
+          "installedPath": "/Applications/AppGate SDP.app"
+        }
+      ]
+    },
+    "crashplan": {
+      "caskVersion": "12.0.0,735",
+      "sourceURL": "https://download.crashplan.com/installs/agent/cloud/12.0.0/735/install/CrashPlan_12.0.0_735_Mac.dmg",
+      "artifactSHA256": "2fe4dfb428c6342a7e9e4c0ad73429d5ca45149e8b260fbb398285bd16c77152",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "checkVersion();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "crashplan-uninstaller.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "CrashPlan.app",
+          "bundleIdentifier": "com.crashplan.desktop",
+          "packageIdentifier": "com.crashplan.app.pkg",
+          "installedPath": "/Applications/CrashPlan.app"
+        }
+      ]
+    },
+    "splashtop-business": {
+      "caskVersion": "3.8.6.0",
+      "sourceURL": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STB/Splashtop_Business_Mac_INSTALLER_v3.8.6.0.dmg",
+      "artifactSHA256": "580c25996ea6ad7a8592a8ca09fa5a1662359eb69c948dd27eb084eeefea6868",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Splashtop Business.app",
+          "bundleIdentifier": "com.splashtop.stb.macosx",
+          "packageIdentifier": "com.splashtop.stb.macosx",
+          "installedPath": "/Applications/Splashtop Business.app"
+        }
+      ]
+    },
+    "acronis-true-image": {
+      "caskVersion": "29.2,42065",
+      "sourceURL": "https://dl.acronis.com/u/AcronisTrueImage_42065.dmg",
+      "artifactSHA256": "0bee00e25cf777d2ff059fadae300699dc062adbc0b995819da17897104afffa",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "check_install_prerequisite()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Acronis True Image.app",
+          "bundleIdentifier": "com.acronis.CyberProtectHomeOffice",
+          "packageIdentifier": "com.acronis.CyberProtectHomeOffice",
+          "installedPath": "/Applications/Acronis True Image.app"
+        }
+      ]
+    },
+    "splashtop-personal": {
+      "caskVersion": "3.7.6.0",
+      "sourceURL": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STP/Splashtop_Personal_Mac_v3.7.6.0.dmg",
+      "artifactSHA256": "87c46e7918f21af36c0ac7483f7b399fded50fca79ed438c565ce8306e8f7bf4",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Splashtop Personal.app",
+          "bundleIdentifier": "com.splashtop.stp.macosx",
+          "packageIdentifier": "com.splashtop.stp.macosx",
+          "installedPath": "/Applications/Splashtop Personal.app"
+        }
+      ]
+    },
+    "endnote": {
+      "caskVersion": "22.3.0.22265,2025",
+      "sourceURL": "https://download.endnote.com/downloads/2025/EndNote2025Installer.dmg",
+      "artifactSHA256": "f0eceb5148848f75ae2a4e0a46f8c6d0abb9f9267795ba36885d373cc0a651e9",
+      "apps": [
+        {
+          "bundleName": "EndNote 2025.app",
+          "bundleIdentifier": "com.ThomsonResearchSoft.EndNote"
+        },
+        {
+          "bundleName": "ENService.app",
+          "bundleIdentifier": "com.ThomsonResearchSoft.EndNote.ENService"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Dictionary Converter.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.ThomsonResearchSoft.Dictionary_Converter'"
+        }
+      ]
+    },
+    "imaging-edge-webcam": {
+      "caskVersion": "120_2403a,xB4KucKqdT",
+      "sourceURL": "https://di.update.sony.net/NEX/xB4KucKqdT/IEW120_2403a.dmg",
+      "artifactSHA256": "70f4558ad5ec37127ed58b755bde1acb268edf88b5eba61a17388641215da9fd",
+      "apps": [
+        {
+          "bundleName": "Imaging Edge Webcam.app",
+          "bundleIdentifier": "com.sony.imagingedge.iew",
+          "packageIdentifier": "com.sony.Webcam",
+          "installedPath": "/Applications/Imaging Edge Webcam.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "excire-search": {
+      "caskVersion": "5.0.6",
+      "sourceURL": "https://www.excire.com/downloads/excire-search/ExcireSearch-5.0.6-arm64.zip",
+      "artifactSHA256": "e3b696f5be044a88568e254d5353981a3f79ab1777038da6bd0ca7070b0abd7c",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "excire-search-lrplugin.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "excire-search-precheck.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "excire-search.app",
+          "bundleIdentifier": "de.excire.search",
+          "packageIdentifier": "de.excire.search",
+          "installedPath": "/Applications/Excire Search/excire-search.app"
+        }
+      ]
+    },
+    "excire-foto": {
+      "caskVersion": "4.1.6",
+      "sourceURL": "https://www.excire.com/downloads/excire-foto/ExcireFoto-4.1.6-arm64.dmg.zip",
+      "artifactSHA256": "e08d88cd2458b6f4d35aabfbbb2baca0369b3513c81596361119981828d0f842",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "ExcireFoto-postinstall.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "ExcireFoto-preinstall.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Excire Foto.app",
+          "bundleIdentifier": "prc.excire.foto",
+          "packageIdentifier": "prc.excire.foto",
+          "installedPath": "/Applications/Excire Foto.app"
+        }
+      ]
+    },
+    "halion-sonic": {
+      "caskVersion": "7.5,c7e52464-1b72-4194-b0b1-0c2deaca8b01",
+      "sourceURL": "https://download.steinberg.net/automated_updates/sda_downloads/c7e52464-1b72-4194-b0b1-0c2deaca8b01/Halion_Sonic_7.5_Installer_mac.dmg",
+      "artifactSHA256": "542a505ae186bd502436c7a2673f8081b3acca28ddc65cb06e68cd03f1b83757",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Audio/Plug-Ins/VST3/Steinberg/",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Audio/Plug-Ins/Components/",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Avid/Audio/Plug-Ins/Steinberg",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/Content/VST Sound",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/Content/VST Sound",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/Content/VST Sound",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/Content/HALion/VST Sound/",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Steinberg/dependencies/",
+            "start_enabled": "true",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "HALion Sonic.aax.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "HALion Sonic.vst3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "HALionSonicdependencies.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "HS_VST3PresetCompatibility.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "HS_createselpostinstall.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "ScriptPkg.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "halionsonic_HALion Sonic.component.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "vstsounds_HALion_Resources.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "vstsounds_REVerence_Content_01.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "vstsounds_VST_Amp_Rack_Content.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "vstsounds_VST_Bass_Amp_Content.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "HALion Sonic.app",
+          "bundleIdentifier": "com.steinberg.vst3.HALionSonicStandalone",
+          "packageIdentifier": "com.steinberg.vst3.HALionSonicStandalone.halionsonic",
+          "installedPath": "/Applications/HALion Sonic.app"
+        }
+      ]
+    },
+    "dante-via": {
+      "caskVersion": "1.4.1.3",
+      "sourceURL": "https://audinate-software-updates.sgp1.cdn.digitaloceanspaces.com/DanteVia/1/1.4/DanteVia-1.4.1.3_macos.dmg",
+      "artifactSHA256": "f7e0a4b22686fd343326e05f2feb9c6d744d9fdb6c06ad1d0f73557a011cd4a9",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Dante Via.app",
+          "bundleIdentifier": "com.audinate.DanteViaApp",
+          "packageIdentifier": "com.audinate.dante.pkg.DanteVia",
+          "installedPath": "/Applications/Dante Via.app"
+        }
+      ]
+    },
+    "imaging-edge": {
+      "caskVersion": "1.2.02.08050,Uxaf4233f5",
+      "sourceURL": "https://di.update.sony.net/NEX/Uxaf4233f5/ied_1_2_02_08050.dmg",
+      "artifactSHA256": "6887ed04c4a676b833ac7c55bbd321bdd48fdf5f75d0155bce5fc403f8bebc54",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Imaging Edge Desktop.app",
+          "bundleIdentifier": "com.sony.ImagingEdgeDesktop",
+          "packageIdentifier": "com.sony.ImagingEdgeDesktop.pkg",
+          "installedPath": "/Applications/Imaging Edge Desktop.app"
+        }
+      ]
+    },
+    "splashtop-streamer": {
+      "caskVersion": "3.8.6.3",
+      "sourceURL": "https://d17kmd0va0f0mp.cloudfront.net/mac/Splashtop_Streamer_Mac_INSTALLER_v3.8.6.3.dmg",
+      "artifactSHA256": "bde3c94222fd72ee35501b383af32e091c504606c53c07e7912d9cab0a3018f7",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "true"
+          }
+        },
+        {
+          "artifact": "SplashtopSoundDriver-installer.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Splashtop Streamer.app",
+          "bundleIdentifier": "com.splashtop.Splashtop-Streamer",
+          "packageIdentifier": "com.splashtop.Splashtop-Streamer",
+          "installedPath": "/Applications/Splashtop Streamer.app"
+        }
+      ]
     }
   }
 }
