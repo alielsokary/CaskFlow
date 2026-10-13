@@ -732,10 +732,10 @@
     "updated": "2026-07-08"
   },
   "kimi": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-09-20"
+    "status": "failed",
+    "reason": "ditto failed: ditto: Couldn't read PKZip signature",
+    "attempts": 1,
+    "updated": "2026-10-13"
   },
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
@@ -1089,7 +1089,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-10-13"
   },
   "playonmac": {
     "status": "failed",
@@ -1439,12 +1439,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "turbovnc-viewer": {
-    "status": "no_icon",
-    "reason": "only installer/updater apps in artifact",
-    "attempts": 0,
-    "updated": "2026-07-07"
-  },
   "unclack": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -1521,7 +1515,7 @@
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
-    "updated": "2026-07-07"
+    "updated": "2026-10-13"
   },
   "vnc-viewer": {
     "status": "failed",

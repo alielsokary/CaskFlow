@@ -38993,6 +38993,188 @@
           "installedPath": "/Applications/Splashtop Streamer.app"
         }
       ]
+    },
+    "virtualgl": {
+      "caskVersion": "3.1.5",
+      "sourceURL": "https://github.com/VirtualGL/virtualgl/releases/download/3.1.5/VirtualGL-3.1.5.dmg",
+      "artifactSHA256": "c4a5e2daabe503b9e346b50bd3a14a78011b6a943490417a0805ce332e4ede35",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Uninstall VirtualGL.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "photozoom-pro": {
+      "caskVersion": "9.0.2",
+      "sourceURL": "https://www.benvista.com/photozoompro9/download/mac",
+      "artifactSHA256": "4429698c2f94d55e6465cec4b0760ad065568dda4ae13317ce695256bb6c6cd7",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications",
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/CC",
+            "start_selected": "has('CC')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/CS6",
+            "start_selected": "has('CS6')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/Elements 16",
+            "start_selected": "has_pse(16)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/Elements 17",
+            "start_selected": "has_pse(17)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/Elements 18",
+            "start_selected": "has_pse(18)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/Elements 19",
+            "start_selected": "has_pse(19)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Library/Application Support/Adobe/Plug-ins/Elements 20",
+            "start_selected": "has_pse(20)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications/Adobe Photoshop Elements 2023/Support Files/Plug-Ins",
+            "start_selected": "has_pse(21)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications/Adobe Photoshop Elements 2024/Support Files/Plug-Ins",
+            "start_selected": "has_pse(24)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications",
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "has_lr()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "app.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "turbovnc-viewer": {
+      "caskVersion": "3.3.1",
+      "sourceURL": "https://github.com/TurboVNC/turbovnc/releases/download/3.3.1/TurboVNC-3.3.1-arm64.dmg",
+      "artifactSHA256": "8d285f7bc00d30c0ace104b1d71b5ba4eb8bc2a561c71d8b7a26f2798f7d5db3",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installationCheck()"
+          }
+        },
+        {
+          "artifact": "Uninstall TurboVNC.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        },
+        {
+          "artifact": "TurboVNC Viewer.app",
+          "reason": "unreadable Info.plist: ValueError"
+        },
+        {
+          "artifact": "TurboVNC Viewer (Listen Mode).app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
     }
   }
 }
