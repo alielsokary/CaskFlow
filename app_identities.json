@@ -39175,6 +39175,122 @@
           "reason": "unsupported CFBundleIdentifier: None"
         }
       ]
+    },
+    "boinc": {
+      "caskVersion": "8.2.11",
+      "sourceURL": "https://boinc.berkeley.edu/dl/boinc_8.2.11_macOSX_universal.zip",
+      "artifactSHA256": "0b98428629eebc83bd73404cfe8cfaafe8e35681acb184792ac825854def1bb5",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "boinc",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "autofirma": {
+      "caskVersion": "1.9.2",
+      "sourceURL": "https://firmaelectronica.gob.es/content/dam/firmaelectronica/descargas-software/Autofirma_1_9_2_Mac_M1.zip",
+      "artifactSHA256": "858aa128f2cd2d5e7cf294129193cedb7da4839ba5157deff4b01c9780ad301a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "autofirma",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "clip-studio-paint": {
+      "caskVersion": "5.1.5",
+      "sourceURL": "https://vd.clipstudio.net/clipcontent/paint/app/515/CSP_515m_app.pkg",
+      "artifactSHA256": "b168ff82ea59c88ac1392e8c592189a1d8b15ca67a43ebc16acf4e4eb1c0c62f",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "clip-studio-paint",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "doubaoime": {
+      "caskVersion": "1.0.2,1000207,20261010_175807_23027789",
+      "sourceURL": "https://lf-wave.doubaocdn.com/obj/doubao-ime/app/macos/DoubaoImeInstaller_v1000207_release_20261010_175807_23027789.zip",
+      "artifactSHA256": "0cef9fa739d52b7603298e5d15024936e157371f156539333b2356681c1b07bc",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "doubaoime",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "openvanilla": {
+      "caskVersion": "1.8.6,3516",
+      "sourceURL": "https://github.com/openvanilla/openvanilla/releases/download/1.8.6/OpenVanilla-Installer-Mac-1.8.6.zip",
+      "artifactSHA256": "db11af44b5b5a82e1875cbd6a95a91012386a02a074128d26eeac80d574b129a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "openvanilla",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "keyman": {
+      "caskVersion": "18.0.253",
+      "sourceURL": "https://downloads.keyman.com/mac/stable/18.0.253/keyman-18.0.253.dmg",
+      "artifactSHA256": "513da3c945fe91045b574ff7db686653da8b8b065243afedfb00bd52f5cad55c",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "keyman",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "vb-cable": {
+      "caskVersion": "108",
+      "sourceURL": "https://download.vb-audio.com/Download_MAC/VBCable_MACDriver_Pack108.zip",
+      "artifactSHA256": "e46b41c6876995403cb1da37d7c0d566f59edd83aa9fcbcdc3a205eb0b6e05c7",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "VB-Cable Control Panel.app",
+          "bundleIdentifier": "com.vbaudio.vbcablecontrolpanel",
+          "packageIdentifier": "com.vbaudio.vbcable",
+          "installedPath": "/Applications/VB-Audio/VB-Cable Control Panel.app"
+        }
+      ]
+    },
+    "qsync-client": {
+      "caskVersion": "5.1.7,0923",
+      "sourceURL": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientMac-5.1.7.0923.dmg",
+      "artifactSHA256": "066f87aaa22f0492acaa4bc7921a02352125634a2e6d38a46a5028dee9a1f40b",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "qsync-client",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
     }
   }
 }

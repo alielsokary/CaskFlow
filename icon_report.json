@@ -1499,12 +1499,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "vb-cable": {
-    "status": "no_icon",
-    "reason": "no .app found in expanded artifact",
-    "attempts": 0,
-    "updated": "2026-07-08"
-  },
   "virtual-ii": {
     "status": "no_icon",
     "reason": "deprecated/disabled",
