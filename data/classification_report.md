@@ -1,11 +1,11 @@
 # Daily classification update
 
-Generated 2026-10-13
+Generated 2026-10-14
 
 ## Summary
 
 - 2 new casks classified
-- 0 classifications require manual review (confidence below 0.75)
+- 1 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
@@ -15,5 +15,11 @@ Generated 2026-10-13
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `ntfstool` | utilities | - | 0.90 | Provides NTFS filesystem read/write support, a system-level disk utility. |
-| `tracexy` | developerTools | securityPrivacy, utilities | 0.75 | A packet/network traffic analysis tool for developers and network troubleshooting, bordering on security/network utility. |
+| `cyd` | securityPrivacy | communication | 0.70 | Cyd helps users manage and delete their personal data from social media platforms, focusing on privacy control. |
+| `nextpad++` | developerTools | productivity | 0.80 | Native text/code editor port of Notepad++, primarily used for code editing. |
+
+## Manual review required
+
+| token | primary | secondary | confidence | reason |
+|---|---|---|---|---|
+| `cyd` | securityPrivacy | communication | 0.70 | Cyd helps users manage and delete their personal data from social media platforms, focusing on privacy control. |
