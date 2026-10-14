@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-13",
-  "totalCasks": 4007,
+  "generatedDate": "2026-10-14",
+  "totalCasks": 4009,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3350,6 +3350,12 @@
       "primary": "audioMusic",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "cyd": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "communication"
       ]
     },
     "daedalus-mainnet": {
@@ -10078,6 +10084,12 @@
       "primary": "securityPrivacy",
       "secondary": [
         "utilities"
+      ]
+    },
+    "nextpad++": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
       ]
     },
     "ngrok": {
