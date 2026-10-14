@@ -39329,6 +39329,32 @@
           "installedPath": "/Applications/Ntfstool.app"
         }
       ]
+    },
+    "nextpad++": {
+      "caskVersion": "1.1.2",
+      "sourceURL": "https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/releases/download/v1.1.2/Nextpad++v1.1.2.dmg",
+      "artifactSHA256": "03e321f496a38a940d68c09403c9d13f1e866d73d00d5c4dd4894ec3bc1a8739",
+      "apps": [
+        {
+          "bundleName": "Nextpad++.app",
+          "bundleIdentifier": "org.nextpadplusplus.mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cyd": {
+      "caskVersion": "1.2.4",
+      "sourceURL": "https://releases.lockdown.systems/cyd/prod/macos/universal/Cyd%201.2.4.dmg",
+      "artifactSHA256": "f820724a2bbb5fea24d4e34f1c66eabb976dda60ab7f1c64ecf99b80e801630f",
+      "apps": [
+        {
+          "bundleName": "Cyd.app",
+          "bundleIdentifier": "systems.lockdown.cyd"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
