@@ -5698,6 +5698,13 @@
     "og_desc": "Max is an infinitely flexible space to create your own interactive software"
   },
   {
+    "token": "cyd",
+    "homepage": "https://cyd.social/",
+    "title": "Cyd - Claw back your data from Big Tech | Cyd",
+    "meta_desc": "Automatically delete your data from tech platforms, except for what you want to keep",
+    "og_desc": "Automatically delete your data from tech platforms, except for what you want to keep"
+  },
+  {
     "token": "dadroit-json-viewer",
     "homepage": "https://dadroit.com/",
     "title": "Dadroit JSON Viewer",
@@ -35531,6 +35538,13 @@
     "title": "NextDNS - The new firewall for the modern Internet",
     "meta_desc": "NextDNS protects you from all kinds of security threats, blocks ads and trackers on websites and in apps and provides a safe and supervised Internet for kids - on all devices and on all networks.",
     "og_desc": "The new firewall for the modern Internet"
+  },
+  {
+    "token": "nextpad++",
+    "homepage": "https://nextpad.org/",
+    "title": "Nextpad++ for Mac and Linux - Free Native Text and Code Editor, Full Notepad++ Port",
+    "meta_desc": "Nextpad++ is a free, native Notepad++ port for macOS and Linux. Universal Binary for Apple Silicon (M1-M5) and Intel Macs; native ARM64 and x86 .deb/.rpm builds for Linux. No Wine, no Rosetta, no emulation.",
+    "og_desc": "Nextpad++ is a free, open-source, native Notepad++ port for macOS and Linux. Universal Binary for Apple Silicon (M1-M5) and Intel Macs; native ARM64 and x86 .deb/.rpm builds for Linux. No Wine, no Rosetta, no emulation."
   },
   {
     "token": "ngrok",
