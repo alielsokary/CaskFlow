@@ -2784,6 +2784,13 @@
     "og_desc": ""
   },
   {
+    "token": "biscotti",
+    "homepage": "https://biscottiapp.com/",
+    "title": "Biscotti - Private meeting transcripts for macOS",
+    "meta_desc": "Record, transcribe and summarize your meetings entirely on your Mac. No cloud, no account, and no bot joining your call. Free, native, and open to inspect.",
+    "og_desc": "Record, transcribe and summarize your meetings entirely on your Mac. No cloud, no account, and no bot joining your call."
+  },
+  {
     "token": "biscuit",
     "homepage": "https://eatbiscuit.com/",
     "title": "Biscuit | A browser so your apps don't get buried in tabs",
@@ -3780,6 +3787,13 @@
     "title": "CapCut AI Video Editor: Smart Online Video Editing with Advanced AI Tools",
     "meta_desc": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut on desktop, mobile, or edit online.",
     "og_desc": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut on desktop, mobile, or edit online."
+  },
+  {
+    "token": "capso",
+    "homepage": "https://github.com/lzhgus/Capso",
+    "title": "GitHub - lzhgus/Capso: Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI. · GitHub",
+    "meta_desc": "Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI. - lzhgus/Capso",
+    "og_desc": "Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI. - lzhgus/Capso"
   },
   {
     "token": "capsomnia",
@@ -8452,6 +8466,13 @@
     "title": "Token2 |    FIDO2.1 Security Key Management Tool for macOS - User Guide | Token2 Store | programmable hardware token, FIDO2 key, U2F key, TOTP,",
     "meta_desc": "FIDO2 USB Key, U2F USB Key, Cheap Yubico alternative, FIDO2, fido alliance certified security keys Replace your mobile authenticator with secure hardware OTP token! Easily programmed via NFC. Designed to use with Google, Facebook, Dropbox, GitHub, Wordpress, Office 365, Azure MFA etc.",
     "og_desc": ""
+  },
+  {
+    "token": "figcraft",
+    "homepage": "https://getartcraft.com/apps/figcraft",
+    "title": "FigCraft: Interface design, rebuilt in pure Rust. - ArtCraft",
+    "meta_desc": "Frames, auto layout, components and variants, vector networks, styles, variables and prototypes in a native app that opens instantly and works offline. No account, no telemetry, no subscription.",
+    "og_desc": "Open-source interface design and prototyping, rebuilt in pure Rust."
   },
   {
     "token": "fightcade",
@@ -39159,6 +39180,13 @@
     "og_desc": ""
   },
   {
+    "token": "pulse",
+    "homepage": "https://pulse.egoist.dev/",
+    "title": "Pulse - what your computer is doing",
+    "meta_desc": "Pulse shows everything your computer is doing - processors, memory, graphics, disks, network, energy and every process - live, in one calm window. For Mac, Windows and Linux.",
+    "og_desc": "Pulse shows everything your computer is doing - processors, memory, graphics, disks, network, energy and every process - live, in one calm window. For Mac, Windows and Linux."
+  },
+  {
     "token": "pulse-sms",
     "homepage": "https://home.pulsesms.app/overview/",
     "title": "Pulse SMS",
@@ -39880,6 +39908,13 @@
     "title": "Receipts Mac App | Receipts Mac App",
     "meta_desc": "Receipts Space is a private, local document and receipt hub for macOS. Import from PDF/email/scans, OCR extraction, automation, and a clear financial overview. Try it now for free!",
     "og_desc": "Receipts Space is a private, local document and receipt hub for macOS. Import from PDF/email/scans, OCR extraction, automation, and a clear financial overview. Try it now for free!"
+  },
+  {
+    "token": "receipts-space",
+    "homepage": "https://receipts-space.com/",
+    "title": "Receipts Space - Documents & Receipts for Mac",
+    "meta_desc": "Receipts Space is a private, local document and receipt hub for macOS. Import from PDF/email/scans, OCR extraction, automation, and a clear financial overview. Free to try, no sign-up required.",
+    "og_desc": "Receipts Space is a private, local document and receipt hub for macOS. Import from PDF/email/scans, OCR extraction, automation, and a clear financial overview. Free to try, no sign-up required."
   },
   {
     "token": "recents",
@@ -45274,6 +45309,13 @@
     "og_desc": ""
   },
   {
+    "token": "tine",
+    "homepage": "https://tine.page/",
+    "title": "Tine - a fast, local, Logseq-compatible outliner",
+    "meta_desc": "Tine is a fast, local outliner that reads and writes the same Markdown graph as Logseq. Swap between the two on the same files - no import, no export, no lock-in.",
+    "og_desc": "The same Markdown graph as Logseq, in a faster outliner. Swap freely between the two - no import, no export, no lock-in."
+  },
+  {
     "token": "tinkerwell",
     "homepage": "https://tinkerwell.app/",
     "title": "The code runner for PHP 💫 - Tinkerwell",
@@ -46613,6 +46655,13 @@
     "title": "VeraCrypt - Free Open source disk encryption with strong security for the Paranoid",
     "meta_desc": "VeraCrypt is free open-source disk encryption software for Windows, Mac OS X and Linux. In case an attacker forces you to reveal the password, VeraCrypt provides plausible deniability. In contrast to file encryption, data encryption performed by VeraCrypt is real-time (on-the-fly), automatic, transparent, needs very little memory, and does not involve temporary unencrypted files.",
     "og_desc": ""
+  },
+  {
+    "token": "vercel",
+    "homepage": "https://vercel.com/docs/cli",
+    "title": "Vercel CLI Overview",
+    "meta_desc": "Learn how to use the Vercel command-line interface (CLI) to manage and configure your Vercel Projects from the command line.",
+    "og_desc": "Learn how to use the Vercel command-line interface (CLI) to manage and configure your Vercel Projects from the command line."
   },
   {
     "token": "vernier-graphical-analysis",
