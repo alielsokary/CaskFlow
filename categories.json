@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-14",
-  "totalCasks": 4009,
+  "generatedDate": "2026-10-15",
+  "totalCasks": 4017,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1638,6 +1638,13 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "biscotti": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
+      ]
+    },
     "biscuit": {
       "primary": "productivity",
       "secondary": []
@@ -2198,6 +2205,12 @@
       "primary": "videoMedia",
       "secondary": [
         "ai"
+      ]
+    },
+    "capso": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
       ]
     },
     "capsomnia": {
@@ -4934,6 +4947,12 @@
     "fido2-manage": {
       "primary": "other",
       "secondary": []
+    },
+    "figcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "figma": {
       "primary": "designGraphics",
@@ -11053,6 +11072,16 @@
       "primary": "utilities",
       "secondary": []
     },
+    "oxygen-xml-developer": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "oxygen-xml-editor": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "p2p-kiwi": {
       "primary": "utilities",
       "secondary": []
@@ -12169,6 +12198,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "pulse": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "pulse-sms": {
       "primary": "communication",
       "secondary": []
@@ -12594,9 +12629,11 @@
       "primary": "developerTools",
       "secondary": []
     },
-    "receipts": {
-      "primary": "productivity",
-      "secondary": []
+    "receipts-space": {
+      "primary": "financeCrypto",
+      "secondary": [
+        "productivity"
+      ]
     },
     "recents": {
       "primary": "productivity",
@@ -15537,6 +15574,10 @@
       "primary": "productivity",
       "secondary": []
     },
+    "tine": {
+      "primary": "productivity",
+      "secondary": []
+    },
     "tinkerwell": {
       "primary": "developerTools",
       "secondary": []
@@ -16325,6 +16366,12 @@
     "veracrypt-fuse-t": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "vercel": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
     },
     "vernier-graphical-analysis": {
       "primary": "scienceEducation",
