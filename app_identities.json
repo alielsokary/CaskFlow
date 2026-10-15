@@ -39355,6 +39355,84 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "tine": {
+      "caskVersion": "0.7.3",
+      "sourceURL": "https://github.com/martinkoutecky/tine/releases/download/v0.7.3/Tine_0.7.3_universal.dmg",
+      "artifactSHA256": "d9c3efed968fc6b37a86f6bc0e1e8da3bdaffd97e2ed159c9d19c8ea82d84cf7",
+      "apps": [
+        {
+          "bundleName": "Tine.app",
+          "bundleIdentifier": "page.tine.Tine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "biscotti": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/scosman/Biscotti/releases/download/v1.0.0/Biscotti.dmg",
+      "artifactSHA256": "a519a352c612f6461cd5b68d4b296fdd17e0c94277b048c675cd23f6f2466fc7",
+      "apps": [
+        {
+          "bundleName": "Biscotti.app",
+          "bundleIdentifier": "net.scosman.biscotti"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "capso": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/lzhgus/Capso/releases/download/v1.2.1/Capso-1.2.1.dmg",
+      "artifactSHA256": "d2564ef80e6b64972ddbebc091db14417da93e41284da55c58a6a59afb97f95c",
+      "apps": [
+        {
+          "bundleName": "Capso.app",
+          "bundleIdentifier": "com.awesomemacapps.capso"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "receipts-space": {
+      "caskVersion": "3.6,36002",
+      "sourceURL": "https://receipts-space.com/download/macos/Receipts%20Space-3.6-36002.zip",
+      "artifactSHA256": "081c73be637248b488b276e5b3c5940b1460380243c53cda6d35b94bc946ff39",
+      "apps": [
+        {
+          "bundleName": "Receipts Space.app",
+          "bundleIdentifier": "de.holtwick.mac.homebrew.Receipts2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "figcraft": {
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://github.com/storytold/figcraft/releases/download/v0.6.0/figcraft-0.6.0-macos-universal.dmg",
+      "artifactSHA256": "26385f23a95190458081c20efac0c1d86546b899ccbdabc7364f396dcacc7cc4",
+      "apps": [
+        {
+          "bundleName": "FigCraft.app",
+          "bundleIdentifier": "ai.storyteller.figcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pulse": {
+      "caskVersion": "0.1.15",
+      "sourceURL": "https://github.com/egoist/pulse-feedback/releases/download/v0.1.15/Pulse.0.1.15.arm64.dmg",
+      "artifactSHA256": "5a1a8699dc305cab277dd618ed633d19d5149ccfdf42cec1ec67f890dd08547f",
+      "apps": [
+        {
+          "bundleName": "Pulse.app",
+          "bundleIdentifier": "com.egoist.pulse"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
