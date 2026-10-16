@@ -43988,6 +43988,13 @@
     "og_desc": ""
   },
   {
+    "token": "switchbar",
+    "homepage": "https://switchbar.com/en",
+    "title": "Instagram",
+    "meta_desc": "Switchbar lets you choose which browser, browser profile, or email client to use whenever you click a link-on both Mac and Windows.",
+    "og_desc": "Switchbar lets you choose which browser, browser profile, or email client to use whenever you click a link-on both Mac and Windows."
+  },
+  {
     "token": "switchhosts",
     "homepage": "https://switchhosts.vercel.app/",
     "title": "SwitchHosts",
@@ -46669,6 +46676,13 @@
     "title": "Vernier Graphical Analysis® Pro - Vernier",
     "meta_desc": "",
     "og_desc": "Boost engagement and foster collaboration in your science classes with Vernier Graphical Analysis. This award-winning app gives students the ability to observe an experiment, collaborate with their peers, and share the results from anywhere-in real time."
+  },
+  {
+    "token": "vernier-instrumental-analysis",
+    "homepage": "https://www.vernier.com/product/instrumental-analysis/",
+    "title": "Vernier Instrumental Analysis® - Vernier",
+    "meta_desc": "",
+    "og_desc": "With our free Vernier Instrumental Analysis® app, students can collect and analyze data from our Go Direct Mini GC™, Go Direct Polarimeter, and Go Direct Cyclic Voltammetry System using computers, Chromebooks, or other mobile devices."
   },
   {
     "token": "vernier-spectral-analysis",
