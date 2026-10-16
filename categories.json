@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-15",
-  "totalCasks": 4017,
+  "generatedDate": "2026-10-16",
+  "totalCasks": 4019,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -14874,6 +14874,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "switchbar": {
+      "primary": "utilities",
+      "secondary": [
+        "browsers"
+      ]
+    },
     "switchhosts": {
       "primary": "developerTools",
       "secondary": []
@@ -16376,6 +16382,12 @@
     "vernier-graphical-analysis": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "vernier-instrumental-analysis": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "utilities"
+      ]
     },
     "vernier-spectral-analysis": {
       "primary": "scienceEducation",
