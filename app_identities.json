@@ -39433,6 +39433,71 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "petal": {
+      "caskVersion": "0.9.30",
+      "sourceURL": "https://l882xxepjgu15ol2.public.blob.vercel-storage.com/Petal_0.9.30_universal.dmg",
+      "artifactSHA256": "60b38a7fc7f9c124a095e2d44cd52bc80f6dc2c5d8eae0454ca77974ea0084d1",
+      "apps": [
+        {
+          "bundleName": "Petal.app",
+          "bundleIdentifier": "com.petal.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "superhuman-docs": {
+      "caskVersion": "1.0.13",
+      "sourceURL": "https://docs-desktop.superhuman.com/releases/Superhuman-Docs-1.0.13-universal.dmg",
+      "artifactSHA256": "14a275efebd523b66e3a81d960853b892ff0d53e74e8d043a4d97f3965ca09ec",
+      "apps": [
+        {
+          "bundleName": "Superhuman Docs.app",
+          "bundleIdentifier": "com.superhuman.CodaApp.Desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "notomo": {
+      "caskVersion": "0.43.0",
+      "sourceURL": "https://notomo.app/Notomo-0.43.0.dmg",
+      "artifactSHA256": "5c5fcc5c0c432e56188084ff8b44d828e535480aa55815b90004377867cf1e36",
+      "apps": [
+        {
+          "bundleName": "Notomo.app",
+          "bundleIdentifier": "com.notomo.Notomo"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "switchbar": {
+      "caskVersion": "33.0.1",
+      "sourceURL": "https://cdn-2.webcatalog.io/switchbar/Switchbar-33.0.1-universal.dmg",
+      "artifactSHA256": "f678f64fd22bd1fb8cb9d99ce7262b52596bca8e4802647c576e4f2e193261d8",
+      "apps": [
+        {
+          "bundleName": "Switchbar.app",
+          "bundleIdentifier": "com.webcatalog.switchbar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vernier-instrumental-analysis": {
+      "caskVersion": "2.0.0-1994",
+      "sourceURL": "https://software-releases.graphicalanalysis.com/ia/mac/release/Vernier-Instrumental-Analysis-2.0.0-1994.zip",
+      "artifactSHA256": "8b0b7096d99a1b09e72b5ef768767651c03989016985a28d7668d1a54181005b",
+      "apps": [
+        {
+          "bundleName": "Vernier Instrumental Analysis.app",
+          "bundleIdentifier": "Vernier.InstrumentalAnalysis"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
