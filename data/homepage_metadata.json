@@ -4542,6 +4542,13 @@
     "og_desc": "One-tap VPN for secure online journeys"
   },
   {
+    "token": "cleeen",
+    "homepage": "https://cleeen.fehey.com/",
+    "title": "Cleeen - Free disk cleaner for Mac",
+    "meta_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices.",
+    "og_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices."
+  },
+  {
     "token": "clibor",
     "homepage": "https://chigusa-web.com/clibor-for-mac-en/",
     "title": "Clibor for Mac English | Clipboard history free software \"Clibor for Mac\"",
@@ -35853,6 +35860,13 @@
     "og_desc": ""
   },
   {
+    "token": "notomo",
+    "homepage": "https://notomo.app/",
+    "title": "Notomo - Move faster in Apple Notes",
+    "meta_desc": "Notomo adds Markdown shortcuts, quick actions, reusable Skills, and note-aware AI to Apple Notes-without moving your notes into another app.",
+    "og_desc": "A quiet command and AI layer for the Apple Notes window already on your Mac."
+  },
+  {
     "token": "notunes",
     "homepage": "https://github.com/tombonez/noTunes",
     "title": "GitHub - tombonez/noTunes: A simple macOS application that will prevent iTunes or Apple Music from launching. · GitHub",
@@ -37816,6 +37830,13 @@
     "token": "perplexity",
     "homepage": "https://www.perplexity.ai/personal-computer",
     "error": "HTTP 403"
+  },
+  {
+    "token": "petal",
+    "homepage": "https://petal.live/",
+    "title": "Petal - Open Source Pair Programming",
+    "meta_desc": "Low latency, high resolution screensharing and remote control. Free and open source, from the makers of CoScreen.",
+    "og_desc": "Low latency, high resolution screensharing and remote control."
   },
   {
     "token": "petdex",
@@ -43743,6 +43764,13 @@
     "og_desc": "Superhuman is the AI productivity suite that gives you superpowers everywhere you work. So you can be more creative, strategic, and impactful."
   },
   {
+    "token": "superhuman-docs",
+    "homepage": "https://superhuman.com/docs",
+    "title": "Superhuman Docs",
+    "meta_desc": "Superhuman Docs is the one surface where teams, data, and AI connect to get work done.",
+    "og_desc": "Superhuman Docs is the one surface where teams, data, and AI connect to get work done."
+  },
+  {
     "token": "superkey",
     "homepage": "https://superkey.app/",
     "title": "Superkey",
@@ -44393,6 +44421,13 @@
     "title": "Tap Forms Database Pro for Mac, iPhone, iPad, and Apple Watch - Tap Zapp Software Inc.",
     "meta_desc": "Database software for Mac, iPhone, iPad, and Apple Watch that helps anyone keep their personal, work, and active life organized.",
     "og_desc": ""
+  },
+  {
+    "token": "taperlabs-shadow",
+    "homepage": "https://www.shadow.do/",
+    "title": "Shadow: The AI Meeting Assistant Built for Your AI Agents",
+    "meta_desc": "Shadow records every call on its own, without a bot, and keeps each meeting as Markdown you own, ready for Obsidian and your AI agents. Free to start.",
+    "og_desc": "Shadow records every call on its own, without a bot, and keeps each meeting as Markdown you own, ready for Obsidian and your AI agents. Free to start."
   },
   {
     "token": "taphouse",

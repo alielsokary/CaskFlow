@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-16",
-  "totalCasks": 4019,
+  "generatedDate": "2026-10-17",
+  "totalCasks": 4024,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2663,6 +2663,10 @@
     },
     "clearvpn": {
       "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "cleeen": {
+      "primary": "utilities",
       "secondary": []
     },
     "clibor": {
@@ -10288,6 +10292,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "notomo": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "notunes": {
       "primary": "utilities",
       "secondary": []
@@ -11390,6 +11400,12 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "petal": {
+      "primary": "communication",
+      "secondary": [
+        "productivity"
       ]
     },
     "petdex": {
@@ -14746,6 +14762,13 @@
         "ai"
       ]
     },
+    "superhuman-docs": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "officeTools"
+      ]
+    },
     "superkey": {
       "primary": "utilities",
       "secondary": []
@@ -15105,6 +15128,12 @@
     "tap-forms": {
       "primary": "productivity",
       "secondary": []
+    },
+    "taperlabs-shadow": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "taphouse": {
       "primary": "developerTools",
