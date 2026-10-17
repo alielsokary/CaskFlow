@@ -39498,6 +39498,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "portkiller": {
+      "caskVersion": "3.4.0",
+      "sourceURL": "https://github.com/productdevbook/port-killer/releases/download/v3.4.0/PortKiller-v3.4.0-macos.dmg",
+      "artifactSHA256": "5265966e7308461b76f8bc35a4b0d28ba6f72150e4715d9a68b8c91b11d8fa60",
+      "apps": [
+        {
+          "bundleName": "PortKiller.app",
+          "bundleIdentifier": "com.portkiller.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "taperlabs-shadow": {
+      "caskVersion": "2.3.8,133",
+      "sourceURL": "https://cdn.shadow.do/releases/mac/latest/2.3.8-build133/Shadow-2.3.8-arm64.dmg",
+      "artifactSHA256": "1a32a7d2c6b946ab133064000123d04829feb092d100e78bfe9cb9ba33a9b7ab",
+      "apps": [
+        {
+          "bundleName": "Shadow.app",
+          "bundleIdentifier": "com.taperlabs.shadow"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cleeen": {
+      "caskVersion": "0.12.3",
+      "sourceURL": "https://dl.cleeen.fehey.com/Cleeen-0.12.3.dmg",
+      "artifactSHA256": "3477cf00d6cef05ba0469fa4551243cc734c8a39658823529bd743e65b999d4b",
+      "apps": [
+        {
+          "bundleName": "Cleeen.app",
+          "bundleIdentifier": "dev.zayn.Cleeen"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
