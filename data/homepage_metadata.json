@@ -1708,6 +1708,13 @@
     "og_desc": "ArtCraft is the open-source desktop app for generating AI video and images - built for artists who want real control."
   },
   {
+    "token": "artcraft-launcher",
+    "homepage": "https://github.com/storytold/craft-launcher",
+    "title": "GitHub - storytold/craft-launcher: The Craft App Launcher · GitHub",
+    "meta_desc": "The Craft App Launcher. Contribute to storytold/craft-launcher development by creating an account on GitHub.",
+    "og_desc": "The Craft App Launcher. Contribute to storytold/craft-launcher development by creating an account on GitHub."
+  },
+  {
     "token": "artisan",
     "homepage": "https://artisan-scope.org/",
     "title": "artisan | Leading coffee roasting software",
@@ -4540,6 +4547,13 @@
     "title": "One-Tap VPN For Your Privacy & Online Security | ClearVPN",
     "meta_desc": "Enhance your cybersecurity in a single tap with ClearVPN to make your digital life more private and online journeys protected.",
     "og_desc": "One-tap VPN for secure online journeys"
+  },
+  {
+    "token": "cleeen",
+    "homepage": "https://cleeen.fehey.com/",
+    "title": "Cleeen - Free disk cleaner for Mac",
+    "meta_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices.",
+    "og_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices."
   },
   {
     "token": "clibor",
@@ -35853,6 +35867,13 @@
     "og_desc": ""
   },
   {
+    "token": "notomo",
+    "homepage": "https://notomo.app/",
+    "title": "Notomo - Move faster in Apple Notes",
+    "meta_desc": "Notomo adds Markdown shortcuts, quick actions, reusable Skills, and note-aware AI to Apple Notes-without moving your notes into another app.",
+    "og_desc": "A quiet command and AI layer for the Apple Notes window already on your Mac."
+  },
+  {
     "token": "notunes",
     "homepage": "https://github.com/tombonez/noTunes",
     "title": "GitHub - tombonez/noTunes: A simple macOS application that will prevent iTunes or Apple Music from launching. · GitHub",
@@ -36559,6 +36580,13 @@
     "title": "OpenDisplay - Turn your spare Apple devices into second monitors for your Mac (free & open source)",
     "meta_desc": "OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn your spare Apple devices - iPhone and iPad today, Macs on the roadmap - into true extended displays for your Mac over USB or WiFi. Retina-sharp, low latency, with touch and scroll input. No subscription, no dongle, no account.",
     "og_desc": "Use your iPhone or iPad as a second monitor for your Mac. A true extended display over USB or WiFi - Retina-sharp, low latency, with touch and scroll. No subscription, no dongle, no account."
+  },
+  {
+    "token": "opendisplay-receiver",
+    "homepage": "https://opendisplay.app/",
+    "title": "OpenDisplay: turn your spare iPhone, iPad, Mac or Android device into a second monitor for your Mac (free & open source)",
+    "meta_desc": "OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn your spare iPhone, iPad, Mac or Android device into a true extended display for your Mac over USB or WiFi. Retina-sharp, low latency, with touch and scroll input. No subscription, no dongle, no account.",
+    "og_desc": "Use your iPhone, iPad, Mac or Android device as a second monitor for your Mac. A true extended display over USB or WiFi: Retina-sharp, low latency, with touch and scroll. No subscription, no dongle, no account."
   },
   {
     "token": "opendnsupdater",
@@ -37818,6 +37846,13 @@
     "error": "HTTP 403"
   },
   {
+    "token": "petal",
+    "homepage": "https://petal.live/",
+    "title": "Petal - Open Source Pair Programming",
+    "meta_desc": "Low latency, high resolution screensharing and remote control. Free and open source, from the makers of CoScreen.",
+    "og_desc": "Low latency, high resolution screensharing and remote control."
+  },
+  {
     "token": "petdex",
     "homepage": "https://petdex.dev/",
     "title": "Discord",
@@ -38547,6 +38582,13 @@
     "title": "Porting Kit | Install Windows apps in Mac",
     "meta_desc": "With Porting Kit, you can install Windows games and apps on macOS easily using Wineskin technology!",
     "og_desc": "With Porting Kit, you can install Windows games and apps on macOS easily using Wineskin technology!"
+  },
+  {
+    "token": "portkiller",
+    "homepage": "https://github.com/productdevbook/port-killer",
+    "title": "GitHub - productdevbook/port-killer: A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click. · GitHub",
+    "meta_desc": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click. - productdevbook/port-killer",
+    "og_desc": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click. - productdevbook/port..."
   },
   {
     "token": "portx",
@@ -43743,6 +43785,13 @@
     "og_desc": "Superhuman is the AI productivity suite that gives you superpowers everywhere you work. So you can be more creative, strategic, and impactful."
   },
   {
+    "token": "superhuman-docs",
+    "homepage": "https://superhuman.com/docs",
+    "title": "Superhuman Docs",
+    "meta_desc": "Superhuman Docs is the one surface where teams, data, and AI connect to get work done.",
+    "og_desc": "Superhuman Docs is the one surface where teams, data, and AI connect to get work done."
+  },
+  {
     "token": "superkey",
     "homepage": "https://superkey.app/",
     "title": "Superkey",
@@ -44393,6 +44442,13 @@
     "title": "Tap Forms Database Pro for Mac, iPhone, iPad, and Apple Watch - Tap Zapp Software Inc.",
     "meta_desc": "Database software for Mac, iPhone, iPad, and Apple Watch that helps anyone keep their personal, work, and active life organized.",
     "og_desc": ""
+  },
+  {
+    "token": "taperlabs-shadow",
+    "homepage": "https://www.shadow.do/",
+    "title": "Shadow: The AI Meeting Assistant Built for Your AI Agents",
+    "meta_desc": "Shadow records every call on its own, without a bot, and keeps each meeting as Markdown you own, ready for Obsidian and your AI agents. Free to start.",
+    "og_desc": "Shadow records every call on its own, without a bot, and keeps each meeting as Markdown you own, ready for Obsidian and your AI agents. Free to start."
   },
   {
     "token": "taphouse",
@@ -45978,6 +46034,13 @@
     "title": "Tuta: Turn ON privacy for free with secure emails, calendars & contacts | Tuta",
     "meta_desc": "Tuta guarantees your data stays private for free & without ads. Quantum-resistant encryption makes Tuta the best secure technology solution to protect your privacy.",
     "og_desc": "Tuta guarantees your data stays private for free & without ads. Quantum-resistant encryption makes Tuta the best secure technology solution to protect your privacy."
+  },
+  {
+    "token": "tutti",
+    "homepage": "https://tutti.sh/",
+    "title": "Tutti · VM - Multi-User, Multi-Agent Real-Time Collaboration Space",
+    "meta_desc": "The industry's first multi-user, multi-agent real-time collaboration space, with parallel editing, cross-agent handoffs, agent borrowing, and no-deploy sharing.",
+    "og_desc": "The industry's first multi-user, multi-agent, real-time collaboration space - parallel editing, agent borrowing, no-deploy sharing."
   },
   {
     "token": "tuxera-ntfs",
@@ -48719,6 +48782,13 @@
     "title": "ZCode - Simple, Fast, Vibe‑Ready | Official Harness for GLM-5.2",
     "meta_desc": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
     "og_desc": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction."
+  },
+  {
+    "token": "zeal",
+    "homepage": "https://zealdocs.org/",
+    "title": "Zeal - Offline documentation browser. Your personal reference library, searchable in an instant.",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "zed",
