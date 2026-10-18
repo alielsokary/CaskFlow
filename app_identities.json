@@ -39537,6 +39537,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "tutti": {
+      "caskVersion": "0.2.33",
+      "sourceURL": "https://github.com/tutti-os/tutti/releases/download/v0.2.33/Tutti-0.2.33-mac-arm64.dmg",
+      "artifactSHA256": "be7bff4c535e4f6d26a105d951cc13c31cc2c5f64d87e58fd32dc6ac1cdcd87f",
+      "apps": [
+        {
+          "bundleName": "Tutti.app",
+          "bundleIdentifier": "sh.tutti.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opendisplay-receiver": {
+      "caskVersion": "1.25.0",
+      "sourceURL": "https://github.com/peetzweg/opendisplay/releases/download/v1.25.0/OpenDisplayReceiver.dmg",
+      "artifactSHA256": "7243312177caa1335789521b02ff5d37c0e875f58b2c06d96f7dd524f6bfbbbb",
+      "apps": [
+        {
+          "bundleName": "OpenDisplay Receiver.app",
+          "bundleIdentifier": "com.peetzweg.opensidecar.mac.receiver"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "artcraft-launcher": {
+      "caskVersion": "0.5.1",
+      "sourceURL": "https://github.com/storytold/craft-launcher/releases/download/v0.5.1/artcraft-launcher-0.5.1-macos-universal.dmg",
+      "artifactSHA256": "84f7b95acc229d9a997f91c3d110cd36131edde21f47f4a21c0f17d2ad3ca436",
+      "apps": [
+        {
+          "bundleName": "ArtCraft Launcher.app",
+          "bundleIdentifier": "ai.storyteller.artcraft-launcher"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
