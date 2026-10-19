@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-18",
-  "totalCasks": 4029,
+  "generatedDate": "2026-10-19",
+  "totalCasks": 4031,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3046,12 +3046,6 @@
     "compositor": {
       "primary": "scienceEducation",
       "secondary": []
-    },
-    "conar": {
-      "primary": "developerTools",
-      "secondary": [
-        "ai"
-      ]
     },
     "concept2-utility": {
       "primary": "utilities",
@@ -12926,6 +12920,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "rew": {
+      "primary": "audioMusic",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
     "rewritebar": {
       "primary": "productivity",
       "secondary": [
@@ -15123,6 +15123,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "tamery": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "tana": {
       "primary": "productivity",
       "secondary": [
@@ -15401,6 +15407,12 @@
     "texturepacker": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "textus": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "tg-pro": {
       "primary": "utilities",
