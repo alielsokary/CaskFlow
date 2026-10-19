@@ -39576,6 +39576,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "tamery": {
+      "caskVersion": "0.99.2",
+      "sourceURL": "https://download.tamery.app/versions/0.99.2/mac/dmg/arm64",
+      "artifactSHA256": "f310735618786239d324b5596ba36441e8cc9cec56b42df5a0470fc6f0445d53",
+      "apps": [
+        {
+          "bundleName": "Tamery.app",
+          "bundleIdentifier": "com.wannabespace.tamery"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "status-trio": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://github.com/lingyired/status-trio/releases/download/v1.6.0/StatusTrio-1.6.0.dmg",
+      "artifactSHA256": "f8362f90af8adb1a3b19fc5bf38a0cc74f4f56966e010f26e2d6a5ca713e022d",
+      "apps": [
+        {
+          "bundleName": "Status Trio.app",
+          "bundleIdentifier": "com.lingsmbp.StatusTrio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "textus": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/CatVinci-Studio/Textus/releases/download/v1.1.0/Textus_1.1.0_aarch64.dmg",
+      "artifactSHA256": "ca8465e6a01797503082f79c6347ff3b60369f53380843cfd3f02497ba6c8f09",
+      "apps": [
+        {
+          "bundleName": "Textus.app",
+          "bundleIdentifier": "com.catvinci.textus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
