@@ -40435,6 +40435,13 @@
     "og_desc": "Edit, redact, and convert PDFs completely offline. Free on Windows, Mac & Linux. $9.99 once on Android & iOS. No accounts. No cloud. No subscription."
   },
   {
+    "token": "rew",
+    "homepage": "https://www.roomeqwizard.com/",
+    "title": "REW - Room EQ Wizard Room Acoustics Software",
+    "meta_desc": "REW is free software for room acoustic measurement, loudspeaker measurement and audio device measurement",
+    "og_desc": ""
+  },
+  {
     "token": "rewritebar",
     "homepage": "https://rewritebar.com/",
     "title": "RewriteBar: macOS AI Writing Assistant for Grammar, Translation & Productivity",
@@ -44921,6 +44928,13 @@
     "title": "TexturePacker - Create Sprite Sheets for your game!",
     "meta_desc": "TexturePacker creates and optimizes sprite sheets for your game engine",
     "og_desc": ""
+  },
+  {
+    "token": "textus",
+    "homepage": "https://textus.catvinci.com/",
+    "title": "Textus - the next-generation Markdown editor",
+    "meta_desc": "You hold the pen. AI keeps your ink flowing. Textus is a free, open-source, next-generation Markdown editor for macOS, Windows and Linux, with a writing assistant built in.",
+    "og_desc": "You hold the pen. AI keeps your ink flowing. Textus is a free, open-source, next-generation Markdown editor for macOS, Windows and Linux, with a writing assistant built in."
   },
   {
     "token": "tg-pro",
