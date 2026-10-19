@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-16",
-  "totalCasks": 4019,
+  "generatedDate": "2026-10-18",
+  "totalCasks": 4029,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1010,6 +1010,12 @@
       "secondary": [
         "ai",
         "designGraphics"
+      ]
+    },
+    "artcraft-launcher": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
       ]
     },
     "artisan": {
@@ -2663,6 +2669,10 @@
     },
     "clearvpn": {
       "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "cleeen": {
+      "primary": "utilities",
       "secondary": []
     },
     "clibor": {
@@ -10288,6 +10298,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "notomo": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "notunes": {
       "primary": "utilities",
       "secondary": []
@@ -10707,6 +10723,12 @@
       "secondary": []
     },
     "opendisplay": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "opendisplay-receiver": {
       "primary": "utilities",
       "secondary": [
         "videoMedia"
@@ -11392,6 +11414,12 @@
         "ai"
       ]
     },
+    "petal": {
+      "primary": "communication",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "petdex": {
       "primary": "developerTools",
       "secondary": [
@@ -11833,6 +11861,12 @@
     "porting-kit": {
       "primary": "games",
       "secondary": []
+    },
+    "portkiller": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "portx": {
       "primary": "developerTools",
@@ -14746,6 +14780,13 @@
         "ai"
       ]
     },
+    "superhuman-docs": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
+      ]
+    },
     "superkey": {
       "primary": "utilities",
       "secondary": []
@@ -15105,6 +15146,13 @@
     "tap-forms": {
       "primary": "productivity",
       "secondary": []
+    },
+    "taperlabs-shadow": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
+      ]
     },
     "taphouse": {
       "primary": "developerTools",
@@ -15968,6 +16016,13 @@
     "tuta-mail": {
       "primary": "communication",
       "secondary": []
+    },
+    "tutti": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
     },
     "tuxera-ntfs": {
       "primary": "utilities",
@@ -17568,6 +17623,10 @@
       "secondary": [
         "ai"
       ]
+    },
+    "zeal": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "zed": {
       "primary": "developerTools",
