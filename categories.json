@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-19",
-  "totalCasks": 4031,
+  "generatedDate": "2026-10-20",
+  "totalCasks": 4032,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -14581,6 +14581,12 @@
     "status": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "status-trio": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
     },
     "stay": {
       "primary": "utilities",
