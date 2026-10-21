@@ -39628,6 +39628,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "sound-studio": {
+      "caskVersion": "4.11.0",
+      "sourceURL": "https://download.felttip.com/sound_studio_4.11.0.t.zip",
+      "artifactSHA256": "3676e1fe56c4c6df3400ee00d2864b3130611e0c30cf7f9e253eab8b5938e594",
+      "apps": [
+        {
+          "bundleName": "Sound Studio.app",
+          "bundleIdentifier": "com.felttip.SoundStudio.trial"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
