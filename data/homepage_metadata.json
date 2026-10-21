@@ -29062,6 +29062,13 @@
     "og_desc": "Hot is macOS menu bar application that displays the CPU speed limit due to thermal issues. - macmade/Hot"
   },
   {
+    "token": "hotkeyclash",
+    "homepage": "https://hotkeyclash.com/",
+    "title": "HotkeyClash - Detect Keyboard Shortcut Conflicts on macOS | Free & Open Source",
+    "meta_desc": "Open-source macOS utility that scans your running apps, Karabiner, skhd, and system shortcuts to find where they clash. Free forever. Zero dependencies.",
+    "og_desc": "Open-source macOS utility that scans your running apps, Karabiner, skhd, and system shortcuts to find where they clash. Free forever. Zero dependencies."
+  },
+  {
     "token": "hotovo-aider-desk",
     "homepage": "https://github.com/hotovo/aider-desk",
     "title": "GitHub - hotovo/aider-desk: Platform for AI-powered software engineers · GitHub",
@@ -42801,6 +42808,13 @@
     "homepage": "https://staticz.com/soundsiphon/",
     "title": "Sound Siphon 3 - App Audio Capture for Mac - Static Z Software",
     "meta_desc": "",
+    "og_desc": ""
+  },
+  {
+    "token": "sound-studio",
+    "homepage": "https://www.felttip.com/ss/",
+    "title": "Sound Studio 4 - Mac App for Audio Editing",
+    "meta_desc": "Record, edit, and produce your audio with Sound Studio, an easy-to-use Mac app for recording and editing digital audio on your computer. Digitize tapes and vinyl records, record live performances, create your own mixes with crossfades, tweak the levels and EQ, apply digital effects and save in all major file formats.",
     "og_desc": ""
   },
   {
