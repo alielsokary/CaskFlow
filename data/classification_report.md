@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-10-20
+Generated 2026-10-21
 
 ## Summary
 
-- 1 new casks classified
+- 2 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
@@ -15,4 +15,5 @@ Generated 2026-10-20
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `status-trio` | menuBar | utilities | 0.90 | A menu bar status icon app for monitoring Wi-Fi, battery, and volume. |
+| `hotkeyclash` | utilities | productivity | 0.85 | A macOS system utility that scans for keyboard shortcut conflicts across apps and system settings. |
+| `sound-studio` | audioMusic | - | 0.97 | Sound Studio is a Mac app for recording and editing digital audio. |

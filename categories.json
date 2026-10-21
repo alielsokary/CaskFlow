@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-20",
-  "totalCasks": 4032,
+  "generatedDate": "2026-10-21",
+  "totalCasks": 4034,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -6505,6 +6505,12 @@
     "hot": {
       "primary": "menuBar",
       "secondary": []
+    },
+    "hotkeyclash": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "hotovo-aider-desk": {
       "primary": "developerTools",
@@ -14251,6 +14257,10 @@
       "secondary": []
     },
     "sound-siphon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "sound-studio": {
       "primary": "audioMusic",
       "secondary": []
     },
