@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-10-21
+Generated 2026-10-22
 
 ## Summary
 
@@ -15,5 +15,5 @@ Generated 2026-10-21
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `hotkeyclash` | utilities | productivity | 0.85 | A macOS system utility that scans for keyboard shortcut conflicts across apps and system settings. |
-| `sound-studio` | audioMusic | - | 0.97 | Sound Studio is a Mac app for recording and editing digital audio. |
+| `clamshell` | utilities | menuBar | 0.85 | A menu bar utility to keep a MacBook awake with the lid closed, a system-level power management function. |
+| `sprites` | developerTools | ai | 0.75 | A CLI tool for managing cloud microVMs aimed at developers building AI agents. |
