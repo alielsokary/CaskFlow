@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-21",
-  "totalCasks": 4034,
+  "generatedDate": "2026-10-22",
+  "totalCasks": 4036,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2541,6 +2541,12 @@
     "cityofzion-neon": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "clamshell": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "clamxav": {
       "primary": "securityPrivacy",
@@ -14433,6 +14439,12 @@
     "springtoolsforeclipse": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "sprites": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "spundle": {
       "primary": "utilities",

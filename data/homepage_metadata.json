@@ -4353,6 +4353,13 @@
     "og_desc": "Light wallet for the NEO blockchain. Contribute to CityOfZion/neon-wallet development by creating an account on GitHub."
   },
   {
+    "token": "clamshell",
+    "homepage": "https://clamshell.dev/",
+    "title": "Clamshell for Mac: App to Keep a MacBook Awake, Lid Closed",
+    "meta_desc": "Clamshell is a Mac menu bar app that keeps an Apple Silicon MacBook awake with the lid closed, no external display or sudo. 7-day free trial, then $9.99.",
+    "og_desc": "Clamshell is a Mac menu bar app that keeps an Apple Silicon MacBook awake with the lid closed. No external display or sudo. Free for 7 days."
+  },
+  {
     "token": "clamxav",
     "homepage": "https://www.clamxav.com/",
     "title": "ClamXAV - Trusted Antivirus & Malware Scanner for macOS | Download Your Free Trial",
@@ -43136,6 +43143,13 @@
     "title": "",
     "meta_desc": "State of the art open source Spring tooling for your favorite coding environment. Provides world-class support for developing Spring-based enterprise applications, whether you prefer Visual Studio Code, Cursor, Codespaces, Eclipse, or Theia.",
     "og_desc": ""
+  },
+  {
+    "token": "sprites",
+    "homepage": "https://sprites.dev/",
+    "title": "",
+    "meta_desc": "Sprites are Linux computers for AI agents: hardware-isolated microVMs, persistent or disposable, with checkpoint and restore for the whole environment.",
+    "og_desc": "Sprites are Linux computers for AI agents: hardware-isolated microVMs, persistent or disposable, with checkpoint and restore for the whole environment."
   },
   {
     "token": "spundle",
