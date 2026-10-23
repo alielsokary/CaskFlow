@@ -39654,6 +39654,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "writer": {
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://github.com/joelbqz/writer-computer/releases/download/v0.8.0/Writer_0.8.0_aarch64.dmg",
+      "artifactSHA256": "b651ddd976417404a85afd24684078d98c6551078691cfbafd2eee3373f37300",
+      "apps": [
+        {
+          "bundleName": "Writer.app",
+          "bundleIdentifier": "com.writer-computer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
