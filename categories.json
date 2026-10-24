@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-23",
-  "totalCasks": 4035,
+  "generatedDate": "2026-10-24",
+  "totalCasks": 4038,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -421,6 +421,12 @@
     "airbuddy": {
       "primary": "utilities",
       "secondary": []
+    },
+    "airbuild": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "aircall": {
       "primary": "communication",
@@ -7461,6 +7467,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "kero": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "kextviewr": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -8824,10 +8836,6 @@
       "secondary": []
     },
     "master-pdf-editor": {
-      "primary": "productivity",
-      "secondary": []
-    },
-    "mate-translate": {
       "primary": "productivity",
       "secondary": []
     },
@@ -11381,6 +11389,13 @@
     "pecunia": {
       "primary": "financeCrypto",
       "secondary": []
+    },
+    "pen": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
     },
     "penc": {
       "primary": "utilities",
@@ -17340,6 +17355,10 @@
       "secondary": []
     },
     "writemapper": {
+      "primary": "productivity",
+      "secondary": []
+    },
+    "writer": {
       "primary": "productivity",
       "secondary": []
     },
