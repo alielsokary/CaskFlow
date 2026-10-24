@@ -656,6 +656,13 @@
     "og_desc": ""
   },
   {
+    "token": "airbuild",
+    "homepage": "https://air.build/",
+    "title": "AirBuild - AI iOS App Builder That Handles App Review",
+    "meta_desc": "Your idea, your AI team, and a working iOS app. AirBuild builds, submits, responds, fixes, and resubmits.",
+    "og_desc": "Build the app. AirBuild handles App Review."
+  },
+  {
     "token": "aircall",
     "homepage": "https://aircall.io/",
     "title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
@@ -30885,6 +30892,13 @@
     "og_desc": "The macOS & iOS file archiver. Contribute to aonez/Keka development by creating an account on GitHub."
   },
   {
+    "token": "kero",
+    "homepage": "https://kero.sh/",
+    "title": "A terminal for coding agents | Kero",
+    "meta_desc": "Kero is a terminal for coding agents. Sessions keep running when you quit, on your computer or a remote host, and the sidebar shows which ones need you.",
+    "og_desc": "Kero is a terminal for coding agents. Sessions keep running when you quit, on your computer or a remote host, and the sidebar shows which ones need you."
+  },
+  {
     "token": "kextviewr",
     "homepage": "https://objective-see.org/products/kextviewr.html",
     "title": "Objective-See: KextViewr",
@@ -37811,6 +37825,13 @@
     "title": "Pecunia",
     "meta_desc": "Pecunia",
     "og_desc": ""
+  },
+  {
+    "token": "pen",
+    "homepage": "https://pen.dev/",
+    "title": "pen.dev - An agentic canvas for building bold software",
+    "meta_desc": "Design with agents, refine every detail on canvas, and ship it back to code.",
+    "og_desc": "An agentic canvas for building bold software."
   },
   {
     "token": "penc",
@@ -48277,6 +48298,13 @@
     "title": "WriteMapper - The visual thinking tool for writing.",
     "meta_desc": "WriteMapper helps thought leaders lay out ideas and thinking, develop perspectives and insights, and provide analysis and strategy - with clarity and depth. App available on macOS and Windows.",
     "og_desc": "WriteMapper helps thought leaders lay out ideas and thinking, develop perspectives and insights, and provide analysis and strategy - with clarity and depth. App available on macOS and Windows."
+  },
+  {
+    "token": "writer",
+    "homepage": "https://writer.computer/",
+    "title": "Writer - Fast and lightweight markdown editor",
+    "meta_desc": "Fast and lightweight app for your workspace's markdown files. Local-first. macOS.",
+    "og_desc": "Fast and lightweight app for your workspace's markdown files."
   },
   {
     "token": "wrkspace",
