@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-24",
-  "totalCasks": 4038,
+  "generatedDate": "2026-10-25",
+  "totalCasks": 4041,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8663,6 +8663,13 @@
       "primary": "utilities",
       "secondary": []
     },
+    "magpie": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "menuBar"
+      ]
+    },
     "mail-assistant": {
       "primary": "communication",
       "secondary": []
@@ -8838,6 +8845,12 @@
     "master-pdf-editor": {
       "primary": "productivity",
       "secondary": []
+    },
+    "mate-translate": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "mater": {
       "primary": "menuBar",
@@ -16954,6 +16967,12 @@
     "waves-central": {
       "primary": "utilities",
       "secondary": []
+    },
+    "wblock": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "browsers"
+      ]
     },
     "wch-ch34x-usb-serial-driver": {
       "primary": "other",
