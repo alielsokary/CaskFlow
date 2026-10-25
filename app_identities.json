@@ -39706,6 +39706,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "wblock": {
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://github.com/0xCUB3/wBlock/releases/download/3.2.2/wBlock-3.2.2.dmg",
+      "artifactSHA256": "c365749017e0e943850fe36c3f14fa10c28e19c142c19987c8e4984592c3bfdb",
+      "apps": [
+        {
+          "bundleName": "wBlock.app",
+          "bundleIdentifier": "skula.wBlock"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "magpie": {
+      "caskVersion": "0.1.1525",
+      "sourceURL": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1525/magpie-darwin-arm64.zip",
+      "artifactSHA256": "a9f42e34e033588110156c0201a37cf5c905f04e34616b121caace71a2d51273",
+      "apps": [
+        {
+          "bundleName": "magpie.app",
+          "bundleIdentifier": "com.yetone.magpie"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
