@@ -28,9 +28,9 @@ def test_app_cask_is_eligible():
     assert eligibility(_cask()) is None
 
 
-def test_deprecated_and_disabled_are_skipped():
-    assert eligibility(_cask(deprecated=True)) == "deprecated/disabled"
-    assert eligibility(_cask(disabled=True)) == "deprecated/disabled"
+def test_deprecated_and_disabled_are_eligible():
+    assert eligibility(_cask(deprecated=True)) is None
+    assert eligibility(_cask(disabled=True)) is None
 
 
 def test_non_app_cask_is_no_icon():
@@ -170,7 +170,8 @@ def test_is_main_cask_shared_filter():
     assert is_main_cask({"token": "obsidian"})
     assert not is_main_cask({"token": "1password@beta"})
     assert not is_main_cask({"token": "font-fira-code"})
-    assert not is_main_cask({"token": "old-tool", "deprecated": True})
+    assert is_main_cask({"token": "old-tool", "deprecated": True})
+    assert is_main_cask({"token": "dead-tool", "disabled": True})
 
 
 # --- magic-byte container sniffing (extension-less URLs: .../stable, .../osx_arm64)

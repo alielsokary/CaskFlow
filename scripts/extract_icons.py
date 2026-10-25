@@ -75,8 +75,6 @@ def eligibility(cask: dict) -> str | None:
     # pkg-artifact casks (Zoom, Teams, ...) count as extractable: the installer
     # payload contains the .app, which pkgutil --expand-full exposes without
     # running any scripts.
-    if cask.get("deprecated") or cask.get("disabled"):
-        return "deprecated/disabled"
     if not cask.get("url"):
         return "no download url"
     if not app_names_from_artifacts(cask) and not has_pkg_artifact(cask):
@@ -757,9 +755,8 @@ def select_candidates(api_casks: list[dict], report: dict, limit: int) -> list[d
     }
     candidates = [
         c for c in api_casks
-        # is_main_cask: skip @-version variants and font-* - the app filters
-        # them out, so their icons would never be requested (--tokens still
-        # bypasses this for manual runs)
+        # is_main_cask: skip @-version variants and font-* - the app does not
+        # classify them yet (--tokens still bypasses this for manual runs)
         if is_main_cask(c)
         and c["token"] not in done and c["token"] not in parked
         and icon_eligibility(c) is None
