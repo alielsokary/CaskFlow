@@ -32896,6 +32896,13 @@
     "og_desc": "Automatically close unused apps on your Mac for better focus and efficiency."
   },
   {
+    "token": "magpie",
+    "homepage": "https://usemagpie.ai/",
+    "title": "magpie",
+    "meta_desc": "One place to pick every agent's model. Codex on DeepSeek, Claude Code on Kimi, Gemini CLI on GLM, from the menu bar, through one local gateway.",
+    "og_desc": "Every agent's model. One place."
+  },
+  {
     "token": "mail-assistant",
     "homepage": "https://docs.getdrafts.com/misc/mail-assistant",
     "title": "Document",
@@ -47629,6 +47636,13 @@
     "title": "Pardon Our Interruption",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "wblock",
+    "homepage": "https://skula.me/project/wblock/",
+    "title": "wBlock: Free Open-Source Ad Blocker for Safari",
+    "meta_desc": "A free, open-source Safari ad blocker for Mac, iPhone, iPad, and Vision Pro, with up to 750,000 filter rules, userscripts, native video players, and per-site controls. No subscription.",
+    "og_desc": "A free, open-source Safari ad blocker for Mac, iPhone, iPad, and Vision Pro, with up to 750,000 filter rules, userscripts, native video players, and per-site controls. No subscription."
   },
   {
     "token": "wch-ch34x-usb-serial-driver",
