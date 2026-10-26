@@ -6525,6 +6525,13 @@
     "og_desc": "DirEqual is an advanced directory compare utility for Mac. It allows detecting the tiniest changes between folders and display the result with a clear and intuitive way. The differences are highlighted using colors and icons indicating the difference type (size, date or item content)."
   },
   {
+    "token": "diri",
+    "homepage": "https://diri.sh/",
+    "title": "Diri - Run Claude Code, Codex and other coding agents in parallel",
+    "meta_desc": "Free, open-source app to run Claude Code, Codex and 20 more side by side, on your Mac or over SSH. Agents drive it over MCP: spawn agents, schedule runs, use your apps.",
+    "og_desc": "Free, open-source app to run Claude Code, Codex and 20 more side by side, on your Mac or over SSH. Agents drive it over MCP: spawn agents, schedule runs, use your apps."
+  },
+  {
     "token": "discord",
     "homepage": "https://discord.com/",
     "title": "Discord - Group Chat That's All Fun & Games",
@@ -30948,6 +30955,13 @@
     "og_desc": ""
   },
   {
+    "token": "keyboop",
+    "homepage": "https://keyboop.com/",
+    "title": "Keyboop - раскладка под контролем + голосовой набор для macOS",
+    "meta_desc": "Бесплатно: переключатель раскладки, голосовой набор и перевод выделенного для macOS. Локально, без слежки. Бесплатная замена Punto Switcher.",
+    "og_desc": "Бесплатно чиню раскладку на лету и набираю текст голосом. Локально и без слежки. Для macOS."
+  },
+  {
     "token": "keycastr",
     "homepage": "https://github.com/keycastr/keycastr",
     "title": "GitHub - keycastr/keycastr: KeyCastr, an open-source keystroke visualizer · GitHub",
@@ -37832,6 +37846,13 @@
     "title": "Pecunia",
     "meta_desc": "Pecunia",
     "og_desc": ""
+  },
+  {
+    "token": "peel",
+    "homepage": "https://peel.tuguidragos.com/",
+    "title": "Peel: Free, Open Source Uninstaller and Cleaner for Mac",
+    "meta_desc": "Peel uninstalls Mac apps along with the files they leave behind, and shows why each file belongs to them. Free and open source, for macOS Tahoe 26 or later.",
+    "og_desc": "A free, open source uninstaller and cleaner for macOS, which also fine-tunes your Mac and sets up Terminal."
   },
   {
     "token": "pen",
