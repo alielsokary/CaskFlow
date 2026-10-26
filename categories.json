@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-25",
-  "totalCasks": 4041,
+  "generatedDate": "2026-10-26",
+  "totalCasks": 4043,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3846,6 +3846,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "diri": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "discord": {
       "primary": "communication",
       "secondary": []
@@ -7500,6 +7506,12 @@
     "keyboardcleantool": {
       "primary": "utilities",
       "secondary": []
+    },
+    "keyboop": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "keycastr": {
       "primary": "utilities",
@@ -11403,6 +11415,10 @@
       "primary": "financeCrypto",
       "secondary": []
     },
+    "peel": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "pen": {
       "primary": "designGraphics",
       "secondary": [
@@ -14578,10 +14594,6 @@
     },
     "standard-notes": {
       "primary": "productivity",
-      "secondary": []
-    },
-    "starnet++": {
-      "primary": "designGraphics",
       "secondary": []
     },
     "starnet2": {
