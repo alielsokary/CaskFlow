@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-10-25
+Generated 2026-10-26
 
 ## Summary
 
@@ -9,12 +9,16 @@ Generated 2026-10-25
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
 - 0 casks removed from Homebrew (pruned)
-- 0 casks deprecated/disabled in Homebrew (pruned)
+- 1 casks deprecated/disabled in Homebrew (pruned)
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `magpie` | developerTools | ai, menuBar | 0.80 | A menu-bar local gateway tool for routing AI coding agents to different models, primarily a developer tool with AI focus. |
-| `mate-translate` | productivity | menuBar | 0.80 | A system-wide translation tool accessible from the menu bar, fitting productivity with a menu bar trait. |
-| `wblock` | securityPrivacy | browsers | 0.85 | wBlock is an ad blocker extension for Safari, focused on privacy/content filtering. |
+| `diri` | developerTools | ai | 0.90 | A terminal workspace for running coding agents like Claude Code and Codex in parallel is a developer tool with AI focus. |
+| `keyboop` | utilities | productivity | 0.75 | A keyboard layout switcher with local voice dictation is a system-level input utility similar to Punto Switcher. |
+| `peel` | utilities | - | 0.97 | An app uninstaller and disk cleanup tool is a core system utility. |
+
+## Deprecated/disabled (pruned)
+
+- `starnet++`
