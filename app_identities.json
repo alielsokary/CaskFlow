@@ -39732,6 +39732,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "diri": {
+      "caskVersion": "0.10.1",
+      "sourceURL": "https://github.com/cristicretu/diri/releases/download/v0.10.1/diri-0.10.1-universal.dmg",
+      "artifactSHA256": "f32d5f5c29dabc13cd630bf65345b1dce5f391a15dacf490f66fdf8641246dba",
+      "apps": [
+        {
+          "bundleName": "diri.app",
+          "bundleIdentifier": "com.dirijor.diri"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "keyboop": {
+      "caskVersion": "0.4.10",
+      "sourceURL": "https://keyboop.com/Keyboop-0.4.10.dmg",
+      "artifactSHA256": "fd200194ae9d2614da74fac08df70fd321807c4dd69e7fd478a23b813ec624b6",
+      "apps": [
+        {
+          "bundleName": "Keyboop.app",
+          "bundleIdentifier": "ru.keyboop.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "peel": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/TuguiDragos/Peel/releases/download/v1.2.1/Peel-1.2.1.zip",
+      "artifactSHA256": "47684c332c6963b5fe1f31d7bf25dc1b6eb9438bc2852f163bf1aec98d383aed",
+      "apps": [
+        {
+          "bundleName": "Peel.app",
+          "bundleIdentifier": "com.tuguidragos.Peel"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
