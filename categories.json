@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-26",
-  "totalCasks": 4043,
+  "generatedDate": "2026-10-27",
+  "totalCasks": 4042,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2921,12 +2921,6 @@
     },
     "codexbar": {
       "primary": "menuBar",
-      "secondary": [
-        "ai"
-      ]
-    },
-    "codexia": {
-      "primary": "developerTools",
       "secondary": [
         "ai"
       ]
