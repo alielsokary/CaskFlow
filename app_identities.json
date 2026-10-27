@@ -39771,6 +39771,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "festnetz-check": {
+      "caskVersion": "3.13.0",
+      "sourceURL": "https://download.breitbandmessung.de/bbm/Festnetz-Check-3.13.0-mac.zip",
+      "artifactSHA256": "72c243851075fcf2fe20c17d00b66d91e1a2cfe9a1bebb74217d9b3847d780e9",
+      "apps": [
+        {
+          "bundleName": "Festnetz-Check.app",
+          "bundleIdentifier": "com.zafaco.breitbandmessung"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "clementine": {
+      "caskVersion": "1.4.3",
+      "sourceURL": "https://github.com/clementine-player/Clementine/releases/download/1.4.3/clementine-1.4.3.dmg",
+      "artifactSHA256": "226a9a4e7ea27e96f89e384f52970e316364e256b05ead94c8ff7b8b5ad14c58",
+      "apps": [
+        {
+          "bundleName": "Clementine.app",
+          "bundleIdentifier": "org.clementine-player.clementine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nvalt": {
+      "caskVersion": "3.0.7,136",
+      "sourceURL": "https://updates.designheresy.com/nvalt/nvALT3.0.7136.zip",
+      "artifactSHA256": "65dfe891b3b33b34964cf76759cf1f324d89834ddf0979dc6c8584cb2781b2da",
+      "apps": [
+        {
+          "bundleName": "nvALT.app",
+          "bundleIdentifier": "net.elasticthreads.nv"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
