@@ -39810,6 +39810,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "qoder": {
+      "caskVersion": "0.4.11",
+      "sourceURL": "https://download.qoder.com/qoder-app/releases/0.4.11/Qoder-mac-arm64.zip",
+      "artifactSHA256": "fabeed5344df1dfd3fb5aa864accdff92d1b4d5e705ca2ea1a9420677c1fff46",
+      "apps": [
+        {
+          "bundleName": "Qoder.app",
+          "bundleIdentifier": "com.qoder.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deutschlandgpt": {
+      "caskVersion": "0.16.0",
+      "sourceURL": "https://dgpt-assets-prod.nbg1.your-objectstorage.com/releases/desktop/macos/deutschlandgpt-desktop-macos-v0.16.0.dmg",
+      "artifactSHA256": "9382c2e41a44060a280ac64e11e4e30618eaf734b74e13c0e8030d5195662429",
+      "apps": [
+        {
+          "bundleName": "DeutschlandGPT.app",
+          "bundleIdentifier": "de.deutschlandgpt.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "task-manager-tmog": {
+      "caskVersion": "1.1.0,20261026015153",
+      "sourceURL": "https://tmog.org/downloads/TMOG-Task-Manager-1.1.0-20261026015153-macOS-universal.dmg",
+      "artifactSHA256": "e233c033514c703f19fafa394f99f2679e89ed88f1b74fc9f03574dc6b1bea64",
+      "apps": [
+        {
+          "bundleName": "Task Manager TMOG.app",
+          "bundleIdentifier": "com.tmog.taskmanager"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
