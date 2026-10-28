@@ -4570,6 +4570,13 @@
     "og_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices."
   },
   {
+    "token": "clementine",
+    "homepage": "https://www.clementine-player.org/",
+    "title": "Clementine Music Player",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "clibor",
     "homepage": "https://chigusa-web.com/clibor-for-mac-en/",
     "title": "Clibor for Mac English | Clipboard history free software \"Clibor for Mac\"",
@@ -36078,6 +36085,13 @@
     "title": "Nutstore Official Website|Enterprise Network Disk|Team Network Disk|Personal Cloud Disk|Synchronous Cloud Disk",
     "meta_desc": "Nutstore is a free cloud storage service that helps you access your files anywhere at any time and share them with friends easily",
     "og_desc": ""
+  },
+  {
+    "token": "nvalt",
+    "homepage": "https://brettterpstra.com/projects/nvalt/",
+    "title": "nvALT - BrettTerpstra.com",
+    "meta_desc": "A new app is coming to replace nvALT: nvUltra. Sign up here for updates here.",
+    "og_desc": "A new app is coming to replace nvALT: nvUltra. Sign up here for updates here."
   },
   {
     "token": "nvidia-geforce-now",

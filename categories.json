@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-27",
-  "totalCasks": 4042,
+  "generatedDate": "2026-10-28",
+  "totalCasks": 4044,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1922,10 +1922,6 @@
       "primary": "productivity",
       "secondary": []
     },
-    "breitbandmessung": {
-      "primary": "utilities",
-      "secondary": []
-    },
     "brewy": {
       "primary": "utilities",
       "secondary": []
@@ -2679,6 +2675,10 @@
     },
     "cleeen": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "clementine": {
+      "primary": "audioMusic",
       "secondary": []
     },
     "clibor": {
@@ -4940,6 +4940,10 @@
     },
     "ferdium": {
       "primary": "communication",
+      "secondary": []
+    },
+    "festnetz-check": {
+      "primary": "utilities",
       "secondary": []
     },
     "fetch-app": {
@@ -10411,6 +10415,10 @@
     },
     "nutstore": {
       "primary": "cloudStorage",
+      "secondary": []
+    },
+    "nvalt": {
+      "primary": "productivity",
       "secondary": []
     },
     "nvidia-geforce-now": {
