@@ -39849,6 +39849,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "macdirstat": {
+      "caskVersion": "0.2.0",
+      "sourceURL": "https://github.com/phalladar/MacDirStat/releases/download/v0.2.0/MacDirStat.zip",
+      "artifactSHA256": "564bec6471f1854d8c81fe0c36fbc5349be5564ee631b38c61faa4ce308fe80e",
+      "apps": [
+        {
+          "bundleName": "MacDirStat.app",
+          "bundleIdentifier": "io.github.phalladar.MacDirStat"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "solidcraft": {
+      "caskVersion": "0.26.1",
+      "sourceURL": "https://github.com/tangency-labs/solidcraft/releases/download/v0.26.1/solidcraft-0.26.1-macos-universal.dmg",
+      "artifactSHA256": "d816d6ce8acbf1ef7d47937c1a5ef02684b6a0b5d8265ffe185d442130423832",
+      "apps": [
+        {
+          "bundleName": "SolidCraft.app",
+          "bundleIdentifier": "io.tangencylabs.solidcraft"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "spencer": {
+      "caskVersion": "1.7.5",
+      "sourceURL": "https://get.macspencer.app/Spencer.dmg",
+      "artifactSHA256": "3c1f3548a63500cd7506e0d44eb7cd8e94c58d6c7541c90df52286e64e4234ad",
+      "apps": [
+        {
+          "bundleName": "Spencer.app",
+          "bundleIdentifier": "com.pineapple.spencer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
