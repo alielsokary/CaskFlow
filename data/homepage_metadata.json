@@ -6336,6 +6336,13 @@
     "og_desc": "kicking out badware on macOS since 2014"
   },
   {
+    "token": "deutschlandgpt",
+    "homepage": "https://www.deutschlandgpt.de/",
+    "title": "KI Plattform Deutschland - DSGVO-konform",
+    "meta_desc": "Die KI-Plattform für den deutschen Mittelstand. ChatGPT, Claude, Gemini & Mistral DSGVO-konform auf europäischer Infrastruktur - Daten in Deutschland. 1.000+ Organisationen vertrauen DeutschlandGPT. Jetzt Demo vereinbaren.",
+    "og_desc": "Die KI-Plattform für den deutschen Mittelstand. ChatGPT, Claude, Gemini & Mistral DSGVO-konform auf europäischer Infrastruktur - Daten in Deutschland. ISO 27001 und ISO 9001."
+  },
+  {
     "token": "devcleaner",
     "homepage": "https://github.com/vashpan/xcode-dev-cleaner",
     "title": "GitHub - vashpan/xcode-dev-cleaner: If you want to reclaim tens of gigabytes of your storage used for various Xcode caches - this tool is for you! · GitHub",
@@ -32564,6 +32571,13 @@
     "og_desc": ""
   },
   {
+    "token": "macdirstat",
+    "homepage": "https://github.com/phalladar/MacDirStat",
+    "title": "GitHub - phalladar/MacDirStat: Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what's taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Apple silicon and Intel, signed and notarized, fully offline. · GitHub",
+    "meta_desc": "Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what's taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Apple silicon and Intel, signed and notarized, fully offline. - phalladar/MacDirStat",
+    "og_desc": "Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what&#39;s taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Ap..."
+  },
+  {
     "token": "macdive",
     "homepage": "https://www.mac-dive.com/",
     "title": "MacDive",
@@ -35425,6 +35439,13 @@
     "homepage": "https://www.neat-reader.com/",
     "title": "EPUB Viewer | EPUB Reader | Neat Reader",
     "meta_desc": "Neat Reader is an excellent ePub Reader designed for all your devices. You can read ePub files on smartphones or Desktop. ePub viewer available at your palms!",
+    "og_desc": ""
+  },
+  {
+    "token": "nebius",
+    "homepage": "https://docs.nebius.com/cli",
+    "title": "Nebius AI Cloud CLI - Nebius AI Cloud",
+    "meta_desc": "",
     "og_desc": ""
   },
   {
@@ -39507,6 +39528,13 @@
     "og_desc": ""
   },
   {
+    "token": "qoder",
+    "homepage": "https://qoder.com/",
+    "title": "Qoder - AI Coding Assistant | Autonomous Development IDE",
+    "meta_desc": "Qoder is a next-generation AI programming platform that offers intelligent code completion, AI conversational programming, and automatic code generation. It supports mainstream IDEs like VS Code and JetBrains. Download for free.",
+    "og_desc": "Qoder is a next-generation AI programming platform that offers intelligent code completion, AI conversational programming, and automatic code generation. It supports mainstream IDEs like VS Code and JetBrains. Download for free."
+  },
+  {
     "token": "qq",
     "homepage": "https://im.qq.com/macqq/index.shtml",
     "title": "QQ Mac版-轻松做自己",
@@ -42729,6 +42757,13 @@
     "og_desc": "Solar2D - Awesome 2D game engine"
   },
   {
+    "token": "solidcraft",
+    "homepage": "https://solidcraft.io/",
+    "title": "The parts of a boundary representation",
+    "meta_desc": "Sketch, constrain, and build editable parts with SolidCraft. Open-source parametric CAD for desktop and browser, with optional MCP agent workflows.",
+    "og_desc": "Sketch, constrain, and build editable parts with SolidCraft. Open-source parametric CAD for desktop and browser, with optional MCP agent workflows."
+  },
+  {
     "token": "solidtime",
     "homepage": "https://www.solidtime.io/",
     "title": "Solidtime - Open source time tracking for teams",
@@ -43108,6 +43143,13 @@
     "title": "Speedify - Use all of your Internet connections at the same time",
     "meta_desc": "Speedify's app and enterprise solutions enable you to combine multiple internet connections (Wi-Fi, 4G, 5G, Ethernet, Starlink, Satellite, and more) to improve the stability, speed, and security of your online experiences.",
     "og_desc": "Speedify's app and enterprise solutions enable you to combine multiple internet connections (Wi-Fi, 4G, 5G, Ethernet, Starlink, Satellite, and more) to improve the stability, speed, and security of your online experiences."
+  },
+  {
+    "token": "spencer",
+    "homepage": "https://macspencer.app/",
+    "title": "Spencer - Window Manager for Mac | Save Layouts Across Spaces",
+    "meta_desc": "Save & restore window positions - across all virtual Desktops. Spencer launches apps, hides others, and adjusts the Desktop count to match your saved layouts.",
+    "og_desc": "Save & restore window positions - across all virtual Desktops. Spencer launches apps, hides others, and adjusts the Desktop count to match your saved layouts."
   },
   {
     "token": "spike",
@@ -44573,6 +44615,13 @@
     "title": "GitHub - shapehq/tartelet: ⚙️💻 A macOS app that makes it a breeze to manage multiple GitHub Actions runners in ephemeral virtual machines on a single host machine. The benefits are that runners can run in parallel, and each job runs in an isolated environment. · GitHub",
     "meta_desc": "⚙️💻 A macOS app that makes it a breeze to manage multiple GitHub Actions runners in ephemeral virtual machines on a single host machine. The benefits are that runners can run in parallel, and each job runs in an isolated environment. - shapehq/tartelet",
     "og_desc": "⚙️💻 A macOS app that makes it a breeze to manage multiple GitHub Actions runners in ephemeral virtual machines on a single host machine. The benefits are that runners can run in parallel, and each ..."
+  },
+  {
+    "token": "task-manager-tmog",
+    "homepage": "https://tmog.org/",
+    "title": "Why is my Computer Slow? TMOG Knows Why!",
+    "meta_desc": "Why is my computer slow? TMOG knows why. TMOG 1.1 is one task manager with fully native applications for macOS, Windows, and Linux.",
+    "og_desc": "One glance at TMOG and you know why. One measuring core, with native applications for macOS, Windows, and Linux."
   },
   {
     "token": "taskade",

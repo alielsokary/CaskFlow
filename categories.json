@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-28",
-  "totalCasks": 4044,
+  "generatedDate": "2026-10-29",
+  "totalCasks": 4051,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3715,6 +3715,12 @@
     "detectx-swift": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "deutschlandgpt": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "devcleaner": {
       "primary": "developerTools",
@@ -8476,6 +8482,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "macdirstat": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "macdive": {
       "primary": "scienceEducation",
       "secondary": []
@@ -10037,6 +10047,12 @@
     "neat-reader": {
       "primary": "productivity",
       "secondary": []
+    },
+    "nebius": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "neo-network-utility": {
       "primary": "utilities",
@@ -12404,6 +12420,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "qoder": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "qq": {
       "primary": "communication",
       "secondary": []
@@ -14217,6 +14239,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "solidcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "solidtime": {
       "primary": "productivity",
       "secondary": [
@@ -14425,6 +14453,12 @@
     "speedify": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "spencer": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "spike": {
       "primary": "scienceEducation",
@@ -15237,6 +15271,12 @@
     "tartelet": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "task-manager-tmog": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "taskade": {
       "primary": "productivity",
