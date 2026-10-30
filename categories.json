@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-29",
-  "totalCasks": 4051,
+  "generatedDate": "2026-10-30",
+  "totalCasks": 4057,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -7348,6 +7348,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "junie": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "jupyterlab-app": {
       "primary": "developerTools",
       "secondary": []
@@ -8082,7 +8088,7 @@
       "primary": "utilities",
       "secondary": []
     },
-    "lingon-x": {
+    "lingon-pro": {
       "primary": "utilities",
       "secondary": []
     },
@@ -8618,6 +8624,10 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "mactoy": {
+      "primary": "utilities",
+      "secondary": []
     },
     "mactracker": {
       "primary": "utilities",
@@ -10755,6 +10765,12 @@
         "ai"
       ]
     },
+    "opencodex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "opencomic": {
       "primary": "productivity",
       "secondary": []
@@ -10783,6 +10799,12 @@
       "primary": "utilities",
       "secondary": [
         "videoMedia"
+      ]
+    },
+    "openframe-console": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "openframeworks": {
@@ -15590,6 +15612,12 @@
       "primary": "financeCrypto",
       "secondary": []
     },
+    "thinkrail": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "thinlinc-client": {
       "primary": "utilities",
       "secondary": []
@@ -15782,6 +15810,13 @@
       "primary": "designGraphics",
       "secondary": [
         "productivity"
+      ]
+    },
+    "tldv": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
       ]
     },
     "tm-error-logger": {
@@ -16800,16 +16835,16 @@
       "primary": "other",
       "secondary": []
     },
+    "vocevista-pro": {
+      "primary": "audioMusic",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
     "vocevista-video": {
       "primary": "scienceEducation",
       "secondary": [
         "audioMusic"
-      ]
-    },
-    "vocevista-video-pro": {
-      "primary": "audioMusic",
-      "secondary": [
-        "scienceEducation"
       ]
     },
     "voiceink": {
