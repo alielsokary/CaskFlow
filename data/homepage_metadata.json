@@ -30672,6 +30672,13 @@
     "og_desc": "Jumpshare helps you and your team communicate better with screen recordings, screenshots, GIFs, file sharing, and more - all in one software."
   },
   {
+    "token": "junie",
+    "homepage": "https://junie.jetbrains.com/",
+    "title": "Junie by JetBrains",
+    "meta_desc": "Junie by JetBrains. AI Coding Agent.",
+    "og_desc": "Junie by JetBrains. AI Coding Agent."
+  },
+  {
     "token": "jupyter-notebook-viewer",
     "homepage": "https://github.com/tuxu/nbviewer-app",
     "title": "GitHub - tuxu/nbviewer-app: A Jupyter notebook viewer for macOS · GitHub",
@@ -32824,6 +32831,13 @@
     "title": "GitHub - ggbond268/MacTools: A free and open-source collection of native macOS menu bar tools. · GitHub",
     "meta_desc": "A free and open-source collection of native macOS menu bar tools.  - GitHub - ggbond268/MacTools: A free and open-source collection of native macOS menu bar tools.",
     "og_desc": "A free and open-source collection of native macOS menu bar tools.  - ggbond268/MacTools"
+  },
+  {
+    "token": "mactoy",
+    "homepage": "https://github.com/cashcon57/mactoy",
+    "title": "GitHub - cashcon57/mactoy: Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. · GitHub",
+    "meta_desc": "Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. - cashcon57/mactoy",
+    "og_desc": "Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. - cashcon57/mactoy"
   },
   {
     "token": "mactracker",
@@ -36631,6 +36645,13 @@
     "og_desc": ""
   },
   {
+    "token": "opencodex",
+    "homepage": "https://opencodex.me/",
+    "title": "opencodex - One local gateway for Codex, Claude Code and more",
+    "meta_desc": "One local gateway for your AI coding tools and models: use the providers you choose with Codex, Claude Code, Claude Desktop and Grok Build, and connect more tools through managed configs.",
+    "og_desc": "One local gateway for your AI coding tools and models: use the providers you choose with Codex, Claude Code, Claude Desktop and Grok Build, and connect more tools through managed configs."
+  },
+  {
     "token": "opencomic",
     "homepage": "https://opencomic.app/",
     "title": "Comic and manga reader | OpenComic",
@@ -36692,6 +36713,13 @@
     "title": "Collect - Open Foris",
     "meta_desc": "Open Foris unites communities and practitioners with open-source tools, making forest and land monitoring accessible, transparent, and collaborative for people and the planet",
     "og_desc": ""
+  },
+  {
+    "token": "openframe-console",
+    "homepage": "https://openframe.ai/",
+    "title": "OpenFrame - AI-Driven Open-Source OS for MSPs",
+    "meta_desc": "Swap bloated vendor tools for open ones. Automate the boring crap. Take your margin back. AI-driven open-source OS for MSPs.",
+    "og_desc": "Swap bloated vendor tools for open ones. Automate the boring crap. Take your margin back. AI-driven open-source OS for MSPs."
   },
   {
     "token": "openframeworks",
@@ -45222,6 +45250,13 @@
     "og_desc": "Experience thinkorswim® desktop - a customizable trading software with elite tools that help you analyze, strategize, and trade like never before."
   },
   {
+    "token": "thinkrail",
+    "homepage": "https://thinkrail.ai/",
+    "title": "ThinkRail - the agentic IDE that gets better every time you use it",
+    "meta_desc": "Open a repo as a project, cut isolated git-worktree workspaces, and pair with the pi coding agent in a real IDE - Monaco tabs, terminals, diffs, concurrent chats, and a spec graph the agent actually reads. Open source, Apache-2.0, a JetBrains InnovationHub project.",
+    "og_desc": "Git-worktree workspaces, a real editor, terminals, concurrent agent chats, and a spec graph the agent reads. Open source, Apache-2.0."
+  },
+  {
     "token": "thinlinc-client",
     "homepage": "https://www.cendio.com/thinlinc/what-is-thinlinc/",
     "title": "arrow-right",
@@ -45592,6 +45627,13 @@
     "title": "GitHub - tldraw/tldraw-desktop: A desktop app for using tldraw with local files. · GitHub",
     "meta_desc": "A desktop app for using tldraw with local files. Contribute to tldraw/tldraw-desktop development by creating an account on GitHub.",
     "og_desc": "A desktop app for using tldraw with local files. Contribute to tldraw/tldraw-desktop development by creating an account on GitHub."
+  },
+  {
+    "token": "tldv",
+    "homepage": "https://tldv.io/",
+    "title": "tl;dv - AI Meeting Notetaker for Zoom, Google Meet & Teams",
+    "meta_desc": "AI meeting notes - record, transcribe, and summarize meetings automatically. tl;dv turns Zoom, Google Meet, and Microsoft Teams calls into actionable insights with AI-powered summaries.",
+    "og_desc": "AI meeting notes - record, transcribe, and summarize meetings automatically. tl;dv turns Zoom, Google Meet, and Microsoft Teams calls into actionable insights with AI-powered summaries."
   },
   {
     "token": "tm-error-logger",
