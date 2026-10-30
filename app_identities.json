@@ -39888,6 +39888,97 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "opencodex": {
+      "caskVersion": "2.94.0",
+      "sourceURL": "https://github.com/lidge-jun/opencodex/releases/download/v2.94.0/OpenCodex-2.94.0-macos.dmg",
+      "artifactSHA256": "0f298a4bf467ffcebd2a3a5569eb1ba59716662a756303bb1eee03392bf09af3",
+      "apps": [
+        {
+          "bundleName": "OpenCodex.app",
+          "bundleIdentifier": "com.opencodex.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "thinkrail": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/JetBrains/thinkrail/releases/download/v0.3.0/thinkrail-desktop-darwin-arm64.dmg",
+      "artifactSHA256": "235dbae9504ee9ebd6188fbe1cda5bca8a76685b7280ee3243bbde868204b37d",
+      "apps": [
+        {
+          "bundleName": "ThinkRail.app",
+          "bundleIdentifier": "ai.thinkrail.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tldv": {
+      "caskVersion": "3.0.399",
+      "sourceURL": "https://releases.tldv.io/tldv-3.0.399-arm64.dmg",
+      "artifactSHA256": "0cdf977c417c92989efc0ce36e695efd39fed9dbd6ae61425c6c3fdddd9b93c9",
+      "apps": [
+        {
+          "bundleName": "tldv.app",
+          "bundleIdentifier": "io.tldv.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openframe-console": {
+      "caskVersion": "1.0.197",
+      "sourceURL": "https://github.com/flamingo-stack/openframe-oss-frontend/releases/download/1.0.197/OpenFrame-Console_1.0.197_universal.dmg",
+      "artifactSHA256": "1f7575884ea9558f5865ec141c824dc80bbb19506ee53a410b43568bb1f5353c",
+      "apps": [
+        {
+          "bundleName": "OpenFrame Console.app",
+          "bundleIdentifier": "com.openframe.console"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vocevista-pro": {
+      "caskVersion": "6.0.2.10487",
+      "sourceURL": "https://download.sygyt.com/6.0.2/VoceVistaPro_macOS_6.0.2.10487.dmg",
+      "artifactSHA256": "597e5c2d009ef510b372b99457e1c243e8b250799afd8e85aeb52851d3d1b051",
+      "apps": [
+        {
+          "bundleName": "VoceVista Pro.app",
+          "bundleIdentifier": "com.sygyt.mac.VoceVistaVideoPro"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lingon-pro": {
+      "caskVersion": "10.3.1",
+      "sourceURL": "https://www.peterborgapps.com/downloads/LingonPro10.zip",
+      "artifactSHA256": "b980cf48b45792c34df1de8304729f43f053883b10d3aa694b13ed294d39de21",
+      "apps": [
+        {
+          "bundleName": "Lingon Pro.app",
+          "bundleIdentifier": "com.peterborgapps.LingonPro10"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mactoy": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://github.com/cashcon57/mactoy/releases/download/v0.7.1/Mactoy-0.7.1.dmg",
+      "artifactSHA256": "5b01c6f1717146cefeecc7c94f5dbf3bfe50bd24c1dde1f2cc77454103c5a669",
+      "apps": [
+        {
+          "bundleName": "Mactoy.app",
+          "bundleIdentifier": "com.mactoy.Mactoy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
