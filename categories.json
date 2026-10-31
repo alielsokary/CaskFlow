@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-30",
-  "totalCasks": 4057,
+  "generatedDate": "2026-10-31",
+  "totalCasks": 4060,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -6373,6 +6373,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "herdr-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "hermes-desktop": {
       "primary": "productivity",
       "secondary": [
@@ -10301,6 +10307,10 @@
       "primary": "productivity",
       "secondary": []
     },
+    "notational-velocity": {
+      "primary": "productivity",
+      "secondary": []
+    },
     "notchi": {
       "primary": "menuBar",
       "secondary": [
@@ -12878,6 +12888,10 @@
     },
     "renamer": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "rencal": {
+      "primary": "productivity",
       "secondary": []
     },
     "reolink": {
