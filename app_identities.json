@@ -39979,6 +39979,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "herdr-app": {
+      "caskVersion": "0.1.10",
+      "sourceURL": "https://releases.herdr.dev/app/0.1.10/Herdr.dmg",
+      "artifactSHA256": "08be7b314e00dc3926df12616a1a0b4464771ff3bd0916c41a26d7d921ca3556",
+      "apps": [
+        {
+          "bundleName": "Herdr.app",
+          "bundleIdentifier": "dev.herdr.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "notational-velocity": {
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://github.com/scrod/nv/releases/download/v2.5.2/NotationalVelocity-2.5.2.zip",
+      "artifactSHA256": "f84ebcef767ad6191850902b4576d6b8136e059ccc61b22874cf372c8b8e7f8b",
+      "apps": [
+        {
+          "bundleName": "Notational Velocity.app",
+          "bundleIdentifier": "net.notational.velocity"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "rencal": {
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://github.com/t4t5/rencal/releases/download/v0.9.0/renCal_0.9.0_aarch64.dmg",
+      "artifactSHA256": "6cbd39058705e6b9d1ac472f6bce5c442dcd3600ddf12b1f6ac19247928f249b",
+      "apps": [
+        {
+          "bundleName": "renCal.app",
+          "bundleIdentifier": "org.ren.rencal"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
