@@ -28854,6 +28854,13 @@
     "og_desc": "Laravel Development perfected - One click PHP development environment."
   },
   {
+    "token": "herdr-app",
+    "homepage": "https://herdr.dev/",
+    "title": "Herdr: made for your agents, remade by them",
+    "meta_desc": "Herdr is a native app for running coding agents. Your agent can change any part of it, from the sidebar to whole new panels. Close it and your agents keep working.",
+    "og_desc": "Herdr is a native app for running coding agents. Your agent can change any part of it, from the sidebar to whole new panels. Close it and your agents keep working."
+  },
+  {
     "token": "hermes-desktop",
     "homepage": "https://hermes-agent.nousresearch.com/desktop",
     "title": "Hermes Agent | Nous Research",
@@ -35874,6 +35881,13 @@
     "og_desc": "From simple notes and todo lists, to articles and journals, to wikis and second brain."
   },
   {
+    "token": "notational-velocity",
+    "homepage": "https://notational.net/",
+    "title": "Notational Velocity",
+    "meta_desc": "Notational Velocity: modeless, mouseless Mac OS X note-taking application",
+    "og_desc": ""
+  },
+  {
     "token": "notchi",
     "homepage": "https://notchi.app/",
     "title": "Notchi",
@@ -40314,6 +40328,13 @@
     "title": "Renamer - Batch File Renamer for Mac",
     "meta_desc": "You need to rename many files? Renamer is a batch file renaming app for macOS that allows you to rename lots of files quickly and conveniently.",
     "og_desc": ""
+  },
+  {
+    "token": "rencal",
+    "homepage": "https://rencal.org/",
+    "title": "renCal: Open-source calendar for Omarchy, Linux and macOS",
+    "meta_desc": "Free, open-source calendar for hackers. Built for Omarchy, runs on Linux and macOS. Syncs with Google Calendar, iCloud, Outlook and CalDAV. Events stored as plaintext .ics files.",
+    "og_desc": "Free, open-source calendar for hackers. Built for Omarchy, runs on Linux and macOS. Syncs with Google Calendar, iCloud, Outlook and CalDAV. Events stored as plaintext .ics files."
   },
   {
     "token": "renpy",
