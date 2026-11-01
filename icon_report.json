@@ -32,13 +32,13 @@
   "after-dark-classic": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "aifun": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "algodoo": {
@@ -122,7 +122,7 @@
   "archi": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "archy": {
@@ -146,7 +146,7 @@
   "assinador-serpro": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 504",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "atok": {
@@ -218,7 +218,7 @@
   "battlescribe": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "blackhole-16ch": {
@@ -242,7 +242,7 @@
   "blurred": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "bonitastudiocommunity": {
@@ -254,7 +254,7 @@
   "bowtie": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "box-tools": {
@@ -266,7 +266,7 @@
   "boxcryptor": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.boxcryptor.com",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "brooklyn": {
@@ -284,7 +284,7 @@
   "cahier": {
     "status": "failed",
     "reason": "sha256 mismatch (got 5a61ffae056a...)",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "caldigit-thunderbolt-charging": {
@@ -344,7 +344,7 @@
   "cheatsheet": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "chef-workstation": {
@@ -380,13 +380,13 @@
   "circuitjs1": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "cisco-proximity": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "claude-code": {
@@ -518,7 +518,7 @@
   "detexify": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "developerexcuses": {
@@ -560,7 +560,7 @@
   "disk-inventory-x": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "diskspace": {
@@ -578,7 +578,7 @@
   "doppler-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "dotnet-runtime": {
@@ -764,7 +764,7 @@
   "fantasy-grounds": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "filemon": {
@@ -788,7 +788,7 @@
   "flow-desktop": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: cdn.getflow.com",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "flox": {
@@ -812,7 +812,7 @@
   "fmail2": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "folding-at-home": {
@@ -842,7 +842,7 @@
   "ftdi-vcp-driver": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "fx-cast-bridge": {
@@ -884,7 +884,7 @@
   "geogebra": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "ghdl": {
@@ -950,7 +950,7 @@
   "gpxsee": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "graalvm-jdk": {
@@ -992,7 +992,7 @@
   "guitar-pro": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "hashbackup": {
@@ -1004,7 +1004,7 @@
   "height": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "heimdall-suite": {
@@ -1016,7 +1016,7 @@
   "hermit-crab": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "hfsleuth": {
@@ -1070,7 +1070,7 @@
   "id3-editor": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 2,
+    "attempts": 3,
     "updated": "2026-11-01"
   },
   "ideamaker": {
