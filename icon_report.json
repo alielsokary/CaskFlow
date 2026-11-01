@@ -2477,11 +2477,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "ultimate": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "unclack": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "unite-phone": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "unity-ios-support-for-editor": {
     "status": "no_icon",
@@ -2506,6 +2518,24 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "universal-android-debloater": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "unlox": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "v2ray-unofficial": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "vagrant": {
     "status": "no_icon",

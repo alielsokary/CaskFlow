@@ -49480,6 +49480,281 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "unison-app": {
+      "caskVersion": "2.54.0",
+      "sourceURL": "https://github.com/bcpierce00/unison/releases/download/v2.54.0/Unison-2.54.0-macos-arm64.app.tar.gz",
+      "artifactSHA256": "e18d6b9fd401a03ab8cebceab77c578d9aa2faa7071ec59b76f36f01ed07ad4e",
+      "apps": [
+        {
+          "bundleName": "Unison.app",
+          "bundleIdentifier": "edu.upenn.cis.Unison"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "usbimager": {
+      "caskVersion": "1.0.10",
+      "sourceURL": "https://gitlab.com/bztsrc/usbimager/raw/binaries/usbimager_1.0.10-arm-macosx-cocoa.zip",
+      "artifactSHA256": "a8d2125a8a5edae9309e635741c0fea099c5e58844c86dc786331e48b9431832",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "USBImager.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "uvtools": {
+      "caskVersion": "6.2.0",
+      "sourceURL": "https://github.com/sn4k3/UVtools/releases/download/v6.2.0/UVtools_osx-arm64_v6.2.0.zip",
+      "artifactSHA256": "a12dbd3c61050080301600baef43a4ef7c7be944ed6e33c092834b4b8d08948f",
+      "apps": [
+        {
+          "bundleName": "UVtools.app",
+          "bundleIdentifier": "pt.ptrtech.UVtools"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "veusz": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/veusz/veusz/releases/download/veusz-4.2.1/veusz-4.2.1-AppleOSX-arm.dmg",
+      "artifactSHA256": "fcf3193e0a60f365ba9f82ab1dc634257e59ee3c758cc3a882e6c1eb60867300",
+      "apps": [
+        {
+          "bundleName": "Veusz.app",
+          "bundleIdentifier": "Veusz"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "valentina-studio": {
+      "caskVersion": "16.2",
+      "sourceURL": "https://valentina-db.com/download/prev_releases/16.2/mac_64/vstudio_x64_16_mac.dmg",
+      "artifactSHA256": "68d991d489cb631a2aa949f4ec0c05ba406f5bea88849339956483693ca24751",
+      "apps": [
+        {
+          "bundleName": "Valentina Studio.app",
+          "bundleIdentifier": "com.paradigmasoft.vstudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vibemeter": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/steipete/VibeMeter/releases/download/v1.1.0/VibeMeter-1.1.0.dmg",
+      "artifactSHA256": "0fe8a49e7e93a599351dca2143a2fdcbc2af7c8026ecac1b899458af67d34e35",
+      "apps": [
+        {
+          "bundleName": "VibeMeter.app",
+          "bundleIdentifier": "com.steipete.vibemeter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "utc-menu-clock": {
+      "caskVersion": "1.5",
+      "sourceURL": "https://github.com/netik/UTCMenuClock/raw/master/downloads/UTCMenuClock_v1.5_universal.zip",
+      "artifactSHA256": "3caf9c44e65fe93da7083b58bb792974c44d9c6d12b934d19370b0003305bf87",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "UTCMenuClock.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "vagrant-manager": {
+      "caskVersion": "2.7.1",
+      "sourceURL": "https://github.com/lanayotech/vagrant-manager/releases/download/2.7.1/vagrant-manager-2.7.1.dmg",
+      "artifactSHA256": "ad10795f36a2c0977ec8e278082f1f66624cc3b16f837dc72c0f1c063fefb4de",
+      "apps": [
+        {
+          "bundleName": "Vagrant Manager.app",
+          "bundleIdentifier": "lanayo.Vagrant-Manager"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vassal": {
+      "caskVersion": "3.7.26",
+      "sourceURL": "https://github.com/vassalengine/vassal/releases/download/3.7.26/VASSAL-3.7.26-macos-universal.dmg",
+      "artifactSHA256": "e46f0957b820bc284bb79de5a325448dbf5c47e0fdebaa2aecff165f9cb7e3e0",
+      "apps": [
+        {
+          "bundleName": "VASSAL.app",
+          "bundleIdentifier": "org.vassalengine.vassal"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ultimate-vocal-remover": {
+      "caskVersion": "5.6",
+      "sourceURL": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/Ultimate_Vocal_Remover_v5_6_MacOS_arm64.dmg",
+      "artifactSHA256": "3b3d925c0af0a3a72e44629db137240f4d22ac1e8b3156599c36164fffe55249",
+      "apps": [
+        {
+          "bundleName": "Ultimate Vocal Remover.app",
+          "bundleIdentifier": "UVR"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "valkyrie": {
+      "caskVersion": "2.6.0",
+      "sourceURL": "https://github.com/NPBruce/valkyrie/releases/download/release/2.6/2.6.0/valkyrie-macos-2.6.0.tar.gz",
+      "artifactSHA256": "0aaa7435012fdae6f39b88f7cbbc9a179c992acd068d4ae6539fd973e0aa17a6",
+      "apps": [
+        {
+          "bundleName": "Valkyrie.app",
+          "bundleIdentifier": "unity.NA.Valkyrie"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vimediamanager": {
+      "caskVersion": "0.7a24,2026_04_01",
+      "sourceURL": "https://github.com/vidalvanbergen/ViMediaManager/releases/download/v0.7a24/ViMediaManager-2026_04_01.zip",
+      "artifactSHA256": "217bec52ba71d7d046ce6b0913652162b5e652112778a3895743962bee451729",
+      "apps": [
+        {
+          "bundleName": "ViMediaManager.app",
+          "bundleIdentifier": "com.vidalvanbergen.vimediamanager-alpha"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vertcoin-core": {
+      "caskVersion": "23.2",
+      "sourceURL": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v23.2/vertcoin-23.2-arm64-apple-darwin.dmg",
+      "artifactSHA256": "c83810e10bccfb5af29d8209a15a2b28e901834ba86366bece2994c89db733ad",
+      "apps": [
+        {
+          "bundleName": "Vertcoin Core.app",
+          "bundleIdentifier": "org.vertcoin.Vertcoin-Qt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "via": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/the-via/releases/releases/download/v3.0.0/via-3.0.0-mac.dmg",
+      "artifactSHA256": "30f9f81154a8ee9c0cf19f4fb1a3d6ca9a448f765122845db1e190b9f583d16b",
+      "apps": [
+        {
+          "bundleName": "VIA.app",
+          "bundleIdentifier": "org.via.configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vidcutter": {
+      "caskVersion": "6.0.5.1",
+      "sourceURL": "https://github.com/ozmartian/vidcutter/releases/download/6.0.5.1/VidCutter-6.0.5.1-macOS.dmg",
+      "artifactSHA256": "8d1556887f0b203ebcb7b6e13a33389afad173a2c73dbc906b69ece034218f02",
+      "apps": [
+        {
+          "bundleName": "VidCutter.app",
+          "bundleIdentifier": "com.ozmartians.VidCutter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "usr-sse2-rdm": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://github.com/usr-sse2/RDM/releases/download/2.5.0/RDM.zip",
+      "artifactSHA256": "9d583e43742018e45bad79c8af9e0accec6b6a10d94c60ac7d31721bbb3c237e",
+      "apps": [
+        {
+          "bundleName": "RDM.app",
+          "bundleIdentifier": "net.alkalay.RDM"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ultimate": {
+      "caskVersion": "3.0.16.664",
+      "sourceURL": "https://download.epubor.com/epubor_ultimate.zip",
+      "artifactSHA256": "79032ca639e6e37d088d2249710960fdb2f007baaf46fda4595d043648a77269",
+      "apps": [
+        {
+          "bundleName": "Epubor Ultimate.app",
+          "bundleIdentifier": "Ultimate",
+          "packageIdentifier": "EpuborStudioUltimate2",
+          "installedPath": "/Applications/Epubor Ultimate.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vial": {
+      "caskVersion": "0.7.5",
+      "sourceURL": "https://github.com/vial-kb/vial-gui/releases/download/v0.7.5/Vial-v0.7.5.dmg",
+      "artifactSHA256": "b628db11f8df012faafcceef7deb36b54821b507d4c970336f85a56c800e8876",
+      "apps": [
+        {
+          "bundleName": "Vial.app",
+          "bundleIdentifier": "today.vial"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "unexpectedly": {
+      "caskVersion": "1.0b",
+      "sourceURL": "http://s.sudre.free.fr/Software/files/Unexpectedly.dmg",
+      "artifactSHA256": "9316ada9746969eb07c10f90514ba5ab1cbf94ba9a14aec0e75c0eab9868ddc2",
+      "apps": [
+        {
+          "bundleName": "Unexpectedly.app",
+          "bundleIdentifier": "fr.whitebox.unexpectedly"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "universal-gcode-platform": {
+      "caskVersion": "2.1.26",
+      "sourceURL": "https://github.com/winder/Universal-G-Code-Sender/releases/download/v2.1.26/macosx-aarch64-ugs-platform-app-2.1.26.dmg",
+      "artifactSHA256": "14dece222cc60495edb7bcde64a8af21ad821bad25f79bfd60af0f0b1a4d3847",
+      "apps": [
+        {
+          "bundleName": "Universal Gcode Sender.app",
+          "bundleIdentifier": "com.willwinder"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ved": {
+      "caskVersion": "1.12.2",
+      "sourceURL": "https://tolp.nl/ved/files/download/mac/ved_1.12.2_mac.dmg",
+      "artifactSHA256": "c5d413a1cb6ba45900e3e79f3789d9a0eb78bf18b90ea8d2b138bde35c98a00b",
+      "apps": [
+        {
+          "bundleName": "Ved.app",
+          "bundleIdentifier": "nl.tolp.ved"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
