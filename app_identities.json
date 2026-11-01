@@ -40355,6 +40355,629 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "defguard-client": {
+      "caskVersion": "1.5.2",
+      "sourceURL": "https://github.com/DefGuard/client/releases/download/v1.5.2/defguard-aarch64-apple-darwin-1.5.2.pkg",
+      "artifactSHA256": "f7b1abde61ad6a6f3923b09d25f0f81517400f1f602ab4f412b9e4b6aa4db379",
+      "apps": [
+        {
+          "bundleName": "defguard-client.app",
+          "bundleIdentifier": "net.defguard",
+          "packageIdentifier": "net.defguard",
+          "installedPath": "/Applications/defguard-client.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bridge": {
+      "caskVersion": "2025.0.0",
+      "sourceURL": "https://d2shgxa8i058x8.cloudfront.net/bridge/mac/Bridge-2025.0.0.dmg",
+      "artifactSHA256": "3e74ba32f28d29a9f951f1f7cc98b2207049ce618c269ee15cfcd1652bfa1249",
+      "apps": [
+        {
+          "bundleName": "Bridge.app",
+          "bundleIdentifier": "se.quixel.bridge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "obs-backgroundremoval": {
+      "caskVersion": "1.1.13",
+      "sourceURL": "https://github.com/occ-ai/obs-backgroundremoval/releases/download/1.1.13/obs-backgroundremoval-1.1.13-macos-universal.pkg",
+      "artifactSHA256": "e032871f920f8518d4660089a045dce8bd682539182a9a0c4f027fe7767fb797",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "obs-backgroundremoval-flat.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "netdownloadhelpercoapp": {
+      "caskVersion": "2.0.19",
+      "sourceURL": "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-mac-arm64-installer.pkg",
+      "artifactSHA256": "be91d5896db29724389c79bc8ce2b1b257bf7516068755aa2a4027c87c82eb9b",
+      "apps": [
+        {
+          "bundleName": "net.downloadhelper.coapp.app",
+          "bundleIdentifier": "net.downloadhelper.coapp",
+          "packageIdentifier": "net.downloadhelper.coapp",
+          "installedPath": "/Applications/net.downloadhelper.coapp.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "backlog": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/czytelny/backlog/releases/download/v1.8.0/Backlog-darwin-x64.zip",
+      "artifactSHA256": "de3747cee4d6b63ccc102c25ef9ca3ab8f21d78d2fbbc8cf34725035484e1fbd",
+      "apps": [
+        {
+          "bundleName": "Backlog.app",
+          "bundleIdentifier": "com.electron.backlog"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "go2shell": {
+      "caskVersion": "2.5",
+      "sourceURL": "https://zipzapmac.com/DMGs/Go2Shell.dmg",
+      "artifactSHA256": "815222856b39a60af60fa07b75d478ce5f3c6a037a76bab989f7f2f7fbbaba06",
+      "apps": [
+        {
+          "bundleName": "Go2Shell.app",
+          "bundleIdentifier": "com.zipzapmac.Go2Shell"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "darktable": {
+      "caskVersion": "5.6.2",
+      "sourceURL": "https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-arm64.dmg",
+      "artifactSHA256": "6ff88e58a2a59cb07b0a1502fea7205e68cd783380a33a3ce7bda68ec29def0c",
+      "apps": [
+        {
+          "bundleName": "darktable.app",
+          "bundleIdentifier": "org.darktable"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tickeys": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/yingDev/Tickeys/releases/download/0.5.0/Tickeys-0.5.0-yosemite.dmg",
+      "artifactSHA256": "55e4550ced3f1bed413e15229e813443019f335f546b1edd41418744eee8e325",
+      "apps": [
+        {
+          "bundleName": "Tickeys.app",
+          "bundleIdentifier": "com.yingDev.Tickeys"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "explorer": {
+      "caskVersion": "1.104",
+      "sourceURL": "https://github.com/jfbouzereau/explorer/releases/download/1.104/Explorer-darwin-x64.zip",
+      "artifactSHA256": "fcf3ec43ab2dff7f9e734192d3d327eebce80240007c4848b433f5d0f6ae8605",
+      "apps": [
+        {
+          "bundleName": "Explorer-darwin-x64.app",
+          "bundleIdentifier": "com.github.electron"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nextcloud-vfs": {
+      "caskVersion": "4.0.8",
+      "sourceURL": "https://github.com/nextcloud-releases/desktop/releases/download/v4.0.8/Nextcloud-4.0.8-macOS-vfs.pkg",
+      "artifactSHA256": "9cce6c6f08fab8ded66dd4e0530261f1113b74f26036d597307ddb441eab0fe3",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Nextcloud.app",
+          "bundleIdentifier": "com.nextcloud.desktopclient",
+          "packageIdentifier": "com.nextcloud.desktopclient",
+          "installedPath": "/Applications/Nextcloud.app"
+        }
+      ]
+    },
+    "hdhomerun": {
+      "caskVersion": "20260326",
+      "sourceURL": "https://download.silicondust.com/hdhomerun/hdhomerun_mac_20260326.dmg",
+      "artifactSHA256": "f25feb76e283ebb0058b9a8af0e11b3f516cbb7e2111cca01b701f812748d6f6",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "dvr.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "libhdhomerun.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "HDHomeRun.app",
+          "bundleIdentifier": "com.silicondust.hdhomerun",
+          "packageIdentifier": "com.silicondust.hdhomerun",
+          "installedPath": "/Applications/HDHomeRun.app"
+        }
+      ]
+    },
+    "aexol-remote-mouse": {
+      "caskVersion": "1.3,5",
+      "sourceURL": "https://remotemouse.aexol.com/rmt.dmg",
+      "artifactSHA256": "c81588effbd4d8ec1554f1ee493f759013112b411a148413e5bab9e28bc2de41",
+      "apps": [
+        {
+          "bundleName": "Remote Mouse for Mac.app",
+          "bundleIdentifier": "com.aexol.remotemouseosx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gstreamer-runtime": {
+      "caskVersion": "1.28.6",
+      "sourceURL": "https://gstreamer.freedesktop.org/data/pkg/osx/1.28.6/gstreamer-1.0-1.28.6-universal.pkg",
+      "artifactSHA256": "a8eb366c59b7e9e5dc049848fed6bcd203a8878aa7517c051639fda78797c6ad",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "False"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "False"
+          }
+        },
+        {
+          "artifact": "base-crypto-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "base-system-1.0-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-analytics-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-capture-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-gpl-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-gpl-restricted-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-restricted-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-core-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-devtools-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-dvd-gpl-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-editing-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-effects-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-encoding-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-gtk-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-libav-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-net-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-net-restricted-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-playback-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-python-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-system-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-visualizers-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "osx-framework-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "figtree": {
+      "caskVersion": "1.4.4",
+      "sourceURL": "https://github.com/rambaut/figtree/releases/download/v1.4.4/FigTree.v1.4.4.dmg",
+      "artifactSHA256": "4a11741143982a9b7fea78e60c8315ce8e8436eeb96ab3ee5376c53c83e54b9b",
+      "apps": [
+        {
+          "bundleName": "FigTree v1.4.4.app",
+          "bundleIdentifier": "figtree"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "scout": {
+      "caskVersion": "2.18.16",
+      "sourceURL": "https://github.com/scout-app/scout-app/releases/download/v2.18.16/OSX_Scout-App_2.18.16.zip",
+      "artifactSHA256": "b9d38e1f80c12f93f806360ee0dea096a5e262b1436a9e2664ca52a2f7955658",
+      "apps": [
+        {
+          "bundleName": "Scout-App.app",
+          "bundleIdentifier": "io.nwjs.nw"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tencent-docs": {
+      "caskVersion": "3.10.1",
+      "sourceURL": "https://desktop.docs.qq.com/Installer/30001/3.10.1/TencentDocs-arm64.dmg",
+      "artifactSHA256": "43946030f8e2f63ccb4f2d7ebc887a84bd1134ea997ece994499f29d6698b776",
+      "apps": [
+        {
+          "bundleName": "TencentDocs.app",
+          "bundleIdentifier": "com.tencent.mac.tdappdesktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aide-app": {
+      "caskVersion": "1.96.4.25031",
+      "sourceURL": "https://github.com/codestoryai/binaries/releases/download/1.96.4.25031/Aide.arm64.1.96.4.25031.dmg",
+      "artifactSHA256": "987443a703edfa35ddacde38b454c60729dea6a64bdfdb94e7e5f2a3d2a27476",
+      "apps": [
+        {
+          "bundleName": "Aide.app",
+          "bundleIdentifier": "ai.codestory.Aide"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ao": {
+      "caskVersion": "6.9.0",
+      "sourceURL": "https://github.com/klaussinani/ao/releases/download/v6.9.0/Ao-6.9.0.dmg",
+      "artifactSHA256": "c69522f78e82476540637fd3a2ab0c9de1e911530a1eb88c9cf757e933debe0e",
+      "apps": [
+        {
+          "bundleName": "Ao.app",
+          "bundleIdentifier": "com.klaussinani.ao"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mu-editor": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/mu-editor/mu/releases/download/v1.2.0/MuEditor-osx-1.2.0.dmg",
+      "artifactSHA256": "306bef4ebfafd1dcf928bc260d5d57e64efbccb537b27f5818a9fc12437726b6",
+      "apps": [
+        {
+          "bundleName": "Mu Editor.app",
+          "bundleIdentifier": "com.github.mu-editor.mu"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vu": {
+      "caskVersion": "1.2,6,1523016199",
+      "sourceURL": "https://dl.devmate.com/com.boriskarulin.vu/6/1523016199/vu-6.dmg",
+      "artifactSHA256": "a51884117a8e33339429a93a84c70eb82db46dc50ebe827ab7b7c9a0c6ced313",
+      "apps": [
+        {
+          "bundleName": "vu.app",
+          "bundleIdentifier": "com.boriskarulin.vu"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "affinity-publisher": {
+      "caskVersion": "2.6.5,3782",
+      "sourceURL": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Publisher%202%20Affinity%20Store%203782.zip",
+      "artifactSHA256": "06b9628d108e7ecee5a2c4b3d607ba58996d5cdef4ef83a76195db48c1df9efa",
+      "apps": [
+        {
+          "bundleName": "Affinity Publisher 2.app",
+          "bundleIdentifier": "com.seriflabs.affinitypublisher2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "michaelvillar-timer": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/michaelvillar/timer-app/releases/download/2.1.0/Timer.app.zip",
+      "artifactSHA256": "e7bcb1c4e8e7b6be31b55cfeaa34d55aae2bc2e577f30cdf1718ab254418d140",
+      "apps": [
+        {
+          "bundleName": "Timer.app",
+          "bundleIdentifier": "com.michaelvillar.Timer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "findergo": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/onmyway133/FinderGo/releases/download/1.4.0/FinderGo.zip",
+      "artifactSHA256": "0484e158c4fd95c5ecb8bbdb14a01a039268758fb5bb1cc1754d78e2592db638",
+      "apps": [
+        {
+          "bundleName": "FinderGo.app",
+          "bundleIdentifier": "com.onmyway133.FinderGo"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opensim": {
+      "caskVersion": "0.4.3",
+      "sourceURL": "https://github.com/luosheng/OpenSim/releases/download/0.4.3/OpenSim.app.zip",
+      "artifactSHA256": "4390edc443be22b5659ff9d6f69a66e0021c9f57e063147be79600235ceadfdb",
+      "apps": [
+        {
+          "bundleName": "OpenSim.app",
+          "bundleIdentifier": "com.pop-tap.OpenSim"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wine-stable": {
+      "caskVersion": "11.0_1",
+      "sourceURL": "https://github.com/Gcenx/macOS_Wine_builds/releases/download/11.0_1/wine-stable-11.0_1-osx64.tar.xz",
+      "artifactSHA256": "b50dc50ec7f41d58b115a6b685d4d1315ba3c797bd3aa0f49213f2703cb82388",
+      "apps": [
+        {
+          "bundleName": "Wine Stable.app",
+          "bundleIdentifier": "org.winehq.wine-stable.wine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

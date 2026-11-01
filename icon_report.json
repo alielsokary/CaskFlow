@@ -665,6 +665,12 @@
     "attempts": 7,
     "updated": "2026-10-01"
   },
+  "gstreamer-runtime": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "hma-vpn": {
     "status": "review",
     "reason": "volume icon (drive/box shaped) -- genuine branding, re-shoot when vendor ships a cleaner asset",
@@ -1048,6 +1054,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "obs-backgroundremoval": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "openforis-collect": {
     "status": "no_icon",
