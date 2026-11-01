@@ -787,10 +787,14 @@ def _build_batch(tokens: list[str] | None, by_token: dict[str, dict],
                 and t in by_token]
     if not tokens:
         return select_candidates(api_casks, report, limit)
+    known = [by_token[t] for t in tokens if t in by_token]
     missing = [t for t in tokens if t not in by_token]
-    if missing:
+    if not known:
         raise SystemExit(f"unknown tokens: {missing}")
-    return [by_token[t] for t in tokens]
+    if missing:
+        # Homebrew deletes casks, so a hand-picked list can go stale between runs.
+        print(f"warning: skipping tokens not in the Homebrew API: {missing}")
+    return known
 
 
 def _extract_status(cask: dict, output_dir: Path) -> tuple[str, str]:
