@@ -48337,6 +48337,274 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "sonarr": {
+      "caskVersion": "4.0.19.2979",
+      "sourceURL": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.19.2979/Sonarr.main.4.0.19.2979.osx-arm64-app.zip",
+      "artifactSHA256": "fbc2acc3984f12e1bae95f07ad7424425b5f1058fc02f8bb79e709638d2c5c94",
+      "apps": [
+        {
+          "bundleName": "Sonarr.app",
+          "bundleIdentifier": "com.osx.sonarr.tv"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sigdigger": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/BatchDrake/SigDigger/releases/download/v0.3.0/SigDigger-0.3.0-x86_64.dmg",
+      "artifactSHA256": "18314d22fdc0d41061312b02d088f6cb903292c741d1e4f6aa3371c804406c98",
+      "apps": [
+        {
+          "bundleName": "SigDigger.app",
+          "bundleIdentifier": "org.actinid.SigDigger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "slimhud": {
+      "caskVersion": "1.5.3",
+      "sourceURL": "https://github.com/AlexPerathoner/SlimHUD/releases/download/v1.5.3/SlimHUD.zip",
+      "artifactSHA256": "41c8101d5c29c0e89fd9a0fc1501f42711e3f45f09fdade1b755e1541aa761e5",
+      "apps": [
+        {
+          "bundleName": "SlimHUD.app",
+          "bundleIdentifier": "com.alexpera.SlimHUD"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "smplayer": {
+      "caskVersion": "25.6.0",
+      "sourceURL": "https://github.com/smplayer-dev/smplayer/releases/download/v25.6.0/smplayer-25.6.0.dmg",
+      "artifactSHA256": "de88cc07f128f4e99cb36fa0dc5ae38dea261e4d8f51cd0235eca427cb23672e",
+      "apps": [
+        {
+          "bundleName": "SMPlayer.app",
+          "bundleIdentifier": "info.smplayer.SMPlayer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "splitshow": {
+      "caskVersion": "0.9.12-alpha",
+      "sourceURL": "https://github.com/mpflanzer/splitshow/releases/download/v0.9.12-alpha/SplitShow.app.zip",
+      "artifactSHA256": "742b5ddc5d171c4bcc8281f4469df8ca62a59c71a7b318ff29ad9a664b80f2b8",
+      "apps": [
+        {
+          "bundleName": "SplitShow.app",
+          "bundleIdentifier": "eu.pflanzer.SplitShow"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "shiba": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/rhysd/Shiba/releases/download/v1.2.1/Shiba-darwin-x64.zip",
+      "artifactSHA256": "599dc0db44d82145fb71583cdca6561077d72e532bf132a4b013a360f7b9ba82",
+      "apps": [
+        {
+          "bundleName": "Shiba.app",
+          "bundleIdentifier": "com.electron.shiba"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "singularity": {
+      "caskVersion": "1.8.9.8709",
+      "sourceURL": "https://bitbucket.org/router_gray/singularityviewer/downloads/Singularity_Alpha_1_8_9_8709_x86_64.dmg",
+      "artifactSHA256": "ef40901d39389588be972b6f72ec58d1a4f0d982dbb87f0ea1eeeab1d388763b",
+      "apps": [
+        {
+          "bundleName": "SingularityAlpha.app",
+          "bundleIdentifier": "SingularityAlpha"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "spaceid": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://github.com/dshnkao/SpaceId/releases/download/v1.4/SpaceId.app.zip",
+      "artifactSHA256": "6b867f758b2037f2c5f908ec0311d73a7e47f4da179cdde952c914fd2b33528e",
+      "apps": [
+        {
+          "bundleName": "SpaceId.app",
+          "bundleIdentifier": "com.dshnkao.SpaceId"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sonic-robo-blast-2": {
+      "caskVersion": "2.2.15",
+      "sourceURL": "https://github.com/STJr/SRB2/releases/download/SRB2_release_2.2.15/SRB2-2.2.15-macOS-Installer.dmg",
+      "artifactSHA256": "9e9e998227a9034aa844f13d5b703ec765d6c2fdde9720de1ea778b166ef7fb6",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Sonic Robo Blast 2.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
+    },
+    "simply-fortran": {
+      "caskVersion": "3.41.4435",
+      "sourceURL": "https://download.simplyfortran.com/3.41/macos/simplyfortran-3.41.4435-arm64.dmg",
+      "artifactSHA256": "0c5fc357519220b745c078bba688fecedb5f21f97cce328c7105d5f5ba0cbd2f",
+      "apps": [
+        {
+          "bundleName": "Simply Fortran.app",
+          "bundleIdentifier": "com.approximatrix.simplyfortran"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "simsim": {
+      "caskVersion": "1.4.6",
+      "sourceURL": "https://github.com/dsmelov/simsim/releases/download/1.4.6/SimSim_1.4.6.zip",
+      "artifactSHA256": "238ecc00803523e4e7ec33aa470179668c8230badabba43eec23c2515e1f6507",
+      "apps": [
+        {
+          "bundleName": "SimSim.app",
+          "bundleIdentifier": "com.dsmelov.SimSim"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "space-saver": {
+      "caskVersion": "0.6",
+      "sourceURL": "https://www.mariogt.com/appsChest/SpaceSaver0-6.zip",
+      "artifactSHA256": "04c58635d432598573b5fadfe6cbde3a5ac2d17aeeb927bf6e413a452312f544",
+      "apps": [
+        {
+          "bundleName": "Space Saver.app",
+          "bundleIdentifier": "com.mariogt.space-saver"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sleipnir": {
+      "caskVersion": "4.6.6",
+      "sourceURL": "https://www.fenrir-inc.com/services/download.php?file=Sleipnir.dmg",
+      "artifactSHA256": "fe2906b890886e757207340ea3ede318a255f7ca9a0f4d5f6bac7c8ac87d2330",
+      "apps": [
+        {
+          "bundleName": "Sleipnir.app",
+          "bundleIdentifier": "jp.co.fenrir.sleipnir"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "silicon-info": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://github.com/billycastelli/Silicon-Info/releases/download/1.0.3/Silicon.Info.app.zip",
+      "artifactSHA256": "ada6ba4665e2aa2973e2faef59f312cc82ae689505236c4c2d412bc3ae18d0f9",
+      "apps": [
+        {
+          "bundleName": "Silicon Info.app",
+          "bundleIdentifier": "com.wcastelli.silicon-info"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "skychart": {
+      "caskVersion": "4.2.1-4073",
+      "sourceURL": "https://downloads.sourceforge.net/skychart/skychart-4.2.1-4073-x86_64-macosx.dmg",
+      "artifactSHA256": "72670b4c3d4145a2f609197d62bb07351d2e7cdce36d889d0d0f9a002158aa47",
+      "apps": [
+        {
+          "bundleName": "varobs.app",
+          "bundleIdentifier": "com.company.varobs",
+          "packageIdentifier": "net.ap-i.pkg.skychart",
+          "installedPath": "/Applications/Cartes du Ciel/varobs.app"
+        },
+        {
+          "bundleName": "skychart.app",
+          "bundleIdentifier": "net.ap-i.skychart",
+          "packageIdentifier": "net.ap-i.pkg.skychart",
+          "installedPath": "/Applications/Cartes du Ciel/skychart.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "soundflower": {
+      "caskVersion": "2.0b2",
+      "sourceURL": "https://github.com/mattingalls/Soundflower/releases/download/2.0b2/Soundflower-2.0b2.dmg",
+      "artifactSHA256": "6b5e56d53238cf0f9075886aa40580634fc9d23368239f22eccebfd97c9f8e34",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "sonic-robo-blast-2-kart": {
+      "caskVersion": "1.6",
+      "sourceURL": "https://github.com/STJr/Kart-Public/releases/download/v1.6/SRB2Kart-1.6-macOS.dmg",
+      "artifactSHA256": "d433b8b8662068b7726f31bfd6b372bd9a991019d7c88be6ffc9db380cf3ba9d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Sonic Robo Blast 2 Kart.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "rolisteam": {
+      "caskVersion": "1.9.3",
+      "sourceURL": "https://downloads.sourceforge.net/rolisteam/rolisteam_v1.9.3_MacOs.dmg",
+      "artifactSHA256": "473c2f26e6a7d3892088f0b9da1b563d86aba1eaa1dd223a79ef1d8c27f18160",
+      "apps": [
+        {
+          "bundleName": "rolisteam.app",
+          "bundleIdentifier": "com.yourcompany.rolisteam"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sparkle": {
+      "caskVersion": "2.9.6",
+      "sourceURL": "https://github.com/sparkle-project/Sparkle/releases/download/2.9.6/Sparkle-2.9.6.tar.xz",
+      "artifactSHA256": "52bf9e88cdd972fc0c81501377a880e90d47031bd8ca5462488f843e2609e192",
+      "apps": [
+        {
+          "bundleName": "Sparkle Test App.app",
+          "bundleIdentifier": "org.sparkle-project.SparkleTestApp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "spaceradar": {
+      "caskVersion": "6.0.1",
+      "sourceURL": "https://github.com/zz85/space-radar/releases/download/v6.0.1/stable-macos-arm64-SpaceRadar.dmg",
+      "artifactSHA256": "656be7d20363297ae542c27e1317edab4034cf5f3515658c0e083c8dd40b9c63",
+      "apps": [
+        {
+          "bundleName": "Space Radar.app",
+          "bundleIdentifier": "com.zz85.spaceradar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
