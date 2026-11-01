@@ -5,11 +5,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "7777": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "abstract": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "acronis-true-image-cleanup-tool": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "adobe-air": {
     "status": "failed",
@@ -20,13 +32,13 @@
   "after-dark-classic": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "aifun": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "algodoo": {
@@ -95,6 +107,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "apptrap": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "aptible": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -104,7 +122,13 @@
   "archi": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "archy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "arm-performance-libraries": {
@@ -167,6 +191,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "avifquicklook": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "aws-vault-binary": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
@@ -188,7 +218,7 @@
   "battlescribe": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "blackhole-16ch": {
@@ -212,13 +242,19 @@
   "blurred": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "bonitastudiocommunity": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "bowtie": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 500",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "box-tools": {
@@ -230,7 +266,7 @@
   "boxcryptor": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.boxcryptor.com",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "brooklyn": {
@@ -247,8 +283,8 @@
   },
   "cahier": {
     "status": "failed",
-    "reason": "sha256 mismatch (got dd47cbd8b886...)",
-    "attempts": 1,
+    "reason": "sha256 mismatch (got 5a61ffae056a...)",
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "caldigit-thunderbolt-charging": {
@@ -308,7 +344,7 @@
   "cheatsheet": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "chef-workstation": {
@@ -322,6 +358,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "chromedriver": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "chronoagent": {
     "status": "no_icon",
@@ -338,13 +380,13 @@
   "circuitjs1": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "cisco-proximity": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "claude-code": {
@@ -358,6 +400,12 @@
     "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-09-19"
+  },
+  "cljstyle": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "cloud189": {
     "status": "failed",
@@ -383,11 +431,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "codeship-jet": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "codex": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "colorpicker-materialdesign": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "confluent-cli": {
     "status": "no_icon",
@@ -458,7 +518,13 @@
   "detexify": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "developerexcuses": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "devin-cli": {
@@ -586,6 +652,18 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "epoch-flip-clock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "eurkey": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "excire-foto": {
     "status": "no_icon",
