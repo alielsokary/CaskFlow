@@ -455,11 +455,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "deepstream": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "desktoppr": {
     "status": "no_icon",
     "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
     "attempts": 0,
     "updated": "2026-10-13"
+  },
+  "detexify": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "devin-cli": {
     "status": "no_icon",
@@ -485,6 +497,18 @@
     "attempts": 4,
     "updated": "2026-10-01"
   },
+  "discretescroll": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "disk-inventory-x": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "diskspace": {
     "status": "no_icon",
     "reason": "CLI tile drawn live by CaskHub (data/cli_tokens.json)",
@@ -495,6 +519,12 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "doppler-app": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-11-01"
   },
   "dotnet-runtime": {

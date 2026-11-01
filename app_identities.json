@@ -43709,6 +43709,292 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "duckietv": {
+      "caskVersion": "1.1.5",
+      "sourceURL": "https://github.com/SchizoDuckie/DuckieTV/releases/download/1.1.5/DuckieTV-1.1.5-OSX-x64.pkg",
+      "artifactSHA256": "9c2f72c011cd477071e51238d5bfa0c202babdd263c1e4ea6b3d4e4605da2907",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "desmume": {
+      "caskVersion": "0.9.13",
+      "sourceURL": "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-macOS.dmg",
+      "artifactSHA256": "d42e4bbf8f96b6bfdb3c8be6cf469b606a3b105352460636b1051b8dd0365ebc",
+      "apps": [
+        {
+          "bundleName": "DeSmuME.app",
+          "bundleIdentifier": "org.desmume.DeSmuME"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "diffmerge": {
+      "caskVersion": "4.2.1.1013",
+      "sourceURL": "https://download.sourcegear.com/DiffMerge/4.2.1/DiffMerge.4.2.1.1013.intel.stable.dmg",
+      "artifactSHA256": "59efeede7beb69a5b3bf3126787f73930984b3b423094500fe73623656f66d43",
+      "apps": [
+        {
+          "bundleName": "DiffMerge.app",
+          "bundleIdentifier": "com.sourcegear.DiffMerge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deepstream": {
+      "caskVersion": "10.2.1",
+      "sourceURL": "https://github.com/deepstreamIO/deepstream.io/releases/download/v10.2.1/deepstream.io-mac-10.2.1.pkg",
+      "artifactSHA256": "ba352f1df8002a76d7beb2298fffb30968858e422562eded36205331243d7dc9",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "dupeguru": {
+      "caskVersion": "4.3.1",
+      "sourceURL": "https://github.com/arsenetar/dupeguru/releases/download/4.3.1/dupeguru_macOS_Qt_4.3.1.zip",
+      "artifactSHA256": "eb8583f1a678325ac263e59c81144b021cac323ceb2743454a8eec2c20c21a7a",
+      "apps": [
+        {
+          "bundleName": "dupeguru.app",
+          "bundleIdentifier": "com.hardcoded-software.dupeguru"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "discretescroll": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/emreyolcu/discrete-scroll/releases/download/v1.2.1/DiscreteScroll.zip",
+      "artifactSHA256": "f2cc275e4537811bf35b2cec2128c086eefbe613c3b79b08819f4f966f1f7a60",
+      "apps": [
+        {
+          "bundleName": "DiscreteScroll.app",
+          "bundleIdentifier": "com.emreyolcu.DiscreteScroll"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "darwindumper": {
+      "caskVersion": "3.1.1",
+      "sourceURL": "https://bitbucket.org/blackosx/darwindumper/downloads/DarwinDumper_v3.1.1.zip",
+      "artifactSHA256": "b840162363ec8d1b505a158f195c45f7969a99545150825e8d2b9e72f1cf43f5",
+      "apps": [
+        {
+          "bundleName": "DarwinDumper.app",
+          "bundleIdentifier": "com.DarwinDumper"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "double-commander": {
+      "caskVersion": "1.2.8",
+      "sourceURL": "https://github.com/doublecmd/doublecmd/releases/download/v1.2.8/doublecmd-1.2.8.cocoa.aarch64.dmg",
+      "artifactSHA256": "7432cf00b9d111730b26ca69d546d40408ca1b8e7ac31253fbc68780799120f0",
+      "apps": [
+        {
+          "bundleName": "Double Commander.app",
+          "bundleIdentifier": "com.company.doublecmd"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dteoh-devdocs": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/dteoh/devdocs-macos/releases/download/v0.7.0/DevDocs.zip",
+      "artifactSHA256": "3355a10fa94f4eea3693620cb9403b4a5d51c5bfa9f91bc592d9fd65f59024da",
+      "apps": [
+        {
+          "bundleName": "DevDocs.app",
+          "bundleIdentifier": "com.dteoh.devdocs-macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "djview": {
+      "caskVersion": "4.12,3.5.29",
+      "sourceURL": "https://downloads.sourceforge.net/djvu/DjVuLibre-3.5.29%2BDjView-4.12-universal.dmg",
+      "artifactSHA256": "eebe6373c896a02d102607566dfa0626ab8541b7816779c3bce5524bf10e65fb",
+      "apps": [
+        {
+          "bundleName": "DjView.app",
+          "bundleIdentifier": "org.djvu.DjView"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "decloner": {
+      "caskVersion": "1.6.3",
+      "sourceURL": "https://www.pixelespressoapps.com/decloner/Decloner_1.6.3.zip",
+      "artifactSHA256": "72123bcbbe734da007fea5becbb06236876cd1cf40ae4d6c8ea43f890c8eef8d",
+      "apps": [
+        {
+          "bundleName": "Decloner.app",
+          "bundleIdentifier": "com.pixelespresso.Decloner"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dfcf": {
+      "caskVersion": "3.8.2",
+      "sourceURL": "https://swdlcdn.eastmoney.com/Mac/Macdownload/dfcf.dmg",
+      "artifactSHA256": "b02d43805693c10d0937bd003e9ea8540458238d025f2d4fe07da0e6e026570f",
+      "apps": [
+        {
+          "bundleName": "东方财富.app",
+          "bundleIdentifier": "com.emmac.mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dmidiplayer": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://downloads.sourceforge.net/dmidiplayer/1.7.4/dmidiplayer-1.7.4-mac-x64.dmg",
+      "artifactSHA256": "4c664843bbc54c0102da32568b20927a33083e2c14e2f0111725f39a24a8f85c",
+      "apps": [
+        {
+          "bundleName": "dmidiplayer.app",
+          "bundleIdentifier": "net.sourceforge.dmidiplayer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dogecoin": {
+      "caskVersion": "1.14.9",
+      "sourceURL": "https://github.com/dogecoin/dogecoin/releases/download/v1.14.9/dogecoin-1.14.9-osx-unsigned.dmg",
+      "artifactSHA256": "c87c956834a87da8200274a097364c986ccca045d71ce92d0f7d407129d25a83",
+      "apps": [
+        {
+          "bundleName": "Dogecoin-Qt.app",
+          "bundleIdentifier": "com.dogecoin.Dogecoin-Qt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "drawpile": {
+      "caskVersion": "2.3.0",
+      "sourceURL": "https://github.com/drawpile/Drawpile/releases/download/2.3.0/Drawpile-2.3.0-arm64.dmg",
+      "artifactSHA256": "d6ba02a723b57ca83a523ea61b192b349005c8c3f8a10579877477d5b652409c",
+      "apps": [
+        {
+          "bundleName": "Drawpile.app",
+          "bundleIdentifier": "net.drawpile.DrawpileClient"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "davmail-app": {
+      "caskVersion": "6.8.1,4210",
+      "sourceURL": "https://downloads.sourceforge.net/davmail/DavMail-MacOSX-6.8.1-4210.app.zip",
+      "artifactSHA256": "6273c6267142e33689653ce757a834edf744e1bbd25667964c7daab532f44c5e",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "DavMail.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "dungeon-crawl-stone-soup-tiles": {
+      "caskVersion": "0.34.1",
+      "sourceURL": "https://github.com/crawl/crawl/releases/download/0.34.1/dcss-0.34.1-macos-tiles-universal.zip",
+      "artifactSHA256": "b59b334d8cb06b5a5e26c490d4c08c8ac7762dc7b8f4a03cd800ca34aba6ac9a",
+      "apps": [
+        {
+          "bundleName": "Dungeon Crawl Stone Soup - Tiles.app",
+          "bundleIdentifier": "net.sourceforge.crawl-ref"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "copytranslator": {
+      "caskVersion": "11.0.0",
+      "sourceURL": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v11.0.0/copytranslator-11.0.0.dmg",
+      "artifactSHA256": "b05cd929b0e285d0b5300f71a575b20287f3c814043138ce04e1bcfc4d1dff96",
+      "apps": [
+        {
+          "bundleName": "copytranslator.app",
+          "bundleIdentifier": "com.copytranslator.copytranslator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dd-utility": {
+      "caskVersion": "1.11",
+      "sourceURL": "https://github.com/thefanclub/dd-utility/raw/master/DMG/ddUtility-1.11.dmg",
+      "artifactSHA256": "1c33a998b7c9b7a9fa59222d2e7cc0410f0cec85650e8647308c33ee0af1e956",
+      "apps": [
+        {
+          "bundleName": "dd Utility.app",
+          "bundleIdentifier": "co.za.thefanclub.ddUtility"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deluge": {
+      "caskVersion": "1.3.15.1",
+      "sourceURL": "https://ftp.osuosl.org/pub/deluge/mac_osx/deluge-1.3.15.1-macosx-x64.dmg",
+      "artifactSHA256": "a78a477f0a492c96cfa3e68a6551c36c6b451fc91b19df433027ef189f757baa",
+      "apps": [
+        {
+          "bundleName": "Deluge.app",
+          "bundleIdentifier": "org.deluge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dosbox-x-app": {
+      "caskVersion": "2026.08.02",
+      "sourceURL": "https://github.com/joncampbell123/dosbox-x/releases/download/dosbox-x-v2026.08.02/dosbox-x-macosx-arm64-2026.08.02.zip",
+      "artifactSHA256": "a2f5f9ace00bb5fccac8cc0644bc5930958a932be139744866e902e0944fdd6e",
+      "apps": [
+        {
+          "bundleName": "dosbox-x.app",
+          "bundleIdentifier": "com.dosbox-x"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dungeon-crawl-stone-soup-console": {
+      "caskVersion": "0.34.1",
+      "sourceURL": "https://github.com/crawl/crawl/releases/download/0.34.1/dcss-0.34.1-macos-console-universal.zip",
+      "artifactSHA256": "c8e5c06bad71c45b6c453cc1cc554d733acc73450219732944213d64af138b17",
+      "apps": [
+        {
+          "bundleName": "Dungeon Crawl Stone Soup - Console.app",
+          "bundleIdentifier": "net.sourceforge.crawl-ref"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
