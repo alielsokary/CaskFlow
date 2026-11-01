@@ -45769,6 +45769,566 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "metaz": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://github.com/griff/metaz/releases/download/v1.0.3/MetaZ-1.0.3.zip",
+      "artifactSHA256": "0458c1fdcadc198aeca68e1d775195c3022b549f70c0483e57930731af913cbe",
+      "apps": [
+        {
+          "bundleName": "MetaZ.app",
+          "bundleIdentifier": "org.maven-group.MetaZ"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mediaelch": {
+      "caskVersion": "2.12.0,2024-10-13,80324653",
+      "sourceURL": "https://github.com/Komet/MediaElch/releases/download/v2.12.0/MediaElch_macOS_11_or_later_Qt6_2.12.0_2024-10-13_git-80324653.dmg",
+      "artifactSHA256": "a49e8f12326cc5c7e55ed0b0b6e951fd27cf704ae2ddc3f24cb860af45a7dad4",
+      "apps": [
+        {
+          "bundleName": "MediaElch.app",
+          "bundleIdentifier": "com.kvibes.MediaElch"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gstreamer-development": {
+      "caskVersion": "1.28.6",
+      "sourceURL": "https://gstreamer.freedesktop.org/data/pkg/osx/1.28.6/gstreamer-1.0-devel-1.28.6-universal.pkg",
+      "artifactSHA256": "177b1428d0f47b844e7bff2aeeb22047686d802eba21580dab52f4a6fe1dcf02",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "False"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "True"
+          }
+        },
+        {
+          "artifact": "base-crypto-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "base-system-1.0-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-analytics-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-capture-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-gpl-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-gpl-restricted-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-codecs-restricted-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-core-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-devtools-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-dvd-gpl-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-editing-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-effects-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-encoding-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-gtk-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-libav-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-net-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-net-restricted-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-playback-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-python-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-system-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "gstreamer-1.0-visualizers-devel-1.28.6-universal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "lx-music": {
+      "caskVersion": "2.12.2",
+      "sourceURL": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-2.12.2-arm64.dmg",
+      "artifactSHA256": "e28f4dbed7edc0182c4994117181ed5ceee674f9e36b004f10d34d23864630bf",
+      "apps": [
+        {
+          "bundleName": "lx-music-desktop.app",
+          "bundleIdentifier": "cn.toside.music.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "metasploit": {
+      "caskVersion": "6.5.3,20260826055538",
+      "sourceURL": "https://osx.metasploit.com/metasploit-framework-6.5.3-20260826055538-1rapid7-1.x86_64.pkg",
+      "artifactSHA256": "643851d6bd79a7b5d7345dc0f0d295719e1d927526c6d5c9bdef12bce395165d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "metasploit-framework-core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "macjournal": {
+      "caskVersion": "7.4",
+      "sourceURL": "https://danschimpf.com/macjournal/MacJournal_7.4.zip",
+      "artifactSHA256": "8dbb9e2342004a39bb045b24d75885fe70fc7136fb5e04e750e020bf29bfac47",
+      "apps": [
+        {
+          "bundleName": "MacJournal.app",
+          "bundleIdentifier": "com.DanSchimpf.MacJournal"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mediainfoex": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/sbarex/MediaInfo/releases/download/1.7.4/MediaInfoEx.zip",
+      "artifactSHA256": "7f2cbb113f6bfff49541487d73ce8b6dc3e4b28a7d2832afbcd45dca6b891481",
+      "apps": [
+        {
+          "bundleName": "MediaInfoEx.app",
+          "bundleIdentifier": "org.sbarex.MediaInfo"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "manyverse": {
+      "caskVersion": "0.2310.9-beta",
+      "sourceURL": "https://github.com/staltz/manyverse/releases/download/v0.2310.9-beta/Manyverse-0.2310.9-beta.dmg",
+      "artifactSHA256": "b5defc07fb08b6f8bf9c5eabdb0801b035b2b5eb95fb5de76efd3975f3b3c5b7",
+      "apps": [
+        {
+          "bundleName": "Manyverse.app",
+          "bundleIdentifier": "se.manyver"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "menutube": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/edanchenkov/MenuTube/releases/download/1.7.4/MenuTube-1.7.4.dmg",
+      "artifactSHA256": "ba7ea5753a270a5300a9a98effaa378a3e1e4305f89c804c1e779b06ebbf5a46",
+      "apps": [
+        {
+          "bundleName": "MenuTube.app",
+          "bundleIdentifier": "com.rednuclearmonkey.menutube"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "macstroke": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://github.com/mtjo/MacStroke/releases/download/2.0.5/MacStroke.zip",
+      "artifactSHA256": "113116367df18a2d3278d9540afdb0476f6b45dd6fbd09a565c9c038bb5e1a88",
+      "apps": [
+        {
+          "bundleName": "MacStroke.app",
+          "bundleIdentifier": "net.mtjo.MacStroke"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "manuskript": {
+      "caskVersion": "0.16.1",
+      "sourceURL": "https://github.com/olivierkes/manuskript/releases/download/0.16.1/manuskript-0.16.1-osx.dmg",
+      "artifactSHA256": "f67f3f44fee26259c04eb2df24b7a85b71c9963be1fe93d5c24e738af4a2d2af",
+      "apps": [
+        {
+          "bundleName": "manuskript.app",
+          "bundleIdentifier": "ch.theologeek.manuskript"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mfiles": {
+      "caskVersion": "2.5.3,20240328",
+      "sourceURL": "https://mfiles.maokebing.com/package/mfiles-helper-2.5.3-macos-20240328.dmg",
+      "artifactSHA256": "ed871abb9876721f6b9e17805147c9afa505851857f1dd88cfeef4a847b59173",
+      "apps": [
+        {
+          "bundleName": "爱传送.app",
+          "bundleIdentifier": "com.windtune.itransfer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "majsoul-plus": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/MajsoulPlus/majsoul-plus/releases/download/v2.0.1/Majsoul_Plus-2.0.1-darwin.dmg",
+      "artifactSHA256": "efac0e077f871a092ce1654466055fdc73c74f22da6a2364588d7b460443a52b",
+      "apps": [
+        {
+          "bundleName": "Majsoul Plus.app",
+          "bundleIdentifier": "com.electron.majsoul-plus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lynkeos": {
+      "caskVersion": "3.10",
+      "sourceURL": "https://downloads.sourceforge.net/lynkeos/lynkeos/3.10/Lynkeos-App-3-10.zip",
+      "artifactSHA256": "18b37ebcf2ebcb08875e2ce55680050b661122147d5ffa15d7090660b1714394",
+      "apps": [
+        {
+          "bundleName": "Lynkeos.app",
+          "bundleIdentifier": "net.sourceforge.lynkeos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lunasea": {
+      "caskVersion": "11.0.0",
+      "sourceURL": "https://github.com/JagandeepBrar/LunaSea/releases/download/v11.0.0/lunasea-macos-amd64.zip",
+      "artifactSHA256": "fa4ecb5bdf57d6f1326e356e248232040f1b2d0d409ea93ac96dc560eded980c",
+      "apps": [
+        {
+          "bundleName": "LunaSea.app",
+          "bundleIdentifier": "app.lunasea.lunasea"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "machoview": {
+      "caskVersion": "2.4.9200",
+      "sourceURL": "https://downloads.sourceforge.net/machoview/MachOView-2.4.9200.dmg",
+      "artifactSHA256": "1eae99e92f51ca7a7470ffa9d78a2a31e28c743805ca514ec4a41210bc145e26",
+      "apps": [
+        {
+          "bundleName": "MachOView.app",
+          "bundleIdentifier": "MachOView"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "macast": {
+      "caskVersion": "0.7",
+      "sourceURL": "https://github.com/xfangfang/Macast/releases/download/v0.7/Macast-MacOS-v0.7.dmg",
+      "artifactSHA256": "076500271e727f11f02eebb2731d2e6e80cf80d5f077fc1191293660312e2cfa",
+      "apps": [
+        {
+          "bundleName": "Macast.app",
+          "bundleIdentifier": "cn.xfangfang.Macast"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lazarus": {
+      "caskVersion": "3.6",
+      "sourceURL": "https://downloads.sourceforge.net/lazarus/Lazarus%20macOS%20x86-64/Lazarus%203.6/Lazarus-3.6-macosx-x86_64.pkg",
+      "artifactSHA256": "c32f1fcfb16a969153d660a92e2200f32f5e40ec65d42bbd6af829cd9fe74afb",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "startlazarus.app",
+          "bundleIdentifier": "com.company.startlazarus",
+          "packageIdentifier": "org.lazarus-ide.pkg.LazarusIDE",
+          "installedPath": "/Applications/Lazarus/startlazarus.app"
+        },
+        {
+          "bundleName": "lazarus.app",
+          "bundleIdentifier": "lazarus.freepascal.ide",
+          "packageIdentifier": "org.lazarus-ide.pkg.LazarusIDE",
+          "installedPath": "/Applications/Lazarus/lazarus.app"
+        },
+        {
+          "bundleName": "lhelp.app",
+          "bundleIdentifier": "com.company.lhelp",
+          "packageIdentifier": "org.lazarus-ide.pkg.LazarusIDE",
+          "installedPath": "/Applications/Lazarus/components/chmhelp/lhelp/lhelp.app"
+        }
+      ]
+    },
+    "megazeux": {
+      "caskVersion": "2.93d",
+      "sourceURL": "https://www.digitalmzx.com/download.php?latest=osx",
+      "artifactSHA256": "96a3e9232bc11ebadaed6d24f2c18cfb3f06c3c1048e6ce1116ccbdd02927311",
+      "apps": [
+        {
+          "bundleName": "MegaZeux.app",
+          "bundleIdentifier": "net.digitalmzx.MegaZeux"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "material-colors": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://github.com/romannurik/MaterialColorsApp/releases/download/v2.0.3/MaterialColors-2.0.3.zip",
+      "artifactSHA256": "601465d533d93399c89fa2a135dba8d936cca239ff601d20195c44244a64053a",
+      "apps": [
+        {
+          "bundleName": "Material Colors.app",
+          "bundleIdentifier": "net.nurik.roman.materialcolors"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "macdown": {
+      "caskVersion": "0.7.2",
+      "sourceURL": "https://github.com/MacDownApp/macdown/releases/download/v0.7.2/MacDown.app.zip",
+      "artifactSHA256": "271f11eb64c19fccee2615e092067cdecc29adf0c2ed0703dae9acda8fa0a672",
+      "apps": [
+        {
+          "bundleName": "MacDown.app",
+          "bundleIdentifier": "com.uranusjr.macdown"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "midi-router-client": {
+      "caskVersion": "2.44.0",
+      "sourceURL": "https://downloads.sourceforge.net/midi-router-client/midi-router-client-2.44.0-Darwin.dmg",
+      "artifactSHA256": "7674176f095cc734d45d305ee7da9ee5a83314c9709114f3d590c62fd7e36f14",
+      "apps": [
+        {
+          "bundleName": "midi-router-client.app",
+          "bundleIdentifier": "com.shemeshg.midirouterclient"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

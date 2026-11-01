@@ -857,6 +857,12 @@
     "attempts": 7,
     "updated": "2026-10-01"
   },
+  "gstreamer-development": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "gstreamer-runtime": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1193,11 +1199,35 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "makemkv": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got e3adad095fb9...)",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "mate-translate": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 7,
     "updated": "2026-10-01"
+  },
+  "mechvibes": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "messenger": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "metasploit": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "meteorologist": {
     "status": "failed",
