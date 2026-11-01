@@ -234,12 +234,13 @@ def build_report(
 
     lines += _section("Renamed (classification migrated)",
                       [f"- `{old}` → `{new}`" for old, new in sorted(renames)])
-    lines += _section("New classifications",
-                      _classification_rows(classifications) if classifications else [])
+    # Review rows come first: GitHub truncates long PR bodies.
     lines += _section(
         "Manual review required",
         _classification_rows(review_required) if review_required else [],
     )
+    lines += _section("New classifications",
+                      _classification_rows(classifications) if classifications else [])
     lines += _section("Skipped (will retry next run)",
                       [f"- `{token}` - {err}" for token, err in sorted(failures)])
 

@@ -22,6 +22,8 @@ def test_manual_review_threshold_and_report():
     assert "1 classifications require manual review" in report
     assert "## Manual review required" in report
     assert "`uncertain`" in report
+    # GitHub truncates long PR bodies; the review table must survive a large batch.
+    assert report.index("## Manual review required") < report.index("## New classifications")
 
 
 def test_no_manual_review_at_or_above_threshold():
