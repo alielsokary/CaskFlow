@@ -119,6 +119,12 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "assinador-serpro": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 504",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "atok": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -227,6 +233,12 @@
     "attempts": 0,
     "updated": "2026-10-13"
   },
+  "boxcryptor": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.boxcryptor.com",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "brooklyn": {
     "status": "no_icon",
     "reason": "screensaver bundle; generic .saver icon only, repo has no square mark",
@@ -239,6 +251,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "cahier": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got dd47cbd8b886...)",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "caldigit-thunderbolt-charging": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -250,6 +268,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "camed": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "canon-eos-utility": {
     "status": "no_icon",

@@ -43084,6 +43084,330 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "bluefish": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://www.bennewitz.com/bluefish/stable/binaries/macosx/Bluefish-2.4.2.dmg",
+      "artifactSHA256": "c10c1d90a61319553f85febde2955d9684de23a2e5ab39210df773b9f46855b5",
+      "apps": [
+        {
+          "bundleName": "Bluefish.app",
+          "bundleIdentifier": "nl.openoffice.bluefish"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "camed": {
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://downloads.sourceforge.net/camprocessor/CAMEd-3.2.2-macosx-cocoa-x86_64.tar.gz",
+      "artifactSHA256": "407e101a3a47566395606b03114388f94f48b488d3fa27041aecb937eb43bd12",
+      "apps": [
+        {
+          "bundleName": "CAMed.app",
+          "bundleIdentifier": "org.eclipse.eclipse"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cabal": {
+      "caskVersion": "8.0.0",
+      "sourceURL": "https://github.com/cabal-club/cabal-desktop/releases/download/v8.0.0/cabal-desktop-8.0.0-mac.dmg",
+      "artifactSHA256": "bb62f21d9dc51b31c9fcc4d5a7bc48898270cfd62059efb4265f413093d5050d",
+      "apps": [
+        {
+          "bundleName": "Cabal.app",
+          "bundleIdentifier": "club.cabal.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "candybar": {
+      "caskVersion": "3.5",
+      "sourceURL": "https://files.iconfactory.net/software/CandyBar-SFE.zip",
+      "artifactSHA256": "afc3b7d124da06347cad497c6ffdb58f8e0f048041dd98a1c55dda4e1dd1f976",
+      "apps": [
+        {
+          "bundleName": "CandyBar.app",
+          "bundleIdentifier": "com.panic.CandyBar3"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cerebro": {
+      "caskVersion": "0.11.0",
+      "sourceURL": "https://github.com/cerebroapp/cerebro/releases/download/v0.11.0/cerebro-0.11.0.dmg",
+      "artifactSHA256": "9c26a044f6ae0d7c4f1df8056b88ff5014edb168d4cc13e00f0cad21948359fd",
+      "apps": [
+        {
+          "bundleName": "Cerebro.app",
+          "bundleIdentifier": "com.cerebroapp.Cerebro"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cakebrewjs": {
+      "caskVersion": "2.102",
+      "sourceURL": "https://downloads.sourceforge.net/cakebrewjs/Cakebrewjs-2.102-Darwin.dmg",
+      "artifactSHA256": "151be33f8d86b700d66324d595346eeefaf042d1ca69f34c775bceac4bfbf569",
+      "apps": [
+        {
+          "bundleName": "cakebrewjs.app",
+          "bundleIdentifier": "com.shemeshg.cakebrewjs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ccstudio": {
+      "caskVersion": "1.1.4",
+      "sourceURL": "https://downloads.xrite.com/Downloads/Software/ccStudio/v1.1.4/mac/ccStudio.zip",
+      "artifactSHA256": "090ea91ebd83d360e9e32cc519067f0924d3e1dfe90967e9cbcc99a7fbc7773a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_2_requirement(false,true)",
+            "start_selected": "installer_choice_2_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "XRD_Manager_Component.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "ccStudio.app",
+          "bundleIdentifier": "com.x-rite.ccStudio",
+          "packageIdentifier": "X-Rite.com.i1studio.ccStudio.pkg",
+          "installedPath": "/Applications/ccStudio/ccStudio.app"
+        },
+        {
+          "bundleName": "ccStudioTray.app",
+          "bundleIdentifier": "com.xrite.ccStudioTray",
+          "packageIdentifier": "X-Rite.com.i1studio.ccStudio.pkg",
+          "installedPath": "/Applications/ccStudio/ccStudioTray.app"
+        }
+      ]
+    },
+    "celestialteapot-runway": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://celestialteapot.com/runway/dist/Runway_2.0.zip",
+      "artifactSHA256": "c8598b519609baf8b17752202edd4c2274b9a0bb73d9e461274c0d35d61f70f1",
+      "apps": [
+        {
+          "bundleName": "Runway.app",
+          "bundleIdentifier": "com.celestialteapot.Runway2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chainner": {
+      "caskVersion": "0.25.1",
+      "sourceURL": "https://github.com/chaiNNer-org/chaiNNer/releases/download/v0.25.1/chaiNNer-0.25.1-macos-universal.dmg",
+      "artifactSHA256": "18f1c38f86ec1c41a311a0e9db866b715bfca605b0e132acb325a45663ceabda",
+      "apps": [
+        {
+          "bundleName": "chaiNNer.app",
+          "bundleIdentifier": "app.chainner"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "brewtarget": {
+      "caskVersion": "5.1.1",
+      "sourceURL": "https://github.com/Brewtarget/brewtarget/releases/download/v5.1.1/brewtarget_5.1.1_MacOS.dmg",
+      "artifactSHA256": "01366cec23ca735cb11aec389d4fec61db921e3130ef4f50ee0ceaf9f66313e4",
+      "apps": [
+        {
+          "bundleName": "brewtarget_5.1.1_MacOS.app",
+          "bundleIdentifier": "beer.brewtarget.Brewtarget"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "brisync": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://github.com/czarny/Brisync/releases/download/v2.0.1/Brisync.zip",
+      "artifactSHA256": "3033c98c965917383a9a96bb355d2a760e285444a2f89266814f920b3f7da422",
+      "apps": [
+        {
+          "bundleName": "Brisync.app",
+          "bundleIdentifier": "pro.czarny.brisync"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chiaki": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://git.sr.ht/~thestr4ng3r/chiaki/refs/download/v2.2.0/Chiaki-v2.2.0-macOS-x86_64.dmg",
+      "artifactSHA256": "bf0315f26f196ece67181f7f88adc28c7eb17c0fdda10315d7b7b3606ba370a7",
+      "apps": [
+        {
+          "bundleName": "Chiaki.app",
+          "bundleIdentifier": "org.chiaki.chiaki"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "buttercup": {
+      "caskVersion": "2.28.1",
+      "sourceURL": "https://github.com/buttercup/buttercup-desktop/releases/download/v2.28.1/Buttercup-mac-x64-2.28.1.dmg",
+      "artifactSHA256": "b2399d44f23dd39b851989e5aee2651fe1b1bdb37a525b7553a7ae8630a1b8e6",
+      "apps": [
+        {
+          "bundleName": "Buttercup.app",
+          "bundleIdentifier": "pw.buttercup.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "capslocknodelay": {
+      "caskVersion": "1.0.8",
+      "sourceURL": "https://github.com/gkpln3/CapsLockNoDelay/releases/download/V1.0.8/CapsLockNoDelay.dmg",
+      "artifactSHA256": "2775a9cd703fbf5952c6ad3c6df14e5a068d9b9ce7b9fd631282b538869baaa2",
+      "apps": [
+        {
+          "bundleName": "CapsLockNoDelay.app",
+          "bundleIdentifier": "gkpln3.CapsLockNoDelay"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "checkra1n": {
+      "caskVersion": "0.12.4",
+      "sourceURL": "https://checkra.in/assets/downloads/macos/754bb6ec4747b2e700f01307315da8c9c32c8b5816d0fe1e91d1bdfc298fe07b/checkra1n%20beta%200.12.4.dmg",
+      "artifactSHA256": "754bb6ec4747b2e700f01307315da8c9c32c8b5816d0fe1e91d1bdfc298fe07b",
+      "apps": [
+        {
+          "bundleName": "checkra1n.app",
+          "bundleIdentifier": "kim.cracksby.checkra1n"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bloodhound": {
+      "caskVersion": "4.3.1",
+      "sourceURL": "https://github.com/BloodHoundAD/BloodHound/releases/download/v4.3.1/BloodHound-darwin-arm64.zip",
+      "artifactSHA256": "86e37a3b78826bd1c9ebd6b6c65eab9e81261af8f18abe8fda8311ce500e4316",
+      "apps": [
+        {
+          "bundleName": "BloodHound.app",
+          "bundleIdentifier": "com.electron.bloodhound"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chai": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/lvillani/chai/releases/download/v3.3.0/Chai-v3.3.0.zip",
+      "artifactSHA256": "f8b32b671363634fdb9227c40d4d69c90bb3779b73ea28b6831ea7d4d0c5908f",
+      "apps": [
+        {
+          "bundleName": "Chai.app",
+          "bundleIdentifier": "me.villani.lorenzo.Chai"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cellprofiler": {
+      "caskVersion": "4.2.8",
+      "sourceURL": "https://github.com/CellProfiler/CellProfiler/releases/download/v4.2.8/CellProfiler-macOS-4.2.8.zip",
+      "artifactSHA256": "bb9bf8e90cb0271453ec3e77d5f55e923a0d98485d99bde4a877130978efc52c",
+      "apps": [
+        {
+          "bundleName": "CellProfiler.app",
+          "bundleIdentifier": "org.cellprofiler.CellProfiler"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "caprine": {
+      "caskVersion": "2.61.0",
+      "sourceURL": "https://github.com/sindresorhus/caprine/releases/download/v2.61.0/Caprine-2.61.0-arm64.dmg",
+      "artifactSHA256": "44a2e53abeed1ecdb44d1c7c6128423fbe7fdb1e81a22288d5ad6fb10e2dfe38",
+      "apps": [
+        {
+          "bundleName": "Caprine.app",
+          "bundleIdentifier": "com.sindresorhus.caprine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "brewservicesmenubar": {
+      "caskVersion": "4.1",
+      "sourceURL": "https://github.com/andrewn/brew-services-menubar/releases/download/v4.1/BrewServicesMenubar-v4.1.zip",
+      "artifactSHA256": "9736f68d97ccab2028fe1f9167fe60e229562ae10f56f5506585ce4747a3d055",
+      "apps": [
+        {
+          "bundleName": "BrewServicesMenubar.app",
+          "bundleIdentifier": "andrewnicolaou.BrewServicesMenubar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "brisk": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/br1sk/brisk/releases/download/1.2.0/Brisk.app.tar.gz",
+      "artifactSHA256": "1ad1da10a3bb2b31af88bc19b6f5b3a018de63e922f632fbdcd7a5e626b96601",
+      "apps": [
+        {
+          "bundleName": "Brisk.app",
+          "bundleIdentifier": "com.brisk.Brisk"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "brewlet": {
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/zkokaja/Brewlet/releases/download/v1.7.4/Brewlet.zip",
+      "artifactSHA256": "dca876a90ae80ac02dd53ccdf55322fbcac8022486c65948de10f833af1c7e6a",
+      "apps": [
+        {
+          "bundleName": "Brewlet.app",
+          "bundleIdentifier": "zzada.Brewlet"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
