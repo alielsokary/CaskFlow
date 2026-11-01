@@ -42075,6 +42075,347 @@
           "reason": "no application payload under /Applications"
         }
       ]
+    },
+    "writerside": {
+      "caskVersion": "2024.3,243.22562.371",
+      "sourceURL": "https://download.jetbrains.com/writerside/writerside-243.22562.371-aarch64.dmg",
+      "artifactSHA256": "9d86ef50b4c6d2a07d236219e9b05c0557241fb017d52ac395719bdb425130f5",
+      "apps": [
+        {
+          "bundleName": "Writerside.app",
+          "bundleIdentifier": "com.jetbrains.writerside-EAP"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "puzzles-app": {
+      "caskVersion": "20241108",
+      "sourceURL": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/Puzzles.dmg",
+      "artifactSHA256": "095c39159a7a657017a0b63b0b68197b80bd1192c7288a7272c7082666883fc1",
+      "apps": [
+        {
+          "bundleName": "Puzzles.app",
+          "bundleIdentifier": "uk.org.greenend.chiark.sgtatham.puzzles"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "themeengine": {
+      "caskVersion": "1.0.0,111",
+      "sourceURL": "https://github.com/alexzielenski/ThemeEngine/releases/download/1.0.0(111)/ThemeEngine_111.zip",
+      "artifactSHA256": "2f7039bf8a30a20da20b292252759a501d15962f909d3b2274db9c2ec7a3bf39",
+      "apps": [
+        {
+          "bundleName": "ThemeEngine.app",
+          "bundleIdentifier": "com.alexzielenski.ThemeEngine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "airpass": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://github.com/alvesjtiago/airpass/releases/download/1.0.2/airpass-1.0.2-x64.dmg",
+      "artifactSHA256": "a67b569a86cc3cfe0d219a5f5c450a94d7060474c0a36b14329140af772f7db2",
+      "apps": [
+        {
+          "bundleName": "Airpass.app",
+          "bundleIdentifier": "com.electron.airpass"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "3dgenceslicer": {
+      "caskVersion": "3.5.1,4.0",
+      "sourceURL": "https://cloud.3dgence.com/downloads/slicer/3DGenceSlicer-4.0-(v3.5.1).dmg",
+      "artifactSHA256": "8b1e89b1883e00119b319698e1fc302e749e08217aa6831a1ba38516aa83ac40",
+      "apps": [
+        {
+          "bundleName": "3DGence Slicer 4.0.app",
+          "bundleIdentifier": "com.3dgence.slicer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "polkadot-js": {
+      "caskVersion": "0.132.1",
+      "sourceURL": "https://github.com/polkadot-js/apps/releases/download/v0.132.1/Polkadot-JS-Apps-mac-0.132.1.dmg",
+      "artifactSHA256": "4521d91f2ee9bf2df35102ca91bcddba1d46f71dd1901b9dd35725159ee07358",
+      "apps": [
+        {
+          "bundleName": "Polkadot-JS Apps.app",
+          "bundleIdentifier": "com.polkadotjs.polkadotjs-apps"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "transmission-remote-gui": {
+      "caskVersion": "5.18.0",
+      "sourceURL": "https://github.com/transmission-remote-gui/transgui/releases/download/v5.18.0/transgui-5.18.0.dmg",
+      "artifactSHA256": "fe32f0cdd5c8f9777bace0eceb92d6b269a2b20210f4cc0552112861ddead759",
+      "apps": [
+        {
+          "bundleName": "Transmission Remote GUI.app",
+          "bundleIdentifier": "com.transgui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mmhmm": {
+      "caskVersion": "3.5.2",
+      "sourceURL": "https://updates.mmhmm.app/mac/hybrid/beta/mmhmm.pkg",
+      "artifactSHA256": "376857453576bf5665ff66c2d55562c627ea7c0ccf8712e1b6396746d8159434",
+      "apps": [
+        {
+          "bundleName": "mmhmm.app",
+          "bundleIdentifier": "app.mmhmm.hybrid",
+          "packageIdentifier": "app.mmhmm.hybrid",
+          "installedPath": "/Applications/mmhmm.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "timche-gmail-desktop": {
+      "caskVersion": "2.25.3",
+      "sourceURL": "https://github.com/timche/gmail-desktop/releases/download/v2.25.3/gmail-desktop-2.25.3-mac.dmg",
+      "artifactSHA256": "8c5a8c4e651d7c328f3e7947e2b1ccc437245840ef33ea3d3f4b45fe7b82dc2e",
+      "apps": [
+        {
+          "bundleName": "Gmail Desktop.app",
+          "bundleIdentifier": "io.cheung.gmail-desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "xournal++": {
+      "caskVersion": "1.3.8",
+      "sourceURL": "https://github.com/xournalpp/xournalpp/releases/download/v1.3.8/xournalpp-1.3.8-macOS-ARM64.dmg",
+      "artifactSHA256": "7d992ef097afd6db304cb9df70615e67f1a1de412e06f7dc8f907fcde3b7d6d7",
+      "apps": [
+        {
+          "bundleName": "Xournal++.app",
+          "bundleIdentifier": "com.github.xournalpp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "write": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://www.styluslabs.com/write/write300.dmg",
+      "artifactSHA256": "036e75f00f47c3dc33cdddfe7b2449d5bcff696992389138467de1f9757b6c57",
+      "apps": [
+        {
+          "bundleName": "Write.app",
+          "bundleIdentifier": "com.styluslabs.write3mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hugin": {
+      "caskVersion": "2019.2.0",
+      "sourceURL": "https://downloads.sourceforge.net/hugin/Hugin-2019.2.0.dmg",
+      "artifactSHA256": "00caa732134c3b4dedd04f3605a4a1660e6baa49f54b6bb45eb25387dbe1e419",
+      "apps": [
+        {
+          "bundleName": "Hugin.app",
+          "bundleIdentifier": "net.sourceforge.Hugin"
+        },
+        {
+          "bundleName": "HuginStitchProject.app",
+          "bundleIdentifier": "net.sourceforge.HuginStitchProject"
+        },
+        {
+          "bundleName": "PTBatcherGUI.app",
+          "bundleIdentifier": "net.sourceforge.hugin.PTBatcherGUI"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "calibrate_lens_gui.app",
+          "reason": "unsupported CFBundleIdentifier: 'net.sourceforge.hugin.calibrate_lens_gui'"
+        }
+      ]
+    },
+    "townwifi": {
+      "caskVersion": "1.0.4,21",
+      "sourceURL": "https://storage.googleapis.com/townwifi-downloads/mac/update/TownWifi_UD_21.dmg",
+      "artifactSHA256": "4e0907ba00b6b83e90840deb6b259044a2068b4a4d1d360bdde02118f4b2ae26",
+      "apps": [
+        {
+          "bundleName": "TownWifi.app",
+          "bundleIdentifier": "jp.townwifi.townwifi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "prezi-next": {
+      "caskVersion": "1.63.0",
+      "sourceURL": "https://desktopassets.prezi.com/mac/pitch/releases/Prezi_Next_1.63.0.dmg",
+      "artifactSHA256": "6fa4e5858881d8bd8b8258129ad7f50f5d03471666b154bdcfe0fd799b671683",
+      "apps": [
+        {
+          "bundleName": "Prezi Next.app",
+          "bundleIdentifier": "com.prezi.pitch.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qblocker": {
+      "caskVersion": "1.2,20,1464612307",
+      "sourceURL": "https://dl.devmate.com/uk.co.wearecocoon.QBlocker/20/1464612307/QBlocker-20.zip",
+      "artifactSHA256": "fb0202894271c3b63a6cffb6fa72d5d27065a0698a3b8a8038e18b7c43872385",
+      "apps": [
+        {
+          "bundleName": "QBlocker.app",
+          "bundleIdentifier": "uk.co.wearecocoon.QBlocker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qldds": {
+      "caskVersion": "1.33",
+      "sourceURL": "https://github.com/Marginal/QLdds/releases/download/rel-133/QLdds_133.pkg",
+      "artifactSHA256": "7342f788f750bf4f40e84f6fcbfefb4603e78d00c99d55fae4ba65a78f9ff20f",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "QLdds.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "1kc-razer": {
+      "caskVersion": "0.4.10",
+      "sourceURL": "https://github.com/1kc/razer-macos/releases/download/v0.4.10/Razer.macOS-0.4.10-universal.dmg",
+      "artifactSHA256": "9f57f928adb31ca843dbf2047a7d6ea308eceaccb50620792535d1fcd7ec73ca",
+      "apps": [
+        {
+          "bundleName": "Razer macOS.app",
+          "bundleIdentifier": "com.electron.razer-macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aegisub": {
+      "caskVersion": "3.4.2",
+      "sourceURL": "https://github.com/TypesettingTools/Aegisub/releases/download/v3.4.2/Aegisub-3.4.2.dmg",
+      "artifactSHA256": "cbbfd3276e0414b540f6b1bc12a69abd6b8a96b0a452de3b08c290d553754ad3",
+      "apps": [
+        {
+          "bundleName": "Aegisub.app",
+          "bundleIdentifier": "com.aegisub.aegisub"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "udig": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "http://udig.refractions.net/files/downloads/udig-2.0.0.macosx.cocoa.x86_64.dmg",
+      "artifactSHA256": "b01e08bc9067a5d584c223293ba2d536a14487327fc73866836f67089545a99a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "udig",
+          "reason": "declared suite matched 2 directories"
+        }
+      ]
+    },
+    "xld": {
+      "caskVersion": "20250302",
+      "sourceURL": "https://downloads.sourceforge.net/xld/xld-20250302.dmg",
+      "artifactSHA256": "0032a5470ea4e32a11a35b8077ebf4986102891f8eb82743094f2c6621ad8aeb",
+      "apps": [
+        {
+          "bundleName": "XLD.app",
+          "bundleIdentifier": "jp.tmkk.XLD"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ace-link": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/blaise-io/acelink/releases/download/2.1.0/Ace.Link.2.1.0.dmg",
+      "artifactSHA256": "778e122a739c53aba5e5a8715b630b287089ef89870064a0345c0ee526d44886",
+      "apps": [
+        {
+          "bundleName": "Ace Link.app",
+          "bundleIdentifier": "io.blaise.acelink"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "td-agent": {
+      "caskVersion": "4.5.2",
+      "sourceURL": "https://s3.amazonaws.com/packages.treasuredata.com/4/macosx/td-agent-4.5.2-arm64.dmg",
+      "artifactSHA256": "d256618c6bff60c9217ac5e74cb96f2b95c84f05fd31081548441ffec3826036",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "td-agent.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "texts": {
+      "caskVersion": "1.5",
+      "sourceURL": "http://www.texts.io/Texts-1.5.dmg",
+      "artifactSHA256": "8c3e5c7c761f31abf414d632e6787f95e08ad112bfd43e63f90a925ae0c3fef2",
+      "apps": [
+        {
+          "bundleName": "Texts.app",
+          "bundleIdentifier": "io.texts.Texts"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "scala-ide": {
+      "caskVersion": "4.7.0,2.12,20170929",
+      "sourceURL": "https://downloads.typesafe.com/scalaide-pack/4.7.0-vfinal-oxygen-212-20170929/scala-SDK-4.7.0-vfinal-2.12-macosx.cocoa.x86_64.zip",
+      "artifactSHA256": "b86a37066cb375615c2a9a61a0152b66a0b172b90e15a33c339f89d2516315f9",
+      "apps": [
+        {
+          "bundleName": "Scala IDE.app",
+          "bundleIdentifier": "scalaide.product.id"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
