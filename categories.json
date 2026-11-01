@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedDate": "2026-11-01",
-  "totalCasks": 4948,
+  "totalCasks": 4949,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -947,6 +947,10 @@
     },
     "anydo": {
       "primary": "productivity",
+      "secondary": []
+    },
+    "anydrag": {
+      "primary": "utilities",
       "secondary": []
     },
     "anylist": {
@@ -8774,6 +8778,10 @@
       "secondary": [
         "designGraphics"
       ]
+    },
+    "irbis-zen": {
+      "primary": "securityPrivacy",
+      "secondary": []
     },
     "ireal-pro": {
       "primary": "audioMusic",
@@ -22479,10 +22487,6 @@
     },
     "zen": {
       "primary": "browsers",
-      "secondary": []
-    },
-    "zen-privacy": {
-      "primary": "securityPrivacy",
       "secondary": []
     },
     "zenbeats": {
