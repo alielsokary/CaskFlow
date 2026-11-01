@@ -44868,6 +44868,268 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "iina+": {
+      "caskVersion": "0.8.30",
+      "sourceURL": "https://github.com/xjbeta/iina-plus/releases/download/0.8.30/IINA+.0.8.30.dmg",
+      "artifactSHA256": "408ca29f3f4a1da6f1033721750eecdb1bbdee81030ad84772a8d635d76c0627",
+      "apps": [
+        {
+          "bundleName": "IINA+.app",
+          "bundleIdentifier": "com.xjbeta.iina-plus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "heimdall-suite": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://bitbucket.org/benjamin_dobell/heimdall/downloads/heimdall-suite-1.4.0-mac.dmg",
+      "artifactSHA256": "4b283fc7bc331f8ec84031c939ef9d2aa71bb8fe6be6d3434dd268d76f7c0e60",
+      "apps": [
+        {
+          "bundleName": "heimdall-frontend.app",
+          "bundleIdentifier": "com.yourcompany.heimdall-frontend",
+          "packageIdentifier": "au.com.glassechidna.HeimdallSuite",
+          "installedPath": "/Applications/heimdall-frontend.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "imagej": {
+      "caskVersion": "1.54",
+      "sourceURL": "https://wsr.imagej.net/distros/osx/ij154-osx-arm-java13.zip",
+      "artifactSHA256": "8366d8c2d56602855fd375d7fb06a4d5b755258cb96ecd83e1310709d3959d90",
+      "apps": [
+        {
+          "bundleName": "ImageJ.app",
+          "bundleIdentifier": "ImageJ"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ipepresenter": {
+      "caskVersion": "7.2.29",
+      "sourceURL": "https://github.com/otfried/ipe/releases/download/v7.2.29/ipepresenter-7.2.29-mac-arm.dmg",
+      "artifactSHA256": "bf72ed043b3cb914b3f43ba9abc376fabdee873c557d999b7d968a23ea4a5b8b",
+      "apps": [
+        {
+          "bundleName": "IpePresenter.app",
+          "bundleIdentifier": "org.otfried.ipe.IpePresenter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hedgewars": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://www.hedgewars.org/download/releases/Hedgewars-1.0.0.dmg",
+      "artifactSHA256": "5a0bdd9bc4cb7beea03b95a2549c1cf994ea8646f6621f5353dd22d79c757404",
+      "apps": [
+        {
+          "bundleName": "Hedgewars.app",
+          "bundleIdentifier": "org.hedgewars.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ipe": {
+      "caskVersion": "7.2.29",
+      "sourceURL": "https://github.com/otfried/ipe/releases/download/v7.2.29/ipe-7.2.29-mac-arm.dmg",
+      "artifactSHA256": "25afb5d6bd0f4f51e27823d86de470d6caa7600e8ee5111f633fa10879904b8c",
+      "apps": [
+        {
+          "bundleName": "Ipe.app",
+          "bundleIdentifier": "org.otfried.ipe.Ipe"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "inav-configurator": {
+      "caskVersion": "9.1.1",
+      "sourceURL": "https://github.com/iNavFlight/inav-configurator/releases/download/9.1.1/INAV-Configurator_MacOS_arm64_9.1.1.zip",
+      "artifactSHA256": "386d6845587286c66c37df3e6b919dd9c783b4cfb0f173aa203c6d150609f158",
+      "apps": [
+        {
+          "bundleName": "INAV Configurator.app",
+          "bundleIdentifier": "com.electron.inav-configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "helium": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/koush/CarbonResources/releases/download/v1.0.0/carbon-mac.zip",
+      "artifactSHA256": "30abcdcb04e53f24948897acfd24899c7cdfca564b71b023224ae13f11365bbd",
+      "apps": [
+        {
+          "bundleName": "Helium.app",
+          "bundleIdentifier": "com.koushikdutta.Helium"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "iceberg": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "http://s.sudre.free.fr/Software/files/Iceberg.dmg",
+      "artifactSHA256": "08ba0cb792dd2121e4a492df03967c6c97d456bab4afda4b40400cd44ff01bd8",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Iceberg.mpkg",
+          "reason": "declared package matched 0 files"
+        }
+      ]
+    },
+    "hp-prime": {
+      "caskVersion": "2020-01-16",
+      "sourceURL": "https://ftp.hp.com/pub/calculators/Prime/HP_Prime_Virtual_Calculator_2020_01_16.dmg",
+      "artifactSHA256": "d29067ff767a7ad8b6fc565bed8ccf39edf386be3e7fc0ca5290670cd346911d",
+      "apps": [
+        {
+          "bundleName": "HP Prime.app",
+          "bundleIdentifier": "com.yourcompany.HP-Prime"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chessx": {
+      "caskVersion": "1.6.10",
+      "sourceURL": "https://downloads.sourceforge.net/chessx/chessx/1.6.10/chessx-1.6.10.dmg",
+      "artifactSHA256": "525927ea622b1834694a5582370a5883cc7bc7dd50e449be96c8c8d553fc9870",
+      "apps": [
+        {
+          "bundleName": "ChessX.app",
+          "bundleIdentifier": "net.sourceforge.chessx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "iqmol": {
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://github.com/nutjunkie/IQmol3/releases/download/v3.2.2/IQmol-3.2.2.dmg",
+      "artifactSHA256": "8f8dfebafe3ef0fc46ba7081bee8ba7c6f459c30a7106b475794ab1bdf6f1883",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "IQmol.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
+    },
+    "icestudio": {
+      "caskVersion": "0.12",
+      "sourceURL": "https://github.com/FPGAwars/icestudio/releases/download/v0.12/icestudio-0.12-osxarm64.dmg",
+      "artifactSHA256": "7a11f5055e11e2e19eab2dae9b4e8e4056938922cda2588f3fdd26ab3e87ae23",
+      "apps": [
+        {
+          "bundleName": "icestudio.app",
+          "bundleIdentifier": "icestudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "instatus-out": {
+      "caskVersion": "1.0.8",
+      "sourceURL": "https://github.com/instatushq/out/releases/download/v1.0.8/Instatus.Out-1.0.8-mac.dmg",
+      "artifactSHA256": "14ad0e0e13dd3b5747defccfd2483069297fedcd0d74727246d031bd23ab5649",
+      "apps": [
+        {
+          "bundleName": "Instatus Out.app",
+          "bundleIdentifier": "com.instatus.out"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "iconizer": {
+      "caskVersion": "2020.11.0",
+      "sourceURL": "https://github.com/raphaelhanneken/iconizer/releases/download/2020.11.0/Iconizer.dmg",
+      "artifactSHA256": "abaffdea473f4d3cd7d763fcb3846fbb752b87949e6ef7d273a95b6f5c5c1e06",
+      "apps": [
+        {
+          "bundleName": "Iconizer.app",
+          "bundleIdentifier": "com.raphaelhanneken.iconizer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hostsx": {
+      "caskVersion": "2.9.0",
+      "sourceURL": "https://github.com/ZzzM/HostsX/releases/download/2.9.0/HostsX.dmg",
+      "artifactSHA256": "5a8fc616b6e28465ba9edfbbd647285f33add8b1790c517ece55df3aec5b73a0",
+      "apps": [
+        {
+          "bundleName": "HostsX.app",
+          "bundleIdentifier": "com.alpha.hostsx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "igdm": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://github.com/ifedapoolarewaju/igdm/releases/download/v3.0.4/IGdm-3.0.4.dmg",
+      "artifactSHA256": "fe032a9657267018efc16697d218dbdcda02564f5d42e4b2e21bf68ea9e715c7",
+      "apps": [
+        {
+          "bundleName": "IGdm.app",
+          "bundleIdentifier": "com.ifedapoolarewaju.desktop.igdm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "isimulator": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/wigl/iSimulator/releases/download/3.3.0/iSimulator.zip",
+      "artifactSHA256": "b9d4e1b3726ff3dd222f123a6d0b425015ff13733e95863a95d8256f80530a60",
+      "apps": [
+        {
+          "bundleName": "iSimulator.app",
+          "bundleIdentifier": "niels.jin.iSimulator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "inkdown": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://assets.inkdown.me/release/v2.0.2/darwin/arm64/Inkdown-mac-arm64.dmg",
+      "artifactSHA256": "48aa7b9d5f640a97edd5aa424a8315dcaf909d79d529c061552c028ccb2dd4eb",
+      "apps": [
+        {
+          "bundleName": "Inkdown.app",
+          "bundleIdentifier": "bluestone"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hydrogen": {
+      "caskVersion": "1.2.6",
+      "sourceURL": "https://github.com/hydrogen-music/hydrogen/releases/download/1.2.6/Hydrogen-1.2.6.dmg",
+      "artifactSHA256": "05ba60a4c71745c591b22f472b80c79fdcdd0ef38bb3ef0b08b313d722e76811",
+      "apps": [
+        {
+          "bundleName": "Hydrogen.app",
+          "bundleIdentifier": "Hydrogen"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

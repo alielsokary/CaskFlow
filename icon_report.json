@@ -875,6 +875,18 @@
     "attempts": 1,
     "updated": "2026-11-01"
   },
+  "heimdall-suite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "hermit-crab": {
+    "status": "failed",
+    "reason": "download failed: how to fix it, please visit the web page mentioned above.",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "hma-vpn": {
     "status": "review",
     "reason": "volume icon (drive/box shaped) -- genuine branding, re-shoot when vendor ships a cleaner asset",
@@ -911,11 +923,35 @@
     "attempts": 7,
     "updated": "2026-10-01"
   },
+  "iceberg": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "icollections": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "id3-editor": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "ideamaker": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "ifunbox": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "ijhttp": {
     "status": "no_icon",
@@ -946,6 +982,12 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "iridium": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "j": {
     "status": "review",
