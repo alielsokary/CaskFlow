@@ -14,8 +14,8 @@
   "abstract": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: downloads.goabstract.com",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "acronis-true-image-cleanup-tool": {
     "status": "no_icon",
@@ -44,8 +44,8 @@
   "algodoo": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "alisma": {
     "status": "no_icon",
@@ -97,9 +97,9 @@
   },
   "apache-directory-studio": {
     "status": "failed",
-    "reason": "sha256 mismatch (got 27f943d2618b...)",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "reason": "sha256 mismatch (got bfa10deba4a4...)",
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "apple-hewlett-packard-printer-drivers": {
     "status": "no_icon",
@@ -158,14 +158,14 @@
   "attachecase": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "audius": {
     "status": "failed",
-    "reason": "sha256 mismatch (got 0f51ba01e4a6...)",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "reason": "sha256 mismatch (got 4b3ac0e9a128...)",
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "autodesk-fusion": {
     "status": "review",
@@ -176,8 +176,8 @@
   "avast-secure-browser": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "avast-security": {
     "status": "curated",
@@ -313,9 +313,9 @@
   },
   "canon-mg2500-driver": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/36/tjdph2t965j8snz9_vkdnw0r0000gn/T/icon-canon-mg2500-driver-hcqdibad/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/icon-canon-mg2500-driver-lzjcqa6r/mnt/PrinterDriver_MG2500 series_169100.pkg (The operation couldn’t be completed. Permission denie",
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "canon-ufrii-driver": {
     "status": "no_icon",
@@ -332,8 +332,8 @@
   "cardpresso": {
     "status": "failed",
     "reason": "sha256 mismatch (got 4b251d7c469f...)",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "chatty": {
     "status": "curated",
@@ -410,8 +410,8 @@
   "cloud189": {
     "status": "failed",
     "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B42E:SSL routines:ST_CONNECT:tlsv1 alert protocol version",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "cmpxat": {
     "status": "no_icon",
@@ -548,8 +548,8 @@
   "direqual": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "discretescroll": {
     "status": "no_icon",
@@ -644,8 +644,8 @@
   "energia": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "epoccam": {
     "status": "no_icon",
@@ -776,8 +776,8 @@
   "filepane": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "finch": {
     "status": "curated",
@@ -968,8 +968,8 @@
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337...)",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "grid-clock": {
     "status": "no_icon",
@@ -1034,8 +1034,8 @@
   "huly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "hy-rpe2": {
     "status": "no_icon",
@@ -1055,12 +1055,6 @@
     "attempts": 0,
     "updated": "2026-07-12"
   },
-  "icab": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 5d09f7e8ded7...)",
-    "attempts": 7,
-    "updated": "2026-10-01"
-  },
   "iceberg": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1070,8 +1064,8 @@
   "icollections": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "id3-editor": {
     "status": "failed",
@@ -1118,14 +1112,14 @@
   "ioquake3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "ipremoteutility": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "ipynb-quicklook": {
     "status": "no_icon",
@@ -1208,14 +1202,14 @@
   "konica-minolta-bizhub-c750i-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": {
     "status": "failed",
     "reason": "download failed:                                                                 ^",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "kotlin-lsp": {
     "status": "curated",
@@ -1292,7 +1286,7 @@
   "lo-rain": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
-    "attempts": 4,
+    "attempts": 5,
     "updated": "2026-11-01"
   },
   "logdna-cli": {
@@ -1327,15 +1321,15 @@
   },
   "lotus": {
     "status": "failed",
-    "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "reason": "download failed: curl: (28) Failed to connect to app-updates.vadimdemedes.com port 443 after 75067 ms: Couldn't connect to server",
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "ludwig": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "lumen": {
     "status": "failed",
@@ -1352,8 +1346,8 @@
   "macdive": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "macfuse": {
     "status": "no_icon",
@@ -1370,7 +1364,7 @@
   "macpar-deluxe": {
     "status": "failed",
     "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
-    "attempts": 6,
+    "attempts": 7,
     "updated": "2026-11-01"
   },
   "macsvg": {

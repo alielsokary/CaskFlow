@@ -50438,6 +50438,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "icab": {
+      "caskVersion": "6.3.7",
+      "sourceURL": "https://icab.clauss-net.de/icab/iCab_6.3.7.zip",
+      "artifactSHA256": "5d09f7e8ded7bcc93a188b77d88f75740ef3f6a08ece27a298b0efa77ea22330",
+      "apps": [
+        {
+          "bundleName": "iCab.app",
+          "bundleIdentifier": "de.icab.iCab"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
