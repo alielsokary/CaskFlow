@@ -43,7 +43,7 @@ retry on a subsequent image load; there is no continuous background polling.
 
 ## Protocol (per cask)
 
-1. **Eligibility** - skip `deprecated`/`disabled`; require an `app`, `suite`,
+1. **Eligibility** - require an `app`, `suite`,
    or `pkg` artifact (pkg payloads contain the `.app`).
 2. **Download** the cask `url` via curl, honoring `url_specs` (user-agent,
    referer, cookies, headers). Verify `sha256` unless `no_check`.

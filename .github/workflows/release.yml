@@ -97,7 +97,7 @@ jobs:
                 fi
               }
               list_tokens '(.tokenToCategory | keys) - ($prev[0].tokenToCategory | keys) | .[]' "new cask(s)"
-              list_tokens '($prev[0].tokenToCategory | keys) - (.tokenToCategory | keys) | .[]' "removed/deprecated cask(s)"
+              list_tokens '($prev[0].tokenToCategory | keys) - (.tokenToCategory | keys) | .[]' "renamed-away cask(s)"
             fi
           } > /tmp/release_notes.md
 

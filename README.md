@@ -36,7 +36,7 @@ flowchart LR
     branch --> caskhub
 ```
 
-The daily classification workflow adds new casks, migrates Homebrew token renames, and prunes removed or disabled entries. Provider and validation failures are skipped for a later retry. Results below `0.75` confidence remain in an assigned PR for manual review; higher-confidence updates may auto-merge after required checks pass.
+The daily classification workflow adds new casks, and migrates Homebrew token renames. Entries for casks Homebrew deprecates, disables, or removes are kept, so installed copies keep their category. Provider and validation failures are skipped for a later retry. Results below `0.75` confidence remain in an assigned PR for manual review; higher-confidence updates may auto-merge after required checks pass.
 
 The release workflow runs daily independently of classification, stamps `categories.json` with its release tag and current icon-token manifest when available, and mines `added_dates.json` directly from Homebrew's history. Before publishing, it verifies that every cask in the tap's current tree has an added date. A category merge also triggers it immediately. Classification updates therefore do not delay Recently Added data, and date refreshes do not require an LLM result or category assignment.
 
