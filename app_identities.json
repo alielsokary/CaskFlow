@@ -43995,6 +43995,320 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "editaro": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/kkosuge/editaro/releases/download/1.7.1/Editaro-1.7.1-mac.zip",
+      "artifactSHA256": "e5efe1de1283df05ad0bb2908c16c02bc0c34806119e83daefc0f049286f3c58",
+      "apps": [
+        {
+          "bundleName": "Editaro.app",
+          "bundleIdentifier": "com.electron.editaro"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "easyeda": {
+      "caskVersion": "6.5.51",
+      "sourceURL": "https://image.easyeda.com/files/easyeda-mac-arm64-6.5.51.zip",
+      "artifactSHA256": "c683c0a61825219bc84fe76e21433a481384177d2e33ddc209c172ae5b227033",
+      "apps": [
+        {
+          "bundleName": "EasyEDA.app",
+          "bundleIdentifier": "com.easyeda"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fertigt-slate": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://github.com/fertigt/slate_arm64/releases/download/1.0/Slate.zip",
+      "artifactSHA256": "30a6e20b4136569accab9f38d8659193726d984ef6235b035db59e678deec7bf",
+      "apps": [
+        {
+          "bundleName": "Slate.app",
+          "bundleIdentifier": "com.tobiasfertig.Slate"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dust3d": {
+      "caskVersion": "1.1.6",
+      "sourceURL": "https://github.com/huxingyi/dust3d/releases/download/1.1.6/dust3d-1.1.6.dmg",
+      "artifactSHA256": "d224bdb3a948ed40ae84a4c923607afff5f54a636fbde27622b98e7dde222022",
+      "apps": [
+        {
+          "bundleName": "dust3d.app",
+          "bundleIdentifier": "com.yourcompany.dust3d"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "encryptme": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://static.encrypt.me/downloads/osx/updates/Release/EncryptMe-4.4.0.dmg",
+      "artifactSHA256": "3dda64ebde80fea167184e18647b0a42ff8d190c6119197e58e3883245ebf477",
+      "apps": [
+        {
+          "bundleName": "EncryptMe.app",
+          "bundleIdentifier": "com.bourgeoisbits.cloak.agent"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "endless-sky": {
+      "caskVersion": "0.11.2",
+      "sourceURL": "https://github.com/endless-sky/endless-sky/releases/download/v0.11.2/Endless-Sky-v0.11.2.dmg",
+      "artifactSHA256": "338f139a790f55a41444b77bd8361bd9f21f3f5a010f52421596ffd4391e55ef",
+      "apps": [
+        {
+          "bundleName": "Endless Sky.app",
+          "bundleIdentifier": "io.github.endless-sky"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "exist-db": {
+      "caskVersion": "6.4.1",
+      "sourceURL": "https://github.com/eXist-db/exist/releases/download/eXist-6.4.1/eXist-db-6.4.1.dmg",
+      "artifactSHA256": "22873e01f000466433e3cf4b91403f78e0285848562585ba4c3eab2c2b63d7d5",
+      "apps": [
+        {
+          "bundleName": "eXist-db.app",
+          "bundleIdentifier": "org.exist.start.Main"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "elektron-transfer": {
+      "caskVersion": "1.9.5,10,2024",
+      "sourceURL": "https://elektron.se/wp-content/uploads/2024/10/Elektron_Transfer_1.9.5.dmg",
+      "artifactSHA256": "ff023c8bb6f51d41f09846a40794d666850b2e69dc7a9599c0b27720ec37ce45",
+      "apps": [
+        {
+          "bundleName": "Transfer.app",
+          "bundleIdentifier": "se.elektron.OverbridgeTransfer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "electron": {
+      "caskVersion": "44.1.0",
+      "sourceURL": "https://github.com/electron/electron/releases/download/v44.1.0/electron-v44.1.0-darwin-arm64.zip",
+      "artifactSHA256": "9e624a8c44dee2792a532551f224ec8b8649b654a0e039416164fbf620888512",
+      "apps": [
+        {
+          "bundleName": "Electron.app",
+          "bundleIdentifier": "com.github.Electron"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "finalshell": {
+      "caskVersion": "4.6.3",
+      "sourceURL": "https://dl.hostbuf.com/finalshell3/finalshell_macos_arm64.pkg",
+      "artifactSHA256": "f649960744d22fe2fb1d8592fa8413f14f8e89728f5189d25884383a96b86883",
+      "apps": [
+        {
+          "bundleName": "FinalShell.app",
+          "bundleIdentifier": "st",
+          "packageIdentifier": "st",
+          "installedPath": "/Applications/FinalShell.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "exifcleaner": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/szTheory/exifcleaner/releases/download/v4.2.1/ExifCleaner-4.2.1-arm64.dmg",
+      "artifactSHA256": "10b2a070ac0fb399f4bb1468d341e0cc0984aa627cd2f118ed370e7fe748a258",
+      "apps": [
+        {
+          "bundleName": "ExifCleaner.app",
+          "bundleIdentifier": "com.exifcleaner"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dyn-updater": {
+      "caskVersion": "5.5.0",
+      "sourceURL": "http://cdn.dyn.com/dynupdater/DynUpdater-5.5.0.zip",
+      "artifactSHA256": "70cb2600907b05adf5a912baaee7512b6d70331405c551414889a49608a1fab9",
+      "apps": [
+        {
+          "bundleName": "Dyn Updater.app",
+          "bundleIdentifier": "com.dyn.updater"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "electorrent": {
+      "caskVersion": "2.16.0",
+      "sourceURL": "https://github.com/tympanix/Electorrent/releases/download/v2.16.0/Electorrent-2.16.0-universal.dmg",
+      "artifactSHA256": "c693d0aa4702b94a25529095233cf53942f0fa0d92a57131489a72c1f2e0f54a",
+      "apps": [
+        {
+          "bundleName": "Electorrent.app",
+          "bundleIdentifier": "com.github.tympanix.electorrent"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "electronmail": {
+      "caskVersion": "5.3.8",
+      "sourceURL": "https://github.com/vladimiry/ElectronMail/releases/download/v5.3.8/electron-mail-5.3.8-mac-arm64.dmg",
+      "artifactSHA256": "577d968b4a0253d74b7f3ab183739db1e8882d7ef03e2046373ecab86d2f9596",
+      "apps": [
+        {
+          "bundleName": "electron-mail.app",
+          "bundleIdentifier": "github.comvladimiryElectronMail"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "flame": {
+      "caskVersion": "3.0.0,80",
+      "sourceURL": "https://github.com/tominsam/flametouch/releases/download/3.0.0(80)/Flame.3.0.0.80.zip",
+      "artifactSHA256": "cc09216769022fc4acb20eaddd37898ace0d3a9ca8d9f53fbc06cdbfd45868e0",
+      "apps": [
+        {
+          "bundleName": "Flame.app",
+          "bundleIdentifier": "org.jerakeen.flametouch"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "exfalso": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/quodlibet/quodlibet/releases/download/release-4.4.0/ExFalso-4.4.0.dmg",
+      "artifactSHA256": "0e0fca957833ab1b6ea58b7617984d4fb3633b30ab5e8ad58128b11cd32ca5d9",
+      "apps": [
+        {
+          "bundleName": "ExFalso.app",
+          "bundleIdentifier": "io.github.quodlibet.ExFalso"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "eloquent": {
+      "caskVersion": "2.6.8",
+      "sourceURL": "https://github.com/mdbergmann/Eloquent/releases/download/2.6.8/Eloquent-2.6.8.app.zip",
+      "artifactSHA256": "9dad39e05f0acf2384a1157f138974e199265c4aefb26e73c4530fec7a96d5a2",
+      "apps": [
+        {
+          "bundleName": "Eloquent.app",
+          "bundleIdentifier": "org.crosswire.Eloquent"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "electrocrud": {
+      "caskVersion": "3.0.19",
+      "sourceURL": "https://github.com/garrylachman/ElectroCRUD/releases/download/v3.0.19/ElectroCRUD-v3.0.19-mac-x64.dmg",
+      "artifactSHA256": "d605885ae136077e001ae48c008147008501fd305bdf3de296a4553eb7195e4a",
+      "apps": [
+        {
+          "bundleName": "electrocrud.app",
+          "bundleIdentifier": "com.garrylachman.electrocrud"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "evkey": {
+      "caskVersion": "3.3.10",
+      "sourceURL": "https://github.com/lamquangminh/EVKey/releases/download/Release/EVKeyMac.zip",
+      "artifactSHA256": "00dd48bd33c8fe61fe07e8b5aa1f820d552a0ca8795e4694677357667ff58437",
+      "apps": [
+        {
+          "bundleName": "EVKeyMac.app",
+          "bundleIdentifier": "com.lamquangminh.evkey"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fedora-media-writer": {
+      "caskVersion": "5.3.2",
+      "sourceURL": "https://github.com/FedoraQt/MediaWriter/releases/download/5.3.2/FedoraMediaWriter-macos-arm64-5.3.2.dmg",
+      "artifactSHA256": "0f9f6ab47554f878259867681336a8f9127e098528a385c155a8d4f1f4369138",
+      "apps": [
+        {
+          "bundleName": "FedoraMediaWriter.app",
+          "bundleIdentifier": "org.fedoraproject.MediaWriter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fishing-funds": {
+      "caskVersion": "8.8.0",
+      "sourceURL": "https://github.com/1zilc/fishing-funds/releases/download/v8.8.0/Fishing-Funds-8.8.0-arm64.dmg",
+      "artifactSHA256": "b7e9061f3acac15edb3fe9d5c77b2c2ff82b62f5d3a17bcc616f55fe433c2bcf",
+      "apps": [
+        {
+          "bundleName": "Fishing Funds.app",
+          "bundleIdentifier": "com.electron.1zilc.fishing-funds"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "extraterm": {
+      "caskVersion": "0.81.4",
+      "sourceURL": "https://github.com/sedwards2009/extraterm/releases/download/v0.81.4/ExtratermQt_0.81.4.dmg",
+      "artifactSHA256": "214bd9bb54fcb8c8cd97c8ea401898adac1a205b5fba74b406178757dbeae814",
+      "apps": [
+        {
+          "bundleName": "ExtratermQt.app",
+          "bundleIdentifier": "com.extraterm.extraterm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "far2l": {
+      "caskVersion": "2.8.0",
+      "sourceURL": "https://github.com/elfmz/far2l/releases/download/v_2.8.0/far2l-2.8.0-beta-MacOS-11.2-universal.dmg",
+      "artifactSHA256": "9891d468f1242c8a7728de0f04f4d07108186b50faeb3bbe230ef4f8305189c8",
+      "apps": [
+        {
+          "bundleName": "far2l.app",
+          "bundleIdentifier": "com.far2l"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "eiskaltdcpp": {
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://downloads.sourceforge.net/eiskaltdcpp/EiskaltDC++-2.4.2-x86_64.dmg",
+      "artifactSHA256": "85b77157892985c0cc0e4c2b9244b4095bf5738f5e94e7a0941551e0c9a7a009",
+      "apps": [
+        {
+          "bundleName": "EiskaltDC++.app",
+          "bundleIdentifier": "com.github.eiskaltdcpp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
