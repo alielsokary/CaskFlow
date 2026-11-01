@@ -1007,6 +1007,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "kern": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "kimi": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
@@ -1030,6 +1036,12 @@
     "reason": "official vendor asset: https://github.com/Kotlin.png",
     "attempts": 0,
     "updated": "2026-07-09"
+  },
+  "langgraph-studio": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "lemonade-server": {
     "status": "review",

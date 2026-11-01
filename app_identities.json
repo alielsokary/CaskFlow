@@ -45130,6 +45130,338 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "jazz2-resurrection": {
+      "caskVersion": "3.8.0",
+      "sourceURL": "https://github.com/deathkiller/jazz2/releases/download/3.8.0/Jazz2_3.8.0_MacOS.zip",
+      "artifactSHA256": "5a051dab4260b1bd99d2a9285242a6b062c6b5f88dba773c98b4dd786a42bab7",
+      "apps": [
+        {
+          "bundleName": "Jazz² Resurrection.app",
+          "bundleIdentifier": "jazz2.resurrection"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "katrain": {
+      "caskVersion": "1.14.0",
+      "sourceURL": "https://github.com/sanderland/katrain/releases/download/v1.14.0/KaTrainOSX.dmg",
+      "artifactSHA256": "38cfe45fd4440983d3cbf4ca1305fa977c8479a16f6696bd22742ad451fa4cd7",
+      "apps": [
+        {
+          "bundleName": "KaTrain.app",
+          "bundleIdentifier": "org.katrain.KaTrain"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "invesalius": {
+      "caskVersion": "3.1.99998",
+      "sourceURL": "https://github.com/invesalius/invesalius3/releases/download/v3.1.99998/InVesalius.3.1.99998.arm64.dmg",
+      "artifactSHA256": "b5032dfb80af29efde4e58c9dc48b164c31335d8ef91f5b51dbeea95088f778f",
+      "apps": [
+        {
+          "bundleName": "InVesalius.app",
+          "bundleIdentifier": "br.gov.cti.invesalius"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jquake": {
+      "caskVersion": "1.8.5",
+      "sourceURL": "https://fleneindre.github.io/downloads/JQuake_1.8.5_mac_arm64.dmg",
+      "artifactSHA256": "e035c0b51ab1947719a20d54493ffea103e4e2d3c1dbf73d2de145cfe8f3223e",
+      "apps": [
+        {
+          "bundleName": "JQuake.app",
+          "bundleIdentifier": "net.jquake.java"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kext-updater": {
+      "caskVersion": "5.0.5",
+      "sourceURL": "https://update.kextupdater.de/kextupdater/kextupdaterng.zip",
+      "artifactSHA256": "6575f90a003e77bdb173d4f356d0cff2a1339ce4e530888e1998a600a7acedf2",
+      "apps": [
+        {
+          "bundleName": "Kext Updater.app",
+          "bundleIdentifier": "kextupdater.slsoft.de"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jd-gui": {
+      "caskVersion": "1.6.6",
+      "sourceURL": "https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-osx-1.6.6.tar",
+      "artifactSHA256": "b16ce61bbcfd2f006046b66c8896c512a36c6b553afdca75896d7c5e27c7477d",
+      "apps": [
+        {
+          "bundleName": "JD-GUI.app",
+          "bundleIdentifier": "jd.jd-gui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "keyboardholder": {
+      "caskVersion": "1.14.12",
+      "sourceURL": "https://github.com/leaves615/KeyboardHolder/releases/download/v1.14.12/KeyboardHolder-1.14.12.zip",
+      "artifactSHA256": "346e7983e994e4d5c49a940c3aec3fa2791a5c2344f37c1a3dab4f6817774337",
+      "apps": [
+        {
+          "bundleName": "KeyboardHolder.app",
+          "bundleIdentifier": "cn.leaves.KeyboardHolder"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lastfm": {
+      "caskVersion": "2.1.39",
+      "sourceURL": "https://cdn.last.fm/client/Mac/Last.fm-2.1.39.zip",
+      "artifactSHA256": "0b86111e68c3e54edd68e1a00a4390e3b13d10f6166161619cc8cadcfd053eba",
+      "apps": [
+        {
+          "bundleName": "Last.fm.app",
+          "bundleIdentifier": "fm.last.Scrobbler"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "klatexformula": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://downloads.sourceforge.net/klatexformula/klatexformula/klatexformula-4.1.0/klatexformula-4.1.0-macosx.dmg",
+      "artifactSHA256": "fe868fcec17638f98f5c730f1dee20fe91981523392e49d6b9b23795f2b4b897",
+      "apps": [
+        {
+          "bundleName": "klatexformula.app",
+          "bundleIdentifier": "org.klatexformula.klatexformula"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "katana-app": {
+      "caskVersion": "1.4.4",
+      "sourceURL": "https://github.com/bluegill/katana/releases/download/v1.4.4/katana-1.4.4-mac.zip",
+      "artifactSHA256": "905a578cd5d2fd3ee18e521ef0e1574f19229938181585bee41008b172dc5d1e",
+      "apps": [
+        {
+          "bundleName": "Katana.app",
+          "bundleIdentifier": "com.electron.katana"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kern": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://www.fullbucket.de/music/dl/kern_1_2_0_mac.pkg",
+      "artifactSHA256": "16b5cc1a323d8d089e97c58246d68558a66f986a9576d528e8621ebd2cf37816",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Kern_AU.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Kern_VST.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Kern_VST3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "kiibohd-configurator": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/kiibohd/configurator/releases/download/v1.1.0/kiibohd-configurator-1.1.0-mac.dmg",
+      "artifactSHA256": "996abcfd4f05420199e0302be50d9e878bd28bb50f541b5f6886a1654862e20f",
+      "apps": [
+        {
+          "bundleName": "Kiibohd Configurator.app",
+          "bundleIdentifier": "club.input.KiibohdConfigurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jedit": {
+      "caskVersion": "5.7.0",
+      "sourceURL": "https://downloads.sourceforge.net/jedit/jedit5.7.0install.dmg",
+      "artifactSHA256": "5f3582c076e400dc79673a0b1f5a3314e1229288791d9019c693f2108d6d0bb5",
+      "apps": [
+        {
+          "bundleName": "jEdit.app",
+          "bundleIdentifier": "org.gjt.sp.jedit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "laravel-kit": {
+      "caskVersion": "2.0.9",
+      "sourceURL": "https://github.com/tmdh/laravel-kit/releases/download/v2.0.9/Laravel-Kit-2.0.9-arm64-mac.zip",
+      "artifactSHA256": "ddab08305eefb11f46009d257685b87b8649fb928afee318b1f5d7eaa7a538f8",
+      "apps": [
+        {
+          "bundleName": "Laravel Kit.app",
+          "bundleIdentifier": "com.tmdh.laravel-kit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jgrennison-openttd": {
+      "caskVersion": "0.73.2",
+      "sourceURL": "https://github.com/JGRennison/OpenTTD-patches/releases/download/jgrpp-0.73.2/openttd-jgrpp-0.73.2-macos-universal.dmg",
+      "artifactSHA256": "d5921f86603d122edcc52ad7fec43528a060515c9dc1f4a715126b3468010e1f",
+      "apps": [
+        {
+          "bundleName": "OpenTTD.app",
+          "bundleIdentifier": "org.openttd.openttd.jgrpp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jpadilla-redis": {
+      "caskVersion": "4.0.2-build.1",
+      "sourceURL": "https://github.com/jpadilla/redisapp/releases/download/4.0.2-build.1/Redis.zip",
+      "artifactSHA256": "1a4c0c82739a2bddbd5fa78f598cd28dd2c348467a12cb8de6687114f2bad4da",
+      "apps": [
+        {
+          "bundleName": "Redis.app",
+          "bundleIdentifier": "io.blimp.Redis"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "keepassx": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://www.keepassx.org/releases/2.0.3/KeePassX-2.0.3.dmg",
+      "artifactSHA256": "44271fef18fd07a29241e5324be407fa8edce77fb0b55c5646cd238092cdf823",
+      "apps": [
+        {
+          "bundleName": "KeePassX.app",
+          "bundleIdentifier": "org.keepassx.keepassx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jpadilla-rabbitmq": {
+      "caskVersion": "3.6.1-build.1",
+      "sourceURL": "https://github.com/jpadilla/rabbitmqapp/releases/download/3.6.1-build.1/RabbitMQ.zip",
+      "artifactSHA256": "1838afcece704ab1d23645d5d44953b809474f1f67ec4b18f3f98d440e5b5aad",
+      "apps": [
+        {
+          "bundleName": "RabbitMQ.app",
+          "bundleIdentifier": "io.blimp.RabbitMQ"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kvirc": {
+      "caskVersion": "5.2.10,Quasar",
+      "sourceURL": "https://github.com/kvirc/KVIrc/releases/download/5.2.10/KVIrc-5.2.10-Quasar.dmg",
+      "artifactSHA256": "c439697be84fb8dc41b9541f64182bb6ee561ecfd3e5070f1f4be64ca0fe156c",
+      "apps": [
+        {
+          "bundleName": "KVIrc.app",
+          "bundleIdentifier": "com.kvirc.kvirc"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jcryptool": {
+      "caskVersion": "1.0.9",
+      "sourceURL": "https://github.com/jcryptool/core/releases/download/1.0.9/JCrypTool-1.0.9-macOS-64bit.tar.gz",
+      "artifactSHA256": "58ba00b265e0180eb3e68f82a8978603fe1112af88ff747959e35bd11b9d79ee",
+      "apps": [
+        {
+          "bundleName": "JCrypTool.app",
+          "bundleIdentifier": "jcryptool"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "isyncer": {
+      "caskVersion": "4.3.0",
+      "sourceURL": "https://www.isyncer.de/system/iSyncerV4.3.0mac-installer.tgz",
+      "artifactSHA256": "15b2854bf6cac10b2b36efad9b5d9d15b033e50ffbe833380bb2b61a7fd470ab",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "iSyncer.app",
+          "bundleIdentifier": "main.ISyncer",
+          "packageIdentifier": "main.ISyncer",
+          "installedPath": "/Applications/iSyncer.app"
+        }
+      ]
+    },
+    "knuff": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://github.com/KnuffApp/Knuff/releases/download/v1.3/Knuff.app.zip",
+      "artifactSHA256": "06c6bb6d2254211f4369a9903aefb61eb894c706b08635091f457d1730b79c69",
+      "apps": [
+        {
+          "bundleName": "Knuff.app",
+          "bundleIdentifier": "com.madebybowtie.Knuff-OSX"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "imagex": {
+      "caskVersion": "0.1.2",
+      "sourceURL": "https://visual-computing.com/files/imagex/ImageX-v0.1.2-macos.zip",
+      "artifactSHA256": "44caf58ee3e389c76f7a3d9d1dcc842ca06c11d3a92eccb6b5847768601807e5",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "ImageX.app",
+          "reason": "unreadable Info.plist: ValueError"
+        }
+      ]
+    },
+    "jupyter-notebook-viewer": {
+      "caskVersion": "0.1.6",
+      "sourceURL": "https://github.com/tuxu/nbviewer-app/releases/download/0.1.6/nbviewer-app.zip",
+      "artifactSHA256": "af77fa5f0d80e99c2efd977b0dba9b11fb16d33ee10f53f9e34989fb16f12514",
+      "apps": [
+        {
+          "bundleName": "Jupyter Notebook Viewer.app",
+          "bundleIdentifier": "com.tinowagner.nbviewer-app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
