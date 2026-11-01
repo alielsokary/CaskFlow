@@ -401,6 +401,12 @@
     "attempts": 0,
     "updated": "2026-10-13"
   },
+  "distroav": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "dotnet-runtime": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/dotnet.png?size=256",
@@ -820,6 +826,12 @@
     "reason": "installer-app/volume icon (manual salvage) -- genuine product branding",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "logitech-options": {
+    "status": "review",
+    "reason": "non-exact .app selection: shallowest",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "logitune": {
     "status": "review",
