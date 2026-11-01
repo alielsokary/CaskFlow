@@ -560,7 +560,7 @@
   "disk-inventory-x": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "diskspace": {
@@ -578,7 +578,7 @@
   "doppler-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "dotnet-runtime": {
@@ -764,7 +764,13 @@
   "fantasy-grounds": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "filemon": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "filepane": {
@@ -797,10 +803,16 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "fly": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "fmail2": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "folding-at-home": {
@@ -830,7 +842,7 @@
   "ftdi-vcp-driver": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "fx-cast-bridge": {
@@ -872,7 +884,13 @@
   "geogebra": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "ghdl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "git-credential-manager": {
@@ -887,11 +905,35 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "gltfquicklook": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "gmvault": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "go-shiori": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "gog-galaxy": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/gogcom.png (pkg ships no app bundle)",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "google-trends": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "gpg-suite-no-mail": {
     "status": "review",
@@ -908,7 +950,7 @@
   "gpxsee": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "graalvm-jdk": {
@@ -917,11 +959,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "grads": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "green-go-control": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7e5bf0886337...)",
     "attempts": 7,
     "updated": "2026-10-01"
+  },
+  "grid-clock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "gstreamer-development": {
     "status": "no_icon",
@@ -938,13 +992,19 @@
   "guitar-pro": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "hashbackup": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "height": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "heimdall-suite": {
@@ -957,6 +1017,12 @@
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
     "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "hfsleuth": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "hma-vpn": {
@@ -1010,19 +1076,19 @@
   "id3-editor": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "ideamaker": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "ifunbox": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "ijhttp": {
@@ -1036,6 +1102,12 @@
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-10-13"
+  },
+  "inloop-qlplayground": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "inso": {
     "status": "no_icon",
@@ -1054,6 +1126,12 @@
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "ipynb-quicklook": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "iridium": {
     "status": "failed",
