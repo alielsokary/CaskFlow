@@ -1853,9 +1853,81 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "qladdict": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlcolorcode": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlcommonmark": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "qldds": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlfits": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlgradle": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlmobi": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlnetcdf": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlplayground": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlprettypatch": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlstephen": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlswift": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "qlzipinfo": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
     "attempts": 0,
     "updated": "2026-11-01"
   },

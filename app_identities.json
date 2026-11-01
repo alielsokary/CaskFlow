@@ -47747,6 +47747,177 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "pynsource": {
+      "caskVersion": "1.84",
+      "sourceURL": "https://github.com/abulka/pynsource/releases/download/version-1.84/pynsource-macos-version-1.84.zip",
+      "artifactSHA256": "6c979c404c388bd712c3507d1f9494a11586106179deaba5a2ea83207716a112",
+      "apps": [
+        {
+          "bundleName": "Pynsource.app",
+          "bundleIdentifier": "Pynsource"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qownnotes": {
+      "caskVersion": "26.9.0",
+      "sourceURL": "https://github.com/pbek/QOwnNotes/releases/download/v26.9.0/QOwnNotes.dmg",
+      "artifactSHA256": "2fe30b0aa2ddd7652204ad265f79e370b1cb7d9bd93e0c66b41e41b391ecb967",
+      "apps": [
+        {
+          "bundleName": "QOwnNotes.app",
+          "bundleIdentifier": "com.PBE.QOwnNotes"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qtspim": {
+      "caskVersion": "9.1.24",
+      "sourceURL": "https://downloads.sourceforge.net/spimsimulator/QtSpim_9.1.24_mac.mpkg.zip",
+      "artifactSHA256": "3842fa065851d4493e139dae500f37dd5dd33f267c69115ec75e68411985ace1",
+      "apps": [
+        {
+          "bundleName": "QtSpim.app",
+          "bundleIdentifier": "com.larus.qtspim",
+          "packageIdentifier": "org.larusstone.pkg.QtSpim",
+          "installedPath": "/Applications/QtSpim.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qmoji": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://github.com/jaredly/qmoji/releases/download/1.3.1/qmoji.zip",
+      "artifactSHA256": "dbe2d6de7bbbba3160434d8638fdccb2cfa192ecd7cbb4e5d573df74e9f740c5",
+      "apps": [
+        {
+          "bundleName": "qmoji.app",
+          "bundleIdentifier": "com.example.www"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quassel": {
+      "caskVersion": "0.14.0",
+      "sourceURL": "https://github.com/quassel/quassel/releases/download/0.14.0/QuasselMono-MacOS-0.14.0.dmg",
+      "artifactSHA256": "cb8b195cd9961c8af26a9df7f5411aa1f23324d1ee717f7c4df8abc2b70021a2",
+      "apps": [
+        {
+          "bundleName": "Quassel.app",
+          "bundleIdentifier": "org.quassel-irc.client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quassel-client": {
+      "caskVersion": "0.14.0",
+      "sourceURL": "https://github.com/quassel/quassel/releases/download/0.14.0/QuasselClient-macOS-0.14.0.dmg",
+      "artifactSHA256": "73b1b65f0e75c88d1dd23aa91c1916a6a3c231472a042eca0907689ab0981b60",
+      "apps": [
+        {
+          "bundleName": "Quassel Client.app",
+          "bundleIdentifier": "org.quassel-irc.client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quail": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/1000ch/quail/releases/download/v3.0.0/Quail-3.0.0-arm64.dmg",
+      "artifactSHA256": "270fca5c4381775b6bfe75c7b9b0abb3492166745f0805d0dae3862776500ea2",
+      "apps": [
+        {
+          "bundleName": "Quail.app",
+          "bundleIdentifier": "net.1000ch.quail"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pusher": {
+      "caskVersion": "0.7.5",
+      "sourceURL": "https://github.com/noodlewerk/NWPusher/releases/download/0.7.5/pusher.app.zip",
+      "artifactSHA256": "b329a5106b6670bf50da4b91ba34d82102edb70074828cf4d0cd879b1a5e2180",
+      "apps": [
+        {
+          "bundleName": "Pusher.app",
+          "bundleIdentifier": "com.noodlewerk.Pusher"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pyfa": {
+      "caskVersion": "2.68.0",
+      "sourceURL": "https://github.com/pyfa-org/Pyfa/releases/download/v2.68.0/pyfa-v2.68.0-mac.zip",
+      "artifactSHA256": "12b5cea9fac84e05c4e6329399a650e6c78e9cced8b79eb73669e0805143ab77",
+      "apps": [
+        {
+          "bundleName": "pyfa.app",
+          "bundleIdentifier": "org.pyfaorg.pyfa"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qtpass": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/IJHack/qtpass/releases/download/v1.7.0/qtpass-1.7.0.dmg",
+      "artifactSHA256": "4aa8e1ac84c8d6434fcacc68df3549a569e2b969c7b19c1f645038aefcb9c852",
+      "apps": [
+        {
+          "bundleName": "QtPass.app",
+          "bundleIdentifier": "org.qtpass"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qdslrdashboard": {
+      "caskVersion": "3.6.12",
+      "sourceURL": "https://files.lrtimelapse.com/dslrdashboard/V3.6.12/qDslrDashboard_V3.6.12_macOS_x64.dmg",
+      "artifactSHA256": "dc009a297d640f548d73beac6f40c6a1b2d5d043750748e2faca74c1f716c236",
+      "apps": [
+        {
+          "bundleName": "qDslrDashboard.app",
+          "bundleIdentifier": "info.dslrdashboard.qDslrDashboard"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quaternion": {
+      "caskVersion": "0.0.97.1",
+      "sourceURL": "https://github.com/quotient-im/Quaternion/releases/download/0.0.97.1/quaternion-0.0.97.1.dmg",
+      "artifactSHA256": "17b695d7f3c6e2850638d2789497b9d193919ca10e11cbe381839016c933d940",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "quaternion.app",
+          "reason": "unsupported CFBundleIdentifier: 'io.github.quotient_im.Quaternion'"
+        }
+      ]
+    },
+    "psi-plus": {
+      "caskVersion": "1.5.1639",
+      "sourceURL": "https://downloads.sourceforge.net/psiplus/Psi+-1.5.1639-macOS10.15-x86_64.dmg",
+      "artifactSHA256": "e73774fe112f08c28b61c917a7f01e40195bf8f8c9720487cb9abfbf9e84eb38",
+      "apps": [
+        {
+          "bundleName": "Psi+.app",
+          "bundleIdentifier": "com.psi-plus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
