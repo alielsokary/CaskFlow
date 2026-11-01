@@ -1193,6 +1193,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "maelstrom": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "mailtrackerblocker": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1385,10 +1391,28 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "obs-advanced-scene-switcher": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "obs-backgroundremoval": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "olympus": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "opencore-configurator": {
+    "status": "failed",
+    "reason": "download failed: curl: (18) Transferred a partial file",
+    "attempts": 1,
     "updated": "2026-11-01"
   },
   "openforis-collect": {

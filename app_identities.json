@@ -46654,6 +46654,461 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "openlp": {
+      "caskVersion": "3.1.7",
+      "sourceURL": "https://get.openlp.org/3.1.7/OpenLP-3.1.7-arm64.dmg",
+      "artifactSHA256": "6630b1d7e347c404bee5599fec636e795171f39c7541df0126af7d5d555976f4",
+      "apps": [
+        {
+          "bundleName": "OpenLP.app",
+          "bundleIdentifier": "org.openlp.OpenLP"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "noxappplayer": {
+      "caskVersion": "3.8.5.7,20211216,23d583db237f4401b01bd0f549acfda1",
+      "sourceURL": "https://res06.bignox.com/full/20211216/23d583db237f4401b01bd0f549acfda1.dmg?filename=NoxInstaller_3.8.5.7_en.dmg",
+      "artifactSHA256": "733ec0b6b53114f60f178195fcd91fe24e3ea2304ab4e16d62f0c0d3f28029c7",
+      "apps": [
+        {
+          "bundleName": "NoxAppPlayer.app",
+          "bundleIdentifier": "com.nox.NoxAppPlayer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opendnsupdater": {
+      "caskVersion": "3.1",
+      "sourceURL": "https://www.opendns.com/download/mac/",
+      "artifactSHA256": "3e5def08fd366a0d4d651a8bd7cf0a1274f8dd67f8c7a55842b3c4126492a15b",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "OpenDNSUpdater.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.opendns.OpenDNS_Updater'"
+        }
+      ]
+    },
+    "nwjs": {
+      "caskVersion": "0.115.0",
+      "sourceURL": "https://dl.nwjs.io/v0.115.0/nwjs-sdk-v0.115.0-osx-arm64.zip",
+      "artifactSHA256": "d601cb05998c2ff69c0400d38af58dc7ba068c536f8e744aa3347e8b66a61483",
+      "apps": [
+        {
+          "bundleName": "nwjs.app",
+          "bundleIdentifier": "io.nwjs.nwjs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lyx": {
+      "caskVersion": "2.5.2,6",
+      "sourceURL": "https://ftp.lip6.fr/pub/lyx/bin/2.5.2/LyX-2.5.2+qt6-x86_64-arm64-cocoa.dmg",
+      "artifactSHA256": "329a4f45a04f2585eac7b44722f068fe24722481dcc8521dc284c02161fb2855",
+      "apps": [
+        {
+          "bundleName": "LyX.app",
+          "bundleIdentifier": "org.lyx.lyx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "notion-enhanced": {
+      "caskVersion": "2.0.18-1",
+      "sourceURL": "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1.dmg",
+      "artifactSHA256": "e54a37053ed52a42ecbb4ed22a0ce50498ecc1efb3bff5b134099a56a8569309",
+      "apps": [
+        {
+          "bundleName": "Notion Enhanced.app",
+          "bundleIdentifier": "com.github.notion-repackaged"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "novation-play": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://play.novationmusic.com/Play_1_0_0.dmg",
+      "artifactSHA256": "5d664d6fbf59c4f7f54cbb438bec9b92b15b1d9df1f66a9074b3714bf931d9c4",
+      "apps": [
+        {
+          "bundleName": "Novation Play.app",
+          "bundleIdentifier": "com.Novation.Play",
+          "packageIdentifier": "com.novation.pkg.play.app",
+          "installedPath": "/Applications/Novation Play.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "AAX.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "AU.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Alien_Ascent.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Bassic_Stab.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Belonging_Keys.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Blunt_Force.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Bright_Keys.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Cassette_Brass.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Cassette_Flute.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Cassette_Strings.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Coiled_Horn.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Digital_Descent.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Digital_Grind.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Digital_Punch.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Dusty_Organ.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Electro_Stab.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Event_Horizon.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Formant_Crush.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Formant_Flick.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Fuzzy_Keys.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Heavy_Rider.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Heavy_Wander.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Lofi_Sizzle.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Neon_Brass.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Regal_Horns.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Resources.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Rich_Brass.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "SciFi_Station.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Silver_Strings.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Square_Meditation.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Static_Signal.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Steel_Diffusion.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Techno_Stab.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "UKG_Classic.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Unstable_Brass.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Unstable_Whine.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "VST.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "VST3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "nrlquaker-winbox": {
+      "caskVersion": "3.42.0",
+      "sourceURL": "https://github.com/nrlquaker/winbox-mac/releases/download/v3.42.0/Winbox-mac-3.42.0.zip",
+      "artifactSHA256": "8cdeca333cef22c677ac288959faca1d7ef143a663998aa2044813538a46c2c1",
+      "apps": [
+        {
+          "bundleName": "Winbox-mac.app",
+          "bundleIdentifier": "com.mikrotik.winbox"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openmw": {
+      "caskVersion": "0.51.0",
+      "sourceURL": "https://github.com/OpenMW/openmw/releases/download/openmw-0.51.0/OpenMW-0.51.0-macOS-arm64.dmg",
+      "artifactSHA256": "76bc0436413ed500dcd846a2cc3889711af948645bdd4eafd36ad16bc0c5615c",
+      "apps": [
+        {
+          "bundleName": "OpenMW.app",
+          "bundleIdentifier": "org.openmw.openmw"
+        },
+        {
+          "bundleName": "OpenMW-CS.app",
+          "bundleIdentifier": "org.openmw.opencs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nulloy": {
+      "caskVersion": "0.9.9",
+      "sourceURL": "https://github.com/nulloy/nulloy/releases/download/0.9.9/Nulloy-0.9.9-x86_64.dmg",
+      "artifactSHA256": "44f9c74fe1ea924db3aeb2f7e087e0391a2fd96ea871bb9c9f9fea529f10c3db",
+      "apps": [
+        {
+          "bundleName": "Nulloy.app",
+          "bundleIdentifier": "com.nulloy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nuage": {
+      "caskVersion": "0.0.10",
+      "sourceURL": "https://github.com/lbrndnr/nuage-macos/releases/download/v0.0.10/Nuage.app.zip",
+      "artifactSHA256": "ce7229d464f9fb5a1f5bab6b4d67495f8e77692be95c3d7813168faf3c9d1626",
+      "apps": [
+        {
+          "bundleName": "Nuage.app",
+          "bundleIdentifier": "ch.laurinbrandner.nuage"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openbci": {
+      "caskVersion": "6.0.0,beta.1",
+      "sourceURL": "https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v6.0.0-beta.1/openbcigui_v6.0.0-beta.1_macosx.dmg",
+      "artifactSHA256": "4170c88adef9c5aba80e7b43155716729b871db0058f8f22374f828b2a7ddfde",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "OpenBCI_GUI.app",
+          "reason": "unsupported CFBundleIdentifier: 'OpenBCI_GUI'"
+        }
+      ]
+    },
+    "obs-advanced-scene-switcher": {
+      "caskVersion": "1.36.1",
+      "sourceURL": "https://github.com/WarmUpTill/SceneSwitcher/releases/download/1.36.1/advanced-scene-switcher-1.36.1-macos-universal.pkg",
+      "artifactSHA256": "861897f67c39ef32571a96e0e3c6545e0f076820512b6994665180a7a6d51b52",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ]
+    },
+    "openboardview": {
+      "caskVersion": "10.0.0",
+      "sourceURL": "https://github.com/OpenBoardView/OpenBoardView/releases/download/10.0.0/OpenBoardView-10.0.0-Darwin.dmg",
+      "artifactSHA256": "236730f93853383e3df8dc451752ae33dbf39d31467f4a696137e8b78f473e7b",
+      "apps": [
+        {
+          "bundleName": "openboardview.app",
+          "bundleIdentifier": "org.openboardview.openboardview"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "objektiv": {
+      "caskVersion": "0.6.3",
+      "sourceURL": "https://github.com/nthloop/Objektiv/releases/download/v0.6.3/Objektiv.zip",
+      "artifactSHA256": "93f4f31712144c3225a45e69dc251a5db727b299dc7511f4f38004936c396d7a",
+      "apps": [
+        {
+          "bundleName": "Objektiv.app",
+          "bundleIdentifier": "com.nthloop.Objektiv"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openmsx-emulator": {
+      "caskVersion": "21.0",
+      "sourceURL": "https://github.com/openMSX/openMSX/releases/download/RELEASE_21_0/openmsx-21.0-mac-aarch64-bin.dmg",
+      "artifactSHA256": "f211e299ff039658dd8e943b775bb6b5e111a064caa78420e9d2345f2d116e51",
+      "apps": [
+        {
+          "bundleName": "openMSX.app",
+          "bundleIdentifier": "org.openmsx.openmsx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openkey": {
+      "caskVersion": "2.0.5",
+      "sourceURL": "https://github.com/tuyenvm/OpenKey/releases/download/2.0.5/OpenKey2.0.5.dmg",
+      "artifactSHA256": "0551e0b73f2aff1c75098124f348ea871b8a7233f8c407875ceb69d7b8f84b1c",
+      "apps": [
+        {
+          "bundleName": "OpenKey.app",
+          "bundleIdentifier": "com.tuyenmai.openkey"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "modelio": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://downloads.sourceforge.net/modeliouml/modelio-open-source-4.1.0-macosx.cocoa.x86_64.tar.gz",
+      "artifactSHA256": "9d588c06a00247153bcb3089c8e7d76682231f7e2750e392e345d0ca0dbb813d",
+      "apps": [
+        {
+          "bundleName": "Modelio 4.1.app",
+          "bundleIdentifier": "org.modelio.product"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openemu": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://github.com/OpenEmu/OpenEmu/releases/download/v2.4.1/OpenEmu_2.4.1.zip",
+      "artifactSHA256": "521ca1305c012d38f6f907f50399fefbf4e45a9bb8d9d4063157ffca78b217d4",
+      "apps": [
+        {
+          "bundleName": "OpenEmu.app",
+          "bundleIdentifier": "org.openemu.OpenEmu"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "olive": {
+      "caskVersion": "0.1.0,1e3cf53",
+      "sourceURL": "https://github.com/olive-editor/olive/releases/download/0.1.0/Olive-1e3cf53-macOS.zip",
+      "artifactSHA256": "9ab6afc7ee9d7fb5083d1a49adea7dc5934bdbf6d635454cae4f8667fbd7c368",
+      "apps": [
+        {
+          "bundleName": "Olive.app",
+          "bundleIdentifier": "com.yourcompany.Olive"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nuclear": {
+      "caskVersion": "1.47.1",
+      "sourceURL": "https://github.com/nukeop/nuclear/releases/download/player%401.47.1/Nuclear_1.47.1_aarch64.dmg",
+      "artifactSHA256": "a775aa5ab00c6b9d38bbb85280808eb2ace62510e7ed419f1b14f7fecf88ec2e",
+      "apps": [
+        {
+          "bundleName": "Nuclear.app",
+          "bundleIdentifier": "com.nuclearplayer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openoffice": {
+      "caskVersion": "4.1.16",
+      "sourceURL": "https://downloads.sourceforge.net/openofficeorg.mirror/Apache_OpenOffice_4.1.16_MacOS_x86-64_install_en-US.dmg",
+      "artifactSHA256": "01a1fa4193dd846ef72a29e33578eac406655a213dd8262363434cd6d5b901fa",
+      "apps": [
+        {
+          "bundleName": "OpenOffice.app",
+          "bundleIdentifier": "org.openoffice.script"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
