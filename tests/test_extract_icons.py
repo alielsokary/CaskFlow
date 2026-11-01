@@ -486,6 +486,20 @@ def test_build_batch_retry_parked_selects_failed_parked_only():
     assert [c["token"] for c in batch] == ["a"]
 
 
+def test_build_batch_skips_tokens_gone_from_the_api(capsys):
+    from extract_icons import _build_batch
+    by_token = {"a": {"token": "a"}, "b": {"token": "b"}}
+    batch = _build_batch(["a", "gone", "b"], by_token, [], {}, 50)
+    assert [c["token"] for c in batch] == ["a", "b"]
+    assert "warning: skipping tokens not in the Homebrew API: ['gone']" in capsys.readouterr().out
+
+
+def test_build_batch_with_only_unknown_tokens_still_fails():
+    from extract_icons import _build_batch
+    with pytest.raises(SystemExit, match="unknown tokens"):
+        _build_batch(["typo"], {"a": {"token": "a"}}, [], {}, 50)
+
+
 def test_main_retry_parked_all_fail_stays_green(monkeypatch, tmp_path):
     # All-fail is the expected outcome of a speculative monthly retry -
     # only the daily cron's all-fail flags the run red.
