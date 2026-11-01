@@ -44309,6 +44309,279 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "forkgram": {
+      "caskVersion": "7.1.3",
+      "sourceURL": "https://github.com/Forkgram/tdesktop/releases/download/v7.1.3/Forkgram.macOS.no.auto-update_arm64.zip",
+      "artifactSHA256": "17426a3b813c37941f69c0d29c901237848acfe033d92846f06be968f97d00bb",
+      "apps": [
+        {
+          "bundleName": "Forkgram.app",
+          "bundleIdentifier": "com.tdesktop.Telegram"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fpc-laz": {
+      "caskVersion": "3.2.2,4.4",
+      "sourceURL": "https://downloads.sourceforge.net/lazarus/Lazarus%20macOS%20x86-64/Lazarus%204.4/fpc-3.2.2.intelarm64-macosx.dmg",
+      "artifactSHA256": "05d4510c8c887e3c68de20272abf62171aa5b2ef1eba6bce25e4c0bc41ba8b7d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "gcollazo-mongodb": {
+      "caskVersion": "8.0.5-build.1",
+      "sourceURL": "https://github.com/gcollazo/mongodbapp/releases/download/8.0.5-build.1/MongoDB.zip",
+      "artifactSHA256": "bc545179d510b4fc80ac9866d34228faa7153137eea8f5ebcac957abf9d3ef89",
+      "apps": [
+        {
+          "bundleName": "MongoDB.app",
+          "bundleIdentifier": "io.blimp.MongoDB"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fx-cast-bridge": {
+      "caskVersion": "0.3.0",
+      "sourceURL": "https://github.com/hensm/fx_cast/releases/download/v0.3.0/fx_cast_bridge-0.3.0-arm64.pkg",
+      "artifactSHA256": "2e8dd783be80c21b5b25615284046df7ea7322dba80e96f09c93a329f3f6b6fb",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "fx_cast_bridge_component.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "foldingtext": {
+      "caskVersion": "2.2",
+      "sourceURL": "https://foldingtext.s3.amazonaws.com/FoldingText.dmg",
+      "artifactSHA256": "59bd73b1c72c228c1c9e95c441b9e5422eb6f32481d609acb5716131ccab55ec",
+      "apps": [
+        {
+          "bundleName": "FoldingText.app",
+          "bundleIdentifier": "com.foldingtext.paddle.FoldingText"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gdisk": {
+      "caskVersion": "1.0.10",
+      "sourceURL": "https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg",
+      "artifactSHA256": "38f0d2947803912cf0861f7a07ed2ae76979c88de5c20d6b10d6f9e7fe72b07d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "freeorion": {
+      "caskVersion": "0.5.1.2",
+      "sourceURL": "https://github.com/freeorion/freeorion/releases/download/v0.5.1.2/FreeOrion_v0.5.1.2_MacOSX_10.15_arm64.dmg",
+      "artifactSHA256": "1ff2aa3c1c3f2c80b65f3cd4f4f79608e48fb7d6db08431d8d8e4da17da4e6c7",
+      "apps": [
+        {
+          "bundleName": "FreeOrion.app",
+          "bundleIdentifier": "org.freeorion.FreeOrion"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fpc-src-laz": {
+      "caskVersion": "3.2.2-20210709,3.6",
+      "sourceURL": "https://downloads.sourceforge.net/lazarus/Lazarus%20macOS%20x86-64/Lazarus%203.6/fpc-src-3.2.2-20210709-macosx.dmg",
+      "artifactSHA256": "c0ed6b9261679ba040cdf07f4f5d13d915184a4164b1addf5a81e19b0738e87a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "fpcsrc-3.2.2-20210709.pkg",
+          "reason": "declared package matched 0 files"
+        }
+      ]
+    },
+    "gdlauncher": {
+      "caskVersion": "1.1.30",
+      "sourceURL": "https://github.com/gorilla-devs/GDLauncher/releases/download/v1.1.30/GDLauncher-mac-setup.dmg",
+      "artifactSHA256": "d98a89f76047cef4ca7bdd99fe464f09fbe95c3ae916123ae4179dd8368514b9",
+      "apps": [
+        {
+          "bundleName": "GDLauncher.app",
+          "bundleIdentifier": "org.gorilladevs.GDLauncher"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gdat": {
+      "caskVersion": "2026r02,1rGnfTHdr7cuhSDDoN_oTqSYqqDzw3kkQ",
+      "sourceURL": "https://drive.google.com/uc?export=download&id=1rGnfTHdr7cuhSDDoN_oTqSYqqDzw3kkQ",
+      "artifactSHA256": "d2b25eacedf86808795643be3c807c5911623990ef95e982d3545f23189d4359",
+      "apps": [
+        {
+          "bundleName": "Genealogical DNA Analysis Tool.app",
+          "bundleIdentifier": "BeckinsLLC.GMP64"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gas-mask": {
+      "caskVersion": "0.8.6",
+      "sourceURL": "https://github.com/2ndalpha/gasmask/releases/download/0.8.6/gas_mask_0.8.6.zip",
+      "artifactSHA256": "9f75d0b11340d70832f87011c3d8ed97b9b18b3a56dec5f860d4040bb7404500",
+      "apps": [
+        {
+          "bundleName": "Gas Mask.app",
+          "bundleIdentifier": "ee.clockwise.gmask"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "freecol": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://downloads.sourceforge.net/freecol/FreeCol-1.2.0.dmg",
+      "artifactSHA256": "3bf9b810ef9288440620090869b0778c52d91c234f92d728d3c8b138e38676ac",
+      "apps": [
+        {
+          "bundleName": "FreeCol.app",
+          "bundleIdentifier": "org.freecol.FreeCol"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fleet": {
+      "caskVersion": "1.48.261",
+      "sourceURL": "https://download.jetbrains.com/fleet/installers/macos_aarch64/Fleet-1.48.261-aarch64.dmg",
+      "artifactSHA256": "09e0d68820830e3ef43161f1d3d39a5ff3075ae90b0bfaa48b9b33a6bcf5d4ae",
+      "apps": [
+        {
+          "bundleName": "Fleet.app",
+          "bundleIdentifier": "com.jetbrains.fleet"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "futurerestore-gui": {
+      "caskVersion": "1.98.3",
+      "sourceURL": "https://github.com/CoocooFroggy/FutureRestore-GUI/releases/download/v1.98.3/FutureRestore-GUI-Mac-1.98.3.dmg",
+      "artifactSHA256": "44d37f7d74393018b71c641dd98e229e78eb95915b4733aa586723856235c04f",
+      "apps": [
+        {
+          "bundleName": "FutureRestore GUI.app",
+          "bundleIdentifier": "com.coocoofroggy.futurerestoregui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gisto": {
+      "caskVersion": "2.15.0",
+      "sourceURL": "https://github.com/Gisto/Gisto/releases/download/v2.15.0/Gisto_2.15.0_aarch64.dmg",
+      "artifactSHA256": "4d4a7749a0171e20a5ec5666edd80364755e18dc41636c2a3ba0edbd065dc4c2",
+      "apps": [
+        {
+          "bundleName": "Gisto.app",
+          "bundleIdentifier": "com.gisto2.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fightcade": {
+      "caskVersion": "2.1.45",
+      "sourceURL": "https://web.fightcade.com/download/Fightcade-osx-v2.1.45.tar.gz",
+      "artifactSHA256": "926e18895d19ea74c47facbdd1463987700590e73839f5385f8c03dd68066046",
+      "apps": [
+        {
+          "bundleName": "Fightcade2.app",
+          "bundleIdentifier": "com.fightcade2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fvim": {
+      "caskVersion": "0.3.549,ee4316c",
+      "sourceURL": "https://github.com/yatli/fvim/releases/download/v0.3.549%2Bee4316c/fvim-osx-x64-v0.3.548+g2e4087d-2-gee4316c.zip",
+      "artifactSHA256": "2e08052e16100189448f938f0f87dbd0cd6e81c20fcccb11ac70bc39df5bc412",
+      "apps": [
+        {
+          "bundleName": "FVim.app",
+          "bundleIdentifier": "com.fvim.www"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "flycast": {
+      "caskVersion": "2.7",
+      "sourceURL": "https://github.com/flyinghead/flycast/releases/download/v2.7/flycast-macOS-2.7.zip",
+      "artifactSHA256": "dbd59cb88f52a95ea4de90693bb4ac156530452d5457f2cc4f656fdfd242fc26",
+      "apps": [
+        {
+          "bundleName": "Flycast.app",
+          "bundleIdentifier": "com.flyinghead.Flycast"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "get-lyrical": {
+      "caskVersion": "3.8",
+      "sourceURL": "https://shullian.com/files/getlyrical.zip",
+      "artifactSHA256": "e79e258a7db51781d0986d66f6a0c900bb1f8c1f4e0ee5bcf26d071d2d478617",
+      "apps": [
+        {
+          "bundleName": "Get Lyrical.app",
+          "bundleIdentifier": "com.shullian.getlyrical"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "freetube": {
+      "caskVersion": "0.25.3",
+      "sourceURL": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-arm64.dmg",
+      "artifactSHA256": "2b445d64f5e56a873debea50c785cd41400bdabc387f0d67fc7be745b2b9146e",
+      "apps": [
+        {
+          "bundleName": "FreeTube.app",
+          "bundleIdentifier": "io.freetubeapp.freetube"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fontforge-app": {
+      "caskVersion": "2025-10-09",
+      "sourceURL": "https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-MacOS.app.dmg",
+      "artifactSHA256": "ba9f883389188d822a36cd447e9a9940a2bf4c4254f49f9fa3aa622a69b73110",
+      "apps": [
+        {
+          "bundleName": "FontForge.app",
+          "bundleIdentifier": "net.sourceforge.fontforge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
