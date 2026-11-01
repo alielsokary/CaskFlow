@@ -47918,6 +47918,215 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "radarr": {
+      "caskVersion": "6.3.0.10514",
+      "sourceURL": "https://github.com/Radarr/Radarr/releases/download/v6.3.0.10514/Radarr.master.6.3.0.10514.osx-app-core-arm64.zip",
+      "artifactSHA256": "ed6867765d2f2e4c2078ff4ff09e78e095fe099ec819c53a9b3ab7337ee7535b",
+      "apps": [
+        {
+          "bundleName": "Radarr.app",
+          "bundleIdentifier": "com.osx.radarr.video"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "rave": {
+      "caskVersion": "1.18.22",
+      "sourceURL": "https://static.rave-web.com/rave-desktop/mac/x64/Rave-1.18.22.dmg",
+      "artifactSHA256": "a671f6ead8415c7c3ca8bfbc2cc1bba0ea34878e316ff6960cba24d7123e26b4",
+      "apps": [
+        {
+          "bundleName": "Rave.app",
+          "bundleIdentifier": "io.rave.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quodlibet": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/quodlibet/quodlibet/releases/download/release-4.4.0/QuodLibet-4.4.0.dmg",
+      "artifactSHA256": "e06e1026e57699b6533fa0787da404c3dfdd3056eefcfcfce7a4a5be7f67b081",
+      "apps": [
+        {
+          "bundleName": "QuodLibet.app",
+          "bundleIdentifier": "io.github.quodlibet.QuodLibet"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "redis-pro": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://github.com/cmushroom/redis-pro/releases/download/3.1.0/redis-pro.dmg",
+      "artifactSHA256": "d7e408a5a7f409bd47e841cb2e48670820a19029f73737ec60a86eb75dda28f6",
+      "apps": [
+        {
+          "bundleName": "redis-pro.app",
+          "bundleIdentifier": "com.cmushroom.redis-pro"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "react-studio": {
+      "caskVersion": "1814,426",
+      "sourceURL": "https://s3.amazonaws.com/sc.neonto.com/ReactStudio_v1814_build426.zip",
+      "artifactSHA256": "88e4874ca5f14a6fb442b0aeb371e48d5c8e1ced24099cf5c021771482a44423",
+      "apps": [
+        {
+          "bundleName": "React Studio.app",
+          "bundleIdentifier": "com.neonto.ReactStudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qview": {
+      "caskVersion": "7.1",
+      "sourceURL": "https://github.com/jurplel/qView/releases/download/7.1/qView-7.1.dmg",
+      "artifactSHA256": "fa34d0e54601b8557f4e879527b9bb1e728ace5c7c1c69cf126700ca4d0b5817",
+      "apps": [
+        {
+          "bundleName": "qView.app",
+          "bundleIdentifier": "com.interversehq.qView"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "react-proto": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/React-Proto/react-proto/releases/download/v1.0.0/React-Proto-1.0.0.dmg",
+      "artifactSHA256": "2b2f451865fbb2d03e00109c8f452774e881117c2d21d2d1ad543c9ab55df213",
+      "apps": [
+        {
+          "bundleName": "React-Proto.app",
+          "bundleIdentifier": "com.eevee.react-proto"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "redream": {
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://redream.io/download/redream.x86_64-mac-v1.5.0.tar.gz",
+      "artifactSHA256": "e5253527a3705b4c99234ddf8ece59d19dfadb416822ad714f7009b82afc097b",
+      "apps": [
+        {
+          "bundleName": "redream.app",
+          "bundleIdentifier": "io.recompiled.redream"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qutebrowser": {
+      "caskVersion": "3.7.0",
+      "sourceURL": "https://github.com/qutebrowser/qutebrowser/releases/download/v3.7.0/qutebrowser-3.7.0-arm64.dmg",
+      "artifactSHA256": "98170241bf12a2fe1deabffc8120b70dc8e00e555bb712c38751c448f04954a3",
+      "apps": [
+        {
+          "bundleName": "qutebrowser.app",
+          "bundleIdentifier": "org.qutebrowser.qutebrowser"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qxmledit": {
+      "caskVersion": "0.9.18",
+      "sourceURL": "https://downloads.sourceforge.net/qxmledit/QXmlEdit-0.9.18.dmg",
+      "artifactSHA256": "9f189fbd0cf72ec7c94fad3d3f3850dc7d898cff5a088353cfd54877cf9f2bb9",
+      "apps": [
+        {
+          "bundleName": "QXmlEdit.app",
+          "bundleIdentifier": "qxmledit.QXmlEdit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "retroactive": {
+      "caskVersion": "3.0",
+      "sourceURL": "https://github.com/cormiertyshawn895/Retroactive/releases/download/3.0/Retroactive.3.0.zip",
+      "artifactSHA256": "7883c7d1be0ef7a82885e52119afa2bb1d34a0c9352c806da9a253a0b5e5bafb",
+      "apps": [
+        {
+          "bundleName": "Retroactive.app",
+          "bundleIdentifier": "com.retroactive.Retroactive"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "redquits": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://redquits.s3.amazonaws.com/RedQuits_v2.pkg",
+      "artifactSHA256": "9a81e75338d3eb009afd20d0a8e909c7075ef1cd891674470d3c40f30a15bf1f",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "RedQuits.app",
+          "bundleIdentifier": "com.carsten-mielke.RedQuits",
+          "packageIdentifier": "com.carsten-mielke.RedQuits",
+          "installedPath": "/Applications/RedQuits.app"
+        }
+      ]
+    },
+    "pencil": {
+      "caskVersion": "3.1.1",
+      "sourceURL": "https://pencil.evolus.vn/dl/V3.1.1.ga/Pencil-3.1.1.ga-universal.dmg",
+      "artifactSHA256": "ea72ea7a528e3bb744a1730b9eed4b24af87e649c7feb5906182ab81ef903af5",
+      "apps": [
+        {
+          "bundleName": "Pencil.app",
+          "bundleIdentifier": "vn.evolus.pencil"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "repoz": {
+      "caskVersion": "5.5",
+      "sourceURL": "https://github.com/awaescher/RepoZ/releases/download/v5.5/RepoZ.5.5.pkg",
+      "artifactSHA256": "16bb83cad7f6a889cce9b6a4fa733e055469c7c918f7809cf87dbaebf862384f",
+      "apps": [
+        {
+          "bundleName": "RepoZ.app",
+          "bundleIdentifier": "net.sodacore.repoz",
+          "packageIdentifier": "net.sodacore.RepoZ",
+          "installedPath": "/Applications/RepoZ.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "remotix-agent": {
+      "caskVersion": "1.5.19,23333",
+      "sourceURL": "https://downloads.remotix.com/agent-mac/RemotixAgent-1.5.19-23333.pkg",
+      "artifactSHA256": "87be3d61e5406cd55e3c8ff50567e255379b085d1eeca330899186f7ad96b117",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "remotix-agent",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
     }
   }
 }
