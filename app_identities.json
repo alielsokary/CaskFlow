@@ -49755,6 +49755,281 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "warsow": {
+      "caskVersion": "2.1.2",
+      "sourceURL": "https://warsow.net/warsow-2.1.2.dmg",
+      "artifactSHA256": "176b037186e4d8a1c0fc740fe8660cd960339fc4eeca5e5eaaec4028b9bd6aba",
+      "apps": [
+        {
+          "bundleName": "Warsow.app",
+          "bundleIdentifier": "org.picmip.Warsow"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vine-server": {
+      "caskVersion": "5.3.2",
+      "sourceURL": "https://github.com/stweil/OSXvnc/releases/download/V5.3.2/VineServer-5.3.2.dmg",
+      "artifactSHA256": "9cbea2f972b235029c9d68b15004e3d401668c3a24e86d60719eed26f2cc5a71",
+      "apps": [
+        {
+          "bundleName": "Vine Server.app",
+          "bundleIdentifier": "de.uni-mannheim.VineServer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "weakauras-companion": {
+      "caskVersion": "5.3.1",
+      "sourceURL": "https://github.com/WeakAuras/WeakAuras-Companion/releases/download/v5.3.1/WeakAuras-Companion-5.3.1-mac-universal.dmg",
+      "artifactSHA256": "bc430a4d29679c9e446dfe1c215596a307438cb66b885ce637b4c3b22b1fd990",
+      "apps": [
+        {
+          "bundleName": "WeakAuras Companion.app",
+          "bundleIdentifier": "wtf.weakauras.companion"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "whale": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://github.com/1000ch/whale/releases/download/v3.0.0/Whale-3.0.0-arm64.dmg",
+      "artifactSHA256": "80696c337b94274b5acd053d668dfc54d7fa608ee293470a3804e0ab285f8a5a",
+      "apps": [
+        {
+          "bundleName": "Whale.app",
+          "bundleIdentifier": "net.1000ch.whale"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "valley": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://assets.unigine.com/d/Unigine_Valley-1.0.dmg",
+      "artifactSHA256": "e575ab26f29144b05695de7c245fd02ae5db0f0d0f66d66ea8a630ab800665bc",
+      "apps": [
+        {
+          "bundleName": "Valley.app",
+          "bundleIdentifier": "com.Unigine.Valley"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vmpk": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://downloads.sourceforge.net/vmpk/0.9.1/vmpk-0.9.1-mac-x64.dmg",
+      "artifactSHA256": "887d3d0ad99c1ee98b8c37b4381aee1073734b245a6d14ad2e7f3632a15ec1e1",
+      "apps": [
+        {
+          "bundleName": "vmpk.app",
+          "bundleIdentifier": "net.sourceforge.vmpk"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vym": {
+      "caskVersion": "3.0.0",
+      "sourceURL": "https://downloads.sourceforge.net/vym/vym-3.0.0.dmg",
+      "artifactSHA256": "a255f90a7c1a264f09092bf608b8bd3f595c0673f6c57f1f9a083e0c4b196edb",
+      "apps": [
+        {
+          "bundleName": "vym.app",
+          "bundleIdentifier": "org.insilmaril.vym"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "weektodo": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/Zuntek/WeekToDoWeb/releases/download/v2.2.0/WeekToDo-2.2.0.dmg",
+      "artifactSHA256": "2b5c2c9ed1a16776fc7121d37f4ccaf40a82d94987906f5b2e75e428acda2167",
+      "apps": [
+        {
+          "bundleName": "WeekToDo.app",
+          "bundleIdentifier": "weektodo-app.netlify.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "watchfacestudio": {
+      "caskVersion": "1.9.9,07f425b5-e225-4018-baa2-a7c59b0e569f",
+      "sourceURL": "https://developer.samsung.com/watchfacestudio/file/07f425b5-e225-4018-baa2-a7c59b0e569f",
+      "artifactSHA256": "5fd876e9bd475ed2548e836c23b32125dd5b86f1498b24704fafddf0969b8338",
+      "apps": [
+        {
+          "bundleName": "WatchFaceStudio.app",
+          "bundleIdentifier": "WatchFaceStudio",
+          "packageIdentifier": "WatchFaceStudio",
+          "installedPath": "/Applications/WatchFaceStudio.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "warzone-2100": {
+      "caskVersion": "4.7.0",
+      "sourceURL": "https://github.com/Warzone2100/warzone2100/releases/download/4.7.0/warzone2100_macOS_universal.zip",
+      "artifactSHA256": "a7d8152bdcc3c1d26c6ced2debe93e7995bf6c2125142093d9ab2834ebdd8507",
+      "apps": [
+        {
+          "bundleName": "Warzone 2100.app",
+          "bundleIdentifier": "net.wz2100.Warzone2100"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "windterm": {
+      "caskVersion": "2.7.0",
+      "sourceURL": "https://github.com/kingToolbox/WindTerm/releases/download/2.7.0/WindTerm_2.7.0_Mac_Portable_x86_64.dmg",
+      "artifactSHA256": "8c1bc1363e01df5b06f45019da934752f5f29e8603cc843bd38e59bdff121bf7",
+      "apps": [
+        {
+          "bundleName": "WindTerm.app",
+          "bundleIdentifier": "KingToolbox.WindTerm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wannianli": {
+      "caskVersion": "2019-12-06",
+      "sourceURL": "https://github.com/zfdang/chinese-lunar-calendar-for-mac/releases/download/2019-12-06/WanNianLi.app-v20191206.zip",
+      "artifactSHA256": "702298f34ca2576a02388a4103fc0e09a4aae753df21ca2e012f6f87497db6e9",
+      "apps": [
+        {
+          "bundleName": "WanNianLi.app",
+          "bundleIdentifier": "com.zfdang.WanNianLi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wail": {
+      "caskVersion": "0.2025.03.03",
+      "sourceURL": "https://github.com/machawk1/wail/releases/download/v0.2025.03.03/WAIL_v0.2025.03.03_macOS.dmg",
+      "artifactSHA256": "db042c83e8617f9e288207fe12f10ccc8af31ac70e07d1d01953c0b95a5ca835",
+      "apps": [
+        {
+          "bundleName": "WAIL.app",
+          "bundleIdentifier": "com.matkelly.wail"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "webots": {
+      "caskVersion": "R2025a",
+      "sourceURL": "https://github.com/cyberbotics/webots/releases/download/R2025a/webots-R2025a.dmg",
+      "artifactSHA256": "484f6cc84ca794dd33e410b0bfc030132cc5b163a882c350c1d293d06d87584f",
+      "apps": [
+        {
+          "bundleName": "Webots.app",
+          "bundleIdentifier": "com.cyberbotics.webots"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "whoozle-android-file-transfer": {
+      "caskVersion": "4.5",
+      "sourceURL": "https://github.com/whoozle/android-file-transfer-linux/releases/download/v4.5/AndroidFileTransferForLinux.dmg",
+      "artifactSHA256": "05d55ec3015d514cbe9a673c2f6034ea376cb9ad5ab875f8fd4000335605b0b2",
+      "apps": [
+        {
+          "bundleName": "Android File Transfer for Linux.app",
+          "bundleIdentifier": "io.github.whoozle.android-file-transfer-linux"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vitals": {
+      "caskVersion": "0.9",
+      "sourceURL": "https://github.com/hmarr/vitals/releases/download/v0.9/vitals-v0.9.zip",
+      "artifactSHA256": "18206b666b7629bc56cf2154b001112a67cdf06222a03049ab0823d088180ed7",
+      "apps": [
+        {
+          "bundleName": "Vitals.app",
+          "bundleIdentifier": "com.hmarr.Vitals"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "welly": {
+      "caskVersion": "3.2.0",
+      "sourceURL": "https://github.com/clyang/welly/releases/download/3.2.0/Welly.v.3.2.0.zip",
+      "artifactSHA256": "504219867e8ceb625d51fc25c7d3e7488db1eca4877a8734aca5bb9494d5f695",
+      "apps": [
+        {
+          "bundleName": "Welly.app",
+          "bundleIdentifier": "org.net9.Welly"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vnote": {
+      "caskVersion": "4.5.0",
+      "sourceURL": "https://github.com/vnotex/vnote/releases/download/v4.5.0/VNote-4.5.0-mac-universal.dmg",
+      "artifactSHA256": "56cdc30ee70f79fe504e49cdd31b5975083072e3c8c446c6bc04735dfc973ca8",
+      "apps": [
+        {
+          "bundleName": "VNote.app",
+          "bundleIdentifier": "fun.vnote.vnote"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "volt-app": {
+      "caskVersion": "0.96",
+      "sourceURL": "https://github.com/voltapp/volt/releases/download/0.96/volt_macos_arm64.zip",
+      "artifactSHA256": "f7c0eb75c4a7e93abc3b8cc248e31db5cdb1871d0936162e183f9f3e684af8a4",
+      "apps": [
+        {
+          "bundleName": "Volt.app",
+          "bundleIdentifier": "Volt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vieb": {
+      "caskVersion": "12.10.0",
+      "sourceURL": "https://github.com/Jelmerro/Vieb/releases/download/12.10.0/Vieb-12.10.0-arm64-mac.zip",
+      "artifactSHA256": "f684b6722a1e709bc8ef4e0a2c843405c680b69dc316d5ca8c9df68066eba214",
+      "apps": [
+        {
+          "bundleName": "Vieb.app",
+          "bundleIdentifier": "com.github.Jelmerro.vieb"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wavesurfer": {
+      "caskVersion": "1.8.8p6.1",
+      "sourceURL": "https://downloads.sourceforge.net/wavesurfer/wavesurfer-1.8.8p6.1-macos.dmg",
+      "artifactSHA256": "ef1aacab25f37d595e87e5638cd9ef5b3b2af22a05c6aa06585795915a8ae6ea",
+      "apps": [
+        {
+          "bundleName": "WaveSurfer.app",
+          "bundleIdentifier": "se.kth.speech.wavesurfer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
