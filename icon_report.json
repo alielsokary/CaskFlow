@@ -2216,7 +2216,7 @@
   "spacesaver": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "spotify4bigsur": {
@@ -2258,7 +2258,7 @@
   "steam-plus-plus": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7ede8adeb8a6...)",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "steamcmd": {
@@ -2378,7 +2378,7 @@
   "techsmith-capture": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "temurin": {
@@ -2444,7 +2444,7 @@
   "unite-phone": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "unity-android-support-for-editor": {
@@ -2486,13 +2486,13 @@
   "unlox": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "v2ray-unofficial": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "vagrant": {
@@ -2540,7 +2540,7 @@
   "volta-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "voxql": {
