@@ -42416,6 +42416,354 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "atlauncher": {
+      "caskVersion": "3.4.41.2",
+      "sourceURL": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.41.2/ATLauncher-3.4.41.2.zip",
+      "artifactSHA256": "55600fe80d5033e0783ce4286fe85b760112a93ae0a70c5258715c71ca026755",
+      "apps": [
+        {
+          "bundleName": "ATLauncher.app",
+          "bundleIdentifier": "com.atlauncher.App"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "alloy": {
+      "caskVersion": "6.2.0",
+      "sourceURL": "https://github.com/AlloyTools/org.alloytools.alloy/releases/download/v6.2.0/alloy-6.2.0-mac-aarch64.zip",
+      "artifactSHA256": "d7ce578954e24f8faa81bd8ad4fb56dd146555a39740fed3ef8c9d34a7333f63",
+      "apps": [
+        {
+          "bundleName": "Alloy.app",
+          "bundleIdentifier": "org.alloytools.alloy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "airtrash": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/maciejczyzewski/airtrash/releases/download/1.0.0/airtrash-1.0.0.dmg",
+      "artifactSHA256": "9ce83fef421654b4ca39550255dd09e0b2281da5fe3dbd9e8e23e58640912606",
+      "apps": [
+        {
+          "bundleName": "Airtrash.app",
+          "bundleIdentifier": "maciejczyzewski.airtrash"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "arkiwi": {
+      "caskVersion": "4.1.5",
+      "sourceURL": "https://www.mariogt.com/appsChest/ArKiwi4-1-5.zip",
+      "artifactSHA256": "d73ec198377a785effe76d4c444875de27bbe00becb0311f70036155220ee590",
+      "apps": [
+        {
+          "bundleName": "ArKiwi.app",
+          "bundleIdentifier": "com.mariogt.arkiwi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "alpha": {
+      "caskVersion": "9.2.3",
+      "sourceURL": "https://downloads.sourceforge.net/alphacocoa/Alpha_9.2.3.dmg.zip",
+      "artifactSHA256": "f3445a2ecb23cf1f12811d6003890f091e04334cc92cb4f00140065359c7e91a",
+      "apps": [
+        {
+          "bundleName": "Alpha.app",
+          "bundleIdentifier": "net.sourceforge.alphacocoa"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wings3d": {
+      "caskVersion": "2.4.1",
+      "sourceURL": "https://downloads.sourceforge.net/wings/2.4.1/wings-2.4.1-macos-arm64.dmg",
+      "artifactSHA256": "95b301f81166c2fe2f90b4299045f57264731ec6f2ee8e24e3d31fa143430fd8",
+      "apps": [
+        {
+          "bundleName": "Wings3D.app",
+          "bundleIdentifier": "com.wings3d.wings3d"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "amd-power-gadget": {
+      "caskVersion": "0.7.2f1",
+      "sourceURL": "https://github.com/trulyspinach/SMCAMDProcessor/releases/download/0.7.2f1/AMD.Power.Gadget.app.zip",
+      "artifactSHA256": "bb7779aa295ab00c8609f438c80028c5f0ca9c63e13ab768bae21876793b0674",
+      "apps": [
+        {
+          "bundleName": "AMD Power Gadget.app",
+          "bundleIdentifier": "wtf.spinach.AMD-Power-Gadget"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "angband-app": {
+      "caskVersion": "4.2.6",
+      "sourceURL": "https://github.com/angband/angband/releases/download/4.2.6/Angband-4.2.6-osx.dmg",
+      "artifactSHA256": "f212c035b707db0d7e019030aff2cdbca5cc9108226567675e4ebe67c6412792",
+      "apps": [
+        {
+          "bundleName": "Angband.app",
+          "bundleIdentifier": "org.rephial.angband"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "appgrid": {
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/mjolnirapp/AppGrid/releases/download/1.0.4/AppGrid-1.0.4.zip",
+      "artifactSHA256": "e89280465b4a3dc580b026f25f2ade04ab1cd9b15a476e327110a1d91bd7da77",
+      "apps": [
+        {
+          "bundleName": "AppGrid.app",
+          "bundleIdentifier": "com.sdegutis.AppGrid"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "anydrag": {
+      "caskVersion": "26.10.121",
+      "sourceURL": "https://github.com/XueshiQiao/AnyDrag/releases/download/v26.10.121/AnyDrag.dmg",
+      "artifactSHA256": "eb807f012f815f843ae53ea9e4a8e755633c9bbd0db444ed75ac02b7492c1b90",
+      "apps": [
+        {
+          "bundleName": "AnyDrag.app",
+          "bundleIdentifier": "me.xueshi.anydrag"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aria-maestosa": {
+      "caskVersion": "1.4.13d",
+      "sourceURL": "https://downloads.sourceforge.net/ariamaestosa/AriaMaestosa-osx-64bits-1.4.13d.zip",
+      "artifactSHA256": "76d46509e0d7b64168158e724e8867ccf34f20b8ec2cdbbfc8c2073597fb9806",
+      "apps": [
+        {
+          "bundleName": "Aria Maestosa.app",
+          "bundleIdentifier": "org.AriaMaestosa"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "apple-juice": {
+      "caskVersion": "2020.12.0",
+      "sourceURL": "https://github.com/raphaelhanneken/apple-juice/releases/download/2020.12.0/Apple.Juice.dmg",
+      "artifactSHA256": "32aff8e2b2de61076fca1243091ab6e0166d38b4657afedcf01ae28133b69cae",
+      "apps": [
+        {
+          "bundleName": "Apple Juice.app",
+          "bundleIdentifier": "com.raphaelhanneken.applejuice"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ananas-analytics-desktop-edition": {
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://github.com/ananas-analytics/ananas-desktop/releases/download/v0.9.0/Ananas.Analytics.Desktop.Edition-0.9.0.macos.dmg",
+      "artifactSHA256": "cb4a73521d5f5ffb97405b3c7e041f73fd5044ab1ffe1ff6e967c0fb1555dec3",
+      "apps": [
+        {
+          "bundleName": "Ananas Analytics Desktop Edition.app",
+          "bundleIdentifier": "com.ananas.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "alex313031-thorium": {
+      "caskVersion": "M138.0.7204.303",
+      "sourceURL": "https://github.com/Alex313031/Thorium-MacOS/releases/download/M138.0.7204.303/Thorium_MacOS_ARM64.dmg",
+      "artifactSHA256": "01f77352f40445e5c39a838c6e48198a09b64c14b0ec423c83fd9b461e0d7069",
+      "apps": [
+        {
+          "bundleName": "Thorium Browser.app",
+          "bundleIdentifier": "org.chromium.Thorium"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "apptivate": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "http://www.apptivateapp.com/resources/Apptivate-2.2.1.app.zip",
+      "artifactSHA256": "06515419c235aab0a17961d5288233d6fee64f9f75905f5473f78e882b3c1cb2",
+      "apps": [
+        {
+          "bundleName": "Apptivate.app",
+          "bundleIdentifier": "se.cocoabeans.apptivate"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "amitv87-pip": {
+      "caskVersion": "3.01",
+      "sourceURL": "https://github.com/amitv87/PiP/releases/download/v3.01/PiP-3.01.dmg",
+      "artifactSHA256": "3317ddd35ae36b16f06d501c6b870aeb0565548cc07165c0bd1df23ac1af8d83",
+      "apps": [
+        {
+          "bundleName": "PiP.app",
+          "bundleIdentifier": "com.boggyb.PiP"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ankama": {
+      "caskVersion": "3.15.2",
+      "sourceURL": "https://launcher.cdn.ankama.com/installers/production/Ankama%20Launcher-Setup.dmg",
+      "artifactSHA256": "4f593c23312ad496c37394ecf8ba2d6e32fd6cfb3b459b7f868ee580aa9b837a",
+      "apps": [
+        {
+          "bundleName": "Ankama Launcher.app",
+          "bundleIdentifier": "com.ankama.zaap"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "asix-ax88179": {
+      "caskVersion": "2.5.0,1951",
+      "sourceURL": "https://www.asix.com.tw/en/support/download/file/1951",
+      "artifactSHA256": "616fc388b5a10462f9aa5b1780fb86bc7230a40431da4a287cffd5fbcacc47b0",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_1_requirement(false,true)",
+            "start_selected": "installer_choice_1_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "installer_choice_2_requirement(false,true)",
+            "start_selected": "installer_choice_2_requirement(false,false)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "ASIX_USB_Device_App.app",
+          "reason": "ambiguous installed bundle name"
+        },
+        {
+          "artifact": "ASIX_USB_Device_App.app",
+          "reason": "ambiguous installed bundle name"
+        }
+      ]
+    },
+    "arctype": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://arctype-downloads.s3-us-west-2.amazonaws.com/updates/Arctype-1.0.1.dmg",
+      "artifactSHA256": "0888a89ab8580e17d9caa39e76a508c234f5264aef31433c71e42cc814cd7f6e",
+      "apps": [
+        {
+          "bundleName": "Arctype.app",
+          "bundleIdentifier": "com.arctype.sql"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "alipay-key-tool": {
+      "caskVersion": "2.0.4",
+      "sourceURL": "https://ideservice.alipay.com/ide/getPluginUrl.htm?clientType=assistant&platform=mac&channelType=WEB",
+      "artifactSHA256": "8d76c8b928ebe812eedf1a3381b8f27376e92f3212610c4b3da2d3d77f7de817",
+      "apps": [
+        {
+          "bundleName": "支付宝开放平台密钥工具.app",
+          "bundleIdentifier": "com.alipay.alipayleytool"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ariang": {
+      "caskVersion": "1.3.14",
+      "sourceURL": "https://github.com/mayswind/AriaNg-Native/releases/download/1.3.14/AriaNg_Native-1.3.14-macOS-arm64.dmg",
+      "artifactSHA256": "bb6d460a6cbeb3a494f98d86406b6940ca9cf9ac4680c0c761ffa6eb88b67c2c",
+      "apps": [
+        {
+          "bundleName": "AriaNg Native.app",
+          "bundleIdentifier": "net.mayswind.ariang"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "appium-inspector": {
+      "caskVersion": "2026.7.1",
+      "sourceURL": "https://github.com/appium/appium-inspector/releases/download/v2026.7.1/Appium-Inspector-2026.7.1-mac-arm64.zip",
+      "artifactSHA256": "0d67af30dacf5cc84545ab7356375349b8e0594a01f6f96dc5d5268cec730bd4",
+      "apps": [
+        {
+          "bundleName": "Appium Inspector.app",
+          "bundleIdentifier": "io.appium.inspector"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aria2d": {
+      "caskVersion": "1.4.1,470",
+      "sourceURL": "https://github.com/xjbeta/Aria2D/releases/download/1.4.1%28470%29/Aria2D.zip",
+      "artifactSHA256": "71aea297a3e47294a1097506945ba943915bda2784f93eead53487b5ccea547c",
+      "apps": [
+        {
+          "bundleName": "Aria2D.app",
+          "bundleIdentifier": "com.xjbeta.Aria2D"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "angry-ip-scanner": {
+      "caskVersion": "3.9.3",
+      "sourceURL": "https://github.com/angryip/ipscan/releases/download/3.9.3/ipscan-macArm64-3.9.3.zip",
+      "artifactSHA256": "e8997d2ff12f7322ecb3dd0b4c4a410187aa8a26ad89772c833af6de781dfd29",
+      "apps": [
+        {
+          "bundleName": "Angry IP Scanner.app",
+          "bundleIdentifier": "net.azib.ipscan"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
