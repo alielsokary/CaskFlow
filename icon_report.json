@@ -2027,11 +2027,23 @@
     "attempts": 0,
     "updated": "2026-09-20"
   },
+  "rewind": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: download.rewind.ai",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
     "attempts": 7,
     "updated": "2026-10-01"
+  },
+  "rnnoise": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "roaringapps": {
     "status": "failed",
@@ -2045,11 +2057,35 @@
     "attempts": 7,
     "updated": "2026-10-01"
   },
+  "rq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "safeincloud-password-manager": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "salesforce-cli": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "salt": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "saoimageds9": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "sapmachine-jdk": {
     "status": "curated",
@@ -2057,11 +2093,29 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "save-hollywood": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "scansnap-home": {
     "status": "review",
     "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-09-29"
+  },
+  "scidvsmac": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 3a6ba7b47bdc...)",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "scriptql": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "seamly2d": {
     "status": "review",
@@ -2092,6 +2146,12 @@
     "reason": "install harvest: install added no app",
     "attempts": 0,
     "updated": "2026-10-13"
+  },
+  "serene": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "session-manager-plugin": {
     "status": "no_icon",

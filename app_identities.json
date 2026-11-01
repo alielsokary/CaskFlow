@@ -48127,6 +48127,216 @@
           "reason": "no supported application bundles in declared artifacts"
         }
       ]
+    },
+    "seamonkey": {
+      "caskVersion": "2.53.24",
+      "sourceURL": "https://archive.seamonkey-project.org/releases/2.53.24/mac/en-US/seamonkey-2.53.24.en-US.mac.dmg",
+      "artifactSHA256": "e2ebabe0f9da45d619134a3c458853f2738db4eceaf30dff6fa048e11ff93d02",
+      "apps": [
+        {
+          "bundleName": "SeaMonkey.app",
+          "bundleIdentifier": "org.mozilla.seamonkey"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ryver": {
+      "caskVersion": "1.3.3",
+      "sourceURL": "https://downloads.ryver.com/mac/ryver-1.3.3.zip",
+      "artifactSHA256": "8186020f264ef51c94430321710c74f3043b34aabb08be29fafe1e7b4aa1c3ae",
+      "apps": [
+        {
+          "bundleName": "Ryver.app",
+          "bundleIdentifier": "Ryver"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "routeconverter": {
+      "caskVersion": "3.6",
+      "sourceURL": "https://releases.routeconverter.com/previous-releases/3.6/RouteConverterMac-aarch64.app.zip",
+      "artifactSHA256": "fe375a2078588f6e3885cf39363c38abf90d3492d0044e2dbaa9886ab280918a",
+      "apps": [
+        {
+          "bundleName": "RouteConverter.app",
+          "bundleIdentifier": "slash.navigation.converter.gui.RouteConverter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "shadowsocksx-ng": {
+      "caskVersion": "1.10.3",
+      "sourceURL": "https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.10.3/ShadowsocksX-NG.dmg",
+      "artifactSHA256": "a0bc48af636c796471b1156eae0b6ca7340fe51deffec384c409dac785f04c60",
+      "apps": [
+        {
+          "bundleName": "ShadowsocksX-NG.app",
+          "bundleIdentifier": "com.qiuyuzhou.ShadowsocksX-NG"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "servpane": {
+      "caskVersion": "0.1.1",
+      "sourceURL": "https://github.com/aderyabin/ServPane/releases/download/v0.1.1/ServPane-0.1.1.dmg",
+      "artifactSHA256": "07f37334bc723d4aefa81411e604d4a20306d89b1553500b8acc715ee503f314",
+      "apps": [
+        {
+          "bundleName": "ServPane.app",
+          "bundleIdentifier": "com.electron.ServPane"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "semulov": {
+      "caskVersion": "2.6",
+      "sourceURL": "https://github.com/kainjow/Semulov/releases/download/v2.6/Semulov.zip",
+      "artifactSHA256": "fc25b015251562df79c89143b2fb123fc793d780e3f1eb9990d6d5723c870dc6",
+      "apps": [
+        {
+          "bundleName": "Semulov.app",
+          "bundleIdentifier": "com.kainjow.Semulov"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quickapp-studio": {
+      "caskVersion": "7.1.0",
+      "sourceURL": "https://statres.quickapp.cn/quickapp/show/ide/QuickApp_Studio_arm-7.1.0.pkg",
+      "artifactSHA256": "14bccc4e11f21570b3be6a3a8a133a1cf5a4fd23333caf6769295a5266e1d9bb",
+      "apps": [
+        {
+          "bundleName": "QuickApp Studio.app",
+          "bundleIdentifier": "cn.quickapp.studio",
+          "packageIdentifier": "cn.quickapp.studio",
+          "installedPath": "/Applications/QuickApp Studio.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "servo": {
+      "caskVersion": "2026-08-30",
+      "sourceURL": "https://github.com/servo/servo-nightly-builds/releases/download/2026-08-30/servo-aarch64-apple-darwin.dmg",
+      "artifactSHA256": "306c27f20bb3f3833a97070baae087b77c88ad5318b8975531e4ee7c576f32f0",
+      "apps": [
+        {
+          "bundleName": "Servo.app",
+          "bundleIdentifier": "org.servo.ServoShell"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sengi": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/NicolasConstant/sengi-electron/releases/download/v1.8.0/Sengi-1.8.0-mac.dmg",
+      "artifactSHA256": "dcdb16ba013326735c89c6bc1a2050194af7d570625979173f1396c21344bef7",
+      "apps": [
+        {
+          "bundleName": "Sengi.app",
+          "bundleIdentifier": "org.sengi.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "scihubeva": {
+      "caskVersion": "6.5.1",
+      "sourceURL": "https://github.com/leovan/SciHubEVA/releases/download/v6.5.1/SciHubEVA-arm64-v6.5.1.dmg",
+      "artifactSHA256": "769aa2eff2e44b926bbde6b1611355af09cabd50e281864ea57d2d3051d8754d",
+      "apps": [
+        {
+          "bundleName": "Sci-Hub EVA.app",
+          "bundleIdentifier": "tech.leovan.SciHubEVA"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "schism-tracker": {
+      "caskVersion": "20260524",
+      "sourceURL": "https://github.com/schismtracker/schismtracker/releases/download/20260524/schismtracker-20260524-macos.zip",
+      "artifactSHA256": "c4f389b52bb6d60a4a004c5db9bbbcdecb8b8a5a086f45c2aa31c4f1df51333d",
+      "apps": [
+        {
+          "bundleName": "Schism Tracker.app",
+          "bundleIdentifier": "org.schismtracker.SchismTracker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "rocks-n-diamonds": {
+      "caskVersion": "4.3.2.1",
+      "sourceURL": "https://www.artsoft.org/RELEASES/mac/rocksndiamonds/rocksndiamonds-4.3.2.1.dmg",
+      "artifactSHA256": "6499fe6382eec6506cc625b0f372a29918640cfb6ebdca3ee3e6b97d83ff458c",
+      "apps": [
+        {
+          "bundleName": "Rocks'n'Diamonds.app",
+          "bundleIdentifier": "org.artsoft.rocksndiamonds"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pokerth": {
+      "caskVersion": "2.1.7",
+      "sourceURL": "https://downloads.sourceforge.net/pokerth/PokerTH-2.1.7-Combined.dmg",
+      "artifactSHA256": "12dd48e42eb6f629604bb519a79079282d74302de044283e97a7e1dea0954193",
+      "apps": [
+        {
+          "bundleName": "PokerTH.app",
+          "bundleIdentifier": "net.pokerth.PokerTH"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "salesforce-cli": {
+      "caskVersion": "2.149.9,3ee5999",
+      "sourceURL": "https://github.com/salesforcecli/cli/releases/download/2.149.9/sf-v2.149.9-3ee5999-arm64.pkg",
+      "artifactSHA256": "ef2104f73a18c3fc1bc1e8bd1131673287907728dde978683fb6bbf9255357b0",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "rockboxutility": {
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://download.rockbox.org/rbutil/macosx/RockboxUtility-v1.5.1.dmg",
+      "artifactSHA256": "2928f9563f5dc42dc95e31c70176ff28374f7e34c0b5a1d29903ff9e6c62efcf",
+      "apps": [
+        {
+          "bundleName": "RockboxUtility.app",
+          "bundleIdentifier": "org.rockbox.rbutil"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "retroshare": {
+      "caskVersion": "0.6.7a,0c03e93a4-01-03-2024-MacOS-10.15.7-Qt-5.15.11,0.6.7.2",
+      "sourceURL": "https://github.com/RetroShare/RetroShare/releases/download/v0.6.7.2/RetroShare-0.6.7a-0c03e93a4-01-03-2024-MacOS-10.15.7-Qt-5.15.11.dmg",
+      "artifactSHA256": "6757a0bffba36fd85515117edba7e821bb3105500f8a282be942abeee3373230",
+      "apps": [
+        {
+          "bundleName": "retroshare.app",
+          "bundleIdentifier": "com.retroshare"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
