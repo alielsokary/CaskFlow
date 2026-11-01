@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "casks": {
+    "gpg-suite": {
+      "decision": "ambiguous-variant",
+      "reason": "Both GPG variants produced the same Keychain app and installation-history receipt set in the arm64 census. The Keychain receipt points to temporary staging, not the installed app path.",
+      "reviewedDate": "2026-09-27",
+      "products": [],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35574237483",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "234711717a8243f760b05f4677d3dd58a70f0fb69bf8cd2a85b8912af5c22ed0",
+        "artifactSHA256": "57468a4adc55d954ead4fe1f88b07eac1b70ada40fcbc810765fd521ef21eef1",
+        "observationSHA256": "ae8a8a9df03be2bc6e18849e170bd6cd9fefacdec3af714bd546c7b19dfabf68",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "2023.3"
+      }
+    },
+    "gpg-suite-no-mail": {
+      "decision": "ambiguous-variant",
+      "reason": "Both GPG variants produced the same Keychain app and installation-history receipt set in the arm64 census. The Keychain receipt points to temporary staging, not the installed app path.",
+      "reviewedDate": "2026-09-27",
+      "products": [],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35574237483",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "38d8f290ccf09974600610bda3c7c8575ab436be6ccccdcc03198a6fffb845c6",
+        "artifactSHA256": "57468a4adc55d954ead4fe1f88b07eac1b70ada40fcbc810765fd521ef21eef1",
+        "observationSHA256": "d080520d07af92897db61a4027aabc8bbcb271f449d1c359801770b2ac065d38",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "2023.3"
+      }
+    },
+    "microsoft-excel": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft Excel.app",
+          "bundleIdentifier": "com.microsoft.Excel",
+          "packageIdentifier": "com.microsoft.package.Microsoft_Excel.app",
+          "installedPath": "/Applications/Microsoft Excel.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35591963225",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "cfb3259427a36bdf0ad6e69820d4e31321f63f25cb44481f9428e1718d39b340",
+        "artifactSHA256": "9db8f0c5fae677d7b06526730cf8cab4a2050c7eb21e3c8b8214a1c4c02c4459",
+        "observationSHA256": "8013efacad726640b291403be1a538cf2857d65bdec01d6a73248ffc71e86efe",
+        "infoSHA256": "c406106f6acd705e8fa3cdb5b6d91ac8b747325a9118a6c61f056e44719aa8f9",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-office": {
+      "decision": "shared-components",
+      "reason": "Office shares its product apps and receipts with the standalone casks. The Defender shim does not identify the suite. Homebrew registration is required for a suite association.",
+      "reviewedDate": "2026-09-27",
+      "products": [],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35591963225",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "7f7ea035a1b5342d02da706f11a9099dc8776caf05cbdb41ea6fa5971c3b3358",
+        "artifactSHA256": "fafcedf3b6fc1c60a14416cda4c129ddf5448227da66b7a1d235e37e0ef30ded",
+        "observationSHA256": "18e8bb2d8b9d7d05ac2134d3abe99ac558ec22fc10d1a8d2d8b80aef68e0684f",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-office-businesspro": {
+      "decision": "shared-components",
+      "reason": "BusinessPro shares Office, Teams and OneDrive components. Copilot and Defender shims are launch/install helpers, not an Office product identity. Homebrew registration is required for a suite association.",
+      "reviewedDate": "2026-09-27",
+      "products": [],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35540286429",
+        "architecture": "arm64",
+        "sourceRevision": "3da226ddb53ee8f0fde1c6877a4bc5b206aa963e",
+        "caskSourceSHA256": "e1812a0c10b5335d95d44400dadcbac471f4f06d97bce888b0ed1892d975db6d",
+        "artifactSHA256": "e8723a7ec000cdb61c8bf970e34b88b2d915ee3bd6a37fcb8016ca18f8ee7466",
+        "observationSHA256": "51ce8825a5c592f9979e295068a2db44e851582e2ab13a1dd29920067d301c7a",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-onenote": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft OneNote.app",
+          "bundleIdentifier": "com.microsoft.onenote.mac",
+          "packageIdentifier": "com.microsoft.package.Microsoft_OneNote.app",
+          "installedPath": "/Applications/Microsoft OneNote.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35591963225",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "80cb227b743b909e8b7bb880423238bac7d43919e5046a2119aa5555517cb685",
+        "artifactSHA256": "09051e4286a1a4a9c410d1455b93b3556dce0f137af28c02af2361024f01809e",
+        "observationSHA256": "c70ad3fd907c02c50908b86825c4a9eaa5f57db9d2853168b4866c51f9844cef",
+        "infoSHA256": "19dc1dac571c97959b1eda968eb48bf9f330030d21e9203319e652b526fcf511",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-outlook": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft Outlook.app",
+          "bundleIdentifier": "com.microsoft.Outlook",
+          "packageIdentifier": "com.microsoft.package.Microsoft_Outlook.app",
+          "installedPath": "/Applications/Microsoft Outlook.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35591963225",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "9a88c02e00e8f6663bbc2a37c5667719433b5a95cc029b77b16fc5ae204b8cad",
+        "artifactSHA256": "c8ce6b36b6c2f4b5bf1b907e006376b12a18e6bdebcbf5178334733db95fc5d7",
+        "observationSHA256": "2313a3abb2c168600e715b23adda5d336680cf2f4732da3c1a353ca81c75662a",
+        "infoSHA256": "8e2d3794aed3664b1be047ecc943f06a505b1180e1a23be71540e35aca22c93b",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-powerpoint": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft PowerPoint.app",
+          "bundleIdentifier": "com.microsoft.Powerpoint",
+          "packageIdentifier": "com.microsoft.package.Microsoft_PowerPoint.app",
+          "installedPath": "/Applications/Microsoft PowerPoint.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35591963225",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "0d621d6232994c1b9c1dc2370875e78992e3141645f4e8cf6bf95ee0f7e819f1",
+        "artifactSHA256": "b17cd601dc6415abe77444302fb80cf41630278063df476cc9118ee8ca8a1f27",
+        "observationSHA256": "ebc8067c7477d25d2c645eeb947df91130a42c6371165a02ffb4df0704a8d1c1",
+        "infoSHA256": "9fe128aff888ee0e0864093edb5798ab8bffda1c7e5204d82b39a0ee67295d62",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "microsoft-teams": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft Teams.app",
+          "bundleIdentifier": "com.microsoft.teams2",
+          "packageIdentifier": "com.microsoft.teams2",
+          "installedPath": "/Applications/Microsoft Teams.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35540286429",
+        "architecture": "arm64",
+        "sourceRevision": "3da226ddb53ee8f0fde1c6877a4bc5b206aa963e",
+        "caskSourceSHA256": "fc92ef66755e8dd05d6341b63b990d158931ff355c5a0286a0695cc67350f2f7",
+        "artifactSHA256": "7286fc72255c3f765024f6c08fc8e054b3426780d28b7c4b2b3deda99ea64728",
+        "observationSHA256": "8f987fd20fd2c70be3760668eb504c8c70af6aee311314416c8b49ac2d71c15a",
+        "infoSHA256": "1db1005e3753dbef1095b5e10ab9578685c72b155245fb04e7b01bac47c66bee",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "26225.1706.5101.3140"
+      }
+    },
+    "microsoft-word": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "Microsoft Word.app",
+          "bundleIdentifier": "com.microsoft.Word",
+          "packageIdentifier": "com.microsoft.package.Microsoft_Word.app",
+          "installedPath": "/Applications/Microsoft Word.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/36268705280",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "f9381eaf07e4ff5e8de8924d4d72443b6c891f196add626a06e363413f5ea147",
+        "artifactSHA256": "04d354e2a56f4ebaa8f56b82cb1dd75309a2444415f9f0830cea5ba8f97f1e9a",
+        "observationSHA256": "5b9f066d66781cc09d16c968bb03b47b9e7c467b06e99cc9017f342ed2569e24",
+        "infoSHA256": "806225868f73188a77acf24d1f690b553b4097c39b7e3592ba6a9827dd87bede",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "16.113.26091740"
+      }
+    },
+    "onedrive": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "OneDrive.app",
+          "bundleIdentifier": "com.microsoft.OneDrive",
+          "packageIdentifier": "com.microsoft.OneDrive",
+          "installedPath": "/Applications/OneDrive.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/35540286429",
+        "architecture": "arm64",
+        "sourceRevision": "3da226ddb53ee8f0fde1c6877a4bc5b206aa963e",
+        "caskSourceSHA256": "499d505f67e71464dc469820b5c2449eb537880e423084d4d12382ecb0c45d7d",
+        "artifactSHA256": "35d67e76de8579fa0b533fff7ff3b618ea54f574a8a557bb9d3d736b14029f78",
+        "observationSHA256": "547a1a995a399fd6bbb6c3ac7b0681d3e3981cc04e5f41407b896a4f8d4490ee",
+        "infoSHA256": "26709fd6bdac1acbeb329b7841143c78c5b9f293d554321aaa1baf31bc5d72ea",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "26.153.0809.0004"
+      }
+    },
+    "realvnc-connect": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "RealVNC Connect.app",
+          "bundleIdentifier": "com.realvnc.rvncconnect",
+          "packageIdentifier": "com.realvnc.rvncconnect.1",
+          "installedPath": "/Applications/RealVNC Connect.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/36272422834",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "745f039fb10f5c0bc7fd16d69e94894974de47aced8c874272d848f0153e1b4f",
+        "artifactSHA256": "d50f4ebc710f5d0377be4db1d9e5399d4c71869dbb89004e2f659d1495017bb1",
+        "observationSHA256": "840a3be81b1731bf588d8c2384f98e949c8c4334ee6a43276670c218ba30ca66",
+        "infoSHA256": "fb7b876f473a2beaef094c36fbb0141045db1e255e431113e633401ee115773d",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "8.5.2"
+      }
+    },
+    "realvnc-connect-viewer": {
+      "decision": "product",
+      "reason": "The cask names this standalone product. Its observed app bundle and installed path agree with the exact component receipt file list. This establishes product compatibility, not which installer originally installed it.",
+      "reviewedDate": "2026-09-27",
+      "products": [
+        {
+          "bundleName": "RealVNC Connect Viewer.app",
+          "bundleIdentifier": "com.realvnc.rvncconnect",
+          "packageIdentifier": "com.realvnc.rvncconnect.viewer.1",
+          "installedPath": "/Applications/RealVNC Connect Viewer.app"
+        }
+      ],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/36272422834",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "4882e87390a1cd0fbf95c76bee7afd00a2eed6d4df13b2d93237a296239b5179",
+        "artifactSHA256": "fbb9708f3193224031a7e0856f67219404384d3afa1013ea5b242c0b52525659",
+        "observationSHA256": "c4ed57c98bf0fdc2400a96a386c62885a2754856582da61513da864f5ed088d1",
+        "infoSHA256": "c37d1e5742b7039da272ddd39abf646b342e7d2811ad64b9f8baae9d58809163",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "8.5.0"
+      }
+    },
+    "soundtoys": {
+      "decision": "no-product-app",
+      "reason": "The product is audio plugins. The observed apps are its remover and the shared iLok license manager; neither is a standalone Soundtoys product app.",
+      "reviewedDate": "2026-09-27",
+      "products": [],
+      "evidence": {
+        "runURL": "https://github.com/alielsokary/CaskFlow/actions/runs/36273896893",
+        "architecture": "arm64",
+        "sourceRevision": "1f220ca186d1295157d5506c881c99765182d359",
+        "caskSourceSHA256": "fefd835347de062b44267848a20ee592b50da9cdde770dbfa93eade40f229fee",
+        "artifactSHA256": "a2b89b886a5b3f8a5e51abe4ee61b43db62cb45c739abd46aa81fa09d6fc878a",
+        "observationSHA256": "aa587f001c970148c17aa391664689c012ea09a47697afd4efdab447e8198672",
+        "caskRevision": "b7c2b966f67b9fc77ba67c7eaba5aee8b31cccea",
+        "caskVersion": "5.5.5.19885"
+      }
+    }
+  }
+}

@@ -201,5 +201,12 @@
     "shouldBe": "other",
     "confidence": "medium",
     "reason": "Link Navigraph with flight simulators - aviation tool"
+  },
+  {
+    "token": "nordic-nrf-command-line-tools",
+    "was": "designGraphics",
+    "shouldBe": "developerTools",
+    "confidence": "high",
+    "reason": "Command-line tools for programming Nordic nRF chips - embedded development"
   }
 ]

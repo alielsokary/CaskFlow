@@ -36,7 +36,7 @@ flowchart LR
     branch --> caskhub
 ```
 
-El flujo de trabajo diario de clasificación agrega nuevos casks, migra los cambios de nombre de tokens de Homebrew y elimina entradas eliminadas o deshabilitadas. Los fallos del proveedor y de validación se omiten para reintento posterior. Los resultados con una confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente una vez superadas las comprobaciones obligatorias.
+El flujo de trabajo diario de clasificación agrega nuevos casks, y migra los cambios de nombre de tokens de Homebrew. Las entradas de casks que Homebrew marca como obsoletos, deshabilita o elimina se conservan, para que las copias instaladas mantengan su categoría. Los fallos del proveedor y de validación se omiten para reintento posterior. Los resultados con una confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente una vez superadas las comprobaciones obligatorias.
 
 El flujo de trabajo de publicación se ejecuta diariamente de forma independiente a la clasificación, marca `categories.json` con su etiqueta de versión y el manifiesto actual de iconos-tokens cuando está disponible, y extrae `added_dates.json` directamente del historial de Homebrew. Antes de publicar, verifica que cada cask en el árbol actual del tap tenga una fecha de adición. Una fusión de categorías también lo activa de inmediato. Por lo tanto, las actualizaciones de clasificación no retrasan los datos de Recién Agregados, y las actualizaciones de fechas no requieren un resultado de LLM ni una asignación de categoría.
 

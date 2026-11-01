@@ -406,8 +406,42 @@ def _project_identity(token: str, record: dict, reviewed: list[dict]) -> dict:
     return projected
 
 
+def _validate_package_review(token: str, review: dict) -> None:
+    decision = review.get("decision")
+    identities = review.get("products")
+    evidence = review.get("evidence", {})
+    if (decision not in {"product", "shared-components", "ambiguous-variant", "no-product-app"}
+            or not isinstance(identities, list)):
+        raise ValueError(f"Invalid package product review for {token}")
+    if not all((len(identities) == (1 if decision == "product" else 0),
+                review.get("reason"), review.get("reviewedDate"), evidence.get("architecture") == "arm64",
+                re.fullmatch(r"https://github\.com/alielsokary/CaskFlow/actions/runs/[0-9]+", evidence.get("runURL", "")))):
+        raise ValueError(f"Invalid package product review for {token}")
+    for field, length in (("sourceRevision", 40), ("caskRevision", 40), ("caskSourceSHA256", 64),
+                          ("artifactSHA256", 64), ("observationSHA256", 64)):
+        if not re.fullmatch(r"[a-f0-9]{%d}" % length, evidence.get(field, "")):
+            raise ValueError(f"Missing package review provenance for {token}: {field}")
+    if decision == "product" and not re.fullmatch(r"[a-f0-9]{64}", evidence.get("infoSHA256", "")):
+        raise ValueError(f"Incomplete package product evidence for {token}")
+
+
+def project_package_products(reviews: dict) -> dict:
+    """Project reviewed product associations, never installer-origin claims."""
+    products = {}
+    for token, review in reviews.items():
+        _validate_package_review(token, review)
+        projected = [_project_identity(token, identity, []) for identity in review["products"]]
+        for identity in projected:
+            if (not identity.get("packageIdentifier")
+                    or identity.get("installedPath") != f"/Applications/{identity['bundleName']}"):
+                raise ValueError(f"Incomplete package product evidence for {token}")
+        # Empty is deliberate: reviewed, but no standalone product association.
+        products[token] = projected
+    return products
+
+
 def compose_release(categories: Path, extracted: Path, variants: Path, output: Path,
-                    seed: Path | None = None) -> None:
+                    seed: Path | None = None, package_reviews: Path | None = None) -> None:
     """Keep provenance in the manifest and embed its matching projection in categories."""
     catalog = json.loads(categories.read_text(encoding="utf-8"))
     manifest = load_manifest(seed) if seed is not None else {"schemaVersion": 1, "casks": {}}
@@ -436,6 +470,11 @@ def compose_release(categories: Path, extracted: Path, variants: Path, output: P
                 candidates.append(projected)
         if candidates:
             package_candidates[token] = candidates
+    if package_reviews is not None and not package_reviews.is_file():
+        raise FileNotFoundError(package_reviews)
+    reviews = load_manifest(package_reviews)["casks"] if package_reviews is not None else {}
+    catalog["packageProductIdentities"] = project_package_products(reviews)
+    manifest["packageProductReviews"] = reviews
     catalog["appIdentities"] = identities
     catalog["packageAppCandidates"] = package_candidates
     catalog["metadataUpdatedAt"] = datetime.now(timezone.utc).isoformat(timespec="microseconds")
@@ -448,7 +487,8 @@ if __name__ == "__main__":
     parser.add_argument("--categories", type=Path, default=ROOT / "categories.json")
     parser.add_argument("--extracted", type=Path, required=True)
     parser.add_argument("--variants", type=Path, default=ROOT / "data/app_identity_variants.json")
+    parser.add_argument("--package-reviews", type=Path, default=ROOT / "data/package_product_reviews.json")
     parser.add_argument("--seed", type=Path, help="Baseline identities; fresh extraction records take precedence")
     parser.add_argument("--output", type=Path, default=ROOT / MANIFEST)
     args = parser.parse_args()
-    compose_release(args.categories, args.extracted, args.variants, args.output, args.seed)
+    compose_release(args.categories, args.extracted, args.variants, args.output, args.seed, args.package_reviews)

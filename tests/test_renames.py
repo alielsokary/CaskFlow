@@ -36,12 +36,11 @@ def test_rename_onto_already_classified_token_drops_old():
     assert existing["tokenToCategory"]["new-name"]["primary"] == "developerTools"
 
 
-def test_true_removal_is_left_for_prune():
+def test_true_removal_keeps_classification():
     existing = _existing("gone-forever", "still-here")
     api = [{"token": "still-here"}]
 
     assert migrate_renames(existing, api) == []
-    # Untouched - compute_diff owns pruning true removals.
     assert "gone-forever" in existing["tokenToCategory"]
 
 
