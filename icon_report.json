@@ -146,7 +146,7 @@
   "assinador-serpro": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 504",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "atok": {
@@ -1631,12 +1631,6 @@
     "attempts": 2,
     "updated": "2026-11-01"
   },
-  "opencore-configurator": {
-    "status": "failed",
-    "reason": "download failed: curl: (18) Transferred a partial file",
-    "attempts": 1,
-    "updated": "2026-11-01"
-  },
   "openforis-collect": {
     "status": "no_icon",
     "reason": "install harvest: install added no app",
@@ -1667,6 +1661,12 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "operadriver": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "oracle-jdk": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/oracle.png?size=256",
@@ -1691,11 +1691,35 @@
     "attempts": 3,
     "updated": "2026-07-08"
   },
+  "osirix-quicklook": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "oso-cloud": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "osquery": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/osquery.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "osxfuse": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "outguess": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "output-factory": {
     "status": "no_icon",
@@ -1727,11 +1751,23 @@
     "attempts": 4,
     "updated": "2026-10-01"
   },
+  "pdf-toolbox": {
+    "status": "failed",
+    "reason": "download failed: curl: (7) Failed to connect to www.lightenpdf.com port 443 after 23 ms: Couldn't connect to server",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "photozoom-pro": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
     "attempts": 0,
     "updated": "2026-10-13"
+  },
+  "pivy-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "playonmac": {
     "status": "failed",

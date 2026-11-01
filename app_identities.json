@@ -47174,6 +47174,304 @@
           "reason": "unreadable Info.plist: ExpatError"
         }
       ]
+    },
+    "orca": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://github.com/plotly/orca/releases/download/v1.3.1/mac-release.zip",
+      "artifactSHA256": "79b1b346df9113cd56e545b223a73179801116ca9e009f3c5fe0fac97c0df1ab",
+      "apps": [
+        {
+          "bundleName": "orca.app",
+          "bundleIdentifier": "com.plotly.orca"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opensesame": {
+      "caskVersion": "4.1.9,py313",
+      "sourceURL": "https://github.com/open-cogsci/OpenSesame/releases/download/release%2F4.1.9/opensesame_4.1.9-py313-macos-x64-1.dmg",
+      "artifactSHA256": "b457bf208d827678e217d39b1317efc8f7048807f6c4606d527923dc2d2ffee1",
+      "apps": [
+        {
+          "bundleName": "OpenSesame.app",
+          "bundleIdentifier": "nl.cogsci.osdoc"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "orangedrangon-android-messages": {
+      "caskVersion": "6.1.0",
+      "sourceURL": "https://github.com/OrangeDrangon/android-messages-desktop/releases/download/v6.1.0/Android-Messages-v6.1.0-mac-universal.zip",
+      "artifactSHA256": "379297706fdfb1a1d332970ffe6161fd94f73b9ee230e1f04bb3a18332daf847",
+      "apps": [
+        {
+          "bundleName": "Android Messages.app",
+          "bundleIdentifier": "pw.kmr.amd"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "panwriter": {
+      "caskVersion": "0.8.10",
+      "sourceURL": "https://github.com/mb21/panwriter/releases/download/v0.8.10/PanWriter-0.8.10-arm64.dmg",
+      "artifactSHA256": "c7a3fbf1b4f6b96465c0afc5aa4f086c2ec1d58f012c7eee27afc616a99d830e",
+      "apps": [
+        {
+          "bundleName": "PanWriter.app",
+          "bundleIdentifier": "com.panwriter.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pb": {
+      "caskVersion": "11.0.2",
+      "sourceURL": "https://github.com/sidneys/pb-for-desktop/releases/download/v11.0.2/pb-for-desktop-11.0.2-mac.zip",
+      "artifactSHA256": "fdf0f2e7b820e5efbc9b0c7e69dfdcb4ac3caa3012ed7086d59a62c190f7c3e2",
+      "apps": [
+        {
+          "bundleName": "PB for Desktop.app",
+          "bundleIdentifier": "de.sidneys.pb-for-desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "oss-browser": {
+      "caskVersion": "1.18.0",
+      "sourceURL": "https://github.com/aliyun/oss-browser/releases/download/v1.18.0/oss-browser-darwin-x64.zip",
+      "artifactSHA256": "046e7aa50a76318b8ec8f5171ddb0cfcb8d80b6ad8134762331b874f80d685fb",
+      "apps": [
+        {
+          "bundleName": "oss-browser.app",
+          "bundleIdentifier": "com.electron.oss-browser"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pd-l2ork": {
+      "caskVersion": "2.20.1",
+      "sourceURL": "https://github.com/agraef/purr-data/releases/download/2.20.1/purr-data-2.20.1-macos-x86_64.zip",
+      "artifactSHA256": "65c1c41a0eb4eaa1b439785fcfa0ccc7698a1b95c29277b2179d941ec9afad05",
+      "apps": [
+        {
+          "bundleName": "Purr-Data.app",
+          "bundleIdentifier": "net.purrdata.nwjs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pivy-app": {
+      "caskVersion": "0.12.1",
+      "sourceURL": "https://github.com/joyent/pivy/releases/download/v0.12.1/pivy-0.12.1-macos12.pkg",
+      "artifactSHA256": "78340ec28f4e7d6870ebb167059ac21beb00729d300a092f8f6774c2c6ae33fa",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pivy-app",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "osmc": {
+      "caskVersion": "latest",
+      "sourceURL": "https://download.osmc.tv/installers/osmc-installer.dmg",
+      "artifactSHA256": "f1a8e3592a5b3f2aafca9644f232bec2508c9c2197e3e15394e0341257b247d8",
+      "apps": [
+        {
+          "bundleName": "OSMC.app",
+          "bundleIdentifier": "tv.osmc.installer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opencore-configurator": {
+      "caskVersion": "2.78.2.0",
+      "sourceURL": "https://mackie100projects.altervista.org/apps/opencoreconf/download-new-build.php?version=last",
+      "artifactSHA256": "db9f9b0dba30fdc42ff9fea70770c85acac10445714244b0eda720d250f7e050",
+      "apps": [
+        {
+          "bundleName": "OpenCore Configurator.app",
+          "bundleIdentifier": "org.altervista.mackie100projects.OpenCore-Configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "persepolis-download-manager": {
+      "caskVersion": "5.2.0",
+      "sourceURL": "https://github.com/persepolisdm/persepolis/releases/download/5.2.0/persepolis_5.2.0_macos.dmg",
+      "artifactSHA256": "548b4b07904f8ec57d7f5d746459bf32a1bd0e0ae710e58108a37e3f17043895",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Persepolis Download Manager.app",
+          "reason": "unsupported CFBundleIdentifier: 'Persepolis Download Manager'"
+        }
+      ]
+    },
+    "osxfuse": {
+      "caskVersion": "3.11.2",
+      "sourceURL": "https://github.com/osxfuse/osxfuse/releases/download/osxfuse-3.11.2/osxfuse-3.11.2.dmg",
+      "artifactSHA256": "0f9fd021810063ded2f9a40347e11961369238af27615842063831568a0860ce",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "isChoiceEnabled('com.github.osxfuse.pkg.Core')",
+            "start_selected": "isChoiceSelected('com.github.osxfuse.pkg.Core')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "isChoiceEnabled('com.github.osxfuse.pkg.PrefPane')",
+            "start_selected": "isChoiceSelected('com.github.osxfuse.pkg.PrefPane')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "isChoiceEnabled('com.github.osxfuse.pkg.MacFUSE')",
+            "start_selected": "isChoiceSelected('com.github.osxfuse.pkg.MacFUSE')"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installationCheck()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "MacFUSE.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "PrefPane.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "papyrus": {
+      "caskVersion": "6.7.0,2024-06",
+      "sourceURL": "https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2024-06/6.7.0/papyrus-2024-06-6.7.0-macosx64.tar.gz&r=1",
+      "artifactSHA256": "d2d3eb4516e062a4942312941aaaba98f3e542564a452fe39906ec4fe4b12a34",
+      "apps": [
+        {
+          "bundleName": "Papyrus.app",
+          "bundleIdentifier": "org.eclipse.papyrus.rcp.product"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pages-data-merge": {
+      "caskVersion": "2.1",
+      "sourceURL": "https://iworkautomation.com/pages/data-merge-2-1.zip",
+      "artifactSHA256": "21458a889452ea20915bbb61b3a0522b880475b91e1080966d120a3a4341d9c9",
+      "apps": [
+        {
+          "bundleName": "Pages Data Merge.app",
+          "bundleIdentifier": "com.NyhthawkProductions.Pages-Data-Merge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "phd2": {
+      "caskVersion": "2.6.14",
+      "sourceURL": "https://openphdguiding.org/PHD2-2.6.14-OSX-64-sonoma+.zip",
+      "artifactSHA256": "11f324ea4154508419f14215605972278c2adef6f91634f03e36aa8c2e92aa56",
+      "apps": [
+        {
+          "bundleName": "PHD2.app",
+          "bundleIdentifier": "org.openphdguiding.phd2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "opentoonz": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/opentoonz/opentoonz/releases/download/v1.8.0/OpenToonz.pkg",
+      "artifactSHA256": "6360efbde7739910d4eefe9d494b6b57e852a3f75bdbeb1e6d75abb84e609d13",
+      "apps": [
+        {
+          "bundleName": "OpenToonz.app",
+          "bundleIdentifier": "io.github.opentoonz.OpenToonz",
+          "packageIdentifier": "io.github.opentoonz",
+          "installedPath": "/Applications/OpenToonz.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openvisualtraceroute": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://downloads.sourceforge.net/openvisualtrace/2.0.0/OpenVisualTraceRoute2.0.0.dmg",
+      "artifactSHA256": "bf1fecac21fecde1100f495b0e4e5a166b552dcc8477ab1caf90d6f63c610977",
+      "apps": [
+        {
+          "bundleName": "OpenVisualTraceroute.app",
+          "bundleIdentifier": "org.leo.traceroute.Main"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pixel-picker": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://github.com/acheronfail/pixel-picker/releases/download/1.6.1/Pixel.Picker.1.6.1.dmg",
+      "artifactSHA256": "2c98627f6fca2f3a7d043499e63be25dd80ecd6ab848e15637961f10ebc0bd6f",
+      "apps": [
+        {
+          "bundleName": "Pixel Picker.app",
+          "bundleIdentifier": "com.acheronfail.pixel-picker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "packet-peeper": {
+      "caskVersion": "2022-08-31",
+      "sourceURL": "https://github.com/choll/packetpeeper/releases/download/2022-08-31/PacketPeeper_2022-08-31.dmg",
+      "artifactSHA256": "d930f595ccd391df292c09ae82e3404bf00ed59d8b8f66b462671ee9e1c7c4a2",
+      "apps": [
+        {
+          "bundleName": "Packet Peeper.app",
+          "bundleIdentifier": "org.PacketPeeper"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
