@@ -44582,6 +44582,292 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "grisbi": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://downloads.sourceforge.net/grisbi/Grisbi-3.0.4.dmg",
+      "artifactSHA256": "ff016c36ec113c1cf3733c5363e843834a610a52f42a481c2bc0fd9d589217a1",
+      "apps": [
+        {
+          "bundleName": "Grisbi.app",
+          "bundleIdentifier": "org.grisbi.Grisbi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "glance-chamburr": {
+      "caskVersion": "1.5.4",
+      "sourceURL": "https://github.com/chamburr/glance/releases/download/v1.5.4/Glance-1.5.4.dmg",
+      "artifactSHA256": "f2df114e83b8b834c2da9d4cfbd4d3307a8f0563a9e613bfdd88b4b3bffe61ad",
+      "apps": [
+        {
+          "bundleName": "Glance.app",
+          "bundleIdentifier": "com.chamburr.Glance"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gingko": {
+      "caskVersion": "2.4.15",
+      "sourceURL": "https://github.com/gingko/client/releases/download/v2.4.15/Gingko-2.4.15-mac.zip",
+      "artifactSHA256": "bb1367b0a07a80872be253eda0519ec801e0b96b04d59c5bff3f825cf9e380c4",
+      "apps": [
+        {
+          "bundleName": "Gingko.app",
+          "bundleIdentifier": "com.gingkoapp.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hackintool": {
+      "caskVersion": "4.1.5",
+      "sourceURL": "https://github.com/headkaze/Hackintool/releases/download/4.1.5/Hackintool.zip",
+      "artifactSHA256": "fdec76c80626e93388f7af40c68e567dc4f8752116cbab22a9f2874045072e13",
+      "apps": [
+        {
+          "bundleName": "Hackintool.app",
+          "bundleIdentifier": "com.Headsoft.Hackintool"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "goldenpassport": {
+      "caskVersion": "0.1.7",
+      "sourceURL": "https://github.com/stanzhai/GoldenPassport/releases/download/v0.1.7/GoldenPassport.zip",
+      "artifactSHA256": "696a2cd0c6245502727b2cab0f0a2d92c636fca6e4c3c1fbfa289e152cadc46c",
+      "apps": [
+        {
+          "bundleName": "GoldenPassport.app",
+          "bundleIdentifier": "site.stanzhai.GoldenPassport"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "git-it": {
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/jlord/git-it-electron/releases/download/4.4.0/Git-it-Mac-x64.zip",
+      "artifactSHA256": "b96c06bca744af94e2f035824fbd16f59673c4c454fd4bf96aa4bde965fe711d",
+      "apps": [
+        {
+          "bundleName": "Git-it.app",
+          "bundleIdentifier": "com.electron.git-it"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gswitch": {
+      "caskVersion": "1.9.7",
+      "sourceURL": "https://github.com/CodySchrank/gSwitch/releases/download/1.9.7/gSwitch.zip",
+      "artifactSHA256": "5d212c1bd39f6bfae588797fa09b959051dc4eefd26ec05fbd26b798125b976a",
+      "apps": [
+        {
+          "bundleName": "gSwitch.app",
+          "bundleIdentifier": "com.CodySchrank.gSwitch"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "google-chat": {
+      "caskVersion": "20.11.241",
+      "sourceURL": "https://dl.google.com/chat/20.11.241/InstallHangoutsChat.dmg",
+      "artifactSHA256": "75821a29aebae89b92acc583129515a21788e7fdf6e62c7aa2b0cfcfeb748446",
+      "apps": [
+        {
+          "bundleName": "Chat.app",
+          "bundleIdentifier": "com.google.chat"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "goneovim": {
+      "caskVersion": "0.6.17",
+      "sourceURL": "https://github.com/akiyosi/goneovim/releases/download/v0.6.17/Goneovim-v0.6.17-macos-arm64.tar.bz2",
+      "artifactSHA256": "baba9f98917a474d308127ba615b896700732a644bf880f0b8290a5cf2947425",
+      "apps": [
+        {
+          "bundleName": "goneovim.app",
+          "bundleIdentifier": "com.goneovim.goneovim"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "google-assistant": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/releases/download/v1.1.0/Google-Assistant-1.1.0.dmg",
+      "artifactSHA256": "fe95491bb55136e62b4a85ad49e648d03e662df8445c417bade70d95d711116b",
+      "apps": [
+        {
+          "bundleName": "Google Assistant.app",
+          "bundleIdentifier": "com.redvirus.g-assist"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "goldencheetah": {
+      "caskVersion": "3.7",
+      "sourceURL": "https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.7/GoldenCheetah_v3.7_x64.dmg",
+      "artifactSHA256": "000f49df0cb3da1b8b48656f8c0fecb7591be9a0d3eae400d54b76d52d465363",
+      "apps": [
+        {
+          "bundleName": "GoldenCheetah.app",
+          "bundleIdentifier": "com.yourcompany.GoldenCheetah"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hakuneko": {
+      "caskVersion": "6.1.7",
+      "sourceURL": "https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_macos_amd64.dmg",
+      "artifactSHA256": "5ee455ce2f9bcebdf598182dccb46dbf66637d78920fce6267b30e7db170f987",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "HakuNeko Desktop.app",
+          "reason": "unsupported CFBundleIdentifier: 'https://git.io/hakuneko'"
+        }
+      ]
+    },
+    "gitblade": {
+      "caskVersion": "1.0.8",
+      "sourceURL": "https://gitblade.com/dl/gitblade-1.0.8-darwin-x64.dmg",
+      "artifactSHA256": "51b261ee679048c2799a66439d8599d1ec5fa1592713993e85fa641eefeab274",
+      "apps": [
+        {
+          "bundleName": "GitBlade.app",
+          "bundleIdentifier": "com.electron.gitblade"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "grafx": {
+      "caskVersion": "2.8.3174,71",
+      "sourceURL": "https://pulkomandy.tk/projects/GrafX2/downloads/71",
+      "artifactSHA256": "b0207e50bddf10e289d03ba2dd52e7fe1c5c5ee32293cc2441eb9e0aac536891",
+      "apps": [
+        {
+          "bundleName": "Grafx2.app",
+          "bundleIdentifier": "com.googlecode.grafx2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gridea": {
+      "caskVersion": "0.9.3",
+      "sourceURL": "https://github.com/getgridea/gridea/releases/download/v0.9.3/Gridea-0.9.3.dmg",
+      "artifactSHA256": "16c9c9a1fdf4773f165878f995a9eb4b0a9c6eb815410a723170623dd23e4354",
+      "apps": [
+        {
+          "bundleName": "Gridea.app",
+          "bundleIdentifier": "com.electron.gridea"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "groestlcoin-core": {
+      "caskVersion": "31.0",
+      "sourceURL": "https://github.com/groestlcoin/groestlcoin/releases/download/v31.0/groestlcoin-31.0-arm64-apple-darwin-unsigned.zip",
+      "artifactSHA256": "9eaf733893e0d42ffc2c3cceecc343528f18f23b17d8c0a8a07e7730df5225b2",
+      "apps": [
+        {
+          "bundleName": "Groestlcoin Core.app",
+          "bundleIdentifier": "org.groestlcoin.Groestlcoin-Qt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gittyup": {
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/Murmele/Gittyup/releases/download/gittyup_v1.4.0/Gittyup-1.4.0.dmg",
+      "artifactSHA256": "5f4485f8f9df41c702baa0ce93be6ec91489ec1d1f7cf3e66e4e5e6deee726ae",
+      "apps": [
+        {
+          "bundleName": "Gittyup.app",
+          "bundleIdentifier": "com.github.Murmele.Gittyup"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "guijs": {
+      "caskVersion": "0.1.19",
+      "sourceURL": "https://github.com/Akryum/guijs/releases/download/v0.1.19/guijs.app.tgz",
+      "artifactSHA256": "857bed89fe461edeca980a5bb17ec53016dd64ffc0b4e49a76b729f5fa7b594a",
+      "apps": [
+        {
+          "bundleName": "guijs.app",
+          "bundleIdentifier": "guijs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gpodder": {
+      "caskVersion": "3.11.5",
+      "sourceURL": "https://github.com/gpodder/gpodder/releases/download/3.11.5/macOS-gPodder-3.11.5.zip",
+      "artifactSHA256": "ecef8bd8eb8122a3adb28ecd4d06bfccc6b07cf41352ab9190c11c9978554c06",
+      "apps": [
+        {
+          "bundleName": "gPodder.app",
+          "bundleIdentifier": "org.gpodder.gpodder"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "haptic-touch-bar": {
+      "caskVersion": "2.4.0,240,1540815050",
+      "sourceURL": "https://dl.devmate.com/com.bopsoft.HapticTouchBar/240/1540815050/HapticTouchBar-240.zip",
+      "artifactSHA256": "c7b044f1516bb0912e863e2e3a3fd080fa06833eaddc0f056caf55a5e9df94b5",
+      "apps": [
+        {
+          "bundleName": "Haptic Touch Bar.app",
+          "bundleIdentifier": "com.bopsoft.HapticTouchBar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "haptickey": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://github.com/niw/HapticKey/releases/download/0.7.0/HapticKey.app.zip",
+      "artifactSHA256": "f2f2cb1b8bc38cec80d430dabf3c8020c40a54b0380079e83294c62c7c108c53",
+      "apps": [
+        {
+          "bundleName": "HapticKey.app",
+          "bundleIdentifier": "at.niw.HapticKey"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gitdock": {
+      "caskVersion": "0.1.32",
+      "sourceURL": "https://gitlab.com/mvanremmerden/gitdock/-/releases/v0.1.32/downloads/GitDock-0.1.32.dmg",
+      "artifactSHA256": "b20f1d2022a34a0882121e4a690702564a6f37780aaa70d7ad3719f585763a21",
+      "apps": [
+        {
+          "bundleName": "GitDock.app",
+          "bundleIdentifier": "com.electron.gitdock"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

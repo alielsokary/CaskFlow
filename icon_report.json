@@ -839,6 +839,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "gpxsee": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "graalvm-jdk": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/graalvm.png?size=256",
@@ -855,6 +861,18 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "guitar-pro": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "height": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
     "updated": "2026-11-01"
   },
   "hma-vpn": {
