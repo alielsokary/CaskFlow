@@ -1409,12 +1409,6 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
-  "mate-translate": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
-  },
   "matterhorn": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact",
@@ -1439,16 +1433,10 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
-  "meteorologist": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got aa08cb7f2d0d...)",
-    "attempts": 7,
-    "updated": "2026-10-01"
-  },
   "micro-sniff": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
+    "attempts": 5,
     "updated": "2026-11-01"
   },
   "microsoft-office": {
@@ -1466,8 +1454,8 @@
   "mimecast": {
     "status": "failed",
     "reason": "download failed: curl: (23) Failure writing output to destination, passed 16100 returned 4294967295",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "miniconda": {
     "status": "curated",
@@ -1523,12 +1511,6 @@
     "attempts": 0,
     "updated": "2026-10-02"
   },
-  "navigraph-charts": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 55d8c67e2a88...)",
-    "attempts": 4,
-    "updated": "2026-10-01"
-  },
   "ncar-ncl": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact",
@@ -1546,12 +1528,6 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "nisus-thesaurus": {
-    "status": "failed",
-    "reason": "download failed: curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)",
-    "attempts": 4,
-    "updated": "2026-10-01"
   },
   "nomachine": {
     "status": "review",
@@ -1632,10 +1608,10 @@
     "updated": "2026-10-13"
   },
   "openframeworks": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got e4a2dd6e7580...)",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "opensc-app": {
     "status": "curated",
@@ -1741,9 +1717,9 @@
   },
   "pdf-converter-master": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Failed to connect to www.lightenpdf.com port 443 after 75014 ms: Couldn't connect to server",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "reason": "download failed: curl: (7) Failed to connect to www.lightenpdf.com port 443 after 133 ms: Couldn't connect to server",
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "pdf-toolbox": {
     "status": "failed",
@@ -1769,12 +1745,6 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
-  "playonmac": {
-    "status": "failed",
-    "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
-  },
   "podolski": {
     "status": "no_icon",
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
@@ -1796,8 +1766,8 @@
   "postbox": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: d3nx85trn0lqsg.cloudfront.net",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "postman-cli": {
     "status": "no_icon",
@@ -2000,8 +1970,8 @@
   "raven-reader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "realforce": {
     "status": "failed",
@@ -2030,8 +2000,8 @@
   "ringcentral-phone": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "rnnoise": {
     "status": "no_icon",
@@ -2042,14 +2012,8 @@
   "roaringapps": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
-  },
-  "roonbridge": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "rq": {
     "status": "no_icon",
@@ -2119,9 +2083,9 @@
   },
   "securesafe": {
     "status": "failed",
-    "reason": "pkgutil failed: Could not unarchive /var/folders/36/tjdph2t965j8snz9_vkdnw0r0000gn/T/icon-securesafe-b8ofliey/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "reason": "pkgutil failed: Could not unarchive /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/icon-securesafe-bdfwbfvt/securesafe-2.25.0.pkg (The operation couldn’t be completed. cpio read error: bad file format)",
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "segger-jlink": {
     "status": "no_icon",
@@ -2173,9 +2137,9 @@
   },
   "simpletex": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600019 milliseconds with 5406720 out of 97747850 bytes received",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "reason": "download failed: curl: (28) Operation timed out after 600008 milliseconds with 5537720 out of 97747850 bytes received",
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "sioyek": {
     "status": "no_icon",
@@ -2215,15 +2179,15 @@
   },
   "sonic-lineup": {
     "status": "failed",
-    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 5168 ms: Couldn't connect to server",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "reason": "download failed: curl: (7) Failed to connect to code.soundsoftware.ac.uk port 443 after 6393 ms: Couldn't connect to server",
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "sonic3air": {
     "status": "failed",
     "reason": "sha256 mismatch (got 3631938e71df...)",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "soothe2": {
     "status": "no_icon",
@@ -2348,20 +2312,20 @@
   "tableau-prep": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "tableau-reader": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 403",
-    "attempts": 6,
-    "updated": "2026-10-01"
+    "attempts": 7,
+    "updated": "2026-11-01"
   },
   "tablen": {
     "status": "failed",
     "reason": "download failed: curl: (35) LibreSSL/3.3.6: error:1404B438:SSL routines:ST_CONNECT:tlsv1 alert internal error",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "tal-drum": {
     "status": "no_icon",
@@ -2476,12 +2440,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-11-01"
-  },
-  "unclack": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 4,
-    "updated": "2026-10-01"
   },
   "unite-phone": {
     "status": "failed",
@@ -2600,8 +2558,8 @@
   "waveforms": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 4,
-    "updated": "2026-10-01"
+    "attempts": 5,
+    "updated": "2026-11-01"
   },
   "wch-ch34x-usb-serial-driver": {
     "status": "review",
@@ -2630,8 +2588,8 @@
   "whispering": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7c15883a5562...)",
-    "attempts": 7,
-    "updated": "2026-10-01"
+    "attempts": 8,
+    "updated": "2026-11-01"
   },
   "wizcli": {
     "status": "no_icon",

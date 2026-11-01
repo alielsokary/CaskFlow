@@ -50451,6 +50451,110 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "navigraph-charts": {
+      "caskVersion": "8.45.0",
+      "sourceURL": "https://download.navigraph.com/software/charts/mac/Navigraph%20Charts%208.45.0.dmg",
+      "artifactSHA256": "039b4b9095827bac79af9d0ee8ecf1e7dbe22a2466c4237a5158ab34218f06ef",
+      "apps": [
+        {
+          "bundleName": "Navigraph Charts.app",
+          "bundleIdentifier": "com.navigraph.charts.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nisus-thesaurus": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://nisus.com/files/public/NisusThesaurus-v122.zip",
+      "artifactSHA256": "cef58bf8e2c2e165a3a8e5e7771fe8dd46a0ffb68baecc6220058faa756ab675",
+      "apps": [
+        {
+          "bundleName": "Nisus Thesaurus.app",
+          "bundleIdentifier": "com.nisus.NisusThesaurus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "playonmac": {
+      "caskVersion": "4.4.4",
+      "sourceURL": "https://repository.playonmac.com/PlayOnMac/PlayOnMac_4.4.4.dmg",
+      "artifactSHA256": "7be6bee16d8df3e0caa5df6f647ac437a5c4d77ed7fa1b11a1db02edf9c66522",
+      "apps": [
+        {
+          "bundleName": "PlayOnMac.app",
+          "bundleIdentifier": "org.playonmac.playonmac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "meteorologist": {
+      "caskVersion": "5.1.1",
+      "sourceURL": "https://downloads.sourceforge.net/heat-meteo/Meteorologist-5.1.1.dmg",
+      "artifactSHA256": "75bde8ffee5e48319d85d1da5ea61080f40f80112092d52d882c1f11bdb73c5a",
+      "apps": [
+        {
+          "bundleName": "Meteorologist.app",
+          "bundleIdentifier": "com.heat.MeteorologistSwiftUI"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mate-translate": {
+      "caskVersion": "11.0.2",
+      "sourceURL": "https://gikken.co/mate/MateTranslate.dmg",
+      "artifactSHA256": "4c9aae6199351a41594963eb5fcb414459bb656fd107f68be149c935ecf44ad7",
+      "apps": [
+        {
+          "bundleName": "Mate Translate.app",
+          "bundleIdentifier": "com.twopeoplesoftware.InstantTranslate-nomas"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openframeworks": {
+      "caskVersion": "0.12.1",
+      "sourceURL": "https://github.com/openframeworks/openFrameworks/releases/download/0.12.1/of_v0.12.1_osx_release.tar.gz",
+      "artifactSHA256": "e4a2dd6e75805320aac905f9f82f7b85e67a8b799137d47f35d40f7c4c195c9b",
+      "apps": [
+        {
+          "bundleName": "projectGenerator.app",
+          "bundleIdentifier": "cc.openframeworks.projectGenerator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "unclack": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/robotsquidward/unclack-releases/releases/download/v1.3.0/Unclack.dmg",
+      "artifactSHA256": "68d9a96cd3b7d6d85cb72e2b414cd097b287cc36d275c8c9078f73766c782a3b",
+      "apps": [
+        {
+          "bundleName": "Unclack.app",
+          "bundleIdentifier": "dev.ajkueterman.unclack"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "roonbridge": {
+      "caskVersion": "2.71,207101683",
+      "sourceURL": "https://download.roonlabs.net/updates/production/RoonBridge_207101683.dmg",
+      "artifactSHA256": "fb851d194ff583cca6027b4fde918495d4dc86e20c3158ed2f61577f9e98fac9",
+      "apps": [
+        {
+          "bundleName": "RoonBridge.app",
+          "bundleIdentifier": "com.roon.RoonBridge"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
