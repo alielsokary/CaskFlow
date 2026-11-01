@@ -40978,6 +40978,371 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "vincelwt-chatgpt": {
+      "caskVersion": "0.0.5",
+      "sourceURL": "https://github.com/vincelwt/chatgpt-mac/releases/download/v0.0.5/Chatgpt-0.0.5-arm64.dmg",
+      "artifactSHA256": "e41a76560d78afd5000129aeb4d720c755bf916c7db32c81f608c5ee5bd3177a",
+      "apps": [
+        {
+          "bundleName": "Chatgpt.app",
+          "bundleIdentifier": "com.vincelwt.chatgptmac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mongotron": {
+      "caskVersion": "1.0.0-alpha.5",
+      "sourceURL": "https://github.com/officert/mongotron/releases/download/1.0.0-alpha.5/Mongotron-darwin-x64.zip",
+      "artifactSHA256": "b20d014ae3a9355a112f84d98d2f81c27d3f99fd2dd7dc3455be465b27ab1e20",
+      "apps": [
+        {
+          "bundleName": "Mongotron.app",
+          "bundleIdentifier": "com.electron.mongotron"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kui": {
+      "caskVersion": "13.1.4",
+      "sourceURL": "https://github.com/kubernetes-sigs/kui/releases/download/v13.1.4/Kui-darwin-arm64.tar.bz2",
+      "artifactSHA256": "ba707efd53ad1ff9f61bf9c28b0bff02684b2d8950790ab2292aeceeab8df389",
+      "apps": [
+        {
+          "bundleName": "Kui.app",
+          "bundleIdentifier": "org.kubernetes.sigs.cli.kui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mjolnir": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://github.com/mjolnirapp/mjolnir/releases/download/1.0.2/Mjolnir.app.zip",
+      "artifactSHA256": "eb39b9ff76258c3aa7970f70465a7c858290ce798e5b8e411cb5b7d300de16d1",
+      "apps": [
+        {
+          "bundleName": "Mjolnir.app",
+          "bundleIdentifier": "org.degutis.Mjolnir"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bitbar": {
+      "caskVersion": "1.10.1",
+      "sourceURL": "https://github.com/matryer/bitbar/releases/download/v1.10.1/BitBar.app.zip",
+      "artifactSHA256": "8a7013dca92715ba80cccef98b84dd1bc8d0b4c4b603f732e006eb204bab43fa",
+      "apps": [
+        {
+          "bundleName": "BitBar.app",
+          "bundleIdentifier": "com.matryer.BitBar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bitmessage": {
+      "caskVersion": "0.6.3.2",
+      "sourceURL": "https://github.com/Bitmessage/PyBitmessage/releases/download/0.6.3.2/bitmessage-v0.6.3.2.dmg",
+      "artifactSHA256": "40a78384a7a0613333dd76aaafc8ebeb08eb1ef02fceb0925763ce289ec5888b",
+      "apps": [
+        {
+          "bundleName": "Bitmessage.app",
+          "bundleIdentifier": "org.pythonmac.unspecified.Bitmessage"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tip": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/tanin47/tip/releases/download/v2.0.0/Tip.zip",
+      "artifactSHA256": "4d986a461d1b24bb5776fb49063b9a1891939f336b306a6bc75f58d0a4e98bcb",
+      "apps": [
+        {
+          "bundleName": "Tip.app",
+          "bundleIdentifier": "tanin.tip"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chatmate-for-whatsapp": {
+      "caskVersion": "4.3.1,482,1537891987",
+      "sourceURL": "https://dl.devmate.com/net.coldx.mac.WhatsApp/482/1537891987/ChatMateforWhatsApp-482.zip",
+      "artifactSHA256": "af6b75282d8b0c0782246f771a4718675616cbdc6b62682a9e055641ab1e5ac7",
+      "apps": [
+        {
+          "bundleName": "ChatMate for WhatsApp.app",
+          "bundleIdentifier": "net.coldx.mac.WhatsApp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "toptracker": {
+      "caskVersion": "1.6.2,6524",
+      "sourceURL": "https://d101nvfmxunqnl.cloudfront.net/desktop/builds/mac/toptracker_1.6.2.6524.dmg",
+      "artifactSHA256": "3b626f3a4761b6fd8678da4dfed5beabdf1ea198478a8a5f3a06585de56804b0",
+      "apps": [
+        {
+          "bundleName": "TopTracker.app",
+          "bundleIdentifier": "com.toptracker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "password-gorilla": {
+      "caskVersion": "15373",
+      "sourceURL": "https://gorilla.dp100.com/downloads/gorilla.mac.15373.zip",
+      "artifactSHA256": "51c443fb58a3628c2a45bd3160096abb9b017f33e6a08628636168f996ad0414",
+      "apps": [
+        {
+          "bundleName": "Password Gorilla.app",
+          "bundleIdentifier": "password.gorilla"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fstream": {
+      "caskVersion": "1.4.9",
+      "sourceURL": "https://www.sourcemac.com/fstream_FStream.tgz",
+      "artifactSHA256": "50eb2abf24b5e09b42d66f07ca2145d13fa6d350932efd0fa3317ef41178000f",
+      "apps": [
+        {
+          "bundleName": "FStream.app",
+          "bundleIdentifier": "com.sourcemac.fstream"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "handshaker": {
+      "caskVersion": "2.5.6",
+      "sourceURL": "https://dl2.smartisan.com/app/HandShaker.v2.5.6.zip",
+      "artifactSHA256": "1ac126457138456d37175643595c9d29100643c3c810e20992418247f57ba82d",
+      "apps": [
+        {
+          "bundleName": "HandShaker.app",
+          "bundleIdentifier": "com.smartisan.smartfindercommon"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dataspell": {
+      "caskVersion": "2026.1.3,261.26222.84",
+      "sourceURL": "https://download.jetbrains.com/python/dataspell-2026.1.3-aarch64.dmg",
+      "artifactSHA256": "105919466b6fb1d241f103f8867ea652b493c8d0482bb514927e0dde6d231ad6",
+      "apps": [
+        {
+          "bundleName": "DataSpell.app",
+          "bundleIdentifier": "com.jetbrains.dataspell"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "topaz-video-ai": {
+      "caskVersion": "7.1.5",
+      "sourceURL": "https://downloads.topazlabs.com/deploy/TopazVideoAI/7.1.5/TopazVideoAI-7.1.5.pkg",
+      "artifactSHA256": "4e3721d5605c36cbf872573471a5bbc5eb63860404c939f889251311135090ba",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "After_Effects_Plugins.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "OpenFX_Plugin.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Topaz Video AI.app",
+          "bundleIdentifier": "com.topazlabs.Topaz-Video-AI",
+          "packageIdentifier": "com.topazlabs.VAIPackage",
+          "installedPath": "/Applications/Topaz Video AI.app"
+        }
+      ]
+    },
+    "pikopixel": {
+      "caskVersion": "1.0-b10",
+      "sourceURL": "https://twilightedge.com/downloads/PikoPixel.1.0-b10.dmg",
+      "artifactSHA256": "3fa29b5a3899c9a13018c791399225f7dd8ed0e6c4a02a117867f4963f048904",
+      "apps": [
+        {
+          "bundleName": "PikoPixel.app",
+          "bundleIdentifier": "com.twilightedge.PikoPixel"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "quicklook-pat": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/pixelrowdies/quicklook-pat/releases/download/1.0.0/PatternQuickLook.pkg",
+      "artifactSHA256": "41d6d9ffb042490c93d661b95c392a341ecde42f40de6988ae944c64808aac28",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "haroopad": {
+      "caskVersion": "0.13.2",
+      "sourceURL": "https://bitbucket.org/rhiokim/haroopad-download/downloads/Haroopad-v0.13.2-x64.dmg",
+      "artifactSHA256": "97ef0a7df52daeace17ea01a1ca82dc974955c147593f251fb7c04ca0ff09064",
+      "apps": [
+        {
+          "bundleName": "Haroopad.app",
+          "bundleIdentifier": "com.haroopress.pad"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nzbvortex": {
+      "caskVersion": "3.4.3",
+      "sourceURL": "https://www.nzbvortex.com/downloads/NZBVortex-3.4.3.zip",
+      "artifactSHA256": "fe3831f4a610435e404ce5dc7631d6ed981b5533a9fcd73b3cae0a28af9e2f29",
+      "apps": [
+        {
+          "bundleName": "NZBVortex 3.app",
+          "bundleIdentifier": "com.VortexApps.NZBVortex3"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "inssider": {
+      "caskVersion": "0.0.4.5",
+      "sourceURL": "https://metageek.link/inssider-5-mac-release-folder/inSSIDer-0.0.4.5.dmg",
+      "artifactSHA256": "aae290a9e1c35db4b923ff6cf64332b1825ab82a848761e10debdddf3e3f9cfa",
+      "apps": [
+        {
+          "bundleName": "inSSIDer.app",
+          "bundleIdentifier": "com.metageek.inSSIDer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "taskwarrior-pomodoro": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://github.com/coddingtonbear/taskwarrior-pomodoro/releases/download/v1.8.0/taskwarrior-pomodoro-1.8.0.dmg",
+      "artifactSHA256": "07aad9949cf7ec5752d5da87333c52f07654b0c480b18779afaec0f5debb488a",
+      "apps": [
+        {
+          "bundleName": "Taskwarrior Pomodoro.app",
+          "bundleIdentifier": "am.inthe.Taskwarrior-Pomodoro"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sioyek": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/ahrm/sioyek/releases/download/v2.0.0/sioyek-release-mac.zip",
+      "artifactSHA256": "0f81831d4fa0d57e7e7e56a40ab6fa6488950b7d6a944aa29918be42cfc46b8a",
+      "apps": [
+        {
+          "bundleName": "sioyek.app",
+          "bundleIdentifier": "info.sioyek.sioyek"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "topaz-photo-ai": {
+      "caskVersion": "4.0.4",
+      "sourceURL": "https://downloads.topazlabs.com/deploy/TopazPhotoAI/4.0.4/TopazPhotoAI-4.0.4.pkg",
+      "artifactSHA256": "b69dc080940a53b7b3e1b7965d955c6f2c83b5b512a2082fae0ab1e27da828d0",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Topaz Photo AI.app",
+          "bundleIdentifier": "com.topazlabs.TopazPhotoAI",
+          "packageIdentifier": "com.topazlabs.TopazPhotoAI",
+          "installedPath": "/Applications/Topaz Photo AI.app"
+        }
+      ]
+    },
+    "boost-note": {
+      "caskVersion": "0.23.1",
+      "sourceURL": "https://github.com/BoostIO/BoostNote-App/releases/download/v0.23.1/boost-note-mac.dmg",
+      "artifactSHA256": "7495fb235067c6548179a7e6fbaaa728e9616b92e5b5984481d4c97f84996953",
+      "apps": [
+        {
+          "bundleName": "Boost Note.app",
+          "bundleIdentifier": "com.boostio.boostnote"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aqua-app": {
+      "caskVersion": "2024.3.2,243.23654.154",
+      "sourceURL": "https://download.jetbrains.com/aqua/aqua-2024.3.2-aarch64.dmg",
+      "artifactSHA256": "43974cdbbb71aaf5bfcfaf2cfd0e69e9920dda3973e64671936c1d52b267494d",
+      "apps": [
+        {
+          "bundleName": "Aqua.app",
+          "bundleIdentifier": "com.jetbrains.aqua"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

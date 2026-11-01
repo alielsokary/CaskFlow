@@ -179,6 +179,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "bowtie": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 500",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "box-tools": {
     "status": "no_icon",
     "reason": "only installer/updater apps in artifact",
@@ -1223,6 +1229,12 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "quicklook-pat": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "r-app": {
     "status": "review",
     "reason": "non-exact .app selection: single",
@@ -1330,6 +1342,12 @@
     "reason": "download failed: curl: (28) Operation timed out after 600019 milliseconds with 5406720 out of 97747850 bytes received",
     "attempts": 4,
     "updated": "2026-10-01"
+  },
+  "sioyek": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "slack-cli": {
     "status": "no_icon",
