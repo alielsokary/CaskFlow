@@ -50555,6 +50555,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "irbis-zen": {
+      "caskVersion": "0.28.0",
+      "sourceURL": "https://github.com/irbis-sh/zen-desktop/releases/download/v0.28.0/Zen_darwin_arm64_noselfupdate.tar.gz",
+      "artifactSHA256": "9deed05a35b5daa3e05827bb5b04fc33e76eccc08b1476d5537a077d8e6bc0d6",
+      "apps": [
+        {
+          "bundleName": "Zen.app",
+          "bundleIdentifier": "net.zenprivacy.zen"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
