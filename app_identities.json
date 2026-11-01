@@ -47148,6 +47148,32 @@
           "reason": "suite requires unsupported staging or target path"
         }
       ]
+    },
+    "openscad": {
+      "caskVersion": "2021.01",
+      "sourceURL": "https://files.openscad.org/OpenSCAD-2021.01.dmg",
+      "artifactSHA256": "4e4568e19992636ba497c04bc2238399c92314fcb7bf75dc3632aa623ca3635e",
+      "apps": [
+        {
+          "bundleName": "OpenSCAD-2021.01.app",
+          "bundleIdentifier": "org.openscad.OpenSCAD"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "openrgb": {
+      "caskVersion": "1.0rc3,6fbcf62",
+      "sourceURL": "https://codeberg.org/OpenRGB/OpenRGB/releases/download/release_candidate_1.0rc3/OpenRGB_1.0rc3_MacOS_ARM64_6fbcf62.zip",
+      "artifactSHA256": "d90ec7045a54acfeb00b230ce5c173eb915234e032f9c9c98f1a5172dc7d1746",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "OpenRGB.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     }
   }
 }

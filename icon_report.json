@@ -788,7 +788,7 @@
   "flow-desktop": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: cdn.getflow.com",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "flox": {
@@ -1016,7 +1016,7 @@
   "hermit-crab": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "hfsleuth": {
@@ -1136,7 +1136,25 @@
   "iridium": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "irpf2023": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "irpf2024": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "irpf2025": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "j": {
@@ -1156,6 +1174,24 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "jlutil": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "jpc-qlcolorcode": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
+  "jupyter-notebook-ql": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "kern": {
     "status": "no_icon",
@@ -1190,7 +1226,7 @@
   "langgraph-studio": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "lego-mindstorms-ev3": {
@@ -1229,6 +1265,12 @@
     "attempts": 1,
     "updated": "2026-10-13"
   },
+  "license-control-center": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "lidanglesensor": {
     "status": "no_icon",
     "reason": "no .icns in Resources",
@@ -1238,7 +1280,13 @@
   "limitless": {
     "status": "failed",
     "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: download.limitless.ai",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "livetail": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "lo-rain": {
@@ -1292,7 +1340,13 @@
   "lumen": {
     "status": "failed",
     "reason": "sha256 mismatch (got 32f7a616f25e...)",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "lw-scanner": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "macdive": {
@@ -1352,7 +1406,13 @@
   "makemkv": {
     "status": "failed",
     "reason": "sha256 mismatch (got e3adad095fb9...)",
-    "attempts": 1,
+    "attempts": 2,
+    "updated": "2026-11-01"
+  },
+  "markdown-service-tools": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
     "updated": "2026-11-01"
   },
   "mate-translate": {
@@ -1361,16 +1421,22 @@
     "attempts": 7,
     "updated": "2026-10-01"
   },
+  "matterhorn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "mechvibes": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "messenger": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "metasploit": {
@@ -1469,6 +1535,12 @@
     "attempts": 4,
     "updated": "2026-10-01"
   },
+  "ncar-ncl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "nessus": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -1547,10 +1619,16 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "oclint": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "olympus": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "opencore-configurator": {
