@@ -50030,6 +50030,362 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "zap": {
+      "caskVersion": "2.17.0",
+      "sourceURL": "https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_aarch64.dmg",
+      "artifactSHA256": "3b3c6c8b105a33cb2a7d718e7f9aa41418a6d8aae3887d94a42523b5eeac723b",
+      "apps": [
+        {
+          "bundleName": "ZAP.app",
+          "bundleIdentifier": "org.zaproxy.zap.ZAP"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "youtype": {
+      "caskVersion": "0.7.3",
+      "sourceURL": "https://github.com/freefelt/YouType/raw/main/YouType.zip",
+      "artifactSHA256": "3c818f969d6424afd0bfc5c7539cdab33038b39655554166d34d9976d8b20db8",
+      "apps": [
+        {
+          "bundleName": "YouType.app",
+          "bundleIdentifier": "com.AVKorotkov.YouType"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "weka": {
+      "caskVersion": "3.8.7",
+      "sourceURL": "https://downloads.sourceforge.net/weka/weka-3-8-7-bellsoft-arm-osx.dmg",
+      "artifactSHA256": "d1d77d42d3eeb8828bdff128857b5ad6c91447b9587397463d4ca58f6d7472bd",
+      "apps": [
+        {
+          "bundleName": "weka-3.8.7.app",
+          "bundleIdentifier": "weka.gui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "yggdrasil": {
+      "caskVersion": "0.5.14",
+      "sourceURL": "https://github.com/yggdrasil-network/yggdrasil-go/releases/download/v0.5.14/yggdrasil-0.5.14-macos-arm64.pkg",
+      "artifactSHA256": "a0a9366d7471cde1b5668afdaa8b04bcafe8b1489375e548dd512fa9ac0359b2",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "wombat": {
+      "caskVersion": "0.5.0",
+      "sourceURL": "https://github.com/rogchap/wombat/releases/download/v0.5.0/Wombat_v0.5.0_Darwin_x86_64.dmg",
+      "artifactSHA256": "a655f77a5e55b1fbea7f4855d8d536c52d701bdb1ac7c466e1e5656a208421bf",
+      "apps": [
+        {
+          "bundleName": "Wombat.app",
+          "bundleIdentifier": "com.rogchap.wombat"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "x-moto": {
+      "caskVersion": "0.6.3",
+      "sourceURL": "https://github.com/xmoto/xmoto/releases/download/v0.6.3/xmoto-0.6.3-arm64-macos.dmg",
+      "artifactSHA256": "e40aae18c90a0f41c9cc48e63c3da278f44ba1e3328804d80d4ba0819ccc9baa",
+      "apps": [
+        {
+          "bundleName": "X-Moto.app",
+          "bundleIdentifier": "net.sourceforge.xmoto"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "zenmap": {
+      "caskVersion": "7.991",
+      "sourceURL": "https://nmap.org/dist/nmap-7.991.dmg",
+      "artifactSHA256": "a1726429e4b6717ee9c98213a52e5fae2f365037bd1bf5fd570cebb68965049e",
+      "apps": [
+        {
+          "bundleName": "Zenmap.app",
+          "bundleIdentifier": "org.insecure.Zenmap",
+          "packageIdentifier": "org.insecure.nmap.zenmap",
+          "installedPath": "/Applications/Zenmap.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "ncat.app",
+          "reason": "unreadable Info.plist: FileNotFoundError"
+        },
+        {
+          "artifact": "nmap.app",
+          "reason": "unreadable Info.plist: FileNotFoundError"
+        },
+        {
+          "artifact": "nping.app",
+          "reason": "unreadable Info.plist: FileNotFoundError"
+        }
+      ]
+    },
+    "xcodeclangformat": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/mapbox/XcodeClangFormat/releases/download/v1.2.1/XcodeClangFormat.zip",
+      "artifactSHA256": "efc9e926db308977d9ad1ce39925b5c3270eb05aec97a4ae988250d31619d97c",
+      "apps": [
+        {
+          "bundleName": "XcodeClangFormat.app",
+          "bundleIdentifier": "com.mapbox.XcodeClangFormat"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "zettelkasten": {
+      "caskVersion": "3.2022.8",
+      "sourceURL": "https://github.com/Zettelkasten-Team/Zettelkasten/releases/download/v3.2022.8/Package.dmg.zip",
+      "artifactSHA256": "62917c18dfd2dd2d8acd7d2ce4db6a4b036fc92a03877da108e85f8c5efcaeea",
+      "apps": [
+        {
+          "bundleName": "Zettelkasten.app",
+          "bundleIdentifier": "de.danielluedecke.zettelkasten.ZettelkastenApp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wintertime": {
+      "caskVersion": "0.0.7",
+      "sourceURL": "https://github.com/actuallymentor/wintertime-mac-background-freezer/releases/download/0.0.7/Wintertime-0.0.7.dmg",
+      "artifactSHA256": "b7cb5b25172e3450982d673533931e721e009677e711fffa320b5e42abee3ff3",
+      "apps": [
+        {
+          "bundleName": "Wintertime.app",
+          "bundleIdentifier": "com.electron.wintertime"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "yippy": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://github.com/mattDavo/Yippy/releases/download/2.8.1/Yippy.zip",
+      "artifactSHA256": "89d8c2c628637cc72ff6f8a3ca0d07484479a1becb66cedaa67a12062d148131",
+      "apps": [
+        {
+          "bundleName": "Yippy.app",
+          "bundleIdentifier": "MatthewDavidson.Yippy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "xaos": {
+      "caskVersion": "4.3.7",
+      "sourceURL": "https://github.com/xaos-project/XaoS/releases/download/release-4.3.7/XaoS.dmg",
+      "artifactSHA256": "b265b728ddeb476661d09c70a3f6cdc7b25b2f9d2622c8d29f88748c2162e98a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "XaoS.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
+    },
+    "xit": {
+      "caskVersion": "1.0b18",
+      "sourceURL": "https://github.com/Uncommon/Xit/releases/download/1.0b18/Xit.1.0b18.zip",
+      "artifactSHA256": "f5fa3306e8d64d1ac63b773cac5e05d1716b73e4845d9c466480a22c1f7949f3",
+      "apps": [
+        {
+          "bundleName": "Xit.app",
+          "bundleIdentifier": "com.uncommonplace.Xit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "x2goclient": {
+      "caskVersion": "4.1.2.2",
+      "sourceURL": "https://code.x2go.org/releases/X2GoClient_latest_macosx_10_13.dmg",
+      "artifactSHA256": "f41c1a20cc5d6e420a4800954aa18f7b86ed52f4300e187990aa78451be5225a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "x2goclient.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "worldpainter": {
+      "caskVersion": "2.27.1",
+      "sourceURL": "https://www.worldpainter.net/files/worldpainter_2.27.1.tgz",
+      "artifactSHA256": "f2af630b5ee0e477b2357e00e5c25824cb32286764377abb49935b9f15557317",
+      "apps": [
+        {
+          "bundleName": "WorldPainter.app",
+          "bundleIdentifier": "com.install4j.4144-4862-0472-7103.67"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wire": {
+      "caskVersion": "3.43.5493",
+      "sourceURL": "https://github.com/wireapp/wire-desktop/releases/download/macos%2F3.43.5493/Wire.pkg",
+      "artifactSHA256": "462106e7817fb93422943be69fbb29dea83c06d7f91db1bc617f516ed2cb1fdd",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Wire.app",
+          "bundleIdentifier": "com.wearezeta.zclient.mac",
+          "packageIdentifier": "com.wearezeta.zclient.mac",
+          "installedPath": "/Applications/Wire.app"
+        }
+      ]
+    },
+    "youtube-downloader": {
+      "caskVersion": "0.23",
+      "sourceURL": "https://github.com/DenBeke/YouTube-Downloader-for-macOS/releases/download/v0.23/Youtube.Downloader.zip",
+      "artifactSHA256": "2f26cd4475d7ccc5532706414bb558625e46f409d039d05c202dd82b81a24c19",
+      "apps": [
+        {
+          "bundleName": "Youtube Downloader.app",
+          "bundleIdentifier": "denbeke.Youtube-Downloader"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "yesplaymusic": {
+      "caskVersion": "0.4.10",
+      "sourceURL": "https://github.com/qier222/YesPlayMusic/releases/download/v0.4.10/YesPlayMusic-mac-0.4.10-arm64.dmg",
+      "artifactSHA256": "bf7564f451f0e25217015c0f2a83e1385f7a407a42daf0be8d8d992c471160d8",
+      "apps": [
+        {
+          "bundleName": "YesPlayMusic.app",
+          "bundleIdentifier": "com.electron.yesplaymusic"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "widelands-app": {
+      "caskVersion": "1.3",
+      "sourceURL": "https://github.com/widelands/widelands/releases/download/v1.3/Widelands-1.3-MacOS15_arm64.dmg",
+      "artifactSHA256": "578fbbf53acc805fa807d37f5bea0136d3442514cd57bc4f963275086a623a72",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Widelands.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
+    },
+    "xact": {
+      "caskVersion": "2.57",
+      "sourceURL": "http://xact.scottcbrown.org/xACT2.57.zip",
+      "artifactSHA256": "b6835feaa5a1676ac9630606ce340ba728b2a682372034f06d64eaa349c116e8",
+      "apps": [
+        {
+          "bundleName": "xACT.app",
+          "bundleIdentifier": "org.scottcbrown.xact"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "zesarux": {
+      "caskVersion": "13.0",
+      "sourceURL": "https://github.com/chernandezba/zesarux/releases/download/ZEsarUX-13.0/ZEsarUX_macos-silicon-13.0.dmg",
+      "artifactSHA256": "6902cdf17a04ae65cb1b6d243788e627e0d9b7ead66139e66779006c5dbc7747",
+      "apps": [
+        {
+          "bundleName": "ZEsarUX.app",
+          "bundleIdentifier": "com.cesarhernandez.zesarux"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ytmdesktop-youtube-music": {
+      "caskVersion": "2.0.11",
+      "sourceURL": "https://github.com/ytmdesktop/ytmdesktop/releases/download/v2.0.11/YouTube.Music.Desktop.App-darwin-arm64-2.0.11.zip",
+      "artifactSHA256": "a316f258d35f9f2b13c2bc883eafbe70cc50960060af4418e969c9466d83daba",
+      "apps": [
+        {
+          "bundleName": "YouTube Music Desktop App.app",
+          "bundleIdentifier": "com.electron.youtube-music-desktop-app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wormhole": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://drive.usercontent.google.com/download?id=1T6sPiSkIcuMoJwY2HS2F8j0QpLiX4oKB&export=download&confirm=t",
+      "artifactSHA256": "21d1f3848d96e2ac8b9e694812f6b10e3e35544acd5f7d14403c883b38731eff",
+      "apps": [
+        {
+          "bundleName": "Wormhole.app",
+          "bundleIdentifier": "er.Wormhole"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wireframe-sketcher": {
+      "caskVersion": "7.4.3",
+      "sourceURL": "https://wireframesketcher.com/downloads/studio/dist/WireframeSketcher-7.4.3-macosx.arm64.zip",
+      "artifactSHA256": "4dc531410467c9ae17844575ddee4b1a54cb0f8a2105b1dc4bbc722ba207aba0",
+      "apps": [
+        {
+          "bundleName": "WireframeSketcher.app",
+          "bundleIdentifier": "com.wireframesketcher.studio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "zandronum": {
+      "caskVersion": "3.2.1",
+      "sourceURL": "https://zandronum.com/downloads/zandronum3.2.1-macosx.dmg",
+      "artifactSHA256": "9067488a1d72847c87a29f6798b12b3d7b114b2654c3e8b7d7b96090393072a2",
+      "apps": [
+        {
+          "bundleName": "Zandronum.app",
+          "bundleIdentifier": "org.zandronum.zandronum"
+        },
+        {
+          "bundleName": "Doomseeker.app",
+          "bundleIdentifier": "org.doomseeker.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

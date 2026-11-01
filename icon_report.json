@@ -2645,6 +2645,12 @@
     "attempts": 0,
     "updated": "2026-10-13"
   },
+  "xcodeclangformat": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "xppen-pentablet": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -2657,11 +2663,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "yggdrasil": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "yubihsm2-sdk": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "zenmap": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "zulu": {
     "status": "curated",
