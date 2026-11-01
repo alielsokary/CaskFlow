@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-10-24",
-  "totalCasks": 4038,
+  "generatedDate": "2026-10-31",
+  "totalCasks": 4060,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1922,10 +1922,6 @@
       "primary": "productivity",
       "secondary": []
     },
-    "breitbandmessung": {
-      "primary": "utilities",
-      "secondary": []
-    },
     "brewy": {
       "primary": "utilities",
       "secondary": []
@@ -2681,6 +2677,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "clementine": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
     "clibor": {
       "primary": "productivity",
       "secondary": []
@@ -2921,12 +2921,6 @@
     },
     "codexbar": {
       "primary": "menuBar",
-      "secondary": [
-        "ai"
-      ]
-    },
-    "codexia": {
-      "primary": "developerTools",
       "secondary": [
         "ai"
       ]
@@ -3722,6 +3716,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "deutschlandgpt": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "devcleaner": {
       "primary": "developerTools",
       "secondary": [
@@ -3845,6 +3845,12 @@
     "direqual": {
       "primary": "utilities",
       "secondary": []
+    },
+    "diri": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "discord": {
       "primary": "communication",
@@ -4940,6 +4946,10 @@
     },
     "ferdium": {
       "primary": "communication",
+      "secondary": []
+    },
+    "festnetz-check": {
+      "primary": "utilities",
       "secondary": []
     },
     "fetch-app": {
@@ -6363,6 +6373,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "herdr-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "hermes-desktop": {
       "primary": "productivity",
       "secondary": [
@@ -7338,6 +7354,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "junie": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "jupyterlab-app": {
       "primary": "developerTools",
       "secondary": []
@@ -7500,6 +7522,12 @@
     "keyboardcleantool": {
       "primary": "utilities",
       "secondary": []
+    },
+    "keyboop": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "keycastr": {
       "primary": "utilities",
@@ -8066,7 +8094,7 @@
       "primary": "utilities",
       "secondary": []
     },
-    "lingon-x": {
+    "lingon-pro": {
       "primary": "utilities",
       "secondary": []
     },
@@ -8466,6 +8494,10 @@
       "primary": "utilities",
       "secondary": []
     },
+    "macdirstat": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "macdive": {
       "primary": "scienceEducation",
       "secondary": []
@@ -8599,6 +8631,10 @@
         "utilities"
       ]
     },
+    "mactoy": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "mactracker": {
       "primary": "utilities",
       "secondary": []
@@ -8662,6 +8698,13 @@
     "magicquit": {
       "primary": "utilities",
       "secondary": []
+    },
+    "magpie": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "menuBar"
+      ]
     },
     "mail-assistant": {
       "primary": "communication",
@@ -8838,6 +8881,12 @@
     "master-pdf-editor": {
       "primary": "productivity",
       "secondary": []
+    },
+    "mate-translate": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar"
+      ]
     },
     "mater": {
       "primary": "menuBar",
@@ -10015,6 +10064,12 @@
       "primary": "productivity",
       "secondary": []
     },
+    "nebius": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "neo-network-utility": {
       "primary": "utilities",
       "secondary": []
@@ -10252,6 +10307,10 @@
       "primary": "productivity",
       "secondary": []
     },
+    "notational-velocity": {
+      "primary": "productivity",
+      "secondary": []
+    },
     "notchi": {
       "primary": "menuBar",
       "secondary": [
@@ -10392,6 +10451,10 @@
     },
     "nutstore": {
       "primary": "cloudStorage",
+      "secondary": []
+    },
+    "nvalt": {
+      "primary": "productivity",
       "secondary": []
     },
     "nvidia-geforce-now": {
@@ -10712,6 +10775,12 @@
         "ai"
       ]
     },
+    "opencodex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "opencomic": {
       "primary": "productivity",
       "secondary": []
@@ -10740,6 +10809,12 @@
       "primary": "utilities",
       "secondary": [
         "videoMedia"
+      ]
+    },
+    "openframe-console": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "openframeworks": {
@@ -11388,6 +11463,10 @@
     },
     "pecunia": {
       "primary": "financeCrypto",
+      "secondary": []
+    },
+    "peel": {
+      "primary": "utilities",
       "secondary": []
     },
     "pen": {
@@ -12373,6 +12452,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "qoder": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "qq": {
       "primary": "communication",
       "secondary": []
@@ -12803,6 +12888,10 @@
     },
     "renamer": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "rencal": {
+      "primary": "productivity",
       "secondary": []
     },
     "reolink": {
@@ -14186,6 +14275,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "solidcraft": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "solidtime": {
       "primary": "productivity",
       "secondary": [
@@ -14395,6 +14490,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "spencer": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "spike": {
       "primary": "scienceEducation",
       "secondary": []
@@ -14565,10 +14666,6 @@
     },
     "standard-notes": {
       "primary": "productivity",
-      "secondary": []
-    },
-    "starnet++": {
-      "primary": "designGraphics",
       "secondary": []
     },
     "starnet2": {
@@ -15211,6 +15308,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "task-manager-tmog": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "taskade": {
       "primary": "productivity",
       "secondary": []
@@ -15523,6 +15626,12 @@
       "primary": "financeCrypto",
       "secondary": []
     },
+    "thinkrail": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "thinlinc-client": {
       "primary": "utilities",
       "secondary": []
@@ -15715,6 +15824,13 @@
       "primary": "designGraphics",
       "secondary": [
         "productivity"
+      ]
+    },
+    "tldv": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
       ]
     },
     "tm-error-logger": {
@@ -16733,16 +16849,16 @@
       "primary": "other",
       "secondary": []
     },
+    "vocevista-pro": {
+      "primary": "audioMusic",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
     "vocevista-video": {
       "primary": "scienceEducation",
       "secondary": [
         "audioMusic"
-      ]
-    },
-    "vocevista-video-pro": {
-      "primary": "audioMusic",
-      "secondary": [
-        "scienceEducation"
       ]
     },
     "voiceink": {
@@ -16954,6 +17070,12 @@
     "waves-central": {
       "primary": "utilities",
       "secondary": []
+    },
+    "wblock": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "browsers"
+      ]
     },
     "wch-ch34x-usb-serial-driver": {
       "primary": "other",

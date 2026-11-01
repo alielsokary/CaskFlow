@@ -4570,6 +4570,13 @@
     "og_desc": "A free, native macOS app for disk cleanup, storage management, and custom low-battery notifications for your Mac and Bluetooth devices."
   },
   {
+    "token": "clementine",
+    "homepage": "https://www.clementine-player.org/",
+    "title": "Clementine Music Player",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "clibor",
     "homepage": "https://chigusa-web.com/clibor-for-mac-en/",
     "title": "Clibor for Mac English | Clipboard history free software \"Clibor for Mac\"",
@@ -6329,6 +6336,13 @@
     "og_desc": "kicking out badware on macOS since 2014"
   },
   {
+    "token": "deutschlandgpt",
+    "homepage": "https://www.deutschlandgpt.de/",
+    "title": "KI Plattform Deutschland - DSGVO-konform",
+    "meta_desc": "Die KI-Plattform für den deutschen Mittelstand. ChatGPT, Claude, Gemini & Mistral DSGVO-konform auf europäischer Infrastruktur - Daten in Deutschland. 1.000+ Organisationen vertrauen DeutschlandGPT. Jetzt Demo vereinbaren.",
+    "og_desc": "Die KI-Plattform für den deutschen Mittelstand. ChatGPT, Claude, Gemini & Mistral DSGVO-konform auf europäischer Infrastruktur - Daten in Deutschland. ISO 27001 und ISO 9001."
+  },
+  {
     "token": "devcleaner",
     "homepage": "https://github.com/vashpan/xcode-dev-cleaner",
     "title": "GitHub - vashpan/xcode-dev-cleaner: If you want to reclaim tens of gigabytes of your storage used for various Xcode caches - this tool is for you! · GitHub",
@@ -6523,6 +6537,13 @@
     "title": "DirEqual - The Ultimate File Comparison Tool for Mac Users",
     "meta_desc": "DirEqual - advanced folder compare utility for Mac",
     "og_desc": "DirEqual is an advanced directory compare utility for Mac. It allows detecting the tiniest changes between folders and display the result with a clear and intuitive way. The differences are highlighted using colors and icons indicating the difference type (size, date or item content)."
+  },
+  {
+    "token": "diri",
+    "homepage": "https://diri.sh/",
+    "title": "Diri - Run Claude Code, Codex and other coding agents in parallel",
+    "meta_desc": "Free, open-source app to run Claude Code, Codex and 20 more side by side, on your Mac or over SSH. Agents drive it over MCP: spawn agents, schedule runs, use your apps.",
+    "og_desc": "Free, open-source app to run Claude Code, Codex and 20 more side by side, on your Mac or over SSH. Agents drive it over MCP: spawn agents, schedule runs, use your apps."
   },
   {
     "token": "discord",
@@ -28833,6 +28854,13 @@
     "og_desc": "Laravel Development perfected - One click PHP development environment."
   },
   {
+    "token": "herdr-app",
+    "homepage": "https://herdr.dev/",
+    "title": "Herdr: made for your agents, remade by them",
+    "meta_desc": "Herdr is a native app for running coding agents. Your agent can change any part of it, from the sidebar to whole new panels. Close it and your agents keep working.",
+    "og_desc": "Herdr is a native app for running coding agents. Your agent can change any part of it, from the sidebar to whole new panels. Close it and your agents keep working."
+  },
+  {
     "token": "hermes-desktop",
     "homepage": "https://hermes-agent.nousresearch.com/desktop",
     "title": "Hermes Agent | Nous Research",
@@ -30651,6 +30679,13 @@
     "og_desc": "Jumpshare helps you and your team communicate better with screen recordings, screenshots, GIFs, file sharing, and more - all in one software."
   },
   {
+    "token": "junie",
+    "homepage": "https://junie.jetbrains.com/",
+    "title": "Junie by JetBrains",
+    "meta_desc": "Junie by JetBrains. AI Coding Agent.",
+    "og_desc": "Junie by JetBrains. AI Coding Agent."
+  },
+  {
     "token": "jupyter-notebook-viewer",
     "homepage": "https://github.com/tuxu/nbviewer-app",
     "title": "GitHub - tuxu/nbviewer-app: A Jupyter notebook viewer for macOS · GitHub",
@@ -30946,6 +30981,13 @@
     "title": "folivora.ai - Great Tools for your Mac!",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "keyboop",
+    "homepage": "https://keyboop.com/",
+    "title": "Keyboop - раскладка под контролем + голосовой набор для macOS",
+    "meta_desc": "Бесплатно: переключатель раскладки, голосовой набор и перевод выделенного для macOS. Локально, без слежки. Бесплатная замена Punto Switcher.",
+    "og_desc": "Бесплатно чиню раскладку на лету и набираю текст голосом. Локально и без слежки. Для macOS."
   },
   {
     "token": "keycastr",
@@ -32543,6 +32585,13 @@
     "og_desc": ""
   },
   {
+    "token": "macdirstat",
+    "homepage": "https://github.com/phalladar/MacDirStat",
+    "title": "GitHub - phalladar/MacDirStat: Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what's taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Apple silicon and Intel, signed and notarized, fully offline. · GitHub",
+    "meta_desc": "Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what's taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Apple silicon and Intel, signed and notarized, fully offline. - phalladar/MacDirStat",
+    "og_desc": "Free, open-source disk space analyzer for macOS, inspired by WinDirStat. See what&#39;s taking up space on your Mac with an interactive treemap and track down large files. Native SwiftUI app for Ap..."
+  },
+  {
     "token": "macdive",
     "homepage": "https://www.mac-dive.com/",
     "title": "MacDive",
@@ -32791,6 +32840,13 @@
     "og_desc": "A free and open-source collection of native macOS menu bar tools.  - ggbond268/MacTools"
   },
   {
+    "token": "mactoy",
+    "homepage": "https://github.com/cashcon57/mactoy",
+    "title": "GitHub - cashcon57/mactoy: Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. · GitHub",
+    "meta_desc": "Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. - cashcon57/mactoy",
+    "og_desc": "Native macOS app for Ventoy install and raw image flashing. SwiftUI + Liquid Glass. No Windows or Linux VM needed. - cashcon57/mactoy"
+  },
+  {
     "token": "mactracker",
     "homepage": "https://mactracker.ca/",
     "title": "Mactracker",
@@ -32894,6 +32950,13 @@
     "title": "MagicQuit - Your MacOS Efficiency Tool",
     "meta_desc": "MagicQuit: Automatically close unused apps on your Mac for better focus and efficiency.",
     "og_desc": "Automatically close unused apps on your Mac for better focus and efficiency."
+  },
+  {
+    "token": "magpie",
+    "homepage": "https://usemagpie.ai/",
+    "title": "magpie",
+    "meta_desc": "One place to pick every agent's model. Codex on DeepSeek, Claude Code on Kimi, Gemini CLI on GLM, from the menu bar, through one local gateway.",
+    "og_desc": "Every agent's model. One place."
   },
   {
     "token": "mail-assistant",
@@ -35400,6 +35463,13 @@
     "og_desc": ""
   },
   {
+    "token": "nebius",
+    "homepage": "https://docs.nebius.com/cli",
+    "title": "Nebius AI Cloud CLI - Nebius AI Cloud",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "neo-network-utility",
     "homepage": "https://www.devontechnologies.com/apps/freeware",
     "title": "DEVONtechnologies | Needful Things",
@@ -35811,6 +35881,13 @@
     "og_desc": "From simple notes and todo lists, to articles and journals, to wikis and second brain."
   },
   {
+    "token": "notational-velocity",
+    "homepage": "https://notational.net/",
+    "title": "Notational Velocity",
+    "meta_desc": "Notational Velocity: modeless, mouseless Mac OS X note-taking application",
+    "og_desc": ""
+  },
+  {
     "token": "notchi",
     "homepage": "https://notchi.app/",
     "title": "Notchi",
@@ -36057,6 +36134,13 @@
     "title": "Nutstore Official Website|Enterprise Network Disk|Team Network Disk|Personal Cloud Disk|Synchronous Cloud Disk",
     "meta_desc": "Nutstore is a free cloud storage service that helps you access your files anywhere at any time and share them with friends easily",
     "og_desc": ""
+  },
+  {
+    "token": "nvalt",
+    "homepage": "https://brettterpstra.com/projects/nvalt/",
+    "title": "nvALT - BrettTerpstra.com",
+    "meta_desc": "A new app is coming to replace nvALT: nvUltra. Sign up here for updates here.",
+    "og_desc": "A new app is coming to replace nvALT: nvUltra. Sign up here for updates here."
   },
   {
     "token": "nvidia-geforce-now",
@@ -36575,6 +36659,13 @@
     "og_desc": ""
   },
   {
+    "token": "opencodex",
+    "homepage": "https://opencodex.me/",
+    "title": "opencodex - One local gateway for Codex, Claude Code and more",
+    "meta_desc": "One local gateway for your AI coding tools and models: use the providers you choose with Codex, Claude Code, Claude Desktop and Grok Build, and connect more tools through managed configs.",
+    "og_desc": "One local gateway for your AI coding tools and models: use the providers you choose with Codex, Claude Code, Claude Desktop and Grok Build, and connect more tools through managed configs."
+  },
+  {
     "token": "opencomic",
     "homepage": "https://opencomic.app/",
     "title": "Comic and manga reader | OpenComic",
@@ -36636,6 +36727,13 @@
     "title": "Collect - Open Foris",
     "meta_desc": "Open Foris unites communities and practitioners with open-source tools, making forest and land monitoring accessible, transparent, and collaborative for people and the planet",
     "og_desc": ""
+  },
+  {
+    "token": "openframe-console",
+    "homepage": "https://openframe.ai/",
+    "title": "OpenFrame - AI-Driven Open-Source OS for MSPs",
+    "meta_desc": "Swap bloated vendor tools for open ones. Automate the boring crap. Take your margin back. AI-driven open-source OS for MSPs.",
+    "og_desc": "Swap bloated vendor tools for open ones. Automate the boring crap. Take your margin back. AI-driven open-source OS for MSPs."
   },
   {
     "token": "openframeworks",
@@ -37825,6 +37923,13 @@
     "title": "Pecunia",
     "meta_desc": "Pecunia",
     "og_desc": ""
+  },
+  {
+    "token": "peel",
+    "homepage": "https://peel.tuguidragos.com/",
+    "title": "Peel: Free, Open Source Uninstaller and Cleaner for Mac",
+    "meta_desc": "Peel uninstalls Mac apps along with the files they leave behind, and shows why each file belongs to them. Free and open source, for macOS Tahoe 26 or later.",
+    "og_desc": "A free, open source uninstaller and cleaner for macOS, which also fine-tunes your Mac and sets up Terminal."
   },
   {
     "token": "pen",
@@ -39465,6 +39570,13 @@
     "og_desc": ""
   },
   {
+    "token": "qoder",
+    "homepage": "https://qoder.com/",
+    "title": "Qoder - AI Coding Assistant | Autonomous Development IDE",
+    "meta_desc": "Qoder is a next-generation AI programming platform that offers intelligent code completion, AI conversational programming, and automatic code generation. It supports mainstream IDEs like VS Code and JetBrains. Download for free.",
+    "og_desc": "Qoder is a next-generation AI programming platform that offers intelligent code completion, AI conversational programming, and automatic code generation. It supports mainstream IDEs like VS Code and JetBrains. Download for free."
+  },
+  {
     "token": "qq",
     "homepage": "https://im.qq.com/macqq/index.shtml",
     "title": "QQ Mac版-轻松做自己",
@@ -40216,6 +40328,13 @@
     "title": "Renamer - Batch File Renamer for Mac",
     "meta_desc": "You need to rename many files? Renamer is a batch file renaming app for macOS that allows you to rename lots of files quickly and conveniently.",
     "og_desc": ""
+  },
+  {
+    "token": "rencal",
+    "homepage": "https://rencal.org/",
+    "title": "renCal: Open-source calendar for Omarchy, Linux and macOS",
+    "meta_desc": "Free, open-source calendar for hackers. Built for Omarchy, runs on Linux and macOS. Syncs with Google Calendar, iCloud, Outlook and CalDAV. Events stored as plaintext .ics files.",
+    "og_desc": "Free, open-source calendar for hackers. Built for Omarchy, runs on Linux and macOS. Syncs with Google Calendar, iCloud, Outlook and CalDAV. Events stored as plaintext .ics files."
   },
   {
     "token": "renpy",
@@ -42687,6 +42806,13 @@
     "og_desc": "Solar2D - Awesome 2D game engine"
   },
   {
+    "token": "solidcraft",
+    "homepage": "https://solidcraft.io/",
+    "title": "The parts of a boundary representation",
+    "meta_desc": "Sketch, constrain, and build editable parts with SolidCraft. Open-source parametric CAD for desktop and browser, with optional MCP agent workflows.",
+    "og_desc": "Sketch, constrain, and build editable parts with SolidCraft. Open-source parametric CAD for desktop and browser, with optional MCP agent workflows."
+  },
+  {
     "token": "solidtime",
     "homepage": "https://www.solidtime.io/",
     "title": "Solidtime - Open source time tracking for teams",
@@ -43066,6 +43192,13 @@
     "title": "Speedify - Use all of your Internet connections at the same time",
     "meta_desc": "Speedify's app and enterprise solutions enable you to combine multiple internet connections (Wi-Fi, 4G, 5G, Ethernet, Starlink, Satellite, and more) to improve the stability, speed, and security of your online experiences.",
     "og_desc": "Speedify's app and enterprise solutions enable you to combine multiple internet connections (Wi-Fi, 4G, 5G, Ethernet, Starlink, Satellite, and more) to improve the stability, speed, and security of your online experiences."
+  },
+  {
+    "token": "spencer",
+    "homepage": "https://macspencer.app/",
+    "title": "Spencer - Window Manager for Mac | Save Layouts Across Spaces",
+    "meta_desc": "Save & restore window positions - across all virtual Desktops. Spencer launches apps, hides others, and adjusts the Desktop count to match your saved layouts.",
+    "og_desc": "Save & restore window positions - across all virtual Desktops. Spencer launches apps, hides others, and adjusts the Desktop count to match your saved layouts."
   },
   {
     "token": "spike",
@@ -44533,6 +44666,13 @@
     "og_desc": "⚙️💻 A macOS app that makes it a breeze to manage multiple GitHub Actions runners in ephemeral virtual machines on a single host machine. The benefits are that runners can run in parallel, and each ..."
   },
   {
+    "token": "task-manager-tmog",
+    "homepage": "https://tmog.org/",
+    "title": "Why is my Computer Slow? TMOG Knows Why!",
+    "meta_desc": "Why is my computer slow? TMOG knows why. TMOG 1.1 is one task manager with fully native applications for macOS, Windows, and Linux.",
+    "og_desc": "One glance at TMOG and you know why. One measuring core, with native applications for macOS, Windows, and Linux."
+  },
+  {
     "token": "taskade",
     "homepage": "https://www.taskade.com/",
     "title": "",
@@ -45131,6 +45271,13 @@
     "og_desc": "Experience thinkorswim® desktop - a customizable trading software with elite tools that help you analyze, strategize, and trade like never before."
   },
   {
+    "token": "thinkrail",
+    "homepage": "https://thinkrail.ai/",
+    "title": "ThinkRail - the agentic IDE that gets better every time you use it",
+    "meta_desc": "Open a repo as a project, cut isolated git-worktree workspaces, and pair with the pi coding agent in a real IDE - Monaco tabs, terminals, diffs, concurrent chats, and a spec graph the agent actually reads. Open source, Apache-2.0, a JetBrains InnovationHub project.",
+    "og_desc": "Git-worktree workspaces, a real editor, terminals, concurrent agent chats, and a spec graph the agent reads. Open source, Apache-2.0."
+  },
+  {
     "token": "thinlinc-client",
     "homepage": "https://www.cendio.com/thinlinc/what-is-thinlinc/",
     "title": "arrow-right",
@@ -45501,6 +45648,13 @@
     "title": "GitHub - tldraw/tldraw-desktop: A desktop app for using tldraw with local files. · GitHub",
     "meta_desc": "A desktop app for using tldraw with local files. Contribute to tldraw/tldraw-desktop development by creating an account on GitHub.",
     "og_desc": "A desktop app for using tldraw with local files. Contribute to tldraw/tldraw-desktop development by creating an account on GitHub."
+  },
+  {
+    "token": "tldv",
+    "homepage": "https://tldv.io/",
+    "title": "tl;dv - AI Meeting Notetaker for Zoom, Google Meet & Teams",
+    "meta_desc": "AI meeting notes - record, transcribe, and summarize meetings automatically. tl;dv turns Zoom, Google Meet, and Microsoft Teams calls into actionable insights with AI-powered summaries.",
+    "og_desc": "AI meeting notes - record, transcribe, and summarize meetings automatically. tl;dv turns Zoom, Google Meet, and Microsoft Teams calls into actionable insights with AI-powered summaries."
   },
   {
     "token": "tm-error-logger",
@@ -47629,6 +47783,13 @@
     "title": "Pardon Our Interruption",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "wblock",
+    "homepage": "https://skula.me/project/wblock/",
+    "title": "wBlock: Free Open-Source Ad Blocker for Safari",
+    "meta_desc": "A free, open-source Safari ad blocker for Mac, iPhone, iPad, and Vision Pro, with up to 750,000 filter rules, userscripts, native video players, and per-site controls. No subscription.",
+    "og_desc": "A free, open-source Safari ad blocker for Mac, iPhone, iPad, and Vision Pro, with up to 750,000 filter rules, userscripts, native video players, and per-site controls. No subscription."
   },
   {
     "token": "wch-ch34x-usb-serial-driver",
