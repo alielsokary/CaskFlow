@@ -47472,6 +47472,281 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "postbird": {
+      "caskVersion": "0.8.4",
+      "sourceURL": "https://github.com/Paxa/postbird/releases/download/0.8.4/Postbird-0.8.4.dmg",
+      "artifactSHA256": "d9ac960e0c48fab31b0662c726a3eb373794c14dd49651fa533ca3c1c67c67be",
+      "apps": [
+        {
+          "bundleName": "Postbird.app",
+          "bundleIdentifier": "com.electron.postbird"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "powder": {
+      "caskVersion": "100.1.400",
+      "sourceURL": "https://github.com/The-Powder-Toy/The-Powder-Toy/releases/download/v100.1.400/powder-v100.1.400-aarch64-darwin-macos.dmg",
+      "artifactSHA256": "baad1d8e94f74752e1a458d4fe6b9b2de8682607556d046f92695714cef7f3d1",
+      "apps": [
+        {
+          "bundleName": "The Powder Toy.app",
+          "bundleIdentifier": "uk.co.powdertoy.tpt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "polyphone": {
+      "caskVersion": "2.5.1,129",
+      "sourceURL": "https://www.polyphone.io/download/0/v129/Polyphone-MacOS_12-2.5.1.dmg",
+      "artifactSHA256": "89a60fc2444a4502719d23f2d5404a1fa9677db64ef09267ebced0eddf77a0dc",
+      "apps": [
+        {
+          "bundleName": "polyphone.app",
+          "bundleIdentifier": "fr.polyphone.Polyphone"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "psi": {
+      "caskVersion": "1.4",
+      "sourceURL": "https://downloads.sourceforge.net/psi/psi-1.4-mac.dmg",
+      "artifactSHA256": "e6955acc3d9c7b835b29e1b13918abde6a4bf4748524847885cf896bc0972c8a",
+      "apps": [
+        {
+          "bundleName": "Psi.app",
+          "bundleIdentifier": "org.psi-im"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "psst": {
+      "caskVersion": "latest",
+      "sourceURL": "https://github.com/jpochyla/psst/releases/latest/download/Psst.dmg",
+      "artifactSHA256": "72fc8aff549436481a6389bf997ec82189d670c3718acbf87e8aeb8d4c146a01",
+      "apps": [
+        {
+          "bundleName": "Psst.app",
+          "bundleIdentifier": "com.jpochyla.psst"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pine": {
+      "caskVersion": "0.1.0",
+      "sourceURL": "https://github.com/lukakerr/pine/releases/download/0.1.0/Pine-0.1.0.zip",
+      "artifactSHA256": "046f2603f7e4dcdc7535c6a5652dbfbab5cbe93fa36ca161f8a8029b53770b76",
+      "apps": [
+        {
+          "bundleName": "Pine.app",
+          "bundleIdentifier": "io.github.lukakerr.Pine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "protege": {
+      "caskVersion": "5.6.9",
+      "sourceURL": "https://github.com/protegeproject/protege-distribution/releases/download/protege-5.6.9/Protege-5.6.9-mac.zip",
+      "artifactSHA256": "a3037b38dbdbf8c4cb49ae6d883542c93a9c5f58f17b5c3121b44dee29a428e7",
+      "apps": [
+        {
+          "bundleName": "Protégé.app",
+          "bundleIdentifier": "edu.stanford.protege"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pomotroid": {
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/Splode/pomotroid/releases/download/v1.7.1/Pomotroid_1.7.1_universal.dmg",
+      "artifactSHA256": "2ccc0f4d64a8491f9771cb5a3c8df46b37ead752bd6592dcc9d562e4c139fd4a",
+      "apps": [
+        {
+          "bundleName": "Pomotroid.app",
+          "bundleIdentifier": "com.splode.pomotroid"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pololu-avr-programmer-v2": {
+      "caskVersion": "0J1120,1.1.0",
+      "sourceURL": "https://www.pololu.com/file/0J1120/pololu-usb-avr-programmer-v2-1.1.0-macos.pkg",
+      "artifactSHA256": "c4e1c5d6dcb451dc79f8c9350abdde8b8054d35e00cb7cbf34fc2c67953ce59d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pololu-avr-programmer-v2",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "pixelorama": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.2.1/Pixelorama-Mac.dmg",
+      "artifactSHA256": "0999c2652473ae0688fa1d53de3863059b6d17ed1588a9a6aaf5b22c6c4ccf27",
+      "apps": [
+        {
+          "bundleName": "Pixelorama.app",
+          "bundleIdentifier": "com.orama-interactive.pixelorama"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "prowlarr": {
+      "caskVersion": "2.5.2.5491",
+      "sourceURL": "https://github.com/Prowlarr/Prowlarr/releases/download/v2.5.2.5491/Prowlarr.master.2.5.2.5491.osx-app-core-arm64.zip",
+      "artifactSHA256": "c6233cd942aad3c382c2660ad0004f942a3cd54c4fb8b805e14d2cd1d6b2b264",
+      "apps": [
+        {
+          "bundleName": "Prowlarr.app",
+          "bundleIdentifier": "com.osx.prowlarr.com"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pliim": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/zehfernandes/pliim/releases/download/v1.7.0/Pliim.app.zip",
+      "artifactSHA256": "cd44a3e8d0d58b431df288c3ce13a8032f76b270077ac488cb9db5d74e7d17a5",
+      "apps": [
+        {
+          "bundleName": "Pliim.app",
+          "bundleIdentifier": "com.electron.pliim"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "privatevpn": {
+      "caskVersion": "3.3.6",
+      "sourceURL": "https://privatevpn.com/client/PrivateVPN.dmg",
+      "artifactSHA256": "3dcfc355e56afd9d5cb3bafa20b0250d1c88545a7fb405cc6dd7720296cba85e",
+      "apps": [
+        {
+          "bundleName": "PrivateVPN.app",
+          "bundleIdentifier": "com.pvpn.privatevpn-macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "plotdigitizer": {
+      "caskVersion": "2.6.12",
+      "sourceURL": "https://downloads.sourceforge.net/plotdigitizer/plotdigitizer/2.6.12/PlotDigitizer_MacOS.dmg",
+      "artifactSHA256": "46542758d70e80e194bf1ae7d1da31415bf91635f13782bc460d10af9568b987",
+      "apps": [
+        {
+          "bundleName": "Plot Digitizer.app",
+          "bundleIdentifier": "jahuwaldt.PlotDigitizer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "platypus": {
+      "caskVersion": "5.5.0",
+      "sourceURL": "https://sveinbjorn.org/files/software/platypus/platypus5.5.0.zip",
+      "artifactSHA256": "2fad132e717e6543b41e5e7aeb357e8846baf8c9f3b3cb2919dc0f5eec3de415",
+      "apps": [
+        {
+          "bundleName": "Platypus.app",
+          "bundleIdentifier": "org.sveinbjorn.Platypus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pronterface": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/kliment/Printrun/releases/download/printrun-2.2.0/printrun-2.2.0_macos_x64.zip",
+      "artifactSHA256": "b3fa041bb478b9d66b4a7654d93236b38ad36ec90370891943569c1073886e2b",
+      "apps": [
+        {
+          "bundleName": "pronterface.app",
+          "bundleIdentifier": "Pronterface"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "powder-player": {
+      "caskVersion": "1.60",
+      "sourceURL": "https://github.com/jaruba/PowderPlayer/releases/download/v1.60/PowderPlayer_v1.60.dmg",
+      "artifactSHA256": "66f532b975c12f3d5343e7589dcc6746e1a555416494bd8f6b80642464b7b66a",
+      "apps": [
+        {
+          "bundleName": "Powder Player.app",
+          "bundleIdentifier": "media.powder.player"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pure-writer": {
+      "caskVersion": "1.9.0,1.9.0",
+      "sourceURL": "https://github.com/PureWriter/desktop/releases/download/1.9.0/PureWriter-1.9.0-macOS.dmg",
+      "artifactSHA256": "db9423c6aeb7afb8a089c3ccbc7f6ef248d9c8ad46c36d60c6c3d304a98c0e47",
+      "apps": [
+        {
+          "bundleName": "Pure Writer.app",
+          "bundleIdentifier": "com.drakeet.purewriter",
+          "packageIdentifier": "com.drakeet.purewriter",
+          "installedPath": "/Applications/Pure Writer.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "puppetry": {
+      "caskVersion": "3.2.6",
+      "sourceURL": "https://github.com/dsheiko/puppetry/releases/download/v3.2.6/puppetry-mac-v3.2.6.zip",
+      "artifactSHA256": "740b4892c1c7ed4164f1b9adcf2b9f27b2499d559e32029cd9af98f97b71cbfd",
+      "apps": [
+        {
+          "bundleName": "puppetry.app",
+          "bundleIdentifier": "com.dsheiko.puppetry"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "profilecreator": {
+      "caskVersion": "0.3.7",
+      "sourceURL": "https://github.com/ProfileCreator/ProfileCreator/releases/download/0.3.7/ProfileCreator-0.3.7.dmg",
+      "artifactSHA256": "8579e70603a932faa8498181056e09469fa55b3fc2d0397fba165ac21f3a84ba",
+      "apps": [
+        {
+          "bundleName": "ProfileCreator.app",
+          "bundleIdentifier": "com.github.ProfileCreator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "poi": {
+      "caskVersion": "12.0.1",
+      "sourceURL": "https://github.com/poooi/poi/releases/download/v12.0.1/poi-12.0.1-arm64.dmg",
+      "artifactSHA256": "d63b94de386ea8835c4e23bd2100ea20e8e33edf52f940d9c0419b71722f1c55",
+      "apps": [
+        {
+          "bundleName": "poi.app",
+          "bundleIdentifier": "org.poooi.poi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

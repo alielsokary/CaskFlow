@@ -1394,7 +1394,7 @@
   "maelstrom": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1,
+    "attempts": 2,
     "updated": "2026-11-01"
   },
   "mailtrackerblocker": {
@@ -1769,6 +1769,12 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "pktriot": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "playonmac": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
@@ -1780,6 +1786,18 @@
     "reason": "u-he plugin; artifact only yields the UHM document icon (manual audit 2026-07-07)",
     "attempts": 0,
     "updated": "2026-07-07"
+  },
+  "pokemon-reborn": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "pololu-avr-programmer-v2": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "postbox": {
     "status": "failed",
@@ -1811,11 +1829,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "procexp": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "prolific-pl2303": {
     "status": "no_icon",
     "reason": "unsupported container: PL2303HXD_G_Mac-Driver_v2.2.11_20250314.pkg_-1.7z",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "protege": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "ptpwebcam": {
     "status": "no_icon",
