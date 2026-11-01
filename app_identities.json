@@ -41673,6 +41673,408 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "html-mangareader": {
+      "caskVersion": "2.2.0",
+      "sourceURL": "https://github.com/luejerry/html-mangareader/releases/download/v2.2.0/mangareader-macos_x86-2.2.0.dmg",
+      "artifactSHA256": "83ed6b7e5d05e1fedf79628de0f0323df7f37956a86f00921ca900554a3a5ddb",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "HTML Mangareader.app",
+          "reason": "unsupported CFBundleIdentifier: 'HTML Mangareader'"
+        }
+      ]
+    },
+    "displaycal": {
+      "caskVersion": "3.8.9.3",
+      "sourceURL": "https://downloads.sourceforge.net/dispcalgui/release/3.8.9.3/DisplayCAL-3.8.9.3.pkg",
+      "artifactSHA256": "3e3f4a506c3ffc1e2004d57c6cd521d6cacb1bb6a71f9e3fa4cd81ab6ad4f31a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "cinch": {
+      "caskVersion": "1.2.4",
+      "sourceURL": "https://www.irradiatedsoftware.com/downloads/Cinch_1.2.4.zip",
+      "artifactSHA256": "68afff19aaff4885e803733df74cfc87fe6529ec57107d21bddcb00d61dd14a0",
+      "apps": [
+        {
+          "bundleName": "Cinch.app",
+          "bundleIdentifier": "com.irradiatedsoftware.Cinch-Direct"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "galaxybudsclient": {
+      "caskVersion": "5.2.1",
+      "sourceURL": "https://github.com/ThePBone/GalaxyBudsClient/releases/download/5.2.1/GalaxyBudsClient_macOS_arm64.pkg",
+      "artifactSHA256": "1380b1bbcb42ad6c3a0120a8500b56000c14f2f55954aee94f55bb0573c3d7d6",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Galaxy Buds Manager.app",
+          "bundleIdentifier": "me.timschneeberger.galaxybudsclient",
+          "packageIdentifier": "me.timschneeberger.galaxybudsclient",
+          "installedPath": "/Applications/Galaxy Buds Manager.app"
+        }
+      ]
+    },
+    "melonds": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/melonDS-emu/melonDS/releases/download/1.1/melonDS-1.1-macOS-universal.zip",
+      "artifactSHA256": "79843a5e5cab93188bd11942bff5440b9505ee91c6f526f7e90c22e3cff6718d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "melonDS.app",
+          "reason": "unreadable Info.plist: ValueError"
+        }
+      ]
+    },
+    "coinomi-wallet": {
+      "caskVersion": "1.2.4",
+      "sourceURL": "https://storage.coinomi.com/binaries/desktop/coinomi-wallet-1.2.4-macos.dmg",
+      "artifactSHA256": "da8de4e58b4de69454449e4aad2f69daab658c40c6669d8b2e2d434b26c5dcf4",
+      "apps": [
+        {
+          "bundleName": "Coinomi Wallet.app",
+          "bundleIdentifier": "com.coinomi.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dvdstyler": {
+      "caskVersion": "3.2.1_1",
+      "sourceURL": "https://downloads.sourceforge.net/dvdstyler/DVDStyler-3.2.1_1-MacOSX.dmg",
+      "artifactSHA256": "79da43f15c1eb8002cf4a9282ff61047fdd0911532a413e0b3f9077530673ac5",
+      "apps": [
+        {
+          "bundleName": "DVDStyler.app",
+          "bundleIdentifier": "org.dvdstyler.DVDStyler"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lbry": {
+      "caskVersion": "0.53.9",
+      "sourceURL": "https://github.com/lbryio/lbry-desktop/releases/download/v0.53.9/LBRY_0.53.9.dmg",
+      "artifactSHA256": "3769997e7cdb6e563a505c5f8375325ef26fc74318aea0defde711fc5fcfee5e",
+      "apps": [
+        {
+          "bundleName": "LBRY.app",
+          "bundleIdentifier": "io.lbry.LBRY"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "koodo-reader": {
+      "caskVersion": "2.4.6",
+      "sourceURL": "https://github.com/koodo-reader/koodo-reader/releases/download/v2.4.6/Koodo-Reader-2.4.6-arm64.dmg",
+      "artifactSHA256": "a4ed495ba090c06fdfe832acdad1af12a3ffcd40725078855c9568092031acac",
+      "apps": [
+        {
+          "bundleName": "Koodo Reader.app",
+          "bundleIdentifier": "xyz.960960.koodo"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hydrus-network": {
+      "caskVersion": "636",
+      "sourceURL": "https://github.com/hydrusnetwork/hydrus/releases/download/v636/Hydrus.Network.636.-.macOS.-.App.zip",
+      "artifactSHA256": "08d9ba060c090f513d66ff89da50767260726327fdfbc3d7a70ad8fc90c79b89",
+      "apps": [
+        {
+          "bundleName": "Hydrus Network.app",
+          "bundleIdentifier": "HydrusNetworkClient"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cumulus": {
+      "caskVersion": "0.10.1",
+      "sourceURL": "https://github.com/gillesdemey/Cumulus/releases/download/v0.10.1/Cumulus-0.10.1.dmg",
+      "artifactSHA256": "f23cffe610f095ef28acc7a14a61b5548755af452ecf5d38c2e2916e424ca271",
+      "apps": [
+        {
+          "bundleName": "Cumulus.app",
+          "bundleIdentifier": "com.gillesdemey.cumulus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cinc-workstation": {
+      "caskVersion": "25.13.7",
+      "sourceURL": "https://downloads.cinc.sh/files/stable/cinc-workstation/25.13.7/mac_os_x/13/cinc-workstation-25.13.7-1.arm64.dmg",
+      "artifactSHA256": "c3341af080428e5f38966ed5317560c334508622a8983305bcfe5dd9ca3da1c4",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "chefdk_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "cinc-workstation-core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "pixel-check": {
+      "caskVersion": "1.3",
+      "sourceURL": "http://macguitar.me/apps/pixelcheck/PXC1.3.zip",
+      "artifactSHA256": "99da44c4538463c6476be2f7d6584a4e5a9bfa175895d72e5baf1f3271316b02",
+      "apps": [
+        {
+          "bundleName": "PiXel Check.app",
+          "bundleIdentifier": "me.macguitar.PiXel-Check"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "kindle-comic-creator": {
+      "caskVersion": "1.160",
+      "sourceURL": "https://kc2.s3.amazonaws.com/KindleComicCreatorInstall.dmg",
+      "artifactSHA256": "795c7ec7df8279caec3970be13e1875d5df2aed720b881e37b05b0254fac8b66",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "couleurs": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://couleursapp.com/couleurs-1.2.1.zip",
+      "artifactSHA256": "32d1b1898e9791c8137edc746c9f7ef508a12194669aae567719f58be2c8a876",
+      "apps": [
+        {
+          "bundleName": "Couleurs.app",
+          "bundleIdentifier": "com.13bold.Couleurs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dropbox-passwords": {
+      "caskVersion": "8.2.14",
+      "sourceURL": "https://clientupdates.dropboxstatic.com/dbx-releng/dropbox_passwords/mac/DropboxPasswords_8.2.14.dmg",
+      "artifactSHA256": "02540fc02289845c12deb6f35c0a4cb63e31978a28793002a4046ee2dcf9d6fa",
+      "apps": [
+        {
+          "bundleName": "Dropbox Passwords.app",
+          "bundleIdentifier": "com.getdropbox.Passwords-Mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "denemo": {
+      "caskVersion": "2.2",
+      "sourceURL": "https://denemo.org/downloads/denemo-2.2-darwin-x64.tar.bz2",
+      "artifactSHA256": "6ec66279be560e6e997b1108ae9ed61e6c37c36a350fbd99cd3dded8e2cfbe5f",
+      "apps": [
+        {
+          "bundleName": "Denemo.app",
+          "bundleIdentifier": "org.denemo"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "electric-sheep": {
+      "caskVersion": "3.0.2",
+      "sourceURL": "https://d100rc88eim93q.cloudfront.net/electricsheep-3.0.2.dmg",
+      "artifactSHA256": "db689d0aeac776a3f189205efa32331c0c00b0bea608408b2e855557c56f5937",
+      "apps": [
+        {
+          "bundleName": "Electric Sheep.app",
+          "bundleIdentifier": "org.elecricsheep.ElectricSheep.app",
+          "packageIdentifier": "org.electricsheep.electricSheep.app.pkg",
+          "installedPath": "/Applications/Electric Sheep.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "ElectricSheepSaver.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "bloop": {
+      "caskVersion": "0.6.5",
+      "sourceURL": "https://github.com/BloopAI/bloop/releases/download/v0.6.5/bloop_0.6.5_aarch64.dmg",
+      "artifactSHA256": "81f57e777ba61dc04ce1b22c2903d144c4b97beea532415f53a8f30e41b01b68",
+      "apps": [
+        {
+          "bundleName": "bloop.app",
+          "bundleIdentifier": "ai.bloop.bloop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pokemon-showdown": {
+      "caskVersion": "0.11,bf46c879d0",
+      "sourceURL": "https://pokemonshowdown.com/files/pokemonshowdown-mac.zip",
+      "artifactSHA256": "b794ca38cb4c457a3a16cbf60cbe40ae45247360863e89bef6a2f6d1935104e6",
+      "apps": [
+        {
+          "bundleName": "Pokemon Showdown.app",
+          "bundleIdentifier": "com.pokemonshowdown.pokemonshowdown"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gauntlet": {
+      "caskVersion": "21",
+      "sourceURL": "https://github.com/project-gauntlet/gauntlet/releases/download/v21/gauntlet-universal-macos.dmg",
+      "artifactSHA256": "70468c9494941289f9db162f21fd85f0df98bc8ea30bb567deb068ef06c1e0b1",
+      "apps": [
+        {
+          "bundleName": "Gauntlet.app",
+          "bundleIdentifier": "dev.project-gauntlet.gauntlet"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chromium": {
+      "caskVersion": "latest",
+      "sourceURL": "https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots",
+      "artifactSHA256": "ffd0b67c435c5f911be5a2ac6ec99da3780133f518cad8061bc0256cab04577c",
+      "apps": [
+        {
+          "bundleName": "Chromium.app",
+          "bundleIdentifier": "org.chromium.Chromium"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "knock-app": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "https://knock-updates.s3.amazonaws.com/Knock.zip",
+      "artifactSHA256": "c4eb533effd09dee4c1e89d9031afe4cb0260bc6088760bdaa6199511ffbad38",
+      "apps": [
+        {
+          "bundleName": "Knock.app",
+          "bundleIdentifier": "com.knock.mac"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "surge-synthesizer": {
+      "caskVersion": "1.9.0",
+      "sourceURL": "https://github.com/surge-synthesizer/releases/releases/download/1.9.0/Surge-1.9.0-Setup.dmg",
+      "artifactSHA256": "f64329c0dcba60fea9c7bf56c584e124de24527e6625dab19f1f689b128880e5",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "selected": "true"
+          }
+        },
+        {
+          "artifact": "Surge_AU.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Surge_FXAU.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Surge_FXVST3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Surge_Resources.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Surge_VST3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     }
   }
 }

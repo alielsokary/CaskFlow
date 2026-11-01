@@ -257,6 +257,12 @@
     "attempts": 0,
     "updated": "2026-07-09"
   },
+  "cheatsheet": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "chef-workstation": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/chef.png",
@@ -274,6 +280,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "cinc-workstation": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "claude-code": {
     "status": "no_icon",
@@ -616,6 +628,12 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "galaxybudsclient": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "gcc-aarch64-embedded": {
     "status": "no_icon",
@@ -1426,6 +1444,12 @@
     "reason": "no .icns in Resources",
     "attempts": 0,
     "updated": "2026-10-13"
+  },
+  "surge-synthesizer": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "sync-my-l2p": {
     "status": "no_icon",
