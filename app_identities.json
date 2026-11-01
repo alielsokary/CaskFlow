@@ -48878,6 +48878,296 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "texworks": {
+      "caskVersion": "0.6.10,202502131353,7380941",
+      "sourceURL": "https://github.com/TeXworks/texworks/releases/download/release-0.6.10/TeXworks-macos11-0.6.10-arm64-202502131353-git_7380941.dmg",
+      "artifactSHA256": "813964827bbea219f7f05d7a03c76260162010bebc70746ccce60c77a3537b24",
+      "apps": [
+        {
+          "bundleName": "TeXworks.app",
+          "bundleIdentifier": "org.tug.texworks"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tabtopus": {
+      "caskVersion": "4.2.5",
+      "sourceURL": "https://www.mariogt.com/appsChest/TabTopus4-2-5.zip",
+      "artifactSHA256": "0e23b5a33821ac1c72e5cd4b8b979144e48754f3c3d222b81f458ebd139fe01a",
+      "apps": [
+        {
+          "bundleName": "TabTopus.app",
+          "bundleIdentifier": "com.mariogt.tabtopus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "texmaker": {
+      "caskVersion": "6.0.2",
+      "sourceURL": "https://www.xm1math.net/texmaker/assets/files/texmaker-6.0.2.dmg",
+      "artifactSHA256": "367b5ceae905a3808ed11f473e33ac8b3cf9805783e23bda07513fc913deb52a",
+      "apps": [
+        {
+          "bundleName": "texmaker.app",
+          "bundleIdentifier": "texmaker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "supermjograph": {
+      "caskVersion": "0.17.2",
+      "sourceURL": "https://downloads.sourceforge.net/mjograph/SuperMjograph/SuperMjograph-0.17.2.zip",
+      "artifactSHA256": "1440fb7554cbd93ce55f219187be40bcc5e014b347378e6b7dd507c7e2a8d606",
+      "apps": [
+        {
+          "bundleName": "SuperMjograph.app",
+          "bundleIdentifier": "com.mjo.SuperMjograph"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sunvox": {
+      "caskVersion": "2.1.4d",
+      "sourceURL": "https://www.warmplace.ru/soft/sunvox/sunvox-2.1.4d.zip",
+      "artifactSHA256": "acd94ae4acd6ab60bee1f5ba117082cd2ea51f7e87871f1776d11cfd24a59880",
+      "apps": [
+        {
+          "bundleName": "SunVox.app",
+          "bundleIdentifier": "nightradio.SunVox"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "textadept": {
+      "caskVersion": "13.0",
+      "sourceURL": "https://github.com/orbitalquark/textadept/releases/download/textadept_13.0/textadept_13.0.macOS.zip",
+      "artifactSHA256": "a691837637cabbab3035a88d64c4f83175e3f79b5018abb4942d79a65b0f28a5",
+      "apps": [
+        {
+          "bundleName": "Textadept.app",
+          "bundleIdentifier": "com.textadept"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "thyme": {
+      "caskVersion": "0.5.1",
+      "sourceURL": "https://github.com/joaomoreno/thyme/releases/download/0.5.1/Thyme.0.5.1.dmg",
+      "artifactSHA256": "9757fff3198d379d3fc1d6231669d1eea6e0d1ba7aa2b876782998415d050ae2",
+      "apps": [
+        {
+          "bundleName": "Thyme.app",
+          "bundleIdentifier": "com.joaomoreno.Thyme"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "syncterm": {
+      "caskVersion": "1.8",
+      "sourceURL": "https://downloads.sourceforge.net/syncterm/syncterm/syncterm-1.8/syncterm-1.8-macos.zip",
+      "artifactSHA256": "7503af422651382e0fa81b8f439b61998cefe1a518eae22ed8b1140d04985b5c",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "SyncTERM.app",
+          "reason": "unsupported CFBundleIdentifier: None"
+        }
+      ]
+    },
+    "teeworlds": {
+      "caskVersion": "0.7.5",
+      "sourceURL": "https://downloads.teeworlds.com/teeworlds-0.7.5-osx.dmg",
+      "artifactSHA256": "a79155c8bd7a0ce08457760f1ce37d8b7611f86717659bb3d90cd0e2dae5194b",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Teeworlds.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        },
+        {
+          "artifact": "Teeworlds Server.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
+    },
+    "sysdig-inspect": {
+      "caskVersion": "0.12.1",
+      "sourceURL": "https://github.com/draios/sysdig-inspect/releases/download/0.12.1/sysdig-inspect-mac-x86_64.zip",
+      "artifactSHA256": "73287e0b24ca25531d9592f51fa50325f5140a667eb7585066401cbe2dd7ac0d",
+      "apps": [
+        {
+          "bundleName": "Sysdig Inspect.app",
+          "bundleIdentifier": "com.electron.sysdig-inspect"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "textbar": {
+      "caskVersion": "3.5.6",
+      "sourceURL": "https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.5.6.zip",
+      "artifactSHA256": "61fba4cdab18070c1ba21176072556df42a9c92fc280a51363028d86731a298e",
+      "apps": [
+        {
+          "bundleName": "TextBar.app",
+          "bundleIdentifier": "com.RichSomerfield.TextBar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "timelapze": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://github.com/wkaisertexas/ScreenTimeLapse/releases/download/v1.2.2/TimeLapze.zip",
+      "artifactSHA256": "5ab0fad611d6b627a10ee4db673fd74bbca1296e6b15ea152eabc8ca88a10187",
+      "apps": [
+        {
+          "bundleName": "TimeLapze.app",
+          "bundleIdentifier": "com.smartservices.TimeLapze"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "time-to-leave": {
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://github.com/TTLApp/time-to-leave/releases/download/4.0.0/time-to-leave-4.0.0.dmg",
+      "artifactSHA256": "c9550185217167a9257d05b550ff48780058d6c031a99660302528af205d2068",
+      "apps": [
+        {
+          "bundleName": "Time To Leave.app",
+          "bundleIdentifier": "com.electron.time-to-leave"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "the-unofficial-homestuck-collection": {
+      "caskVersion": "2.7.2",
+      "sourceURL": "https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/v2.7.2/The-Unofficial-Homestuck-Collection-2.7.2.dmg",
+      "artifactSHA256": "a71d5a14e631c3721a96302679e0531fbc367b7712886e28fc2547fa988f44c2",
+      "apps": [
+        {
+          "bundleName": "The Unofficial Homestuck Collection.app",
+          "bundleIdentifier": "com.bambosh.unofficialhomestuckcollection"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tachidesk-sorayomi": {
+      "caskVersion": "0.6.3",
+      "sourceURL": "https://github.com/Suwayomi/Tachidesk-Sorayomi/releases/download/0.6.3/tachidesk-sorayomi-0.6.3-macos-x64.zip",
+      "artifactSHA256": "8642b54621bcb0c5f6aa7fcd1477faa50873dae1e63ba14927f0ec311f5b662e",
+      "apps": [
+        {
+          "bundleName": "Sorayomi.app",
+          "bundleIdentifier": "com.suwayomi.tachideskSorayomi"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tempbox": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/devwaseem/TempBox/releases/download/v1.1/TempBox.dmg",
+      "artifactSHA256": "edcd68709cd69363de8535fc3f14ed9819004aba3edea9def10b540e44383e8b",
+      "apps": [
+        {
+          "bundleName": "TempBox.app",
+          "bundleIdentifier": "com.waseem.TempBox"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tikzit": {
+      "caskVersion": "2.1.6",
+      "sourceURL": "https://github.com/tikzit/tikzit/releases/download/v2.1.6/tikzit-osx.dmg",
+      "artifactSHA256": "4c7e2de7f021805272505b5313890ec4bcd42e2a66c2de7af74a866e5c96a3ed",
+      "apps": [
+        {
+          "bundleName": "TikZiT.app",
+          "bundleIdentifier": "io.github.tikzit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tetrio": {
+      "caskVersion": "10",
+      "sourceURL": "https://tetr.io/about/desktop/builds/10/TETR.IO%20Setup%20arm64.dmg",
+      "artifactSHA256": "3db2bd5c4ca7a628b7e69e8341888f6da44ce20b8f6b359de4de03af63b81f6e",
+      "apps": [
+        {
+          "bundleName": "TETR.IO.app",
+          "bundleIdentifier": "sh.osk.tetrio-client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "texstudio": {
+      "caskVersion": "4.9.7",
+      "sourceURL": "https://github.com/texstudio-org/texstudio/releases/download/4.9.7/texstudio-4.9.7-osx-m1.zip",
+      "artifactSHA256": "5ac66e53c7cfab83621e50db3287edc7f977b2e5259806949a3915090f1898b1",
+      "apps": [
+        {
+          "bundleName": "texstudio-4.9.7-osx-m1.app",
+          "bundleIdentifier": "texstudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "synfigstudio": {
+      "caskVersion": "1.4.5,2024.05.19,f4b8d",
+      "sourceURL": "https://github.com/synfig/synfig/releases/download/v1.4.5/SynfigStudio-1.4.5-2024.05.19-osx-f4b8d.dmg",
+      "artifactSHA256": "cb3459979ce817b85acd2d2bdc79b49545533fb75e077e334fe16577df1e346c",
+      "apps": [
+        {
+          "bundleName": "SynfigStudio.app",
+          "bundleIdentifier": "org.synfig.SynfigStudio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tic80": {
+      "caskVersion": "1.1.2837",
+      "sourceURL": "https://github.com/nesbox/TIC-80/releases/download/v1.1.2837/tic80-v1.1-mac.dmg",
+      "artifactSHA256": "324e91d08fb5dcfaf2f41dc846b89465074b5db3b5aa63befc3fdb664493c1b9",
+      "apps": [
+        {
+          "bundleName": "tic80.app",
+          "bundleIdentifier": "com.nesbox.tic"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "therm": {
+      "caskVersion": "0.6.4",
+      "sourceURL": "https://github.com/trufae/Therm/releases/download/0.6.4/Therm-0.6.4.zip",
+      "artifactSHA256": "30b1c67a1d297f5e05de47faa66d6cf118c5a450aac2f222098e4fb1cf80d650",
+      "apps": [
+        {
+          "bundleName": "Therm.app",
+          "bundleIdentifier": "com.pancake.therm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
