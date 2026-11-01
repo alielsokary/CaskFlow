@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Classify new Homebrew casks and prune entries that are no longer usable."""
+"""Classify new Homebrew casks and migrate classifications across token renames."""
 from __future__ import annotations
 
 import argparse
@@ -55,18 +55,11 @@ def load_homepage_cache() -> dict[str, dict]:
 
 
 def is_main_cask(c: dict) -> bool:
-    """Mirror the filter in CaskCatalogViewModel.swift:137-142."""
-    # The app only ever shows main casks - not deprecated/disabled, not fonts,
-    # not version-pinned variants (anything containing `@`). Classifying anything
-    # outside that set would inflate categories.json with rows the app filters
-    # out anyway.
+    """Casks the app lists, searches, or shows as installed."""
+    # Deprecated and disabled casks stay in: the app finds them in search and
+    # shows installed copies. Fonts and `@` variants are not classified yet.
     token = c["token"]
-    return not (
-        c.get("deprecated")
-        or c.get("disabled")
-        or "@" in token
-        or token.startswith("font-")
-    )
+    return not ("@" in token or token.startswith("font-"))
 
 
 def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, str]]:
@@ -83,7 +76,7 @@ def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, st
     for old in sorted(set(mapping) - api_tokens):
         new = old_to_new.get(old)
         if new is None:
-            continue  # true removal - compute_diff prunes it
+            continue  # true removal: kept so installed copies keep their category
         if new not in mapping:
             mapping[new] = mapping[old]
         del mapping[old]
@@ -91,21 +84,9 @@ def migrate_renames(existing: dict, api_casks: list[dict]) -> list[tuple[str, st
     return renames
 
 
-def compute_diff(api_casks: list[dict], existing: dict) -> tuple[set[str], set[str], set[str]]:
+def compute_diff(api_casks: list[dict], existing: dict) -> set[str]:
     main_tokens = {c["token"] for c in api_casks if is_main_cask(c)}
-    existing_tokens = set(existing["tokenToCategory"])
-
-    # Also prune mapped tokens that the consumer now filters out.
-    api_by_token = {c["token"]: c for c in api_casks}
-    no_longer_main = {
-        t for t in existing_tokens
-        if t in api_by_token and not is_main_cask(api_by_token[t])
-    }
-
-    new_tokens = main_tokens - existing_tokens
-    removed_tokens = existing_tokens - {c["token"] for c in api_casks}
-    prune_tokens = removed_tokens | no_longer_main
-    return new_tokens, removed_tokens, prune_tokens
+    return main_tokens - set(existing["tokenToCategory"])
 
 
 def _cached_subset(tokens: set[str], cache: dict[str, dict]) -> dict[str, dict]:
@@ -191,11 +172,9 @@ def classify_parallel(
 
 
 def build_updated_categories(
-    existing: dict, prune_tokens: set[str], classifications: dict[str, Classification]
+    existing: dict, classifications: dict[str, Classification]
 ) -> dict:
-    new_mapping = {
-        t: v for t, v in existing["tokenToCategory"].items() if t not in prune_tokens
-    }
+    new_mapping = dict(existing["tokenToCategory"])
     for token, c in classifications.items():
         new_mapping[token] = {"primary": c.primary, "secondary": c.secondary}
 
@@ -229,13 +208,10 @@ def _classification_rows(classifications: dict[str, Classification]) -> list[str
 
 
 def build_report(
-    removed_tokens: set[str],
-    prune_tokens: set[str],
     classifications: dict[str, Classification],
     failures: list[tuple[str, str]],
     renames: list[tuple[str, str]],
 ) -> str:
-    deprecated_only = prune_tokens - removed_tokens
     review_required = {
         token: result
         for token, result in classifications.items()
@@ -253,23 +229,20 @@ def build_report(
         f"(confidence below {MANUAL_REVIEW_CONFIDENCE:.2f})",
         f"- {len(failures)} new casks **skipped** (LLM/validation failures, will retry tomorrow)",
         f"- {len(renames)} casks renamed in Homebrew (classification migrated, no LLM call)",
-        f"- {len(removed_tokens)} casks removed from Homebrew (pruned)",
-        f"- {len(deprecated_only)} casks deprecated/disabled in Homebrew (pruned)",
         "",
     ]
 
     lines += _section("Renamed (classification migrated)",
                       [f"- `{old}` → `{new}`" for old, new in sorted(renames)])
-    lines += _section("New classifications",
-                      _classification_rows(classifications) if classifications else [])
+    # Review rows come first: GitHub truncates long PR bodies.
     lines += _section(
         "Manual review required",
         _classification_rows(review_required) if review_required else [],
     )
+    lines += _section("New classifications",
+                      _classification_rows(classifications) if classifications else [])
     lines += _section("Skipped (will retry next run)",
                       [f"- `{token}` - {err}" for token, err in sorted(failures)])
-    lines += _section("Removed from Homebrew (pruned)", [f"- `{t}`" for t in sorted(removed_tokens)])
-    lines += _section("Deprecated/disabled (pruned)", [f"- `{t}`" for t in sorted(deprecated_only)])
 
     return "\n".join(lines)
 
@@ -306,14 +279,10 @@ def main(argv: list[str] | None = None) -> int:
     api_casks_by_token = {c["token"]: c for c in api_casks}
 
     renames = migrate_renames(existing, api_casks)
-    new_tokens, removed_tokens, prune_tokens = compute_diff(api_casks, existing)
-    print(
-        f"diff: +{len(new_tokens)} new, ~{len(renames)} renamed, "
-        f"-{len(removed_tokens)} removed, "
-        f"-{len(prune_tokens - removed_tokens)} deprecated"
-    )
+    new_tokens = compute_diff(api_casks, existing)
+    print(f"diff: +{len(new_tokens)} new, ~{len(renames)} renamed")
 
-    if not new_tokens and not prune_tokens and not renames:
+    if not new_tokens and not renames:
         print("No changes. Exiting clean.")
         return 0
 
@@ -335,14 +304,8 @@ def main(argv: list[str] | None = None) -> int:
         client, new_tokens, api_casks_by_token, homepage_meta, workers
     )
 
-    updated = build_updated_categories(existing, prune_tokens, classifications)
-    report = build_report(
-        removed_tokens,
-        prune_tokens,
-        classifications,
-        failures,
-        renames,
-    )
+    updated = build_updated_categories(existing, classifications)
+    report = build_report(classifications, failures, renames)
     review_required = requires_manual_review(classifications)
     write_github_output("review_required", str(review_required).lower())
 
@@ -350,7 +313,7 @@ def main(argv: list[str] | None = None) -> int:
         print(report)
         print(
             f"DRY RUN - would write {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
-            f"(+{len(classifications)}, -{len(prune_tokens)}, skipped {len(failures)})"
+            f"(+{len(classifications)}, skipped {len(failures)})"
         )
         return 0
 
@@ -358,7 +321,7 @@ def main(argv: list[str] | None = None) -> int:
     write_report(report)
     print(
         f"Wrote {CATEGORIES_PATH.name}: {updated['totalCasks']} casks "
-        f"(+{len(classifications)}, -{len(prune_tokens)}, skipped {len(failures)})"
+        f"(+{len(classifications)}, skipped {len(failures)})"
     )
     return 0
 
