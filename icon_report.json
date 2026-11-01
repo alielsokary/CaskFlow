@@ -173,12 +173,6 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
-  "backyard-ai": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 3,
-    "updated": "2026-10-01"
-  },
   "baseline": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
@@ -436,12 +430,6 @@
     "reason": "CLI-only cask -- app renders a CLI tile by design",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "dadroit-json-viewer": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 3,
-    "updated": "2026-10-01"
   },
   "datadog-agent": {
     "status": "curated",
@@ -1098,10 +1086,10 @@
     "updated": "2026-11-01"
   },
   "lo-rain": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 3,
-    "updated": "2026-10-01"
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: lo.cafe",
+    "attempts": 4,
+    "updated": "2026-11-01"
   },
   "logdna-cli": {
     "status": "no_icon",
@@ -1170,10 +1158,10 @@
     "updated": "2026-07-07"
   },
   "macpar-deluxe": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 5,
-    "updated": "2026-10-01"
+    "status": "failed",
+    "reason": "hdiutil attach failed: hdiutil: attach failed - image not recognized",
+    "attempts": 6,
+    "updated": "2026-11-01"
   },
   "macsvg": {
     "status": "no_icon",
@@ -1242,10 +1230,10 @@
     "updated": "2026-10-01"
   },
   "micro-sniff": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 3,
-    "updated": "2026-08-01"
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 4,
+    "updated": "2026-11-01"
   },
   "microsoft-office": {
     "status": "review",
@@ -1954,12 +1942,6 @@
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
     "updated": "2026-07-08"
-  },
-  "virtual-ii": {
-    "status": "no_icon",
-    "reason": "deprecated/disabled",
-    "attempts": 4,
-    "updated": "2026-09-01"
   },
   "virtualgl": {
     "status": "no_icon",

@@ -47109,6 +47109,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "backyard-ai": {
+      "caskVersion": "0.37.0",
+      "sourceURL": "https://desktop.backyard.ai/download/dmgArm64",
+      "artifactSHA256": "70c92448c6e8533904d79c4ee84b531270f5cfa477eb5a36de1fa43f5662da75",
+      "apps": [
+        {
+          "bundleName": "Backyard AI.app",
+          "bundleIdentifier": "com.ahoylabs.faraday"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "dadroit-json-viewer": {
+      "caskVersion": "3.3.0,604",
+      "sourceURL": "https://dadroit.com/releases/mac/DadroitJSONViewer.zip",
+      "artifactSHA256": "8b4e096c38ad77f81e287295835656762d8abe74e611294935564a81b73f9307",
+      "apps": [
+        {
+          "bundleName": "Dadroit JSON Viewer.app",
+          "bundleIdentifier": "com.dadroit.Viewer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "virtual-ii": {
+      "caskVersion": "13.2",
+      "sourceURL": "https://virtualii.com/VirtualII.dmg",
+      "artifactSHA256": "c462a22b2974f48781b2fab36dbdcea48584436478a834506ca493f07efb1856",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Virtual ][",
+          "reason": "suite requires unsupported staging or target path"
+        }
+      ]
     }
   }
 }
