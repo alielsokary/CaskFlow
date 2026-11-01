@@ -43408,6 +43408,307 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "crunch-app": {
+      "caskVersion": "5.0.0",
+      "sourceURL": "https://github.com/chrissimpkins/Crunch/releases/download/v5.0.0/Crunch-Installer.dmg",
+      "artifactSHA256": "80ebe4ddfbd6813535910c518e0594db7c23061e1a0f5c6c30382db1fc25b347",
+      "apps": [
+        {
+          "bundleName": "Crunch.app",
+          "bundleIdentifier": "com.csimpkins.Crunch"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "clover-configurator": {
+      "caskVersion": "5.29.0.0",
+      "sourceURL": "https://mackie100projects.altervista.org/apps/cloverconf/download-new-build.php?version=global",
+      "artifactSHA256": "f97dad61231226c6117ba0426b111ee7cf413c95b1209fc51b0434d116079eb6",
+      "apps": [
+        {
+          "bundleName": "Clover Configurator.app",
+          "bundleIdentifier": "org.altervista.mackie100projects.Clover-Configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "comictagger": {
+      "caskVersion": "1.5.5",
+      "sourceURL": "https://github.com/davide-romanini/comictagger/releases/download/1.5.5/ComicTagger-1.5.5-osx-10.15.7-x86_64.app.zip",
+      "artifactSHA256": "dffa4fc8da1a1e5fb189d0259f9f6798367514241f81752670fa2e0254508223",
+      "apps": [
+        {
+          "bundleName": "ComicTagger.app",
+          "bundleIdentifier": "ComicTagger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cilicon": {
+      "caskVersion": "2.4.2,25",
+      "sourceURL": "https://github.com/traderepublic/Cilicon/releases/download/v2.4.2/Cilicon_2.4.2_25_adhoc.zip",
+      "artifactSHA256": "b4886bc74d6c4a802b24ef3bc40afa894d8cc13e9c25a912fdc6940a1a79a17c",
+      "apps": [
+        {
+          "bundleName": "Cilicon.app",
+          "bundleIdentifier": "com.traderepublic.cilicon"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bricksmith": {
+      "caskVersion": "3.1.0",
+      "sourceURL": "https://downloads.sourceforge.net/bricksmith/bricksmith/Bricksmith%203.1/BricksmithComplete3.1.zip",
+      "artifactSHA256": "7ea1991b68ae9a75e3107f4df0f01a9980e17f889536fd7cae0ba8c6f56b7d67",
+      "apps": [
+        {
+          "bundleName": "Bricksmith.app",
+          "bundleIdentifier": "com.AllenSmith.Bricksmith"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cinco": {
+      "caskVersion": "2.0.1",
+      "sourceURL": "https://ls5download.cs.tu-dortmund.de/cinco/releases/2.0.1/cinco-2.0.1-macos.dmg",
+      "artifactSHA256": "6b8e07c76c896ee5b79708f3317deb1197ce6c1f87acd45ee740c4423b5a8645",
+      "apps": [
+        {
+          "bundleName": "Cinco.app",
+          "bundleIdentifier": "de.jabc.cinco.meta.product.product",
+          "packageIdentifier": "de.jabc.cinco.meta.product.product.cinco.pkg.component",
+          "installedPath": "/Applications/Cinco.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chronos": {
+      "caskVersion": "6.3.2",
+      "sourceURL": "https://github.com/web-pal/chronos-timetracker/releases/download/v6.3.2/Chronos-6.3.2-mac.zip",
+      "artifactSHA256": "b1e05936bea014b823b82436dd46c18c7b4c4fc981d71d633159874353441878",
+      "apps": [
+        {
+          "bundleName": "Chronos.app",
+          "bundleIdentifier": "com.web-pal.chronos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cool-retro-term": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/Swordfish90/cool-retro-term/releases/download/1.2.0/Cool-Retro-Term-1.2.0.dmg",
+      "artifactSHA256": "605610df37b6ed92fac14d5e34a83350148e989b10ad9550d3403187fb974e48",
+      "apps": [
+        {
+          "bundleName": "cool-retro-term.app",
+          "bundleIdentifier": "com.yourcompany.cool-retro-term"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "container-ps": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/Toinane/container-ps/releases/download/1.3.0/Container.PS-1.3.0.dmg",
+      "artifactSHA256": "8a710ff70ed79d7ca93d51461d77a3268cdb8c3aa985ce4d0b99686b36b62069",
+      "apps": [
+        {
+          "bundleName": "Container PS.app",
+          "bundleIdentifier": "com.electron.container-ps"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cctalk": {
+      "caskVersion": "7.10.19-1407",
+      "sourceURL": "https://www.cctalk.com/webapi/basic/v1.1/version/down?apptype=1&terminalType=8&versionType=103",
+      "artifactSHA256": "a27d2b50f04584a8fb9b80d8ac8f000ee05ea87a5d822ae3af9d9f98f77b81fe",
+      "apps": [
+        {
+          "bundleName": "CCtalk.app",
+          "bundleIdentifier": "com.hujiang.mac.cctalk"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "corona-tracker": {
+      "caskVersion": "1.7.2",
+      "sourceURL": "https://github.com/MhdHejazi/CoronaTracker/releases/download/v1.7.2/CoronaTracker-macOS.zip",
+      "artifactSHA256": "43a8a2512d8b33199d0c6e5a8d79d514c999c56293d0a665fa664bc0762c587b",
+      "apps": [
+        {
+          "bundleName": "Corona Tracker.app",
+          "bundleIdentifier": "maccatalyst.com.samabox.corona"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "conferences": {
+      "caskVersion": "0.0.1-alpha22",
+      "sourceURL": "https://github.com/zagahr/Conferences.digital/releases/download/0.0.1-alpha22/Conferences_v0.0.1-alpha22.zip",
+      "artifactSHA256": "61cd7c47ecc718613c9e1ba803ae36e26c37c98bb6a46b5ced2898942c9771a5",
+      "apps": [
+        {
+          "bundleName": "Conferences.app",
+          "bundleIdentifier": "digital.conferences.macos"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cncjs": {
+      "caskVersion": "1.11.3",
+      "sourceURL": "https://github.com/cncjs/cncjs/releases/download/v1.11.3/cncjs-app-1.11.3-macos-arm64.dmg",
+      "artifactSHA256": "38a64190d8e03b66d732b8a960cd0f0e1aaa1030cc90efdbe8c9da36387b40ae",
+      "apps": [
+        {
+          "bundleName": "CNCjs.app",
+          "bundleIdentifier": "org.cncjs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cmd-eikana": {
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://github.com/iMasanari/cmd-eikana/releases/download/v2.2.3/eikana-2.2.3.app.zip",
+      "artifactSHA256": "8e4157304ae21566339e956423632d34aacd12c96e87f35ffc83bf2304ff9be4",
+      "apps": [
+        {
+          "bundleName": "⌘英かな.app",
+          "bundleIdentifier": "io.github.imasanari.cmd-eikana"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ckan-app": {
+      "caskVersion": "1.36.4",
+      "sourceURL": "https://github.com/KSP-CKAN/CKAN/releases/download/v1.36.4/CKAN.dmg",
+      "artifactSHA256": "4a996aec992de5e92658c6219f2fd848b2f4dc48d464e731c652b5bd02d10d07",
+      "apps": [
+        {
+          "bundleName": "CKAN.app",
+          "bundleIdentifier": "org.ksp-ckan.ckan"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "codux": {
+      "caskVersion": "15.42.0",
+      "sourceURL": "https://github.com/wixplosives/codux-versions/releases/download/15.42.0/Codux-15.42.0.arm64.dmg",
+      "artifactSHA256": "ddc8ca080956e8a27b82b85d6e3381447e3c975c9d22d0b04a1f004efe6a6909",
+      "apps": [
+        {
+          "bundleName": "Codux.app",
+          "bundleIdentifier": "com.wixc3.wcs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "coffitivity-offline": {
+      "caskVersion": "1.0.2",
+      "sourceURL": "https://github.com/siwalikm/coffitivity-offline/releases/download/v1.0.2/Coffitivity.Offline-1.0.2.dmg",
+      "artifactSHA256": "f4d0f9cf0bc7da08ec6bada4ce67bd501c51ebe5c04be193895d91c51318790f",
+      "apps": [
+        {
+          "bundleName": "Coffitivity Offline.app",
+          "bundleIdentifier": "com.electron.coffitivity-offline"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "cornercal": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/ekreutz/CornerCal/blob/v1.1/builds/CornerCal.zip?raw=true",
+      "artifactSHA256": "391f5039d74d3b789d8fec7afbd045c98a0f0148c60ff8802000eacc9af0a781",
+      "apps": [
+        {
+          "bundleName": "CornerCal.app",
+          "bundleIdentifier": "com.ekreutz.CornerCal"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "clock-bar": {
+      "caskVersion": "1.0,1801968",
+      "sourceURL": "https://github.com/nihalsharma/Clock-Bar/files/1801968/Clock.Bar.app.zip",
+      "artifactSHA256": "88d1ee551f2edbe25e12098dbdbb2edc5f29e21cd52095e5ea275667a4cbffd1",
+      "apps": [
+        {
+          "bundleName": "Clock Bar.app",
+          "bundleIdentifier": "nihalsharma.clock-bar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "codelite": {
+      "caskVersion": "18.4.0",
+      "sourceURL": "https://downloads.codelite.org/codelite/18.4.0/codelite-macOS_26.4.1-arm64.app.tar.gz",
+      "artifactSHA256": "395e227230446d8274767ef274f67a7ca087da2af1b61366b0548259b7949a11",
+      "apps": [
+        {
+          "bundleName": "codelite.app",
+          "bundleIdentifier": "com.eranif.CodeLite"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "coolterm": {
+      "caskVersion": "2.4.0.3.0.1425",
+      "sourceURL": "https://freeware.the-meiers.org/previous/CoolTermMac240.dmg",
+      "artifactSHA256": "190a1f67d0362ce7ae4b531552925ef28e40004052c3be1fe9bf653e0678cddd",
+      "apps": [
+        {
+          "bundleName": "CoolTerm.app",
+          "bundleIdentifier": "org.the-meiers.coolterm"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "copyq": {
+      "caskVersion": "16.0.0",
+      "sourceURL": "https://github.com/hluk/CopyQ/releases/download/v16.0.0/CopyQ-16.0.0-macos-12-m1.dmg",
+      "artifactSHA256": "57563fb2ca24751974c35b744ca7ea2c5c171bc5c00f59b3c8379912876ae4b1",
+      "apps": [
+        {
+          "bundleName": "CopyQ.app",
+          "bundleIdentifier": "io.github.hluk.CopyQ"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "chromium-gost": {
+      "caskVersion": "150.0.7871.224",
+      "sourceURL": "https://github.com/deemru/Chromium-Gost/releases/download/150.0.7871.224/chromium-gost-150.0.7871.224-macos-arm64.tar.bz2",
+      "artifactSHA256": "9bc80d7ecd9caf43459d89d4c4880f95aae333b4a73ab6e886b59018cae1e2e7",
+      "apps": [
+        {
+          "bundleName": "Chromium-Gost.app",
+          "bundleIdentifier": "ru.cryptopro.chromium-gost"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

@@ -341,6 +341,18 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "circuitjs1": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
+  "cisco-proximity": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "claude-code": {
     "status": "no_icon",
     "reason": "CLI-only cask -- app renders a CLI tile by design",
