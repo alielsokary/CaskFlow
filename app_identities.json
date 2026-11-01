@@ -42764,6 +42764,326 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "avidemux": {
+      "caskVersion": "2.8.1",
+      "sourceURL": "https://downloads.sourceforge.net/avidemux/avidemux/2.8.1/Avidemux_2.8.1v2_Monterey_Qt6.dmg",
+      "artifactSHA256": "b0b8890114172d531d138f6c1413f0393c0e5a87530168106a12d6b11ae44833",
+      "apps": [
+        {
+          "bundleName": "Avidemux_2.8.1.app",
+          "bundleIdentifier": "Avidemux.org"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bandage": {
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://github.com/rrwick/Bandage/releases/download/v0.9.0/Bandage_macOS-aarch64_v0.9.0.zip",
+      "artifactSHA256": "0bf30966957a5949bf40595ae05d56bb84e504ee8d25e346ccad631c4588e815",
+      "apps": [
+        {
+          "bundleName": "Bandage.app",
+          "bundleIdentifier": "com.rrwick.Bandage"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bino": {
+      "caskVersion": "1.6.6",
+      "sourceURL": "http://devernay.free.fr/hacks/bino/Bino-1.6.6-OSX-Mavericks-GPL.zip",
+      "artifactSHA256": "31f0c7590511c9c5bfb92f488de82565bdc4c945b934a1e8cd40a110beb49fd5",
+      "apps": [
+        {
+          "bundleName": "Bino.app",
+          "bundleIdentifier": "org.bino3d"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "augur": {
+      "caskVersion": "1.16.11",
+      "sourceURL": "https://github.com/AugurProject/augur-app/releases/download/v1.16.11/mac-Augur-1.16.11.dmg",
+      "artifactSHA256": "127a57ed9e3e0b2bd0451f0b097d5998f3e59acb7c4b9d424166f460a1776411",
+      "apps": [
+        {
+          "bundleName": "augur.app",
+          "bundleIdentifier": "net.augur.augur"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ayugram": {
+      "caskVersion": "7.0.9",
+      "sourceURL": "https://github.com/AyuGram/AyuGramDesktop/releases/download/v7.0.9/AyuGram.dmg",
+      "artifactSHA256": "244bb500accfb56f006d5678aeecee4532a8eb1a3dfaaa259da87310cb37241f",
+      "apps": [
+        {
+          "bundleName": "AyuGram.app",
+          "bundleIdentifier": "one.ayugram.AyuGramDesktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "audiogridder-server": {
+      "caskVersion": "1.2.0_1",
+      "sourceURL": "https://audiogridder.com/releases/AudioGridderServer_1.2.0_1_macOS-universal.pkg",
+      "artifactSHA256": "ba69f70ee4fd7eb2e962cc203310f1a38f26f0f8432dc232f78af1734c0e699a",
+      "apps": [
+        {
+          "bundleName": "AudioGridderServer.app",
+          "bundleIdentifier": "com.e47.AudioGridderServer",
+          "packageIdentifier": "com.e47.audiogridder.server",
+          "installedPath": "/Applications/AudioGridderServer.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "betwixt": {
+      "caskVersion": "1.6.1",
+      "sourceURL": "https://github.com/kdzwinel/betwixt/releases/download/1.6.1/Betwixt-darwin-x64.zip",
+      "artifactSHA256": "a97f893e8bc7611dfde66ae75775a829c4d25959b946276aacf32cc8485c4054",
+      "apps": [
+        {
+          "bundleName": "Betwixt.app",
+          "bundleIdentifier": "com.electron.betwixt"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bili-downloader": {
+      "caskVersion": "1.7.2",
+      "sourceURL": "https://github.com/JimmyLiang-lzm/biliDownloader_GUI/releases/download/V1.7.2/BiliDownloader_for_MacOS_X.dmg",
+      "artifactSHA256": "aacc58eb79d64437b15882502190be17e68656999af6efcc81fa831973115bfa",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "biliDownloader_GUI.app",
+          "reason": "unsupported CFBundleIdentifier: 'biliDownloader_GUI'"
+        }
+      ]
+    },
+    "betelguese": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/23Aaron/Betelguese/releases/download/1.1/Betelguese.app.zip",
+      "artifactSHA256": "ada42a23f280d5bb65a3708fb3e8da70026eef7ceee2653f8cdc75bf43b26097",
+      "apps": [
+        {
+          "bundleName": "Betelguese.app",
+          "bundleIdentifier": "com.23aaron.Betelgeuse"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bison-wallet": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://github.com/decred/dcrdex/releases/download/v1.0.5/bisonw-desktop-darwin-arm64-v1.0.5.dmg",
+      "artifactSHA256": "be34568944052e1c0e32a94d21d120c7b7af3725eb3eaaee243b204313c606f6",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Bison Wallet.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
+    },
+    "blheli-configurator": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/blheli-configurator/blheli-configurator/releases/download/1.2.0/BLHeli-Configurator_macOS_1.2.0.dmg",
+      "artifactSHA256": "6a2631409483b3c706c23f9da8e00f9420f86b874d6697d4b32f9d4619a0768e",
+      "apps": [
+        {
+          "bundleName": "BLHeli Configurator.app",
+          "bundleIdentifier": "com.nw-builder.blheli-configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "betterdiscord-installer": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/BetterDiscord/Installer/releases/download/v2.0.0/BetterDiscord-Installer-Mac.zip",
+      "artifactSHA256": "7acd4d8d1408ec2100de7de2a2c19103874e127f9e995bcb46fa06dc809fc5fd",
+      "apps": [
+        {
+          "bundleName": "BetterDiscord Installer.app",
+          "bundleIdentifier": "app.betterdiscord.installer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bluesense": {
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://apps.inspira.io/updates/bluesense.zip",
+      "artifactSHA256": "303f00fc55208ab9340c6142b018e6b6daeef54a7ef4db41fbcb79377866e9a3",
+      "apps": [
+        {
+          "bundleName": "BlueSense.app",
+          "bundleIdentifier": "com.inspira.bluesense"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bilimini": {
+      "caskVersion": "1.5.7",
+      "sourceURL": "https://github.com/chitosai/bilimini/releases/download/v1.5.7/bilimini-1.5.7-mac.zip",
+      "artifactSHA256": "d6c92362253c0d41cabd3440b2e72e25bb0da157d2bf87c7ef989e4ff28a1563",
+      "apps": [
+        {
+          "bundleName": "bilimini.app",
+          "bundleIdentifier": "com.electron.bilimini"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bit-fiddle": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://manderc.com/apps/bitfiddle/000000000_downloads/Bit_Fiddle_1_4_2.dmg",
+      "artifactSHA256": "38e4b3bda550d61d22d0ca48efce7fc9fadbcda7685a243861742b792eee7ffb",
+      "apps": [
+        {
+          "bundleName": "Bit Fiddle.app",
+          "bundleIdentifier": "ch.manderim.Bit-Fiddle"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bisq": {
+      "caskVersion": "1.10.7",
+      "sourceURL": "https://github.com/bisq-network/bisq/releases/download/v1.10.7/Bisq-aarch64-1.10.7.dmg",
+      "artifactSHA256": "71b3d46e56982908e8b64daeb9f8ca62059d6344cc3cecb8f4cfe9b5a0da5873",
+      "apps": [
+        {
+          "bundleName": "Bisq.app",
+          "bundleIdentifier": "io.bisq.CAT"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "audiogridder-plugin": {
+      "caskVersion": "1.2.0_1",
+      "sourceURL": "https://audiogridder.com/releases/AudioGridderPlugin_1.2.0_1_macOS-universal.pkg",
+      "artifactSHA256": "8e0a46eef57f5df0263b169397c63fcf61966b8ae96fa5eaededdef71a8af250",
+      "apps": [
+        {
+          "bundleName": "AudioGridderPluginTray.app",
+          "bundleIdentifier": "com.e47.AudioGridderPluginTray",
+          "packageIdentifier": "com.e47.audiogridder.plugintray",
+          "installedPath": "/Applications/AudioGridderPluginTray.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Plugin_AAX.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Plugin_AU.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Plugin_VST2.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Plugin_VST3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "baretorrent": {
+      "caskVersion": "0.4.4",
+      "sourceURL": "https://launchpad.net/baretorrent/trunk/0.4.4/+download/baretorrent-0.4.4-osx-x64.dmg",
+      "artifactSHA256": "dea7c210e9b57b74fc44b498d8f5d238458ffffff3c66b2a91bd77f5cec5238d",
+      "apps": [
+        {
+          "bundleName": "baretorrent.app",
+          "bundleIdentifier": "baretorrent"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "armory": {
+      "caskVersion": "0.96.5",
+      "sourceURL": "https://github.com/goatpig/BitcoinArmory/releases/download/v0.96.5/armory_0.96.5_osx.tar.gz",
+      "artifactSHA256": "53d0286e54bad62309f3a79a33118f2d1f369be36f9a08b07e61d04aa39f6516",
+      "apps": [
+        {
+          "bundleName": "Armory.app",
+          "bundleIdentifier": "com.armory.armory"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ballast": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/jamsinclair/ballast/releases/download/v2.0.0/ballast-v2.0.0.zip",
+      "artifactSHA256": "ec96d590fd9dbe38fe50de006160d4ff2bd10187c4b011c1f5c5ea741044904a",
+      "apps": [
+        {
+          "bundleName": "ballast.app",
+          "bundleIdentifier": "nz.jamsinclair.ballast"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bluebubbles": {
+      "caskVersion": "1.9.9",
+      "sourceURL": "https://github.com/BlueBubblesApp/bluebubbles-server/releases/download/v1.9.9/BlueBubbles-1.9.9-arm64.dmg",
+      "artifactSHA256": "fafd650c883f52e7494a6625e45249f2144d197378a4d57143ccf6198bb2e862",
+      "apps": [
+        {
+          "bundleName": "BlueBubbles.app",
+          "bundleIdentifier": "com.BlueBubbles.BlueBubbles-Server"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "azure-data-studio": {
+      "caskVersion": "1.52.0",
+      "sourceURL": "https://download.microsoft.com/download/6b2bfeac-9c1b-4182-9a2f-ce86ff8cc371/azuredatastudio-macos-arm64-1.52.0.zip",
+      "artifactSHA256": "7087ae733c556e10ddacb14b550c1e86fea8784c11006df2f4dbd3766c8739de",
+      "apps": [
+        {
+          "bundleName": "Azure Data Studio.app",
+          "bundleIdentifier": "com.azuredatastudio.oss"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bdinfo": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://www.videohelp.com/download/BDInfo%20OSX.dmg",
+      "artifactSHA256": "15beadae0da1c54b5927710a2ed7ddb988197edae345718aebdf1dc740ded88b",
+      "apps": [
+        {
+          "bundleName": "BDInfo OSX.app",
+          "bundleIdentifier": "com.yourcompany.BDInfo-OSX"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
