@@ -2465,6 +2465,12 @@
     "attempts": 0,
     "updated": "2026-07-07"
   },
+  "ttscoff-mmd-quicklook": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "tuist": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/tuist.png?size=256",
