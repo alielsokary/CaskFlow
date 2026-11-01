@@ -1043,11 +1043,23 @@
     "attempts": 1,
     "updated": "2026-11-01"
   },
+  "lego-mindstorms-ev3": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "lemonade-server": {
     "status": "review",
     "reason": "non-exact .app selection: single",
     "attempts": 0,
     "updated": "2026-08-03"
+  },
+  "lemonlime": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "libifd-cyberjack": {
     "status": "no_icon",
@@ -1073,11 +1085,23 @@
     "attempts": 0,
     "updated": "2026-09-19"
   },
+  "limitless": {
+    "status": "failed",
+    "reason": "download failed:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: download.limitless.ai",
+    "attempts": 1,
+    "updated": "2026-11-01"
+  },
   "lo-rain": {
     "status": "no_icon",
     "reason": "deprecated/disabled",
     "attempts": 3,
     "updated": "2026-10-01"
+  },
+  "logdna-cli": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "logi-options+": {
     "status": "review",
@@ -1114,6 +1138,12 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 7,
     "updated": "2026-10-01"
+  },
+  "lumen": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 32f7a616f25e...)",
+    "attempts": 1,
+    "updated": "2026-11-01"
   },
   "macdive": {
     "status": "failed",

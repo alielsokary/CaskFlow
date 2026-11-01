@@ -45462,6 +45462,313 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "logisim-evolution": {
+      "caskVersion": "4.1.0",
+      "sourceURL": "https://github.com/logisim-evolution/logisim-evolution/releases/download/v4.1.0/Logisim-evolution-4.1.0-aarch64.dmg",
+      "artifactSHA256": "064497e336aca4d7d85bcb1ff1f77ca109de751c17c22717d1e76cc2dcce9518",
+      "apps": [
+        {
+          "bundleName": "Logisim-evolution.app",
+          "bundleIdentifier": "com.cburch.logisim"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "leanote": {
+      "caskVersion": "2.7.0",
+      "sourceURL": "https://github.com/leanote/desktop-app/releases/download/v2.7.0/leanote-desktop-mac-v2.7.0.zip",
+      "artifactSHA256": "18c680dc9f3af54a0ef4edfa987407ed41bbd4654bc1791720cb40e0047b3da4",
+      "apps": [
+        {
+          "bundleName": "Leanote.app",
+          "bundleIdentifier": "com.github.Electron"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "little-navmap": {
+      "caskVersion": "3.0.18",
+      "sourceURL": "https://github.com/albar965/littlenavmap/releases/download/v3.0.18/LittleNavmap-macOS-3.0.18.zip",
+      "artifactSHA256": "9159906c15fdffdd5c542dff10fda2d279e19b4d396cd73e18be2b3f2bd28c39",
+      "apps": [
+        {
+          "bundleName": "Little Navconnect.app",
+          "bundleIdentifier": "com.yourcompany.littlenavconnect"
+        },
+        {
+          "bundleName": "Little Navmap.app",
+          "bundleIdentifier": "com.yourcompany.littlenavmap"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "league-displays": {
+      "caskVersion": "1.0.1028-beta",
+      "sourceURL": "https://screensaver.riotgames.com/v2/installer/latest/LeagueDisplays-1.0.1028-beta.dmg",
+      "artifactSHA256": "cdab7e91f68f8c0e9bad5a84e4f739ed5966e7b7dd5fbe0458612fe2af01ab90",
+      "apps": [
+        {
+          "bundleName": "LeagueDisplays.app",
+          "bundleIdentifier": "com.riotgames.lolscreensaver.configurator"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "librecad": {
+      "caskVersion": "2.2.1.5",
+      "sourceURL": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.5/LibreCAD-v2.2.1.5-arm64.dmg",
+      "artifactSHA256": "0c6ce2e25a027ff3e921b74101d1c4e167687d2386fe0798f2f4c37d12deb436",
+      "apps": [
+        {
+          "bundleName": "LibreCAD.app",
+          "bundleIdentifier": "com.yourcompany.LibreCAD"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "localizationeditor": {
+      "caskVersion": "2.9.2",
+      "sourceURL": "https://github.com/igorkulman/iOSLocalizationEditor/releases/download/v2.9.2/LocalizationEditor.app.zip",
+      "artifactSHA256": "6415313128c1dbbcc0432e7108c2eba87e558ad0b5f6a4a6c80243ceb97220ea",
+      "apps": [
+        {
+          "bundleName": "LocalizationEditor.app",
+          "bundleIdentifier": "sk.kulman.LocalizationEditor"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "logdna-cli": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/logdna/logdna-cli/releases/download/2.0.0/logdna-cli.pkg",
+      "artifactSHA256": "5a9e2b3928f8d1cb294be4b5be3e96a44cc3076e0bb70133a6ccbb1c09ec681a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "latexdraw": {
+      "caskVersion": "4.0.3",
+      "sourceURL": "https://downloads.sourceforge.net/latexdraw/LaTeXDraw-4.0.3.dmg",
+      "artifactSHA256": "7a21014c60d1d75fc8efe8c0d3ba8e827d2d09d29daeda492aff5d7cbc4f257c",
+      "apps": [
+        {
+          "bundleName": "LaTeXDraw.app",
+          "bundleIdentifier": "latexdraw"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lmms": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg",
+      "artifactSHA256": "bcf9d6693cf4000df4a4c705afb8bbaa30a3caf4e146939c983cc31eecb66eb0",
+      "apps": [
+        {
+          "bundleName": "LMMS.app",
+          "bundleIdentifier": "io.lmms"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "loungy": {
+      "caskVersion": "0.1.3",
+      "sourceURL": "https://github.com/MatthiasGrandl/Loungy/releases/download/v0.1.3/Loungy_0.1.3_universal.dmg",
+      "artifactSHA256": "4d901b7dc6a02c6e51ba2af941ecd038b02308a642e330505a8f8882b07deb19",
+      "apps": [
+        {
+          "bundleName": "Loungy.app",
+          "bundleIdentifier": "app.loungy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "liteide": {
+      "caskVersion": "38.4",
+      "sourceURL": "https://github.com/visualfc/liteide/releases/download/x38.4/liteidex38.4-macos-qt5.15.16.zip",
+      "artifactSHA256": "f1c650216d6280e705ae76a99de1421e567840719c2d35d45b9f3aa9c037cae7",
+      "apps": [
+        {
+          "bundleName": "LiteIDE.app",
+          "bundleIdentifier": "com.visualfc.liteide"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lepton": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/hackjutsu/Lepton/releases/download/v2.0.0/Lepton-2.0.0-mac-arm64.dmg",
+      "artifactSHA256": "e5a783fd960438af176ad2b79c5687371cbb985f49c13cdfea695fd5df0e8115",
+      "apps": [
+        {
+          "bundleName": "Lepton.app",
+          "bundleIdentifier": "com.cosmox.lepton"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lazpaint": {
+      "caskVersion": "7.3",
+      "sourceURL": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_macos64.dmg",
+      "artifactSHA256": "eaac2b5776ad229a0f4496c407d4cf648dcc36626f2574486f0528916aa7a61c",
+      "apps": [
+        {
+          "bundleName": "LazPaint.app",
+          "bundleIdentifier": "com.company.lazpaint"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "leocad": {
+      "caskVersion": "25.09",
+      "sourceURL": "https://github.com/leozide/leocad/releases/download/v25.09/LeoCAD-macOS-25.09.dmg",
+      "artifactSHA256": "6e4664f6d5a9c2ffe3855c2bfcdffc32f666efe759076d976818b28a911eb9d8",
+      "apps": [
+        {
+          "bundleName": "LeoCAD.app",
+          "bundleIdentifier": "com.leozide.leocad"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lightproxy": {
+      "caskVersion": "1.1.41",
+      "sourceURL": "https://github.com/alibaba/lightproxy/releases/download/v1.1.41/LightProxy-1.1.41.dmg",
+      "artifactSHA256": "e71f606717712eabb06e1cf0c643302f8d52d339d227367a16ca519883d4bd00",
+      "apps": [
+        {
+          "bundleName": "LightProxy.app",
+          "bundleIdentifier": "org.lightproxy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lidarr": {
+      "caskVersion": "3.1.0.4875",
+      "sourceURL": "https://github.com/lidarr/Lidarr/releases/download/v3.1.0.4875/Lidarr.master.3.1.0.4875.osx-app-core-arm64.zip",
+      "artifactSHA256": "60236378eb5645fc217e2dfa6303558f1a2db8b5672c6332fd9ae30966ccbd26",
+      "apps": [
+        {
+          "bundleName": "Lidarr.app",
+          "bundleIdentifier": "com.osx.lidarr.audio"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "listen1": {
+      "caskVersion": "2.33.0",
+      "sourceURL": "https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/Listen1_2.33.0_mac_arm64.dmg",
+      "artifactSHA256": "c965cd8fc38f9cb4d265b2879be4766d24314196c5e6fd29be3a989c68457e90",
+      "apps": [
+        {
+          "bundleName": "Listen1.app",
+          "bundleIdentifier": "com.listen1.listen1"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "love": {
+      "caskVersion": "11.5",
+      "sourceURL": "https://github.com/love2d/love/releases/download/11.5/love-11.5-macos.zip",
+      "artifactSHA256": "6795bb3a1656af6a2fdfe741e150787b481886d3a280327a261a3fdded586913",
+      "apps": [
+        {
+          "bundleName": "love.app",
+          "bundleIdentifier": "org.love2d.love"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lego-mindstorms-ev3": {
+      "caskVersion": "1.4.4",
+      "sourceURL": "https://le-www-live-s.legocdn.com/downloads/LMS-EV3/LMS-EV3_Full-setup_1.4.4_en-us_osx.dmg",
+      "artifactSHA256": "cb912667968e08604e755278d0e2f2fc69556349938cb36b708c5ecd8c74af29",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
+    },
+    "linkliar": {
+      "caskVersion": "3.0.3",
+      "sourceURL": "https://github.com/halo/LinkLiar/releases/download/3.0.3/LinkLiar.app.zip",
+      "artifactSHA256": "36e62eab4ef8d2b004c6886182fc49830afdf56f4f14f9be07adfe552d7140d2",
+      "apps": [
+        {
+          "bundleName": "LinkLiar.app",
+          "bundleIdentifier": "io.github.halo.LinkLiar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "leela": {
+      "caskVersion": "0.11.0",
+      "sourceURL": "https://sjeng.org/dl/Leela_0.11.0.dmg",
+      "artifactSHA256": "f2c11799f7b548e1ca1f6ba8dca330d9ec44eed4d1a53439b5bceef86e0d0ae1",
+      "apps": [
+        {
+          "bundleName": "Leela.app",
+          "bundleIdentifier": "org.sjeng.leela"
+        },
+        {
+          "bundleName": "Leela OpenCL.app",
+          "bundleIdentifier": "org.sjeng.leela"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lemonlime": {
+      "caskVersion": "0.3.6.2,6.9.3",
+      "sourceURL": "https://github.com/Project-LemonLime/Project_LemonLime/releases/download/0.3.6.2/lemon-Qt6.9.3-Release-arm64.dmg",
+      "artifactSHA256": "165c2f8268041f473c035493c3e5403c01e82ce22eb38fcfa3befa0017944ca1",
+      "apps": [
+        {
+          "bundleName": "lemon.app",
+          "bundleIdentifier": "com.github.lemonlime"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lofi": {
+      "caskVersion": "2.0.2",
+      "sourceURL": "https://github.com/dvx/lofi/releases/download/v2.0.2/lofi.dmg",
+      "artifactSHA256": "a954c06e72c0076c20186f86161287147f815153cb22311fe2e3e39bfbc676fe",
+      "apps": [
+        {
+          "bundleName": "lofi.app",
+          "bundleIdentifier": "lofi.rocks"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
