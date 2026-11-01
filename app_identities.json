@@ -41343,6 +41343,336 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "waterfox-classic": {
+      "caskVersion": "2022.11",
+      "sourceURL": "https://github.com/WaterfoxCo/Waterfox-Classic/releases/download/2022.11-classic/Waterfox.Classic.2022.11.Setup.dmg",
+      "artifactSHA256": "507151508846e9ea09e695322b9d70ca48dc23d120ab9ac75b899596c1863ff2",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Waterfox Classic.app",
+          "reason": "unsupported CFBundleIdentifier: 'org.waterfoxproject.waterfox classic'"
+        }
+      ]
+    },
+    "old-school-runescape": {
+      "caskVersion": "1.2",
+      "sourceURL": "https://www.runescape.com/downloads/OldSchool.dmg",
+      "artifactSHA256": "82ab02309b9727ea14eac703f33f66c8f64c327c73049306711316b4bd865b79",
+      "apps": [
+        {
+          "bundleName": "Old School RuneScape.app",
+          "bundleIdentifier": "com.jagex.jagexappletviewer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "alacritty": {
+      "caskVersion": "0.17.0",
+      "sourceURL": "https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0.dmg",
+      "artifactSHA256": "ad8d7de35fb38e43184776cac6dfee05ca325caa0b6639a06a55e54e4b026620",
+      "apps": [
+        {
+          "bundleName": "Alacritty.app",
+          "bundleIdentifier": "org.alacritty"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lockdown": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://bitbucket.org/objective-see/deploy/downloads/Lockdown_1.0.0.zip",
+      "artifactSHA256": "047f377e2a9495361084268c86cc80719e123bd8958d69fe51cd2be0d7ffd764",
+      "apps": [
+        {
+          "bundleName": "Lockdown.app",
+          "bundleIdentifier": "com.objective-see.Lockdown"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "blobsaver": {
+      "caskVersion": "3.6.0",
+      "sourceURL": "https://github.com/airsquared/blobsaver/releases/download/v3.6.0/blobsaver-arm-3.6.0.dmg",
+      "artifactSHA256": "bd80e6cf9d1d68a91ebdc4a8023c87203da2db63863b2a16845150f7e990f02f",
+      "apps": [
+        {
+          "bundleName": "blobsaver.app",
+          "bundleIdentifier": "airsquared.blobsaver.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "interact-scratchpad": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "https://s3-us-west-2.amazonaws.com/downloads.agiletortoise.com/Interact+Scratchpad.app.zip",
+      "artifactSHA256": "d47a3c3098895d6ce72dca52e8113aebc7d63ad828da4eb8149695f6615d25b3",
+      "apps": [
+        {
+          "bundleName": "Interact Scratchpad.app",
+          "bundleIdentifier": "com.agiletortoise.Interact-Scratchpad-OSX"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "qth": {
+      "caskVersion": "0.8.14",
+      "sourceURL": "https://www.w8wjb.com/qth/QTH-0.8.14.dmg",
+      "artifactSHA256": "52b41561eb2cfd80a59b3df69787a2b21d22e4fd855ce85b9a9df9f9aeaabe88",
+      "apps": [
+        {
+          "bundleName": "QTH.app",
+          "bundleIdentifier": "com.w8wjb.QTH"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "aural": {
+      "caskVersion": "4.0.0-preview28",
+      "sourceURL": "https://github.com/maculateConception/aural-player/releases/download/final/AuralPlayer-4.0.0-preview28.dmg",
+      "artifactSHA256": "5cacd6f1f5b6956bdb9c5ff7f9b05ebbb11516010000d1f0bc793e6045a17172",
+      "apps": [
+        {
+          "bundleName": "Aural.app",
+          "bundleIdentifier": "com.kv.Aural"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "deco": {
+      "caskVersion": "0.7.1",
+      "sourceURL": "https://github.com/decosoftware/deco-ide/releases/download/v0.7.1/Deco-0.7.1.pkg",
+      "artifactSHA256": "cd9d9b553d9fcb706bacba94cbbf7ec80a77609f5505d485b2ebad7c16a8ffba",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "deco",
+          "reason": "no supported application bundles in declared artifacts"
+        }
+      ]
+    },
+    "active-trader-pro": {
+      "caskVersion": "1.0.55",
+      "sourceURL": "https://www.fidelity.com/webcontent/Codeweaver/activetrader-1.0.55.zip",
+      "artifactSHA256": "394689bce9630cd949a40ae9914533acaf028f8d08019833dbb7a49f3416866e",
+      "apps": [
+        {
+          "bundleName": "Active Trader Pro.app",
+          "bundleIdentifier": "com.fmr.activetrader"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "jdiskreport": {
+      "caskVersion": "1.4.1",
+      "sourceURL": "https://www.jgoodies.com/download/jdiskreport/jdiskreport-1_4_1-mac.zip",
+      "artifactSHA256": "cb64f3d7ea8e43b142a69cabdded832b8de8e503766ccf1c7a16b314d2bc0d44",
+      "apps": [
+        {
+          "bundleName": "JDiskReport.app",
+          "bundleIdentifier": "com.jgoodies.jdiskreport"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "digikam": {
+      "caskVersion": "9.1.0",
+      "sourceURL": "https://download.kde.org/stable/digikam/9.1.0/digiKam-9.1.0-Qt6-MacOS-arm64.pkg",
+      "artifactSHA256": "280fb7f8bd69f512946b1a5acc63a4f4fb66aed464afc2a03a3e4355150cc8ac",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "digikam.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: missing package identifier or relocatable payload"
+        }
+      ]
+    },
+    "openrct2": {
+      "caskVersion": "0.5.6",
+      "sourceURL": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.5.6/OpenRCT2-v0.5.6-macos-universal.zip",
+      "artifactSHA256": "5f57e48dbe438fd6fd5059954afe521a01365a36c11085b190067ea3204b6565",
+      "apps": [
+        {
+          "bundleName": "OpenRCT2.app",
+          "bundleIdentifier": "io.openrct2.OpenRCT2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nslogger": {
+      "caskVersion": "1.9.7",
+      "sourceURL": "https://github.com/fpillet/NSLogger/releases/download/v1.9.7/NSLogger-Desktop.Viewer-v1.9.7.zip",
+      "artifactSHA256": "52d36d45c2abb89f27ca5c3e14a4569cbf7052a787788b31987ccd227da2e5a9",
+      "apps": [
+        {
+          "bundleName": "NSLogger.app",
+          "bundleIdentifier": "com.florentpillet.NSLogger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sekey": {
+      "caskVersion": "0.1",
+      "sourceURL": "https://github.com/sekey/sekey/releases/download/0.1/SeKey-0.1.pkg",
+      "artifactSHA256": "8d473f7214ba76b70ca30905e2ebd07d7c421f1cff320285bd8ec8d2a7a5b083",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "SeKey.app",
+          "reason": "unsupported CFBundleIdentifier: ''"
+        }
+      ]
+    },
+    "pycharm-edu": {
+      "caskVersion": "2022.2.2,222.4345.35",
+      "sourceURL": "https://download.jetbrains.com/python/pycharm-edu-2022.2.2-aarch64.dmg",
+      "artifactSHA256": "fc25074308eb574eb4369c3a76c5d2625657ce854d6e1a8036f8ade967d5fd5e",
+      "apps": [
+        {
+          "bundleName": "PyCharm Edu.app",
+          "bundleIdentifier": "com.jetbrains.pycharm.pe"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "plug": {
+      "caskVersion": "2.0.19,2067",
+      "sourceURL": "https://www.plugformac.com/updates/plug2/Plug-latest.dmg",
+      "artifactSHA256": "418d1adcf0ca099e7d02f9773df133c8c3276f1e65c47ff60f587861fa07d063",
+      "apps": [
+        {
+          "bundleName": "Plug.app",
+          "bundleIdentifier": "com.plug.Plug2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tuck": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://www.irradiatedsoftware.com/downloads/Tuck_1.0.zip",
+      "artifactSHA256": "7e7822e3a7d7eb932f58e770aee31f778164784e151dbc36ab997be4107804ed",
+      "apps": [
+        {
+          "bundleName": "Tuck.app",
+          "bundleIdentifier": "com.irradiatedsoftware.Tuck"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "topaz-gigapixel-ai": {
+      "caskVersion": "8.4.4",
+      "sourceURL": "https://downloads.topazlabs.com/deploy/TopazGigapixelAI/8.4.4/TopazGigapixelAI-8.4.4.pkg",
+      "artifactSHA256": "9b3acfa9f98bf52fa494043c4f6e9176ce6385fce07273aa559cf9ff86492aed",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "installation_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Topaz Gigapixel AI.app",
+          "bundleIdentifier": "com.topazlabs.TopazGigapixelAI",
+          "packageIdentifier": "com.topazlabs.TopazGigapixelAI",
+          "installedPath": "/Applications/Topaz Gigapixel AI.app"
+        }
+      ]
+    },
+    "autumn": {
+      "caskVersion": "1.0.7",
+      "sourceURL": "https://github.com/apandhi/Autumn/releases/download/1.0.7/Build.zip",
+      "artifactSHA256": "2f6bff1c6203eddc8c3d48887d176d5dec0bc57dc66c3dfa1740c5a0dcd6fe93",
+      "apps": [
+        {
+          "bundleName": "Autumn.app",
+          "bundleIdentifier": "com.sephware.autumn"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bossa-app": {
+      "caskVersion": "1.9.1",
+      "sourceURL": "https://github.com/shumatech/BOSSA/releases/download/1.9.1/bossa-1.9.1.dmg",
+      "artifactSHA256": "ef325525d2ce1fa6078732e5aa0c16cf78114bd3cf867016c4b948022d1cb31f",
+      "apps": [
+        {
+          "bundleName": "BOSSA.app",
+          "bundleIdentifier": "ShumaTech.BOSSA"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "no-ip-duc": {
+      "caskVersion": "4.0.12",
+      "sourceURL": "https://www.noip.com/client/macos/No-IP_DUC_v4.0.12.dmg",
+      "artifactSHA256": "8c631c1c0c6b82b063c634f11c8b8d3ab2dd8dfb6b439f419055afc291ea42a0",
+      "apps": [
+        {
+          "bundleName": "No-IP DUC.app",
+          "bundleIdentifier": "com.noip.No-IP-DUC"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "c0re100-qbittorrent": {
+      "caskVersion": "5.2.4.10",
+      "sourceURL": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-5.2.4.10/qBittorrent-Enhanced-Edition-release-5.2.4.10-macOS-universal.dmg",
+      "artifactSHA256": "992313bf75509dbc1435a90bedf659921b54b1999e86f0247651c746112f7098",
+      "apps": [
+        {
+          "bundleName": "qBittorrent.app",
+          "bundleIdentifier": "org.qbittorrent.qBittorrent"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "imhex": {
+      "caskVersion": "1.38.1",
+      "sourceURL": "https://github.com/WerWolv/ImHex/releases/download/v1.38.1/imhex-1.38.1-macOS-arm64.dmg",
+      "artifactSHA256": "cbe57f8f16fd9a63bf0bd393d2db695ed201948a8f9167fd10b4af96847b0ee8",
+      "apps": [
+        {
+          "bundleName": "ImHex.app",
+          "bundleIdentifier": "net.WerWolv.ImHex"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
