@@ -1277,11 +1277,23 @@
     "attempts": 0,
     "updated": "2026-07-08"
   },
+  "modmove": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources",
+    "attempts": 0,
+    "updated": "2026-11-01"
+  },
   "mono-mdk": {
     "status": "curated",
     "reason": "official vendor asset: https://github.com/mono.png?size=256",
     "attempts": 0,
     "updated": "2026-07-08"
+  },
+  "moscow-ml": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
+    "attempts": 0,
+    "updated": "2026-11-01"
   },
   "mutedeck": {
     "status": "no_icon",

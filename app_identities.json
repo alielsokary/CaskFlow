@@ -46329,6 +46329,331 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "mmhmm-studio": {
+      "caskVersion": "2.6.4,1726550000",
+      "sourceURL": "https://updates.mmhmm.app/mac/production/mmhmmStudio_2.6.4.zip",
+      "artifactSHA256": "960737943bfbde565926f8b336b78843ce52a07f948805ad48701eb8e1e68bab",
+      "apps": [
+        {
+          "bundleName": "mmhmm Studio.app",
+          "bundleIdentifier": "app.mmhmm.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "moebius": {
+      "caskVersion": "1.0.29",
+      "sourceURL": "https://github.com/blocktronics/moebius/releases/download/1.0.29/Moebius.dmg",
+      "artifactSHA256": "014e355767fa27796a6f5f5778b608a3a802ba064655c23776fa89f0dd1163ba",
+      "apps": [
+        {
+          "bundleName": "Moebius.app",
+          "bundleIdentifier": "org.andyherbert.moebius"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nagstamon": {
+      "caskVersion": "3.18.2",
+      "sourceURL": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.18.2/Nagstamon-3.18.2-ARM.dmg",
+      "artifactSHA256": "c15cc9002635cc26e6ee496ab6b89ff3f453b9b9697f40a4b9bfa042a07772c7",
+      "apps": [
+        {
+          "bundleName": "Nagstamon.app",
+          "bundleIdentifier": "de.nagstamon"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "milkytracker": {
+      "caskVersion": "1.05.01",
+      "sourceURL": "https://github.com/milkytracker/MilkyTracker/releases/download/v1.05.01/milkytracker-1.05.01-Universal.dmg",
+      "artifactSHA256": "465e399e5174255f33d92490052c7a851019bf5c9ba798bd83fc384158b05c71",
+      "apps": [
+        {
+          "bundleName": "MilkyTracker.app",
+          "bundleIdentifier": "com.Titan.MilkyTracker"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mountain": {
+      "caskVersion": "1.6.6",
+      "sourceURL": "https://appgineers.de/mountain/files/Mountain.zip",
+      "artifactSHA256": "22496566734b7b610a24e3c7700b123a17c5502fdc1562d35d65c04ecf5e7070",
+      "apps": [
+        {
+          "bundleName": "Mountain.app",
+          "bundleIdentifier": "de.appgineers.Mountain"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "modmove": {
+      "caskVersion": "1.1.1",
+      "sourceURL": "https://github.com/keith/modmove/releases/download/1.1.1/ModMove.app.zip",
+      "artifactSHA256": "81b9cd96050b6bffecccb1ec6ef590a4fc0225c86e96de0a67a482b80c241bf7",
+      "apps": [
+        {
+          "bundleName": "ModMove.app",
+          "bundleIdentifier": "com.smileykeith.ModMove"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "moscow-ml": {
+      "caskVersion": "2.10.1",
+      "sourceURL": "https://github.com/kfl/mosml/releases/download/ver-2.10.1/mosml-2.10.1.pkg",
+      "artifactSHA256": "4b3e2035b106c688e43e7d415ca74ca8970f74656cc2c17326c5fb7d1f948ca0",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
+    },
+    "mumble": {
+      "caskVersion": "1.5.901",
+      "sourceURL": "https://github.com/mumble-voip/mumble/releases/download/v1.5.901/mumble_client-1.5.901.x64.dmg",
+      "artifactSHA256": "9618a7abf0da3743e1d8c13ddb45ea6524fcfff001e844d9bb95a86867aa6f47",
+      "apps": [
+        {
+          "bundleName": "Mumble.app",
+          "bundleIdentifier": "mumble-client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mindforger": {
+      "caskVersion": "2.0.0-20240217.170738,5152",
+      "sourceURL": "https://github.com/dvorka/mindforger/releases/download/2.0.0/mindforger-2.0.0-20240217.170738-qt5152-intel.dmg",
+      "artifactSHA256": "8fa3b483ad8a0b6dea49a6e227d87922504de101d4f0c80c8c3310149925b423",
+      "apps": [
+        {
+          "bundleName": "mindforger.app",
+          "bundleIdentifier": "com.yourcompany.mindforger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "natron": {
+      "caskVersion": "2.5.0",
+      "sourceURL": "https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-macOS12-x86_64.dmg",
+      "artifactSHA256": "aa31fb6963344c281b53ca6e93823885e09f7d115ed5cc311abb833de4647537",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Natron.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
+    },
+    "multimc": {
+      "caskVersion": "0.7.0",
+      "sourceURL": "https://files.multimc.org/downloads/mmc-stable-osx64-5.15.2.tar.gz",
+      "artifactSHA256": "7b08170e31a296b53090e2c23bf4609ff23115158d535e06b30b7fd8f216d08a",
+      "apps": [
+        {
+          "bundleName": "MultiMC.app",
+          "bundleIdentifier": "org.multimc.MultiMC"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mjml-app": {
+      "caskVersion": "3.0.4",
+      "sourceURL": "https://github.com/mjmlio/mjml-app/releases/download/v3.0.4/mjml-app-3.0.4-mac.dmg",
+      "artifactSHA256": "8bf1e24f770d8191526ce42cab423dc6834876d8cee280b12338510f976dff4c",
+      "apps": [
+        {
+          "bundleName": "MJML.app",
+          "bundleIdentifier": "com.mjmlio.mjmlapp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mycrypto": {
+      "caskVersion": "1.7.17",
+      "sourceURL": "https://github.com/MyCryptoHQ/MyCrypto/releases/download/1.7.17/mac_1.7.17_MyCrypto.dmg",
+      "artifactSHA256": "8fe2652697b0557f7e221d0c960aa9e36a54445f12e7396a193cc5c5ad6ded06",
+      "apps": [
+        {
+          "bundleName": "MyCrypto.app",
+          "bundleIdentifier": "com.github.mycrypto.mycryptohq"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "navicat-data-modeler-essentials": {
+      "caskVersion": "3.1.4",
+      "sourceURL": "https://download3.navicat.com/updater/modeler031_ess_mac_en.zip",
+      "artifactSHA256": "ec5412eaa1807e6dc5b45184596eb13d9af12a1992440ddf5c0c4631f7482f01",
+      "apps": [
+        {
+          "bundleName": "Navicat Data Modeler Essentials.app",
+          "bundleIdentifier": "com.prect.NavicatDataModelerEssentials3"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nault": {
+      "caskVersion": "1.18.2",
+      "sourceURL": "https://github.com/Nault/Nault/releases/download/v1.18.2/Nault-1.18.2-Mac.dmg",
+      "artifactSHA256": "f8a7a488fe220c8452df9b80b5e176da4f488b1c5f41d7e5a80fa040f4beef7f",
+      "apps": [
+        {
+          "bundleName": "Nault.app",
+          "bundleIdentifier": "cc.nault"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mqtt-explorer": {
+      "caskVersion": "0.3.5",
+      "sourceURL": "https://github.com/thomasnordquist/MQTT-Explorer/releases/download/v0.3.5/MQTT-Explorer-0.3.5-mac.zip",
+      "artifactSHA256": "4322a9127c3ce9025d33afa3ff91e76e8873fff260493a112eadc4769c027778",
+      "apps": [
+        {
+          "bundleName": "MQTT Explorer.app",
+          "bundleIdentifier": "de.t7n.apps.mqtt-explorer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nano-node": {
+      "caskVersion": "28.2",
+      "sourceURL": "https://github.com/nanocurrency/nano-node/releases/download/V28.2/nano-node-V28.2-Darwin.dmg",
+      "artifactSHA256": "b57b17d8f21836b376edfd30420573067240d6ed5b4c5fce73a9772e50f535c5",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Nano.app",
+          "reason": "unsupported CFBundleIdentifier: 'org.nano.nano_wallet'"
+        }
+      ]
+    },
+    "nanoem": {
+      "caskVersion": "34.10.0",
+      "sourceURL": "https://github.com/hkrn/nanoem/releases/download/v34.10.0/nanoem-v34.10.0-macos.zip",
+      "artifactSHA256": "dd38a010648f9e5cc2b9d319dc5989527134d3482f55d80e6ab012b576af6a2c",
+      "apps": [
+        {
+          "bundleName": "nanoem.app",
+          "bundleIdentifier": "com.github.nanoem"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "min": {
+      "caskVersion": "1.35.7",
+      "sourceURL": "https://github.com/minbrowser/min/releases/download/v1.35.7/min-v1.35.7-mac-arm64.zip",
+      "artifactSHA256": "326dddb576e2e0a496d49d4396ccaca839ff3fffea75197a5f7d97f774716cb1",
+      "apps": [
+        {
+          "bundleName": "Min.app",
+          "bundleIdentifier": "com.electron.min"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mks": {
+      "caskVersion": "1.7",
+      "sourceURL": "https://github.com/x0054/MKS/releases/download/1.7/MKS.zip",
+      "artifactSHA256": "5e99acc34113b6974d799a4442682d3b82efc7096fc9a3fef78dc471975d68e8",
+      "apps": [
+        {
+          "bundleName": "MKS.app",
+          "bundleIdentifier": "com.zynath.MKS"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "milkman": {
+      "caskVersion": "5.12.0",
+      "sourceURL": "https://github.com/warmuuh/milkman/releases/download/5.12.0/milkman-dist-appbundle-macos64-bin.tgz",
+      "artifactSHA256": "2c7b037d82d40ecf1465b9e09f6fef3da3ca1a1a090e751cfbb94d51473ade0f",
+      "apps": [
+        {
+          "bundleName": "Milkman.app",
+          "bundleIdentifier": "milkman"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "morkro-papyrus": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://github.com/morkro/papyrus/releases/download/1.0.3/Papyrus-osx-1.0.3.zip",
+      "artifactSHA256": "6130e0d93486db9e969686270e8edddc9be16b52b342fdb4d31eb4546d161118",
+      "apps": [
+        {
+          "bundleName": "Papyrus.app",
+          "bundleIdentifier": "com.electron.papyrus"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "n1ghtshade": {
+      "caskVersion": "1.0",
+      "sourceURL": "https://github.com/synackuk/n1ghtshade/releases/download/1.0/n1ghtshade.app.zip",
+      "artifactSHA256": "e1fb23833e9261244e52bb318f456fccbe1482082cdd0995f63babd47af2b746",
+      "apps": [
+        {
+          "bundleName": "n1ghtshade.app",
+          "bundleIdentifier": "com.synackuk.n1ghtshade"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nagbar": {
+      "caskVersion": "1.3.7",
+      "sourceURL": "https://github.com/volendavidov/NagBar/releases/download/1.3.7/NagBar.zip",
+      "artifactSHA256": "9a4b256250d4527423efd16e90cc7d087bc6ca9306bdc5267a6441194e73a44b",
+      "apps": [
+        {
+          "bundleName": "NagBar.app",
+          "bundleIdentifier": "com.volendavidov.NagBar"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "mockplus": {
+      "caskVersion": "3.7.1.0",
+      "sourceURL": "https://d3h2k7ug3o5pb3.cloudfront.net/software/macos/MockplusClassic_v3.7.1.0.zip",
+      "artifactSHA256": "f9ac9457ed78346be7bd4513e1dfacb0ef730331128f3d6c43a787bfe4a96a70",
+      "apps": [
+        {
+          "bundleName": "Mockplus Classic.app",
+          "bundleIdentifier": "com.mockplus.desktop.chinese"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
