@@ -1420,6 +1420,13 @@
     "og_desc": "A simple to do list app to manage your personal tasks, family projects, and team's work. Trusted by +40m people to stay organized and get more done."
   },
   {
+    "token": "anydrag",
+    "homepage": "https://github.com/XueshiQiao/AnyDrag",
+    "title": "GitHub - XueshiQiao/AnyDrag: Modifier+drag to move any window smoothly on macOS, exactly like native speed · GitHub",
+    "meta_desc": "Modifier+drag to move any window smoothly on macOS, exactly like native speed - XueshiQiao/AnyDrag",
+    "og_desc": "Modifier+drag to move any window smoothly on macOS, exactly like native speed - XueshiQiao/AnyDrag"
+  },
+  {
     "token": "anylist",
     "homepage": "https://www.anylistapp.com/",
     "title": "AnyList - The best way to create and share a grocery shopping list.",
