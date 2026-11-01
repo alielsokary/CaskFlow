@@ -48605,6 +48605,279 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "sql-tabs": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://github.com/sasha-alias/sqltabs/releases/download/v1.1.0/SQL-Tabs-1.1.0.dmg",
+      "artifactSHA256": "692b0c27a596d049dd64e158a543b768f7d4bd9df869b4365c9d8efc36b59b8e",
+      "apps": [
+        {
+          "bundleName": "SQL Tabs.app",
+          "bundleIdentifier": "com.sqltabs"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "strawberry-wallpaper": {
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://github.com/aitexiaoy/Strawberry-Wallpaper/releases/download/1.4.2/Strawberry.Wallpaper-mac.dmg",
+      "artifactSHA256": "733632a104fec8efc5024677332978d92d3375b00f877b50a95d0f450184f8e9",
+      "apps": [
+        {
+          "bundleName": "Strawberry Wallpaper.app",
+          "bundleIdentifier": "9Y7KR6Q842.com.taoacat.wallpaperapplications"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "spotify4bigsur": {
+      "caskVersion": "1.1",
+      "sourceURL": "https://github.com/fabiusBile/Spotify4BigSur/releases/download/1.1/Spotify4BigSur.dmg",
+      "artifactSHA256": "304752e6b373c9365205e03bd2ea3f116e555128ef793ea0b5a1f5e8cee28b19",
+      "apps": [
+        {
+          "bundleName": "Spotify4BigSur.app",
+          "bundleIdentifier": "backert.SpotifyMain"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "stolendata-mpv": {
+      "caskVersion": "0.40.0",
+      "sourceURL": "https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-arm64-0.40.0.tar.gz",
+      "artifactSHA256": "3170fb709defebaba33e9755297d70dc3562220541de54fc3d494a8309ef1260",
+      "apps": [
+        {
+          "bundleName": "mpv.app",
+          "bundleIdentifier": "io.mpv"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "spark-ar-studio": {
+      "caskVersion": "187",
+      "sourceURL": "https://www.facebook.com/sparkarmacos/download/",
+      "artifactSHA256": "8ce2f1d6d2b87019a86e634e40ae4bd8560b518e01af1e848fa55bd4f37f185c",
+      "apps": [
+        {
+          "bundleName": "Meta Spark Studio.app",
+          "bundleIdentifier": "com.facebook.arstudio.skylight"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "syncplay": {
+      "caskVersion": "1.7.6",
+      "sourceURL": "https://github.com/Syncplay/syncplay/releases/download/v1.7.6/Syncplay_1.7.6.dmg",
+      "artifactSHA256": "b027d9ba402953db9fe66f2d3770d16e500f1f6ac7e5a5a6e9552310fe9febb7",
+      "apps": [
+        {
+          "bundleName": "Syncplay.app",
+          "bundleIdentifier": "pl.syncplay.Syncplay"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "surfeasy-vpn": {
+      "caskVersion": "3.14.78",
+      "sourceURL": "https://updates.surfeasy.com/downloads/se0212/SurfEasyVPN-Installer.dmg",
+      "artifactSHA256": "70c16983544bc017f46e188bb8dd5ead41cf51b9dbdd73546c146ddf3a7436cb",
+      "apps": [
+        {
+          "bundleName": "SurfEasy VPN.app",
+          "bundleIdentifier": "com.surfeasy.SurfEasyVPN"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "redeclipse": {
+      "caskVersion": "2.0.0",
+      "sourceURL": "https://github.com/redeclipse/base/releases/download/v2.0.0/redeclipse_2.0.0_mac.tar.bz2",
+      "artifactSHA256": "7eff1f196f9998d7bb7f26b4c79b596c2512b18a8b8ce16335634defbfcb072e",
+      "apps": [
+        {
+          "bundleName": "redeclipse.app",
+          "bundleIdentifier": "net.redeclipse.game"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "stretchly": {
+      "caskVersion": "1.22.1",
+      "sourceURL": "https://github.com/hovancik/stretchly/releases/download/v1.22.1/stretchly-1.22.1-arm64.dmg",
+      "artifactSHA256": "ca307fe7f8d42776152bd6da39a3897061ece162cd83a2012923b827ef79f30b",
+      "apps": [
+        {
+          "bundleName": "Stretchly.app",
+          "bundleIdentifier": "net.hovancik.stretchly"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "streamlink-twitch-gui": {
+      "caskVersion": "2.5.3",
+      "sourceURL": "https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.3/streamlink-twitch-gui-v2.5.3-macOS.tar.gz",
+      "artifactSHA256": "164179e26ef07cc821e718a9a965ed58815de22be080d0fe32e90356a9b850fe",
+      "apps": [
+        {
+          "bundleName": "Streamlink Twitch GUI.app",
+          "bundleIdentifier": "streamlink-twitch-gui"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "subtools": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://www.emmgunn.com/downloads/subtools1.0.1.zip",
+      "artifactSHA256": "2557e042d1df12dacfe5d87ff6c96d252721f3d10a26dbb7f8dc2e3ac6248e91",
+      "apps": [
+        {
+          "bundleName": "SUBtools.app",
+          "bundleIdentifier": "com.emmgunn.SUBtools"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sqlight": {
+      "caskVersion": "3.0.0.0",
+      "sourceURL": "https://www.aurvan.com/com-aurvan-satva-ui-reactjs-dossier/sqlight-v3_0_0_0-app.dmg",
+      "artifactSHA256": "3ffa14419fced3f864f9ff2472987c8bc3e5743c9f960ffe52245e3bb0d401f2",
+      "apps": [
+        {
+          "bundleName": "SQLight.app",
+          "bundleIdentifier": "com.aurvan.sqlight.macosx"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sqlworkbenchj": {
+      "caskVersion": "133",
+      "sourceURL": "https://www.sql-workbench.eu/Workbench-Build133-Mac-with-optional-libs.tgz",
+      "artifactSHA256": "e445598800435baa0a206a40aba62d83031bb2130420abbc935f6ddc5d638354",
+      "apps": [
+        {
+          "bundleName": "SQLWorkbenchJ.app",
+          "bundleIdentifier": "sqlworkbench.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ssokit": {
+      "caskVersion": "1.2.1",
+      "sourceURL": "https://github.com/rangaofei/SSokit-qmake/releases/download/1.2.1/SSokit_1.2.1.dmg",
+      "artifactSHA256": "830006cbb59dc3529dfae91f30ee1b1362f9be5952a599e9083d5fcaed710e34",
+      "apps": [
+        {
+          "bundleName": "SSokit.app",
+          "bundleIdentifier": "com.rangofei.SSokit"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "switchkey": {
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://github.com/itsuhane/SwitchKey/releases/download/v1.1.3/SwitchKey.zip",
+      "artifactSHA256": "a8a62231adddffc954a894b7fd00051d903de31a0e37d68787425bdc287399c8",
+      "apps": [
+        {
+          "bundleName": "SwitchKey.app",
+          "bundleIdentifier": "itsuhane.tools.SwitchKey"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "superslicer": {
+      "caskVersion": "2.5.59.13,240701",
+      "sourceURL": "https://github.com/supermerill/SuperSlicer/releases/download/2.5.59.13/SuperSlicer_2.5.59.13_macos_arm_240701.dmg",
+      "artifactSHA256": "5e1358d36c4948177aca4caaccea9532cf357517ec9464284d9126f0a65677bb",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "SuperSlicer.app",
+          "reason": "unsupported CFBundleIdentifier: 'org.SuperSlicer/'"
+        }
+      ]
+    },
+    "starsector": {
+      "caskVersion": "0.98a-RC8",
+      "sourceURL": "https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_mac-0.98a-RC8.zip",
+      "artifactSHA256": "3bc6df1e31188155594b4f4314b7dfa4154781c5848b7a9b494cc915ac935c1a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Starsector.app",
+          "reason": "unsupported CFBundleIdentifier: 'com.Fractal Softworks LLC.Starsector.Starsector'"
+        }
+      ]
+    },
+    "startupizer": {
+      "caskVersion": "2,2060,1527510167",
+      "sourceURL": "https://dl.devmate.com/com.gentlebytes.Startupizer2/2060/1527510167/Startupizer2-2060.zip",
+      "artifactSHA256": "56792a52fc91129f6f192cbbc0dbc6a7175d0699f2dab726baaf7d94f30ce150",
+      "apps": [
+        {
+          "bundleName": "Startupizer2.app",
+          "bundleIdentifier": "com.gentlebytes.Startupizer2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "swimat": {
+      "caskVersion": "1.7.0",
+      "sourceURL": "https://github.com/Jintin/Swimat/releases/download/1.7.0/Swimat.zip",
+      "artifactSHA256": "adcf450d98c247fe4c45c68353f19afca3e2039c8431ec080f14000fe9cc36bf",
+      "apps": [
+        {
+          "bundleName": "Swimat.app",
+          "bundleIdentifier": "com.jintin.Swimat"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "syncalicious": {
+      "caskVersion": "0.0.6",
+      "sourceURL": "https://github.com/zenangst/Syncalicious/releases/download/0.0.6/Syncalicious.zip",
+      "artifactSHA256": "ff43d46269d18c8ac86f7d49f1abae8100f0b0852a594e88925b8e1bccd028f0",
+      "apps": [
+        {
+          "bundleName": "Syncalicious.app",
+          "bundleIdentifier": "com.zenangst.Syncalicious"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "stella-app": {
+      "caskVersion": "7.0",
+      "sourceURL": "https://github.com/stella-emu/stella/releases/download/7.0/Stella-7.0-macos.dmg",
+      "artifactSHA256": "dcd6de1baf5b2fdcf655478eb04d3fb8e65e3cdaed2e04cd6c5347b3149c1eed",
+      "apps": [
+        {
+          "bundleName": "Stella.app",
+          "bundleIdentifier": "Stella-emu"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
