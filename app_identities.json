@@ -50568,6 +50568,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "codeburn-app": {
+      "caskVersion": "0.9.27",
+      "sourceURL": "https://github.com/getagentseal/codeburn/releases/download/desktop-v0.9.27/CodeBurn-0.9.27-arm64.dmg",
+      "artifactSHA256": "81f77bb6aa76bc618ff4a3f1798ce60b9b16f6d7b50629b6d1cab4d977cb17fb",
+      "apps": [
+        {
+          "bundleName": "CodeBurn.app",
+          "bundleIdentifier": "org.agentseal.codeburn-desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "vocevista-basic": {
+      "caskVersion": "6.0.2.10487",
+      "sourceURL": "https://download.sygyt.com/6.0.2/VoceVistaBasic_macOS_6.0.2.10487.dmg",
+      "artifactSHA256": "b343d79b7f46f2b556017e5691e2681fe219d1bf6226adfc3d2f65c0952fc9bf",
+      "apps": [
+        {
+          "bundleName": "VoceVista Basic.app",
+          "bundleIdentifier": "com.sygyt.mac.OvertoneAnalyzer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
