@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-01",
-  "totalCasks": 4949,
+  "generatedDate": "2026-11-02",
+  "totalCasks": 4950,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3629,6 +3629,12 @@
       ]
     },
     "codebuddy-cn": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "codeburn-app": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -13975,12 +13981,6 @@
       "primary": "utilities",
       "secondary": []
     },
-    "overtone-analyzer": {
-      "primary": "audioMusic",
-      "secondary": [
-        "utilities"
-      ]
-    },
     "overview": {
       "primary": "utilities",
       "secondary": []
@@ -21228,6 +21228,12 @@
     "vocaster-hub": {
       "primary": "other",
       "secondary": []
+    },
+    "vocevista-basic": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
     },
     "vocevista-pro": {
       "primary": "audioMusic",
