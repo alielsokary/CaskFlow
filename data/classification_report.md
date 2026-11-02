@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-11-01
+Generated 2026-11-02
 
 ## Summary
 
@@ -11,10 +11,10 @@ Generated 2026-11-01
 
 ## Renamed (classification migrated)
 
-- `zen-privacy` → `irbis-zen`
+- `overtone-analyzer` → `vocevista-basic`
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `anydrag` | utilities | - | 0.85 | A system utility that enables moving windows via modifier-key dragging. |
+| `codeburn-app` | developerTools | ai | 0.85 | A local tool for tracking AI coding tool usage and costs, targeting developers using Claude Code, Cursor, Codex. |

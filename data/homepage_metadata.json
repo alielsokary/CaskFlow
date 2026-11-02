@@ -5659,6 +5659,13 @@
     "og_desc": ""
   },
   {
+    "token": "codeburn-app",
+    "homepage": "https://codeburn.app/",
+    "title": "AI Coding Cost & Token Usage Tracker for Claude Code, Cursor & Codex | CodeBurn",
+    "meta_desc": "CodeBurn is a free, local-first tool that tracks AI coding token usage and cost across 42 tools (Claude Code, Cursor, Codex, Copilot, Gemini and more). Break spend down by model, project, and task. A privacy-first ccusage alternative. 100% local, open source.",
+    "og_desc": "CodeBurn is a free, local-first tool that tracks AI coding token usage and cost across 42 tools (Claude Code, Cursor, Codex, Copilot, Gemini and more). Break spend down by model, project, and task. A privacy-first ccusage alternative. 100% local, open source."
+  },
+  {
     "token": "codeedit",
     "homepage": "https://www.codeedit.app/",
     "title": "CodeEdit | A native code editor for macOS",
