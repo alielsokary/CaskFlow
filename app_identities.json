@@ -50594,6 +50594,54 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "audioroute": {
+      "caskVersion": "1.2.10",
+      "sourceURL": "https://pub-ee5d9eb8d65945d1ba1716bc9ca61b0e.r2.dev/AudioRoute-1.2.10-signed.pkg",
+      "artifactSHA256": "96bcb908e04db6463a0996e5235ceebf286e5c84c49aa6586cdc4e6bbc77992e",
+      "apps": [
+        {
+          "bundleName": "AudioRoute.app",
+          "bundleIdentifier": "com.audioroute.app",
+          "packageIdentifier": "com.audioroute.app",
+          "installedPath": "/Applications/AudioRoute.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "daemon.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "driver.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "launchd.app.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "launchd.daemon.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "plugin.aax.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "plugin.au.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "plugin.vst3.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "uninstall.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     }
   }
 }
