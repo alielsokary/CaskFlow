@@ -2173,6 +2173,13 @@
     "og_desc": "Stream the audio of your PC or laptop to your phone. Use your phone as a microphone for your PC"
   },
   {
+    "token": "audioroute",
+    "homepage": "https://audio-route.com/",
+    "title": "AudioRoute - Capture system audio in any DAW, app, or WAV",
+    "meta_desc": "Any sound your Mac or PC plays, captured onto a DAW track, into any app as a real input device, or straight to a bit-perfect WAV. No aggregate device, no rerouting. 14-day free trial.",
+    "og_desc": "Any sound your Mac or PC plays, onto a DAW track, into any app as a real input device, or straight to a bit-perfect WAV. No aggregate device. 14-day free trial."
+  },
+  {
     "token": "audirvana",
     "homepage": "https://audirvana.com/",
     "title": "Audirvāna - Music Player⎢HD Digital Audio Player",

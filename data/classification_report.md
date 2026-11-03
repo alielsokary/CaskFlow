@@ -1,20 +1,16 @@
 # Daily classification update
 
-Generated 2026-11-02
+Generated 2026-11-03
 
 ## Summary
 
 - 1 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
-- 1 casks renamed in Homebrew (classification migrated, no LLM call)
-
-## Renamed (classification migrated)
-
-- `overtone-analyzer` → `vocevista-basic`
+- 0 casks renamed in Homebrew (classification migrated, no LLM call)
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `codeburn-app` | developerTools | ai | 0.85 | A local tool for tracking AI coding tool usage and costs, targeting developers using Claude Code, Cursor, Codex. |
+| `audioroute` | audioMusic | utilities | 0.85 | A tool for capturing and routing system/app audio into DAWs or WAV files, centered on audio functionality. |
