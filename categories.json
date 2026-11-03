@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-02",
-  "totalCasks": 4950,
+  "generatedDate": "2026-11-03",
+  "totalCasks": 4951,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1409,6 +1409,12 @@
     "audiorelay": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "audioroute": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
     },
     "audirvana": {
       "primary": "audioMusic",
