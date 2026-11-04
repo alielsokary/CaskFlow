@@ -50642,6 +50642,71 @@
           "reason": "no application payload under /Applications"
         }
       ]
+    },
+    "openscreen": {
+      "caskVersion": "2.2.1",
+      "sourceURL": "https://github.com/getopenscreen/openscreen/releases/download/v2.2.1/Openscreen-Mac-arm64-2.2.1.zip",
+      "artifactSHA256": "3fc1e1f7fe96e594175fef2200afee848ead645a19aca6c45e28b92e9ac14d19",
+      "apps": [
+        {
+          "bundleName": "Openscreen.app",
+          "bundleIdentifier": "com.etiennelescot.openscreen"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "beat-link-trigger": {
+      "caskVersion": "8.0.0",
+      "sourceURL": "https://github.com/Deep-Symmetry/beat-link-trigger/releases/download/v8.0.0/Beat-Link-Trigger-8.0.0-MacOS.dmg",
+      "artifactSHA256": "31b53cad22f15c515f33065b0a0a4fa62af5ea6c1e8b6f9174931c23bfb0f3e5",
+      "apps": [
+        {
+          "bundleName": "Beat Link Trigger.app",
+          "bundleIdentifier": "org.deepsymmetry.beat-link-trigger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "meta-vr-developer-hub": {
+      "caskVersion": "6.6.0,16711ddde7b0cf840af1e69ed05ebac5",
+      "sourceURL": "https://www.oculus.com/x2asset/electron-apps/odh/16711ddde7b0cf840af1e69ed05ebac5/Meta%20Quest%20Developer%20Hub-6.6.0.zip",
+      "artifactSHA256": "c900979255d0ebc325190f690fe5feba254f82e6ae1586dd47cdeb644855deb0",
+      "apps": [
+        {
+          "bundleName": "Meta VR Developer Hub.app",
+          "bundleIdentifier": "com.oculus.odh"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sanductor": {
+      "caskVersion": "1.0.0",
+      "sourceURL": "https://github.com/MikeMcQuaid/Sanductor/releases/download/1.0.0/Sanductor-1.0.0.zip",
+      "artifactSHA256": "c72581e14e9e6f9a13c3f72d8c79ec31ca813172581725d76ca609be522965ab",
+      "apps": [
+        {
+          "bundleName": "Sanductor.app",
+          "bundleIdentifier": "com.mikemcquaid.Sanductor"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "screendrop": {
+      "caskVersion": "0.37.1",
+      "sourceURL": "https://github.com/fayazara/Screendrop/releases/download/v0.37.1/Screendrop.dmg",
+      "artifactSHA256": "faa7bc2e3413645decba605076e6b649589e96db533280e28fa5309eccefd4a4",
+      "apps": [
+        {
+          "bundleName": "Screendrop.app",
+          "bundleIdentifier": "com.fayazahmed.Screendrop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
