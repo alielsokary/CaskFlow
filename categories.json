@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-03",
-  "totalCasks": 4951,
+  "generatedDate": "2026-11-04",
+  "totalCasks": 4955,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -413,12 +413,6 @@
       "secondary": []
     },
     "agent-tars": {
-      "primary": "developerTools",
-      "secondary": [
-        "ai"
-      ]
-    },
-    "agentide": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -1816,6 +1810,12 @@
     "beast2": {
       "primary": "scienceEducation",
       "secondary": []
+    },
+    "beat-link-trigger": {
+      "primary": "audioMusic",
+      "secondary": [
+        "developerTools"
+      ]
     },
     "beatunes": {
       "primary": "audioMusic",
@@ -11508,12 +11508,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
-    "meta-quest-developer-hub": {
-      "primary": "developerTools",
-      "secondary": []
-    },
     "meta-quest-remote-desktop": {
       "primary": "utilities",
+      "secondary": []
+    },
+    "meta-vr-developer-hub": {
+      "primary": "developerTools",
       "secondary": []
     },
     "metaimage": {
@@ -13675,6 +13675,12 @@
       "primary": "designGraphics",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "openscreen": {
+      "primary": "videoMedia",
+      "secondary": [
+        "designGraphics"
       ]
     },
     "opensesame": {
@@ -16838,6 +16844,12 @@
         "cloudStorage"
       ]
     },
+    "sanductor": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "sanesidebuttons": {
       "primary": "menuBar",
       "secondary": []
@@ -16963,6 +16975,12 @@
     "screen-studio": {
       "primary": "videoMedia",
       "secondary": []
+    },
+    "screendrop": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
     },
     "screenflick": {
       "primary": "utilities",
@@ -18220,6 +18238,12 @@
     "spotify": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "spotify-soloist": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
     },
     "spotify4bigsur": {
       "primary": "audioMusic",
