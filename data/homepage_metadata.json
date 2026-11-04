@@ -2824,6 +2824,13 @@
     "og_desc": ""
   },
   {
+    "token": "beat-link-trigger",
+    "homepage": "https://github.com/Deep-Symmetry/beat-link-trigger",
+    "title": "GitHub - Deep-Symmetry/beat-link-trigger: Trigger events and automate shows in response to events on Pioneer CDJs · GitHub",
+    "meta_desc": "Trigger events and automate shows in response to events on Pioneer CDJs - Deep-Symmetry/beat-link-trigger",
+    "og_desc": "Trigger events and automate shows in response to events on Pioneer CDJs - Deep-Symmetry/beat-link-trigger"
+  },
+  {
     "token": "beatunes",
     "homepage": "https://www.beatunes.com/",
     "title": "beaTunes",
@@ -39241,6 +39248,13 @@
     "og_desc": ""
   },
   {
+    "token": "openscreen",
+    "homepage": "https://getopenscreen.com/",
+    "title": "Free open-source screen recorder & video editor | OpenScreen",
+    "meta_desc": "Turn screen recordings into polished demos with automatic zooms, styled backgrounds and an editable cursor. Free and open source for Windows, macOS and Linux. No watermark.",
+    "og_desc": "Turn screen recordings into polished demos with automatic zooms, styled backgrounds and an editable cursor. Free and open source for Windows, macOS and Linux. No watermark."
+  },
+  {
     "token": "opensesame",
     "homepage": "https://osdoc.cogsci.nl/",
     "title": "OpenSesame // OpenSesame documentation",
@@ -44429,6 +44443,13 @@
     "og_desc": "Screen recorder for macOS. Create engaging product demos, courses, tutorial and social media videos. Add automatic zoom on mouse actions, smooth mouse movement, and other powerful effects and animations. Designed for macOS."
   },
   {
+    "token": "screendrop",
+    "homepage": "https://github.com/fayazara/Screendrop",
+    "title": "GitHub - fayazara/Screendrop: A beautiful screenshot + screen recording + Loom alternative - all native, self hostable and free. · GitHub",
+    "meta_desc": "A beautiful screenshot + screen recording + Loom alternative - all native, self hostable and free. - fayazara/Screendrop",
+    "og_desc": "A beautiful screenshot + screen recording + Loom alternative - all native, self hostable and free. - fayazara/Screendrop"
+  },
+  {
     "token": "screenflick",
     "homepage": "https://www.araelium.com/screenflick-mac-screen-recorder",
     "title": "Screenflick - Mac Screen Recorder with Audio",
@@ -46467,6 +46488,13 @@
     "homepage": "https://www.spotify.com/",
     "title": "Spotify - Web Player",
     "meta_desc": "",
+    "og_desc": ""
+  },
+  {
+    "token": "spotify-soloist",
+    "homepage": "https://developer.spotify.com/documentation/soloist",
+    "title": "Warning:",
+    "meta_desc": "Run Spotify playback on Linux, Apple Silicon Mac, and x86_64 Windows devices.",
     "og_desc": ""
   },
   {
