@@ -50707,6 +50707,84 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "freellmapi": {
+      "caskVersion": "0.16.19",
+      "sourceURL": "https://github.com/tashfeenahmed/freellmapi/releases/download/v0.16.19/FreeLLMAPI-0.16.19-arm64.dmg",
+      "artifactSHA256": "448e8429aa0d93dfeaecdbb98deb52697a7da78cedd2bced7665c1f93f4f8e3c",
+      "apps": [
+        {
+          "bundleName": "FreeLLMAPI.app",
+          "bundleIdentifier": "com.freellmapi.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fore-studio-vitals": {
+      "caskVersion": "1.9.8",
+      "sourceURL": "https://statics.fore.studio/vitals/downloads/Vitals-1.9.8.dmg",
+      "artifactSHA256": "c9ae072f04f4c5461498d3f9c938d229cec055fd19b0f5c048700cf77cc5dd69",
+      "apps": [
+        {
+          "bundleName": "Vitals.app",
+          "bundleIdentifier": "com.forestudio.Vitals"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "emeetlink": {
+      "caskVersion": "5.3.8,2026.0814.1137",
+      "sourceURL": "https://emeetapp.s3.us-west-2.amazonaws.com/emeet_link/EMEETLINK_macOS_V5.3.8_2026.0814.1137.dmg",
+      "artifactSHA256": "3e194ab30fd5209f75e53581ae8f927d0d4fcffa026b47872b0cebd435793aec",
+      "apps": [
+        {
+          "bundleName": "EMEETLINK.app",
+          "bundleIdentifier": "com.eMeet.eMeetLink"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "oleafly": {
+      "caskVersion": "0.4.10",
+      "sourceURL": "https://github.com/Oleafly/Oleafly/releases/download/v0.4.10/Oleafly_0.4.10_aarch64.dmg",
+      "artifactSHA256": "57271d33c8e51c7cc42d48de5f5d0c786423660c7dc63c0df0bfd381dd48a18a",
+      "apps": [
+        {
+          "bundleName": "Oleafly.app",
+          "bundleIdentifier": "com.oleafly.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tinycast": {
+      "caskVersion": "0.12.8",
+      "sourceURL": "https://github.com/abue-ammar/tinycast/releases/download/v0.12.8/Tinycast-0.12.8.dmg",
+      "artifactSHA256": "22ce1ba191ce0d38473c09cec7ee8525b58ed28535935c67865fb2be5cb0fb4a",
+      "apps": [
+        {
+          "bundleName": "Tinycast.app",
+          "bundleIdentifier": "com.tinycast.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "obelisk": {
+      "caskVersion": "0.6.1",
+      "sourceURL": "https://github.com/Zagrios/Obelisk/releases/download/v0.6.1/Obelisk-0.6.1-arm64.dmg",
+      "artifactSHA256": "bd315ce0d6e28e827f2ca2eeaf9319beb1b991bf5f1223d208c47b429f285092",
+      "apps": [
+        {
+          "bundleName": "Obelisk.app",
+          "bundleIdentifier": "com.zagrios.obelisk"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
