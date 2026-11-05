@@ -8972,6 +8972,13 @@
     "og_desc": "Open-source Agentic Development Environment"
   },
   {
+    "token": "emeetlink",
+    "homepage": "https://emeet.com/pages/software-service-downloads",
+    "title": "EMEET Software Center",
+    "meta_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available.",
+    "og_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available."
+  },
+  {
     "token": "emmetapp",
     "homepage": "https://emmetapp.com/",
     "title": "emmetapp - The window manager you dream about",
@@ -9402,6 +9409,13 @@
     "title": "GitHub - expo/orbit: Accelerate your development workflow with one-click build launches and simulator management from your menu bar · GitHub",
     "meta_desc": "Accelerate your development workflow with one-click build launches and simulator management from your menu bar - expo/orbit",
     "og_desc": "Accelerate your development workflow with one-click build launches and simulator management from your menu bar - expo/orbit"
+  },
+  {
+    "token": "expose",
+    "homepage": "https://expose.dev/",
+    "title": "Share local sites via secure tunnels with Expose",
+    "meta_desc": "Create public URLs for local sites through any firewall and VPN. Receive webhooks on your machine, test local sites on mobile devices or share them with others.",
+    "og_desc": "Create public URLs for local sites through any firewall and VPN. Receive webhooks on your machine, test local sites on mobile devices or share them with others."
   },
   {
     "token": "expressions",
@@ -28221,6 +28235,13 @@
     "og_desc": ""
   },
   {
+    "token": "fore-studio-vitals",
+    "homepage": "https://vitalsmac.com/",
+    "title": "Vitals: Activity Monitor Alternative and Process Inspector for Mac",
+    "meta_desc": "Vitals is an activity monitor and process inspector for Mac: every app's CPU, GPU, memory, disk, network and energy in one row, up to a year of history, and any process explained: code signature, parent, command line and what it has used.",
+    "og_desc": "Vitals is an activity monitor and process inspector for Mac: every app's CPU, GPU, memory, disk, network and energy in one row, up to a year of history, and any process explained: code signature, parent, command line and what it has used."
+  },
+  {
     "token": "forecast",
     "homepage": "https://overcast.fm/forecast",
     "title": "Forecast: Podcast MP3 Chapter Encoder - Overcast",
@@ -28448,6 +28469,13 @@
     "title": "Freelens - A Graphical IDE for Kubernetes",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "freellmapi",
+    "homepage": "https://freellmapi.co/",
+    "title": "Free LLM API - every free model behind one key | FreeLLMAPI",
+    "meta_desc": "A free LLM API: one OpenAI-compatible key for 600+ models across 34 providers, 7.4 billion free tokens a month. No credit card, self-hosted, live catalog.",
+    "og_desc": "A free LLM API: one OpenAI-compatible key for 600+ models across 34 providers, 7.4 billion free tokens per month, tracked in one live catalog."
   },
   {
     "token": "freeorion",
@@ -38473,6 +38501,13 @@
     "og_desc": "We maintain and contribute to awesome open source audio plugins!"
   },
   {
+    "token": "obelisk",
+    "homepage": "https://getobelisk.app/",
+    "title": "Obelisk: every game you own, on your Mac",
+    "meta_desc": "Your Steam, Epic Games and GOG games together on your Mac. Download, update and play them from one app, Windows games included.",
+    "og_desc": "Your Steam, Epic Games and GOG games together on your Mac. Download, update and play them from one app, Windows games included."
+  },
+  {
     "token": "objectivesharpie",
     "homepage": "https://docs.microsoft.com/en-au/xamarin/cross-platform/macios/binding/objective-sharpie/",
     "title": "Creating Bindings with Objective Sharpie - Xamarin | Microsoft Learn",
@@ -38618,6 +38653,13 @@
     "title": "Old School RuneScape - Play Old School RS",
     "meta_desc": "If you're a RuneScape veteran hungry for nostalgia, get stuck right in to Old School RuneScape. Sign up for membership and re-live the adventure.",
     "og_desc": "If you're a RuneScape veteran hungry for nostalgia, get stuck right in to Old School RuneScape. Sign up for membership and re-live the adventure."
+  },
+  {
+    "token": "oleafly",
+    "homepage": "https://oleafly.com/",
+    "title": "Oleafly · Write your next paper with less busywork",
+    "meta_desc": "A free desktop workspace for LaTeX, Typst, and Markdown. Write, find sources, manage citations, and work with your AI assistant. No account required.",
+    "og_desc": "A free desktop workspace for LaTeX, Typst, and Markdown. Write, find sources, manage citations, and work with your AI assistant. No account required."
   },
   {
     "token": "olive",
@@ -49048,6 +49090,13 @@
     "title": "Tiny Shield - Network Monitoring & Protection for macOS",
     "meta_desc": "Tiny Shield keeps your Mac safe by monitoring network connections and blocking websites and apps. See every connection, block every threat. Free network security for macOS.",
     "og_desc": "Tiny Shield keeps your Mac safe by monitoring network connections and blocking websites and apps. See every connection, block every threat. Free network security for macOS."
+  },
+  {
+    "token": "tinycast",
+    "homepage": "https://tinycast.dev/",
+    "title": "Tinycast: a free, native launcher for macOS",
+    "meta_desc": "A free, open source macOS launcher with app search, clipboard history, snippets, custom commands, window management, your own AI keys and Raycast extensions.",
+    "og_desc": "A free, open source macOS launcher with app search, clipboard history, snippets, custom commands, window management, your own AI keys and Raycast extensions."
   },
   {
     "token": "tinymediamanager",

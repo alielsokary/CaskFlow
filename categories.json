@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-04",
-  "totalCasks": 4955,
+  "generatedDate": "2026-11-05",
+  "totalCasks": 4962,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5680,6 +5680,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "emeetlink": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
     "emmetapp": {
       "primary": "utilities",
       "secondary": []
@@ -5943,6 +5949,12 @@
     "expo-orbit": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "expose": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "expressions": {
       "primary": "developerTools",
@@ -6660,6 +6672,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "fore-studio-vitals": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "forecast": {
       "primary": "audioMusic",
       "secondary": []
@@ -6787,6 +6805,12 @@
     "freelens": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "freellmapi": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "freeorion": {
       "primary": "games",
@@ -13159,6 +13183,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "obelisk": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "objectivesharpie": {
       "primary": "developerTools",
       "secondary": []
@@ -13250,6 +13280,13 @@
     "old-school-runescape": {
       "primary": "games",
       "secondary": []
+    },
+    "oleafly": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity",
+        "ai"
+      ]
     },
     "olive": {
       "primary": "videoMedia",
@@ -19847,6 +19884,13 @@
     "tiny-shield": {
       "primary": "utilities",
       "secondary": []
+    },
+    "tinycast": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities",
+        "ai"
+      ]
     },
     "tinymediamanager": {
       "primary": "videoMedia",
