@@ -8972,6 +8972,13 @@
     "og_desc": "Open-source Agentic Development Environment"
   },
   {
+    "token": "emeet-studio",
+    "homepage": "https://emeet.com/pages/software-service-downloads",
+    "title": "EMEET Software Center",
+    "meta_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available.",
+    "og_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available."
+  },
+  {
     "token": "emeetlink",
     "homepage": "https://emeet.com/pages/software-service-downloads",
     "title": "EMEET Software Center",
@@ -31158,6 +31165,13 @@
     "og_desc": ""
   },
   {
+    "token": "image-optimizer",
+    "homepage": "https://github.com/antonreshetov/image-optimizer",
+    "title": "GitHub - antonreshetov/image-optimizer: A tool for optimizing images and vector graphics. · GitHub",
+    "meta_desc": "A tool for optimizing images and vector graphics. Contribute to antonreshetov/image-optimizer development by creating an account on GitHub.",
+    "og_desc": "A tool for optimizing images and vector graphics. Contribute to antonreshetov/image-optimizer development by creating an account on GitHub."
+  },
+  {
     "token": "image2icon",
     "homepage": "https://www.img2icnsapp.com/",
     "title": "Image2icon - Your Mac. Your Icons.",
@@ -48342,6 +48356,13 @@
     "title": "应用宝 Mac 版 - 在 Mac 上运行安卓手游与 Windows 端游",
     "meta_desc": "应用宝 Mac 版是腾讯出品的 Mac 一站式应用游戏平台，支持在 Mac 上直接运行安卓手游与 Windows 端游，无需虚拟机。支持内置键位映射，免费下载。",
     "og_desc": "应用宝 Mac 版是腾讯出品的 Mac 一站式应用游戏平台，支持在 Mac 上直接运行安卓手游与 Windows 端游，无需虚拟机。支持内置键位映射，免费下载。"
+  },
+  {
+    "token": "tendedero",
+    "homepage": "https://tendedero.app/",
+    "title": "Tendedero · Screenshots, hung out to dry",
+    "meta_desc": "A tiny Mac app that hangs every screenshot on a line just above your screen. Rest the pointer in the menu bar and it glides down. Free and open source.",
+    "og_desc": "Screenshots, hung out to dry. A tiny, free Mac app that hangs every screenshot on a line just above your screen."
   },
   {
     "token": "tentacle-sync-studio",
