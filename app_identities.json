@@ -50785,6 +50785,90 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "image-optimizer": {
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/antonreshetov/image-optimizer/releases/download/v2.1.0/image-optimizer-2.1.0-mac-arm64.dmg",
+      "artifactSHA256": "5361c62551d5db4cb93c5f012e50b268a5367b8148d54b54987dba43f5149645",
+      "apps": [
+        {
+          "bundleName": "Image Optimizer.app",
+          "bundleIdentifier": "com.antonreshetov.image-optimizer"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "emeet-studio": {
+      "caskVersion": "2.0.5,20261030_103517",
+      "sourceURL": "https://emeetstudio.s3.us-west-2.amazonaws.com/emeet_studio2/EMEET_STUDIO_V2.0.5_intl_mac_20261030_103517.pkg",
+      "artifactSHA256": "c5c607ba19debdf6ff496464c4346135aecaadc9443eb925c2d18155c5859fcb",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "false"
+          }
+        },
+        {
+          "artifact": "Uninstaller.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: unsafe or missing package payload"
+        },
+        {
+          "artifact": "VirtualAudioPlugin2.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "EMEET STUDIO.app",
+          "bundleIdentifier": "com.emeet.studio.next",
+          "packageIdentifier": "com.emeet.studio.next",
+          "installedPath": "/Applications/EMEET STUDIO.app"
+        }
+      ]
+    },
+    "gloom": {
+      "caskVersion": "0.20.2",
+      "sourceURL": "https://github.com/gloom-sh/gloomberb/releases/download/v0.20.2/stable-macos-arm64-Gloom.app.zip",
+      "artifactSHA256": "f5f409315374103e04f80674340c29d96433c60c6c75fb6112c4dcfbaaf2c208",
+      "apps": [
+        {
+          "bundleName": "Gloom.app",
+          "bundleIdentifier": "com.vincelwt.gloomberb"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tendedero": {
+      "caskVersion": "1.8.1",
+      "sourceURL": "https://github.com/alejandrobujan/tendedero/releases/download/v1.8.1/Tendedero-1.8.1.dmg",
+      "artifactSHA256": "bd63e421c5b836868b22385e5d328254395b23ff36458d25b26dce33aefffcf5",
+      "apps": [
+        {
+          "bundleName": "Tendedero.app",
+          "bundleIdentifier": "app.tendedero.Tendedero"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
