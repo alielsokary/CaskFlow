@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-05",
-  "totalCasks": 4962,
+  "generatedDate": "2026-11-06",
+  "totalCasks": 4965,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5680,6 +5680,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "emeet-studio": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "emeetlink": {
       "primary": "utilities",
       "secondary": [
@@ -7377,7 +7383,7 @@
       "primary": "utilities",
       "secondary": []
     },
-    "gloomberb": {
+    "gloom": {
       "primary": "financeCrypto",
       "secondary": [
         "developerTools"
@@ -8519,6 +8525,12 @@
     "ilya-birman-typography-layout": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "image-optimizer": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
     },
     "image2icon": {
       "primary": "designGraphics",
@@ -19415,6 +19427,12 @@
       "primary": "games",
       "secondary": [
         "utilities"
+      ]
+    },
+    "tendedero": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
       ]
     },
     "tentacle-sync-studio": {
