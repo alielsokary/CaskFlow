@@ -8972,6 +8972,13 @@
     "og_desc": "Open-source Agentic Development Environment"
   },
   {
+    "token": "emeet-studio",
+    "homepage": "https://emeet.com/pages/software-service-downloads",
+    "title": "EMEET Software Center",
+    "meta_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available.",
+    "og_desc": "Download and update to the latest version of EMEETLINK PC Software. Both Windows versions and Mac versions are available."
+  },
+  {
     "token": "emeetlink",
     "homepage": "https://emeet.com/pages/software-service-downloads",
     "title": "EMEET Software Center",
@@ -31158,6 +31165,13 @@
     "og_desc": ""
   },
   {
+    "token": "image-optimizer",
+    "homepage": "https://github.com/antonreshetov/image-optimizer",
+    "title": "GitHub - antonreshetov/image-optimizer: A tool for optimizing images and vector graphics. · GitHub",
+    "meta_desc": "A tool for optimizing images and vector graphics. Contribute to antonreshetov/image-optimizer development by creating an account on GitHub.",
+    "og_desc": "A tool for optimizing images and vector graphics. Contribute to antonreshetov/image-optimizer development by creating an account on GitHub."
+  },
+  {
     "token": "image2icon",
     "homepage": "https://www.img2icnsapp.com/",
     "title": "Image2icon - Your Mac. Your Icons.",
@@ -43064,6 +43078,13 @@
     "og_desc": "A desktop app for inspecting your React JS and React Native projects. macOS, Linux, and Windows. - infinitered/reactotron"
   },
   {
+    "token": "read-ai",
+    "homepage": "https://www.read.ai/desktop",
+    "title": "Read AI Desktop App | Effortless Meeting Capture, Transcription & Search for Windows and MacOS",
+    "meta_desc": "Capture and transcribe conversations instantly with the Read AI app for Mac and Windows - no bot needed. Record any meeting, get real-time transcripts and AI summaries and get insights from Search Copilot anywhere you work.",
+    "og_desc": "Capture and transcribe conversations instantly with the Read AI app for Mac and Windows - no bot needed. Record any meeting, get real-time transcripts and AI summaries and get insights from Search Copilot anywhere you work."
+  },
+  {
     "token": "readdle-spark",
     "homepage": "https://sparkmailapp.com/",
     "title": "Spark Mail - Smart. Focused. Email.",
@@ -48344,6 +48365,13 @@
     "og_desc": "应用宝 Mac 版是腾讯出品的 Mac 一站式应用游戏平台，支持在 Mac 上直接运行安卓手游与 Windows 端游，无需虚拟机。支持内置键位映射，免费下载。"
   },
   {
+    "token": "tendedero",
+    "homepage": "https://tendedero.app/",
+    "title": "Tendedero · Screenshots, hung out to dry",
+    "meta_desc": "A tiny Mac app that hangs every screenshot on a line just above your screen. Rest the pointer in the menu bar and it glides down. Free and open source.",
+    "og_desc": "Screenshots, hung out to dry. A tiny, free Mac app that hangs every screenshot on a line just above your screen."
+  },
+  {
     "token": "tentacle-sync-studio",
     "homepage": "https://tentaclesync.com/",
     "title": "TENTACLE SYNC | We bring audio and video together!",
@@ -48440,6 +48468,13 @@
     "title": "Texmaker (free cross-platform latex editor)",
     "meta_desc": "Texmaker, free cross-platform latex editor",
     "og_desc": ""
+  },
+  {
+    "token": "texpile",
+    "homepage": "https://texpile.com/",
+    "title": "Texpile - a local, offline LaTeX and Typst editor",
+    "meta_desc": "Texpile is a free, open source editor for LaTeX, Typst, and Markdown. Edit visually or in source, compile with your own toolchain, all on your own machine.",
+    "og_desc": "Write LaTeX and Typst visually or in source, with live preview, byte-perfect saves, built-in git, and local compilation. Free and open source."
   },
   {
     "token": "texshop",
@@ -49575,6 +49610,13 @@
     "title": "穿梭VPN官网 | 一键回国VPN，海外音乐视频加速器",
     "meta_desc": "穿梭VPN(Transocks)帮助海外华人轻松回国，轻松访问国内网站或应用，畅享国内音乐和视频资源，一键解决访问卡顿。回国VPN首选穿梭VPN。",
     "og_desc": ""
+  },
+  {
+    "token": "tree-outliner",
+    "homepage": "https://noteifyapp.com/tree-outliner/",
+    "title": "Tree Outliner - A text outliner for nonlinear thinking",
+    "meta_desc": "A text outliner for nonlinear thinking.",
+    "og_desc": "A text outliner for nonlinear thinking."
   },
   {
     "token": "treesheets",
@@ -51545,6 +51587,13 @@
     "title": "MacPaw announces sunset of Wallpaper Wizard 2",
     "meta_desc": "Wallpaper Wizard 2 is being sunset. Learn more about this decision and what it means for you.",
     "og_desc": "  Wallpaper Wizard 2 is being sunset. Learn more about this decision and what it means for you.\n"
+  },
+  {
+    "token": "wallpapermachine",
+    "homepage": "https://www.wallpapermachine.app/",
+    "title": "WallpaperMachine - Wallpaper Engine live wallpapers for Mac",
+    "meta_desc": "Play Wallpaper Engine scene, video and web wallpapers live on your Mac. Browse and download from Steam Workshop, one per display. Free and open source.",
+    "og_desc": "The wallpapers you love. A new home on your Mac."
   },
   {
     "token": "wallspace",
