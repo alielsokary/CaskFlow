@@ -50869,6 +50869,58 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "texpile": {
+      "caskVersion": "1.6.2",
+      "sourceURL": "https://dl.texpile.com/v1.6.2/Texpile-1.6.2.dmg",
+      "artifactSHA256": "223f85b5a849a4cb046be7f9ac7bfa13eab0681be6f1e059acd62b374a34d457",
+      "apps": [
+        {
+          "bundleName": "Texpile.app",
+          "bundleIdentifier": "com.texpile.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "read-ai": {
+      "caskVersion": "1.45.0",
+      "sourceURL": "https://desktop.read.ai/installers/darwin/aarch64/1.45.0/Read+AI_1.45.0_aarch64.dmg",
+      "artifactSHA256": "0c92f27354f95207bfd5b9517e56b1700213def33bcbb982408bf67943156af2",
+      "apps": [
+        {
+          "bundleName": "Read AI.app",
+          "bundleIdentifier": "com.readai.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "wallpapermachine": {
+      "caskVersion": "1.9.3",
+      "sourceURL": "https://github.com/MMFoundation/WallpaperMachine/releases/download/v1.9.3/WallpaperMachine-1.9.3-arm64.dmg",
+      "artifactSHA256": "70b927f9f40f26bda06e4a1b07edd389702340b2867dd2ca757ca0f339a4092a",
+      "apps": [
+        {
+          "bundleName": "WallpaperMachine.app",
+          "bundleIdentifier": "app.wallpapermachine"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tree-outliner": {
+      "caskVersion": "1.0.11",
+      "sourceURL": "https://macplus-software.com/downloads/Tree%20Outliner.zip",
+      "artifactSHA256": "9e2056632a82731d3d2abdd06691a8b4b4b5ecfc3734fb9a8fdd33f9e6a47d13",
+      "apps": [
+        {
+          "bundleName": "Tree Outliner.app",
+          "bundleIdentifier": "com.macplus-software.treeoutliner"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
