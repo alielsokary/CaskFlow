@@ -1,22 +1,33 @@
 # Daily classification update
 
-Generated 2026-11-05
+Generated 2026-11-07
 
 ## Summary
 
 - 7 new casks classified
-- 0 classifications require manual review (confidence below 0.75)
+- 2 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
-- 0 casks renamed in Homebrew (classification migrated, no LLM call)
+- 1 casks renamed in Homebrew (classification migrated, no LLM call)
+
+## Renamed (classification migrated)
+
+- `gloomberb` → `gloom`
+
+## Manual review required
+
+| token | primary | secondary | confidence | reason |
+|---|---|---|---|---|
+| `emeet-studio` | videoMedia | utilities | 0.70 | Companion software for EMEET webcams managing camera settings, closest to video/webcam utilities. |
+| `image-optimizer` | designGraphics | utilities | 0.70 | A tool for optimizing images and vector graphics, closely tied to graphics workflows. |
 
 ## New classifications
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `emeetlink` | utilities | videoMedia | 0.75 | A configuration utility for EMEET webcams and speakerphones is a hardware/device management tool. |
-| `expose` | developerTools | utilities | 0.85 | Expose is a tunneling tool for developers to share local web services publicly, similar to ngrok. |
-| `fore-studio-vitals` | utilities | menuBar | 0.85 | System activity monitor tracking CPU, GPU, memory and other per-app metrics is a core system utility. |
-| `freellmapi` | developerTools | ai | 0.80 | A local LLM API router/proxy tool aimed at developers integrating AI models. |
-| `obelisk` | games | utilities | 0.90 | Obelisk is a game launcher unifying Steam, Epic Games, and GOG libraries on Mac. |
-| `oleafly` | scienceEducation | productivity, ai | 0.75 | A research writing editor for LaTeX/Typst/Markdown with citation management and AI assistant, fitting academic research tools. |
-| `tinycast` | productivity | utilities, ai | 0.85 | A native macOS launcher with clipboard history, snippets, and window management is primarily a productivity tool with AI integration. |
+| `emeet-studio` | videoMedia | utilities | 0.70 | Companion software for EMEET webcams managing camera settings, closest to video/webcam utilities. |
+| `image-optimizer` | designGraphics | utilities | 0.70 | A tool for optimizing images and vector graphics, closely tied to graphics workflows. |
+| `read-ai` | productivity | ai, communication | 0.80 | AI-powered meeting recorder, transcriber and summarizer, which fits productivity with an AI trait and communication overlap. |
+| `tendedero` | menuBar | utilities | 0.80 | A menu-bar-resident screenshot manager that displays recent screenshots from the menu bar. |
+| `texpile` | productivity | developerTools | 0.75 | A document/writing editor for LaTeX, Typst, and Markdown with compiling features, closest to writing productivity tools with developer-oriented markup. |
+| `tree-outliner` | productivity | - | 0.90 | A text outlining app for note-taking and nonlinear thinking fits productivity. |
+| `wallpapermachine` | screensaverWallpaper | - | 0.97 | App plays live wallpapers on Mac, fitting the wallpaper category directly. |

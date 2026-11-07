@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-05",
-  "totalCasks": 4962,
+  "generatedDate": "2026-11-07",
+  "totalCasks": 4969,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -5680,6 +5680,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "emeet-studio": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "emeetlink": {
       "primary": "utilities",
       "secondary": [
@@ -7377,7 +7383,7 @@
       "primary": "utilities",
       "secondary": []
     },
-    "gloomberb": {
+    "gloom": {
       "primary": "financeCrypto",
       "secondary": [
         "developerTools"
@@ -8519,6 +8525,12 @@
     "ilya-birman-typography-layout": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "image-optimizer": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
     },
     "image2icon": {
       "primary": "designGraphics",
@@ -16104,6 +16116,13 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "read-ai": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
+      ]
+    },
     "readdle-spark": {
       "primary": "communication",
       "secondary": []
@@ -19417,6 +19436,12 @@
         "utilities"
       ]
     },
+    "tendedero": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "tentacle-sync-studio": {
       "primary": "audioMusic",
       "secondary": []
@@ -19475,6 +19500,12 @@
       "primary": "developerTools",
       "secondary": [
         "scienceEducation"
+      ]
+    },
+    "texpile": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
       ]
     },
     "texshop": {
@@ -20214,6 +20245,10 @@
     },
     "transocks": {
       "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "tree-outliner": {
+      "primary": "productivity",
       "secondary": []
     },
     "treesheets": {
@@ -21508,6 +21543,10 @@
       ]
     },
     "wallpaper-wizard": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "wallpapermachine": {
       "primary": "screensaverWallpaper",
       "secondary": []
     },
