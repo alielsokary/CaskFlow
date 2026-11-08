@@ -50921,6 +50921,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "anomaly-hex": {
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/anomalyco/hex/releases/download/v3.3.0/hex-3.3.0-macos-arm64.dmg",
+      "artifactSHA256": "c57106949a28a3d0767cc15505cd802638badeb0c18cfd06c57b130ab0d98859",
+      "apps": [
+        {
+          "bundleName": "Hex.app",
+          "bundleIdentifier": "anomaly.hex"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
