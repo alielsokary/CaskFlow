@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-07",
-  "totalCasks": 4969,
+  "generatedDate": "2026-11-08",
+  "totalCasks": 4968,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -18593,10 +18593,6 @@
       ]
     },
     "stratoshark": {
-      "primary": "developerTools",
-      "secondary": []
-    },
-    "stravu-crystal": {
       "primary": "developerTools",
       "secondary": []
     },
