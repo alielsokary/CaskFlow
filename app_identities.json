@@ -50934,6 +50934,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "xcasca": {
+      "caskVersion": "1.1.2",
+      "sourceURL": "https://cdn.netsarang.net/1bd8fb31/Xcasca-1.1.2-arm64.dmg",
+      "artifactSHA256": "7e8db761557a1290883b98e539135248ccd7ea832d78a360d85e4464db50031f",
+      "apps": [
+        {
+          "bundleName": "Xcasca.app",
+          "bundleIdentifier": "com.netsarang.xcasca"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "bytemail": {
+      "caskVersion": "1.9.29",
+      "sourceURL": "https://bytemailapp.com/downloads/ByteMail-1.9.29.dmg",
+      "artifactSHA256": "a31413da2738e101f1443b032c67993baa2cd5d63ef62d194fc2c699a6a38a6e",
+      "apps": [
+        {
+          "bundleName": "ByteMail.app",
+          "bundleIdentifier": "co.bytemail.ByteMail"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "agent-orchestrator": {
+      "caskVersion": "0.14.10",
+      "sourceURL": "https://github.com/OrchestratorInc/agent-orchestrator/releases/download/v0.14.10/Agent.Orchestrator-darwin-arm64-0.14.10.zip",
+      "artifactSHA256": "4a53349c3ac228a886bdc243f0e4fa87d7e3c09bbde2ee4cddd4e7c0cc9f6d3e",
+      "apps": [
+        {
+          "bundleName": "Agent Orchestrator.app",
+          "bundleIdentifier": "dev.agent-orchestrator.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
