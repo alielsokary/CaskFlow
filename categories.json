@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-08",
-  "totalCasks": 4968,
+  "generatedDate": "2026-11-09",
+  "totalCasks": 4971,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -411,6 +411,12 @@
     "afterglow": {
       "primary": "screensaverWallpaper",
       "secondary": []
+    },
+    "agent-orchestrator": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "agent-tars": {
       "primary": "developerTools",
@@ -900,6 +906,10 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "anomaly-hex": {
+      "primary": "productivity",
+      "secondary": []
     },
     "another-redis-desktop-manager": {
       "primary": "developerTools",
@@ -2605,6 +2615,12 @@
     "bwana": {
       "primary": "utilities",
       "secondary": []
+    },
+    "bytemail": {
+      "primary": "communication",
+      "secondary": [
+        "ai"
+      ]
     },
     "bzflag": {
       "primary": "games",
@@ -9685,10 +9701,6 @@
       "secondary": [
         "ai"
       ]
-    },
-    "kitlangton-hex": {
-      "primary": "productivity",
-      "secondary": []
     },
     "kitty": {
       "primary": "developerTools",
@@ -22232,6 +22244,12 @@
     "xca": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "xcasca": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "xcodeclangformat": {
       "primary": "developerTools",
