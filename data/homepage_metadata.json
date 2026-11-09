@@ -614,6 +614,13 @@
     "og_desc": "Run classic After Dark screen saver modules - Flying Toasters, Fish!, Starry Skyline, and more - natively on macOS."
   },
   {
+    "token": "agent-orchestrator",
+    "homepage": "https://orchestrator.inc/",
+    "title": "Run Coding Agents in Parallel | Orchestrator",
+    "meta_desc": "Run a fleet of coding agents without losing track of branches, reviews, or CI failures. Free and open source under Apache 2.0.",
+    "og_desc": "Run a fleet of coding agents without losing track of branches, reviews, or CI failures. Free and open source under Apache 2.0."
+  },
+  {
     "token": "agent-tars",
     "homepage": "https://github.com/bytedance/UI-TARS-desktop",
     "title": "GitHub - bytedance/UI-TARS-desktop: The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra · GitHub",
@@ -4099,6 +4106,13 @@
     "title": "Bwana",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "bytemail",
+    "homepage": "https://bytemailapp.com/",
+    "title": "Fast, native email for Mac · bytemail",
+    "meta_desc": "bytemail is a fast, native email app for macOS. Gmail, iCloud, Outlook, Yahoo and IMAP in one clean window, with read receipts, in English, Armenian, Dutch, French, German, Russian and Spanish.",
+    "og_desc": "bytemail is a fast, native email app for macOS. Gmail, iCloud, Outlook, Yahoo and IMAP in one clean window, with read receipts, in English, Armenian, Dutch, French, German, Russian and Spanish."
   },
   {
     "token": "bzflag",
@@ -52670,6 +52684,13 @@
     "title": "X - Certificate and Key management",
     "meta_desc": "XCA is an x509 certificate generation tool, handling RSA, DSA and EC keys, certificate signing requests (PKCS#10) and CRLs. It supports a broad range of import and export formats. ",
     "og_desc": ""
+  },
+  {
+    "token": "xcasca",
+    "homepage": "https://www.xcasca.com/",
+    "title": "Xcasca - Next-Generation Terminal & File Client",
+    "meta_desc": "Xcasca is a lightweight cross-platform SSH Client. With a simple but comprehensive UI, Xcasca gives you a pure terminal emulation experience.",
+    "og_desc": "Xcasca is a lightweight cross-platform SSH Client. With a simple but comprehensive UI, Xcasca gives you a pure terminal emulation experience."
   },
   {
     "token": "xcodeclangformat",
