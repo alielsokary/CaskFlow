@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-09",
-  "totalCasks": 4971,
+  "generatedDate": "2026-11-10",
+  "totalCasks": 4974,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -6924,6 +6924,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "ftop": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "fujifilm-tether-app": {
       "primary": "designGraphics",
       "secondary": []
@@ -9877,6 +9883,12 @@
     "kubeterm": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "kugelblitz": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "designGraphics"
+      ]
     },
     "kui": {
       "primary": "developerTools",
@@ -19845,6 +19857,12 @@
     "timche-gmail-desktop": {
       "primary": "communication",
       "secondary": []
+    },
+    "time-messenger": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "time-out": {
       "primary": "utilities",

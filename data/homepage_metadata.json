@@ -28649,6 +28649,13 @@
     "error": "HTTP 403"
   },
   {
+    "token": "ftop",
+    "homepage": "https://github.com/Nongfsq/ftop",
+    "title": "GitHub - Nongfsq/ftop: A small, quiet system monitor for Apple Silicon Macs: one floating glass panel that works at any size. · GitHub",
+    "meta_desc": "A small, quiet system monitor for Apple Silicon Macs: one floating glass panel that works at any size. - Nongfsq/ftop",
+    "og_desc": "A small, quiet system monitor for Apple Silicon Macs: one floating glass panel that works at any size. - Nongfsq/ftop"
+  },
+  {
     "token": "fujifilm-tether-app",
     "homepage": "https://fujifilm-x.com/en-us/support/download/software/tether-app/",
     "title": "FUJIFILM TETHER APP | Support | Downloads | Software | FUJIFILM X Series & GFX - USA",
@@ -33304,6 +33311,13 @@
     "title": "Kubeterm - Graphical Kubernetes Management Tool",
     "meta_desc": "Kubeterm: Graphical management tool for Kubernetes clusters. Clear visibility, native performance, and multi-cloud support.",
     "og_desc": "Kubeterm: Graphical management tool for Kubernetes clusters. Clear visibility, native performance, and multi-cloud support."
+  },
+  {
+    "token": "kugelblitz",
+    "homepage": "https://apps.metaebene.me/en/kugelblitz",
+    "title": "Kugelblitz · Metaebene Applications",
+    "meta_desc": "The Earth and its neighbors as a 3D globe and atlas for the Mac - maps and open geodata on real terrain.",
+    "og_desc": "The Earth and its neighbors as a 3D globe and atlas for the Mac - maps and open geodata on real terrain."
   },
   {
     "token": "kui",
@@ -49015,6 +49029,13 @@
     "title": "GitHub - zoidsh/meru: :postbox: Gmail desktop app for macOS, Windows & Linux (formerly Gmail Desktop) · GitHub",
     "meta_desc": ":postbox: Gmail desktop app for macOS, Windows & Linux (formerly Gmail Desktop) - zoidsh/meru",
     "og_desc": ":postbox: Gmail desktop app for macOS, Windows & Linux (formerly Gmail Desktop) - zoidsh/meru"
+  },
+  {
+    "token": "time-messenger",
+    "homepage": "https://time-messenger.ru/",
+    "title": "Корпоративный мессенджер для бизнеса Time",
+    "meta_desc": "Защищенный корпоративный российский мессенджер для работы в команде. Поддержка шифрования, SSO, двухфакторной аутентификации, ботов, тредов и гостевых доступов для внешних исполнителей",
+    "og_desc": "Интегрируйте корпоративный мессенджер Time для командной работы в ваши бизнес-процессы. Создавайте автоматизацию с чат-ботами и workflows. Работайте со смартфона и десктопа"
   },
   {
     "token": "time-out",
