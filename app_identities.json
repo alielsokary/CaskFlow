@@ -51012,6 +51012,58 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "wiso-steuer-2027": {
+      "caskVersion": "34.00.1600",
+      "sourceURL": "https://download.buhl.de/ESD/Steuer/2027/WISOSteuer2027.dmg",
+      "artifactSHA256": "5b7aa54ba2ca308034609942cc543d95c138e6a4f0f0ff2f30175bfebff19664",
+      "apps": [
+        {
+          "bundleName": "WISO Steuer 2027.app",
+          "bundleIdentifier": "com.BuhlData.WISOsteuerMac2027"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "blick": {
+      "caskVersion": "0.5.2",
+      "sourceURL": "https://blickeditor.com/dl/Blick_0.5.2_macos_arm64_portable.zip",
+      "artifactSHA256": "532a1bd733005fa9a0e35e54ebfd361ecab896693b36a09c6af6f8a83b1f0591",
+      "apps": [
+        {
+          "bundleName": "Blick.app",
+          "bundleIdentifier": "com.dihedron.blick"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "nod": {
+      "caskVersion": "0.6.2",
+      "sourceURL": "https://github.com/n8n-io/nod/releases/download/nod-v0.6.2/nod-arm64.dmg",
+      "artifactSHA256": "825a13bac010f6f0f31d72cfec3960f70c6b871176e91dcaf4a9429e9927454d",
+      "apps": [
+        {
+          "bundleName": "Nod.app",
+          "bundleIdentifier": "dev.nod.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "rustgis": {
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://github.com/opengeos/RustGIS/releases/download/v0.6.0/RustGIS-0.6.0-macos-aarch64.dmg",
+      "artifactSHA256": "b419c124c3fe640c1fee106c360ec6c6d6860e0933ae6b2efef4b552aa101679",
+      "apps": [
+        {
+          "bundleName": "RustGIS.app",
+          "bundleIdentifier": "org.rustgis.RustGIS"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
