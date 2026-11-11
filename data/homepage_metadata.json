@@ -3354,6 +3354,13 @@
     "og_desc": "Cross-platform application for BLHeli firmware flashing and configuration - blheli-configurator/blheli-configurator"
   },
   {
+    "token": "blick",
+    "homepage": "https://blickeditor.com/",
+    "title": "Blick | The first video editor you'll truly love",
+    "meta_desc": "A fully native NLE built from scratch, for the art of editing. Scrub, cut and keyframe at the speed of thought. Available now for Windows and macOS.",
+    "og_desc": "A fully native NLE built from scratch, for the art of editing. Scrub, cut and keyframe at the speed of thought. Available now for Windows and macOS."
+  },
+  {
     "token": "blink1control",
     "homepage": "https://blink1.thingm.com/",
     "title": "blink(1) - the USB RGB LED notification light",
@@ -38080,6 +38087,13 @@
     "og_desc": "The No-IP Mac Dynamic DNS Update Client continually checks for IP address changes in the background and automatically updates the DNS at No-IP whenever it changes. Download Now"
   },
   {
+    "token": "nod",
+    "homepage": "https://nod.n8n.io/",
+    "title": "Nod · Your personal agent",
+    "meta_desc": "Nod is a personal agent that gets real-world jobs done. Open source, runs on your Mac, Windows PC or your own server, with the model provider you choose.",
+    "og_desc": "Nod is a personal agent that gets real-world jobs done. Open source, runs on your Mac, Windows PC or your own server, with the model provider you choose."
+  },
+  {
     "token": "nodebox",
     "homepage": "https://www.nodebox.net/node/",
     "title": "Welcome | NodeBox",
@@ -44199,6 +44213,13 @@
     "og_desc": "RustDesk is the best open-source remote desktop software. Secure alternative to TeamViewer and AnyDesk with self-hosted servers. Cross-platform support for Windows, macOS, Linux, and Android."
   },
   {
+    "token": "rustgis",
+    "homepage": "https://rustgis.app/",
+    "title": "Home - RustGIS",
+    "meta_desc": "A fast, free and open-source GIS in pure Rust for mapping, analyzing and sharing geospatial data, on the desktop and in the browser",
+    "og_desc": ""
+  },
+  {
     "token": "rustrover",
     "homepage": "https://www.jetbrains.com/rust/",
     "title": "RustRover: Rust IDE by JetBrains",
@@ -48223,6 +48244,13 @@
     "title": "Secure remote access and support | TeamViewer",
     "meta_desc": "Connect to any device, at any time, and centrally monitor and manage your IT with the trusted remote access and support solution.",
     "og_desc": "Connect to any device, at any time, and centrally monitor and manage your IT with the trusted remote access and support solution."
+  },
+  {
+    "token": "teamwork-graph-cli",
+    "homepage": "https://developer.atlassian.com/cloud/twg-cli",
+    "title": "Teamwork Graph CLI",
+    "meta_desc": "Developer documentation for Teamwork Graph CLI (TWG CLI), a command-line tool for querying Atlassian's work graph.",
+    "og_desc": ""
   },
   {
     "token": "techsmith-capture",
@@ -52328,6 +52356,13 @@
     "homepage": "https://www.buhl.de/download/wiso-steuer-2026/",
     "title": "WISO Steuer 2026 :Buhl Download",
     "meta_desc": "Machen Sie das Beste aus Ihrem Geld! Mit Software und Apps von Buhl. ✅leicht zu bedienen ✅vielfach ausgezeichnet ✅Hier kaufen",
+    "og_desc": ""
+  },
+  {
+    "token": "wiso-steuer-2027",
+    "homepage": "https://www.buhl.de/download/wiso-steuer-2027/",
+    "title": "Download WISO Steuer + Lizenz (Steuerjahr 2026)",
+    "meta_desc": "",
     "og_desc": ""
   },
   {
