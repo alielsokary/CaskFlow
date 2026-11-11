@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-10",
-  "totalCasks": 4974,
+  "generatedDate": "2026-11-11",
+  "totalCasks": 4979,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2147,6 +2147,10 @@
       "secondary": [
         "developerTools"
       ]
+    },
+    "blick": {
+      "primary": "videoMedia",
+      "secondary": []
     },
     "blink1control": {
       "primary": "utilities",
@@ -12919,6 +12923,12 @@
         "developerTools"
       ]
     },
+    "nod": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "nodebox": {
       "primary": "designGraphics",
       "secondary": []
@@ -16829,6 +16839,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "rustgis": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "rustrover": {
       "primary": "developerTools",
       "secondary": []
@@ -19368,6 +19384,10 @@
     },
     "teamviewermeeting": {
       "primary": "communication",
+      "secondary": []
+    },
+    "teamwork-graph-cli": {
+      "primary": "developerTools",
       "secondary": []
     },
     "techsmith-capture": {
@@ -22011,6 +22031,10 @@
       "secondary": []
     },
     "wiso-steuer-2026": {
+      "primary": "financeCrypto",
+      "secondary": []
+    },
+    "wiso-steuer-2027": {
       "primary": "financeCrypto",
       "secondary": []
     },
