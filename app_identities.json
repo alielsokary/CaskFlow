@@ -51064,6 +51064,58 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "kiwidesk": {
+      "caskVersion": "4.2.1",
+      "sourceURL": "https://github.com/KiwiCanopy/KiwiDesk/releases/download/v4.2.1/KiwiDesk-4.2.1.zip",
+      "artifactSHA256": "41328daa0adff09d8b121b727b9c67754bc384d6880837312d4ca3f0e3b2bea7",
+      "apps": [
+        {
+          "bundleName": "KiwiDesk.app",
+          "bundleIdentifier": "com.kiwicanopy.kiwidesk"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "switchresx": {
+      "caskVersion": "4.15.0",
+      "sourceURL": "https://www.madrau.com/data/switchresx/SwitchResX4.zip",
+      "artifactSHA256": "578356138007b20c5daaf010252b578afd57b5b62630289678293dbee9191c35",
+      "apps": [
+        {
+          "bundleName": "SwitchResX.app",
+          "bundleIdentifier": "fr.madrau.switchresx.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "devtools": {
+      "caskVersion": "2.11.0",
+      "sourceURL": "https://github.com/me-shaon/devtools/releases/download/v2.11.0/DevToolsApp-macos-arm64.dmg",
+      "artifactSHA256": "58c08c944ffccb1f071337c6ccb8bb0e19d028abdd8e71edf8d18243fca1427b",
+      "apps": [
+        {
+          "bundleName": "DevToolsApp.app",
+          "bundleIdentifier": "com.meshaon.devtoolsapp"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "plezy": {
+      "caskVersion": "2.26.0",
+      "sourceURL": "https://github.com/edde746/plezy/releases/download/2.26.0/plezy-macos.dmg",
+      "artifactSHA256": "0f58e9ff2d1025e35a6373655b91ec4429c1ff8faec28edf8b3934b51db04f0c",
+      "apps": [
+        {
+          "bundleName": "Plezy.app",
+          "bundleIdentifier": "com.edde746.plezy"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
