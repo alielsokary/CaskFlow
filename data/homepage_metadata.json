@@ -7390,6 +7390,13 @@
     "og_desc": "DevPod is infrastructure-independent and client-only, which makes it incredibly easy to get started with. Codespaces but open-source, client-only and unopinionated. Works with any infra, any progamming language, any IDE, etc."
   },
   {
+    "token": "devtools",
+    "homepage": "https://github.com/me-shaon/devtools",
+    "title": "GitHub - me-shaon/devtools: Ultimate developers toolkit desktop app · GitHub",
+    "meta_desc": "Ultimate developers toolkit desktop app. Contribute to me-shaon/devtools development by creating an account on GitHub.",
+    "og_desc": "Ultimate developers toolkit desktop app. Contribute to me-shaon/devtools development by creating an account on GitHub."
+  },
+  {
     "token": "devtoys",
     "homepage": "https://github.com/DevToys-app/DevToys",
     "title": "GitHub - DevToys-app/DevToys: A Swiss Army knife for developers. · GitHub",
@@ -33072,6 +33079,13 @@
     "og_desc": "Elevate your Gmail & Google Workspace with Kiwi for Gmail. Quickly access Docs, Sheets, Slides and Drive apps with one powerful desktop office suite - Now on both Mac and Windows! Get started now."
   },
   {
+    "token": "kiwidesk",
+    "homepage": "https://kiwidesk.kiwicanopy.com/",
+    "title": "KiwiDesk - Tiling that feels like it shipped with macOS",
+    "meta_desc": "KiwiDesk is a tiling window manager for macOS that arranges every window as it opens - set up in a Settings app, no config file needed, SIP stays on.",
+    "og_desc": "KiwiDesk is a tiling window manager for macOS that arranges every window as it opens - set up in a Settings app, no config file needed, SIP stays on."
+  },
+  {
     "token": "kiwix",
     "homepage": "https://www.kiwix.org/",
     "title": "Kiwix - Home",
@@ -41131,6 +41145,13 @@
     "title": "Plexamp - Love your music!",
     "meta_desc": "",
     "og_desc": ""
+  },
+  {
+    "token": "plezy",
+    "homepage": "https://plezy.app/",
+    "title": "Plezy - A Beautiful Plex & Jellyfin Client",
+    "meta_desc": "Plezy is a beautiful client for Plex and Jellyfin, available on iOS, Android, Android TV, tvOS, Windows, macOS, and Linux. HDR, Dolby Vision, offline downloads, and more.",
+    "og_desc": "Plezy is a beautiful client for Plex and Jellyfin, available on iOS, Android, Android TV, tvOS, Windows, macOS, and Linux. HDR, Dolby Vision, offline downloads, and more."
   },
   {
     "token": "pliim",
