@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-11",
-  "totalCasks": 4979,
+  "generatedDate": "2026-11-12",
+  "totalCasks": 4982,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -4751,6 +4751,12 @@
     "devpod": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "devtools": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "devtoys": {
       "primary": "developerTools",
@@ -9719,6 +9725,12 @@
     "kiwi-for-gmail": {
       "primary": "communication",
       "secondary": []
+    },
+    "kiwidesk": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "kiwix": {
       "primary": "productivity",
@@ -14863,6 +14875,10 @@
     },
     "plexamp": {
       "primary": "audioMusic",
+      "secondary": []
+    },
+    "plezy": {
+      "primary": "videoMedia",
       "secondary": []
     },
     "pliim": {
