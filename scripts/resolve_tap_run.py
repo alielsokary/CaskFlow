@@ -33,6 +33,33 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
     return [name], [] if name in registered else [name]
 
 
+def approved(events: list[dict]) -> bool:
+    """A maintainer approved the title as it is now: the latest add-tap label came after the last rename."""
+    labeled = [e["created_at"] for e in events if e.get("event") == "labeled" and (e.get("label") or {}).get("name") == "add-tap"]
+    renamed = [e["created_at"] for e in events if e.get("event") == "renamed"]
+    return bool(labeled) and max(labeled) > max(renamed, default="")
+
+
+def _gh_json(*args: str):
+    result = subprocess.run(["gh", *args], capture_output=True, text=True, check=True)
+    return json.loads(result.stdout)
+
+
+def approved_issue_titles() -> list[str]:
+    """Titles of open add-tap issues, for picking up runs the concurrency queue dropped."""
+    repo = os.environ["GITHUB_REPOSITORY"]
+    titles = []
+    try:
+        for issue in _gh_json("issue", "list", "--repo", repo, "--label", "add-tap", "--state", "open",
+                              "--limit", "200", "--json", "number,title"):
+            pages = _gh_json("api", f"repos/{repo}/issues/{issue['number']}/timeline", "--paginate", "--slurp")
+            if approved([event for page in pages for event in page]):
+                titles.append(issue["title"])
+    except (subprocess.CalledProcessError, ValueError, KeyError) as error:
+        print(f"warning: cannot list add-tap issues: {error}")
+    return titles
+
+
 def _base_entries(before: str) -> list[dict]:
     if not before or set(before) == {"0"}:
         return []
@@ -47,7 +74,7 @@ def main() -> int:
         head=tap_registry.load(),
         dispatch_tap=os.environ.get("DISPATCH_TAP", ""),
         issue_title=os.environ.get("ISSUE_TITLE", ""),
-        issue_titles=os.environ.get("ISSUE_TITLES", "").splitlines(),
+        issue_titles=approved_issue_titles() if os.environ["EVENT_NAME"] == "schedule" else [],
     )
     print(f"taps: {taps}, register: {register}")
     with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:

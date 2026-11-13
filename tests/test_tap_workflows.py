@@ -116,7 +116,15 @@ def test_data_prs_roll_on_one_branch_and_continue_an_open_one():
     assert 'tap_registry.py --add $REGISTER $CONTINUED' in _job(pipeline, "publish")
 
 
-def test_scheduled_sweep_lists_open_add_tap_issues():
+def test_scheduled_sweep_reads_issues_through_the_resolver():
     resolve = _job(_workflow("tap-pipeline.yml"), "resolve")
-    assert "gh issue list --label add-tap --state open" in resolve
-    assert "ISSUE_TITLES" in resolve and "issues: read" in resolve
+    assert "GH_TOKEN: ${{ github.token }}" in resolve and "issues: read" in resolve
+    assert "gh issue list" not in resolve, "titles are checked against the label timeline in resolve_tap_run.py"
+
+
+def test_open_data_pr_is_used_only_from_this_repository_and_by_its_head_commit():
+    pipeline = _workflow("tap-pipeline.yml")
+    for name in ("classify", "publish"):
+        job = _job(pipeline, name)
+        assert "select(.isCrossRepository == false)" in job and "headRefOid" in job, name
+        assert 'git fetch -q origin "$HEAD"' in job, name

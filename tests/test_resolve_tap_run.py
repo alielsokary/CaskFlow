@@ -37,3 +37,18 @@ def test_issue_reads_the_tap_from_its_title():
 def test_bad_requests_are_refused(event, kwargs):
     with pytest.raises(SystemExit):
         resolve.resolve(event, base=REGISTRY, head=REGISTRY, **kwargs)
+
+
+def _event(kind, at, label=None):
+    return {"event": kind, "created_at": at, **({"label": {"name": label}} if label else {})}
+
+
+def test_sweep_takes_an_issue_only_when_its_label_came_after_its_last_rename():
+    labeled_then_renamed = [_event("labeled", "2026-11-10T00:00:00Z", "add-tap"), _event("renamed", "2026-11-11T00:00:00Z")]
+    renamed_then_labeled = [_event("renamed", "2026-11-10T00:00:00Z"), _event("labeled", "2026-11-11T00:00:00Z", "add-tap")]
+    other_label = [_event("labeled", "2026-11-11T00:00:00Z", "bug")]
+
+    assert not resolve.approved(labeled_then_renamed)
+    assert resolve.approved(renamed_then_labeled)
+    assert resolve.approved([_event("labeled", "2026-11-11T00:00:00Z", "add-tap")])
+    assert not resolve.approved(other_label)

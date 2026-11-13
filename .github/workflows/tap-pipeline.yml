@@ -55,13 +55,9 @@ jobs:
           DISPATCH_TAP: ${{ inputs.tap }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           GH_TOKEN: ${{ github.token }}
-        # The sweep also picks up labeled issues whose run the concurrency queue dropped.
-        run: |
-          if [ "$EVENT_NAME" = schedule ]; then
-            ISSUE_TITLES="$(gh issue list --label add-tap --state open --limit 200 --json title --jq '.[].title' --repo "$GITHUB_REPOSITORY")" || ISSUE_TITLES=""
-            export ISSUE_TITLES
-          fi
-          python scripts/resolve_tap_run.py
+        # The sweep also picks up labeled issues whose run the concurrency queue dropped,
+        # only where the label came after the title's last edit.
+        run: python scripts/resolve_tap_run.py
 
   collect:
     needs: resolve
@@ -113,8 +109,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -n "$(gh pr list --head bot/tap-pipeline --state open --json number --jq '.[].number' --repo "$GITHUB_REPOSITORY")" ]; then
-            git fetch -q origin bot/tap-pipeline
+          # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
+          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
+            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
+          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
             for file in data/tap_categories.json data/tap_homepage_metadata.json; do
               git checkout FETCH_HEAD -- "$file" 2>/dev/null || true
             done
@@ -206,8 +204,10 @@ jobs:
         # Names are validated by tap_registry.py; word-splitting is intended.
         run: |
           CONTINUED=""
-          if [ -n "$(gh pr list --head bot/tap-pipeline --state open --json number --jq '.[].number' --repo "$GITHUB_REPOSITORY")" ]; then
-            git fetch -q origin bot/tap-pipeline
+          # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
+          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
+            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
+          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
             CONTINUED="$(git show FETCH_HEAD:taps.json | jq -r '.taps[].name')"
           fi
           if [ -n "$REGISTER$CONTINUED" ]; then python scripts/tap_registry.py --add $REGISTER $CONTINUED; fi
