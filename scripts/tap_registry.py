@@ -83,11 +83,14 @@ def main(argv: list[str] | None = None) -> int:
     from style_standards import write_json
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--add", required=True, help="Register a tap (sorted insert; no-op if present)")
+    parser.add_argument("--add", nargs="+", required=True, help="Register taps (sorted insert; no-op if present)")
     args = parser.parse_args(argv)
-    if error := validate_name(args.add):
-        raise SystemExit(error)
-    write_json(REGISTRY_PATH, {"version": VERSION, "taps": with_tap(load(), args.add)}, trailing_newline=True)
+    if errors := [error for name in args.add if (error := validate_name(name))]:
+        raise SystemExit("; ".join(errors))
+    entries = load()
+    for name in args.add:
+        entries = with_tap(entries, name)
+    write_json(REGISTRY_PATH, {"version": VERSION, "taps": entries}, trailing_newline=True)
     return 0
 
 

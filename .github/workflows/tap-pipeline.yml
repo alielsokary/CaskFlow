@@ -3,7 +3,9 @@ name: Tap pipeline
 # Icons and categories for registered third-party taps. Separate from the
 # official classification and icon pipelines. Only `collect` runs tap code,
 # so it holds no secrets; `icons` handles untrusted installers without push
-# credentials; only `publish` writes, and it never runs tap code.
+# credentials; only `publish` writes, and it never runs tap code. Tap code in
+# `collect` may hold the run's Actions token, so no job here restores a cache
+# and `publish` takes artifacts only by the ID their producing job reported.
 on:
   push:
     branches: [master]
@@ -32,6 +34,9 @@ jobs:
   resolve:
     if: github.event_name != 'issues' || github.event.label.name == 'add-tap'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
     outputs:
       taps: ${{ steps.resolve.outputs.taps }}
       register: ${{ steps.resolve.outputs.register }}
@@ -49,13 +54,20 @@ jobs:
           BEFORE_SHA: ${{ github.event.before }}
           DISPATCH_TAP: ${{ inputs.tap }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
-        run: python scripts/resolve_tap_run.py
+          GH_TOKEN: ${{ github.token }}
+        # The sweep also picks up labeled issues whose run the concurrency queue dropped.
+        run: |
+          if [ "$EVENT_NAME" = schedule ]; then
+            ISSUE_TITLES="$(gh issue list --label add-tap --state open --limit 200 --json title --jq '.[].title' --repo "$GITHUB_REPOSITORY")" || ISSUE_TITLES=""
+            export ISSUE_TITLES
+          fi
+          python scripts/resolve_tap_run.py
 
   collect:
     needs: resolve
     if: needs.resolve.outputs.taps != ''
     runs-on: macos-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     permissions:
       contents: read
     steps:
@@ -69,8 +81,10 @@ jobs:
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
         # TAPS holds validated user/repo names only; word-splitting is intended.
-        run: python scripts/collect_tap_casks.py --taps $TAPS --out tap_casks.json
+        # Writes after every tap; taps the budget leaves out wait for the next sweep.
+        run: python scripts/collect_tap_casks.py --taps $TAPS --out tap_casks.json --budget-minutes 270
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: tap-casks
           path: tap_casks.json
@@ -82,6 +96,7 @@ jobs:
       artifact-id: ${{ steps.data.outputs.artifact-id }}
     permissions:
       contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -89,11 +104,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - run: pip install -r requirements.txt
       - uses: actions/download-artifact@v4
         with:
           name: tap-casks
+      # Build on an unmerged data PR so runs add to it instead of conflicting with it.
+      - name: Continue an open tap data PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(gh pr list --head bot/tap-pipeline --state open --json number --jq '.[].number' --repo "$GITHUB_REPOSITORY")" ]; then
+            git fetch -q origin bot/tap-pipeline
+            for file in data/tap_categories.json data/tap_homepage_metadata.json; do
+              git checkout FETCH_HEAD -- "$file" 2>/dev/null || true
+            done
+          fi
       - name: Classify tap casks
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
@@ -127,7 +152,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - run: pip install -r requirements.txt
       - uses: actions/download-artifact@v4
         with:
@@ -175,11 +199,18 @@ jobs:
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
         run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS
-      - name: Register a requested tap
+      - name: Register requested taps and those of an open tap data PR
         env:
           REGISTER: ${{ needs.resolve.outputs.register }}
+          GH_TOKEN: ${{ github.token }}
+        # Names are validated by tap_registry.py; word-splitting is intended.
         run: |
-          if [ -n "$REGISTER" ]; then python scripts/tap_registry.py --add "$REGISTER"; fi
+          CONTINUED=""
+          if [ -n "$(gh pr list --head bot/tap-pipeline --state open --json number --jq '.[].number' --repo "$GITHUB_REPOSITORY")" ]; then
+            git fetch -q origin bot/tap-pipeline
+            CONTINUED="$(git show FETCH_HEAD:taps.json | jq -r '.taps[].name')"
+          fi
+          if [ -n "$REGISTER$CONTINUED" ]; then python scripts/tap_registry.py --add $REGISTER $CONTINUED; fi
       - name: Open a pull request
         id: pr
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
@@ -190,7 +221,7 @@ jobs:
           body: |
             Tap pipeline run ${{ github.run_id }} (${{ github.event_name }}).
             ${{ github.event_name == 'issues' && format('Closes #{0}', github.event.issue.number) || '' }}
-          branch: bot/tap-pipeline-${{ github.run_id }}
+          branch: bot/tap-pipeline
           assignees: ${{ github.repository_owner }}
           add-paths: |
             taps.json

@@ -59,7 +59,7 @@ def test_stage_never_writes_outside_taps(tmp_path):
     wt.mkdir()
     (wt / "figma.png").write_bytes(b"official")
 
-    tap_icons.stage(wt, {"u/r/figma": png}, {"u/r/figma": {"status": "ok"}})
+    tap_icons.stage(wt, {"u/r/figma": png}, {"u/r/figma": {"status": "ok"}}, ["u/r"])
 
     assert (wt / "figma.png").read_bytes() == b"official"
     assert (wt / "taps" / "u" / "r" / "figma.png").read_bytes() == b"tap"
@@ -93,7 +93,7 @@ def test_stage_refuses_paths_that_escape_taps(tmp_path):
     wt = tmp_path / "wt"
     wt.mkdir()
     with pytest.raises(ValueError):
-        tap_icons.stage(wt, {"../../outside": png}, {})
+        tap_icons.stage(wt, {"../../outside": png}, {}, ["u/r"])
     assert not (tmp_path / "outside.png").exists()
 
 
@@ -124,8 +124,69 @@ def test_publish_from_keeps_only_the_runs_taps(tmp_path, monkeypatch):
     (tmp_path / "taps" / "icon_report.json").write_text(
         '{"u/r/gone": {"status": "no_icon"}, "evil/tap/x": {"status": "no_icon"}}', encoding="utf-8")
     seen = {}
-    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report: seen.update(pngs=set(pngs), report=set(report)))
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps: seen.update(pngs=set(pngs), report=set(report), taps=taps))
 
     tap_icons.publish_from(tmp_path, ["u/r"])
 
-    assert seen == {"pngs": {"u/r/keep"}, "report": {"u/r/gone"}}
+    assert seen == {"pngs": {"u/r/keep"}, "report": {"u/r/gone"}, "taps": ["u/r"]}
+
+
+def test_stage_replaces_only_the_runs_taps_in_the_branch_report(tmp_path):
+    (tmp_path / "taps").mkdir()
+    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
+        "other/tap/x": {"status": "no_icon"},
+        "u/r/cleared": {"status": "failed", "attempts": 2},
+    }), encoding="utf-8")
+
+    tap_icons.stage(tmp_path, {}, {"u/r/new": {"status": "car_only"}}, ["u/r"])
+
+    assert json.loads((tmp_path / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {
+        "other/tap/x": {"status": "no_icon"},
+        "u/r/new": {"status": "car_only"},
+    }
+
+
+def test_publish_from_without_extraction_output_publishes_nothing(tmp_path, monkeypatch):
+    monkeypatch.setattr(tap_icons, "publish", lambda *args: (_ for _ in ()).throw(AssertionError("published")))
+
+    tap_icons.publish_from(tmp_path, ["u/r"])
+
+
+def test_icon_push_replays_onto_a_concurrent_writer(tmp_path):
+    origin = tmp_path / "origin.git"
+    subprocess.check_call(["git", "init", "-q", "--bare", str(origin)])
+    seed = tmp_path / "seed"
+    git = git_repo(seed)
+    (seed / "a.png").write_bytes(b"a")
+    git("add", "-A")
+    extract_icons.write_icon_manifest(seed)
+    git("add", "-A")
+    git("commit", "-q", "-m", "seed")
+    git("push", "-q", str(origin), "HEAD:icons")
+
+    def clone(name):
+        path = tmp_path / name
+        subprocess.check_call(["git", "clone", "-q", "-b", "icons", str(origin), str(path)])
+        for key, value in (("user.name", "Test"), ("user.email", "test@example.com")):
+            subprocess.check_call(["git", "-C", str(path), "config", key, value])
+        return path
+
+    official, taps = clone("official"), clone("taps")
+    (official / "b.png").write_bytes(b"b")
+    subprocess.check_call(["git", "-C", str(official), "add", "-A"])
+    extract_icons.write_icon_manifest(official)
+    subprocess.check_call(["git", "-C", str(official), "add", "-A"])
+    extract_icons._commit_and_push(official, {"b": official / "b.png"})
+
+    (taps / "taps" / "u" / "r").mkdir(parents=True)
+    (taps / "taps" / "u" / "r" / "t.png").write_bytes(b"t")
+    subprocess.check_call(["git", "-C", str(taps), "add", "-A"])
+    extract_icons.write_icon_manifest(taps)
+    subprocess.check_call(["git", "-C", str(taps), "add", "-A"])
+    extract_icons._commit_and_push(taps, {"u/r/t": taps / "taps" / "u" / "r" / "t.png"})
+
+    def show(*args):
+        return subprocess.check_output(["git", "-C", str(origin), *args], text=True)
+    assert set(show("ls-tree", "-r", "--name-only", "icons").split()) == {"a.png", "b.png", "icons.json", "taps/u/r/t.png"}
+    manifest = json.loads(show("show", "icons:icons.json"))
+    assert set(manifest["hashes"]) == {"a", "b"} and set(manifest["taps"]) == {"u/r/t"}

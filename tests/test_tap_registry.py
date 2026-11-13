@@ -93,6 +93,6 @@ def test_add_registers_a_tap_sorted(tmp_path, monkeypatch):
     monkeypatch.setattr(tap_registry, "REGISTRY_PATH", path)
     monkeypatch.setattr(tap_registry.load, "__defaults__", (path,))
 
-    assert tap_registry.main(["--add", "c/d"]) == 0
-    assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "m/n"]
+    assert tap_registry.main(["--add", "c/d", "e/f", "a/b"]) == 0
+    assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "e/f", "m/n"]
 

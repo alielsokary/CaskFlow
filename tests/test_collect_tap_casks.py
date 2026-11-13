@@ -98,3 +98,18 @@ def test_trusted_view_keeps_only_requested_well_formed_casks_and_recomputes_alia
 
     assert list(view["casks"]) == ["macos-fuse-t/cask/fuse-t"]
     assert view["sameAs"] == {"macos-fuse-t/cask/fuse-t": "fuse-t"}
+
+
+def test_collect_stops_at_its_budget_and_hands_over_each_tap():
+    run, calls = fake_brew({})
+    ticks = iter([0, 50, 100, 150])
+    seen = []
+
+    result = collect.collect(
+        [{"name": name} for name in ("a/b", "c/d", "e/f")], run, {},
+        budget=120, clock=lambda: next(ticks), on_progress=seen.append,
+    )
+
+    assert [cmd[2] for cmd in calls if cmd[1] == "tap"] == ["a/b", "c/d"]
+    assert result["unreached"] == ["e/f"]
+    assert len(seen) == 2 and seen[-1]["unreached"] == []

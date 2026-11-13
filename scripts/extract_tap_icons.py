@@ -49,8 +49,12 @@ def download_view(cask: dict) -> dict | None:
     return {**cask, "url_specs": specs, "https_only": True}
 
 
-def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict]) -> None:
-    """Copy icons and the tap report into a checked-out icons branch; nothing outside taps/."""
+def _tap(ref: str) -> str:
+    return ref.rsplit("/", 1)[0]
+
+
+def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[str]) -> None:
+    """Copy icons into a checked-out icons branch and replace only `taps`' report entries; nothing outside taps/."""
     root = (wt / TAPS_DIR).resolve()
     for ref, png in pngs.items():
         target = (wt / icon_path(ref)).resolve()
@@ -59,7 +63,9 @@ def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict]) -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(png, target)
     (wt / TAPS_DIR).mkdir(exist_ok=True)
-    write_json(wt / REPORT, dict(sorted(report.items())))
+    branch = json.loads((wt / REPORT).read_text(encoding="utf-8")) if (wt / REPORT).exists() else {}
+    merged = {ref: entry for ref, entry in branch.items() if _tap(ref) not in taps} | report
+    write_json(wt / REPORT, dict(sorted(merged.items())))
 
 
 def _branch_state() -> tuple[set[str], dict[str, dict]]:
@@ -71,13 +77,13 @@ def _branch_state() -> tuple[set[str], dict[str, dict]]:
     return published, (json.loads(shown.stdout) if shown.returncode == 0 else {})
 
 
-def publish(pngs: dict[str, Path], report: dict[str, dict]) -> None:
+def publish(pngs: dict[str, Path], report: dict[str, dict], taps: list[str]) -> None:
     wt = Path(tempfile.mkdtemp(prefix="tap-icons-wt-"))
     added = False
     try:
         extract_icons._add_icons_worktree(wt)
         added = True
-        stage(wt, pngs, report)
+        stage(wt, pngs, report, taps)
         if _git(wt, "add", "-A", "--", TAPS_DIR).returncode != 0:
             raise ExtractError("Cannot stage tap icons")
         write_icon_manifest(wt)
@@ -101,15 +107,15 @@ def _record(report: dict, ref: str, status: str, detail: str) -> None:
 
 def publish_from(root: Path, taps: list[str]) -> None:
     """Publish what an extraction job left in `root`, for this run's taps only."""
-    def ours(ref: str) -> bool:
-        return ref.rsplit("/", 1)[0] in taps
-
+    report_file = root / REPORT
+    if not report_file.exists():
+        print("no tap icon extraction output; nothing to publish")
+        return
     folder = root / TAPS_DIR
     pngs = {ref: png for png in sorted(folder.glob("*/*/*.png"))
-            if ours(ref := str(png.relative_to(folder)).removesuffix(".png"))}
-    report_file = root / REPORT
-    report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
-    publish(pngs, {ref: entry for ref, entry in report.items() if ours(ref)})
+            if _tap(ref := str(png.relative_to(folder)).removesuffix(".png")) in taps}
+    report = json.loads(report_file.read_text(encoding="utf-8"))
+    publish(pngs, {ref: entry for ref, entry in report.items() if _tap(ref) in taps}, taps)
 
 
 def main(argv: list[str] | None = None) -> int:

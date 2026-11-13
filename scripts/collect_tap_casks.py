@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
@@ -110,16 +112,28 @@ def _read_tap(entry: dict, run) -> dict[str, dict]:
     return by_ref(json.loads(casks.stdout))
 
 
-def collect(entries: list[dict], run, official: dict[str, dict]) -> dict:
+def collect(entries: list[dict], run, official: dict[str, dict], *, budget: float | None = None,
+            clock=time.monotonic, on_progress=lambda result: None) -> dict:
+    """Read taps until `budget` seconds pass; taps left over are `unreached` and wait for the next run."""
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
-    for entry in entries:
+    start = clock()
+
+    def result(unreached: list[dict]) -> dict:
+        return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
+                "unreached": [entry["name"] for entry in unreached]}
+
+    for index, entry in enumerate(entries):
+        if budget is not None and clock() - start >= budget:
+            print(f"warning: budget spent; {len(entries) - index} taps wait for the next run")
+            return result(entries[index:])
         try:
             casks.update(_read_tap(entry, run))
         except (RuntimeError, ValueError, subprocess.TimeoutExpired) as error:
             failures[entry["name"]] = str(error)
             print(f"warning: skipping {entry['name']}: {error}")
-    return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures}
+        on_progress(result([]))
+    return result([])
 
 
 def load_official() -> dict[str, dict]:
@@ -133,6 +147,7 @@ def main(argv: list[str] | None = None) -> int:
     group.add_argument("--taps", nargs="+", help="Registered tap names to read")
     group.add_argument("--all", action="store_true", help="Read every registered tap")
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
+    parser.add_argument("--budget-minutes", type=float, help="Stop starting new taps after this long")
     args = parser.parse_args(argv)
 
     registered = {entry["name"]: entry for entry in tap_registry.load()}
@@ -143,7 +158,14 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("; ".join(invalid))
     official = load_official()
     entries = [registered.get(name, {"name": name}) for name in wanted]
-    write_json(args.out, collect(entries, _run, official), trailing_newline=True)
+    # Random order, so taps a budget-limited sweep leaves out are reached in later weeks.
+    random.shuffle(entries)
+
+    def save(result: dict) -> None:
+        write_json(args.out, result, trailing_newline=True)
+
+    budget = args.budget_minutes * 60 if args.budget_minutes else None
+    save(collect(entries, _run, official, budget=budget, on_progress=save))
     return 0
 
 

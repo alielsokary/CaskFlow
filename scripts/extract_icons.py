@@ -718,6 +718,26 @@ def _merge_report(wt: Path, report: dict[str, dict], dirty: set[str]) -> None:
     base_file.write_text(report_json(merged), encoding="utf-8")
 
 
+def _replay_on_remote(wt: Path, identity: tuple[str, ...], msg: str) -> bool:
+    """Redo this commit on top of the other writer's push (official and tap pipelines share the branch)."""
+    ours = _git(wt, "rev-parse", "HEAD").stdout.strip()
+    changes = _git(wt, "diff", "--name-status", "--no-renames", f"{ours}~1", ours).stdout.splitlines()
+    if _git(wt, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
+        return False
+    _git(wt, "reset", "-q", "--hard", "FETCH_HEAD")
+    for line in changes:
+        status, path = line.split("\t", 1)
+        if path == "icons.json":
+            continue  # regenerated from the combined tree below
+        if status == "D":
+            _git(wt, "rm", "-q", "--ignore-unmatch", "--", path)
+        else:
+            _git(wt, "checkout", ours, "--", path)
+    write_icon_manifest(wt)
+    _git(wt, "add", "icons.json")
+    return _git(wt, *identity, "commit", "-q", "-m", msg).returncode == 0
+
+
 def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
     # CI runners have no git identity configured; fall back to the bot's.
     name = _git(wt, "config", "user.name").stdout.strip() or "github-actions[bot]"
@@ -728,7 +748,11 @@ def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
                   "commit", "-q", "-m", msg)
     if commit.returncode != 0:
         raise ExtractError(f"icon commit failed: {commit.stderr.strip()[:200]}")
-    push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
+    identity = ("-c", f"user.name={name}", "-c", f"user.email={email}")
+    for _ in range(3):
+        push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
+        if push.returncode == 0 or not _replay_on_remote(wt, identity, msg):
+            break
     if push.returncode != 0:
         raise ExtractError(f"icon push failed: {push.stderr.strip()[:200]}")
     if pngs:

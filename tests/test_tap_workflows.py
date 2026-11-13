@@ -91,3 +91,32 @@ def test_issue_runs_read_the_tap_from_the_title_never_the_body():
     resolve = _job(_workflow("tap-pipeline.yml"), "resolve")
     assert "ISSUE_TITLE: ${{ github.event.issue.title }}" in resolve
     assert "issue.body" not in resolve
+
+
+def test_jobs_with_secrets_or_write_tokens_restore_no_actions_cache():
+    # collect runs tap code that could seed cache entries other jobs restore.
+    assert "cache: pip" not in _workflow("tap-pipeline.yml")
+    assert "cache: pip" not in _workflow("classify-new-casks.yml")
+
+
+def test_collect_keeps_partial_progress_within_its_budget():
+    collect = _job(_workflow("tap-pipeline.yml"), "collect")
+    assert "--budget-minutes 270" in collect and "timeout-minutes: 300" in collect
+    upload = collect[collect.index("upload-artifact"):]
+    assert "if: always()" in upload
+
+
+def test_data_prs_roll_on_one_branch_and_continue_an_open_one():
+    pipeline = _workflow("tap-pipeline.yml")
+    assert "branch: bot/tap-pipeline\n" in pipeline
+    for name in ("classify", "publish"):
+        job = _job(pipeline, name)
+        assert "gh pr list --head bot/tap-pipeline --state open" in job, name
+        assert "pull-requests: read" in job or "pull-requests: write" in job, name
+    assert 'tap_registry.py --add $REGISTER $CONTINUED' in _job(pipeline, "publish")
+
+
+def test_scheduled_sweep_lists_open_add_tap_issues():
+    resolve = _job(_workflow("tap-pipeline.yml"), "resolve")
+    assert "gh issue list --label add-tap --state open" in resolve
+    assert "ISSUE_TITLES" in resolve and "issues: read" in resolve

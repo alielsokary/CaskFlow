@@ -10,12 +10,16 @@ import tap_registry
 from validate_taps import changed_entries
 
 
-def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_title: str = "") -> tuple[list[str], str | None]:
+def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_title: str = "",
+            issue_titles: list[str] = ()) -> tuple[list[str], list[str]]:
     registered = [entry["name"] for entry in head]
     if event == "push":
-        return [entry["name"] for entry in changed_entries(base, head)], None
+        return [entry["name"] for entry in changed_entries(base, head)], []
     if event == "schedule":
-        return registered, None
+        # A labeled issue whose run was dropped from the concurrency queue is picked up here.
+        requested = {name for title in issue_titles if (name := tap_registry.parse_issue_title(title))}
+        new = sorted(requested - set(registered))
+        return sorted(registered + new), new
     if event == "workflow_dispatch":
         name = dispatch_tap.strip().lower()
         if error := tap_registry.validate_name(name):
@@ -26,7 +30,7 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
             raise SystemExit("the issue title is not 'Add tap: user/repo'")
     else:
         raise SystemExit(f"unsupported event {event!r}")
-    return [name], None if name in registered else name
+    return [name], [] if name in registered else [name]
 
 
 def _base_entries(before: str) -> list[dict]:
@@ -43,10 +47,11 @@ def main() -> int:
         head=tap_registry.load(),
         dispatch_tap=os.environ.get("DISPATCH_TAP", ""),
         issue_title=os.environ.get("ISSUE_TITLE", ""),
+        issue_titles=os.environ.get("ISSUE_TITLES", "").splitlines(),
     )
     print(f"taps: {taps}, register: {register}")
     with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
-        output.write(f"taps={' '.join(taps)}\nregister={register or ''}\n")
+        output.write(f"taps={' '.join(taps)}\nregister={' '.join(register)}\n")
     return 0
 
 
