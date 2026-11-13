@@ -51116,6 +51116,60 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "sidebarfavorites-manager": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://github.com/ivg-design/SidebarFavorites/releases/download/v1.3.0/SidebarFavorites-1.3.0.dmg",
+      "artifactSHA256": "dc50e55f4d9d59d6b4407f4cdb98582faf43b220695d6a3e27d73a26d002dedf",
+      "apps": [
+        {
+          "bundleName": "SidebarFavorites Manager.app",
+          "bundleIdentifier": "com.ivg-design.SidebarFavoritesManager"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "yandex-document": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://cdn.docs.yandex.net/releases/public/1.1.0/macos/universal/yandex-document.pkg",
+      "artifactSHA256": "4a28cce408322aedd8faa8d2344ba7fc670f256af8e3ebed23f17da0fff733c0",
+      "apps": [
+        {
+          "bundleName": "Yandex Document.app",
+          "bundleIdentifier": "com.yandex.docs.document",
+          "packageIdentifier": "com.yandex.docs.document",
+          "installedPath": "/Applications/Yandex Document.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "lattice": {
+      "caskVersion": "0.16.16",
+      "sourceURL": "https://github.com/leo1oel/lattice/releases/download/v0.16.16/Lattice_0.16.16_aarch64.dmg",
+      "artifactSHA256": "e2557205f2a24113e0d4963f0e8c44fcb7ef34316415f4bd33f32866baf683c8",
+      "apps": [
+        {
+          "bundleName": "Lattice.app",
+          "bundleIdentifier": "app.leo1oel.researchwriter"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "sable": {
+      "caskVersion": "2.3.8",
+      "sourceURL": "https://git.sable.moe/SableClient/sable-next/releases/download/v2.3.8/sable-2.3.8-arm64.dmg",
+      "artifactSHA256": "af4ddc3e426af80921b98472e6ff8d140963960f83f3903856d0b6c5f3bfc137",
+      "apps": [
+        {
+          "bundleName": "Sable.app",
+          "bundleIdentifier": "moe.sable.client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
