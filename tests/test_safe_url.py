@@ -34,3 +34,29 @@ def test_redirects_to_private_hosts_are_refused():
     with pytest.raises(urllib.error.HTTPError):
         handler.redirect_request(request, None, 302, "Found", {}, "http://169.254.169.254/latest")
     assert handler.redirect_request(request, None, 302, "Found", {}, "https://ok.example/b") is not None
+
+
+def test_rebinding_after_the_check_is_refused_at_connect(monkeypatch):
+    answers = iter([["93.184.216.34"], ["127.0.0.1"]])
+    resolve = lambda host: next(answers)  # noqa: E731
+    seen = []
+    monkeypatch.setattr(safe_url.socket, "create_connection", lambda address, *a, **k: seen.append(address))
+
+    assert safe_url.is_public_url("http://rebind.example/", resolve=resolve)
+    with pytest.raises(urllib.error.URLError):
+        safe_url.public_opener(resolve).open("http://rebind.example/", timeout=5)
+    assert seen == [], "no connection to the rebound address"
+
+
+def test_https_connects_to_the_checked_address_with_the_original_name(monkeypatch):
+    seen = []
+
+    def connect(address, *args, **kwargs):
+        seen.append(address)
+        raise OSError("stop here")
+
+    monkeypatch.setattr(safe_url.socket, "create_connection", connect)
+    with pytest.raises(urllib.error.URLError):
+        safe_url.public_opener(lambda host: ["93.184.216.34"]).open("https://site.example/", timeout=5)
+
+    assert seen == [("93.184.216.34", 443)]

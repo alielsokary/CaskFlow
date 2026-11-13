@@ -144,3 +144,10 @@ def test_open_data_pr_is_used_only_from_this_repository_and_by_its_head_commit()
         job = _job(pipeline, name)
         assert "select(.isCrossRepository == false)" in job and "headRefOid" in job, name
         assert 'git fetch -q origin "$HEAD"' in job, name
+
+
+def test_no_workflow_restores_an_actions_cache():
+    # Dispatched tap-collect runs share the default branch's cache scope.
+    for path in (REPO_ROOT / ".github" / "workflows").glob("*.yml"):
+        text = path.read_text(encoding="utf-8")
+        assert "cache: pip" not in text and "actions/cache" not in text, path.name
