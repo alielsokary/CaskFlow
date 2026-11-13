@@ -83,3 +83,10 @@ def test_add_registers_a_tap_sorted(tmp_path, monkeypatch):
 
     assert tap_registry.main(["--add", "c/d"]) == 0
     assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "m/n"]
+
+
+def test_parse_issue_tap_refuses_hidden_or_repeated_tap_lines():
+    assert tap_registry.parse_issue_tap("Tap: good/tap\n<!--\nTap: evil/tap\n-->") is None
+    assert tap_registry.parse_issue_tap("<!--\nTap: evil/tap\n-->\nnothing visible") is None
+    assert tap_registry.parse_issue_tap("Tap: good/tap\nTap: evil/tap") is None
+    assert tap_registry.parse_issue_tap("<!-- Replace user/repo. -->\nTap: good/tap\n<!-- note -->") == "good/tap"

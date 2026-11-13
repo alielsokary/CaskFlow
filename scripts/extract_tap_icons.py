@@ -99,13 +99,17 @@ def _record(report: dict, ref: str, status: str, detail: str) -> None:
     report[ref] = {"status": status, "reason": detail, **({"attempts": attempts} if status == "failed" else {})}
 
 
-def publish_from(root: Path) -> None:
-    """Publish what an extraction job left in `root`; this job never downloads installers."""
+def publish_from(root: Path, taps: list[str]) -> None:
+    """Publish what an extraction job left in `root`, for this run's taps only."""
+    def ours(ref: str) -> bool:
+        return ref.rsplit("/", 1)[0] in taps
+
     folder = root / TAPS_DIR
-    pngs = {str(png.relative_to(folder)).removesuffix(".png"): png for png in sorted(folder.glob("*/*/*.png"))}
+    pngs = {ref: png for png in sorted(folder.glob("*/*/*.png"))
+            if ours(ref := str(png.relative_to(folder)).removesuffix(".png"))}
     report_file = root / REPORT
     report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
-    publish(pngs, report)
+    publish(pngs, {ref: entry for ref, entry in report.items() if ours(ref)})
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -116,13 +120,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "icons_out")
     parser.add_argument("--publish-from", type=Path, help="Publish a previous extraction's output and exit")
     args = parser.parse_args(argv)
-    if args.publish_from:
-        publish_from(args.publish_from)
-        return 0
-    if not args.collected or not args.taps:
-        parser.error("--collected and --taps are required to extract")
+    if not args.taps:
+        parser.error("--taps is required")
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
+    if args.publish_from:
+        publish_from(args.publish_from, args.taps)
+        return 0
+    if not args.collected:
+        parser.error("--collected is required to extract")
 
     # The collect job ran tap code, so its file is only trusted through this view.
     collected = trusted_view(json.loads(args.collected.read_text(encoding="utf-8")), args.taps, load_official())

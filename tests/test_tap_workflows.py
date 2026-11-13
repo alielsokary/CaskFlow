@@ -73,3 +73,15 @@ def test_every_job_that_reads_collect_output_downloads_it():
         job = _job(pipeline, name)
         assert "tap_casks.json" in job
         assert "name: tap-casks" in job and "download-artifact" in job, name
+
+
+def test_publish_takes_artifacts_only_by_id_from_their_producing_jobs():
+    pipeline = _workflow("tap-pipeline.yml")
+    publish = _job(pipeline, "publish")
+
+    for producer, output in (("classify", "steps.data.outputs.artifact-id"), ("icons", "steps.upload.outputs.artifact-id")):
+        assert output in _job(pipeline, producer), producer
+        assert f"needs.{producer}.outputs.artifact-id" in publish, producer
+    assert "name: tap-data" not in publish and "name: tap-icons" not in publish
+    assert "cache: pip" not in publish
+    assert "--publish-from icons_out --taps $TAPS" in publish

@@ -12,6 +12,7 @@ VERSION = 1
 
 _PART = re.compile(r"[a-z0-9][a-z0-9_.-]*")
 _ISSUE_LINE = re.compile(r"^\s*tap:\s*(\S+)\s*$", re.IGNORECASE | re.MULTILINE)
+_HTML_COMMENT = re.compile(r"<!--.*?(?:-->|\Z)", re.DOTALL)
 
 
 class RegistryError(Exception):
@@ -62,11 +63,13 @@ def load(path: Path = REGISTRY_PATH) -> list[dict]:
 
 
 def parse_issue_tap(body: str) -> str | None:
-    """The validated tap from an 'Add a tap' issue's `Tap: user/repo` line."""
-    match = _ISSUE_LINE.search(body or "")
-    if not match:
+    """The validated tap from an issue's single, visible `Tap: user/repo` line."""
+    body = body or ""
+    lines = _ISSUE_LINE.findall(body)
+    # A maintainer approves what GitHub renders, so a line hidden in a comment must not win.
+    if len(lines) != 1 or len(_ISSUE_LINE.findall(_HTML_COMMENT.sub("", body))) != 1:
         return None
-    name = match.group(1).lower()
+    name = lines[0].lower()
     return None if validate_name(name) else name
 
 

@@ -78,6 +78,8 @@ jobs:
   classify:
     needs: [resolve, collect]
     runs-on: ubuntu-latest
+    outputs:
+      artifact-id: ${{ steps.data.outputs.artifact-id }}
     permissions:
       contents: read
     steps:
@@ -102,7 +104,8 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python scripts/classify_tap_casks.py --collected tap_casks.json --taps $TAPS
-      - uses: actions/upload-artifact@v4
+      - id: data
+        uses: actions/upload-artifact@v4
         with:
           name: tap-data
           path: |
@@ -113,6 +116,8 @@ jobs:
     needs: [resolve, collect]
     runs-on: macos-latest
     timeout-minutes: 360
+    outputs:
+      artifact-id: ${{ steps.upload.outputs.artifact-id }}
     permissions:
       contents: read
     steps:
@@ -131,7 +136,8 @@ jobs:
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
         run: python scripts/extract_tap_icons.py --collected tap_casks.json --taps $TAPS --output-dir icons_out
-      - uses: actions/upload-artifact@v4
+      - id: upload
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: tap-icons
@@ -148,22 +154,27 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
+      # No pip cache here, and artifacts only by the ID their own job reported:
+      # collect ran tap code and could have uploaded look-alike artifacts.
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - run: pip install -r requirements.txt
       - uses: actions/download-artifact@v4
         with:
-          name: tap-data
+          artifact-ids: ${{ needs.classify.outputs.artifact-id }}
           path: data
+          merge-multiple: true
       - uses: actions/download-artifact@v4
-        continue-on-error: true
+        if: needs.icons.outputs.artifact-id != ''
         with:
-          name: tap-icons
+          artifact-ids: ${{ needs.icons.outputs.artifact-id }}
           path: icons_out/taps
+          merge-multiple: true
       - name: Publish tap icons to the icons branch
-        run: python scripts/extract_tap_icons.py --publish-from icons_out
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS
       - name: Register a requested tap
         env:
           REGISTER: ${{ needs.resolve.outputs.register }}

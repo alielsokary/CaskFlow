@@ -1,5 +1,6 @@
 import json
 import subprocess
+from pathlib import Path
 
 import extract_icons
 import extract_tap_icons as tap_icons
@@ -114,3 +115,17 @@ def test_extract_writes_pngs_and_report_for_a_separate_publish_job(tmp_path, mon
     assert tap_icons.main(["--collected", str(collected), "--taps", "u/r", "--output-dir", str(out)]) == 0
     assert (out / "taps" / "u" / "r" / "t.png").read_bytes() == b"png"
     assert json.loads((out / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {}
+
+
+def test_publish_from_keeps_only_the_runs_taps(tmp_path, monkeypatch):
+    for ref in ("u/r/keep", "evil/tap/figma"):
+        (tmp_path / "taps" / Path(ref).parent).mkdir(parents=True, exist_ok=True)
+        (tmp_path / "taps" / f"{ref}.png").write_bytes(b"png")
+    (tmp_path / "taps" / "icon_report.json").write_text(
+        '{"u/r/gone": {"status": "no_icon"}, "evil/tap/x": {"status": "no_icon"}}', encoding="utf-8")
+    seen = {}
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report: seen.update(pngs=set(pngs), report=set(report)))
+
+    tap_icons.publish_from(tmp_path, ["u/r"])
+
+    assert seen == {"pngs": {"u/r/keep"}, "report": {"u/r/gone"}}
