@@ -45,6 +45,8 @@ def test_jobs_that_touch_tap_code_or_installers_hold_no_secrets():
         assert "secrets." not in job, name
         assert "contents: read" in job, name
         assert "persist-credentials: false" in job, name
+    collect = _workflow("tap-collect.yml")
+    assert "secrets." not in collect and "contents: read" in collect and "persist-credentials: false" in collect
 
 
 def test_untrusted_inputs_only_reach_scripts_through_env():
@@ -104,6 +106,20 @@ def test_collect_keeps_partial_progress_within_its_budget():
     assert "--budget-minutes 270" in collect and "timeout-minutes: 300" in collect
     upload = collect[collect.index("upload-artifact"):]
     assert "if: always()" in upload
+
+
+def test_tap_code_runs_only_in_separate_runs_per_small_batch():
+    pipeline = _workflow("tap-pipeline.yml")
+    collect = _job(pipeline, "collect")
+    assert "runs-on: ubuntu-latest" in collect and "actions: write" in collect
+    assert "python scripts/dispatch_collect.py --taps $TAPS --batch-size 5" in collect
+    assert "collect_tap_casks.py" not in pipeline and "brew " not in pipeline
+
+    per_batch = _workflow("tap-collect.yml")
+    assert "workflow_dispatch:" in per_batch and "run-name: Tap collect ${{ inputs.nonce }}" in per_batch
+    assert "runs-on: macos-latest" in per_batch and "python scripts/collect_tap_casks.py --taps $TAPS" in per_batch
+    assert "inputs.taps" not in "\n".join(line for line in per_batch.splitlines() if line.strip().startswith("run:"))
+    assert "if: always()" in per_batch[per_batch.index("upload-artifact"):]
 
 
 def test_data_prs_roll_on_one_branch_and_continue_an_open_one():

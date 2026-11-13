@@ -1,11 +1,12 @@
 name: Tap pipeline
 
-# Icons and categories for registered third-party taps. Separate from the
-# official classification and icon pipelines. Only `collect` runs tap code,
-# so it holds no secrets; `icons` handles untrusted installers without push
-# credentials; only `publish` writes, and it never runs tap code. Tap code in
-# `collect` may hold the run's Actions token, so no job here restores a cache
-# and `publish` takes artifacts only by the ID their producing job reported.
+# Icons and categories for registered third-party taps, separate from the
+# official pipelines. Tap code runs only in tap-collect.yml runs, a few taps per
+# run, which `collect` dispatches and reads back run by run. `icons` handles
+# untrusted installers without push credentials. Only `publish` writes, and it
+# never runs tap code. Untrusted code may hold a run's Actions token, so no job
+# restores a cache and `publish` takes artifacts only by the ID their producing
+# job reported.
 on:
   push:
     branches: [master]
@@ -62,10 +63,11 @@ jobs:
   collect:
     needs: resolve
     if: needs.resolve.outputs.taps != ''
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 300
     permissions:
       contents: read
+      actions: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -73,17 +75,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Read taps with brew
+      - name: Read taps in separate runs, five taps each
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
-        # TAPS holds validated user/repo names only; word-splitting is intended.
-        # Writes after every tap; taps the budget leaves out wait for the next sweep.
-        run: python scripts/collect_tap_casks.py --taps $TAPS --out tap_casks.json --budget-minutes 270
+          GH_TOKEN: ${{ github.token }}
+        # Runs no tap code. TAPS holds validated user/repo names only; word-splitting is intended.
+        # Writes after every batch; batches the budget leaves out wait for the next sweep.
+        run: python scripts/dispatch_collect.py --taps $TAPS --batch-size 5 --budget-minutes 270 --out tap_casks.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: tap-casks
           path: tap_casks.json
+          if-no-files-found: ignore
 
   classify:
     needs: [resolve, collect]
