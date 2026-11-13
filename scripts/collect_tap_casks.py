@@ -46,25 +46,49 @@ def _artifact_names(cask: dict) -> set[str]:
     return names
 
 
-def _homepage(cask: dict) -> str:
+# Hosts whose first path segments name the project; a bare host would match unrelated apps.
+_FORGES = frozenset({"github.com", "gitlab.com", "codeberg.org", "bitbucket.org", "gitee.com", "git.sr.ht"})
+_BUCKET_HOSTS = frozenset({"storage.googleapis.com", "s3.amazonaws.com"})
+_SOURCEFORGE = frozenset({"downloads.sourceforge.net", "sourceforge.net"})
+# Shared file hosts say nothing about which app a file belongs to.
+_SHARED_HOSTS = frozenset({
+    "dl.dropboxusercontent.com", "www.dropbox.com", "dropbox.com", "drive.google.com", "dl.google.com",
+    "download.microsoft.com", "objects.githubusercontent.com",
+})
+
+
+def _homepage(cask: dict) -> str | None:
     parsed = urlparse(cask.get("homepage") or "")
     host = parsed.netloc.lower().removeprefix("www.")
-    return f"{host}{parsed.path.rstrip('/').lower()}"
+    return f"{host}{parsed.path.rstrip('/').lower()}" if host else None
 
 
-def _download_source(cask: dict) -> str:
+def _download_source(cask: dict) -> str | None:
     parsed = urlparse(cask.get("url") or "")
     host = parsed.netloc.lower()
-    if host == "github.com":
-        return "/".join([host, *parsed.path.strip("/").lower().split("/")[:2]])
+    parts = parsed.path.strip("/").lower().split("/")
+    if not host or host in _SHARED_HOSTS:
+        return None
+    if host in _FORGES:
+        return "/".join([host, *parts[:2]]) if len(parts) >= 2 and all(parts[:2]) else None
+    if host in _BUCKET_HOSTS:
+        return f"{host}/{parts[0]}" if parts[0] else None
+    if host in _SOURCEFORGE:
+        project = parts[1] if len(parts) > 1 and parts[0] in ("project", "projects") else ""
+        return f"sourceforge.net/{project}" if project else None
     return host
 
 
+def _known_equal(left: str | None, right: str | None) -> bool:
+    return left is not None and left == right
+
+
 def same_app(tap_cask: dict, official: dict) -> bool:
-    """Same app only if it installs the same files AND shares a homepage or download source."""
+    """Same app only if it installs the same files AND shares a known homepage or download source."""
     if not _artifact_names(tap_cask) & _artifact_names(official):
         return False
-    return _homepage(tap_cask) == _homepage(official) or _download_source(tap_cask) == _download_source(official)
+    return (_known_equal(_homepage(tap_cask), _homepage(official))
+            or _known_equal(_download_source(tap_cask), _download_source(official)))
 
 
 def aliases(casks: dict[str, dict], official: dict[str, dict]) -> dict[str, str]:

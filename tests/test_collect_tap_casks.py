@@ -174,3 +174,46 @@ def test_trusted_view_filters_failures_and_read_taps():
 
     assert view["caskFailures"] == {"u/r/bad": ""}
     assert view["readTaps"] == ["u/r"]
+
+
+import pytest  # noqa: E402
+
+
+@pytest.mark.parametrize("url,expected", [
+    ("https://github.com/A/B/releases/download/1/x.dmg", "github.com/a/b"),
+    ("https://gitlab.com/a/b/-/releases/x.dmg", "gitlab.com/a/b"),
+    ("https://codeberg.org/a/b/releases/download/1/x.dmg", "codeberg.org/a/b"),
+    ("https://bitbucket.org/a/b/downloads/x.dmg", "bitbucket.org/a/b"),
+    ("https://gitee.com/a/b/releases/download/1/x.dmg", "gitee.com/a/b"),
+    ("https://git.sr.ht/~a/b/refs/download/1/x.dmg", "git.sr.ht/~a/b"),
+    ("https://downloads.sourceforge.net/project/foo/1.0/x.dmg", "sourceforge.net/foo"),
+    ("https://sourceforge.net/projects/foo/files/x.dmg/download", "sourceforge.net/foo"),
+    ("https://storage.googleapis.com/bkt/x.dmg", "storage.googleapis.com/bkt"),
+    ("https://s3.amazonaws.com/bkt/x.dmg", "s3.amazonaws.com/bkt"),
+    ("https://dl.dropboxusercontent.com/s/abc/x.dmg", None),
+    ("https://www.dropbox.com/s/abc/x.dmg?dl=1", None),
+    ("https://drive.google.com/uc?id=1", None),
+    ("https://dl.google.com/x.dmg", None),
+    ("https://download.microsoft.com/x.pkg", None),
+    ("https://objects.githubusercontent.com/x.dmg", None),
+    ("https://download.vendor.com/x.dmg", "download.vendor.com"),
+    ("", None),
+])
+def test_download_source_identity(url, expected):
+    assert collect._download_source({"url": url}) == expected
+
+
+def test_same_app_never_matches_on_missing_or_shared_sources():
+    app = [{"app": ["Foo.app"]}]
+    bare_tap, bare_official = cask("foo", "u/r/foo", "", "", app), cask("foo", "foo", "", "", app)
+    assert not collect.same_app(bare_tap, bare_official)
+
+    shared_tap = cask("foo", "u/r/foo", "https://a.example", "https://dl.dropboxusercontent.com/s/1/Foo.dmg", app)
+    shared_official = cask("foo", "foo", "https://b.example", "https://dl.dropboxusercontent.com/s/2/Foo.dmg", app)
+    assert not collect.same_app(shared_tap, shared_official)
+
+    lab_tap = cask("foo", "u/r/foo", "https://a.example", "https://gitlab.com/x/foo/-/releases/2/Foo.dmg", app)
+    lab_official = cask("foo", "foo", "https://b.example", "https://gitlab.com/x/foo/-/releases/1/Foo.dmg", app)
+    other_repo = cask("foo", "foo", "https://b.example", "https://gitlab.com/y/foo/-/releases/1/Foo.dmg", app)
+    assert collect.same_app(lab_tap, lab_official)
+    assert not collect.same_app(lab_tap, other_repo)
