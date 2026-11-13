@@ -61,6 +61,20 @@ jobs:
         # only where the label came after the title's last edit.
         run: python scripts/resolve_tap_run.py
 
+  explain-refusal:
+    needs: resolve
+    if: failure() && github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: >-
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          --body "Couldn't find a tap with casks at that name. Check the title is \`Add tap: user/repo\` and that the repository has a Casks folder."
+
   collect:
     needs: resolve
     if: needs.resolve.outputs.taps != '' || needs.resolve.outputs.prune != ''
@@ -219,7 +233,8 @@ jobs:
           if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
             CONTINUED="$(git show FETCH_HEAD:taps.json | jq -r '.taps[].name')"
           fi
-          if [ -n "$REGISTER$CONTINUED" ]; then python scripts/tap_registry.py --add $REGISTER $CONTINUED; fi
+          if [ -n "$REGISTER" ]; then python scripts/tap_registry.py --add $REGISTER --only-readable data/tap_run.json; fi
+          if [ -n "$CONTINUED" ]; then python scripts/tap_registry.py --add $CONTINUED; fi
       - name: Open a pull request
         id: pr
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6

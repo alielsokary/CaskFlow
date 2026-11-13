@@ -96,3 +96,14 @@ def test_add_registers_a_tap_sorted(tmp_path, monkeypatch):
     assert tap_registry.main(["--add", "c/d", "e/f", "a/b"]) == 0
     assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "e/f", "m/n"]
 
+
+
+def test_only_readable_taps_are_registered(tmp_path, monkeypatch):
+    path = write(tmp_path, [{"name": "m/n"}])
+    monkeypatch.setattr(tap_registry, "REGISTRY_PATH", path)
+    monkeypatch.setattr(tap_registry.load, "__defaults__", (path,))
+    run = tmp_path / "tap_run.json"
+    run.write_text(json.dumps({"readable": ["a/b"], "current": {}, "prunedTaps": []}), encoding="utf-8")
+
+    assert tap_registry.main(["--add", "a/b", "c/d", "--only-readable", str(run)]) == 0
+    assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "m/n"]

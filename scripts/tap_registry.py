@@ -84,11 +84,18 @@ def main(argv: list[str] | None = None) -> int:
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--add", nargs="+", required=True, help="Register taps (sorted insert; no-op if present)")
+    parser.add_argument("--only-readable", type=Path, help="Register only taps this run file lists as readable")
     args = parser.parse_args(argv)
     if errors := [error for name in args.add if (error := validate_name(name))]:
         raise SystemExit("; ".join(errors))
+    names = args.add
+    if args.only_readable:
+        readable = set(json.loads(args.only_readable.read_text(encoding="utf-8")).get("readable", []))
+        if skipped := [name for name in names if name not in readable]:
+            print(f"not registering taps without readable casks: {' '.join(skipped)}")
+        names = [name for name in names if name in readable]
     entries = load()
-    for name in args.add:
+    for name in names:
         entries = with_tap(entries, name)
     write_json(REGISTRY_PATH, {"version": VERSION, "taps": entries}, trailing_newline=True)
     return 0

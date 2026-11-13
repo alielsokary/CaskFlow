@@ -22,7 +22,7 @@ def test_registry_validation_runs_on_prs_without_secrets():
 def _job(workflow: str, name: str) -> str:
     start = workflow.index(f"\n  {name}:\n")
     rest = workflow[start + 1:]
-    next_job = [i for i in (rest.find("\n  " + j + ":\n") for j in ("resolve", "collect", "classify", "icons", "publish")) if i > 0]
+    next_job = [i for i in (rest.find("\n  " + j + ":\n") for j in ("resolve", "explain-refusal", "collect", "classify", "icons", "publish")) if i > 0]
     return rest[: min(next_job)] if next_job else rest
 
 
@@ -129,7 +129,9 @@ def test_data_prs_roll_on_one_branch_and_continue_an_open_one():
         job = _job(pipeline, name)
         assert "gh pr list --head bot/tap-pipeline --state open" in job, name
         assert "pull-requests: read" in job or "pull-requests: write" in job, name
-    assert 'tap_registry.py --add $REGISTER $CONTINUED' in _job(pipeline, "publish")
+    publish = _job(pipeline, "publish")
+    assert "tap_registry.py --add $REGISTER --only-readable data/tap_run.json" in publish
+    assert "tap_registry.py --add $CONTINUED" in publish
 
 
 def test_scheduled_sweep_reads_issues_through_the_resolver():
@@ -164,3 +166,11 @@ def test_removed_taps_reach_classify_and_publish_through_env():
     assert "--publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json" in publish
     paths = publish[publish.index("add-paths:"):]
     assert "tap_run.json" not in paths
+
+
+def test_refused_issue_requests_get_a_fixed_explanation():
+    job = _job(_workflow("tap-pipeline.yml"), "explain-refusal")
+    assert "needs: resolve" in job and "if: failure() && github.event_name == 'issues'" in job
+    assert "issues: write" in job and "ISSUE: ${{ github.event.issue.number }}" in job
+    assert "Couldn't find a tap with casks at that name" in job
+    assert "issue.title" not in job and "issue.body" not in job
