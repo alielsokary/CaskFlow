@@ -131,6 +131,8 @@ def test_data_prs_roll_on_one_branch_and_continue_an_open_one():
         assert "pull-requests: read" in job or "pull-requests: write" in job, name
     publish = _job(pipeline, "publish")
     assert "tap_registry.py --add $REGISTER --only-readable data/tap_run.json" in publish
+    assert "tap_registry.py --added-between" in publish and "--except $PRUNE" in publish
+    assert "git merge-base" in publish and "fetch-depth: 0" in publish
     assert "tap_registry.py --add $CONTINUED" in publish
 
 
@@ -172,5 +174,12 @@ def test_refused_issue_requests_get_a_fixed_explanation():
     job = _job(_workflow("tap-pipeline.yml"), "explain-refusal")
     assert "needs: resolve" in job and "if: failure() && github.event_name == 'issues'" in job
     assert "issues: write" in job and "ISSUE: ${{ github.event.issue.number }}" in job
-    assert "Couldn't find a tap with casks at that name" in job
+    assert "The tap pipeline couldn't start for this request" in job
     assert "issue.title" not in job and "issue.body" not in job
+
+
+def test_refused_registrations_never_report_success_on_the_issue():
+    publish = _job(_workflow("tap-pipeline.yml"), "publish")
+    assert "id: register" in publish and "refused=" in publish
+    assert "steps.register.outputs.refused == ''" in publish
+    assert "steps.register.outputs.refused != ''" in publish and "wasn't added" in publish

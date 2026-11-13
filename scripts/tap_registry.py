@@ -77,15 +77,30 @@ def with_tap(entries: list[dict], name: str) -> list[dict]:
     return sorted([*entries, {"name": name}], key=lambda entry: entry["name"])
 
 
+def added_between(base: list[dict], head: list[dict], exclude: list[str] = ()) -> list[str]:
+    """Names `head` registers that `base` does not, minus `exclude`."""
+    before = {entry["name"] for entry in base}
+    return sorted(entry["name"] for entry in head if entry["name"] not in before and entry["name"] not in exclude)
+
+
 def main(argv: list[str] | None = None) -> int:
     import argparse
 
     from style_standards import write_json
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--add", nargs="+", required=True, help="Register taps (sorted insert; no-op if present)")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--add", nargs="+", help="Register taps (sorted insert; no-op if present)")
+    mode.add_argument("--added-between", nargs=2, type=Path, metavar=("BASE", "HEAD"),
+                      help="Print the names HEAD's taps.json registers that BASE's does not")
     parser.add_argument("--only-readable", type=Path, help="Register only taps this run file lists as readable")
+    parser.add_argument("--except", dest="exclude", nargs="*", default=[], help="Names --added-between leaves out")
     args = parser.parse_args(argv)
+    if args.added_between:
+        base, head = (json.loads(path.read_text(encoding="utf-8")).get("taps", []) for path in args.added_between)
+        names = [name for name in added_between(base, head, args.exclude) if validate_name(name) is None]
+        print("\n".join(names))
+        return 0
     if errors := [error for name in args.add if (error := validate_name(name))]:
         raise SystemExit("; ".join(errors))
     names = args.add

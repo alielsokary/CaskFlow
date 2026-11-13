@@ -107,3 +107,17 @@ def test_only_readable_taps_are_registered(tmp_path, monkeypatch):
 
     assert tap_registry.main(["--add", "a/b", "c/d", "--only-readable", str(run)]) == 0
     assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "m/n"]
+
+
+def test_added_between_lists_only_names_the_pr_added():
+    base = [{"name": "a/b"}, {"name": "c/d"}]
+    head = [{"name": "a/b"}, {"name": "c/d"}, {"name": "e/f"}, {"name": "g/h"}]
+    assert tap_registry.added_between(base, head, exclude=["g/h"]) == ["e/f"]
+
+
+def test_added_between_cli_prints_names(tmp_path, capsys):
+    (tmp_path / "base").mkdir()
+    (tmp_path / "head").mkdir()
+    base, head = write(tmp_path / "base", [{"name": "a/b"}]), write(tmp_path / "head", [{"name": "a/b"}, {"name": "e/f"}])
+    assert tap_registry.main(["--added-between", str(base), str(head), "--except", "x/y"]) == 0
+    assert capsys.readouterr().out.split() == ["e/f"]

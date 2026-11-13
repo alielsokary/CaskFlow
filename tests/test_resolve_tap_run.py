@@ -1,3 +1,5 @@
+import subprocess
+
 import pytest
 
 import resolve_tap_run as resolve
@@ -82,3 +84,18 @@ def test_sweep_skips_requested_taps_that_fail_the_check():
     titles = ["Add tap: e/f", "Add tap: g/h"]
     assert resolve.resolve("schedule", base=REGISTRY, head=REGISTRY, issue_titles=titles, check=only_ef) == (
         ["a/b", "c/d", "e/f"], ["e/f"], [])
+
+
+def test_a_crashing_check_counts_as_a_refusal():
+    def boom(entry):
+        raise subprocess.TimeoutExpired(["git"], 120)
+
+    with pytest.raises(SystemExit, match="could not be checked"):
+        resolve.resolve("workflow_dispatch", base=REGISTRY, head=REGISTRY, dispatch_tap="x/y", check=boom)
+    assert resolve.resolve("schedule", base=REGISTRY, head=REGISTRY, issue_titles=["Add tap: e/f"], check=boom) == (
+        ["a/b", "c/d"], [], [])
+
+
+def test_sweep_prunes_taps_that_still_have_data_but_left_the_registry():
+    assert resolve.resolve("schedule", base=REGISTRY, head=REGISTRY, data_taps=["a/b", "g/t"], check=OK) == (
+        ["a/b", "c/d"], [], ["g/t"])

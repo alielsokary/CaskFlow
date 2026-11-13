@@ -30,8 +30,11 @@ def cask_refs(tap_info: list[dict]) -> list[str]:
     return [ref for tap in tap_info for ref in tap.get("cask_tokens", [])]
 
 
-def by_ref(info_json: dict) -> dict[str, dict]:
-    return {cask["full_token"]: cask for cask in info_json.get("casks", [])}
+def by_ref(info_json: object) -> dict[str, dict]:
+    casks = info_json.get("casks") if isinstance(info_json, dict) else None
+    if not isinstance(casks, list) or not all(isinstance(c, dict) and isinstance(c.get("full_token"), str) for c in casks):
+        raise ValueError("unexpected brew info output")
+    return {cask["full_token"]: cask for cask in casks}
 
 
 def _artifact_names(cask: dict) -> set[str]:
@@ -51,6 +54,9 @@ _FORGES = frozenset({"github.com", "gitlab.com", "codeberg.org", "bitbucket.org"
 _BUCKET_HOSTS = frozenset({"storage.googleapis.com", "s3.amazonaws.com"})
 _SOURCEFORGE = frozenset({"downloads.sourceforge.net", "sourceforge.net"})
 # Shared file hosts say nothing about which app a file belongs to.
+# Regional S3 endpoints, Backblaze B2 (/file/<bucket>) and DevMate (/<bundle id>) name their owner in the path.
+_S3_REGIONAL = re.compile(r"s3[.-][a-z0-9-]+\.amazonaws\.com")
+_B2_HOST = re.compile(r"f\d+\.backblazeb2\.com")
 _SHARED_HOSTS = frozenset({
     "dl.dropboxusercontent.com", "www.dropbox.com", "dropbox.com", "drive.google.com", "dl.google.com",
     "download.microsoft.com", "objects.githubusercontent.com",
@@ -71,8 +77,10 @@ def _download_source(cask: dict) -> str | None:
         return None
     if host in _FORGES:
         return "/".join([host, *parts[:2]]) if len(parts) >= 2 and all(parts[:2]) else None
-    if host in _BUCKET_HOSTS:
+    if host in _BUCKET_HOSTS or _S3_REGIONAL.fullmatch(host) or host == "dl.devmate.com":
         return f"{host}/{parts[0]}" if parts[0] else None
+    if _B2_HOST.fullmatch(host):
+        return f"backblazeb2.com/{parts[1]}" if len(parts) > 1 and parts[0] == "file" and parts[1] else None
     if host in _SOURCEFORGE:
         project = parts[1] if len(parts) > 1 and parts[0] in ("project", "projects") else ""
         return f"sourceforge.net/{project}" if project else None
@@ -112,38 +120,43 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
     def ours(ref: object) -> bool:
         return isinstance(ref, str) and bool(_REF.fullmatch(ref)) and ref.rsplit("/", 1)[0] in wanted
 
+    def mapping(key: str) -> dict:
+        value = collected.get(key) if isinstance(collected, dict) else None
+        return value if isinstance(value, dict) else {}
+
     casks = {
-        ref: cask for ref, cask in collected.get("casks", {}).items()
+        ref: cask for ref, cask in mapping("casks").items()
         if isinstance(cask, dict) and ours(ref)
         and cask.get("full_token") == ref and cask.get("token") == ref.rsplit("/", 1)[1]
     }
-    failed = collected.get("caskFailures")
-    read = collected.get("readTaps")
-    listed = collected.get("listed") if isinstance(collected.get("listed"), dict) else {}
     return {
         "casks": dict(sorted(casks.items())),
         "sameAs": aliases(casks, official),
-        "caskFailures": {ref: "" for ref in sorted(failed if isinstance(failed, dict) else {}) if ours(ref)},
-        "readTaps": sorted({name for name in (read if isinstance(read, list) else []) if name in wanted}),
+        "caskFailures": {ref: "" for ref in sorted(filter(ours, mapping("caskFailures")))},
         "listed": {tap: sorted(ref for ref in refs if ours(ref) and ref.rsplit("/", 1)[0] == tap)
-                   for tap, refs in sorted(listed.items()) if tap in wanted and isinstance(refs, list)},
+                   for tap, refs in sorted(mapping("listed").items(), key=lambda item: str(item[0]))
+                   if tap in wanted and isinstance(refs, list)},
     }
 
 
-def _info(refs: list[str], run) -> tuple[dict[str, dict], dict[str, str]]:
+def _info(refs: list[str], run, deadline: float | None = None, clock=time.monotonic) -> tuple[dict[str, dict], dict[str, str]]:
     """brew info fails whole when one named cask is broken, so halve until the broken ones stand alone."""
+    if not refs:
+        return {}, {}
+    if deadline is not None and clock() >= deadline:
+        return {}, {ref: "out of time" for ref in refs}
     result = run(["brew", "info", "--cask", "--json=v2", *refs])
     if result.returncode == 0:
         return by_ref(json.loads(result.stdout)), {}
     if len(refs) == 1:
         return {}, {refs[0]: result.stderr.strip()[-300:]}
     middle = len(refs) // 2
-    left, left_failed = _info(refs[:middle], run)
-    right, right_failed = _info(refs[middle:], run)
+    left, left_failed = _info(refs[:middle], run, deadline, clock)
+    right, right_failed = _info(refs[middle:], run, deadline, clock)
     return {**left, **right}, {**left_failed, **right_failed}
 
 
-def _read_tap(entry: dict, run) -> tuple[dict[str, dict], dict[str, str]]:
+def _read_tap(entry: dict, run, deadline: float | None = None) -> tuple[dict[str, dict], dict[str, str]]:
     name = entry["name"]
     for cmd in (
         ["brew", "tap", name, *([entry["remote"]] if entry.get("remote") else [])],
@@ -155,7 +168,7 @@ def _read_tap(entry: dict, run) -> tuple[dict[str, dict], dict[str, str]]:
     if info.returncode != 0:
         raise RuntimeError(f"tap-info failed: {info.stderr.strip()[-300:]}")
     refs = cask_refs(json.loads(info.stdout))
-    return _info(refs, run) if refs else ({}, {})
+    return _info(refs, run, deadline)
 
 
 def collect(entries: list[dict], run, official: dict[str, dict], *, budget: float | None = None,
@@ -164,12 +177,11 @@ def collect(entries: list[dict], run, official: dict[str, dict], *, budget: floa
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
     cask_failures: dict[str, str] = {}
-    read_taps: list[str] = []
     start = clock()
 
     def result(unreached: list[dict]) -> dict:
         return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
-                "caskFailures": dict(sorted(cask_failures.items())), "readTaps": sorted(read_taps),
+                "caskFailures": dict(sorted(cask_failures.items())),
                 "unreached": [entry["name"] for entry in unreached]}
 
     for index, entry in enumerate(entries):
@@ -177,11 +189,10 @@ def collect(entries: list[dict], run, official: dict[str, dict], *, budget: floa
             print(f"warning: budget spent; {len(entries) - index} taps wait for the next run")
             return result(entries[index:])
         try:
-            read, failed = _read_tap(entry, run)
+            read, failed = _read_tap(entry, run, None if budget is None else start + budget)
             casks.update(read)
             cask_failures.update(failed)
-            read_taps.append(entry["name"])
-        except (RuntimeError, ValueError, subprocess.TimeoutExpired) as error:
+        except (RuntimeError, ValueError, TypeError, AttributeError, subprocess.TimeoutExpired) as error:
             failures[entry["name"]] = str(error)
             print(f"warning: skipping {entry['name']}: {error}")
         on_progress(result([]))

@@ -11,9 +11,16 @@ from validate_taps import changed_entries, check_tap
 
 
 def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_title: str = "",
-            issue_titles: list[str] = (), check=check_tap) -> tuple[list[str], list[str], list[str]]:
+            issue_titles: list[str] = (), check=check_tap, data_taps: list[str] = ()) -> tuple[list[str], list[str], list[str]]:
     """Taps to process, taps to register, and taps removed from the registry whose data must go."""
     registered = [entry["name"] for entry in head]
+
+    def refusal(name: str) -> str | None:
+        try:
+            return check({"name": name})
+        except (subprocess.SubprocessError, OSError) as error:
+            return f"{name} could not be checked: {type(error).__name__}"
+
     if event == "push":
         removed = sorted({entry["name"] for entry in base} - set(registered))
         return [entry["name"] for entry in changed_entries(base, head)], [], removed
@@ -22,11 +29,12 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
         requested = {name for title in issue_titles if (name := tap_registry.parse_issue_title(title))}
         new = []
         for name in sorted(requested - set(registered)):
-            if error := check({"name": name}):
+            if error := refusal(name):
                 print(f"skipping requested tap: {error}")
             else:
                 new.append(name)
-        return sorted(registered + new), new, []
+        # A removal whose push run was dropped or failed is caught up here.
+        return sorted(registered + new), new, sorted(set(data_taps) - set(registered))
     if event == "workflow_dispatch":
         name = dispatch_tap.strip().lower()
         if error := tap_registry.validate_name(name):
@@ -40,7 +48,7 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
     if name in registered:
         return [name], [], []
     # A requested tap must exist and hold casks before any of its code runs.
-    if error := check({"name": name}):
+    if error := refusal(name):
         raise SystemExit(error)
     return [name], [name], []
 
@@ -72,6 +80,13 @@ def approved_issue_titles() -> list[str]:
     return titles
 
 
+def _data_taps() -> list[str]:
+    path = tap_registry.REPO_ROOT / "data" / "tap_categories.json"
+    data = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    refs = list(data.get("casks", {})) + list(data.get("sameAs", {}))
+    return sorted({ref.rsplit("/", 1)[0] for ref in refs if tap_registry.validate_name(ref.rsplit("/", 1)[0]) is None})
+
+
 def _base_entries(before: str) -> list[dict]:
     if not before or set(before) == {"0"}:
         return []
@@ -87,6 +102,7 @@ def main() -> int:
         dispatch_tap=os.environ.get("DISPATCH_TAP", ""),
         issue_title=os.environ.get("ISSUE_TITLE", ""),
         issue_titles=approved_issue_titles() if os.environ["EVENT_NAME"] == "schedule" else [],
+        data_taps=_data_taps(),
     )
     print(f"taps: {taps}, register: {register}, prune: {prune}")
     with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:

@@ -95,12 +95,17 @@ def png_problem(data: bytes) -> str | None:
         return "unsupported format"
     if offset != len(data):
         return "data after IEND"
+    row = 1 + width * (3 if color == 2 else 4)
+    inflater = zlib.decompressobj()
     try:
-        pixels = zlib.decompress(bytes(idat))
+        # Bounded, so a small IDAT can't inflate to gigabytes before the size check.
+        pixels = inflater.decompress(bytes(idat), height * row + 1)
     except zlib.error:
         return "bad image data"
-    if len(pixels) != height * (1 + width * (3 if color == 2 else 4)):
+    if len(pixels) != height * row or not inflater.eof or inflater.unused_data or inflater.unconsumed_tail:
         return "bad image data"
+    if any(pixels[i] > 4 for i in range(0, len(pixels), row)):
+        return "bad row filter"
     return None
 
 
@@ -109,11 +114,12 @@ def _tap_folder(root: Path, tap: str) -> Path | None:
     return folder if tap_registry.validate_name(tap) is None and folder.is_relative_to(root) and folder != root else None
 
 
-def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[str], run: dict | None = None) -> None:
+def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict] | None, taps: list[str], run: dict | None = None) -> None:
     """Copy icons into a checked-out icons branch and replace only `taps`' report entries; nothing outside taps/.
 
     `run` (from classify) names each fully read tap's refs that keep icons and the taps removed from the registry;
-    other icons and report entries of those taps are deleted.
+    other icons and report entries of those taps are deleted. `report` None (no extraction output) keeps the
+    branch report as it is.
     """
     root = (wt / TAPS_DIR).resolve()
     for ref, png in pngs.items():
@@ -128,17 +134,17 @@ def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[s
     for tap, refs in current.items():
         if folder := _tap_folder(root, tap):
             for png in folder.glob("*.png"):
-                if f"{tap}/{png.stem}" not in refs:
+                if f"{tap}/{png.stem}" not in refs and f"{tap}/{png.stem}" not in pngs:
                     png.unlink()
     for tap in pruned:
         if (folder := _tap_folder(root, tap)) and folder.exists():
             shutil.rmtree(folder)
 
     def kept(ref: str) -> bool:
-        return _tap(ref) not in pruned and (_tap(ref) not in current or ref in current[_tap(ref)])
+        return _tap(ref) not in pruned and (_tap(ref) not in current or ref in current[_tap(ref)] or ref in pngs)
 
     branch = json.loads((wt / REPORT).read_text(encoding="utf-8")) if (wt / REPORT).exists() else {}
-    merged = {ref: entry for ref, entry in branch.items() if _tap(ref) not in taps} | report
+    merged = branch if report is None else {ref: entry for ref, entry in branch.items() if _tap(ref) not in taps} | report
     write_json(wt / REPORT, dict(sorted((ref, entry) for ref, entry in merged.items() if kept(ref))))
 
 
@@ -151,7 +157,7 @@ def _branch_state() -> tuple[set[str], dict[str, dict]]:
     return published, (json.loads(shown.stdout) if shown.returncode == 0 else {})
 
 
-def publish(pngs: dict[str, Path], report: dict[str, dict], taps: list[str], run: dict | None = None) -> None:
+def publish(pngs: dict[str, Path], report: dict[str, dict] | None, taps: list[str], run: dict | None = None) -> None:
     wt = Path(tempfile.mkdtemp(prefix="tap-icons-wt-"))
     added = False
     try:
@@ -202,11 +208,14 @@ def publish_from(root: Path, taps: list[str], run_file: Path | None) -> None:
     folder = root / TAPS_DIR
     pngs = {ref: png for png in sorted(folder.glob("*/*/*.png"))
             if _tap(ref := str(png.relative_to(folder)).removesuffix(".png")) in taps}
-    report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
+    if not report_file.exists():
+        publish({}, None, taps, run)
+        return
+    report = json.loads(report_file.read_text(encoding="utf-8"))
     report = {ref: entry for ref, entry in report.items() if _tap(ref) in taps}
     # The extraction job opened untrusted installers; only well-formed PNGs reach the icons branch.
     for ref, png in list(pngs.items()):
-        if problem := png_problem(png.read_bytes()):
+        if problem := ("too large" if png.stat().st_size > MAX_PNG_BYTES else png_problem(png.read_bytes())):
             del pngs[ref]
             _record(report, ref, "failed", f"invalid png: {problem}")
     publish(pngs, report, taps, run)

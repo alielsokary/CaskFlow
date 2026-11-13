@@ -31,12 +31,15 @@ Gh = Callable[[list[str]], str]
 
 def list_casks(entry: dict, run=_git_run, workdir: Path | None = None) -> list[str] | None:
     """The tap's cask refs from its repository's file names (blob-less clone, no tap code run); None if unknown."""
-    with tempfile.TemporaryDirectory(dir=workdir) as clone:
-        cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
-                      tap_registry.remote_of(entry), clone])
-        if cloned.returncode != 0:
-            return None
-        listing = run(["git", "ls-tree", "-r", "--name-only", "HEAD", "Casks"], cwd=clone)
+    try:
+        with tempfile.TemporaryDirectory(dir=workdir) as clone:
+            cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
+                          tap_registry.remote_of(entry), clone])
+            if cloned.returncode != 0:
+                return None
+            listing = run(["git", "ls-tree", "-r", "--name-only", "HEAD", "Casks"], cwd=clone)
+    except (subprocess.SubprocessError, OSError):
+        return None
     if listing.returncode != 0:
         return None
     refs = sorted({f"{entry['name']}/{Path(path).stem}" for path in listing.stdout.splitlines() if path.endswith(".rb")})
@@ -79,7 +82,7 @@ def _download(gh: Gh, run_id: int, workdir: Path) -> dict | None:
         data = json.loads((folder / "tap_casks.json").read_text(encoding="utf-8"))
     except (subprocess.CalledProcessError, OSError, ValueError):
         return None
-    return data if isinstance(data, dict) else None
+    return data if isinstance(data, dict) and isinstance(data.get("casks"), dict) else None
 
 
 def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, batch_size: int, budget: float,
@@ -93,14 +96,13 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
     cask_failures: dict[str, str] = {}
-    read_taps: list[str] = []
     unreached: list[str] = []
     with ThreadPoolExecutor(max_workers=8) as pool:
         listed = {tap: refs for tap, refs in zip(taps, pool.map(lister, taps)) if refs}
 
     def result() -> dict:
         return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
-                "caskFailures": dict(sorted(cask_failures.items())), "readTaps": sorted(read_taps),
+                "caskFailures": dict(sorted(cask_failures.items())),
                 "listed": dict(sorted(listed.items())), "unreached": unreached}
 
     for nonce, group in groups.items():
@@ -114,10 +116,14 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
         if data is None:
             unreached.extend(group)
         else:
-            view = trusted_view(data, group, official)
+            try:
+                view = trusted_view(data, group, official)
+            except (TypeError, AttributeError, ValueError):
+                unreached.extend(group)
+                on_progress(result())
+                continue
             casks.update(view["casks"])
             cask_failures.update(view["caskFailures"])
-            read_taps.extend(view["readTaps"])
             reported = data.get("failures")
             failures.update({name: str(reason) for name, reason in (reported if isinstance(reported, dict) else {}).items()
                              if name in group})

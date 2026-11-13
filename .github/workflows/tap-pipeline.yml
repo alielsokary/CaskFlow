@@ -73,7 +73,7 @@ jobs:
           ISSUE: ${{ github.event.issue.number }}
         run: >-
           gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY"
-          --body "Couldn't find a tap with casks at that name. Check the title is \`Add tap: user/repo\` and that the repository has a Casks folder."
+          --body "The tap pipeline couldn't start for this request. Check the title is \`Add tap: user/repo\` and that the repository has a Casks folder; a maintainer can re-run it."
 
   collect:
     needs: resolve
@@ -198,6 +198,8 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       # No pip cache here, and artifacts only by the ID their own job reported:
       # collect ran tap code and could have uploaded look-alike artifacts.
       - uses: actions/setup-python@v5
@@ -221,8 +223,10 @@ jobs:
           PRUNE: ${{ needs.resolve.outputs.prune }}
         run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json
       - name: Register requested taps and those of an open tap data PR
+        id: register
         env:
           REGISTER: ${{ needs.resolve.outputs.register }}
+          PRUNE: ${{ needs.resolve.outputs.prune }}
           GH_TOKEN: ${{ github.token }}
         # Names are validated by tap_registry.py; word-splitting is intended.
         run: |
@@ -231,10 +235,19 @@ jobs:
           HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
             --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
           if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
-            CONTINUED="$(git show FETCH_HEAD:taps.json | jq -r '.taps[].name')"
+            # Only the taps that PR itself added: names master removed since stay removed.
+            git show "$(git merge-base HEAD FETCH_HEAD):taps.json" > "$RUNNER_TEMP/base-taps.json" \
+              || echo '{"version": 1, "taps": []}' > "$RUNNER_TEMP/base-taps.json"
+            git show FETCH_HEAD:taps.json > "$RUNNER_TEMP/pr-taps.json"
+            CONTINUED="$(python scripts/tap_registry.py --added-between "$RUNNER_TEMP/base-taps.json" "$RUNNER_TEMP/pr-taps.json" --except $PRUNE)"
           fi
           if [ -n "$REGISTER" ]; then python scripts/tap_registry.py --add $REGISTER --only-readable data/tap_run.json; fi
           if [ -n "$CONTINUED" ]; then python scripts/tap_registry.py --add $CONTINUED; fi
+          REFUSED=""
+          for name in $REGISTER; do
+            jq -e --arg name "$name" 'any(.taps[]; .name == $name)' taps.json > /dev/null || REFUSED="$REFUSED $name"
+          done
+          echo "refused=${REFUSED# }" >> "$GITHUB_OUTPUT"
       - name: Open a pull request
         id: pr
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
@@ -244,7 +257,7 @@ jobs:
           title: "feat(taps): update tap icons and categories"
           body: |
             Tap pipeline run ${{ github.run_id }} (${{ github.event_name }}).
-            ${{ github.event_name == 'issues' && format('Closes #{0}', github.event.issue.number) || '' }}
+            ${{ github.event_name == 'issues' && steps.register.outputs.refused == '' && format('Closes #{0}', github.event.issue.number) || '' }}
           branch: bot/tap-pipeline
           assignees: ${{ github.repository_owner }}
           add-paths: |
@@ -252,9 +265,17 @@ jobs:
             data/tap_categories.json
             data/tap_homepage_metadata.json
       - name: Link the pull request on the issue
-        if: github.event_name == 'issues' && steps.pr.outputs.pull-request-url != ''
+        if: github.event_name == 'issues' && steps.pr.outputs.pull-request-url != '' && steps.register.outputs.refused == ''
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE: ${{ github.event.issue.number }}
           PR_URL: ${{ steps.pr.outputs.pull-request-url }}
         run: gh issue comment "$ISSUE" --body "Opened $PR_URL with the tap's icons and categories."
+      - name: Tell the requester the tap wasn't added
+        if: github.event_name == 'issues' && steps.register.outputs.refused != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: >-
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          --body "This tap wasn't added: none of its casks could be read. A maintainer can check the run log."

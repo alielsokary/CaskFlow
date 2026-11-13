@@ -130,3 +130,8 @@ def test_run_file_keeps_icons_for_every_listed_cask():
     run = classify.run_file(view(["u/r/a", "u/r/b"], failures=["u/r/c"], listed={"u/r": ["u/r/a", "u/r/b", "u/r/c"]},
                                  same_as={"u/r/b": "b"}), ["g/t"])
     assert run == {"readable": ["u/r"], "current": {"u/r": ["u/r/a", "u/r/b", "u/r/c"]}, "prunedTaps": ["g/t"]}
+
+
+def test_an_empty_listing_prunes_nothing():
+    pruned, removed = classify.prune(data(["u/r/x"]), view(listed={"u/r": []}), [])
+    assert "u/r/x" in pruned["casks"] and removed == []

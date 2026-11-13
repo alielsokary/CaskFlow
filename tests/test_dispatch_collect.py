@@ -66,7 +66,7 @@ def test_each_run_only_speaks_for_its_own_taps(tmp_path):
     result = run_collect(gh, ["a/a", "b/b"], tmp_path)
 
     assert sorted(result["casks"]) == ["a/a/x", "b/b/real"]
-    assert result["readTaps"] == ["a/a"] and result["caskFailures"] == {}
+    assert result["caskFailures"] == {} and "readTaps" not in result
     dispatches = [call for call in gh.calls if call[:2] == ["workflow", "run"]]
     assert all("--ref" in call and "master" in call for call in dispatches) and len(dispatches) == 2
 
@@ -132,3 +132,21 @@ def test_list_casks_reads_cask_file_names_without_running_them(tmp_path):
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == ["u/r/sharded", "u/r/sill"]
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree, clone_code=1), tmp_path) is None
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(""), tmp_path) is None
+
+
+def test_malformed_batch_output_only_loses_its_batch(tmp_path):
+    gh = FakeGitHub({
+        "a/a": {"readTaps": [[]], "casks": [], "caskFailures": [["x"]]},
+        "b/b": {"casks": {"b/b/real": cask("b/b/real")}},
+    })
+
+    result = run_collect(gh, ["a/a", "b/b"], tmp_path)
+
+    assert sorted(result["casks"]) == ["b/b/real"] and "a/a" in result["unreached"]
+
+
+def test_list_casks_treats_a_hung_clone_as_unknown(tmp_path):
+    def run(cmd, cwd=None):
+        raise subprocess.TimeoutExpired(cmd, 120)
+
+    assert dispatch_collect.list_casks({"name": "u/r"}, run, tmp_path) is None

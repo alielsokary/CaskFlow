@@ -64,7 +64,7 @@ def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, li
     """
     casks = dict(existing.get("casks", {}))
     aliases = dict(existing.get("sameAs", {}))
-    listed = {tap: set(refs) for tap, refs in view.get("listed", {}).items()}
+    listed = {tap: set(refs) for tap, refs in view.get("listed", {}).items() if refs}
     present, now_aliased = set(view["casks"]), view.get("sameAs", {})
     removed: set[str] = set()
     for ref in set(casks) | set(aliases):

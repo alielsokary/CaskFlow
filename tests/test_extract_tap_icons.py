@@ -284,3 +284,63 @@ def test_publish_from_refuses_invalid_icons(tmp_path, monkeypatch):
 
     assert seen["pngs"] == {"u/r/good"}
     assert seen["report"]["u/r/bad"]["status"] == "failed" and seen["report"]["u/r/bad"]["reason"].startswith("invalid png")
+
+
+def test_missing_extraction_output_keeps_the_branch_report(tmp_path):
+    (tmp_path / "taps").mkdir()
+    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
+        "u/r/b": {"status": "no_icon"}, "u/r/c": {"status": "failed", "attempts": 3}, "u/r/gone": {"status": "no_icon"},
+    }), encoding="utf-8")
+
+    tap_icons.stage(tmp_path, {}, None, ["u/r"], {"current": {"u/r": ["u/r/b", "u/r/c"]}, "prunedTaps": []})
+
+    assert json.loads((tmp_path / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {
+        "u/r/b": {"status": "no_icon"}, "u/r/c": {"status": "failed", "attempts": 3},
+    }
+
+
+def test_publish_from_without_extraction_output_passes_no_report(tmp_path, monkeypatch):
+    run_file = tmp_path / "tap_run.json"
+    run_file.write_text(json.dumps({"current": {"u/r": ["u/r/b"]}, "prunedTaps": []}), encoding="utf-8")
+    seen = {}
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps, run: seen.update(report=report))
+
+    tap_icons.publish_from(tmp_path / "missing", ["u/r"], run_file)
+
+    assert seen == {"report": None}
+
+
+def test_icons_published_this_run_survive_a_stale_listing(tmp_path):
+    png = tmp_path / "new.png"
+    png.write_bytes(make_png(16, 16))
+
+    tap_icons.stage(tmp_path, {"u/r/new": png}, {}, ["u/r"], {"current": {"u/r": ["u/r/old"]}, "prunedTaps": []})
+
+    assert (tmp_path / "taps" / "u" / "r" / "new.png").exists()
+
+
+def _with_idat(png_args, idat):
+    return make_png(*png_args, idat=idat)
+
+
+@pytest.mark.parametrize("png", [
+    _with_idat((8, 8), zlib.compress(b"".join(b"\x00" + bytes(32) for _ in range(8))) + b"junk"),
+    _with_idat((8, 8), zlib.compress(b"".join(b"\x09" + bytes(32) for _ in range(8)))),
+    _with_idat((8, 8), zlib.compress(bytes(50 * 1024 * 1024))),
+])
+def test_png_image_data_must_match_exactly(png):
+    assert tap_icons.png_problem(png) is not None
+
+
+def test_publish_from_skips_oversized_files_without_reading_them(tmp_path, monkeypatch):
+    (tmp_path / "taps" / "u" / "r").mkdir(parents=True)
+    big = tmp_path / "taps" / "u" / "r" / "big.png"
+    big.write_bytes(bytes(tap_icons.MAX_PNG_BYTES + 1))
+    (tmp_path / "taps" / "icon_report.json").write_text("{}", encoding="utf-8")
+    seen = {}
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps, run: seen.update(pngs=set(pngs), report=report))
+    monkeypatch.setattr(Path, "read_bytes", lambda self: (_ for _ in ()).throw(AssertionError(f"read {self}")))
+
+    tap_icons.publish_from(tmp_path, ["u/r"], None)
+
+    assert seen["pngs"] == set() and seen["report"]["u/r/big"]["reason"] == "invalid png: too large"

@@ -159,7 +159,6 @@ def test_collect_records_cask_failures_and_read_taps():
 
     assert list(result["casks"]) == ["u/r/good"]
     assert list(result["caskFailures"]) == ["u/r/bad"]
-    assert result["readTaps"] == ["u/r"]
     assert "gone/tap" in result["failures"]
 
 
@@ -174,7 +173,6 @@ def test_trusted_view_filters_failures_and_read_taps():
     view = collect.trusted_view(collected, ["u/r"], {})
 
     assert view["caskFailures"] == {"u/r/bad": ""}
-    assert view["readTaps"] == ["u/r"]
     assert view["listed"] == {"u/r": ["u/r/a"]}
 
 
@@ -219,3 +217,54 @@ def test_same_app_never_matches_on_missing_or_shared_sources():
     other_repo = cask("foo", "foo", "https://b.example", "https://gitlab.com/y/foo/-/releases/1/Foo.dmg", app)
     assert collect.same_app(lab_tap, lab_official)
     assert not collect.same_app(lab_tap, other_repo)
+
+
+def test_info_with_no_refs_asks_nothing():
+    run, calls = info_brew(set())
+    assert collect._info([], run) == ({}, {}) and calls == []
+
+
+def test_info_gives_up_on_the_rest_at_its_deadline():
+    refs = [f"u/r/b{i}" for i in range(8)]
+    run, calls = info_brew(set(refs))
+    ticks = iter(range(100))
+
+    casks, failures = collect._info(refs, run, deadline=3, clock=lambda: next(ticks))
+
+    assert casks == {} and set(failures) == set(refs)
+    assert sum(reason == "out of time" for reason in failures.values()) >= 4 and len(calls) <= 4
+
+
+def test_odd_brew_output_fails_only_its_tap():
+    tap_info = json.dumps([{"name": "x", "cask_tokens": ["u/r/a"]}])
+
+    def run(cmd):
+        if cmd[1] == "tap-info":
+            return subprocess.CompletedProcess(cmd, 0, stdout=tap_info, stderr="")
+        if cmd[1] == "info":
+            return subprocess.CompletedProcess(cmd, 0, stdout="[1]", stderr="")
+        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    result = collect.collect([{"name": "u/r"}, {"name": "o/t"}], run, {})
+
+    assert set(result["failures"]) == {"u/r", "o/t"} and result["casks"] == {}
+
+
+@pytest.mark.parametrize("collected", [
+    {"casks": [], "caskFailures": [["x"]], "listed": {"u/r": "x"}},
+    {"casks": {"u/r/a": "not a dict"}, "readTaps": [["x"]]},
+    {"casks": None, "sameAs": [], "listed": [["u/r"]]},
+])
+def test_trusted_view_survives_malformed_output(collected):
+    view = collect.trusted_view(collected, ["u/r"], {})
+    assert view["casks"] == {} and view["caskFailures"] == {} and view["listed"] == {}
+    assert "readTaps" not in view
+
+
+@pytest.mark.parametrize("url,expected", [
+    ("https://s3.us-west-2.amazonaws.com/bkt/x.dmg", "s3.us-west-2.amazonaws.com/bkt"),
+    ("https://f001.backblazeb2.com/file/bkt/x.dmg", "backblazeb2.com/bkt"),
+    ("https://dl.devmate.com/com.vendor.app/x.dmg", "dl.devmate.com/com.vendor.app"),
+])
+def test_more_shared_hosts_narrow_to_their_owner(url, expected):
+    assert collect._download_source({"url": url}) == expected
