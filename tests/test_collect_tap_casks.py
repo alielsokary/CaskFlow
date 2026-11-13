@@ -113,3 +113,64 @@ def test_collect_stops_at_its_budget_and_hands_over_each_tap():
     assert [cmd[2] for cmd in calls if cmd[1] == "tap"] == ["a/b", "c/d"]
     assert result["unreached"] == ["e/f"]
     assert len(seen) == 2 and seen[-1]["unreached"] == []
+
+
+def info_brew(broken):
+    """brew info prints nothing and exits 1 when any named cask is broken, like the real one."""
+    calls = []
+
+    def run(cmd):
+        calls.append(cmd)
+        refs = cmd[4:]
+        if broken & set(refs):
+            return subprocess.CompletedProcess(cmd, 1, stdout="", stderr=f"Error: Cask '{sorted(broken & set(refs))[0]}' is unavailable")
+        casks = [{"token": ref.rsplit("/", 1)[1], "full_token": ref} for ref in refs]
+        return subprocess.CompletedProcess(cmd, 0, stdout=json.dumps({"formulae": [], "casks": casks}), stderr="")
+
+    return run, calls
+
+
+def test_info_bisects_around_broken_casks():
+    refs = [f"u/r/b{i}" for i in range(40)]
+    broken = {"u/r/b3", "u/r/b17", "u/r/b29"}
+    run, calls = info_brew(broken)
+
+    casks, failures = collect._info(refs, run)
+
+    assert len(casks) == 37 and not broken & set(casks)
+    assert set(failures) == broken
+    assert len(calls) < 40
+
+
+def test_collect_records_cask_failures_and_read_taps():
+    tap_info = json.dumps([{"name": "u/r", "cask_tokens": ["u/r/good", "u/r/bad"]}])
+    info_run, _ = info_brew({"u/r/bad"})
+
+    def run(cmd):
+        if cmd[1] == "tap" and cmd[2] == "gone/tap":
+            return subprocess.CompletedProcess(cmd, 1, stdout="", stderr="boom")
+        if cmd[1] == "tap-info":
+            return subprocess.CompletedProcess(cmd, 0, stdout=tap_info, stderr="")
+        if cmd[1] == "info":
+            return info_run(cmd)
+        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    result = collect.collect([{"name": "u/r"}, {"name": "gone/tap"}], run, {})
+
+    assert list(result["casks"]) == ["u/r/good"]
+    assert list(result["caskFailures"]) == ["u/r/bad"]
+    assert result["readTaps"] == ["u/r"]
+    assert "gone/tap" in result["failures"]
+
+
+def test_trusted_view_filters_failures_and_read_taps():
+    collected = {
+        "casks": {},
+        "caskFailures": {"u/r/bad": "Error: something `@mention`", "o/t/x": "forged", "../evil": "x"},
+        "readTaps": ["u/r", "o/t"],
+    }
+
+    view = collect.trusted_view(collected, ["u/r"], {})
+
+    assert view["caskFailures"] == {"u/r/bad": ""}
+    assert view["readTaps"] == ["u/r"]

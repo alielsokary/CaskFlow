@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import aliases, load_official, trusted_view
+from collect_tap_casks import _REF, aliases, load_official, trusted_view
 from style_standards import write_json
 
 WORKFLOW = "tap-collect.yml"
@@ -74,11 +74,14 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
     deadline = clock() + budget
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
+    cask_failures: dict[str, str] = {}
+    read_taps: list[str] = []
     unreached: list[str] = []
 
     def result() -> dict:
-        return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official),
-                "failures": failures, "unreached": unreached}
+        return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
+                "caskFailures": dict(sorted(cask_failures.items())), "readTaps": sorted(read_taps),
+                "unreached": unreached}
 
     for nonce, group in groups.items():
         run_id = runs.get(nonce)
@@ -91,7 +94,10 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
         if data is None:
             unreached.extend(group)
         else:
-            casks.update(trusted_view(data, group, official)["casks"])
+            view = trusted_view(data, group, official)
+            casks.update(view["casks"])
+            cask_failures.update(view["caskFailures"])
+            read_taps.extend(view["readTaps"])
             reported = data.get("failures")
             failures.update({name: str(reason) for name, reason in (reported if isinstance(reported, dict) else {}).items()
                              if name in group})
@@ -99,6 +105,26 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
             unreached.extend(name for name in (left if isinstance(left, list) else []) if name in group)
         on_progress(result())
     return result()
+
+
+def summary(result: dict) -> str:
+    """Names only, each re-validated: collected text came from tap code."""
+    def names(values: object, valid) -> list[str]:
+        return sorted(value for value in (values or []) if isinstance(value, str) and valid(value))
+
+    def is_tap(name: str) -> bool:
+        return tap_registry.validate_name(name) is None
+
+    sections = (
+        ("Taps that failed", names(result.get("failures"), is_tap)),
+        ("Casks that failed to load", names(result.get("caskFailures"), lambda ref: bool(_REF.fullmatch(ref)))),
+        ("Taps left for the next run", names(result.get("unreached"), is_tap)),
+    )
+    lines = ["### Tap collect"]
+    for title, items in sections:
+        if items:
+            lines += [f"{title} ({len(items)}):", *(f"- {item}" for item in items)]
+    return "\n".join(lines) + "\n"
 
 
 def _gh(args: list[str]) -> str:
@@ -119,8 +145,12 @@ def main(argv: list[str] | None = None) -> int:
         write_json(args.out, result, trailing_newline=True)
 
     with tempfile.TemporaryDirectory() as workdir:
-        save(collect(args.taps, _gh, os.environ["GITHUB_REF_NAME"], load_official(), batch_size=args.batch_size,
-                     budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save))
+        result = collect(args.taps, _gh, os.environ["GITHUB_REF_NAME"], load_official(), batch_size=args.batch_size,
+                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save)
+    save(result)
+    if step_summary := os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(step_summary, "a", encoding="utf-8") as handle:
+            handle.write(summary(result))
     return 0
 
 

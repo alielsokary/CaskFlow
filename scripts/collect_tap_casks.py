@@ -84,15 +84,39 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
     aliases from the official API instead of trusting the file.
     """
     wanted = set(taps)
+
+    def ours(ref: object) -> bool:
+        return isinstance(ref, str) and bool(_REF.fullmatch(ref)) and ref.rsplit("/", 1)[0] in wanted
+
     casks = {
         ref: cask for ref, cask in collected.get("casks", {}).items()
-        if isinstance(cask, dict) and _REF.fullmatch(ref) and ref.rsplit("/", 1)[0] in wanted
+        if isinstance(cask, dict) and ours(ref)
         and cask.get("full_token") == ref and cask.get("token") == ref.rsplit("/", 1)[1]
     }
-    return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official)}
+    failed = collected.get("caskFailures")
+    read = collected.get("readTaps")
+    return {
+        "casks": dict(sorted(casks.items())),
+        "sameAs": aliases(casks, official),
+        "caskFailures": {ref: "" for ref in sorted(failed if isinstance(failed, dict) else {}) if ours(ref)},
+        "readTaps": sorted({name for name in (read if isinstance(read, list) else []) if name in wanted}),
+    }
 
 
-def _read_tap(entry: dict, run) -> dict[str, dict]:
+def _info(refs: list[str], run) -> tuple[dict[str, dict], dict[str, str]]:
+    """brew info fails whole when one named cask is broken, so halve until the broken ones stand alone."""
+    result = run(["brew", "info", "--cask", "--json=v2", *refs])
+    if result.returncode == 0:
+        return by_ref(json.loads(result.stdout)), {}
+    if len(refs) == 1:
+        return {}, {refs[0]: result.stderr.strip()[-300:]}
+    middle = len(refs) // 2
+    left, left_failed = _info(refs[:middle], run)
+    right, right_failed = _info(refs[middle:], run)
+    return {**left, **right}, {**left_failed, **right_failed}
+
+
+def _read_tap(entry: dict, run) -> tuple[dict[str, dict], dict[str, str]]:
     name = entry["name"]
     for cmd in (
         ["brew", "tap", name, *([entry["remote"]] if entry.get("remote") else [])],
@@ -104,12 +128,7 @@ def _read_tap(entry: dict, run) -> dict[str, dict]:
     if info.returncode != 0:
         raise RuntimeError(f"tap-info failed: {info.stderr.strip()[-300:]}")
     refs = cask_refs(json.loads(info.stdout))
-    if not refs:
-        return {}
-    casks = run(["brew", "info", "--cask", "--json=v2", *refs])
-    if casks.returncode != 0:
-        raise RuntimeError(f"brew info failed: {casks.stderr.strip()[-300:]}")
-    return by_ref(json.loads(casks.stdout))
+    return _info(refs, run) if refs else ({}, {})
 
 
 def collect(entries: list[dict], run, official: dict[str, dict], *, budget: float | None = None,
@@ -117,10 +136,13 @@ def collect(entries: list[dict], run, official: dict[str, dict], *, budget: floa
     """Read taps until `budget` seconds pass; taps left over are `unreached` and wait for the next run."""
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
+    cask_failures: dict[str, str] = {}
+    read_taps: list[str] = []
     start = clock()
 
     def result(unreached: list[dict]) -> dict:
         return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
+                "caskFailures": dict(sorted(cask_failures.items())), "readTaps": sorted(read_taps),
                 "unreached": [entry["name"] for entry in unreached]}
 
     for index, entry in enumerate(entries):
@@ -128,7 +150,10 @@ def collect(entries: list[dict], run, official: dict[str, dict], *, budget: floa
             print(f"warning: budget spent; {len(entries) - index} taps wait for the next run")
             return result(entries[index:])
         try:
-            casks.update(_read_tap(entry, run))
+            read, failed = _read_tap(entry, run)
+            casks.update(read)
+            cask_failures.update(failed)
+            read_taps.append(entry["name"])
         except (RuntimeError, ValueError, subprocess.TimeoutExpired) as error:
             failures[entry["name"]] = str(error)
             print(f"warning: skipping {entry['name']}: {error}")
