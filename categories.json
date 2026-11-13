@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-12",
-  "totalCasks": 4982,
+  "generatedDate": "2026-11-13",
+  "totalCasks": 4986,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -10022,6 +10022,13 @@
       "primary": "designGraphics",
       "secondary": []
     },
+    "lattice": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "scienceEducation"
+      ]
+    },
     "launchbar": {
       "primary": "utilities",
       "secondary": [
@@ -16887,6 +16894,10 @@
         "utilities"
       ]
     },
+    "sable": {
+      "primary": "communication",
+      "secondary": []
+    },
     "sabnzbd": {
       "primary": "utilities",
       "secondary": []
@@ -17528,6 +17539,10 @@
     },
     "shutter-encoder": {
       "primary": "videoMedia",
+      "secondary": []
+    },
+    "sidebarfavorites-manager": {
+      "primary": "utilities",
       "secondary": []
     },
     "sidenotes": {
@@ -22475,6 +22490,10 @@
     },
     "yandex-disk": {
       "primary": "cloudStorage",
+      "secondary": []
+    },
+    "yandex-document": {
+      "primary": "officeTools",
       "secondary": []
     },
     "yandex-music": {
