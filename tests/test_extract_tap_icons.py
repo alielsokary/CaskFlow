@@ -124,9 +124,9 @@ def test_publish_from_keeps_only_the_runs_taps(tmp_path, monkeypatch):
     (tmp_path / "taps" / "icon_report.json").write_text(
         '{"u/r/gone": {"status": "no_icon"}, "evil/tap/x": {"status": "no_icon"}}', encoding="utf-8")
     seen = {}
-    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps: seen.update(pngs=set(pngs), report=set(report), taps=taps))
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps, run: seen.update(pngs=set(pngs), report=set(report), taps=taps))
 
-    tap_icons.publish_from(tmp_path, ["u/r"])
+    tap_icons.publish_from(tmp_path, ["u/r"], None)
 
     assert seen == {"pngs": {"u/r/keep"}, "report": {"u/r/gone"}, "taps": ["u/r"]}
 
@@ -149,7 +149,7 @@ def test_stage_replaces_only_the_runs_taps_in_the_branch_report(tmp_path):
 def test_publish_from_without_extraction_output_publishes_nothing(tmp_path, monkeypatch):
     monkeypatch.setattr(tap_icons, "publish", lambda *args: (_ for _ in ()).throw(AssertionError("published")))
 
-    tap_icons.publish_from(tmp_path, ["u/r"])
+    tap_icons.publish_from(tmp_path, ["u/r"], None)
 
 
 def test_icon_push_replays_onto_a_concurrent_writer(tmp_path):
@@ -190,3 +190,36 @@ def test_icon_push_replays_onto_a_concurrent_writer(tmp_path):
     assert set(show("ls-tree", "-r", "--name-only", "icons").split()) == {"a.png", "b.png", "icons.json", "taps/u/r/t.png"}
     manifest = json.loads(show("show", "icons:icons.json"))
     assert set(manifest["hashes"]) == {"a", "b"} and set(manifest["taps"]) == {"u/r/t"}
+
+
+def test_stage_deletes_icons_and_report_entries_that_are_no_longer_current(tmp_path):
+    git = git_repo(tmp_path)
+    for ref in ("u/r/old", "u/r/keep", "g/t/x", "o/t/z"):
+        (tmp_path / "taps" / Path(ref).parent).mkdir(parents=True, exist_ok=True)
+        (tmp_path / "taps" / f"{ref}.png").write_bytes(ref.encode())
+    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
+        "u/r/old": {"status": "no_icon"}, "g/t/x": {"status": "no_icon"}, "o/t/z": {"status": "no_icon"},
+    }), encoding="utf-8")
+    git("add", "-A")
+    git("commit", "-q", "-m", "seed")
+
+    run = {"current": {"u/r": ["u/r/keep"], "../evil": ["../evil/x"]}, "prunedTaps": ["g/t", ".."]}
+    tap_icons.stage(tmp_path, {}, {}, ["u/r", "g/t"], run)
+    git("add", "-A", "--", "taps")
+    extract_icons.write_icon_manifest(tmp_path)
+
+    left = sorted(str(p.relative_to(tmp_path)) for p in (tmp_path / "taps").rglob("*.png"))
+    assert left == ["taps/o/t/z.png", "taps/u/r/keep.png"]
+    assert json.loads((tmp_path / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {"o/t/z": {"status": "no_icon"}}
+    assert set(json.loads((tmp_path / "icons.json").read_text(encoding="utf-8"))["taps"]) == {"o/t/z", "u/r/keep"}
+
+
+def test_publish_from_with_only_removals_publishes(tmp_path, monkeypatch):
+    run_file = tmp_path / "tap_run.json"
+    run_file.write_text(json.dumps({"readable": [], "current": {}, "prunedTaps": ["g/t"]}), encoding="utf-8")
+    seen = {}
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps, run: seen.update(run=run, taps=taps))
+
+    tap_icons.publish_from(tmp_path / "missing", ["g/t"], run_file)
+
+    assert seen == {"run": {"current": {}, "prunedTaps": ["g/t"]}, "taps": ["g/t"]}

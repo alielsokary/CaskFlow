@@ -21,6 +21,7 @@ from style_standards import write_json
 
 TAP_CATEGORIES_PATH = REPO_ROOT / "data" / "tap_categories.json"
 # Separate from the official homepage cache so the tap pipeline never edits official data.
+TAP_RUN_PATH = REPO_ROOT / "data" / "tap_run.json"
 TAP_HOMEPAGE_CACHE = REPO_ROOT / "data" / "tap_homepage_metadata.json"
 VERSION = 1
 
@@ -51,6 +52,41 @@ def merge(existing: dict, classifications: dict[str, Classification], same_as: d
     }
 
 
+def _tap(ref: str) -> str:
+    return ref.rsplit("/", 1)[0]
+
+
+def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, list[str]]:
+    """Drop what is gone: casks missing from a fully read tap, stale aliases, and taps removed from taps.json."""
+    casks = dict(existing.get("casks", {}))
+    aliases = dict(existing.get("sameAs", {}))
+    read, present = set(view.get("readTaps", [])), set(view["casks"])
+    failed, now_aliased = set(view.get("caskFailures", {})), view.get("sameAs", {})
+    removed: set[str] = set()
+    for ref in set(casks) | set(aliases):
+        if _tap(ref) in removed_taps or (_tap(ref) in read and ref not in present and ref not in failed):
+            casks.pop(ref, None)
+            aliases.pop(ref, None)
+            removed.add(ref)
+        elif ref in present and ref in now_aliased and casks.pop(ref, None) is not None:
+            removed.add(ref)
+        elif ref in present and ref not in now_aliased:
+            aliases.pop(ref, None)
+    aliases.update(now_aliased)
+    return {**existing, "casks": casks, "sameAs": aliases}, sorted(removed)
+
+
+def run_file(view: dict, removed_taps: list[str]) -> dict:
+    """What publish needs from this run: taps that yielded casks, and per fully read tap the refs that keep icons."""
+    aliased = set(view.get("sameAs", {}))
+    keep = (set(view["casks"]) - aliased) | set(view.get("caskFailures", {}))
+    return {
+        "readable": sorted({_tap(ref) for ref in view["casks"]}),
+        "current": {tap: sorted(ref for ref in keep if _tap(ref) == tap) for tap in sorted(view.get("readTaps", []))},
+        "prunedTaps": sorted(removed_taps),
+    }
+
+
 def fetch_tap_homepages(refs: set[str], casks: dict[str, dict], cache: dict[str, dict]) -> dict[str, dict]:
     """Fetch homepages tap authors control: public hosts only, redirects included."""
     opener = public_opener()
@@ -75,14 +111,16 @@ def make_client() -> LLMClient:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--collected", type=Path, required=True, help="tap_casks.json from collect_tap_casks.py")
-    parser.add_argument("--taps", nargs="+", required=True, help="Taps this run was asked to process")
+    parser.add_argument("--taps", nargs="*", required=True, help="Taps this run was asked to process")
+    parser.add_argument("--prune", nargs="*", default=[], help="Taps removed from taps.json")
     args = parser.parse_args(argv)
-    if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
+    if invalid := [error for name in args.taps + args.prune if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
 
     # The collect job ran tap code, so its file is only trusted through this view.
     collected = trusted_view(json.loads(args.collected.read_text(encoding="utf-8")), args.taps, load_official())
-    existing = load_existing(TAP_CATEGORIES_PATH)
+    existing, removed = prune(load_existing(TAP_CATEGORIES_PATH), collected, args.prune)
+    print(f"removed: {len(removed)}")
     refs = pending_refs(collected, existing)
     print(f"tap casks: {len(collected['casks'])}, aliased: {len(collected.get('sameAs', {}))}, to classify: {len(refs)}")
 
@@ -97,6 +135,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"skipped {ref}: {reason}")
 
     write_json(TAP_CATEGORIES_PATH, merge(existing, classifications, collected.get("sameAs", {})), trailing_newline=True)
+    write_json(TAP_RUN_PATH, run_file(collected, args.prune), trailing_newline=True)
     return 0
 
 

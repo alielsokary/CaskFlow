@@ -11,15 +11,17 @@ from validate_taps import changed_entries
 
 
 def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_title: str = "",
-            issue_titles: list[str] = ()) -> tuple[list[str], list[str]]:
+            issue_titles: list[str] = ()) -> tuple[list[str], list[str], list[str]]:
+    """Taps to process, taps to register, and taps removed from the registry whose data must go."""
     registered = [entry["name"] for entry in head]
     if event == "push":
-        return [entry["name"] for entry in changed_entries(base, head)], []
+        removed = sorted({entry["name"] for entry in base} - set(registered))
+        return [entry["name"] for entry in changed_entries(base, head)], [], removed
     if event == "schedule":
         # A labeled issue whose run was dropped from the concurrency queue is picked up here.
         requested = {name for title in issue_titles if (name := tap_registry.parse_issue_title(title))}
         new = sorted(requested - set(registered))
-        return sorted(registered + new), new
+        return sorted(registered + new), new, []
     if event == "workflow_dispatch":
         name = dispatch_tap.strip().lower()
         if error := tap_registry.validate_name(name):
@@ -30,7 +32,7 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
             raise SystemExit("the issue title is not 'Add tap: user/repo'")
     else:
         raise SystemExit(f"unsupported event {event!r}")
-    return [name], [] if name in registered else [name]
+    return [name], [] if name in registered else [name], []
 
 
 def approved(events: list[dict]) -> bool:
@@ -68,7 +70,7 @@ def _base_entries(before: str) -> list[dict]:
 
 
 def main() -> int:
-    taps, register = resolve(
+    taps, register, prune = resolve(
         os.environ["EVENT_NAME"],
         base=_base_entries(os.environ.get("BEFORE_SHA", "")),
         head=tap_registry.load(),
@@ -76,9 +78,9 @@ def main() -> int:
         issue_title=os.environ.get("ISSUE_TITLE", ""),
         issue_titles=approved_issue_titles() if os.environ["EVENT_NAME"] == "schedule" else [],
     )
-    print(f"taps: {taps}, register: {register}")
+    print(f"taps: {taps}, register: {register}, prune: {prune}")
     with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
-        output.write(f"taps={' '.join(taps)}\nregister={' '.join(register)}\n")
+        output.write(f"taps={' '.join(taps)}\nregister={' '.join(register)}\nprune={' '.join(prune)}\n")
     return 0
 
 

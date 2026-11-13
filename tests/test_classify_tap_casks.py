@@ -80,3 +80,46 @@ def test_non_public_homepages_are_never_fetched(monkeypatch):
 
     assert called == ["https://ok.dev"]
     assert cache["a/b/meta"]["error"] == "non_public_url"
+
+
+def view(casks=(), failures=(), read=(), same_as=None):
+    return {"casks": {ref: {} for ref in casks}, "caskFailures": {ref: "" for ref in failures},
+            "readTaps": list(read), "sameAs": same_as or {}}
+
+
+def data(casks=(), same_as=None):
+    return {"version": 1, "generatedDate": "", "casks": {ref: {"primary": "utilities", "secondary": []} for ref in casks},
+            "sameAs": same_as or {}}
+
+
+def test_renamed_cask_drops_the_old_ref():
+    pruned, removed = classify.prune(data(["u/r/old"]), view(["u/r/new"], read=["u/r"]), [])
+    assert "u/r/old" not in pruned["casks"] and removed == ["u/r/old"]
+
+
+def test_failed_casks_are_never_pruned():
+    pruned, removed = classify.prune(data(["u/r/x"]), view(failures=["u/r/x"], read=["u/r"]), [])
+    assert "u/r/x" in pruned["casks"] and removed == []
+
+
+def test_unread_taps_keep_their_data():
+    pruned, removed = classify.prune(data(["v/w/y"], {"v/w/z": "z"}), view(read=["u/r"]), [])
+    assert pruned["casks"] == data(["v/w/y"])["casks"] and pruned["sameAs"] == {"v/w/z": "z"} and removed == []
+
+
+def test_alias_follows_the_latest_comparison():
+    pruned, removed = classify.prune(data(["u/r/b"], {"u/r/a": "a"}), view(["u/r/a", "u/r/b"], read=["u/r"],
+                                                                         same_as={"u/r/b": "b"}), [])
+    assert "u/r/a" not in pruned["sameAs"]
+    assert "u/r/b" not in pruned["casks"] and pruned["sameAs"]["u/r/b"] == "b" and removed == ["u/r/b"]
+
+
+def test_removed_taps_lose_everything():
+    pruned, removed = classify.prune(data(["g/t/x"], {"g/t/y": "y"}), view(), ["g/t"])
+    assert pruned["casks"] == {} and pruned["sameAs"] == {} and removed == ["g/t/x", "g/t/y"]
+
+
+def test_run_file_lists_readable_taps_and_the_refs_that_keep_icons():
+    run = classify.run_file(view(["u/r/a", "u/r/b"], failures=["u/r/c"], read=["u/r", "e/t"], same_as={"u/r/b": "b"}),
+                            ["g/t"])
+    assert run == {"readable": ["u/r"], "current": {"e/t": [], "u/r": ["u/r/a", "u/r/c"]}, "prunedTaps": ["g/t"]}

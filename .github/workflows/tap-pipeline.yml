@@ -41,6 +41,7 @@ jobs:
     outputs:
       taps: ${{ steps.resolve.outputs.taps }}
       register: ${{ steps.resolve.outputs.register }}
+      prune: ${{ steps.resolve.outputs.prune }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -62,7 +63,7 @@ jobs:
 
   collect:
     needs: resolve
-    if: needs.resolve.outputs.taps != ''
+    if: needs.resolve.outputs.taps != '' || needs.resolve.outputs.prune != ''
     runs-on: ubuntu-latest
     timeout-minutes: 300
     permissions:
@@ -124,13 +125,14 @@ jobs:
       - name: Classify tap casks
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
+          PRUNE: ${{ needs.resolve.outputs.prune }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'anthropic' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: python scripts/classify_tap_casks.py --collected tap_casks.json --taps $TAPS
+        run: python scripts/classify_tap_casks.py --collected tap_casks.json --taps $TAPS --prune $PRUNE
       - id: data
         uses: actions/upload-artifact@v4
         with:
@@ -138,9 +140,11 @@ jobs:
           path: |
             data/tap_categories.json
             data/tap_homepage_metadata.json
+            data/tap_run.json
 
   icons:
     needs: [resolve, collect]
+    if: needs.resolve.outputs.taps != ''
     runs-on: macos-latest
     timeout-minutes: 360
     outputs:
@@ -200,7 +204,8 @@ jobs:
       - name: Publish tap icons to the icons branch
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
-        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS
+          PRUNE: ${{ needs.resolve.outputs.prune }}
+        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json
       - name: Register requested taps and those of an open tap data PR
         env:
           REGISTER: ${{ needs.resolve.outputs.register }}

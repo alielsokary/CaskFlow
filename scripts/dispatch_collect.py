@@ -133,7 +133,7 @@ def _gh(args: list[str]) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--taps", nargs="+", required=True)
+    parser.add_argument("--taps", nargs="*", required=True)
     parser.add_argument("--batch-size", type=int, default=5)
     parser.add_argument("--budget-minutes", type=float, default=270)
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))

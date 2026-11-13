@@ -53,8 +53,17 @@ def _tap(ref: str) -> str:
     return ref.rsplit("/", 1)[0]
 
 
-def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[str]) -> None:
-    """Copy icons into a checked-out icons branch and replace only `taps`' report entries; nothing outside taps/."""
+def _tap_folder(root: Path, tap: str) -> Path | None:
+    folder = (root / tap).resolve()
+    return folder if tap_registry.validate_name(tap) is None and folder.is_relative_to(root) and folder != root else None
+
+
+def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[str], run: dict | None = None) -> None:
+    """Copy icons into a checked-out icons branch and replace only `taps`' report entries; nothing outside taps/.
+
+    `run` (from classify) names each fully read tap's refs that keep icons and the taps removed from the registry;
+    other icons and report entries of those taps are deleted.
+    """
     root = (wt / TAPS_DIR).resolve()
     for ref, png in pngs.items():
         target = (wt / icon_path(ref)).resolve()
@@ -63,9 +72,23 @@ def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict], taps: list[s
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(png, target)
     (wt / TAPS_DIR).mkdir(exist_ok=True)
+    current = (run or {}).get("current", {})
+    pruned = set((run or {}).get("prunedTaps", []))
+    for tap, refs in current.items():
+        if folder := _tap_folder(root, tap):
+            for png in folder.glob("*.png"):
+                if f"{tap}/{png.stem}" not in refs:
+                    png.unlink()
+    for tap in pruned:
+        if (folder := _tap_folder(root, tap)) and folder.exists():
+            shutil.rmtree(folder)
+
+    def kept(ref: str) -> bool:
+        return _tap(ref) not in pruned and (_tap(ref) not in current or ref in current[_tap(ref)])
+
     branch = json.loads((wt / REPORT).read_text(encoding="utf-8")) if (wt / REPORT).exists() else {}
     merged = {ref: entry for ref, entry in branch.items() if _tap(ref) not in taps} | report
-    write_json(wt / REPORT, dict(sorted(merged.items())))
+    write_json(wt / REPORT, dict(sorted((ref, entry) for ref, entry in merged.items() if kept(ref))))
 
 
 def _branch_state() -> tuple[set[str], dict[str, dict]]:
@@ -77,13 +100,13 @@ def _branch_state() -> tuple[set[str], dict[str, dict]]:
     return published, (json.loads(shown.stdout) if shown.returncode == 0 else {})
 
 
-def publish(pngs: dict[str, Path], report: dict[str, dict], taps: list[str]) -> None:
+def publish(pngs: dict[str, Path], report: dict[str, dict], taps: list[str], run: dict | None = None) -> None:
     wt = Path(tempfile.mkdtemp(prefix="tap-icons-wt-"))
     added = False
     try:
         extract_icons._add_icons_worktree(wt)
         added = True
-        stage(wt, pngs, report, taps)
+        stage(wt, pngs, report, taps, run)
         if _git(wt, "add", "-A", "--", TAPS_DIR).returncode != 0:
             raise ExtractError("Cannot stage tap icons")
         write_icon_manifest(wt)
@@ -105,17 +128,31 @@ def _record(report: dict, ref: str, status: str, detail: str) -> None:
     report[ref] = {"status": status, "reason": detail, **({"attempts": attempts} if status == "failed" else {})}
 
 
-def publish_from(root: Path, taps: list[str]) -> None:
-    """Publish what an extraction job left in `root`, for this run's taps only."""
+def load_run(path: Path | None) -> dict:
+    """classify's run file, keeping only well-formed names."""
+    raw = json.loads(path.read_text(encoding="utf-8")) if path and path.exists() else {}
+    current = raw.get("current") if isinstance(raw.get("current"), dict) else {}
+    pruned = raw.get("prunedTaps") if isinstance(raw.get("prunedTaps"), list) else []
+    return {
+        "current": {tap: [ref for ref in refs if isinstance(ref, str) and _REF.fullmatch(ref) and _tap(ref) == tap]
+                    for tap, refs in current.items()
+                    if isinstance(tap, str) and tap_registry.validate_name(tap) is None and isinstance(refs, list)},
+        "prunedTaps": [tap for tap in pruned if isinstance(tap, str) and tap_registry.validate_name(tap) is None],
+    }
+
+
+def publish_from(root: Path, taps: list[str], run_file: Path | None) -> None:
+    """Publish what an extraction job left in `root`, and classify's removals, for this run's taps only."""
     report_file = root / REPORT
-    if not report_file.exists():
-        print("no tap icon extraction output; nothing to publish")
+    run = load_run(run_file)
+    if not report_file.exists() and not run["current"] and not run["prunedTaps"]:
+        print("no tap icon extraction output or removals; nothing to publish")
         return
     folder = root / TAPS_DIR
     pngs = {ref: png for png in sorted(folder.glob("*/*/*.png"))
             if _tap(ref := str(png.relative_to(folder)).removesuffix(".png")) in taps}
-    report = json.loads(report_file.read_text(encoding="utf-8"))
-    publish(pngs, {ref: entry for ref, entry in report.items() if _tap(ref) in taps}, taps)
+    report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
+    publish(pngs, {ref: entry for ref, entry in report.items() if _tap(ref) in taps}, taps, run)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -125,13 +162,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--limit", type=int, default=0, help="Cap this run (0 = all pending)")
     parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "icons_out")
     parser.add_argument("--publish-from", type=Path, help="Publish a previous extraction's output and exit")
+    parser.add_argument("--run-file", type=Path, help="classify's data/tap_run.json (removals) when publishing")
     args = parser.parse_args(argv)
     if not args.taps:
         parser.error("--taps is required")
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
     if args.publish_from:
-        publish_from(args.publish_from, args.taps)
+        publish_from(args.publish_from, args.taps, args.run_file)
         return 0
     if not args.collected:
         parser.error("--collected is required to extract")

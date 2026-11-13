@@ -151,3 +151,16 @@ def test_no_workflow_restores_an_actions_cache():
     for path in (REPO_ROOT / ".github" / "workflows").glob("*.yml"):
         text = path.read_text(encoding="utf-8")
         assert "cache: pip" not in text and "actions/cache" not in text, path.name
+
+
+def test_removed_taps_reach_classify_and_publish_through_env():
+    pipeline = _workflow("tap-pipeline.yml")
+    assert "prune: ${{ steps.resolve.outputs.prune }}" in _job(pipeline, "resolve")
+    assert "needs.resolve.outputs.prune != ''" in _job(pipeline, "collect")
+    classify = _job(pipeline, "classify")
+    assert "PRUNE: ${{ needs.resolve.outputs.prune }}" in classify and "--prune $PRUNE" in classify
+    assert "data/tap_run.json" in classify
+    publish = _job(pipeline, "publish")
+    assert "--publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json" in publish
+    paths = publish[publish.index("add-paths:"):]
+    assert "tap_run.json" not in paths
