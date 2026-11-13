@@ -658,7 +658,7 @@ def write_icon_manifest(wt: Path) -> None:
     index = _git(wt, "ls-files", "--stage", "-z", "--", "*.png")
     if index.returncode != 0:
         raise ExtractError("Cannot read staged icons for icons.json")
-    hashes = {}
+    hashes, taps = {}, {}
     for entry in index.stdout.split("\0"):
         if not entry:
             continue
@@ -666,9 +666,16 @@ def write_icon_manifest(wt: Path) -> None:
         mode, sha, stage = info.split()
         if stage != "0":
             raise ExtractError("Cannot publish icons with unresolved conflicts")
-        if mode in ("100644", "100755") and "/" not in path:
+        if mode not in ("100644", "100755"):
+            continue
+        if "/" not in path:
             hashes[Path(path).stem] = sha
-    write_json(wt / "icons.json", {"version": 1, "hashes": dict(sorted(hashes.items()))})
+        elif path.startswith("taps/") and path.count("/") == 3:
+            taps[path.removeprefix("taps/").removesuffix(".png")] = sha  # user/repo/token
+    manifest = {"version": 1, "hashes": dict(sorted(hashes.items()))}
+    if taps:
+        manifest["taps"] = dict(sorted(taps.items()))
+    write_json(wt / "icons.json", manifest)
 
 
 def purge_file(filename: str) -> None:
