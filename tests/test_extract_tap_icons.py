@@ -120,7 +120,7 @@ def test_extract_writes_pngs_and_report_for_a_separate_publish_job(tmp_path, mon
 def test_publish_from_keeps_only_the_runs_taps(tmp_path, monkeypatch):
     for ref in ("u/r/keep", "evil/tap/figma"):
         (tmp_path / "taps" / Path(ref).parent).mkdir(parents=True, exist_ok=True)
-        (tmp_path / "taps" / f"{ref}.png").write_bytes(b"png")
+        (tmp_path / "taps" / f"{ref}.png").write_bytes(make_png(16, 16))
     (tmp_path / "taps" / "icon_report.json").write_text(
         '{"u/r/gone": {"status": "no_icon"}, "evil/tap/x": {"status": "no_icon"}}', encoding="utf-8")
     seen = {}
@@ -223,3 +223,64 @@ def test_publish_from_with_only_removals_publishes(tmp_path, monkeypatch):
     tap_icons.publish_from(tmp_path / "missing", ["g/t"], run_file)
 
     assert seen == {"run": {"current": {}, "prunedTaps": ["g/t"]}, "taps": ["g/t"]}
+
+
+import struct  # noqa: E402
+import zlib  # noqa: E402
+
+import pytest  # noqa: E402
+
+
+def _chunk(kind, data):
+    return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", zlib.crc32(kind + data))
+
+
+def make_png(width, height, color_type=6, bit_depth=8, interlace=0, extra=b"", idat=None, first=None):
+    channels = 4 if color_type == 6 else 3
+    raw = b"".join(b"\x00" + bytes(width * channels) for _ in range(height))
+    ihdr = _chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, bit_depth, color_type, 0, 0, interlace))
+    body = (first or b"") + ihdr + _chunk(b"gAMA", b"\x00\x00\xb1\x8f")
+    body += _chunk(b"IDAT", zlib.compress(raw) if idat is None else idat) + _chunk(b"IEND", b"")
+    return b"\x89PNG\r\n\x1a\n" + body + extra
+
+
+@pytest.mark.parametrize("png", [make_png(256, 256), make_png(256, 200), make_png(64, 64, color_type=2)])
+def test_valid_pngs_pass(png):
+    assert tap_icons.png_problem(png) is None
+
+
+def _bad_crc():
+    png = bytearray(make_png(32, 32))
+    png[20] ^= 1
+    return bytes(png)
+
+
+@pytest.mark.parametrize("png", [
+    b"GIF89a" + bytes(40),
+    make_png(32, 32)[:-10],
+    _bad_crc(),
+    make_png(32, 32, first=_chunk(b"gAMA", b"\x00\x00\xb1\x8f")),
+    make_png(0, 32),
+    make_png(300, 32),
+    make_png(32, 32, bit_depth=16),
+    make_png(32, 32, interlace=1),
+    make_png(32, 32, idat=zlib.compress(bytes(10))),
+    make_png(32, 32, extra=b"junk"),
+    make_png(32, 32, first=_chunk(b"tEXt", bytes(1024 * 1024 + 1))),
+])
+def test_bad_pngs_are_refused(png):
+    assert tap_icons.png_problem(png) is not None
+
+
+def test_publish_from_refuses_invalid_icons(tmp_path, monkeypatch):
+    (tmp_path / "taps" / "u" / "r").mkdir(parents=True)
+    (tmp_path / "taps" / "u" / "r" / "good.png").write_bytes(make_png(64, 64))
+    (tmp_path / "taps" / "u" / "r" / "bad.png").write_bytes(b"<html>not an image</html>")
+    (tmp_path / "taps" / "icon_report.json").write_text("{}", encoding="utf-8")
+    seen = {}
+    monkeypatch.setattr(tap_icons, "publish", lambda pngs, report, taps, run: seen.update(pngs=set(pngs), report=report))
+
+    tap_icons.publish_from(tmp_path, ["u/r"], None)
+
+    assert seen["pngs"] == {"u/r/good"}
+    assert seen["report"]["u/r/bad"]["status"] == "failed" and seen["report"]["u/r/bad"]["reason"].startswith("invalid png")

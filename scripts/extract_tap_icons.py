@@ -8,7 +8,9 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import struct
 import tempfile
+import zlib
 from pathlib import Path
 
 import extract_icons
@@ -51,6 +53,55 @@ def download_view(cask: dict) -> dict | None:
 
 def _tap(ref: str) -> str:
     return ref.rsplit("/", 1)[0]
+
+
+MAX_PNG_BYTES = 1024 * 1024
+MAX_ICON_SIDE = 256
+_PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
+
+
+def png_problem(data: bytes) -> str | None:
+    """None for a well-formed 8-bit RGB/RGBA PNG no larger than our icons, else why not."""
+    if len(data) > MAX_PNG_BYTES:
+        return "too large"
+    if not data.startswith(_PNG_SIGNATURE):
+        return "not a png"
+    offset, header, idat = len(_PNG_SIGNATURE), None, bytearray()
+    while True:
+        if offset + 12 > len(data):
+            return "truncated"
+        length, kind = struct.unpack(">I4s", data[offset:offset + 8])
+        end = offset + 12 + length
+        if end > len(data):
+            return "truncated"
+        body = data[offset + 8:offset + 8 + length]
+        if struct.unpack(">I", data[end - 4:end])[0] != zlib.crc32(kind + body):
+            return "bad chunk checksum"
+        if header is None and kind != b"IHDR":
+            return "first chunk is not IHDR"
+        if kind == b"IHDR":
+            if length != 13 or header is not None:
+                return "bad IHDR"
+            header = struct.unpack(">IIBBBBB", body)
+        elif kind == b"IDAT":
+            idat += body
+        offset = end
+        if kind == b"IEND":
+            break
+    width, height, depth, color, compression, filtering, interlace = header
+    if not (1 <= width <= MAX_ICON_SIDE and 1 <= height <= MAX_ICON_SIDE):
+        return "bad dimensions"
+    if depth != 8 or color not in (2, 6) or compression or filtering or interlace:
+        return "unsupported format"
+    if offset != len(data):
+        return "data after IEND"
+    try:
+        pixels = zlib.decompress(bytes(idat))
+    except zlib.error:
+        return "bad image data"
+    if len(pixels) != height * (1 + width * (3 if color == 2 else 4)):
+        return "bad image data"
+    return None
 
 
 def _tap_folder(root: Path, tap: str) -> Path | None:
@@ -152,7 +203,13 @@ def publish_from(root: Path, taps: list[str], run_file: Path | None) -> None:
     pngs = {ref: png for png in sorted(folder.glob("*/*/*.png"))
             if _tap(ref := str(png.relative_to(folder)).removesuffix(".png")) in taps}
     report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
-    publish(pngs, {ref: entry for ref, entry in report.items() if _tap(ref) in taps}, taps, run)
+    report = {ref: entry for ref, entry in report.items() if _tap(ref) in taps}
+    # The extraction job opened untrusted installers; only well-formed PNGs reach the icons branch.
+    for ref, png in list(pngs.items()):
+        if problem := png_problem(png.read_bytes()):
+            del pngs[ref]
+            _record(report, ref, "failed", f"invalid png: {problem}")
+    publish(pngs, report, taps, run)
 
 
 def main(argv: list[str] | None = None) -> int:
