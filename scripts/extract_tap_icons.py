@@ -12,13 +12,15 @@ import tempfile
 from pathlib import Path
 
 import extract_icons
+import tap_registry
+from collect_tap_casks import _REF, load_official, trusted_view
+from safe_url import is_public_url
 from extract_icons import MAX_ATTEMPTS, ExtractError, _git, write_icon_manifest
 from icons_state import ICONS_BRANCH, REPO_ROOT
 from style_standards import write_json
 
 TAPS_DIR = "taps"
 REPORT = f"{TAPS_DIR}/icon_report.json"
-FLUSH_EVERY = 25
 
 
 def icon_path(ref: str) -> str:
@@ -39,10 +41,21 @@ def pending(collected: dict, published: set[str], report: dict[str, dict]) -> li
     ]
 
 
+def download_view(cask: dict) -> dict | None:
+    """A tap cask as the downloader may see it: https, public host, no tap-chosen headers or cookies."""
+    if not is_public_url(cask.get("url") or "", schemes=("https",)):
+        return None
+    specs = {key: value for key, value in (cask.get("url_specs") or {}).items() if key in ("user_agent", "referer")}
+    return {**cask, "url_specs": specs, "https_only": True}
+
+
 def stage(wt: Path, pngs: dict[str, Path], report: dict[str, dict]) -> None:
     """Copy icons and the tap report into a checked-out icons branch; nothing outside taps/."""
+    root = (wt / TAPS_DIR).resolve()
     for ref, png in pngs.items():
-        target = wt / icon_path(ref)
+        target = (wt / icon_path(ref)).resolve()
+        if not _REF.fullmatch(ref) or not target.is_relative_to(root):
+            raise ValueError(f"refusing to write tap icon outside {TAPS_DIR}/: {ref!r}")
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(png, target)
     (wt / TAPS_DIR).mkdir(exist_ok=True)
@@ -86,38 +99,56 @@ def _record(report: dict, ref: str, status: str, detail: str) -> None:
     report[ref] = {"status": status, "reason": detail, **({"attempts": attempts} if status == "failed" else {})}
 
 
+def publish_from(root: Path) -> None:
+    """Publish what an extraction job left in `root`; this job never downloads installers."""
+    folder = root / TAPS_DIR
+    pngs = {str(png.relative_to(folder)).removesuffix(".png"): png for png in sorted(folder.glob("*/*/*.png"))}
+    report_file = root / REPORT
+    report = json.loads(report_file.read_text(encoding="utf-8")) if report_file.exists() else {}
+    publish(pngs, report)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--collected", type=Path, required=True)
+    parser.add_argument("--collected", type=Path)
+    parser.add_argument("--taps", nargs="+", help="Taps this run was asked to process")
     parser.add_argument("--limit", type=int, default=0, help="Cap this run (0 = all pending)")
     parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "icons_out")
-    parser.add_argument("--publish", action="store_true")
+    parser.add_argument("--publish-from", type=Path, help="Publish a previous extraction's output and exit")
     args = parser.parse_args(argv)
+    if args.publish_from:
+        publish_from(args.publish_from)
+        return 0
+    if not args.collected or not args.taps:
+        parser.error("--collected and --taps are required to extract")
+    if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
+        raise SystemExit("; ".join(invalid))
 
-    collected = json.loads(args.collected.read_text(encoding="utf-8"))
+    # The collect job ran tap code, so its file is only trusted through this view.
+    collected = trusted_view(json.loads(args.collected.read_text(encoding="utf-8")), args.taps, load_official())
     published, report = _branch_state()
     batch = pending(collected, published, report)
     if args.limit:
         batch = batch[: args.limit]
     print(f"tap icons to extract: {len(batch)}")
 
-    ready: dict[str, Path] = {}
+    folder_root = args.output_dir / TAPS_DIR
     for cask in batch:
         ref = cask["full_token"]
-        folder = args.output_dir / TAPS_DIR / Path(ref).parent
+        folder = folder_root / Path(ref).parent
         folder.mkdir(parents=True, exist_ok=True)
-        status, detail = extract_icons._extract_status(cask, folder)
-        png = folder / f"{cask['token']}.png"
-        if status == "ok" and png.exists():
-            ready[ref] = png
+        safe = download_view(cask)
+        status, detail = ("failed", "download url is not a public https url") if safe is None \
+            else extract_icons._extract_status(safe, folder)
+        if status == "ok" and (folder / f"{cask['token']}.png").exists():
             report.pop(ref, None)
         else:
             _record(report, ref, status, detail)
-        if args.publish and len(ready) >= FLUSH_EVERY:
-            publish(ready, report)
-            ready = {}
-    if args.publish:
-        publish(ready, report)
+        # Written after every cask so a timed-out job still hands its progress to publish.
+        folder_root.mkdir(parents=True, exist_ok=True)
+        write_json(args.output_dir / REPORT, dict(sorted(report.items())))
+    folder_root.mkdir(parents=True, exist_ok=True)
+    write_json(args.output_dir / REPORT, dict(sorted(report.items())))
     return 0
 
 

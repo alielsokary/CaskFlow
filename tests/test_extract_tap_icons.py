@@ -63,3 +63,54 @@ def test_stage_never_writes_outside_taps(tmp_path):
     assert (wt / "figma.png").read_bytes() == b"official"
     assert (wt / "taps" / "u" / "r" / "figma.png").read_bytes() == b"tap"
     assert json.loads((wt / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {"u/r/figma": {"status": "ok"}}
+
+
+def test_download_view_is_https_public_and_drops_custom_headers(monkeypatch):
+    monkeypatch.setattr(tap_icons, "is_public_url", lambda url, schemes: url.startswith("https://good"))
+    cask = {"token": "t", "full_token": "u/r/t", "url": "https://good.example/t.dmg",
+            "url_specs": {"user_agent": "UA", "referer": "https://good.example", "header": ["Metadata: true"],
+                          "cookies": {"a": "b"}}}
+
+    safe = tap_icons.download_view(cask)
+
+    assert safe["url_specs"] == {"user_agent": "UA", "referer": "https://good.example"}
+    assert safe["https_only"] is True
+    assert tap_icons.download_view({**cask, "url": "http://169.254.169.254/x"}) is None
+
+
+def test_https_only_downloads_refuse_plain_http_redirects(tmp_path):
+    cmd = extract_icons._curl_cmd({"https_only": True}, tmp_path / "a")
+    assert cmd[cmd.index("--proto") + 1] == "=https"
+    assert cmd[cmd.index("--proto-redir") + 1] == "=https"
+    assert "--proto" not in extract_icons._curl_cmd({}, tmp_path / "a")
+
+
+def test_stage_refuses_paths_that_escape_taps(tmp_path):
+    import pytest
+    png = tmp_path / "x.png"
+    png.write_bytes(b"x")
+    wt = tmp_path / "wt"
+    wt.mkdir()
+    with pytest.raises(ValueError):
+        tap_icons.stage(wt, {"../../outside": png}, {})
+    assert not (tmp_path / "outside.png").exists()
+
+
+def test_extract_writes_pngs_and_report_for_a_separate_publish_job(tmp_path, monkeypatch):
+    collected = tmp_path / "tap_casks.json"
+    cask = {"token": "t", "full_token": "u/r/t", "url": "https://good.example/t.dmg"}
+    collected.write_text(json.dumps({"casks": {"u/r/t": cask}}), encoding="utf-8")
+    monkeypatch.setattr(tap_icons, "load_official", lambda: {})
+    monkeypatch.setattr(tap_icons, "_branch_state", lambda: (set(), {}))
+    monkeypatch.setattr(tap_icons, "is_public_url", lambda url, schemes: True)
+
+    def fake_extract(cask, folder):
+        (folder / f"{cask['token']}.png").write_bytes(b"png")
+        return "ok", "single"
+
+    monkeypatch.setattr(tap_icons.extract_icons, "_extract_status", fake_extract)
+    out = tmp_path / "out"
+
+    assert tap_icons.main(["--collected", str(collected), "--taps", "u/r", "--output-dir", str(out)]) == 0
+    assert (out / "taps" / "u" / "r" / "t.png").read_bytes() == b"png"
+    assert json.loads((out / "taps" / "icon_report.json").read_text(encoding="utf-8")) == {}

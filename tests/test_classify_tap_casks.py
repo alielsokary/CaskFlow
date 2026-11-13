@@ -3,20 +3,26 @@ import json
 import classify_tap_casks as classify
 from llm_client import Classification
 
+MOVED_ARTIFACTS = [{"app": ["Moved.app"]}]
+OFFICIAL = {"moved": {"token": "moved", "homepage": "https://moved.dev", "url": "https://moved.dev/m.dmg",
+                      "artifacts": MOVED_ARTIFACTS}}
 COLLECTED = {
     "casks": {
         "a/b/new": {"token": "new", "full_token": "a/b/new", "homepage": "https://new.dev"},
         "a/b/old": {"token": "old", "full_token": "a/b/old", "homepage": "https://old.dev"},
-        "a/b/moved": {"token": "moved", "full_token": "a/b/moved", "homepage": "https://moved.dev"},
+        "a/b/moved": {"token": "moved", "full_token": "a/b/moved", "homepage": "https://moved.dev",
+                      "url": "https://moved.dev/m.dmg", "artifacts": MOVED_ARTIFACTS},
+        "x/y/sneaky": {"token": "sneaky", "full_token": "x/y/sneaky", "homepage": "https://s.dev"},
     },
-    "sameAs": {"a/b/moved": "moved"},
+    "sameAs": {"a/b/new": "figma"},
     "failures": {},
 }
+VIEW = {"casks": {k: v for k, v in COLLECTED["casks"].items() if k.startswith("a/b/")}, "sameAs": {"a/b/moved": "moved"}}
 EXISTING = {"version": 1, "generatedDate": "2026-11-01", "casks": {"a/b/old": {"primary": "games", "secondary": []}}, "sameAs": {}}
 
 
 def test_pending_skips_aliased_and_classified_casks():
-    assert classify.pending_refs(COLLECTED, EXISTING) == {"a/b/new"}
+    assert classify.pending_refs(VIEW, EXISTING) == {"a/b/new"}
 
 
 def test_merge_keeps_prior_entries_and_records_aliases():
@@ -46,18 +52,31 @@ def test_main_classifies_only_pending_casks(tmp_path, monkeypatch):
     monkeypatch.setattr(classify, "TAP_CATEGORIES_PATH", output)
     cache_file = tmp_path / "tap_homepages.json"
 
-    def fake_fetch(refs, casks, cache, persist):
-        assert persist is False, "never writes the official homepage cache"
+    def fake_fetch(refs, casks, cache):
         cache.update({ref: {"token": ref, "title": "t"} for ref in refs})
         return {}
 
-    monkeypatch.setattr(classify, "fetch_homepages_for", fake_fetch)
+    monkeypatch.setattr(classify, "fetch_tap_homepages", fake_fetch)
+    monkeypatch.setattr(classify, "load_official", lambda: OFFICIAL)
     monkeypatch.setattr(classify, "TAP_HOMEPAGE_CACHE", cache_file)
     monkeypatch.setattr(classify, "make_client", lambda: FakeClient())
 
-    assert classify.main(["--collected", str(collected)]) == 0
-    assert seen == ["a/b/new"]
+    assert classify.main(["--collected", str(collected), "--taps", "a/b"]) == 0
+    assert seen == ["a/b/new"], "x/y is not a requested tap; the file's own aliases are ignored"
     written = json.loads(output.read_text(encoding="utf-8"))
     assert set(written["casks"]) == {"a/b/new", "a/b/old"}
     assert written["sameAs"] == {"a/b/moved": "moved"}
     assert json.loads(cache_file.read_text(encoding="utf-8")) == {"a/b/new": {"token": "a/b/new", "title": "t"}}
+
+
+def test_non_public_homepages_are_never_fetched(monkeypatch):
+    called = []
+    monkeypatch.setattr(classify, "is_public_url", lambda url: url == "https://ok.dev")
+    monkeypatch.setattr(classify, "fetch_one", lambda ref, url, open_url: called.append(url) or {"token": ref})
+    casks = {"a/b/ok": {"homepage": "https://ok.dev"}, "a/b/meta": {"homepage": "http://169.254.169.254/"}}
+    cache = {}
+
+    classify.fetch_tap_homepages({"a/b/ok", "a/b/meta"}, casks, cache)
+
+    assert called == ["https://ok.dev"]
+    assert cache["a/b/meta"]["error"] == "non_public_url"

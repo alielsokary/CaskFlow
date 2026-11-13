@@ -80,3 +80,21 @@ def test_main_rejects_invalid_tap_names(capsys):
     import pytest
     with pytest.raises(SystemExit, match="not a lowercase"):
         collect.main(["--taps", "a/b; curl x|sh"])
+
+
+def test_trusted_view_keeps_only_requested_well_formed_casks_and_recomputes_aliases():
+    evil = cask("fuse-t", "macos-fuse-t/cask/fuse-t", "https://x", "https://x", [])
+    collected = {
+        "casks": {
+            "macos-fuse-t/cask/fuse-t": TAP_FUSE,
+            "other/tap/figma": cask("figma", "other/tap/figma", "https://f", "https://f", []),
+            "macos-fuse-t/cask/spoof": evil,
+            "macos-fuse-t/cask/bad;name": cask("bad;name", "macos-fuse-t/cask/bad;name", "https://b", "https://b", []),
+        },
+        "sameAs": {"macos-fuse-t/cask/fuse-t": "figma", "other/tap/figma": "figma"},
+    }
+
+    view = collect.trusted_view(collected, ["macos-fuse-t/cask"], {"fuse-t": OFFICIAL_FUSE})
+
+    assert list(view["casks"]) == ["macos-fuse-t/cask/fuse-t"]
+    assert view["sameAs"] == {"macos-fuse-t/cask/fuse-t": "fuse-t"}

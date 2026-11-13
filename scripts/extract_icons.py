@@ -188,6 +188,8 @@ def resolve_icns_name(info: dict) -> str | None:
 def _curl_cmd(cask: dict, dest: Path) -> list[str]:
     """Curl invocation honouring the cask's url_specs (UA, referer, headers, cookies)."""
     cmd = ["curl", "-fSL", "--retry", "2", "--max-time", str(DOWNLOAD_TIMEOUT), "-o", str(dest)]
+    if cask.get("https_only"):  # tap casks: no plain-http hop, so no cloud metadata endpoint
+        cmd += ["--proto", "=https", "--proto-redir", "=https"]
     specs = cask.get("url_specs") or {}
     cmd += ["-A", str(specs.get("user_agent") or DEFAULT_UA)]
     if specs.get("referer"):

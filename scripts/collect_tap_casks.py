@@ -72,6 +72,24 @@ def aliases(casks: dict[str, dict], official: dict[str, dict]) -> dict[str, str]
     }
 
 
+_REF = re.compile(r"[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9@+_.-]*")
+
+
+def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) -> dict:
+    """What privileged jobs may use from collect's output, which tap code could have shaped.
+
+    Keeps only well-formed casks of the requested taps whose names agree, and recomputes
+    aliases from the official API instead of trusting the file.
+    """
+    wanted = set(taps)
+    casks = {
+        ref: cask for ref, cask in collected.get("casks", {}).items()
+        if isinstance(cask, dict) and _REF.fullmatch(ref) and ref.rsplit("/", 1)[0] in wanted
+        and cask.get("full_token") == ref and cask.get("token") == ref.rsplit("/", 1)[1]
+    }
+    return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official)}
+
+
 def _read_tap(entry: dict, run) -> dict[str, dict]:
     name = entry["name"]
     for cmd in (
@@ -104,6 +122,11 @@ def collect(entries: list[dict], run, official: dict[str, dict]) -> dict:
     return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures}
 
 
+def load_official() -> dict[str, dict]:
+    with urlopen(BREW_API, timeout=120) as response:  # nosec B310 - fixed HTTPS Homebrew API
+        return {cask["token"]: cask for cask in json.loads(response.read())}
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
@@ -118,8 +141,7 @@ def main(argv: list[str] | None = None) -> int:
     invalid = [error for name in wanted if (error := tap_registry.validate_name(name))]
     if invalid:
         raise SystemExit("; ".join(invalid))
-    with urlopen(BREW_API, timeout=120) as response:  # nosec B310 - fixed HTTPS Homebrew API
-        official = {cask["token"]: cask for cask in json.loads(response.read())}
+    official = load_official()
     entries = [registered.get(name, {"name": name}) for name in wanted]
     write_json(args.out, collect(entries, _run, official), trailing_newline=True)
     return 0
