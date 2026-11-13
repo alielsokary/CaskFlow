@@ -167,13 +167,15 @@ def test_trusted_view_filters_failures_and_read_taps():
         "casks": {},
         "caskFailures": {"u/r/bad": "Error: something `@mention`", "o/t/x": "forged", "../evil": "x"},
         "readTaps": ["u/r", "o/t"],
-        "listed": {"u/r": ["u/r/a", "o/t/b", "bad"], "o/t": ["o/t/c"]},
+        "listed": {"u/r": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "bad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/z": "nothex"}, "o/t": {"o/t/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+        "processed": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/q": "nothex"},
     }
 
     view = collect.trusted_view(collected, ["u/r"], {})
 
     assert view["caskFailures"] == {"u/r/bad": ""}
-    assert view["listed"] == {"u/r": ["u/r/a"]}
+    assert view["listed"] == {"u/r": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
+    assert view["processed"] == {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
 
 
 import pytest  # noqa: E402
@@ -257,7 +259,7 @@ def test_odd_brew_output_fails_only_its_tap():
 ])
 def test_trusted_view_survives_malformed_output(collected):
     view = collect.trusted_view(collected, ["u/r"], {})
-    assert view["casks"] == {} and view["caskFailures"] == {} and view["listed"] == {}
+    assert view["casks"] == {} and view["caskFailures"] == {} and view["listed"] == {} and view["processed"] == {}
     assert "readTaps" not in view
 
 

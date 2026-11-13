@@ -82,9 +82,9 @@ def test_non_public_homepages_are_never_fetched(monkeypatch):
     assert cache["a/b/meta"]["error"] == "non_public_url"
 
 
-def view(casks=(), failures=(), listed=None, same_as=None):
+def view(casks=(), failures=(), listed=None, same_as=None, processed=None):
     return {"casks": {ref: {} for ref in casks}, "caskFailures": {ref: "" for ref in failures},
-            "listed": listed or {}, "sameAs": same_as or {}}
+            "listed": listed or {}, "sameAs": same_as or {}, "processed": processed or {}}
 
 
 def data(casks=(), same_as=None):
@@ -135,3 +135,14 @@ def test_run_file_keeps_icons_for_every_listed_cask():
 def test_an_empty_listing_prunes_nothing():
     pruned, removed = classify.prune(data(["u/r/x"]), view(listed={"u/r": []}), [])
     assert "u/r/x" in pruned["casks"] and removed == []
+
+
+def test_tap_files_settle_only_classified_or_aliased_casks_and_forget_gone_ones():
+    merged = data(["u/r/a"], {"u/r/b": "b"})
+    existing = {"u/r/gone": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "g/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/keep": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    current = view(listed={"u/r": {"u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+                   processed={"u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"})
+
+    files = classify.tap_files(existing, merged, current, ["g/t"])
+
+    assert files == {"o/t/keep": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}

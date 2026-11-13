@@ -1,9 +1,9 @@
 name: Tap collect
 
-# One small batch of taps, dispatched by the tap pipeline's collect job. This is
-# the only place tap Ruby runs. It holds no secrets and a read-only token, and its
-# run token reaches only this run's artifacts, so a hostile tap cannot shape data
-# for taps outside its batch.
+# Taps dispatched by the tap pipeline's collect job, one per run. This is the only
+# place tap Ruby runs. It holds no secrets and a read-only token, and its run
+# token reaches only this run's artifacts, so a hostile tap cannot shape data for
+# any other tap.
 run-name: Tap collect ${{ inputs.nonce }}
 
 on:

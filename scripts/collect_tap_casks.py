@@ -106,6 +106,7 @@ def aliases(casks: dict[str, dict], official: dict[str, dict]) -> dict[str, str]
     }
 
 
+OBJECT_ID = re.compile(r"[0-9a-f]{40}|[0-9a-f]{64}")
 _REF = re.compile(r"[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9@+_.-]*")
 
 
@@ -120,6 +121,11 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
     def ours(ref: object) -> bool:
         return isinstance(ref, str) and bool(_REF.fullmatch(ref)) and ref.rsplit("/", 1)[0] in wanted
 
+    def files(refs: dict, tap: str | None = None) -> dict[str, str]:
+        return {ref: oid for ref, oid in sorted(refs.items(), key=lambda item: str(item[0]))
+                if ours(ref) and (tap is None or ref.rsplit("/", 1)[0] == tap)
+                and isinstance(oid, str) and OBJECT_ID.fullmatch(oid)}
+
     def mapping(key: str) -> dict:
         value = collected.get(key) if isinstance(collected, dict) else None
         return value if isinstance(value, dict) else {}
@@ -133,9 +139,9 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
         "casks": dict(sorted(casks.items())),
         "sameAs": aliases(casks, official),
         "caskFailures": {ref: "" for ref in sorted(filter(ours, mapping("caskFailures")))},
-        "listed": {tap: sorted(ref for ref in refs if ours(ref) and ref.rsplit("/", 1)[0] == tap)
-                   for tap, refs in sorted(mapping("listed").items(), key=lambda item: str(item[0]))
-                   if tap in wanted and isinstance(refs, list)},
+        "listed": {tap: files(refs, tap) for tap, refs in sorted(mapping("listed").items(), key=lambda item: str(item[0]))
+                   if tap in wanted and isinstance(refs, dict)},
+        "processed": files(mapping("processed")),
     }
 
 

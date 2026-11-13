@@ -22,6 +22,7 @@ from style_standards import write_json
 TAP_CATEGORIES_PATH = REPO_ROOT / "data" / "tap_categories.json"
 # Separate from the official homepage cache so the tap pipeline never edits official data.
 TAP_RUN_PATH = REPO_ROOT / "data" / "tap_run.json"
+TAP_FILES_PATH = REPO_ROOT / "data" / "tap_files.json"
 TAP_HOMEPAGE_CACHE = REPO_ROOT / "data" / "tap_homepage_metadata.json"
 VERSION = 1
 
@@ -80,6 +81,16 @@ def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, li
     return {**existing, "casks": casks, "sameAs": aliases}, sorted(removed)
 
 
+def tap_files(existing: dict[str, str], merged: dict, view: dict, removed_taps: list[str]) -> dict[str, str]:
+    """Cask file ids already settled (categorized or aliased); the weekly sweep skips taps whose files all match."""
+    listed = {tap: refs for tap, refs in view.get("listed", {}).items() if refs}
+    settled = set(merged.get("casks", {})) | set(merged.get("sameAs", {}))
+    files = {ref: oid for ref, oid in existing.items()
+             if _tap(ref) not in removed_taps and not (_tap(ref) in listed and ref not in listed[_tap(ref)])}
+    files.update({ref: oid for ref, oid in view.get("processed", {}).items() if ref in settled})
+    return dict(sorted(files.items()))
+
+
 def run_file(view: dict, removed_taps: list[str]) -> dict:
     """What publish needs from this run: taps that yielded casks, and per listed tap the refs that keep icons."""
     return {
@@ -136,7 +147,10 @@ def main(argv: list[str] | None = None) -> int:
         for ref, reason in sorted(failures):
             print(f"skipped {ref}: {reason}")
 
-    write_json(TAP_CATEGORIES_PATH, merge(existing, classifications, collected.get("sameAs", {})), trailing_newline=True)
+    merged = merge(existing, classifications, collected.get("sameAs", {}))
+    write_json(TAP_CATEGORIES_PATH, merged, trailing_newline=True)
+    files = json.loads(TAP_FILES_PATH.read_text(encoding="utf-8")) if TAP_FILES_PATH.exists() else {}
+    write_json(TAP_FILES_PATH, tap_files(files, merged, collected, args.prune), trailing_newline=True)
     write_json(TAP_RUN_PATH, run_file(collected, args.prune), trailing_newline=True)
     return 0
 

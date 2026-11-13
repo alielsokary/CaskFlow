@@ -198,7 +198,7 @@ def load_run(path: Path | None) -> dict:
     }
 
 
-def publish_from(root: Path, taps: list[str], run_file: Path | None) -> None:
+def publish_from(root: Path, taps: list[str], run_file: Path | None, files_path: Path | None = None) -> None:
     """Publish what an extraction job left in `root`, and classify's removals, for this run's taps only."""
     report_file = root / REPORT
     run = load_run(run_file)
@@ -219,6 +219,12 @@ def publish_from(root: Path, taps: list[str], run_file: Path | None) -> None:
             del pngs[ref]
             _record(report, ref, "failed", f"invalid png: {problem}")
     publish(pngs, report, taps, run)
+    if files_path and files_path.exists():
+        # A cask whose icon is worth retrying stays unsettled, so the next sweep collects its tap again.
+        retry = {ref for ref, entry in report.items()
+                 if entry.get("status") == "failed" and entry.get("attempts", 0) < MAX_ATTEMPTS}
+        files = json.loads(files_path.read_text(encoding="utf-8"))
+        write_json(files_path, {ref: oid for ref, oid in files.items() if ref not in retry}, trailing_newline=True)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -229,13 +235,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "icons_out")
     parser.add_argument("--publish-from", type=Path, help="Publish a previous extraction's output and exit")
     parser.add_argument("--run-file", type=Path, help="classify's data/tap_run.json (removals) when publishing")
+    parser.add_argument("--files", type=Path, help="data/tap_files.json; icons worth retrying are unsettled")
     args = parser.parse_args(argv)
     if not args.taps:
         parser.error("--taps is required")
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
     if args.publish_from:
-        publish_from(args.publish_from, args.taps, args.run_file)
+        publish_from(args.publish_from, args.taps, args.run_file, args.files)
         return 0
     if not args.collected:
         parser.error("--collected is required to extract")

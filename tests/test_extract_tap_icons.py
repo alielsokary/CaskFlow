@@ -344,3 +344,19 @@ def test_publish_from_skips_oversized_files_without_reading_them(tmp_path, monke
     tap_icons.publish_from(tmp_path, ["u/r"], None)
 
     assert seen["pngs"] == set() and seen["report"]["u/r/big"]["reason"] == "invalid png: too large"
+
+
+def test_publish_from_unsettles_icons_worth_retrying(tmp_path, monkeypatch):
+    (tmp_path / "taps").mkdir()
+    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
+        "u/r/retry": {"status": "failed", "attempts": 1},
+        "u/r/parked": {"status": "failed", "attempts": 3},
+        "u/r/none": {"status": "no_icon"},
+    }), encoding="utf-8")
+    files = tmp_path / "tap_files.json"
+    files.write_text(json.dumps({"u/r/retry": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/parked": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/none": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/ok": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}), encoding="utf-8")
+    monkeypatch.setattr(tap_icons, "publish", lambda *args: None)
+
+    tap_icons.publish_from(tmp_path, ["u/r"], None, files)
+
+    assert set(json.loads(files.read_text(encoding="utf-8"))) == {"u/r/parked", "u/r/none", "u/r/ok"}

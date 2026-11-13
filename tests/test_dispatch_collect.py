@@ -40,7 +40,7 @@ class FakeGitHub:
         raise AssertionError(args)
 
 
-def run_collect(gh, taps, tmp_path, *, budget=600, lister=lambda name: None):
+def run_collect(gh, taps, tmp_path, *, budget=600, lister=lambda name: None, known=None, only_changed=False):
     ticks = [0]
 
     def sleep(seconds):
@@ -49,6 +49,7 @@ def run_collect(gh, taps, tmp_path, *, budget=600, lister=lambda name: None):
     return dispatch_collect.collect(
         taps, gh, "master", {}, batch_size=1, budget=budget,
         sleep=sleep, clock=lambda: ticks[0], workdir=tmp_path, lister=lister,
+        known=known or {}, only_changed=only_changed,
     )
 
 
@@ -112,11 +113,11 @@ def test_cask_listing_comes_from_git_not_from_the_runs(tmp_path):
         "a/a": {"casks": {"a/a/x": cask("a/a/x")}, "readTaps": ["a/a", "b/b"]},
         "b/b": {"casks": {}},
     })
-    listings = {"a/a": ["a/a/x"], "b/b": ["b/b/real"]}
+    listings = {"a/a": {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "b/b": {"b/b/real": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}}
 
     result = run_collect(gh, ["a/a", "b/b"], tmp_path, lister=listings.get)
 
-    assert result["listed"] == {"a/a": ["a/a/x"], "b/b": ["b/b/real"]}
+    assert result["listed"] == listings
 
 
 def git_runner(ls_tree, clone_code=0):
@@ -128,8 +129,9 @@ def git_runner(ls_tree, clone_code=0):
 
 
 def test_list_casks_reads_cask_file_names_without_running_them(tmp_path):
-    tree = "Casks/sill.rb\nCasks/s/sharded.rb\nCasks/README.md\nCasks/Bad Name.rb\n"
-    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == ["u/r/sharded", "u/r/sill"]
+    tree = ("100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/sill.rb\n100644 blob bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\tCasks/s/sharded.rb\n"
+            "100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/README.md\n100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/Bad Name.rb\n")
+    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == {"u/r/sharded": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/sill": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree, clone_code=1), tmp_path) is None
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(""), tmp_path) is None
 
@@ -150,3 +152,32 @@ def test_list_casks_treats_a_hung_clone_as_unknown(tmp_path):
         raise subprocess.TimeoutExpired(cmd, 120)
 
     assert dispatch_collect.list_casks({"name": "u/r"}, run, tmp_path) is None
+
+
+def test_sweep_collects_only_changed_or_unsettled_taps_one_per_run(tmp_path):
+    gh = FakeGitHub({tap: {"casks": {}} for tap in ("new/t", "changed/t", "unknown/t", "partly/t")})
+    listings = {
+        "same/t": {"same/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+        "changed/t": {"changed/t/x": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"},
+        "new/t": {"new/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+        "partly/t": {"partly/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "partly/t/y": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+    }
+    known = {"same/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "changed/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "partly/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+
+    result = run_collect(gh, sorted(listings) + ["unknown/t"], tmp_path, lister=listings.get, known=known, only_changed=True)
+
+    dispatched = [call[call.index("-f") + 1] for call in gh.calls if call[:2] == ["workflow", "run"]]
+    assert sorted(dispatched) == ["taps=changed/t", "taps=new/t", "taps=partly/t", "taps=unknown/t"]
+    assert result["unchanged"] == ["same/t"]
+
+
+def test_completed_taps_report_the_files_they_were_read_from(tmp_path):
+    gh = FakeGitHub({
+        "a/a": {"casks": {"a/a/x": cask("a/a/x")}, "caskFailures": {"a/a/y": "boom"}},
+        "b/b": {"casks": {}},
+    }, never_finishes={"b/b"})
+    listings = {"a/a": {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "a/a/y": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}, "b/b": {"b/b/z": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
+
+    result = run_collect(gh, ["a/a", "b/b"], tmp_path, budget=60, lister=listings.get)
+
+    assert result["processed"] == {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}

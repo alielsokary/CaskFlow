@@ -112,7 +112,7 @@ def test_tap_code_runs_only_in_separate_runs_per_small_batch():
     pipeline = _workflow("tap-pipeline.yml")
     collect = _job(pipeline, "collect")
     assert "runs-on: ubuntu-latest" in collect and "actions: write" in collect
-    assert "python scripts/dispatch_collect.py --taps $TAPS --batch-size 5" in collect
+    assert "python scripts/dispatch_collect.py --taps $TAPS --batch-size 1" in collect
     assert "collect_tap_casks.py" not in pipeline and "brew " not in pipeline
 
     per_batch = _workflow("tap-collect.yml")
@@ -183,3 +183,15 @@ def test_refused_registrations_never_report_success_on_the_issue():
     assert "id: register" in publish and "refused=" in publish
     assert "steps.register.outputs.refused == ''" in publish
     assert "steps.register.outputs.refused != ''" in publish and "wasn't added" in publish
+
+
+def test_sweep_collects_only_changed_taps_and_tap_files_travel_with_the_data():
+    pipeline = _workflow("tap-pipeline.yml")
+    collect = _job(pipeline, "collect")
+    assert "--files data/tap_files.json" in collect and "--only-changed" in collect
+    assert 'if [ "$EVENT_NAME" = schedule ]' in collect and "EVENT_NAME: ${{ github.event_name }}" in collect
+    assert "gh pr list --head bot/tap-pipeline --state open" in collect and "pull-requests: read" in collect
+    assert "data/tap_files.json" in _job(pipeline, "classify")
+    publish = _job(pipeline, "publish")
+    assert "--files data/tap_files.json" in publish
+    assert "data/tap_files.json" in publish[publish.index("add-paths:"):]

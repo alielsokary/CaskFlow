@@ -1,7 +1,7 @@
 name: Tap pipeline
 
 # Icons and categories for registered third-party taps, separate from the
-# official pipelines. Tap code runs only in tap-collect.yml runs, a few taps per
+# official pipelines. Tap code runs only in tap-collect.yml runs, one tap per
 # run, which `collect` dispatches and reads back run by run. `icons` handles
 # untrusted installers without push credentials. Only `publish` writes, and it
 # never runs tap code. Untrusted code may hold a run's Actions token, so no job
@@ -83,6 +83,7 @@ jobs:
     permissions:
       contents: read
       actions: write
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -90,13 +91,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Read taps in separate runs, five taps each
+      - name: Continue an open tap data PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
+            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
+          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
+            git checkout FETCH_HEAD -- data/tap_files.json 2>/dev/null || true
+          fi
+      - name: Read taps in separate runs, one tap each
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
+          EVENT_NAME: ${{ github.event_name }}
           GH_TOKEN: ${{ github.token }}
         # Runs no tap code. TAPS holds validated user/repo names only; word-splitting is intended.
-        # Writes after every batch; batches the budget leaves out wait for the next sweep.
-        run: python scripts/dispatch_collect.py --taps $TAPS --batch-size 5 --budget-minutes 270 --out tap_casks.json
+        # One tap per run isolates taps from each other; the weekly sweep only collects taps whose cask files changed.
+        # Writes after every run; runs the budget leaves out wait for the next sweep.
+        run: |
+          ONLY_CHANGED=""
+          if [ "$EVENT_NAME" = schedule ]; then ONLY_CHANGED="--only-changed"; fi
+          python scripts/dispatch_collect.py --taps $TAPS --batch-size 1 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -132,7 +147,7 @@ jobs:
           HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
             --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
           if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
-            for file in data/tap_categories.json data/tap_homepage_metadata.json; do
+            for file in data/tap_categories.json data/tap_homepage_metadata.json data/tap_files.json; do
               git checkout FETCH_HEAD -- "$file" 2>/dev/null || true
             done
           fi
@@ -154,6 +169,7 @@ jobs:
           path: |
             data/tap_categories.json
             data/tap_homepage_metadata.json
+            data/tap_files.json
             data/tap_run.json
 
   icons:
@@ -221,7 +237,7 @@ jobs:
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
           PRUNE: ${{ needs.resolve.outputs.prune }}
-        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json
+        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json --files data/tap_files.json
       - name: Register requested taps and those of an open tap data PR
         id: register
         env:
@@ -264,6 +280,7 @@ jobs:
             taps.json
             data/tap_categories.json
             data/tap_homepage_metadata.json
+            data/tap_files.json
       - name: Link the pull request on the issue
         if: github.event_name == 'issues' && steps.pr.outputs.pull-request-url != '' && steps.register.outputs.refused == ''
         env:

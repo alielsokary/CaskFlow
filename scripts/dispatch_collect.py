@@ -19,7 +19,7 @@ from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import _REF, aliases, load_official, trusted_view
+from collect_tap_casks import _REF, OBJECT_ID, aliases, load_official, trusted_view
 from style_standards import write_json
 from validate_taps import _run as _git_run
 
@@ -29,22 +29,28 @@ TITLE = "Tap collect "
 Gh = Callable[[list[str]], str]
 
 
-def list_casks(entry: dict, run=_git_run, workdir: Path | None = None) -> list[str] | None:
-    """The tap's cask refs from its repository's file names (blob-less clone, no tap code run); None if unknown."""
+def list_casks(entry: dict, run=_git_run, workdir: Path | None = None) -> dict[str, str] | None:
+    """The tap's cask refs and their file's git object id (blob-less clone, no tap code run); None if unknown."""
     try:
         with tempfile.TemporaryDirectory(dir=workdir) as clone:
             cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
                           tap_registry.remote_of(entry), clone])
             if cloned.returncode != 0:
                 return None
-            listing = run(["git", "ls-tree", "-r", "--name-only", "HEAD", "Casks"], cwd=clone)
+            listing = run(["git", "ls-tree", "-r", "HEAD", "Casks"], cwd=clone)
     except (subprocess.SubprocessError, OSError):
         return None
     if listing.returncode != 0:
         return None
-    refs = sorted({f"{entry['name']}/{Path(path).stem}" for path in listing.stdout.splitlines() if path.endswith(".rb")})
+    files = {}
+    for line in listing.stdout.splitlines():
+        meta, _, path = line.partition("\t")
+        kind, oid = (meta.split() + ["", "", ""])[1:3]
+        ref = f"{entry['name']}/{Path(path).stem}"
+        if kind == "blob" and path.endswith(".rb") and _REF.fullmatch(ref) and OBJECT_ID.fullmatch(oid):
+            files[ref] = oid
     # An empty listing more likely means a restructured repo than a tap that removed every cask.
-    return [ref for ref in refs if _REF.fullmatch(ref)] or None
+    return dict(sorted(files.items())) or None
 
 
 def batches(taps: list[str], size: int) -> list[list[str]]:
@@ -87,8 +93,19 @@ def _download(gh: Gh, run_id: int, workdir: Path) -> dict | None:
 
 def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, batch_size: int, budget: float,
             workdir: Path, sleep=time.sleep, clock=time.monotonic, on_progress=lambda result: None,
-            lister: Callable[[str], list[str] | None] = lambda name: None) -> dict:
-    groups = {uuid.uuid4().hex: group for group in batches(taps, batch_size)}
+            lister: Callable[[str], dict[str, str] | None] = lambda name: None,
+            known: dict[str, str] | None = None, only_changed: bool = False) -> dict:
+    """With `only_changed`, taps whose every listed cask file was already settled (`known`) are not collected."""
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        listed = {tap: refs for tap, refs in zip(taps, pool.map(lister, taps)) if refs}
+    known = known or {}
+
+    def changed(tap: str) -> bool:
+        return tap not in listed or any(known.get(ref) != oid for ref, oid in listed[tap].items())
+
+    todo = [tap for tap in taps if changed(tap)] if only_changed else list(taps)
+    unchanged = sorted(set(taps) - set(todo))
+    groups = {uuid.uuid4().hex: group for group in batches(todo, batch_size)}
     for nonce, group in groups.items():
         gh(["workflow", "run", WORKFLOW, "--ref", ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
     runs = _find_runs(gh, set(groups), sleep)
@@ -97,13 +114,12 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
     failures: dict[str, str] = {}
     cask_failures: dict[str, str] = {}
     unreached: list[str] = []
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        listed = {tap: refs for tap, refs in zip(taps, pool.map(lister, taps)) if refs}
+    processed: dict[str, str] = {}
 
     def result() -> dict:
         return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
-                "caskFailures": dict(sorted(cask_failures.items())),
-                "listed": dict(sorted(listed.items())), "unreached": unreached}
+                "caskFailures": dict(sorted(cask_failures.items())), "listed": dict(sorted(listed.items())),
+                "processed": dict(sorted(processed.items())), "unchanged": unchanged, "unreached": unreached}
 
     for nonce, group in groups.items():
         run_id = runs.get(nonce)
@@ -129,6 +145,9 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
                              if name in group})
             left = data.get("unreached")
             unreached.extend(name for name in (left if isinstance(left, list) else []) if name in group)
+            for tap in group:
+                if tap in listed and tap not in failures and tap not in unreached:
+                    processed.update({ref: oid for ref, oid in listed[tap].items() if ref not in cask_failures})
         on_progress(result())
     return result()
 
@@ -163,6 +182,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--batch-size", type=int, default=5)
     parser.add_argument("--budget-minutes", type=float, default=270)
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
+    parser.add_argument("--files", type=Path, help="data/tap_files.json: cask files already settled")
+    parser.add_argument("--only-changed", action="store_true", help="Skip taps whose cask files are all settled")
     args = parser.parse_args(argv)
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
@@ -176,8 +197,10 @@ def main(argv: list[str] | None = None) -> int:
         def lister(name: str) -> list[str] | None:
             return list_casks(registered.get(name, {"name": name}), workdir=Path(workdir))
 
+        known = json.loads(args.files.read_text(encoding="utf-8")) if args.files and args.files.exists() else {}
         result = collect(args.taps, _gh, os.environ["GITHUB_REF_NAME"], load_official(), batch_size=args.batch_size,
-                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save, lister=lister)
+                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save, lister=lister,
+                         known=known, only_changed=args.only_changed)
     save(result)
     if step_summary := os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(step_summary, "a", encoding="utf-8") as handle:
