@@ -74,3 +74,12 @@ def test_with_tap_inserts_sorted_and_skips_existing():
 
 def test_repo_registry_is_valid():
     tap_registry.load(tap_registry.REGISTRY_PATH)
+
+
+def test_add_registers_a_tap_sorted(tmp_path, monkeypatch):
+    path = write(tmp_path, [{"name": "a/b"}, {"name": "m/n"}])
+    monkeypatch.setattr(tap_registry, "REGISTRY_PATH", path)
+    monkeypatch.setattr(tap_registry.load, "__defaults__", (path,))
+
+    assert tap_registry.main(["--add", "c/d"]) == 0
+    assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "m/n"]

@@ -74,3 +74,21 @@ def with_tap(entries: list[dict], name: str) -> list[dict]:
     if any(entry["name"] == name for entry in entries):
         return entries
     return sorted([*entries, {"name": name}], key=lambda entry: entry["name"])
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    from style_standards import write_json
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--add", required=True, help="Register a tap (sorted insert; no-op if present)")
+    args = parser.parse_args(argv)
+    if error := validate_name(args.add):
+        raise SystemExit(error)
+    write_json(REGISTRY_PATH, {"version": VERSION, "taps": with_tap(load(), args.add)}, trailing_newline=True)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

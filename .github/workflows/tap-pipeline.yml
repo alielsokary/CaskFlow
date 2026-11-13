@@ -1,0 +1,194 @@
+name: Tap pipeline
+
+# Icons and categories for registered third-party taps. Separate from the
+# official classification and icon pipelines. Only `collect` runs tap code,
+# so it holds no secrets; `icons` handles untrusted installers without push
+# credentials; only `publish` writes, and it never runs tap code.
+on:
+  push:
+    branches: [master]
+    paths:
+      - taps.json
+  schedule:
+    # Weekly sweep: only casks added to registered taps since the last run.
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      tap:
+        description: "Tap to add or refresh, user/repo"
+        required: true
+        type: string
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tap-pipeline
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    if: github.event_name != 'issues' || github.event.label.name == 'add-tap'
+    runs-on: ubuntu-latest
+    outputs:
+      taps: ${{ steps.resolve.outputs.taps }}
+      register: ${{ steps.resolve.outputs.register }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: resolve
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          DISPATCH_TAP: ${{ inputs.tap }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python scripts/resolve_tap_run.py
+
+  collect:
+    needs: resolve
+    if: needs.resolve.outputs.taps != ''
+    runs-on: macos-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read taps with brew
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+        # TAPS holds validated user/repo names only; word-splitting is intended.
+        run: python scripts/collect_tap_casks.py --taps $TAPS --out tap_casks.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tap-casks
+          path: tap_casks.json
+
+  classify:
+    needs: [resolve, collect]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: tap-casks
+      - name: Classify tap casks
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'anthropic' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python scripts/classify_tap_casks.py --collected tap_casks.json --taps $TAPS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tap-data
+          path: |
+            data/tap_categories.json
+            data/tap_homepage_metadata.json
+
+  icons:
+    needs: [resolve, collect]
+    runs-on: macos-latest
+    timeout-minutes: 360
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: tap-casks
+      - name: Extract tap icons
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+        run: python scripts/extract_tap_icons.py --collected tap_casks.json --taps $TAPS --output-dir icons_out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tap-icons
+          path: icons_out/taps
+          if-no-files-found: ignore
+
+  publish:
+    needs: [resolve, classify, icons]
+    if: always() && needs.classify.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: tap-data
+          path: data
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: tap-icons
+          path: icons_out/taps
+      - name: Publish tap icons to the icons branch
+        run: python scripts/extract_tap_icons.py --publish-from icons_out
+      - name: Register a requested tap
+        env:
+          REGISTER: ${{ needs.resolve.outputs.register }}
+        run: |
+          if [ -n "$REGISTER" ]; then python scripts/tap_registry.py --add "$REGISTER"; fi
+      - name: Open a pull request
+        id: pr
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          token: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
+          commit-message: "feat(taps): update tap icons and categories"
+          title: "feat(taps): update tap icons and categories"
+          body: |
+            Tap pipeline run ${{ github.run_id }} (${{ github.event_name }}).
+            ${{ github.event_name == 'issues' && format('Closes #{0}', github.event.issue.number) || '' }}
+          branch: bot/tap-pipeline-${{ github.run_id }}
+          assignees: ${{ github.repository_owner }}
+          add-paths: |
+            taps.json
+            data/tap_categories.json
+            data/tap_homepage_metadata.json
+      - name: Link the pull request on the issue
+        if: github.event_name == 'issues' && steps.pr.outputs.pull-request-url != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        run: gh issue comment "$ISSUE" --body "Opened $PR_URL with the tap's icons and categories."
