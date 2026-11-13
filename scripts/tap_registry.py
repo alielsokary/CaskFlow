@@ -11,8 +11,8 @@ REGISTRY_PATH = REPO_ROOT / "taps.json"
 VERSION = 1
 
 _PART = re.compile(r"[a-z0-9][a-z0-9_.-]*")
-_ISSUE_LINE = re.compile(r"^\s*tap:\s*(\S+)\s*$", re.IGNORECASE | re.MULTILINE)
-_HTML_COMMENT = re.compile(r"<!--.*?(?:-->|\Z)", re.DOTALL)
+# Titles render as plain text, so the maintainer approves exactly the name parsed here.
+_ISSUE_TITLE = re.compile(r"[ ]*add tap:[ ]*([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)[ ]*", re.IGNORECASE | re.ASCII)
 
 
 class RegistryError(Exception):
@@ -62,14 +62,12 @@ def load(path: Path = REGISTRY_PATH) -> list[dict]:
     return entries
 
 
-def parse_issue_tap(body: str) -> str | None:
-    """The validated tap from an issue's single, visible `Tap: user/repo` line."""
-    body = body or ""
-    lines = _ISSUE_LINE.findall(body)
-    # A maintainer approves what GitHub renders, so a line hidden in a comment must not win.
-    if len(lines) != 1 or len(_ISSUE_LINE.findall(_HTML_COMMENT.sub("", body))) != 1:
+def parse_issue_title(title: str) -> str | None:
+    """The tap named by an 'Add tap: user/repo' issue title, or None."""
+    match = _ISSUE_TITLE.fullmatch(title or "")
+    if not match:
         return None
-    name = lines[0].lower()
+    name = match.group(1).lower()
     return None if validate_name(name) else name
 
 

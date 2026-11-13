@@ -49,8 +49,8 @@ Use `--all` only after the non-high-confidence entries have been reviewed. The t
 ## Adding a tap
 
 CaskFlow also publishes icons and categories for third-party taps listed in
-`taps.json`. To add one, open an "Add a tap" issue with a `Tap: user/repo`
-line. A maintainer reviews the tap and adds the `add-tap` label, which runs the
+`taps.json`. To add one, open an "Add a tap" issue titled `Add tap: user/repo`.
+A maintainer reviews the tap and adds the `add-tap` label, which runs the
 tap pipeline and opens a pull request with the icons and categories.
 
 You can also edit `taps.json` in a pull request: keep the list sorted, use the

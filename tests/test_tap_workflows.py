@@ -51,7 +51,7 @@ def test_untrusted_inputs_only_reach_scripts_through_env():
     pipeline = _workflow("tap-pipeline.yml")
 
     for line in pipeline.splitlines():
-        if "inputs.tap" in line or "github.event.issue.body" in line or "needs.resolve.outputs" in line:
+        if "inputs.tap" in line or "issue.body" in line or "issue.title" in line or "needs.resolve.outputs" in line:
             stripped = line.strip()
             assert not stripped.startswith("run:"), line
             assert ":" in stripped and not stripped.startswith("python"), line
@@ -85,3 +85,9 @@ def test_publish_takes_artifacts_only_by_id_from_their_producing_jobs():
     assert "name: tap-data" not in publish and "name: tap-icons" not in publish
     assert "cache: pip" not in publish
     assert "--publish-from icons_out --taps $TAPS" in publish
+
+
+def test_issue_runs_read_the_tap_from_the_title_never_the_body():
+    resolve = _job(_workflow("tap-pipeline.yml"), "resolve")
+    assert "ISSUE_TITLE: ${{ github.event.issue.title }}" in resolve
+    assert "issue.body" not in resolve

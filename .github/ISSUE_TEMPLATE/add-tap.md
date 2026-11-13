@@ -1,11 +1,10 @@
 ---
 name: Add a tap
 about: Ask CaskFlow to publish icons and categories for a third-party Homebrew tap
-title: "Add tap: "
+title: "Add tap: user/repo"
 ---
 
-<!-- Replace user/repo with the tap name, as used in `brew tap user/repo`. Keep this line exactly. -->
-Tap: user/repo
+<!-- Put the tap name in the title, exactly "Add tap: user/repo", as used in `brew tap user/repo`. -->
 
 ### Why this tap
 

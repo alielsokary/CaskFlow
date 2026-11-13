@@ -48,7 +48,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           BEFORE_SHA: ${{ github.event.before }}
           DISPATCH_TAP: ${{ inputs.tap }}
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: python scripts/resolve_tap_run.py
 
   collect:

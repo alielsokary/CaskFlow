@@ -59,11 +59,23 @@ def test_default_remote():
     assert tap_registry.remote_of({"name": "a/b"}) == "https://github.com/a/homebrew-b"
 
 
-def test_parse_issue_tap():
-    assert tap_registry.parse_issue_tap("Tap: saffsanity/sill\nIt streams windows.") == "saffsanity/sill"
-    assert tap_registry.parse_issue_tap("Some text\n  tap:   Saffsanity/Sill  \n") == "saffsanity/sill"
-    assert tap_registry.parse_issue_tap("Tap: a/b; rm -rf ~") is None
-    assert tap_registry.parse_issue_tap("no tap line") is None
+def test_parse_issue_title_takes_the_tap_from_a_plain_title():
+    assert tap_registry.parse_issue_title("Add tap: saffsanity/sill") == "saffsanity/sill"
+    assert tap_registry.parse_issue_title("  add TAP:  Saffsanity/Sill ") == "saffsanity/sill"
+
+
+@pytest.mark.parametrize("title", [
+    "Add tap: a/b; rm -rf ~",
+    "Add tap: ",
+    "Add tap: user/repo extra",
+    "Add tap: homebrew/cask",
+    "Add tap:\u00a0good/tap",
+    "Add tap: good/tap\u200b",
+    "Add tap: \u212aelvin/tap",
+    "Tap: good/tap",
+])
+def test_parse_issue_title_refuses_anything_but_one_ascii_tap_name(title):
+    assert tap_registry.parse_issue_title(title) is None
 
 
 def test_with_tap_inserts_sorted_and_skips_existing():
@@ -84,9 +96,3 @@ def test_add_registers_a_tap_sorted(tmp_path, monkeypatch):
     assert tap_registry.main(["--add", "c/d"]) == 0
     assert [entry["name"] for entry in tap_registry.load(path)] == ["a/b", "c/d", "m/n"]
 
-
-def test_parse_issue_tap_refuses_hidden_or_repeated_tap_lines():
-    assert tap_registry.parse_issue_tap("Tap: good/tap\n<!--\nTap: evil/tap\n-->") is None
-    assert tap_registry.parse_issue_tap("<!--\nTap: evil/tap\n-->\nnothing visible") is None
-    assert tap_registry.parse_issue_tap("Tap: good/tap\nTap: evil/tap") is None
-    assert tap_registry.parse_issue_tap("<!-- Replace user/repo. -->\nTap: good/tap\n<!-- note -->") == "good/tap"

