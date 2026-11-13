@@ -168,12 +168,14 @@ def test_trusted_view_filters_failures_and_read_taps():
         "casks": {},
         "caskFailures": {"u/r/bad": "Error: something `@mention`", "o/t/x": "forged", "../evil": "x"},
         "readTaps": ["u/r", "o/t"],
+        "listed": {"u/r": ["u/r/a", "o/t/b", "bad"], "o/t": ["o/t/c"]},
     }
 
     view = collect.trusted_view(collected, ["u/r"], {})
 
     assert view["caskFailures"] == {"u/r/bad": ""}
     assert view["readTaps"] == ["u/r"]
+    assert view["listed"] == {"u/r": ["u/r/a"]}
 
 
 import pytest  # noqa: E402

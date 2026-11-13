@@ -57,14 +57,18 @@ def _tap(ref: str) -> str:
 
 
 def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, list[str]]:
-    """Drop what is gone: casks missing from a fully read tap, stale aliases, and taps removed from taps.json."""
+    """Drop what is gone: casks whose file left the tap's repository, stale aliases, and taps removed from taps.json.
+
+    Whether a cask is gone comes only from `listed` (a git file listing made without running tap code),
+    never from collected data, which another tap in the same collect run could have shaped.
+    """
     casks = dict(existing.get("casks", {}))
     aliases = dict(existing.get("sameAs", {}))
-    read, present = set(view.get("readTaps", [])), set(view["casks"])
-    failed, now_aliased = set(view.get("caskFailures", {})), view.get("sameAs", {})
+    listed = {tap: set(refs) for tap, refs in view.get("listed", {}).items()}
+    present, now_aliased = set(view["casks"]), view.get("sameAs", {})
     removed: set[str] = set()
     for ref in set(casks) | set(aliases):
-        if _tap(ref) in removed_taps or (_tap(ref) in read and ref not in present and ref not in failed):
+        if _tap(ref) in removed_taps or (_tap(ref) in listed and ref not in listed[_tap(ref)]):
             casks.pop(ref, None)
             aliases.pop(ref, None)
             removed.add(ref)
@@ -77,12 +81,10 @@ def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, li
 
 
 def run_file(view: dict, removed_taps: list[str]) -> dict:
-    """What publish needs from this run: taps that yielded casks, and per fully read tap the refs that keep icons."""
-    aliased = set(view.get("sameAs", {}))
-    keep = (set(view["casks"]) - aliased) | set(view.get("caskFailures", {}))
+    """What publish needs from this run: taps that yielded casks, and per listed tap the refs that keep icons."""
     return {
         "readable": sorted({_tap(ref) for ref in view["casks"]}),
-        "current": {tap: sorted(ref for ref in keep if _tap(ref) == tap) for tap in sorted(view.get("readTaps", []))},
+        "current": {tap: sorted(refs) for tap, refs in sorted(view.get("listed", {}).items())},
         "prunedTaps": sorted(removed_taps),
     }
 

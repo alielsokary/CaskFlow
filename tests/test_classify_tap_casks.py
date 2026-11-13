@@ -82,9 +82,9 @@ def test_non_public_homepages_are_never_fetched(monkeypatch):
     assert cache["a/b/meta"]["error"] == "non_public_url"
 
 
-def view(casks=(), failures=(), read=(), same_as=None):
+def view(casks=(), failures=(), listed=None, same_as=None):
     return {"casks": {ref: {} for ref in casks}, "caskFailures": {ref: "" for ref in failures},
-            "readTaps": list(read), "sameAs": same_as or {}}
+            "listed": listed or {}, "sameAs": same_as or {}}
 
 
 def data(casks=(), same_as=None):
@@ -93,23 +93,30 @@ def data(casks=(), same_as=None):
 
 
 def test_renamed_cask_drops_the_old_ref():
-    pruned, removed = classify.prune(data(["u/r/old"]), view(["u/r/new"], read=["u/r"]), [])
+    pruned, removed = classify.prune(data(["u/r/old"]), view(["u/r/new"], listed={"u/r": ["u/r/new"]}), [])
     assert "u/r/old" not in pruned["casks"] and removed == ["u/r/old"]
 
 
 def test_failed_casks_are_never_pruned():
-    pruned, removed = classify.prune(data(["u/r/x"]), view(failures=["u/r/x"], read=["u/r"]), [])
+    pruned, removed = classify.prune(data(["u/r/x"]), view(failures=["u/r/x"], listed={"u/r": ["u/r/x"]}), [])
     assert "u/r/x" in pruned["casks"] and removed == []
 
 
 def test_unread_taps_keep_their_data():
-    pruned, removed = classify.prune(data(["v/w/y"], {"v/w/z": "z"}), view(read=["u/r"]), [])
+    pruned, removed = classify.prune(data(["v/w/y"], {"v/w/z": "z"}), view(listed={"u/r": []}), [])
     assert pruned["casks"] == data(["v/w/y"])["casks"] and pruned["sameAs"] == {"v/w/z": "z"} and removed == []
 
 
+def test_forged_empty_tap_data_cannot_delete_anything():
+    # A neighbour in the same collect run can blank this tap's casks, but not its repository's file list.
+    forged = view(listed={"n/b": ["n/b/x", "n/b/y"]}) | {"readTaps": ["n/b"]}
+    pruned, removed = classify.prune(data(["n/b/x"], {"n/b/y": "y"}), forged, [])
+    assert pruned["casks"] == data(["n/b/x"])["casks"] and pruned["sameAs"] == {"n/b/y": "y"} and removed == []
+
+
 def test_alias_follows_the_latest_comparison():
-    pruned, removed = classify.prune(data(["u/r/b"], {"u/r/a": "a"}), view(["u/r/a", "u/r/b"], read=["u/r"],
-                                                                         same_as={"u/r/b": "b"}), [])
+    pruned, removed = classify.prune(data(["u/r/b"], {"u/r/a": "a"}),
+                                     view(["u/r/a", "u/r/b"], listed={"u/r": ["u/r/a", "u/r/b"]}, same_as={"u/r/b": "b"}), [])
     assert "u/r/a" not in pruned["sameAs"]
     assert "u/r/b" not in pruned["casks"] and pruned["sameAs"]["u/r/b"] == "b" and removed == ["u/r/b"]
 
@@ -119,7 +126,7 @@ def test_removed_taps_lose_everything():
     assert pruned["casks"] == {} and pruned["sameAs"] == {} and removed == ["g/t/x", "g/t/y"]
 
 
-def test_run_file_lists_readable_taps_and_the_refs_that_keep_icons():
-    run = classify.run_file(view(["u/r/a", "u/r/b"], failures=["u/r/c"], read=["u/r", "e/t"], same_as={"u/r/b": "b"}),
-                            ["g/t"])
-    assert run == {"readable": ["u/r"], "current": {"e/t": [], "u/r": ["u/r/a", "u/r/c"]}, "prunedTaps": ["g/t"]}
+def test_run_file_keeps_icons_for_every_listed_cask():
+    run = classify.run_file(view(["u/r/a", "u/r/b"], failures=["u/r/c"], listed={"u/r": ["u/r/a", "u/r/b", "u/r/c"]},
+                                 same_as={"u/r/b": "b"}), ["g/t"])
+    assert run == {"readable": ["u/r"], "current": {"u/r": ["u/r/a", "u/r/b", "u/r/c"]}, "prunedTaps": ["g/t"]}

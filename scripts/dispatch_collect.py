@@ -14,17 +14,34 @@ import subprocess
 import tempfile
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Callable
 
 import tap_registry
 from collect_tap_casks import _REF, aliases, load_official, trusted_view
 from style_standards import write_json
+from validate_taps import _run as _git_run
 
 WORKFLOW = "tap-collect.yml"
 TITLE = "Tap collect "
 
 Gh = Callable[[list[str]], str]
+
+
+def list_casks(entry: dict, run=_git_run, workdir: Path | None = None) -> list[str] | None:
+    """The tap's cask refs from its repository's file names (blob-less clone, no tap code run); None if unknown."""
+    with tempfile.TemporaryDirectory(dir=workdir) as clone:
+        cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
+                      tap_registry.remote_of(entry), clone])
+        if cloned.returncode != 0:
+            return None
+        listing = run(["git", "ls-tree", "-r", "--name-only", "HEAD", "Casks"], cwd=clone)
+    if listing.returncode != 0:
+        return None
+    refs = sorted({f"{entry['name']}/{Path(path).stem}" for path in listing.stdout.splitlines() if path.endswith(".rb")})
+    # An empty listing more likely means a restructured repo than a tap that removed every cask.
+    return [ref for ref in refs if _REF.fullmatch(ref)] or None
 
 
 def batches(taps: list[str], size: int) -> list[list[str]]:
@@ -66,7 +83,8 @@ def _download(gh: Gh, run_id: int, workdir: Path) -> dict | None:
 
 
 def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, batch_size: int, budget: float,
-            workdir: Path, sleep=time.sleep, clock=time.monotonic, on_progress=lambda result: None) -> dict:
+            workdir: Path, sleep=time.sleep, clock=time.monotonic, on_progress=lambda result: None,
+            lister: Callable[[str], list[str] | None] = lambda name: None) -> dict:
     groups = {uuid.uuid4().hex: group for group in batches(taps, batch_size)}
     for nonce, group in groups.items():
         gh(["workflow", "run", WORKFLOW, "--ref", ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
@@ -77,11 +95,13 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
     cask_failures: dict[str, str] = {}
     read_taps: list[str] = []
     unreached: list[str] = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        listed = {tap: refs for tap, refs in zip(taps, pool.map(lister, taps)) if refs}
 
     def result() -> dict:
         return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
                 "caskFailures": dict(sorted(cask_failures.items())), "readTaps": sorted(read_taps),
-                "unreached": unreached}
+                "listed": dict(sorted(listed.items())), "unreached": unreached}
 
     for nonce, group in groups.items():
         run_id = runs.get(nonce)
@@ -145,8 +165,13 @@ def main(argv: list[str] | None = None) -> int:
         write_json(args.out, result, trailing_newline=True)
 
     with tempfile.TemporaryDirectory() as workdir:
+        registered = {entry["name"]: entry for entry in tap_registry.load()}
+
+        def lister(name: str) -> list[str] | None:
+            return list_casks(registered.get(name, {"name": name}), workdir=Path(workdir))
+
         result = collect(args.taps, _gh, os.environ["GITHUB_REF_NAME"], load_official(), batch_size=args.batch_size,
-                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save)
+                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save, lister=lister)
     save(result)
     if step_summary := os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(step_summary, "a", encoding="utf-8") as handle:

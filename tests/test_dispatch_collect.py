@@ -40,7 +40,7 @@ class FakeGitHub:
         raise AssertionError(args)
 
 
-def run_collect(gh, taps, tmp_path, *, budget=600):
+def run_collect(gh, taps, tmp_path, *, budget=600, lister=lambda name: None):
     ticks = [0]
 
     def sleep(seconds):
@@ -48,7 +48,7 @@ def run_collect(gh, taps, tmp_path, *, budget=600):
 
     return dispatch_collect.collect(
         taps, gh, "master", {}, batch_size=1, budget=budget,
-        sleep=sleep, clock=lambda: ticks[0], workdir=tmp_path,
+        sleep=sleep, clock=lambda: ticks[0], workdir=tmp_path, lister=lister,
     )
 
 
@@ -105,3 +105,30 @@ def test_summary_lists_only_validated_names():
     for name in ("a/b", "a/b/c", "c/d"):
         assert name in text
     assert "@" not in text and "<" not in text and "rm -rf" not in text
+
+
+def test_cask_listing_comes_from_git_not_from_the_runs(tmp_path):
+    gh = FakeGitHub({
+        "a/a": {"casks": {"a/a/x": cask("a/a/x")}, "readTaps": ["a/a", "b/b"]},
+        "b/b": {"casks": {}},
+    })
+    listings = {"a/a": ["a/a/x"], "b/b": ["b/b/real"]}
+
+    result = run_collect(gh, ["a/a", "b/b"], tmp_path, lister=listings.get)
+
+    assert result["listed"] == {"a/a": ["a/a/x"], "b/b": ["b/b/real"]}
+
+
+def git_runner(ls_tree, clone_code=0):
+    def run(cmd, cwd=None):
+        if cmd[1] == "clone":
+            return subprocess.CompletedProcess(cmd, clone_code, stdout="", stderr="")
+        return subprocess.CompletedProcess(cmd, 0, stdout=ls_tree, stderr="")
+    return run
+
+
+def test_list_casks_reads_cask_file_names_without_running_them(tmp_path):
+    tree = "Casks/sill.rb\nCasks/s/sharded.rb\nCasks/README.md\nCasks/Bad Name.rb\n"
+    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == ["u/r/sharded", "u/r/sill"]
+    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree, clone_code=1), tmp_path) is None
+    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(""), tmp_path) is None

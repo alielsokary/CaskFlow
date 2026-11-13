@@ -119,11 +119,14 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
     }
     failed = collected.get("caskFailures")
     read = collected.get("readTaps")
+    listed = collected.get("listed") if isinstance(collected.get("listed"), dict) else {}
     return {
         "casks": dict(sorted(casks.items())),
         "sameAs": aliases(casks, official),
         "caskFailures": {ref: "" for ref in sorted(failed if isinstance(failed, dict) else {}) if ours(ref)},
         "readTaps": sorted({name for name in (read if isinstance(read, list) else []) if name in wanted}),
+        "listed": {tap: sorted(ref for ref in refs if ours(ref) and ref.rsplit("/", 1)[0] == tap)
+                   for tap, refs in sorted(listed.items()) if tap in wanted and isinstance(refs, list)},
     }
 
 
