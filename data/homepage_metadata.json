@@ -1824,6 +1824,13 @@
     "og_desc": "ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries"
   },
   {
+    "token": "ardia",
+    "homepage": "https://ardia.dev/",
+    "title": "Ardia · a free Arc alternative for Mac, with Dia's polish",
+    "meta_desc": "A Mac browser with Arc's sidebar and Dia's polish, built on real Chromium. Free, open source and notarized by Apple, with ads and trackers kept out.",
+    "og_desc": "A Mac browser with Arc's sidebar and Dia's polish, built on real Chromium. Free, open source and notarized by Apple, with ads and trackers kept out."
+  },
+  {
     "token": "arduino-ide",
     "homepage": "https://www.arduino.cc/en/software",
     "title": "",
@@ -10180,6 +10187,13 @@
     "title": "JetBrains Fleet: More Than a Code Editor",
     "meta_desc": "Built from scratch, based on 20 years of experience developing IDEs. Fleet uses the IntelliJ code-processing engine, with a distributed IDE architecture and a reimagined UI.",
     "og_desc": "Built from scratch, based on 20 years of experience developing IDEs. Fleet uses the IntelliJ code-processing engine, with a distributed IDE architecture and a reimagined UI."
+  },
+  {
+    "token": "fleet-desktop",
+    "homepage": "https://fleetdm.com/guides/fleet-desktop",
+    "title": "Fleet | Fleet Desktop",
+    "meta_desc": "Learn about Fleet Desktop's features for self-remediation and transparency.",
+    "og_desc": "Learn about Fleet Desktop's features for self-remediation and transparency."
   },
   {
     "token": "flexoptix",
