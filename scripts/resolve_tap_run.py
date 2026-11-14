@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 - fixed gh and git commands, argument lists, and no shell
 
 import tap_registry
 from validate_taps import changed_entries, check_tap
@@ -14,43 +14,51 @@ def resolve(event: str, *, base: list[dict], head: list[dict], dispatch_tap: str
             issue_titles: list[str] = (), check=check_tap, data_taps: list[str] = ()) -> tuple[list[str], list[str], list[str]]:
     """Taps to process, taps to register, and taps removed from the registry whose data must go."""
     registered = [entry["name"] for entry in head]
-
-    def refusal(name: str) -> str | None:
-        try:
-            return check({"name": name})
-        except (subprocess.SubprocessError, OSError) as error:
-            return f"{name} could not be checked: {type(error).__name__}"
-
     if event == "push":
         removed = sorted({entry["name"] for entry in base} - set(registered))
         return [entry["name"] for entry in changed_entries(base, head)], [], removed
     if event == "schedule":
-        # A labeled issue whose run was dropped from the concurrency queue is picked up here.
-        requested = {name for title in issue_titles if (name := tap_registry.parse_issue_title(title))}
-        new = []
-        for name in sorted(requested - set(registered)):
-            if error := refusal(name):
-                print(f"skipping requested tap: {error}")
-            else:
-                new.append(name)
-        # A removal whose push run was dropped or failed is caught up here.
-        return sorted(registered + new), new, sorted(set(data_taps) - set(registered))
+        return _sweep(registered, issue_titles, check, data_taps)
+    name = _requested_name(event, dispatch_tap, issue_title)
+    if name in registered:
+        return [name], [], []
+    # A requested tap must exist and hold casks before any of its code runs.
+    if error := _refusal(check, name):
+        raise SystemExit(error)
+    return [name], [name], []
+
+
+def _refusal(check, name: str) -> str | None:
+    try:
+        return check({"name": name})
+    except (subprocess.SubprocessError, OSError) as error:
+        return f"{name} could not be checked: {type(error).__name__}"
+
+
+def _sweep(registered: list[str], issue_titles: list[str], check, data_taps: list[str]) -> tuple[list[str], list[str], list[str]]:
+    # A labeled issue whose run was dropped from the concurrency queue is picked up here.
+    requested = {name for title in issue_titles if (name := tap_registry.parse_issue_title(title))}
+    new = []
+    for name in sorted(requested - set(registered)):
+        if error := _refusal(check, name):
+            print(f"skipping requested tap: {error}")
+        else:
+            new.append(name)
+    # A removal whose push run was dropped or failed is caught up here.
+    return sorted(registered + new), new, sorted(set(data_taps) - set(registered))
+
+
+def _requested_name(event: str, dispatch_tap: str, issue_title: str) -> str:
     if event == "workflow_dispatch":
         name = dispatch_tap.strip().lower()
         if error := tap_registry.validate_name(name):
             raise SystemExit(error)
-    elif event == "issues":
-        name = tap_registry.parse_issue_title(issue_title)
-        if name is None:
+        return name
+    if event == "issues":
+        if (name := tap_registry.parse_issue_title(issue_title)) is None:
             raise SystemExit("the issue title is not 'Add tap: user/repo'")
-    else:
-        raise SystemExit(f"unsupported event {event!r}")
-    if name in registered:
-        return [name], [], []
-    # A requested tap must exist and hold casks before any of its code runs.
-    if error := refusal(name):
-        raise SystemExit(error)
-    return [name], [name], []
+        return name
+    raise SystemExit(f"unsupported event {event!r}")
 
 
 def approved(events: list[dict]) -> bool:
@@ -61,7 +69,7 @@ def approved(events: list[dict]) -> bool:
 
 
 def _gh_json(*args: str):
-    result = subprocess.run(["gh", *args], capture_output=True, text=True, check=True)
+    result = subprocess.run(["gh", *args], capture_output=True, text=True, check=True)  # nosec B603, B607 - no shell
     return json.loads(result.stdout)
 
 
@@ -90,7 +98,8 @@ def _data_taps() -> list[str]:
 def _base_entries(before: str) -> list[dict]:
     if not before or set(before) == {"0"}:
         return []
-    shown = subprocess.run(["git", "show", f"{before}:taps.json"], capture_output=True, text=True, cwd=tap_registry.REPO_ROOT)
+    shown = subprocess.run(  # nosec B603, B607 - git from PATH; the event's commit sha; no shell
+        ["git", "show", f"{before}:taps.json"], capture_output=True, text=True, cwd=tap_registry.REPO_ROOT)
     return json.loads(shown.stdout).get("taps", []) if shown.returncode == 0 else []
 
 

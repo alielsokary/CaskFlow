@@ -6,7 +6,7 @@ import argparse
 import json
 import os
 import re
-import subprocess
+import subprocess  # nosec B404 - fixed brew commands, argument lists, and no shell
 import time
 from pathlib import Path
 from urllib.parse import urlparse
@@ -23,7 +23,7 @@ _VERSIONISH = re.compile(r"[\d._-]+")
 
 def _run(cmd: list[str]) -> subprocess.CompletedProcess:
     env = {**os.environ, "HOMEBREW_NO_AUTO_UPDATE": "1", "HOMEBREW_NO_ANALYTICS": "1", "GIT_TERMINAL_PROMPT": "0"}
-    return subprocess.run(cmd, capture_output=True, text=True, env=env, timeout=900)
+    return subprocess.run(cmd, capture_output=True, text=True, env=env, timeout=900)  # nosec B603 - argument list; shell is never used
 
 
 def cask_refs(tap_info: list[dict]) -> list[str]:
@@ -69,22 +69,30 @@ def _homepage(cask: dict) -> str | None:
     return f"{host}{parsed.path.rstrip('/').lower()}" if host else None
 
 
+def _canonical(host: str, parts: list[str]) -> tuple[str, list[str]]:
+    """One host name per file service, with the path segments that follow its fixed prefix."""
+    if host in _SOURCEFORGE:
+        return "sourceforge.net", parts[1:] if parts[:1] in (["project"], ["projects"]) else []
+    if _B2_HOST.fullmatch(host):
+        return "backblazeb2.com", parts[1:] if parts[:1] == ["file"] else []
+    return host, parts
+
+
+def _owner_segments(host: str) -> int:
+    """How many leading path segments name the project on `host` (0: the host itself does)."""
+    if host in _FORGES:
+        return 2
+    one = host in _BUCKET_HOSTS or host in ("dl.devmate.com", "sourceforge.net", "backblazeb2.com")
+    return 1 if one or _S3_REGIONAL.fullmatch(host) else 0
+
+
 def _download_source(cask: dict) -> str | None:
     parsed = urlparse(cask.get("url") or "")
-    host = parsed.netloc.lower()
-    parts = parsed.path.strip("/").lower().split("/")
+    host, parts = _canonical(parsed.netloc.lower(), [part for part in parsed.path.lower().split("/") if part])
     if not host or host in _SHARED_HOSTS:
         return None
-    if host in _FORGES:
-        return "/".join([host, *parts[:2]]) if len(parts) >= 2 and all(parts[:2]) else None
-    if host in _BUCKET_HOSTS or _S3_REGIONAL.fullmatch(host) or host == "dl.devmate.com":
-        return f"{host}/{parts[0]}" if parts[0] else None
-    if _B2_HOST.fullmatch(host):
-        return f"backblazeb2.com/{parts[1]}" if len(parts) > 1 and parts[0] == "file" and parts[1] else None
-    if host in _SOURCEFORGE:
-        project = parts[1] if len(parts) > 1 and parts[0] in ("project", "projects") else ""
-        return f"sourceforge.net/{project}" if project else None
-    return host
+    owner = parts[:_owner_segments(host)]
+    return "/".join([host, *owner]) if len(owner) == _owner_segments(host) else None
 
 
 def _known_equal(left: str | None, right: str | None) -> bool:
@@ -107,11 +115,9 @@ def aliases(casks: dict[str, dict], official: dict[str, dict]) -> dict[str, str]
 
 
 def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) -> dict:
-    """What privileged jobs may use from collect's output, which tap code could have shaped.
-
-    Keeps only well-formed casks of the requested taps whose names agree, and recomputes
-    aliases from the official API instead of trusting the file.
-    """
+    """What privileged jobs may use from collect's output, which tap code could have shaped."""
+    # Keeps only well-formed entries of the requested taps whose names agree, and recomputes
+    # aliases from the official API instead of trusting the file.
     wanted = set(taps)
 
     def ours(ref: object) -> bool:
@@ -142,7 +148,7 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
 
 
 def _info(refs: list[str], run, deadline: float | None = None, clock=time.monotonic) -> tuple[dict[str, dict], dict[str, str]]:
-    """brew info fails whole when one named cask is broken, so halve until the broken ones stand alone."""
+    """Read casks with brew info, halving around broken ones: one broken cask fails the whole call."""
     if not refs:
         return {}, {}
     if deadline is not None and clock() >= deadline:

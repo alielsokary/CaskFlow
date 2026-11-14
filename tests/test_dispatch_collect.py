@@ -4,6 +4,8 @@ from pathlib import Path
 
 import dispatch_collect
 
+A, B = "a" * 40, "b" * 40
+
 
 def cask(ref):
     return {"token": ref.rsplit("/", 1)[1], "full_token": ref}
@@ -13,6 +15,7 @@ class FakeGitHub:
     """Each dispatched batch becomes a run whose artifact holds what `artifacts` says for its first tap."""
 
     def __init__(self, artifacts, never_finishes=()):
+        """Serve `artifacts` by first tap; runs of `never_finishes` taps stay in progress."""
         self.artifacts, self.never_finishes = artifacts, set(never_finishes)
         self.runs, self.calls, self.cancelled = {}, [], []
 
@@ -46,11 +49,9 @@ def run_collect(gh, taps, tmp_path, *, budget=600, lister=lambda name: None, kno
     def sleep(seconds):
         ticks[0] += seconds
 
-    return dispatch_collect.collect(
-        taps, gh, "master", {}, batch_size=1, budget=budget,
-        sleep=sleep, clock=lambda: ticks[0], workdir=tmp_path, lister=lister,
-        known=known or {}, only_changed=only_changed,
-    )
+    runs = dispatch_collect.Runs(gh, "master", tmp_path, sleep=sleep, clock=lambda: ticks[0])
+    selection = dispatch_collect.select(taps, lister, known or {}, only_changed)
+    return dispatch_collect.collect(selection, runs, {}, batch_size=1, budget=budget)
 
 
 def test_batches_keep_order():
@@ -113,7 +114,7 @@ def test_cask_listing_comes_from_git_not_from_the_runs(tmp_path):
         "a/a": {"casks": {"a/a/x": cask("a/a/x")}, "readTaps": ["a/a", "b/b"]},
         "b/b": {"casks": {}},
     })
-    listings = {"a/a": {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "b/b": {"b/b/real": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}}
+    listings = {"a/a": {"a/a/x": A}, "b/b": {"b/b/real": B}}
 
     result = run_collect(gh, ["a/a", "b/b"], tmp_path, lister=listings.get)
 
@@ -131,7 +132,7 @@ def git_runner(ls_tree, clone_code=0):
 def test_list_casks_reads_cask_file_names_without_running_them(tmp_path):
     tree = ("100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/sill.rb\n100644 blob bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\tCasks/s/sharded.rb\n"
             "100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/README.md\n100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/Bad Name.rb\n")
-    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == {"u/r/sharded": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/sill": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree), tmp_path) == {"u/r/sharded": B, "u/r/sill": A}
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(tree, clone_code=1), tmp_path) is None
     assert dispatch_collect.list_casks({"name": "u/r"}, git_runner(""), tmp_path) is None
 
@@ -157,12 +158,12 @@ def test_list_casks_treats_a_hung_clone_as_unknown(tmp_path):
 def test_sweep_collects_only_changed_or_unsettled_taps_one_per_run(tmp_path):
     gh = FakeGitHub({tap: {"casks": {}} for tap in ("new/t", "changed/t", "unknown/t", "partly/t")})
     listings = {
-        "same/t": {"same/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
-        "changed/t": {"changed/t/x": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"},
-        "new/t": {"new/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
-        "partly/t": {"partly/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "partly/t/y": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+        "same/t": {"same/t/x": A},
+        "changed/t": {"changed/t/x": B},
+        "new/t": {"new/t/x": A},
+        "partly/t": {"partly/t/x": A, "partly/t/y": A},
     }
-    known = {"same/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "changed/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "partly/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    known = {"same/t/x": A, "changed/t/x": A, "partly/t/x": A}
 
     result = run_collect(gh, sorted(listings) + ["unknown/t"], tmp_path, lister=listings.get, known=known, only_changed=True)
 
@@ -176,11 +177,11 @@ def test_completed_taps_report_the_files_they_were_read_from(tmp_path):
         "a/a": {"casks": {"a/a/x": cask("a/a/x")}, "caskFailures": {"a/a/y": "boom"}},
         "b/b": {"casks": {}},
     }, never_finishes={"b/b"})
-    listings = {"a/a": {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "a/a/y": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}, "b/b": {"b/b/z": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
+    listings = {"a/a": {"a/a/x": A, "a/a/y": B}, "b/b": {"b/b/z": A}}
 
     result = run_collect(gh, ["a/a", "b/b"], tmp_path, budget=60, lister=listings.get)
 
-    assert result["processed"] == {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    assert result["processed"] == {"a/a/x": A}
 
 
 def test_failed_gh_calls_cost_only_their_tap(tmp_path):
@@ -205,8 +206,8 @@ def test_run_lookup_covers_every_dispatched_run_and_dispatches_are_paced(tmp_pat
     gh = FakeGitHub({tap: {"casks": {}} for tap in taps})
     slept = []
 
-    dispatch_collect.collect(taps, gh, "master", {}, batch_size=1, budget=600, sleep=slept.append,
-                             clock=lambda: 0, workdir=tmp_path)
+    runs = dispatch_collect.Runs(gh, "master", tmp_path, sleep=slept.append, clock=lambda: 0)
+    dispatch_collect.collect(dispatch_collect.select(taps, lambda name: None, {}, False), runs, {}, batch_size=1, budget=600)
 
     listing = next(call for call in gh.calls if call[:2] == ["run", "list"])
     assert int(listing[listing.index("--limit") + 1]) >= len(taps) + 100

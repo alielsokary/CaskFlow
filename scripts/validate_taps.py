@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 - fixed git commands, argument lists, and no shell
 import sys
 import tempfile
 from pathlib import Path
@@ -17,7 +17,7 @@ _GIT_ENV = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
 
 
 def _run(cmd: list[str], **kwargs) -> subprocess.CompletedProcess:
-    return subprocess.run(cmd, capture_output=True, text=True, env=_GIT_ENV, timeout=120, **kwargs)
+    return subprocess.run(cmd, capture_output=True, text=True, env=_GIT_ENV, timeout=120, **kwargs)  # nosec B603 - argument list; no shell
 
 
 def changed_entries(base: list[dict], head: list[dict]) -> list[dict]:

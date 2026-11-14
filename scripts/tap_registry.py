@@ -105,22 +105,25 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.added_between:
         base, head = (json.loads(path.read_text(encoding="utf-8")).get("taps", []) for path in args.added_between)
-        names = [name for name in added_between(base, head, args.exclude) if validate_name(name) is None]
-        print("\n".join(names))
+        print("\n".join(name for name in added_between(base, head, args.exclude) if validate_name(name) is None))
         return 0
     if errors := [error for name in args.add if (error := validate_name(name))]:
         raise SystemExit("; ".join(errors))
-    names = args.add
-    if args.only_readable:
-        readable = set(json.loads(args.only_readable.read_text(encoding="utf-8")).get("readable", []))
-        if skipped := [name for name in names if name not in readable]:
-            print(f"not registering taps without readable casks: {' '.join(skipped)}")
-        names = [name for name in names if name in readable]
     entries = load()
-    for name in names:
+    for name in _readable(args.add, args.only_readable):
         entries = with_tap(entries, name)
     write_json(REGISTRY_PATH, {"version": VERSION, "taps": entries}, trailing_newline=True)
     return 0
+
+
+def _readable(names: list[str], run_file: Path | None) -> list[str]:
+    """`names`, cut to the taps the run file says yielded casks when one is given."""
+    if run_file is None:
+        return names
+    readable = set(json.loads(run_file.read_text(encoding="utf-8")).get("readable", []))
+    if skipped := [name for name in names if name not in readable]:
+        print(f"not registering taps without readable casks: {' '.join(skipped)}")
+    return [name for name in names if name in readable]
 
 
 if __name__ == "__main__":

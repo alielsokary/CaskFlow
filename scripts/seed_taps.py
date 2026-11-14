@@ -56,7 +56,7 @@ def seed(names: list[str], head: Callable[[str], str | None], limit: int) -> lis
 def github_head(url: str) -> str | None:
     request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "caskflow-seed"})
     try:
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(request, timeout=30) as response:  # nosec B310 - https GitHub URL built from a validated tap name
             return response.geturl()
     except urllib.error.HTTPError as error:
         if error.code == 404:
@@ -76,7 +76,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.analytics:
         analytics = json.loads(args.analytics.read_text(encoding="utf-8"))
     else:
-        with urllib.request.urlopen(ANALYTICS_URL, timeout=60) as response:
+        with urllib.request.urlopen(ANALYTICS_URL, timeout=60) as response:  # nosec B310 - fixed HTTPS Homebrew API
             analytics = json.load(response)
     new = seed(select(analytics, args.threshold), github_head, args.batch * args.batch_size)
     merged = {entry["name"]: entry for entry in [*new, *tap_registry.load(args.out)]}

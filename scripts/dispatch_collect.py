@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
-"""Collect tap casks in separate workflow runs, one tap each.
-
-Tap code runs only inside `tap-collect.yml` runs. Each run's token reaches only its own
-artifacts, so a hostile tap can shape only its own data: this job keeps from each run
-only the casks of the tap that run was given.
-"""
+"""Collect tap casks in separate workflow runs, one tap each."""
+# Tap code runs only inside `tap-collect.yml` runs. Each run's token reaches only its own
+# artifacts, so a hostile tap can shape only its own data: this job keeps from each run
+# only the casks of the tap that run was given.
 from __future__ import annotations
 
 import argparse
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 - fixed gh commands, argument lists, and no shell
 import tempfile
 import time
 import uuid
+from dataclasses import dataclass, field
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Callable
@@ -34,114 +33,140 @@ def batches(taps: list[str], size: int) -> list[list[str]]:
     return [taps[i:i + size] for i in range(0, len(taps), size)]
 
 
-def _find_runs(gh: Gh, nonces: set[str], sleep, attempts: int = 30) -> dict[str, int]:
-    found: dict[str, int] = {}
-    for _ in range(attempts):
+@dataclass
+class Runs:
+    """Workflow runs of tap-collect.yml, driven through the gh CLI."""
+
+    gh: Gh
+    ref: str
+    workdir: Path
+    sleep: Callable[[float], None] = time.sleep
+    clock: Callable[[], float] = time.monotonic
+
+    def dispatch(self, groups: dict[str, list[str]]) -> dict[str, int]:
+        """Start one run per group; the run id of each group whose run could be started and found."""
+        dispatched = set()
+        for nonce, group in groups.items():
+            try:
+                self.gh(["workflow", "run", WORKFLOW, "--ref", self.ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
+                dispatched.add(nonce)
+            except subprocess.CalledProcessError:
+                print(f"warning: could not dispatch {' '.join(group)}; it waits for the next run")
+            self.sleep(1)  # GitHub limits bursts of write requests
+        return self._find(dispatched)
+
+    def _find(self, nonces: set[str], attempts: int = 30) -> dict[str, int]:
+        found: dict[str, int] = {}
+        for _ in range(attempts):
+            for run in self._json(["run", "list", "--workflow", WORKFLOW, "--event", "workflow_dispatch",
+                                   "--limit", str(len(nonces) + 100), "--json", "databaseId,displayTitle"]) or []:
+                if (nonce := run["displayTitle"].removeprefix(TITLE)) in nonces:
+                    found.setdefault(nonce, run["databaseId"])
+            if len(found) == len(nonces):
+                break
+            self.sleep(10)
+        return found
+
+    def read(self, run_id: int, deadline: float) -> dict | None:
+        """The run's collected data once it finishes; a run still going at `deadline` is cancelled."""
+        while (self._json(["run", "view", str(run_id), "--json", "status"]) or {}).get("status") != "completed":
+            if self.clock() >= deadline:
+                self._json(["run", "cancel", str(run_id)])
+                return None
+            self.sleep(20)
+        folder = self.workdir / str(run_id)
         try:
-            listed = json.loads(gh(["run", "list", "--workflow", WORKFLOW, "--event", "workflow_dispatch",
-                                    "--limit", str(len(nonces) + 100), "--json", "databaseId,displayTitle"]))
+            self.gh(["run", "download", str(run_id), "-n", "tap-casks", "-D", str(folder)])
+            data = json.loads((folder / "tap_casks.json").read_text(encoding="utf-8"))
+        except (subprocess.CalledProcessError, OSError, ValueError):
+            return None
+        return data if isinstance(data, dict) and isinstance(data.get("casks"), dict) else None
+
+    def _json(self, args: list[str]):
+        try:
+            return json.loads(self.gh(args) or "null")
         except (subprocess.CalledProcessError, ValueError):
-            listed = []
-        for run in listed:
-            nonce = run["displayTitle"].removeprefix(TITLE)
-            if nonce in nonces:
-                found.setdefault(nonce, run["databaseId"])
-        if len(found) == len(nonces):
-            break
-        sleep(10)
-    return found
+            return None
 
 
-def _finished(gh: Gh, run_id: int, sleep, clock, deadline: float) -> bool:
-    while True:
-        try:
-            if json.loads(gh(["run", "view", str(run_id), "--json", "status"]))["status"] == "completed":
-                return True
-        except (subprocess.CalledProcessError, ValueError, KeyError):
-            pass
-        if clock() >= deadline:
-            return False
-        sleep(20)
+@dataclass
+class Selection:
+    """The taps one pipeline run collects, and each tap's cask files from git."""
+
+    listed: dict[str, dict[str, str]]
+    todo: list[str]
+    unchanged: list[str]
 
 
-def _download(gh: Gh, run_id: int, workdir: Path) -> dict | None:
-    folder = workdir / str(run_id)
-    try:
-        gh(["run", "download", str(run_id), "-n", "tap-casks", "-D", str(folder)])
-        data = json.loads((folder / "tap_casks.json").read_text(encoding="utf-8"))
-    except (subprocess.CalledProcessError, OSError, ValueError):
-        return None
-    return data if isinstance(data, dict) and isinstance(data.get("casks"), dict) else None
-
-
-def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, batch_size: int, budget: float,
-            workdir: Path, sleep=time.sleep, clock=time.monotonic, on_progress=lambda result: None,
-            lister: Callable[[str], dict[str, str] | None] = lambda name: None,
-            known: dict[str, str] | None = None, only_changed: bool = False) -> dict:
-    """With `only_changed`, taps whose every listed cask file was already settled (`known`) are not collected."""
+def select(taps: list[str], lister: Callable[[str], dict[str, str] | None], known: dict[str, str],
+           only_changed: bool) -> Selection:
+    """With `only_changed`, taps whose every listed cask file was already settled (`known`) are skipped."""
     with ThreadPoolExecutor(max_workers=8) as pool:
         listed = {tap: refs for tap, refs in zip(taps, pool.map(lister, taps)) if refs}
-    known = known or {}
 
     def changed(tap: str) -> bool:
         return tap not in listed or any(known.get(ref) != oid for ref, oid in listed[tap].items())
 
     todo = [tap for tap in taps if changed(tap)] if only_changed else list(taps)
-    unchanged = sorted(set(taps) - set(todo))
-    groups = {uuid.uuid4().hex: group for group in batches(todo, batch_size)}
-    dispatched = set()
-    for nonce, group in groups.items():
+    return Selection(listed, todo, sorted(set(taps) - set(todo)))
+
+
+@dataclass
+class _Totals:
+    official: dict[str, dict]
+    selection: Selection
+    casks: dict[str, dict] = field(default_factory=dict)
+    failures: dict[str, str] = field(default_factory=dict)
+    cask_failures: dict[str, str] = field(default_factory=dict)
+    processed: dict[str, str] = field(default_factory=dict)
+    unreached: list[str] = field(default_factory=list)
+
+    def add(self, data: dict | None, group: list[str]) -> None:
+        view = self._view(data, group)
+        if view is None:
+            self.unreached.extend(group)
+            return
+        self.casks.update(view["casks"])
+        self.cask_failures.update(view["caskFailures"])
+        self.failures.update({name: str(reason) for name, reason in _items(data.get("failures")) if name in group})
+        left = data.get("unreached")
+        self.unreached.extend(name for name in (left if isinstance(left, list) else []) if name in group)
+        self._settle(group)
+
+    def _view(self, data: dict | None, group: list[str]) -> dict | None:
         try:
-            gh(["workflow", "run", WORKFLOW, "--ref", ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
-            dispatched.add(nonce)
-        except subprocess.CalledProcessError:
-            print(f"warning: could not dispatch {' '.join(group)}; it waits for the next run")
-        sleep(1)  # GitHub limits bursts of write requests
-    runs = _find_runs(gh, dispatched, sleep)
-    deadline = clock() + budget
-    casks: dict[str, dict] = {}
-    failures: dict[str, str] = {}
-    cask_failures: dict[str, str] = {}
-    unreached: list[str] = []
-    processed: dict[str, str] = {}
+            return trusted_view(data, group, self.official) if data is not None else None
+        except (TypeError, AttributeError, ValueError):
+            return None
 
-    def result() -> dict:
-        return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
-                "caskFailures": dict(sorted(cask_failures.items())), "listed": dict(sorted(listed.items())),
-                "processed": dict(sorted(processed.items())), "unchanged": unchanged, "unreached": unreached}
+    def _settle(self, group: list[str]) -> None:
+        """Record the file ids of casks read cleanly, so unchanged taps can be skipped next week."""
+        for tap in group:
+            if tap not in self.failures and tap not in self.unreached:
+                listed = self.selection.listed.get(tap, {})
+                self.processed.update({ref: oid for ref, oid in listed.items() if ref not in self.cask_failures})
 
+    def result(self) -> dict:
+        return {"casks": dict(sorted(self.casks.items())), "sameAs": aliases(self.casks, self.official),
+                "failures": self.failures, "caskFailures": dict(sorted(self.cask_failures.items())),
+                "listed": dict(sorted(self.selection.listed.items())), "processed": dict(sorted(self.processed.items())),
+                "unchanged": self.selection.unchanged, "unreached": self.unreached}
+
+
+def _items(value: object) -> list[tuple]:
+    return list(value.items()) if isinstance(value, dict) else []
+
+
+def collect(selection: Selection, runs: Runs, official: dict[str, dict], *, batch_size: int, budget: float,
+            on_progress=lambda result: None) -> dict:
+    groups = {uuid.uuid4().hex: group for group in batches(selection.todo, batch_size)}
+    run_ids = runs.dispatch(groups)
+    deadline = runs.clock() + budget
+    totals = _Totals(official, selection)
     for nonce, group in groups.items():
-        run_id = runs.get(nonce)
-        data = None
-        if run_id is not None:
-            if _finished(gh, run_id, sleep, clock, deadline):
-                data = _download(gh, run_id, workdir)
-            else:
-                try:
-                    gh(["run", "cancel", str(run_id)])
-                except subprocess.CalledProcessError:
-                    pass
-        if data is None:
-            unreached.extend(group)
-        else:
-            try:
-                view = trusted_view(data, group, official)
-            except (TypeError, AttributeError, ValueError):
-                unreached.extend(group)
-                on_progress(result())
-                continue
-            casks.update(view["casks"])
-            cask_failures.update(view["caskFailures"])
-            reported = data.get("failures")
-            failures.update({name: str(reason) for name, reason in (reported if isinstance(reported, dict) else {}).items()
-                             if name in group})
-            left = data.get("unreached")
-            unreached.extend(name for name in (left if isinstance(left, list) else []) if name in group)
-            for tap in group:
-                if tap in listed and tap not in failures and tap not in unreached:
-                    processed.update({ref: oid for ref, oid in listed[tap].items() if ref not in cask_failures})
-        on_progress(result())
-    return result()
+        totals.add(runs.read(run_ids[nonce], deadline) if nonce in run_ids else None, group)
+        on_progress(totals.result())
+    return totals.result()
 
 
 def summary(result: dict) -> str:
@@ -165,7 +190,7 @@ def summary(result: dict) -> str:
 
 
 def _gh(args: list[str]) -> str:
-    return subprocess.run(["gh", *args], capture_output=True, text=True, check=True).stdout
+    return subprocess.run(["gh", *args], capture_output=True, text=True, check=True).stdout  # nosec B603, B607 - gh from PATH; no shell
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -185,14 +210,12 @@ def main(argv: list[str] | None = None) -> int:
 
     with tempfile.TemporaryDirectory() as workdir:
         registered = {entry["name"]: entry for entry in tap_registry.load()}
-
-        def lister(name: str) -> list[str] | None:
-            return list_casks(registered.get(name, {"name": name}), workdir=Path(workdir))
-
         known = json.loads(args.files.read_text(encoding="utf-8")) if args.files and args.files.exists() else {}
-        result = collect(args.taps, _gh, os.environ["GITHUB_REF_NAME"], load_official(), batch_size=args.batch_size,
-                         budget=args.budget_minutes * 60, workdir=Path(workdir), on_progress=save, lister=lister,
-                         known=known, only_changed=args.only_changed)
+        selection = select(args.taps, lambda name: list_casks(registered.get(name, {"name": name}), workdir=Path(workdir)),
+                           known, args.only_changed)
+        runs = Runs(_gh, os.environ["GITHUB_REF_NAME"], Path(workdir))
+        result = collect(selection, runs, load_official(), batch_size=args.batch_size,
+                         budget=args.budget_minutes * 60, on_progress=save)
     save(result)
     if step_summary := os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(step_summary, "a", encoding="utf-8") as handle:

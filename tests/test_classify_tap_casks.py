@@ -3,6 +3,8 @@ import json
 import classify_tap_casks as classify
 from llm_client import Classification
 
+A, B = "a" * 40, "b" * 40
+
 MOVED_ARTIFACTS = [{"app": ["Moved.app"]}]
 OFFICIAL = {"moved": {"token": "moved", "homepage": "https://moved.dev", "url": "https://moved.dev/m.dmg",
                       "artifacts": MOVED_ARTIFACTS}}
@@ -59,7 +61,7 @@ def test_main_classifies_only_pending_casks(tmp_path, monkeypatch):
     monkeypatch.setattr(classify, "fetch_tap_homepages", fake_fetch)
     monkeypatch.setattr(classify, "load_official", lambda: OFFICIAL)
     monkeypatch.setattr(classify, "TAP_HOMEPAGE_CACHE", cache_file)
-    monkeypatch.setattr(classify, "make_client", lambda: FakeClient())
+    monkeypatch.setattr(classify, "make_client", FakeClient)
 
     assert classify.main(["--collected", str(collected), "--taps", "a/b"]) == 0
     assert seen == ["a/b/new"], "x/y is not a requested tap; the file's own aliases are ignored"
@@ -139,10 +141,10 @@ def test_an_empty_listing_prunes_nothing():
 
 def test_tap_files_settle_only_classified_or_aliased_casks_and_forget_gone_ones():
     merged = data(["u/r/a"], {"u/r/b": "b"})
-    existing = {"u/r/gone": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "g/t/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/keep": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
-    current = view(listed={"u/r": {"u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
-                   processed={"u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"})
+    existing = {"u/r/gone": A, "g/t/x": A, "o/t/keep": A}
+    current = view(listed={"u/r": {"u/r/a": B, "u/r/b": A, "u/r/c": A}},
+                   processed={"u/r/a": B, "u/r/b": A, "u/r/c": A})
 
     files = classify.tap_files(existing, merged, current, ["g/t"])
 
-    assert files == {"o/t/keep": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/a": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "u/r/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    assert files == {"o/t/keep": A, "u/r/a": B, "u/r/b": A}

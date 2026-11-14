@@ -1,7 +1,11 @@
 import json
 import subprocess
 
+import pytest
+
 import collect_tap_casks as collect
+
+A, B = "a" * 40, "b" * 40
 
 
 def cask(token, full, homepage, url, artifacts):
@@ -77,7 +81,6 @@ def test_collect_reads_each_tap_and_records_failures():
 
 
 def test_main_rejects_invalid_tap_names(capsys):
-    import pytest
     with pytest.raises(SystemExit, match="not a lowercase"):
         collect.main(["--taps", "a/b; curl x|sh"])
 
@@ -116,7 +119,7 @@ def test_collect_stops_at_its_budget_and_hands_over_each_tap():
 
 
 def info_brew(broken):
-    """brew info prints nothing and exits 1 when any named cask is broken, like the real one."""
+    """Fake brew whose info prints nothing and exits 1 when any named cask is broken, like the real one."""
     calls = []
 
     def run(cmd):
@@ -167,18 +170,16 @@ def test_trusted_view_filters_failures_and_read_taps():
         "casks": {},
         "caskFailures": {"u/r/bad": "Error: something `@mention`", "o/t/x": "forged", "../evil": "x"},
         "readTaps": ["u/r", "o/t"],
-        "listed": {"u/r": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "bad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/z": "nothex"}, "o/t": {"o/t/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
-        "processed": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "o/t/c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/q": "nothex"},
+        "listed": {"u/r": {"u/r/a": A, "o/t/b": A, "bad": A, "u/r/z": "nothex"}, "o/t": {"o/t/c": A}},
+        "processed": {"u/r/a": A, "o/t/c": A, "u/r/q": "nothex"},
     }
 
     view = collect.trusted_view(collected, ["u/r"], {})
 
     assert view["caskFailures"] == {"u/r/bad": ""}
-    assert view["listed"] == {"u/r": {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
-    assert view["processed"] == {"u/r/a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    assert view["listed"] == {"u/r": {"u/r/a": A}}
+    assert view["processed"] == {"u/r/a": A}
 
-
-import pytest  # noqa: E402
 
 
 @pytest.mark.parametrize("url,expected", [

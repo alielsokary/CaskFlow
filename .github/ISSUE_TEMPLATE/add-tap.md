@@ -6,7 +6,7 @@ title: "Add tap: user/repo"
 
 <!-- Put the tap name in the title, exactly "Add tap: user/repo", as used in `brew tap user/repo`. -->
 
-### Why this tap
+## Why this tap
 
 <!-- What it ships, and a link to the tap repository. -->
 

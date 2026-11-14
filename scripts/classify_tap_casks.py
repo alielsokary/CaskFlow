@@ -54,36 +54,43 @@ def merge(existing: dict, classifications: dict[str, Classification], same_as: d
     }
 
 
-def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, list[str]]:
-    """Drop what is gone: casks whose file left the tap's repository, stale aliases, and taps removed from taps.json.
+def _gone(ref: str, listed: dict[str, object], removed_taps: list[str]) -> bool:
+    """The cask's tap left taps.json, or its file left the tap's repository listing."""
+    tap = tap_of(ref)
+    return tap in removed_taps or (tap in listed and ref not in listed[tap])
 
-    Whether a cask is gone comes only from `listed` (a git file listing made without running tap code),
-    never from collected data, which another tap in the same collect run could have shaped.
-    """
+
+def _listed(view: dict) -> dict[str, object]:
+    # An empty listing prunes nothing: more likely a restructured repo than a tap with no casks.
+    return {tap: refs for tap, refs in view.get("listed", {}).items() if refs}
+
+
+def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, list[str]]:
+    """Drop what is gone: casks that left their tap, stale aliases, and taps removed from taps.json."""
+    # Whether a cask is gone comes only from `listed` (a git file listing made without running tap code),
+    # never from collected data, which tap code could have shaped.
     casks = dict(existing.get("casks", {}))
     aliases = dict(existing.get("sameAs", {}))
-    listed = {tap: set(refs) for tap, refs in view.get("listed", {}).items() if refs}
-    present, now_aliased = set(view["casks"]), view.get("sameAs", {})
+    listed, present, now_aliased = _listed(view), set(view["casks"]), view.get("sameAs", {})
     removed: set[str] = set()
     for ref in set(casks) | set(aliases):
-        if tap_of(ref) in removed_taps or (tap_of(ref) in listed and ref not in listed[tap_of(ref)]):
+        if _gone(ref, listed, removed_taps):
             casks.pop(ref, None)
             aliases.pop(ref, None)
             removed.add(ref)
-        elif ref in present and ref in now_aliased and casks.pop(ref, None) is not None:
-            removed.add(ref)
         elif ref in present and ref not in now_aliased:
             aliases.pop(ref, None)
+        elif ref in present and casks.pop(ref, None) is not None:
+            removed.add(ref)
     aliases.update(now_aliased)
     return {**existing, "casks": casks, "sameAs": aliases}, sorted(removed)
 
 
 def tap_files(existing: dict[str, str], merged: dict, view: dict, removed_taps: list[str]) -> dict[str, str]:
     """Cask file ids already settled (categorized or aliased); the weekly sweep skips taps whose files all match."""
-    listed = {tap: refs for tap, refs in view.get("listed", {}).items() if refs}
+    listed = _listed(view)
     settled = set(merged.get("casks", {})) | set(merged.get("sameAs", {}))
-    files = {ref: oid for ref, oid in existing.items()
-             if tap_of(ref) not in removed_taps and not (tap_of(ref) in listed and ref not in listed[tap_of(ref)])}
+    files = {ref: oid for ref, oid in existing.items() if not _gone(ref, listed, removed_taps)}
     files.update({ref: oid for ref, oid in view.get("processed", {}).items() if ref in settled})
     return dict(sorted(files.items()))
 

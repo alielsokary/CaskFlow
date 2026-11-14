@@ -1,9 +1,15 @@
 import json
+import struct
 import subprocess
+import zlib
 from pathlib import Path
+
+import pytest
 
 import extract_icons
 import extract_tap_icons as tap_icons
+
+A, B = "a" * 40, "b" * 40
 
 
 def git_repo(path):
@@ -87,7 +93,6 @@ def test_https_only_downloads_refuse_plain_http_redirects(tmp_path):
 
 
 def test_stage_refuses_paths_that_escape_taps(tmp_path):
-    import pytest
     png = tmp_path / "x.png"
     png.write_bytes(b"x")
     wt = tmp_path / "wt"
@@ -225,11 +230,6 @@ def test_publish_from_with_only_removals_publishes(tmp_path, monkeypatch):
     assert seen == {"run": {"current": {}, "prunedTaps": ["g/t"]}, "taps": ["g/t"]}
 
 
-import struct  # noqa: E402
-import zlib  # noqa: E402
-
-import pytest  # noqa: E402
-
 
 def _chunk(kind, data):
     return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", zlib.crc32(kind + data))
@@ -354,7 +354,7 @@ def test_publish_from_unsettles_icons_worth_retrying(tmp_path, monkeypatch):
         "u/r/none": {"status": "no_icon"},
     }), encoding="utf-8")
     files = tmp_path / "tap_files.json"
-    files.write_text(json.dumps({"u/r/retry": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/parked": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/none": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "u/r/ok": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}), encoding="utf-8")
+    files.write_text(json.dumps({"u/r/retry": A, "u/r/parked": A, "u/r/none": A, "u/r/ok": A}), encoding="utf-8")
     monkeypatch.setattr(tap_icons, "publish", lambda *args: None)
 
     tap_icons.publish_from(tmp_path, ["u/r"], None, files)
