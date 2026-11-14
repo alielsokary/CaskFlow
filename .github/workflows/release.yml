@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - categories.json
+      - data/tap_categories.json
       - data/app_identity_variants.json
       - data/cli_tokens.json
       - data/package_product_reviews.json
@@ -64,6 +65,14 @@ jobs:
           fi
           python3 scripts/app_identities.py --extracted /tmp/app_identities.json --seed app_identities.json
 
+      # Omit iconCasks if the icons branch can't be read; an empty list means no tap icons yet.
+      - name: Stamp tap icon manifest into tap-categories.json
+        run: |
+          (git fetch --depth=1 origin icons && git show FETCH_HEAD:icons.json > /tmp/icons.json) || echo null > /tmp/icons.json
+          jq --slurpfile icons /tmp/icons.json \
+            '. + (if ($icons[0] | type) == "object" then {iconCasks: ($icons[0].taps // {} | keys)} else {} end)' \
+            data/tap_categories.json > tap-categories.json
+
       - name: Compose release notes
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -113,6 +122,7 @@ jobs:
           overwrite_files: true
           files: |
             categories.json
+            tap-categories.json
             added_dates.json
             app_identities.json
           fail_on_unmatched_files: true

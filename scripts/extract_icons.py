@@ -188,6 +188,8 @@ def resolve_icns_name(info: dict) -> str | None:
 def _curl_cmd(cask: dict, dest: Path) -> list[str]:
     """Curl invocation honouring the cask's url_specs (UA, referer, headers, cookies)."""
     cmd = ["curl", "-fSL", "--retry", "2", "--max-time", str(DOWNLOAD_TIMEOUT), "-o", str(dest)]
+    if cask.get("https_only"):  # tap casks: no plain-http hop, so no cloud metadata endpoint
+        cmd += ["--proto", "=https", "--proto-redir", "=https"]
     specs = cask.get("url_specs") or {}
     cmd += ["-A", str(specs.get("user_agent") or DEFAULT_UA)]
     if specs.get("referer"):
@@ -658,7 +660,7 @@ def write_icon_manifest(wt: Path) -> None:
     index = _git(wt, "ls-files", "--stage", "-z", "--", "*.png")
     if index.returncode != 0:
         raise ExtractError("Cannot read staged icons for icons.json")
-    hashes = {}
+    hashes, taps = {}, {}
     for entry in index.stdout.split("\0"):
         if not entry:
             continue
@@ -666,9 +668,16 @@ def write_icon_manifest(wt: Path) -> None:
         mode, sha, stage = info.split()
         if stage != "0":
             raise ExtractError("Cannot publish icons with unresolved conflicts")
-        if mode in ("100644", "100755") and "/" not in path:
+        if mode not in ("100644", "100755"):
+            continue
+        if "/" not in path:
             hashes[Path(path).stem] = sha
-    write_json(wt / "icons.json", {"version": 1, "hashes": dict(sorted(hashes.items()))})
+        elif path.startswith("taps/") and path.count("/") == 3:
+            taps[path.removeprefix("taps/").removesuffix(".png")] = sha  # user/repo/token
+    manifest = {"version": 1, "hashes": dict(sorted(hashes.items()))}
+    if taps:
+        manifest["taps"] = dict(sorted(taps.items()))
+    write_json(wt / "icons.json", manifest)
 
 
 def purge_file(filename: str) -> None:
@@ -709,6 +718,26 @@ def _merge_report(wt: Path, report: dict[str, dict], dirty: set[str]) -> None:
     base_file.write_text(report_json(merged), encoding="utf-8")
 
 
+def _replay_on_remote(wt: Path, identity: tuple[str, ...], msg: str) -> bool:
+    """Redo this commit on top of the other writer's push (official and tap pipelines share the branch)."""
+    ours = _git(wt, "rev-parse", "HEAD").stdout.strip()
+    changes = _git(wt, "diff", "--name-status", "--no-renames", f"{ours}~1", ours).stdout.splitlines()
+    if _git(wt, "fetch", "-q", "origin", ICONS_BRANCH).returncode != 0:
+        return False
+    _git(wt, "reset", "-q", "--hard", "FETCH_HEAD")
+    for line in changes:
+        status, path = line.split("\t", 1)
+        if path == "icons.json":
+            continue  # regenerated from the combined tree below
+        if status == "D":
+            _git(wt, "rm", "-q", "--ignore-unmatch", "--", path)
+        else:
+            _git(wt, "checkout", ours, "--", path)
+    write_icon_manifest(wt)
+    _git(wt, "add", "icons.json")
+    return _git(wt, *identity, "commit", "-q", "-m", msg).returncode == 0
+
+
 def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
     # CI runners have no git identity configured; fall back to the bot's.
     name = _git(wt, "config", "user.name").stdout.strip() or "github-actions[bot]"
@@ -719,7 +748,11 @@ def _commit_and_push(wt: Path, pngs: dict[str, Path]) -> None:
                   "commit", "-q", "-m", msg)
     if commit.returncode != 0:
         raise ExtractError(f"icon commit failed: {commit.stderr.strip()[:200]}")
-    push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
+    identity = ("-c", f"user.name={name}", "-c", f"user.email={email}")
+    for _ in range(3):
+        push = _git(wt, "push", "-q", "origin", f"HEAD:{ICONS_BRANCH}")
+        if push.returncode == 0 or not _replay_on_remote(wt, identity, msg):
+            break
     if push.returncode != 0:
         raise ExtractError(f"icon push failed: {push.stderr.strip()[:200]}")
     if pngs:

@@ -117,3 +117,12 @@ def test_icon_workflow_routes_scheduled_and_manual_extraction(cron, backfill, to
     assert result.stdout.strip() == f"scripts/extract_icons.py --publish --workers {workers} {expected}"
     if cron:
         assert f'cron: "{cron}"' in workflow
+
+
+def test_release_publishes_tap_categories_with_tap_icon_manifest():
+    release = _workflow("release.yml")
+    assert "      - data/tap_categories.json" in release
+    assert "            tap-categories.json" in release
+    assert "git show FETCH_HEAD:icons.json > /tmp/icons.json) || echo null > /tmp/icons.json" in release
+    assert "{iconCasks: ($icons[0].taps // {} | keys)}" in release
+    assert "data/tap_categories.json > tap-categories.json" in release

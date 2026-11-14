@@ -41,3 +41,5 @@ icons_rerun/
 added_dates.json
 docs/specs/
 .codacy/
+# Run-scoped hand-off from classify to publish; never committed.
+data/tap_run.json

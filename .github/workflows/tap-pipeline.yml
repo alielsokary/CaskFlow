@@ -1,0 +1,298 @@
+name: Tap pipeline
+
+# Icons and categories for registered third-party taps, separate from the
+# official pipelines. Tap code runs only in tap-collect.yml runs, one tap per
+# run, which `collect` dispatches and reads back run by run. `icons` handles
+# untrusted installers without push credentials. Only `publish` writes, and it
+# never runs tap code. Untrusted code may hold a run's Actions token, so no job
+# restores a cache and `publish` takes artifacts only by the ID their producing
+# job reported.
+on:
+  push:
+    branches: [master]
+    paths:
+      - taps.json
+  schedule:
+    # Weekly sweep: only casks added to registered taps since the last run.
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      tap:
+        description: "Tap to add or refresh, user/repo"
+        required: true
+        type: string
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tap-pipeline
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    if: github.event_name != 'issues' || github.event.label.name == 'add-tap'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+    outputs:
+      taps: ${{ steps.resolve.outputs.taps }}
+      register: ${{ steps.resolve.outputs.register }}
+      prune: ${{ steps.resolve.outputs.prune }}
+      data_pr: ${{ steps.data_pr.outputs.head }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # The open data PR's head, so later jobs build on it instead of conflicting with it.
+      # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
+      - id: data_pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
+            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
+          echo "head=$HEAD" >> "$GITHUB_OUTPUT"
+      - id: resolve
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          DISPATCH_TAP: ${{ inputs.tap }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          GH_TOKEN: ${{ github.token }}
+        # The sweep also picks up labeled issues whose run the concurrency queue dropped,
+        # only where the label came after the title's last edit.
+        run: python scripts/resolve_tap_run.py
+
+  explain-refusal:
+    needs: resolve
+    if: failure() && github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: >-
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          --body "The tap pipeline couldn't start for this request. Check the title is \`Add tap: user/repo\` and that the repository has a Casks folder; a maintainer can re-run it."
+
+  collect:
+    needs: resolve
+    if: needs.resolve.outputs.taps != '' || needs.resolve.outputs.prune != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Continue an open tap data PR
+        env:
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
+        run: |
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
+            git checkout FETCH_HEAD -- data/tap_files.json 2>/dev/null || true
+          fi
+      - name: Read taps in separate runs, one tap each
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+          EVENT_NAME: ${{ github.event_name }}
+          GH_TOKEN: ${{ github.token }}
+        # Runs no tap code. TAPS holds validated user/repo names only; word-splitting is intended.
+        # One tap per run isolates taps from each other; the weekly sweep only collects taps whose cask files changed.
+        # Writes after every run; runs the budget leaves out wait for the next sweep.
+        run: |
+          ONLY_CHANGED=""
+          if [ "$EVENT_NAME" = schedule ]; then ONLY_CHANGED="--only-changed"; fi
+          python scripts/dispatch_collect.py --taps $TAPS --batch-size 1 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tap-casks
+          path: tap_casks.json
+          if-no-files-found: ignore
+
+  classify:
+    needs: [resolve, collect]
+    runs-on: ubuntu-latest
+    outputs:
+      artifact-id: ${{ steps.data.outputs.artifact-id }}
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: tap-casks
+      - name: Continue an open tap data PR
+        env:
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
+        run: |
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
+            for file in data/tap_categories.json data/tap_homepage_metadata.json data/tap_files.json; do
+              git checkout FETCH_HEAD -- "$file" 2>/dev/null || true
+            done
+          fi
+      - name: Classify tap casks
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+          PRUNE: ${{ needs.resolve.outputs.prune }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'anthropic' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python scripts/classify_tap_casks.py --collected tap_casks.json --taps $TAPS --prune $PRUNE
+      - id: data
+        uses: actions/upload-artifact@v4
+        with:
+          name: tap-data
+          path: |
+            data/tap_categories.json
+            data/tap_homepage_metadata.json
+            data/tap_files.json
+            data/tap_run.json
+
+  icons:
+    needs: [resolve, collect]
+    if: needs.resolve.outputs.taps != ''
+    runs-on: macos-latest
+    timeout-minutes: 360
+    outputs:
+      artifact-id: ${{ steps.upload.outputs.artifact-id }}
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: tap-casks
+      - name: Extract tap icons
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+        run: python scripts/extract_tap_icons.py --collected tap_casks.json --taps $TAPS --output-dir icons_out
+      - id: upload
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tap-icons
+          path: icons_out/taps
+          if-no-files-found: ignore
+
+  publish:
+    needs: [resolve, classify, icons]
+    if: always() && needs.classify.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # No pip cache here, and artifacts only by the ID their own job reported:
+      # collect ran tap code and could have uploaded look-alike artifacts.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.classify.outputs.artifact-id }}
+          path: data
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        if: needs.icons.outputs.artifact-id != ''
+        with:
+          artifact-ids: ${{ needs.icons.outputs.artifact-id }}
+          path: icons_out/taps
+          merge-multiple: true
+      - name: Publish tap icons to the icons branch
+        env:
+          TAPS: ${{ needs.resolve.outputs.taps }}
+          PRUNE: ${{ needs.resolve.outputs.prune }}
+        run: python scripts/extract_tap_icons.py --publish-from icons_out --taps $TAPS $PRUNE --run-file data/tap_run.json --files data/tap_files.json
+      - name: Register requested taps and those of an open tap data PR
+        id: register
+        env:
+          REGISTER: ${{ needs.resolve.outputs.register }}
+          PRUNE: ${{ needs.resolve.outputs.prune }}
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
+        # Names are validated by tap_registry.py; word-splitting is intended.
+        run: |
+          CONTINUED=""
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
+            # Only the taps that PR itself added: names master removed since stay removed.
+            git show "$(git merge-base HEAD FETCH_HEAD):taps.json" > "$RUNNER_TEMP/base-taps.json" \
+              || echo '{"version": 1, "taps": []}' > "$RUNNER_TEMP/base-taps.json"
+            git show FETCH_HEAD:taps.json > "$RUNNER_TEMP/pr-taps.json"
+            CONTINUED="$(python scripts/tap_registry.py --added-between "$RUNNER_TEMP/base-taps.json" "$RUNNER_TEMP/pr-taps.json" --except $PRUNE)"
+          fi
+          if [ -n "$REGISTER" ]; then python scripts/tap_registry.py --add $REGISTER --only-readable data/tap_run.json; fi
+          if [ -n "$CONTINUED" ]; then python scripts/tap_registry.py --add $CONTINUED; fi
+          REFUSED=""
+          for name in $REGISTER; do
+            jq -e --arg name "$name" 'any(.taps[]; .name == $name)' taps.json > /dev/null || REFUSED="$REFUSED $name"
+          done
+          echo "refused=${REFUSED# }" >> "$GITHUB_OUTPUT"
+      - name: Open a pull request
+        id: pr
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          token: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
+          commit-message: "feat(taps): update tap icons and categories"
+          title: "feat(taps): update tap icons and categories"
+          body: |
+            Tap pipeline run ${{ github.run_id }} (${{ github.event_name }}).
+            ${{ github.event_name == 'issues' && steps.register.outputs.refused == '' && format('Closes #{0}', github.event.issue.number) || '' }}
+          branch: bot/tap-pipeline
+          assignees: ${{ github.repository_owner }}
+          add-paths: |
+            taps.json
+            data/tap_categories.json
+            data/tap_homepage_metadata.json
+            data/tap_files.json
+      - name: Link the pull request on the issue
+        if: github.event_name == 'issues' && steps.pr.outputs.pull-request-url != '' && steps.register.outputs.refused == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        run: gh issue comment "$ISSUE" --body "Opened $PR_URL with the tap's icons and categories."
+      - name: Tell the requester the tap wasn't added
+        if: github.event_name == 'issues' && steps.register.outputs.refused != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: >-
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          --body "This tap wasn't added: none of its casks could be read. A maintainer can check the run log."

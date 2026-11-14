@@ -1,0 +1,28 @@
+name: Validate taps
+
+# Runs on contributor PRs, so it holds no secrets and never runs tap code:
+# it only checks names and that each new tap repo is reachable and has casks.
+on:
+  pull_request:
+    paths:
+      - taps.json
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate taps.json
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: python scripts/validate_taps.py --base-ref "origin/$BASE_REF"
