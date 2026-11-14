@@ -186,13 +186,20 @@ def test_refused_registrations_never_report_success_on_the_issue():
     assert "steps.register.outputs.refused != ''" in publish and "wasn't added" in publish
 
 
-def test_sweep_collects_only_changed_taps_and_tap_files_travel_with_the_data():
+def test_sweep_and_push_collect_only_changed_taps_and_tap_files_travel_with_the_data():
     pipeline = _workflow("tap-pipeline.yml")
     collect = _job(pipeline, "collect")
     assert "--files data/tap_files.json" in collect and "--only-changed" in collect
-    assert 'if [ "$EVENT_NAME" = schedule ]' in collect and "EVENT_NAME: ${{ github.event_name }}" in collect
+    # A merged data PR changes taps.json; its taps were just collected, so the push run skips them.
+    assert 'schedule|push) ONLY_CHANGED="--only-changed"' in collect and "EVENT_NAME: ${{ github.event_name }}" in collect
     assert 'git fetch -q origin "$DATA_PR"' in collect
     assert "data/tap_files.json" in _job(pipeline, "classify")
     publish = _job(pipeline, "publish")
     assert "--files data/tap_files.json" in publish
     assert "data/tap_files.json" in publish[publish.index("add-paths:"):]
+
+
+def test_icons_run_in_parallel_within_a_budget_below_the_job_timeout():
+    icons = _job(_workflow("tap-pipeline.yml"), "icons")
+    assert "--workers 4 --budget-minutes 300" in icons
+    assert "timeout-minutes: 360" in icons

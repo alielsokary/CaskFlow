@@ -114,11 +114,12 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           GH_TOKEN: ${{ github.token }}
         # Runs no tap code. TAPS holds validated user/repo names only; word-splitting is intended.
-        # One tap per run isolates taps from each other; the weekly sweep only collects taps whose cask files changed.
+        # One tap per run isolates taps from each other. The weekly sweep and taps.json pushes only collect taps
+        # whose cask files changed, so merging a data PR doesn't collect its taps again.
         # Writes after every run; runs the budget leaves out wait for the next sweep.
         run: |
           ONLY_CHANGED=""
-          if [ "$EVENT_NAME" = schedule ]; then ONLY_CHANGED="--only-changed"; fi
+          case "$EVENT_NAME" in schedule|push) ONLY_CHANGED="--only-changed";; esac
           python scripts/dispatch_collect.py --taps $TAPS --batch-size 1 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
       - uses: actions/upload-artifact@v4
         if: always()
@@ -198,7 +199,8 @@ jobs:
       - name: Extract tap icons
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
-        run: python scripts/extract_tap_icons.py --collected tap_casks.json --taps $TAPS --output-dir icons_out
+        # Casks the budget leaves out are unsettled by publish, so the next sweep retries them.
+        run: python scripts/extract_tap_icons.py --collected tap_casks.json --taps $TAPS --output-dir icons_out --workers 4 --budget-minutes 300
       - id: upload
         uses: actions/upload-artifact@v4
         if: always()
