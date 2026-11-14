@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-13",
-  "totalCasks": 4986,
+  "generatedDate": "2026-11-14",
+  "totalCasks": 4988,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -1187,6 +1187,10 @@
     },
     "arctype": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "ardia": {
+      "primary": "browsers",
       "secondary": []
     },
     "arduino-ide": {
@@ -6437,6 +6441,12 @@
     "fleet": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "fleet-desktop": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
     },
     "flexoptix": {
       "primary": "utilities",
