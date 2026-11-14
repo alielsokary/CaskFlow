@@ -8,7 +8,9 @@ import json
 import shutil
 import struct
 import tempfile
+import time
 import zlib
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import extract_icons
@@ -259,7 +261,9 @@ def _valid_pngs(folder: Path, taps: list[str], report: dict[str, dict]) -> dict[
 
 def _unsettle(files_path: Path, report: dict[str, dict]) -> None:
     # A cask whose icon is worth retrying stays unsettled, so the next sweep collects its tap again.
-    retry = {ref for ref, entry in report.items() if entry.get("status") == "failed" and entry.get("attempts", 0) < MAX_ATTEMPTS}
+    retry = {ref for ref, entry in report.items()
+             if entry.get("status") == "deferred"
+             or (entry.get("status") == "failed" and entry.get("attempts", 0) < MAX_ATTEMPTS)}
     files = _json_object(files_path)
     write_json(files_path, {ref: oid for ref, oid in files.items() if ref not in retry}, trailing_newline=True)
 
@@ -273,6 +277,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--publish-from", type=Path, help="Publish a previous extraction's output and exit")
     parser.add_argument("--run-file", type=Path, help="classify's data/tap_run.json (removals) when publishing")
     parser.add_argument("--files", type=Path, help="data/tap_files.json; icons worth retrying are unsettled")
+    parser.add_argument("--workers", type=int, choices=range(1, 5), default=1, help="Parallel extractions (1-4)")
+    parser.add_argument("--budget-minutes", type=float, help="Casks not started by then wait for the next run")
     args = parser.parse_args(argv)
     if not args.taps:
         parser.error("--taps is required")
@@ -292,26 +298,51 @@ def main(argv: list[str] | None = None) -> int:
         batch = batch[: args.limit]
     print(f"tap icons to extract: {len(batch)}")
 
-    _extract(batch, args.output_dir, report)
+    deadline = None if args.budget_minutes is None else time.monotonic() + args.budget_minutes * 60
+    _extract(batch, args.output_dir, report, workers=args.workers, deadline=deadline)
     return 0
 
 
-def _extract(batch: list[dict], output_dir: Path, report: dict[str, dict]) -> None:
+def _extract(batch: list[dict], output_dir: Path, report: dict[str, dict], *, workers: int = 1,
+             deadline: float | None = None) -> None:
     (output_dir / TAPS_DIR).mkdir(parents=True, exist_ok=True)
     # Written up front and after every cask so a timed-out job still hands its progress to publish.
     write_json(output_dir / REPORT, dict(sorted(report.items())))
-    for cask in batch:
-        ref = cask["full_token"]
-        folder = output_dir / TAPS_DIR / Path(ref).parent
-        folder.mkdir(parents=True, exist_ok=True)
-        safe = download_view(cask)
-        status, detail = ("failed", "download url is not a public https url") if safe is None \
-            else extract_icons._extract_status(safe, folder)
-        if status == "ok" and (folder / f"{cask['token']}.png").exists():
-            report.pop(ref, None)
-        else:
-            _record(report, ref, status, detail)
-        write_json(output_dir / REPORT, dict(sorted(report.items())))
+    # Each cask extracts into its own folder: taps can share a token, and workers share no files.
+    with tempfile.TemporaryDirectory() as scratch, ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {}
+        for index, cask in enumerate(batch):
+            folder = Path(scratch) / str(index)
+            folder.mkdir()
+            futures[pool.submit(_attempt, cask, folder, deadline)] = (cask, folder)
+        for future in as_completed(futures):
+            cask, folder = futures[future]
+            _keep(cask, folder, *future.result(), output_dir, report)
+            write_json(output_dir / REPORT, dict(sorted(report.items())))
+
+
+def _attempt(cask: dict, folder: Path, deadline: float | None) -> tuple[str, str]:
+    if deadline is not None and time.monotonic() >= deadline:
+        return "deferred", "out of time; retried next run"
+    safe = download_view(cask)
+    if safe is None:
+        return "failed", "download url is not a public https url"
+    return extract_icons._extract_status(safe, folder)
+
+
+def _keep(cask: dict, folder: Path, status: str, detail: str, output_dir: Path, report: dict[str, dict]) -> None:
+    ref = cask["full_token"]
+    png = folder / f"{cask['token']}.png"
+    if status == "ok" and png.exists():
+        target = output_dir / TAPS_DIR / f"{ref}.png"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(png, target)
+        report.pop(ref, None)
+    elif status == "deferred":
+        # An earlier failure keeps its attempt count.
+        report.setdefault(ref, {"status": status, "reason": detail})
+    else:
+        _record(report, ref, status, detail)
 
 
 if __name__ == "__main__":
