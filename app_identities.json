@@ -51170,6 +51170,47 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "fliqlo": {
+      "caskVersion": "2.0",
+      "sourceURL": "https://fliqlo.com/download/Fliqlo%202.0.dmg",
+      "artifactSHA256": "968abd4ce1689701bd4ab0060ef7ae06584f8517f7b8fb4c15f2978fb0c6359b",
+      "apps": [
+        {
+          "bundleName": "Fliqlo.app",
+          "bundleIdentifier": "com.9031.fliqloMA"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ardia": {
+      "caskVersion": "0.2.46",
+      "sourceURL": "https://github.com/ardia-browser/ardia/releases/download/v0.2.46/Ardia-0.2.46.dmg",
+      "artifactSHA256": "55e0e5a88311a32ca6db8e8a838f77569e1a98d2bc5b83a918705f7179e4df7a",
+      "apps": [
+        {
+          "bundleName": "Ardia.app",
+          "bundleIdentifier": "com.ardia.browser"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "fleet-desktop": {
+      "caskVersion": "1.6.0",
+      "sourceURL": "https://download.fleetdm.com/fleet-desktop-macos/v1.6.0/fleet_desktop-v1.6.0.pkg",
+      "artifactSHA256": "739b67d0fb8ad8d1373d50df4680deceb53054d954761eccdfa54402621d9eca",
+      "apps": [
+        {
+          "bundleName": "Fleet Desktop.app",
+          "bundleIdentifier": "com.fleetdm.fleet-desktop",
+          "packageIdentifier": "com.fleetdm.fleet-desktop",
+          "installedPath": "/Applications/Fleet Desktop.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
