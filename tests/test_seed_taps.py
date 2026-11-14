@@ -42,9 +42,22 @@ def test_resolve_follows_moves_and_drops_missing_or_official_taps():
 def test_seed_drops_taps_that_moved_onto_a_higher_ranked_one():
     head = head_from({"kegworks-app/homebrew-kegworks": "Sikarugir-App/homebrew-sikarugir"})
 
-    entries = seed_taps.seed(["sikarugir-app/sikarugir", "kegworks-app/kegworks", "a/b"], head, limit=10)
+    entries = seed_taps.seed(["sikarugir-app/sikarugir", "kegworks-app/kegworks", "a/b"], head, limit=10, check=lambda entry: None)
 
     assert entries == [{"name": "sikarugir-app/sikarugir"}, {"name": "a/b"}]
+
+
+def test_seed_skips_taps_without_casks_and_fills_the_batch_from_the_next_ones():
+    checked = []
+
+    def check(entry):
+        checked.append(entry)
+        return "no casks" if entry["name"] == "empty/x" else None
+
+    entries = seed_taps.seed(["a/b", "empty/x", "o/r", "c/d"], head_from({"o/homebrew-r": "O/plain-repo"}), limit=3, check=check)
+
+    assert entries == [{"name": "a/b"}, {"name": "o/plain-repo", "remote": "https://github.com/O/plain-repo"}, {"name": "c/d"}]
+    assert {"name": "o/plain-repo", "remote": "https://github.com/O/plain-repo"} in checked
 
 
 def test_main_writes_the_first_batches_merged_into_the_registry(tmp_path, monkeypatch):
@@ -53,6 +66,7 @@ def test_main_writes_the_first_batches_merged_into_the_registry(tmp_path, monkey
     out = tmp_path / "taps.json"
     out.write_text('{"version": 1, "taps": [{"name": "u1/t"}, {"name": "z/z"}]}', encoding="utf-8")
     monkeypatch.setattr(seed_taps, "github_head", head_from({}))
+    monkeypatch.setattr(seed_taps, "check_tap", lambda entry: None)
 
     seed_taps.main(["--analytics", str(source), "--out", str(out), "--batch-size", "2", "--batch", "2"])
 
