@@ -33514,6 +33514,13 @@
     "og_desc": ""
   },
   {
+    "token": "lattice",
+    "homepage": "https://leo1oel.github.io/lattice/",
+    "title": "Lattice - A workspace for your research",
+    "meta_desc": "A local-first LaTeX workspace for macOS, with your papers, your co-authors and an AI agent in the same window.",
+    "og_desc": "A local-first LaTeX workspace for macOS, with your papers, your co-authors and an AI agent in the same window."
+  },
+  {
     "token": "launchbar",
     "homepage": "https://www.obdev.at/products/launchbar/index.html",
     "title": "LaunchBar 6",
@@ -44276,6 +44283,13 @@
     "og_desc": ""
   },
   {
+    "token": "sable",
+    "homepage": "https://sable.moe/",
+    "title": "Sable: libre Matrix client for web, desktop and mobile",
+    "meta_desc": "Sable is a libre Matrix chat client for web, desktop and mobile, with calls, personas, threads and custom themes.",
+    "og_desc": "Sable is a libre Matrix chat client for web, desktop and mobile, with calls, personas, threads and custom themes."
+  },
+  {
     "token": "sabnzbd",
     "homepage": "https://sabnzbd.org/",
     "title": "SABnzbd -\n        \n        \n        The free and easy binary newsreader",
@@ -45309,6 +45323,13 @@
     "title": "Shutter Encoder - Encoder|Converter video FREE PC|Mac",
     "meta_desc": "Open source software without any restrictions - converter all formats video|audio|image professionals codecs and standards - Windows|OS X|Linux.",
     "og_desc": "Open source software without any restrictions - converter all formats video|audio|image professionals codecs and standards - Windows|OS X|Linux."
+  },
+  {
+    "token": "sidebarfavorites-manager",
+    "homepage": "https://github.com/ivg-design/SidebarFavorites",
+    "title": "GitHub - ivg-design/SidebarFavorites: Add custom folders to macOS Finder sidebar Favorites with custom SF Symbol icons · GitHub",
+    "meta_desc": "Add custom folders to macOS Finder sidebar Favorites with custom SF Symbol icons - ivg-design/SidebarFavorites",
+    "og_desc": "Add custom folders to macOS Finder sidebar Favorites with custom SF Symbol icons - ivg-design/SidebarFavorites"
   },
   {
     "token": "sidenotes",
@@ -53058,6 +53079,13 @@
     "title": "Яндекс Диск - облачное хранилище для файлов, данных и видео от Яндекс 360",
     "meta_desc": "Яндекс Диск - облако для файлов, фото и видео. Сохраните важные данные в безопасности и получите к ним доступ с любого устройства. Платные и бесплатные тарифы и профессиональные решения.",
     "og_desc": "Яндекс Диск - облако для файлов, фото и видео. Сохраните важные данные в безопасности и получите к ним доступ с любого устройства. Платные и бесплатные тарифы и профессиональные решения."
+  },
+  {
+    "token": "yandex-document",
+    "homepage": "https://360.yandex.ru/documents/desktop/",
+    "title": "Яндекс Документы для компьютера - скачать приложение для Windows, macOS и Linux",
+    "meta_desc": "Скачайте Яндекс Документы на компьютер: редактируйте документы и таблицы офлайн и онлайн. Поддержка форматов Word и Excel - DOCX, XLSX. Приложение для Windows, macOS и Linux в подписке Яндекс 360.",
+    "og_desc": "Скачайте Яндекс Документы на компьютер: редактируйте документы и таблицы офлайн и онлайн. Поддержка форматов Word и Excel - DOCX, XLSX. Приложение для Windows, macOS и Linux в подписке Яндекс 360."
   },
   {
     "token": "yandex-music",
