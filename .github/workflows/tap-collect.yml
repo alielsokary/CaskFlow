@@ -1,0 +1,45 @@
+name: Tap collect
+
+# Taps dispatched by the tap pipeline's collect job, one per run. This is the only
+# place tap Ruby runs. It holds no secrets and a read-only token, and its run
+# token reaches only this run's artifacts, so a hostile tap cannot shape data for
+# any other tap.
+run-name: Tap collect ${{ inputs.nonce }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      taps:
+        description: "Space-separated user/repo names"
+        required: true
+        type: string
+      nonce:
+        description: "Identifies this run to the dispatching job"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  collect:
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read taps with brew
+        env:
+          TAPS: ${{ inputs.taps }}
+        # collect_tap_casks.py validates every name; word-splitting is intended.
+        run: python scripts/collect_tap_casks.py --taps $TAPS --out tap_casks.json --budget-minutes 50
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tap-casks
+          path: tap_casks.json
+          if-no-files-found: ignore
