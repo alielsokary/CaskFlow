@@ -4611,5 +4611,8 @@
     "zwift": "140df4814eeb4e73747f53ae63bca8c719798740",
     "zxpinstaller": "db4ddf2c83c68444e0f06df6c3423ec1bfe57960",
     "zy-player": "729774ad255877d609c63281c6735c1d9d54d44f"
+  },
+  "taps": {
+    "saffsanity/sill/sill": "ce1c4f0364ac535ad4bcfc5c0252318efc117035"
   }
 }
