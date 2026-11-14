@@ -46,6 +46,18 @@ python scripts/apply_corrections.py
 
 Use `--all` only after the non-high-confidence entries have been reviewed. The tool rejects unknown categories, stale `was` values, secondary-only traits used as primaries, duplicate categories, and more than two secondary categories.
 
+## Adding a tap
+
+CaskFlow also publishes icons and categories for third-party taps listed in
+`taps.json`. To add one, open an "Add a tap" issue titled `Add tap: user/repo`.
+A maintainer reviews the tap and adds the `add-tap` label, which runs the
+tap pipeline and opens a pull request with the icons and categories.
+
+You can also edit `taps.json` in a pull request: keep the list sorted, use the
+lowercase `user/repo` name, and add `"remote"` only when the repository is not
+named `homebrew-<repo>`. The `Validate taps` check confirms the repository is
+reachable and has a `Casks/` folder.
+
 ## Branch model
 
 Pull requests **must** target the `develop` branch, not `master`.

@@ -58,7 +58,7 @@ class MetaExtractor(HTMLParser):
             self.title = "".join(self._title_parts).strip()[:300]
 
 
-def fetch_one(token, url):
+def fetch_one(token, url, open_url=None):
     """Fetch a single homepage and extract metadata."""
     if not isinstance(url, str) or not url.startswith(("http://", "https://")):
         return {"token": token, "homepage": url, "error": "invalid_url"}
@@ -71,7 +71,7 @@ def fetch_one(token, url):
 
     try:
         req = Request(url, headers=headers)
-        with urlopen(req, timeout=TIMEOUT) as resp:  # nosec B310
+        with (open_url or urlopen)(req, timeout=TIMEOUT) as resp:  # nosec B310
             body = resp.read(MAX_BODY).decode("utf-8", errors="replace")
 
         extractor = MetaExtractor()
