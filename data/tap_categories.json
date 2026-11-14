@@ -1,6 +1,13 @@
 {
   "version": 1,
-  "generatedDate": "",
-  "casks": {},
+  "generatedDate": "2026-11-14",
+  "casks": {
+    "saffsanity/sill/sill": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    }
+  },
   "sameAs": {}
 }
