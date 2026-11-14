@@ -12,6 +12,7 @@ from typing import Callable
 
 import tap_registry
 from style_standards import write_json
+from validate_taps import check_tap
 
 ANALYTICS_URL = "https://formulae.brew.sh/api/analytics/cask-install/365d.json"
 GITHUB = "https://github.com/"
@@ -41,14 +42,20 @@ def resolve(name: str, head: Callable[[str], str | None]) -> dict | None:
     return None if tap_registry.validate_name(entry["name"]) else entry
 
 
-def seed(names: list[str], head: Callable[[str], str | None], limit: int) -> list[dict]:
+def seed(names: list[str], head: Callable[[str], str | None], limit: int,
+         check: Callable[[dict], str | None]) -> list[dict]:
     """Resolve taps in rank order until `limit` distinct entries; a tap that moved onto one already kept is dropped."""
     entries: dict[str, dict] = {}
     for name in names:
         if len(entries) >= limit:
             break
         entry = resolve(name, head)
-        if entry and entry["name"] not in entries:
+        if not entry or entry["name"] in entries:
+            continue
+        # The same check the registry PR runs: a tap without readable casks waits for a later seeding.
+        if error := check(entry):
+            print(f"skipping {error}")
+        else:
             entries[entry["name"]] = entry
     return list(entries.values())
 
@@ -78,7 +85,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         with urllib.request.urlopen(ANALYTICS_URL, timeout=60) as response:  # nosec B310 - fixed HTTPS Homebrew API
             analytics = json.load(response)
-    new = seed(select(analytics, args.threshold), github_head, args.batch * args.batch_size)
+    new = seed(select(analytics, args.threshold), github_head, args.batch * args.batch_size, check_tap)
     merged = {entry["name"]: entry for entry in [*new, *tap_registry.load(args.out)]}
     taps = sorted(merged.values(), key=lambda entry: entry["name"])
     write_json(args.out, {"version": tap_registry.VERSION, "taps": taps}, trailing_newline=True)
