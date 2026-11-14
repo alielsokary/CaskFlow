@@ -102,13 +102,17 @@ def test_stage_refuses_paths_that_escape_taps(tmp_path):
     assert not (tmp_path / "outside.png").exists()
 
 
-def test_extract_writes_pngs_and_report_for_a_separate_publish_job(tmp_path, monkeypatch):
+def _extraction_setup(tmp_path, monkeypatch, casks):
     collected = tmp_path / "tap_casks.json"
-    cask = {"token": "t", "full_token": "u/r/t", "url": "https://good.example/t.dmg"}
-    collected.write_text(json.dumps({"casks": {"u/r/t": cask}}), encoding="utf-8")
+    collected.write_text(json.dumps({"casks": {cask["full_token"]: cask for cask in casks}}), encoding="utf-8")
     monkeypatch.setattr(tap_icons, "load_official", lambda: {})
     monkeypatch.setattr(tap_icons, "_branch_state", lambda: (set(), {}))
     monkeypatch.setattr(tap_icons, "is_public_url", lambda url, schemes: True)
+    return collected
+
+
+def test_extract_writes_pngs_and_report_for_a_separate_publish_job(tmp_path, monkeypatch):
+    collected = _extraction_setup(tmp_path, monkeypatch, [{"token": "t", "full_token": "u/r/t", "url": "https://good.example/t.dmg"}])
 
     def fake_extract(cask, folder):
         (folder / f"{cask['token']}.png").write_bytes(b"png")
@@ -346,29 +350,24 @@ def test_publish_from_skips_oversized_files_without_reading_them(tmp_path, monke
     assert seen["pngs"] == set() and seen["report"]["u/r/big"]["reason"] == "invalid png: too large"
 
 
-def test_publish_from_unsettles_icons_worth_retrying(tmp_path, monkeypatch):
+def _settled_after_publish(tmp_path, monkeypatch, report: dict) -> set:
     (tmp_path / "taps").mkdir()
-    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
+    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps(report), encoding="utf-8")
+    files = tmp_path / "tap_files.json"
+    files.write_text(json.dumps({ref: A for ref in [*report, "u/r/ok"]}), encoding="utf-8")
+    monkeypatch.setattr(tap_icons, "publish", lambda *args: None)
+    tap_icons.publish_from(tmp_path, ["u/r"], None, files)
+    return set(json.loads(files.read_text(encoding="utf-8")))
+
+
+def test_publish_from_unsettles_icons_worth_retrying(tmp_path, monkeypatch):
+    settled = _settled_after_publish(tmp_path, monkeypatch, {
         "u/r/retry": {"status": "failed", "attempts": 1},
         "u/r/parked": {"status": "failed", "attempts": 3},
         "u/r/none": {"status": "no_icon"},
-    }), encoding="utf-8")
-    files = tmp_path / "tap_files.json"
-    files.write_text(json.dumps({"u/r/retry": A, "u/r/parked": A, "u/r/none": A, "u/r/ok": A}), encoding="utf-8")
-    monkeypatch.setattr(tap_icons, "publish", lambda *args: None)
+    })
 
-    tap_icons.publish_from(tmp_path, ["u/r"], None, files)
-
-    assert set(json.loads(files.read_text(encoding="utf-8"))) == {"u/r/parked", "u/r/none", "u/r/ok"}
-
-
-def _extraction_setup(tmp_path, monkeypatch, casks):
-    collected = tmp_path / "tap_casks.json"
-    collected.write_text(json.dumps({"casks": {cask["full_token"]: cask for cask in casks}}), encoding="utf-8")
-    monkeypatch.setattr(tap_icons, "load_official", lambda: {})
-    monkeypatch.setattr(tap_icons, "_branch_state", lambda: (set(), {}))
-    monkeypatch.setattr(tap_icons, "is_public_url", lambda url, schemes: True)
-    return collected
+    assert settled == {"u/r/parked", "u/r/none", "u/r/ok"}
 
 
 def test_parallel_extraction_keeps_same_named_casks_of_different_taps_apart(tmp_path, monkeypatch):
@@ -406,17 +405,9 @@ def test_casks_past_the_budget_are_deferred_without_losing_earlier_attempts(tmp_
 
 
 def test_publish_from_unsettles_deferred_casks(tmp_path, monkeypatch):
-    (tmp_path / "taps").mkdir()
-    (tmp_path / "taps" / "icon_report.json").write_text(json.dumps({
-        "u/r/later": {"status": "deferred", "reason": "out of time"},
-    }), encoding="utf-8")
-    files = tmp_path / "tap_files.json"
-    files.write_text(json.dumps({"u/r/later": A, "u/r/ok": A}), encoding="utf-8")
-    monkeypatch.setattr(tap_icons, "publish", lambda *args: None)
+    settled = _settled_after_publish(tmp_path, monkeypatch, {"u/r/later": {"status": "deferred", "reason": "out of time"}})
 
-    tap_icons.publish_from(tmp_path, ["u/r"], None, files)
-
-    assert set(json.loads(files.read_text(encoding="utf-8"))) == {"u/r/ok"}
+    assert settled == {"u/r/ok"}
 
 
 def test_deferred_casks_stay_pending():
