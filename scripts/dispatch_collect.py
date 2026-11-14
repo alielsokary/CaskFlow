@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Collect tap casks in separate workflow runs, a few taps each.
+"""Collect tap casks in separate workflow runs, one tap each.
 
 Tap code runs only inside `tap-collect.yml` runs. Each run's token reaches only its own
-artifacts, so a hostile tap can shape data for the taps in its own batch and nothing else:
-this job keeps from each run only the casks of the taps that run was given.
+artifacts, so a hostile tap can shape only its own data: this job keeps from each run
+only the casks of the tap that run was given.
 """
 from __future__ import annotations
 
@@ -19,38 +19,15 @@ from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import _REF, OBJECT_ID, aliases, load_official, trusted_view
+from collect_tap_casks import aliases, load_official, trusted_view
 from style_standards import write_json
-from validate_taps import _run as _git_run
+from tap_registry import REF
+from validate_taps import list_casks
 
 WORKFLOW = "tap-collect.yml"
 TITLE = "Tap collect "
 
 Gh = Callable[[list[str]], str]
-
-
-def list_casks(entry: dict, run=_git_run, workdir: Path | None = None) -> dict[str, str] | None:
-    """The tap's cask refs and their file's git object id (blob-less clone, no tap code run); None if unknown."""
-    try:
-        with tempfile.TemporaryDirectory(dir=workdir) as clone:
-            cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
-                          tap_registry.remote_of(entry), clone])
-            if cloned.returncode != 0:
-                return None
-            listing = run(["git", "ls-tree", "-r", "HEAD", "Casks"], cwd=clone)
-    except (subprocess.SubprocessError, OSError):
-        return None
-    if listing.returncode != 0:
-        return None
-    files = {}
-    for line in listing.stdout.splitlines():
-        meta, _, path = line.partition("\t")
-        kind, oid = (meta.split() + ["", "", ""])[1:3]
-        ref = f"{entry['name']}/{Path(path).stem}"
-        if kind == "blob" and path.endswith(".rb") and _REF.fullmatch(ref) and OBJECT_ID.fullmatch(oid):
-            files[ref] = oid
-    # An empty listing more likely means a restructured repo than a tap that removed every cask.
-    return dict(sorted(files.items())) or None
 
 
 def batches(taps: list[str], size: int) -> list[list[str]]:
@@ -60,8 +37,11 @@ def batches(taps: list[str], size: int) -> list[list[str]]:
 def _find_runs(gh: Gh, nonces: set[str], sleep, attempts: int = 30) -> dict[str, int]:
     found: dict[str, int] = {}
     for _ in range(attempts):
-        listed = json.loads(gh(["run", "list", "--workflow", WORKFLOW, "--event", "workflow_dispatch",
-                                "--limit", "500", "--json", "databaseId,displayTitle"]))
+        try:
+            listed = json.loads(gh(["run", "list", "--workflow", WORKFLOW, "--event", "workflow_dispatch",
+                                    "--limit", str(len(nonces) + 100), "--json", "databaseId,displayTitle"]))
+        except (subprocess.CalledProcessError, ValueError):
+            listed = []
         for run in listed:
             nonce = run["displayTitle"].removeprefix(TITLE)
             if nonce in nonces:
@@ -74,8 +54,11 @@ def _find_runs(gh: Gh, nonces: set[str], sleep, attempts: int = 30) -> dict[str,
 
 def _finished(gh: Gh, run_id: int, sleep, clock, deadline: float) -> bool:
     while True:
-        if json.loads(gh(["run", "view", str(run_id), "--json", "status"]))["status"] == "completed":
-            return True
+        try:
+            if json.loads(gh(["run", "view", str(run_id), "--json", "status"]))["status"] == "completed":
+                return True
+        except (subprocess.CalledProcessError, ValueError, KeyError):
+            pass
         if clock() >= deadline:
             return False
         sleep(20)
@@ -106,9 +89,15 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
     todo = [tap for tap in taps if changed(tap)] if only_changed else list(taps)
     unchanged = sorted(set(taps) - set(todo))
     groups = {uuid.uuid4().hex: group for group in batches(todo, batch_size)}
+    dispatched = set()
     for nonce, group in groups.items():
-        gh(["workflow", "run", WORKFLOW, "--ref", ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
-    runs = _find_runs(gh, set(groups), sleep)
+        try:
+            gh(["workflow", "run", WORKFLOW, "--ref", ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
+            dispatched.add(nonce)
+        except subprocess.CalledProcessError:
+            print(f"warning: could not dispatch {' '.join(group)}; it waits for the next run")
+        sleep(1)  # GitHub limits bursts of write requests
+    runs = _find_runs(gh, dispatched, sleep)
     deadline = clock() + budget
     casks: dict[str, dict] = {}
     failures: dict[str, str] = {}
@@ -128,7 +117,10 @@ def collect(taps: list[str], gh: Gh, ref: str, official: dict[str, dict], *, bat
             if _finished(gh, run_id, sleep, clock, deadline):
                 data = _download(gh, run_id, workdir)
             else:
-                gh(["run", "cancel", str(run_id)])
+                try:
+                    gh(["run", "cancel", str(run_id)])
+                except subprocess.CalledProcessError:
+                    pass
         if data is None:
             unreached.extend(group)
         else:
@@ -162,7 +154,7 @@ def summary(result: dict) -> str:
 
     sections = (
         ("Taps that failed", names(result.get("failures"), is_tap)),
-        ("Casks that failed to load", names(result.get("caskFailures"), lambda ref: bool(_REF.fullmatch(ref)))),
+        ("Casks that failed to load", names(result.get("caskFailures"), lambda ref: bool(REF.fullmatch(ref)))),
         ("Taps left for the next run", names(result.get("unreached"), is_tap)),
     )
     lines = ["### Tap collect"]

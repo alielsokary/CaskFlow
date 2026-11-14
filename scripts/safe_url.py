@@ -33,10 +33,10 @@ def is_public_url(url: str, *, schemes: tuple[str, ...] = ("http", "https"), res
     if parsed.scheme not in schemes or not host:
         return False
     try:
-        addresses = [ipaddress.ip_address(host)]
-    except ValueError:
-        addresses = [ipaddress.ip_address(address.split("%")[0]) for address in resolve(host)]
-    return bool(addresses) and all(address.is_global for address in addresses)
+        _checked_address(host, resolve)
+    except (OSError, ValueError):
+        return False
+    return True
 
 
 def _checked_address(host: str, resolve: Resolver) -> str:

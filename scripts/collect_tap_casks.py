@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import random
 import os
 import re
 import subprocess
@@ -14,6 +13,7 @@ from urllib.parse import urlparse
 from urllib.request import urlopen
 
 import tap_registry
+from tap_registry import OBJECT_ID, REF, tap_of
 from style_standards import write_json
 
 BREW_API = "https://formulae.brew.sh/api/cask.json"
@@ -106,10 +106,6 @@ def aliases(casks: dict[str, dict], official: dict[str, dict]) -> dict[str, str]
     }
 
 
-OBJECT_ID = re.compile(r"[0-9a-f]{40}|[0-9a-f]{64}")
-_REF = re.compile(r"[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9@+_.-]*")
-
-
 def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) -> dict:
     """What privileged jobs may use from collect's output, which tap code could have shaped.
 
@@ -119,11 +115,11 @@ def trusted_view(collected: dict, taps: list[str], official: dict[str, dict]) ->
     wanted = set(taps)
 
     def ours(ref: object) -> bool:
-        return isinstance(ref, str) and bool(_REF.fullmatch(ref)) and ref.rsplit("/", 1)[0] in wanted
+        return isinstance(ref, str) and bool(REF.fullmatch(ref)) and tap_of(ref) in wanted
 
     def files(refs: dict, tap: str | None = None) -> dict[str, str]:
         return {ref: oid for ref, oid in sorted(refs.items(), key=lambda item: str(item[0]))
-                if ours(ref) and (tap is None or ref.rsplit("/", 1)[0] == tap)
+                if ours(ref) and (tap is None or tap_of(ref) == tap)
                 and isinstance(oid, str) and OBJECT_ID.fullmatch(oid)}
 
     def mapping(key: str) -> dict:
@@ -212,23 +208,17 @@ def load_official() -> dict[str, dict]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--taps", nargs="+", help="Registered tap names to read")
-    group.add_argument("--all", action="store_true", help="Read every registered tap")
+    parser.add_argument("--taps", nargs="+", required=True, help="Tap names to read")
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
     parser.add_argument("--budget-minutes", type=float, help="Stop starting new taps after this long")
     args = parser.parse_args(argv)
 
     registered = {entry["name"]: entry for entry in tap_registry.load()}
-    wanted = list(registered) if args.all else args.taps
     # A dispatched or issue-requested tap is registered only by the publish job, after this run.
-    invalid = [error for name in wanted if (error := tap_registry.validate_name(name))]
-    if invalid:
+    if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
     official = load_official()
-    entries = [registered.get(name, {"name": name}) for name in wanted]
-    # Random order, so taps a budget-limited sweep leaves out are reached in later weeks.
-    random.shuffle(entries)
+    entries = [registered.get(name, {"name": name}) for name in args.taps]
 
     def save(result: dict) -> None:
         write_json(args.out, result, trailing_newline=True)

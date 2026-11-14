@@ -125,10 +125,9 @@ def test_tap_code_runs_only_in_separate_runs_per_small_batch():
 def test_data_prs_roll_on_one_branch_and_continue_an_open_one():
     pipeline = _workflow("tap-pipeline.yml")
     assert "branch: bot/tap-pipeline\n" in pipeline
-    for name in ("classify", "publish"):
-        job = _job(pipeline, name)
-        assert "gh pr list --head bot/tap-pipeline --state open" in job, name
-        assert "pull-requests: read" in job or "pull-requests: write" in job, name
+    assert "gh pr list --head bot/tap-pipeline --state open" in _job(pipeline, "resolve")
+    for name in ("collect", "classify", "publish"):
+        assert 'git fetch -q origin "$DATA_PR"' in _job(pipeline, name), name
     publish = _job(pipeline, "publish")
     assert "tap_registry.py --add $REGISTER --only-readable data/tap_run.json" in publish
     assert "tap_registry.py --added-between" in publish and "--except $PRUNE" in publish
@@ -144,10 +143,12 @@ def test_scheduled_sweep_reads_issues_through_the_resolver():
 
 def test_open_data_pr_is_used_only_from_this_repository_and_by_its_head_commit():
     pipeline = _workflow("tap-pipeline.yml")
-    for name in ("classify", "publish"):
+    resolve = _job(pipeline, "resolve")
+    assert "select(.isCrossRepository == false)" in resolve and "headRefOid" in resolve
+    assert "pull-requests: read" in resolve and "data_pr: ${{ steps.data_pr.outputs.head }}" in resolve
+    for name in ("collect", "classify", "publish"):
         job = _job(pipeline, name)
-        assert "select(.isCrossRepository == false)" in job and "headRefOid" in job, name
-        assert 'git fetch -q origin "$HEAD"' in job, name
+        assert "DATA_PR: ${{ needs.resolve.outputs.data_pr }}" in job and "gh pr list" not in job, name
 
 
 def test_no_workflow_restores_an_actions_cache():
@@ -190,7 +191,7 @@ def test_sweep_collects_only_changed_taps_and_tap_files_travel_with_the_data():
     collect = _job(pipeline, "collect")
     assert "--files data/tap_files.json" in collect and "--only-changed" in collect
     assert 'if [ "$EVENT_NAME" = schedule ]' in collect and "EVENT_NAME: ${{ github.event_name }}" in collect
-    assert "gh pr list --head bot/tap-pipeline --state open" in collect and "pull-requests: read" in collect
+    assert 'git fetch -q origin "$DATA_PR"' in collect
     assert "data/tap_files.json" in _job(pipeline, "classify")
     publish = _job(pipeline, "publish")
     assert "--files data/tap_files.json" in publish

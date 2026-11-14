@@ -11,6 +11,7 @@ import tempfile
 from pathlib import Path
 
 import tap_registry
+from tap_registry import OBJECT_ID, REF
 
 _GIT_ENV = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
 
@@ -24,18 +25,34 @@ def changed_entries(base: list[dict], head: list[dict]) -> list[dict]:
     return [entry for entry in head if before.get(entry["name"]) != entry]
 
 
+def list_casks(entry: dict, run=_run, workdir: Path | None = None) -> dict[str, str] | None:
+    """The tap's cask refs and their file's git object id (blob-less clone, no tap code run); None if unknown."""
+    try:
+        with tempfile.TemporaryDirectory(dir=workdir) as clone:
+            cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
+                          tap_registry.remote_of(entry), clone])
+            if cloned.returncode != 0:
+                return None
+            listing = run(["git", "ls-tree", "-r", "HEAD", "Casks"], cwd=clone)
+    except (subprocess.SubprocessError, OSError):
+        return None
+    if listing.returncode != 0:
+        return None
+    files = {}
+    for line in listing.stdout.splitlines():
+        meta, _, path = line.partition("\t")
+        kind, oid = (meta.split() + ["", "", ""])[1:3]
+        ref = f"{entry['name']}/{Path(path).stem}"
+        if kind == "blob" and path.endswith(".rb") and REF.fullmatch(ref) and OBJECT_ID.fullmatch(oid):
+            files[ref] = oid
+    # An empty listing more likely means a restructured repo than a tap that removed every cask.
+    return dict(sorted(files.items())) or None
+
+
 def check_tap(entry: dict, run=_run, workdir: Path | None = None) -> str | None:
-    remote = tap_registry.remote_of(entry)
-    if run(["git", "ls-remote", "--exit-code", remote, "HEAD"]).returncode != 0:
-        return f"{entry['name']}: {remote} is not reachable"
-    with tempfile.TemporaryDirectory(dir=workdir) as clone:
-        cloned = run(["git", "clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout", remote, clone])
-        if cloned.returncode != 0:
-            return f"{entry['name']}: {remote} could not be cloned"
-        listing = run(["git", "ls-tree", "HEAD", "Casks"], cwd=clone)
-    if listing.returncode != 0 or "Casks" not in listing.stdout:
-        return f"{entry['name']}: {remote} has no Casks/ folder"
-    return None
+    if list_casks(entry, run, workdir):
+        return None
+    return f"{entry['name']}: {tap_registry.remote_of(entry)} is not reachable or has no casks"
 
 
 def _base_entries(base_ref: str) -> list[dict]:

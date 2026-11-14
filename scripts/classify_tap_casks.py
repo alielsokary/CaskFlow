@@ -11,6 +11,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
 import tap_registry
+from tap_registry import tap_of
 from classify_new_casks import CATEGORIES_PATH, HOMEPAGE_WORKERS, LLM_WORKERS_BY_PROVIDER, REPO_ROOT, classify_parallel
 from collect_tap_casks import load_official, trusted_view
 from fetch_homepages import fetch_one
@@ -20,9 +21,9 @@ from prompts import CategoryCatalog
 from style_standards import write_json
 
 TAP_CATEGORIES_PATH = REPO_ROOT / "data" / "tap_categories.json"
-# Separate from the official homepage cache so the tap pipeline never edits official data.
 TAP_RUN_PATH = REPO_ROOT / "data" / "tap_run.json"
 TAP_FILES_PATH = REPO_ROOT / "data" / "tap_files.json"
+# Separate from the official homepage cache so the tap pipeline never edits official data.
 TAP_HOMEPAGE_CACHE = REPO_ROOT / "data" / "tap_homepage_metadata.json"
 VERSION = 1
 
@@ -53,10 +54,6 @@ def merge(existing: dict, classifications: dict[str, Classification], same_as: d
     }
 
 
-def _tap(ref: str) -> str:
-    return ref.rsplit("/", 1)[0]
-
-
 def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, list[str]]:
     """Drop what is gone: casks whose file left the tap's repository, stale aliases, and taps removed from taps.json.
 
@@ -69,7 +66,7 @@ def prune(existing: dict, view: dict, removed_taps: list[str]) -> tuple[dict, li
     present, now_aliased = set(view["casks"]), view.get("sameAs", {})
     removed: set[str] = set()
     for ref in set(casks) | set(aliases):
-        if _tap(ref) in removed_taps or (_tap(ref) in listed and ref not in listed[_tap(ref)]):
+        if tap_of(ref) in removed_taps or (tap_of(ref) in listed and ref not in listed[tap_of(ref)]):
             casks.pop(ref, None)
             aliases.pop(ref, None)
             removed.add(ref)
@@ -86,7 +83,7 @@ def tap_files(existing: dict[str, str], merged: dict, view: dict, removed_taps: 
     listed = {tap: refs for tap, refs in view.get("listed", {}).items() if refs}
     settled = set(merged.get("casks", {})) | set(merged.get("sameAs", {}))
     files = {ref: oid for ref, oid in existing.items()
-             if _tap(ref) not in removed_taps and not (_tap(ref) in listed and ref not in listed[_tap(ref)])}
+             if tap_of(ref) not in removed_taps and not (tap_of(ref) in listed and ref not in listed[tap_of(ref)])}
     files.update({ref: oid for ref, oid in view.get("processed", {}).items() if ref in settled})
     return dict(sorted(files.items()))
 
@@ -94,7 +91,7 @@ def tap_files(existing: dict[str, str], merged: dict, view: dict, removed_taps: 
 def run_file(view: dict, removed_taps: list[str]) -> dict:
     """What publish needs from this run: taps that yielded casks, and per listed tap the refs that keep icons."""
     return {
-        "readable": sorted({_tap(ref) for ref in view["casks"]}),
+        "readable": sorted({tap_of(ref) for ref in view["casks"]}),
         "current": {tap: sorted(refs) for tap, refs in sorted(view.get("listed", {}).items())},
         "prunedTaps": sorted(removed_taps),
     }

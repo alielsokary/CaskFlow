@@ -38,10 +38,12 @@ jobs:
     permissions:
       contents: read
       issues: read
+      pull-requests: read
     outputs:
       taps: ${{ steps.resolve.outputs.taps }}
       register: ${{ steps.resolve.outputs.register }}
       prune: ${{ steps.resolve.outputs.prune }}
+      data_pr: ${{ steps.data_pr.outputs.head }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,6 +52,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # The open data PR's head, so later jobs build on it instead of conflicting with it.
+      # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
+      - id: data_pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
+            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
+          echo "head=$HEAD" >> "$GITHUB_OUTPUT"
       - id: resolve
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -83,7 +94,6 @@ jobs:
     permissions:
       contents: read
       actions: write
-      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -93,11 +103,9 @@ jobs:
           python-version: "3.12"
       - name: Continue an open tap data PR
         env:
-          GH_TOKEN: ${{ github.token }}
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
         run: |
-          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
-            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
-          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
             git checkout FETCH_HEAD -- data/tap_files.json 2>/dev/null || true
           fi
       - name: Read taps in separate runs, one tap each
@@ -126,7 +134,6 @@ jobs:
       artifact-id: ${{ steps.data.outputs.artifact-id }}
     permissions:
       contents: read
-      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -138,15 +145,11 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tap-casks
-      # Build on an unmerged data PR so runs add to it instead of conflicting with it.
       - name: Continue an open tap data PR
         env:
-          GH_TOKEN: ${{ github.token }}
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
         run: |
-          # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
-          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
-            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
-          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
             for file in data/tap_categories.json data/tap_homepage_metadata.json data/tap_files.json; do
               git checkout FETCH_HEAD -- "$file" 2>/dev/null || true
             done
@@ -243,14 +246,11 @@ jobs:
         env:
           REGISTER: ${{ needs.resolve.outputs.register }}
           PRUNE: ${{ needs.resolve.outputs.prune }}
-          GH_TOKEN: ${{ github.token }}
+          DATA_PR: ${{ needs.resolve.outputs.data_pr }}
         # Names are validated by tap_registry.py; word-splitting is intended.
         run: |
           CONTINUED=""
-          # Same-repository PR only (a fork can name its branch alike), at its exact head commit.
-          HEAD="$(gh pr list --head bot/tap-pipeline --state open --json headRefOid,isCrossRepository --repo "$GITHUB_REPOSITORY" \
-            --jq '[.[] | select(.isCrossRepository == false)][0].headRefOid // empty')"
-          if [ -n "$HEAD" ] && git fetch -q origin "$HEAD"; then
+          if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
             # Only the taps that PR itself added: names master removed since stay removed.
             git show "$(git merge-base HEAD FETCH_HEAD):taps.json" > "$RUNNER_TEMP/base-taps.json" \
               || echo '{"version": 1, "taps": []}' > "$RUNNER_TEMP/base-taps.json"

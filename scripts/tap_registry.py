@@ -11,8 +11,15 @@ REGISTRY_PATH = REPO_ROOT / "taps.json"
 VERSION = 1
 
 _PART = re.compile(r"[a-z0-9][a-z0-9_.-]*")
+REF = re.compile(r"[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9_.-]*/[a-z0-9][a-z0-9@+_.-]*")
+OBJECT_ID = re.compile(r"[0-9a-f]{40}|[0-9a-f]{64}")
 # Titles render as plain text, so the maintainer approves exactly the name parsed here.
 _ISSUE_TITLE = re.compile(r"[ ]*add tap:[ ]*([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)[ ]*", re.IGNORECASE | re.ASCII)
+
+
+def tap_of(ref: str) -> str:
+    """`user/repo` of a `user/repo/token` cask reference."""
+    return ref.rsplit("/", 1)[0]
 
 
 class RegistryError(Exception):

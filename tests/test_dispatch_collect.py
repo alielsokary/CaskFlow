@@ -181,3 +181,33 @@ def test_completed_taps_report_the_files_they_were_read_from(tmp_path):
     result = run_collect(gh, ["a/a", "b/b"], tmp_path, budget=60, lister=listings.get)
 
     assert result["processed"] == {"a/a/x": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+
+
+def test_failed_gh_calls_cost_only_their_tap(tmp_path):
+    class Flaky(FakeGitHub):
+        def __call__(self, args):
+            if args[:2] == ["workflow", "run"] and "taps=b/b" in args:
+                raise subprocess.CalledProcessError(1, args, stderr="secondary rate limit")
+            if args[:2] == ["run", "view"] and self.runs[int(args[2])][1] == ["c/c"]:
+                raise subprocess.CalledProcessError(1, args)
+            return super().__call__(args)
+
+    gh = Flaky({"a/a": {"casks": {"a/a/x": cask("a/a/x")}}, "c/c": {"casks": {}}})
+
+    result = run_collect(gh, ["a/a", "b/b", "c/c"], tmp_path, budget=60)
+
+    assert sorted(result["casks"]) == ["a/a/x"]
+    assert sorted(result["unreached"]) == ["b/b", "c/c"]
+
+
+def test_run_lookup_covers_every_dispatched_run_and_dispatches_are_paced(tmp_path):
+    taps = [f"t{i}/t" for i in range(3)]
+    gh = FakeGitHub({tap: {"casks": {}} for tap in taps})
+    slept = []
+
+    dispatch_collect.collect(taps, gh, "master", {}, batch_size=1, budget=600, sleep=slept.append,
+                             clock=lambda: 0, workdir=tmp_path)
+
+    listing = next(call for call in gh.calls if call[:2] == ["run", "list"])
+    assert int(listing[listing.index("--limit") + 1]) >= len(taps) + 100
+    assert slept[:2] == [1, 1]

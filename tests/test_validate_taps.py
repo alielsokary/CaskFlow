@@ -21,17 +21,16 @@ def fake_runner(results):
 
 
 def test_reachable_tap_with_casks_passes(tmp_path):
-    run, calls = fake_runner({"ls-tree": (0, "040000 tree abc\tCasks\n")})
+    run, calls = fake_runner({"ls-tree": (0, "100644 blob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\tCasks/x.rb\n")})
     assert validate_taps.check_tap({"name": "a/b"}, run, tmp_path) is None
-    assert calls[0][:3] == ["git", "ls-remote", "--exit-code"]
-    assert "https://github.com/a/homebrew-b" in calls[0]
+    assert calls[0][:2] == ["git", "clone"] and "https://github.com/a/homebrew-b" in calls[0]
 
 
 def test_unreachable_tap_fails(tmp_path):
-    run, _ = fake_runner({"ls-remote": (2, "")})
-    assert "not reachable" in validate_taps.check_tap({"name": "a/b"}, run, tmp_path)
+    run, _ = fake_runner({"clone": (128, "")})
+    assert "not reachable or has no casks" in validate_taps.check_tap({"name": "a/b"}, run, tmp_path)
 
 
 def test_tap_without_casks_fails(tmp_path):
     run, _ = fake_runner({"ls-tree": (0, "")})
-    assert "no Casks/ folder" in validate_taps.check_tap({"name": "a/b"}, run, tmp_path)
+    assert "not reachable or has no casks" in validate_taps.check_tap({"name": "a/b"}, run, tmp_path)
