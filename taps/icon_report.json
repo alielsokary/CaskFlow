@@ -1,1 +1,1548 @@
-{}
+{
+  "anthropics/tap/ant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "basecamp/tap/basecamp-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "basecamp/tap/fizzy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "basecamp/tap/hey": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "bell-sw/liberica/liberica-jdk11": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk11-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk11-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk12": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk12-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk13": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk13-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk13-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk14": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk14-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk14-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk15": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk15-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk15-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk16": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk16-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk16-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk17": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk17-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk17-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk18": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk18-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk18-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk19": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk19-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk19-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk20": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk20-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk20-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk21": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk21-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk21-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk22": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk22-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk22-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk23": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk23-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk23-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk24": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk24-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk24-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk25": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk25-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk25-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk26": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk26-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk26-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk27": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk27-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk27-lite": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk8": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jdk8-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre11": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre11-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre13": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre13-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre14": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre14-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre15": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre15-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre16": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre16-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre17": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre17-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre18": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre18-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre19": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre19-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre20": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre20-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre21": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre21-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre22": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre22-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre23": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre23-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre24": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre24-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre25": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre25-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre26": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre26-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre27": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre27-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre8": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "bell-sw/liberica/liberica-jre8-full": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "caezium/tap/wisp": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "circleci-public/circleci/chunk@next": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.12": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.13": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.15": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.16": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.17": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.18": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.19": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.20": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.21": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.22": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.23": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.24": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.25": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.0.26": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.10": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.11": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.12": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.13": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.14": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.4": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.5": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.6": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.7": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.8": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci-runner@3.1.9": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci@next": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "circleci-public/circleci/circleci@v0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "colindean/fonts-nonfree/font-microsoft-aptos": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "colindean/fonts-nonfree/font-microsoft-fluent": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "colindean/fonts-nonfree/font-microsoft-office": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.21.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.23.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.24.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.24.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.25.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.26.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.27.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.28.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.28.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.28.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.29.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.30.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.31.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.31.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.31.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.31.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.32.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.33.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.34.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.35.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.37.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.37.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.38.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.39.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.42.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.42.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.43.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.45.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.45.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.46.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.47.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.48.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.49.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.49.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.50.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.50.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.51.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@0.53.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@nightly": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "docker/tap/sbx@rc": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dopplerhq/doppler/doppler": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dynatrace-oss/tap/dtctl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dynatrace-oss/tap/dtmgd": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dynatrace-oss/tap/dtui": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "edouard-claude/tap/snip": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "entireio/tap/entire": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "entireio/tap/entire@nightly": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "entireio/tap/git-sync": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "esengine/reasonix/reasonix": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "go-task/tap/go-task": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "go-task/tap/go-task@3.54": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/goreleaser": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/goreleaser-pro": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/goreleaser-pro@2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/mcp": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/mcp@0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "goreleaser/tap/sponsors": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "hashicorp/tap/hashicorp-vagrant": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk10-preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk11": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk11-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk11-preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-500": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-800": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk3-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk5": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk6": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk7-preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-400": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk8-preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk9": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-100": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-200": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "isen-ng/dotnet-sdk-versions/dotnet-sdk9-preview": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "jurplel/tap/instant-space-switcher": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "localstack/tap/lstk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "longbridge/tap/longbridge-terminal": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "macos-fuse-t/cask/fuse-t-sshfs": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk10": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk11": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk12": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk13": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk14": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk15": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk16": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk17": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk18": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk19": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk20": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk21": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk22": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk23": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk24": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk25": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk26": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk27": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk7": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "mdogan/zulu/zulu-jdk9": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "microsoft/git/microsoft-git": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "microsoft/git/scalar": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "microsoft/git/scalar-azrepos": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "netbirdio/tap/netbird-ui": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "openai/tools/openai": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pantsbuild/tap/pants": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "playcover/playcover/playcover-nightly": {
+    "status": "no_icon",
+    "reason": "unsupported container: develop"
+  },
+  "productdevbook/tap/fil": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "qoderai/qoder/qodercli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "r-lib/rig/rim": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "redis-stack/redis-stack/redis-stack": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "redis-stack/redis-stack/redis-stack-server": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "redis/redis/redis": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "redis/redis/redis-rc": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "safedep/tap/cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "safedep/tap/pmg": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "safedep/tap/pmg@edge": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "safedep/tap/vet": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "safedep/tap/vet@edge": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine11-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine11-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine11-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine11-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine12-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine12-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine13-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine13-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine14-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine14-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine15-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine15-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine16-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine16-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine17-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine17-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine17-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine17-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine18-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine18-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine19-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine19-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine20-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine20-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine20-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine20-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine21-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine21-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine21-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine21-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine22-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine22-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine22-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine22-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine23-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine23-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine23-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine23-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine24-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine24-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine24-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine24-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine25-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine25-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine25-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine25-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine26-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine26-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine26-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine26-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine27-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine27-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine27-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine27-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine28-ea-jdk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sap/sapmachine/sapmachine28-ea-jre": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sikarugir-app/sikarugir/sikarugir": {
+    "status": "car_only",
+    "reason": "car catalog has no app icon (generic render)"
+  },
+  "skiptools/skip/skip": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@5.10": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@5.10.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.0.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.0.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.0.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.2.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@6.2.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-android-toolchain@nightly-6.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@5.10": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@5.10.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.0.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.0.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.0.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.2.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@6.2.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "skiptools/skip/swift-host-toolchain@nightly-6.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "spacelift-io/spacelift/spacectl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sttz/tap/expresso": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "sttz/tap/install-unity": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "terraform-linters/tap/tflint": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "theboredteam/boring-notch/boring-notch@rc": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got dd5d28dec45e...)",
+    "attempts": 1
+  },
+  "tsung-ju/iguanatexmac/iguanatexmac": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tsung-ju/iguanatexmac/latexit-metadata": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/1password-cli-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/1password-gui-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/antigravity-ide-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/antigravity-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/asusctl-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/bazzite-wallpapers": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/bluefin-wallpapers": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/bluefin-wallpapers-extra": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/chairlift": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/framework-tool": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/framework-wallpapers": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/goose-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/jetbrains-toolbox-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/lm-studio-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/rog-control-center-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/visual-studio-code-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/visual-studio-code-linux@insiders": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/tap/vscodium-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "umputun/apps/revmux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "warrensbox/tap/tfswitch": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "warrensbox/tap/whosup": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "xdevplatform/tap/xurl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "xykong/tap/flux-markdown": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "xykong/tap/flux-notifier": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "zqxwce/tap/vphone-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  }
+}
