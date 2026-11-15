@@ -261,7 +261,7 @@ def test_sandboxed_brew_gets_a_private_home_and_no_tokens(tmp_path, monkeypatch)
     command = sandbox.command(["brew", "info"])
     assert command[:3] == ["sandbox-exec", "-p", collect.PROFILE] and command[-2:] == ["brew", "info"]
     assert f"WORK={sandbox.work}" in command and f"REAL_HOME={tmp_path / 'home'}" in command
-    assert not [key for key in sandbox.env if "TOKEN" in key or "GITHUB" in key or "ACTIONS" in key]
+    assert not [key for key in sandbox.env if "TOKEN" in key or key.startswith(("GITHUB_", "ACTIONS_", "RUNNER_"))]
     assert Path(sandbox.env["HOME"]).is_relative_to(sandbox.work)
     assert (Path(sandbox.env["HOME"]) / ".homebrew" / "trust.json").exists()
     assert Path(sandbox.env["HOMEBREW_CACHE"]).is_relative_to(sandbox.work)
