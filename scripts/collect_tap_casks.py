@@ -34,6 +34,12 @@ PROFILE = """
 (version 1)
 (allow default)
 (deny network*)
+; LaunchServices and Apple Events start apps in the runner's own session, outside this sandbox and account.
+(deny mach-lookup
+  (global-name "com.apple.coreservices.launchservicesd")
+  (global-name-prefix "com.apple.lsd.")
+  (global-name "com.apple.coreservices.appleevents"))
+(deny appleevent-send)
 (deny file-read* (subpath (param "REAL_HOME")))
 (deny file-write*)
 (allow file-write*

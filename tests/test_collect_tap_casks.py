@@ -246,6 +246,7 @@ def test_sandbox_profile_denies_network_writes_and_the_real_home():
     assert "(deny network*)" in profile and "(deny file-write*)" in profile
     assert '(allow file-write*\n  (subpath (param "WORK"))' in profile
     assert '(deny file-read* (subpath (param "REAL_HOME")))' in profile
+    assert '(global-name "com.apple.coreservices.launchservicesd")' in profile and "(deny appleevent-send)" in profile
 
 
 def test_sandboxed_brew_gets_a_private_home_and_no_tokens(tmp_path, monkeypatch):
