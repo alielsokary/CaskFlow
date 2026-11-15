@@ -296,7 +296,8 @@ def test_a_tap_user_runs_brew_through_sudo_with_only_the_sandbox_environment(tmp
     start = command.index("sandbox-exec")
     assert command[:6] == ["sudo", "-n", "-u", "_caskflowtap0", "/usr/bin/env", "-i"]
     assert sorted(command[6:start]) == sorted(f"{key}={value}" for key, value in sandbox.env.items())
-    assert ["sudo", "-n", "chown", "-R", "_caskflowtap0", str(sandbox.work)] in calls
+    assert calls[:2] == [["sudo", "-n", "chown", "-R", "_caskflowtap0", str(sandbox.work)],
+                         ["sudo", "-n", "chmod", "711", str(sandbox.work)]]
     assert "directory = *" in (sandbox.work / "home" / ".gitconfig").read_text(encoding="utf-8")
 
     calls.clear()

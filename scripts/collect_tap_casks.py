@@ -97,8 +97,10 @@ class TapSandbox:
         for sub in ("logs", "tmp"):
             (self.work / sub).mkdir()
         if user:
-            if (owned := run(["sudo", "-n", "chown", "-R", user.name, str(self.work)])).returncode != 0:
-                raise RuntimeError(f"cannot hand the sandbox to {user.name}: {owned.stderr.strip()[-300:]}")
+            # The tap user owns the folder; this user may only enter it, to start brew there.
+            for handover in (["sudo", "-n", "chown", "-R", user.name, str(self.work)], ["sudo", "-n", "chmod", "711", str(self.work)]):
+                if (result := run(handover)).returncode != 0:
+                    raise RuntimeError(f"cannot hand the sandbox to {user.name}: {result.stderr.strip()[-300:]}")
         self.env = {
             "PATH": os.environ.get("PATH", "/usr/bin:/bin"), "HOME": str(home), "LANG": "en_US.UTF-8", **HOST_ENV,
             "HOMEBREW_CACHE": str(self.work / "cache"), "HOMEBREW_LOGS": str(self.work / "logs"),
