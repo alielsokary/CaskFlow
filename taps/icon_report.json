@@ -31,6 +31,15 @@
     "status": "car_only",
     "reason": "car catalog has no app icon (generic render)"
   },
+  "altalt-org/alt/alt": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) Recv failure: Connection reset by peer",
+    "attempts": 1
+  },
+  "amir20/dtop/dtop": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "anchore/grype/grype": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -508,6 +517,10 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "bigwig-club/brew/font-operator-mono-lig": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "blacktop/tap/dyld-tools": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -792,7 +805,47 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "castai/tap/castctl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "castai/tap/kimchi-companion": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
   "censys/tap/cencli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "cerbos/tap/cerbos": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "cerbos/tap/cerbosctl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/chatgpt-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/emacs-pgtk-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/omp-desktop": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/opencodex": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/paseo-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "chakachakakhan/tap/thorium-reader-linux": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -928,6 +981,10 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "clawscli/tap/claws": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "colindean/fonts-nonfree/font-microsoft-aptos": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -940,11 +997,23 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "compozy/compozy/compozy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "compozy/compozy/skeeper": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "convoyai-public/tap/cwf": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
   "ctrlspice/otel-desktop-viewer/otel-desktop-viewer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "cvc5/cvc5/cvc5": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -977,6 +1046,18 @@
     "reason": "no app/suite/pkg artifact"
   },
   "devantler-tech/tap/ksail": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "devenjarvis/tap/furrow": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "devenjarvis/tap/lathe": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "devnullvoid/pvetui/pvetui": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1304,6 +1385,10 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "ffurrer2/tap/semver": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "frostyard/tap/chairlift": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1451,6 +1536,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "grafana/grafana/grafana-assistant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "harvard-cns/orla/orla": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1700,6 +1789,202 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-mono-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-nerd-font-ttc": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-term-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-cl-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-hc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-j-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-k-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-sc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jonz94/sarasa-nerd-fonts/font-sarasa-ui-tc-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "junian/dotnet/dotnet-sdk@1.0": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
@@ -1775,6 +2060,18 @@
   "jurplel/tap/instant-space-switcher": {
     "status": "no_icon",
     "reason": "no .icns in Resources"
+  },
+  "katharaframework/kathara/kathara": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "kong/kongctl/kongctl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "kubewall/tap/kubewall": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
   },
   "kudobuilder/tap/kuttl-cli": {
     "status": "no_icon",
@@ -2066,6 +2363,10 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
     "attempts": 1
   },
+  "matt-wright86/tap/mardi-gras": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "mdogan/zulu/zulu-jdk10": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
@@ -2177,6 +2478,11 @@
   "mnemon-dev/tap/mnemon": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
+  },
+  "mrinalwadhwa/freeflow/freeflow": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
   },
   "netbirdio/tap/netbird-ui": {
     "status": "no_icon",
@@ -2474,6 +2780,1420 @@
     "reason": "no app/suite/pkg artifact"
   },
   "redis/redis/redis-rc": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/airwindows-consolidated": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/apulsoft-apqualizr": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/apulsoft-apshaper": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/apulsoft-aptrigga": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/apulsoft-apunmask": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/apulsoft-apverb": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/apulsoft-opalize": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/apulsoft-splits": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-comeback-kid": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-crystalline": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-ihny-2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-parallel-aggressor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-spaced-out": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-super-vhs": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/babyaudio-taip": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/cytomic-the-drop": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/cytomic-the-glue": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/cytomic-the-scream": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-antresol": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-decimort": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-devastor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-drumazon": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-fazortan": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-frontier": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-godfazer": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-lush": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-nepheton": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-nithonat": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-phoscyon": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-pulsatec": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-punchbox": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-redoptor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-repeater": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-sigmund": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-spacerek": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-syntorus": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-tekturon": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/d16-toraverb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/devious-machines-software-manager": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/dmgaudio-compassion": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-dualism": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-equality": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-equick": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-equilibrium": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-essence": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-expurgate": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-limitless": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-multiplicity": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-pitchfunk": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-trackcomp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-trackcontrol": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-trackds": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-trackgate": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-tracklimit": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/dmgaudio-trackmeter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-bass-cruncher": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-bass-driver": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-bass-smasher": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-blues-barker": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-blues-river": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-ch3604": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-cp3603": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-dl3606": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-ds3603": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-echolyte": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-filtrator": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-fl3606": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-fz3603": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-gainia-hb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-gainia-td": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-gainia-xt": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-gq3607": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-grandmaster": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-harmonitron": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-meloditron": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-moon-muffin": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-od3603": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-omnivibe": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-paten": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-ph3605": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-ringmojo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-rotarion": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-rv3604": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-tr3604": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-vibracula": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-wf3607": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/efektor-whammo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/eventide-blackhole": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-crushstation": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-crystals": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-deboom": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-echannel": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-eq45": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-eq65": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-h3000-band-delays-mk-ii": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-h3000-factory-mk-ii": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-h910-harmonizer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-h949-harmonizer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-instant-flanger-mk-ii": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-instant-phaser-mk-ii": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-mangledverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-micropitch": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-octavox": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-omnipressor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-physion-mk-ii": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-precision-time-align": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-quadravox": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-rotary-mod": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-sheen-machine": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-shimmerverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-sp2016-reverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-spliteq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-spring": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-temperance-lite": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-tricerachorus": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-tverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-ultrachannel": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-ultrareverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-ultratap": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/eventide-undulator": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/flux-center": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1
+  },
+  "resonative/proaudio/forever89-topos": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/forever89-visco": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/gconmanager": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact"
+  },
+  "resonative/proaudio/izotope-stratus-3d": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/izotope-symphony-3d": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/kilohearts-installer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/klanghelm-dc1a": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/klanghelm-ivgi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/klanghelm-mjuc-jr": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/klanghelm-tens-jr": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/kush-clariphonic-mk2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/kush-hammer-mk2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/kush-ubk-1": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/kush-ubk-2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/liquidsonics-cinematic-rooms-professional": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-hd-cart": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-illusion": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-lustrous-plates-surround": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got b997953340be...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-reverberate": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-seventh-heaven-professional": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/liquidsonics-tai-chi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/madrona-labs-aalto": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/madrona-labs-aaltoverb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/madrona-labs-kaivo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/madrona-labs-sumu": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/madrona-labs-virta": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mb-mbsi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mb-tmpc": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got ac6938fa6b38...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/mb-white-room": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 2ca113e73e71...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/mcdsp-4020-retro-eq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-4030-retro-comp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-4040-retro-limiter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-6020-ultimate-eq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-6030-ultimate-comp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-6034-ultimate-mb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-6050-ultimate-cs": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-6060-ultimate-mc": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-ae400-active-eq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-ae600-active-eq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-analog-channel": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-channel-g": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-channel-g-compact": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-compressorbank": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-de555": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-ec300": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-filterbank": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-futzbox": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-mc2000": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-ml4000": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-ml8000": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-nf575": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-nr800": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-revolver": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-sa-2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-sa-3": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mcdsp-spc2000": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-channelstrip": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-character": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-dirty-delay": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-haloverb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-multiband-dynamics": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-multiband-expander": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-precision-deesser": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-sonic-eq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-supergate": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/mh-transientcontrol": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/monkeyc-rando": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 1ff31c873d9f...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/musikhack-fuel": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/musikhack-master-plan": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/newfangled-articulate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-elevate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-equivocate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-invigorate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-obliterate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-pendulate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-punctuate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-recirculate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/newfangled-saturate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/oek-bloom": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/oek-soothe2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/oek-spiff": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/polyverse-comet": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-filterverse": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-filtron": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-gatekeeper": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-i-wish": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-manipulator": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-supermodal": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/polyverse-wider": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-2445-emt": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-285": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-608md": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-auralcomp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-auralcontrol": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 457883c41d56...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/psp-binamp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-busspressor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-consoleq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-datamix-a567": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-drc": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 8df3393d12fe...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/psp-e27": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-easyverb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-echo": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-fetpressor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-flare": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-hertzrider2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-impressor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-infinistrip": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-lexicon-psp42": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-lotary2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-mastercomp": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-masterq2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-microwarmer": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/psp-nobleq": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-oldtimer": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-oldtimermb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-pianoverb2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-preqursor3": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-saturator": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-springbox": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-stereocontroller2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-stompdelay": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-stompfilter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-triplemeter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-twin-l": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-vintagewarmer2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-wobbler": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-x-dither": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/psp-xenon": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/pulsar-1178": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-8200": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-echorec": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-mp-eq": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact"
+  },
+  "resonative/proaudio/pulsar-poseidon": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-primavera": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-smasher": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-vm-comp": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact"
+  },
+  "resonative/proaudio/pulsar-vocal-studio": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/pulsar-w495": {
+    "status": "failed",
+    "reason": "download failed: curl: (22) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/receivemidi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/relab-176": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/relab-lx480": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/relab-lx480-essentials": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/relab-sonsig-rev-a": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/sendmidi": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/slate-audio-center": {
+    "status": "failed",
+    "reason": "download url is not a public https url",
+    "attempts": 1
+  },
+  "resonative/proaudio/steinberg-download-assistant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/synchroarts-repitch": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-bassline-101": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-chorus-lx": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-dac": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-dub-x": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-filter": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-g-verb": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-j-8": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-mod": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-noisemaker": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-pha": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-reverb-4": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-sampler": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-u-no-lx": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tal-vocoder": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/tdr-collector": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/trackbout-ripchord": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/uhe-zebra3": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "resonative/proaudio/valhalla-spacemodulator": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/voxengo-anspec": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-beeper": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-bms": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-boogex": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-correlometer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-crtiv-tape-bus": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-crunchessor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-curveeq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-deft-compressor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-drumformer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-ebuslim": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-elephant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-glisseq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-harmonieq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-latency-delay": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-lf-max-punch": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-marquis-compressor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-marvel-geq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-msed": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-oldskoolverb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-oldskoolverb-plus": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-ovc-128": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-overtone-geq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-peakbuster": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-pha-979": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-polysquasher": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-powershaper": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-primeeq": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-shinechilla": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-shumovick": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-sobor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-soniformer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-sound-delay": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-span": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-span-plus": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-spatifier": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-stereo-touch": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-tempo-delay": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-teote": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-teq-421": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-transgainer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-tube-amp": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-varisaturator": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-voxformer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-warmifier": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/voxengo-water-chorus": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "resonative/proaudio/wavealchemy-dawn": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavealchemy-glow": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavealchemy-pulse": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavealchemy-radiance": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavealchemy-tapewave": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-cassette": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-echo-cat": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-equalizer": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-quantum": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-spectre": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/wavesfactory-trackspacer": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 44743932b7f7...)",
+    "attempts": 1
+  },
+  "resonative/proaudio/xfer-ott": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "resonative/proaudio/xln-online-installer": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -2952,11 +4672,63 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "suzuki-shunsuke/github-comment/github-comment": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "suzuki-shunsuke/pinact/pinact": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
   "suzuki-shunsuke/tfcmt/tfcmt": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/aki": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/ami": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/ccrawl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/kage": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/kaku": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/kv": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/meguri": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/shirabe": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/tatami": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/tomo": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/tori": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tamnd/tap/yomi": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -3029,6 +4801,102 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "thedavidweng/unsigned-tap/aladin": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/aptible@legacy": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "thedavidweng/unsigned-tap/brooklyn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/clickhouse": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/colorpicker-materialdesign": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/developerexcuses": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/endless-sky-high-dpi": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/epoch-flip-clock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/fruit-screensaver": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/google-trends": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/grid-clock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/irpf2023": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/irpf2024": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/irpf2025": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/jameica": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "thedavidweng/unsigned-tap/markdown-service-tools": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/openforis-collect": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/pivy-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "thedavidweng/unsigned-tap/rnnoise": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/salesforce-cli": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "thedavidweng/unsigned-tap/simpleclock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/webviewscreensaver": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/xampp": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "thedavidweng/unsigned-tap/xampp@7": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "theurichde/go-aws-sso/go-aws-sso": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -3052,6 +4920,11 @@
   "tsung-ju/iguanatexmac/latexit-metadata": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
+  },
+  "tweakphp/tap/tweakphp": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
   },
   "ublue-os/experimental-tap/chatgpt-linux": {
     "status": "no_icon",
@@ -3270,6 +5143,22 @@
     "reason": "no app/suite/pkg artifact"
   },
   "utkuozdemir/pv-migrate/pv-migrate": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "validatedev/tap/font-fira-code-chunky": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "validatedev/tap/font-fira-code-chunky-nerd-font": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "veracode/srcclr/srcclr": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "vvvvv/zig/zig@nightly": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
