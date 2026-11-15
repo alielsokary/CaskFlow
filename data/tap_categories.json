@@ -6,6 +6,12 @@
       "primary": "audioMusic",
       "secondary": []
     },
+    "0xmassi/stik/stik": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "1architect/macspace/macspace": {
       "primary": "utilities",
       "secondary": []
@@ -110,6 +116,12 @@
         "ai"
       ]
     },
+    "aieradev/tap/clypra": {
+      "primary": "videoMedia",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "alexstrnik/browserino/browserino": {
       "primary": "utilities",
       "secondary": [
@@ -123,9 +135,28 @@
         "utilities"
       ]
     },
+    "altalt-org/alt/alt": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "scienceEducation"
+      ]
+    },
     "amir1376/tap/ab-download-manager": {
       "primary": "utilities",
       "secondary": []
+    },
+    "amir20/dtop/dtop": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "amitrajput-dev/tap/sonybridge": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
     },
     "anchore/grype/grype": {
       "primary": "securityPrivacy",
@@ -291,6 +322,10 @@
         "ai",
         "utilities"
       ]
+    },
+    "ardia-browser/tap/ardia@nightly": {
+      "primary": "browsers",
+      "secondary": []
     },
     "artemyurov/tomobar/tomobar": {
       "primary": "menuBar",
@@ -550,6 +585,12 @@
     },
     "b451c/quickmd/quickmd": {
       "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "badabing2005/pixelflasher/pixelflasher": {
+      "primary": "utilities",
       "secondary": [
         "developerTools"
       ]
@@ -963,6 +1004,46 @@
       "primary": "menuBar",
       "secondary": [
         "utilities"
+      ]
+    },
+    "bigwig-club/brew/account-switcher": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "bigwig-club/brew/app-tracker": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "bigwig-club/brew/appinfo": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "bigwig-club/brew/font-operator-mono-lig": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "bigwig-club/brew/openfile": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "bigwig-club/brew/ucopy": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "bigwig-club/brew/upic": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
       ]
     },
     "blacktop/tap/dyld-tools": {
@@ -1759,6 +1840,12 @@
         "utilities"
       ]
     },
+    "browseros-ai/tap/browseros-neo": {
+      "primary": "browsers",
+      "secondary": [
+        "ai"
+      ]
+    },
     "bryanroscoe/shield-optimizer/atv-optimizer": {
       "primary": "utilities",
       "secondary": [
@@ -1965,6 +2052,23 @@
       "primary": "scienceEducation",
       "secondary": []
     },
+    "cassettelab/cassette/cassette": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "castai/tap/castctl": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "castai/tap/kimchi-companion": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities",
+        "developerTools"
+      ]
+    },
     "cavaldos/tap/ice": {
       "primary": "menuBar",
       "secondary": [
@@ -1989,8 +2093,60 @@
         "securityPrivacy"
       ]
     },
+    "cerbos/tap/cerbos": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "cerbos/tap/cerbosctl": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "certak-com/kafkio/kafkio": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "chakachakakhan/tap/chatgpt-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "chakachakakhan/tap/emacs-pgtk-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "chakachakakhan/tap/omp-desktop": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "chakachakakhan/tap/opencodex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "chakachakakhan/tap/paseo-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "chakachakakhan/tap/thorium-reader-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "chamburr/tap/glance": {
+      "primary": "utilities",
       "secondary": []
     },
     "chang-07/tap/rascal": {
@@ -2162,6 +2318,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "clawscli/tap/claws": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "codeforreal1/tap/compresso": {
       "primary": "videoMedia",
       "secondary": [
@@ -2246,6 +2408,16 @@
         "designGraphics"
       ]
     },
+    "compozy/compozy/compozy": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "compozy/compozy/skeeper": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "convoyai-public/tap/cwf": {
       "primary": "developerTools",
       "secondary": [
@@ -2274,9 +2446,27 @@
         "utilities"
       ]
     },
+    "crossoverjie/skilldeck/skilldeck": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "ctrlspice/otel-desktop-viewer/otel-desktop-viewer": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "cvc5/cvc5/cvc5": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "cyberlesterr/antify/antify": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "d12frosted/emacs-plus/emacs-plus-app": {
       "primary": "developerTools",
@@ -2380,6 +2570,12 @@
         "utilities"
       ]
     },
+    "denzam/systemeq/systemeq": {
+      "primary": "audioMusic",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "deskflow/tap/deskflow": {
       "primary": "utilities",
       "secondary": []
@@ -2420,15 +2616,47 @@
         "ai"
       ]
     },
+    "devenjarvis/tap/furrow": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "devenjarvis/tap/lathe": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "devnullvoid/pvetui/pvetui": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "didhd/tap/amazon-bedrock-client": {
       "primary": "productivity",
       "secondary": [
         "ai"
       ]
     },
+    "diffusionstudio/tap/editor": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
     "dimentium/autoraise/autoraiseapp": {
       "primary": "utilities",
       "secondary": []
+    },
+    "diygod/tap/pinky": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "docker/tap/sbx": {
       "primary": "developerTools",
@@ -2840,6 +3068,12 @@
       "primary": "browsers",
       "secondary": []
     },
+    "dutkiewiczmaciej/tap/maklock": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "dynatrace-oss/tap/dtctl": {
       "primary": "developerTools",
       "secondary": []
@@ -3067,6 +3301,37 @@
         "utilities"
       ]
     },
+    "f/tap/deeper": {
+      "primary": "productivity",
+      "secondary": [
+        "communication"
+      ]
+    },
+    "f/tap/fastbar": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "f/tap/istanbul": {
+      "primary": "audioMusic",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "f/tap/poke-gate": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "f/tap/pokemon-tcg": {
+      "primary": "games",
+      "secondary": [
+        "ai"
+      ]
+    },
     "fastrepl/fastrepl/char": {
       "primary": "productivity",
       "secondary": [
@@ -3172,6 +3437,10 @@
         "audioMusic"
       ]
     },
+    "ffurrer2/tap/semver": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "fif7y/tap/dimble": {
       "primary": "menuBar",
       "secondary": [
@@ -3190,10 +3459,40 @@
         "utilities"
       ]
     },
+    "flewgg/tap/eps-quick-look": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "flewgg/tap/shear": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "flewgg/tap/splice": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "flewgg/tap/unfold": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "frankea/whisky/whisky": {
       "primary": "utilities",
       "secondary": [
         "games"
+      ]
+    },
+    "frigadehq/tap/yap": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
       ]
     },
     "frostyard/tap/chairlift": {
@@ -3497,6 +3796,12 @@
         "cloudStorage"
       ]
     },
+    "guanchzhou/tap/threemf": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "guria/tap/nehir": {
       "primary": "utilities",
       "secondary": [
@@ -3529,6 +3834,12 @@
         "developerTools"
       ]
     },
+    "harvard-cns/orla/orla": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "hashicorp/tap/hashicorp-boundary-desktop": {
       "primary": "securityPrivacy",
       "secondary": [
@@ -3542,6 +3853,19 @@
     "hatchet-dev/hatchet/hatchet": {
       "primary": "developerTools",
       "secondary": [
+        "ai"
+      ]
+    },
+    "hcavarsan/kftray/kftray": {
+      "primary": "developerTools",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "hehehai/tap/voxt": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity",
         "ai"
       ]
     },
@@ -3674,6 +3998,12 @@
     "ibm-messaging/ibmmq/mqdevtoolkit": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "inukaasith/twindesk/twindesk": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "iordv/tap/droppy": {
       "primary": "utilities",
@@ -3873,6 +4203,18 @@
         "videoMedia"
       ]
     },
+    "itouuuuuuuuu/tap/autoraise": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "itouuuuuuuuu/tap/zmk-battery-bar": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "jackielii/tap/skhd-zig": {
       "primary": "utilities",
       "secondary": [
@@ -4038,10 +4380,310 @@
         "developerTools"
       ]
     },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-cl-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-sc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-cl-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-sc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-slab-tc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-fixed-tc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-cl-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-j-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-k-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-sc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-gothic-tc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-cl-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-sc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-cl-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-sc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-slab-tc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-mono-tc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-nerd-font-ttc": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-cl-nerd-font": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-sc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-cl-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-sc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-slab-tc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-term-tc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-cl-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-hc-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-j-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-k-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-sc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jonz94/sarasa-nerd-fonts/font-sarasa-ui-tc-nerd-font": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "josejuanqm/tap/docky": {
       "primary": "utilities",
       "secondary": [
         "productivity"
+      ]
+    },
+    "js4jiang5/battopt/battopt": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
       ]
     },
     "jsattler/tap/pulse": {
@@ -4152,9 +4794,47 @@
       "primary": "productivity",
       "secondary": []
     },
+    "katharaframework/kathara/kathara": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "kgarner7/feishin/feishin": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "kitlangton/tap/scrawl": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "videoMedia"
+      ]
+    },
+    "kong/kongctl/kongctl": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "korjwl1/tap/toki-monitor": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "korjwl1/tap/wireguide": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
     "krishkrosh/apps/trackweight": {
       "primary": "utilities",
       "secondary": []
+    },
+    "kubewall/tap/kubewall": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "kudobuilder/tap/kuttl-cli": {
       "primary": "developerTools",
@@ -4196,6 +4876,30 @@
         "developerTools"
       ]
     },
+    "kunkka19xx/tap/look@0.6.11": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "kunkka19xx/tap/look@0.6.12": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "kunkka19xx/tap/look@0.6.13": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "kunkka19xx/tap/look@0.7.0": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "laishulu/homebrew/font-sarasa-nerd": {
       "primary": "developerTools",
       "secondary": [
@@ -4220,6 +4924,48 @@
       "primary": "menuBar",
       "secondary": [
         "ai",
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/aleapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/dleapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/gleapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "leapps-org/leapps/ileapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/lava": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/rleapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "leapps-org/leapps/vleapp": {
+      "primary": "securityPrivacy",
+      "secondary": [
         "developerTools"
       ]
     },
@@ -4503,6 +5249,18 @@
         "communication"
       ]
     },
+    "lu-zhengda/tap/toggle": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lu-zhengda/tap/updater": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "luupsystems/tap/globetrotter": {
       "primary": "developerTools",
       "secondary": []
@@ -4524,6 +5282,13 @@
       "primary": "utilities",
       "secondary": [
         "menuBar"
+      ]
+    },
+    "m13v/tap/claude-meter": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "utilities"
       ]
     },
     "macos-fuse-t/cask/fuse-t-sshfs": {
@@ -4833,6 +5598,10 @@
         "developerTools"
       ]
     },
+    "matt-wright86/tap/mardi-gras": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "matthewpick/pesto-clipboard/pesto-clipboard": {
       "primary": "productivity",
       "secondary": [
@@ -4862,6 +5631,13 @@
       "secondary": [
         "ai",
         "productivity"
+      ]
+    },
+    "mazdak/tap/audiowhisper": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity",
+        "ai"
       ]
     },
     "mdogan/zulu/zulu-jdk10": {
@@ -4998,6 +5774,16 @@
         "videoMedia"
       ]
     },
+    "migsilva89/imark/imark": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "miguel-mpm/tap/nochat4u": {
+      "primary": "other",
+      "secondary": []
+    },
     "mikker/tap/dinky": {
       "primary": "utilities",
       "secondary": [
@@ -5038,6 +5824,10 @@
         "ai"
       ]
     },
+    "mmathys/tap/noswoosh": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "mnemon-dev/tap/mnemon": {
       "primary": "developerTools",
       "secondary": [
@@ -5048,6 +5838,12 @@
       "primary": "utilities",
       "secondary": [
         "cloudStorage"
+      ]
+    },
+    "momenbasel/puresnitch/puresnitch": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
       ]
     },
     "momenbasel/tap/consolemini": {
@@ -5068,6 +5864,12 @@
         "utilities"
       ]
     },
+    "mrinalwadhwa/freeflow/freeflow": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "mrrockysl/muro/muro": {
       "primary": "screensaverWallpaper",
       "secondary": []
@@ -5082,6 +5884,16 @@
       "primary": "utilities",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "mstcvk/tap/macrar": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "mstcvk/tap/mc-download-manager": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
       ]
     },
     "murdercode/presto/presto": {
@@ -5131,6 +5943,41 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "nailuogg/recoll/recoll": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "nais/tap/naisdevice": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "nais/tap/naisdevice-tenant": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "nanako0129/tap/limpet": {
+      "primary": "cloudStorage",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "nanako0129/tap/shanjie": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "nanako0129/tap/syrtis": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "developerTools"
       ]
     },
     "nanako0129/tokenbar/tokenbar": {
@@ -5313,6 +6160,18 @@
       "primary": "securityPrivacy",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "olaproeis/ferrite/ferrite": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "oliwonders/tap/metalhudhelper": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
       ]
     },
     "omacom/mac/omarchy": {
@@ -5594,6 +6453,12 @@
         "developerTools"
       ]
     },
+    "openselena/tap/omniget": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
     "opgginc/tap/opencode-bar": {
       "primary": "menuBar",
       "secondary": [
@@ -5687,6 +6552,12 @@
         "menuBar"
       ]
     },
+    "pantafive/tap/fader": {
+      "primary": "menuBar",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
     "pantsbuild/tap/pants": {
       "primary": "developerTools",
       "secondary": []
@@ -5731,6 +6602,12 @@
       "primary": "utilities",
       "secondary": [
         "productivity"
+      ]
+    },
+    "penso/arbor/arbor": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
       ]
     },
     "penso/tap/arbor": {
@@ -5788,6 +6665,10 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "pol-rivero/tap/desktop-plus": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "pomerium/tap/pomerium-desktop": {
       "primary": "securityPrivacy",
@@ -5921,6 +6802,25 @@
         "ai"
       ]
     },
+    "qzz0518/tap/autocodebar": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "qzz0518/tap/charker": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "qzz0518/tap/dukou": {
+      "primary": "utilities",
+      "secondary": [
+        "communication",
+        "ai"
+      ]
+    },
     "r-lib/rig/rig": {
       "primary": "developerTools",
       "secondary": [
@@ -6034,6 +6934,1776 @@
     },
     "redis/redis/redis-rc": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "repoprompt/repoprompt-ce/repoprompt-ce": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "rescenedev/anf/anf": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "resonative/proaudio/airwindows-consolidated": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/amplifikation-360": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-apqualizr": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-apshaper": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-aptrigga": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-apunmask": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-apverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-opalize": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/apulsoft-splits": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/aquarius": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/auracle-x": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/babyaudio-comeback-kid": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-crystalline": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-ihny-2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-parallel-aggressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-spaced-out": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-super-vhs": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/babyaudio-taip": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "resonative/proaudio/convertwithmoss": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/cytomic-the-drop": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/cytomic-the-glue": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/cytomic-the-scream": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-antresol": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-decimort": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-devastor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-drumazon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-fazortan": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-frontier": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-godfazer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-lush": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-nepheton": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-nithonat": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-phoscyon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-pulsatec": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-punchbox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-redoptor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-repeater": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-sigmund": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-spacerek": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-syntorus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-tekturon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/d16-toraverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/devious-machines-software-manager": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/dmgaudio-compassion": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-dualism": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-equality": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-equick": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-equilibrium": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-essence": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-expurgate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-limitless": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-multiplicity": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-pitchfunk": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-trackcomp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-trackcontrol": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-trackds": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-trackgate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-tracklimit": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dmgaudio-trackmeter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/dreamtonics-synthesizer-v-studio": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "resonative/proaudio/dsoniq-realphones": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-bass-cruncher": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-bass-driver": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-bass-smasher": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-blues-barker": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-blues-river": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-ch3604": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-cp3603": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-dl3606": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-ds3603": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-echolyte": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-filtrator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-fl3606": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-fz3603": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-gainia-hb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-gainia-td": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-gainia-xt": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-gq3607": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-grandmaster": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-harmonitron": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-meloditron": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-moon-muffin": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-od3603": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-omnivibe": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-paten": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-ph3605": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-ringmojo": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-rotarion": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-rv3604": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-tr3604": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-vibracula": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-wf3607": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/efektor-whammo": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-blackhole": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-crushstation": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-crystals": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-deboom": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-echannel": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-eq45": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-eq65": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-h3000-band-delays-mk-ii": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-h3000-factory-mk-ii": {
+      "primary": "audioMusic",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "resonative/proaudio/eventide-h910-harmonizer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-h949-harmonizer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-instant-flanger-mk-ii": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-instant-phaser-mk-ii": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-mangledverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-micropitch": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-octavox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-omnipressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-physion-mk-ii": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-precision-time-align": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-quadravox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-rotary-mod": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-sheen-machine": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-shimmerverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-sp2016-reverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-spliteq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-spring": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-temperance-lite": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-tricerachorus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-tverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-ultrachannel": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-ultrareverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-ultratap": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/eventide-undulator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/ew-installation-center": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/flux-center": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/forever89-topos": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/forever89-visco": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/fuzzmeasure": {
+      "primary": "audioMusic",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "resonative/proaudio/gconmanager": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/gforce-axxess": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/gig-performer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/grid-editor": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/hazel@6.0.4": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "resonative/proaudio/hornetdoin": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/hyperplan": {
+      "primary": "productivity",
+      "secondary": []
+    },
+    "resonative/proaudio/izotope-stratus-3d": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/izotope-symphony-3d": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/kards": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/kilohearts-installer": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/klanghelm-dc1a": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/klanghelm-ivgi": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/klanghelm-mjuc-jr": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/klanghelm-tens-jr": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/klevgrand-helper": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/korg-software-pass": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/kush-clariphonic-mk2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/kush-hammer-mk2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/kush-ubk-1": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/kush-ubk-2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-cinematic-rooms-professional": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-hd-cart": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-illusion": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-lustrous-plates-surround": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-reverberate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-seventh-heaven-professional": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/liquidsonics-tai-chi": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/madrona-labs-aalto": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/madrona-labs-aaltoverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/madrona-labs-kaivo": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/madrona-labs-sumu": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/madrona-labs-virta": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mb-mbsi": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mb-tmpc": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mb-white-room": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-4020-retro-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-4030-retro-comp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-4040-retro-limiter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-6020-ultimate-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-6030-ultimate-comp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-6034-ultimate-mb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-6050-ultimate-cs": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-6060-ultimate-mc": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-ae400-active-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-ae600-active-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-analog-channel": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-channel-g": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-channel-g-compact": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-compressorbank": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-de555": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-ec300": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-filterbank": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-futzbox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-mc2000": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-ml4000": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-ml8000": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-nf575": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-nr800": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-revolver": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-sa-2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-sa-3": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mcdsp-spc2000": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-channelstrip": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-character": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-dirty-delay": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-haloverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-multiband-dynamics": {
+      "primary": "audioMusic",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "resonative/proaudio/mh-multiband-expander": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-precision-deesser": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-sonic-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-supergate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/mh-transientcontrol": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/monkeyc-rando": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/monkeyc-rewind": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/musikhack-fuel": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/musikhack-master-plan": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/nembrini-audio-central": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/newfangled-articulate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-elevate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-equivocate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-invigorate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-obliterate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-pendulate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-punctuate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-recirculate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/newfangled-saturate": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/nobcontrol-nac": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "resonative/proaudio/oek-bloom": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/oek-soothe2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/oek-spiff": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/open-stage-control": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/pa-installation-manager": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/plistedit-pro@1.9.7": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/polyverse-comet": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-filterverse": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-filtron": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-gatekeeper": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-i-wish": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-manipulator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-supermodal": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/polyverse-wider": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-2445-emt": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-285": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-608md": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-auralcomp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-auralcontrol": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-binamp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-busspressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-consoleq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-datamix-a567": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-drc": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-e27": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-easyverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-echo": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-fetpressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-flare": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-hertzrider2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-impressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-infinistrip": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-lexicon-psp42": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-lotary2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-mastercomp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-masterq2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-microwarmer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-nobleq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-oldtimer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-oldtimermb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-pianoverb2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-preqursor3": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-saturator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-springbox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-stereocontroller2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-stompdelay": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-stompfilter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-triplemeter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-twin-l": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-vintagewarmer2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-wobbler": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-x-dither": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/psp-xenon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-1178": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-8200": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-echorec": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-mp-eq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-poseidon": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-primavera": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-smasher": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-vm-comp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-vocal-studio": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsar-w495": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/pulsedownloader": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/r8brain-pro": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/reaboot": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/reason-companion": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/receivemidi": {
+      "primary": "audioMusic",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "resonative/proaudio/refx-cloud": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/relab-176": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/relab-lx480": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/relab-lx480-essentials": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/relab-sonsig-rev-a": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/revoice-pro": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/sendmidi": {
+      "primary": "audioMusic",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "resonative/proaudio/showmidi": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/sine-player": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/slate-audio-center": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/slate-digital-connect": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/soundtheory-gullfoss": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/soundtheory-kraftur": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/steinberg-download-assistant": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/synchroarts-repitch": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-bassline-101": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-chorus-lx": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-dac": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-dub-x": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-filter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-g-verb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-j-8": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-mod": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-noisemaker": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-pha": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-reverb-4": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-sampler": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-u-no-lx": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tal-vocoder": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tdr-collector": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/trackbout-ripchord": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/tracktion-download-manager": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/twistedwave": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-ace": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-bazille": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-colour-copy": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-diva": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-filterscape": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-hive": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-mfm": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-presswerk": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-protoverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-repro": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-satin": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-twangstrom": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-uhbik": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-zebra2": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-zebra3": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-zebrahz": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uhe-zebralette3": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/uvi-portal": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/valhalla-spacemodulator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-anspec": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-beeper": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-bms": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-boogex": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-correlometer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-crtiv-tape-bus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-crunchessor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-curveeq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-deft-compressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-drumformer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-ebuslim": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-elephant": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-glisseq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-harmonieq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-latency-delay": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-lf-max-punch": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-marquis-compressor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-marvel-geq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-msed": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-oldskoolverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-oldskoolverb-plus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-ovc-128": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-overtone-geq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-peakbuster": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-pha-979": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-polysquasher": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-powershaper": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-primeeq": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-shinechilla": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-shumovick": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-sobor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-soniformer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-sound-delay": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-span": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-span-plus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-spatifier": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-stereo-touch": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-tempo-delay": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-teote": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-teq-421": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-transgainer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-tube-amp": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-varisaturator": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-voxformer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-warmifier": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/voxengo-water-chorus": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavealchemy-dawn": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavealchemy-glow": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavealchemy-pulse": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavealchemy-radiance": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavealchemy-tapewave": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-cassette": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-echo-cat": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-equalizer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-quantum": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-spectre": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wavesfactory-trackspacer": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/wing-edit": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/xfer-ott": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/xln-online-installer": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "resonative/proaudio/zynaptiq-adaptiverb": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-balance": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-intensity": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-intensity@1": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-loop-editor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-morph-pro": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "resonative/proaudio/zynaptiq-myriad": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "resonative/proaudio/zynaptiq-orange-vocoder": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-pitchmap": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-pitchmap-colors": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-pitchshift-pro": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-punch": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-spectre": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-triumph": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-unchirp": {
+      "primary": "audioMusic",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "resonative/proaudio/zynaptiq-unfilter": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-unmix-drums": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "resonative/proaudio/zynaptiq-unveil": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "resonative/proaudio/zynaptiq-wormhole": {
+      "primary": "audioMusic",
       "secondary": []
     },
     "rest-sh/tap/restish": {
@@ -6845,6 +9515,16 @@
         "utilities"
       ]
     },
+    "shayanabbas1/dbdelve/dbdelve": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sheprd-labs/tap/sheprd": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "shobhit99/tap/holdmylid": {
       "primary": "utilities",
       "secondary": [
@@ -6903,6 +9583,12 @@
       "primary": "developerTools",
       "secondary": [
         "productivity"
+      ]
+    },
+    "sidhuk/warden/warden": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "sikarugir-app/sikarugir/sikarugir": {
@@ -7031,6 +9717,18 @@
         "utilities"
       ]
     },
+    "slackow/apps/slackowwall": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "slackow/apps/swiftaa": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "slopus/tap/happy": {
       "primary": "developerTools",
       "secondary": [
@@ -7062,6 +9760,13 @@
     "snowflakedb/snowflake-cli/snowflake-cli": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "sorkila/lockpaw/lockpaw": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy",
+        "ai"
+      ]
     },
     "sourcemeta/apps/jsonschema": {
       "primary": "developerTools",
@@ -7107,6 +9812,13 @@
       "primary": "menuBar",
       "secondary": [
         "utilities"
+      ]
+    },
+    "st0012/cctop/cctop": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
       ]
     },
     "stablyai/orca/orca": {
@@ -7197,6 +9909,18 @@
         "utilities"
       ]
     },
+    "subhashhhhhh/tether/tether": {
+      "primary": "utilities",
+      "secondary": [
+        "communication"
+      ]
+    },
+    "sulemaanhamza/wisp/wisp": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "sunnyyoung/tap/applereserver": {
       "primary": "utilities",
       "secondary": [
@@ -7234,6 +9958,10 @@
         "securityPrivacy"
       ]
     },
+    "suzuki-shunsuke/github-comment/github-comment": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "suzuki-shunsuke/pinact/pinact": {
       "primary": "developerTools",
       "secondary": []
@@ -7242,10 +9970,82 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "symbioose/tap/claude-switcher": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
     "t8y2/tap/motty": {
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "tamnd/tap/aki": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "tamnd/tap/ami": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "tamnd/tap/ccrawl": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "tamnd/tap/kage": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "tamnd/tap/kaku": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "tamnd/tap/kv": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "tamnd/tap/meguri": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "tamnd/tap/shirabe": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "tamnd/tap/tatami": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "tamnd/tap/tomo": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "tamnd/tap/tori": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "tamnd/tap/yomi": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
       ]
     },
     "team-spotube/apps/flemozi": {
@@ -7461,10 +10261,166 @@
         "utilities"
       ]
     },
+    "thedavidweng/unsigned-tap/aladin": {
+      "primary": "scienceEducation",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/aptible@legacy": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/brooklyn": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/clickhouse": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/codelite@legacy": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/colorpicker-materialdesign": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/darktable@intel": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/developerexcuses": {
+      "primary": "screensaverWallpaper",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "thedavidweng/unsigned-tap/endless-sky-high-dpi": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/epoch-flip-clock": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/forkgram@legacy": {
+      "primary": "communication",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/fruit-screensaver": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/google-trends": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/grid-clock": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/irpf2023": {
+      "primary": "financeCrypto",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/irpf2024": {
+      "primary": "financeCrypto",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/irpf2025": {
+      "primary": "financeCrypto",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/isyncer": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/jameica": {
+      "primary": "financeCrypto",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "thedavidweng/unsigned-tap/markdown-service-tools": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/mysqlworkbench": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/mysqlworkbench@legacy": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/ntfstool": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/openforis-collect": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "thedavidweng/unsigned-tap/pivy-app": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "thedavidweng/unsigned-tap/rnnoise": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thedavidweng/unsigned-tap/salesforce-cli": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/secure-pipes": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "thedavidweng/unsigned-tap/simpleclock": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/webviewscreensaver": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/xampp": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "thedavidweng/unsigned-tap/xampp@7": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "theurichde/go-aws-sso/go-aws-sso": {
       "primary": "developerTools",
       "secondary": [
         "securityPrivacy"
+      ]
+    },
+    "throneproj/tap/throne": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
       ]
     },
     "thsnkhn/harbor/harbor": {
@@ -7524,6 +10480,12 @@
         "developerTools"
       ]
     },
+    "tranvuongquocdat/sidescreen/sidescreen": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
     "tsung-ju/iguanatexmac/iguanatexmac": {
       "primary": "officeTools",
       "secondary": [
@@ -7541,6 +10503,10 @@
       "secondary": [
         "ai"
       ]
+    },
+    "tweakphp/tap/tweakphp": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "ublue-os/experimental-tap/chatgpt-linux": {
       "primary": "productivity",
@@ -7834,8 +10800,50 @@
         "utilities"
       ]
     },
+    "validatedev/tap/brew-services-manager": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "validatedev/tap/clamper": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "validatedev/tap/font-fira-code-chunky": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "validatedev/tap/font-fira-code-chunky-nerd-font": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "vanchonlee/tap/krust": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "veracode/srcclr/srcclr": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "viarotel-org/escrcpy/escrcpy": {
       "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "vincelwt/tap/gloomberb": {
+      "primary": "financeCrypto",
       "secondary": [
         "developerTools"
       ]
@@ -7845,6 +10853,22 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "voltiusapp/voltius/voltius": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "voxelum/xmcl/xmcl": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "vvvvv/zig/zig@nightly": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "warpdotdev/warp/oz": {
       "primary": "developerTools",
@@ -7870,6 +10894,12 @@
     },
     "warrensbox/tap/whosup": {
       "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "wcowin/oneclip/oneclip": {
+      "primary": "productivity",
       "secondary": [
         "utilities"
       ]
@@ -7970,6 +11000,13 @@
       "secondary": [
         "developerTools",
         "ai"
+      ]
+    },
+    "xmqywx/codeisland/codeisland": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "menuBar"
       ]
     },
     "xpipe-io/tap/xpipe": {
@@ -8075,6 +11112,12 @@
         "ai"
       ]
     },
+    "yudaotor/lyrimuse/lyrimuse": {
+      "primary": "audioMusic",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "yuzeguitarist/deck/deckclip": {
       "primary": "productivity",
       "secondary": [
@@ -8091,6 +11134,12 @@
       "primary": "productivity",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "zhitongblog/solomd/solomd": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "zimengxiong/tools/aquarium": {
@@ -8189,6 +11238,8 @@
     "1password/tap/1password-cli": "1password-cli",
     "alejandrobujan/tap/tendedero": "tendedero",
     "android/tap/android-cli": "android-cli",
+    "ardia-browser/tap/ardia": "ardia",
+    "auto-explore/gitcomet/gitcomet": "gitcomet",
     "azure/azure-cli/azure-cli": "azure-cli",
     "betterdiscord/tap/betterdiscord-installer": "betterdiscord-installer",
     "brewforge/chinese/landrop": "landrop",
@@ -8222,6 +11273,7 @@
     "mikker/tap/moves": "moves",
     "mikker/tap/tuna": "tuna",
     "momenbasel/tap/puremac": "puremac",
+    "muesli-hq/muesli/muesli": "muesli",
     "ngrok/ngrok/ngrok": "ngrok",
     "nickustinov/tap/itsypad": "itsypad",
     "nickustinov/tap/itsytv": "itsytv",
@@ -8843,6 +11895,14 @@
     "philberthfz/wine/wine@staging": "wine@staging",
     "playcover/playcover/playcover-community": "playcover-community",
     "productdevbook/tap/portkiller": "portkiller",
+    "rashn/ruswitcher/ruswitcher": "ruswitcher",
+    "resonative/proaudio/auto-tune-central": "auto-tune-central",
+    "resonative/proaudio/mpluginmanager": "mpluginmanager",
+    "resonative/proaudio/sononym": "sononym",
+    "resonative/proaudio/ssl-download-manager": "ssl-download-manager",
+    "resonative/proaudio/tal-drum": "tal-drum",
+    "resonative/proaudio/valhalla-freq-echo": "valhalla-freq-echo",
+    "rokartur/betteraudio/betteraudio": "betteraudio",
     "romankurnovskii/awesome-brew/cakebrewjs": "cakebrewjs",
     "romankurnovskii/awesome-brew/halloy": "halloy",
     "romankurnovskii/awesome-brew/midi-router-client": "midi-router-client",
@@ -8857,6 +11917,632 @@
     "tabularisdb/tabularis/tabularis": "tabularis",
     "thebusydev/linux/vscodium": "vscodium",
     "thedavidweng/tap/fluidvoice": "fluidvoice",
+    "thedavidweng/unsigned-tap/1kc-razer": "1kc-razer",
+    "thedavidweng/unsigned-tap/3dgenceslicer": "3dgenceslicer",
+    "thedavidweng/unsigned-tap/7777": "7777",
+    "thedavidweng/unsigned-tap/ace-link": "ace-link",
+    "thedavidweng/unsigned-tap/acronis-true-image-cleanup-tool": "acronis-true-image-cleanup-tool",
+    "thedavidweng/unsigned-tap/adrive": "adrive",
+    "thedavidweng/unsigned-tap/aegisub": "aegisub",
+    "thedavidweng/unsigned-tap/airpass": "airpass",
+    "thedavidweng/unsigned-tap/airtrash": "airtrash",
+    "thedavidweng/unsigned-tap/alacritty": "alacritty",
+    "thedavidweng/unsigned-tap/alex313031-thorium": "alex313031-thorium",
+    "thedavidweng/unsigned-tap/alipay-key-tool": "alipay-key-tool",
+    "thedavidweng/unsigned-tap/alloy": "alloy",
+    "thedavidweng/unsigned-tap/alpha": "alpha",
+    "thedavidweng/unsigned-tap/amd-power-gadget": "amd-power-gadget",
+    "thedavidweng/unsigned-tap/amitv87-pip": "amitv87-pip",
+    "thedavidweng/unsigned-tap/ampps": "ampps",
+    "thedavidweng/unsigned-tap/angband-app": "angband-app",
+    "thedavidweng/unsigned-tap/angry-ip-scanner": "angry-ip-scanner",
+    "thedavidweng/unsigned-tap/ankama": "ankama",
+    "thedavidweng/unsigned-tap/appgrid": "appgrid",
+    "thedavidweng/unsigned-tap/appium-inspector": "appium-inspector",
+    "thedavidweng/unsigned-tap/apple-juice": "apple-juice",
+    "thedavidweng/unsigned-tap/aptible": "aptible",
+    "thedavidweng/unsigned-tap/archy": "archy",
+    "thedavidweng/unsigned-tap/aria-maestosa": "aria-maestosa",
+    "thedavidweng/unsigned-tap/aria2d": "aria2d",
+    "thedavidweng/unsigned-tap/ariang": "ariang",
+    "thedavidweng/unsigned-tap/arkiwi": "arkiwi",
+    "thedavidweng/unsigned-tap/armory": "armory",
+    "thedavidweng/unsigned-tap/asix-ax88179": "asix-ax88179",
+    "thedavidweng/unsigned-tap/atlauncher": "atlauncher",
+    "thedavidweng/unsigned-tap/audiogridder-plugin": "audiogridder-plugin",
+    "thedavidweng/unsigned-tap/audiogridder-server": "audiogridder-server",
+    "thedavidweng/unsigned-tap/augur": "augur",
+    "thedavidweng/unsigned-tap/avidemux": "avidemux",
+    "thedavidweng/unsigned-tap/ayugram": "ayugram",
+    "thedavidweng/unsigned-tap/ballast": "ballast",
+    "thedavidweng/unsigned-tap/bandage": "bandage",
+    "thedavidweng/unsigned-tap/baretorrent": "baretorrent",
+    "thedavidweng/unsigned-tap/bdinfo": "bdinfo",
+    "thedavidweng/unsigned-tap/betelguese": "betelguese",
+    "thedavidweng/unsigned-tap/betterdiscord-installer": "betterdiscord-installer",
+    "thedavidweng/unsigned-tap/bili-downloader": "bili-downloader",
+    "thedavidweng/unsigned-tap/bilimini": "bilimini",
+    "thedavidweng/unsigned-tap/bino": "bino",
+    "thedavidweng/unsigned-tap/bison-wallet": "bison-wallet",
+    "thedavidweng/unsigned-tap/bisq": "bisq",
+    "thedavidweng/unsigned-tap/blheli-configurator": "blheli-configurator",
+    "thedavidweng/unsigned-tap/blobsaver": "blobsaver",
+    "thedavidweng/unsigned-tap/bloodhound": "bloodhound",
+    "thedavidweng/unsigned-tap/bluebubbles": "bluebubbles",
+    "thedavidweng/unsigned-tap/bluefish": "bluefish",
+    "thedavidweng/unsigned-tap/brewlet": "brewlet",
+    "thedavidweng/unsigned-tap/brewservicesmenubar": "brewservicesmenubar",
+    "thedavidweng/unsigned-tap/brewtarget": "brewtarget",
+    "thedavidweng/unsigned-tap/bricksmith": "bricksmith",
+    "thedavidweng/unsigned-tap/brisk": "brisk",
+    "thedavidweng/unsigned-tap/brisync": "brisync",
+    "thedavidweng/unsigned-tap/c0re100-qbittorrent": "c0re100-qbittorrent",
+    "thedavidweng/unsigned-tap/cabal": "cabal",
+    "thedavidweng/unsigned-tap/cakebrewjs": "cakebrewjs",
+    "thedavidweng/unsigned-tap/camed": "camed",
+    "thedavidweng/unsigned-tap/candybar": "candybar",
+    "thedavidweng/unsigned-tap/caprine": "caprine",
+    "thedavidweng/unsigned-tap/capslocknodelay": "capslocknodelay",
+    "thedavidweng/unsigned-tap/cctalk": "cctalk",
+    "thedavidweng/unsigned-tap/cellprofiler": "cellprofiler",
+    "thedavidweng/unsigned-tap/cerebro": "cerebro",
+    "thedavidweng/unsigned-tap/chai": "chai",
+    "thedavidweng/unsigned-tap/chainner": "chainner",
+    "thedavidweng/unsigned-tap/checkra1n": "checkra1n",
+    "thedavidweng/unsigned-tap/chessx": "chessx",
+    "thedavidweng/unsigned-tap/chiaki": "chiaki",
+    "thedavidweng/unsigned-tap/chromedriver": "chromedriver",
+    "thedavidweng/unsigned-tap/chromedriver@beta": "chromedriver@beta",
+    "thedavidweng/unsigned-tap/chromium": "chromium",
+    "thedavidweng/unsigned-tap/chromium-gost": "chromium-gost",
+    "thedavidweng/unsigned-tap/chronos": "chronos",
+    "thedavidweng/unsigned-tap/cilicon": "cilicon",
+    "thedavidweng/unsigned-tap/cinc-workstation": "cinc-workstation",
+    "thedavidweng/unsigned-tap/cinco": "cinco",
+    "thedavidweng/unsigned-tap/cinder": "cinder",
+    "thedavidweng/unsigned-tap/circuitjs1": "circuitjs1",
+    "thedavidweng/unsigned-tap/ckan-app": "ckan-app",
+    "thedavidweng/unsigned-tap/cljstyle": "cljstyle",
+    "thedavidweng/unsigned-tap/clock-bar": "clock-bar",
+    "thedavidweng/unsigned-tap/clover-configurator": "clover-configurator",
+    "thedavidweng/unsigned-tap/cmd-eikana": "cmd-eikana",
+    "thedavidweng/unsigned-tap/cncjs": "cncjs",
+    "thedavidweng/unsigned-tap/cockatrice": "cockatrice",
+    "thedavidweng/unsigned-tap/codelite": "codelite",
+    "thedavidweng/unsigned-tap/comictagger": "comictagger",
+    "thedavidweng/unsigned-tap/conferences": "conferences",
+    "thedavidweng/unsigned-tap/container-ps": "container-ps",
+    "thedavidweng/unsigned-tap/contour": "contour",
+    "thedavidweng/unsigned-tap/cool-retro-term": "cool-retro-term",
+    "thedavidweng/unsigned-tap/coolterm": "coolterm",
+    "thedavidweng/unsigned-tap/copyq": "copyq",
+    "thedavidweng/unsigned-tap/copytranslator": "copytranslator",
+    "thedavidweng/unsigned-tap/crunch-app": "crunch-app",
+    "thedavidweng/unsigned-tap/darktable": "darktable",
+    "thedavidweng/unsigned-tap/darwindumper": "darwindumper",
+    "thedavidweng/unsigned-tap/davmail-app": "davmail-app",
+    "thedavidweng/unsigned-tap/dd-utility": "dd-utility",
+    "thedavidweng/unsigned-tap/deadbeef@nightly": "deadbeef@nightly",
+    "thedavidweng/unsigned-tap/deepstream": "deepstream",
+    "thedavidweng/unsigned-tap/deluge": "deluge",
+    "thedavidweng/unsigned-tap/desmume": "desmume",
+    "thedavidweng/unsigned-tap/diffmerge": "diffmerge",
+    "thedavidweng/unsigned-tap/digikam": "digikam",
+    "thedavidweng/unsigned-tap/discretescroll": "discretescroll",
+    "thedavidweng/unsigned-tap/disk-inventory-x": "disk-inventory-x",
+    "thedavidweng/unsigned-tap/displaycal": "displaycal",
+    "thedavidweng/unsigned-tap/djview": "djview",
+    "thedavidweng/unsigned-tap/dmenu-mac": "dmenu-mac",
+    "thedavidweng/unsigned-tap/dmidiplayer": "dmidiplayer",
+    "thedavidweng/unsigned-tap/dogecoin": "dogecoin",
+    "thedavidweng/unsigned-tap/dosbox-x-app": "dosbox-x-app",
+    "thedavidweng/unsigned-tap/double-commander": "double-commander",
+    "thedavidweng/unsigned-tap/drawpile": "drawpile",
+    "thedavidweng/unsigned-tap/dteoh-devdocs": "dteoh-devdocs",
+    "thedavidweng/unsigned-tap/duckietv": "duckietv",
+    "thedavidweng/unsigned-tap/dungeon-crawl-stone-soup-console": "dungeon-crawl-stone-soup-console",
+    "thedavidweng/unsigned-tap/dungeon-crawl-stone-soup-tiles": "dungeon-crawl-stone-soup-tiles",
+    "thedavidweng/unsigned-tap/dupeguru": "dupeguru",
+    "thedavidweng/unsigned-tap/dust3d": "dust3d",
+    "thedavidweng/unsigned-tap/dvdstyler": "dvdstyler",
+    "thedavidweng/unsigned-tap/dwarf-fortress-lmp": "dwarf-fortress-lmp",
+    "thedavidweng/unsigned-tap/dyn-updater": "dyn-updater",
+    "thedavidweng/unsigned-tap/easyeda": "easyeda",
+    "thedavidweng/unsigned-tap/editaro": "editaro",
+    "thedavidweng/unsigned-tap/eiskaltdcpp": "eiskaltdcpp",
+    "thedavidweng/unsigned-tap/electorrent": "electorrent",
+    "thedavidweng/unsigned-tap/electrocrud": "electrocrud",
+    "thedavidweng/unsigned-tap/electron": "electron",
+    "thedavidweng/unsigned-tap/electronmail": "electronmail",
+    "thedavidweng/unsigned-tap/eloquent": "eloquent",
+    "thedavidweng/unsigned-tap/encryptme": "encryptme",
+    "thedavidweng/unsigned-tap/endless-sky": "endless-sky",
+    "thedavidweng/unsigned-tap/enigma-game": "enigma-game",
+    "thedavidweng/unsigned-tap/evkey": "evkey",
+    "thedavidweng/unsigned-tap/exfalso": "exfalso",
+    "thedavidweng/unsigned-tap/exifcleaner": "exifcleaner",
+    "thedavidweng/unsigned-tap/exist-db": "exist-db",
+    "thedavidweng/unsigned-tap/extraterm": "extraterm",
+    "thedavidweng/unsigned-tap/far2l": "far2l",
+    "thedavidweng/unsigned-tap/fedora-media-writer": "fedora-media-writer",
+    "thedavidweng/unsigned-tap/fertigt-slate": "fertigt-slate",
+    "thedavidweng/unsigned-tap/fightcade": "fightcade",
+    "thedavidweng/unsigned-tap/filemon": "filemon",
+    "thedavidweng/unsigned-tap/finalshell": "finalshell",
+    "thedavidweng/unsigned-tap/fishing-funds": "fishing-funds",
+    "thedavidweng/unsigned-tap/flame": "flame",
+    "thedavidweng/unsigned-tap/flameshot": "flameshot",
+    "thedavidweng/unsigned-tap/fly": "fly",
+    "thedavidweng/unsigned-tap/flycast": "flycast",
+    "thedavidweng/unsigned-tap/fontforge-app": "fontforge-app",
+    "thedavidweng/unsigned-tap/forkgram": "forkgram",
+    "thedavidweng/unsigned-tap/fpc-laz": "fpc-laz",
+    "thedavidweng/unsigned-tap/fpc-src-laz": "fpc-src-laz",
+    "thedavidweng/unsigned-tap/freecol": "freecol",
+    "thedavidweng/unsigned-tap/freeorion": "freeorion",
+    "thedavidweng/unsigned-tap/freesurfer": "freesurfer",
+    "thedavidweng/unsigned-tap/freetube": "freetube",
+    "thedavidweng/unsigned-tap/futurerestore-gui": "futurerestore-gui",
+    "thedavidweng/unsigned-tap/fvim": "fvim",
+    "thedavidweng/unsigned-tap/fx-cast-bridge": "fx-cast-bridge",
+    "thedavidweng/unsigned-tap/galaxybudsclient": "galaxybudsclient",
+    "thedavidweng/unsigned-tap/gas-mask": "gas-mask",
+    "thedavidweng/unsigned-tap/gcollazo-mongodb": "gcollazo-mongodb",
+    "thedavidweng/unsigned-tap/gdat": "gdat",
+    "thedavidweng/unsigned-tap/gdisk": "gdisk",
+    "thedavidweng/unsigned-tap/gdlauncher": "gdlauncher",
+    "thedavidweng/unsigned-tap/geogebra": "geogebra",
+    "thedavidweng/unsigned-tap/ghdl": "ghdl",
+    "thedavidweng/unsigned-tap/gingko": "gingko",
+    "thedavidweng/unsigned-tap/gisto": "gisto",
+    "thedavidweng/unsigned-tap/git-it": "git-it",
+    "thedavidweng/unsigned-tap/gitblade": "gitblade",
+    "thedavidweng/unsigned-tap/gitdock": "gitdock",
+    "thedavidweng/unsigned-tap/gittyup": "gittyup",
+    "thedavidweng/unsigned-tap/glance-chamburr": "glance-chamburr",
+    "thedavidweng/unsigned-tap/go-shiori": "go-shiori",
+    "thedavidweng/unsigned-tap/goldencheetah": "goldencheetah",
+    "thedavidweng/unsigned-tap/goldenpassport": "goldenpassport",
+    "thedavidweng/unsigned-tap/goneovim": "goneovim",
+    "thedavidweng/unsigned-tap/google-assistant": "google-assistant",
+    "thedavidweng/unsigned-tap/gpodder": "gpodder",
+    "thedavidweng/unsigned-tap/gpxsee": "gpxsee",
+    "thedavidweng/unsigned-tap/grafx": "grafx",
+    "thedavidweng/unsigned-tap/gridea": "gridea",
+    "thedavidweng/unsigned-tap/grisbi": "grisbi",
+    "thedavidweng/unsigned-tap/groestlcoin-core": "groestlcoin-core",
+    "thedavidweng/unsigned-tap/gstreamer-development": "gstreamer-development",
+    "thedavidweng/unsigned-tap/gstreamer-runtime": "gstreamer-runtime",
+    "thedavidweng/unsigned-tap/gswitch": "gswitch",
+    "thedavidweng/unsigned-tap/guijs": "guijs",
+    "thedavidweng/unsigned-tap/hackintool": "hackintool",
+    "thedavidweng/unsigned-tap/hakuneko": "hakuneko",
+    "thedavidweng/unsigned-tap/haptickey": "haptickey",
+    "thedavidweng/unsigned-tap/hashbackup": "hashbackup",
+    "thedavidweng/unsigned-tap/hedgewars": "hedgewars",
+    "thedavidweng/unsigned-tap/helium": "helium",
+    "thedavidweng/unsigned-tap/hfsleuth": "hfsleuth",
+    "thedavidweng/unsigned-tap/hostsx": "hostsx",
+    "thedavidweng/unsigned-tap/hp-prime": "hp-prime",
+    "thedavidweng/unsigned-tap/html-mangareader": "html-mangareader",
+    "thedavidweng/unsigned-tap/hydrogen": "hydrogen",
+    "thedavidweng/unsigned-tap/hydrus-network": "hydrus-network",
+    "thedavidweng/unsigned-tap/icestudio": "icestudio",
+    "thedavidweng/unsigned-tap/iconizer": "iconizer",
+    "thedavidweng/unsigned-tap/igdm": "igdm",
+    "thedavidweng/unsigned-tap/iina+": "iina+",
+    "thedavidweng/unsigned-tap/imagej": "imagej",
+    "thedavidweng/unsigned-tap/imagex": "imagex",
+    "thedavidweng/unsigned-tap/imhex": "imhex",
+    "thedavidweng/unsigned-tap/inav-configurator": "inav-configurator",
+    "thedavidweng/unsigned-tap/instatus-out": "instatus-out",
+    "thedavidweng/unsigned-tap/invesalius": "invesalius",
+    "thedavidweng/unsigned-tap/ipe": "ipe",
+    "thedavidweng/unsigned-tap/ipepresenter": "ipepresenter",
+    "thedavidweng/unsigned-tap/iqmol": "iqmol",
+    "thedavidweng/unsigned-tap/isabelle": "isabelle",
+    "thedavidweng/unsigned-tap/isimulator": "isimulator",
+    "thedavidweng/unsigned-tap/itraffic": "itraffic",
+    "thedavidweng/unsigned-tap/j": "j",
+    "thedavidweng/unsigned-tap/jasp": "jasp",
+    "thedavidweng/unsigned-tap/jazz2-resurrection": "jazz2-resurrection",
+    "thedavidweng/unsigned-tap/jcryptool": "jcryptool",
+    "thedavidweng/unsigned-tap/jd-gui": "jd-gui",
+    "thedavidweng/unsigned-tap/jedit": "jedit",
+    "thedavidweng/unsigned-tap/jet-pilot": "jet-pilot",
+    "thedavidweng/unsigned-tap/jgrennison-openttd": "jgrennison-openttd",
+    "thedavidweng/unsigned-tap/jquake": "jquake",
+    "thedavidweng/unsigned-tap/jupyter-notebook-viewer": "jupyter-notebook-viewer",
+    "thedavidweng/unsigned-tap/katana-app": "katana-app",
+    "thedavidweng/unsigned-tap/katrain": "katrain",
+    "thedavidweng/unsigned-tap/keepassx": "keepassx",
+    "thedavidweng/unsigned-tap/keepassxc@snapshot": "keepassxc@snapshot",
+    "thedavidweng/unsigned-tap/kern": "kern",
+    "thedavidweng/unsigned-tap/kext-updater": "kext-updater",
+    "thedavidweng/unsigned-tap/keyboardholder": "keyboardholder",
+    "thedavidweng/unsigned-tap/kiibohd-configurator": "kiibohd-configurator",
+    "thedavidweng/unsigned-tap/kindle-comic-converter": "kindle-comic-converter",
+    "thedavidweng/unsigned-tap/klatexformula": "klatexformula",
+    "thedavidweng/unsigned-tap/klayout": "klayout",
+    "thedavidweng/unsigned-tap/knuff": "knuff",
+    "thedavidweng/unsigned-tap/koodo-reader": "koodo-reader",
+    "thedavidweng/unsigned-tap/kvirc": "kvirc",
+    "thedavidweng/unsigned-tap/laravel-kit": "laravel-kit",
+    "thedavidweng/unsigned-tap/lastfm": "lastfm",
+    "thedavidweng/unsigned-tap/latexdraw": "latexdraw",
+    "thedavidweng/unsigned-tap/lazpaint": "lazpaint",
+    "thedavidweng/unsigned-tap/lego-mindstorms-ev3": "lego-mindstorms-ev3",
+    "thedavidweng/unsigned-tap/lemonlime": "lemonlime",
+    "thedavidweng/unsigned-tap/leocad": "leocad",
+    "thedavidweng/unsigned-tap/lepton": "lepton",
+    "thedavidweng/unsigned-tap/librecad": "librecad",
+    "thedavidweng/unsigned-tap/librewolf": "librewolf",
+    "thedavidweng/unsigned-tap/lidarr": "lidarr",
+    "thedavidweng/unsigned-tap/lightproxy": "lightproxy",
+    "thedavidweng/unsigned-tap/linkliar": "linkliar",
+    "thedavidweng/unsigned-tap/listen1": "listen1",
+    "thedavidweng/unsigned-tap/liteide": "liteide",
+    "thedavidweng/unsigned-tap/little-navmap": "little-navmap",
+    "thedavidweng/unsigned-tap/lmms": "lmms",
+    "thedavidweng/unsigned-tap/localizationeditor": "localizationeditor",
+    "thedavidweng/unsigned-tap/lofi": "lofi",
+    "thedavidweng/unsigned-tap/logdna-cli": "logdna-cli",
+    "thedavidweng/unsigned-tap/logisim-evolution": "logisim-evolution",
+    "thedavidweng/unsigned-tap/loungy": "loungy",
+    "thedavidweng/unsigned-tap/love": "love",
+    "thedavidweng/unsigned-tap/lumen": "lumen",
+    "thedavidweng/unsigned-tap/lw-scanner": "lw-scanner",
+    "thedavidweng/unsigned-tap/lx-music": "lx-music",
+    "thedavidweng/unsigned-tap/lynkeos": "lynkeos",
+    "thedavidweng/unsigned-tap/lyx": "lyx",
+    "thedavidweng/unsigned-tap/macast": "macast",
+    "thedavidweng/unsigned-tap/macdown": "macdown",
+    "thedavidweng/unsigned-tap/machoview": "machoview",
+    "thedavidweng/unsigned-tap/macjournal": "macjournal",
+    "thedavidweng/unsigned-tap/macstroke": "macstroke",
+    "thedavidweng/unsigned-tap/magicavoxel": "magicavoxel",
+    "thedavidweng/unsigned-tap/majsoul-plus": "majsoul-plus",
+    "thedavidweng/unsigned-tap/makemkv": "makemkv",
+    "thedavidweng/unsigned-tap/manuskript": "manuskript",
+    "thedavidweng/unsigned-tap/manyverse": "manyverse",
+    "thedavidweng/unsigned-tap/mark-text": "mark-text",
+    "thedavidweng/unsigned-tap/material-colors": "material-colors",
+    "thedavidweng/unsigned-tap/matterhorn": "matterhorn",
+    "thedavidweng/unsigned-tap/mechvibes": "mechvibes",
+    "thedavidweng/unsigned-tap/mediaelch": "mediaelch",
+    "thedavidweng/unsigned-tap/mediainfoex": "mediainfoex",
+    "thedavidweng/unsigned-tap/megazeux": "megazeux",
+    "thedavidweng/unsigned-tap/melonds": "melonds",
+    "thedavidweng/unsigned-tap/menutube": "menutube",
+    "thedavidweng/unsigned-tap/metasploit": "metasploit",
+    "thedavidweng/unsigned-tap/metaz": "metaz",
+    "thedavidweng/unsigned-tap/mfiles": "mfiles",
+    "thedavidweng/unsigned-tap/michaelvillar-timer": "michaelvillar-timer",
+    "thedavidweng/unsigned-tap/midi-router-client": "midi-router-client",
+    "thedavidweng/unsigned-tap/milkman": "milkman",
+    "thedavidweng/unsigned-tap/milkytracker": "milkytracker",
+    "thedavidweng/unsigned-tap/min": "min",
+    "thedavidweng/unsigned-tap/mindforger": "mindforger",
+    "thedavidweng/unsigned-tap/mjml-app": "mjml-app",
+    "thedavidweng/unsigned-tap/mks": "mks",
+    "thedavidweng/unsigned-tap/mockplus": "mockplus",
+    "thedavidweng/unsigned-tap/modelio": "modelio",
+    "thedavidweng/unsigned-tap/modmove": "modmove",
+    "thedavidweng/unsigned-tap/moebius": "moebius",
+    "thedavidweng/unsigned-tap/morkro-papyrus": "morkro-papyrus",
+    "thedavidweng/unsigned-tap/moscow-ml": "moscow-ml",
+    "thedavidweng/unsigned-tap/mqtt-explorer": "mqtt-explorer",
+    "thedavidweng/unsigned-tap/multimc": "multimc",
+    "thedavidweng/unsigned-tap/mumble": "mumble",
+    "thedavidweng/unsigned-tap/mumble@snapshot": "mumble@snapshot",
+    "thedavidweng/unsigned-tap/mycrypto": "mycrypto",
+    "thedavidweng/unsigned-tap/n1ghtshade": "n1ghtshade",
+    "thedavidweng/unsigned-tap/nagbar": "nagbar",
+    "thedavidweng/unsigned-tap/nagstamon": "nagstamon",
+    "thedavidweng/unsigned-tap/nano-node": "nano-node",
+    "thedavidweng/unsigned-tap/nanoem": "nanoem",
+    "thedavidweng/unsigned-tap/natron": "natron",
+    "thedavidweng/unsigned-tap/nault": "nault",
+    "thedavidweng/unsigned-tap/netxms-console": "netxms-console",
+    "thedavidweng/unsigned-tap/notion-enhanced": "notion-enhanced",
+    "thedavidweng/unsigned-tap/noxappplayer": "noxappplayer",
+    "thedavidweng/unsigned-tap/nrfutil": "nrfutil",
+    "thedavidweng/unsigned-tap/nrlquaker-winbox": "nrlquaker-winbox",
+    "thedavidweng/unsigned-tap/nuage": "nuage",
+    "thedavidweng/unsigned-tap/nuclear": "nuclear",
+    "thedavidweng/unsigned-tap/nulloy": "nulloy",
+    "thedavidweng/unsigned-tap/nwjs": "nwjs",
+    "thedavidweng/unsigned-tap/objektiv": "objektiv",
+    "thedavidweng/unsigned-tap/obs-advanced-scene-switcher": "obs-advanced-scene-switcher",
+    "thedavidweng/unsigned-tap/oclint": "oclint",
+    "thedavidweng/unsigned-tap/olive": "olive",
+    "thedavidweng/unsigned-tap/olympus": "olympus",
+    "thedavidweng/unsigned-tap/omegat": "omegat",
+    "thedavidweng/unsigned-tap/openbci": "openbci",
+    "thedavidweng/unsigned-tap/openboardview": "openboardview",
+    "thedavidweng/unsigned-tap/opencore-configurator": "opencore-configurator",
+    "thedavidweng/unsigned-tap/opendnsupdater": "opendnsupdater",
+    "thedavidweng/unsigned-tap/openemu": "openemu",
+    "thedavidweng/unsigned-tap/openemu@experimental": "openemu@experimental",
+    "thedavidweng/unsigned-tap/openkey": "openkey",
+    "thedavidweng/unsigned-tap/openlp": "openlp",
+    "thedavidweng/unsigned-tap/openmsx-emulator": "openmsx-emulator",
+    "thedavidweng/unsigned-tap/openmw": "openmw",
+    "thedavidweng/unsigned-tap/openoffice": "openoffice",
+    "thedavidweng/unsigned-tap/openrct2": "openrct2",
+    "thedavidweng/unsigned-tap/openrgb": "openrgb",
+    "thedavidweng/unsigned-tap/openscad": "openscad",
+    "thedavidweng/unsigned-tap/opensesame": "opensesame",
+    "thedavidweng/unsigned-tap/opentoonz": "opentoonz",
+    "thedavidweng/unsigned-tap/openvisualtraceroute": "openvisualtraceroute",
+    "thedavidweng/unsigned-tap/operadriver": "operadriver",
+    "thedavidweng/unsigned-tap/orangedrangon-android-messages": "orangedrangon-android-messages",
+    "thedavidweng/unsigned-tap/orca": "orca",
+    "thedavidweng/unsigned-tap/oscar": "oscar",
+    "thedavidweng/unsigned-tap/osmc": "osmc",
+    "thedavidweng/unsigned-tap/oso-cloud": "oso-cloud",
+    "thedavidweng/unsigned-tap/oss-browser": "oss-browser",
+    "thedavidweng/unsigned-tap/oxygen-xml-developer": "oxygen-xml-developer",
+    "thedavidweng/unsigned-tap/oxygen-xml-editor": "oxygen-xml-editor",
+    "thedavidweng/unsigned-tap/packet-peeper": "packet-peeper",
+    "thedavidweng/unsigned-tap/pages-data-merge": "pages-data-merge",
+    "thedavidweng/unsigned-tap/panwriter": "panwriter",
+    "thedavidweng/unsigned-tap/papyrus": "papyrus",
+    "thedavidweng/unsigned-tap/pb": "pb",
+    "thedavidweng/unsigned-tap/pd-l2ork": "pd-l2ork",
+    "thedavidweng/unsigned-tap/pdf-toolbox": "pdf-toolbox",
+    "thedavidweng/unsigned-tap/pencil": "pencil",
+    "thedavidweng/unsigned-tap/pencil2d": "pencil2d",
+    "thedavidweng/unsigned-tap/persepolis-download-manager": "persepolis-download-manager",
+    "thedavidweng/unsigned-tap/phd2": "phd2",
+    "thedavidweng/unsigned-tap/pikopixel": "pikopixel",
+    "thedavidweng/unsigned-tap/pine": "pine",
+    "thedavidweng/unsigned-tap/pixel-picker": "pixel-picker",
+    "thedavidweng/unsigned-tap/pixelorama": "pixelorama",
+    "thedavidweng/unsigned-tap/pktriot": "pktriot",
+    "thedavidweng/unsigned-tap/platypus": "platypus",
+    "thedavidweng/unsigned-tap/playcover-community@beta": "playcover-community@beta",
+    "thedavidweng/unsigned-tap/pliim": "pliim",
+    "thedavidweng/unsigned-tap/plotdigitizer": "plotdigitizer",
+    "thedavidweng/unsigned-tap/poi": "poi",
+    "thedavidweng/unsigned-tap/pokemon-reborn": "pokemon-reborn",
+    "thedavidweng/unsigned-tap/pokerth": "pokerth",
+    "thedavidweng/unsigned-tap/pololu-avr-programmer-v2": "pololu-avr-programmer-v2",
+    "thedavidweng/unsigned-tap/polyphone": "polyphone",
+    "thedavidweng/unsigned-tap/pomotroid": "pomotroid",
+    "thedavidweng/unsigned-tap/postbird": "postbird",
+    "thedavidweng/unsigned-tap/powder": "powder",
+    "thedavidweng/unsigned-tap/powder-player": "powder-player",
+    "thedavidweng/unsigned-tap/procexp": "procexp",
+    "thedavidweng/unsigned-tap/profilecreator": "profilecreator",
+    "thedavidweng/unsigned-tap/pronterface": "pronterface",
+    "thedavidweng/unsigned-tap/protege": "protege",
+    "thedavidweng/unsigned-tap/prowlarr": "prowlarr",
+    "thedavidweng/unsigned-tap/psi": "psi",
+    "thedavidweng/unsigned-tap/psi-plus": "psi-plus",
+    "thedavidweng/unsigned-tap/psst": "psst",
+    "thedavidweng/unsigned-tap/puppetry": "puppetry",
+    "thedavidweng/unsigned-tap/pure-writer": "pure-writer",
+    "thedavidweng/unsigned-tap/pusher": "pusher",
+    "thedavidweng/unsigned-tap/pyfa": "pyfa",
+    "thedavidweng/unsigned-tap/pynsource": "pynsource",
+    "thedavidweng/unsigned-tap/qbittorrent": "qbittorrent",
+    "thedavidweng/unsigned-tap/qbittorrent@lt20": "qbittorrent@lt20",
+    "thedavidweng/unsigned-tap/qdslrdashboard": "qdslrdashboard",
+    "thedavidweng/unsigned-tap/qmk-toolbox": "qmk-toolbox",
+    "thedavidweng/unsigned-tap/qmoji": "qmoji",
+    "thedavidweng/unsigned-tap/qownnotes": "qownnotes",
+    "thedavidweng/unsigned-tap/qtpass": "qtpass",
+    "thedavidweng/unsigned-tap/qtspim": "qtspim",
+    "thedavidweng/unsigned-tap/quail": "quail",
+    "thedavidweng/unsigned-tap/quakespasm": "quakespasm",
+    "thedavidweng/unsigned-tap/quassel": "quassel",
+    "thedavidweng/unsigned-tap/quassel-client": "quassel-client",
+    "thedavidweng/unsigned-tap/quaternion": "quaternion",
+    "thedavidweng/unsigned-tap/quickapp-studio": "quickapp-studio",
+    "thedavidweng/unsigned-tap/quickhash": "quickhash",
+    "thedavidweng/unsigned-tap/quodlibet": "quodlibet",
+    "thedavidweng/unsigned-tap/qutebrowser": "qutebrowser",
+    "thedavidweng/unsigned-tap/qview": "qview",
+    "thedavidweng/unsigned-tap/qxmledit": "qxmledit",
+    "thedavidweng/unsigned-tap/radarr": "radarr",
+    "thedavidweng/unsigned-tap/rar": "rar",
+    "thedavidweng/unsigned-tap/rave": "rave",
+    "thedavidweng/unsigned-tap/react-proto": "react-proto",
+    "thedavidweng/unsigned-tap/redeclipse": "redeclipse",
+    "thedavidweng/unsigned-tap/redis-pro": "redis-pro",
+    "thedavidweng/unsigned-tap/redquits": "redquits",
+    "thedavidweng/unsigned-tap/redream": "redream",
+    "thedavidweng/unsigned-tap/renpy": "renpy",
+    "thedavidweng/unsigned-tap/repoz": "repoz",
+    "thedavidweng/unsigned-tap/retroactive": "retroactive",
+    "thedavidweng/unsigned-tap/retroshare": "retroshare",
+    "thedavidweng/unsigned-tap/rockboxutility": "rockboxutility",
+    "thedavidweng/unsigned-tap/rocks-n-diamonds": "rocks-n-diamonds",
+    "thedavidweng/unsigned-tap/rolisteam": "rolisteam",
+    "thedavidweng/unsigned-tap/routeconverter": "routeconverter",
+    "thedavidweng/unsigned-tap/rq": "rq",
+    "thedavidweng/unsigned-tap/ryver": "ryver",
+    "thedavidweng/unsigned-tap/sabaki": "sabaki",
+    "thedavidweng/unsigned-tap/saoimageds9": "saoimageds9",
+    "thedavidweng/unsigned-tap/sauerbraten": "sauerbraten",
+    "thedavidweng/unsigned-tap/schism-tracker": "schism-tracker",
+    "thedavidweng/unsigned-tap/scidvsmac": "scidvsmac",
+    "thedavidweng/unsigned-tap/scihubeva": "scihubeva",
+    "thedavidweng/unsigned-tap/seamonkey": "seamonkey",
+    "thedavidweng/unsigned-tap/semulov": "semulov",
+    "thedavidweng/unsigned-tap/sengi": "sengi",
+    "thedavidweng/unsigned-tap/servo": "servo",
+    "thedavidweng/unsigned-tap/shadowsocksx-ng": "shadowsocksx-ng",
+    "thedavidweng/unsigned-tap/shell360": "shell360",
+    "thedavidweng/unsigned-tap/sigdigger": "sigdigger",
+    "thedavidweng/unsigned-tap/silicon-info": "silicon-info",
+    "thedavidweng/unsigned-tap/simply-fortran": "simply-fortran",
+    "thedavidweng/unsigned-tap/simsim": "simsim",
+    "thedavidweng/unsigned-tap/singularity": "singularity",
+    "thedavidweng/unsigned-tap/sioyek": "sioyek",
+    "thedavidweng/unsigned-tap/skychart": "skychart",
+    "thedavidweng/unsigned-tap/sleipnir": "sleipnir",
+    "thedavidweng/unsigned-tap/slicer@preview": "slicer@preview",
+    "thedavidweng/unsigned-tap/slimhud": "slimhud",
+    "thedavidweng/unsigned-tap/smplayer": "smplayer",
+    "thedavidweng/unsigned-tap/sonarr": "sonarr",
+    "thedavidweng/unsigned-tap/sonarr@beta": "sonarr@beta",
+    "thedavidweng/unsigned-tap/sonic-robo-blast-2": "sonic-robo-blast-2",
+    "thedavidweng/unsigned-tap/sonic-robo-blast-2-kart": "sonic-robo-blast-2-kart",
+    "thedavidweng/unsigned-tap/space-saver": "space-saver",
+    "thedavidweng/unsigned-tap/spaceid": "spaceid",
+    "thedavidweng/unsigned-tap/spaceradar": "spaceradar",
+    "thedavidweng/unsigned-tap/sparkle": "sparkle",
+    "thedavidweng/unsigned-tap/spotify4bigsur": "spotify4bigsur",
+    "thedavidweng/unsigned-tap/sqlight": "sqlight",
+    "thedavidweng/unsigned-tap/sqlpro-studio": "sqlpro-studio",
+    "thedavidweng/unsigned-tap/sqlworkbenchj": "sqlworkbenchj",
+    "thedavidweng/unsigned-tap/ssokit": "ssokit",
+    "thedavidweng/unsigned-tap/starsector": "starsector",
+    "thedavidweng/unsigned-tap/steam-plus-plus": "steam-plus-plus",
+    "thedavidweng/unsigned-tap/stella-app": "stella-app",
+    "thedavidweng/unsigned-tap/stolendata-mpv": "stolendata-mpv",
+    "thedavidweng/unsigned-tap/strawberry-wallpaper": "strawberry-wallpaper",
+    "thedavidweng/unsigned-tap/streamlink-twitch-gui": "streamlink-twitch-gui",
+    "thedavidweng/unsigned-tap/stretchly": "stretchly",
+    "thedavidweng/unsigned-tap/sublercli": "sublercli",
+    "thedavidweng/unsigned-tap/subtools": "subtools",
+    "thedavidweng/unsigned-tap/sunvox": "sunvox",
+    "thedavidweng/unsigned-tap/supermjograph": "supermjograph",
+    "thedavidweng/unsigned-tap/superslicer": "superslicer",
+    "thedavidweng/unsigned-tap/swimat": "swimat",
+    "thedavidweng/unsigned-tap/switchkey": "switchkey",
+    "thedavidweng/unsigned-tap/syncplay": "syncplay",
+    "thedavidweng/unsigned-tap/syncterm": "syncterm",
+    "thedavidweng/unsigned-tap/synfigstudio": "synfigstudio",
+    "thedavidweng/unsigned-tap/sysdig-inspect": "sysdig-inspect",
+    "thedavidweng/unsigned-tap/tabtopus": "tabtopus",
+    "thedavidweng/unsigned-tap/tachidesk-sorayomi": "tachidesk-sorayomi",
+    "thedavidweng/unsigned-tap/tales-of-majeyal": "tales-of-majeyal",
+    "thedavidweng/unsigned-tap/tau": "tau",
+    "thedavidweng/unsigned-tap/teeworlds": "teeworlds",
+    "thedavidweng/unsigned-tap/tempbox": "tempbox",
+    "thedavidweng/unsigned-tap/tetrio": "tetrio",
+    "thedavidweng/unsigned-tap/texmaker": "texmaker",
+    "thedavidweng/unsigned-tap/texstudio": "texstudio",
+    "thedavidweng/unsigned-tap/textadept": "textadept",
+    "thedavidweng/unsigned-tap/textbar": "textbar",
+    "thedavidweng/unsigned-tap/texworks": "texworks",
+    "thedavidweng/unsigned-tap/the-unofficial-homestuck-collection": "the-unofficial-homestuck-collection",
+    "thedavidweng/unsigned-tap/therm": "therm",
+    "thedavidweng/unsigned-tap/thyme": "thyme",
+    "thedavidweng/unsigned-tap/tic80": "tic80",
+    "thedavidweng/unsigned-tap/tiddly": "tiddly",
+    "thedavidweng/unsigned-tap/tidelift": "tidelift",
+    "thedavidweng/unsigned-tap/tidgi": "tidgi",
+    "thedavidweng/unsigned-tap/tigerjython": "tigerjython",
+    "thedavidweng/unsigned-tap/tikzit": "tikzit",
+    "thedavidweng/unsigned-tap/time-to-leave": "time-to-leave",
+    "thedavidweng/unsigned-tap/timelapze": "timelapze",
+    "thedavidweng/unsigned-tap/tinypng4mac": "tinypng4mac",
+    "thedavidweng/unsigned-tap/tlv": "tlv",
+    "thedavidweng/unsigned-tap/todometer": "todometer",
+    "thedavidweng/unsigned-tap/todour": "todour",
+    "thedavidweng/unsigned-tap/toinane-colorpicker": "toinane-colorpicker",
+    "thedavidweng/unsigned-tap/tomatobar": "tomatobar",
+    "thedavidweng/unsigned-tap/topcat": "topcat",
+    "thedavidweng/unsigned-tap/torrent-file-editor": "torrent-file-editor",
+    "thedavidweng/unsigned-tap/tortoisehg": "tortoisehg",
+    "thedavidweng/unsigned-tap/trackerzapper": "trackerzapper",
+    "thedavidweng/unsigned-tap/transmission-remote-gui": "transmission-remote-gui",
+    "thedavidweng/unsigned-tap/transmission@nightly": "transmission@nightly",
+    "thedavidweng/unsigned-tap/treesheets": "treesheets",
+    "thedavidweng/unsigned-tap/tribler": "tribler",
+    "thedavidweng/unsigned-tap/tritium": "tritium",
+    "thedavidweng/unsigned-tap/turtl": "turtl",
+    "thedavidweng/unsigned-tap/tuxguitar": "tuxguitar",
+    "thedavidweng/unsigned-tap/tv-browser": "tv-browser",
+    "thedavidweng/unsigned-tap/ubiquiti-unifi-controller": "ubiquiti-unifi-controller",
+    "thedavidweng/unsigned-tap/ubports-installer": "ubports-installer",
+    "thedavidweng/unsigned-tap/ueli": "ueli",
+    "thedavidweng/unsigned-tap/ultimate": "ultimate",
+    "thedavidweng/unsigned-tap/ultimate-vocal-remover": "ultimate-vocal-remover",
+    "thedavidweng/unsigned-tap/ultrastardeluxe": "ultrastardeluxe",
+    "thedavidweng/unsigned-tap/unetbootin": "unetbootin",
+    "thedavidweng/unsigned-tap/unison-app": "unison-app",
+    "thedavidweng/unsigned-tap/unity-android-support-for-editor": "unity-android-support-for-editor",
+    "thedavidweng/unsigned-tap/universal-android-debloater": "universal-android-debloater",
+    "thedavidweng/unsigned-tap/universal-gcode-platform": "universal-gcode-platform",
+    "thedavidweng/unsigned-tap/usbimager": "usbimager",
+    "thedavidweng/unsigned-tap/usr-sse2-rdm": "usr-sse2-rdm",
+    "thedavidweng/unsigned-tap/utc-menu-clock": "utc-menu-clock",
+    "thedavidweng/unsigned-tap/uvtools": "uvtools",
+    "thedavidweng/unsigned-tap/v2rayu": "v2rayu",
+    "thedavidweng/unsigned-tap/vagrant-manager": "vagrant-manager",
+    "thedavidweng/unsigned-tap/valkyrie": "valkyrie",
+    "thedavidweng/unsigned-tap/valley": "valley",
+    "thedavidweng/unsigned-tap/vassal": "vassal",
+    "thedavidweng/unsigned-tap/ved": "ved",
+    "thedavidweng/unsigned-tap/vertcoin-core": "vertcoin-core",
+    "thedavidweng/unsigned-tap/veusz": "veusz",
+    "thedavidweng/unsigned-tap/via": "via",
+    "thedavidweng/unsigned-tap/vial": "vial",
+    "thedavidweng/unsigned-tap/vidcutter": "vidcutter",
+    "thedavidweng/unsigned-tap/vieb": "vieb",
+    "thedavidweng/unsigned-tap/vimediamanager": "vimediamanager",
+    "thedavidweng/unsigned-tap/vine-server": "vine-server",
+    "thedavidweng/unsigned-tap/vitals": "vitals",
+    "thedavidweng/unsigned-tap/vlc@nightly": "vlc@nightly",
+    "thedavidweng/unsigned-tap/vmpk": "vmpk",
+    "thedavidweng/unsigned-tap/vnote": "vnote",
+    "thedavidweng/unsigned-tap/volt-app": "volt-app",
+    "thedavidweng/unsigned-tap/vym": "vym",
+    "thedavidweng/unsigned-tap/wail": "wail",
+    "thedavidweng/unsigned-tap/wannianli": "wannianli",
+    "thedavidweng/unsigned-tap/warsow": "warsow",
+    "thedavidweng/unsigned-tap/warzone-2100": "warzone-2100",
+    "thedavidweng/unsigned-tap/watchfacestudio": "watchfacestudio",
+    "thedavidweng/unsigned-tap/wavesurfer": "wavesurfer",
+    "thedavidweng/unsigned-tap/weakauras-companion": "weakauras-companion",
+    "thedavidweng/unsigned-tap/webots": "webots",
+    "thedavidweng/unsigned-tap/weektodo": "weektodo",
+    "thedavidweng/unsigned-tap/weka": "weka",
+    "thedavidweng/unsigned-tap/welly": "welly",
+    "thedavidweng/unsigned-tap/whale": "whale",
+    "thedavidweng/unsigned-tap/whichspace": "whichspace",
+    "thedavidweng/unsigned-tap/whoozle-android-file-transfer": "whoozle-android-file-transfer",
+    "thedavidweng/unsigned-tap/widelands-app": "widelands-app",
+    "thedavidweng/unsigned-tap/windterm": "windterm",
+    "thedavidweng/unsigned-tap/wine-stable": "wine-stable",
+    "thedavidweng/unsigned-tap/wine@devel": "wine@devel",
+    "thedavidweng/unsigned-tap/wine@staging": "wine@staging",
+    "thedavidweng/unsigned-tap/wings3d": "wings3d",
+    "thedavidweng/unsigned-tap/wintertime": "wintertime",
+    "thedavidweng/unsigned-tap/wire": "wire",
+    "thedavidweng/unsigned-tap/wireframe-sketcher": "wireframe-sketcher",
+    "thedavidweng/unsigned-tap/wombat": "wombat",
+    "thedavidweng/unsigned-tap/worldpainter": "worldpainter",
+    "thedavidweng/unsigned-tap/wormhole": "wormhole",
+    "thedavidweng/unsigned-tap/write": "write",
+    "thedavidweng/unsigned-tap/x-moto": "x-moto",
+    "thedavidweng/unsigned-tap/x2goclient": "x2goclient",
+    "thedavidweng/unsigned-tap/xaos": "xaos",
+    "thedavidweng/unsigned-tap/xcodeclangformat": "xcodeclangformat",
+    "thedavidweng/unsigned-tap/xit": "xit",
+    "thedavidweng/unsigned-tap/xld": "xld",
+    "thedavidweng/unsigned-tap/xonotic": "xonotic",
+    "thedavidweng/unsigned-tap/xournal++": "xournal++",
+    "thedavidweng/unsigned-tap/xpra": "xpra",
+    "thedavidweng/unsigned-tap/yesplaymusic": "yesplaymusic",
+    "thedavidweng/unsigned-tap/yggdrasil": "yggdrasil",
+    "thedavidweng/unsigned-tap/yippy": "yippy",
+    "thedavidweng/unsigned-tap/youtube-downloader": "youtube-downloader",
+    "thedavidweng/unsigned-tap/youtype": "youtype",
+    "thedavidweng/unsigned-tap/ytmdesktop-youtube-music": "ytmdesktop-youtube-music",
+    "thedavidweng/unsigned-tap/zandronum": "zandronum",
+    "thedavidweng/unsigned-tap/zap": "zap",
+    "thedavidweng/unsigned-tap/zenmap": "zenmap",
+    "thedavidweng/unsigned-tap/zesarux": "zesarux",
+    "thedavidweng/unsigned-tap/zettelkasten": "zettelkasten",
+    "thedavidweng/unsigned-tap/zoho-mail": "zoho-mail",
+    "thedavidweng/unsigned-tap/zprint": "zprint",
+    "thedavidweng/unsigned-tap/zy-player": "zy-player",
     "typewhisper/tap/typewhisper": "typewhisper",
     "unsecretised/tap/rustcast": "rustcast",
     "unsecretised/tap/sxitch": "sxitch",
