@@ -1,5 +1,7 @@
 import subprocess
 
+import pytest
+
 import collect_taps
 
 A, B = "a" * 40, "b" * 40
@@ -142,22 +144,69 @@ def test_completed_taps_report_the_files_they_were_read_from():
     assert result["processed"] == {"a/a/x": A}
 
 
-def test_a_tap_user_that_cannot_be_cleaned_is_replaced_before_the_next_tap():
-    made, cleaned = [], []
+class FakeUsers:
+    """Users named user<N>; `dirty` names fail cleanup once they have served a tap."""
 
-    def make(index):
-        made.append(index)
+    def __init__(self, dirty=(), unmakeable=()):
+        self.dirty, self.unmakeable, self.made, self.cleaned = set(dirty), set(unmakeable), [], []
+
+    def make(self, index):
+        if index in self.unmakeable:
+            raise RuntimeError("dscl failed")
+        self.made.append(index)
         return f"user{index}"
 
-    def clean(user):
-        cleaned.append(user)
-        return user != "user0"
+    def clean(self, user):
+        self.cleaned.append(user)
+        return not (user in self.dirty and self.cleaned.count(user) > 1)
 
-    users = collect_taps.TapUsers(1, make, clean)
+
+def test_tap_users_are_checked_clean_before_their_first_tap():
+    fake = FakeUsers()
+    collect_taps.TapUsers(2, fake.make, fake.clean)
+    assert fake.cleaned == ["user0", "user1"]
+
+
+def test_a_tap_user_that_cannot_be_cleaned_is_replaced_before_the_next_tap():
+    fake = FakeUsers(dirty={"user0"})
+    users = collect_taps.TapUsers(1, fake.make, fake.clean)
+
     with users.lend() as first:
         pass
     with users.lend() as second:
         pass
 
-    assert (first, second) == ("user0", "user1")
-    assert made == [0, 1] and cleaned == ["user0", "user1"]
+    assert (first, second) == ("user0", "user1") and fake.made == [0, 1]
+
+
+def test_the_run_stops_once_no_clean_tap_user_can_be_had():
+    fake = FakeUsers(dirty={"user0"}, unmakeable={1})
+    users = collect_taps.TapUsers(1, fake.make, fake.clean)
+
+    with users.lend():
+        pass
+    with pytest.raises(collect_taps.TapUsersExhausted):
+        with users.lend():
+            pass
+    with pytest.raises(collect_taps.TapUsersExhausted):
+        with users.lend():
+            pass
+
+
+def test_retirements_are_capped():
+    fake = FakeUsers(dirty={f"user{index}" for index in range(10)})
+    users = collect_taps.TapUsers(1, fake.make, fake.clean)
+
+    with pytest.raises(collect_taps.TapUsersExhausted):
+        for _ in range(10):
+            with users.lend():
+                pass
+    assert len(fake.made) <= 1 + collect_taps.TapUsers.MAX_RETIRED
+
+
+def test_an_exhausted_pool_stops_collect_instead_of_losing_taps_quietly():
+    def read(tap, deadline):
+        raise collect_taps.TapUsersExhausted("no clean tap user left")
+
+    with pytest.raises(collect_taps.TapUsersExhausted):
+        run_collect(read, ["a/a"])

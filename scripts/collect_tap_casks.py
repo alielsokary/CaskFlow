@@ -86,7 +86,7 @@ class TapSandbox:
 
     def __init__(self, root: Path, cache: Path, user: TapUser | None = None, run=_run):
         root.mkdir(parents=True, exist_ok=True)
-        self.user = user
+        self.user, self.run = user, run
         self.work = Path(tempfile.mkdtemp(dir=root)).resolve()
         self.real_home = Path(os.environ["HOME"]).resolve()
         home = self.work / "home"
@@ -129,15 +129,20 @@ class TapSandbox:
             process = subprocess.Popen(  # nosec B603 - argument list; no shell
                 self.command(cmd), stdout=out, stderr=err, stdin=subprocess.DEVNULL, env=self.env,
                 start_new_session=True, cwd=self.work)  # brew.sh's bash writes here-documents to its working directory
+            leftovers = False
             try:
                 code = process.wait(timeout=CALL_TIMEOUT)
             except subprocess.TimeoutExpired:
-                code = -9
+                code, leftovers = -9, True
             finally:
                 try:
                     os.killpg(process.pid, signal.SIGKILL)
-                except (ProcessLookupError, PermissionError):
-                    pass  # gone, or only a tap user's processes are left, which its cleanup kills
+                except ProcessLookupError:
+                    pass
+                except PermissionError:
+                    leftovers = True  # only another account's processes are left in the group
+                if leftovers and self.user:
+                    self.run(["sudo", "-n", "pkill", "-9", "-u", self.user.name])
             stdout = _read_capped(out)
             if stdout is None:
                 return subprocess.CompletedProcess(cmd, 1, "", "output too large")

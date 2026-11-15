@@ -114,28 +114,54 @@ def collect(selection: Selection, read: Read, official: dict[str, dict], *, work
     return totals.result()
 
 
+class TapUsersExhausted(Exception):
+    """No clean tap user is left: the run stops rather than read taps as a user something survived in."""
+
+
+_EXHAUSTED = object()
+
+
 class TapUsers:
     """Lends each read a clean tap user; a user whose processes survive cleanup is retired for a fresh one."""
 
+    MAX_RETIRED = 3
+
     def __init__(self, count: int, make, clean):
-        self.make, self.clean, self.next = make, clean, count
+        self.make, self.clean, self.next, self.retired = make, clean, count, 0
         self.lock = threading.Lock()
         self.free: queue.Queue = queue.Queue()
         for index in range(count):
-            self.free.put(make(index))
+            user = make(index)
+            if not clean(user):
+                raise TapUsersExhausted(f"{user} is not clean before its first tap")
+            self.free.put(user)
 
     @contextmanager
     def lend(self):
         user = self.free.get()
+        if user is _EXHAUSTED:
+            self.free.put(_EXHAUSTED)
+            raise TapUsersExhausted("no clean tap user left")
         try:
             yield user
         finally:
-            if not self.clean(user):
-                print(f"warning: retiring {user}: processes survived cleanup")
-                with self.lock:
-                    index, self.next = self.next, self.next + 1
-                user = self.make(index)
-            self.free.put(user)
+            self.free.put(self._returned(user))
+
+    def _returned(self, user):
+        if self.clean(user):
+            return user
+        print(f"warning: retiring {user}: processes survived cleanup")
+        with self.lock:
+            self.retired += 1
+            if self.retired > self.MAX_RETIRED:
+                return _EXHAUSTED
+            index, self.next = self.next, self.next + 1
+        try:
+            fresh = self.make(index)
+        except RuntimeError as error:
+            print(f"warning: cannot replace {user}: {error}")
+            return _EXHAUSTED
+        return fresh if self.clean(fresh) else _EXHAUSTED
 
 
 def summary(result: dict) -> str:

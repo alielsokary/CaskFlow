@@ -330,3 +330,29 @@ def test_cleaning_a_tap_user_kills_its_jobs_and_fails_closed_when_anything_is_le
                      ["sudo", "-n", "pgrep", "-u", "_caskflowtap0"]]
     run, _ = runner(left=True)
     assert collect.clean_tap_user(user, run) is False
+
+
+def test_a_call_that_leaves_tap_user_processes_kills_them_before_reading(tmp_path, monkeypatch):
+    sandbox_home(tmp_path, monkeypatch)
+    calls = []
+    run = lambda cmd, env=None: calls.append(cmd) or subprocess.CompletedProcess(cmd, 0, "", "")  # noqa: E731
+    sandbox = collect.TapSandbox(tmp_path / "boxes", tmp_path / "cache", user=collect.TapUser("_caskflowtap0", 7700), run=run)
+
+    class Finished:
+        pid = 4242
+
+        def __init__(self, *args, **kwargs):
+            pass
+
+        def wait(self, timeout=None):
+            return 0
+
+    def killpg(pid, sig):
+        raise PermissionError(1, "Operation not permitted")
+
+    monkeypatch.setattr(collect.subprocess, "Popen", Finished)
+    monkeypatch.setattr(collect.os, "killpg", killpg)
+    calls.clear()
+
+    assert sandbox(["brew", "info"]).returncode == 0
+    assert calls == [["sudo", "-n", "pkill", "-9", "-u", "_caskflowtap0"]]
