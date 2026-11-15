@@ -1,5 +1,86 @@
 {
+  "5ouma/tap/aseprite": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "5ouma/tap/font-bestten": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "5ouma/tap/font-nerd-fonts": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "anthropics/tap/ant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "aprilnea/tap/coteditor-surge": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "aquaproj/aqua/aqua": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "atomicjar/tap/testcontainers-cloud-desktop": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "authzed/tap/spicebox": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.52.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.53.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.54.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.56.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.56.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.56.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.57.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "authzed/tap/spicedb@1.57.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "axiomhq/tap/axiom": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "azure/azd/azd": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "azure/azd/azd@daily": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "azure/azure-cli/azure-cli-preview": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -359,10 +440,297 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "betterdiscord/tap/bdcli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "betterleaks/tap/betterleaks": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "betterleaks/tap/betterleaks@1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/dyld-tools": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/headroom": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ida-mcp": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ida-mcp@9.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ida-mcp@9.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ida-mcp@9.4": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ida-mcp@beta": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/ipsw": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/pdf": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/rexurrect": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/slack-tooy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/spot-defy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "blacktop/tap/twit": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "brewforge/chinese/cajviewer": {
+    "status": "failed",
+    "reason": "download failed: how to fix it, please visit the web page mentioned above.",
+    "attempts": 1
+  },
+  "brewforge/chinese/capcut-cn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "brewforge/chinese/cloud-uploader": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/chinese/dbeaver-cn": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/chinese/dehelper-cn": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got f1d7bc0ec3c5...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/easyspider": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 0c78e62aba0c...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/eshelper-cn": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 262fc8340e28...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/flowus": {
+    "status": "failed",
+    "reason": "ditto failed: ditto: Couldn't read PKZip signature",
+    "attempts": 1
+  },
+  "brewforge/chinese/frhelper-cn": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 75aa49bb6119...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/inkscape-cn": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/chinese/lceda-pro": {
+    "status": "failed",
+    "reason": "download failed: curl: (28) Operation timed out after 600135 milliseconds with 62192601 out of 366306048 bytes received",
+    "attempts": 1
+  },
+  "brewforge/chinese/m3u8-downloader": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 2064e2021aa6...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/miniforge-cn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "brewforge/chinese/mogan-cn": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/chinese/obs-cn": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/chinese/sagemath-cn": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 630c028d5826...)",
+    "attempts": 1
+  },
+  "brewforge/chinese/ting-en": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 16b132af5f9a...)",
+    "attempts": 1
+  },
+  "brewforge/extras/cudatext": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/extras/cytoscape": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "brewforge/extras/dvc-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "brewforge/extras/openstudio": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "brewforge/extras/pearai": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/extras/peazip": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "brewforge/extras/tinkertool": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "brewforge/extras/wpsoffice-en": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 75cfe526f929...)",
+    "attempts": 1
+  },
+  "caarlos0/tap/domain_exporter": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/fork-cleaner": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/hevy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/jsonfmt": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/pinata": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/prowl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/simple-proxy": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/svu": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/test": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/tt": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caarlos0/tap/ttop": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "caezium/tap/wisp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1
+  },
+  "caligraltd/tap/1password-gui-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/artcraft-launcher-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/asdbctl": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/cursor-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/framework-tool": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/google-chrome-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/grok-bot-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/microsoft-core-fonts-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/pycharm-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/signal-desktop-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/tailscale-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/visual-studio-code-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/warp-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/zed-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "caligraltd/tap/zoom-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
   },
   "circleci-public/circleci/chunk@next": {
     "status": "no_icon",
@@ -505,6 +873,22 @@
     "reason": "no app/suite/pkg artifact"
   },
   "colindean/fonts-nonfree/font-microsoft-office": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "convoyai-public/tap/cwf": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dagger/tap/container-use": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "daveshanley/vacuum/vacuum": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "devantler-tech/tap/ksail": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -708,6 +1092,18 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "fcjr/fcjr/restorekit-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "fcjr/fcjr/ventoy2disk-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "fenio/tap/greebar": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
   "go-task/tap/go-task": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -740,9 +1136,22 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "grafana/grafana/grafana-assistant": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "hashicorp/tap/hashicorp-vagrant": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
+  },
+  "hmans/beans/beans": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "iordv/tap/droppy": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 451",
+    "attempts": 1
   },
   "isen-ng/dotnet-sdk-versions/dotnet-sdk10": {
     "status": "no_icon",
@@ -924,9 +1333,114 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
   },
+  "jakobhviid/tap/claude-desktop-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/orca-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/paseo-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/proton-mail-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/proton-meet-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/proton-pass-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "jakobhviid/tap/verso": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "junian/dotnet/dotnet-sdk@1.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@1.1": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@10.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@11.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@2.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@2.1": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@2.2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@3.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@3.1": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@5.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@6.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@7.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@8.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/dotnet-sdk@9.0": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/mono-mdk@6.12": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/xamarin-android@13.2": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/xamarin-ios@16.4": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "junian/dotnet/xamarin-mac@9.3": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
   "jurplel/tap/instant-space-switcher": {
     "status": "no_icon",
     "reason": "no .icns in Resources"
+  },
+  "lifedever/tap/filelens": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
   },
   "localstack/tap/lstk": {
     "status": "no_icon",
@@ -1024,6 +1538,10 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
   },
+  "microsoft/aspire/aspire": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "microsoft/git/microsoft-git": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
@@ -1040,11 +1558,40 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
   },
+  "notwadegrimridge/brew/pingplace": {
+    "status": "failed",
+    "reason": "invalid png: unsupported format",
+    "attempts": 1
+  },
+  "oktadev/tap/okta": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "openai/tools/openai": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "ovh/tap/ovhcloud-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "owo-network/brew/imgzip": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "owo-network/brew/polyglot-sub": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
   "pantsbuild/tap/pants": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "peteonrails/voxtype/voxtype": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "plakarkorp/tap/plakar": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1053,6 +1600,27 @@
     "reason": "unsupported container: develop"
   },
   "productdevbook/tap/fil": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "projectbluefin/tap/bluefin-report": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "projectbluefin/tap/bluefin-wallpapers-extra": {
+    "status": "failed",
+    "reason": "download url is not a public https url",
+    "attempts": 1
+  },
+  "projectbluefin/tap/chairlift": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pwndbg/tap/pwndbg-gdb": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pwndbg/tap/pwndbg-lldb": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1077,6 +1645,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "redis/redis/redis-rc": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "rive-app/tap/rive-cli": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1420,11 +1992,27 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "stackitcloud/tap/stackit": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "steamre/tools/depotdownloader": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "sttz/tap/expresso": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
   "sttz/tap/install-unity": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "surgedm/tap/surge": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "suzuki-shunsuke/tfcmt/tfcmt": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1442,6 +2030,146 @@
     "reason": "no app/suite/pkg artifact"
   },
   "tsung-ju/iguanatexmac/latexit-metadata": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/chatgpt-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/claude-desktop-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/clion-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/craft-agents-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/cursor-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/datagrip-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/dataspell-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/devpod-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/dockerd-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/emacs-app-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/emdash-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/fw-fanctrl-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/ghostty-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/gitkraken-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/goland-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/intellij-idea-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/jetbrains-gateway-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/kiro-cli-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/localwp-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/opencode-desktop-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/phpstorm-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/positron-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/proton-mail-bridge-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/proton-pass-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/pycharm-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/rancher-desktop-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/rider-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/rubymine-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/rustrover-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/tableplus-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/thorium-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/webex-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/webstorm-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/winboat": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ublue-os/experimental-tap/windsurf-linux": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1521,6 +2249,18 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "warpdotdev/warp/oz": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "warpdotdev/warp/oz@preview": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "warpdotdev/warp/warp-agent-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "warrensbox/tap/tfswitch": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1541,7 +2281,19 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "y3owk1n/tap/mimi": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "y3owk1n/tap/mimi-nightly": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
   "zqxwce/tap/vphone-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "zzet/tap/gortex": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   }
