@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Collect tap casks on this runner, each tap's brew calls in its own sandbox."""
-# Tap code runs only inside collect_tap_casks.TapSandbox: no network, no writes outside its
-# own folder, no tokens, and no process outliving a call. A hostile tap can still shape its
-# own output, so this job keeps from each tap's read only the casks of that tap.
+# Tap code runs only inside collect_tap_casks.TapSandbox, as a throwaway account in CI: no network,
+# no writes outside its own folder, no tokens, no app launches, and nothing left running after its
+# tap. A hostile tap can still shape its own output, so this job keeps from each tap's read only
+# the casks of that tap.
 from __future__ import annotations
 
 import argparse
