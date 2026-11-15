@@ -2,7 +2,307 @@
   "version": 1,
   "taps": [
     {
+      "name": "1password/tap"
+    },
+    {
+      "name": "abue-ammar/tinycast"
+    },
+    {
+      "name": "anomalyco/tap"
+    },
+    {
+      "name": "anthropics/tap"
+    },
+    {
+      "name": "awesomedog/tap"
+    },
+    {
+      "name": "b451c/quickmd"
+    },
+    {
+      "name": "basecamp/tap"
+    },
+    {
+      "name": "bell-sw/liberica"
+    },
+    {
+      "name": "caezium/tap"
+    },
+    {
+      "name": "chattymin/tap"
+    },
+    {
+      "name": "circleci-public/circleci"
+    },
+    {
+      "name": "coder/coder"
+    },
+    {
+      "name": "colindean/fonts-nonfree"
+    },
+    {
+      "name": "crmne/tap"
+    },
+    {
+      "name": "d12frosted/emacs-plus"
+    },
+    {
+      "name": "dail8859/notepadnext"
+    },
+    {
+      "name": "darrylmorley/whatcable"
+    },
+    {
+      "name": "deskflow/tap"
+    },
+    {
+      "name": "detachhead/tap"
+    },
+    {
+      "name": "distroav/tap"
+    },
+    {
+      "name": "docker/tap"
+    },
+    {
+      "name": "dopplerhq/doppler"
+    },
+    {
+      "name": "dynatrace-oss/tap"
+    },
+    {
+      "name": "edouard-claude/tap"
+    },
+    {
+      "name": "entireio/tap"
+    },
+    {
+      "name": "esengine/reasonix"
+    },
+    {
+      "name": "espressif/eim"
+    },
+    {
+      "name": "f/textream"
+    },
+    {
+      "name": "farion1231/ccswitch"
+    },
+    {
+      "name": "frankea/whisky"
+    },
+    {
+      "name": "gcenx/wine"
+    },
+    {
+      "name": "gerlero/openfoam"
+    },
+    {
+      "name": "go-task/tap"
+    },
+    {
+      "name": "goreleaser/tap"
+    },
+    {
+      "name": "grishka/grishka"
+    },
+    {
+      "name": "hamed-elfayome/claude-usage"
+    },
+    {
+      "name": "hashicorp/tap"
+    },
+    {
+      "name": "humanlayer/humanlayer"
+    },
+    {
+      "name": "isen-ng/dotnet-sdk-versions"
+    },
+    {
+      "name": "jarvis322/tap"
+    },
+    {
+      "name": "jhlee0409/tap"
+    },
+    {
+      "name": "jurplel/tap"
+    },
+    {
+      "name": "kamillobinski/thock"
+    },
+    {
+      "name": "krishkrosh/apps"
+    },
+    {
+      "name": "lihaoyun6/tap"
+    },
+    {
+      "name": "localstack/tap"
+    },
+    {
+      "name": "longbridge/tap"
+    },
+    {
+      "name": "macos-fuse-t/cask"
+    },
+    {
+      "name": "macpaw/taps"
+    },
+    {
+      "name": "manaflow-ai/cmux"
+    },
+    {
+      "name": "mdogan/zulu"
+    },
+    {
+      "name": "mhaeuser/mhaeuser"
+    },
+    {
+      "name": "microsoft/git"
+    },
+    {
+      "name": "msitarzewski/agency-agents"
+    },
+    {
+      "name": "muxy-app/tap"
+    },
+    {
+      "name": "netbirdio/tap"
+    },
+    {
+      "name": "nextpad-plus-plus/nextpad"
+    },
+    {
+      "name": "ngrok/ngrok"
+    },
+    {
+      "name": "nguyenphutrong/tap"
+    },
+    {
+      "name": "nikitabobko/tap"
+    },
+    {
+      "name": "openai/tools"
+    },
+    {
+      "name": "opencoworkai/tap"
+    },
+    {
+      "name": "pantsbuild/tap"
+    },
+    {
+      "name": "pear-devs/pear"
+    },
+    {
+      "name": "penso/tap"
+    },
+    {
+      "name": "peripheryapp/periphery"
+    },
+    {
+      "name": "playcover/playcover"
+    },
+    {
+      "name": "productdevbook/tap"
+    },
+    {
+      "name": "qoderai/qoder"
+    },
+    {
+      "name": "r-lib/rig"
+    },
+    {
+      "name": "rafaelswi/menubarusb"
+    },
+    {
+      "name": "redis-stack/redis-stack"
+    },
+    {
+      "name": "redis/redis"
+    },
+    {
+      "name": "safedep/tap"
+    },
+    {
       "name": "saffsanity/sill"
+    },
+    {
+      "name": "sap/sapmachine"
+    },
+    {
+      "name": "siddharthvaddem/openscreen"
+    },
+    {
+      "name": "sikarugir-app/sikarugir"
+    },
+    {
+      "name": "skiptools/skip"
+    },
+    {
+      "name": "sozercan/repo"
+    },
+    {
+      "name": "spacelift-io/spacelift"
+    },
+    {
+      "name": "stablyai/orca"
+    },
+    {
+      "name": "steipete/tap"
+    },
+    {
+      "name": "streetpea/streetpea"
+    },
+    {
+      "name": "sttz/tap"
+    },
+    {
+      "name": "terraform-linters/tap"
+    },
+    {
+      "name": "the-wineskin-project/wineskin"
+    },
+    {
+      "name": "theboredteam/boring-notch"
+    },
+    {
+      "name": "thusvill/livewallpaper"
+    },
+    {
+      "name": "tsung-ju/iguanatexmac"
+    },
+    {
+      "name": "tw93/tap"
+    },
+    {
+      "name": "typewhisper/tap"
+    },
+    {
+      "name": "ublue-os/tap"
+    },
+    {
+      "name": "umputun/apps"
+    },
+    {
+      "name": "vishvavariya/notchy"
+    },
+    {
+      "name": "vorssaint/tap"
+    },
+    {
+      "name": "warrensbox/tap"
+    },
+    {
+      "name": "wxtsky/tap"
+    },
+    {
+      "name": "xdevplatform/tap"
+    },
+    {
+      "name": "xykong/tap"
+    },
+    {
+      "name": "zqxwce/tap"
     }
   ]
 }
