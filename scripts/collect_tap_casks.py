@@ -60,26 +60,33 @@ class TapUser:
     uid: int
 
 
-def create_tap_users(count: int, run=_run) -> list[TapUser]:
-    users = [TapUser(f"_caskflowtap{index}", 7700 + index) for index in range(count)]
-    for user in users:
-        record = f"/Users/{user.name}"
-        for attribute in ([], ["UniqueID", str(user.uid)], ["PrimaryGroupID", "-2"], ["UserShell", "/usr/bin/false"],
-                          ["NFSHomeDirectory", "/var/empty"], ["IsHidden", "1"]):
-            if (result := run(["sudo", "-n", "dscl", ".", "-create", record, *attribute])).returncode != 0:
-                raise RuntimeError(f"cannot create {user.name}: {result.stderr.strip()[-300:]}")
-    return users
+def create_tap_user(index: int, run=_run) -> TapUser:
+    user = TapUser(f"_caskflowtap{index}", 7700 + index)
+    record = f"/Users/{user.name}"
+    for attribute in ([], ["UniqueID", str(user.uid)], ["PrimaryGroupID", "-2"], ["UserShell", "/usr/bin/false"],
+                      ["NFSHomeDirectory", "/var/empty"], ["IsHidden", "1"]):
+        if (result := run(["sudo", "-n", "dscl", ".", "-create", record, *attribute])).returncode != 0:
+            raise RuntimeError(f"cannot create {user.name}: {result.stderr.strip()[-300:]}")
+    return user
+
+
+def clean_tap_user(user: TapUser, run=_run) -> bool:
+    """Kill everything the user owns, including launchd jobs and agents; False if anything is left."""
+    run(["sudo", "-n", "launchctl", "bootout", f"user/{user.uid}"])
+    run(["sudo", "-n", "pkill", "-9", "-u", user.name])
+    # pgrep exits 1 when the user owns no process.
+    return run(["sudo", "-n", "pgrep", "-u", user.name]).returncode == 1
 
 
 class TapSandbox:
-    """brew calls for one tap: a private folder and home, no tokens, no network, and no process outlives a call.
+    """brew calls for one tap: a private folder and home, no tokens, and no network.
 
-    With a `user`, brew also runs as that account, and everything it owns dies after each call.
+    With a `user`, brew also runs as that account; whoever hands the user out cleans it after the tap.
     """
 
     def __init__(self, root: Path, cache: Path, user: TapUser | None = None, run=_run):
         root.mkdir(parents=True, exist_ok=True)
-        self.user, self.run = user, run
+        self.user = user
         self.work = Path(tempfile.mkdtemp(dir=root)).resolve()
         self.real_home = Path(os.environ["HOME"]).resolve()
         home = self.work / "home"
@@ -129,19 +136,12 @@ class TapSandbox:
             finally:
                 try:
                     os.killpg(process.pid, signal.SIGKILL)
-                except ProcessLookupError:
-                    pass
-                self.end()
+                except (ProcessLookupError, PermissionError):
+                    pass  # gone, or only a tap user's processes are left, which its cleanup kills
             stdout = _read_capped(out)
             if stdout is None:
                 return subprocess.CompletedProcess(cmd, 1, "", "output too large")
             return subprocess.CompletedProcess(cmd, code, stdout, _read_capped(err) or "")
-
-    def end(self) -> None:
-        """Kill everything the tap user owns, including jobs it asked launchd to start."""
-        if self.user:
-            self.run(["sudo", "-n", "pkill", "-9", "-u", self.user.name])
-            self.run(["sudo", "-n", "launchctl", "bootout", f"user/{self.user.uid}"])
 
 
 def _read_capped(handle) -> str | None:

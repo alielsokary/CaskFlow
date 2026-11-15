@@ -140,3 +140,24 @@ def test_completed_taps_report_the_files_they_were_read_from():
     result = run_collect(reads, ["a/a", "b/b"], lister=listings.get)
 
     assert result["processed"] == {"a/a/x": A}
+
+
+def test_a_tap_user_that_cannot_be_cleaned_is_replaced_before_the_next_tap():
+    made, cleaned = [], []
+
+    def make(index):
+        made.append(index)
+        return f"user{index}"
+
+    def clean(user):
+        cleaned.append(user)
+        return user != "user0"
+
+    users = collect_taps.TapUsers(1, make, clean)
+    with users.lend() as first:
+        pass
+    with users.lend() as second:
+        pass
+
+    assert (first, second) == ("user0", "user1")
+    assert made == [0, 1] and cleaned == ["user0", "user1"]

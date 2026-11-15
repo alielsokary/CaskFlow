@@ -300,18 +300,33 @@ def test_a_tap_user_runs_brew_through_sudo_with_only_the_sandbox_environment(tmp
                          ["sudo", "-n", "chmod", "711", str(sandbox.work)]]
     assert "directory = *" in (sandbox.work / "home" / ".gitconfig").read_text(encoding="utf-8")
 
-    calls.clear()
-    sandbox.end()
-    assert ["sudo", "-n", "pkill", "-9", "-u", "_caskflowtap0"] in calls
-    assert ["sudo", "-n", "launchctl", "bootout", "user/7700"] in calls
 
 
 def test_tap_users_are_hidden_accounts_without_a_shell_or_home():
     calls = []
 
-    users = collect.create_tap_users(2, run=lambda cmd, env=None: calls.append(cmd) or subprocess.CompletedProcess(cmd, 0, "", ""))
+    user = collect.create_tap_user(1, run=lambda cmd, env=None: calls.append(cmd) or subprocess.CompletedProcess(cmd, 0, "", ""))
 
-    assert users == [collect.TapUser("_caskflowtap0", 7700), collect.TapUser("_caskflowtap1", 7701)]
+    assert user == collect.TapUser("_caskflowtap1", 7701)
     assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap1", "UniqueID", "7701"] in calls
-    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap0", "UserShell", "/usr/bin/false"] in calls
-    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap0", "NFSHomeDirectory", "/var/empty"] in calls
+    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap1", "UserShell", "/usr/bin/false"] in calls
+    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap1", "NFSHomeDirectory", "/var/empty"] in calls
+
+
+def test_cleaning_a_tap_user_kills_its_jobs_and_fails_closed_when_anything_is_left():
+    user = collect.TapUser("_caskflowtap0", 7700)
+
+    def runner(left):
+        calls = []
+
+        def run(cmd, env=None):
+            calls.append(cmd)
+            return subprocess.CompletedProcess(cmd, 0 if cmd[2] == "pgrep" and left else (1 if cmd[2] == "pgrep" else 0), "", "")
+        return run, calls
+
+    run, calls = runner(left=False)
+    assert collect.clean_tap_user(user, run) is True
+    assert calls == [["sudo", "-n", "launchctl", "bootout", "user/7700"], ["sudo", "-n", "pkill", "-9", "-u", "_caskflowtap0"],
+                     ["sudo", "-n", "pgrep", "-u", "_caskflowtap0"]]
+    run, _ = runner(left=True)
+    assert collect.clean_tap_user(user, run) is False

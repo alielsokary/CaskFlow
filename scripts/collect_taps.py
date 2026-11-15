@@ -10,14 +10,17 @@ import json
 import os
 import queue
 import tempfile
+import threading
 import time
+from contextlib import contextmanager, nullcontext
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import TapSandbox, aliases, create_tap_users, load_official, read_tap, trusted_view, warm_cache
+from collect_tap_casks import (TapSandbox, aliases, clean_tap_user, create_tap_user, load_official, read_tap,
+                               trusted_view, warm_cache)
 from style_standards import write_json
 from tap_registry import REF
 from validate_taps import list_casks
@@ -111,6 +114,30 @@ def collect(selection: Selection, read: Read, official: dict[str, dict], *, work
     return totals.result()
 
 
+class TapUsers:
+    """Lends each read a clean tap user; a user whose processes survive cleanup is retired for a fresh one."""
+
+    def __init__(self, count: int, make, clean):
+        self.make, self.clean, self.next = make, clean, count
+        self.lock = threading.Lock()
+        self.free: queue.Queue = queue.Queue()
+        for index in range(count):
+            self.free.put(make(index))
+
+    @contextmanager
+    def lend(self):
+        user = self.free.get()
+        try:
+            yield user
+        finally:
+            if not self.clean(user):
+                print(f"warning: retiring {user}: processes survived cleanup")
+                with self.lock:
+                    index, self.next = self.next, self.next + 1
+                user = self.make(index)
+            self.free.put(user)
+
+
 def summary(result: dict) -> str:
     """Names only, each re-validated: collected text came from tap code."""
     def names(values: object, valid) -> list[str]:
@@ -158,17 +185,16 @@ def main(argv: list[str] | None = None) -> int:
         # Tap users must reach their sandboxes, which this user's private temp folder would hide.
         boxes = Path(tempfile.mkdtemp(prefix="caskflow-sandboxes-", dir="/private/tmp" if args.tap_users else None))
         boxes.chmod(0o711)
-        users = queue.Queue()
-        for user in create_tap_users(args.workers) if args.tap_users else [None] * args.workers:
-            users.put(user)
+        users = TapUsers(args.workers, create_tap_user, clean_tap_user) if args.tap_users else None
 
         def read(tap: str, deadline: float) -> dict:
-            user = users.get()
-            try:
-                return read_tap(registered.get(tap, {"name": tap}), lambda: TapSandbox(boxes, work / "cache", user),
+            start = time.monotonic()
+            with users.lend() if users else nullcontext() as user:
+                data = read_tap(registered.get(tap, {"name": tap}), lambda: TapSandbox(boxes, work / "cache", user),
                                 deadline=deadline)
-            finally:
-                users.put(user)
+                read_seconds = time.monotonic() - start
+            print(f"read {tap} in {read_seconds:.1f}s, cleaned in {time.monotonic() - start - read_seconds:.1f}s", flush=True)
+            return data
 
         result = collect(selection, read, load_official(), workers=args.workers,
                          budget=args.budget_minutes * 60, on_progress=save)
