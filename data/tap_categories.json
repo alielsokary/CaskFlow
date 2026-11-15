@@ -2,11 +2,78 @@
   "version": 1,
   "generatedDate": "2026-11-15",
   "casks": {
+    "5ouma/tap/aseprite": {
+      "primary": "designGraphics",
+      "secondary": [
+        "games"
+      ]
+    },
+    "5ouma/tap/font-bestten": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "5ouma/tap/font-nerd-fonts": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "5ouma/tap/megpoid-english": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/megpoid-v4-adult": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/megpoid-v4-native": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/megpoid-v4-power": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/megpoid-v4-sweet": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/megpoid-v4-whisper": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "5ouma/tap/vocaloid7-editor": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
     "abue-ammar/tinycast/tinycast-universal": {
       "primary": "productivity",
       "secondary": [
         "utilities"
       ]
+    },
+    "alexstrnik/browserino/browserino": {
+      "primary": "utilities",
+      "secondary": [
+        "browsers",
+        "menuBar"
+      ]
+    },
+    "amir1376/tap/ab-download-manager": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "angristan/tap/macthrottle": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "aninsomniacy/rayburst/rayburst": {
+      "primary": "utilities",
+      "secondary": []
     },
     "anomalyco/tap/hex": {
       "primary": "productivity",
@@ -20,10 +87,145 @@
         "ai"
       ]
     },
+    "aprilnea/tap/byokey": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "aprilnea/tap/coteditor-surge": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "aprilnea/tap/openlogi@latest": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "aquaproj/aqua/aqua": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "arahim3/tap/digup": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "utilities"
+      ]
+    },
+    "arto-app/tap/arto": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "athevon/tokeneater/tokeneater": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "atomicjar/tap/testcontainers-cloud-desktop": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "atomicjar/tap/testcontainers-desktop": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "authzed/tap/spicebox": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy",
+        "ai"
+      ]
+    },
+    "authzed/tap/spicedb": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.52.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.53.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.54.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.56.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.56.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.56.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.57.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "authzed/tap/spicedb@1.57.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "awesomedog/tap/maxlaunchpad": {
       "primary": "productivity",
       "secondary": [
         "utilities"
+      ]
+    },
+    "axiomhq/tap/axiom": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "azure/azd/azd": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "azure/azd/azd@daily": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "azure/azure-cli/azure-cli-preview": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
       ]
     },
     "b451c/quickmd/quickmd": {
@@ -394,6 +596,889 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "betterdiscord/tap/bdcli": {
+      "primary": "developerTools",
+      "secondary": [
+        "communication"
+      ]
+    },
+    "betterleaks/tap/betterleaks": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "betterleaks/tap/betterleaks@1": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/dyld-tools": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "blacktop/tap/ghidra-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/headroom": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "blacktop/tap/ida-mcp": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/ida-mcp@9.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/ida-mcp@9.3": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/ida-mcp@9.4": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/ida-mcp@beta": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/ipsw": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "blacktop/tap/pdf": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "blacktop/tap/rexurrect": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "blacktop/tap/slack-tooy": {
+      "primary": "communication",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "blacktop/tap/spot-defy": {
+      "primary": "audioMusic",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "blacktop/tap/twit": {
+      "primary": "communication",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/chinese/autotyper": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/blender-cn": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/chinese/blender@lts-cn": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/chinese/cajviewer": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/chinese/capcut-cn": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/chaoxing-cxstudy": {
+      "primary": "scienceEducation",
+      "secondary": []
+    },
+    "brewforge/chinese/clash-nyanpasu": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/clashx-meta": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "brewforge/chinese/cloud-uploader": {
+      "primary": "audioMusic",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "brewforge/chinese/cockpit-tools": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/dashplayer": {
+      "primary": "videoMedia",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/dbeaver-cn": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "brewforge/chinese/dehelper-cn": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/douyin-ar": {
+      "primary": "designGraphics",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "brewforge/chinese/e-study": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/easy-to-tv": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/easyspider": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/chinese/easytier-gui": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/edrawmax@9": {
+      "primary": "designGraphics",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/chinese/enjoy": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/esearch": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/chinese/eshelper-cn": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/eudic-cn": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/chinese/feeluown": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "brewforge/chinese/flclash": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/flowus": {
+      "primary": "productivity",
+      "secondary": [
+        "officeTools"
+      ]
+    },
+    "brewforge/chinese/frhelper-cn": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/gimp-cn": {
+      "primary": "designGraphics",
+      "secondary": []
+    },
+    "brewforge/chinese/gui-for-singbox": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/i4tools": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "brewforge/chinese/iina-cn": {
+      "primary": "videoMedia",
+      "secondary": []
+    },
+    "brewforge/chinese/inkscape-cn": {
+      "primary": "designGraphics",
+      "secondary": []
+    },
+    "brewforge/chinese/iqiyi": {
+      "primary": "videoMedia",
+      "secondary": []
+    },
+    "brewforge/chinese/julia-cn": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/julia@lts-cn": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/keyviz-cn": {
+      "primary": "utilities",
+      "secondary": [
+        "screensaverWallpaper"
+      ]
+    },
+    "brewforge/chinese/kicad-cn": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/chinese/lceda-pro": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/chinese/lingquan": {
+      "primary": "designGraphics",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/chinese/linkease": {
+      "primary": "cloudStorage",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/lyx-cn": {
+      "primary": "officeTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/m3u8-downloader": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/macoptimizer": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/chinese/mastergo": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/messauto": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "brewforge/chinese/miniforge-cn": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/mogan-cn": {
+      "primary": "scienceEducation",
+      "secondary": []
+    },
+    "brewforge/chinese/noteey": {
+      "primary": "productivity",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/chinese/obs-cn": {
+      "primary": "videoMedia",
+      "secondary": []
+    },
+    "brewforge/chinese/project-graph": {
+      "primary": "productivity",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/chinese/qoderwork-cn": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/qt-creator-cn": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "brewforge/chinese/redisee": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/retain-pdf": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/sagemath-cn": {
+      "primary": "scienceEducation",
+      "secondary": []
+    },
+    "brewforge/chinese/sparkle": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/splayer-imsyy": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "brewforge/chinese/texstudio-cn": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/chinese/throne": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "brewforge/chinese/ting-de": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "brewforge/chinese/ting-en": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "brewforge/chinese/ting-es": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "brewforge/chinese/ting-fr": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "brewforge/chinese/tiny-rdm": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "brewforge/chinese/tts-vue-next": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/chinese/v2rayn": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/v2rayxs": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/vlc-cn": {
+      "primary": "videoMedia",
+      "secondary": []
+    },
+    "brewforge/chinese/wiliwili": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/chinese/yank-note": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/adobe-downloader": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/extras/alexandria": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/extras/anx-reader": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/barss": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/extras/butterfly": {
+      "primary": "productivity",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/extras/chabox": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/corsixth-app": {
+      "primary": "games",
+      "secondary": []
+    },
+    "brewforge/extras/cudatext": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/extras/cytoscape": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/extras/deskflow": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/dorion": {
+      "primary": "communication",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/dropclock": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/dvc-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/extras/ecopaste": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/escrcpy": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/fileshows": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/gai": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/goldendict-ng": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "brewforge/extras/gopeed-app": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/gridplayer": {
+      "primary": "videoMedia",
+      "secondary": []
+    },
+    "brewforge/extras/hermes-one": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/hiddify": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/keyviz": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/lrcget": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/media-downloader": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "brewforge/extras/mineru": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/mogan": {
+      "primary": "scienceEducation",
+      "secondary": []
+    },
+    "brewforge/extras/musicat": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "brewforge/extras/muzik": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "brewforge/extras/mxiris-lyricsx": {
+      "primary": "audioMusic",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "brewforge/extras/next-ai-drawio": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai",
+        "productivity"
+      ]
+    },
+    "brewforge/extras/nextai-translator": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/nextchat": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/noi": {
+      "primary": "browsers",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/notegen": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/oculante": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/opencove": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/openstudio": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "brewforge/extras/pastemd": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/pearai": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/peazip": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/pixel-perfect": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/qtscrcpy": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/quickrecorder": {
+      "primary": "videoMedia",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "brewforge/extras/rayburst": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/scrcpy-mask": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "brewforge/extras/sequential-viewer": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/svstudio2-pro": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/tinkertool": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "brewforge/extras/tmexclude": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "brewforge/extras/tutti": {
+      "primary": "menuBar",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "brewforge/extras/tyx": {
+      "primary": "productivity",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "brewforge/extras/vibe": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/wpsoffice-en": {
+      "primary": "officeTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "brewforge/extras/ytdownloader": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "brewforge/extras/ytsage": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "bwya77/tap/dockanchor": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "bysiber/cleardisk/cleardisk": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar",
+        "developerTools"
+      ]
+    },
+    "caarlos0/tap/domain_exporter": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "caarlos0/tap/fork-cleaner": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "caarlos0/tap/hevy": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "caarlos0/tap/jsonfmt": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "caarlos0/tap/pinata": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "caarlos0/tap/prowl": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "caarlos0/tap/simple-proxy": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "caarlos0/tap/svu": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "caarlos0/tap/test": {
+      "primary": "other",
+      "secondary": []
+    },
+    "caarlos0/tap/tt": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "caarlos0/tap/ttop": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "caezium/tap/burrow": {
       "primary": "utilities",
       "secondary": [
@@ -413,6 +1498,92 @@
         "utilities"
       ]
     },
+    "caligraltd/tap/1password-gui-linux": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "caligraltd/tap/artcraft-launcher-linux": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "caligraltd/tap/asdbctl": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "caligraltd/tap/cursor-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caligraltd/tap/framework-tool": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "caligraltd/tap/google-chrome-linux": {
+      "primary": "browsers",
+      "secondary": []
+    },
+    "caligraltd/tap/grok-bot-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caligraltd/tap/microsoft-core-fonts-linux": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "caligraltd/tap/pycharm-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "caligraltd/tap/signal-desktop-linux": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "caligraltd/tap/tailscale-linux": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "caligraltd/tap/visual-studio-code-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caligraltd/tap/warp-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caligraltd/tap/zed-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caligraltd/tap/zoom-linux": {
+      "primary": "communication",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "certak-com/kafkio/kafkio": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "chattymin/tap/bobber": {
       "primary": "menuBar",
       "secondary": [
@@ -424,6 +1595,12 @@
       "secondary": [
         "developerTools",
         "ai"
+      ]
+    },
+    "chen08209/tap/flclash": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
       ]
     },
     "circleci-public/circleci/chunk@next": {
@@ -560,6 +1737,54 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "codeforreal1/tap/compresso": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@2.0.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@2.1.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@2.1.1": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@3.0.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@4.0.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@4.1.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codeforreal1/tap/compresso@4.2.0": {
+      "primary": "videoMedia",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "coder/coder/coder-desktop": {
       "primary": "developerTools",
       "secondary": [
@@ -568,6 +1793,12 @@
     },
     "coder/coder/coder-desktop-preview": {
       "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "codingnoye/tap/gksdud": {
+      "primary": "menuBar",
       "secondary": [
         "utilities"
       ]
@@ -588,6 +1819,12 @@
       "primary": "utilities",
       "secondary": [
         "designGraphics"
+      ]
+    },
+    "convoyai-public/tap/cwf": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
       ]
     },
     "crmne/tap/chat-with-work": {
@@ -628,10 +1865,50 @@
         "productivity"
       ]
     },
+    "dagger/tap/container-use": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "dail8859/notepadnext/notepadnext": {
       "primary": "developerTools",
       "secondary": [
         "productivity"
+      ]
+    },
+    "dannystewart/apps/anchor": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "dannystewart/apps/burndown": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "dannystewart/apps/iplooker": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "dannystewart/apps/linker": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "daveshanley/vacuum/vacuum": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "debpalash/tap/voicestudio": {
+      "primary": "audioMusic",
+      "secondary": [
+        "ai",
+        "videoMedia"
       ]
     },
     "deskflow/tap/deskflow": {
@@ -644,6 +1921,26 @@
     },
     "detachhead/tap/rebased": {
       "primary": "developerTools",
+      "secondary": []
+    },
+    "devantler-tech/tap/ksail": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "devantler-tech/tap/ksail-desktop": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "devantler-tech/tap/world-at-ruin": {
+      "primary": "games",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "dimentium/autoraise/autoraiseapp": {
+      "primary": "utilities",
       "secondary": []
     },
     "docker/tap/sbx": {
@@ -914,6 +2211,47 @@
         "utilities"
       ]
     },
+    "eddmann/tap/caffeinemate": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "eddmann/tap/claudemeter": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "eddmann/tap/clipvault": {
+      "primary": "productivity",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "eddmann/tap/marginalia": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "scienceEducation"
+      ]
+    },
+    "eddmann/tap/revu": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "eddmann/tap/santa-lang-workbench": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "eddmann/tap/voicescribe": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
     "edouard-claude/tap/snip": {
       "primary": "developerTools",
       "secondary": [
@@ -936,6 +2274,17 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "eranif/codelite/codelite-official": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ericjypark/tap/codexisland": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
     "esengine/reasonix/reasonix": {
       "primary": "developerTools",
       "secondary": [
@@ -945,6 +2294,88 @@
     "espressif/eim/eim-gui": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "fcjr/fcjr/dk-link": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "fcjr/fcjr/grumble": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "fcjr/fcjr/gud-display": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "fcjr/fcjr/local-translate": {
+      "primary": "productivity",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "fcjr/fcjr/restorekit": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "fcjr/fcjr/restorekit-cli": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "fcjr/fcjr/surf": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "fcjr/fcjr/ventoy2disk": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "fcjr/fcjr/ventoy2disk-cli": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "fenio/tap/anylinuxfs-gui": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "fenio/tap/furman": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "fenio/tap/greebar": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "fenio/tap/radio-caster-app": {
+      "primary": "menuBar",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "fif7y/tap/dimble": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "fif7y/tap/nook": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
     },
     "frankea/whisky/whisky": {
       "primary": "utilities",
@@ -1060,6 +2491,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "grafana/grafana/grafana-assistant": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "grishka/grishka/neardrop": {
       "primary": "utilities",
       "secondary": [
@@ -1082,6 +2519,12 @@
     "hashicorp/tap/hashicorp-vagrant": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "hmans/beans/beans": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
     },
     "humanlayer/humanlayer/humanlayer": {
       "primary": "developerTools",
@@ -1153,6 +2596,12 @@
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "iordv/tap/droppy": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
       ]
     },
     "isen-ng/dotnet-sdk-versions/dotnet-sdk10": {
@@ -1335,6 +2784,52 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "jakobhviid/tap/claude-desktop-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "jakobhviid/tap/immich-mount": {
+      "primary": "cloudStorage",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jakobhviid/tap/orca-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "jakobhviid/tap/paseo-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "jakobhviid/tap/proton-mail-linux": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "jakobhviid/tap/proton-meet-linux": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "jakobhviid/tap/proton-pass-linux": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "jakobhviid/tap/verso": {
+      "primary": "designGraphics",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
     "jarvis322/tap/macwake": {
       "primary": "menuBar",
       "secondary": [
@@ -1353,6 +2848,88 @@
         "ai"
       ]
     },
+    "junian/dotnet/dotnet-sdk@1.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@1.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@10.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@11.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@2.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@2.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@2.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@3.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@3.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@5.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@6.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@7.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@8.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/dotnet-sdk@9.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/godot-mono-app@4": {
+      "primary": "developerTools",
+      "secondary": [
+        "games"
+      ]
+    },
+    "junian/dotnet/mono-mdk@6.12": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/visual-studio@2022": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/xamarin-android@13.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/xamarin-ios@16.4": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "junian/dotnet/xamarin-mac@9.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "jurplel/tap/instant-space-switcher": {
       "primary": "utilities",
       "secondary": []
@@ -1366,6 +2943,31 @@
     "krishkrosh/apps/trackweight": {
       "primary": "utilities",
       "secondary": []
+    },
+    "lifedever/tap/filelens": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "lifedever/tap/health-tick": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "lifedever/tap/pastememo": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lifedever/tap/task-tick": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar",
+        "utilities"
+      ]
     },
     "lihaoyun6/tap/airbattery": {
       "primary": "menuBar",
@@ -1438,6 +3040,19 @@
         "developerTools"
       ]
     },
+    "lzhgus/tap/agent-kanban": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai",
+        "productivity"
+      ]
+    },
+    "lzhgus/tap/menubloom": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "macos-fuse-t/cask/fuse-t-sshfs": {
       "primary": "utilities",
       "secondary": [
@@ -1448,6 +3063,25 @@
       "primary": "developerTools",
       "secondary": [
         "utilities"
+      ]
+    },
+    "mattt/tap/companion": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "mattt/tap/imcp": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "mattt/tap/repossess": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "productivity"
       ]
     },
     "mdogan/zulu/zulu-jdk10": {
@@ -1544,6 +3178,10 @@
         "menuBar"
       ]
     },
+    "microsoft/aspire/aspire": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "microsoft/git/microsoft-git": {
       "primary": "developerTools",
       "secondary": []
@@ -1556,16 +3194,77 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "microsoft/sysinternalstap/procexp": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "microsoft/sysinternalstap/zoomit": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "minghinmatthewlam/tap/pi-gui": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "momenbasel/tap/consolemini": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "msitarzewski/agency-agents/agency-agents": {
       "primary": "developerTools",
       "secondary": [
         "ai"
       ]
     },
+    "msitarzewski/brew-browser/brew-browser": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "muxy-app/tap/muxy": {
       "primary": "developerTools",
       "secondary": [
         "utilities"
+      ]
+    },
+    "my-monkeys/tap/desktop-monkey": {
+      "primary": "utilities",
+      "secondary": [
+        "other"
+      ]
+    },
+    "my-monkeys/tap/glance": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "my-monkeys/tap/monkey-battery": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "my-monkeys/tap/monkey-claude-usage": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "my-monkeys/tap/opensuperwhisper": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "netbirdio/tap/netbird-ui": {
@@ -1585,6 +3284,12 @@
       "secondary": [
         "developerTools",
         "ai"
+      ]
+    },
+    "nickustinov/tap/itsypin": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
       ]
     },
     "nikitabobko/tap/aerospace": {
@@ -1653,6 +3358,38 @@
         "productivity"
       ]
     },
+    "nkzw-tech/tap/codiff": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "nkzw-tech/tap/notes": {
+      "primary": "productivity",
+      "secondary": []
+    },
+    "notprotonnot/notproton/notproton": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "notwadegrimridge/brew/pingplace": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "oktadev/tap/okta": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "open-pencil/tap/open-pencil": {
+      "primary": "designGraphics",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "openai/tools/openai": {
       "primary": "developerTools",
       "secondary": [
@@ -1672,6 +3409,86 @@
         "developerTools"
       ]
     },
+    "otuerk/sidebar/sidebar": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "ovh/tap/ovhcloud-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "owo-network/brew/herdrm": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "owo-network/brew/imgzip": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "owo-network/brew/kasumi": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "owo-network/brew/kumone": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "owo-network/brew/mist": {
+      "primary": "menuBar",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "owo-network/brew/motrix": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "owo-network/brew/opentype": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "owo-network/brew/polyglot-sub": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "owo-network/brew/sameru": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "owo-network/brew/tamio": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "owo-network/brew/wisp": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "owo-network/brew/xdl": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
     "pantsbuild/tap/pants": {
       "primary": "developerTools",
       "secondary": []
@@ -1686,6 +3503,20 @@
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "peteonrails/voxtype/voxtype": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "utilities"
+      ]
+    },
+    "plakarkorp/tap/plakar": {
+      "primary": "utilities",
+      "secondary": [
+        "securityPrivacy",
+        "cloudStorage"
       ]
     },
     "playcover/playcover/ipa-source-generator": {
@@ -1706,6 +3537,12 @@
         "developerTools"
       ]
     },
+    "pluk-inc/tap/markdown-preview": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "productdevbook/tap/fil": {
       "primary": "utilities",
       "secondary": []
@@ -1714,6 +3551,34 @@
       "primary": "menuBar",
       "secondary": [
         "productivity"
+      ]
+    },
+    "projectbluefin/tap/bluefin-report": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "projectbluefin/tap/bluefin-wallpapers-extra": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "projectbluefin/tap/chairlift": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "pwndbg/tap/pwndbg-gdb": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "pwndbg/tap/pwndbg-lldb": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
       ]
     },
     "qoderai/qoder/qodercli": {
@@ -1734,7 +3599,47 @@
         "scienceEducation"
       ]
     },
+    "ra3xdh/qucs-s/qucs-s": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ra3xdh/qucs-s/qucs-s@nightly": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "rafaelswi/menubarusb/menubarusb": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "railwaycat/emacsmacport/emacs-mac": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "railwaycat/emacsmacport/emacs-mac-28": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "railwaycat/emacsmacport/emacs-mac-28-spacemacs-icon": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "railwaycat/emacsmacport/emacs-mac-spacemacs-icon": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "rana-gmbh/netfluss/netfluss": {
       "primary": "menuBar",
       "secondary": [
         "utilities"
@@ -1759,6 +3664,28 @@
     "redis/redis/redis-rc": {
       "primary": "developerTools",
       "secondary": []
+    },
+    "rive-app/tap/rive-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "rocktopus101/personal/hingemonium": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "roversx/tap/launchnext": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "roversx/tap/thinkterm": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
     },
     "safedep/tap/cli": {
       "primary": "developerTools",
@@ -1791,6 +3718,12 @@
       ]
     },
     "saffsanity/sill/sill": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "sanyam-g/switch/switch": {
       "primary": "utilities",
       "secondary": [
         "productivity"
@@ -2032,6 +3965,13 @@
         "utilities"
       ]
     },
+    "silverstein/tap/minutes": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "audioMusic"
+      ]
+    },
     "skiptools/skip/skip": {
       "primary": "developerTools",
       "secondary": []
@@ -2120,6 +4060,20 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "skyhook-io/tap/radar-desktop": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "snowflakedb/snowflake-cli/snowcli": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "snowflakedb/snowflake-cli/snowflake-cli": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "sozercan/repo/arin": {
       "primary": "utilities",
       "secondary": [
@@ -2168,6 +4122,18 @@
         "ai"
       ]
     },
+    "stackitcloud/tap/stackit": {
+      "primary": "developerTools",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "steamre/tools/depotdownloader": {
+      "primary": "utilities",
+      "secondary": [
+        "games"
+      ]
+    },
     "steipete/tap/blackbar": {
       "primary": "menuBar",
       "secondary": [
@@ -2197,6 +4163,16 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "surgedm/tap/surge": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "suzuki-shunsuke/tfcmt/tfcmt": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "terraform-linters/tap/tflint": {
       "primary": "developerTools",
@@ -2231,6 +4207,183 @@
       ]
     },
     "tw93/tap/kakuku": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/chatgpt-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/claude-desktop-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/clion-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/craft-agents-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/cursor-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/datagrip-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/dataspell-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "ublue-os/experimental-tap/devpod-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/dockerd-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ublue-os/experimental-tap/emacs-app-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "ublue-os/experimental-tap/emdash-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/fw-fanctrl-linux": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/ghostty-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ublue-os/experimental-tap/gitkraken-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/goland-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/intellij-idea-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/jetbrains-gateway-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ublue-os/experimental-tap/kiro-cli-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/localwp-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/opencode-desktop-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/phpstorm-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/positron-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation",
+        "ai"
+      ]
+    },
+    "ublue-os/experimental-tap/proton-mail-bridge-linux": {
+      "primary": "communication",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "ublue-os/experimental-tap/proton-pass-linux": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/pycharm-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/rancher-desktop-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ublue-os/experimental-tap/rider-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/rubymine-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/rustrover-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/tableplus-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/thorium-linux": {
+      "primary": "browsers",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/webex-linux": {
+      "primary": "communication",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/webstorm-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/winboat": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "ublue-os/experimental-tap/windsurf-linux": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -2351,6 +4504,24 @@
         "utilities"
       ]
     },
+    "warpdotdev/warp/oz": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "warpdotdev/warp/oz@preview": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "warpdotdev/warp/warp-agent-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
     "warrensbox/tap/tfswitch": {
       "primary": "developerTools",
       "secondary": []
@@ -2372,6 +4543,18 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "xpipe-io/tap/xpipe": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "xpipe-io/tap/xpipe-ptb": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "xykong/tap/flux-markdown": {
       "primary": "utilities",
       "secondary": [
@@ -2388,6 +4571,32 @@
       "primary": "utilities",
       "secondary": [
         "developerTools"
+      ]
+    },
+    "y3owk1n/tap/mimi": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools",
+        "menuBar"
+      ]
+    },
+    "y3owk1n/tap/mimi-nightly": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools",
+        "menuBar"
+      ]
+    },
+    "y3owk1n/tap/neru": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "y3owk1n/tap/neru-nightly": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
       ]
     },
     "zqxwce/tap/vphone-cli": {
@@ -2413,10 +4622,23 @@
       "secondary": [
         "utilities"
       ]
+    },
+    "zzet/tap/gortex": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     }
   },
   "sameAs": {
     "1password/tap/1password-cli": "1password-cli",
+    "alejandrobujan/tap/tendedero": "tendedero",
+    "android/tap/android-cli": "android-cli",
+    "azure/azure-cli/azure-cli": "azure-cli",
+    "betterdiscord/tap/betterdiscord-installer": "betterdiscord-installer",
+    "brewforge/chinese/landrop": "landrop",
+    "brewforge/extras/buzz": "buzz",
+    "dannystewart/apps/volumehud": "volumehud",
     "darrylmorley/whatcable/whatcable": "whatcable",
     "distroav/tap/distroav": "distroav",
     "f/textream/textream": "textream",
@@ -2424,16 +4646,30 @@
     "gcenx/wine/wine-stable": "wine-stable",
     "gcenx/wine/wine@devel": "wine@devel",
     "gcenx/wine/wine@staging": "wine@staging",
+    "hovancik/stretchly/stretchly": "stretchly",
+    "iliyami/macsai/mac-sai": "mac-sai",
+    "jithin-sabu/tap/purge": "purge",
+    "lab421/tap/forel": "forel",
+    "lzhgus/tap/capso": "capso",
     "macos-fuse-t/cask/fuse-t": "fuse-t",
     "macpaw/taps/cleanmymac-cli": "cleanmymac-cli",
     "manaflow-ai/cmux/cmux": "cmux",
+    "momenbasel/tap/puremac": "puremac",
     "ngrok/ngrok/ngrok": "ngrok",
+    "nickustinov/tap/itsypad": "itsypad",
+    "nickustinov/tap/itsytv": "itsytv",
+    "owo-network/brew/koe": "koe",
     "playcover/playcover/playcover-community": "playcover-community",
     "productdevbook/tap/portkiller": "portkiller",
     "steipete/tap/codexbar": "codexbar",
     "steipete/tap/repobar": "repobar",
     "steipete/tap/trimmy": "trimmy",
+    "sw33tlie/macshot/macshot": "macshot",
+    "sw33tlie/macshot/macshot-offline": "macshot-offline",
+    "tabularisdb/tabularis/tabularis": "tabularis",
     "typewhisper/tap/typewhisper": "typewhisper",
-    "vorssaint/tap/vorssaint": "vorssaint"
+    "vorssaint/tap/vorssaint": "vorssaint",
+    "wickenico/wailbrew/wailbrew": "wailbrew",
+    "wouterdebie/tap/davit": "davit"
   }
 }
