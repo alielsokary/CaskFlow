@@ -31,6 +31,10 @@
     "status": "car_only",
     "reason": "car catalog has no app icon (generic render)"
   },
+  "anchore/grype/grype": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "anthropics/tap/ant": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -88,6 +92,34 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "aws/aws/amazon-ena-ethernet": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "aws/aws/amazon-ena-ethernet-dext": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "aws/aws/amazon-ssm-agent": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "aws/aws/ec2-instance-connect": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "aws/aws/ec2-macos-init": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "aws/aws/ec2-macos-system-monitor": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "aws/aws/ec2-macos-utils": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
   "axiomhq/tap/axiom": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -101,6 +133,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "azure/azure-cli/azure-cli-preview": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "bahaaio/pomo/pomo": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -643,6 +679,10 @@
     "reason": "sha256 mismatch (got 75cfe526f929...)",
     "attempts": 1
   },
+  "buildkite/buildkite/buildkite-mcp-server": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "caarlos0/tap/domain_exporter": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -749,6 +789,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "caligraltd/tap/zoom-linux": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "censys/tap/cencli": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -900,7 +944,31 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "ctrlspice/otel-desktop-viewer/otel-desktop-viewer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "dagger/tap/container-use": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "danvergara/tools/dblab": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "darksworm/tap/argonaut": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "darksworm/tap/traefiktop": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "dash0hq/dash0-cli/dash0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "datarobot-oss/taps/dr-cli": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1076,6 +1144,20 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "dodoapps/tap/dodoclip": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "dodoapps/tap/dodocount": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "dodoapps/tap/dodoshop": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
   "dopplerhq/doppler/doppler": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1176,6 +1258,25 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "everettjf/tap/easyvm": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "everettjf/tap/grapecompare": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "everettjf/tap/oort": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "everettjf/tap/vm4a-app": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
   "fastrepl/fastrepl/char": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
@@ -1210,6 +1311,19 @@
   "frostyard/tap/nsl": {
     "status": "failed",
     "reason": "download url is not a public https url",
+    "attempts": 1
+  },
+  "gammons/tap/slk": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "gentleman-programming/tap/engram": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "gitmichaelqiu/tap/optclicker": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 173f0e5aaea4...)",
     "attempts": 1
   },
   "go-task/tap/go-task": {
@@ -1344,6 +1458,10 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
   },
+  "hatchet-dev/hatchet/hatchet": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "hewigovens/tap/font-hanori": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1351,6 +1469,10 @@
   "hmans/beans/beans": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
+  },
+  "ibm-messaging/ibmmq/mqdevtoolkit": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
   },
   "iordv/tap/droppy": {
     "status": "failed",
@@ -1574,6 +1696,10 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "jandedobbeleer/oh-my-posh/oh-my-posh": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "junian/dotnet/dotnet-sdk@1.0": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
@@ -1650,7 +1776,20 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "kudobuilder/tap/kuttl-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "kunchenguid/tap/hi-bit": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "laishulu/homebrew/font-sarasa-nerd": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "laishulu/homebrew/temporary-window": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1
@@ -1660,11 +1799,139 @@
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
     "attempts": 1
   },
+  "lindell/multi-gitter/multi-gitter": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "localstack/tap/lstk": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
   "longbridge/tap/longbridge-terminal": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.0.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.0.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.0.3": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.0.4": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.0.5": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.1.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.10.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.10.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.11.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.11.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.12.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.12.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.12.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.13.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.13.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.14.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.2.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.2.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.3.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.4.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.4.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.4.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.5.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.6.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.7.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.8.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.8.1": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.8.2": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "loops-so/tap/loops@0.9.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "luupsystems/tap/globetrotter": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1685,6 +1952,119 @@
   "maddada/tap/madda-floating-clock": {
     "status": "no_icon",
     "reason": "no .icns in Resources"
+  },
+  "majd/repo/ipatool": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/altone-trial-bold": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/altone-trial-bold-oblique": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/altone-trial-oblique": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/altone-trial-regular": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/charlie-dont-surf": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/compacta": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/daughter-of-fortune": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/designer": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/harry-p": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/iron-man-of-war": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/kromika-axis": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-bold": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-bold-italic": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-light": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-light-italic": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-medium": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-medium-italic": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-regular": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/lemonmilk-regular-italic": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/luminance-smallcaps": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/microsoft-serializer": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact"
+  },
+  "masterofdeath01/apps/pieces-of-eight": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/signatra": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/sylfaen": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/the-amazing-spider-man": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/utsaah": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "masterofdeath01/apps/zxp-installer": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 1
   },
   "mdogan/zulu/zulu-jdk10": {
     "status": "no_icon",
@@ -1769,6 +2149,10 @@
   "mdogan/zulu/zulu-jdk9": {
     "status": "no_icon",
     "reason": "no .app found in expanded artifact"
+  },
+  "michaelroosz/ssh/libsk-libfido2-install": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
   },
   "microsoft/aspire/aspire": {
     "status": "no_icon",
@@ -1892,6 +2276,46 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "open-tap/casks/brooklyn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/colorpicker-materialdesign": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/developerexcuses": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/epoch-flip-clock": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/google-trends": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/irpf2023": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/irpf2024": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/irpf2025": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "open-tap/casks/pivy-app": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "open-tap/casks/salesforce-cli": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
   "openai/tools/openai": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1917,6 +2341,18 @@
     "reason": "no app/suite/pkg artifact"
   },
   "parallel-web/tap/parallel-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pb33f/taps/openapi-changes": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pb33f/taps/printing-press": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "pb33f/taps/wiretap": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -1946,6 +2382,10 @@
     "attempts": 1
   },
   "projectbluefin/tap/chairlift": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "ptrinh/viettelex/viettelex": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -2044,6 +2484,26 @@
   "rive-app/tap/rive-cli": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
+  },
+  "romankurnovskii/awesome-brew/brewmate": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got 508cdbfb0011...)",
+    "attempts": 1
+  },
+  "romankurnovskii/awesome-brew/char": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "romankurnovskii/awesome-brew/char@nightly": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "romankurnovskii/awesome-brew/hyprnote": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
   },
   "safedep/tap/cli": {
     "status": "no_icon",
@@ -2298,6 +2758,11 @@
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
+  "sh4dow-clone/tap/dpimanager": {
+    "status": "failed",
+    "reason": "sha256 mismatch (got dbdc58e7af36...)",
+    "attempts": 1
+  },
   "shobhit99/tap/superisland": {
     "status": "failed",
     "reason": "sha256 mismatch (got b7f94fdb0842...)",
@@ -2306,6 +2771,10 @@
   "shopware/tap/shopware-cli": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
+  },
+  "sidequery/tap/sqlnb": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
   },
   "sikarugir-app/sikarugir/sikarugir": {
     "status": "car_only",
@@ -2399,6 +2868,22 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "snowflakedb/snowconvert-ai/snowconvert-ai": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "snowflakedb/snowconvert-ai/snowconvert-ai-dev": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "snowflakedb/snowconvert-ai/snowconvert-ai-pr": {
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact"
+  },
+  "sourcemeta/apps/jsonschema": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "spacelift-io/spacelift/spacectl": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -2439,6 +2924,14 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "stupside/tap/castor": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "stupside/tap/moley": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "sunnyyoung/tap/applereserver": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -2456,6 +2949,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "suzuki-shunsuke/ghtkn/ghtkn": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "suzuki-shunsuke/pinact/pinact": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -2541,6 +3038,10 @@
     "reason": "no app/suite/pkg artifact"
   },
   "timescale/tap/tiger-cli": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
+  "tmuxpack/tpack/tpack": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
@@ -2792,6 +3293,10 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "ws/brlaser/brlaser": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "xdevplatform/tap/xurl": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -2820,6 +3325,28 @@
   "y3owk1n/tap/mimi-nightly": {
     "status": "no_icon",
     "reason": "no .icns in Resources"
+  },
+  "zimengxiong/tools/namigen": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "zimengxiong/tools/rightclickmenubar": {
+    "status": "failed",
+    "reason": "download failed: curl: (56) The requested URL returned error: 404",
+    "attempts": 1
+  },
+  "zimengxiong/tools/swipetype": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "zimengxiong/tools/tabbed": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "zoispag/tap/valsenv": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
   },
   "zqxwce/tap/vphone-cli": {
     "status": "no_icon",
