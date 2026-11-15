@@ -85,12 +85,10 @@ def clean_tap_user(user: TapUser, run=_run) -> bool:
 
 
 class TapSandbox:
-    """brew calls for one tap: a private folder and home, no tokens, and no network.
-
-    With a `user`, brew also runs as that account; whoever hands the user out cleans it after the tap.
-    """
+    """brew calls for one tap: a private folder and home, no tokens, and no network."""
 
     def __init__(self, root: Path, cache: Path, user: TapUser | None = None, run=_run):
+        """With a `user`, brew also runs as that account; whoever lends the user cleans it after the tap."""
         root.mkdir(parents=True, exist_ok=True)
         self.user, self.run = user, run
         self.work = Path(tempfile.mkdtemp(dir=root)).resolve()

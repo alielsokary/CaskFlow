@@ -128,6 +128,7 @@ class TapUsers:
     MAX_RETIRED = 3
 
     def __init__(self, count: int, make, clean):
+        """Make `count` users and check each is clean before its first tap."""
         self.make, self.clean, self.next, self.retired = make, clean, count, 0
         self.lock = threading.Lock()
         self.free: queue.Queue = queue.Queue()

@@ -15,6 +15,7 @@ class FakeReads:
     """What each tap's sandboxed read returns; records which taps were read and with which deadline."""
 
     def __init__(self, data, raises=()):
+        """Serve `data` by tap; taps in `raises` crash."""
         self.data, self.raises, self.read, self.deadlines = data, set(raises), [], []
 
     def __call__(self, tap, deadline):
@@ -148,6 +149,7 @@ class FakeUsers:
     """Users named user<N>; `dirty` names fail cleanup once they have served a tap."""
 
     def __init__(self, dirty=(), unmakeable=()):
+        """Users in `dirty` fail cleanup after a tap; indexes in `unmakeable` cannot be created."""
         self.dirty, self.unmakeable, self.made, self.cleaned = set(dirty), set(unmakeable), [], []
 
     def make(self, index):

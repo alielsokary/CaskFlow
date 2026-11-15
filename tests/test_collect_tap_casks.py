@@ -194,6 +194,7 @@ class FakeHost:
     """git and brew trust run on the host; brew reads run in the sandbox. One shared log of both."""
 
     def __init__(self, clone_code=0, tap_info=TAP_INFO, broken=frozenset()):
+        """Clone exit code, tap-info output, and casks brew info fails on."""
         self.calls, self.sandboxed = [], []
         self.clone_code, self.tap_info = clone_code, tap_info
         self.info, _ = info_brew(set(broken))
