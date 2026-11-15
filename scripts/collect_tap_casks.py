@@ -113,6 +113,8 @@ class TapSandbox:
             "HOMEBREW_CACHE": str(self.work / "cache"), "HOMEBREW_LOGS": str(self.work / "logs"),
             "HOMEBREW_TEMP": str(self.work / "tmp"), "TMPDIR": str(self.work / "tmp"),
             "HOMEBREW_API_AUTO_UPDATE_SECS": "86400",
+            # tap-info would ask GitHub whether the tap is private, and wait out the blocked network.
+            "HOMEBREW_NO_GITHUB_API": "1",
         }
 
     def command(self, cmd: list[str]) -> list[str]:

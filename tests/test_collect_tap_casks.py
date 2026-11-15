@@ -265,6 +265,7 @@ def test_sandboxed_brew_gets_a_private_home_and_no_tokens(tmp_path, monkeypatch)
     assert Path(sandbox.env["HOME"]).is_relative_to(sandbox.work)
     assert (Path(sandbox.env["HOME"]) / ".homebrew" / "trust.json").exists()
     assert Path(sandbox.env["HOMEBREW_CACHE"]).is_relative_to(sandbox.work)
+    assert sandbox.env["HOMEBREW_NO_GITHUB_API"] == "1" and sandbox.env["HOMEBREW_API_AUTO_UPDATE_SECS"] == "86400"
 
 
 def test_output_is_read_through_the_held_handle_and_capped(tmp_path):
