@@ -69,6 +69,41 @@
     "meta_desc": "VOCALOID7の特長 仕様・動作環境 体験版ダウンロードDL Lite版ダウンロード 購入に関するよくある",
     "og_desc": "VOCALOID7の特長 仕様・動作環境 体験版ダウンロードDL Lite版ダウンロード 購入に関するよくある"
   },
+  "abhinav/tap/cardamom": {
+    "token": "abhinav/tap/cardamom",
+    "homepage": "https://github.com/abhinav/cardamom",
+    "title": "GitHub - abhinav/cardamom: Work tracker for agents with visibility for humans. · GitHub",
+    "meta_desc": "Work tracker for agents with visibility for humans. - abhinav/cardamom",
+    "og_desc": "Work tracker for agents with visibility for humans. - abhinav/cardamom"
+  },
+  "abhinav/tap/doc2go": {
+    "token": "abhinav/tap/doc2go",
+    "homepage": "https://github.com/abhinav/doc2go",
+    "title": "GitHub - abhinav/doc2go: Your Go project's documentation, to-go. · GitHub",
+    "meta_desc": "Your Go project's documentation, to-go. Contribute to abhinav/doc2go development by creating an account on GitHub.",
+    "og_desc": "Your Go project's documentation, to-go. Contribute to abhinav/doc2go development by creating an account on GitHub."
+  },
+  "abhinav/tap/git-spice": {
+    "token": "abhinav/tap/git-spice",
+    "homepage": "https://abhinav.github.io/git-spice/",
+    "title": "git-spice",
+    "meta_desc": "git-spice is a tool for stacking Git branches. It helps you manage and navigate a stack of branches that build on top of each other.",
+    "og_desc": "git-spice is a tool for stacking Git branches. It helps you manage and navigate a stack of branches that build on top of each other."
+  },
+  "abhinav/tap/requiredfield": {
+    "token": "abhinav/tap/requiredfield",
+    "homepage": "https://github.com/abhinav/requiredfield",
+    "title": "GitHub - abhinav/requiredfield: Go linter that checks for required fields in structs. · GitHub",
+    "meta_desc": "Go linter that checks for required fields in structs. - abhinav/requiredfield",
+    "og_desc": "Go linter that checks for required fields in structs. - abhinav/requiredfield"
+  },
+  "aboudjem/tap/sleepless": {
+    "token": "aboudjem/tap/sleepless",
+    "homepage": "https://github.com/Aboudjem/Sleepless",
+    "title": "GitHub - Aboudjem/Sleepless: Keep your MacBook awake with the lid closed, on battery, with no external display. A native menu-bar app that uses pmset disablesleep, with an auto-off timer and a battery-floor cutoff so it can't drain your Mac. The open-source, MIT alternative to Amphetamine. · GitHub",
+    "meta_desc": "Keep your MacBook awake with the lid closed, on battery, with no external display. A native menu-bar app that uses pmset disablesleep, with an auto-off timer and a battery-floor cutoff so it can't drain your Mac. The open-source, MIT alternative to Amphetamine. - Aboudjem/Sleepless",
+    "og_desc": "Keep your MacBook awake with the lid closed, on battery, with no external display. A native menu-bar app that uses pmset disablesleep, with an auto-off timer and a battery-floor cutoff so it can&#3..."
+  },
   "abue-ammar/tinycast/tinycast-universal": {
     "token": "abue-ammar/tinycast/tinycast-universal",
     "homepage": "https://github.com/abue-ammar/tinycast",
@@ -76,12 +111,40 @@
     "meta_desc": "A native macOS launcher for everyday productivity. Lightweight and open source. - abue-ammar/tinycast",
     "og_desc": "A native macOS launcher for everyday productivity. Lightweight and open source. - abue-ammar/tinycast"
   },
+  "adntgv/tap/claude-usage-systray": {
+    "token": "adntgv/tap/claude-usage-systray",
+    "homepage": "https://github.com/adntgv/claude-usage-systray",
+    "title": "GitHub - adntgv/claude-usage-systray: macOS menu bar app showing real-time Claude.ai plan usage (session %, weekly %, Sonnet %) · GitHub",
+    "meta_desc": "macOS menu bar app showing real-time Claude.ai plan usage (session %, weekly %, Sonnet %) - adntgv/claude-usage-systray",
+    "og_desc": "macOS menu bar app showing real-time Claude.ai plan usage (session %, weekly %, Sonnet %) - adntgv/claude-usage-systray"
+  },
+  "agentasticai/tap/dev": {
+    "token": "agentasticai/tap/dev",
+    "homepage": "https://www.agentastic.dev",
+    "title": "Multi-Agent IDE for Claude Code, Codex & More | Agentastic.dev",
+    "meta_desc": "Run and orchestrate Claude Code, Codex, and 50+ more agents in one multi-agent IDE. Your AI software factory, from issue to merged PR. Free for macOS.",
+    "og_desc": "Run and orchestrate Claude Code, Codex, and 50+ more agents in one multi-agent IDE. Your AI software factory, from issue to merged PR. Free for macOS."
+  },
+  "agentwrapper/tap/agent-orchestrator": {
+    "token": "agentwrapper/tap/agent-orchestrator",
+    "homepage": "https://github.com/AgentWrapper/agent-orchestrator",
+    "title": "GitHub - OrchestratorInc/agent-orchestrator: Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone & Android apps.  Supports Claude Code, Codex & 35+ coding agents. · GitHub",
+    "meta_desc": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone & Android apps.  Supports Claude Code, Codex & 35+ coding agents. - OrchestratorInc/agent-orchestrator",
+    "og_desc": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone &amp; Android apps.  Supports Claude Code, Codex &amp; 35+ coding agents. - OrchestratorInc..."
+  },
   "alexstrnik/browserino/browserino": {
     "token": "alexstrnik/browserino/browserino",
     "homepage": "https://github.com/AlexStrNik/Browserino",
     "title": "GitHub - AlexStrNik/Browserino: Browserino is a tiny browser selector for MacOS written in SwiftUI. · GitHub",
     "meta_desc": "Browserino is a tiny browser selector for MacOS written in SwiftUI. - AlexStrNik/Browserino",
     "og_desc": "Browserino is a tiny browser selector for MacOS written in SwiftUI. - AlexStrNik/Browserino"
+  },
+  "alinuxpengui/macabolic/macabolic": {
+    "token": "alinuxpengui/macabolic/macabolic",
+    "homepage": "https://github.com/alinuxpengui/Macabolic",
+    "title": "GitHub - alinuxpengui/Macabolic: A video and audio downloader for MacOS · GitHub",
+    "meta_desc": "A video and audio downloader for MacOS. Contribute to alinuxpengui/Macabolic development by creating an account on GitHub.",
+    "og_desc": "A video and audio downloader for MacOS. Contribute to alinuxpengui/Macabolic development by creating an account on GitHub."
   },
   "amir1376/tap/ab-download-manager": {
     "token": "amir1376/tap/ab-download-manager",
@@ -151,12 +214,61 @@
     "meta_desc": "Search your computer by what's in your files: photos, PDFs, documents, recordings, videos and code. On-device on Mac, Windows and Linux, built on Google DeepMind's EmbeddingGemma 2. - ARahim3/DigUp",
     "og_desc": "Search your computer by what&#39;s in your files: photos, PDFs, documents, recordings, videos and code. On-device on Mac, Windows and Linux, built on Google DeepMind&#39;s EmbeddingGemma 2. - ARahi..."
   },
+  "arthur-ficial/tap/apfel-chat": {
+    "token": "arthur-ficial/tap/apfel-chat",
+    "homepage": "https://apfel-chat.franzai.com",
+    "title": "apfel-chat: On-device AI chat for macOS",
+    "meta_desc": "Private AI chat for macOS. Multi-conversation, speech I/O, image analysis, markdown rendering. On-device via Apple Intelligence. No API keys, no cloud, nothing leaves your Mac.",
+    "og_desc": "Multi-conversation AI chat that runs entirely on your Mac. Voice input, image analysis, streaming markdown. No API keys. No cloud. Nothing leaves your machine."
+  },
+  "arthur-ficial/tap/apfel-clip": {
+    "token": "arthur-ficial/tap/apfel-clip",
+    "homepage": "https://apfel-clip.franzai.com",
+    "title": "apfel-clip: AI clipboard actions for macOS",
+    "meta_desc": "Copy text, code, or an error. Press Cmd+Shift+V. Pick an action. Paste the result. On-device AI, no API keys, no cloud, no data leaving your Mac.",
+    "og_desc": "Copy text, code, or an error. Press Cmd+Shift+V. Pick an action. Paste the result. On-device AI. No API keys. No cloud."
+  },
+  "arthur-ficial/tap/apfel-quick": {
+    "token": "arthur-ficial/tap/apfel-quick",
+    "homepage": "https://apfel-quick.franzai.com",
+    "title": "apfel-quick: The AI overlay that works offline",
+    "meta_desc": "Your AI stops when the Wi-Fi stops. This one doesn't. Press Ctrl Space, ask, answer streams in and copies to your clipboard. No Wi-Fi, no account, no API key, no subscription. Runs entirely on your Mac.",
+    "og_desc": "A Spotlight-style AI overlay that works without Wi-Fi, without an account, without an API key. Press Ctrl Space, type, done."
+  },
+  "arthur-ficial/tap/apfelpad": {
+    "token": "arthur-ficial/tap/apfelpad",
+    "homepage": "https://apfelpad.franzai.com",
+    "title": "apfelpad: A formula notepad for thinking on macOS",
+    "meta_desc": "A native macOS markdown notepad where on-device AI is a first-class formula. Type =apfel(\"love letter\", 42), press Return, watch it stream inline. Reproducible, cached, 100% local. No API keys, no cloud.",
+    "og_desc": "A native macOS markdown notepad with inline formulas. =apfel() calls on-device AI, =math() does arithmetic, all rendered inline in pale green. No API keys. No cloud. Nothing leaves your Mac."
+  },
+  "arthur-ficial/tap/bgbgone-app": {
+    "token": "arthur-ficial/tap/bgbgone-app",
+    "homepage": "https://github.com/Arthur-Ficial/bgbgone-app",
+    "title": "GitHub - Arthur-Ficial/bgbgone-app: GUI for bgbgone - drop a folder, get clean cutouts. On-device Apple Vision, batchable, 100% scriptable underneath. · GitHub",
+    "meta_desc": "GUI for bgbgone - drop a folder, get clean cutouts. On-device Apple Vision, batchable, 100% scriptable underneath. - Arthur-Ficial/bgbgone-app",
+    "og_desc": "GUI for bgbgone - drop a folder, get clean cutouts. On-device Apple Vision, batchable, 100% scriptable underneath. - Arthur-Ficial/bgbgone-app"
+  },
   "arto-app/tap/arto": {
     "token": "arto-app/tap/arto",
     "homepage": "https://github.com/arto-app/Arto",
     "title": "GitHub - arto-app/Arto: 🅰️ Arto - the Art of Reading Markdown. · GitHub",
     "meta_desc": "🅰️ Arto - the Art of Reading Markdown. Contribute to arto-app/Arto development by creating an account on GitHub.",
     "og_desc": "🅰️ Arto - the Art of Reading Markdown. Contribute to arto-app/Arto development by creating an account on GitHub."
+  },
+  "artzainnn/tap/claudeusagebar": {
+    "token": "artzainnn/tap/claudeusagebar",
+    "homepage": "https://claudeusagebar.com/",
+    "title": "ClaudeUsageBar - Free Claude & Claude Code Usage Tracker for macOS",
+    "meta_desc": "Free, open-source macOS menu bar app that tracks your Claude and Claude Code usage limits in real time. Get notifications before hitting your limit. Lightweight, private, and native.",
+    "og_desc": "Free, open-source macOS menu bar app that tracks your Claude and Claude Code usage limits in real time. Get notifications before hitting your limit. Lightweight, private, and native."
+  },
+  "artzainnn/tap/codexusagebar": {
+    "token": "artzainnn/tap/codexusagebar",
+    "homepage": "https://codexusagebar.com/",
+    "title": "CodexUsageBar - Free ChatGPT Codex Usage Tracker for macOS",
+    "meta_desc": "Free, open-source macOS menu bar app that tracks your ChatGPT Codex usage limits in real time. Get notifications before hitting your limit. Lightweight, private, and native.",
+    "og_desc": "Free, open-source macOS menu bar app that tracks your ChatGPT Codex usage limits in real time. Get notifications before hitting your limit. Lightweight, private, and native."
   },
   "athevon/tokeneater/tokeneater": {
     "token": "athevon/tokeneater/tokeneater",
@@ -178,6 +290,13 @@
     "title": "Testcontainers Cloud",
     "meta_desc": "",
     "og_desc": ""
+  },
+  "augani/dory/dory": {
+    "token": "augani/dory/dory",
+    "homepage": "https://usedory.dev/",
+    "title": "Dory: One Mac. Your whole development world.",
+    "meta_desc": "Dory is the complete local development system for Apple Silicon: Docker, Compose, Kubernetes, virtual machines, and policy-bound agent sandboxes.",
+    "og_desc": "Docker, Kubernetes, virtual machines, and dedicated agent sandboxes. Engineered as one native, open-source local system."
   },
   "authzed/tap/spicebox": {
     "token": "authzed/tap/spicebox",
@@ -262,6 +381,13 @@
     "title": "",
     "meta_desc": "",
     "og_desc": ""
+  },
+  "ayangweb/bongocat/bongo-cat": {
+    "token": "ayangweb/bongocat/bongo-cat",
+    "homepage": "https://github.com/ayangweb/BongoCat",
+    "title": "GitHub - ayangweb/BongoCat: 🐱 BongoCat - A cross-platform interactive desktop pet that brings fun to your desktop! · GitHub",
+    "meta_desc": "🐱 BongoCat - A cross-platform interactive desktop pet that brings fun to your desktop! - ayangweb/BongoCat",
+    "og_desc": "🐱 BongoCat - A cross-platform interactive desktop pet that brings fun to your desktop! - ayangweb/BongoCat"
   },
   "azure/azd/azd": {
     "token": "azure/azd/azd",
@@ -914,6 +1040,20 @@
     "meta_desc": "BellSoft is a major OpenJDK contributor providing Progressive Java Runtime and other tools for Java apps for modern architectures and cloud.",
     "og_desc": ""
   },
+  "bengerthelorf/tap/claudit": {
+    "token": "bengerthelorf/tap/claudit",
+    "homepage": "https://github.com/Bengerthelorf/Claudit",
+    "title": "GitHub - Bengerthelorf/Claudit: A lightweight macOS menu bar app that tracks your Claude API usage - cost, tokens, quota, and session analytics. Fully local, multi-device SSH support. · GitHub",
+    "meta_desc": "A lightweight macOS menu bar app that tracks your Claude API usage - cost, tokens, quota, and session analytics. Fully local, multi-device SSH support. - Bengerthelorf/Claudit",
+    "og_desc": "A lightweight macOS menu bar app that tracks your Claude API usage - cost, tokens, quota, and session analytics. Fully local, multi-device SSH support. - Bengerthelorf/Claudit"
+  },
+  "bengerthelorf/tap/iconchanger": {
+    "token": "bengerthelorf/tap/iconchanger",
+    "homepage": "https://github.com/Bengerthelorf/macIconChanger",
+    "title": "GitHub - Bengerthelorf/macIconChanger: Transform your Mac, one icon at a time - customize app & folder icons with GUI, CLI, macOSicons.com integration, and auto-restore · GitHub",
+    "meta_desc": "Transform your Mac, one icon at a time - customize app & folder icons with GUI, CLI, macOSicons.com integration, and auto-restore - Bengerthelorf/macIconChanger",
+    "og_desc": "Transform your Mac, one icon at a time - customize app & folder icons with GUI, CLI, macOSicons.com integration, and auto-restore - Bengerthelorf/macIconChanger"
+  },
   "betterdiscord/tap/bdcli": {
     "token": "betterdiscord/tap/bdcli",
     "homepage": "https://betterdiscord.app/",
@@ -934,6 +1074,13 @@
     "title": "GitHub - betterleaks/betterleaks: Find leaked secrets everywhere. · GitHub",
     "meta_desc": "Find leaked secrets everywhere. Contribute to betterleaks/betterleaks development by creating an account on GitHub.",
     "og_desc": "Find leaked secrets everywhere. Contribute to betterleaks/betterleaks development by creating an account on GitHub."
+  },
+  "beutton/brew/wattsec": {
+    "token": "beutton/brew/wattsec",
+    "homepage": "https://github.com/beutton/wattsec",
+    "title": "GitHub - beutton/wattsec: Display macOS power usage in the menu bar · GitHub",
+    "meta_desc": "Display macOS power usage in the menu bar. Contribute to beutton/wattsec development by creating an account on GitHub.",
+    "og_desc": "Display macOS power usage in the menu bar. Contribute to beutton/wattsec development by creating an account on GitHub."
   },
   "blacktop/tap/dyld-tools": {
     "token": "blacktop/tap/dyld-tools",
@@ -1899,6 +2046,20 @@
     "meta_desc": "Modern YouTube downloader with a clean PySide6 interface. Download videos in any quality, extract audio, fetch subtitles, sponsorBlock, and view video metadata. Built with yt-dlp for reliable performance. - oop7/YTSage",
     "og_desc": "Modern YouTube downloader with a clean PySide6 interface. Download videos in any quality, extract audio, fetch subtitles, sponsorBlock, and view video metadata. Built with yt-dlp for reliable perfo..."
   },
+  "bryanroscoe/shield-optimizer/atv-optimizer": {
+    "token": "bryanroscoe/shield-optimizer/atv-optimizer",
+    "homepage": "https://github.com/bryanroscoe/shield_optimizer",
+    "title": "GitHub - bryanroscoe/shield_optimizer · GitHub",
+    "meta_desc": "Contribute to bryanroscoe/shield_optimizer development by creating an account on GitHub.",
+    "og_desc": "Contribute to bryanroscoe/shield_optimizer development by creating an account on GitHub."
+  },
+  "buxuku/tap/smartsub": {
+    "token": "buxuku/tap/smartsub",
+    "homepage": "https://github.com/buxuku/SmartSub",
+    "title": "GitHub - buxuku/SmartSub: 视频转字幕、字幕翻译、AI 配音与声音克隆、字幕烧录--免费开源的一站式桌面工具。基于 Whisper / FunASR 等本地模型离线语音转文字，批量处理 + 全平台 GPU 加速，跨 Windows / macOS / Linux。Free, open-source desktop app to generate, translate, dub & burn video subtitles - local Whisper speech-to-text, AI dubbing & voice cloning, offline, GPU-ac",
+    "meta_desc": "视频转字幕、字幕翻译、AI 配音与声音克隆、字幕烧录--免费开源的一站式桌面工具。基于 Whisper / FunASR 等本地模型离线语音转文字，批量处理 + 全平台 GPU 加速，跨 Windows / macOS / Linux。Free, open-source desktop app to generate, translate, dub & burn video subtitles - local Whisper speech-to-text, AI dubbing & voice cloning, offline, GPU-accelerated. - buxuku/SmartSub",
+    "og_desc": "视频转字幕、字幕翻译、AI 配音与声音克隆、字幕烧录--免费开源的一站式桌面工具。基于 Whisper / FunASR 等本地模型离线语音转文字，批量处理 + 全平台 GPU 加速，跨 Windows / macOS / Linux。Free, open-source desktop app to generate, translate, dub &amp; burn video subt..."
+  },
   "bwya77/tap/dockanchor": {
     "token": "bwya77/tap/dockanchor",
     "homepage": "https://github.com/bwya77/DockAnchor",
@@ -1912,6 +2073,13 @@
     "title": "GitHub - bysiber/cleardisk: Free macOS menu bar app to visualize and clean developer caches (Xcode, node_modules, CocoaPods, SPM, Docker, pip, Cargo). Reclaim disk space instantly. · GitHub",
     "meta_desc": "Free macOS menu bar app to visualize and clean developer caches (Xcode, node_modules, CocoaPods, SPM, Docker, pip, Cargo). Reclaim disk space instantly. - bysiber/cleardisk",
     "og_desc": "Free macOS menu bar app to visualize and clean developer caches (Xcode, node_modules, CocoaPods, SPM, Docker, pip, Cargo). Reclaim disk space instantly. - bysiber/cleardisk"
+  },
+  "c0desurfer/tap/swift-salamander": {
+    "token": "c0desurfer/tap/swift-salamander",
+    "homepage": "https://swiftsalamander.app/",
+    "title": "Swift Salamander | A Better Place for Your Files",
+    "meta_desc": "A dual-pane file manager for macOS. Available in Early Access: start free or get Pro at the lower pre-1.0 price.",
+    "og_desc": "A dual-pane file manager for macOS. Available in Early Access: start free or get Pro at the lower pre-1.0 price."
   },
   "caarlos0/tap/domain_exporter": {
     "token": "caarlos0/tap/domain_exporter",
@@ -2116,6 +2284,27 @@
     "title": "KafkIO | The Kafka UI for Engineers and Admins",
     "meta_desc": "KafkIO is a fast, easy and free Kafka GUI for Windows, macOS and Linux: browse and produce messages, manage consumers, schemas, ACLs, Kafka Connect and ksqlDB.",
     "og_desc": ""
+  },
+  "chang-07/tap/rascal": {
+    "token": "chang-07/tap/rascal",
+    "homepage": "https://github.com/chang-07/rascal",
+    "title": "GitHub - chang-07/rascal · GitHub",
+    "meta_desc": "Contribute to chang-07/rascal development by creating an account on GitHub.",
+    "og_desc": "Contribute to chang-07/rascal development by creating an account on GitHub."
+  },
+  "chang-07/tap/snapbar": {
+    "token": "chang-07/tap/snapbar",
+    "homepage": "https://github.com/chang-07/sylvester",
+    "title": "GitHub - chang-07/sylvester: macOS menubar app for net worth + portfolio across brokerages · GitHub",
+    "meta_desc": "macOS menubar app for net worth + portfolio across brokerages - chang-07/sylvester",
+    "og_desc": "macOS menubar app for net worth + portfolio across brokerages - chang-07/sylvester"
+  },
+  "chang-07/tap/sylvester": {
+    "token": "chang-07/tap/sylvester",
+    "homepage": "https://github.com/chang-07/sylvester",
+    "title": "GitHub - chang-07/sylvester: macOS menubar app for net worth + portfolio across brokerages · GitHub",
+    "meta_desc": "macOS menubar app for net worth + portfolio across brokerages - chang-07/sylvester",
+    "og_desc": "macOS menubar app for net worth + portfolio across brokerages - chang-07/sylvester"
   },
   "chattymin/tap/bobber": {
     "token": "chattymin/tap/bobber",
@@ -2517,6 +2706,13 @@
     "meta_desc": "Clone voices, design new ones and dub video in up to 646 languages, all on your own machine. Free, open source, no account. Formerly OmniVoice Studio.",
     "og_desc": "Clone voices, design new ones and dub video in up to 646 languages, all on your own machine. Free, open source, no account. Formerly OmniVoice Studio."
   },
+  "debugtheworldbot/keystats/keystats": {
+    "token": "debugtheworldbot/keystats/keystats",
+    "homepage": "https://github.com/debugtheworldbot/keyStats",
+    "title": "GitHub - debugtheworldbot/keyStats: Keyboard & Mouse Stats for macOS/Windows · GitHub",
+    "meta_desc": "Keyboard & Mouse Stats for macOS/Windows. Contribute to debugtheworldbot/keyStats development by creating an account on GitHub.",
+    "og_desc": "Keyboard & Mouse Stats for macOS/Windows. Contribute to debugtheworldbot/keyStats development by creating an account on GitHub."
+  },
   "deskflow/tap/deskflow": {
     "token": "deskflow/tap/deskflow",
     "homepage": "https://github.com/deskflow/deskflow",
@@ -2860,6 +3056,118 @@
     "meta_desc": "Doppler's secrets management platform helps teams secure, sync, and automate secrets across cloud and on-prem environments with security and developer-friendly workflows.",
     "og_desc": "Doppler's secrets management platform helps teams secure, sync, and automate secrets across cloud and on-prem environments with security and developer-friendly workflows."
   },
+  "dracula/install/dracula-ableton-live": {
+    "token": "dracula/install/dracula-ableton-live",
+    "homepage": "https://draculatheme.com/ableton-live",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Ableton Live, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Ableton Live, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-alfred": {
+    "token": "dracula/install/dracula-alfred",
+    "homepage": "https://draculatheme.com/alfred",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Alfred, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Alfred, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-betterdiscord": {
+    "token": "dracula/install/dracula-betterdiscord",
+    "homepage": "https://draculatheme.com/betterdiscord",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for BetterDiscord, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for BetterDiscord, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-colorslurp": {
+    "token": "dracula/install/dracula-colorslurp",
+    "homepage": "https://draculatheme.com/",
+    "title": "Volume Icon",
+    "meta_desc": "Dracula is a color scheme for code editors and terminal emulators such as Vim, Notepad++, iTerm, VSCode, Terminal.app, ZSH, and much more.",
+    "og_desc": "Dracula is a color scheme for code editors and terminal emulators such as Vim, Notepad++, iTerm, VSCode, Terminal.app, ZSH, and much more."
+  },
+  "dracula/install/dracula-drafts": {
+    "token": "dracula/install/dracula-drafts",
+    "homepage": "https://draculatheme.com/drafts",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Drafts, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Drafts, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-gitkraken": {
+    "token": "dracula/install/dracula-gitkraken",
+    "homepage": "https://draculatheme.com/gitkraken",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for GitKraken, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for GitKraken, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-insomnia": {
+    "token": "dracula/install/dracula-insomnia",
+    "homepage": "https://draculatheme.com/insomnia",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Insomnia, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Insomnia, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-lsd": {
+    "token": "dracula/install/dracula-lsd",
+    "homepage": "https://draculatheme.com/lsd",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for lsd, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for lsd, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-macos-color-picker": {
+    "token": "dracula/install/dracula-macos-color-picker",
+    "homepage": "https://draculatheme.com/macos-color-picker",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for macOS Color Picker, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for macOS Color Picker, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-mailspring": {
+    "token": "dracula/install/dracula-mailspring",
+    "homepage": "https://draculatheme.com/mailspring",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Mailspring, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Mailspring, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-snippetslab": {
+    "token": "dracula/install/dracula-snippetslab",
+    "homepage": "https://draculatheme.com/snippetslab",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for SnippetsLab, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for SnippetsLab, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-steam": {
+    "token": "dracula/install/dracula-steam",
+    "homepage": "https://draculatheme.com/steam",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Steam, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Steam, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-terminal": {
+    "token": "dracula/install/dracula-terminal",
+    "homepage": "https://draculatheme.com/terminal",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Terminal.app, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Terminal.app, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-wallpaper": {
+    "token": "dracula/install/dracula-wallpaper",
+    "homepage": "https://draculatheme.com/wallpaper",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Wallpaper, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Wallpaper, plus an ever-growing list of apps."
+  },
+  "dracula/install/dracula-xcode": {
+    "token": "dracula/install/dracula-xcode",
+    "homepage": "https://draculatheme.com/xcode",
+    "title": "Volume Icon",
+    "meta_desc": "The most famous theme for Xcode, plus an ever-growing list of apps.",
+    "og_desc": "The most famous theme for Xcode, plus an ever-growing list of apps."
+  },
+  "driceroland/tap/search": {
+    "token": "driceroland/tap/search",
+    "homepage": "https://officecommun.com/search",
+    "title": "Search Browser - a fast, light web browser for the Mac",
+    "meta_desc": "A free web browser for the Mac with nothing in the way: about 10 MB, open in a third of a second, ads blocked, Chrome extensions, Arc import.",
+    "og_desc": "A free web browser for the Mac with nothing in the way: about 10 MB, open in a third of a second, ads blocked, Chrome extensions, Arc import."
+  },
   "dynatrace-oss/tap/dtctl": {
     "token": "dynatrace-oss/tap/dtctl",
     "homepage": "https://github.com/dynatrace-oss/dtctl",
@@ -2937,6 +3245,20 @@
     "meta_desc": "CLI proxy that reduces LLM token usage by 60-90%. Declarative YAML filters for Claude Code, Cursor, Copilot, Gemini. rtk alternative in Go.  - GitHub - edouard-claude/snip: CLI proxy that reduces LLM token usage by 60-90%. Declarative YAML filters for Claude Code, Cursor, Copilot, Gemini. rtk alternative in Go.",
     "og_desc": "CLI proxy that reduces LLM token usage by 60-90%. Declarative YAML filters for Claude Code, Cursor, Copilot, Gemini. rtk alternative in Go.  - edouard-claude/snip"
   },
+  "ender-wang/tap/edgemark": {
+    "token": "ender-wang/tap/edgemark",
+    "homepage": "https://github.com/Ender-Wang/EdgeMark",
+    "title": "GitHub - Ender-Wang/EdgeMark: A native macOS side-panel Markdown notes app. Always one edge away. · GitHub",
+    "meta_desc": "A native macOS side-panel Markdown notes app. Always one edge away. - Ender-Wang/EdgeMark",
+    "og_desc": "A native macOS side-panel Markdown notes app. Always one edge away. - Ender-Wang/EdgeMark"
+  },
+  "ender-wang/tap/swifka": {
+    "token": "ender-wang/tap/swifka",
+    "homepage": "https://github.com/Ender-Wang/Swifka",
+    "title": "GitHub - Ender-Wang/Swifka: A native macOS Kafka monitor. Read-only by design. · GitHub",
+    "meta_desc": "A native macOS Kafka monitor. Read-only by design. - Ender-Wang/Swifka",
+    "og_desc": "A native macOS Kafka monitor. Read-only by design. - Ender-Wang/Swifka"
+  },
   "entireio/tap/entire": {
     "token": "entireio/tap/entire",
     "homepage": "https://github.com/entireio/cli",
@@ -2957,6 +3279,13 @@
     "title": "GitHub - entireio/git-sync: 🪩 Mirror git refs from a source remote to a target remote without a local checkout. Packfiles stream directly over Smart HTTP and an in-memory object store. · GitHub",
     "meta_desc": "🪩 Mirror git refs from a source remote to a target remote without a local checkout. Packfiles stream directly over Smart HTTP and an in-memory object store. - entireio/git-sync",
     "og_desc": "🪩 Mirror git refs from a source remote to a target remote without a local checkout. Packfiles stream directly over Smart HTTP and an in-memory object store. - entireio/git-sync"
+  },
+  "epk/epk/font-sf-mono-nerd-font": {
+    "token": "epk/epk/font-sf-mono-nerd-font",
+    "homepage": "https://github.com/epk/SF-Mono-Nerd-Font",
+    "title": "GitHub - epk/SF-Mono-Nerd-Font: Apple's SF Mono font patched with the Nerd Fonts patcher · GitHub",
+    "meta_desc": "Apple's SF Mono font patched with the Nerd Fonts patcher - epk/SF-Mono-Nerd-Font",
+    "og_desc": "Apple's SF Mono font patched with the Nerd Fonts patcher - epk/SF-Mono-Nerd-Font"
   },
   "eranif/codelite/codelite-official": {
     "token": "eranif/codelite/codelite-official",
@@ -2985,6 +3314,23 @@
     "title": "GitHub - espressif/idf-im-ui: EIM GUI: Cross-Platform ESP-IDF Installation Manager · GitHub",
     "meta_desc": "EIM GUI: Cross-Platform ESP-IDF Installation Manager - espressif/idf-im-ui",
     "og_desc": "EIM GUI: Cross-Platform ESP-IDF Installation Manager - espressif/idf-im-ui"
+  },
+  "fastrepl/fastrepl/char": {
+    "token": "fastrepl/fastrepl/char",
+    "homepage": "https://github.com/fastrepl/char",
+    "error": "HTTP 404"
+  },
+  "fastrepl/fastrepl/char@nightly": {
+    "token": "fastrepl/fastrepl/char@nightly",
+    "homepage": "https://github.com/fastrepl/hyprnote",
+    "title": "GitHub - fastrepl/anarlog: Open source Granola AI Alternative · GitHub",
+    "meta_desc": "Open source Granola AI Alternative. Contribute to fastrepl/anarlog development by creating an account on GitHub.",
+    "og_desc": "Open source Granola AI Alternative. Contribute to fastrepl/anarlog development by creating an account on GitHub."
+  },
+  "fastrepl/fastrepl/hyprnote": {
+    "token": "fastrepl/fastrepl/hyprnote",
+    "homepage": "https://github.com/fastrepl/char",
+    "error": "HTTP 404"
   },
   "fcjr/fcjr/dk-link": {
     "token": "fcjr/fcjr/dk-link",
@@ -3098,6 +3444,34 @@
     "meta_desc": "Active community fork of the archived whisky-app/whisky - a modern Wine wrapper for macOS built with SwiftUI - frankea/Whisky",
     "og_desc": "Active community fork of the archived whisky-app/whisky - a modern Wine wrapper for macOS built with SwiftUI - frankea/Whisky"
   },
+  "frostyard/tap/chairlift": {
+    "token": "frostyard/tap/chairlift",
+    "homepage": "https://github.com/frostyard/chairlift",
+    "title": "GitHub - frostyard/chairlift: Manage your system · GitHub",
+    "meta_desc": "Manage your system. Contribute to frostyard/chairlift development by creating an account on GitHub.",
+    "og_desc": "Manage your system. Contribute to frostyard/chairlift development by creating an account on GitHub."
+  },
+  "frostyard/tap/nsl": {
+    "token": "frostyard/tap/nsl",
+    "homepage": "https://github.com/frostyard/nsl",
+    "title": "GitHub - frostyard/nsl: NSpawn Subsystem for Linux: development environments for atomic hosts and people who want to keep the host clean · GitHub",
+    "meta_desc": "NSpawn Subsystem for Linux: development environments for atomic hosts and people who want to keep the host clean - frostyard/nsl",
+    "og_desc": "NSpawn Subsystem for Linux: development environments for atomic hosts and people who want to keep the host clean - frostyard/nsl"
+  },
+  "fujacob/cotabby/cotabby": {
+    "token": "fujacob/cotabby/cotabby",
+    "homepage": "https://github.com/FuJacob/cotabby",
+    "title": "GitHub - FuJacob/cotabby: Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type. · GitHub",
+    "meta_desc": "Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type. - FuJacob/cotabby",
+    "og_desc": "Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type. - FuJacob/cotabby"
+  },
+  "garfieldfluffjr/macnewfile/macnewfile": {
+    "token": "garfieldfluffjr/macnewfile/macnewfile",
+    "homepage": "https://github.com/GarfieldFluffJr/MacNewFile",
+    "title": "GitHub - GarfieldFluffJr/MacNewFile: Upgraded the Finder right-click menu on MacOS to allow for creating new files (text, Word, Excel, etc.) · GitHub",
+    "meta_desc": "Upgraded the Finder right-click menu on MacOS to allow for creating new files (text, Word, Excel, etc.) - GarfieldFluffJr/MacNewFile",
+    "og_desc": "Upgraded the Finder right-click menu on MacOS to allow for creating new files (text, Word, Excel, etc.) - GarfieldFluffJr/MacNewFile"
+  },
   "gcenx/wine/game-porting-toolkit": {
     "token": "gcenx/wine/game-porting-toolkit",
     "homepage": "https://developer.apple.com/games",
@@ -3182,6 +3556,20 @@
     "meta_desc": "🖥️ Native OpenFOAM for macOS. Contribute to gerlero/openfoam-app development by creating an account on GitHub.",
     "og_desc": "🖥️ Native OpenFOAM for macOS. Contribute to gerlero/openfoam-app development by creating an account on GitHub."
   },
+  "glzr-io/tap/glazewm": {
+    "token": "glzr-io/tap/glazewm",
+    "homepage": "https://github.com/glzr-io/glazewm",
+    "title": "GitHub - glzr-io/glazewm: GlazeWM is a tiling window manager for macOS and Windows inspired by i3wm. · GitHub",
+    "meta_desc": "GlazeWM is a tiling window manager for macOS and Windows inspired by i3wm. - glzr-io/glazewm",
+    "og_desc": "GlazeWM is a tiling window manager for macOS and Windows inspired by i3wm. - glzr-io/glazewm"
+  },
+  "glzr-io/tap/zebar": {
+    "token": "glzr-io/tap/zebar",
+    "homepage": "https://github.com/glzr-io/zebar",
+    "title": "GitHub - glzr-io/zebar: Zebar is a tool for creating customizable and cross-platform taskbars, desktop widgets, and popups. · GitHub",
+    "meta_desc": "Zebar is a tool for creating customizable and cross-platform taskbars, desktop widgets, and popups. - glzr-io/zebar",
+    "og_desc": "Zebar is a tool for creating customizable and cross-platform taskbars, desktop widgets, and popups. - glzr-io/zebar"
+  },
   "go-task/tap/go-task": {
     "token": "go-task/tap/go-task",
     "homepage": "https://taskfile.dev",
@@ -3238,6 +3626,174 @@
     "meta_desc": "Do you or your company use GoReleaser?\nYou can help keep the project bug-free and feature rich by sponsoring the project and its maintainers.\nThese are the companies and individuals that help make GoReleaser happen:\nDiamond SerpApi Gold Mercedes-Benz Group GitHub SecureOSS Fund Silver N-iX Ltd Bronze conet cloud Encore Comet Gitea Backers Dharsan Baskar James Blackwell Automatio AI BackupDrill Bruno P Calculators Feetpedia Jared Allard Love My Puppy Network Tools OhMyFacts TeknikGeek Time.now Wo",
     "og_desc": "\n    \n      Do you or your company use GoReleaser?\nYou can help keep the project bug-free and feature rich by sponsoring the\nproject and its maintainers.\nThese are the companies and individuals that help make GoReleaser happen:\n\n\n\n\n  \n    Diamond\n    \n        \n          \n          SerpApi\n        \n    \n  \n  \n    Gold\n    \n        \n          \n          Mercedes-Benz Group\n        \n        \n          \n          GitHub SecureOSS Fund \n        \n    \n  \n  \n    Silver\n    \n        \n          \n        "
   },
+  "gostonx/tap/uninstally": {
+    "token": "gostonx/tap/uninstally",
+    "homepage": "https://codenta.us/",
+    "title": "Codenta, Simple Software for macOS",
+    "meta_desc": "Codenta, Software designed for simplicity. Makers of Orbita, Quitty, and Zonedial for macOS.",
+    "og_desc": "Makers of Orbita, Quitty, and Zonedial, clean, simple tools for macOS."
+  },
+  "graalvm/tap/graalvm-ce-java11": {
+    "token": "graalvm/tap/graalvm-ce-java11",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-java16": {
+    "token": "graalvm/tap/graalvm-ce-java16",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-java17": {
+    "token": "graalvm/tap/graalvm-ce-java17",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-java19": {
+    "token": "graalvm/tap/graalvm-ce-java19",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-java8": {
+    "token": "graalvm/tap/graalvm-ce-java8",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-lts-java11": {
+    "token": "graalvm/tap/graalvm-ce-lts-java11",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-ce-lts-java8": {
+    "token": "graalvm/tap/graalvm-ce-lts-java8",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk17": {
+    "token": "graalvm/tap/graalvm-community-jdk17",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk20": {
+    "token": "graalvm/tap/graalvm-community-jdk20",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk21": {
+    "token": "graalvm/tap/graalvm-community-jdk21",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk22": {
+    "token": "graalvm/tap/graalvm-community-jdk22",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk23": {
+    "token": "graalvm/tap/graalvm-community-jdk23",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk24": {
+    "token": "graalvm/tap/graalvm-community-jdk24",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk25": {
+    "token": "graalvm/tap/graalvm-community-jdk25",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-community-jdk25i": {
+    "token": "graalvm/tap/graalvm-community-jdk25i",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk17": {
+    "token": "graalvm/tap/graalvm-jdk17",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk20": {
+    "token": "graalvm/tap/graalvm-jdk20",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk21": {
+    "token": "graalvm/tap/graalvm-jdk21",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk22": {
+    "token": "graalvm/tap/graalvm-jdk22",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk23": {
+    "token": "graalvm/tap/graalvm-jdk23",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk24": {
+    "token": "graalvm/tap/graalvm-jdk24",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk25": {
+    "token": "graalvm/tap/graalvm-jdk25",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
+  "graalvm/tap/graalvm-jdk25i": {
+    "token": "graalvm/tap/graalvm-jdk25i",
+    "homepage": "https://www.graalvm.org/",
+    "title": "GraalVM",
+    "meta_desc": "GraalVM is an advanced JDK with ahead-of-time Native Image compilation.",
+    "og_desc": ""
+  },
   "grafana/grafana/grafana-assistant": {
     "token": "grafana/grafana/grafana-assistant",
     "homepage": "https://github.com/grafana/assistant-cli",
@@ -3272,6 +3828,69 @@
     "title": "Vagrant | HashiCorp Developer",
     "meta_desc": "Explore Vagrant product documentation, tutorials, and examples.",
     "og_desc": ""
+  },
+  "hewigovens/tap/app-detective": {
+    "token": "hewigovens/tap/app-detective",
+    "homepage": "https://github.com/hewigovens/app-detective",
+    "title": "GitHub - hewigovens/app-detective: Detect macOS apps' GUI tech stack · GitHub",
+    "meta_desc": "Detect macOS apps' GUI tech stack. Contribute to hewigovens/app-detective development by creating an account on GitHub.",
+    "og_desc": "Detect macOS apps' GUI tech stack. Contribute to hewigovens/app-detective development by creating an account on GitHub."
+  },
+  "hewigovens/tap/font-hanori": {
+    "token": "hewigovens/tap/font-hanori",
+    "homepage": "https://github.com/hewigovens/hanori-sans",
+    "title": "GitHub - hewigovens/hanori-sans: English, Simplified Chinese, and Japanese font with selective or always-on furigana · GitHub",
+    "meta_desc": "English, Simplified Chinese, and Japanese font with selective or always-on furigana - hewigovens/hanori-sans",
+    "og_desc": "English, Simplified Chinese, and Japanese font with selective or always-on furigana - hewigovens/hanori-sans"
+  },
+  "hewigovens/tap/ghosttile": {
+    "token": "hewigovens/tap/ghosttile",
+    "homepage": "https://github.com/hewigovens/ghosttile-cli",
+    "title": "GitHub - hewigovens/ghosttile-cli: Ghosttile 2.0 revamp · GitHub",
+    "meta_desc": "Ghosttile 2.0 revamp. Contribute to hewigovens/ghosttile-cli development by creating an account on GitHub.",
+    "og_desc": "Ghosttile 2.0 revamp. Contribute to hewigovens/ghosttile-cli development by creating an account on GitHub."
+  },
+  "hewigovens/tap/github-desktop-tip": {
+    "token": "hewigovens/tap/github-desktop-tip",
+    "homepage": "https://github.com/hewigovens/github-desktop",
+    "title": "GitHub - hewigovens/github-desktop: Focus on what matters instead of fighting with Git. · GitHub",
+    "meta_desc": "Focus on what matters instead of fighting with Git. - hewigovens/github-desktop",
+    "og_desc": "Focus on what matters instead of fighting with Git. - hewigovens/github-desktop"
+  },
+  "hewigovens/tap/hanori-preview": {
+    "token": "hewigovens/tap/hanori-preview",
+    "homepage": "https://github.com/hewigovens/hanori-sans",
+    "title": "GitHub - hewigovens/hanori-sans: English, Simplified Chinese, and Japanese font with selective or always-on furigana · GitHub",
+    "meta_desc": "English, Simplified Chinese, and Japanese font with selective or always-on furigana - hewigovens/hanori-sans",
+    "og_desc": "English, Simplified Chinese, and Japanese font with selective or always-on furigana - hewigovens/hanori-sans"
+  },
+  "hewigovens/tap/jayjay": {
+    "token": "hewigovens/tap/jayjay",
+    "homepage": "https://github.com/hewigovens/jayjay",
+    "title": "GitHub - hewigovens/jayjay: A native macOS GUI for Jujutsu (jj) - DAG graph, side-by-side diffs, interdiff, conflict resolution. Built with Rust + SwiftUI. · GitHub",
+    "meta_desc": "A native macOS GUI for Jujutsu (jj) - DAG graph, side-by-side diffs, interdiff, conflict resolution. Built with Rust + SwiftUI. - hewigovens/jayjay",
+    "og_desc": "A native macOS GUI for Jujutsu (jj) - DAG graph, side-by-side diffs, interdiff, conflict resolution. Built with Rust + SwiftUI. - hewigovens/jayjay"
+  },
+  "hewigovens/tap/miso": {
+    "token": "hewigovens/tap/miso",
+    "homepage": "https://github.com/hewigovens/Miso",
+    "title": "GitHub - hewigovens/Miso: Method Input Switch Overlay · GitHub",
+    "meta_desc": "Method Input Switch Overlay. Contribute to hewigovens/Miso development by creating an account on GitHub.",
+    "og_desc": "Method Input Switch Overlay. Contribute to hewigovens/Miso development by creating an account on GitHub."
+  },
+  "hewigovens/tap/remote-launcher": {
+    "token": "hewigovens/tap/remote-launcher",
+    "homepage": "https://github.com/hewigovens/remote-launcher",
+    "title": "GitHub - hewigovens/remote-launcher: Native macOS launcher for multiple High Performance Screen Sharing sessions. · GitHub",
+    "meta_desc": "Native macOS launcher for multiple High Performance Screen Sharing sessions. - hewigovens/remote-launcher",
+    "og_desc": "Native macOS launcher for multiple High Performance Screen Sharing sessions. - hewigovens/remote-launcher"
+  },
+  "hewigovens/tap/staged-launcher": {
+    "token": "hewigovens/tap/staged-launcher",
+    "homepage": "https://github.com/hewigovens/StagedLauncher",
+    "title": "GitHub - hewigovens/StagedLauncher: The easiest way to manage and delay the launch of applications across different stages on your Mac · GitHub",
+    "meta_desc": "The easiest way to manage and delay the launch of applications across different stages on your Mac - hewigovens/StagedLauncher",
+    "og_desc": "The easiest way to manage and delay the launch of applications across different stages on your Mac - hewigovens/StagedLauncher"
   },
   "hmans/beans/beans": {
     "token": "hmans/beans/beans",
@@ -3684,6 +4303,27 @@
     "meta_desc": "Free downloads for building and running .NET apps on Linux, macOS, and Windows. Runtimes, SDKs, and developer packs for .NET Framework, .NET, and ASP.NET.",
     "og_desc": "Free downloads for building and running .NET apps on Linux, macOS, and Windows. Runtimes, SDKs, and developer packs for .NET Framework, .NET, and ASP.NET."
   },
+  "italomandara/cxpatcher/cxpatcher": {
+    "token": "italomandara/cxpatcher/cxpatcher",
+    "homepage": "https://github.com/italomandara/CXPatcher",
+    "title": "GitHub - italomandara/CXPatcher: A patcher to upgrade Crossover dependencies and improve compatibility · GitHub",
+    "meta_desc": "A patcher to upgrade Crossover dependencies and improve compatibility - italomandara/CXPatcher",
+    "og_desc": "A patcher to upgrade Crossover dependencies and improve compatibility - italomandara/CXPatcher"
+  },
+  "italomandara/cxpatcher/gstreamer": {
+    "token": "italomandara/cxpatcher/gstreamer",
+    "homepage": "https://gstreamer.freedesktop.org/",
+    "title": "A pipeline that plays a WebM file: filesrc, matroskademux, then a video branch (dav1ddec, videoconvert, autovideosink) and an audio branch (opusdec, audioconvert, autoaudiosink)",
+    "meta_desc": "GStreamer: open source multimedia framework",
+    "og_desc": ""
+  },
+  "jackielii/tap/skhd-zig": {
+    "token": "jackielii/tap/skhd-zig",
+    "homepage": "https://github.com/jackielii/skhd.zig",
+    "title": "GitHub - jackielii/skhd.zig: Simple Hotkey Daemon for macOS, ported from skhd by asmvik · GitHub",
+    "meta_desc": "Simple Hotkey Daemon for macOS, ported from skhd by asmvik - jackielii/skhd.zig",
+    "og_desc": "Simple Hotkey Daemon for macOS, ported from skhd by asmvik - jackielii/skhd.zig"
+  },
   "jakobhviid/tap/claude-desktop-linux": {
     "token": "jakobhviid/tap/claude-desktop-linux",
     "homepage": "https://github.com/aaddrick/claude-desktop-debian",
@@ -3754,12 +4394,89 @@
     "meta_desc": "See what is really inside macOS System Data and delete it item by item. A free menu bar app that explains every category and shows each command before it runs. - Jarvis322/macos-sysdata",
     "og_desc": "See what is really inside macOS System Data and delete it item by item. A free menu bar app that explains every category and shows each command before it runs. - Jarvis322/macos-sysdata"
   },
+  "jazzyalex/agent-sessions/agent-sessions": {
+    "token": "jazzyalex/agent-sessions/agent-sessions",
+    "homepage": "https://jazzyalex.github.io/agent-sessions/",
+    "title": "Agent Sessions - Search Codex, Claude, Antigravity, and Copilot History on macOS",
+    "meta_desc": "Search Codex, Claude Code, Cursor and 13 other coding-agent histories on your Mac. Resume supported CLI sessions and track Codex and Claude quota burn.",
+    "og_desc": "Search local conversations from Codex, Claude Code, Cursor, and 13 other coding agents in one Mac app. Free and open source, with no app telemetry."
+  },
   "jhlee0409/tap/claude-code-history-viewer": {
     "token": "jhlee0409/tap/claude-code-history-viewer",
     "homepage": "https://github.com/jhlee0409/claude-code-history-viewer",
     "title": "GitHub - jhlee0409/claude-code-history-viewer: Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. · GitHub",
     "meta_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/claude-code-history-viewer",
     "og_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/..."
+  },
+  "jimeh/emacs-builds/emacs-app": {
+    "token": "jimeh/emacs-builds/emacs-app",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-good": {
+    "token": "jimeh/emacs-builds/emacs-app-good",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-monthly": {
+    "token": "jimeh/emacs-builds/emacs-app-monthly",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-nightly": {
+    "token": "jimeh/emacs-builds/emacs-app-nightly",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-nightly-28": {
+    "token": "jimeh/emacs-builds/emacs-app-nightly-28",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-nightly-29": {
+    "token": "jimeh/emacs-builds/emacs-app-nightly-29",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jimeh/emacs-builds/emacs-app-pretest": {
+    "token": "jimeh/emacs-builds/emacs-app-pretest",
+    "homepage": "https://github.com/jimeh/emacs-builds",
+    "title": "GitHub - jimeh/emacs-builds: Self-contained Emacs.app builds for macOS, with native-compilation support. · GitHub",
+    "meta_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds",
+    "og_desc": "Self-contained Emacs.app builds for macOS, with native-compilation support. - jimeh/emacs-builds"
+  },
+  "jipika/waifux/waifux": {
+    "token": "jipika/waifux/waifux",
+    "homepage": "https://github.com/jipika/WaifuX",
+    "title": "GitHub - jipika/WaifuX: macos (mac) Wallhaven · MotionBG · Anime | 壁纸 · 动态壁纸 · 番剧 · GitHub",
+    "meta_desc": "macos (mac) Wallhaven · MotionBG · Anime | 壁纸 · 动态壁纸 · 番剧 - jipika/WaifuX",
+    "og_desc": "macos (mac) Wallhaven · MotionBG · Anime | 壁纸 · 动态壁纸 · 番剧 - jipika/WaifuX"
+  },
+  "josejuanqm/tap/docky": {
+    "token": "josejuanqm/tap/docky",
+    "homepage": "https://getdocky.com/",
+    "title": "Docky - The dock, rebuilt for focus.",
+    "meta_desc": "Docky is a free and open-source, translucent, configurable macOS dock with autohide, live widgets, a fullscreen launcher, and an in-place window switcher. Made for Mac power users.",
+    "og_desc": "Docky is a free and open-source, translucent, configurable macOS dock with autohide, live widgets, a fullscreen launcher, and an in-place window switcher. Made for Mac power users."
+  },
+  "jsattler/tap/pulse": {
+    "token": "jsattler/tap/pulse",
+    "homepage": "https://github.com/jsattler/Pulse",
+    "title": "GitHub - jsattler/Pulse: A beautiful, yet simple service monitor that lives in your notch. Service Down? Your Notch will tell you! 👀 · GitHub",
+    "meta_desc": "A beautiful, yet simple service monitor that lives in your notch. Service Down? Your Notch will tell you! 👀 - jsattler/Pulse",
+    "og_desc": "A beautiful, yet simple service monitor that lives in your notch. Service Down? Your Notch will tell you! 👀 - jsattler/Pulse"
   },
   "junian/dotnet/dotnet-sdk@1.0": {
     "token": "junian/dotnet/dotnet-sdk@1.0",
@@ -3913,12 +4630,66 @@
     "meta_desc": "THOCK your mac keyboard >> new release soon! Contribute to kamillobinski/thock development by creating an account on GitHub.",
     "og_desc": "THOCK your mac keyboard >> new release soon! Contribute to kamillobinski/thock development by creating an account on GitHub."
   },
+  "kanriapp/cask/kanri": {
+    "token": "kanriapp/cask/kanri",
+    "homepage": "https://github.com/trobonox/kanri",
+    "title": "GitHub - kanriapp/kanri: Modern offline Kanban board app for Windows, MacOS and Linux made with Tauri and Nuxt. Built with simplicity and user experience in mind. · GitHub",
+    "meta_desc": "Modern offline Kanban board app for Windows, MacOS and Linux made with Tauri and Nuxt. Built with simplicity and user experience in mind. - kanriapp/kanri",
+    "og_desc": "Modern offline Kanban board app for Windows, MacOS and Linux made with Tauri and Nuxt. Built with simplicity and user experience in mind. - kanriapp/kanri"
+  },
   "krishkrosh/apps/trackweight": {
     "token": "krishkrosh/apps/trackweight",
     "homepage": "https://github.com/krishkrosh/TrackWeight",
     "title": "GitHub - KrishKrosh/TrackWeight: Use your Mac trackpad as a weighing scale · GitHub",
     "meta_desc": "Use your Mac trackpad as a weighing scale. Contribute to KrishKrosh/TrackWeight development by creating an account on GitHub.",
     "og_desc": "Use your Mac trackpad as a weighing scale. Contribute to KrishKrosh/TrackWeight development by creating an account on GitHub."
+  },
+  "kunchenguid/tap/baby-menu": {
+    "token": "kunchenguid/tap/baby-menu",
+    "homepage": "https://github.com/kunchenguid/baby-menu",
+    "title": "GitHub - kunchenguid/baby-menu: A menu bar app that can become anything you ask it to be. · GitHub",
+    "meta_desc": "A menu bar app that can become anything you ask it to be. - kunchenguid/baby-menu",
+    "og_desc": "A menu bar app that can become anything you ask it to be. - kunchenguid/baby-menu"
+  },
+  "kunchenguid/tap/firstmate-3000": {
+    "token": "kunchenguid/tap/firstmate-3000",
+    "homepage": "https://getinfinitary.com/",
+    "title": "Infinitary · Your own AI studio",
+    "meta_desc": "Infinitary is a desktop app where a first mate and a crew of AI agents plan and do work for you on your own computer.",
+    "og_desc": ""
+  },
+  "kunchenguid/tap/firstmate-3000@alpha": {
+    "token": "kunchenguid/tap/firstmate-3000@alpha",
+    "homepage": "https://getinfinitary.com/",
+    "title": "Infinitary · Your own AI studio",
+    "meta_desc": "Infinitary is a desktop app where a first mate and a crew of AI agents plan and do work for you on your own computer.",
+    "og_desc": ""
+  },
+  "kunchenguid/tap/hi-bit": {
+    "token": "kunchenguid/tap/hi-bit",
+    "homepage": "https://github.com/kunchenguid/hi-bit",
+    "error": "HTTP 404"
+  },
+  "kunchenguid/tap/pi-launcher": {
+    "token": "kunchenguid/tap/pi-launcher",
+    "homepage": "https://github.com/kunchenguid/pi-launcher",
+    "title": "GitHub - kunchenguid/pi-launcher: A signed macOS launcher for your Pi agent. · GitHub",
+    "meta_desc": "A signed macOS launcher for your Pi agent. Contribute to kunchenguid/pi-launcher development by creating an account on GitHub.",
+    "og_desc": "A signed macOS launcher for your Pi agent. Contribute to kunchenguid/pi-launcher development by creating an account on GitHub."
+  },
+  "kunchenguid/tap/short-pipe": {
+    "token": "kunchenguid/tap/short-pipe",
+    "homepage": "https://github.com/kunchenguid/short-pipe",
+    "title": "GitHub - kunchenguid/short-pipe: Life is too short to be cutting shorts all day. · GitHub",
+    "meta_desc": "Life is too short to be cutting shorts all day. Contribute to kunchenguid/short-pipe development by creating an account on GitHub.",
+    "og_desc": "Life is too short to be cutting shorts all day. Contribute to kunchenguid/short-pipe development by creating an account on GitHub."
+  },
+  "lcharvol/tap/claude-god": {
+    "token": "lcharvol/tap/claude-god",
+    "homepage": "https://github.com/Lcharvol/Claude-God",
+    "title": "GitHub - Lcharvol/Claude-God: 🖥️ macOS menu bar app to monitor your Claude AI usage in real-time - 📊 quota tracking, 🌙 peak/off-peak indicator, ⚡ session costs, 🔥 burn rate predictions, 📈 usage heatmaps, 💰 ROI analytics, 🧩 desktop widget, and 👥 multi-account support · GitHub",
+    "meta_desc": "🖥️ macOS menu bar app to monitor your Claude AI usage in real-time - 📊 quota tracking, 🌙 peak/off-peak indicator, ⚡ session costs, 🔥 burn rate predictions, 📈 usage heatmaps, 💰 ROI analytics, 🧩 desktop widget, and 👥 multi-account support - Lcharvol/Claude-God",
+    "og_desc": "🖥️ macOS menu bar app to monitor your Claude AI usage in real-time - 📊 quota tracking, 🌙 peak/off-peak indicator, ⚡ session costs, 🔥 burn rate predictions, 📈 usage heatmaps, 💰 ROI analytics, 🧩 desk..."
   },
   "lifedever/tap/filelens": {
     "token": "lifedever/tap/filelens",
@@ -4044,6 +4815,13 @@
     "meta_desc": "Menubloom adds New File, Copy Path, Cut and Paste, Open in Terminal and more to Finder's right-click on the Mac. Free and open source, for macOS 12 or newer.",
     "og_desc": "New File, Copy Path, Cut and Paste, Open in Terminal and more, in Finder's right-click. Free and open source."
   },
+  "lzt1008/powerflow/powerflow": {
+    "token": "lzt1008/powerflow/powerflow",
+    "homepage": "https://powerflow-webstie.vercel.app",
+    "title": "Powerflow - Monitor Your Mac's Power Consumption",
+    "meta_desc": "Powerflow is a powerful utility for monitoring and visualizing power consumption on your Mac.",
+    "og_desc": ""
+  },
   "macos-fuse-t/cask/fuse-t-sshfs": {
     "token": "macos-fuse-t/cask/fuse-t-sshfs",
     "homepage": "https://github.com/macos-fuse-t/sshfs",
@@ -4057,6 +4835,86 @@
     "title": "Scorpi | VM-based development workflows",
     "meta_desc": "Scorpi is a platform for creating and running reproducible Linux and Windows VM environments from a scriptable CLI and local control API.",
     "og_desc": "Create, run, inspect, and reset reproducible Linux and Windows VM environments from a scriptable CLI and local control API."
+  },
+  "maddada/tap/agent-manager-x": {
+    "token": "maddada/tap/agent-manager-x",
+    "homepage": "https://github.com/maddada/agent-manager-x",
+    "title": "GitHub - maddada/agent-manager-x: A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM and CPU usage for every running session and lets you code Stale or Id",
+    "meta_desc": "A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM and CPU usage for every running session and lets you code Stale or Idle chats that are wasting memory with 1 click! - maddada/agent-manager-x",
+    "og_desc": "A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM ..."
+  },
+  "maddada/tap/ai-manager": {
+    "token": "maddada/tap/ai-manager",
+    "homepage": "https://github.com/maddada/agent-manager-x",
+    "title": "GitHub - maddada/agent-manager-x: A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM and CPU usage for every running session and lets you code Stale or Id",
+    "meta_desc": "A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM and CPU usage for every running session and lets you code Stale or Idle chats that are wasting memory with 1 click! - maddada/agent-manager-x",
+    "og_desc": "A macOS desktop app to monitor your Claude Code, Codex, OpenCode AI coding agents in real-time with voice or bell notifications. Easily jump to a conversation in any editor or terminal!  Shows RAM ..."
+  },
+  "maddada/tap/cardinal-search": {
+    "token": "maddada/tap/cardinal-search",
+    "homepage": "https://github.com/maddada/cardinal",
+    "title": "GitHub - maddada/cardinal: Fastest file searching tool for macOS · GitHub",
+    "meta_desc": "Fastest file searching tool for macOS. Contribute to maddada/cardinal development by creating an account on GitHub.",
+    "og_desc": "Fastest file searching tool for macOS. Contribute to maddada/cardinal development by creating an account on GitHub."
+  },
+  "maddada/tap/cardinal-x": {
+    "token": "maddada/tap/cardinal-x",
+    "homepage": "https://github.com/maddada/cardinal",
+    "title": "GitHub - maddada/cardinal: Fastest file searching tool for macOS · GitHub",
+    "meta_desc": "Fastest file searching tool for macOS. Contribute to maddada/cardinal development by creating an account on GitHub.",
+    "og_desc": "Fastest file searching tool for macOS. Contribute to maddada/cardinal development by creating an account on GitHub."
+  },
+  "maddada/tap/clipbook-rs": {
+    "token": "maddada/tap/clipbook-rs",
+    "homepage": "https://github.com/maddada/clipbook-rs",
+    "error": "HTTP 404"
+  },
+  "maddada/tap/hotkeys-organizer": {
+    "token": "maddada/tap/hotkeys-organizer",
+    "homepage": "https://github.com/maddada/hotkeys-organizer-swift",
+    "error": "HTTP 404"
+  },
+  "maddada/tap/madda-floating-clock": {
+    "token": "maddada/tap/madda-floating-clock",
+    "homepage": "https://github.com/maddada/MaddaFloatingClock",
+    "title": "GitHub - maddada/MaddaFloatingClock: Customizable macOS Floating clock with Focus and Pomodoro timers · GitHub",
+    "meta_desc": "Customizable macOS Floating clock with Focus and Pomodoro timers - maddada/MaddaFloatingClock",
+    "og_desc": "Customizable macOS Floating clock with Focus and Pomodoro timers - maddada/MaddaFloatingClock"
+  },
+  "maddada/tap/menu-bar-splitter": {
+    "token": "maddada/tap/menu-bar-splitter",
+    "homepage": "https://github.com/maddada/menu-bar-splitter",
+    "title": "GitHub - maddada/menu-bar-splitter: a mac utility for keeping your menu bar organized · GitHub",
+    "meta_desc": "a mac utility for keeping your menu bar organized. Contribute to maddada/menu-bar-splitter development by creating an account on GitHub.",
+    "og_desc": "a mac utility for keeping your menu bar organized. Contribute to maddada/menu-bar-splitter development by creating an account on GitHub."
+  },
+  "maddada/tap/spool-x": {
+    "token": "maddada/tap/spool-x",
+    "homepage": "https://github.com/maddada/spool",
+    "title": "GitHub - maddada/spool: The missing search engine for your own data. · GitHub",
+    "meta_desc": "The missing search engine for your own data. Contribute to maddada/spool development by creating an account on GitHub.",
+    "og_desc": "The missing search engine for your own data. Contribute to maddada/spool development by creating an account on GitHub."
+  },
+  "maddada/tap/stats": {
+    "token": "maddada/tap/stats",
+    "homepage": "https://github.com/maddada/stats",
+    "title": "GitHub - maddada/stats: macOS system monitor in your menu bar · GitHub",
+    "meta_desc": "macOS system monitor in your menu bar. Contribute to maddada/stats development by creating an account on GitHub.",
+    "og_desc": "macOS system monitor in your menu bar. Contribute to maddada/stats development by creating an account on GitHub."
+  },
+  "maddada/tap/zmux": {
+    "token": "maddada/tap/zmux",
+    "homepage": "https://github.com/maddada/zmux",
+    "title": "GitHub - maddada/Ghostex: The Best Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Native Ghostty. · GitHub",
+    "meta_desc": "The Best Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Native Ghostty.  - GitHub - maddada/Ghostex: The Best Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Native Ghostty.",
+    "og_desc": "The Best Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Native Ghostty.  - maddada/Ghostex"
+  },
+  "mariusgm/newfile/newfile": {
+    "token": "mariusgm/newfile/newfile",
+    "homepage": "https://github.com/mariusgm/newfile",
+    "title": "GitHub - mariusgm/newfile: The missing 'New File' button for macOS Finder - customizable file types, per-type starter templates. Free, open-source Finder Sync Extension. brew install --cask mariusgm/newfile/newfile or DMG. · GitHub",
+    "meta_desc": "The missing 'New File' button for macOS Finder - customizable file types, per-type starter templates. Free, open-source Finder Sync Extension. brew install --cask mariusgm/newfile/newfile or DMG. - mariusgm/newfile",
+    "og_desc": "The missing &#39;New File&#39; button for macOS Finder - customizable file types, per-type starter templates. Free, open-source Finder Sync Extension. brew install --cask mariusgm/newfile/newfile o..."
   },
   "mattt/tap/companion": {
     "token": "mattt/tap/companion",
@@ -4223,6 +5081,13 @@
     "meta_desc": "Click to download and learn how to install Azul Mission Control.",
     "og_desc": ""
   },
+  "mediosz/tap/swipeaerospace": {
+    "token": "mediosz/tap/swipeaerospace",
+    "homepage": "https://github.com/MediosZ/SwipeAeroSpace",
+    "title": "GitHub - MediosZ/SwipeAeroSpace: Swipe to change AeroSpace workspaces · GitHub",
+    "meta_desc": "Swipe to change AeroSpace workspaces. Contribute to MediosZ/SwipeAeroSpace development by creating an account on GitHub.",
+    "og_desc": "Swipe to change AeroSpace workspaces. Contribute to MediosZ/SwipeAeroSpace development by creating an account on GitHub."
+  },
   "mhaeuser/mhaeuser/battery-toolkit": {
     "token": "mhaeuser/mhaeuser/battery-toolkit",
     "homepage": "https://github.com/mhaeuser/Battery-Toolkit/",
@@ -4272,6 +5137,48 @@
     "meta_desc": "Sysinternals ZoomIt for MacOS. Contribute to microsoft/Zoomit-Mac development by creating an account on GitHub.",
     "og_desc": "Sysinternals ZoomIt for MacOS. Contribute to microsoft/Zoomit-Mac development by creating an account on GitHub."
   },
+  "mikker/tap/dinky": {
+    "token": "mikker/tap/dinky",
+    "homepage": "https://dinky.rodeo/",
+    "title": "Documentation · dinky",
+    "meta_desc": "A tiling window manager for macOS that leaves System Integrity Protection on.",
+    "og_desc": "A tiling window manager for macOS that leaves System Integrity Protection on."
+  },
+  "mikker/tap/flick-ring": {
+    "token": "mikker/tap/flick-ring",
+    "homepage": "https://github.com/mikker/FlickRing",
+    "title": "GitHub - mikker/FlickRing: Action ring for your normie mouse · GitHub",
+    "meta_desc": "Action ring for your normie mouse. Contribute to mikker/FlickRing development by creating an account on GitHub.",
+    "og_desc": "Action ring for your normie mouse. Contribute to mikker/FlickRing development by creating an account on GitHub."
+  },
+  "mikker/tap/fst": {
+    "token": "mikker/tap/fst",
+    "homepage": "https://github.com/mikker/Fst",
+    "title": "GitHub - mikker/Fst: A fast, minimal native macOS text editor · GitHub",
+    "meta_desc": "A fast, minimal native macOS text editor. Contribute to mikker/Fst development by creating an account on GitHub.",
+    "og_desc": "A fast, minimal native macOS text editor. Contribute to mikker/Fst development by creating an account on GitHub."
+  },
+  "mikker/tap/leader-key": {
+    "token": "mikker/tap/leader-key",
+    "homepage": "https://github.com/mikker/LeaderKey.app",
+    "title": "GitHub - mikker/LeaderKey: The *faster than your launcher* launcher · GitHub",
+    "meta_desc": "The *faster than your launcher* launcher. Contribute to mikker/LeaderKey development by creating an account on GitHub.",
+    "og_desc": "The *faster than your launcher* launcher. Contribute to mikker/LeaderKey development by creating an account on GitHub."
+  },
+  "mikker/tap/poof": {
+    "token": "mikker/tap/poof",
+    "homepage": "https://github.com/mikker/poof",
+    "title": "GitHub - mikker/Poof: macOS text snippet expander · GitHub",
+    "meta_desc": "macOS text snippet expander. Contribute to mikker/Poof development by creating an account on GitHub.",
+    "og_desc": "macOS text snippet expander. Contribute to mikker/Poof development by creating an account on GitHub."
+  },
+  "mikker/tap/wt": {
+    "token": "mikker/tap/wt",
+    "homepage": "https://github.com/mikker/wt",
+    "title": "GitHub - mikker/wt: Ephemeral Git worktree manager · GitHub",
+    "meta_desc": "Ephemeral Git worktree manager. Contribute to mikker/wt development by creating an account on GitHub.",
+    "og_desc": "Ephemeral Git worktree manager. Contribute to mikker/wt development by creating an account on GitHub."
+  },
   "minghinmatthewlam/tap/pi-gui": {
     "token": "minghinmatthewlam/tap/pi-gui",
     "homepage": "https://github.com/minghinmatthewlam/pi-gui",
@@ -4279,12 +5186,33 @@
     "meta_desc": "Electron GUI app for the pi coding agent runtime. Contribute to minghinmatthewlam/pi-gui development by creating an account on GitHub.",
     "og_desc": "Electron GUI app for the pi coding agent runtime. Contribute to minghinmatthewlam/pi-gui development by creating an account on GitHub."
   },
+  "mnemon-dev/tap/mnemon": {
+    "token": "mnemon-dev/tap/mnemon",
+    "homepage": "https://github.com/mnemon-dev/mnemon",
+    "title": "GitHub - mnemon-dev/mnemon: LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime. · GitHub",
+    "meta_desc": "LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime. - mnemon-dev/mnemon",
+    "og_desc": "LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime. - mnemon-dev/..."
+  },
+  "momenbasel/phosphor/phosphor": {
+    "token": "momenbasel/phosphor/phosphor",
+    "homepage": "https://github.com/momenbasel/Phosphor",
+    "title": "GitHub - momenbasel/Phosphor: Free and open-source iOS device manager for macOS. Browse backups, export messages, extract photos, manage apps - no subscriptions, no iCloud lock-in. · GitHub",
+    "meta_desc": "Free and open-source iOS device manager for macOS. Browse backups, export messages, extract photos, manage apps - no subscriptions, no iCloud lock-in. - momenbasel/Phosphor",
+    "og_desc": "Free and open-source iOS device manager for macOS. Browse backups, export messages, extract photos, manage apps - no subscriptions, no iCloud lock-in. - momenbasel/Phosphor"
+  },
   "momenbasel/tap/consolemini": {
     "token": "momenbasel/tap/consolemini",
     "homepage": "https://github.com/momenbasel/ConsoleMini",
     "title": "GitHub - momenbasel/ConsoleMini: Turn a Mac mini into a living-room retro/PS console - beautiful big-picture launcher (Electron + React) · GitHub",
     "meta_desc": "Turn a Mac mini into a living-room retro/PS console - beautiful big-picture launcher (Electron + React) - momenbasel/ConsoleMini",
     "og_desc": "Turn a Mac mini into a living-room retro/PS console - beautiful big-picture launcher (Electron + React) - momenbasel/ConsoleMini"
+  },
+  "mrrockysl/muro/muro": {
+    "token": "mrrockysl/muro/muro",
+    "homepage": "https://github.com/MrRockySL/Muro",
+    "title": "GitHub - MrRockySL/Muro: Live wallpapers for your Mac, with low CPU and RAM usage. Native, free, no paywall. The wallpaper library updates itself. · GitHub",
+    "meta_desc": "Live wallpapers for your Mac, with low CPU and RAM usage. Native, free, no paywall. The wallpaper library updates itself. - MrRockySL/Muro",
+    "og_desc": "Live wallpapers for your Mac, with low CPU and RAM usage. Native, free, no paywall. The wallpaper library updates itself. - MrRockySL/Muro"
   },
   "msitarzewski/agency-agents/agency-agents": {
     "token": "msitarzewski/agency-agents/agency-agents",
@@ -4299,6 +5227,13 @@
     "title": "Brew Browser - a native macOS GUI for Homebrew (Tauri + SwiftUI)",
     "meta_desc": "Browse, search, install, and snapshot Homebrew packages from a small, fast native desktop app. Full source. MIT licensed. No telemetry, no accounts.",
     "og_desc": "Browse, search, install, and snapshot Homebrew packages. Full source. MIT licensed. No telemetry, no accounts."
+  },
+  "murdercode/presto/presto": {
+    "token": "murdercode/presto/presto",
+    "homepage": "https://github.com/murdercode/presto",
+    "title": "GitHub - murdercode/presto: 🧠 Next-gen time tracking app, based on Pomodoro focus method · GitHub",
+    "meta_desc": "🧠 Next-gen time tracking app, based on Pomodoro focus method - murdercode/presto",
+    "og_desc": "🧠 Next-gen time tracking app, based on Pomodoro focus method - murdercode/presto"
   },
   "muxy-app/tap/muxy": {
     "token": "muxy-app/tap/muxy",
@@ -4342,6 +5277,27 @@
     "meta_desc": "macOS dictation app. Contribute to my-monkeys/OpenSuperWhisper development by creating an account on GitHub.",
     "og_desc": "macOS dictation app. Contribute to my-monkeys/OpenSuperWhisper development by creating an account on GitHub."
   },
+  "nanako0129/tokenbar/tokenbar": {
+    "token": "nanako0129/tokenbar/tokenbar",
+    "homepage": "https://github.com/Nanako0129/TokenBar",
+    "title": "GitHub - Nanako0129/syrtis: AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. · GitHub",
+    "meta_desc": "AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. - Nanako0129/syrtis",
+    "og_desc": "AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. - Nanako0129/syrtis"
+  },
+  "nanako0129/tokenbar/tokenbar@beta": {
+    "token": "nanako0129/tokenbar/tokenbar@beta",
+    "homepage": "https://github.com/Nanako0129/TokenBar",
+    "title": "GitHub - Nanako0129/syrtis: AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. · GitHub",
+    "meta_desc": "AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. - Nanako0129/syrtis",
+    "og_desc": "AI token usage & quota monitor for the macOS menu bar - native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & 25+ agents locally. - Nanako0129/syrtis"
+  },
+  "nanako0129/tokenbar/tokenbar@legacy": {
+    "token": "nanako0129/tokenbar/tokenbar@legacy",
+    "homepage": "https://github.com/Nanako0129/TokenBar-Tauri",
+    "title": "GitHub - Nanako0129/TokenBar-Tauri: TokenBar legacy (Tauri 2) - superseded by the native Swift rewrite at Nanako0129/TokenBar · GitHub",
+    "meta_desc": "TokenBar legacy (Tauri 2) - superseded by the native Swift rewrite at Nanako0129/TokenBar - Nanako0129/TokenBar-Tauri",
+    "og_desc": "TokenBar legacy (Tauri 2) - superseded by the native Swift rewrite at Nanako0129/TokenBar - Nanako0129/TokenBar-Tauri"
+  },
   "netbirdio/tap/netbird-ui": {
     "token": "netbirdio/tap/netbird-ui",
     "homepage": "https://www.netbird.io/",
@@ -4369,6 +5325,20 @@
     "title": "GitHub - nickustinov/itsypin-macos: A lightweight macOS menu bar application for quick access to pinned websites · GitHub",
     "meta_desc": "A lightweight macOS menu bar application for quick access to pinned websites - nickustinov/itsypin-macos",
     "og_desc": "A lightweight macOS menu bar application for quick access to pinned websites - nickustinov/itsypin-macos"
+  },
+  "nicoverbruggen/cask/phpmon": {
+    "token": "nicoverbruggen/cask/phpmon",
+    "homepage": "https://phpmon.app",
+    "title": "PHP Monitor: Set up and manage PHP on macOS",
+    "meta_desc": "Free native Mac app for installing PHP, managing Laravel Valet sites, switching PHP versions, configuring extensions, and monitoring your local PHP environment.",
+    "og_desc": "Free native Mac app for installing PHP, managing Laravel Valet sites, switching PHP versions, configuring extensions, and monitoring your local PHP environment."
+  },
+  "nicoverbruggen/cask/phpmon-dev": {
+    "token": "nicoverbruggen/cask/phpmon-dev",
+    "homepage": "https://phpmon.app",
+    "title": "PHP Monitor: Set up and manage PHP on macOS",
+    "meta_desc": "Free native Mac app for installing PHP, managing Laravel Valet sites, switching PHP versions, configuring extensions, and monitoring your local PHP environment.",
+    "og_desc": "Free native Mac app for installing PHP, managing Laravel Valet sites, switching PHP versions, configuring extensions, and monitoring your local PHP environment."
   },
   "nikitabobko/tap/aerospace": {
     "token": "nikitabobko/tap/aerospace",
@@ -4461,6 +5431,27 @@
     "meta_desc": "A markdown editor. Contribute to nkzw-tech/notes development by creating an account on GitHub.",
     "og_desc": "A markdown editor. Contribute to nkzw-tech/notes development by creating an account on GitHub."
   },
+  "nolight132/tap/sonora": {
+    "token": "nolight132/tap/sonora",
+    "homepage": "https://github.com/sonorahq/sonora",
+    "title": "GitHub - sonorahq/sonora: A native, familiar music streaming client · GitHub",
+    "meta_desc": "A native, familiar music streaming client. Contribute to sonorahq/sonora development by creating an account on GitHub.",
+    "og_desc": "A native, familiar music streaming client. Contribute to sonorahq/sonora development by creating an account on GitHub."
+  },
+  "nolight132/tap/sonora-nightly": {
+    "token": "nolight132/tap/sonora-nightly",
+    "homepage": "https://github.com/sonorahq/sonora",
+    "title": "GitHub - sonorahq/sonora: A native, familiar music streaming client · GitHub",
+    "meta_desc": "A native, familiar music streaming client. Contribute to sonorahq/sonora development by creating an account on GitHub.",
+    "og_desc": "A native, familiar music streaming client. Contribute to sonorahq/sonora development by creating an account on GitHub."
+  },
+  "nolight132/tap/tokativ": {
+    "token": "nolight132/tap/tokativ",
+    "homepage": "https://github.com/nolight132/tokativ",
+    "title": "GitHub - nolight132/tokativ: Crossplatform local dictation · GitHub",
+    "meta_desc": "Crossplatform local dictation. Contribute to nolight132/tokativ development by creating an account on GitHub.",
+    "og_desc": "Crossplatform local dictation. Contribute to nolight132/tokativ development by creating an account on GitHub."
+  },
   "notprotonnot/notproton/notproton": {
     "token": "notprotonnot/notproton/notproton",
     "homepage": "https://github.com/NotProtonNot/NotProton",
@@ -4475,12 +5466,185 @@
     "meta_desc": "Contribute to NotWadeGrimridge/PingPlace development by creating an account on GitHub.",
     "og_desc": "Contribute to NotWadeGrimridge/PingPlace development by creating an account on GitHub."
   },
+  "octane0411/tap/openisland": {
+    "token": "octane0411/tap/openisland",
+    "homepage": "https://github.com/Octane0411/open-vibe-island",
+    "title": "GitHub - Octane0411/open-vibe-island: Native macOS control center for AI coding agents - monitor sessions, approve actions, and jump back instantly. · GitHub",
+    "meta_desc": "Native macOS control center for AI coding agents - monitor sessions, approve actions, and jump back instantly. - Octane0411/open-vibe-island",
+    "og_desc": "Native macOS control center for AI coding agents - monitor sessions, approve actions, and jump back instantly. - Octane0411/open-vibe-island"
+  },
   "oktadev/tap/okta": {
     "token": "oktadev/tap/okta",
     "homepage": "https://cli.okta.com/",
     "title": "Okta Dev",
     "meta_desc": "Secure, scalable, and highly available authentication and user management for any app.",
     "og_desc": ""
+  },
+  "omacom/mac/omarchy": {
+    "token": "omacom/mac/omarchy",
+    "homepage": "https://github.com/omacom/omarchy-mac-installer",
+    "title": "GitHub - omacom/omarchy-mac-installer: Apple Silicon macOS installer development: standalone extraction, shared Omarchy integration, and validation. · GitHub",
+    "meta_desc": "Apple Silicon macOS installer development: standalone extraction, shared Omarchy integration, and validation. - omacom/omarchy-mac-installer",
+    "og_desc": "Apple Silicon macOS installer development: standalone extraction, shared Omarchy integration, and validation. - omacom/omarchy-mac-installer"
+  },
+  "oomol-lab/tap/closeup": {
+    "token": "oomol-lab/tap/closeup",
+    "homepage": "https://github.com/oomol-lab/CloseUp",
+    "title": "GitHub - oomol-lab/CloseUp: Put the controls back in Mission Control - close, minimize, zoom, hide, or quit any window right from the macOS Mission Control overview, with full keyboard control. Native, localized, open source. · GitHub",
+    "meta_desc": "Put the controls back in Mission Control - close, minimize, zoom, hide, or quit any window right from the macOS Mission Control overview, with full keyboard control. Native, localized, open source. - oomol-lab/CloseUp",
+    "og_desc": "Put the controls back in Mission Control - close, minimize, zoom, hide, or quit any window right from the macOS Mission Control overview, with full keyboard control. Native, localized, open source...."
+  },
+  "oomol-lab/tap/lockime": {
+    "token": "oomol-lab/tap/lockime",
+    "homepage": "https://github.com/oomol-lab/LockIME",
+    "title": "GitHub - oomol-lab/LockIME: A native macOS menu-bar app that keeps your keyboard input source locked - global, per-app, and per-URL. · GitHub",
+    "meta_desc": "A native macOS menu-bar app that keeps your keyboard input source locked - global, per-app, and per-URL. - oomol-lab/LockIME",
+    "og_desc": "A native macOS menu-bar app that keeps your keyboard input source locked - global, per-app, and per-URL. - oomol-lab/LockIME"
+  },
+  "open-cli-collective/tap/cfl": {
+    "token": "open-cli-collective/tap/cfl",
+    "homepage": "https://github.com/open-cli-collective/atlassian-cli",
+    "title": "GitHub - open-cli-collective/atlassian-cli: CLI tools for Atlassian products and capabilities · GitHub",
+    "meta_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub.",
+    "og_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/codereview-cli": {
+    "token": "open-cli-collective/tap/codereview-cli",
+    "homepage": "https://github.com/open-cli-collective/codereview-cli",
+    "title": "GitHub - open-cli-collective/codereview-cli · GitHub",
+    "meta_desc": "Contribute to open-cli-collective/codereview-cli development by creating an account on GitHub.",
+    "og_desc": "Contribute to open-cli-collective/codereview-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/cpm": {
+    "token": "open-cli-collective/tap/cpm",
+    "homepage": "https://github.com/open-cli-collective/cpm",
+    "title": "GitHub - open-cli-collective/cpm: Claude plugin manager that helps you view & install Claude plugins on a per-project basis, with a better UX than Claude Code. · GitHub",
+    "meta_desc": "Claude plugin manager that helps you view & install Claude plugins on a per-project basis, with a better UX than Claude Code. - open-cli-collective/cpm",
+    "og_desc": "Claude plugin manager that helps you view & install Claude plugins on a per-project basis, with a better UX than Claude Code. - open-cli-collective/cpm"
+  },
+  "open-cli-collective/tap/google-readonly": {
+    "token": "open-cli-collective/tap/google-readonly",
+    "homepage": "https://github.com/open-cli-collective/google-cli",
+    "title": "GitHub - open-cli-collective/google-cli: Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive · GitHub",
+    "meta_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli",
+    "og_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli"
+  },
+  "open-cli-collective/tap/google-readwrite": {
+    "token": "open-cli-collective/tap/google-readwrite",
+    "homepage": "https://github.com/open-cli-collective/google-cli",
+    "title": "GitHub - open-cli-collective/google-cli: Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive · GitHub",
+    "meta_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli",
+    "og_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli"
+  },
+  "open-cli-collective/tap/granola-cli": {
+    "token": "open-cli-collective/tap/granola-cli",
+    "homepage": "https://github.com/open-cli-collective/granola-cli",
+    "title": "GitHub - open-cli-collective/granola-cli: Read-only command-line interface for Granola meeting notes, through Granola's hosted MCP server · GitHub",
+    "meta_desc": "Read-only command-line interface for Granola meeting notes, through Granola's hosted MCP server - open-cli-collective/granola-cli",
+    "og_desc": "Read-only command-line interface for Granola meeting notes, through Granola's hosted MCP server - open-cli-collective/granola-cli"
+  },
+  "open-cli-collective/tap/gro": {
+    "token": "open-cli-collective/tap/gro",
+    "homepage": "https://github.com/open-cli-collective/google-cli",
+    "title": "GitHub - open-cli-collective/google-cli: Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive · GitHub",
+    "meta_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli",
+    "og_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli"
+  },
+  "open-cli-collective/tap/grw": {
+    "token": "open-cli-collective/tap/grw",
+    "homepage": "https://github.com/open-cli-collective/google-cli",
+    "title": "GitHub - open-cli-collective/google-cli: Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive · GitHub",
+    "meta_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli",
+    "og_desc": "Google CLIs: gro (non-destructive) and grw (read-write) for Gmail, Calendar, Contacts, and Drive - open-cli-collective/google-cli"
+  },
+  "open-cli-collective/tap/hubspot-cli": {
+    "token": "open-cli-collective/tap/hubspot-cli",
+    "homepage": "https://github.com/open-cli-collective/hubspot-cli",
+    "title": "GitHub - open-cli-collective/hubspot-cli · GitHub",
+    "meta_desc": "Contribute to open-cli-collective/hubspot-cli development by creating an account on GitHub.",
+    "og_desc": "Contribute to open-cli-collective/hubspot-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/jira-ticket-cli": {
+    "token": "open-cli-collective/tap/jira-ticket-cli",
+    "homepage": "https://github.com/open-cli-collective/atlassian-cli",
+    "title": "GitHub - open-cli-collective/atlassian-cli: CLI tools for Atlassian products and capabilities · GitHub",
+    "meta_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub.",
+    "og_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/jtk": {
+    "token": "open-cli-collective/tap/jtk",
+    "homepage": "https://github.com/open-cli-collective/atlassian-cli",
+    "title": "GitHub - open-cli-collective/atlassian-cli: CLI tools for Atlassian products and capabilities · GitHub",
+    "meta_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub.",
+    "og_desc": "CLI tools for Atlassian products and capabilities. Contribute to open-cli-collective/atlassian-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/newrelic-cli": {
+    "token": "open-cli-collective/tap/newrelic-cli",
+    "homepage": "https://github.com/open-cli-collective/newrelic-cli",
+    "title": "GitHub - open-cli-collective/newrelic-cli: Command-line interface for New Relic · GitHub",
+    "meta_desc": "Command-line interface for New Relic. Contribute to open-cli-collective/newrelic-cli development by creating an account on GitHub.",
+    "og_desc": "Command-line interface for New Relic. Contribute to open-cli-collective/newrelic-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/nrq": {
+    "token": "open-cli-collective/tap/nrq",
+    "homepage": "https://github.com/open-cli-collective/newrelic-cli",
+    "title": "GitHub - open-cli-collective/newrelic-cli: Command-line interface for New Relic · GitHub",
+    "meta_desc": "Command-line interface for New Relic. Contribute to open-cli-collective/newrelic-cli development by creating an account on GitHub.",
+    "og_desc": "Command-line interface for New Relic. Contribute to open-cli-collective/newrelic-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/qlmarkdown2": {
+    "token": "open-cli-collective/tap/qlmarkdown2",
+    "homepage": "https://github.com/open-cli-collective/QLMarkdown2",
+    "error": "HTTP 404"
+  },
+  "open-cli-collective/tap/retune": {
+    "token": "open-cli-collective/tap/retune",
+    "homepage": "https://github.com/open-cli-collective/Retune",
+    "title": "GitHub - open-cli-collective/Retune · GitHub",
+    "meta_desc": "Contribute to open-cli-collective/Retune development by creating an account on GitHub.",
+    "og_desc": "Contribute to open-cli-collective/Retune development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/salesforce-cli": {
+    "token": "open-cli-collective/tap/salesforce-cli",
+    "homepage": "https://github.com/open-cli-collective/salesforce-cli",
+    "title": "GitHub - open-cli-collective/salesforce-cli · GitHub",
+    "meta_desc": "Contribute to open-cli-collective/salesforce-cli development by creating an account on GitHub.",
+    "og_desc": "Contribute to open-cli-collective/salesforce-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/slack-chat-cli": {
+    "token": "open-cli-collective/tap/slack-chat-cli",
+    "homepage": "https://github.com/open-cli-collective/slack-chat-api",
+    "title": "GitHub - open-cli-collective/slack-chat-api: Command-line interface for Slack · GitHub",
+    "meta_desc": "Command-line interface for Slack. Contribute to open-cli-collective/slack-chat-api development by creating an account on GitHub.",
+    "og_desc": "Command-line interface for Slack. Contribute to open-cli-collective/slack-chat-api development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/slaw": {
+    "token": "open-cli-collective/tap/slaw",
+    "homepage": "https://github.com/open-cli-collective/slack-app-web",
+    "title": "GitHub - open-cli-collective/slack-app-web: Slack app steps that have no API (configuration tokens, installs, bot tokens, icons), done in a headless browser · GitHub",
+    "meta_desc": "Slack app steps that have no API (configuration tokens, installs, bot tokens, icons), done in a headless browser - open-cli-collective/slack-app-web",
+    "og_desc": "Slack app steps that have no API (configuration tokens, installs, bot tokens, icons), done in a headless browser - open-cli-collective/slack-app-web"
+  },
+  "open-cli-collective/tap/slck": {
+    "token": "open-cli-collective/tap/slck",
+    "homepage": "https://github.com/open-cli-collective/slack-chat-api",
+    "title": "GitHub - open-cli-collective/slack-chat-api: Command-line interface for Slack · GitHub",
+    "meta_desc": "Command-line interface for Slack. Contribute to open-cli-collective/slack-chat-api development by creating an account on GitHub.",
+    "og_desc": "Command-line interface for Slack. Contribute to open-cli-collective/slack-chat-api development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/spotify-cli": {
+    "token": "open-cli-collective/tap/spotify-cli",
+    "homepage": "https://github.com/open-cli-collective/spotify-cli",
+    "title": "GitHub - open-cli-collective/spotify-cli: A command-line interface for Spotify · GitHub",
+    "meta_desc": "A command-line interface for Spotify. Contribute to open-cli-collective/spotify-cli development by creating an account on GitHub.",
+    "og_desc": "A command-line interface for Spotify. Contribute to open-cli-collective/spotify-cli development by creating an account on GitHub."
+  },
+  "open-cli-collective/tap/swiftmarkdown": {
+    "token": "open-cli-collective/tap/swiftmarkdown",
+    "homepage": "https://github.com/open-cli-collective/SwiftMarkdown",
+    "title": "GitHub - open-cli-collective/SwiftMarkdown · GitHub",
+    "meta_desc": "Contribute to open-cli-collective/SwiftMarkdown development by creating an account on GitHub.",
+    "og_desc": "Contribute to open-cli-collective/SwiftMarkdown development by creating an account on GitHub."
   },
   "open-pencil/tap/open-pencil": {
     "token": "open-pencil/tap/open-pencil",
@@ -4510,6 +5674,13 @@
     "meta_desc": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills - with sandbox isolation, multi-model support, and Feishu/Slack integration. - OpenCoworkAI/open-cowork",
     "og_desc": "Open-source AI agent desktop app for Windows &amp; macOS. One-click install Claude Code, MCP tools, and Skills - with sandbox isolation, multi-model support, and Feishu/Slack integration. - OpenCow..."
   },
+  "opgginc/tap/opencode-bar": {
+    "token": "opgginc/tap/opencode-bar",
+    "homepage": "https://github.com/opgginc/opencode-bar",
+    "title": "GitHub - opgginc/opencode-bar: Effortless token usage tracker for OpenCode · GitHub",
+    "meta_desc": "Effortless token usage tracker for OpenCode. Contribute to opgginc/opencode-bar development by creating an account on GitHub.",
+    "og_desc": "Effortless token usage tracker for OpenCode. Contribute to opgginc/opencode-bar development by creating an account on GitHub."
+  },
   "otuerk/sidebar/sidebar": {
     "token": "otuerk/sidebar/sidebar",
     "homepage": "https://sidebarapp.net/",
@@ -4523,6 +5694,13 @@
     "title": "GitHub - ovh/ovhcloud-cli: ☀ Official Command Line Interface to manage your OVHcloud services ☁ · GitHub",
     "meta_desc": "☀ Official Command Line Interface to manage your OVHcloud services ☁ - ovh/ovhcloud-cli",
     "og_desc": "☀ Official Command Line Interface to manage your OVHcloud services ☁ - ovh/ovhcloud-cli"
+  },
+  "owenthereal/upterm/upterm": {
+    "token": "owenthereal/upterm/upterm",
+    "homepage": "https://upterm.dev",
+    "title": "Upterm | Instant Terminal Sharing",
+    "meta_desc": "Instant Terminal Sharing",
+    "og_desc": "Instant Terminal Sharing"
   },
   "owo-network/brew/herdrm": {
     "token": "owo-network/brew/herdrm",
@@ -4615,6 +5793,27 @@
     "meta_desc": "",
     "og_desc": ""
   },
+  "parallel-web/tap/parallel-cli": {
+    "token": "parallel-web/tap/parallel-cli",
+    "homepage": "https://github.com/parallel-web/parallel-web-tools",
+    "title": "GitHub - parallel-web/parallel-web-tools: Contains parallel-cli and the parallel-web-tools Python package. Built on the parallel-web SDK: https://github.com/parallel-web/parallel-sdk-python · GitHub",
+    "meta_desc": "Contains parallel-cli and the parallel-web-tools Python package. Built on the parallel-web SDK: https://github.com/parallel-web/parallel-sdk-python - parallel-web/parallel-web-tools",
+    "og_desc": "Contains parallel-cli and the parallel-web-tools Python package. Built on the parallel-web SDK: https://github.com/parallel-web/parallel-sdk-python - parallel-web/parallel-web-tools"
+  },
+  "pasrom/meeting-transcriber/meeting-transcriber": {
+    "token": "pasrom/meeting-transcriber/meeting-transcriber",
+    "homepage": "https://github.com/pasrom/meeting-transcriber",
+    "title": "GitHub - pasrom/meeting-transcriber: On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes & separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. · GitHub",
+    "meta_desc": "On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes & separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. - pasrom/meeting-transcriber",
+    "og_desc": "On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes &amp; separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. - pasrom/meeting..."
+  },
+  "pasrom/meeting-transcriber/meeting-transcriber@beta": {
+    "token": "pasrom/meeting-transcriber/meeting-transcriber@beta",
+    "homepage": "https://github.com/pasrom/meeting-transcriber",
+    "title": "GitHub - pasrom/meeting-transcriber: On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes & separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. · GitHub",
+    "meta_desc": "On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes & separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. - pasrom/meeting-transcriber",
+    "og_desc": "On-device meeting transcriber for macOS - auto-records Teams/Zoom/Webex, transcribes &amp; separates speakers locally. No cloud. Open-source alternative to Otter/Granola/Fireflies. - pasrom/meeting..."
+  },
   "penso/tap/arbor": {
     "token": "penso/tap/arbor",
     "homepage": "https://github.com/penso/arbor",
@@ -4706,6 +5905,89 @@
     "meta_desc": "Manage your system. Contribute to projectbluefin/chairlift development by creating an account on GitHub.",
     "og_desc": "Manage your system. Contribute to projectbluefin/chairlift development by creating an account on GitHub."
   },
+  "puppetlabs/puppet/pdk": {
+    "token": "puppetlabs/puppet/pdk",
+    "homepage": "https://github.com/puppetlabs/pdk",
+    "title": "GitHub - puppetlabs/pdk: The shortest path to better modules: Puppet Development Kit; Download: · GitHub",
+    "meta_desc": "The shortest path to better modules: Puppet Development Kit; Download: - puppetlabs/pdk",
+    "og_desc": "The shortest path to better modules: Puppet Development Kit; Download: - puppetlabs/pdk"
+  },
+  "puppetlabs/puppet/pdk@1": {
+    "token": "puppetlabs/puppet/pdk@1",
+    "homepage": "https://github.com/puppetlabs/pdk",
+    "title": "GitHub - puppetlabs/pdk: The shortest path to better modules: Puppet Development Kit; Download: · GitHub",
+    "meta_desc": "The shortest path to better modules: Puppet Development Kit; Download: - puppetlabs/pdk",
+    "og_desc": "The shortest path to better modules: Puppet Development Kit; Download: - puppetlabs/pdk"
+  },
+  "puppetlabs/puppet/pe-client-tools": {
+    "token": "puppetlabs/puppet/pe-client-tools",
+    "homepage": "https://puppet.com/docs/pe/latest/installing_pe_client_tools.html",
+    "title": "Install client tools",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  "puppetlabs/puppet/pe-client-tools-2018.1": {
+    "token": "puppetlabs/puppet/pe-client-tools-2018.1",
+    "homepage": "https://puppet.com/docs/pe/2018.1/installing_pe_client_tools.html",
+    "title": "docs-archive/pe/2018.1 at main · puppetlabs/docs-archive · GitHub",
+    "meta_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - docs-archive/pe/2018.1 at main · puppetlabs/docs-archive",
+    "og_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - puppetlabs/docs-archive"
+  },
+  "puppetlabs/puppet/pe-client-tools-2019.3": {
+    "token": "puppetlabs/puppet/pe-client-tools-2019.3",
+    "homepage": "https://puppet.com/docs/pe/2019.3/installing_pe_client_tools.html",
+    "title": "docs-archive/pe/2019.3 at main · puppetlabs/docs-archive · GitHub",
+    "meta_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - docs-archive/pe/2019.3 at main · puppetlabs/docs-archive",
+    "og_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - puppetlabs/docs-archive"
+  },
+  "puppetlabs/puppet/pe-client-tools-2019.8": {
+    "token": "puppetlabs/puppet/pe-client-tools-2019.8",
+    "homepage": "https://puppet.com/docs/pe/2019.8/installing_pe_client_tools.html",
+    "title": "docs-archive/pe/2019.8 at main · puppetlabs/docs-archive · GitHub",
+    "meta_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - docs-archive/pe/2019.8 at main · puppetlabs/docs-archive",
+    "og_desc": "An archive of old documentation for Puppet, PE, CD4PE, Pipelines, and their related components. No longer updated, for reference only. - puppetlabs/docs-archive"
+  },
+  "puppetlabs/puppet/puppet-agent": {
+    "token": "puppetlabs/puppet/puppet-agent",
+    "homepage": "https://puppet.com/docs/puppet/7.34/about_agent.html",
+    "error": "HTTP 404"
+  },
+  "puppetlabs/puppet/puppet-agent-5": {
+    "token": "puppetlabs/puppet/puppet-agent-5",
+    "homepage": "https://puppet.com/docs/puppet/5.5/about_agent.html",
+    "title": "Component versions in puppet-agent",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  "puppetlabs/puppet/puppet-agent-6": {
+    "token": "puppetlabs/puppet/puppet-agent-6",
+    "homepage": "https://puppet.com/docs/puppet/6.28/about_agent.html",
+    "error": "HTTP 404"
+  },
+  "puppetlabs/puppet/puppet-agent-7": {
+    "token": "puppetlabs/puppet/puppet-agent-7",
+    "homepage": "https://puppet.com/docs/puppet/7.34/about_agent.html",
+    "error": "HTTP 404"
+  },
+  "puppetlabs/puppet/puppet-agent-8": {
+    "token": "puppetlabs/puppet/puppet-agent-8",
+    "homepage": "https://puppet.com/docs/puppet/8.10/about_agent.html",
+    "error": "HTTP 404"
+  },
+  "puppetlabs/puppet/puppet-bolt": {
+    "token": "puppetlabs/puppet/puppet-bolt",
+    "homepage": "https://github.com/puppetlabs/bolt",
+    "title": "GitHub - puppetlabs/bolt: Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be installed on your local workstation and connects directly to remote nodes with S",
+    "meta_desc": "Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be installed on your local workstation and connects directly to remote nodes with SSH or WinRM, so you are not required to install any agent software. - puppetlabs/bolt",
+    "og_desc": "Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be ins..."
+  },
+  "puppetlabs/puppet/puppet-bolt@2": {
+    "token": "puppetlabs/puppet/puppet-bolt@2",
+    "homepage": "https://github.com/puppetlabs/bolt",
+    "title": "GitHub - puppetlabs/bolt: Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be installed on your local workstation and connects directly to remote nodes with S",
+    "meta_desc": "Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be installed on your local workstation and connects directly to remote nodes with SSH or WinRM, so you are not required to install any agent software. - puppetlabs/bolt",
+    "og_desc": "Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure on an as-needed basis or as part of a greater orchestration workflow. It can be ins..."
+  },
   "pwndbg/tap/pwndbg-gdb": {
     "token": "pwndbg/tap/pwndbg-gdb",
     "homepage": "https://github.com/pwndbg/pwndbg",
@@ -4790,12 +6072,40 @@
     "meta_desc": "",
     "og_desc": ""
   },
+  "ramonvermeulen/whosthere/whosthere": {
+    "token": "ramonvermeulen/whosthere/whosthere",
+    "homepage": "https://github.com/ramonvermeulen/whosthere",
+    "title": "GitHub - ramonvermeulen/whosthere: Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go.  Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there? 🚪 · GitHub",
+    "meta_desc": "Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go.  Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there? 🚪 - ramonvermeulen/whosthere",
+    "og_desc": "Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go.  Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who&#39;s there? 🚪 ..."
+  },
+  "rana-gmbh/filefluss/filefluss": {
+    "token": "rana-gmbh/filefluss/filefluss",
+    "homepage": "https://github.com/rana-gmbh/filefluss",
+    "title": "GitHub - rana-gmbh/FileFluss: Handle files easily across cloud storage providers and your local hard drive · GitHub",
+    "meta_desc": "Handle files easily across cloud storage providers and your local hard drive - rana-gmbh/FileFluss",
+    "og_desc": "Handle files easily across cloud storage providers and your local hard drive - rana-gmbh/FileFluss"
+  },
   "rana-gmbh/netfluss/netfluss": {
     "token": "rana-gmbh/netfluss/netfluss",
     "homepage": "https://github.com/rana-gmbh/NetFluss",
     "title": "GitHub - rana-gmbh/NetFluss: A light-weight & open-source menubar app that shows current upload & download speed plus the top apps using bandwidth · GitHub",
     "meta_desc": "A light-weight & open-source menubar app that shows current upload & download speed plus the top apps using bandwidth - rana-gmbh/NetFluss",
     "og_desc": "A light-weight & open-source menubar app that shows current upload & download speed plus the top apps using bandwidth - rana-gmbh/NetFluss"
+  },
+  "realskyrin/tap/capcap": {
+    "token": "realskyrin/tap/capcap",
+    "homepage": "https://github.com/realskyrin/capcap",
+    "title": "GitHub - realskyrin/capcap: ⌘⌘ - A lightweight, native macOS screenshot tool that lives in your menu bar. Double-tap ⌘ Command to capture any region of your screen - instantly copied to clipboard, or annotate first with pen and mosaic tools. · GitHub",
+    "meta_desc": "⌘⌘ - A lightweight, native macOS screenshot tool that lives in your menu bar. Double-tap ⌘ Command to capture any region of your screen - instantly copied to clipboard, or annotate first with pen and mosaic tools. - realskyrin/capcap",
+    "og_desc": "⌘⌘ - A lightweight, native macOS screenshot tool that lives in your menu bar. Double-tap ⌘ Command to capture any region of your screen - instantly copied to clipboard, or annotate first with pen a..."
+  },
+  "realskyrin/tap/clipcap": {
+    "token": "realskyrin/tap/clipcap",
+    "homepage": "https://github.com/realskyrin/clipcap",
+    "title": "GitHub - realskyrin/clipcap: Permission-free screenshot editor for Mac, light version of capcap · GitHub",
+    "meta_desc": "Permission-free screenshot editor for Mac, light version of capcap - realskyrin/clipcap",
+    "og_desc": "Permission-free screenshot editor for Mac, light version of capcap - realskyrin/clipcap"
   },
   "redis-stack/redis-stack/redis-stack": {
     "token": "redis-stack/redis-stack/redis-stack",
@@ -4832,6 +6142,13 @@
     "meta_desc": "Developers love Redis. Unlock the full potential of the Redis database with Redis Enterprise and start building blazing fast apps.",
     "og_desc": "Developers love Redis. Unlock the full potential of the Redis database with Redis Enterprise and start building blazing fast apps."
   },
+  "rest-sh/tap/restish": {
+    "token": "rest-sh/tap/restish",
+    "homepage": "https://rest.sh",
+    "title": "Restish",
+    "meta_desc": "A CLI for any REST-ish API. Discover operations, auth, and schemas from the server with generated commands, shorthand input, filtering, and colorized output.",
+    "og_desc": "A CLI for any REST-ish API. Discover operations, auth, and schemas from the server with generated commands, shorthand input, filtering, and colorized output."
+  },
   "rive-app/tap/rive-cli": {
     "token": "rive-app/tap/rive-cli",
     "homepage": "https://rive.app/",
@@ -4859,6 +6176,13 @@
     "title": "GitHub - RoversX/ThinkTerm: A modern terminal with a built-in multiplexer: close it and your sessions keep running. Run shells and tons of AI agents across your machines, then pick them up from desktop, browser, TUI and more. Written in Rust with no UI framework: interface drawn straight on the GPU.",
     "meta_desc": "A modern terminal with a built-in multiplexer: close it and your sessions keep running. Run shells and tons of AI agents across your machines, then pick them up from desktop, browser, TUI and more. Written in Rust with no UI framework: interface drawn straight on the GPU. No Electron, GPUI or webview. - RoversX/ThinkTerm",
     "og_desc": "A modern terminal with a built-in multiplexer: close it and your sessions keep running. Run shells and tons of AI agents across your machines, then pick them up from desktop, browser, TUI and more...."
+  },
+  "rvarunrathod/tap/hifidelity": {
+    "token": "rvarunrathod/tap/hifidelity",
+    "homepage": "https://github.com/rvarunrathod/HiFidelity",
+    "title": "GitHub - rvarunrathod/HiFidelity: A native macOS offline audiophile music player build with BASS audio library and Taglib · GitHub",
+    "meta_desc": "A native macOS offline audiophile music player build with BASS audio library and Taglib - rvarunrathod/HiFidelity",
+    "og_desc": "A native macOS offline audiophile music player build with BASS audio library and Taglib - rvarunrathod/HiFidelity"
   },
   "safedep/tap/cli": {
     "token": "safedep/tap/cli",
@@ -4901,6 +6225,55 @@
     "title": "Sill: windows from your Mac on your iPhone and iPad",
     "meta_desc": "Sill shows windows from your Mac on your iPhone and iPad. Free, with no account and no servers.",
     "og_desc": "Any window from your Mac, live on your iPhone or iPad, with touch, a trackpad and keys. Free and open source, no account, no servers."
+  },
+  "sane-apps/tap/sanebar": {
+    "token": "sane-apps/tap/sanebar",
+    "homepage": "https://sanebar.com",
+    "title": "SaneBar - Hide Menu Bar Icons & Lock with Touch ID | Mac",
+    "meta_desc": "Hide and organize macOS menu bar icons. Free and fully open source (MIT), every feature unlocked, no trial or license. Private and on-device by default.",
+    "og_desc": "Hide and organize macOS menu bar icons. Free and fully open source (MIT), every feature unlocked, no trial or license. Private and on-device by default."
+  },
+  "sane-apps/tap/saneclick": {
+    "token": "sane-apps/tap/saneclick",
+    "homepage": "https://saneclick.com",
+    "title": "SaneClick: 62 Right-Click Finder Actions for Mac",
+    "meta_desc": "Copy text from images, convert HEIC, make PDFs, rename files and run your own scripts in Finder. 62 right-click actions. 14-day trial, then $14.99 once.",
+    "og_desc": "Copy text from images, convert HEIC, make PDFs, rename files and run your own scripts in Finder. 62 right-click actions. 14-day trial, then $14.99 once."
+  },
+  "sane-apps/tap/saneclip": {
+    "token": "sane-apps/tap/saneclip",
+    "homepage": "https://saneclip.com",
+    "title": "SaneClip - Clipboard Manager for Mac with Touch ID Lock",
+    "meta_desc": "Private clipboard manager for Mac: Touch ID lock, AES-256 encryption, OCR text capture, snippets and a paste stack. Free 14-day trial, then $14.99 once.",
+    "og_desc": "Private clipboard manager for Mac: Touch ID lock, AES-256 encryption, OCR text capture, snippets and a paste stack. Free 14-day trial, then $14.99 once."
+  },
+  "sane-apps/tap/sanehosts": {
+    "token": "sane-apps/tap/sanehosts",
+    "homepage": "https://sanehosts.com",
+    "title": "SaneHosts - Block Ads & Trackers in Every App on Your Mac",
+    "meta_desc": "Block ads and trackers in every app on your Mac. Allow the sites you need, keep lists current, and lock it with Touch ID. 14-day trial, then buy once.",
+    "og_desc": "Block ads and trackers in every app on your Mac. Allow the sites you need, keep lists current, and lock it with Touch ID. 14-day trial, then buy once."
+  },
+  "sane-apps/tap/sanesales": {
+    "token": "sane-apps/tap/sanesales",
+    "homepage": "https://sanesales.com",
+    "title": "SaneSales - Bring Sanity to your Sales Tracking",
+    "meta_desc": "Free, private sales tracker for indie sellers on Lemon Squeezy, Gumroad and Stripe. Mac, iPhone, iPad, Apple Watch, widgets, menu bar and CSV export.",
+    "og_desc": "Free, private sales tracker for indie sellers on Lemon Squeezy, Gumroad and Stripe. Mac, iPhone, iPad, Apple Watch, widgets, menu bar and CSV export."
+  },
+  "santosh7017/androidfilesync/androidfilesync": {
+    "token": "santosh7017/androidfilesync/androidfilesync",
+    "homepage": "https://santosh7017.github.io/AndroidFileSync/",
+    "title": "AndroidFileSync - Best Free Way to Transfer Files Between Android and Mac | USB & WiFi",
+    "meta_desc": "The best free way to transfer files between Android and Mac. Browse, copy, and manage files over USB or WiFi - no cloud, no account. Drag & drop, QR code pairing, app manager. Open source macOS app, alternative to Android File Transfer.",
+    "og_desc": "Transfer files between Android and Mac over USB or WiFi. Free, open-source, no cloud. Drag & drop, QR code pairing, app manager."
+  },
+  "santosh7017/androidfilesync/androidfilesync-beta": {
+    "token": "santosh7017/androidfilesync/androidfilesync-beta",
+    "homepage": "https://santosh7017.github.io/AndroidFileSync/",
+    "title": "AndroidFileSync - Best Free Way to Transfer Files Between Android and Mac | USB & WiFi",
+    "meta_desc": "The best free way to transfer files between Android and Mac. Browse, copy, and manage files over USB or WiFi - no cloud, no account. Drag & drop, QR code pairing, app manager. Open source macOS app, alternative to Android File Transfer.",
+    "og_desc": "Transfer files between Android and Mac over USB or WiFi. Free, open-source, no cloud. Drag & drop, QR code pairing, app manager."
   },
   "sanyam-g/switch/switch": {
     "token": "sanyam-g/switch/switch",
@@ -5301,6 +6674,55 @@
     "meta_desc": "",
     "og_desc": ""
   },
+  "saragordic/tap/rooms": {
+    "token": "saragordic/tap/rooms",
+    "homepage": "https://github.com/saragordic/rooms",
+    "title": "GitHub - saragordic/rooms: Switch between projects on your Mac. Every project is a room: its windows, laid out, one shortcut away. · GitHub",
+    "meta_desc": "Switch between projects on your Mac. Every project is a room: its windows, laid out, one shortcut away. - saragordic/rooms",
+    "og_desc": "Switch between projects on your Mac. Every project is a room: its windows, laid out, one shortcut away. - saragordic/rooms"
+  },
+  "saragordic/tap/window-sweaters": {
+    "token": "saragordic/tap/window-sweaters",
+    "homepage": "https://github.com/saragordic/window-sweaters",
+    "title": "GitHub - saragordic/window-sweaters: A macOS menu-bar app that dresses your windows in knitted borders. · GitHub",
+    "meta_desc": "A macOS menu-bar app that dresses your windows in knitted borders. - saragordic/window-sweaters",
+    "og_desc": "A macOS menu-bar app that dresses your windows in knitted borders. - saragordic/window-sweaters"
+  },
+  "shobhit99/tap/holdmylid": {
+    "token": "shobhit99/tap/holdmylid",
+    "homepage": "https://holdmylid.app/",
+    "title": "Hold My Lid - Keep your Mac awake for coding agents",
+    "meta_desc": "Hold My Lid is a macOS menu bar app that keeps your Mac awake while Claude Code, Codex, and other coding agents work, even with the lid closed. Auto-sleeps when they finish.",
+    "og_desc": "Hold My Lid is a macOS menu bar app that keeps your Mac awake while Claude Code, Codex, and other coding agents work, even with the lid closed. Auto-sleeps when they finish."
+  },
+  "shobhit99/tap/holdmynotes": {
+    "token": "shobhit99/tap/holdmynotes",
+    "homepage": "https://github.com/shobhit99/holdmynotes-releases",
+    "title": "GitHub - shobhit99/holdmynotes-releases: Hold my notes · GitHub",
+    "meta_desc": "Hold my notes. Contribute to shobhit99/holdmynotes-releases development by creating an account on GitHub.",
+    "og_desc": "Hold my notes. Contribute to shobhit99/holdmynotes-releases development by creating an account on GitHub."
+  },
+  "shobhit99/tap/supercmd": {
+    "token": "shobhit99/tap/supercmd",
+    "homepage": "https://supercmd.sh/",
+    "title": "SuperCmd - Native macOS Launcher & Raycast Alternative",
+    "meta_desc": "SuperCmd is a fast, native macOS launcher built in Swift with AI agents, unlimited clipboard history, snippets, window management, and Raycast extensions.",
+    "og_desc": "A fast, native Mac launcher with AI agents, unlimited clipboard history, window management, snippets, and Raycast extensions."
+  },
+  "shobhit99/tap/superisland": {
+    "token": "shobhit99/tap/superisland",
+    "homepage": "https://dynamicisland.app/",
+    "title": "Dynamic Island for Mac - SuperIsland",
+    "meta_desc": "Bring Dynamic Island to your Mac. SuperIsland adds live activities to your MacBook's notch - music, battery, notifications, calendar and more.",
+    "og_desc": "Bring Dynamic Island to your Mac. SuperIsland adds live activities to your MacBook's notch - music, battery, notifications, calendar and more."
+  },
+  "shopware/tap/shopware-cli": {
+    "token": "shopware/tap/shopware-cli",
+    "homepage": "https://shopware.com",
+    "title": "The ecommerce platform to power your online business | Shopware",
+    "meta_desc": "Shopware is a trendsetting ecommerce platform for building and customizing a fully responsive online store with the perfect blend of design and functionality.",
+    "og_desc": "Shopware is a trendsetting ecommerce platform for building and customizing a fully responsive online store with the perfect blend of design and functionality."
+  },
   "siddharthvaddem/openscreen/openscreen": {
     "token": "siddharthvaddem/openscreen/openscreen",
     "homepage": "https://github.com/siddharthvaddem/openscreen",
@@ -5483,6 +6905,13 @@
     "meta_desc": "The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, and cluster audits - all in one Go binary. - skyhook-io/radar",
     "og_desc": "The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what&#39;s broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, a..."
   },
+  "slopus/tap/happy": {
+    "token": "slopus/tap/happy",
+    "homepage": "https://happy.engineering/desktop/",
+    "title": "Happy - Open-Source Harness for Claude Code, Codex, Grok, Gemini & More",
+    "meta_desc": "Happy Engineering (previously Happy Coder): orchestrate Claude, Codex, Grok, Gemini and more in one app, on desktop and phone. Open source, reusing your subscriptions.",
+    "og_desc": "Orchestrate Claude, Codex, Grok, Gemini and more in one app. Happy is an open-source harness that reuses the subscriptions you already pay for."
+  },
   "snowflakedb/snowflake-cli/snowcli": {
     "token": "snowflakedb/snowflake-cli/snowcli",
     "homepage": "https://github.com/snowflakedb/snowflake-cli",
@@ -5539,6 +6968,13 @@
     "meta_desc": "Spacelift client and CLI. Contribute to spacelift-io/spacectl development by creating an account on GitHub.",
     "og_desc": "Spacelift client and CLI. Contribute to spacelift-io/spacectl development by creating an account on GitHub."
   },
+  "srimanachanta/tap/stasis": {
+    "token": "srimanachanta/tap/stasis",
+    "homepage": "https://github.com/srimanachanta/Stasis",
+    "title": "GitHub - srimanachanta/Stasis: Battery Management and Dashboard for Apple Silicon - A Better Battery Icon · GitHub",
+    "meta_desc": "Battery Management and Dashboard for Apple Silicon - A Better Battery Icon - srimanachanta/Stasis",
+    "og_desc": "Battery Management and Dashboard for Apple Silicon - A Better Battery Icon - srimanachanta/Stasis"
+  },
   "stablyai/orca/orca": {
     "token": "stablyai/orca/orca",
     "homepage": "https://orca.dev/",
@@ -5559,6 +6995,34 @@
     "title": "GitHub - stackitcloud/stackit-cli: A command-line interface to manage STACKIT resources · GitHub",
     "meta_desc": "A command-line interface to manage STACKIT resources - stackitcloud/stackit-cli",
     "og_desc": "A command-line interface to manage STACKIT resources - stackitcloud/stackit-cli"
+  },
+  "stainless-api/tap/stl": {
+    "token": "stainless-api/tap/stl",
+    "homepage": "https://stainless.com",
+    "title": "Stainless has joined Anthropic",
+    "meta_desc": "Stainless has joined Anthropic to continue our mission to make software better for everyone.",
+    "og_desc": "Stainless has joined Anthropic to continue our mission to make software better for everyone."
+  },
+  "starhaven-io/tap/macosdb": {
+    "token": "starhaven-io/tap/macosdb",
+    "homepage": "https://macosdb.com/",
+    "title": "macOSdb - Apple Platform Component Database",
+    "meta_desc": "A catalog of open-source components across macOS and Xcode releases for Apple silicon.",
+    "og_desc": "A catalog of open-source components across macOS and Xcode releases for Apple silicon."
+  },
+  "starhaven-io/tap/midden": {
+    "token": "starhaven-io/tap/midden",
+    "homepage": "https://github.com/starhaven-io/midden",
+    "title": "GitHub - starhaven-io/midden: Resolve, audit, visualize, and clean coding-agent context and state. · GitHub",
+    "meta_desc": "Resolve, audit, visualize, and clean coding-agent context and state. - starhaven-io/midden",
+    "og_desc": "Resolve, audit, visualize, and clean coding-agent context and state. - starhaven-io/midden"
+  },
+  "starhaven-io/tap/pinprick": {
+    "token": "starhaven-io/tap/pinprick",
+    "homepage": "https://pinprick.rs/",
+    "title": "pinprick: GitHub Actions supply chain security",
+    "meta_desc": "GitHub Actions supply chain security. Pin actions to SHAs, audit them for runtime fetch patterns that bypass pinning, and score a repository's overall posture.",
+    "og_desc": "GitHub Actions supply chain security. Pin actions to SHAs, audit them for runtime fetch patterns that bypass pinning, and score a repository's overall posture."
   },
   "steamre/tools/depotdownloader": {
     "token": "steamre/tools/depotdownloader",
@@ -5602,12 +7066,47 @@
     "meta_desc": "Script to install Unity 3D versions from the command line on macOS - sttz/install-unity",
     "og_desc": "Script to install Unity 3D versions from the command line on macOS - sttz/install-unity"
   },
+  "sunnyyoung/tap/applereserver": {
+    "token": "sunnyyoung/tap/applereserver",
+    "homepage": "https://github.com/Sunnyyoung/AppleReserver",
+    "title": "GitHub - sunnyyoung/AppleReserver: Apple 官方预约命令行监控助手 · GitHub",
+    "meta_desc": "Apple 官方预约命令行监控助手. Contribute to sunnyyoung/AppleReserver development by creating an account on GitHub.",
+    "og_desc": "Apple 官方预约命令行监控助手. Contribute to sunnyyoung/AppleReserver development by creating an account on GitHub."
+  },
+  "sunnyyoung/tap/swift-runtime-support": {
+    "token": "sunnyyoung/tap/swift-runtime-support",
+    "homepage": "https://support.apple.com/kb/dl1998",
+    "title": "Download Swift 5 Runtime Support for Command Line Tools - Apple Support",
+    "meta_desc": "Starting with Xcode 10.2, Swift 5 command line programs you build require the Swift 5 runtime support libraries built into macOS.",
+    "og_desc": "Starting with Xcode 10.2, Swift 5 command line programs you build require the Swift 5 runtime support libraries built into macOS."
+  },
+  "sunnyyoung/tap/wechattweak-cli": {
+    "token": "sunnyyoung/tap/wechattweak-cli",
+    "homepage": "https://tweaks.app",
+    "title": "WeChatTweak | A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多开 🔨",
+    "meta_desc": "A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多开 🔨",
+    "og_desc": "A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多开 🔨"
+  },
+  "supercmdlabs/supercmd/supercmd": {
+    "token": "supercmdlabs/supercmd/supercmd",
+    "homepage": "https://supercmd.sh/",
+    "title": "SuperCmd - Native macOS Launcher & Raycast Alternative",
+    "meta_desc": "SuperCmd is a fast, native macOS launcher built in Swift with AI agents, unlimited clipboard history, snippets, window management, and Raycast extensions.",
+    "og_desc": "A fast, native Mac launcher with AI agents, unlimited clipboard history, window management, snippets, and Raycast extensions."
+  },
   "surgedm/tap/surge": {
     "token": "surgedm/tap/surge",
     "homepage": "https://github.com/SurgeDM/Surge",
     "title": "GitHub - SurgeDM/Surge: Blazing fast TUI download manager built in Go for power users · GitHub",
     "meta_desc": "Blazing fast TUI download manager built in Go for power users - SurgeDM/Surge",
     "og_desc": "Blazing fast TUI download manager built in Go for power users - SurgeDM/Surge"
+  },
+  "suzuki-shunsuke/ghtkn/ghtkn": {
+    "token": "suzuki-shunsuke/ghtkn/ghtkn",
+    "homepage": "https://github.com/suzuki-shunsuke/ghtkn",
+    "title": "GitHub - suzuki-shunsuke/ghtkn: A CLI to create short-lived (8 hours) GitHub App User Access Token for secure local development · GitHub",
+    "meta_desc": "A CLI to create short-lived (8 hours) GitHub App User Access Token for secure local development - suzuki-shunsuke/ghtkn",
+    "og_desc": "A CLI to create short-lived (8 hours) GitHub App User Access Token for secure local development - suzuki-shunsuke/ghtkn"
   },
   "suzuki-shunsuke/tfcmt/tfcmt": {
     "token": "suzuki-shunsuke/tfcmt/tfcmt",
@@ -5616,12 +7115,82 @@
     "meta_desc": "tfcmt enhances mercari/tfnotify in many ways, including Terraform >= v0.15 support and advanced formatting options - suzuki-shunsuke/tfcmt",
     "og_desc": "tfcmt enhances mercari/tfnotify in many ways, including Terraform >= v0.15 support and advanced formatting options - suzuki-shunsuke/tfcmt"
   },
+  "t8y2/tap/motty": {
+    "token": "t8y2/tap/motty",
+    "homepage": "https://motty.page/",
+    "title": "Motty - 原生 SSH 客户端：SFTP、VNC 与 RDP",
+    "meta_desc": "原生桌面 SSH 工作台：终端、SFTP/SCP、端口转发、VNC 与 RDP 远程桌面、AI 助手都在一个窗口里。Go 编写，没有 Electron，空闲时保持安静。免费开源，支持 macOS、Windows 和 Linux。",
+    "og_desc": "原生桌面 SSH 工作台：终端、SFTP/SCP、端口转发、VNC 与 RDP 远程桌面、AI 助手都在一个窗口里。Go 编写，没有 Electron，空闲时保持安静。免费开源，支持 macOS、Windows 和 Linux。"
+  },
+  "team-spotube/apps/flemozi": {
+    "token": "team-spotube/apps/flemozi",
+    "homepage": "https://github.com/KRTirtho/flemozi",
+    "title": "GitHub - KRTirtho/flemozi: Advanced⚡ Emoji Picker😀 for Linux🐧, Windows🪟 and macOS🍎 · GitHub",
+    "meta_desc": "Advanced⚡ Emoji Picker😀 for Linux🐧, Windows🪟 and macOS🍎 - KRTirtho/flemozi",
+    "og_desc": "Advanced⚡ Emoji Picker😀 for Linux🐧, Windows🪟 and macOS🍎 - KRTirtho/flemozi"
+  },
+  "team-spotube/apps/spotube": {
+    "token": "team-spotube/apps/spotube",
+    "homepage": "https://spotube.cc/",
+    "title": "Spotube - Open Source Music Streaming",
+    "meta_desc": "Open source, extensible, and native. No tracking, no premium, just your music.",
+    "og_desc": ""
+  },
+  "teddychan/tap/clipmenu-2": {
+    "token": "teddychan/tap/clipmenu-2",
+    "homepage": "https://www.dragonapp.com/",
+    "title": "Dragon App - Classic Mac apps, rebuilt",
+    "meta_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2.",
+    "og_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2."
+  },
+  "teddychan/tap/dragon-sample-app": {
+    "token": "teddychan/tap/dragon-sample-app",
+    "homepage": "https://www.dragonapp.com/",
+    "title": "Dragon App - Classic Mac apps, rebuilt",
+    "meta_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2.",
+    "og_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2."
+  },
+  "teddychan/tap/handfree": {
+    "token": "teddychan/tap/handfree",
+    "homepage": "https://www.dragonapp.com/",
+    "title": "Dragon App - Classic Mac apps, rebuilt",
+    "meta_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2.",
+    "og_desc": "Dragon App is a small studio reviving beloved, discontinued macOS apps as fast, native, open-source rebuilds - ClipMenu 2, Yahoo! KeyKey 2, and Ice 2."
+  },
+  "teddychan/tap/ice-2": {
+    "token": "teddychan/tap/ice-2",
+    "homepage": "https://github.com/teddychan/ice-2-macos",
+    "title": "GitHub - teddychan/ice-2-macos: Powerful menu bar manager for macOS · GitHub",
+    "meta_desc": "Powerful menu bar manager for macOS. Contribute to teddychan/ice-2-macos development by creating an account on GitHub.",
+    "og_desc": "Powerful menu bar manager for macOS. Contribute to teddychan/ice-2-macos development by creating an account on GitHub."
+  },
+  "teddychan/tap/spectacle-2": {
+    "token": "teddychan/tap/spectacle-2",
+    "homepage": "https://github.com/teddychan/spectacle-2-macos",
+    "title": "GitHub - teddychan/spectacle-2-macos: Spectacle allows you to organize your windows without using a mouse. · GitHub",
+    "meta_desc": "Spectacle allows you to organize your windows without using a mouse. - teddychan/spectacle-2-macos",
+    "og_desc": "Spectacle allows you to organize your windows without using a mouse. - teddychan/spectacle-2-macos"
+  },
+  "teddychan/tap/yahoo-keykey-2": {
+    "token": "teddychan/tap/yahoo-keykey-2",
+    "homepage": "https://www.dragonapp.com/yahoo-keykey-2/",
+    "title": "Yahoo KeyKey 2 - Yahoo!奇摩輸入法 Cangjie (倉頡) & Simplex (速成) for Mac",
+    "meta_desc": "Yahoo KeyKey 2 is an open-source rebuild of the classic Yahoo! KeyKey (Yahoo!奇摩輸入法) Cangjie (倉頡) and Simplex (速成) input method for Mac - native, fast, and free.",
+    "og_desc": "Yahoo KeyKey 2 is an open-source rebuild of the classic Yahoo! KeyKey (Yahoo!奇摩輸入法) Cangjie (倉頡) and Simplex (速成) input method for Mac - native, fast, and free."
+  },
   "terraform-linters/tap/tflint": {
     "token": "terraform-linters/tap/tflint",
     "homepage": "https://github.com/terraform-linters/tflint",
     "title": "GitHub - terraform-linters/tflint: A Pluggable Terraform Linter · GitHub",
     "meta_desc": "A Pluggable Terraform Linter. Contribute to terraform-linters/tflint development by creating an account on GitHub.",
     "og_desc": "A Pluggable Terraform Linter. Contribute to terraform-linters/tflint development by creating an account on GitHub."
+  },
+  "thdxg/tap/llog": {
+    "token": "thdxg/tap/llog",
+    "homepage": "https://github.com/ethn1ee/llog",
+    "title": "GitHub - thdxg/llog: A command-line diary for developers and minimalists. · GitHub",
+    "meta_desc": "A command-line diary for developers and minimalists. - thdxg/llog",
+    "og_desc": "A command-line diary for developers and minimalists. - thdxg/llog"
   },
   "theboredteam/boring-notch/boring-notch": {
     "token": "theboredteam/boring-notch/boring-notch",
@@ -5637,12 +7206,208 @@
     "meta_desc": "TheBoringNotch: Not so boring notch That Rocks 🎸🎶. Contribute to TheBoredTeam/boring.notch development by creating an account on GitHub.",
     "og_desc": "TheBoringNotch: Not so boring notch That Rocks 🎸🎶. Contribute to TheBoredTeam/boring.notch development by creating an account on GitHub."
   },
+  "thebusydev/linux/firefox": {
+    "token": "thebusydev/linux/firefox",
+    "homepage": "https://www.mozilla.org/firefox/",
+    "title": "Firefox: The fast, private browser that keeps you safe - Firefox.com",
+    "meta_desc": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data.",
+    "og_desc": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data."
+  },
+  "thebusydev/linux/msedit": {
+    "token": "thebusydev/linux/msedit",
+    "homepage": "https://github.com/microsoft/edit",
+    "title": "GitHub - microsoft/edit: We all edit. · GitHub",
+    "meta_desc": "We all edit. Contribute to microsoft/edit development by creating an account on GitHub.",
+    "og_desc": "We all edit. Contribute to microsoft/edit development by creating an account on GitHub."
+  },
+  "thebusydev/linux/paraview": {
+    "token": "thebusydev/linux/paraview",
+    "homepage": "https://www.paraview.org/",
+    "title": "ParaView - Open-source, multi-platform data analysis and visualization application",
+    "meta_desc": "ParaView was developed to analyze extremely large datasets using distributed memory computing resources. It can be run on supercomputers to analyze datasets of petascale size as well as on laptops for smaller data.",
+    "og_desc": "ParaView was developed to analyze extremely large datasets using distributed memory computing resources. It can be run on supercomputers to analyze datasets of petascale size as well as on laptops for smaller data."
+  },
+  "thebusydev/linux/ventoy": {
+    "token": "thebusydev/linux/ventoy",
+    "homepage": "https://www.ventoy.net/",
+    "title": "Ventoy",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  "thebusydev/linux/vscode": {
+    "token": "thebusydev/linux/vscode",
+    "homepage": "https://code.visualstudio.com/",
+    "title": "Visual Studio Code - Build what comes next",
+    "meta_desc": "Code with precision, collaborate with agents, orchestrate a team of them, and continue your work wherever you are with Visual Studio Code.",
+    "og_desc": "Code with precision, collaborate with agents, and continue your work wherever you are with Visual Studio Code."
+  },
+  "thedavidweng/tap/apple-say": {
+    "token": "thedavidweng/tap/apple-say",
+    "homepage": "https://github.com/thedavidweng/apple-say",
+    "title": "GitHub - thedavidweng/apple-say: Native macOS offline TTS · GitHub",
+    "meta_desc": "Native macOS offline TTS. Contribute to thedavidweng/apple-say development by creating an account on GitHub.",
+    "og_desc": "Native macOS offline TTS. Contribute to thedavidweng/apple-say development by creating an account on GitHub."
+  },
+  "thedavidweng/tap/canvas": {
+    "token": "thedavidweng/tap/canvas",
+    "homepage": "https://github.com/thedavidweng/canvas-cli",
+    "title": "GitHub - thedavidweng/canvas-cli: Agent-friendly CLI for Canvas LMS. Stable JSON output, automatic pagination, mutation safety gates, audit logging. · GitHub",
+    "meta_desc": "Agent-friendly CLI for Canvas LMS. Stable JSON output, automatic pagination, mutation safety gates, audit logging. - thedavidweng/canvas-cli",
+    "og_desc": "Agent-friendly CLI for Canvas LMS. Stable JSON output, automatic pagination, mutation safety gates, audit logging. - thedavidweng/canvas-cli"
+  },
+  "thedavidweng/tap/flickr": {
+    "token": "thedavidweng/tap/flickr",
+    "homepage": "https://github.com/thedavidweng/flickr-cli",
+    "title": "GitHub - thedavidweng/flickr-cli: Agent-friendly Flickr CLI - single-binary tool for photo management, backup, upload, and full API access · GitHub",
+    "meta_desc": "Agent-friendly Flickr CLI - single-binary tool for photo management, backup, upload, and full API access - thedavidweng/flickr-cli",
+    "og_desc": "Agent-friendly Flickr CLI - single-binary tool for photo management, backup, upload, and full API access - thedavidweng/flickr-cli"
+  },
+  "thedavidweng/tap/i4tools": {
+    "token": "thedavidweng/tap/i4tools",
+    "homepage": "https://www.i4.cn/",
+    "title": "爱思助手官网-安全好用的苹果设备管理软件",
+    "meta_desc": "爱思助手是一款专业的苹果手机管理工具，提供海量正版iPhone、iPad应用、游戏、铃声、壁纸等免费下载、一键刷机、设备数据备份与恢复、系统维护等全方位服务，是亿万果粉的必备助手。",
+    "og_desc": ""
+  },
+  "thedavidweng/tap/jobs-cli": {
+    "token": "thedavidweng/tap/jobs-cli",
+    "homepage": "https://github.com/thedavidweng/jobs-cli",
+    "title": "GitHub - thedavidweng/jobs-cli: Agent-native job search and application CLI · GitHub",
+    "meta_desc": "Agent-native job search and application CLI. Contribute to thedavidweng/jobs-cli development by creating an account on GitHub.",
+    "og_desc": "Agent-native job search and application CLI. Contribute to thedavidweng/jobs-cli development by creating an account on GitHub."
+  },
+  "thedavidweng/tap/monarchmoney-cli": {
+    "token": "thedavidweng/tap/monarchmoney-cli",
+    "homepage": "https://github.com/thedavidweng/monarchmoney-cli",
+    "title": "GitHub - thedavidweng/monarchmoney-cli: A local, agent-friendly command-line tool for Monarch Money. Written in Go. · GitHub",
+    "meta_desc": "A local, agent-friendly command-line tool for Monarch Money. Written in Go. - thedavidweng/monarchmoney-cli",
+    "og_desc": "A local, agent-friendly command-line tool for Monarch Money. Written in Go. - thedavidweng/monarchmoney-cli"
+  },
+  "thedavidweng/tap/money": {
+    "token": "thedavidweng/tap/money",
+    "homepage": "https://github.com/thedavidweng/money",
+    "title": "GitHub - thedavidweng/money: Local-first personal finance backend for AI agents and power users · GitHub",
+    "meta_desc": "Local-first personal finance backend for AI agents and power users - thedavidweng/money",
+    "og_desc": "Local-first personal finance backend for AI agents and power users - thedavidweng/money"
+  },
+  "thedavidweng/tap/notchprompt": {
+    "token": "thedavidweng/tap/notchprompt",
+    "homepage": "https://github.com/saif0200/notchprompt",
+    "title": "GitHub - saif0200/notchprompt: distraction-free teleprompter hidden in the macbook notch · GitHub",
+    "meta_desc": "distraction-free teleprompter hidden in the macbook notch - saif0200/notchprompt",
+    "og_desc": "distraction-free teleprompter hidden in the macbook notch - saif0200/notchprompt"
+  },
+  "thedavidweng/tap/openkara": {
+    "token": "thedavidweng/tap/openkara",
+    "homepage": "https://github.com/thedavidweng/OpenKara",
+    "title": "GitHub - thedavidweng/OpenKara: A desktop karaoke app that transforms your local music library into sing-along tracks using on-device AI stem separation and online synced lyrics, making karaoke affordable and reusable with the songs you already own. · GitHub",
+    "meta_desc": "A desktop karaoke app that transforms your local music library into sing-along tracks using on-device AI stem separation and online synced lyrics, making karaoke affordable and reusable with the songs you already own. - thedavidweng/OpenKara",
+    "og_desc": "A desktop karaoke app that transforms your local music library into sing-along tracks using on-device AI stem separation and online synced lyrics, making karaoke affordable and reusable with the so..."
+  },
+  "thedavidweng/tap/openloop": {
+    "token": "thedavidweng/tap/openloop",
+    "homepage": "https://github.com/thedavidweng/OpenLoop",
+    "title": "GitHub - thedavidweng/OpenLoop: Desktop app for local ACE-Step music generation with prompt, lyrics, full controls, playback, and export. · GitHub",
+    "meta_desc": "Desktop app for local ACE-Step music generation with prompt, lyrics, full controls, playback, and export. - thedavidweng/OpenLoop",
+    "og_desc": "Desktop app for local ACE-Step music generation with prompt, lyrics, full controls, playback, and export. - thedavidweng/OpenLoop"
+  },
+  "thedavidweng/tap/pixiv-swiftui": {
+    "token": "thedavidweng/tap/pixiv-swiftui",
+    "homepage": "https://github.com/Eslzzyl/Pixiv-SwiftUI",
+    "title": "GitHub - Eslzzyl/Pixiv-SwiftUI: 为现代 Apple 平台设计的第三方 Pixiv 客户端，支持 iOS/iPadOS/macOS · GitHub",
+    "meta_desc": "为现代 Apple 平台设计的第三方 Pixiv 客户端，支持 iOS/iPadOS/macOS. Contribute to Eslzzyl/Pixiv-SwiftUI development by creating an account on GitHub.",
+    "og_desc": "为现代 Apple 平台设计的第三方 Pixiv 客户端，支持 iOS/iPadOS/macOS. Contribute to Eslzzyl/Pixiv-SwiftUI development by creating an account on GitHub."
+  },
+  "thedavidweng/tap/qualtrics": {
+    "token": "thedavidweng/tap/qualtrics",
+    "homepage": "https://github.com/thedavidweng/qualtrics-cli",
+    "title": "GitHub - thedavidweng/qualtrics-cli: Agent-friendly CLI for the Qualtrics Experience Management Platform & offline survey compiler · GitHub",
+    "meta_desc": "Agent-friendly CLI for the Qualtrics Experience Management Platform & offline survey compiler - thedavidweng/qualtrics-cli",
+    "og_desc": "Agent-friendly CLI for the Qualtrics Experience Management Platform & offline survey compiler - thedavidweng/qualtrics-cli"
+  },
+  "thedavidweng/tap/screenize": {
+    "token": "thedavidweng/tap/screenize",
+    "homepage": "https://github.com/syi0808/screenize",
+    "title": "GitHub - syi0808/screenize: (Development of Screenize is currently paused) Open-source macOS screen recording app with auto-zoom, cursor effects, and timeline editing - Screen Studio alternative. · GitHub",
+    "meta_desc": "(Development of Screenize is currently paused) Open-source macOS screen recording app with auto-zoom, cursor effects, and timeline editing - Screen Studio alternative. - syi0808/screenize",
+    "og_desc": "(Development of Screenize is currently paused) Open-source macOS screen recording app with auto-zoom, cursor effects, and timeline editing - Screen Studio alternative. - syi0808/screenize"
+  },
+  "thedavidweng/tap/sdf-flash-gui": {
+    "token": "thedavidweng/tap/sdf-flash-gui",
+    "homepage": "https://github.com/thedavidweng/sdf-flash-gui",
+    "title": "GitHub - thedavidweng/sdf-flash-gui: Cross-platform GUI for optical drive firmware dump/flash on MT1959 drives · GitHub",
+    "meta_desc": "Cross-platform GUI for optical drive firmware dump/flash on MT1959 drives - thedavidweng/sdf-flash-gui",
+    "og_desc": "Cross-platform GUI for optical drive firmware dump/flash on MT1959 drives - thedavidweng/sdf-flash-gui"
+  },
+  "thedavidweng/tap/strudel-tui": {
+    "token": "thedavidweng/tap/strudel-tui",
+    "homepage": "https://github.com/thedavidweng/strudel-tui",
+    "title": "GitHub - thedavidweng/strudel-tui: Terminal-based live coding interface for Strudel with AI agent · GitHub",
+    "meta_desc": "Terminal-based live coding interface for Strudel with AI agent - thedavidweng/strudel-tui",
+    "og_desc": "Terminal-based live coding interface for Strudel with AI agent - thedavidweng/strudel-tui"
+  },
+  "thedavidweng/tap/sukiru": {
+    "token": "thedavidweng/tap/sukiru",
+    "homepage": "https://thedavidweng.github.io/sukiru/",
+    "title": "Sukiru - Skill libraries, sorted out.",
+    "meta_desc": "Sukiru is a fast, tiny, native macOS app that checks and repairs your coding agents' skill libraries. It works through the official npx skills and gh skill installers and never keeps a ledger of its own. Free and open source.",
+    "og_desc": "Check and repair your coding agents' skill libraries on macOS."
+  },
+  "thedavidweng/tap/telegram-drive": {
+    "token": "thedavidweng/tap/telegram-drive",
+    "homepage": "https://github.com/caamer20/Telegram-Drive",
+    "title": "GitHub - caamer20/Telegram-Drive: Turn your Telegram account into an unlimited, secure cloud storage drive. an Open-source desktop app built with Tauri, Rust, and React. · GitHub",
+    "meta_desc": "Turn your Telegram account into an unlimited, secure cloud storage drive. an Open-source desktop app built with Tauri, Rust, and React. - caamer20/Telegram-Drive",
+    "og_desc": "Turn your Telegram account into an unlimited, secure cloud storage drive. an Open-source desktop app built with Tauri, Rust, and React. - caamer20/Telegram-Drive"
+  },
+  "thedavidweng/tap/tg-drive": {
+    "token": "thedavidweng/tap/tg-drive",
+    "homepage": "https://github.com/thedavidweng/tg-drive",
+    "title": "GitHub - thedavidweng/tg-drive: Turn a Telegram channel into a recoverable, scriptable file tree. · GitHub",
+    "meta_desc": "Turn a Telegram channel into a recoverable, scriptable file tree. - thedavidweng/tg-drive",
+    "og_desc": "Turn a Telegram channel into a recoverable, scriptable file tree. - thedavidweng/tg-drive"
+  },
+  "thedavidweng/tap/vapourfly": {
+    "token": "thedavidweng/tap/vapourfly",
+    "homepage": "https://thedavidweng.github.io/vapourfly/",
+    "title": "Vapourfly - Your Steam library, curated",
+    "meta_desc": "Vapourfly is a free, open-source, local-first desktop app and CLI that organizes your Steam library like playlists. Made for desktop and Steam Deck.",
+    "og_desc": "Playlists, recommendations and junk cleanup for the Steam library you already own. Free and open source, for desktop and Steam Deck."
+  },
+  "thedavidweng/tap/wiiu-downloader": {
+    "token": "thedavidweng/tap/wiiu-downloader",
+    "homepage": "https://github.com/Xpl0itU/WiiUDownloader",
+    "title": "GitHub - Xpl0itU/WiiUDownloader: Cross-platform Wii U NUS downloader for Windows, macOS & Linux. No title keys needed. Alternative to Wii U USB Helper. · GitHub",
+    "meta_desc": "Cross-platform Wii U NUS downloader for Windows, macOS & Linux. No title keys needed. Alternative to Wii U USB Helper. - Xpl0itU/WiiUDownloader",
+    "og_desc": "Cross-platform Wii U NUS downloader for Windows, macOS & Linux. No title keys needed. Alternative to Wii U USB Helper. - Xpl0itU/WiiUDownloader"
+  },
+  "theurichde/go-aws-sso/go-aws-sso": {
+    "token": "theurichde/go-aws-sso/go-aws-sso",
+    "homepage": "https://github.com/theurichde/go-aws-sso",
+    "title": "GitHub - theurichde/go-aws-sso: Makes dealing with AWS SSO Logins an ease · GitHub",
+    "meta_desc": "Makes dealing with AWS SSO Logins an ease. Contribute to theurichde/go-aws-sso development by creating an account on GitHub.",
+    "og_desc": "Makes dealing with AWS SSO Logins an ease. Contribute to theurichde/go-aws-sso development by creating an account on GitHub."
+  },
   "thusvill/livewallpaper/livewallpaper": {
     "token": "thusvill/livewallpaper/livewallpaper",
     "homepage": "https://github.com/thusvill/LiveWallpaperMacOS",
     "title": "GitHub - thusvill/LiveWallpaperMacOS: This is a Opensource Live wallpaper solution for MacOS · GitHub",
     "meta_desc": "This is a Opensource Live wallpaper solution for MacOS - thusvill/LiveWallpaperMacOS",
     "og_desc": "This is a Opensource Live wallpaper solution for MacOS - thusvill/LiveWallpaperMacOS"
+  },
+  "timescale/tap/ghost": {
+    "token": "timescale/tap/ghost",
+    "homepage": "https://ghost.build",
+    "title": "Ghost - the database for agents",
+    "meta_desc": "Ghost is hosted Postgres you spin up, fork, and throw away. One per task, production stays untouched, no blast radius.",
+    "og_desc": "Ghost is hosted Postgres you spin up, fork, and throw away. One per task, production stays untouched, no blast radius."
+  },
+  "timescale/tap/tiger-cli": {
+    "token": "timescale/tap/tiger-cli",
+    "homepage": "https://github.com/timescale/tiger-cli",
+    "title": "GitHub - timescale/tiger-cli: Tiger CLI is the command-line interface for Tiger Cloud. It includes an MCP server for helping coding agents write production-level Postgres code. · GitHub",
+    "meta_desc": "Tiger CLI is the command-line interface for Tiger Cloud. It includes an MCP server for helping coding agents write production-level Postgres code. - timescale/tiger-cli",
+    "og_desc": "Tiger CLI is the command-line interface for Tiger Cloud. It includes an MCP server for helping coding agents write production-level Postgres code. - timescale/tiger-cli"
   },
   "tsung-ju/iguanatexmac/iguanatexmac": {
     "token": "tsung-ju/iguanatexmac/iguanatexmac",
@@ -6048,6 +7813,20 @@
     "meta_desc": "Multi-agent code review, supervised and auditable. Contribute to umputun/revmux development by creating an account on GitHub.",
     "og_desc": "Multi-agent code review, supervised and auditable. Contribute to umputun/revmux development by creating an account on GitHub."
   },
+  "utkuozdemir/pv-migrate/pv-migrate": {
+    "token": "utkuozdemir/pv-migrate/pv-migrate",
+    "homepage": "https://github.com/utkuozdemir/pv-migrate",
+    "title": "GitHub - utkuozdemir/pv-migrate: CLI tool to easily migrate or backup/restore Kubernetes persistent volumes · GitHub",
+    "meta_desc": "CLI tool to easily migrate or backup/restore Kubernetes persistent volumes - utkuozdemir/pv-migrate",
+    "og_desc": "CLI tool to easily migrate or backup/restore Kubernetes persistent volumes - utkuozdemir/pv-migrate"
+  },
+  "viarotel-org/escrcpy/escrcpy": {
+    "token": "viarotel-org/escrcpy/escrcpy",
+    "homepage": "https://github.com/viarotel-org/escrcpy",
+    "title": "GitHub - viarotel-org/escrcpy: 📱 Display and control your Android device graphically with scrcpy. · GitHub",
+    "meta_desc": "📱 Display and control your Android device graphically with scrcpy. - viarotel-org/escrcpy",
+    "og_desc": "📱 Display and control your Android device graphically with scrcpy. - viarotel-org/escrcpy"
+  },
   "vishvavariya/notchy/notchy": {
     "token": "vishvavariya/notchy/notchy",
     "homepage": "https://notchy.dev/",
@@ -6104,6 +7883,100 @@
     "meta_desc": "The official CLI for the X API. Contribute to xdevplatform/xurl development by creating an account on GitHub.",
     "og_desc": "The official CLI for the X API. Contribute to xdevplatform/xurl development by creating an account on GitHub."
   },
+  "xiaolai/tap/checkmate": {
+    "token": "xiaolai/tap/checkmate",
+    "homepage": "https://github.com/xiaolai/checkmate",
+    "title": "GitHub - xiaolai/checkmate: Native macOS chess practice and learning with offline Stockfish and Cedar narration · GitHub",
+    "meta_desc": "Native macOS chess practice and learning with offline Stockfish and Cedar narration - xiaolai/checkmate",
+    "og_desc": "Native macOS chess practice and learning with offline Stockfish and Cedar narration - xiaolai/checkmate"
+  },
+  "xiaolai/tap/claudepot": {
+    "token": "xiaolai/tap/claudepot",
+    "homepage": "https://claudepot.com/app/",
+    "title": "ClauDepot - control panel for Claude Code and Claude Desktop · ClauDepot",
+    "meta_desc": "Switch accounts. Watch what's running. Schedule prompts. Find old chats. Reclaim disk space.",
+    "og_desc": "A daily reader for builders working with AI tools."
+  },
+  "xiaolai/tap/cubus": {
+    "token": "xiaolai/tap/cubus",
+    "homepage": "https://github.com/xiaolai/cubus",
+    "title": "GitHub - xiaolai/cubus · GitHub",
+    "meta_desc": "Contribute to xiaolai/cubus development by creating an account on GitHub.",
+    "og_desc": "Contribute to xiaolai/cubus development by creating an account on GitHub."
+  },
+  "xiaolai/tap/mochi": {
+    "token": "xiaolai/tap/mochi",
+    "homepage": "https://github.com/xiaolai/mochi-macOS",
+    "title": "GitHub - xiaolai/mochi-macOS: Native macOS English conversation and voice practice companion · GitHub",
+    "meta_desc": "Native macOS English conversation and voice practice companion - xiaolai/mochi-macOS",
+    "og_desc": "Native macOS English conversation and voice practice companion - xiaolai/mochi-macOS"
+  },
+  "xiaolai/tap/mochi-app": {
+    "token": "xiaolai/tap/mochi-app",
+    "homepage": "https://github.com/xiaolai/mochi",
+    "title": "GitHub - xiaolai/mochi: A small companion who lives on your desktop and talks back. Real-time voice, drawn and animated from one geometry source. · GitHub",
+    "meta_desc": "A small companion who lives on your desktop and talks back. Real-time voice, drawn and animated from one geometry source. - xiaolai/mochi",
+    "og_desc": "A small companion who lives on your desktop and talks back. Real-time voice, drawn and animated from one geometry source. - xiaolai/mochi"
+  },
+  "xiaolai/tap/sonovo": {
+    "token": "xiaolai/tap/sonovo",
+    "homepage": "https://github.com/xiaolai/sonovo",
+    "title": "GitHub - xiaolai/sonovo: Personal macOS tool for my own use. · GitHub",
+    "meta_desc": "Personal macOS tool for my own use. Contribute to xiaolai/sonovo development by creating an account on GitHub.",
+    "og_desc": "Personal macOS tool for my own use. Contribute to xiaolai/sonovo development by creating an account on GitHub."
+  },
+  "xiaolai/tap/tsundoku": {
+    "token": "xiaolai/tap/tsundoku",
+    "homepage": "https://github.com/xiaolai/tsundoku",
+    "title": "GitHub - xiaolai/tsundoku: Local Kindle and Apple Books annotations, history, PDF export and an AI reading companion · GitHub",
+    "meta_desc": "Local Kindle and Apple Books annotations, history, PDF export and an AI reading companion - xiaolai/tsundoku",
+    "og_desc": "Local Kindle and Apple Books annotations, history, PDF export and an AI reading companion - xiaolai/tsundoku"
+  },
+  "xiaolai/tap/type-review": {
+    "token": "xiaolai/tap/type-review",
+    "homepage": "https://type.review",
+    "title": "TYPE - adaptive typing on real prose · type.review",
+    "meta_desc": "TYPE - adaptive typing practice. Drill your weak keys, run benchmarks, no signup.",
+    "og_desc": ""
+  },
+  "xiaolai/tap/uniplayer": {
+    "token": "xiaolai/tap/uniplayer",
+    "homepage": "https://github.com/xiaolai/uniplayer",
+    "title": "GitHub - xiaolai/uniplayer: A macOS video player built on mpv with a library-first interface · GitHub",
+    "meta_desc": "A macOS video player built on mpv with a library-first interface - xiaolai/uniplayer",
+    "og_desc": "A macOS video player built on mpv with a library-first interface - xiaolai/uniplayer"
+  },
+  "xiaolai/tap/vmark": {
+    "token": "xiaolai/tap/vmark",
+    "homepage": "https://github.com/xiaolai/vmark",
+    "title": "GitHub - xiaolai/vmark: An AI friendly markdown editor. · GitHub",
+    "meta_desc": "An AI friendly markdown editor. Contribute to xiaolai/vmark development by creating an account on GitHub.",
+    "og_desc": "An AI friendly markdown editor. Contribute to xiaolai/vmark development by creating an account on GitHub."
+  },
+  "xiaolai/tap/xdict": {
+    "token": "xiaolai/tap/xdict",
+    "homepage": "https://xdict.ai/",
+    "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1011)"
+  },
+  "xiaolai/tap/xiaolaidict": {
+    "token": "xiaolai/tap/xiaolaidict",
+    "homepage": "https://github.com/xiaolai/XiaolaiDict",
+    "title": "GitHub - xiaolai/XiaolaiDict: Archived - XDict is the successor: https://github.com/xiaolai/xdict · GitHub",
+    "meta_desc": "Archived - XDict is the successor: https://github.com/xiaolai/xdict - xiaolai/XiaolaiDict",
+    "og_desc": "Archived - XDict is the successor: https://github.com/xiaolai/xdict - xiaolai/XiaolaiDict"
+  },
+  "xiaolai/tap/zed": {
+    "token": "xiaolai/tap/zed",
+    "homepage": "https://github.com/xiaolai/zed",
+    "error": "HTTP 404"
+  },
+  "xiufengsun/tokentracker/tokentracker": {
+    "token": "xiufengsun/tokentracker/tokentracker",
+    "homepage": "https://github.com/xiufengsun/TokenTracker",
+    "title": "GitHub - xiufengsun/TokenTracker: Local-first AI token usage & cost tracker for 31 coding tools incl. Claude Code, Codex, Cursor, Gemini & DeepSeek Harness-with native apps. Never reads prompts. · GitHub",
+    "meta_desc": "Local-first AI token usage & cost tracker for 31 coding tools incl. Claude Code, Codex, Cursor, Gemini & DeepSeek Harness-with native apps. Never reads prompts. - xiufengsun/TokenTracker",
+    "og_desc": "Local-first AI token usage & cost tracker for 31 coding tools incl. Claude Code, Codex, Cursor, Gemini & DeepSeek Harness-with native apps. Never reads prompts. - xiufengsun/TokenTracker"
+  },
   "xpipe-io/tap/xpipe": {
     "token": "xpipe-io/tap/xpipe",
     "homepage": "https://xpipe.io",
@@ -6117,6 +7990,13 @@
     "title": "XPipe",
     "meta_desc": "Your entire server infrastructure at your fingertips",
     "og_desc": "XPipe is a new type of connection hub that allows you to access your entire sever infrastructure from your local machine. It works on top of your installed command-line programs and does not require any setup on your remote systems."
+  },
+  "xtool-org/tap/xtool": {
+    "token": "xtool-org/tap/xtool",
+    "homepage": "https://github.com/xtool-org/xtool",
+    "title": "GitHub - xtool-org/xtool: Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. · GitHub",
+    "meta_desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool",
+    "og_desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
   },
   "xykong/tap/flux-markdown": {
     "token": "xykong/tap/flux-markdown",
@@ -6166,6 +8046,20 @@
     "title": "GitHub - y3owk1n/neru: Hints, grids and vim keys for your whole desktop. Built for macOS, linux and windows, natively. · GitHub",
     "meta_desc": "Hints, grids and vim keys for your whole desktop. Built for macOS, linux and windows, natively. - y3owk1n/neru",
     "og_desc": "Hints, grids and vim keys for your whole desktop. Built for macOS, linux and windows, natively. - y3owk1n/neru"
+  },
+  "yuzeguitarist/deck/deckclip": {
+    "token": "yuzeguitarist/deck/deckclip",
+    "homepage": "https://deckclip.app/",
+    "title": "Deck Clipboard - Privacy-First Clipboard Manager for macOS",
+    "meta_desc": "Deck keeps clipboard history on your Mac - browse, search & reuse past copies instantly. Keyboard-first workflow, private by default, with semantic search.",
+    "og_desc": "Deck keeps clipboard history on your Mac-browse recent copies or search when you need them again. Native performance, a keyboard-first workflow, and privacy that stays straightforward."
+  },
+  "zennotes/tap/zennotes": {
+    "token": "zennotes/tap/zennotes",
+    "homepage": "https://github.com/ZenNotes/zennotes",
+    "title": "GitHub - ZenNotes/zennotes: Keyboard-first local Markdown notes with Vim motions, diagrams, and MCP integration. · GitHub",
+    "meta_desc": "Keyboard-first local Markdown notes with Vim motions, diagrams, and MCP integration. - ZenNotes/zennotes",
+    "og_desc": "Keyboard-first local Markdown notes with Vim motions, diagrams, and MCP integration. - ZenNotes/zennotes"
   },
   "zqxwce/tap/vphone-cli": {
     "token": "zqxwce/tap/vphone-cli",
