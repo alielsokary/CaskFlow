@@ -267,10 +267,50 @@ def test_sandboxed_brew_gets_a_private_home_and_no_tokens(tmp_path, monkeypatch)
     assert Path(sandbox.env["HOMEBREW_CACHE"]).is_relative_to(sandbox.work)
 
 
-def test_oversized_output_is_refused(tmp_path):
-    small, big = tmp_path / "small", tmp_path / "big"
-    small.write_text("ok", encoding="utf-8")
-    big.write_bytes(b"x" * (collect.MAX_OUTPUT_BYTES + 1))
+def test_output_is_read_through_the_held_handle_and_capped(tmp_path):
+    with open(tmp_path / "out", "w+b") as handle:
+        handle.write(b"ok")
+        (tmp_path / "out").unlink()
+        (tmp_path / "out").symlink_to(tmp_path / "secret")
+        (tmp_path / "secret").write_text("secret", encoding="utf-8")
+        assert collect._read_capped(handle) == "ok"
+        handle.write(b"x" * collect.MAX_OUTPUT_BYTES)
+        assert collect._read_capped(handle) is None
 
-    assert collect._read_capped(small) == "ok"
-    assert collect._read_capped(big) is None
+
+def sandbox_home(tmp_path, monkeypatch):
+    monkeypatch.setenv("HOME", str(tmp_path / "home"))
+    (tmp_path / "home").mkdir()
+    (tmp_path / "cache").mkdir()
+
+
+def test_a_tap_user_runs_brew_through_sudo_with_only_the_sandbox_environment(tmp_path, monkeypatch):
+    sandbox_home(tmp_path, monkeypatch)
+    calls = []
+    user = collect.TapUser("_caskflowtap0", 7700)
+
+    sandbox = collect.TapSandbox(tmp_path / "boxes", tmp_path / "cache", user=user,
+                                 run=lambda cmd, env=None: calls.append(cmd) or subprocess.CompletedProcess(cmd, 0, "", ""))
+
+    command = sandbox.command(["brew", "info"])
+    start = command.index("sandbox-exec")
+    assert command[:6] == ["sudo", "-n", "-u", "_caskflowtap0", "/usr/bin/env", "-i"]
+    assert sorted(command[6:start]) == sorted(f"{key}={value}" for key, value in sandbox.env.items())
+    assert ["sudo", "-n", "chown", "-R", "_caskflowtap0", str(sandbox.work)] in calls
+    assert "directory = *" in (sandbox.work / "home" / ".gitconfig").read_text(encoding="utf-8")
+
+    calls.clear()
+    sandbox.end()
+    assert ["sudo", "-n", "pkill", "-9", "-u", "_caskflowtap0"] in calls
+    assert ["sudo", "-n", "launchctl", "bootout", "user/7700"] in calls
+
+
+def test_tap_users_are_hidden_accounts_without_a_shell_or_home():
+    calls = []
+
+    users = collect.create_tap_users(2, run=lambda cmd, env=None: calls.append(cmd) or subprocess.CompletedProcess(cmd, 0, "", ""))
+
+    assert users == [collect.TapUser("_caskflowtap0", 7700), collect.TapUser("_caskflowtap1", 7701)]
+    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap1", "UniqueID", "7701"] in calls
+    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap0", "UserShell", "/usr/bin/false"] in calls
+    assert ["sudo", "-n", "dscl", ".", "-create", "/Users/_caskflowtap0", "NFSHomeDirectory", "/var/empty"] in calls

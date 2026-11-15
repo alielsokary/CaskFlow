@@ -13,6 +13,7 @@ import sys
 import tempfile
 import threading
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
@@ -51,11 +52,34 @@ def _run(cmd: list[str], env: dict | None = None) -> subprocess.CompletedProcess
                           env={**os.environ, **HOST_ENV, **(env or {})})
 
 
-class TapSandbox:
-    """brew calls for one tap: a private folder and home, no tokens, no network, and no process outlives a call."""
+@dataclass(frozen=True)
+class TapUser:
+    """A hidden account with no shell, home or sudo rights, so tap code cannot touch the runner user's files."""
 
-    def __init__(self, root: Path, cache: Path):
+    name: str
+    uid: int
+
+
+def create_tap_users(count: int, run=_run) -> list[TapUser]:
+    users = [TapUser(f"_caskflowtap{index}", 7700 + index) for index in range(count)]
+    for user in users:
+        record = f"/Users/{user.name}"
+        for attribute in ([], ["UniqueID", str(user.uid)], ["PrimaryGroupID", "-2"], ["UserShell", "/usr/bin/false"],
+                          ["NFSHomeDirectory", "/var/empty"], ["IsHidden", "1"]):
+            if (result := run(["sudo", "-n", "dscl", ".", "-create", record, *attribute])).returncode != 0:
+                raise RuntimeError(f"cannot create {user.name}: {result.stderr.strip()[-300:]}")
+    return users
+
+
+class TapSandbox:
+    """brew calls for one tap: a private folder and home, no tokens, no network, and no process outlives a call.
+
+    With a `user`, brew also runs as that account, and everything it owns dies after each call.
+    """
+
+    def __init__(self, root: Path, cache: Path, user: TapUser | None = None, run=_run):
         root.mkdir(parents=True, exist_ok=True)
+        self.user, self.run = user, run
         self.work = Path(tempfile.mkdtemp(dir=root)).resolve()
         self.real_home = Path(os.environ["HOME"]).resolve()
         home = self.work / "home"
@@ -63,6 +87,8 @@ class TapSandbox:
         trust = self.real_home / ".homebrew" / "trust.json"
         if trust.exists():
             shutil.copy(trust, home / ".homebrew" / "trust.json")
+        # Taps are cloned by the runner user; git refuses repositories another user owns otherwise.
+        (home / ".gitconfig").write_text("[safe]\n\tdirectory = *\n", encoding="utf-8")
         # The warmed cache (API data brew cannot download here, and compiled Ruby), as a copy-on-write clone on macOS.
         if sys.platform == "darwin":
             subprocess.run(["cp", "-cR", str(cache), str(self.work / "cache")], check=True)  # nosec B603, B607 - no shell
@@ -70,6 +96,9 @@ class TapSandbox:
             shutil.copytree(cache, self.work / "cache", symlinks=True)
         for sub in ("logs", "tmp"):
             (self.work / sub).mkdir()
+        if user:
+            if (owned := run(["sudo", "-n", "chown", "-R", user.name, str(self.work)])).returncode != 0:
+                raise RuntimeError(f"cannot hand the sandbox to {user.name}: {owned.stderr.strip()[-300:]}")
         self.env = {
             "PATH": os.environ.get("PATH", "/usr/bin:/bin"), "HOME": str(home), "LANG": "en_US.UTF-8", **HOST_ENV,
             "HOMEBREW_CACHE": str(self.work / "cache"), "HOMEBREW_LOGS": str(self.work / "logs"),
@@ -78,12 +107,16 @@ class TapSandbox:
         }
 
     def command(self, cmd: list[str]) -> list[str]:
-        return ["sandbox-exec", "-p", PROFILE, "-D", f"WORK={self.work}", "-D", f"REAL_HOME={self.real_home}", *cmd]
+        sandboxed = ["sandbox-exec", "-p", PROFILE, "-D", f"WORK={self.work}", "-D", f"REAL_HOME={self.real_home}", *cmd]
+        if not self.user:
+            return sandboxed
+        return ["sudo", "-n", "-u", self.user.name, "/usr/bin/env", "-i",
+                *(f"{key}={value}" for key, value in self.env.items()), *sandboxed]
 
     def __call__(self, cmd: list[str]) -> subprocess.CompletedProcess:
-        # Output goes to files, so a process the tap leaves behind cannot hold the call open.
-        out_path, err_path = self.work / "stdout", self.work / "stderr"
-        with open(out_path, "w", encoding="utf-8") as out, open(err_path, "w", encoding="utf-8") as err:
+        # Unnamed files the sandbox cannot reach: a process the tap leaves behind cannot hold the call
+        # open, and tap code cannot swap what the host reads back.
+        with tempfile.TemporaryFile() as out, tempfile.TemporaryFile() as err:
             process = subprocess.Popen(  # nosec B603 - argument list; no shell
                 self.command(cmd), stdout=out, stderr=err, stdin=subprocess.DEVNULL, env=self.env,
                 start_new_session=True, cwd=self.work)  # brew.sh's bash writes here-documents to its working directory
@@ -96,16 +129,25 @@ class TapSandbox:
                     os.killpg(process.pid, signal.SIGKILL)
                 except ProcessLookupError:
                     pass
-        stdout = _read_capped(out_path)
-        if stdout is None:
-            return subprocess.CompletedProcess(cmd, 1, "", "output too large")
-        return subprocess.CompletedProcess(cmd, code, stdout, _read_capped(err_path) or "")
+                self.end()
+            stdout = _read_capped(out)
+            if stdout is None:
+                return subprocess.CompletedProcess(cmd, 1, "", "output too large")
+            return subprocess.CompletedProcess(cmd, code, stdout, _read_capped(err) or "")
+
+    def end(self) -> None:
+        """Kill everything the tap user owns, including jobs it asked launchd to start."""
+        if self.user:
+            self.run(["sudo", "-n", "pkill", "-9", "-u", self.user.name])
+            self.run(["sudo", "-n", "launchctl", "bootout", f"user/{self.user.uid}"])
 
 
-def _read_capped(path: Path) -> str | None:
-    if path.stat().st_size > MAX_OUTPUT_BYTES:
+def _read_capped(handle) -> str | None:
+    handle.seek(0)
+    data = handle.read(MAX_OUTPUT_BYTES + 1)
+    if len(data) > MAX_OUTPUT_BYTES:
         return None
-    return path.read_text(encoding="utf-8", errors="replace")
+    return data.decode("utf-8", errors="replace")
 
 
 def warm_cache(cache: Path) -> None:

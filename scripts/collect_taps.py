@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import queue
 import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -16,7 +17,7 @@ from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import TapSandbox, aliases, load_official, read_tap, trusted_view, warm_cache
+from collect_tap_casks import TapSandbox, aliases, create_tap_users, load_official, read_tap, trusted_view, warm_cache
 from style_standards import write_json
 from tap_registry import REF
 from validate_taps import list_casks
@@ -138,6 +139,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
     parser.add_argument("--files", type=Path, help="data/tap_files.json: cask files already settled")
     parser.add_argument("--only-changed", action="store_true", help="Skip taps whose cask files are all settled")
+    parser.add_argument("--tap-users", action="store_true", help="Run brew as throwaway accounts (CI; needs sudo)")
     args = parser.parse_args(argv)
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
@@ -153,10 +155,20 @@ def main(argv: list[str] | None = None) -> int:
                            known, args.only_changed)
         # Warmed on the host before any tap code runs; each sandbox gets its own clone of it.
         warm_cache(work / "cache")
+        # Tap users must reach their sandboxes, which this user's private temp folder would hide.
+        boxes = Path(tempfile.mkdtemp(prefix="caskflow-sandboxes-", dir="/private/tmp" if args.tap_users else None))
+        boxes.chmod(0o711)
+        users = queue.Queue()
+        for user in create_tap_users(args.workers) if args.tap_users else [None] * args.workers:
+            users.put(user)
 
         def read(tap: str, deadline: float) -> dict:
-            return read_tap(registered.get(tap, {"name": tap}), lambda: TapSandbox(work / "sandboxes", work / "cache"),
-                            deadline=deadline)
+            user = users.get()
+            try:
+                return read_tap(registered.get(tap, {"name": tap}), lambda: TapSandbox(boxes, work / "cache", user),
+                                deadline=deadline)
+            finally:
+                users.put(user)
 
         result = collect(selection, read, load_official(), workers=args.workers,
                          budget=args.budget_minutes * 60, on_progress=save)

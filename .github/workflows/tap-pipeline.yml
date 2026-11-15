@@ -2,8 +2,9 @@ name: Tap pipeline
 
 # Icons and categories for registered third-party taps, separate from the
 # official pipelines. Tap code runs only in `collect`, where each tap is read in
-# its own macOS sandbox (no network, no writes outside the tap's folder, no
-# tokens), and each tap's output speaks only for that tap. `icons` handles
+# its own macOS sandbox as a throwaway account (no network, no writes outside
+# the tap's folder, no tokens, nothing left running), and each tap's output
+# speaks only for that tap. `icons` handles
 # untrusted installers without push credentials. Only `publish` writes, and it
 # never runs tap code. No job restores a cache, and `publish` takes artifacts
 # only by the ID their producing job reported.
@@ -118,7 +119,7 @@ jobs:
         run: |
           ONLY_CHANGED=""
           case "$EVENT_NAME" in schedule|push) ONLY_CHANGED="--only-changed";; esac
-          python scripts/collect_taps.py --taps $TAPS --workers 4 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
+          python scripts/collect_taps.py --taps $TAPS --workers 4 --tap-users --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

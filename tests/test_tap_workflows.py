@@ -112,7 +112,7 @@ def test_tap_code_runs_only_in_collect_each_tap_in_its_own_sandbox():
     collect = _job(pipeline, "collect")
     assert "runs-on: macos-latest" in collect and "actions: write" not in collect
     assert "GH_TOKEN" not in collect and "github.token" not in collect
-    assert "python scripts/collect_taps.py --taps $TAPS --workers 4" in collect
+    assert "python scripts/collect_taps.py --taps $TAPS --workers 4 --tap-users" in collect
     assert "collect_tap_casks.py" not in pipeline and "brew " not in pipeline
 
 
