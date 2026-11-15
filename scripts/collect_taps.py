@@ -1,92 +1,32 @@
 #!/usr/bin/env python3
-"""Collect tap casks in separate workflow runs, one tap each."""
-# Tap code runs only inside `tap-collect.yml` runs. Each run's token reaches only its own
-# artifacts, so a hostile tap can shape only its own data: this job keeps from each run
-# only the casks of the tap that run was given.
+"""Collect tap casks on this runner, each tap's brew calls in its own sandbox."""
+# Tap code runs only inside collect_tap_casks.TapSandbox, as a throwaway account in CI: no network,
+# no writes outside its own folder, no tokens, no app launches, and nothing left running after its
+# tap. A hostile tap can still shape its own output, so this job keeps from each tap's read only
+# the casks of that tap.
 from __future__ import annotations
 
 import argparse
 import json
 import os
-import subprocess  # nosec B404 - fixed gh commands, argument lists, and no shell
+import queue
 import tempfile
+import threading
 import time
-import uuid
+from contextlib import contextmanager, nullcontext
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Callable
 
 import tap_registry
-from collect_tap_casks import aliases, load_official, trusted_view
+from collect_tap_casks import (TapSandbox, aliases, clean_tap_user, create_tap_user, load_official, read_tap,
+                               trusted_view, warm_cache)
 from style_standards import write_json
 from tap_registry import REF
 from validate_taps import list_casks
 
-WORKFLOW = "tap-collect.yml"
-TITLE = "Tap collect "
-
-Gh = Callable[[list[str]], str]
-
-
-def batches(taps: list[str], size: int) -> list[list[str]]:
-    return [taps[i:i + size] for i in range(0, len(taps), size)]
-
-
-@dataclass
-class Runs:
-    """Workflow runs of tap-collect.yml, driven through the gh CLI."""
-
-    gh: Gh
-    ref: str
-    workdir: Path
-    sleep: Callable[[float], None] = time.sleep
-    clock: Callable[[], float] = time.monotonic
-
-    def dispatch(self, groups: dict[str, list[str]]) -> dict[str, int]:
-        """Start one run per group; the run id of each group whose run could be started and found."""
-        dispatched = set()
-        for nonce, group in groups.items():
-            try:
-                self.gh(["workflow", "run", WORKFLOW, "--ref", self.ref, "-f", f"taps={' '.join(group)}", "-f", f"nonce={nonce}"])
-                dispatched.add(nonce)
-            except subprocess.CalledProcessError:
-                print(f"warning: could not dispatch {' '.join(group)}; it waits for the next run")
-            self.sleep(1)  # GitHub limits bursts of write requests
-        return self._find(dispatched)
-
-    def _find(self, nonces: set[str], attempts: int = 30) -> dict[str, int]:
-        found: dict[str, int] = {}
-        for _ in range(attempts):
-            for run in self._json(["run", "list", "--workflow", WORKFLOW, "--event", "workflow_dispatch",
-                                   "--limit", str(len(nonces) + 100), "--json", "databaseId,displayTitle"]) or []:
-                if (nonce := run["displayTitle"].removeprefix(TITLE)) in nonces:
-                    found.setdefault(nonce, run["databaseId"])
-            if len(found) == len(nonces):
-                break
-            self.sleep(10)
-        return found
-
-    def read(self, run_id: int, deadline: float) -> dict | None:
-        """The run's collected data once it finishes; a run still going at `deadline` is cancelled."""
-        while (self._json(["run", "view", str(run_id), "--json", "status"]) or {}).get("status") != "completed":
-            if self.clock() >= deadline:
-                self._json(["run", "cancel", str(run_id)])
-                return None
-            self.sleep(20)
-        folder = self.workdir / str(run_id)
-        try:
-            self.gh(["run", "download", str(run_id), "-n", "tap-casks", "-D", str(folder)])
-            data = json.loads((folder / "tap_casks.json").read_text(encoding="utf-8"))
-        except (subprocess.CalledProcessError, OSError, ValueError):
-            return None
-        return data if isinstance(data, dict) and isinstance(data.get("casks"), dict) else None
-
-    def _json(self, args: list[str]):
-        try:
-            return json.loads(self.gh(args) or "null")
-        except (subprocess.CalledProcessError, ValueError):
-            return None
+Read = Callable[[str, float], dict]
 
 
 @dataclass
@@ -157,16 +97,73 @@ def _items(value: object) -> list[tuple]:
     return list(value.items()) if isinstance(value, dict) else []
 
 
-def collect(selection: Selection, runs: Runs, official: dict[str, dict], *, batch_size: int, budget: float,
-            on_progress=lambda result: None) -> dict:
-    groups = {uuid.uuid4().hex: group for group in batches(selection.todo, batch_size)}
-    run_ids = runs.dispatch(groups)
-    deadline = runs.clock() + budget
+def collect(selection: Selection, read: Read, official: dict[str, dict], *, workers: int, budget: float,
+            clock=time.monotonic, on_progress=lambda result: None) -> dict:
+    """Read the selected taps in parallel; reads not started by the deadline leave their tap for the next run."""
+    deadline = clock() + budget
     totals = _Totals(official, selection)
-    for nonce, group in groups.items():
-        totals.add(runs.read(run_ids[nonce], deadline) if nonce in run_ids else None, group)
-        on_progress(totals.result())
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(read, tap, deadline): tap for tap in selection.todo}
+        for future in as_completed(futures):
+            try:
+                data = future.result()
+            except (RuntimeError, OSError, ValueError, KeyError, TypeError) as error:  # a crashed read costs only its tap
+                print(f"warning: reading {futures[future]} crashed: {type(error).__name__}")
+                data = None
+            totals.add(data, [futures[future]])
+            on_progress(totals.result())
     return totals.result()
+
+
+class TapUsersExhausted(Exception):
+    """No clean tap user is left: the run stops rather than read taps as a user something survived in."""
+
+
+_EXHAUSTED = object()
+
+
+class TapUsers:
+    """Lends each read a clean tap user; a user whose processes survive cleanup is retired for a fresh one."""
+
+    MAX_RETIRED = 3
+
+    def __init__(self, count: int, make, clean):
+        """Make `count` users and check each is clean before its first tap."""
+        self.make, self.clean, self.next, self.retired = make, clean, count, 0
+        self.lock = threading.Lock()
+        self.free: queue.Queue = queue.Queue()
+        for index in range(count):
+            user = make(index)
+            if not clean(user):
+                raise TapUsersExhausted(f"{user} is not clean before its first tap")
+            self.free.put(user)
+
+    @contextmanager
+    def lend(self):
+        user = self.free.get()
+        if user is _EXHAUSTED:
+            self.free.put(_EXHAUSTED)
+            raise TapUsersExhausted("no clean tap user left")
+        try:
+            yield user
+        finally:
+            self.free.put(self._returned(user))
+
+    def _returned(self, user):
+        if self.clean(user):
+            return user
+        print(f"warning: retiring {user}: processes survived cleanup")
+        with self.lock:
+            self.retired += 1
+            if self.retired > self.MAX_RETIRED:
+                return _EXHAUSTED
+            index, self.next = self.next, self.next + 1
+        try:
+            fresh = self.make(index)
+        except RuntimeError as error:
+            print(f"warning: cannot replace {user}: {error}")
+            return _EXHAUSTED
+        return fresh if self.clean(fresh) else _EXHAUSTED
 
 
 def summary(result: dict) -> str:
@@ -189,18 +186,15 @@ def summary(result: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _gh(args: list[str]) -> str:
-    return subprocess.run(["gh", *args], capture_output=True, text=True, check=True).stdout  # nosec B603, B607 - gh from PATH; no shell
-
-
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--taps", nargs="*", required=True)
-    parser.add_argument("--batch-size", type=int, default=5)
+    parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--budget-minutes", type=float, default=270)
     parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
     parser.add_argument("--files", type=Path, help="data/tap_files.json: cask files already settled")
     parser.add_argument("--only-changed", action="store_true", help="Skip taps whose cask files are all settled")
+    parser.add_argument("--tap-users", action="store_true", help="Run brew as throwaway accounts (CI; needs sudo)")
     args = parser.parse_args(argv)
     if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
         raise SystemExit("; ".join(invalid))
@@ -209,12 +203,28 @@ def main(argv: list[str] | None = None) -> int:
         write_json(args.out, result, trailing_newline=True)
 
     with tempfile.TemporaryDirectory() as workdir:
+        work = Path(workdir).resolve()
         registered = {entry["name"]: entry for entry in tap_registry.load()}
         known = json.loads(args.files.read_text(encoding="utf-8")) if args.files and args.files.exists() else {}
-        selection = select(args.taps, lambda name: list_casks(registered.get(name, {"name": name}), workdir=Path(workdir)),
+        selection = select(args.taps, lambda name: list_casks(registered.get(name, {"name": name}), workdir=work),
                            known, args.only_changed)
-        runs = Runs(_gh, os.environ["GITHUB_REF_NAME"], Path(workdir))
-        result = collect(selection, runs, load_official(), batch_size=args.batch_size,
+        # Warmed on the host before any tap code runs; each sandbox gets its own clone of it.
+        warm_cache(work / "cache")
+        # Tap users must reach their sandboxes, which this user's private temp folder would hide.
+        boxes = Path(tempfile.mkdtemp(prefix="caskflow-sandboxes-", dir="/private/tmp" if args.tap_users else None))
+        boxes.chmod(0o711)
+        users = TapUsers(args.workers, create_tap_user, clean_tap_user) if args.tap_users else None
+
+        def read(tap: str, deadline: float) -> dict:
+            start = time.monotonic()
+            with users.lend() if users else nullcontext() as user:
+                data = read_tap(registered.get(tap, {"name": tap}), lambda: TapSandbox(boxes, work / "cache", user),
+                                deadline=deadline)
+                read_seconds = time.monotonic() - start
+            print(f"read {tap} in {read_seconds:.1f}s, cleaned in {time.monotonic() - start - read_seconds:.1f}s", flush=True)
+            return data
+
+        result = collect(selection, read, load_official(), workers=args.workers,
                          budget=args.budget_minutes * 60, on_progress=save)
     save(result)
     if step_summary := os.environ.get("GITHUB_STEP_SUMMARY"):
