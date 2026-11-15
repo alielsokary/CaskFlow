@@ -1,13 +1,2439 @@
 {
   "version": 1,
-  "generatedDate": "2026-11-14",
+  "generatedDate": "2026-11-15",
   "casks": {
+    "abue-ammar/tinycast/tinycast-universal": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "anomalyco/tap/hex": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "anthropics/tap/ant": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "awesomedog/tap/maxlaunchpad": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "b451c/quickmd/quickmd": {
+      "primary": "productivity",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "basecamp/tap/basecamp-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "basecamp/tap/fizzy": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "basecamp/tap/hey": {
+      "primary": "communication",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "bell-sw/liberica/liberica-jdk11": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk11-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk11-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk12": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk12-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk13": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk13-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk13-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk14": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk14-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk14-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk15": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk15-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk15-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk16": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk16-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk16-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk17": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk17-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk17-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk18": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk18-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk18-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk19": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk19-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk19-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk20": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk20-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk20-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk21": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk21-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk21-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk22": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk22-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk22-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk23": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk23-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk23-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk24": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk24-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk24-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk25": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk25-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk25-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk26": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk26-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk26-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk27": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk27-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk27-lite": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk8": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jdk8-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre11": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre11-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre13": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre13-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre14": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre14-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre15": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre15-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre16": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre16-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre17": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre17-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre18": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre18-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre19": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre19-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre20": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre20-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre21": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre21-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre22": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre22-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre23": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre23-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre24": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre24-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre25": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre25-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre26": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre26-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre27": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre27-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre8": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "bell-sw/liberica/liberica-jre8-full": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "caezium/tap/burrow": {
+      "primary": "utilities",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caezium/tap/nib": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "caezium/tap/wisp": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "utilities"
+      ]
+    },
+    "chattymin/tap/bobber": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "chattymin/tap/poke-token-bar": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "circleci-public/circleci/chunk@next": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "circleci-public/circleci/circleci-runner": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.12": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.13": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.15": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.16": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.17": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.18": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.19": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.20": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.21": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.22": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.23": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.24": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.25": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.0.26": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.10": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.11": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.12": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.13": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.14": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.4": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.5": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.6": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.7": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.8": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci-runner@3.1.9": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci@next": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "circleci-public/circleci/circleci@v0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "coder/coder/coder-desktop": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "coder/coder/coder-desktop-preview": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "colindean/fonts-nonfree/font-microsoft-aptos": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "colindean/fonts-nonfree/font-microsoft-fluent": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "colindean/fonts-nonfree/font-microsoft-office": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "crmne/tap/chat-with-work": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "crmne/tap/spotifast": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
+    "crmne/tap/tonepush": {
+      "primary": "audioMusic",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "crmne/tap/zapfast": {
+      "primary": "communication",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "d12frosted/emacs-plus/emacs-plus-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "d12frosted/emacs-plus/emacs-plus-app@master": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "d12frosted/emacs-plus/emacs-plus-app@next": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "dail8859/notepadnext/notepadnext": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "deskflow/tap/deskflow": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "deskflow/tap/deskflow-dev": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "detachhead/tap/rebased": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "docker/tap/sbx": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.21.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.23.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.24.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.24.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.25.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.26.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.27.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.28.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.28.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.28.3": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.29.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.30.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.31.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.31.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.31.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.31.3": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.32.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.33.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.34.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.35.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.37.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.37.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.38.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.39.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.42.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.42.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.43.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.45.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.45.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.46.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.47.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.48.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.49.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.49.2": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.50.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.50.1": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.51.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.53.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@nightly": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@rc": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "dopplerhq/doppler/doppler": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "dynatrace-oss/tap/dtctl": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "dynatrace-oss/tap/dtmgd": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "dynatrace-oss/tap/dtui": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "edouard-claude/tap/snip": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "entireio/tap/entire": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "entireio/tap/entire@nightly": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "entireio/tap/git-sync": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "esengine/reasonix/reasonix": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "espressif/eim/eim-gui": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "frankea/whisky/whisky": {
+      "primary": "utilities",
+      "secondary": [
+        "games"
+      ]
+    },
+    "gcenx/wine/game-porting-toolkit": {
+      "primary": "developerTools",
+      "secondary": [
+        "games"
+      ]
+    },
+    "gerlero/openfoam/openfoam": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2112": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2206": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2212": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2306": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2312": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2406": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2412": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2506": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2512": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "gerlero/openfoam/openfoam@2606": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "go-task/tap/go-task": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "go-task/tap/go-task@3.54": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "goreleaser/tap/goreleaser": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "goreleaser/tap/goreleaser-pro": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "goreleaser/tap/goreleaser-pro@2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "goreleaser/tap/mcp": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "goreleaser/tap/mcp@0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "goreleaser/tap/sponsors": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "grishka/grishka/neardrop": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
+      ]
+    },
+    "hamed-elfayome/claude-usage/claude-usage-tracker": {
+      "primary": "menuBar",
+      "secondary": [
+        "ai",
+        "utilities"
+      ]
+    },
+    "hashicorp/tap/hashicorp-boundary-desktop": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "hashicorp/tap/hashicorp-vagrant": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "humanlayer/humanlayer/humanlayer": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/humanlayer-beta": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/humanlayer-dev": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/humanlayer-electron": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/humanlayer-electron-beta": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/humanlayer-electron-dev": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide-beta": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide-dev": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide-electron": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide-electron-beta": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "humanlayer/humanlayer/riptide-electron-dev": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10-0-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk10-preview": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk11": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk11-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk11-preview": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-500": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-1-800": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk2-2-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk3-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk3-1-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk5": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk6": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk6-0-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7-0-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk7-preview": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-400": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk8-preview": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk9": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-100": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-200": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk9-0-300": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "isen-ng/dotnet-sdk-versions/dotnet-sdk9-preview": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "jarvis322/tap/macwake": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "jarvis322/tap/sysdata": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "jhlee0409/tap/claude-code-history-viewer": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "jurplel/tap/instant-space-switcher": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "kamillobinski/thock/thock": {
+      "primary": "utilities",
+      "secondary": [
+        "audioMusic"
+      ]
+    },
+    "krishkrosh/apps/trackweight": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "lihaoyun6/tap/airbattery": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lihaoyun6/tap/appdimmer": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "lihaoyun6/tap/clip2": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lihaoyun6/tap/dockbattery": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lihaoyun6/tap/logoer": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "lihaoyun6/tap/pixboard": {
+      "primary": "screensaverWallpaper",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "lihaoyun6/tap/qdelayer": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "lihaoyun6/tap/quickrecorder": {
+      "primary": "videoMedia",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "lihaoyun6/tap/topit": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "lihaoyun6/tap/xhistory": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "localstack/tap/lstk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "longbridge/tap/longbridge-terminal": {
+      "primary": "financeCrypto",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "macos-fuse-t/cask/fuse-t-sshfs": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "macos-fuse-t/cask/scorpi": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "mdogan/zulu/zulu-jdk10": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk11": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk12": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk13": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk14": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk15": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk16": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk17": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk18": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk19": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk20": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk21": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk22": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk23": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk24": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk25": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk26": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk27": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk7": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk8": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-jdk9": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mdogan/zulu/zulu-mc": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "mhaeuser/mhaeuser/battery-toolkit": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "microsoft/git/microsoft-git": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "microsoft/git/scalar": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "microsoft/git/scalar-azrepos": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "msitarzewski/agency-agents/agency-agents": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "muxy-app/tap/muxy": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "netbirdio/tap/netbird-ui": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "nextpad-plus-plus/nextpad/nextpad": {
+      "primary": "developerTools",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nguyenphutrong/tap/quotio": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "nikitabobko/tap/aerospace": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.11.2": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.12.0": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.13.4": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.14.2": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.15.2": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.16.2": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.17.1": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.18.5": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.19.2": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "nikitabobko/tap/aerospace@0.20.3": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "openai/tools/openai": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "opencoworkai/tap/open-codesign": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "opencoworkai/tap/open-cowork": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "pantsbuild/tap/pants": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "penso/tap/arbor": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "penso/tap/herdr-gpui": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "playcover/playcover/ipa-source-generator": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "playcover/playcover/playcover-nightly": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "playcover/playcover/sideloadly": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "productdevbook/tap/fil": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "productdevbook/tap/lamba": {
+      "primary": "menuBar",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "qoderai/qoder/qodercli": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "r-lib/rig/rig": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "r-lib/rig/rim": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "rafaelswi/menubarusb/menubarusb": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "redis-stack/redis-stack/redis-stack": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "redis-stack/redis-stack/redis-stack-redisinsight": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "redis-stack/redis-stack/redis-stack-server": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "redis/redis/redis": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "redis/redis/redis-rc": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "safedep/tap/cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
+    "safedep/tap/pmg": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "safedep/tap/pmg@edge": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "safedep/tap/vet": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "safedep/tap/vet@edge": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
     "saffsanity/sill/sill": {
       "primary": "utilities",
       "secondary": [
         "productivity"
       ]
+    },
+    "sap/sapmachine/sapmachine11-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine11-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine11-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine11-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine12-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine12-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine13-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine13-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine14-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine14-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine15-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine15-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine16-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine16-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine17-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine17-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine17-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine17-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine18-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine18-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine19-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine19-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine20-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine20-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine20-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine20-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine21-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine21-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine21-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine21-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine22-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine22-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine22-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine22-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine23-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine23-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine23-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine23-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine24-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine24-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine24-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine24-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine25-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine25-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine25-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine25-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine26-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine26-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine26-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine26-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine27-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine27-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine27-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine27-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine28-ea-jdk": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sap/sapmachine/sapmachine28-ea-jre": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "siddharthvaddem/openscreen/openscreen": {
+      "primary": "videoMedia",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
+    "sikarugir-app/sikarugir/sikarugir": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "skiptools/skip/skip": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@5.10": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@5.10.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.0.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.0.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.0.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.2.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@6.2.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-android-toolchain@nightly-6.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@5.10": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@5.10.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.0.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.0.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.0.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.1": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.2.0": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@6.2.3": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "skiptools/skip/swift-host-toolchain@nightly-6.2": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "sozercan/repo/arin": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "sozercan/repo/ayna": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "communication"
+      ]
+    },
+    "sozercan/repo/kaset": {
+      "primary": "audioMusic",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
+    "sozercan/repo/open-in-code": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "sozercan/repo/vekil": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "spacelift-io/spacelift/spacectl": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "stablyai/orca/orca": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "stablyai/orca/orca@rc": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "steipete/tap/blackbar": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "steipete/tap/nameplate": {
+      "primary": "utilities",
+      "secondary": [
+        "menuBar"
+      ]
+    },
+    "streetpea/streetpea/chiaki-ng": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "sttz/tap/expresso": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "sttz/tap/install-unity": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "terraform-linters/tap/tflint": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "theboredteam/boring-notch/boring-notch": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "theboredteam/boring-notch/boring-notch@rc": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "thusvill/livewallpaper/livewallpaper": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "tsung-ju/iguanatexmac/iguanatexmac": {
+      "primary": "officeTools",
+      "secondary": [
+        "scienceEducation"
+      ]
+    },
+    "tsung-ju/iguanatexmac/latexit-metadata": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "tw93/tap/kakuku": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/1password-cli-linux": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/1password-gui-linux": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
+    "ublue-os/tap/antigravity-ide-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/antigravity-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/asusctl-linux": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/bazzite-wallpapers": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "ublue-os/tap/bluefin-wallpapers": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "ublue-os/tap/bluefin-wallpapers-extra": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "ublue-os/tap/chairlift": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/framework-tool": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/framework-wallpapers": {
+      "primary": "screensaverWallpaper",
+      "secondary": []
+    },
+    "ublue-os/tap/goose-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/jetbrains-toolbox-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "ublue-os/tap/lm-studio-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/rog-control-center-linux": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "ublue-os/tap/visual-studio-code-linux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/visual-studio-code-linux@insiders": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "ublue-os/tap/vscodium-linux": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "umputun/apps/agterm": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "umputun/apps/revmux": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "vishvavariya/notchy/notchy": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "warrensbox/tap/tfswitch": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "warrensbox/tap/whosup": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "wxtsky/tap/codeisland": {
+      "primary": "menuBar",
+      "secondary": [
+        "developerTools",
+        "ai"
+      ]
+    },
+    "xdevplatform/tap/xurl": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "xykong/tap/flux-markdown": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
+    "xykong/tap/flux-notifier": {
+      "primary": "utilities",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "xykong/tap/markdown-preview-enhanced": {
+      "primary": "utilities",
+      "secondary": [
+        "developerTools"
+      ]
+    },
+    "zqxwce/tap/vphone-cli": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "zqxwce/tap/vphone-cli-legacy": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "zqxwce/tap/vphone-launchpad": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "zqxwce/tap/vphone-ws": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     }
   },
-  "sameAs": {}
+  "sameAs": {
+    "1password/tap/1password-cli": "1password-cli",
+    "darrylmorley/whatcable/whatcable": "whatcable",
+    "distroav/tap/distroav": "distroav",
+    "f/textream/textream": "textream",
+    "farion1231/ccswitch/cc-switch": "cc-switch",
+    "gcenx/wine/wine-stable": "wine-stable",
+    "gcenx/wine/wine@devel": "wine@devel",
+    "gcenx/wine/wine@staging": "wine@staging",
+    "macos-fuse-t/cask/fuse-t": "fuse-t",
+    "macpaw/taps/cleanmymac-cli": "cleanmymac-cli",
+    "manaflow-ai/cmux/cmux": "cmux",
+    "ngrok/ngrok/ngrok": "ngrok",
+    "playcover/playcover/playcover-community": "playcover-community",
+    "productdevbook/tap/portkiller": "portkiller",
+    "steipete/tap/codexbar": "codexbar",
+    "steipete/tap/repobar": "repobar",
+    "steipete/tap/trimmy": "trimmy",
+    "typewhisper/tap/typewhisper": "typewhisper",
+    "vorssaint/tap/vorssaint": "vorssaint"
+  }
 }
