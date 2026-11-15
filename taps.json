@@ -8,13 +8,34 @@
       "name": "5ouma/tap"
     },
     {
+      "name": "abhinav/tap"
+    },
+    {
+      "name": "aboudjem/tap"
+    },
+    {
       "name": "abue-ammar/tinycast"
+    },
+    {
+      "name": "adntgv/tap"
+    },
+    {
+      "name": "adoptopenjdk/openjdk"
+    },
+    {
+      "name": "agentasticai/tap"
+    },
+    {
+      "name": "agentwrapper/tap"
     },
     {
       "name": "alejandrobujan/tap"
     },
     {
       "name": "alexstrnik/browserino"
+    },
+    {
+      "name": "alinuxpengui/macabolic"
     },
     {
       "name": "amir1376/tap"
@@ -44,13 +65,22 @@
       "name": "arahim3/tap"
     },
     {
+      "name": "arthur-ficial/tap"
+    },
+    {
       "name": "arto-app/tap"
+    },
+    {
+      "name": "artzainnn/tap"
     },
     {
       "name": "athevon/tokeneater"
     },
     {
       "name": "atomicjar/tap"
+    },
+    {
+      "name": "augani/dory"
     },
     {
       "name": "authzed/tap"
@@ -60,6 +90,9 @@
     },
     {
       "name": "axiomhq/tap"
+    },
+    {
+      "name": "ayangweb/bongocat"
     },
     {
       "name": "azure/azd"
@@ -77,10 +110,16 @@
       "name": "bell-sw/liberica"
     },
     {
+      "name": "bengerthelorf/tap"
+    },
+    {
       "name": "betterdiscord/tap"
     },
     {
       "name": "betterleaks/tap"
+    },
+    {
+      "name": "beutton/brew"
     },
     {
       "name": "blacktop/tap"
@@ -92,10 +131,19 @@
       "name": "brewforge/extras"
     },
     {
+      "name": "bryanroscoe/shield-optimizer"
+    },
+    {
+      "name": "buxuku/tap"
+    },
+    {
       "name": "bwya77/tap"
     },
     {
       "name": "bysiber/cleardisk"
+    },
+    {
+      "name": "c0desurfer/tap"
     },
     {
       "name": "caarlos0/tap"
@@ -108,6 +156,9 @@
     },
     {
       "name": "certak-com/kafkio"
+    },
+    {
+      "name": "chang-07/tap"
     },
     {
       "name": "chattymin/tap"
@@ -158,6 +209,9 @@
       "name": "debpalash/tap"
     },
     {
+      "name": "debugtheworldbot/keystats"
+    },
+    {
       "name": "deskflow/tap"
     },
     {
@@ -179,6 +233,12 @@
       "name": "dopplerhq/doppler"
     },
     {
+      "name": "dracula/install"
+    },
+    {
+      "name": "driceroland/tap"
+    },
+    {
       "name": "dynatrace-oss/tap"
     },
     {
@@ -188,13 +248,25 @@
       "name": "edouard-claude/tap"
     },
     {
+      "name": "egoist/tap"
+    },
+    {
+      "name": "ender-wang/tap"
+    },
+    {
       "name": "entireio/tap"
+    },
+    {
+      "name": "epk/epk"
     },
     {
       "name": "eranif/codelite"
     },
     {
       "name": "ericjypark/tap"
+    },
+    {
+      "name": "erictli/tap"
     },
     {
       "name": "esengine/reasonix"
@@ -209,6 +281,9 @@
       "name": "farion1231/ccswitch"
     },
     {
+      "name": "fastrepl/fastrepl"
+    },
+    {
       "name": "fcjr/fcjr"
     },
     {
@@ -221,16 +296,34 @@
       "name": "frankea/whisky"
     },
     {
+      "name": "frostyard/tap"
+    },
+    {
+      "name": "fujacob/cotabby"
+    },
+    {
+      "name": "garfieldfluffjr/macnewfile"
+    },
+    {
       "name": "gcenx/wine"
     },
     {
       "name": "gerlero/openfoam"
     },
     {
+      "name": "glzr-io/tap"
+    },
+    {
       "name": "go-task/tap"
     },
     {
       "name": "goreleaser/tap"
+    },
+    {
+      "name": "gostonx/tap"
+    },
+    {
+      "name": "graalvm/tap"
     },
     {
       "name": "grafana/grafana"
@@ -242,7 +335,14 @@
       "name": "hamed-elfayome/claude-usage"
     },
     {
+      "name": "harry0703/tap"
+    },
+    {
       "name": "hashicorp/tap"
+    },
+    {
+      "name": "hewigovens/tap",
+      "remote": "https://github.com/hewigovens/tap"
     },
     {
       "name": "hmans/beans"
@@ -263,16 +363,37 @@
       "name": "isen-ng/dotnet-sdk-versions"
     },
     {
+      "name": "italomandara/cxpatcher"
+    },
+    {
+      "name": "jackielii/tap"
+    },
+    {
       "name": "jakobhviid/tap"
     },
     {
       "name": "jarvis322/tap"
     },
     {
+      "name": "jazzyalex/agent-sessions"
+    },
+    {
       "name": "jhlee0409/tap"
     },
     {
+      "name": "jimeh/emacs-builds"
+    },
+    {
+      "name": "jipika/waifux"
+    },
+    {
       "name": "jithin-sabu/tap"
+    },
+    {
+      "name": "josejuanqm/tap"
+    },
+    {
+      "name": "jsattler/tap"
     },
     {
       "name": "junian/dotnet"
@@ -284,10 +405,22 @@
       "name": "kamillobinski/thock"
     },
     {
+      "name": "kanriapp/cask"
+    },
+    {
+      "name": "khaphanspace/gonhanh"
+    },
+    {
       "name": "krishkrosh/apps"
     },
     {
+      "name": "kunchenguid/tap"
+    },
+    {
       "name": "lab421/tap"
+    },
+    {
+      "name": "lcharvol/tap"
     },
     {
       "name": "lifedever/tap"
@@ -305,19 +438,31 @@
       "name": "lzhgus/tap"
     },
     {
+      "name": "lzt1008/powerflow"
+    },
+    {
       "name": "macos-fuse-t/cask"
     },
     {
       "name": "macpaw/taps"
     },
     {
+      "name": "maddada/tap"
+    },
+    {
       "name": "manaflow-ai/cmux"
+    },
+    {
+      "name": "mariusgm/newfile"
     },
     {
       "name": "mattt/tap"
     },
     {
       "name": "mdogan/zulu"
+    },
+    {
+      "name": "mediosz/tap"
     },
     {
       "name": "mhaeuser/mhaeuser"
@@ -332,10 +477,22 @@
       "name": "microsoft/sysinternalstap"
     },
     {
+      "name": "mikker/tap"
+    },
+    {
       "name": "minghinmatthewlam/tap"
     },
     {
+      "name": "mnemon-dev/tap"
+    },
+    {
+      "name": "momenbasel/phosphor"
+    },
+    {
       "name": "momenbasel/tap"
+    },
+    {
+      "name": "mrrockysl/muro"
     },
     {
       "name": "msitarzewski/agency-agents"
@@ -344,10 +501,16 @@
       "name": "msitarzewski/brew-browser"
     },
     {
+      "name": "murdercode/presto"
+    },
+    {
       "name": "muxy-app/tap"
     },
     {
       "name": "my-monkeys/tap"
+    },
+    {
+      "name": "nanako0129/tokenbar"
     },
     {
       "name": "netbirdio/tap"
@@ -365,10 +528,16 @@
       "name": "nickustinov/tap"
     },
     {
+      "name": "nicoverbruggen/cask"
+    },
+    {
       "name": "nikitabobko/tap"
     },
     {
       "name": "nkzw-tech/tap"
+    },
+    {
+      "name": "nolight132/tap"
     },
     {
       "name": "notprotonnot/notproton"
@@ -377,7 +546,19 @@
       "name": "notwadegrimridge/brew"
     },
     {
+      "name": "octane0411/tap"
+    },
+    {
       "name": "oktadev/tap"
+    },
+    {
+      "name": "omacom/mac"
+    },
+    {
+      "name": "oomol-lab/tap"
+    },
+    {
+      "name": "open-cli-collective/tap"
     },
     {
       "name": "open-pencil/tap"
@@ -389,16 +570,28 @@
       "name": "opencoworkai/tap"
     },
     {
+      "name": "opgginc/tap"
+    },
+    {
       "name": "otuerk/sidebar"
     },
     {
       "name": "ovh/tap"
     },
     {
+      "name": "owenthereal/upterm"
+    },
+    {
       "name": "owo-network/brew"
     },
     {
       "name": "pantsbuild/tap"
+    },
+    {
+      "name": "parallel-web/tap"
+    },
+    {
+      "name": "pasrom/meeting-transcriber"
     },
     {
       "name": "pear-devs/pear"
@@ -411,6 +604,9 @@
     },
     {
       "name": "peteonrails/voxtype"
+    },
+    {
+      "name": "philberthfz/wine"
     },
     {
       "name": "plakarkorp/tap"
@@ -426,6 +622,9 @@
     },
     {
       "name": "projectbluefin/tap"
+    },
+    {
+      "name": "puppetlabs/puppet"
     },
     {
       "name": "pwndbg/tap"
@@ -446,13 +645,25 @@
       "name": "railwaycat/emacsmacport"
     },
     {
+      "name": "ramonvermeulen/whosthere"
+    },
+    {
+      "name": "rana-gmbh/filefluss"
+    },
+    {
       "name": "rana-gmbh/netfluss"
+    },
+    {
+      "name": "realskyrin/tap"
     },
     {
       "name": "redis-stack/redis-stack"
     },
     {
       "name": "redis/redis"
+    },
+    {
+      "name": "rest-sh/tap"
     },
     {
       "name": "rive-app/tap"
@@ -464,16 +675,34 @@
       "name": "roversx/tap"
     },
     {
+      "name": "rvarunrathod/tap"
+    },
+    {
       "name": "safedep/tap"
     },
     {
       "name": "saffsanity/sill"
     },
     {
+      "name": "sane-apps/tap"
+    },
+    {
+      "name": "santosh7017/androidfilesync"
+    },
+    {
       "name": "sanyam-g/switch"
     },
     {
       "name": "sap/sapmachine"
+    },
+    {
+      "name": "saragordic/tap"
+    },
+    {
+      "name": "shobhit99/tap"
+    },
+    {
+      "name": "shopware/tap"
     },
     {
       "name": "siddharthvaddem/openscreen"
@@ -491,6 +720,9 @@
       "name": "skyhook-io/tap"
     },
     {
+      "name": "slopus/tap"
+    },
+    {
       "name": "snowflakedb/snowflake-cli"
     },
     {
@@ -500,10 +732,19 @@
       "name": "spacelift-io/spacelift"
     },
     {
+      "name": "srimanachanta/tap"
+    },
+    {
       "name": "stablyai/orca"
     },
     {
       "name": "stackitcloud/tap"
+    },
+    {
+      "name": "stainless-api/tap"
+    },
+    {
+      "name": "starhaven-io/tap"
     },
     {
       "name": "steamre/tools"
@@ -518,10 +759,19 @@
       "name": "sttz/tap"
     },
     {
+      "name": "sunnyyoung/tap"
+    },
+    {
+      "name": "supercmdlabs/supercmd"
+    },
+    {
       "name": "supersonic-app/supersonic"
     },
     {
       "name": "surgedm/tap"
+    },
+    {
+      "name": "suzuki-shunsuke/ghtkn"
     },
     {
       "name": "suzuki-shunsuke/tfcmt"
@@ -530,10 +780,22 @@
       "name": "sw33tlie/macshot"
     },
     {
+      "name": "t8y2/tap"
+    },
+    {
       "name": "tabularisdb/tabularis"
     },
     {
+      "name": "team-spotube/apps"
+    },
+    {
+      "name": "teddychan/tap"
+    },
+    {
       "name": "terraform-linters/tap"
+    },
+    {
+      "name": "thdxg/tap"
     },
     {
       "name": "the-wineskin-project/wineskin"
@@ -542,7 +804,19 @@
       "name": "theboredteam/boring-notch"
     },
     {
+      "name": "thebusydev/linux"
+    },
+    {
+      "name": "thedavidweng/tap"
+    },
+    {
+      "name": "theurichde/go-aws-sso"
+    },
+    {
       "name": "thusvill/livewallpaper"
+    },
+    {
+      "name": "timescale/tap"
     },
     {
       "name": "tsung-ju/iguanatexmac"
@@ -561,6 +835,15 @@
     },
     {
       "name": "umputun/apps"
+    },
+    {
+      "name": "unsecretised/tap"
+    },
+    {
+      "name": "utkuozdemir/pv-migrate"
+    },
+    {
+      "name": "viarotel-org/escrcpy"
     },
     {
       "name": "vishvavariya/notchy"
@@ -587,13 +870,31 @@
       "name": "xdevplatform/tap"
     },
     {
+      "name": "xiaolai/tap"
+    },
+    {
+      "name": "xiufengsun/tokentracker"
+    },
+    {
       "name": "xpipe-io/tap"
+    },
+    {
+      "name": "xtool-org/tap"
     },
     {
       "name": "xykong/tap"
     },
     {
       "name": "y3owk1n/tap"
+    },
+    {
+      "name": "yuuichieguchi/calyx"
+    },
+    {
+      "name": "yuzeguitarist/deck"
+    },
+    {
+      "name": "zennotes/tap"
     },
     {
       "name": "zqxwce/tap"
