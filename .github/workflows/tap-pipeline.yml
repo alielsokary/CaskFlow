@@ -1,12 +1,12 @@
 name: Tap pipeline
 
 # Icons and categories for registered third-party taps, separate from the
-# official pipelines. Tap code runs only in tap-collect.yml runs, one tap per
-# run, which `collect` dispatches and reads back run by run. `icons` handles
+# official pipelines. Tap code runs only in `collect`, where each tap is read in
+# its own macOS sandbox (no network, no writes outside the tap's folder, no
+# tokens), and each tap's output speaks only for that tap. `icons` handles
 # untrusted installers without push credentials. Only `publish` writes, and it
-# never runs tap code. Untrusted code may hold a run's Actions token, so no job
-# restores a cache and `publish` takes artifacts only by the ID their producing
-# job reported.
+# never runs tap code. No job restores a cache, and `publish` takes artifacts
+# only by the ID their producing job reported.
 on:
   push:
     branches: [master]
@@ -89,11 +89,10 @@ jobs:
   collect:
     needs: resolve
     if: needs.resolve.outputs.taps != '' || needs.resolve.outputs.prune != ''
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 300
     permissions:
       contents: read
-      actions: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -108,19 +107,18 @@ jobs:
           if [ -n "$DATA_PR" ] && git fetch -q origin "$DATA_PR"; then
             git checkout FETCH_HEAD -- data/tap_files.json 2>/dev/null || true
           fi
-      - name: Read taps in separate runs, one tap each
+      - name: Read taps, each in its own sandbox
         env:
           TAPS: ${{ needs.resolve.outputs.taps }}
           EVENT_NAME: ${{ github.event_name }}
-          GH_TOKEN: ${{ github.token }}
-        # Runs no tap code. TAPS holds validated user/repo names only; word-splitting is intended.
-        # One tap per run isolates taps from each other. The weekly sweep and taps.json pushes only collect taps
-        # whose cask files changed, so merging a data PR doesn't collect its taps again.
-        # Writes after every run; runs the budget leaves out wait for the next sweep.
+        # TAPS holds validated user/repo names only; word-splitting is intended.
+        # The weekly sweep and taps.json pushes only collect taps whose cask files changed,
+        # so merging a data PR doesn't collect its taps again.
+        # Writes after every tap; taps the budget leaves out wait for the next sweep.
         run: |
           ONLY_CHANGED=""
           case "$EVENT_NAME" in schedule|push) ONLY_CHANGED="--only-changed";; esac
-          python scripts/dispatch_collect.py --taps $TAPS --batch-size 1 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
+          python scripts/collect_taps.py --taps $TAPS --workers 4 --budget-minutes 270 --files data/tap_files.json $ONLY_CHANGED --out tap_casks.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

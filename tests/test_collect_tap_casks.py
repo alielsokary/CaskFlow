@@ -1,5 +1,6 @@
 import json
 import subprocess
+from pathlib import Path
 
 import pytest
 
@@ -48,43 +49,6 @@ def test_aliases_only_for_matching_twins():
     assert collect.aliases(casks, official) == {"macos-fuse-t/cask/fuse-t": "fuse-t"}
 
 
-def fake_brew(responses):
-    calls = []
-
-    def run(cmd):
-        calls.append(cmd)
-        code, out = responses.get(tuple(cmd[1:3]), (0, ""))
-        return subprocess.CompletedProcess(cmd, code, stdout=out, stderr="boom" if code else "")
-
-    return run, calls
-
-
-def test_collect_reads_each_tap_and_records_failures():
-    tap_info = json.dumps([{"name": "macos-fuse-t/cask", "cask_tokens": ["macos-fuse-t/cask/fuse-t"]}])
-    info = json.dumps({"formulae": [], "casks": [TAP_FUSE]})
-    run, calls = fake_brew({
-        ("tap", "gone/tap"): (1, ""),
-        ("tap-info", "--json"): (0, tap_info),
-        ("info", "--cask"): (0, info),
-    })
-
-    result = collect.collect(
-        [{"name": "gone/tap"}, {"name": "macos-fuse-t/cask", "remote": "https://github.com/macos-fuse-t/homebrew-cask"}],
-        run, {"fuse-t": OFFICIAL_FUSE},
-    )
-
-    assert list(result["casks"]) == ["macos-fuse-t/cask/fuse-t"]
-    assert result["sameAs"] == {"macos-fuse-t/cask/fuse-t": "fuse-t"}
-    assert "gone/tap" in result["failures"]
-    assert ["brew", "tap", "macos-fuse-t/cask", "https://github.com/macos-fuse-t/homebrew-cask"] in calls
-    assert ["brew", "trust", "macos-fuse-t/cask"] in calls
-
-
-def test_main_rejects_invalid_tap_names(capsys):
-    with pytest.raises(SystemExit, match="not a lowercase"):
-        collect.main(["--taps", "a/b; curl x|sh"])
-
-
 def test_trusted_view_keeps_only_requested_well_formed_casks_and_recomputes_aliases():
     evil = cask("fuse-t", "macos-fuse-t/cask/fuse-t", "https://x", "https://x", [])
     collected = {
@@ -101,21 +65,6 @@ def test_trusted_view_keeps_only_requested_well_formed_casks_and_recomputes_alia
 
     assert list(view["casks"]) == ["macos-fuse-t/cask/fuse-t"]
     assert view["sameAs"] == {"macos-fuse-t/cask/fuse-t": "fuse-t"}
-
-
-def test_collect_stops_at_its_budget_and_hands_over_each_tap():
-    run, calls = fake_brew({})
-    ticks = iter([0, 50, 100, 150])
-    seen = []
-
-    result = collect.collect(
-        [{"name": name} for name in ("a/b", "c/d", "e/f")], run, {},
-        budget=120, clock=lambda: next(ticks), on_progress=seen.append,
-    )
-
-    assert [cmd[2] for cmd in calls if cmd[1] == "tap"] == ["a/b", "c/d"]
-    assert result["unreached"] == ["e/f"]
-    assert len(seen) == 2 and seen[-1]["unreached"] == []
 
 
 def info_brew(broken):
@@ -143,26 +92,6 @@ def test_info_bisects_around_broken_casks():
     assert len(casks) == 37 and not broken & set(casks)
     assert set(failures) == broken
     assert len(calls) < 40
-
-
-def test_collect_records_cask_failures_and_read_taps():
-    tap_info = json.dumps([{"name": "u/r", "cask_tokens": ["u/r/good", "u/r/bad"]}])
-    info_run, _ = info_brew({"u/r/bad"})
-
-    def run(cmd):
-        if cmd[1] == "tap" and cmd[2] == "gone/tap":
-            return subprocess.CompletedProcess(cmd, 1, stdout="", stderr="boom")
-        if cmd[1] == "tap-info":
-            return subprocess.CompletedProcess(cmd, 0, stdout=tap_info, stderr="")
-        if cmd[1] == "info":
-            return info_run(cmd)
-        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
-
-    result = collect.collect([{"name": "u/r"}, {"name": "gone/tap"}], run, {})
-
-    assert list(result["casks"]) == ["u/r/good"]
-    assert list(result["caskFailures"]) == ["u/r/bad"]
-    assert "gone/tap" in result["failures"]
 
 
 def test_trusted_view_filters_failures_and_read_taps():
@@ -238,21 +167,6 @@ def test_info_gives_up_on_the_rest_at_its_deadline():
     assert sum(reason == "out of time" for reason in failures.values()) >= 4 and len(calls) <= 4
 
 
-def test_odd_brew_output_fails_only_its_tap():
-    tap_info = json.dumps([{"name": "x", "cask_tokens": ["u/r/a"]}])
-
-    def run(cmd):
-        if cmd[1] == "tap-info":
-            return subprocess.CompletedProcess(cmd, 0, stdout=tap_info, stderr="")
-        if cmd[1] == "info":
-            return subprocess.CompletedProcess(cmd, 0, stdout="[1]", stderr="")
-        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
-
-    result = collect.collect([{"name": "u/r"}, {"name": "o/t"}], run, {})
-
-    assert set(result["failures"]) == {"u/r", "o/t"} and result["casks"] == {}
-
-
 @pytest.mark.parametrize("collected", [
     {"casks": [], "caskFailures": [["x"]], "listed": {"u/r": "x"}},
     {"casks": {"u/r/a": "not a dict"}, "readTaps": [["x"]]},
@@ -271,3 +185,92 @@ def test_trusted_view_survives_malformed_output(collected):
 ])
 def test_more_shared_hosts_narrow_to_their_owner(url, expected):
     assert collect._download_source({"url": url}) == expected
+
+
+TAP_INFO = json.dumps([{"name": "u/r", "cask_tokens": ["u/r/good", "u/r/bad"]}])
+
+
+class FakeHost:
+    """git and brew trust run on the host; brew reads run in the sandbox. One shared log of both."""
+
+    def __init__(self, clone_code=0, tap_info=TAP_INFO, broken=frozenset()):
+        self.calls, self.sandboxed = [], []
+        self.clone_code, self.tap_info = clone_code, tap_info
+        self.info, _ = info_brew(set(broken))
+
+    def run(self, cmd):
+        self.calls.append(cmd)
+        code = self.clone_code if cmd[:2] == ["git", "clone"] else 0
+        return subprocess.CompletedProcess(cmd, code, stdout="", stderr="boom" if code else "")
+
+    def sandbox(self):
+        def run(cmd):
+            self.sandboxed.append(cmd)
+            if cmd[1] == "tap-info":
+                return subprocess.CompletedProcess(cmd, 0, stdout=self.tap_info, stderr="")
+            return self.info(cmd)
+        return run
+
+
+def read(host, entry, tmp_path, **kwargs):
+    return collect.read_tap(entry, host.sandbox, run=host.run, taps_root=tmp_path, **kwargs)
+
+
+def test_read_tap_clones_with_git_and_runs_brew_reads_only_in_the_sandbox(tmp_path):
+    host = FakeHost(broken={"u/r/bad"})
+
+    data = read(host, {"name": "u/r", "remote": "https://example.com/u/casks"}, tmp_path)
+
+    assert host.calls == [
+        ["git", "clone", "--quiet", "--depth", "1", "https://example.com/u/casks", str(tmp_path / "u" / "homebrew-r")],
+        ["brew", "trust", "--tap", "u/r"],
+    ]
+    assert all(cmd[0] == "brew" and cmd[1] in ("tap-info", "info") for cmd in host.sandboxed)
+    assert list(data["casks"]) == ["u/r/good"] and list(data["caskFailures"]) == ["u/r/bad"]
+
+
+def test_read_tap_failures_cost_only_that_tap(tmp_path):
+    assert read(FakeHost(clone_code=1), {"name": "u/r"}, tmp_path)["failures"]["u/r"].startswith("git clone failed")
+    assert "u/r" in read(FakeHost(tap_info="[1]"), {"name": "u/r"}, tmp_path / "x")["failures"]
+
+
+def test_read_tap_past_its_deadline_waits_for_the_next_run(tmp_path):
+    host = FakeHost()
+
+    assert read(host, {"name": "u/r"}, tmp_path, deadline=5, clock=lambda: 5) == {"unreached": ["u/r"]}
+    assert host.calls == [] and host.sandboxed == []
+
+
+def test_sandbox_profile_denies_network_writes_and_the_real_home():
+    profile = collect.PROFILE
+    assert "(deny network*)" in profile and "(deny file-write*)" in profile
+    assert '(allow file-write*\n  (subpath (param "WORK"))' in profile
+    assert '(deny file-read* (subpath (param "REAL_HOME")))' in profile
+
+
+def test_sandboxed_brew_gets_a_private_home_and_no_tokens(tmp_path, monkeypatch):
+    monkeypatch.setenv("GITHUB_TOKEN", "secret")
+    monkeypatch.setenv("ACTIONS_RUNTIME_TOKEN", "secret")
+    monkeypatch.setenv("HOME", str(tmp_path / "home"))
+    (tmp_path / "home" / ".homebrew").mkdir(parents=True)
+    (tmp_path / "home" / ".homebrew" / "trust.json").write_text("{}", encoding="utf-8")
+    (tmp_path / "cache").mkdir()
+
+    sandbox = collect.TapSandbox(tmp_path / "boxes", tmp_path / "cache")
+
+    command = sandbox.command(["brew", "info"])
+    assert command[:3] == ["sandbox-exec", "-p", collect.PROFILE] and command[-2:] == ["brew", "info"]
+    assert f"WORK={sandbox.work}" in command and f"REAL_HOME={tmp_path / 'home'}" in command
+    assert not [key for key in sandbox.env if "TOKEN" in key or "GITHUB" in key or "ACTIONS" in key]
+    assert Path(sandbox.env["HOME"]).is_relative_to(sandbox.work)
+    assert (Path(sandbox.env["HOME"]) / ".homebrew" / "trust.json").exists()
+    assert Path(sandbox.env["HOMEBREW_CACHE"]).is_relative_to(sandbox.work)
+
+
+def test_oversized_output_is_refused(tmp_path):
+    small, big = tmp_path / "small", tmp_path / "big"
+    small.write_text("ok", encoding="utf-8")
+    big.write_bytes(b"x" * (collect.MAX_OUTPUT_BYTES + 1))
+
+    assert collect._read_capped(small) == "ok"
+    assert collect._read_capped(big) is None

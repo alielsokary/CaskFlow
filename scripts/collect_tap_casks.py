@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Read registered taps with brew. The only tap-pipeline step that runs tap code: CI gives it no secrets."""
+"""Read taps with brew, each tap's brew calls inside its own macOS sandbox. The only step that runs tap code."""
 from __future__ import annotations
 
-import argparse
+import functools
 import json
 import os
 import re
-import subprocess  # nosec B404 - fixed brew commands, argument lists, and no shell
+import shutil
+import signal
+import subprocess  # nosec B404 - fixed git, brew and sandbox-exec commands, argument lists, and no shell
+import sys
+import tempfile
+import threading
 import time
 from pathlib import Path
 from urllib.parse import urlparse
@@ -14,16 +19,104 @@ from urllib.request import urlopen
 
 import tap_registry
 from tap_registry import OBJECT_ID, REF, tap_of
-from style_standards import write_json
 
 BREW_API = "https://formulae.brew.sh/api/cask.json"
 _ARTIFACT_KEYS = ("app", "suite", "binary", "pkg")
 _VERSIONISH = re.compile(r"[\d._-]+")
 
 
-def _run(cmd: list[str]) -> subprocess.CompletedProcess:
-    env = {**os.environ, "HOMEBREW_NO_AUTO_UPDATE": "1", "HOMEBREW_NO_ANALYTICS": "1", "GIT_TERMINAL_PROMPT": "0"}
-    return subprocess.run(cmd, capture_output=True, text=True, env=env, timeout=900)  # nosec B603 - argument list; shell is never used
+HOST_ENV = {"HOMEBREW_NO_AUTO_UPDATE": "1", "HOMEBREW_NO_ANALYTICS": "1", "HOMEBREW_NO_ENV_HINTS": "1",
+            "GIT_TERMINAL_PROMPT": "0"}
+# Tap code may read Homebrew and the system, write only its own folder, and reach no network.
+# The real home holds the runner's files and the workspace, so it is unreadable.
+PROFILE = """
+(version 1)
+(allow default)
+(deny network*)
+(deny file-read* (subpath (param "REAL_HOME")))
+(deny file-write*)
+(allow file-write*
+  (subpath (param "WORK"))
+  (literal "/dev/null") (literal "/dev/zero") (literal "/dev/dtracehelper")
+  (regex #"^/dev/tty") (regex #"^/dev/fd/"))
+"""
+MAX_OUTPUT_BYTES = 64 * 1024 * 1024
+CALL_TIMEOUT = 180
+_TRUST = threading.Lock()
+
+
+def _run(cmd: list[str], env: dict | None = None) -> subprocess.CompletedProcess:
+    """Host commands that run no tap code: git clone, brew trust, cache warming."""
+    return subprocess.run(cmd, capture_output=True, text=True, timeout=900,  # nosec B603 - argument list; no shell
+                          env={**os.environ, **HOST_ENV, **(env or {})})
+
+
+class TapSandbox:
+    """brew calls for one tap: a private folder and home, no tokens, no network, and no process outlives a call."""
+
+    def __init__(self, root: Path, cache: Path):
+        root.mkdir(parents=True, exist_ok=True)
+        self.work = Path(tempfile.mkdtemp(dir=root)).resolve()
+        self.real_home = Path(os.environ["HOME"]).resolve()
+        home = self.work / "home"
+        (home / ".homebrew").mkdir(parents=True)
+        trust = self.real_home / ".homebrew" / "trust.json"
+        if trust.exists():
+            shutil.copy(trust, home / ".homebrew" / "trust.json")
+        # The warmed cache (API data brew cannot download here, and compiled Ruby), as a copy-on-write clone on macOS.
+        if sys.platform == "darwin":
+            subprocess.run(["cp", "-cR", str(cache), str(self.work / "cache")], check=True)  # nosec B603, B607 - no shell
+        else:
+            shutil.copytree(cache, self.work / "cache", symlinks=True)
+        for sub in ("logs", "tmp"):
+            (self.work / sub).mkdir()
+        self.env = {
+            "PATH": os.environ.get("PATH", "/usr/bin:/bin"), "HOME": str(home), "LANG": "en_US.UTF-8", **HOST_ENV,
+            "HOMEBREW_CACHE": str(self.work / "cache"), "HOMEBREW_LOGS": str(self.work / "logs"),
+            "HOMEBREW_TEMP": str(self.work / "tmp"), "TMPDIR": str(self.work / "tmp"),
+            "HOMEBREW_API_AUTO_UPDATE_SECS": "86400",
+        }
+
+    def command(self, cmd: list[str]) -> list[str]:
+        return ["sandbox-exec", "-p", PROFILE, "-D", f"WORK={self.work}", "-D", f"REAL_HOME={self.real_home}", *cmd]
+
+    def __call__(self, cmd: list[str]) -> subprocess.CompletedProcess:
+        # Output goes to files, so a process the tap leaves behind cannot hold the call open.
+        out_path, err_path = self.work / "stdout", self.work / "stderr"
+        with open(out_path, "w", encoding="utf-8") as out, open(err_path, "w", encoding="utf-8") as err:
+            process = subprocess.Popen(  # nosec B603 - argument list; no shell
+                self.command(cmd), stdout=out, stderr=err, stdin=subprocess.DEVNULL, env=self.env,
+                start_new_session=True, cwd=self.work)  # brew.sh's bash writes here-documents to its working directory
+            try:
+                code = process.wait(timeout=CALL_TIMEOUT)
+            except subprocess.TimeoutExpired:
+                code = -9
+            finally:
+                try:
+                    os.killpg(process.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+        stdout = _read_capped(out_path)
+        if stdout is None:
+            return subprocess.CompletedProcess(cmd, 1, "", "output too large")
+        return subprocess.CompletedProcess(cmd, code, stdout, _read_capped(err_path) or "")
+
+
+def _read_capped(path: Path) -> str | None:
+    if path.stat().st_size > MAX_OUTPUT_BYTES:
+        return None
+    return path.read_text(encoding="utf-8", errors="replace")
+
+
+def warm_cache(cache: Path) -> None:
+    """Homebrew's API data and compiled Ruby, fetched once on the host before any tap code runs."""
+    for cmd in (["brew", "info", "--json=v2", "wget"], ["brew", "info", "--cask", "--json=v2", "firefox"]):
+        _run(cmd, env={"HOMEBREW_CACHE": str(cache)})
+
+
+@functools.cache
+def _taps_root() -> Path:
+    return Path(_run(["brew", "--repository"]).stdout.strip()) / "Library" / "Taps"
 
 
 def cask_refs(tap_info: list[dict]) -> list[str]:
@@ -164,75 +257,34 @@ def _info(refs: list[str], run, deadline: float | None = None, clock=time.monoto
     return {**left, **right}, {**left_failed, **right_failed}
 
 
-def _read_tap(entry: dict, run, deadline: float | None = None) -> tuple[dict[str, dict], dict[str, str]]:
+def read_tap(entry: dict, sandbox, *, run=_run, taps_root: Path | None = None, deadline: float | None = None,
+             clock=time.monotonic) -> dict:
+    """One tap's casks: cloned and trusted on the host, then read with brew inside a fresh `sandbox()`."""
     name = entry["name"]
-    for cmd in (
-        ["brew", "tap", name, *([entry["remote"]] if entry.get("remote") else [])],
-        ["brew", "trust", name],
-    ):
-        if (result := run(cmd)).returncode != 0:
-            raise RuntimeError(f"{' '.join(cmd[:2])} failed: {result.stderr.strip()[-300:]}")
-    info = run(["brew", "tap-info", "--json", name])
-    if info.returncode != 0:
-        raise RuntimeError(f"tap-info failed: {info.stderr.strip()[-300:]}")
-    refs = cask_refs(json.loads(info.stdout))
-    return _info(refs, run, deadline)
-
-
-def collect(entries: list[dict], run, official: dict[str, dict], *, budget: float | None = None,
-            clock=time.monotonic, on_progress=lambda result: None) -> dict:
-    """Read taps until `budget` seconds pass; taps left over are `unreached` and wait for the next run."""
-    casks: dict[str, dict] = {}
-    failures: dict[str, str] = {}
-    cask_failures: dict[str, str] = {}
-    start = clock()
-
-    def result(unreached: list[dict]) -> dict:
-        return {"casks": dict(sorted(casks.items())), "sameAs": aliases(casks, official), "failures": failures,
-                "caskFailures": dict(sorted(cask_failures.items())),
-                "unreached": [entry["name"] for entry in unreached]}
-
-    for index, entry in enumerate(entries):
-        if budget is not None and clock() - start >= budget:
-            print(f"warning: budget spent; {len(entries) - index} taps wait for the next run")
-            return result(entries[index:])
-        try:
-            read, failed = _read_tap(entry, run, None if budget is None else start + budget)
-            casks.update(read)
-            cask_failures.update(failed)
-        except (RuntimeError, ValueError, TypeError, AttributeError, subprocess.TimeoutExpired) as error:
-            failures[entry["name"]] = str(error)
-            print(f"warning: skipping {entry['name']}: {error}")
-        on_progress(result([]))
-    return result([])
+    if deadline is not None and clock() >= deadline:
+        return {"unreached": [name]}
+    try:
+        user, repo = name.split("/")
+        target = (taps_root or _taps_root()) / user / f"homebrew-{repo}"
+        if not target.exists():
+            # git runs no code from the repository it clones.
+            clone = run(["git", "clone", "--quiet", "--depth", "1", tap_registry.remote_of(entry), str(target)])
+            if clone.returncode != 0:
+                raise RuntimeError(f"git clone failed: {clone.stderr.strip()[-300:]}")
+        with _TRUST:
+            if (trust := run(["brew", "trust", "--tap", name])).returncode != 0:
+                raise RuntimeError(f"brew trust failed: {trust.stderr.strip()[-300:]}")
+        brew = sandbox()
+        info = brew(["brew", "tap-info", "--json", name])
+        if info.returncode != 0:
+            raise RuntimeError(f"tap-info failed: {info.stderr.strip()[-300:]}")
+        casks, failed = _info(cask_refs(json.loads(info.stdout)), brew, deadline, clock)
+        return {"casks": casks, "caskFailures": failed}
+    except (RuntimeError, ValueError, TypeError, AttributeError, OSError, subprocess.TimeoutExpired) as error:
+        print(f"warning: skipping {name}: {error}")
+        return {"casks": {}, "failures": {name: str(error)}}
 
 
 def load_official() -> dict[str, dict]:
     with urlopen(BREW_API, timeout=120) as response:  # nosec B310 - fixed HTTPS Homebrew API
         return {cask["token"]: cask for cask in json.loads(response.read())}
-
-
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--taps", nargs="+", required=True, help="Tap names to read")
-    parser.add_argument("--out", type=Path, default=Path("tap_casks.json"))
-    parser.add_argument("--budget-minutes", type=float, help="Stop starting new taps after this long")
-    args = parser.parse_args(argv)
-
-    registered = {entry["name"]: entry for entry in tap_registry.load()}
-    # A dispatched or issue-requested tap is registered only by the publish job, after this run.
-    if invalid := [error for name in args.taps if (error := tap_registry.validate_name(name))]:
-        raise SystemExit("; ".join(invalid))
-    official = load_official()
-    entries = [registered.get(name, {"name": name}) for name in args.taps]
-
-    def save(result: dict) -> None:
-        write_json(args.out, result, trailing_newline=True)
-
-    budget = args.budget_minutes * 60 if args.budget_minutes else None
-    save(collect(entries, _run, official, budget=budget, on_progress=save))
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
