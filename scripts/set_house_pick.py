@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import re
 import sys
-import urllib.error
-import urllib.request
 from pathlib import Path
 from typing import Callable
 
@@ -16,26 +15,35 @@ from style_standards import normalize, write_json
 ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES = ROOT / "categories.json"
 PICK = ROOT / "data" / "house_pick.json"
-CASK_API = "https://formulae.brew.sh/api/cask/{}.json"
+BREW_HOST = "formulae.brew.sh"
 TOKEN = re.compile(r"\A[a-z0-9][a-z0-9@._+-]*\Z")
 NOTE_LIMIT = 120
 
 
 def fetch_cask(token: str) -> dict | None:
     """Homebrew's cask JSON, or None when the token does not exist."""
+    connection = http.client.HTTPSConnection(BREW_HOST, timeout=30)
     try:
-        with urllib.request.urlopen(CASK_API.format(token), timeout=30) as response:
-            return json.load(response)
-    except urllib.error.HTTPError as error:
-        if error.code == 404:
+        connection.request("GET", f"/api/cask/{token}.json")
+        response = connection.getresponse()
+        if response.status == 404:
             return None
-        raise
+        if response.status != 200:
+            raise RuntimeError(f"Homebrew API returned HTTP {response.status} for {token}")
+        return json.load(response)
+    finally:
+        connection.close()
 
 
 def build_pick(token: str, note: str | None, known: set[str],
                fetch: Callable[[str], dict | None]) -> dict:
     """The pick to publish; raises ValueError naming the first rule it breaks."""
     token = token.strip().lower()
+    _check_token(token, known, fetch)
+    return {"token": token, "note": _clean_note(note)}
+
+
+def _check_token(token: str, known: set[str], fetch: Callable[[str], dict | None]) -> None:
     if not TOKEN.match(token):
         raise ValueError(f"{token!r} is not a cask token")
     if token.startswith("font-"):
@@ -47,10 +55,13 @@ def build_pick(token: str, note: str | None, known: set[str],
         raise ValueError(f"{token} does not exist in homebrew/cask")
     if cask.get("deprecated") or cask.get("disabled"):
         raise ValueError(f"{token} is deprecated or disabled in homebrew/cask")
+
+
+def _clean_note(note: str | None) -> str | None:
     note = normalize(" ".join((note or "").split())) or None
     if note and len(note) > NOTE_LIMIT:
         raise ValueError(f"note is {len(note)} characters; the limit is {NOTE_LIMIT}")
-    return {"token": token, "note": note}
+    return note
 
 
 def main(argv: list[str] | None = None) -> int:
