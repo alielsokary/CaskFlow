@@ -40,6 +40,8 @@ The daily classification workflow adds new casks, and migrates Homebrew token re
 
 The release workflow runs daily independently of classification, stamps `categories.json` with its release tag and current icon-token manifest when available, and mines `added_dates.json` directly from Homebrew's history. Before publishing, it verifies that every cask in the tap's current tree has an added date. A category merge also triggers it immediately. Classification updates therefore do not delay Recently Added data, and date refreshes do not require an LLM result or category assignment.
 
+CaskHub's Browse hero, the house pick, is chosen by hand. Run the `Set house pick` workflow with a cask token and an optional one-line note. It checks that the token is a current, non-font cask in `categories.json`, writes `data/house_pick.json`, and opens an auto-merging PR. The merge triggers a release that stamps the pick into `categories.json` as `housePick`.
+
 Icons are downloaded from vendor artifacts, checksum-verified, expanded without running installer scripts, and converted from the application bundle's `.icns` file. The full safety and audit protocol is in [Icon Extraction](docs/ICON_EXTRACTION.md).
 
 The separate, manually triggered [package installation pilot](docs/PACKAGE_OBSERVATIONS.md) observes ten selected casks on disposable Apple Silicon and Intel runners. It saves installation evidence for review and does not publish identity mappings or release assets.
