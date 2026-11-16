@@ -31,11 +31,6 @@
     "status": "car_only",
     "reason": "car catalog has no app icon (generic render)"
   },
-  "altalt-org/alt/alt": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) Recv failure: Connection reset by peer",
-    "attempts": 1
-  },
   "amir20/dtop/dtop": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -59,7 +54,7 @@
   "atomicjar/tap/testcontainers-cloud-desktop": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "authzed/tap/spicebox": {
     "status": "no_icon",
@@ -576,7 +571,7 @@
   "brewforge/chinese/cajviewer": {
     "status": "failed",
     "reason": "download failed: how to fix it, please visit the web page mentioned above.",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/capcut-cn": {
     "status": "no_icon",
@@ -585,81 +580,51 @@
   "brewforge/chinese/cloud-uploader": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
-  },
-  "brewforge/chinese/dbeaver-cn": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
-  },
-  "brewforge/chinese/dehelper-cn": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got f1d7bc0ec3c5...)",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/easyspider": {
     "status": "failed",
     "reason": "sha256 mismatch (got 0c78e62aba0c...)",
-    "attempts": 1
-  },
-  "brewforge/chinese/eshelper-cn": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 262fc8340e28...)",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/flowus": {
     "status": "failed",
     "reason": "ditto failed: ditto: Couldn't read PKZip signature",
-    "attempts": 1
-  },
-  "brewforge/chinese/frhelper-cn": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 75aa49bb6119...)",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/inkscape-cn": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/lceda-pro": {
     "status": "failed",
-    "reason": "download failed: curl: (28) Operation timed out after 600135 milliseconds with 62192601 out of 366306048 bytes received",
-    "attempts": 1
+    "reason": "download failed: curl: (28) Operation timed out after 600009 milliseconds with 49150911 out of 366974482 bytes received",
+    "attempts": 2
   },
   "brewforge/chinese/m3u8-downloader": {
     "status": "failed",
     "reason": "sha256 mismatch (got 2064e2021aa6...)",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/miniforge-cn": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
-  "brewforge/chinese/mogan-cn": {
-    "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
-  },
   "brewforge/chinese/obs-cn": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/chinese/sagemath-cn": {
     "status": "failed",
     "reason": "sha256 mismatch (got 630c028d5826...)",
-    "attempts": 1
-  },
-  "brewforge/chinese/ting-en": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 16b132af5f9a...)",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/extras/cudatext": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/extras/cytoscape": {
     "status": "no_icon",
@@ -676,7 +641,7 @@
   "brewforge/extras/pearai": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/extras/peazip": {
     "status": "no_icon",
@@ -685,12 +650,12 @@
   "brewforge/extras/tinkertool": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "brewforge/extras/wpsoffice-en": {
     "status": "failed",
     "reason": "sha256 mismatch (got 75cfe526f929...)",
-    "attempts": 1
+    "attempts": 2
   },
   "buildkite/buildkite/buildkite-mcp-server": {
     "status": "no_icon",
@@ -743,7 +708,7 @@
   "caezium/tap/wisp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "caligraltd/tap/1password-gui-linux": {
     "status": "no_icon",
@@ -1217,6 +1182,10 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
+  "docker/tap/sbx@0.54.0": {
+    "status": "no_icon",
+    "reason": "no app/suite/pkg artifact"
+  },
   "docker/tap/sbx@nightly": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
@@ -1232,12 +1201,12 @@
   "dodoapps/tap/dodocount": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "dodoapps/tap/dodoshop": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "dopplerhq/doppler/doppler": {
     "status": "no_icon",
@@ -1342,12 +1311,12 @@
   "everettjf/tap/easyvm": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "everettjf/tap/grapecompare": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "everettjf/tap/oort": {
     "status": "no_icon",
@@ -1356,22 +1325,22 @@
   "everettjf/tap/vm4a-app": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "fastrepl/fastrepl/char": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "fastrepl/fastrepl/char@nightly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "fastrepl/fastrepl/hyprnote": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "fcjr/fcjr/restorekit-cli": {
     "status": "no_icon",
@@ -1396,7 +1365,7 @@
   "frostyard/tap/nsl": {
     "status": "failed",
     "reason": "download url is not a public https url",
-    "attempts": 1
+    "attempts": 2
   },
   "gammons/tap/slk": {
     "status": "no_icon",
@@ -1409,7 +1378,7 @@
   "gitmichaelqiu/tap/optclicker": {
     "status": "failed",
     "reason": "sha256 mismatch (got 173f0e5aaea4...)",
-    "attempts": 1
+    "attempts": 2
   },
   "go-task/tap/go-task": {
     "status": "no_icon",
@@ -1566,7 +1535,7 @@
   "iordv/tap/droppy": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 451",
-    "attempts": 1
+    "attempts": 2
   },
   "isen-ng/dotnet-sdk-versions/dotnet-sdk10": {
     "status": "no_icon",
@@ -1751,7 +1720,7 @@
   "italomandara/cxpatcher/gstreamer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "jackielii/tap/skhd-zig": {
     "status": "no_icon",
@@ -2080,7 +2049,7 @@
   "kunchenguid/tap/hi-bit": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "laishulu/homebrew/font-sarasa-nerd": {
     "status": "no_icon",
@@ -2089,12 +2058,12 @@
   "laishulu/homebrew/temporary-window": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "lifedever/tap/filelens": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "lindell/multi-gitter/multi-gitter": {
     "status": "no_icon",
@@ -2238,13 +2207,13 @@
   },
   "maddada/tap/clipbook-rs": {
     "status": "failed",
-    "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "reason": "download failed: curl: (56) The requested URL returned error: 403",
+    "attempts": 2
   },
   "maddada/tap/hotkeys-organizer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "maddada/tap/madda-floating-clock": {
     "status": "no_icon",
@@ -2361,7 +2330,7 @@
   "masterofdeath01/apps/zxp-installer": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1
+    "attempts": 2
   },
   "matt-wright86/tap/mardi-gras": {
     "status": "no_icon",
@@ -2482,7 +2451,7 @@
   "mrinalwadhwa/freeflow/freeflow": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "netbirdio/tap/netbird-ui": {
     "status": "no_icon",
@@ -2556,7 +2525,7 @@
   "open-cli-collective/tap/qlmarkdown2": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "open-cli-collective/tap/salesforce-cli": {
     "status": "no_icon",
@@ -2685,7 +2654,7 @@
   "projectbluefin/tap/bluefin-wallpapers-extra": {
     "status": "failed",
     "reason": "download url is not a public https url",
-    "attempts": 1
+    "attempts": 2
   },
   "projectbluefin/tap/chairlift": {
     "status": "no_icon",
@@ -2786,7 +2755,7 @@
   "resonative/proaudio/airwindows-consolidated": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/apulsoft-apqualizr": {
     "status": "no_icon",
@@ -2807,7 +2776,7 @@
   "resonative/proaudio/apulsoft-apverb": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/apulsoft-opalize": {
     "status": "no_icon",
@@ -2940,7 +2909,7 @@
   "resonative/proaudio/devious-machines-software-manager": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/dmgaudio-compassion": {
     "status": "no_icon",
@@ -3269,7 +3238,7 @@
   "resonative/proaudio/flux-center": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 403",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/forever89-topos": {
     "status": "no_icon",
@@ -3330,32 +3299,32 @@
   "resonative/proaudio/liquidsonics-cinematic-rooms-professional": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-hd-cart": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-illusion": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-lustrous-plates-surround": {
     "status": "failed",
-    "reason": "sha256 mismatch (got b997953340be...)",
-    "attempts": 1
+    "reason": "sha256 mismatch (got 25bf290e280e...)",
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-reverberate": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-seventh-heaven-professional": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/liquidsonics-tai-chi": {
     "status": "no_icon",
@@ -3388,12 +3357,12 @@
   "resonative/proaudio/mb-tmpc": {
     "status": "failed",
     "reason": "sha256 mismatch (got ac6938fa6b38...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/mb-white-room": {
     "status": "failed",
     "reason": "sha256 mismatch (got 2ca113e73e71...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/mcdsp-4020-retro-eq": {
     "status": "no_icon",
@@ -3546,7 +3515,7 @@
   "resonative/proaudio/monkeyc-rando": {
     "status": "failed",
     "reason": "sha256 mismatch (got 1ff31c873d9f...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/musikhack-fuel": {
     "status": "no_icon",
@@ -3607,37 +3576,37 @@
   "resonative/proaudio/polyverse-comet": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-filterverse": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-filtron": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-gatekeeper": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-i-wish": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-manipulator": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-supermodal": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/polyverse-wider": {
     "status": "no_icon",
@@ -3662,7 +3631,7 @@
   "resonative/proaudio/psp-auralcontrol": {
     "status": "failed",
     "reason": "sha256 mismatch (got 457883c41d56...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/psp-binamp": {
     "status": "no_icon",
@@ -3683,7 +3652,7 @@
   "resonative/proaudio/psp-drc": {
     "status": "failed",
     "reason": "sha256 mismatch (got 8df3393d12fe...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/psp-e27": {
     "status": "no_icon",
@@ -3736,7 +3705,7 @@
   "resonative/proaudio/psp-microwarmer": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/psp-nobleq": {
     "status": "no_icon",
@@ -3805,17 +3774,17 @@
   "resonative/proaudio/pulsar-1178": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-8200": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-echorec": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-mp-eq": {
     "status": "no_icon",
@@ -3824,17 +3793,17 @@
   "resonative/proaudio/pulsar-poseidon": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-primavera": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-smasher": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-vm-comp": {
     "status": "no_icon",
@@ -3843,12 +3812,12 @@
   "resonative/proaudio/pulsar-vocal-studio": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/pulsar-w495": {
     "status": "failed",
     "reason": "download failed: curl: (22) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/receivemidi": {
     "status": "no_icon",
@@ -3877,7 +3846,7 @@
   "resonative/proaudio/slate-audio-center": {
     "status": "failed",
     "reason": "download url is not a public https url",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/steinberg-download-assistant": {
     "status": "no_icon",
@@ -3954,7 +3923,7 @@
   "resonative/proaudio/uhe-zebra3": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/valhalla-spacemodulator": {
     "status": "no_icon",
@@ -4187,7 +4156,7 @@
   "resonative/proaudio/wavesfactory-trackspacer": {
     "status": "failed",
     "reason": "sha256 mismatch (got 44743932b7f7...)",
-    "attempts": 1
+    "attempts": 2
   },
   "resonative/proaudio/xfer-ott": {
     "status": "no_icon",
@@ -4205,25 +4174,20 @@
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact"
   },
-  "romankurnovskii/awesome-brew/brewmate": {
-    "status": "failed",
-    "reason": "sha256 mismatch (got 508cdbfb0011...)",
-    "attempts": 1
-  },
   "romankurnovskii/awesome-brew/char": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "romankurnovskii/awesome-brew/char@nightly": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "romankurnovskii/awesome-brew/hyprnote": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "safedep/tap/cli": {
     "status": "no_icon",
@@ -4248,7 +4212,7 @@
   "santosh7017/androidfilesync/androidfilesync-beta": {
     "status": "failed",
     "reason": "sha256 mismatch (got 18fb06524d79...)",
-    "attempts": 1
+    "attempts": 2
   },
   "sap/sapmachine/sapmachine11-ea-jdk": {
     "status": "no_icon",
@@ -4481,12 +4445,12 @@
   "sh4dow-clone/tap/dpimanager": {
     "status": "failed",
     "reason": "sha256 mismatch (got dbdc58e7af36...)",
-    "attempts": 1
+    "attempts": 2
   },
   "shobhit99/tap/superisland": {
     "status": "failed",
     "reason": "sha256 mismatch (got b7f94fdb0842...)",
-    "attempts": 1
+    "attempts": 2
   },
   "shopware/tap/shopware-cli": {
     "status": "no_icon",
@@ -4747,7 +4711,7 @@
   "theboredteam/boring-notch/boring-notch@rc": {
     "status": "failed",
     "reason": "sha256 mismatch (got dd5d28dec45e...)",
-    "attempts": 1
+    "attempts": 2
   },
   "thebusydev/linux/firefox": {
     "status": "no_icon",
@@ -4924,7 +4888,7 @@
   "tweakphp/tap/tweakphp": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "ublue-os/experimental-tap/chatgpt-linux": {
     "status": "no_icon",
@@ -5193,9 +5157,13 @@
   "xiaolai/tap/zed": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "xtool-org/tap/xtool": {
+    "status": "no_icon",
+    "reason": "no .icns in Resources"
+  },
+  "xtool-org/tap/xtool@beta": {
     "status": "no_icon",
     "reason": "no .icns in Resources"
   },
@@ -5218,12 +5186,12 @@
   "zimengxiong/tools/namigen": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "zimengxiong/tools/rightclickmenubar": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
-    "attempts": 1
+    "attempts": 2
   },
   "zimengxiong/tools/swipetype": {
     "status": "no_icon",
