@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedDate": "2026-11-16",
-  "totalCasks": 4994,
+  "totalCasks": 4995,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2623,6 +2623,12 @@
     "bwana": {
       "primary": "utilities",
       "secondary": []
+    },
+    "byos": {
+      "primary": "securityPrivacy",
+      "secondary": [
+        "utilities"
+      ]
     },
     "bytemail": {
       "primary": "communication",
