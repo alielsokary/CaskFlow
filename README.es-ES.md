@@ -40,6 +40,8 @@ El flujo de trabajo diario de clasificación agrega nuevos casks, y migra los ca
 
 El flujo de trabajo de publicación se ejecuta diariamente de forma independiente a la clasificación, marca `categories.json` con su etiqueta de versión y el manifiesto actual de iconos-tokens cuando está disponible, y extrae `added_dates.json` directamente del historial de Homebrew. Antes de publicar, verifica que cada cask en el árbol actual del tap tenga una fecha de adición. Una fusión de categorías también lo activa de inmediato. Por lo tanto, las actualizaciones de clasificación no retrasan los datos de Recién Agregados, y las actualizaciones de fechas no requieren un resultado de LLM ni una asignación de categoría.
 
+El destacado de Explorar en CaskHub, la selección de la casa, se elige a mano. Ejecuta el flujo de trabajo `Set house pick` con un token de cask y una nota opcional de una línea. Verifica que el token sea un cask vigente de `categories.json` que no sea una fuente, escribe `data/house_pick.json` y abre una PR con fusión automática. La fusión activa una publicación que añade la selección a `categories.json` como `housePick`.
+
 Los iconos se descargan desde los artefactos del proveedor, se verifican con suma de comprobación, se extraen sin ejecutar scripts de instalación y se convierten desde el archivo `.icns` del paquete de la aplicación. El protocolo completo de seguridad y auditoría se encuentra en [Extracción de iconos](docs/ICON_EXTRACTION.md).
 
 ## Desarrollo local

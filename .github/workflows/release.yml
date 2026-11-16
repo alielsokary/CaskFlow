@@ -8,6 +8,7 @@ on:
       - data/tap_categories.json
       - data/app_identity_variants.json
       - data/cli_tokens.json
+      - data/house_pick.json
       - data/package_product_reviews.json
       - app_identities.json
       - scripts/app_identities.py
@@ -51,7 +52,9 @@ jobs:
              end' > /tmp/icon_manifest.json || echo null > /tmp/icon_manifest.json
           jq --arg tag "$TAG" --slurpfile icons /tmp/icon_manifest.json \
             --slurpfile cli data/cli_tokens.json \
+            --slurpfile pick data/house_pick.json \
             '. + {releaseTag: $tag, cliTokens: $cli[0]}
+             + (if ($pick[0].token | type) == "string" then {housePick: $pick[0]} else {} end)
              + (if $icons[0] then {iconTokens: ($icons[0] | sort)} else {} end)' \
             categories.json > /tmp/stamped.json
           mv /tmp/stamped.json categories.json

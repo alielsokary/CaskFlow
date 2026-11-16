@@ -84,6 +84,21 @@ def test_release_stamps_curated_cli_tokens():
     assert all(isinstance(token, str) and token for token in tokens)
 
 
+def test_release_stamps_house_pick_only_when_it_names_a_token():
+    release = _workflow("release.yml")
+    assert "      - data/house_pick.json" in release
+    assert "--slurpfile pick data/house_pick.json" in release
+    assert '(if ($pick[0].token | type) == "string" then {housePick: $pick[0]} else {} end)' in release
+
+
+def test_house_pick_dispatch_keeps_inputs_out_of_shell():
+    workflow = _workflow("set-house-pick.yml")
+    input_lines = [line for line in workflow.splitlines() if "inputs." in line]
+    assert input_lines == ["          TOKEN: ${{ inputs.token }}", "          NOTE: ${{ inputs.note }}"]
+    assert 'python3 scripts/set_house_pick.py --token "$TOKEN" --note "$NOTE"' in workflow
+    assert "--jq '.autoMergeRequest != null'" in workflow
+
+
 def test_install_harvest_isolates_vendor_code_from_the_icons_writer():
     workflow = _workflow("harvest-installed-icons.yml")
     harvest = workflow.split("  harvest:\n", 1)[1].split("  publish:\n", 1)[0]
