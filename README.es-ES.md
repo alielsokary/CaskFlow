@@ -1,22 +1,32 @@
 # CaskFlow
 
-[![Tests](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg)](https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml)
-[![Codacy](https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f)](https://app.codacy.com/gh/alielsokary/CaskFlow/dashboard)
-[![codecov](https://codecov.io/gh/alielsokary/CaskFlow/branch/develop/graph/badge.svg)](https://codecov.io/gh/alielsokary/CaskFlow)
-[![Latest release](https://img.shields.io/github/v/release/alielsokary/CaskFlow)](https://github.com/alielsokary/CaskFlow/releases/latest)
-[![License](https://img.shields.io/github/license/alielsokary/CaskFlow)](LICENSE)
+<p align="center">
+  <a href="https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml"><img src="https://github.com/alielsokary/CaskFlow/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://app.codacy.com/gh/alielsokary/CaskFlow/dashboard"><img src="https://app.codacy.com/project/badge/Grade/825c27dd6a6141afb36aa99fe880239f" alt="Codacy"></a>
+  <a href="https://codecov.io/gh/alielsokary/CaskFlow"><img src="https://codecov.io/gh/alielsokary/CaskFlow/branch/develop/graph/badge.svg" alt="codecov"></a>
+  <a href="https://github.com/alielsokary/CaskFlow/releases/latest"><img src="https://img.shields.io/github/v/release/alielsokary/CaskFlow" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/alielsokary/CaskFlow" alt="License"></a>
+</p>
 
-<img width="1700" height="500" alt="caskflow-banner" src="https://github.com/user-attachments/assets/6ca8ac54-e5b8-443a-a391-4e32ad2e2b44" />
+<p align="center">
+  <sub><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <strong>Español</strong> · <a href="README.de-DE.md">Deutsch</a></sub>
+</p>
 
-CaskFlow convierte el catálogo activo de casks de Homebrew en metadatos revisados y listos para publicación para [CaskHub](https://github.com/alielsokary/CaskHub). Clasifica aplicaciones, rastrea cuándo se agregaron los casks, extrae iconos de proveedores de forma segura y publica activos con versión que CaskHub puede consumir con una alternativa integrada.
+<p align="center">
+  <img width="1700" height="500" alt="caskflow-banner" src="https://github.com/user-attachments/assets/45543e1c-4220-4b3f-9f4e-152781172dd5" />
+</p>
+
+CaskFlow convierte el catálogo activo de casks de Homebrew en metadatos revisados y listos para publicación para [CaskHub](https://github.com/alielsokary/CaskHub). Clasifica aplicaciones, rastrea cuándo se agregaron los casks, extrae iconos de proveedores de forma segura y publica activos versionados que CaskHub puede consumir con una alternativa integrada.
 
 ## Qué publica CaskFlow
 
 | Activo | Propósito | Origen |
 |---|---|---|
-| `categories.json` | Mapeo canónico de cask a categoría, taxonomía, etiqueta de versión y manifiesto de iconos opcional | Repositorio y [última versión](https://github.com/alielsokary/CaskFlow/releases/latest) |
-| `added_dates.json` | Fecha de adición más temprana conocida en Homebrew para cada cask | Generado para cada versión |
-| `<token>.png` | Iconos de aplicaciones de 256×256 | Rama huérfana [`icons`](https://github.com/alielsokary/CaskFlow/tree/icons) |
+| `categories.json` | Mapeo canónico de cask a categoría, taxonomía, etiqueta de versión y manifiesto de iconos | Repositorio y [última versión](https://github.com/alielsokary/CaskFlow/releases/latest) |
+| `tap-categories.json` | Categorías de los casks de taps de terceros registrados | Última versión |
+| `added_dates.json` | Fecha de adición más temprana conocida en Homebrew para cada cask | Última versión |
+| `app_identities.json` | Identificadores de paquete que declara cada cask, para reconocer apps instaladas | Última versión |
+| `<token>.png` | Iconos de aplicaciones de 256×256; los de taps en `taps/<user>/<repo>/` | Rama huérfana [`icons`](https://github.com/alielsokary/CaskFlow/tree/icons) |
 
 La taxonomía cuenta con 17 categorías principales y un rasgo `ai` exclusivo de categoría secundaria. Cada cask tiene exactamente una categoría principal y hasta dos categorías secundarias distintas. Consulta la [guía de clasificación](docs/CLASSIFICATION_GUIDE.md) para conocer los límites de las categorías y las reglas de revisión.
 
@@ -32,21 +42,23 @@ flowchart LR
     dates --> release
     brew --> icons["Safe icon extraction"]
     icons --> branch["icons branch"]
+    taps["Registered taps"] --> sandbox["Sandboxed tap collect"]
+    sandbox --> release
+    sandbox --> branch
     release --> caskhub["CaskHub"]
     branch --> caskhub
 ```
 
-El flujo de trabajo diario de clasificación agrega nuevos casks, y migra los cambios de nombre de tokens de Homebrew. Las entradas de casks que Homebrew marca como obsoletos, deshabilita o elimina se conservan, para que las copias instaladas mantengan su categoría. Los fallos del proveedor y de validación se omiten para reintento posterior. Los resultados con una confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente una vez superadas las comprobaciones obligatorias.
-
-El flujo de trabajo de publicación se ejecuta diariamente de forma independiente a la clasificación, marca `categories.json` con su etiqueta de versión y el manifiesto actual de iconos-tokens cuando está disponible, y extrae `added_dates.json` directamente del historial de Homebrew. Antes de publicar, verifica que cada cask en el árbol actual del tap tenga una fecha de adición. Una fusión de categorías también lo activa de inmediato. Por lo tanto, las actualizaciones de clasificación no retrasan los datos de Recién Agregados, y las actualizaciones de fechas no requieren un resultado de LLM ni una asignación de categoría.
-
-El destacado de Explorar en CaskHub, la selección de la casa, se elige a mano. Ejecuta el flujo de trabajo `Set house pick` con un token de cask y una nota opcional de una línea. Verifica que el token sea un cask vigente de `categories.json` que no sea una fuente, escribe `data/house_pick.json` y abre una PR con fusión automática. La fusión activa una publicación que añade la selección a `categories.json` como `housePick`.
-
-Los iconos se descargan desde los artefactos del proveedor, se verifican con suma de comprobación, se extraen sin ejecutar scripts de instalación y se convierten desde el archivo `.icns` del paquete de la aplicación. El protocolo completo de seguridad y auditoría se encuentra en [Extracción de iconos](docs/ICON_EXTRACTION.md).
+- **Clasificación**: se ejecuta a diario, agrega casks nuevos y migra los cambios de nombre de tokens de Homebrew. Los casks obsoletos, deshabilitados o eliminados conservan su entrada para que las copias instaladas mantengan su categoría. Los resultados con confianza inferior a `0.75` permanecen en una PR asignada para revisión manual; las actualizaciones con mayor confianza pueden fusionarse automáticamente tras superar las comprobaciones obligatorias.
+- **Publicaciones**: se ejecutan a diario y con cada fusión de categorías, de forma independiente a la clasificación. Cada publicación marca `categories.json` con su etiqueta y manifiesto de iconos, extrae `added_dates.json` del historial de Homebrew y verifica que cada cask de `homebrew/cask` tenga una fecha de adición.
+- **Iconos**: se descargan de los artefactos del proveedor, se verifican con suma de comprobación, se extraen sin ejecutar scripts de instalación y se convierten desde el `.icns` del paquete de la app. Consulta [Extracción de iconos](docs/ICON_EXTRACTION.md).
+- **Taps de terceros**: los listados en [`taps.json`](taps.json) obtienen iconos y categorías mediante una canalización semanal separada. El código de cada tap solo se lee dentro de un sandbox de macOS propio, sin red ni credenciales. Para solicitar un tap, abre una incidencia [Add a tap](https://github.com/alielsokary/CaskFlow/issues/new?template=add-tap.md).
+- **Selección de la casa**: el destacado de Explorar en CaskHub se elige a mano con el flujo `Set house pick`. Valida el token, escribe `data/house_pick.json` y la publicación resultante lo añade a `categories.json` como `housePick`.
+- **Piloto de paquetes**: una [observación de instalación](docs/PACKAGE_OBSERVATIONS.md) manual en runners desechables Apple Silicon e Intel que guarda evidencias para revisión y no publica nada.
 
 ## Desarrollo local
 
-Se recomienda Python 3.12 o una versión posterior.
+Requiere Python 3.12 o posterior.
 
 ```bash
 python3 -m venv .venv
@@ -60,14 +72,7 @@ LLM_PROVIDER=mock python scripts/classify_new_casks.py --dry-run
 pytest --cov=scripts --cov-report=term-missing
 ```
 
-La clasificación real admite `anthropic`, `openai`, `groq` y `cloudflare`; elige uno con `LLM_PROVIDER` y proporciona las credenciales de ese servicio. `mock` está destinado a la verificación local determinista.
-
-## Guía del repositorio
-
-- [`scripts/`](scripts) contiene las herramientas de clasificación, corrección, datos de publicación e iconos que se mantienen activamente.
-- [`tests/`](tests) cubre las reglas de esquema y el comportamiento de mayor riesgo en la canalización.
-- [`data/`](data) almacena informes generados, cachés y entradas de corrección revisadas; no es la fuente canónica de categorías.
-- [`.github/workflows/`](.github/workflows) contiene la automatización para clasificación, iconos, publicación y verificación.
+La clasificación real admite `anthropic`, `openai`, `groq` y `cloudflare`; elige uno con `LLM_PROVIDER` y proporciona las credenciales de ese servicio.
 
 ## Proyectos que usan CaskFlow
 
@@ -77,15 +82,13 @@ La clasificación real admite `anthropic`, `openai`, `groq` y `cloudflare`; elig
 | [Applite](https://github.com/milanvarady/Applite) | Aplicación macOS con interfaz gráfica y fácil de usar para casks de Homebrew | - | - | ✅ |
 | [*Añade&nbsp;el&nbsp;tuyo*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | ¿Usas datos de CaskFlow en tu proyecto? Añádelo a esta tabla | - | - | - |
 
-## Atribución
-
-CaskFlow tiene [licencia MIT](LICENSE), por lo que no se requiere ninguna atribución más allá de lo establecido en los términos de la licencia. Si tu proyecto consume datos de CaskFlow (categorías, fechas de adición o iconos), se agradecerá mucho un crédito visible con un enlace de vuelta, por ejemplo:
+CaskFlow tiene [licencia MIT](LICENSE), por lo que no se requiere atribución. Se agradece un crédito visible con un enlace de vuelta, por ejemplo:
 
 > Metadatos de casks impulsados por [CaskFlow](https://github.com/alielsokary/CaskFlow)
 
 ## Contribución
 
-Son bienvenidos los informes de errores, correcciones taxonómicas, pruebas, mejoras en la documentación y el endurecimiento de la canalización. Comienza con [CONTRIBUTING.md](CONTRIBUTING.md), donde se explica la verificación local, la evidencia para correcciones de categorías y el formato de título semántico requerido para las PR. Los pull requests deben dirigirse a la rama `develop`.
+Son bienvenidos los informes de errores, correcciones taxonómicas, pruebas y el endurecimiento de la canalización. Comienza con [CONTRIBUTING.md](CONTRIBUTING.md) para la verificación local, la evidencia de correcciones y el formato de título semántico de las PR. Los pull requests se dirigen a `develop`.
 
 ## Licencia
 
