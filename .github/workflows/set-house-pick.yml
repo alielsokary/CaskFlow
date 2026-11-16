@@ -1,0 +1,64 @@
+name: Set house pick
+
+on:
+  workflow_dispatch:
+    inputs:
+      token:
+        description: "Cask token to feature as CaskHub's Browse hero"
+        required: true
+        type: string
+      note:
+        description: "Optional one-line note shown on the hero (max 120 characters)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: set-house-pick
+  cancel-in-progress: false
+
+jobs:
+  set:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate and write the pick
+        id: pick
+        env:
+          TOKEN: ${{ inputs.token }}
+          NOTE: ${{ inputs.note }}
+        run: |
+          python3 scripts/set_house_pick.py --token "$TOKEN" --note "$NOTE"
+          echo "token=$(jq -r .token data/house_pick.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request
+        id: pr
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          # A PAT allows workflows triggered by this bot-authored PR to run.
+          token: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
+          commit-message: "chore(house-pick): feature ${{ steps.pick.outputs.token }}"
+          title: "chore: Set house pick to ${{ steps.pick.outputs.token }}"
+          body: "Sets CaskHub's Browse hero to `${{ steps.pick.outputs.token }}`. Merging cuts a release that stamps `housePick` into categories.json."
+          branch: bot/house-pick
+          delete-branch: true
+          assignees: ${{ github.repository_owner }}
+          add-paths: data/house_pick.json
+
+      - name: Enable auto-merge
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.CLASSIFY_BOT_TOKEN || github.token }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+        run: |
+          if [ "$(gh pr view "$PR" --json autoMergeRequest --jq '.autoMergeRequest != null')" != "true" ]; then
+            gh pr merge --auto --squash "$PR"
+          fi
