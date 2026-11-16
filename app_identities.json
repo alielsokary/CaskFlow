@@ -51213,6 +51213,98 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "realtek-rtl815x-ethernet": {
+      "caskVersion": "1.1.0",
+      "sourceURL": "https://wwwfile.realtek.com/rtdrivers/cn/nic1/RTL815xEthernetInstaller_v110.pkg",
+      "artifactSHA256": "4eaceaea6883fa87935ec7d84b28e8bc32e46102c2cd36a7bcfbd21e41bbd789",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "RTL815xEthernetApp.app",
+          "bundleIdentifier": "com.realtek.app.RTL815xEthernet",
+          "packageIdentifier": "com.realtek.app.RTL815xEthernet",
+          "installedPath": "/Applications/RTL815xEthernetApp.app"
+        }
+      ]
+    },
+    "hora-calendar": {
+      "caskVersion": "3.0.3,658",
+      "sourceURL": "https://downloads.horacal.app/direct/stable/releases/3.0.3/658/hora-calendar-3.0.3-658.zip",
+      "artifactSHA256": "abeeb37dc435fc78b32c7dac4d927773ee8255156efda3127084ecbc0fa5dc91",
+      "apps": [
+        {
+          "bundleName": "hora Calendar.app",
+          "bundleIdentifier": "szamowski.Hora-direct"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "hyperframes": {
+      "caskVersion": "1039,9320c2251",
+      "sourceURL": "https://static.heygen.ai/hyperframes-oss/desktop/HyperFrames-b1039-9320c2251-arm64.zip",
+      "artifactSHA256": "37581af0f5f7611128484a8df5be694a907bb7c6d0d79f9a3fd48b9b3f3965cb",
+      "apps": [
+        {
+          "bundleName": "HyperFrames.app",
+          "bundleIdentifier": "dev.hyperframes.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "open-screen-sharing": {
+      "caskVersion": "1.0.6",
+      "sourceURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.6/OpenScreenSharing.pkg",
+      "artifactSHA256": "925c238608794a447c182362aa3762a540f9cb0579554486759cf4ee1861c8b1",
+      "apps": [
+        {
+          "bundleName": "Open Screen Sharing.app",
+          "bundleIdentifier": "io.nekohasekai.screensharing",
+          "packageIdentifier": "io.nekohasekai.screensharing",
+          "installedPath": "/Applications/Open Screen Sharing.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "pake-app": {
+      "caskVersion": "1.8.0",
+      "sourceURL": "https://pake.run/updates/mac/Pake-1.8.0.dmg",
+      "artifactSHA256": "ea4bda9f37647a6fb26877a4e5341c70773d0ce39abed7f008bdb0eb17be5915",
+      "apps": [
+        {
+          "bundleName": "Pake.app",
+          "bundleIdentifier": "com.tw93.Pake"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tab-finder": {
+      "caskVersion": "2.1.20",
+      "sourceURL": "https://macplus-software.com/downloads/Tab%20Finder.zip",
+      "artifactSHA256": "b6d1c2e9b7bd32efde11a1a84f5cf25e08f1839cdfc50b6fe7fd039b370a59a1",
+      "apps": [
+        {
+          "bundleName": "Tab Finder 2.app",
+          "bundleIdentifier": "com.macplus-software.com.Tab-Finder-2-Direct"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

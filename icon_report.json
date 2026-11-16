@@ -1979,6 +1979,12 @@
     "attempts": 3,
     "updated": "2026-11-02"
   },
+  "realtek-rtl815x-ethernet": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-16"
+  },
   "receiptquicklook": {
     "status": "no_icon",
     "reason": "no app/suite/pkg artifact",
