@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-14",
-  "totalCasks": 4988,
+  "generatedDate": "2026-11-16",
+  "totalCasks": 4994,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8220,6 +8220,10 @@
         "securityPrivacy"
       ]
     },
+    "hora-calendar": {
+      "primary": "productivity",
+      "secondary": []
+    },
     "horos": {
       "primary": "designGraphics",
       "secondary": []
@@ -8349,6 +8353,12 @@
     "hyperconnect": {
       "primary": "utilities",
       "secondary": []
+    },
+    "hyperframes": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai"
+      ]
     },
     "hyperkey": {
       "primary": "utilities",
@@ -13530,6 +13540,10 @@
         "ai"
       ]
     },
+    "open-screen-sharing": {
+      "primary": "utilities",
+      "secondary": []
+    },
     "open-video-downloader": {
       "primary": "videoMedia",
       "secondary": []
@@ -14210,6 +14224,12 @@
     "pairpods": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "pake-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
     },
     "pale-moon": {
       "primary": "browsers",
@@ -16215,6 +16235,10 @@
       "secondary": []
     },
     "realforce": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "realtek-rtl815x-ethernet": {
       "primary": "utilities",
       "secondary": []
     },
@@ -19146,6 +19170,12 @@
       "primary": "developerTools",
       "secondary": [
         "ai"
+      ]
+    },
+    "tab-finder": {
+      "primary": "productivity",
+      "secondary": [
+        "menuBar"
       ]
     },
     "tabby": {

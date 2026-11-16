@@ -30690,6 +30690,13 @@
     "og_desc": "Free and secure remote desktop software for Windows, Mac, Linux, Android, iOS for remote support, control, monitoring, screen share, file transfer and live chat."
   },
   {
+    "token": "hora-calendar",
+    "homepage": "https://horacal.app/",
+    "title": "hora Calendar - Google Calendar for Mac, iPhone & iPad",
+    "meta_desc": "hora is an independent native calendar for Mac, iPhone and iPad that connects to Google Calendar via the official API. One purchase unlocks all three.",
+    "og_desc": "hora is an independent native calendar for Mac, iPhone and iPad that connects to Google Calendar via the official API. One purchase unlocks all three."
+  },
+  {
     "token": "horos",
     "homepage": "https://horosproject.org/",
     "title": "Home Page - Horos Project",
@@ -30882,6 +30889,13 @@
     "title": "Xiaomi HyperConnect 跨端智联",
     "meta_desc": "融合设备中心，实时查看状态并操控，实现跨系统设备协同与服务流转",
     "og_desc": ""
+  },
+  {
+    "token": "hyperframes",
+    "homepage": "https://hyperframes.heygen.com/",
+    "title": "HyperFrames: Make videos with your AI agent",
+    "meta_desc": "Make videos with your AI agent. Install our open source skill: npx skills add heygen-com/hyperframes",
+    "og_desc": "Make videos with your AI agent. Install our open source skill: npx skills add heygen-com/hyperframes"
   },
   {
     "token": "hyperkey",
@@ -39010,6 +39024,13 @@
     "og_desc": "AIPOCH Open Science is an open-source, local-first AI research workbench with model choice, code execution, reviewer checks, and traceable artifacts."
   },
   {
+    "token": "open-screen-sharing",
+    "homepage": "https://github.com/nekohasekai/open-screen-sharing",
+    "title": "GitHub - nekohasekai/open-screen-sharing: Better Screen Sharing for Apple systems · GitHub",
+    "meta_desc": "Better Screen Sharing for Apple systems. Contribute to nekohasekai/open-screen-sharing development by creating an account on GitHub.",
+    "og_desc": "Better Screen Sharing for Apple systems. Contribute to nekohasekai/open-screen-sharing development by creating an account on GitHub."
+  },
+  {
     "token": "open-video-downloader",
     "homepage": "https://github.com/jely2002/youtube-dl-gui",
     "title": "GitHub - jely2002/youtube-dl-gui: Open Video Downloader - A cross-platform GUI for youtube-dl made in Rust with Tauri and Vue + Typescript. · GitHub",
@@ -40068,6 +40089,13 @@
     "title": "PairPods - easy Bluetooth audio sharing on macOS",
     "meta_desc": "Free macOS app to share audio between multiple Bluetooth devices. Perfect for watching movies, listening to music, or sharing content with friends. Easy to use, no quality loss.",
     "og_desc": "Share audio between multiple Bluetooth devices on macOS. Perfect for watching movies, listening to music, or sharing content with friends. Free and open-source."
+  },
+  {
+    "token": "pake-app",
+    "homepage": "https://pake.run/",
+    "title": "Pake · Turn any website into a lightweight desktop app",
+    "meta_desc": "Turn websites into desktop apps on Mac, Windows and Linux with Pake, a desktop app that needs no compiler, or the free, open-source Pake CLI.",
+    "og_desc": "Turn websites into desktop apps on Mac, Windows and Linux with Pake, a desktop app that needs no compiler, or the free, open-source Pake CLI."
   },
   {
     "token": "pale-moon",
@@ -43216,6 +43244,13 @@
     "title": "REALFORCE | 打鍵のその先へ。",
     "meta_desc": "プロのニーズに応える極上の打鍵感と高耐久性。日本製プレミアムキーボードはREALFORCE",
     "og_desc": "プロのニーズに応える極上の打鍵感と高耐久性。日本製プレミアムキーボードはREALFORCE"
+  },
+  {
+    "token": "realtek-rtl815x-ethernet",
+    "homepage": "https://www.realtek.com/Download/List?cate_id=585",
+    "title": "Radware Captcha Page",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "realvnc-connect",
@@ -47902,6 +47937,13 @@
     "title": "T3 Code",
     "meta_desc": "T3 Code - The best way to code with AI.",
     "og_desc": ""
+  },
+  {
+    "token": "tab-finder",
+    "homepage": "https://noteifyapp.com/tab-finder/",
+    "title": "Tab Finder 2 - All Your Browser Tabs in One List",
+    "meta_desc": "Tab Finder collects every open tab from Safari, Chrome, Brave and Opera into one searchable list, with dark mode and keyboard shortcuts.",
+    "og_desc": "Tab Finder collects every open tab from Safari, Chrome, Brave and Opera into one searchable list, with dark mode and keyboard shortcuts."
   },
   {
     "token": "tabby",
