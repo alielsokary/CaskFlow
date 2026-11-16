@@ -51305,6 +51305,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "byos": {
+      "caskVersion": "2.3.6",
+      "sourceURL": "https://appupdate.byos.network/apps/mac/stable/updates/InstallByos2.3.6.dmg",
+      "artifactSHA256": "5e02076733d0eaa9c01c3cf32c707fadf22fc9965251b0661845e1abfc33529a",
+      "apps": [
+        {
+          "bundleName": "Byos.app",
+          "bundleIdentifier": "io.byos.mgatewayclient"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "clipboard-remote": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://www.ntwind.com/files/ClipboardRemote_2.0.3-mac.dmg",
+      "artifactSHA256": "039828ddef25e503c110d3eb9482045652061f6055366313c41025cce297ac34",
+      "apps": [
+        {
+          "bundleName": "Clipboard Remote.app",
+          "bundleIdentifier": "com.ntwind.remote.clipboard"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
