@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedDate": "2026-11-15",
+  "generatedDate": "2026-11-16",
   "casks": {
     "0xjemm/youtube-music-macos/youtube-music-macos": {
       "primary": "audioMusic",
@@ -1193,12 +1193,6 @@
         "ai"
       ]
     },
-    "brewforge/chinese/dashplayer": {
-      "primary": "videoMedia",
-      "secondary": [
-        "scienceEducation"
-      ]
-    },
     "brewforge/chinese/dbeaver-cn": {
       "primary": "developerTools",
       "secondary": []
@@ -1394,10 +1388,6 @@
       "secondary": [
         "scienceEducation"
       ]
-    },
-    "brewforge/chinese/mogan-cn": {
-      "primary": "scienceEducation",
-      "secondary": []
     },
     "brewforge/chinese/noteey": {
       "primary": "productivity",
@@ -2887,6 +2877,12 @@
       ]
     },
     "docker/tap/sbx@0.53.0": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "docker/tap/sbx@0.54.0": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -5937,6 +5933,12 @@
       "secondary": [
         "ai",
         "developerTools"
+      ]
+    },
+    "my-monkeys/tap/openmonkeywhisper": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
       ]
     },
     "my-monkeys/tap/opensuperwhisper": {
@@ -11022,6 +11024,10 @@
       ]
     },
     "xtool-org/tap/xtool": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "xtool-org/tap/xtool@beta": {
       "primary": "developerTools",
       "secondary": []
     },
