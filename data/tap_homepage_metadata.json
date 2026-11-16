@@ -3705,6 +3705,13 @@
     "meta_desc": "Docker Sandboxes run AI coding agents in isolated environments on your machine or on Docker-managed cloud infrastructure - docker/sbx-releases",
     "og_desc": "Docker Sandboxes run AI coding agents in isolated environments on your machine or on Docker-managed cloud infrastructure - docker/sbx-releases"
   },
+  "docker/tap/sbx@0.54.0": {
+    "token": "docker/tap/sbx@0.54.0",
+    "homepage": "https://github.com/docker/sbx-releases",
+    "title": "GitHub - docker/sbx-releases: Docker Sandboxes run AI coding agents in isolated environments on your machine or on Docker-managed cloud infrastructure · GitHub",
+    "meta_desc": "Docker Sandboxes run AI coding agents in isolated environments on your machine or on Docker-managed cloud infrastructure - docker/sbx-releases",
+    "og_desc": "Docker Sandboxes run AI coding agents in isolated environments on your machine or on Docker-managed cloud infrastructure - docker/sbx-releases"
+  },
   "docker/tap/sbx@nightly": {
     "token": "docker/tap/sbx@nightly",
     "homepage": "https://github.com/docker/sbx-releases",
@@ -7586,6 +7593,13 @@
     "title": "GitHub - my-monkeys/monkey-claude-usage: Claude usage limits for several accounts at once, in the macOS menu bar - session, weekly and per-model windows (Fable included), with a countdown when a limit is spent · GitHub",
     "meta_desc": "Claude usage limits for several accounts at once, in the macOS menu bar - session, weekly and per-model windows (Fable included), with a countdown when a limit is spent - my-monkeys/monkey-claude-usage",
     "og_desc": "Claude usage limits for several accounts at once, in the macOS menu bar - session, weekly and per-model windows (Fable included), with a countdown when a limit is spent - my-monkeys/monkey-claude-u..."
+  },
+  "my-monkeys/tap/openmonkeywhisper": {
+    "token": "my-monkeys/tap/openmonkeywhisper",
+    "homepage": "https://github.com/my-monkeys/OpenSuperWhisper",
+    "title": "GitHub - my-monkeys/OpenSuperWhisper: macOS dictation app · GitHub",
+    "meta_desc": "macOS dictation app. Contribute to my-monkeys/OpenSuperWhisper development by creating an account on GitHub.",
+    "og_desc": "macOS dictation app. Contribute to my-monkeys/OpenSuperWhisper development by creating an account on GitHub."
   },
   "my-monkeys/tap/opensuperwhisper": {
     "token": "my-monkeys/tap/opensuperwhisper",
@@ -14796,6 +14810,13 @@
   },
   "xtool-org/tap/xtool": {
     "token": "xtool-org/tap/xtool",
+    "homepage": "https://github.com/xtool-org/xtool",
+    "title": "GitHub - xtool-org/xtool: Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. · GitHub",
+    "meta_desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool",
+    "og_desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+  },
+  "xtool-org/tap/xtool@beta": {
+    "token": "xtool-org/tap/xtool@beta",
     "homepage": "https://github.com/xtool-org/xtool",
     "title": "GitHub - xtool-org/xtool: Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. · GitHub",
     "meta_desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool",
