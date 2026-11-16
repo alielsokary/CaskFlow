@@ -1872,15 +1872,17 @@
       ]
     },
     "thaw": {
-      "caskVersion": "2.0.1",
-      "sourceURL": "https://github.com/thaw-app/Thaw/releases/download/2.0.1/Thaw_2.0.1.zip",
-      "artifactSHA256": "aafefc186a96b2e0b7868b0966df4cbe3bf6737ced3f9b25a22d6c07dc6f8fba",
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/thaw-app/Thaw/releases/download/2.1.0/Thaw_2.1.0.zip",
+      "artifactSHA256": "23fe850dd6b6e3f822af00a2da76c6d46135c2fa8a0deef8e8fa09d1efd3eec1",
       "apps": [
         {
           "bundleName": "Thaw.app",
           "bundleIdentifier": "com.stonerl.Thaw"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "swiftbar": {
       "caskVersion": "2.1.1,597",
