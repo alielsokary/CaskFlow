@@ -51331,6 +51331,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "upload-remote": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://www.ntwind.com/files/UploadRemote_2.0.3-mac.dmg",
+      "artifactSHA256": "5b1f249b9713fd817e55831c9f68306bf96c8de61437e4a8ad0a7214d2efe683",
+      "apps": [
+        {
+          "bundleName": "Upload Remote.app",
+          "bundleIdentifier": "com.ntwind.remote.upload"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "screenshot-remote": {
+      "caskVersion": "2.0.3",
+      "sourceURL": "https://www.ntwind.com/files/ScreenshotRemote_2.0.3-mac.dmg",
+      "artifactSHA256": "283b00877fb93c358a6e4533732640acc05be029a32cf8c3d0e41a51dca04877",
+      "apps": [
+        {
+          "bundleName": "Screenshot Remote.app",
+          "bundleIdentifier": "com.ntwind.remote.screenshot"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "multidock": {
+      "caskVersion": "2.16",
+      "sourceURL": "https://macplus-software.com/downloads/MultiDock%202.zip",
+      "artifactSHA256": "935cb764455caca29eacc1a384357ddb48e1b6b2fd8f92768daca92230fbaf30",
+      "apps": [
+        {
+          "bundleName": "MultiDock 2.app",
+          "bundleIdentifier": "com.sergiigerasimenko.MultiDock2"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
