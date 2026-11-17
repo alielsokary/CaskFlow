@@ -37292,6 +37292,13 @@
     "og_desc": "Create custom, lightweight macOS apps from websites - kofigumbs/multi"
   },
   {
+    "token": "multidock",
+    "homepage": "https://noteifyapp.com/multidock/",
+    "title": "MultiDock 2 - Mac Panels for Apps, Files and Folders",
+    "meta_desc": "Extra macOS panels for the apps, files, and folders you use together. Pin them to an edge or float them - alongside the Dock, not instead of it.",
+    "og_desc": "Extra macOS panels for the apps, files, and folders you use together. Pin them to an edge or float them - alongside the Dock, not instead of it."
+  },
+  {
     "token": "multimc",
     "homepage": "https://multimc.org/",
     "title": "MultiMC",
@@ -44709,6 +44716,13 @@
     "og_desc": ""
   },
   {
+    "token": "screenshot-remote",
+    "homepage": "https://www.ntwind.com/remote/screenshot.html",
+    "title": "Screenshot Remote - Capture Screenshots on PC & Mac using your Phone or Tablet - NTWind Software",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "scribus",
     "homepage": "https://www.scribus.net/",
     "title": "Making sure you're not a bot!",
@@ -50621,6 +50635,13 @@
     "title": "UPDF - An AI-integrated PDF Editor, Converter, Annotator, and Reader",
     "meta_desc": "With UPDF, you can edit, annotate, convert, OCR, organize, protect, share, print, summarize, translate, and explain PDF files. Try this all-in-one PDF editor now!",
     "og_desc": "With UPDF, you can edit, annotate, convert, OCR, organize, protect, share, print, summarize, translate, and explain PDF files. Try this all-in-one PDF editor now!"
+  },
+  {
+    "token": "upload-remote",
+    "homepage": "https://www.ntwind.com/remote/upload.html",
+    "title": "Upload Remote - Effortlessly Send Files to Any Device's Inbox Folder via LAN or Wi-Fi - NTWind Software",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "upscayl",
