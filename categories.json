@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedDate": "2026-11-17",
-  "totalCasks": 4996,
+  "totalCasks": 4999,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -12428,6 +12428,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "multidock": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
+    },
     "multimc": {
       "primary": "games",
       "secondary": [
@@ -17181,6 +17187,12 @@
       "primary": "utilities",
       "secondary": []
     },
+    "screenshot-remote": {
+      "primary": "utilities",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "scribus": {
       "primary": "designGraphics",
       "secondary": []
@@ -20941,6 +20953,12 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "upload-remote": {
+      "primary": "utilities",
+      "secondary": [
+        "cloudStorage"
       ]
     },
     "upscayl": {
