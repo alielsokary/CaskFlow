@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-16",
-  "totalCasks": 4995,
+  "generatedDate": "2026-11-17",
+  "totalCasks": 4996,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3491,6 +3491,12 @@
     "clipaste": {
       "primary": "productivity",
       "secondary": []
+    },
+    "clipboard-remote": {
+      "primary": "productivity",
+      "secondary": [
+        "utilities"
+      ]
     },
     "clipbook": {
       "primary": "productivity",

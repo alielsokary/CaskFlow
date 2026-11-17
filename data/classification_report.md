@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-11-16
+Generated 2026-11-17
 
 ## Summary
 
@@ -13,4 +13,4 @@ Generated 2026-11-16
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `byos` | securityPrivacy | utilities | 0.75 | Companion app for Byos Secure Edge network security devices. |
+| `clipboard-remote` | productivity | utilities | 0.75 | A clipboard-sharing tool fits productivity with a utilities trait since it's a system-level convenience app. |
