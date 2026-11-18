@@ -51448,6 +51448,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "mistral-vibe-app": {
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://storage.googleapis.com/mistralai-ci-desktop-app/vibe-1.3.0.dmg",
+      "artifactSHA256": "1bf26504215989598593494fc3f90d370c5c539f873824e41f377373cbc7cd36",
+      "apps": [
+        {
+          "bundleName": "Vibe.app",
+          "bundleIdentifier": "ai.mistral.lechat.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "setshot": {
+      "caskVersion": "1.0.1",
+      "sourceURL": "https://github.com/adamengst/setshot-app/releases/download/v1.0.1/SetShot-1.0.1.zip",
+      "artifactSHA256": "14f218e4b01df745c6ecb7edfa45716e10af7eb155aef950e913ab8739cf18ed",
+      "apps": [
+        {
+          "bundleName": "SetShot.app",
+          "bundleIdentifier": "com.tidbits.SetShot"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
