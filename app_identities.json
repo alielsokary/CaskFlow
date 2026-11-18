@@ -51370,6 +51370,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "max-messages": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://mailarchiver.b-cdn.net/MAXMessages1.2.0.dmg",
+      "artifactSHA256": "bb0b68892e0eb5bd18e3cdf8b67a020a8ac831bacfd45aab6417bf8e6e0ff904",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "MAX Messages Installer.app/Contents/Helpers/MAX Messages.app",
+          "reason": "declared app matched 0 bundles"
+        }
+      ]
+    },
+    "zephium": {
+      "caskVersion": "1.0.5",
+      "sourceURL": "https://github.com/zephium-browser/Zephium/releases/download/v1.0.5/Zephium-macOS-arm64.dmg",
+      "artifactSHA256": "11c35eace71e21af87ccdbc3049f96d028850faf1c2013bcfc36d4b9b7d4bcdc",
+      "apps": [
+        {
+          "bundleName": "Zephium.app",
+          "bundleIdentifier": "app.zephium"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "weftcut": {
+      "caskVersion": "0.8.1",
+      "sourceURL": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.1/WeftCut-mac-arm64.dmg",
+      "artifactSHA256": "b49ecf11b802951991dedc27f0b3719078560597c84b8d5ced07d81d69e43cbd",
+      "apps": [
+        {
+          "bundleName": "WeftCut.app",
+          "bundleIdentifier": "dev.weftcut.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }

@@ -1415,6 +1415,12 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "max-messages": {
+    "status": "no_icon",
+    "reason": "only installer/updater apps in artifact",
+    "attempts": 0,
+    "updated": "2026-11-18"
+  },
   "mechvibes": {
     "status": "failed",
     "reason": "download failed: curl: (56) The requested URL returned error: 404",
