@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-17",
-  "totalCasks": 4999,
+  "generatedDate": "2026-11-18",
+  "totalCasks": 5002,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -11361,6 +11361,12 @@
       "primary": "communication",
       "secondary": []
     },
+    "max-messages": {
+      "primary": "productivity",
+      "secondary": [
+        "communication"
+      ]
+    },
     "maxon": {
       "primary": "utilities",
       "secondary": []
@@ -21881,6 +21887,13 @@
       "primary": "productivity",
       "secondary": []
     },
+    "weftcut": {
+      "primary": "videoMedia",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
+    },
     "weiyun": {
       "primary": "cloudStorage",
       "secondary": []
@@ -22781,6 +22794,12 @@
     },
     "zentty": {
       "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
+    },
+    "zephium": {
+      "primary": "browsers",
       "secondary": [
         "ai"
       ]
