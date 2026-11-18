@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedDate": "2026-11-18",
-  "totalCasks": 5002,
+  "totalCasks": 5007,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -2133,6 +2133,13 @@
     "blankie": {
       "primary": "audioMusic",
       "secondary": []
+    },
+    "blave": {
+      "primary": "financeCrypto",
+      "secondary": [
+        "ai",
+        "developerTools"
+      ]
     },
     "blender": {
       "primary": "designGraphics",
@@ -7016,6 +7023,12 @@
       "primary": "utilities",
       "secondary": [
         "audioMusic"
+      ]
+    },
+    "gallery-remote": {
+      "primary": "designGraphics",
+      "secondary": [
+        "utilities"
       ]
     },
     "gama-jdk": {
@@ -11979,6 +11992,13 @@
       "primary": "menuBar",
       "secondary": [
         "utilities"
+      ]
+    },
+    "mistral-vibe-app": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "developerTools"
       ]
     },
     "mitmproxy": {
@@ -17281,6 +17301,10 @@
         "communication"
       ]
     },
+    "search-browser": {
+      "primary": "browsers",
+      "secondary": []
+    },
     "second-life-viewer": {
       "primary": "designGraphics",
       "secondary": []
@@ -17451,6 +17475,10 @@
       ]
     },
     "setapp": {
+      "primary": "utilities",
+      "secondary": []
+    },
+    "setshot": {
       "primary": "utilities",
       "secondary": []
     },
