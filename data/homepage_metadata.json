@@ -35558,6 +35558,13 @@
     "og_desc": "Accelerate your mission critical workflow by integrating people, processes, tools and AI infrastructure on a resilient and adaptable platform."
   },
   {
+    "token": "max-messages",
+    "homepage": "https://www.mothsoftware.com/content/content/maxmessages.php",
+    "title": "Export and Archive iMessage Conversations on Mac | MAX Messages",
+    "meta_desc": "Create readable, searchable archives of Messages conversations on Mac, including participants, timestamps and message order.",
+    "og_desc": ""
+  },
+  {
     "token": "maxon",
     "homepage": "https://www.maxon.net/en/downloads/",
     "title": "Maxon - Downloads",
@@ -52083,6 +52090,13 @@
     "og_desc": "WeekToDo is a free and Open Source Minimalist Weekly Planner and To Do list App for simple and effective people. Schedule your tasks, set reminders and handle projects with To Do list and a calendar. Available for Windows, Mac, Linux or online."
   },
   {
+    "token": "weftcut",
+    "homepage": "https://weftcut.com/",
+    "title": "WeftCut - Open Source AI Video Editor for MCP Agents",
+    "meta_desc": "WeftCut is a free, open source AI video editor for macOS, Windows and Linux. Connect Claude, Cursor, or any MCP client - and review every edit as it lands on your timeline, live.",
+    "og_desc": "A free, open source AI video editor for macOS, Windows and Linux. Connect Claude, Cursor, or any MCP client - and review every edit as it lands on your timeline, live."
+  },
+  {
     "token": "weiyun",
     "homepage": "https://www.weiyun.com/",
     "title": "首页-腾讯微云",
@@ -53523,6 +53537,13 @@
     "title": "Zentty - Native Mac Terminal for AI Coding Agents",
     "meta_desc": "A keyboard-first native Mac terminal. Worklanes keep parallel agent work in separate contexts - and show you the moment one needs you.",
     "og_desc": "A keyboard-first native Mac terminal. Worklanes keep parallel agent work in separate contexts - and show you the moment one needs you."
+  },
+  {
+    "token": "zephium",
+    "homepage": "https://zephium.app/",
+    "title": "Zephium: a browser and work environment for you and your agents",
+    "meta_desc": "Zephium is a fast, private, open-source browser built in Rust, with Work: a canvas where you and your agents browse, compare and plan in the open, and keep the results.",
+    "og_desc": "Zephium is a fast, private, open-source browser built in Rust, with Work: a canvas where you and your agents browse, compare and plan in the open, and keep the results."
   },
   {
     "token": "zeplin",

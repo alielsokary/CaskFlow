@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-11-17
+Generated 2026-11-18
 
 ## Summary
 
@@ -13,6 +13,6 @@ Generated 2026-11-17
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `multidock` | utilities | productivity | 0.75 | A system utility that adds extra dock-like panels for organizing apps, files, and folders. |
-| `screenshot-remote` | utilities | designGraphics | 0.75 | A remote screenshot capture tool is primarily a system/network utility rather than a creative design app. |
-| `upload-remote` | utilities | cloudStorage | 0.75 | A LAN file transfer tool between devices, fitting utilities with a nod to file sync/cloud-like transfer. |
+| `max-messages` | productivity | communication | 0.75 | Archives and organizes Messages conversations, primarily a productivity/archiving tool related to communication data. |
+| `weftcut` | videoMedia | ai, developerTools | 0.85 | AI-driven video editor controllable via MCP clients, primarily a video editing tool with AI/dev integration traits. |
+| `zephium` | browsers | ai | 0.90 | Zephium is a WebKit/Rust-based web browser with integrated AI agent tools. |
