@@ -51409,6 +51409,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "search-browser": {
+      "caskVersion": "1.0.14",
+      "sourceURL": "https://github.com/driceroland/Search/releases/download/v1.0.14/Search.dmg",
+      "artifactSHA256": "27eadbb99ada164383c0b694ba8ed974693c308b96754d2052c5041e03daa994",
+      "apps": [
+        {
+          "bundleName": "Search.app",
+          "bundleIdentifier": "com.officecommun.search"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "gallery-remote": {
+      "caskVersion": "1.0.3",
+      "sourceURL": "https://www.ntwind.com/files/GalleryRemote_1.0.3-mac.dmg",
+      "artifactSHA256": "0bdc00c57dcab2511ee0dba490796a77ea7526535626719ea764b79e2d4dc546",
+      "apps": [
+        {
+          "bundleName": "Gallery Remote.app",
+          "bundleIdentifier": "com.ntwind.remote.gallery"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "blave": {
+      "caskVersion": "0.1.55",
+      "sourceURL": "https://github.com/Blave-TW/blave-agent/releases/download/desktop-v0.1.55/Blave-0.1.55-universal.dmg",
+      "artifactSHA256": "9348b885d0a343e797d67594fadfbdc6e0ff44c2033176940def6da42c6aafe7",
+      "apps": [
+        {
+          "bundleName": "Blave.app",
+          "bundleIdentifier": "org.blave.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
