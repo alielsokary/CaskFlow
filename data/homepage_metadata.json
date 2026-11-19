@@ -33495,6 +33495,13 @@
     "og_desc": ""
   },
   {
+    "token": "lap",
+    "homepage": "https://julyx10.github.io/lap/",
+    "title": "Lap",
+    "meta_desc": "Local-first, AI-powered photo manager",
+    "og_desc": ""
+  },
+  {
     "token": "lapce",
     "homepage": "https://lapce.dev/",
     "title": "Lapce - Lightning-fast and Powerful Code Editor",
@@ -34565,6 +34572,13 @@
     "token": "luminance-hdr",
     "homepage": "https://qtpfsgui.sourceforge.io/",
     "error": "HTTP 403"
+  },
+  {
+    "token": "lumo",
+    "homepage": "https://proton.me/lumo",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "luna-display",
@@ -46666,6 +46680,13 @@
     "og_desc": "Speechify reads anything aloud to you. Listen to books, PDFs, or web pages anytime with natural voices. Try Speechify free."
   },
   {
+    "token": "speedcrunch",
+    "homepage": "https://speedcrunch.org/",
+    "title": "SpeedCrunch - Free High-Precision Scientific Calculator",
+    "meta_desc": "SpeedCrunch is a free, open-source scientific calculator for Windows, macOS and Linux, with 50-digit precision, complex numbers and unit conversion.",
+    "og_desc": "SpeedCrunch is a free, open-source scientific calculator for Windows, macOS and Linux, with 50-digit precision, complex numbers and unit conversion."
+  },
+  {
     "token": "speedify",
     "homepage": "https://speedify.com/",
     "title": "Speedify - Use all of your Internet connections at the same time",
@@ -47671,6 +47692,13 @@
     "title": "Sweet Home 3D - Sweet Home 3D",
     "meta_desc": "Sweet Home 3D is a free interior design applicationwhich helps you draw the plan of your house, arrange furniture on it and visit the results in 3D.",
     "og_desc": "Sweet Home 3D is a free interior design applicationwhich helps you draw the plan of your house, arrange furniture on it and visit the results in 3D."
+  },
+  {
+    "token": "swi-prolog-app",
+    "homepage": "https://www.swi-prolog.org/",
+    "title": "",
+    "meta_desc": "",
+    "og_desc": ""
   },
   {
     "token": "swift-im",
