@@ -3326,6 +3326,13 @@
     "og_desc": ""
   },
   {
+    "token": "blave",
+    "homepage": "https://blave.org/",
+    "title": "AI Quant Trading Workspace: Backtest to Live Trading｜Blave",
+    "meta_desc": "Quant infrastructure for AI agents: free, open-source Mac and Windows app for Claude Code or Codex - data, backtests, live trading; cloud runs it with your computer off.",
+    "og_desc": "Quant infrastructure for AI agents: free, open-source Mac and Windows app for Claude Code or Codex - data, backtests, live trading; cloud runs it with your computer off."
+  },
+  {
     "token": "blender",
     "homepage": "https://www.blender.org/",
     "title": "Blender - The Free and Open Source 3D Creation Software - blender.org",
@@ -28803,6 +28810,13 @@
     "og_desc": "Unofficial Galaxy Buds Manager for Windows, macOS, Linux, and Android - timschneeb/GalaxyBudsClient"
   },
   {
+    "token": "gallery-remote",
+    "homepage": "https://www.ntwind.com/remote/gallery.html",
+    "title": "Gallery Remote - Present Photo Slideshows on Nearby PCs, Macs, Phones or Tablets - NTWind Software",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "gama-jdk",
     "homepage": "https://gama-platform.org/",
     "title": "GAMA Platform",
@@ -36562,6 +36576,13 @@
     "title": "Mister Plimsoll  -  Disk space monitoring for macOS",
     "meta_desc": "A small free macOS menu-bar utility that watches your drives and warns you before any of them gets too full.",
     "og_desc": "A small free macOS menu-bar utility that watches your drives and warns you before any of them gets too full."
+  },
+  {
+    "token": "mistral-vibe-app",
+    "homepage": "https://mistral.ai/products/vibe/",
+    "title": "Mistral Vibe (formerly Le Chat) - AI chat and coding agent",
+    "meta_desc": "Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most meaningful work.",
+    "og_desc": "Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most meaningful work."
   },
   {
     "token": "mitmproxy",
@@ -44870,6 +44891,13 @@
     "og_desc": ""
   },
   {
+    "token": "search-browser",
+    "homepage": "https://officecommun.com/search",
+    "title": "Search Browser - a fast, light web browser for the Mac",
+    "meta_desc": "A free web browser for the Mac with nothing in the way: about 10 MB, open in a third of a second, ads blocked, Chrome extensions, Arc import.",
+    "og_desc": "A free web browser for the Mac with nothing in the way: about 10 MB, open in a third of a second, ads blocked, Chrome extensions, Arc import."
+  },
+  {
     "token": "second-life-viewer",
     "homepage": "https://secondlife.com/",
     "title": "Official Site | Second Life - Virtual Worlds, Virtual Reality, VR, Avatars, and Free 3D Chat",
@@ -45162,6 +45190,13 @@
     "title": "Link to Setapp Discord page",
     "meta_desc": "Setapp is a large collection of powerful Mac apps available by subscription.",
     "og_desc": "Setapp is a large collection of powerful Mac apps available by subscription."
+  },
+  {
+    "token": "setshot",
+    "homepage": "https://tidbits.com/setshot/",
+    "title": "SetShot: see what changed in your Mac's settings",
+    "meta_desc": "SetShot takes a snapshot of the macOS settings on your Mac, then compares two snapshots to show what changed and what each change means. Reasons to use it:",
+    "og_desc": ""
   },
   {
     "token": "sf-symbols",
