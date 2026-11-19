@@ -2309,6 +2309,12 @@
     "attempts": 0,
     "updated": "2026-11-01"
   },
+  "swi-prolog-app": {
+    "status": "review",
+    "reason": "non-exact .app selection: single",
+    "attempts": 0,
+    "updated": "2026-11-19"
+  },
   "sync-my-l2p": {
     "status": "no_icon",
     "reason": "no .icns in Resources",

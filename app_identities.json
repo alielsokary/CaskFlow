@@ -51474,6 +51474,45 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "lumo": {
+      "caskVersion": "0.5.9",
+      "sourceURL": "https://proton.me/download/lumo/darwin/0.5.9/Lumo-0.5.9.dmg",
+      "artifactSHA256": "637afbe66119bfbc9f5b0cc134ad62b5b12564878ff4641f5ceea81c86df5cda",
+      "apps": [
+        {
+          "bundleName": "Lumo.app",
+          "bundleIdentifier": "me.proton.lumo-app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "speedcrunch": {
+      "caskVersion": "1.2.0",
+      "sourceURL": "https://github.com/heldercorreia/speedcrunch/releases/download/v1.2.0/SpeedCrunch-1.2.0-macos-arm64.dmg",
+      "artifactSHA256": "63eec4217498234dd5bc240ec0c08a3359ede110e1af0afc7fc0d577921fc44c",
+      "apps": [
+        {
+          "bundleName": "SpeedCrunch.app",
+          "bundleIdentifier": "org.speedcrunch"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "swi-prolog-app": {
+      "caskVersion": "11.0.0-1",
+      "sourceURL": "https://www.swi-prolog.org/download/stable/bin/swipl-11.0.0-1.fat.pkg",
+      "artifactSHA256": "6085ea66dc4a08d95a6343df99aa5d9c491faf93504b300cebaab4c59fd69147",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "swipl-win.app",
+          "reason": "unreadable Info.plist: ExpatError"
+        }
+      ]
     }
   }
 }
