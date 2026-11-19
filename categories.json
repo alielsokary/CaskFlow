@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-18",
-  "totalCasks": 5007,
+  "generatedDate": "2026-11-19",
+  "totalCasks": 5011,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -10017,6 +10017,12 @@
       "primary": "securityPrivacy",
       "secondary": []
     },
+    "lap": {
+      "primary": "designGraphics",
+      "secondary": [
+        "ai"
+      ]
+    },
     "lapce": {
       "primary": "developerTools",
       "secondary": []
@@ -10723,6 +10729,12 @@
     "luminance-hdr": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "lumo": {
+      "primary": "productivity",
+      "secondary": [
+        "ai"
+      ]
     },
     "luna-display": {
       "primary": "utilities",
@@ -18396,6 +18408,12 @@
         "audioMusic"
       ]
     },
+    "speedcrunch": {
+      "primary": "scienceEducation",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "speedify": {
       "primary": "securityPrivacy",
       "secondary": []
@@ -19023,6 +19041,12 @@
     "sweet-home3d": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "swi-prolog-app": {
+      "primary": "developerTools",
+      "secondary": [
+        "scienceEducation"
+      ]
     },
     "swift-im": {
       "primary": "communication",
