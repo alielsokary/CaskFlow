@@ -51513,6 +51513,19 @@
           "reason": "unreadable Info.plist: ExpatError"
         }
       ]
+    },
+    "supertab": {
+      "caskVersion": "1.2.2",
+      "sourceURL": "https://macplus-software.com/downloads/SuperTab%207.zip",
+      "artifactSHA256": "81c5e46d877fa12547001550acda0edb78f0d9a4a8028ddbe512e9032afe7744",
+      "apps": [
+        {
+          "bundleName": "SuperTab 7.app",
+          "bundleIdentifier": "com.macplus-software.com.SuperTab-7"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
