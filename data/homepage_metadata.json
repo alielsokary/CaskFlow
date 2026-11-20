@@ -30940,6 +30940,13 @@
     "og_desc": "Write 5x faster with AI-powered voice transcription. HyperWhisper transcribes your voice with incredible accuracy on macOS and Windows. Speak naturally and watch your words appear instantly."
   },
   {
+    "token": "hyprmac",
+    "homepage": "https://hyprmac.app/",
+    "title": "HyprMac: keyboard-driven tiling window manager for macOS",
+    "meta_desc": "HyprMac is a free, open-source, keyboard-driven tiling window manager for macOS, inspired by Hyprland. Windows tile themselves in a dwindle (BSP) layout, and you focus, swap, resize, and switch ten workspaces without leaving the keyboard. macOS 13 or later, SIP stays on.",
+    "og_desc": "HyprMac is a free, open-source, keyboard-driven tiling window manager for macOS, inspired by Hyprland. Windows tile themselves in a dwindle (BSP) layout, and you focus, swap, resize, and switch ten workspaces without leaving the keyboard. macOS 13 or later, SIP stays on."
+  },
+  {
     "token": "hytale",
     "homepage": "https://hytale.com/",
     "title": "Home | Hytale",
@@ -47582,6 +47589,13 @@
     "title": "GitHub - supermerill/SuperSlicer: G-code generator for 3D printers (Prusa, Voron, Creality, etc.) · GitHub",
     "meta_desc": "G-code generator for 3D printers (Prusa, Voron, Creality, etc.) - supermerill/SuperSlicer",
     "og_desc": "G-code generator for 3D printers (Prusa, Voron, Creality, etc.) - supermerill/SuperSlicer"
+  },
+  {
+    "token": "supertab",
+    "homepage": "https://noteifyapp.com/supertab/",
+    "title": "SuperTab 7 for Mac - the one you remember, rebuilt",
+    "meta_desc": "SuperTab for Mac: one panel on ⌥Tab - apps, every window of every app, clipboard history, recent documents and your files. 14-day trial.",
+    "og_desc": "SuperTab for Mac: one panel on ⌥Tab - apps, every window of every app, clipboard history, recent documents and your files. 14-day trial."
   },
   {
     "token": "supertuxkart",

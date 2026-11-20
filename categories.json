@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-19",
-  "totalCasks": 5011,
+  "generatedDate": "2026-11-20",
+  "totalCasks": 5013,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -8393,6 +8393,12 @@
       "primary": "productivity",
       "secondary": [
         "ai"
+      ]
+    },
+    "hyprmac": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
       ]
     },
     "hytale": {
@@ -18976,6 +18982,12 @@
       "primary": "utilities",
       "secondary": [
         "designGraphics"
+      ]
+    },
+    "supertab": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
       ]
     },
     "supertuxkart": {
