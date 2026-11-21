@@ -51526,6 +51526,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "jellybox": {
+      "caskVersion": "2.12.0",
+      "sourceURL": "https://github.com/avdept/JellyBoxPlayer/releases/download/v2.12.0/JellyBox-notarized.dmg",
+      "artifactSHA256": "28c55573e5e8cc322fe13cb51e23a16f64b0c322b66f67a2c187a5c907ce0a82",
+      "apps": [
+        {
+          "bundleName": "JellyBox.app",
+          "bundleIdentifier": "com.prodigytech.jellybox"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "shellrs": {
+      "caskVersion": "0.1.19",
+      "sourceURL": "https://github.com/since2006/shell-rs/releases/download/v0.1.19/ShellRS-0.1.19-macos-aarch64.dmg",
+      "artifactSHA256": "8c9705594c81a54589cb23b9c617013d99589fc9aee82310f28950b2f5d7ec69",
+      "apps": [
+        {
+          "bundleName": "ShellRS.app",
+          "bundleIdentifier": "com.shellrs.ShellRS"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
