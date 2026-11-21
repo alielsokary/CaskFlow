@@ -32210,6 +32210,13 @@
     "og_desc": "A lightweight macOS wrapper for browsing and watching Netflix. - jellybeansoup/macos-netflix"
   },
   {
+    "token": "jellybox",
+    "homepage": "https://jellybox.app/",
+    "title": "Jellyfin, Navidrome & Emby music player - JellyBox",
+    "meta_desc": "Native music client for Jellyfin, Navidrome and Emby on iPhone, iPad, Mac, Android, Windows and Linux. CarPlay, Android Auto, offline downloads, lyrics and casting.",
+    "og_desc": "Native music client for Jellyfin, Navidrome and Emby on iPhone, iPad, Mac, Android, Windows and Linux. CarPlay, Android Auto, offline downloads, lyrics and casting."
+  },
+  {
     "token": "jellyfin",
     "homepage": "https://jellyfin.org/",
     "title": "Photos",
@@ -45330,6 +45337,13 @@
     "title": "GitHub - nashaofu/shell360: Shell360 is a cross-platform SSH and SFTP client. · GitHub",
     "meta_desc": "Shell360 is a cross-platform SSH and SFTP client. Contribute to nashaofu/shell360 development by creating an account on GitHub.",
     "og_desc": "Shell360 is a cross-platform SSH and SFTP client. Contribute to nashaofu/shell360 development by creating an account on GitHub."
+  },
+  {
+    "token": "shellrs",
+    "homepage": "https://shellrs.com/",
+    "title": "ShellRS - a native SSH client, rendered on the GPU",
+    "meta_desc": "ShellRS is a free, open-source SSH client written in Rust: host management, terminals, WinSCP-style SFTP and port forwarding in one GPU-rendered window, for macOS, Windows and Linux.",
+    "og_desc": "ShellRS is a free, open-source SSH client written in Rust: host management, terminals, WinSCP-style SFTP and port forwarding in one GPU-rendered window, for macOS, Windows and Linux."
   },
   {
     "token": "sherlock-app",

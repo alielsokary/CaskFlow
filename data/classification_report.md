@@ -1,6 +1,6 @@
 # Daily classification update
 
-Generated 2026-11-20
+Generated 2026-11-21
 
 ## Summary
 
@@ -13,5 +13,5 @@ Generated 2026-11-20
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `hyprmac` | utilities | productivity | 0.85 | A keyboard-driven tiling window manager is a system-level utility that enhances productivity. |
-| `supertab` | utilities | productivity | 0.75 | A window/app switcher with clipboard history is a system-level utility that also boosts productivity. |
+| `jellybox` | audioMusic | - | 0.95 | A native music player client for Jellyfin, Navidrome and Emby servers. |
+| `shellrs` | developerTools | utilities | 0.90 | SSH/SFTP client, which falls under developer tools per scope rules. |
