@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-20",
-  "totalCasks": 5013,
+  "generatedDate": "2026-11-21",
+  "totalCasks": 5015,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -9209,6 +9209,10 @@
       "primary": "videoMedia",
       "secondary": []
     },
+    "jellybox": {
+      "primary": "audioMusic",
+      "secondary": []
+    },
     "jellyfin": {
       "primary": "videoMedia",
       "secondary": []
@@ -17564,6 +17568,12 @@
       "secondary": []
     },
     "shell360": {
+      "primary": "developerTools",
+      "secondary": [
+        "utilities"
+      ]
+    },
+    "shellrs": {
       "primary": "developerTools",
       "secondary": [
         "utilities"
