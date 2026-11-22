@@ -1,10 +1,10 @@
 # Daily classification update
 
-Generated 2026-11-21
+Generated 2026-11-22
 
 ## Summary
 
-- 2 new casks classified
+- 1 new casks classified
 - 0 classifications require manual review (confidence below 0.75)
 - 0 new casks **skipped** (LLM/validation failures, will retry tomorrow)
 - 0 casks renamed in Homebrew (classification migrated, no LLM call)
@@ -13,5 +13,4 @@ Generated 2026-11-21
 
 | token | primary | secondary | confidence | reason |
 |---|---|---|---|---|
-| `jellybox` | audioMusic | - | 0.95 | A native music player client for Jellyfin, Navidrome and Emby servers. |
-| `shellrs` | developerTools | utilities | 0.90 | SSH/SFTP client, which falls under developer tools per scope rules. |
+| `octo-browser` | browsers | securityPrivacy | 0.85 | Octo Browser is an anti-detect web browser focused on privacy/fingerprint protection for multi-account management. |
