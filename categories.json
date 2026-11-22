@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-21",
-  "totalCasks": 5015,
+  "generatedDate": "2026-11-22",
+  "totalCasks": 5016,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -13389,6 +13389,12 @@
     "octarine": {
       "primary": "productivity",
       "secondary": []
+    },
+    "octo-browser": {
+      "primary": "browsers",
+      "secondary": [
+        "securityPrivacy"
+      ]
     },
     "october": {
       "primary": "productivity",
