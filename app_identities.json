@@ -51552,6 +51552,19 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "octo-browser": {
+      "caskVersion": "3.2.7",
+      "sourceURL": "https://binaries.octobrowser.org/releases/installer/Octo_Browser_3.2.7b_mac_arm64.dmg",
+      "artifactSHA256": "dc052eadb1740da055743f0b04fc7320bbee6c65e3e43c64f39c4afd9be9de1e",
+      "apps": [
+        {
+          "bundleName": "Octo Browser.app",
+          "bundleIdentifier": "net.octobrowser.client"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
