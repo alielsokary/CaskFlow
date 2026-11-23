@@ -80,6 +80,7 @@ La clasificación real admite `anthropic`, `openai`, `groq` y `cloudflare`; elig
 |---|---|:---:|:---:|:---:|
 | [CaskHub](https://github.com/alielsokary/CaskHub) | Aplicación nativa para macOS para descubrir, instalar y administrar casks de Homebrew | ✅ | ✅ | ✅ |
 | [Applite](https://github.com/milanvarady/Applite) | Aplicación macOS con interfaz gráfica y fácil de usar para casks de Homebrew | - | - | ✅ |
+| [Tappie](https://www.empiricapps.com/tappie) | Interfaz gráfica nativa y gratuita de Homebrew para macOS, creada con SwiftUI | - | - | ✅ |
 | [*Añade&nbsp;el&nbsp;tuyo*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | ¿Usas datos de CaskFlow en tu proyecto? Añádelo a esta tabla | - | - | - |
 
 CaskFlow tiene [licencia MIT](LICENSE), por lo que no se requiere atribución. Se agradece un crédito visible con un enlace de vuelta, por ejemplo:
