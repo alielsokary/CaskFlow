@@ -80,6 +80,7 @@ pytest --cov=scripts --cov-report=term-missing
 |---|---|:---:|:---:|:---:|
 | [CaskHub](https://github.com/alielsokary/CaskHub) | 用于发现、安装和管理 Homebrew cask 的原生 macOS 应用 | ✅ | ✅ | ✅ |
 | [Applite](https://github.com/milanvarady/Applite) | 易用的 Homebrew cask 图形界面 macOS 应用 | - | - | ✅ |
+| [Tappie](https://www.empiricapps.com/tappie) | 免费的原生 Homebrew 图形界面 macOS 应用，使用 SwiftUI 构建 | - | - | ✅ |
 | [*添加你的项目*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | 你的项目在使用 CaskFlow 数据？将它加入此表 | - | - | - |
 
 CaskFlow 采用 [MIT 许可证](LICENSE)，无需署名。若能在显眼处注明并附上链接，我们将十分感谢，例如：

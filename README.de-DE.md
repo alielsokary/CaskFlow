@@ -80,6 +80,7 @@ Die echte Klassifizierung unterstützt `anthropic`, `openai`, `groq` und `cloudf
 |---|---|:---:|:---:|:---:|
 | [CaskHub](https://github.com/alielsokary/CaskHub) | Native macOS-App zum Entdecken, Installieren und Verwalten von Homebrew-Casks | ✅ | ✅ | ✅ |
 | [Applite](https://github.com/milanvarady/Applite) | Benutzerfreundliche macOS-Oberfläche für Homebrew-Casks | - | - | ✅ |
+| [Tappie](https://www.empiricapps.com/tappie) | Kostenlose native Homebrew-Oberfläche für macOS, entwickelt mit SwiftUI | - | - | ✅ |
 | [*Deins&nbsp;hinzufügen*](https://github.com/alielsokary/CaskFlow/edit/develop/README.md) | Nutzt dein Projekt CaskFlow-Daten? Trag es in diese Tabelle ein | - | - | - |
 
 CaskFlow steht unter der [MIT-Lizenz](LICENSE), eine Namensnennung ist daher nicht erforderlich. Über einen sichtbaren Hinweis mit Link freuen wir uns, zum Beispiel:
