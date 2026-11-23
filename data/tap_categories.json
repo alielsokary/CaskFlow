@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedDate": "2026-11-16",
+  "generatedDate": "2026-11-23",
   "casks": {
     "0xjemm/youtube-music-macos/youtube-music-macos": {
       "primary": "audioMusic",
@@ -1046,6 +1046,12 @@
         "cloudStorage"
       ]
     },
+    "blacktop/tap/disctui": {
+      "primary": "communication",
+      "secondary": [
+        "ai"
+      ]
+    },
     "blacktop/tap/dyld-tools": {
       "primary": "developerTools",
       "secondary": [
@@ -1307,10 +1313,6 @@
     },
     "brewforge/chinese/inkscape-cn": {
       "primary": "designGraphics",
-      "secondary": []
-    },
-    "brewforge/chinese/iqiyi": {
-      "primary": "videoMedia",
       "secondary": []
     },
     "brewforge/chinese/julia-cn": {
@@ -3656,6 +3658,10 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "goreleaser/tap/chglog": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "goreleaser/tap/goreleaser": {
       "primary": "developerTools",
       "secondary": []
@@ -4291,7 +4297,7 @@
       "primary": "developerTools",
       "secondary": []
     },
-    "jhlee0409/tap/claude-code-history-viewer": {
+    "jhlee0409/tap/omnilogue": {
       "primary": "developerTools",
       "secondary": [
         "ai"
@@ -4686,12 +4692,6 @@
       "primary": "menuBar",
       "secondary": [
         "utilities"
-      ]
-    },
-    "julyx10/lap/lap": {
-      "primary": "designGraphics",
-      "secondary": [
-        "productivity"
       ]
     },
     "junian/dotnet/dotnet-sdk@1.0": {
@@ -6382,6 +6382,10 @@
         "utilities"
       ]
     },
+    "open-tap/casks/goldenpassport": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
     "open-tap/casks/google-trends": {
       "primary": "screensaverWallpaper",
       "secondary": []
@@ -6436,6 +6440,12 @@
         "audioMusic"
       ]
     },
+    "open-tap/casks/vrcx": {
+      "primary": "games",
+      "secondary": [
+        "utilities"
+      ]
+    },
     "openai/tools/openai": {
       "primary": "developerTools",
       "secondary": [
@@ -6453,6 +6463,12 @@
       "secondary": [
         "ai",
         "developerTools"
+      ]
+    },
+    "openselena/tap/libreget": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
       ]
     },
     "openselena/tap/omniget": {
@@ -8712,6 +8728,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "rive-app/tap/ion": {
+      "primary": "developerTools",
+      "secondary": [
+        "designGraphics"
+      ]
+    },
     "rive-app/tap/rive-cli": {
       "primary": "developerTools",
       "secondary": [
@@ -8980,20 +9002,6 @@
     "romankurnovskii/awesome-brew/ollama": {
       "primary": "developerTools",
       "secondary": [
-        "ai"
-      ]
-    },
-    "romankurnovskii/awesome-brew/onlook-arm": {
-      "primary": "designGraphics",
-      "secondary": [
-        "developerTools",
-        "ai"
-      ]
-    },
-    "romankurnovskii/awesome-brew/onlook-intel": {
-      "primary": "developerTools",
-      "secondary": [
-        "designGraphics",
         "ai"
       ]
     },
@@ -9518,6 +9526,10 @@
       ]
     },
     "shayanabbas1/dbdelve/dbdelve": {
+      "primary": "developerTools",
+      "secondary": []
+    },
+    "shayanabbas1/dbdelve/dbdelve@nightly": {
       "primary": "developerTools",
       "secondary": []
     },
@@ -10319,6 +10331,10 @@
       "primary": "screensaverWallpaper",
       "secondary": []
     },
+    "thedavidweng/unsigned-tap/goldenpassport": {
+      "primary": "securityPrivacy",
+      "secondary": []
+    },
     "thedavidweng/unsigned-tap/google-trends": {
       "primary": "screensaverWallpaper",
       "secondary": []
@@ -10356,10 +10372,6 @@
       "secondary": [
         "utilities"
       ]
-    },
-    "thedavidweng/unsigned-tap/mysqlworkbench": {
-      "primary": "developerTools",
-      "secondary": []
     },
     "thedavidweng/unsigned-tap/mysqlworkbench@legacy": {
       "primary": "developerTools",
@@ -10612,6 +10624,13 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "ublue-os/experimental-tap/lumo-linux": {
+      "primary": "productivity",
+      "secondary": [
+        "ai",
+        "securityPrivacy"
+      ]
+    },
     "ublue-os/experimental-tap/opencode-desktop-linux": {
       "primary": "developerTools",
       "secondary": [
@@ -10726,12 +10745,6 @@
     "ublue-os/tap/bluefin-wallpapers-extra": {
       "primary": "screensaverWallpaper",
       "secondary": []
-    },
-    "ublue-os/tap/chairlift": {
-      "primary": "utilities",
-      "secondary": [
-        "developerTools"
-      ]
     },
     "ublue-os/tap/framework-tool": {
       "primary": "utilities",
@@ -11050,12 +11063,6 @@
         "developerTools"
       ]
     },
-    "xueshiqiao/tap/notifier": {
-      "primary": "utilities",
-      "secondary": [
-        "menuBar"
-      ]
-    },
     "xueshiqiao/tap/qduo": {
       "primary": "productivity",
       "secondary": [
@@ -11128,12 +11135,6 @@
       "primary": "productivity",
       "secondary": [
         "securityPrivacy"
-      ]
-    },
-    "zacharytgray/hyprmac/hyprmac": {
-      "primary": "utilities",
-      "secondary": [
-        "productivity"
       ]
     },
     "zennotes/tap/zennotes": {
@@ -11267,6 +11268,7 @@
     "iliyami/macsai/mac-sai": "mac-sai",
     "jithin-sabu/tap/purge": "purge",
     "jsattler/tap/bettercapture": "bettercapture",
+    "julyx10/lap/lap": "lap",
     "khaphanspace/gonhanh/gonhanh": "gonhanh",
     "lab421/tap/forel": "forel",
     "lzhgus/tap/capso": "capso",
@@ -11467,7 +11469,6 @@
     "open-tap/casks/glance-chamburr": "glance-chamburr",
     "open-tap/casks/go-shiori": "go-shiori",
     "open-tap/casks/goldencheetah": "goldencheetah",
-    "open-tap/casks/goldenpassport": "goldenpassport",
     "open-tap/casks/goneovim": "goneovim",
     "open-tap/casks/google-assistant": "google-assistant",
     "open-tap/casks/gpodder": "gpodder",
@@ -12042,6 +12043,7 @@
     "thedavidweng/unsigned-tap/dmidiplayer": "dmidiplayer",
     "thedavidweng/unsigned-tap/dogecoin": "dogecoin",
     "thedavidweng/unsigned-tap/dosbox-x-app": "dosbox-x-app",
+    "thedavidweng/unsigned-tap/dotnet-reactor": "dotnet-reactor",
     "thedavidweng/unsigned-tap/double-commander": "double-commander",
     "thedavidweng/unsigned-tap/drawpile": "drawpile",
     "thedavidweng/unsigned-tap/dteoh-devdocs": "dteoh-devdocs",
@@ -12108,7 +12110,6 @@
     "thedavidweng/unsigned-tap/glance-chamburr": "glance-chamburr",
     "thedavidweng/unsigned-tap/go-shiori": "go-shiori",
     "thedavidweng/unsigned-tap/goldencheetah": "goldencheetah",
-    "thedavidweng/unsigned-tap/goldenpassport": "goldenpassport",
     "thedavidweng/unsigned-tap/goneovim": "goneovim",
     "thedavidweng/unsigned-tap/google-assistant": "google-assistant",
     "thedavidweng/unsigned-tap/gpodder": "gpodder",
@@ -12242,6 +12243,7 @@
     "thedavidweng/unsigned-tap/mumble": "mumble",
     "thedavidweng/unsigned-tap/mumble@snapshot": "mumble@snapshot",
     "thedavidweng/unsigned-tap/mycrypto": "mycrypto",
+    "thedavidweng/unsigned-tap/mysqlworkbench": "mysqlworkbench",
     "thedavidweng/unsigned-tap/n1ghtshade": "n1ghtshade",
     "thedavidweng/unsigned-tap/nagbar": "nagbar",
     "thedavidweng/unsigned-tap/nagstamon": "nagstamon",
@@ -12558,6 +12560,7 @@
     "wouterdebie/tap/davit": "davit",
     "wunderlandmedia/tap/hotkeyclash": "hotkeyclash",
     "ybeapps/sourcegit/sourcegit": "sourcegit",
-    "yuuichieguchi/calyx/calyx": "calyx"
+    "yuuichieguchi/calyx/calyx": "calyx",
+    "zacharytgray/hyprmac/hyprmac": "hyprmac"
   }
 }
