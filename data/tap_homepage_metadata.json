@@ -1451,6 +1451,13 @@
     "meta_desc": "📤uPic is a native, powerful, beautiful and simple picture and file upload tool for macOS. - gee1k/uPic",
     "og_desc": "📤uPic is a native, powerful, beautiful and simple picture and file upload tool for macOS. - gee1k/uPic"
   },
+  "blacktop/tap/disctui": {
+    "token": "blacktop/tap/disctui",
+    "homepage": "https://github.com/blacktop/disctui",
+    "title": "GitHub - blacktop/disctui: Discord TUI · GitHub",
+    "meta_desc": "Discord TUI. Contribute to blacktop/disctui development by creating an account on GitHub.",
+    "og_desc": "Discord TUI. Contribute to blacktop/disctui development by creating an account on GitHub."
+  },
   "blacktop/tap/dyld-tools": {
     "token": "blacktop/tap/dyld-tools",
     "homepage": "https://github.com/blacktop/darwin-dyld-build",
@@ -4621,6 +4628,13 @@
     "meta_desc": "Task is a fast, cross-platform task runner and build tool that uses a simple YAML Taskfile.",
     "og_desc": "Task is a fast, cross-platform task runner and build tool that uses a simple YAML Taskfile."
   },
+  "goreleaser/tap/chglog": {
+    "token": "goreleaser/tap/chglog",
+    "homepage": "https://github.com/goreleaser/chglog",
+    "title": "GitHub - goreleaser/chglog: chglog is a changelog management library and tool · GitHub",
+    "meta_desc": "chglog is a changelog management library and tool. Contribute to goreleaser/chglog development by creating an account on GitHub.",
+    "og_desc": "chglog is a changelog management library and tool. Contribute to goreleaser/chglog development by creating an account on GitHub."
+  },
   "goreleaser/tap/goreleaser": {
     "token": "goreleaser/tap/goreleaser",
     "homepage": "https://goreleaser.com",
@@ -5546,6 +5560,13 @@
     "homepage": "https://github.com/jhlee0409/claude-code-history-viewer",
     "title": "GitHub - jhlee0409/claude-code-history-viewer: Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. · GitHub",
     "meta_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/claude-code-history-viewer",
+    "og_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/..."
+  },
+  "jhlee0409/tap/omnilogue": {
+    "token": "jhlee0409/tap/omnilogue",
+    "homepage": "https://github.com/jhlee0409/omnilogue",
+    "title": "GitHub - jhlee0409/omnilogue: Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. · GitHub",
+    "meta_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/omnilogue",
     "og_desc": "Desktop app and web server to browse, search and analyze your AI coding assistant history - Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline. - jhlee0409/..."
   },
   "jimeh/emacs-builds/emacs-app": {
@@ -8145,6 +8166,13 @@
     "meta_desc": "A custom crossover-wine build, containing necessary patches required for running Arknights: Endfield on macOS under Apple Silicon. - stoicswe/Endfield_FineWine",
     "og_desc": "A custom crossover-wine build, containing necessary patches required for running Arknights: Endfield on macOS under Apple Silicon. - stoicswe/Endfield_FineWine"
   },
+  "open-tap/casks/goldenpassport": {
+    "token": "open-tap/casks/goldenpassport",
+    "homepage": "https://github.com/stanzhai/GoldenPassport",
+    "title": "GitHub - stanzhai/GoldenPassport: A native implementation of Google Authenticator for Mac based on Swift · GitHub",
+    "meta_desc": "A native implementation of Google Authenticator for Mac based on Swift - stanzhai/GoldenPassport",
+    "og_desc": "A native implementation of Google Authenticator for Mac based on Swift - stanzhai/GoldenPassport"
+  },
   "open-tap/casks/google-trends": {
     "token": "open-tap/casks/google-trends",
     "homepage": "https://trends.google.com/trends/hottrends/visualize",
@@ -8227,6 +8255,13 @@
     "meta_desc": "A free and open source karaoke game inspired by the Singstar™ game, runs on Windows, Linux and macOS.",
     "og_desc": ""
   },
+  "open-tap/casks/vrcx": {
+    "token": "open-tap/casks/vrcx",
+    "homepage": "https://github.com/vrcx-team/VRCX",
+    "title": "GitHub - vrcx-team/VRCX: Friendship management tool for VRChat · GitHub",
+    "meta_desc": "Friendship management tool for VRChat. Contribute to vrcx-team/VRCX development by creating an account on GitHub.",
+    "og_desc": "Friendship management tool for VRChat. Contribute to vrcx-team/VRCX development by creating an account on GitHub."
+  },
   "openai/tools/openai": {
     "token": "openai/tools/openai",
     "homepage": "https://developers.openai.com/api/docs",
@@ -8247,6 +8282,13 @@
     "title": "GitHub - OpenCoworkAI/open-cowork: Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills - with sandbox isolation, multi-model support, and Feishu/Slack integration. · GitHub",
     "meta_desc": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills - with sandbox isolation, multi-model support, and Feishu/Slack integration. - OpenCoworkAI/open-cowork",
     "og_desc": "Open-source AI agent desktop app for Windows &amp; macOS. One-click install Claude Code, MCP tools, and Skills - with sandbox isolation, multi-model support, and Feishu/Slack integration. - OpenCow..."
+  },
+  "openselena/tap/libreget": {
+    "token": "openselena/tap/libreget",
+    "homepage": "https://github.com/OpenSelena/libreget",
+    "title": "GitHub - OpenSelena/libreget: Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte. · GitHub",
+    "meta_desc": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte. - OpenSelena/libreget",
+    "og_desc": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte. - OpenSelena/libreget"
   },
   "openselena/tap/omniget": {
     "token": "openselena/tap/omniget",
@@ -11773,6 +11815,13 @@
     "meta_desc": "A CLI for any REST-ish API. Discover operations, auth, and schemas from the server with generated commands, shorthand input, filtering, and colorized output.",
     "og_desc": "A CLI for any REST-ish API. Discover operations, auth, and schemas from the server with generated commands, shorthand input, filtering, and colorized output."
   },
+  "rive-app/tap/ion": {
+    "token": "rive-app/tap/ion",
+    "homepage": "https://rive.app/",
+    "title": "Rive: agent-native 2D and 3D engine for games, apps, and UI",
+    "meta_desc": "Behind Duolingo and Spotify Wrapped. Build 2D and 3D games, apps, and interactive UI with your coding agent and pro design and animation tools.",
+    "og_desc": "Behind Duolingo and Spotify Wrapped. Build 2D and 3D games, apps, and interactive UI with your coding agent and pro design and animation tools."
+  },
   "rive-app/tap/rive-cli": {
     "token": "rive-app/tap/rive-cli",
     "homepage": "https://rive.app/",
@@ -12876,6 +12925,13 @@
     "meta_desc": "Fast and lightweight DB Client made in Rust and GPUI. - ShayanAbbas1/dbdelve",
     "og_desc": "Fast and lightweight DB Client made in Rust and GPUI. - ShayanAbbas1/dbdelve"
   },
+  "shayanabbas1/dbdelve/dbdelve@nightly": {
+    "token": "shayanabbas1/dbdelve/dbdelve@nightly",
+    "homepage": "https://github.com/ShayanAbbas1/dbdelve",
+    "title": "GitHub - ShayanAbbas1/dbdelve: Fast and lightweight DB Client made in Rust and GPUI. · GitHub",
+    "meta_desc": "Fast and lightweight DB Client made in Rust and GPUI. - ShayanAbbas1/dbdelve",
+    "og_desc": "Fast and lightweight DB Client made in Rust and GPUI. - ShayanAbbas1/dbdelve"
+  },
   "sheprd-labs/tap/sheprd": {
     "token": "sheprd-labs/tap/sheprd",
     "homepage": "https://sheprd.org",
@@ -13897,6 +13953,13 @@
     "meta_desc": "Screensaver of the vintage :apple: logo made purely with NSBezierPath and masks in Swift. Now with support to EDR! - GitHub - Corkscrews/fruit: Screensaver of the vintage logo made purely with NSBezierPath and masks in Swift. Now with support to EDR!",
     "og_desc": "Screensaver of the vintage :apple: logo made purely with NSBezierPath and masks in Swift. Now with support to EDR! - Corkscrews/fruit"
   },
+  "thedavidweng/unsigned-tap/goldenpassport": {
+    "token": "thedavidweng/unsigned-tap/goldenpassport",
+    "homepage": "https://github.com/stanzhai/GoldenPassport",
+    "title": "GitHub - stanzhai/GoldenPassport: A native implementation of Google Authenticator for Mac based on Swift · GitHub",
+    "meta_desc": "A native implementation of Google Authenticator for Mac based on Swift - stanzhai/GoldenPassport",
+    "og_desc": "A native implementation of Google Authenticator for Mac based on Swift - stanzhai/GoldenPassport"
+  },
   "thedavidweng/unsigned-tap/google-trends": {
     "token": "thedavidweng/unsigned-tap/google-trends",
     "homepage": "https://trends.google.com/trends/hottrends/visualize",
@@ -14288,6 +14351,13 @@
     "title": "arrow",
     "meta_desc": "",
     "og_desc": ""
+  },
+  "ublue-os/experimental-tap/lumo-linux": {
+    "token": "ublue-os/experimental-tap/lumo-linux",
+    "homepage": "https://lumo.proton.me/",
+    "title": "Lumo: Privacy-first AI assistant where chats stay confidential",
+    "meta_desc": "Meet Lumo, the zero-access encrypted AI assistant by Proton that does not track or record your conversations. Ask me anything - it's confidential",
+    "og_desc": "Meet Lumo, the zero-access encrypted AI assistant by Proton that does not track or record your conversations. Ask me anything - it's confidential"
   },
   "ublue-os/experimental-tap/opencode-desktop-linux": {
     "token": "ublue-os/experimental-tap/opencode-desktop-linux",
