@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-22",
-  "totalCasks": 5016,
+  "generatedDate": "2026-11-24",
+  "totalCasks": 5020,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3711,6 +3711,12 @@
       "primary": "developerTools",
       "secondary": []
     },
+    "codeql-bundle": {
+      "primary": "developerTools",
+      "secondary": [
+        "securityPrivacy"
+      ]
+    },
     "coderabbit": {
       "primary": "developerTools",
       "secondary": [
@@ -4850,6 +4856,12 @@
     "digital": {
       "primary": "designGraphics",
       "secondary": []
+    },
+    "dimble": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
+      ]
     },
     "dingtalk": {
       "primary": "communication",
@@ -9989,6 +10001,10 @@
     },
     "labymod": {
       "primary": "games",
+      "secondary": []
+    },
+    "ladybird": {
+      "primary": "browsers",
       "secondary": []
     },
     "lagrange": {
@@ -21228,6 +21244,12 @@
     "veepn": {
       "primary": "securityPrivacy",
       "secondary": []
+    },
+    "velaterm": {
+      "primary": "developerTools",
+      "secondary": [
+        "ai"
+      ]
     },
     "vellum": {
       "primary": "productivity",
