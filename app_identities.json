@@ -51565,6 +51565,32 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "velaterm": {
+      "caskVersion": "0.3.5",
+      "sourceURL": "https://dl.velaterm.com/0.3.5/VelaTerm_0.3.5_aarch64.dmg",
+      "artifactSHA256": "f52d7bb24a19fb5ea47533b8a20bbe0852c0a079153452783821ddef79ece8e1",
+      "apps": [
+        {
+          "bundleName": "VelaTerm.app",
+          "bundleIdentifier": "io.vlinx.vlxterm.release"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "ladybird": {
+      "caskVersion": "2026.47.7",
+      "sourceURL": "https://download.ladybird.org/macos/2026.47.7/ladybird-2026.47.7-macOS-arm64.dmg",
+      "artifactSHA256": "d3647babc442aca475354b19158045cd5b5f40f4be92fe55762be8eb90727ed8",
+      "apps": [
+        {
+          "bundleName": "Ladybird.app",
+          "bundleIdentifier": "org.ladybird.Ladybird"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
