@@ -33654,6 +33654,13 @@
     "og_desc": ""
   },
   {
+    "token": "layout-department",
+    "homepage": "https://layoutdepartment.com/",
+    "title": "Layout Department",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "lazarus",
     "homepage": "https://www.lazarus-ide.org/",
     "title": "Lazarus Homepage",
@@ -40444,6 +40451,13 @@
     "title": "Paseo - Run Claude Code, Codex, and OpenCode from everywhere",
     "meta_desc": "A self-hosted daemon for Claude Code, Codex, and OpenCode. Agents run on your machine with your full dev environment. Connect from phone, desktop, or web.",
     "og_desc": "A self-hosted daemon for Claude Code, Codex, and OpenCode. Agents run on your machine with your full dev environment. Connect from phone, desktop, or web."
+  },
+  {
+    "token": "passenger-ide",
+    "homepage": "https://passenger-ide.net/",
+    "title": "Passenger: free C# and .NET IDE for Windows, macOS and Linux",
+    "meta_desc": "A free, open-source C# and .NET IDE for Windows, macOS and Linux: its own debugger, Hot Reload and profiler, .NET MAUI on devices, and an MCP server for agents.",
+    "og_desc": "A free, open-source C# and .NET IDE for Windows, macOS and Linux: its own debugger, Hot Reload and profiler, .NET MAUI on devices, and an MCP server for agents."
   },
   {
     "token": "passepartout",
@@ -48211,6 +48225,13 @@
     "title": "GitHub - Suwayomi/Tachidesk-Sorayomi: A free and open source manga reader app to read manga from a Tachidesk-Server instance. · GitHub",
     "meta_desc": "A free and open source manga reader app to read manga from a Tachidesk-Server instance. - Suwayomi/Tachidesk-Sorayomi",
     "og_desc": "A free and open source manga reader app to read manga from a Tachidesk-Server instance. - Suwayomi/Tachidesk-Sorayomi"
+  },
+  {
+    "token": "tactile",
+    "homepage": "https://tactile.masn.studio/",
+    "title": "Tactile - Trackpad Haptic Feedback for Every Click on macOS",
+    "meta_desc": "Tactile is a free, open-source macOS menu-bar app that taps your trackpad's haptic engine whenever the cursor passes over anything clickable - every button, link, menu, and tab, system-wide, in any app. Feel the interface, not just see it.",
+    "og_desc": "A free, open-source macOS menu-bar app that taps your trackpad's haptic engine over every clickable button, link, and menu - system-wide. Feel the interface, not just see it."
   },
   {
     "token": "tad",
