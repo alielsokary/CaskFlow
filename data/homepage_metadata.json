@@ -5764,6 +5764,13 @@
     "og_desc": ""
   },
   {
+    "token": "codeql-bundle",
+    "homepage": "https://codeql.github.com/",
+    "title": "CodeQL",
+    "meta_desc": "",
+    "og_desc": ""
+  },
+  {
     "token": "coderabbit",
     "homepage": "https://www.coderabbit.ai/cli",
     "title": "CodeRabbit CLI | AI Code Reviews in CLI",
@@ -7535,6 +7542,13 @@
     "title": "GitHub - hneemann/Digital: A digital logic designer and circuit simulator. · GitHub",
     "meta_desc": "A digital logic designer and circuit simulator. Contribute to hneemann/Digital development by creating an account on GitHub.",
     "og_desc": "A digital logic designer and circuit simulator. Contribute to hneemann/Digital development by creating an account on GitHub."
+  },
+  {
+    "token": "dimble",
+    "homepage": "https://dimble.fif7y.com/",
+    "title": "Dimble: hide and tidy menu bar icons on macOS 27",
+    "meta_desc": "Dimble is a free, open source Mac app that tidies your menu bar by hiding icons and bringing them back on a hover or a click. For macOS 27 and later.",
+    "og_desc": "Dimble is a free, open source Mac app that tidies your menu bar by hiding icons and bringing them back on a hover or a click. For macOS 27 and later."
   },
   {
     "token": "dingtalk",
@@ -33460,6 +33474,13 @@
     "og_desc": "LabyMod - An all in one Minecraft modification to upgrade your gaming experience to the next level"
   },
   {
+    "token": "ladybird",
+    "homepage": "https://ladybird.org/",
+    "title": "Ladybird",
+    "meta_desc": "Ladybird is a truly independent web browser, backed by a non-profit.",
+    "og_desc": "Ladybird is a truly independent web browser, backed by a non-profit."
+  },
+  {
     "token": "lagrange",
     "homepage": "https://gmi.skyjake.fi/lagrange/",
     "title": "Lagrange",
@@ -51028,6 +51049,13 @@
     "title": "Download the Best VPN for Mac in 2026 - VeePN",
     "meta_desc": "Secure your Mac with our VPN: 2500+ servers in 89 locations, easy installation, and top encryption. Trusted for speed and privacy. Download now!",
     "og_desc": "Secure your Mac with our VPN: 2500+ servers in 89 locations, easy installation, and top encryption. Trusted for speed and privacy. Download now!"
+  },
+  {
+    "token": "velaterm",
+    "homepage": "https://velaterm.com/",
+    "title": "VelaTerm - Terminal & Agent Manager",
+    "meta_desc": "VelaTerm runs your terminals and coding agents in one window, organized into a deep project tree - manage software engineering across dozens of agents and repos.",
+    "og_desc": "VelaTerm runs your terminals and coding agents in one window, organized into a deep project tree - manage software engineering across dozens of agents and repos."
   },
   {
     "token": "vellum",
