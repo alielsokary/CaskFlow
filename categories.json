@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-24",
-  "totalCasks": 5023,
+  "generatedDate": "2026-11-25",
+  "totalCasks": 5024,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -910,6 +910,12 @@
     "anomaly-hex": {
       "primary": "productivity",
       "secondary": []
+    },
+    "anomaly-spaceman": {
+      "primary": "utilities",
+      "secondary": [
+        "productivity"
+      ]
     },
     "another-redis-desktop-manager": {
       "primary": "developerTools",
