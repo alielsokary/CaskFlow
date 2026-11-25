@@ -1366,6 +1366,13 @@
     "og_desc": "📝 Annotation tool for macOS. Contribute to epilande/Annotate development by creating an account on GitHub."
   },
   {
+    "token": "anomaly-spaceman",
+    "homepage": "https://anoma.ly/spaceman/",
+    "title": "Spaceman - a tiling window manager for macOS",
+    "meta_desc": "Spaceman is a fast tiling window manager for macOS on Apple silicon. Windows open side by side, nothing on top of anything else, across ten keyboard workspaces.",
+    "og_desc": "A fast macOS tiling window manager for Apple silicon. Side by side, nothing on top of anything else."
+  },
+  {
     "token": "another-redis-desktop-manager",
     "homepage": "https://github.com/qishibo/AnotherRedisDesktopManager/",
     "title": "GitHub - qishibo/AnotherRedisDesktopManager: 🚀🚀🚀A faster, better and more stable Redis desktop manager [GUI client], compatible with Linux, Windows, Mac. · GitHub",
