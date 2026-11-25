@@ -51591,6 +51591,70 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "passenger-ide": {
+      "caskVersion": "0.4.4",
+      "sourceURL": "https://github.com/Zaneris/passenger/releases/download/v0.4.4/Passenger-macos-arm64.dmg",
+      "artifactSHA256": "6fe646476804d0e6fb01c1d025898d6964e3fc858c4ab487484320cfd16fe1c7",
+      "apps": [
+        {
+          "bundleName": "Passenger.app",
+          "bundleIdentifier": "io.github.zaneris.passenger"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "layout-department": {
+      "caskVersion": "0.9.1",
+      "sourceURL": "https://downloads.layoutdepartment.com/Layout%20Department-Mac-0.9.1-arm64.zip",
+      "artifactSHA256": "5fac36efccd268ae74d51720baa6d17a5d6ddaab0d351b69a389ec1bca3b95f9",
+      "apps": [
+        {
+          "bundleName": "Layout Department.app",
+          "bundleIdentifier": "com.anemone.layout-department"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "tactile": {
+      "caskVersion": "1.1.5",
+      "sourceURL": "https://github.com/Mason363/Tactile/releases/download/v1.1.5/Tactile-1.1.5.zip",
+      "artifactSHA256": "13a4fa0d99fb61d76b5224a191a0bb39a92f04c55fd02d9aca0f5bd1a62b9936",
+      "apps": [
+        {
+          "bundleName": "Tactile.app",
+          "bundleIdentifier": "com.masonchen.Tactile"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "microsoft-copilot": {
+      "caskVersion": "158.0.4370.33,aebe7225-40e8-4c6e-a6ae-0a98c6b2c713",
+      "sourceURL": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/aebe7225-40e8-4c6e-a6ae-0a98c6b2c713/Copilot-158.0.4370.33.pkg",
+      "artifactSHA256": "51fa22cc062e864872c7939cb0bf64afcf4b6efcfdfc3fea4aaaa19fb3f59aa4",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "customLocation": "/Applications"
+          }
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Copilot.app",
+          "bundleIdentifier": "com.microsoft.m365copilot",
+          "packageIdentifier": "com.microsoft.m365copilot",
+          "installedPath": "/Applications/Copilot.app"
+        }
+      ]
     }
   }
 }
