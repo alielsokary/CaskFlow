@@ -51655,6 +51655,19 @@
           "installedPath": "/Applications/Copilot.app"
         }
       ]
+    },
+    "anomaly-spaceman": {
+      "caskVersion": "0.3.5,0184acc428b25c7826639800a5c8a4f5fa20117062c48ca309b6b35fae08046a",
+      "sourceURL": "https://anoma.ly/release/spaceman/files/0184acc428b25c7826639800a5c8a4f5fa20117062c48ca309b6b35fae08046a/Spaceman.zip",
+      "artifactSHA256": "0184acc428b25c7826639800a5c8a4f5fa20117062c48ca309b6b35fae08046a",
+      "apps": [
+        {
+          "bundleName": "Spaceman.app",
+          "bundleIdentifier": "anomaly.spaceman"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
