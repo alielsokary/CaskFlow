@@ -1803,7 +1803,78 @@
       "caskVersion": "2026.0324",
       "sourceURL": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
       "artifactSHA256": "e30af0640f51979a95b9f54084456d1e16749b79e12e65bdebd630fb2795ff1e",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-libgs-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-mutool-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "TeXLive-2026-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "LaTeXiT.app",
+          "bundleIdentifier": "fr.chachatelier.pierre.LaTeXiT",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/LaTeXiT.app"
+        },
+        {
+          "bundleName": "TeXShop.app",
+          "bundleIdentifier": "TeXShop",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/TeXShop.app"
+        },
+        {
+          "bundleName": "hintview.app",
+          "bundleIdentifier": "edu.hm.cs.hint.hintview",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/hintview.app"
+        },
+        {
+          "bundleName": "BibDesk.app",
+          "bundleIdentifier": "edu.ucsd.cs.mmccrack.bibdesk",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/BibDesk.app"
+        },
+        {
+          "bundleName": "TeX Live Utility.app",
+          "bundleIdentifier": "com.googlecode.mactlmgr.tlu",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/TeX Live Utility.app"
+        }
+      ]
     },
     "tigervnc": {
       "caskVersion": "1.16.2",
@@ -3359,15 +3430,17 @@
       ]
     },
     "maestro": {
-      "caskVersion": "0.17.3",
-      "sourceURL": "https://github.com/pedramamini/Maestro/releases/download/v0.17.3/Maestro-0.17.3-arm64-mac.dmg",
-      "artifactSHA256": "d6fab4ca577567f85013b23346d147823a06b87ab36e066259ec02d50d958eb5",
+      "caskVersion": "1.0.4",
+      "sourceURL": "https://github.com/pedramamini/Maestro/releases/download/v1.0.4/Maestro-1.0.4-arm64-mac.dmg",
+      "artifactSHA256": "8a310b42fafe27552a60e72f299ff440c4c93606d2337f06046c9ece21c66515",
       "apps": [
         {
           "bundleName": "Maestro.app",
           "bundleIdentifier": "com.maestro.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "upscayl": {
       "caskVersion": "2.15.0",
@@ -3517,7 +3590,16 @@
       "caskVersion": "0.5.0",
       "sourceURL": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.5.0/BackgroundMusic-0.5.0.pkg",
       "artifactSHA256": "c7742b48ac2e9ea955fea66e5c13bb56be5f1487e0b12bad93820984bccb69ef",
-      "apps": []
+      "apps": [
+        {
+          "bundleName": "Background Music.app",
+          "bundleIdentifier": "com.bearisdriving.BGM.App",
+          "packageIdentifier": "com.bearisdriving.BGM",
+          "installedPath": "/Applications/Background Music.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "macs-fan-control": {
       "caskVersion": "1.5.21",
@@ -3870,10 +3952,17 @@
       ]
     },
     "quarto": {
-      "caskVersion": "1.10.18",
-      "sourceURL": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.10.18/quarto-1.10.18-macos.pkg",
-      "artifactSHA256": "c57119e22012a4de14de0addf6da51db455082fcc2524a6dcba9696e7577cf4d",
-      "apps": []
+      "caskVersion": "1.11.9",
+      "sourceURL": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.11.9/quarto-1.11.9-macos.pkg",
+      "artifactSHA256": "35ad09e472235dc91638339d19891088531f9e2e77549dda2f7c210610e1b4d2",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
     },
     "burp-suite": {
       "caskVersion": "2026.11.3",
@@ -4026,15 +4115,17 @@
       "diagnostics": []
     },
     "onlyoffice": {
-      "caskVersion": "9.4.0",
-      "sourceURL": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.4.0/ONLYOFFICE-arm.dmg",
-      "artifactSHA256": "e965be2222609add6b5a70baa2a8cdb599402491fb2925825d9039dcb154beb4",
+      "caskVersion": "10.0.0",
+      "sourceURL": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v10.0.0/ONLYOFFICE-arm.dmg",
+      "artifactSHA256": "9095cc8c46f1206237d690c7e146fada0d72dbf7f40c035cd5fd218b680c2deb",
       "apps": [
         {
           "bundleName": "ONLYOFFICE.app",
           "bundleIdentifier": "asc.onlyoffice.ONLYOFFICE"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "paseo": {
       "caskVersion": "0.17.6",
@@ -4193,15 +4284,17 @@
       ]
     },
     "onyx": {
-      "caskVersion": "5.1.0",
+      "caskVersion": "5.1.2",
       "sourceURL": "https://www.titanium-software.fr/download/27/OnyX.dmg",
-      "artifactSHA256": "56182feff2b9e64933618ebf56ccef2fda0d2c64969cdde32d93d34f28c9f16b",
+      "artifactSHA256": "17b68299f722766377bdeb5db473e64a16fbf39f657264d8e36780debe226a57",
       "apps": [
         {
           "bundleName": "OnyX.app",
           "bundleIdentifier": "com.titanium.OnyX"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "postgres-app": {
       "caskVersion": "2.9.6,14-15-16-17-18",
@@ -4271,15 +4364,17 @@
       "diagnostics": []
     },
     "linear": {
-      "caskVersion": "1.32.4",
-      "sourceURL": "https://releases.linear.app/Linear-1.32.4-universal.dmg",
-      "artifactSHA256": "bae1078fabf5b72d884c3bbba4235117e92070adcba407cdc30afb3933f14d31",
+      "caskVersion": "1.32.8",
+      "sourceURL": "https://releases.linear.app/Linear-1.32.8-universal.dmg",
+      "artifactSHA256": "08d42b917bc44068231d47a9e14ae9fdac2ca95fa6b451e810fcda0f756ed4a3",
       "apps": [
         {
           "bundleName": "Linear.app",
           "bundleIdentifier": "com.linear"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "ubersicht": {
       "caskVersion": "1.6.82",
@@ -4304,15 +4399,17 @@
       ]
     },
     "mkvtoolnix-app": {
-      "caskVersion": "102.0-2",
-      "sourceURL": "https://mkvtoolnix.download/macos/releases/102.0/MKVToolNix-102.0-2-arm64.dmg",
-      "artifactSHA256": "10ebd3b424fd5f4987d50563fc43b5956bf3d4f3bbfa24fa870db956c96578b8",
+      "caskVersion": "104.0-1",
+      "sourceURL": "https://mkvtoolnix.download/macos/releases/104.0/MKVToolNix-104.0-1-arm64.dmg",
+      "artifactSHA256": "ce35092310e8f51a0cc0a1b5ba52fe2ca8fea8af4a8c0e4cf9f07bb70ecd3bd5",
       "apps": [
         {
           "bundleName": "MKVToolNix.app",
           "bundleIdentifier": "download.mkvtoolnix.MKVToolNix"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "draw-things": {
       "caskVersion": "26.1123.0-5b18d539",
@@ -4523,15 +4620,17 @@
       ]
     },
     "anythingllm": {
-      "caskVersion": "1.16.1",
+      "caskVersion": "1.20.0",
       "sourceURL": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop-Silicon.dmg",
-      "artifactSHA256": "e05ae16d0e842a3bb6a26b826e06f9f61c3070464fd01aec96b0e55e6c00d729",
+      "artifactSHA256": "eb5d0702d86ba7452660efcb6482141e8da863e397e802498a3884f21404aade",
       "apps": [
         {
           "bundleName": "AnythingLLM.app",
           "bundleIdentifier": "com.anythingllm"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "keyclu": {
       "caskVersion": "0.33",
@@ -4679,15 +4778,17 @@
       "diagnostics": []
     },
     "whatcable": {
-      "caskVersion": "1.4.0",
-      "sourceURL": "https://github.com/darrylmorley/whatcable/releases/download/v1.4.0/WhatCable.zip",
-      "artifactSHA256": "e397334f2410cf0259b014826780f73cc22f79c40719757a5fcbdb026c4b5527",
+      "caskVersion": "1.5.1",
+      "sourceURL": "https://github.com/darrylmorley/whatcable/releases/download/v1.5.1/WhatCable.zip",
+      "artifactSHA256": "7a018941f6588da240bb34a98cce4f2ec98a16c9521d57c142c816a09fd5d418",
       "apps": [
         {
           "bundleName": "WhatCable.app",
           "bundleIdentifier": "uk.whatcable.whatcable"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "libndi": {
       "caskVersion": "latest",
@@ -4744,15 +4845,17 @@
       ]
     },
     "zettlr": {
-      "caskVersion": "4.8.0",
-      "sourceURL": "https://github.com/Zettlr/Zettlr/releases/download/v4.8.0/Zettlr-4.8.0-arm64.dmg",
-      "artifactSHA256": "3144b95199df77e3ca97a04546bf16a60f917107061331c31b3c35bc46b7d3f5",
+      "caskVersion": "4.11.0",
+      "sourceURL": "https://github.com/Zettlr/Zettlr/releases/download/v4.11.0/Zettlr-4.11.0-arm64.dmg",
+      "artifactSHA256": "68e57c3dcb8275b175ac1b67f7d94945c84e0a7c4da6e1ab6b6e8fcd64458793",
       "apps": [
         {
           "bundleName": "Zettlr.app",
           "bundleIdentifier": "com.zettlr.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "open-design": {
       "caskVersion": "0.22.2",
@@ -4866,15 +4969,17 @@
       "diagnostics": []
     },
     "clipy": {
-      "caskVersion": "1.3.0",
-      "sourceURL": "https://github.com/Clipy/Clipy/releases/download/1.3.0/Clipy_1.3.0.dmg",
-      "artifactSHA256": "80e67266f220d4e63cccfc185a5f3f800eadafa123e25e5f9791351ad13cb593",
+      "caskVersion": "1.4.2",
+      "sourceURL": "https://github.com/Clipy/Clipy/releases/download/1.4.2/Clipy_1.4.2.dmg",
+      "artifactSHA256": "1eaa6076c11d31e3427f775c12b7afdbdd14dedf96828390cf365376adc225a2",
       "apps": [
         {
           "bundleName": "Clipy.app",
           "bundleIdentifier": "com.clipy-app.Clipy"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "porting-kit": {
       "caskVersion": "6.7.0",
@@ -4888,15 +4993,17 @@
       ]
     },
     "middleclick": {
-      "caskVersion": "3.3.0",
-      "sourceURL": "https://github.com/artginzburg/MiddleClick/releases/download/3.3.0/MiddleClick.zip",
-      "artifactSHA256": "55b61579bea1bff9575d0aae55316f826ade1cfc8948da91151bcc99df3957da",
+      "caskVersion": "3.3.1",
+      "sourceURL": "https://github.com/artginzburg/MiddleClick/releases/download/3.3.1/MiddleClick.zip",
+      "artifactSHA256": "475e5e62aa1bf23702f3655ac1b9e92fe79cd3481b2ff37c912df7b79e3d5923",
       "apps": [
         {
           "bundleName": "MiddleClick.app",
           "bundleIdentifier": "art.ginzburg.MiddleClick"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "bettercmdtab": {
       "caskVersion": "26.7,20260813144806",
@@ -5267,15 +5374,17 @@
       ]
     },
     "roblox": {
-      "caskVersion": "0.739.0.7390687,c53a25dbc3e44a42",
-      "sourceURL": "https://setup.rbxcdn.com/mac/arm64/version-c53a25dbc3e44a42-RobloxPlayer.zip",
-      "artifactSHA256": "f65ab075040e1fd1a120d660b6a565ab33444c378bac8e25c4ff7a5b6edfd902",
+      "caskVersion": "0.748.0.7481526,445548190fe44ee2",
+      "sourceURL": "https://setup.rbxcdn.com/mac/arm64/version-445548190fe44ee2-RobloxPlayer.zip",
+      "artifactSHA256": "68aa2718b5d062ab8384320c1092dd12b85c8d82d21c4a8faeccf37dd2647539",
       "apps": [
         {
           "bundleName": "Roblox.app",
           "bundleIdentifier": "com.roblox.RobloxPlayer"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "bartender": {
       "caskVersion": "7.0.1",
@@ -5335,15 +5444,17 @@
       ]
     },
     "kde-connect": {
-      "caskVersion": "26.08.1",
-      "sourceURL": "https://download.kde.org/stable/release-service/26.08.1/macos/kdeconnect-kde-26.08-macos-clang-arm64.dmg",
-      "artifactSHA256": "e481cad9046c129e9fd7ea64e665c141b5764db16da16d3b85fe36beb23574bc",
+      "caskVersion": "26.08.2",
+      "sourceURL": "https://download.kde.org/stable/release-service/26.08.2/macos/kdeconnect-kde-macos-clang-arm64.dmg",
+      "artifactSHA256": "1c6328fca363af229b48b238717ab176747b06b57714e2bb968a041c38ced153",
       "apps": [
         {
           "bundleName": "KDE Connect.app",
           "bundleIdentifier": "org.kde.kdeconnect"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "perplexity": {
       "caskVersion": "26.37.1",
@@ -5405,15 +5516,17 @@
       ]
     },
     "yubico-authenticator": {
-      "caskVersion": "7.4.1",
-      "sourceURL": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.4.1-mac.dmg",
-      "artifactSHA256": "9adb0de91b139003c86903296d042053a78f3f60ead68388341bf1b1bc2e1ef3",
+      "caskVersion": "7.5.0",
+      "sourceURL": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.5.0-macos.dmg",
+      "artifactSHA256": "551fdf19e17a7848ad45837b90896327c7fd0449d569e781db8627fc06a1540b",
       "apps": [
         {
           "bundleName": "Yubico Authenticator.app",
           "bundleIdentifier": "com.yubico.yubioath"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "latest": {
       "caskVersion": "0.11",
@@ -5563,26 +5676,30 @@
       ]
     },
     "istat-menus": {
-      "caskVersion": "7.50.1",
-      "sourceURL": "https://cdn.istatmenus.app/files/istatmenus7/versions/iStatMenus7.50.1.zip",
-      "artifactSHA256": "3e1807f2e7ba6790267fb3c8036a10103c90227d5722ebba41e7917a544c72e5",
+      "caskVersion": "7.50.3",
+      "sourceURL": "https://cdn.istatmenus.app/files/istatmenus7/versions/iStatMenus7.50.3.zip",
+      "artifactSHA256": "e477dc76606a6181697652ead6f3ce977e716b878165ac1aa945cc470b9ce25d",
       "apps": [
         {
           "bundleName": "iStat Menus.app",
           "bundleIdentifier": "com.bjango.istatmenus"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "rider": {
-      "caskVersion": "2026.2.2,262.10315.191",
-      "sourceURL": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.2.2-aarch64.dmg",
-      "artifactSHA256": "e991026d529e31c16e1633896b8f96937f28ef78732a22a1f9aafaddd48de615",
+      "caskVersion": "2026.3.0.2,263.7307.355",
+      "sourceURL": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.3.0.2-aarch64.dmg",
+      "artifactSHA256": "09c41ce0f3aa5dc3df7fd14cc002f2a73e0490e5c85f869ad7292de44e093bbc",
       "apps": [
         {
           "bundleName": "Rider.app",
           "bundleIdentifier": "com.jetbrains.rider"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "heroic": {
       "caskVersion": "2.22.3",
@@ -5813,15 +5930,17 @@
       ]
     },
     "notion-calendar": {
-      "caskVersion": "1.139.0",
-      "sourceURL": "https://calendar-desktop-release.notion-static.com/Notion%20Calendar-darwin-arm64-1.139.0.zip",
-      "artifactSHA256": "f1fb3dc449a1b37ccacf5c450c41fe12c0fd9b8c3f33cad1353eed1289022724",
+      "caskVersion": "1.144.0",
+      "sourceURL": "https://calendar-desktop-release.notion-static.com/Notion%20Calendar-darwin-arm64-1.144.0.zip",
+      "artifactSHA256": "de46c810ed1a20e479052f65b43aac40c19c0e51236be2ebf7aed9cf7c50c7bb",
       "apps": [
         {
           "bundleName": "Notion Calendar.app",
           "bundleIdentifier": "com.cron.electron"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kdenlive": {
       "caskVersion": "26.08.1",
@@ -5846,26 +5965,30 @@
       ]
     },
     "gitkraken": {
-      "caskVersion": "12.5.0",
-      "sourceURL": "https://api.gitkraken.dev/releases/production/darwin/arm64/12.5.0/GitKraken-v12.5.0.zip",
-      "artifactSHA256": "406e38d8b1937a58ccc461f7b65e69e2a4a7da4653105bb5c5183e94d40d8bc6",
+      "caskVersion": "12.7.0",
+      "sourceURL": "https://api.gitkraken.dev/releases/production/darwin/arm64/12.7.0/GitKraken-v12.7.0.zip",
+      "artifactSHA256": "9d0f346968f97c4f6726a39138c9868a99624b223197d030ec89137415afcef1",
       "apps": [
         {
           "bundleName": "GitKraken.app",
           "bundleIdentifier": "com.axosoft.gitkraken"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "todoist-app": {
-      "caskVersion": "9.30.0",
-      "sourceURL": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.30.0-arm64-latest.dmg",
-      "artifactSHA256": "3b0bdee906488c4f35588a2c9150df11f2c06fc5118e5661ee723d1f2eaad0c8",
+      "caskVersion": "9.36.4",
+      "sourceURL": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.36.4-arm64-latest.dmg",
+      "artifactSHA256": "bd0b57f45e7c7baca0ed839c917ee8cbbebbb965d1c02efd505e5ca30932631d",
       "apps": [
         {
           "bundleName": "Todoist.app",
           "bundleIdentifier": "com.todoist.mac.Todoist"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "ipaverse": {
       "caskVersion": "2.5.2",
@@ -6364,15 +6487,17 @@
       ]
     },
     "shotcut": {
-      "caskVersion": "26.8.1",
-      "sourceURL": "https://github.com/mltframework/shotcut/releases/download/v26.8.1/shotcut-macos-26.8.1.dmg",
-      "artifactSHA256": "7bab10bd96fe3590bb3ba0461d21d3022681574b324bb1c21366d5432cac5657",
+      "caskVersion": "26.11.15",
+      "sourceURL": "https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-26.11.15.dmg",
+      "artifactSHA256": "664c6ea4195d58dbf3fd43f3d74ae46d59b6310f9ac628d5e70a8e2786a4f80b",
       "apps": [
         {
           "bundleName": "Shotcut.app",
           "bundleIdentifier": "com.Meltytech.Shotcut"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "cap": {
       "caskVersion": "0.6.0,01M2JE5SBQ73J4PJ6TZW168VGT",
@@ -38670,9 +38795,9 @@
       "diagnostics": []
     },
     "wordcraft": {
-      "caskVersion": "0.4.0",
-      "sourceURL": "https://github.com/storytold/wordcraft/releases/download/v0.4.0/wordcraft-0.4.0-macos-universal.dmg",
-      "artifactSHA256": "90d30b23b7f1f3873f108db61218d514d8ca5465ef7ed3baa539a8ed24e98655",
+      "caskVersion": "0.19.1",
+      "sourceURL": "https://github.com/storytold/wordcraft/releases/download/v0.19.1/wordcraft-0.19.1-macos-universal.dmg",
+      "artifactSHA256": "df13cabf63bb2591045ebf6782c17440e7ecee9556550d6dd2affecd983825b2",
       "apps": [
         {
           "bundleName": "WordCraft.app",
@@ -40244,9 +40369,9 @@
       ]
     },
     "nextpad++": {
-      "caskVersion": "1.1.2",
-      "sourceURL": "https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/releases/download/v1.1.2/Nextpad++v1.1.2.dmg",
-      "artifactSHA256": "03e321f496a38a940d68c09403c9d13f1e866d73d00d5c4dd4894ec3bc1a8739",
+      "caskVersion": "1.1.3",
+      "sourceURL": "https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/releases/download/v1.1.3/Nextpad++v1.1.3.dmg",
+      "artifactSHA256": "b291b289f1dc8f625c449151332bd0d088f6f966fbe5144904b14dd8c056e701",
       "apps": [
         {
           "bundleName": "Nextpad++.app",
@@ -52653,6 +52778,37 @@
           "reason": "package selection requires installed receipt verification",
           "element": "script",
           "attributes": {}
+        }
+      ]
+    },
+    "uuremote": {
+      "caskVersion": "4.49.0",
+      "sourceURL": "https://a56.gdl.netease.com/uuyc_4.49.0_nochannel.pkg",
+      "artifactSHA256": "37646a791c0eac6ab34ebd0d9bf9073738c9105c74b49b4e6c19cc3d3865c885",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "check_version()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "UURemote.app",
+          "bundleIdentifier": "com.netease.uuremote",
+          "packageIdentifier": "com.netease.uuremote",
+          "installedPath": "/Applications/UURemote.app"
         }
       ]
     }

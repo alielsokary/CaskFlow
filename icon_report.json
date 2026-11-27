@@ -1389,7 +1389,7 @@
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-11-27"
   },
   "mactex-no-gui": {
     "status": "review",
@@ -1917,7 +1917,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-11-27"
   },
   "quickgeojson": {
     "status": "no_icon",
