@@ -2901,10 +2901,199 @@
       ]
     },
     "microsoft-office": {
-      "caskVersion": "16.113.26091740",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.113.26091740_Installer.pkg",
-      "artifactSHA256": "fafcedf3b6fc1c60a14416cda4c129ddf5448227da66b7a1d235e37e0ef30ded",
-      "apps": []
+      "caskVersion": "16.115.26112215",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.115.26112215_Installer.pkg",
+      "artifactSHA256": "901d5b0027b7c45f3b70e7f98060acaa8367b381de4fe262054faa713246b30b",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallWord', true) && shouldInstallVersion('InstallWord', choices['com.microsoft.word'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallExcel', true) && shouldInstallVersion('InstallExcel', choices['com.microsoft.excel'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallPowerPoint', true) && shouldInstallVersion('InstallPowerPoint', choices['com.microsoft.powerpoint'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallOneNote', true) && shouldInstallVersion('InstallOneNote', choices['com.microsoft.onenote.mac'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallOutlook', true) && shouldInstallVersion('InstallOutlook', choices['com.microsoft.outlook'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallDefender', true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "pkg-ref",
+          "attributes": {
+            "active": "shouldInstall('InstallOneDrive', true) && shouldInstallVersion('InstallOneDrive', choices['com.microsoft.OneDrive'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallWord', true) && shouldInstallVersion('InstallWord', choices['com.microsoft.word'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.word'].selected && shouldInstall('InstallWord', true) && shouldInstallVersion('InstallWord', choices['com.microsoft.word'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallExcel', true) && shouldInstallVersion('InstallExcel', choices['com.microsoft.excel'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.excel'].selected && shouldInstall('InstallExcel', true) && shouldInstallVersion('InstallExcel', choices['com.microsoft.excel'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallPowerPoint', true) && shouldInstallVersion('InstallPowerPoint', choices['com.microsoft.powerpoint'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.powerpoint'].selected && shouldInstall('InstallPowerPoint', true) && shouldInstallVersion('InstallPowerPoint', choices['com.microsoft.powerpoint'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallOneNote', true) && shouldInstallVersion('InstallOneNote', choices['com.microsoft.onenote.mac'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.onenote.mac'].selected && shouldInstall('InstallOneNote', true) && shouldInstallVersion('InstallOneNote', choices['com.microsoft.onenote.mac'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallOutlook', true) && shouldInstallVersion('InstallOutlook', choices['com.microsoft.outlook'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.outlook'].selected && shouldInstall('InstallOutlook', true) && shouldInstallVersion('InstallOutlook', choices['com.microsoft.outlook'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallDefender', true)",
+            "selected": "choices['com.microsoft.defender.shim'].selected && shouldInstall('InstallDefender', true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "shouldInstall('InstallOneDrive', true) && shouldInstallVersion('InstallOneDrive', choices['com.microsoft.OneDrive'].packages[0].version, true)",
+            "selected": "choices['com.microsoft.OneDrive'].selected && shouldInstall('InstallOneDrive', true) && shouldInstallVersion('InstallOneDrive', choices['com.microsoft.OneDrive'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "selected": "choices['com.microsoft.autoupdate'].selected && shouldInstall('InstallAutoUpdate', true) && shouldInstallVersion('InstallAutoUpdate', choices['com.microsoft.autoupdate'].packages[0].version, true)"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "choices['com.microsoft.word'].selected || choices['com.microsoft.excel'].selected || choices['com.microsoft.powerpoint'].selected || choices['com.microsoft.onenote.mac'].selected || choices['com.microsoft.outlook'].selected"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "choices['com.microsoft.word'].selected || choices['com.microsoft.excel'].selected || choices['com.microsoft.powerpoint'].selected || choices['com.microsoft.onenote.mac'].selected || choices['com.microsoft.outlook'].selected"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "selected": "choices['com.microsoft.word'].selected || choices['com.microsoft.excel'].selected || choices['com.microsoft.powerpoint'].selected || choices['com.microsoft.onenote.mac'].selected || choices['com.microsoft.outlook'].selected"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "OneDrive.app",
+          "bundleIdentifier": "com.microsoft.OneDrive",
+          "packageIdentifier": "com.microsoft.OneDrive",
+          "installedPath": "/Applications/OneDrive.app"
+        }
+      ]
     },
     "clash-verge-rev": {
       "caskVersion": "2.5.10",
@@ -3133,15 +3322,17 @@
       "diagnostics": []
     },
     "headlamp": {
-      "caskVersion": "0.45.0",
-      "sourceURL": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.45.0/Headlamp-0.45.0-mac-arm64.dmg",
-      "artifactSHA256": "4f3e7de1c048f8dbe84bfd6c18ac61d0aafd4d909278ca44648d4562c80995f3",
+      "caskVersion": "0.46.0",
+      "sourceURL": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.46.0/Headlamp-0.46.0-mac-arm64.dmg",
+      "artifactSHA256": "20294a2f1e92aa98c2a90aa0717b6b8e730ed55a0300c03db18c2f779ed7b564",
       "apps": [
         {
           "bundleName": "Headlamp.app",
           "bundleIdentifier": "com.microsoft.Headlamp"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kiro-cli": {
       "caskVersion": "2.22.1",
@@ -3607,15 +3798,17 @@
       "diagnostics": []
     },
     "macshot": {
-      "caskVersion": "4.2.1",
-      "sourceURL": "https://github.com/sw33tLie/macshot/releases/download/v4.2.1/MacShot.dmg",
-      "artifactSHA256": "13a2001d975d42a90c57fb9a3fdb54ffc1c26259fde07e48b86fce9e49a2e66d",
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/sw33tLie/macshot/releases/download/v4.4.0/MacShot.dmg",
+      "artifactSHA256": "05262f41598031db256d27e6efb3052692b77bc78670b8554f286258cb917835",
       "apps": [
         {
           "bundleName": "macshot.app",
           "bundleIdentifier": "com.sw33tlie.macshot.macshot"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tunnelblick": {
       "caskVersion": "10.0.3,6610",
@@ -3744,37 +3937,43 @@
       "diagnostics": []
     },
     "prismlauncher": {
-      "caskVersion": "11.1.0",
-      "sourceURL": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-macOS-11.1.0.zip",
-      "artifactSHA256": "b6ae145a02dd9bbc7c44ce3fa42ec942daca8c829584e21c66290a8e6ca89af8",
+      "caskVersion": "11.1.1",
+      "sourceURL": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-macOS-11.1.1.zip",
+      "artifactSHA256": "15126a7df57acb4f37fe581dad68cb03c7bb60b70eb82345f8bb3246235600c6",
       "apps": [
         {
           "bundleName": "Prism Launcher.app",
           "bundleIdentifier": "org.prismlauncher.PrismLauncher"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "affinity": {
-      "caskVersion": "3.3.0,4850",
-      "sourceURL": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%204850.zip",
-      "artifactSHA256": "317f5cf64a5364319898576b4648b6a96dc9ec39f50039aebf9901b7ed3a5d96",
+      "caskVersion": "3.3.3,5004",
+      "sourceURL": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%205004.zip",
+      "artifactSHA256": "91fb16eadeea616831da95dcd7093cae4ce81d979640e5588a01cdd8c462025f",
       "apps": [
         {
           "bundleName": "Affinity.app",
           "bundleIdentifier": "com.canva.affinity"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "bbedit": {
-      "caskVersion": "16.0.3",
-      "sourceURL": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.3.dmg",
-      "artifactSHA256": "acf2ae9e5c68beacdfd7534861fa8c992e1bdd5391a71b3c08b3ed879c2b3572",
+      "caskVersion": "16.1.1",
+      "sourceURL": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.1.dmg",
+      "artifactSHA256": "add892d8191da3ab134512a3e199c90d82f07f465ec9e982cd2f51f225a2a8a8",
       "apps": [
         {
           "bundleName": "BBEdit.app",
           "bundleIdentifier": "com.barebones.bbedit"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "itsycal": {
       "caskVersion": "0.29.0",
@@ -3801,15 +4000,17 @@
       ]
     },
     "easydict": {
-      "caskVersion": "2.22.0",
-      "sourceURL": "https://github.com/tisfeng/Easydict/releases/download/2.22.0/Easydict.dmg",
-      "artifactSHA256": "35c165f2d8029d3c50b4770f7914e18a649a016de282216ca8930cd011b600ac",
+      "caskVersion": "2.26.0",
+      "sourceURL": "https://github.com/tisfeng/Easydict/releases/download/2.26.0/Easydict.dmg",
+      "artifactSHA256": "b88e29e8ffb62ecad2159964e2b2c06150c522c1de34f41c62faadd750d5715e",
       "apps": [
         {
           "bundleName": "Easydict.app",
           "bundleIdentifier": "com.izual.Easydict"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "wechatwebdevtools": {
       "caskVersion": "2.02.2609250",
@@ -3875,10 +4076,17 @@
       "diagnostics": []
     },
     "r-app": {
-      "caskVersion": "4.6.1,sonoma",
-      "sourceURL": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.1-arm64.pkg",
-      "artifactSHA256": "67f6eea4ced4ce48f0a0d4fa3a1cac43d1859a05a88993ee3dff7c52e7edbc4b",
-      "apps": []
+      "caskVersion": "4.6.2,sonoma",
+      "sourceURL": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.2-arm64.pkg",
+      "artifactSHA256": "a678b4db1fcd71b1b1cc58edcfa4a8d36ee012a02659dde9eab9366e93571157",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "texinfo.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "sfm": {
       "caskVersion": "1.14.1",
@@ -3935,15 +4143,17 @@
       "diagnostics": []
     },
     "openusage": {
-      "caskVersion": "0.7.12",
-      "sourceURL": "https://github.com/robinebers/openusage/releases/download/v0.7.12/OpenUsage-0.7.12.dmg",
-      "artifactSHA256": "a15c24034e7a25c09a1dbbc74f36337db5fb34a4507695c1d20e19d842e6f979",
+      "caskVersion": "0.8.0",
+      "sourceURL": "https://github.com/robinebers/openusage/releases/download/v0.8.0/OpenUsage-0.8.0.dmg",
+      "artifactSHA256": "d885f886a63c10f01e1850700d8bfe3a9da595971100f38417836682af2eb206",
       "apps": [
         {
           "bundleName": "OpenUsage.app",
           "bundleIdentifier": "com.robinebers.openusage"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "bettertouchtool": {
       "caskVersion": "6.1169,2026112302",
@@ -4240,9 +4450,9 @@
       "diagnostics": []
     },
     "displaylink": {
-      "caskVersion": "16.2,2026-07",
-      "sourceURL": "https://www.synaptics.com/sites/default/files/exe_files/2026-07/DisplayLink%20Manager%20Graphics%20Connectivity16.2-EXE.pkg",
-      "artifactSHA256": "fd9eafab9542e592baa39984ed4e87e64e89f3de6b9a4429ab13a2334a7538e6",
+      "caskVersion": "17.1,2026-11",
+      "sourceURL": "https://www.synaptics.com/sites/default/files/exe_files/2026-11/DisplayLink%20Manager%20Graphics%20Connectivity17.1-EXE.pkg",
+      "artifactSHA256": "e6e8c86f722d05fc4b5bca22d9627df00dfd11dadffb472278b075fb5b66067e",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -4567,15 +4777,17 @@
       ]
     },
     "orion": {
-      "caskVersion": "1.1.2,151",
-      "sourceURL": "https://cdn.kagi.com/updates/26_0/151.zip",
-      "artifactSHA256": "77a55ae66c0dfae9406856e8e1d20a10dcd06a699175f9059ea395db398f8100",
+      "caskVersion": "1.1.4,153",
+      "sourceURL": "https://cdn.kagi.com/updates/26_0/153.zip",
+      "artifactSHA256": "ae1575787cd9d1bb1fb1e9c0069e601aad92ae2b9adc02a8e1dee9e7dd6a88ce",
       "apps": [
         {
           "bundleName": "Orion.app",
           "bundleIdentifier": "com.kagi.kagimacOS"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "squirrel-app": {
       "caskVersion": "1.1.2",
@@ -4584,15 +4796,17 @@
       "apps": []
     },
     "granola": {
-      "caskVersion": "7.576.0",
-      "sourceURL": "https://dr2v7l5emb758.cloudfront.net/7.576.0/Granola-7.576.0-mac-universal.dmg",
-      "artifactSHA256": "c16d5dcd35bce9c766355cf88e986769a714b93345749d1c179b68bad93cda72",
+      "caskVersion": "7.853.5",
+      "sourceURL": "https://dr2v7l5emb758.cloudfront.net/7.853.5/Granola-7.853.5-mac-universal.dmg",
+      "artifactSHA256": "c864eefcba0f314afbe7e50634fd485ed7372157f9d902006e8fab131cd5cd54",
       "apps": [
         {
           "bundleName": "Granola.app",
           "bundleIdentifier": "com.granola.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "syntax-highlight": {
       "caskVersion": "2.1.32",
@@ -4707,15 +4921,17 @@
       ]
     },
     "mac-sai": {
-      "caskVersion": "1.20.0",
-      "sourceURL": "https://github.com/iliyami/MacSai/releases/download/v1.20.0/MacSai-1.20.0.dmg",
-      "artifactSHA256": "8ea74e21f25a30ad6477389c17e247bc9884dcc358155df295e67fd73fc1351b",
+      "caskVersion": "1.32.0",
+      "sourceURL": "https://github.com/iliyami/MacSai/releases/download/v1.32.0/MacSai-1.32.0.dmg",
+      "artifactSHA256": "b5829d8af185aafdc14457e9f3a2c5e40082bcb7d61979413fb37511bebc4868",
       "apps": [
         {
           "bundleName": "Mac Sai.app",
           "bundleIdentifier": "com.macclean.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "omnidisksweeper": {
       "caskVersion": "1.16",
@@ -4790,15 +5006,17 @@
       "diagnostics": []
     },
     "cherry-studio": {
-      "caskVersion": "2.1.0",
-      "sourceURL": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.0/Cherry-Studio-2.1.0-mac-arm64.dmg",
-      "artifactSHA256": "f2a394c2da6f72eef16b844280b4173712429c9a763fe90a7e5f606df98ac27f",
+      "caskVersion": "2.2.3",
+      "sourceURL": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.2.3/Cherry-Studio-2.2.3-mac-arm64.dmg",
+      "artifactSHA256": "afa9c479997a3c28b5a8a79d5dff71bd38f0d2d662dce6093aee642ccbaafae3",
       "apps": [
         {
           "bundleName": "Cherry Studio.app",
           "bundleIdentifier": "com.kangfenmao.CherryStudio"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "keyboardcleantool": {
       "caskVersion": "8.3",
@@ -5163,15 +5381,17 @@
       ]
     },
     "neovide-app": {
-      "caskVersion": "0.16.2",
-      "sourceURL": "https://github.com/neovide/neovide/releases/download/0.16.2/Neovide-aarch64-apple-darwin.dmg",
-      "artifactSHA256": "5eb745ea7f20cf00491a8ffd8d793c6169ef1c6e1a0f75ae8be40571e65c6b26",
+      "caskVersion": "0.17.4",
+      "sourceURL": "https://github.com/neovide/neovide/releases/download/0.17.4/Neovide-aarch64-apple-darwin.dmg",
+      "artifactSHA256": "5a4647cce0703552906552ae1d0d955e221f3153af832fa6739ffc0592774e2a",
       "apps": [
         {
           "bundleName": "Neovide.app",
           "bundleIdentifier": "com.neovide.neovide"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "knockknock": {
       "caskVersion": "4.1.0",
@@ -5319,15 +5539,17 @@
       ]
     },
     "baidunetdisk": {
-      "caskVersion": "8.8.5",
-      "sourceURL": "https://pkg-ant.baidu.com/issue/netdisk/MACguanjia/8.8.5/BaiduNetdisk_mac_8.8.5_arm64.dmg",
-      "artifactSHA256": "894fa514d6b19a0c968cf75004c6f69ef223ddc4a9d269b9d533651f10de451a",
+      "caskVersion": "8.10.5",
+      "sourceURL": "https://pkg-ant.baidu.com/issue/netdisk/MACguanjia/8.10.5/BaiduNetdisk_mac_8.10.5_arm64.dmg",
+      "artifactSHA256": "ffac1468e7a6a30787bce623ee10badd9d93695312e78896eb91b81954a0a107",
       "apps": [
         {
           "bundleName": "BaiduNetdisk_mac.app",
           "bundleIdentifier": "com.baidu.BaiduNetdisk-mac"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "macusb": {
       "caskVersion": "2.4",
@@ -5453,26 +5675,30 @@
       ]
     },
     "devin-desktop": {
-      "caskVersion": "3.10.31,b98cc43128712ba73c60cca73876f58a710aaa27",
-      "sourceURL": "https://windsurf-stable.codeiumdata.com/darwin-arm64-dmg/stable/b98cc43128712ba73c60cca73876f58a710aaa27/Devin-darwin-arm64-3.10.31.dmg",
-      "artifactSHA256": "20eaf5f2161f21397ea4322a2b2f86e3c06ee880f6a1198d04df1d04e00bffa8",
+      "caskVersion": "3.14.30833,a165b2eb0a68542b92a3c89cc68b4700e819a409",
+      "sourceURL": "https://windsurf-stable.codeiumdata.com/darwin-arm64-dmg/stable/a165b2eb0a68542b92a3c89cc68b4700e819a409/Devin-darwin-arm64-3.14.30833.dmg",
+      "artifactSHA256": "153c1be68404ae2c53164018733824643b797737b4a75b9943bd9ee10ae968e4",
       "apps": [
         {
           "bundleName": "Devin.app",
           "bundleIdentifier": "com.exafunction.windsurf"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "nvidia-geforce-now": {
-      "caskVersion": "2.0.88.129",
+      "caskVersion": "2.0.90.141",
       "sourceURL": "https://download.nvidia.com/gfnpc/GeForceNOW-release.dmg",
-      "artifactSHA256": "e12fc317a63fdee60c163e87520823841ee7049618b69faeef59f3399a12773c",
+      "artifactSHA256": "f1f7706d9937b1249a99418e74bada94fe37584993f2a3b53638f18adbdba1bb",
       "apps": [
         {
           "bundleName": "GeForceNOW.app",
           "bundleIdentifier": "com.nvidia.gfnpc.mall"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "imazing": {
       "caskVersion": "3.6.4,24330",
@@ -5776,15 +6002,17 @@
       ]
     },
     "conductor": {
-      "caskVersion": "0.87.0,01M2VAA8219M6GYGH1EGVF5KZH",
-      "sourceURL": "https://cdn.crabnebula.app/asset/01M2VAA8219M6GYGH1EGVF5KZH",
-      "artifactSHA256": "a64de79881c289abb53be5ed72625a5f6034ed51f4d2cbffa46d02b507874500",
+      "caskVersion": "0.101.2,01M8CB8WB848TETSBSB0ZWNKVY",
+      "sourceURL": "https://cdn.crabnebula.app/asset/01M8CB8WB848TETSBSB0ZWNKVY",
+      "artifactSHA256": "48630bd92b5dff746f5ee31c0bde8af0406c427567d04fb1a762794561a5103b",
       "apps": [
         {
           "bundleName": "Conductor.app",
           "bundleIdentifier": "com.conductor.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "sourcegit": {
       "caskVersion": "2026.20",
@@ -6009,15 +6237,17 @@
       ]
     },
     "mattermost": {
-      "caskVersion": "6.3.0",
-      "sourceURL": "https://releases.mattermost.com/desktop/6.3.0/mattermost-desktop-6.3.0-mac-arm64.zip",
-      "artifactSHA256": "b6d22403e8a96cf54ba3a9ecf7267a5c7bb7ce225249ce12d53a60c8b4db5bfd",
+      "caskVersion": "6.4.0",
+      "sourceURL": "https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-mac-arm64.zip",
+      "artifactSHA256": "9f1f80fb4a4c5a2c6fdff4549bfbe906e6f6dba591fea5f09a62a2ea315791d5",
       "apps": [
         {
           "bundleName": "Mattermost.app",
           "bundleIdentifier": "Mattermost.Desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "macparakeet": {
       "caskVersion": "0.8.7",
@@ -6301,15 +6531,17 @@
       ]
     },
     "loom": {
-      "caskVersion": "0.375.0",
-      "sourceURL": "https://packages.loom.com/desktop-packages/Loom-0.375.0-arm64.dmg",
-      "artifactSHA256": "387daa1e2e84d18f773e613ffd7752be76357fcdd0fedf85240ff672e06d96ca",
+      "caskVersion": "0.388.0",
+      "sourceURL": "https://packages.loom.com/desktop-packages/Loom-0.388.0-arm64.dmg",
+      "artifactSHA256": "b2073af250b8df6b44d90611c72ed104240bc84cf56acbadad0a3e86e729ca81",
       "apps": [
         {
           "bundleName": "Loom.app",
           "bundleIdentifier": "com.loom.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tofu": {
       "caskVersion": "3.1",
@@ -7068,15 +7300,17 @@
       ]
     },
     "rectangle-pro": {
-      "caskVersion": "3.91",
-      "sourceURL": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.91.dmg",
-      "artifactSHA256": "c48254170891656350b8c5dc2e0b1b05e8a2ed989b9c6c8a5f98322e5ad87659",
+      "caskVersion": "3.102",
+      "sourceURL": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.102.dmg",
+      "artifactSHA256": "25008349bf0339a60303a52a821ca6107b71cfa23df43a3c5b84e02283444619",
       "apps": [
         {
           "bundleName": "Rectangle Pro.app",
           "bundleIdentifier": "com.knollsoft.Hookshot"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "updatest": {
       "caskVersion": "2.4.2",
@@ -37473,9 +37707,9 @@
       "diagnostics": []
     },
     "robbietilton-compositor": {
-      "caskVersion": "1.3",
-      "sourceURL": "https://github.com/robbietilton/Compositor/releases/download/v1.3/Compositor.dmg",
-      "artifactSHA256": "0fa75b833bb33a32897ef316a335df9053eb7bc3eedb50f5124e5dc8e391f4de",
+      "caskVersion": "1.7.4",
+      "sourceURL": "https://github.com/robbietilton/Compositor/releases/download/v1.7.4/Compositor.dmg",
+      "artifactSHA256": "c6c17bc80af1884b0d4c822c8567d5eeaedf59c3482db25cd540f99b20357c07",
       "apps": [
         {
           "bundleName": "Compositor.app",
@@ -38228,9 +38462,9 @@
       "diagnostics": []
     },
     "photocraft": {
-      "caskVersion": "0.3.0",
-      "sourceURL": "https://github.com/storytold/photocraft/releases/download/v0.3.0/photocraft-0.3.0-macos-universal.dmg",
-      "artifactSHA256": "c0b0223cddb18dd7f5607fb4d6cc6a925a62f5b5b47457997d61ad0f72aa5911",
+      "caskVersion": "0.23.1",
+      "sourceURL": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-macos-universal.dmg",
+      "artifactSHA256": "606a52917188c65dc71709781180a0e3244e0f3b7f40b2f5b80170e87364420d",
       "apps": [
         {
           "bundleName": "PhotoCraft.app",
