@@ -18,7 +18,9 @@ from style_standards import write_json
 
 MANIFEST = "app_identities.json"
 ROOT = Path(__file__).resolve().parent.parent
-IDENTIFIER = re.compile(r"[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\Z")
+# Shipping apps use underscores and single inner spaces (com.mediahuman.YouTube to MP3); matching is exact.
+_PART = r"[A-Za-z0-9_-]+(?: [A-Za-z0-9_-]+)*"
+IDENTIFIER = re.compile(rf"{_PART}(?:\.{_PART})*\Z")
 EXTRACTION_VERSION = 5
 
 
@@ -362,6 +364,21 @@ def needs_refresh(cask: dict, entry: dict | None) -> bool:
                 and entry.get("extractionVersion", 0) < EXTRACTION_VERSION)
             or entry.get("sourceURL") != cask.get("url")
             or (checksum not in (None, "no_check") and checksum != entry.get("artifactSHA256")))
+
+
+def needs_targeted_refresh(cask: dict, entry: dict | None) -> bool:
+    """Scheduled refresh: only results known to be wrong now. Version bumps wait for the bulk backfill."""
+    declared = {target.casefold() for _, target in declared_apps(cask)}
+    if entry is None:
+        return bool(declared)
+    if entry.get("apps"):
+        return bool(declared) and not any(app["bundleName"].casefold() in declared for app in entry["apps"])
+    return any(_now_accepted(diagnostic.get("reason", "")) for diagnostic in entry.get("diagnostics") or [])
+
+
+def _now_accepted(reason: str) -> bool:
+    rejected = re.fullmatch(r"unsupported CFBundleIdentifier: '(.*)'", reason, re.DOTALL)
+    return bool(rejected) and IDENTIFIER.fullmatch(rejected.group(1)) is not None
 
 
 def record_extraction(cask: dict, root: Path, artifact: Path, output: Path, *,

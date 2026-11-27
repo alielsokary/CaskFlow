@@ -6,6 +6,8 @@ run-name: >-
       && 'Extract icons and identities for selected apps'
       || inputs.identity_backfill
       && 'Backfill app identities'
+      || github.event.schedule == '17 5 * * 1'
+      && 'Refresh outdated app identities'
       || 'Extract new icons and app identities' }}
 
 # Icons, app identities, and extraction reports share the icons branch and a single writer.
@@ -36,6 +38,8 @@ on:
     - cron: "43 15 * * *"
     # Retry failures monthly because version bumps can repair stale checksums.
     - cron: "7 3 1 * *"
+    # Weekly, only identities known to be wrong (renamed apps, newly accepted IDs). Bulk backfill stays manual.
+    - cron: "17 5 * * 1"
 
 permissions:
   contents: write
@@ -70,6 +74,8 @@ jobs:
             python3 scripts/extract_icons.py --publish --workers "$WORKERS" --tokens $TOKENS
           elif [ "$IDENTITY_BACKFILL" = "true" ]; then
             python3 scripts/extract_icons.py --publish --workers "$WORKERS" --identity-backfill --limit "$LIMIT"
+          elif [ "$CRON" = "17 5 * * 1" ]; then
+            python3 scripts/extract_icons.py --publish --workers "$WORKERS" --identity-refresh --limit 50
           else
             python3 scripts/extract_icons.py --publish --workers "$WORKERS" --limit "$LIMIT"
           fi
