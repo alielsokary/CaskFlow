@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-26",
-  "totalCasks": 5026,
+  "generatedDate": "2026-11-27",
+  "totalCasks": 5027,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -18686,6 +18686,12 @@
       "primary": "designGraphics",
       "secondary": [
         "ai"
+      ]
+    },
+    "stablebar": {
+      "primary": "menuBar",
+      "secondary": [
+        "utilities"
       ]
     },
     "stack": {
