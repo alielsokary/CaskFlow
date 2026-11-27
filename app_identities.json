@@ -988,18 +988,37 @@
       "caskVersion": "2.8.6",
       "sourceURL": "https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.6/XQuartz-2.8.6.pkg",
       "artifactSHA256": "9ac35a505095bfbd3009c3b4772f0c6421e2f79c4210ab908459270d1c447909",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "XQuartz.app",
+          "bundleIdentifier": "org.xquartz.X11",
+          "packageIdentifier": "org.xquartz.X11",
+          "installedPath": "/Applications/Utilities/XQuartz.app"
+        }
+      ]
     },
     "appcleaner": {
-      "caskVersion": "3.6.8",
-      "sourceURL": "https://www.freemacsoft.net/downloads/AppCleaner_3.6.8.zip",
-      "artifactSHA256": "e012f729442473c20e7cce334b00182521e4b6672ea681b34931b180feb3d6be",
+      "caskVersion": "3.7",
+      "sourceURL": "https://www.freemacsoft.net/downloads/AppCleaner_3.7.zip",
+      "artifactSHA256": "3d7fa6146fb57da955dca408587fc658ac14aeb86eda7907763ae66397c9e65e",
       "apps": [
         {
           "bundleName": "AppCleaner.app",
           "bundleIdentifier": "net.freemacsoft.AppCleaner"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "opencode-desktop": {
       "caskVersion": "2.4.2",
@@ -1314,9 +1333,9 @@
       "diagnostics": []
     },
     "google-drive": {
-      "caskVersion": "131.0.2",
+      "caskVersion": "134.0.1",
       "sourceURL": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
-      "artifactSHA256": "d76ed38a63f41a50a28d726d4efb5a72068a5eb2d86feba0b04e2cbc31bcbb1a",
+      "artifactSHA256": "81133901d4dc794c5f736e862af69a89a34b5d79feab975e0b13fbd09fc1dcc0",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -1399,9 +1418,9 @@
       "diagnostics": []
     },
     "microsoft-teams": {
-      "caskVersion": "26225.1706.5101.3140",
-      "sourceURL": "https://statics.teams.cdn.office.net/production-osx/26225.1706.5101.3140/MicrosoftTeams.pkg",
-      "artifactSHA256": "7286fc72255c3f765024f6c08fc8e054b3426780d28b7c4b2b3deda99ea64728",
+      "caskVersion": "26304.1206.5384.1209",
+      "sourceURL": "https://statics.teams.cdn.office.net/production-osx/26304.1206.5384.1209/MicrosoftTeams.pkg",
+      "artifactSHA256": "523c173942f1375df8c28fe9721711313cb56456257a180253a80bf27748be83",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -1468,15 +1487,17 @@
       ]
     },
     "cmux": {
-      "caskVersion": "0.64.25",
-      "sourceURL": "https://github.com/manaflow-ai/cmux/releases/download/v0.64.25/cmux-macos.dmg",
-      "artifactSHA256": "cd30300c10095e6219721c65dd26ca2a986f8e00a10f960dbac9fefbe48771c1",
+      "caskVersion": "0.65.2.2",
+      "sourceURL": "https://github.com/manaflow-ai/cmux/releases/download/v0.65.2.2/cmux-macos.dmg",
+      "artifactSHA256": "18e8848e19d4e08ff0aefb30f180fdb3eafb3f32f0b361394351a58e505d397f",
       "apps": [
         {
           "bundleName": "cmux.app",
           "bundleIdentifier": "com.cmuxterm.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "steam": {
       "caskVersion": "6.0",
@@ -1562,20 +1583,22 @@
       "diagnostics": []
     },
     "keka": {
-      "caskVersion": "1.6.7",
-      "sourceURL": "https://github.com/aonez/Keka/releases/download/v1.6.7/Keka-1.6.7.dmg",
-      "artifactSHA256": "0fa0995fc3e58ba3e438ba53aba03636eb226c64002757d21250934116e19f7e",
+      "caskVersion": "1.6.8",
+      "sourceURL": "https://github.com/aonez/Keka/releases/download/v1.6.8/Keka-1.6.8.dmg",
+      "artifactSHA256": "25a4daf0492b7e3bca043c8a7ba1ae97507dd8dbf872811daf74b01f16a12125",
       "apps": [
         {
           "bundleName": "Keka.app",
           "bundleIdentifier": "com.aone.keka"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "zoom": {
-      "caskVersion": "7.1.5.84650",
-      "sourceURL": "https://cdn.zoom.us/prod/7.1.5.84650/arm64/zoomusInstallerFull.pkg",
-      "artifactSHA256": "49cf70af674176f3708b9d3b519f585424c442ccf744fd9659327967971c8279",
+      "caskVersion": "7.2.5.90525",
+      "sourceURL": "https://cdn.zoom.us/prod/7.2.5.90525/arm64/zoomusInstallerFull.pkg",
+      "artifactSHA256": "4c26ebed8bd29ce258ac9dbe0f2b327fad0a0734246ea588339a2cc5fd10533e",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -1651,15 +1674,17 @@
       "diagnostics": []
     },
     "sublime-text": {
-      "caskVersion": "4200",
-      "sourceURL": "https://download.sublimetext.com/sublime_text_build_4200_mac.zip",
-      "artifactSHA256": "4835eb2a5d3f2b223ce93a27149f360ef158af9f8dd708b6f501d708c081d319",
+      "caskVersion": "4215",
+      "sourceURL": "https://download.sublimetext.com/sublime_text_build_4215_mac.zip",
+      "artifactSHA256": "a0263f36660f13981bb25b05e968681429ce5f67134876cd9032ffa82e1904d5",
       "apps": [
         {
           "bundleName": "Sublime Text.app",
           "bundleIdentifier": "com.sublimetext.4"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "openmtp": {
       "caskVersion": "3.3.0",
@@ -1797,26 +1822,30 @@
       "diagnostics": []
     },
     "cyberduck": {
-      "caskVersion": "9.5.4,45528",
-      "sourceURL": "https://update.cyberduck.io/Cyberduck-9.5.4.45528.zip",
-      "artifactSHA256": "9398777ad01bfac7228db3990aed1c834437a599664e0f3e27a68feb53cbcebf",
+      "caskVersion": "9.6.0,46406",
+      "sourceURL": "https://update.cyberduck.io/Cyberduck-9.6.0.46406.zip",
+      "artifactSHA256": "a9195fb3dc904265dbb1b238d707e3ac4ac8a1ed356b188464e8773aad3a8ca8",
       "apps": [
         {
           "bundleName": "Cyberduck.app",
           "bundleIdentifier": "ch.sudo.cyberduck"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "freecad": {
-      "caskVersion": "1.1.3",
-      "sourceURL": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-macOS-arm64-py311.dmg",
-      "artifactSHA256": "f5c0ece7cd7c932466d6effadc0fc6e179b0538a9d9a6a77a6769eae3af2667c",
+      "caskVersion": "1.1.4",
+      "sourceURL": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-macOS-arm64-py311.dmg",
+      "artifactSHA256": "071343b4abb70492b75c973f41eaf1d2528f9b9c7ea018d22a4f46ae14d27ac0",
       "apps": [
         {
           "bundleName": "FreeCAD.app",
           "bundleIdentifier": "org.freecad.FreeCAD"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "antigravity": {
       "caskVersion": "2.35.2,4585983447007232",
@@ -2023,15 +2052,17 @@
       "diagnostics": []
     },
     "audacity": {
-      "caskVersion": "4.0.0",
-      "sourceURL": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-macOS-4.0.0-arm64.dmg",
-      "artifactSHA256": "266201f3151b09e46a5ab8e0ce1a16cefdd53a66fc7c979e943b2c88d6500c51",
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-arm64.dmg",
+      "artifactSHA256": "fd462da6204cbf9758b44c7ce1c29d5fe5cab4f31ba308d33c125f1b170401c3",
       "apps": [
         {
           "bundleName": "Audacity 4.app",
           "bundleIdentifier": "org.audacityteam.audacity4"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "thaw": {
       "caskVersion": "2.1.0",
@@ -2086,15 +2117,17 @@
       ]
     },
     "keepassxc": {
-      "caskVersion": "2.7.12",
-      "sourceURL": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-arm64.dmg",
-      "artifactSHA256": "65f4f63607180c0a15794b4a4068f85e99ed5391c87c1fb9312648f1b36fed40",
+      "caskVersion": "2.8.0,2.8.0-1",
+      "sourceURL": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-arm64.dmg",
+      "artifactSHA256": "85f0e75e258ef513f0fc7f5bf470cad0943b7d7e8191b2171f9898ad32e62b9c",
       "apps": [
         {
           "bundleName": "KeePassXC.app",
           "bundleIdentifier": "org.keepassxc.keepassxc"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mactex-no-gui": {
       "caskVersion": "2026.0324",
@@ -2125,15 +2158,17 @@
       ]
     },
     "shottr": {
-      "caskVersion": "1.9.2",
-      "sourceURL": "https://shottr.cc/dl/Shottr-1.9.2.dmg",
-      "artifactSHA256": "89a64c6615cd3955336228e94ffaf1d74cc69def88c70016e57df9b48dac23a5",
+      "caskVersion": "1.10.0b",
+      "sourceURL": "https://shottr.cc/dl/Shottr-1.10.0b.dmg",
+      "artifactSHA256": "2294be936928096f328fae2f82583c765cf5352c28b6942eabaed1cbf61369b4",
       "apps": [
         {
           "bundleName": "Shottr.app",
           "bundleIdentifier": "cc.ffitch.shottr"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "podman-desktop": {
       "caskVersion": "1.31.0",
@@ -2212,26 +2247,30 @@
       ]
     },
     "intellij-idea": {
-      "caskVersion": "2026.2.3,262.10968.63",
-      "sourceURL": "https://download.jetbrains.com/idea/ideaIU-2026.2.3-aarch64.dmg",
-      "artifactSHA256": "aac3cdc6d8441b94052473fee37a9679242a36f49f60fdce6cceaa3e7ad46e33",
+      "caskVersion": "2026.3.0.1,263.7307.353",
+      "sourceURL": "https://download.jetbrains.com/idea/ideaIU-2026.3.0.1-aarch64.dmg",
+      "artifactSHA256": "b855345099ee8402e2e6c529d69467d1581dd90a65477e7a76b0b119f21fda4e",
       "apps": [
         {
           "bundleName": "IntelliJ IDEA.app",
           "bundleIdentifier": "com.jetbrains.intellij"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mongodb-compass": {
-      "caskVersion": "1.50.0",
-      "sourceURL": "https://downloads.mongodb.com/compass/mongodb-compass-1.50.0-darwin-arm64.dmg",
-      "artifactSHA256": "0a4ec0b5aa1ff89e27bcc606f24b9ab20cf02a12724b13879d737af1f6daebfe",
+      "caskVersion": "1.53.3",
+      "sourceURL": "https://downloads.mongodb.com/compass/mongodb-compass-1.53.3-darwin-arm64.dmg",
+      "artifactSHA256": "378653915d2138be3055802a7b1409d299edf731849aedda864ad143c9d1f832",
       "apps": [
         {
           "bundleName": "MongoDB Compass.app",
           "bundleIdentifier": "com.mongodb.compass"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "grok-bot": {
       "caskVersion": "1.3.0",
@@ -2308,15 +2347,17 @@
       ]
     },
     "puremac": {
-      "caskVersion": "3.0.0",
-      "sourceURL": "https://github.com/momenbasel/PureMac/releases/download/v3.0.0/PureMac-3.0.0.zip",
-      "artifactSHA256": "35019475216a7498a31eca1078212ee5107cb4b522021119796ca524db72798c",
+      "caskVersion": "3.3.0",
+      "sourceURL": "https://github.com/momenbasel/PureMac/releases/download/v3.3.0/PureMac-3.3.0.zip",
+      "artifactSHA256": "37a5e421061a9d54291ea3cc1571b8ebf82685f4beb95c8da99b319ca7f30b2c",
       "apps": [
         {
           "bundleName": "PureMac.app",
           "bundleIdentifier": "com.puremac.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "protonvpn": {
       "caskVersion": "6.5.1",
@@ -2341,26 +2382,30 @@
       ]
     },
     "arc": {
-      "caskVersion": "1.165.1,87405",
-      "sourceURL": "https://releases.arc.net/release/Arc-1.165.1-87405.zip",
-      "artifactSHA256": "1db4fe1f24324bf11634ae1b42b8666fd1fdcdade693e98415b00f0c9102dfe4",
+      "caskVersion": "1.174.3,91540",
+      "sourceURL": "https://releases.arc.net/release/Arc-1.174.3-91540.zip",
+      "artifactSHA256": "635b589e560762bde2d0b43bc7135328e5d4039a2110fc943286ac191c64b4d0",
       "apps": [
         {
           "bundleName": "Arc.app",
           "bundleIdentifier": "company.thebrowser.Browser"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "ungoogled-chromium": {
-      "caskVersion": "152.0.7977.82-1.1",
-      "sourceURL": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/152.0.7977.82-1.1/ungoogled-chromium_152.0.7977.82-1.1_arm64-macos.dmg",
-      "artifactSHA256": "ba673876533e79b3c09edaf3ebd0dadcc29e9d0112b9b843d8c032cfb7bfb457",
+      "caskVersion": "157.0.8103.78-1.1",
+      "sourceURL": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/157.0.8103.78-1.1/ungoogled-chromium_157.0.8103.78-1.1_arm64-macos.dmg",
+      "artifactSHA256": "bdfe0ee51e47b7ff49c94778c6d9adb08a626dfbd6089570bbbb455410f1a41a",
       "apps": [
         {
           "bundleName": "Chromium.app",
-          "bundleIdentifier": "org.chromium.Chromium"
+          "bundleIdentifier": "io.ungoogled-software.ungoogled-chromium"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "zotero": {
       "caskVersion": "10.0.3",
@@ -2404,15 +2449,17 @@
       "apps": []
     },
     "alfred": {
-      "caskVersion": "5.8,2348",
-      "sourceURL": "https://cachefly.alfredapp.com/Alfred_5.8_2348.tar.gz",
-      "artifactSHA256": "280c2553ba92a3a5ce98b59455bc2b97ee92393bac5663231fc0d9c3f5d03511",
+      "caskVersion": "6.0.3,3225",
+      "sourceURL": "https://cachefly.alfredapp.com/Alfred_6.0.3_3225.dmg",
+      "artifactSHA256": "3d7484ceebae9dd5acd2f842f406cb4050e62eb8366987974c9c47762717d741",
       "apps": [
         {
-          "bundleName": "Alfred 5.app",
+          "bundleName": "Alfred 6.app",
           "bundleIdentifier": "com.runningwithcrayons.Alfred"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "xcodes-app": {
       "caskVersion": "4.1.1b41",
@@ -2506,15 +2553,17 @@
       "diagnostics": []
     },
     "tor-browser": {
-      "caskVersion": "15.0.23",
-      "sourceURL": "https://www.torproject.org/dist/torbrowser/15.0.23/tor-browser-macos-15.0.23.dmg",
-      "artifactSHA256": "2ab21948feb8327bbcced2174fd7f4b94a289350060c4ebbc1cd96d28c333db9",
+      "caskVersion": "16.0.3",
+      "sourceURL": "https://www.torproject.org/dist/torbrowser/16.0.3/tor-browser-macos-16.0.3.dmg",
+      "artifactSHA256": "9655e0a29702e60653cbcf5c547858b0fbff95535471ef8d7aa94e6013619e05",
       "apps": [
         {
           "bundleName": "Tor Browser.app",
           "bundleIdentifier": "org.torproject.torbrowser"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "meld": {
       "caskVersion": "3.22.3+105",
@@ -2528,10 +2577,66 @@
       ]
     },
     "multipass": {
-      "caskVersion": "1.16.4",
-      "sourceURL": "https://github.com/canonical/multipass/releases/download/v1.16.4/multipass-1.16.4+mac-Darwin.pkg",
-      "artifactSHA256": "e481704f65bc1650ae8aa5c873eb9137e8b9b403eac60aa603b68d8b4d2c281c",
-      "apps": []
+      "caskVersion": "1.17.2",
+      "sourceURL": "https://github.com/canonical/multipass/releases/download/v1.17.2/multipass-1.17.2+mac-Darwin.pkg",
+      "artifactSHA256": "87bea28b67857eda23d61a5c5133dfd08da6bd082002d44585aa02bbb46dff0a",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "multipass-1.17.2+mac-Darwin-multipass.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "multipass-1.17.2+mac-Darwin-multipass_gui.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "multipass-1.17.2+mac-Darwin-multipassd.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "emacs-app": {
       "caskVersion": "31.1",
@@ -2695,15 +2800,17 @@
       ]
     },
     "thunderbird": {
-      "caskVersion": "156.0",
-      "sourceURL": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/156.0/mac/en-US/Thunderbird%20156.0.dmg",
-      "artifactSHA256": "63586abac3d48ed3f34042a565441f8115e36333cc4db9795ad6b64feb4e51df",
+      "caskVersion": "161.0",
+      "sourceURL": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/161.0/mac/en-US/Thunderbird%20161.0.dmg",
+      "artifactSHA256": "bbeb4b6682efcc8164c1f5d6795e9793839e106bdfd0a8d13ab4e8d8af9f98f4",
       "apps": [
         {
           "bundleName": "Thunderbird.app",
           "bundleIdentifier": "org.mozilla.thunderbird"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "syncthing-app": {
       "caskVersion": "2.1.5-1",
@@ -2783,15 +2890,17 @@
       ]
     },
     "helium-browser": {
-      "caskVersion": "0.17.2.1",
-      "sourceURL": "https://github.com/imputnet/helium-macos/releases/download/0.17.2.1/helium_0.17.2.1_arm64-macos.dmg",
-      "artifactSHA256": "f1a3fecde3c08254f1b1eec30e36ecd25f98cf3799644427fbcefd6e6beafacf",
+      "caskVersion": "0.22.5.1",
+      "sourceURL": "https://github.com/imputnet/helium-macos/releases/download/0.22.5.1/helium_0.22.5.1_arm64-macos.dmg",
+      "artifactSHA256": "7d780f39cf532edd05567d0984d73e0b2bf2d50fcbc9dfc9b0b6b46e194484b3",
       "apps": [
         {
           "bundleName": "Helium.app",
           "bundleIdentifier": "net.imput.helium"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "headlamp": {
       "caskVersion": "0.45.0",
@@ -37226,9 +37335,9 @@
       "diagnostics": []
     },
     "deepseek-harness": {
-      "caskVersion": "0.2.0-rc.2",
-      "sourceURL": "https://download.deepseek.com/dsh-desk/bin/mac-arm64/deepseek-harness-0.2.0-rc.2-mac-arm64.zip",
-      "artifactSHA256": "b83daf23e482d96c4c039a2a786daf3a7082e867ea4ad93c51468020defa8a2a",
+      "caskVersion": "0.2.3-alpha.2",
+      "sourceURL": "https://download.deepseek.com/dsh-desk/bin/mac-arm64/deepseek-harness-0.2.3-alpha.2-mac-arm64.zip",
+      "artifactSHA256": "8831dd5f05804afd38f9ea7a3b9bcfd8d416cfba5f94f20fd1b97062cc99ad8c",
       "apps": [
         {
           "bundleName": "DeepSeek Harness.app",

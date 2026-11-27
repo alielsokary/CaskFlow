@@ -2273,6 +2273,12 @@
     "attempts": 0,
     "updated": "2026-08-20"
   },
+  "steam": {
+    "status": "failed",
+    "reason": "ditto failed: ditto: Couldn't read PKZip signature",
+    "attempts": 1,
+    "updated": "2026-11-27"
+  },
   "steam-plus-plus": {
     "status": "failed",
     "reason": "sha256 mismatch (got 7ede8adeb8a6...)",
