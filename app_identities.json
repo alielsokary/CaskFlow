@@ -475,26 +475,30 @@
       "diagnostics": []
     },
     "caskhub": {
-      "caskVersion": "0.8.2",
-      "sourceURL": "https://github.com/alielsokary/CaskHub/releases/download/0.8.2/CaskHub-0.8.2.zip",
-      "artifactSHA256": "9197850a7aed7fecf0ec2844ba01b743c579e496caf144a4357e74cfdc9bff02",
+      "caskVersion": "0.10.0",
+      "sourceURL": "https://github.com/alielsokary/CaskHub/releases/download/0.10.0/CaskHub-0.10.0.zip",
+      "artifactSHA256": "e3ce2fcb6e7c9522300c22316386d731e3af9b4ef2dd89289e45d409333581e8",
       "apps": [
         {
           "bundleName": "CaskHub.app",
           "bundleIdentifier": "com.mag.caskhub"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "unsloth": {
-      "caskVersion": "0.1.811-beta",
-      "sourceURL": "https://github.com/unslothai/unsloth/releases/download/v0.1.811-beta/Unsloth-Desktop-MacOS.dmg",
-      "artifactSHA256": "f8fe8ceb912f26d5f8595c1ab52e5d1b7068d0344804053f3efc9b05d04e6c0f",
+      "caskVersion": "0.1.925-beta",
+      "sourceURL": "https://github.com/unslothai/unsloth/releases/download/v0.1.925-beta/Unsloth-Desktop-MacOS.dmg",
+      "artifactSHA256": "b60386eef4b9d230cea86be5f3c4428111b9de6f6a71da26cd0d8114aedad692",
       "apps": [
         {
           "bundleName": "Unsloth.app",
           "bundleIdentifier": "ai.unsloth.studio"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "sketch": {
       "caskVersion": "2026.3.1,234013",
@@ -565,15 +569,17 @@
       ]
     },
     "thebrowsercompany-dia": {
-      "caskVersion": "1.49.1,87398",
-      "sourceURL": "https://releases.diabrowser.com/release/Dia-1.49.1-87398.zip",
-      "artifactSHA256": "6b9b18f93a6520c40e0c5dbb792d634daa6f157286f8e2b59d15b011f719a9fe",
+      "caskVersion": "1.58.2,91529",
+      "sourceURL": "https://releases.diabrowser.com/release/Dia-1.58.2-91529.zip",
+      "artifactSHA256": "971d8ab2a05e5cbe06e1ebb3397481287f5aa461cd4d5fb1fd8d37afd164796f",
       "apps": [
         {
           "bundleName": "Dia.app",
           "bundleIdentifier": "company.thebrowser.dia"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "lulu": {
       "caskVersion": "4.6.0",
@@ -1876,15 +1882,17 @@
       "diagnostics": []
     },
     "pgadmin4": {
-      "caskVersion": "9.18",
-      "sourceURL": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.18/macos/pgadmin4-9.18-arm64.dmg",
-      "artifactSHA256": "f374c5a971194be3bc837b43b6652fcd088189078e54a76e0aa03a418f0e4e02",
+      "caskVersion": "9.19",
+      "sourceURL": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.19/macos/pgadmin4-9.19-arm64.dmg",
+      "artifactSHA256": "8827d9444752497602f15cb01bd4014378510a2fdd118902686da3f36713b8ed",
       "apps": [
         {
           "bundleName": "pgAdmin 4.app",
           "bundleIdentifier": "org.pgadmin.pgadmin4"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "balenaetcher": {
       "caskVersion": "2.1.9",
@@ -2027,9 +2035,9 @@
       ]
     },
     "onedrive": {
-      "caskVersion": "26.153.0809.0004",
-      "sourceURL": "https://oneclient.sfx.ms/Mac/Installers/26.153.0809.0004/universal/OneDrive.pkg",
-      "artifactSHA256": "35d67e76de8579fa0b533fff7ff3b618ea54f574a8a557bb9d3d736b14029f78",
+      "caskVersion": "26.213.1101.0008",
+      "sourceURL": "https://oneclient.sfx.ms/Mac/Installers/26.213.1101.0008/universal/OneDrive.pkg",
+      "artifactSHA256": "bd70e9cb347c9954be4ab8db4131be8b5d211a7b697a2642f935f230fd71ec90",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -2402,15 +2410,17 @@
       ]
     },
     "librewolf": {
-      "caskVersion": "156.0,1",
-      "sourceURL": "https://dl.librewolf.net/librewolf/156.0-1/librewolf-156.0-1-macos-arm64-package.dmg",
-      "artifactSHA256": "e957e3fb07dc7452aae41b50375f3a860fb5c9c385f3505353b2f498e670ce28",
+      "caskVersion": "161.0,1",
+      "sourceURL": "https://dl.librewolf.net/librewolf/161.0-1/librewolf-161.0-1-macos-arm64-package.dmg",
+      "artifactSHA256": "5f5116de8b28eab07ddece340f10c47af7b898eeee1e229440e35388518fb9ad",
       "apps": [
         {
           "bundleName": "LibreWolf.app",
           "bundleIdentifier": "net.librewolf.librewolf"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "arc": {
       "caskVersion": "1.174.3,91540",
@@ -2439,15 +2449,17 @@
       "diagnostics": []
     },
     "zotero": {
-      "caskVersion": "10.0.3",
-      "sourceURL": "https://download.zotero.org/client/release/10.0.3/Zotero-10.0.3.dmg",
-      "artifactSHA256": "36b3f302aca026467b9f1973016a794c6fe95cadb0f7c0db4d414948da19f255",
+      "caskVersion": "10.0.9",
+      "sourceURL": "https://download.zotero.org/client/release/10.0.9/Zotero-10.0.9.dmg",
+      "artifactSHA256": "fa42a04c33028ee020ccf47e64b3e135ce2fc57ba9a099e9f467f280ea56a387",
       "apps": [
         {
           "bundleName": "Zotero.app",
           "bundleIdentifier": "org.zotero.zotero"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "hiddenbar": {
       "caskVersion": "1.13.4",
@@ -2463,15 +2475,17 @@
       "diagnostics": []
     },
     "dbx": {
-      "caskVersion": "0.6.17",
-      "sourceURL": "https://github.com/t8y2/dbx/releases/download/v0.6.17/DBX_0.6.17_arm64.dmg",
-      "artifactSHA256": "1a0dd52444b25fd6a6c51c549b2e73819b17bf575b2f6740443b6d8668aa2e14",
+      "caskVersion": "0.6.75",
+      "sourceURL": "https://github.com/t8y2/dbx/releases/download/v0.6.75/DBX_0.6.75_arm64.dmg",
+      "artifactSHA256": "b1334348ac694efcd3af03211a4af9caa4b27be1c03e93db5ec50181b4d178da",
       "apps": [
         {
           "bundleName": "DBX.app",
           "bundleIdentifier": "com.dbx.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kicad": {
       "caskVersion": "10.0.8",
@@ -2500,15 +2514,17 @@
       "diagnostics": []
     },
     "xcodes-app": {
-      "caskVersion": "4.1.1b41",
-      "sourceURL": "https://github.com/XcodesOrg/XcodesApp/releases/download/v4.1.1b41/Xcodes.zip",
-      "artifactSHA256": "65dc424dd06f92db1e192ac97db97861392cfe8568b72f89d7cc8836a7328c9c",
+      "caskVersion": "4.2.1b43",
+      "sourceURL": "https://github.com/XcodesOrg/XcodesApp/releases/download/v4.2.1b43/Xcodes.zip",
+      "artifactSHA256": "a2d4f182560893ab2b554c09b1fe55e1e88fe6087ac3775717a3996bb8a2fe09",
       "apps": [
         {
           "bundleName": "Xcodes.app",
           "bundleIdentifier": "com.xcodesorg.xcodesapp"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "rancher": {
       "caskVersion": "1.24.0",
@@ -2688,15 +2704,17 @@
       ]
     },
     "freelens": {
-      "caskVersion": "1.10.3",
-      "sourceURL": "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-macos-arm64.dmg",
-      "artifactSHA256": "ae33e11d5db858da1f64ae2c4f7ca3835786780bcb2af02e55fe756f08900419",
+      "caskVersion": "2.1.0",
+      "sourceURL": "https://github.com/freelensapp/freelens/releases/download/v2.1.0/Freelens-2.1.0-macos-arm64.dmg",
+      "artifactSHA256": "d4e0155c429e828edd5c0fdd111e0dfd21810e638d2baac951a677f7d89e6300",
       "apps": [
         {
           "bundleName": "Freelens.app",
           "bundleIdentifier": "app.freelens.Freelens"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "another-redis-desktop-manager": {
       "caskVersion": "1.7.4",
@@ -3068,15 +3086,17 @@
       ]
     },
     "proxyman": {
-      "caskVersion": "6.17.0,61700",
-      "sourceURL": "https://download.proxyman.com/61700/Proxyman_6.17.0.dmg",
-      "artifactSHA256": "533e622c3f7cdf9d92beb6ba22ac0582eaf7ad6acb03fe080f11acb0498c7a56",
+      "caskVersion": "26.6.1,260601",
+      "sourceURL": "https://download.proxyman.com/260601/Proxyman_26.6.1.dmg",
+      "artifactSHA256": "9c1f7b63f8cc7f1dc691fc8918f850c7d920ad6b75fe7b2801f0c41b5d8dc03c",
       "apps": [
         {
           "bundleName": "Proxyman.app",
           "bundleIdentifier": "com.proxyman.NSProxy"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "wispr-flow": {
       "caskVersion": "1.6.1631",
@@ -3150,26 +3170,30 @@
       ]
     },
     "dropbox": {
-      "caskVersion": "270.4.3312",
-      "sourceURL": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20270.4.3312.arm64.dmg",
-      "artifactSHA256": "42737dccd121d7c965067a38ba07cb105df17d02127f0f04a99db08777bfbf4c",
+      "caskVersion": "280.4.5053",
+      "sourceURL": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20280.4.5053.arm64.dmg",
+      "artifactSHA256": "fa6e9b1a5f1d78108749d2643e889ad98d67ba90c243e48b516d8491b14e4497",
       "apps": [
         {
           "bundleName": "Dropbox.app",
           "bundleIdentifier": "com.getdropbox.dropbox"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "duckduckgo": {
-      "caskVersion": "1.206.0,809",
-      "sourceURL": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.206.0.809.dmg",
-      "artifactSHA256": "5e119d40e83264130ca58a92e8b63abd770e9a40a059959ce6b4f7add91390c1",
+      "caskVersion": "1.217.0,880",
+      "sourceURL": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.217.0.880.dmg",
+      "artifactSHA256": "8be54248e51b526c6be7eca52d066978f148b185da4db902c16ed34956b26de3",
       "apps": [
         {
           "bundleName": "DuckDuckGo.app",
           "bundleIdentifier": "com.duckduckgo.macos.browser"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "adobe-acrobat-reader": {
       "caskVersion": "26.001.21662",
@@ -3346,15 +3370,17 @@
       ]
     },
     "redis-insight": {
-      "caskVersion": "3.8.0",
-      "sourceURL": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.8.0/Redis-Insight-mac-arm64.dmg",
-      "artifactSHA256": "af58c218b09b2a3d10ba6f296969fcd792a6544ff0dbd89845804eab86f05ddb",
+      "caskVersion": "3.10.2",
+      "sourceURL": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.2/Redis-Insight-mac-arm64.dmg",
+      "artifactSHA256": "0fd7a18c8c6ba4fe0985b0d30c21fd7b55facb41499dff1e7cf3d58a9cf5b743",
       "apps": [
         {
           "bundleName": "Redis Insight.app",
           "bundleIdentifier": "org.RedisLabs.RedisInsight-V2"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "github-copilot-app": {
       "caskVersion": "1.5.0",
@@ -3381,15 +3407,17 @@
       ]
     },
     "wechat": {
-      "caskVersion": "4.1.15.20,270100",
-      "sourceURL": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.20_270100.dmg",
-      "artifactSHA256": "b73319ea3ef7f5f2f6f1403b0bed87ac75b5f5b70f0951ea61bad2d9449857f8",
+      "caskVersion": "4.2.1.12,270604",
+      "sourceURL": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.1.12_270604.dmg",
+      "artifactSHA256": "1535819da0a2ce92212f48c433a4312e0774236662cf11d9ed3c97fe78560045",
       "apps": [
         {
           "bundleName": "WeChat.app",
           "bundleIdentifier": "com.tencent.xinWeChat"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "macshot": {
       "caskVersion": "4.2.1",
@@ -3701,15 +3729,17 @@
       "diagnostics": []
     },
     "block-goose": {
-      "caskVersion": "1.51.0",
-      "sourceURL": "https://github.com/block/goose/releases/download/v1.51.0/Goose.zip",
-      "artifactSHA256": "6ce60858a48dd69ddae7e06bf633d2d96d11f772752b25e0a84cad1474c12376",
+      "caskVersion": "1.61.1",
+      "sourceURL": "https://github.com/block/goose/releases/download/v1.61.1/Goose.zip",
+      "artifactSHA256": "88ba2cc4e3919df63f223a1db1131d6d2774f3bf53e70355ad282a2a744d147e",
       "apps": [
         {
           "bundleName": "Goose.app",
           "bundleIdentifier": "com.electron.goose"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "crisp": {
       "caskVersion": "1.6.0",
@@ -3745,15 +3775,17 @@
       ]
     },
     "telegram-desktop": {
-      "caskVersion": "7.2.9",
-      "sourceURL": "https://td.telegram.org/mac/td-setup-mac-7.2.9.dmg",
-      "artifactSHA256": "526aad8d40617fafaa27acb52dd0f5df451cd4683fb7fd63666aece164282bf4",
+      "caskVersion": "7.4.7",
+      "sourceURL": "https://td.telegram.org/mac/td-setup-mac-7.4.7.dmg",
+      "artifactSHA256": "7191d6edf41637f890ccf4f7170d3b9584e19c36eb5f413894be446af6c3c90b",
       "apps": [
         {
           "bundleName": "Telegram Desktop.app",
           "bundleIdentifier": "com.tdesktop.Telegram"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "nextcloud": {
       "caskVersion": "34.0.4",
@@ -3953,15 +3985,17 @@
       ]
     },
     "kiro": {
-      "caskVersion": "1.1.14",
-      "sourceURL": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.1.14/kiro-ide-1.1.14-stable-darwin-arm64.dmg",
-      "artifactSHA256": "03e0944aadca65079894c01a0dcf33c771ffd8b4f391486680713d1feed9e452",
+      "caskVersion": "1.5.49",
+      "sourceURL": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.49/kiro-ide-1.5.49-stable-darwin-arm64.dmg",
+      "artifactSHA256": "b13b50ef7c800a4c15a3d1bad14e8da44c298e0097ef008ddeb4c1acc309513f",
       "apps": [
         {
           "bundleName": "Kiro.app",
           "bundleIdentifier": "dev.kiro.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "displaylink": {
       "caskVersion": "16.2,2026-07",
@@ -4063,15 +4097,17 @@
       "apps": []
     },
     "orcaslicer": {
-      "caskVersion": "2.4.2",
-      "sourceURL": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.4.2/OrcaSlicer_Mac_universal_V2.4.2.dmg",
-      "artifactSHA256": "e15e7bb1b66214ec6e96b169b388004179c4f5f705effcdaf8c80d4992ee0366",
+      "caskVersion": "2.5.2",
+      "sourceURL": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.2/OrcaSlicer_Mac_universal_V2.5.2.dmg",
+      "artifactSHA256": "6ea1afcdffb7e9ab011e2d6f6db665cb18463d1c4774591cd5db7ee0225479d9",
       "apps": [
         {
           "bundleName": "OrcaSlicer.app",
           "bundleIdentifier": "com.orcaslicer.OrcaSlicer"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "lm-studio-bionic": {
       "caskVersion": "1.1.5,1",
@@ -4345,15 +4381,17 @@
       ]
     },
     "motrix": {
-      "caskVersion": "1.8.19",
-      "sourceURL": "https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-arm64.dmg",
-      "artifactSHA256": "d73f4d69f3597ad8f98b821aa0fb58ba964bf85061b4a13f00edcb3618001c0e",
+      "caskVersion": "2.4.7",
+      "sourceURL": "https://github.com/agalwood/Motrix/releases/download/v2.4.7/Motrix-2.4.7-arm64.dmg",
+      "artifactSHA256": "b76af07d2fe077b6916b343e22c369a1e7fca84330fcb866aeaf5f48905f6238",
       "apps": [
         {
           "bundleName": "Motrix.app",
           "bundleIdentifier": "app.motrix.native"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "clipy": {
       "caskVersion": "1.3.0",
@@ -6164,15 +6202,17 @@
       ]
     },
     "macpacker": {
-      "caskVersion": "0.22.0",
-      "sourceURL": "https://macpacker-releases.s3.amazonaws.com/MacPacker_v0.22.0.zip",
-      "artifactSHA256": "f61703e5ac1ab632c2e7293e406119ddb88e35f15327d0e30721a02d689227a2",
+      "caskVersion": "1.3.1",
+      "sourceURL": "https://github.com/sarensw/MacPacker/releases/download/v1.3.1/MacPacker_v1.3.1.zip",
+      "artifactSHA256": "fddaec2994ad913394c6f2490d5c02cfd133f9b3af0602d4adc5250904f7efca",
       "apps": [
         {
           "bundleName": "MacPacker.app",
           "bundleIdentifier": "com.sarensx.MacPacker"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "local": {
       "caskVersion": "10.1.2,7004",
@@ -7168,15 +7208,17 @@
       ]
     },
     "clop": {
-      "caskVersion": "3.4.3",
-      "sourceURL": "https://files.lowtechguys.com/releases/Clop-3.4.3.dmg",
-      "artifactSHA256": "329b65a776c2de157cb7ed1f7f02953c06763d7109fd60f647c99a79d69f773a",
+      "caskVersion": "3.7.8",
+      "sourceURL": "https://files.lowtechguys.com/releases/Clop-3.7.8.dmg",
+      "artifactSHA256": "e83b98140f3f0cdcf4af13bb31d141d079f4854bcea09e35ed104764e8838121",
       "apps": [
         {
           "bundleName": "Clop.app",
           "bundleIdentifier": "com.lowtechguys.Clop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kirocrew": {
       "caskVersion": "0.6.0",
@@ -38275,9 +38317,9 @@
       "diagnostics": []
     },
     "purge": {
-      "caskVersion": "1.9.0",
-      "sourceURL": "https://github.com/jithin-sabu/purge-app/releases/download/v1.9.0/Purgev1.9.0.dmg",
-      "artifactSHA256": "03f396756cfa54c97e31823d84d4ef85cd31b4ac3bde2a05d203c7bc03fa7755",
+      "caskVersion": "1.18.1",
+      "sourceURL": "https://github.com/jithin-sabu/purge-app/releases/download/v1.18.1/Purgev1.18.1.dmg",
+      "artifactSHA256": "1ee0c822739483670a36c03d07e102e112c4c146eb0d12215e8751a9b828d428",
       "apps": [
         {
           "bundleName": "Purge.app",
@@ -39938,9 +39980,9 @@
       "diagnostics": []
     },
     "status-trio": {
-      "caskVersion": "1.6.0",
-      "sourceURL": "https://github.com/lingyired/status-trio/releases/download/v1.6.0/StatusTrio-1.6.0.dmg",
-      "artifactSHA256": "f8362f90af8adb1a3b19fc5bf38a0cc74f4f56966e010f26e2d6a5ca713e022d",
+      "caskVersion": "1.10.5",
+      "sourceURL": "https://github.com/lingyired/status-trio/releases/download/v1.10.5/StatusTrio-1.10.5.dmg",
+      "artifactSHA256": "b676e227f7375f55cc9bdd5a38475c7ce0c80054ab6a7bfffbc4c7012f2a83f4",
       "apps": [
         {
           "bundleName": "Status Trio.app",
@@ -40068,9 +40110,9 @@
       "diagnostics": []
     },
     "magpie": {
-      "caskVersion": "0.1.1525",
-      "sourceURL": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1525/magpie-darwin-arm64.zip",
-      "artifactSHA256": "a9f42e34e033588110156c0201a37cf5c905f04e34616b121caace71a2d51273",
+      "caskVersion": "0.1.4925",
+      "sourceURL": "https://github.com/yetone/magpie-releases/releases/download/v0.1.4925/magpie-darwin-arm64.zip",
+      "artifactSHA256": "aad1e26db775cacd6ec8abd4bec15a8c381d3f7374d21b3048ef18ac97cc82f0",
       "apps": [
         {
           "bundleName": "magpie.app",
