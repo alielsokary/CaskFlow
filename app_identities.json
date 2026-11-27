@@ -92,10 +92,17 @@
       ]
     },
     "realvnc-connect-viewer": {
-      "caskVersion": "8.5.0",
-      "sourceURL": "https://downloads.realvnc.com/download/file/realvnc-connect-viewer/RealVNC-Connect-Viewer-8.5.0-MacOSX-universal.pkg",
-      "artifactSHA256": "fbb9708f3193224031a7e0856f67219404384d3afa1013ea5b242c0b52525659",
-      "apps": []
+      "caskVersion": "8.6.2",
+      "sourceURL": "https://downloads.realvnc.com/download/file/realvnc-connect-viewer/RealVNC-Connect-Viewer-8.6.2-MacOSX-universal.pkg",
+      "artifactSHA256": "e9c70f5ec60c1f70b847a859cb4988b07b15184013106fc5622ae4d15ddcef66",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
     },
     "wsl-manager": {
       "caskVersion": "2.3.0",
@@ -2127,10 +2134,17 @@
       ]
     },
     "fuse-t": {
-      "caskVersion": "1.2.7",
-      "sourceURL": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.2.7/fuse-t-macos-installer-1.2.7.pkg",
-      "artifactSHA256": "6a29c747e61a86a405a189efc3de42812d73147135f93a1bb0624c1e7b90e654",
-      "apps": []
+      "caskVersion": "1.2.9",
+      "sourceURL": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.2.9/fuse-t-macos-installer-1.2.9.pkg",
+      "artifactSHA256": "a1b893740ded8ea034f1acc522ded1144f4a567a1f416daef8c1441cf2662f7f",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "not a package Distribution"
+        }
+      ]
     },
     "moonlight": {
       "caskVersion": "6.2.0",
@@ -2220,7 +2234,22 @@
       "caskVersion": "0.7.1",
       "sourceURL": "https://existential.audio/downloads/BlackHole16ch-0.7.1.pkg",
       "artifactSHA256": "57254e2f76cd40db7f3f715238b1a2cb2bd08819d38abf4087f2944f71a3641a",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "BlackHole.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "hermes-desktop": {
       "caskVersion": "0.21.2,088d292d364f",
@@ -2399,15 +2428,17 @@
       "diagnostics": []
     },
     "protonvpn": {
-      "caskVersion": "6.5.1",
-      "sourceURL": "https://vpn.protondownload.com/download/macos/6.5.1/ProtonVPN_mac_v6.5.1.dmg",
-      "artifactSHA256": "d50a49f14c50b0ef8ad68a89fc9685d5699ba2d4f92cb4c34317291b425435f8",
+      "caskVersion": "6.5.2",
+      "sourceURL": "https://vpn.protondownload.com/download/macos/6.5.2/ProtonVPN_mac_v6.5.2.dmg",
+      "artifactSHA256": "662ea912764a95f3b100e1c22695a3fc2a2366de10df81762f3c36a5307eefc0",
       "apps": [
         {
           "bundleName": "ProtonVPN.app",
           "bundleIdentifier": "ch.protonvpn.mac"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "librewolf": {
       "caskVersion": "161.0,1",
@@ -2527,15 +2558,17 @@
       "diagnostics": []
     },
     "rancher": {
-      "caskVersion": "1.24.0",
-      "sourceURL": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.24.0/Rancher.Desktop-1.24.0.aarch64.dmg",
-      "artifactSHA256": "0c4eb779d376f51e34b339124ad4f24b771a8f2c69718e839f89958209e78b34",
+      "caskVersion": "1.25.0",
+      "sourceURL": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.25.0/Rancher.Desktop-1.25.0.aarch64.dmg",
+      "artifactSHA256": "17b93863838fc3860d4adb0fa58a76a283011c3ea8743205b306e23f5282c671",
       "apps": [
         {
           "bundleName": "Rancher Desktop.app",
           "bundleIdentifier": "io.rancherdesktop.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "sequel-ace": {
       "caskVersion": "5.4.0,20109",
@@ -2560,10 +2593,39 @@
       ]
     },
     "microsoft-word": {
-      "caskVersion": "16.113.26091740",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.113.26091740_Installer.pkg",
-      "artifactSHA256": "04d354e2a56f4ebaa8f56b82cb1dd75309a2444415f9f0830cea5ba8f97f1e9a",
-      "apps": []
+      "caskVersion": "16.115.26112215",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.115.26112215_Installer.pkg",
+      "artifactSHA256": "4a1b814985452ef28fa652d30f09be4d315ea9ecc5355dc8cfe239a2720cc443",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ]
     },
     "grandperspective": {
       "caskVersion": "3.8.1",
@@ -2577,10 +2639,19 @@
       ]
     },
     "cloudflare-warp": {
-      "caskVersion": "2026.7.1376.0",
-      "sourceURL": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.7.1376.0",
-      "artifactSHA256": "d8fea3fff465927076224d4444ca56355a86d034b2001fb4febdc3080f1f745a",
-      "apps": []
+      "caskVersion": "2026.8.2115.0",
+      "sourceURL": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.8.2115.0",
+      "artifactSHA256": "1b81c512e9ac1fa28c63f28ff031d2244c6a23fd8c8d500fae14f38938faea5d",
+      "apps": [
+        {
+          "bundleName": "Cloudflare WARP.app",
+          "bundleIdentifier": "com.cloudflare.1dot1dot1dot1.macos",
+          "packageIdentifier": "com.cloudflare.1dot1dot1dot1.macos",
+          "installedPath": "/Applications/Cloudflare WARP.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "the-unarchiver": {
       "caskVersion": "4.3.9,147,1742287964",
@@ -2739,10 +2810,39 @@
       ]
     },
     "microsoft-excel": {
-      "caskVersion": "16.113.26091740",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.113.26091740_Installer.pkg",
-      "artifactSHA256": "9db8f0c5fae677d7b06526730cf8cab4a2050c7eb21e3c8b8214a1c4c02c4459",
-      "apps": []
+      "caskVersion": "16.115.26112215",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.115.26112215_Installer.pkg",
+      "artifactSHA256": "892c2a5f6676118bba6d4b9f3af22c1aa0b6667c556071ba7e4bbad85edee1e3",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ]
     },
     "markedit": {
       "caskVersion": "1.35.0",
@@ -2756,15 +2856,17 @@
       ]
     },
     "scroll-reverser": {
-      "caskVersion": "1.9",
-      "sourceURL": "https://pilotmoon.com/downloads/ScrollReverser-1.9.zip",
-      "artifactSHA256": "0961dbb6f8ef4e5edd432bf0dd6e7cdd4219d8bac8b3baa3f576af9a42bbf585",
+      "caskVersion": "2.1.1",
+      "sourceURL": "https://pilotmoon.com/downloads/ScrollReverser-2.1.1.zip",
+      "artifactSHA256": "654a2bbb368f39cf7ca9adcb4d83c12c572f2c64886ef5012949afd81cf69691",
       "apps": [
         {
           "bundleName": "Scroll Reverser.app",
           "bundleIdentifier": "com.pilotmoon.scroll-reverser"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "openclaw": {
       "caskVersion": "2026.9.5",
@@ -2825,15 +2927,17 @@
       "diagnostics": []
     },
     "anki": {
-      "caskVersion": "26.09.2",
-      "sourceURL": "https://github.com/ankitects/anki/releases/download/26.09.2/anki-26.09.2-mac-apple.dmg",
-      "artifactSHA256": "bc6459bd3e57f2196dd48c212844e5522a71833e08271aa88a62ae5f68cda045",
+      "caskVersion": "26.09.4",
+      "sourceURL": "https://github.com/ankitects/anki/releases/download/26.09.4/anki-26.09.4-mac-apple.dmg",
+      "artifactSHA256": "527b968b88d54cb0308d1de7a1ee193109863546e1cb62dcd016bd93bd816684",
       "apps": [
         {
           "bundleName": "Anki.app",
           "bundleIdentifier": "net.ankiweb.anki"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "comfy": {
       "caskVersion": "1.0.47,260908ensm0r3cr",
@@ -2847,15 +2951,17 @@
       ]
     },
     "mysqlworkbench": {
-      "caskVersion": "8.0.47",
-      "sourceURL": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.47-macos-arm64.dmg",
-      "artifactSHA256": "90b177034b3e2c64b822f44920cb11996ec1323f4c49e2fa0224748103fb4844",
+      "caskVersion": "26.10.0",
+      "sourceURL": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-26.10.0-macos-arm64.dmg",
+      "artifactSHA256": "b0ea97a20a0ff368247ddd3b90dbb2f4ad866a43e0e722d4b1a13f43bbba51ed",
       "apps": [
         {
-          "bundleName": "MySQLWorkbench.app",
-          "bundleIdentifier": "com.oracle.workbench.MySQLWorkbench"
+          "bundleName": "MySQL Workbench.app",
+          "bundleIdentifier": "com.oracle.mysqlworkbench"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "thunderbird": {
       "caskVersion": "161.0",
@@ -3396,15 +3502,17 @@
       "diagnostics": []
     },
     "rstudio": {
-      "caskVersion": "2026.09.0,174",
-      "sourceURL": "https://download1.rstudio.org/electron/macos/RStudio-2026.09.0-174.dmg",
-      "artifactSHA256": "34f28a7bc5cc84da339475c34183fd76065dfbd70b5617ceb2eb1d238cbec2db",
+      "caskVersion": "2026.11.0,203",
+      "sourceURL": "https://download1.rstudio.org/electron/macos/RStudio-2026.11.0-203.dmg",
+      "artifactSHA256": "8af768450f9f38586bf48958d348b41ffc4f3d42c9d225cb6d4f2b8e8b986135",
       "apps": [
         {
           "bundleName": "RStudio.app",
           "bundleIdentifier": "com.rstudio.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "wechat": {
       "caskVersion": "4.2.1.12,270604",
@@ -3442,10 +3550,39 @@
       ]
     },
     "microsoft-powerpoint": {
-      "caskVersion": "16.113.26091740",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.113.26091740_Installer.pkg",
-      "artifactSHA256": "b17cd601dc6415abe77444302fb80cf41630278063df476cc9118ee8ca8a1f27",
-      "apps": []
+      "caskVersion": "16.115.26112215",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.115.26112215_Installer.pkg",
+      "artifactSHA256": "6e6f7069b5e8050f396ecabcc9904517c2b385084cb840d01977c329253c557d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ]
     },
     "opensuperwhisper": {
       "caskVersion": "0.1.0",
@@ -3465,15 +3602,17 @@
       "apps": []
     },
     "burp-suite": {
-      "caskVersion": "2026.8",
-      "sourceURL": "https://portswigger-cdn.net/burp/releases/download?product=desktop&version=2026.8&type=MacOsArm64",
-      "artifactSHA256": "638ff9d9c3026838798f5659904e3e9cba00ee0b26f3d616f93b1967f275d2ce",
+      "caskVersion": "2026.11.3",
+      "sourceURL": "https://portswigger-cdn.net/burp/releases/download?product=desktop&version=2026.11.3&type=MacOsArm64",
+      "artifactSHA256": "54b1e1f2d8b275a7f94fa88edb99bfdf06dcb908b92f2027cbf8004d09bb7cbc",
       "apps": [
         {
           "bundleName": "Burp Suite.app",
           "bundleIdentifier": "com.install4j.6592-1155-2163-3973.70"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "orchard": {
       "caskVersion": "2.4.2",
@@ -3588,15 +3727,17 @@
       ]
     },
     "wechatwebdevtools": {
-      "caskVersion": "2.02.2608070",
-      "sourceURL": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608070_darwin_arm64.dmg",
-      "artifactSHA256": "911600453eacc4e7c7b64366719bc8d0151bd5bdb36d7816ca17fc0881dcc681",
+      "caskVersion": "2.02.2609250",
+      "sourceURL": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2609250_darwin_arm64.dmg",
+      "artifactSHA256": "dbd3b22e422f6fc3c8be34178f16d068ee04a0026c5edea1b161040f22c58b37",
       "apps": [
         {
           "bundleName": "wechatwebdevtools.app",
           "bundleIdentifier": "com.github.Electron"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "onlyoffice": {
       "caskVersion": "9.4.0",
@@ -3694,15 +3835,17 @@
       ]
     },
     "cryptomator": {
-      "caskVersion": "1.19.3",
-      "sourceURL": "https://github.com/cryptomator/cryptomator/releases/download/1.19.3/Cryptomator-1.19.3-arm64.dmg",
-      "artifactSHA256": "0bfe8c6aeb97acf638810e3e576016db510bc7bf71366dc00f3c7eea9a314f23",
+      "caskVersion": "1.19.7",
+      "sourceURL": "https://github.com/cryptomator/cryptomator/releases/download/1.19.7/Cryptomator-1.19.7-arm64.dmg",
+      "artifactSHA256": "c4818d38cb3f9919bfe276c812714596cc50da4d01a82ac2f22bf2e64b441677",
       "apps": [
         {
           "bundleName": "Cryptomator.app",
           "bundleIdentifier": "org.cryptomator"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "openusage": {
       "caskVersion": "0.7.12",
@@ -3908,15 +4051,17 @@
       "diagnostics": []
     },
     "arduino-ide": {
-      "caskVersion": "2.3.10",
-      "sourceURL": "https://github.com/arduino/arduino-ide/releases/download/2.3.10/arduino-ide_2.3.10_macOS_ARM64.dmg",
-      "artifactSHA256": "8811860dc8782b6cd6bb0076e9215255849f404b1b9e6f38069fdc4f5c43648e",
+      "caskVersion": "2.3.11",
+      "sourceURL": "https://github.com/arduino/arduino-ide/releases/download/2.3.11/arduino-ide_2.3.11_macOS_ARM64.dmg",
+      "artifactSHA256": "bd70d36e125943855c27308c97702d69a7017041741a6f123734300424390bf7",
       "apps": [
         {
           "bundleName": "Arduino IDE.app",
           "bundleIdentifier": "cc.arduino.IDE2"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "reminders-menubar": {
       "caskVersion": "2.2.0",
@@ -4193,15 +4338,17 @@
       ]
     },
     "macwhisper": {
-      "caskVersion": "15.1.1,1513",
-      "sourceURL": "https://cdn.macwhisper.com/macwhisper/MacWhisper-1513.zip",
-      "artifactSHA256": "7899a8e42436e14bf170102f35313c12918cf2415be4fd0a56322c464f790b4f",
+      "caskVersion": "16.0,1604",
+      "sourceURL": "https://cdn.macwhisper.com/macwhisper/MacWhisper-1604.zip",
+      "artifactSHA256": "ab083978791fbc390c1da7fdf671f783f4aaa8977a1c4ee675696047fe3a57b3",
       "apps": [
         {
           "bundleName": "MacWhisper.app",
           "bundleIdentifier": "com.goodsnooze.MacWhisper"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "opera": {
       "caskVersion": "136.0.6008.22",
@@ -4232,15 +4379,17 @@
       "apps": []
     },
     "coconutbattery": {
-      "caskVersion": "4.4.0,265",
-      "sourceURL": "https://www.coconut-flavour.com/downloads/coconutBattery_440_265.zip",
-      "artifactSHA256": "ac7bb9a5f02af6f1b7f3107ae3fb62268ec41e8d853a3df5ecee58bf0a51db4d",
+      "caskVersion": "4.4.1,275",
+      "sourceURL": "https://www.coconut-flavour.com/downloads/coconutBattery_441_275.zip",
+      "artifactSHA256": "4aff5e5a481fc0878250f80436fa952fbdc12bad44e8597e62ea6bb9a9988de0",
       "apps": [
         {
           "bundleName": "coconutBattery.app",
           "bundleIdentifier": "com.coconut-flavour.coconutBattery"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "superwhisper": {
       "caskVersion": "2.18.3",
@@ -4735,15 +4884,17 @@
       ]
     },
     "proton-pass": {
-      "caskVersion": "1.40.2",
-      "sourceURL": "https://proton.me/download/pass/macos/ProtonPass_1.40.2.dmg",
-      "artifactSHA256": "fb7dde5dcf7cf25797db60725c6493f70f6fb1472b0fe3cff1e51aa07b560ca2",
+      "caskVersion": "1.44.1",
+      "sourceURL": "https://proton.me/download/pass/macos/ProtonPass_1.44.1.dmg",
+      "artifactSHA256": "4e0dbf4dd4907de748286e2bd6c43dd3c30661333414a713ef34c6ff7ff3579e",
       "apps": [
         {
           "bundleName": "Proton Pass.app",
           "bundleIdentifier": "me.proton.pass.electron"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "atoll": {
       "caskVersion": "2.3.3",
@@ -4867,15 +5018,17 @@
       ]
     },
     "netnewswire": {
-      "caskVersion": "7.1.3",
-      "sourceURL": "https://github.com/Ranchero-Software/NetNewsWire/releases/download/mac-7.1.3/NetNewsWire7.1.3.zip",
-      "artifactSHA256": "b266ec3e76c118279f10a172ae740dd6feae1a69142025c44a659344c6b27367",
+      "caskVersion": "7.3.1",
+      "sourceURL": "https://github.com/Ranchero-Software/NetNewsWire/releases/download/mac-7.3.1/NetNewsWire7.3.1.zip",
+      "artifactSHA256": "280ffd15e2df86a39146410d362f2bafca2c559f33cab78cd538669e96245ab9",
       "apps": [
         {
           "bundleName": "NetNewsWire.app",
           "bundleIdentifier": "com.ranchero.NetNewsWire-Evergreen"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "microsoft-azure-storage-explorer": {
       "caskVersion": "1.46.0",
@@ -4944,15 +5097,17 @@
       ]
     },
     "downie": {
-      "caskVersion": "4.13.1,5263",
-      "sourceURL": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5263.dmg",
-      "artifactSHA256": "65407f40e7f8fd52aef8850004a7e0259675430d5d82b103d06a6e1833c4629a",
+      "caskVersion": "4.13.6,5305",
+      "sourceURL": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5305.dmg",
+      "artifactSHA256": "d472826a25d6141209a19bbf18fbb375970f7d4b0842452f5cc8d02c825665b9",
       "apps": [
         {
           "bundleName": "Downie 4.app",
           "bundleIdentifier": "com.charliemonroe.Downie-4"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "aside": {
       "caskVersion": "1.0.914.1",
@@ -38172,9 +38327,9 @@
       "diagnostics": []
     },
     "pdfcraft": {
-      "caskVersion": "0.5.0",
-      "sourceURL": "https://github.com/storytold/pdfcraft/releases/download/v0.5.0/pdfcraft-0.5.0-macos-universal.dmg",
-      "artifactSHA256": "36bfd4fb1d6fd22321f92263dbc97b41cc266b5275f7aac63064464b6be982cd",
+      "caskVersion": "0.22.0",
+      "sourceURL": "https://github.com/storytold/pdfcraft/releases/download/v0.22.0/pdfcraft-0.22.0-macos-universal.dmg",
+      "artifactSHA256": "ad45ca52a793c7cda1bae1acb6757b5ee12f07bfaec22ce4344e5e5460340634",
       "apps": [
         {
           "bundleName": "PdfCraft.app",
@@ -40149,9 +40304,9 @@
       "diagnostics": []
     },
     "peel": {
-      "caskVersion": "1.2.1",
-      "sourceURL": "https://github.com/TuguiDragos/Peel/releases/download/v1.2.1/Peel-1.2.1.zip",
-      "artifactSHA256": "47684c332c6963b5fe1f31d7bf25dc1b6eb9438bc2852f163bf1aec98d383aed",
+      "caskVersion": "1.4.0",
+      "sourceURL": "https://github.com/TuguiDragos/Peel/releases/download/v1.4.0/Peel-1.4.0.zip",
+      "artifactSHA256": "b5b7388ebe3ec7f9f01ac558b39122ec6b5c6c5319c11cbe8e6a72c8d3b035bc",
       "apps": [
         {
           "bundleName": "Peel.app",
@@ -40253,9 +40408,9 @@
       "diagnostics": []
     },
     "solidcraft": {
-      "caskVersion": "0.26.1",
-      "sourceURL": "https://github.com/tangency-labs/solidcraft/releases/download/v0.26.1/solidcraft-0.26.1-macos-universal.dmg",
-      "artifactSHA256": "d816d6ce8acbf1ef7d47937c1a5ef02684b6a0b5d8265ffe185d442130423832",
+      "caskVersion": "0.50.0",
+      "sourceURL": "https://github.com/tangency-labs/solidcraft/releases/download/v0.50.0/solidcraft-0.50.0-macos-universal.dmg",
+      "artifactSHA256": "87d33a9448754bc70a1ddd5910dc22edab865e7417431363b1830f88b4aa15c2",
       "apps": [
         {
           "bundleName": "SolidCraft.app",
