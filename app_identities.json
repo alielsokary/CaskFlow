@@ -46,15 +46,17 @@
       ]
     },
     "homebrew-app": {
-      "caskVersion": "0.4.3",
-      "sourceURL": "https://github.com/Homebrew/BrewUI/releases/download/v0.4.3/Homebrew-0.4.3.zip",
-      "artifactSHA256": "831b525a2531888572086f406db270e7540ac1c1450c465ffff4b3b2d1965a42",
+      "caskVersion": "0.6.0",
+      "sourceURL": "https://github.com/Homebrew/BrewUI/releases/download/v0.6.0/Homebrew-0.6.0.zip",
+      "artifactSHA256": "07892b0cc2023182111fe0d993f0e9b2daf4c1ced9c8f49283dec2617b51da92",
       "apps": [
         {
           "bundleName": "Homebrew.app",
           "bundleIdentifier": "sh.brew.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "easymac-cleaner": {
       "caskVersion": "1.4.1",
@@ -574,15 +576,17 @@
       ]
     },
     "lulu": {
-      "caskVersion": "4.5.1",
-      "sourceURL": "https://github.com/objective-see/LuLu/releases/download/v4.5.1/LuLu_4.5.1.dmg",
-      "artifactSHA256": "98f4d3427f4c6fccf9680fed22879be90a5ae81e80eb8616c1d758755b6bb624",
+      "caskVersion": "4.6.0",
+      "sourceURL": "https://github.com/objective-see/LuLu/releases/download/v4.6.0/LuLu_4.6.0.dmg",
+      "artifactSHA256": "dae17df4829c0974376cba7d4340a6d69f0d54ab02e7f763cac81ba3f735c6f9",
       "apps": [
         {
           "bundleName": "LuLu.app",
           "bundleIdentifier": "com.objective-see.lulu.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "git-credential-manager": {
       "caskVersion": "3.0.2",
@@ -721,15 +725,17 @@
       "diagnostics": []
     },
     "openlogi": {
-      "caskVersion": "0.8.6",
-      "sourceURL": "https://updates.openlogi.org/releases/v0.8.6/OpenLogi-v0.8.6-macos-arm64.dmg",
-      "artifactSHA256": "ba1cf960055606c6c48839f437dad82da1a62877cf1f17f16571fa275c4664cc",
+      "caskVersion": "0.9.0",
+      "sourceURL": "https://updates.openlogi.org/releases/v0.9.0/OpenLogi-v0.9.0-macos-arm64.dmg",
+      "artifactSHA256": "308b676d94be48c8a55f4953cd81699945d0d8740da06881d986a9f289837012",
       "apps": [
         {
           "bundleName": "OpenLogi.app",
           "bundleIdentifier": "org.openlogi.openlogi"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "ghostty": {
       "caskVersion": "1.4.0",
@@ -1304,7 +1310,14 @@
       "caskVersion": "2026.0301",
       "sourceURL": "https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20260301.pkg",
       "artifactSHA256": "19164fbfef08c30fd433f59203c8804abbbd685d3a344ef7f0ba8c1fd4157cb3",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "BasicTeX-2026-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "notion": {
       "caskVersion": "7.44.1",
@@ -1759,15 +1772,17 @@
       ]
     },
     "qlmarkdown": {
-      "caskVersion": "1.5.4",
-      "sourceURL": "https://github.com/sbarex/QLMarkdown/releases/download/1.5.4/QLMarkdown.zip",
-      "artifactSHA256": "d1286d3d4ada0c90ee8c4aafeef92cfc5eefcd98cc558d6234e9dff07e7121d9",
+      "caskVersion": "1.5.7",
+      "sourceURL": "https://github.com/sbarex/QLMarkdown/releases/download/1.5.7/QLMarkdown.zip",
+      "artifactSHA256": "96cc95553ee63557f7ec58f41a568ff1fe5bca95b6bcd3883709fa8337c685d4",
       "apps": [
         {
           "bundleName": "QLMarkdown.app",
           "bundleIdentifier": "org.sbarex.QLMarkdown"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mactex": {
       "caskVersion": "2026.0324",
@@ -1872,15 +1887,17 @@
       ]
     },
     "balenaetcher": {
-      "caskVersion": "2.1.7",
-      "sourceURL": "https://github.com/balena-io/etcher/releases/download/v2.1.7/balenaEtcher-2.1.7-arm64.dmg",
-      "artifactSHA256": "7408b5c5d3382e337f27a81aec8cc122b875b47809aca9b60a5a513100292344",
+      "caskVersion": "2.1.9",
+      "sourceURL": "https://github.com/balena-io/etcher/releases/download/v2.1.9/balenaEtcher-2.1.9-arm64.dmg",
+      "artifactSHA256": "44baa43cc425e6e236a7e6fc405fe9562e4955ddedc6e6f27e22d6e5905759fe",
       "apps": [
         {
           "bundleName": "balenaEtcher.app",
           "bundleIdentifier": "io.balena.etcher"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "telegram": {
       "caskVersion": "13.2.0,283494",
@@ -1920,15 +1937,17 @@
       "diagnostics": []
     },
     "vscodium": {
-      "caskVersion": "1.135.06055",
-      "sourceURL": "https://github.com/VSCodium/vscodium/releases/download/1.135.06055/VSCodium-darwin-arm64-1.135.06055.zip",
-      "artifactSHA256": "61ff9ebc3ac5563c63a0a9e1b479822647e7f2c3303b0629f15fefe9e291f7cc",
+      "caskVersion": "1.143.17232",
+      "sourceURL": "https://github.com/VSCodium/vscodium/releases/download/1.143.17232/VSCodium-darwin-arm64-1.143.17232.zip",
+      "artifactSHA256": "ade8f5e0ebf47e5ea9e2478844f150c68e43def192b6f8be05d0329d25ec0917",
       "apps": [
         {
           "bundleName": "VSCodium.app",
           "bundleIdentifier": "com.vscodium"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "figma": {
       "caskVersion": "126.11.11",
@@ -2106,15 +2125,17 @@
       "apps": []
     },
     "moonlight": {
-      "caskVersion": "6.1.0",
-      "sourceURL": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/Moonlight-6.1.0.dmg",
-      "artifactSHA256": "d494740eead8ad4e620cdc8feedb56083bc29cabbbeef34cb82585fd87725fa2",
+      "caskVersion": "6.2.0",
+      "sourceURL": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/Moonlight-6.2.0.dmg",
+      "artifactSHA256": "43617e5210d53968fcfb4a46526d1625a9056c6fe97e731673c31193dae776fc",
       "apps": [
         {
           "bundleName": "Moonlight.app",
           "bundleIdentifier": "com.moonlight-stream.Moonlight"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "keepassxc": {
       "caskVersion": "2.8.0,2.8.0-1",
@@ -2136,26 +2157,30 @@
       "apps": []
     },
     "raspberry-pi-imager": {
-      "caskVersion": "2.0.11.1",
-      "sourceURL": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.11.1/rpi-imager-v2.0.11.1.dmg",
-      "artifactSHA256": "2b4c5324c5ff04aa3bfb216795ae9e01cb54400752727353e13fb21e66c528a9",
+      "caskVersion": "2.0.12",
+      "sourceURL": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.12/rpi-imager-v2.0.12.dmg",
+      "artifactSHA256": "15b1a94c712c0032750855653c2bf129dceb401329fbce0a83d7cf05dc58a421",
       "apps": [
         {
           "bundleName": "Raspberry Pi Imager.app",
           "bundleIdentifier": "com.raspberrypi.rpi-imager"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "transmission": {
-      "caskVersion": "4.1.3",
-      "sourceURL": "https://github.com/transmission/transmission/releases/download/4.1.3/Transmission-4.1.3.dmg",
-      "artifactSHA256": "d622736c19990262f2ab12183e1acaa5b0dad5777ddc7db0a187c06e035a7e1a",
+      "caskVersion": "4.1.4",
+      "sourceURL": "https://github.com/transmission/transmission/releases/download/4.1.4/Transmission-4.1.4.dmg",
+      "artifactSHA256": "495c5d21d515c8deb859b0db6692fd5606644a1613c2cac87c1d3e7672755a59",
       "apps": [
         {
           "bundleName": "Transmission.app",
           "bundleIdentifier": "org.m0k.transmission"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "shottr": {
       "caskVersion": "1.10.0b",
@@ -2201,15 +2226,17 @@
       ]
     },
     "jetbrains-toolbox": {
-      "caskVersion": "3.8.1,3.8.1.88030",
-      "sourceURL": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.8.1.88030-arm64.dmg",
-      "artifactSHA256": "2f07b78168913476cdae4ea1c1fa74bb075a4bcb70c598a85de099785a6e9c73",
+      "caskVersion": "3.9.2,3.9.2.89815",
+      "sourceURL": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.9.2.89815-arm64.dmg",
+      "artifactSHA256": "aadcca519831d9aa18060ad9c89984fc7d69196a9f13f1e7dc17e43c708e0ec2",
       "apps": [
         {
           "bundleName": "JetBrains Toolbox.app",
           "bundleIdentifier": "com.jetbrains.toolbox"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "t3-code": {
       "caskVersion": "0.1.13",
@@ -2299,15 +2326,17 @@
       "diagnostics": []
     },
     "dockdoor": {
-      "caskVersion": "1.40.1",
-      "sourceURL": "https://github.com/ejbills/DockDoor/releases/download/1.40.1/DockDoor.dmg",
-      "artifactSHA256": "d04ddaf39e90bb0047b8bad161a63dddf0a3fba7d9662c80b0d01bfe8cea1522",
+      "caskVersion": "1.42.5",
+      "sourceURL": "https://github.com/ejbills/DockDoor/releases/download/1.42.5/DockDoor.dmg",
+      "artifactSHA256": "dced8f338319ab22e49101b00d44cbac79c33ab96c16abc2414abcf1c0825021",
       "apps": [
         {
           "bundleName": "DockDoor.app",
           "bundleIdentifier": "com.ethanbills.DockDoor"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "google-gemini": {
       "caskVersion": "1.150.3.1601",
@@ -2336,15 +2365,17 @@
       "diagnostics": []
     },
     "tableplus": {
-      "caskVersion": "26.10.22,802",
-      "sourceURL": "https://files.tableplus.com/macos/802/TablePlus.dmg",
-      "artifactSHA256": "80150687a0674a7f66d00f2a3e82353c74881a7b17229a3e6103cbfe93712d57",
+      "caskVersion": "27.4.0,854",
+      "sourceURL": "https://files.tableplus.com/macos/854/TablePlus.dmg",
+      "artifactSHA256": "8790066628bf7c80c177174f302805f94397a71109b066cb253d80b4badee744",
       "apps": [
         {
           "bundleName": "TablePlus.app",
           "bundleIdentifier": "com.tinyapp.TablePlus"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "puremac": {
       "caskVersion": "3.3.0",
@@ -2443,10 +2474,17 @@
       ]
     },
     "kicad": {
-      "caskVersion": "10.0.6",
-      "sourceURL": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.6/kicad-unified-universal-10.0.6.dmg",
-      "artifactSHA256": "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68",
-      "apps": []
+      "caskVersion": "10.0.8",
+      "sourceURL": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.8/kicad-unified-universal-10.0.8.dmg",
+      "artifactSHA256": "501d3e2933a385f1833497469f55326662df7e5d40401239826c40d6fa583f16",
+      "apps": [
+        {
+          "bundleName": "KiCad.app",
+          "bundleIdentifier": "org.kicad.kicad"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "alfred": {
       "caskVersion": "6.0.3,3225",
@@ -2756,15 +2794,17 @@
       "apps": []
     },
     "antigravity-ide": {
-      "caskVersion": "2.5.5,4923483625488384",
-      "sourceURL": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.5.5-4923483625488384/darwin-arm/Antigravity%20IDE.dmg",
-      "artifactSHA256": "cad67d6d30a537fcb3bb9a6100330040ec6bcb686e38069f1ff16fe42306a33e",
+      "caskVersion": "2.9.0,4671306730438656",
+      "sourceURL": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.9.0-4671306730438656/darwin-arm/Antigravity%20IDE.dmg",
+      "artifactSHA256": "0ebb9f7976d2c62aa950f20032fbc9dec241f325d6fe3a9a8614e1c787bbe12d",
       "apps": [
         {
           "bundleName": "Antigravity IDE.app",
           "bundleIdentifier": "com.google.antigravity-ide"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "anki": {
       "caskVersion": "26.09.2",
@@ -3039,15 +3079,17 @@
       ]
     },
     "wispr-flow": {
-      "caskVersion": "1.6.897",
-      "sourceURL": "https://dl.wisprflow.com/wispr-flow/darwin/arm64/dmgs/Flow-v1.6.897.dmg",
-      "artifactSHA256": "62c5a82cdc9344dccae85ba367a47390a2b5fa6158d968225b7622dd4644f85d",
+      "caskVersion": "1.6.1631",
+      "sourceURL": "https://dl.wisprflow.com/wispr-flow/darwin/arm64/dmgs/Flow-v1.6.1631.dmg",
+      "artifactSHA256": "479d0818cdc93619395ae33eddea786a4b05a30a66d87affbbe51f5af6ce2054",
       "apps": [
         {
           "bundleName": "Wispr Flow.app",
           "bundleIdentifier": "com.electron.wispr-flow"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "gcc-arm-embedded": {
       "caskVersion": "15.3.rel1",
@@ -3056,15 +3098,17 @@
       "apps": []
     },
     "pycharm": {
-      "caskVersion": "2026.2.3,262.10968.92",
-      "sourceURL": "https://download.jetbrains.com/python/pycharm-professional-2026.2.3-aarch64.dmg",
-      "artifactSHA256": "a388574b55d2c32c08b5d73ba0302c669081060ac20988dbb7677e843e2cefb0",
+      "caskVersion": "2026.3.0.2,263.7307.351",
+      "sourceURL": "https://download.jetbrains.com/python/pycharm-professional-2026.3.0.2-aarch64.dmg",
+      "artifactSHA256": "0c7f310214c1c96293c155306209db80341f68cce3cfe638128aa0488783e7d0",
       "apps": [
         {
           "bundleName": "PyCharm.app",
           "bundleIdentifier": "com.jetbrains.pycharm"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "skim": {
       "caskVersion": "1.7.16",
@@ -3255,15 +3299,17 @@
       ]
     },
     "bambu-studio": {
-      "caskVersion": "02.08.02.61,20260820225108",
-      "sourceURL": "https://github.com/bambulab/BambuStudio/releases/download/v02.08.02.61/Bambu_Studio_mac-v02.08.02.61-20260820225108.dmg",
-      "artifactSHA256": "cf648a95858fb630e1353c4987038df60d6caab693f18411fb95fb809f2d6926",
+      "caskVersion": "02.09.02.62,20261124164959",
+      "sourceURL": "https://github.com/bambulab/BambuStudio/releases/download/v02.09.02.62/Bambu_Studio_mac-v02.09.02.62-20261124164959.dmg",
+      "artifactSHA256": "bcd8bbec4b95e673badb156de56fe6a9d86987425a7cf7d89807771373a20213",
       "apps": [
         {
           "bundleName": "BambuStudio.app",
           "bundleIdentifier": "com.bambulab.bambu-studio"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "epic-games": {
       "caskVersion": "20.1.4",
@@ -3311,15 +3357,17 @@
       ]
     },
     "github-copilot-app": {
-      "caskVersion": "1.1.22",
-      "sourceURL": "https://github.com/github/app/releases/download/v1.1.22/GitHub-Copilot-darwin-arm64.dmg",
-      "artifactSHA256": "e4896f507c5f4e610fc8ea7bc154dc0ec10cf2ff24f666086657dd383f43755e",
+      "caskVersion": "1.5.0",
+      "sourceURL": "https://github.com/github/app/releases/download/v1.5.0/GitHub-Copilot-darwin-arm64.dmg",
+      "artifactSHA256": "6f7cb456e00b7849e19f1071c05d2dad64d82db7e950e056a018dd8934bf7c70",
       "apps": [
         {
           "bundleName": "GitHub Copilot.app",
           "bundleIdentifier": "com.github.githubapp"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "rstudio": {
       "caskVersion": "2026.09.0,174",
@@ -3433,15 +3481,17 @@
       ]
     },
     "vivaldi": {
-      "caskVersion": "8.2.4133.68",
-      "sourceURL": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.2.4133.68.universal.tar.xz",
-      "artifactSHA256": "d32bff705c3a525c8ea6bab13d32d9451c7906b0d193ea595a8613a55b3f7be0",
+      "caskVersion": "8.3.4191.47",
+      "sourceURL": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.3.4191.47.universal.tar.xz",
+      "artifactSHA256": "de510e5f1bdc203b9fdaca5b2c277d0c67533808a6fff3039b22f6244b4058e3",
       "apps": [
         {
           "bundleName": "Vivaldi.app",
           "bundleIdentifier": "com.vivaldi.Vivaldi"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "prismlauncher": {
       "caskVersion": "11.1.0",
@@ -3532,15 +3582,17 @@
       ]
     },
     "paseo": {
-      "caskVersion": "0.8.0",
-      "sourceURL": "https://github.com/getpaseo/paseo/releases/download/v0.8.0/Paseo-0.8.0-arm64.dmg",
-      "artifactSHA256": "f58810167b59eace88a8da35629d5c9b91e6293b4239cb7d1954b13a1ab9501e",
+      "caskVersion": "0.17.6",
+      "sourceURL": "https://github.com/getpaseo/paseo/releases/download/v0.17.6/Paseo-0.17.6-arm64.dmg",
+      "artifactSHA256": "3807556e33e6680a982138c534033b1e2101a6fc5a1c84ceb53d3614be6dfce5",
       "apps": [
         {
           "bundleName": "Paseo.app",
           "bundleIdentifier": "sh.paseo.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "termius": {
       "caskVersion": "10.0.6",
@@ -3554,15 +3606,17 @@
       ]
     },
     "aldente": {
-      "caskVersion": "1.39.3",
-      "sourceURL": "https://apphousekitchen.com/aldente/AlDente1.39.3.dmg",
-      "artifactSHA256": "aca6d1a060bb6347a8bb4d239233a1e897ab363cbaec0fea4c078481156af650",
+      "caskVersion": "1.40.3",
+      "sourceURL": "https://apphousekitchen.com/aldente/AlDente1.40.3.dmg",
+      "artifactSHA256": "47ef3b30415a049173ca564ec4d34bcedf22806934e613d1f9bf0723c88d7cdb",
       "apps": [
         {
           "bundleName": "AlDente.app",
           "bundleIdentifier": "com.apphousekitchen.aldente-pro"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "r-app": {
       "caskVersion": "4.6.1,sonoma",
@@ -3577,15 +3631,17 @@
       "apps": []
     },
     "sourcetree": {
-      "caskVersion": "4.2.19,317",
-      "sourceURL": "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_4.2.19_317.zip",
-      "artifactSHA256": "f9d6c65ba0b9d774add4977ad0482acde72ce91221e20f3136c009dccdf713bf",
+      "caskVersion": "4.2.21,326",
+      "sourceURL": "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_4.2.21_326.zip",
+      "artifactSHA256": "2d369e0266cae6ddc436e6af07d6bc56cbbadbe05153e2529a2046d29d0ba2f4",
       "apps": [
         {
           "bundleName": "Sourcetree.app",
           "bundleIdentifier": "com.torusknot.SourceTreeNotMAS"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "android-file-transfer": {
       "caskVersion": "5071136",
@@ -3632,15 +3688,17 @@
       ]
     },
     "bettertouchtool": {
-      "caskVersion": "6.836,2026091904",
-      "sourceURL": "https://folivora.ai/releases/btt6.836-2026091904.zip",
-      "artifactSHA256": "dfd6b57c93750616893f548c71efff9596645bfa4d5974fc97637cee06c29699",
+      "caskVersion": "6.1169,2026112302",
+      "sourceURL": "https://folivora.ai/releases/btt6.1169-2026112302.zip",
+      "artifactSHA256": "7eada6ceb1827fd390fed39514ac9d43ae1d43ab844999746c77a85a7b8dba5d",
       "apps": [
         {
           "bundleName": "BetterTouchTool.app",
           "bundleIdentifier": "com.hegenberg.BetterTouchTool"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "block-goose": {
       "caskVersion": "1.51.0",
@@ -51050,13 +51108,13 @@
       "diagnostics": []
     },
     "tinycast": {
-      "caskVersion": "0.12.8",
-      "sourceURL": "https://github.com/abue-ammar/tinycast/releases/download/v0.12.8/Tinycast-0.12.8.dmg",
-      "artifactSHA256": "22ce1ba191ce0d38473c09cec7ee8525b58ed28535935c67865fb2be5cb0fb4a",
+      "caskVersion": "0.17.0",
+      "sourceURL": "https://github.com/abue-ammar/tinycast/releases/download/v0.17.0/Tinycast-0.17.0.dmg",
+      "artifactSHA256": "d4e0b2335706c5417a49ef8ff9938f06460d01f0cbccb2084814f6907db74d31",
       "apps": [
         {
           "bundleName": "Tinycast.app",
-          "bundleIdentifier": "com.tinycast.app"
+          "bundleIdentifier": "com.abueammar.tinycast"
         }
       ],
       "extractionVersion": 5,
