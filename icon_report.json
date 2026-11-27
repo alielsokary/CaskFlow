@@ -1395,7 +1395,7 @@
     "status": "review",
     "reason": "non-exact .app selection: shallowest",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-11-27"
   },
   "maelstrom": {
     "status": "failed",
@@ -1650,10 +1650,10 @@
     "updated": "2026-11-01"
   },
   "oracle-jdk": {
-    "status": "curated",
-    "reason": "official vendor asset: https://github.com/oracle.png?size=256",
+    "status": "no_icon",
+    "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-07-08"
+    "updated": "2026-11-27"
   },
   "orka": {
     "status": "curated",

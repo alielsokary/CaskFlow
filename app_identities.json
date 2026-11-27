@@ -2249,7 +2249,78 @@
       "caskVersion": "2026.0324",
       "sourceURL": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
       "artifactSHA256": "e30af0640f51979a95b9f54084456d1e16749b79e12e65bdebd630fb2795ff1e",
-      "apps": []
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "false"
+          }
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-libgs-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "Ghostscript-10.07.0-mutool-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        },
+        {
+          "artifact": "TeXLive-2026-Start.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "LaTeXiT.app",
+          "bundleIdentifier": "fr.chachatelier.pierre.LaTeXiT",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/LaTeXiT.app"
+        },
+        {
+          "bundleName": "TeXShop.app",
+          "bundleIdentifier": "TeXShop",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/TeXShop.app"
+        },
+        {
+          "bundleName": "hintview.app",
+          "bundleIdentifier": "edu.hm.cs.hint.hintview",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/hintview.app"
+        },
+        {
+          "bundleName": "BibDesk.app",
+          "bundleIdentifier": "edu.ucsd.cs.mmccrack.bibdesk",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/BibDesk.app"
+        },
+        {
+          "bundleName": "TeX Live Utility.app",
+          "bundleIdentifier": "com.googlecode.mactlmgr.tlu",
+          "packageIdentifier": "org.tug.mactex.gui2026",
+          "installedPath": "/Applications/TeX/TeX Live Utility.app"
+        }
+      ]
     },
     "raspberry-pi-imager": {
       "caskVersion": "2.0.12",
@@ -3511,15 +3582,17 @@
       ]
     },
     "zcode": {
-      "caskVersion": "3.14.0",
-      "sourceURL": "https://cdn-zcode.z.ai/zcode/electron/releases/3.14.0/macos-arm64/ZCode-3.14.0-mac-arm64.dmg",
-      "artifactSHA256": "25fea2b05b7981b8ad3eea93db7f420baf19122e9462b8cc7fc06aa039a2bbc0",
+      "caskVersion": "4.0.0",
+      "sourceURL": "https://cdn-zcode.z.ai/zcode/electron/releases/4.0.0/macos-arm64/ZCode-4.0.0-mac-arm64.dmg",
+      "artifactSHA256": "a55661770402f80b1d69fd4fc66a2fa3b483810fe3337c636245e1cabf5cd918",
       "apps": [
         {
           "bundleName": "ZCode.app",
           "bundleIdentifier": "dev.zcode.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "proxyman": {
       "caskVersion": "26.6.1,260601",
@@ -4273,15 +4346,17 @@
       "diagnostics": []
     },
     "crisp": {
-      "caskVersion": "1.6.0",
-      "sourceURL": "https://github.com/didriksg/Crisp/releases/download/v1.6.0/Crisp.dmg",
-      "artifactSHA256": "06f464a7c35f2e23b3a38771a62623ae1b911a805aa11d3ea8ad9cbac3efd889",
+      "caskVersion": "1.7.1",
+      "sourceURL": "https://github.com/didriksg/Crisp/releases/download/v1.7.1/Crisp.dmg",
+      "artifactSHA256": "b24ebe3e78158abd437b3026b1c36f70259741bc9aa046a131d4072d97bcaf56",
       "apps": [
         {
           "bundleName": "Crisp.app",
           "bundleIdentifier": "com.crisp.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "onyx": {
       "caskVersion": "5.1.2",
@@ -4321,21 +4396,48 @@
       "diagnostics": []
     },
     "nextcloud": {
-      "caskVersion": "34.0.4",
-      "sourceURL": "https://github.com/nextcloud-releases/desktop/releases/download/v34.0.4/Nextcloud-34.0.4.pkg",
-      "artifactSHA256": "6cbcc1710cdc063ba377c5f5d04e5d6c8e1defc55f2d1b5e94303c1ad5744054",
-      "apps": []
+      "caskVersion": "35.0.3",
+      "sourceURL": "https://github.com/nextcloud-releases/desktop/releases/download/v35.0.3/Nextcloud-35.0.3.pkg",
+      "artifactSHA256": "8d555eb26caf2868d815ad5ba336ac58619a0dad77c8c8a5bbff5412804710f8",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ],
+      "packageCandidates": [
+        {
+          "bundleName": "Nextcloud.app",
+          "bundleIdentifier": "com.nextcloud.desktopclient",
+          "packageIdentifier": "com.nextcloud.desktopclient",
+          "installedPath": "/Applications/Nextcloud.app"
+        }
+      ]
     },
     "typora": {
-      "caskVersion": "1.14.10",
-      "sourceURL": "https://downloads.typora.io/mac/Typora-1.14.10.dmg",
-      "artifactSHA256": "a1a8e997c174577a69e33e3c1128719e886d1cd635b32f7243e9bab91ce0831c",
+      "caskVersion": "1.14.18",
+      "sourceURL": "https://downloads.typora.io/mac/Typora-1.14.18.dmg",
+      "artifactSHA256": "734b0186d671b2de087d39c1d72235c1f46022376f54d90999579e2effa963f1",
       "apps": [
         {
           "bundleName": "Typora.app",
           "bundleIdentifier": "abnerworks.Typora"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "markdown-preview": {
       "caskVersion": "0.0.75",
@@ -4523,15 +4625,17 @@
       "diagnostics": []
     },
     "tabby": {
-      "caskVersion": "1.0.235",
-      "sourceURL": "https://github.com/Eugeny/tabby/releases/download/v1.0.235/tabby-1.0.235-macos-arm64.zip",
-      "artifactSHA256": "1080a05d44c8acfe9301ec56c5ffa3ab0e472086d1ace8fe8a5e2cbf9f71c7d5",
+      "caskVersion": "1.0.238",
+      "sourceURL": "https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-macos-arm64.zip",
+      "artifactSHA256": "c877d8962f63a67baf40f3400b2d57a195f97d7b3547d7e804adae0e7df6754c",
       "apps": [
         {
           "bundleName": "Tabby.app",
           "bundleIdentifier": "org.tabby"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kiro": {
       "caskVersion": "1.5.49",
@@ -4730,15 +4834,17 @@
       ]
     },
     "qgis": {
-      "caskVersion": "4.2.2",
-      "sourceURL": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_2.dmg",
-      "artifactSHA256": "91b80ccd4d1a141615435223983b0b718c5e2c5283afc73f3780ad302f435951",
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_4_0.dmg",
+      "artifactSHA256": "0c87c163ab6d797479fc13957b0ecc80a3a5f78da99da2bd1219368f480a51cb",
       "apps": [
         {
-          "bundleName": "QGIS-final-4_2_2.app",
+          "bundleName": "QGIS-final-4_4_0.app",
           "bundleIdentifier": "org.qgis.qgis3"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "fork": {
       "caskVersion": "2.70.2",
@@ -4810,15 +4916,17 @@
       "diagnostics": []
     },
     "superwhisper": {
-      "caskVersion": "2.18.3",
-      "sourceURL": "https://builds.superwhisper.com/v2.18.3/superwhisper.zip",
-      "artifactSHA256": "45f52f78907ae49afc3f4729e52737591aec4b825171da709a574e61c069d1bf",
+      "caskVersion": "3.2.2",
+      "sourceURL": "https://builds.superwhisper.com/v3.2.2/superwhisper.zip",
+      "artifactSHA256": "d6d54e579ed3ff55c2c839fa1639897e730db3b81bdfe22d611ff006d00d9898",
       "apps": [
         {
           "bundleName": "superwhisper.app",
           "bundleIdentifier": "com.superduper.superwhisper"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "lunar": {
       "caskVersion": "6.11.3",
@@ -4945,15 +5053,17 @@
       ]
     },
     "lens": {
-      "caskVersion": "2026.9.20601",
-      "sourceURL": "https://api.k8slens.dev/binaries/Lens-2026.9.20601-latest-arm64.dmg",
-      "artifactSHA256": "62679820a44362672030021076938aebb04c36281d94375bc9279970ee4a7e48",
+      "caskVersion": "2026.11.261430",
+      "sourceURL": "https://api.k8slens.dev/binaries/Lens-2026.11.261430-latest-arm64.dmg",
+      "artifactSHA256": "a7074c8338e977bc4bd08c5196845e143f0fbf2c507723602d5016439607ed5d",
       "apps": [
         {
           "bundleName": "Lens.app",
           "bundleIdentifier": "com.electron.kontena-lens"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "motrix": {
       "caskVersion": "2.4.7",
@@ -5126,15 +5236,17 @@
       "diagnostics": []
     },
     "keyboardcleantool": {
-      "caskVersion": "8.3",
-      "sourceURL": "https://folivora.ai/releases/KeyboardCleanTool-8.3.zip",
-      "artifactSHA256": "13e2a061220626392b253ab41500871ac9bda1b92598d7a3077b483960256c93",
+      "caskVersion": "9.0",
+      "sourceURL": "https://folivora.ai/releases/KeyboardCleanTool9.zip",
+      "artifactSHA256": "c56cd9fb628f115c810bd8ce96e3917f660fd86587305a91728b1344817546cc",
       "apps": [
         {
           "bundleName": "KeyboardCleanTool.app",
           "bundleIdentifier": "com.hegenberg.KeyboardCleanTool"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "marta": {
       "caskVersion": "0.8.2",
@@ -5271,26 +5383,30 @@
       ]
     },
     "tencent-meeting": {
-      "caskVersion": "3.46.0.442,d33a84b584a220bd4772f72ca40653d9",
-      "sourceURL": "https://updatecdn.meeting.qq.com/cos/d33a84b584a220bd4772f72ca40653d9/TencentMeeting_0300000000_3.46.0.442.publish.arm64.officialwebsite.dmg",
-      "artifactSHA256": "05ff01258de27b940026ce6da3974148ff62c88207a34445806221fb3b677515",
+      "caskVersion": "3.48.1.401,3243fe53565109349a347594d6ad42e9",
+      "sourceURL": "https://updatecdn.meeting.qq.com/cos/3243fe53565109349a347594d6ad42e9/TencentMeeting_0300000000_3.48.1.401.publish.arm64.officialwebsite.dmg",
+      "artifactSHA256": "3871f957d03fb9c2492af020cb65ff3e20689d4d85b53c8ec643a7a58dec0016",
       "apps": [
         {
           "bundleName": "TencentMeeting.app",
           "bundleIdentifier": "com.tencent.meeting"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "claudebar": {
-      "caskVersion": "0.4.92",
-      "sourceURL": "https://github.com/tddworks/ClaudeBar/releases/download/v0.4.92/ClaudeBar-0.4.92.dmg",
-      "artifactSHA256": "b0f9d493208214203dc7435cf61ec3c4c45143c3dea3bccbe54bf49426e0004c",
+      "caskVersion": "0.5.29",
+      "sourceURL": "https://github.com/tddworks/ClaudeBar/releases/download/v0.5.29/ClaudeBar-0.5.29.dmg",
+      "artifactSHA256": "15e87a6c31d034b787e2f1c25a4bb1101f94645661bd0bdcb48c397045a579db",
       "apps": [
         {
           "bundleName": "ClaudeBar.app",
           "bundleIdentifier": "com.tddworks.claudebar"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "quicklook-video": {
       "caskVersion": "3.14",
@@ -5398,15 +5514,17 @@
       ]
     },
     "chatbox": {
-      "caskVersion": "1.23.3",
-      "sourceURL": "https://download.chatboxai.app/releases/Chatbox-1.23.3-arm64.dmg",
-      "artifactSHA256": "5da310fe46ad3f120420bbf8a9638e031e8a325b42bc9500760c63e841acc2da",
+      "caskVersion": "1.24.7",
+      "sourceURL": "https://download.chatboxai.app/releases/Chatbox-1.24.7-arm64.dmg",
+      "artifactSHA256": "3ac4c537424ac95740cb033bbb59434b59e208d5180da8c928bbd2a21ce25e04",
       "apps": [
         {
           "bundleName": "Chatbox.app",
           "bundleIdentifier": "xyz.chatboxapp.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "parallels": {
       "caskVersion": "27.0.2-58673",
@@ -5540,15 +5658,17 @@
       ]
     },
     "charles": {
-      "caskVersion": "5.2.1",
-      "sourceURL": "https://www.charlesproxy.com/assets/release/5.2.1/charles-proxy-5.2.1.dmg",
-      "artifactSHA256": "d233395a7fbb487f0fe20ddff16e02a65990add20d5aa9ce1e87a8f9ff0fe0d5",
+      "caskVersion": "5.2.3",
+      "sourceURL": "https://www.charlesproxy.com/assets/release/5.2.3/charles-proxy-5.2.3.dmg",
+      "artifactSHA256": "c6f08d40d39fc865b0d4e4989f89c428f43ba25b0e5404c7943bd981317ff0d2",
       "apps": [
         {
           "bundleName": "Charles.app",
           "bundleIdentifier": "com.xk72.Charles"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "downie": {
       "caskVersion": "4.13.6,5305",
@@ -5873,11 +5993,11 @@
       ]
     },
     "prusaslicer": {
-      "caskVersion": "2.9.6",
-      "sourceURL": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.6/PrusaSlicer-2.9.6.dmg",
-      "artifactSHA256": "94fd7b8a9f87c9631e1c71739b15b184fc5f4c0ceabd69072f1c78f229a4fe40",
+      "caskVersion": "2.9.7",
+      "sourceURL": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.7/PrusaSlicer-2.9.7.dmg",
+      "artifactSHA256": "f735f9d527823d159d9ac1e8f84ce1b74ea571e705e70e723bee546d070db60b",
       "apps": [],
-      "extractionVersion": 2,
+      "extractionVersion": 5,
       "diagnostics": [
         {
           "artifact": "PrusaSlicer.app",
@@ -6068,15 +6188,17 @@
       ]
     },
     "mullvad-browser": {
-      "caskVersion": "15.0.23",
-      "sourceURL": "https://cdn.mullvad.net/browser/15.0.23/mullvad-browser-macos-15.0.23.dmg",
-      "artifactSHA256": "ea480c7897b0aa673614b1c8b97fbb42a84e1ce5fc6c2da3d961d84195d636dd",
+      "caskVersion": "16.0.3",
+      "sourceURL": "https://cdn.mullvad.net/browser/16.0.3/mullvad-browser-macos-16.0.3.dmg",
+      "artifactSHA256": "28d7053a27eead62a8e551d2dbf460745508571c561f6226d00c867ef1e6c9b4",
       "apps": [
         {
           "bundleName": "Mullvad Browser.app",
           "bundleIdentifier": "net.mullvad.mullvadbrowser"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tabularis": {
       "caskVersion": "0.24.0",
@@ -6149,15 +6271,17 @@
       ]
     },
     "tradingview": {
-      "caskVersion": "3.4.1",
-      "sourceURL": "https://tvd-packages.tradingview.com/stable/3.4.1/darwin/TradingView.dmg",
-      "artifactSHA256": "cf8cd66b5bc7f3755e1d77c31e068ed7b40fce17a76df9b4086ebff04fe85e32",
+      "caskVersion": "3.5.1",
+      "sourceURL": "https://tvd-packages.tradingview.com/stable/3.5.1/darwin/TradingView.dmg",
+      "artifactSHA256": "cdad82143590dcdf82efcd9e7f0cb4c994d331cb3bc76c7a96362910d02d3c23",
       "apps": [
         {
           "bundleName": "TradingView.app",
           "bundleIdentifier": "com.tradingview.tradingviewapp.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "logseq": {
       "caskVersion": "2.0.1",
@@ -6316,15 +6440,17 @@
       ]
     },
     "llama-app": {
-      "caskVersion": "0.42.0",
-      "sourceURL": "https://github.com/ggml-org/Llama-macOS/releases/download/0.42.0/Llama.dmg",
-      "artifactSHA256": "26babd81703cd35ca1c6dd90df15c0fd56e1a053a34710c4d143ea8235b453c4",
+      "caskVersion": "0.49.0",
+      "sourceURL": "https://github.com/ggml-org/Llama-macOS/releases/download/0.49.0/Llama.dmg",
+      "artifactSHA256": "d9c92791f2de1410278c974c0c7a78c8f5c1cafbbf015d321e34083167f004c0",
       "apps": [
         {
           "bundleName": "Llama.app",
           "bundleIdentifier": "app.llama.Llama"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "proton-mail-bridge": {
       "caskVersion": "3.26.0",
@@ -6825,15 +6951,17 @@
       ]
     },
     "iloader": {
-      "caskVersion": "2.3.3",
-      "sourceURL": "https://github.com/nab138/iloader/releases/download/v2.3.3/iloader-darwin-universal.dmg",
-      "artifactSHA256": "9869447506cdbe990944f159f929b906cb71bb1d6d659efc52c8c9ca7675bcbd",
+      "caskVersion": "2.4.2",
+      "sourceURL": "https://github.com/nab138/iloader/releases/download/v2.4.2/iloader-darwin-universal.dmg",
+      "artifactSHA256": "e67b92eeaf16493991c1721aec3e2aaedde6670a4fa4a546c111718340bf0680",
       "apps": [
         {
           "bundleName": "iloader.app",
           "bundleIdentifier": "me.nabdev.iloader"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "wpsoffice": {
       "caskVersion": "12.1.26032,0024.21300060",
@@ -8501,15 +8629,17 @@
       ]
     },
     "bloom": {
-      "caskVersion": "1.5.42",
-      "sourceURL": "https://bloomapp.club/downloads/bloom/Bloom-v1.5.42.dmg",
-      "artifactSHA256": "2e285563f4dc6f973fd161e3484d6d4cd3a7e91fdb17a1ba43e8ccc54bc46a4d",
+      "caskVersion": "1.5.52",
+      "sourceURL": "https://bloomapp.club/downloads/bloom/Bloom-v1.5.52.dmg",
+      "artifactSHA256": "4a5cb55a2550270bbabb81c7a3cee6fe221156b56696b7777de7bb42d7c53f1f",
       "apps": [
         {
           "bundleName": "Bloom.app",
           "bundleIdentifier": "com.asiafu.Bloom"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mp3tag": {
       "caskVersion": "1.14.0",
@@ -9561,15 +9691,17 @@
       ]
     },
     "curseforge": {
-      "caskVersion": "1.321.1-39714",
-      "sourceURL": "https://curseforge.overwolf.com/electron/mac/CurseForge-1.321.1-39714-universal-mac.zip",
-      "artifactSHA256": "de3bc68efb4e57e10c6766c40334166afb01c13917fa3016894fff14de01c06d",
+      "caskVersion": "1.328.0-43478",
+      "sourceURL": "https://curseforge.overwolf.com/electron/mac/CurseForge-1.328.0-43478-universal-mac.zip",
+      "artifactSHA256": "f325c86a473a4733039be1af1c4edb5a7c8f41fdda5448ebc3adcc31c3ada20c",
       "apps": [
         {
           "bundleName": "CurseForge.app",
           "bundleIdentifier": "com.overwolf.curseforge"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "calendr": {
       "caskVersion": "1.25.3",
@@ -12171,15 +12303,17 @@
       ]
     },
     "reader": {
-      "caskVersion": "0.1.3229",
-      "sourceURL": "https://github.com/readwiseio/reader-desktop-releases/releases/download/reader-desktop-v0.1.3229/Reader_0.1.3229_universal.dmg",
-      "artifactSHA256": "58a1c55884dd4ef68cf967dd06f7310f68fde90e13d886ecea803fecba8c4555",
+      "caskVersion": "0.1.3607",
+      "sourceURL": "https://github.com/readwiseio/reader-desktop-releases/releases/download/reader-desktop-v0.1.3607/Reader_0.1.3607_universal.dmg",
+      "artifactSHA256": "2379890d3d27ccfdcca5263d7948db9adb18122f5944cb53e2d606f3ad2d6e25",
       "apps": [
         {
           "bundleName": "Reader.app",
           "bundleIdentifier": "io.readwise.read"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "donut": {
       "caskVersion": "0.30.0",
@@ -38652,9 +38786,9 @@
       "diagnostics": []
     },
     "zed-delta": {
-      "caskVersion": "0.19.0",
-      "sourceURL": "https://releases.delta.dev/releases/stable/0.19.0/macos/aarch64/Delta.app.zip",
-      "artifactSHA256": "7575a42a6e2ee8228600aeeba6422bc4fcc625195a4d5e58f256373e16112f88",
+      "caskVersion": "0.29.1",
+      "sourceURL": "https://releases.delta.dev/releases/stable/0.29.1/macos/aarch64/Delta.app.zip",
+      "artifactSHA256": "59b9c51229314c6e356c5e01810e33cb943330269ed5c79cec604ca48ad0f037",
       "apps": [
         {
           "bundleName": "Delta.app",
@@ -52809,6 +52943,46 @@
           "bundleIdentifier": "com.netease.uuremote",
           "packageIdentifier": "com.netease.uuremote",
           "installedPath": "/Applications/UURemote.app"
+        }
+      ]
+    },
+    "codex-app": {
+      "caskVersion": "26.623.141536",
+      "sourceURL": "https://persistent.oaistatic.com/codex-app-prod/Codex-darwin-arm64-26.623.141536.zip",
+      "artifactSHA256": "d948dc36b8358f5a2924b033fbf08398eea7860dc9e97cb5ab9b354490283a0a",
+      "apps": [
+        {
+          "bundleName": "Codex.app",
+          "bundleIdentifier": "com.openai.codex"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "oracle-jdk": {
+      "caskVersion": "27.0.1.1",
+      "sourceURL": "https://download.oracle.com/java/27/archive/jdk-27.0.1.1_macos-aarch64_bin.dmg",
+      "artifactSHA256": "0cbbbdc9fc2388a71b86e15cfb04104a0e229bddf76c86c2b24bb07579caad43",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "pm_install_check();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "jdk27.0.1.1.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     }
