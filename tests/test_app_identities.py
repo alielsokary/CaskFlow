@@ -131,6 +131,26 @@ def test_extraction_records_identity_even_when_app_has_no_extractable_icon(tmp_p
     assert load_manifest(output / MANIFEST)["casks"]["sample"]["apps"][0]["bundleIdentifier"] == "com.example.original"
 
 
+def test_scheduled_refresh_revisits_only_results_known_to_be_wrong():
+    from app_identities import needs_targeted_refresh
+    source = cask()
+    current = {"caskVersion": "1", "apps": [{"bundleName": "Renamed.app", "bundleIdentifier": "com.example.app"}]}
+
+    def rejected(reason):
+        return {"caskVersion": "1", "apps": [], "diagnostics": [{"artifact": "Renamed.app", "reason": reason}]}
+
+    assert needs_targeted_refresh(source, None)
+    assert not needs_targeted_refresh({**source, "artifacts": [{"pkg": ["Installer.pkg"]}]}, None)  # bulk backfill work
+    assert not needs_targeted_refresh(source, current)
+    assert not needs_targeted_refresh({**source, "version": "2"}, current)  # version bumps wait for the manual backfill
+    assert needs_targeted_refresh(source, {**current, "apps": [{"bundleName": "Old Name.app", "bundleIdentifier": "x.y"}]})
+    assert needs_targeted_refresh(source, rejected("unsupported CFBundleIdentifier: 'blockbench'"))
+    assert needs_targeted_refresh(source, rejected("unsupported CFBundleIdentifier: 'com.example.Pale Moon'"))
+    assert not needs_targeted_refresh(source, rejected("unsupported CFBundleIdentifier: 'path/app'"))
+    assert not needs_targeted_refresh(source, rejected("unsupported CFBundleIdentifier: None"))
+    assert not needs_targeted_refresh(source, rejected("no application payload under /Applications"))
+
+
 def test_backfill_revisits_missing_changed_sources_and_changed_checksums():
     from app_identities import needs_refresh
     source = cask()
@@ -191,20 +211,24 @@ def test_case_equivalent_artifact_name_and_empty_diagnostics(tmp_path):
     bundle = app(tmp_path, "original.app", "com.example.actual")
     result = extract_identities(cask(), tmp_path, archive)
     assert result["apps"] == [{"bundleName": "Renamed.app", "bundleIdentifier": "com.example.actual"}]
-    (bundle / "Contents/Info.plist").write_bytes(plistlib.dumps({"CFBundleIdentifier": "invalid_id"}))
+    (bundle / "Contents/Info.plist").write_bytes(plistlib.dumps({"CFBundleIdentifier": "path/app"}))
     result = extract_identities(cask(), tmp_path, archive)
     assert result["apps"] == []
-    assert result["diagnostics"] == [{"artifact": "Renamed.app", "reason": "unsupported CFBundleIdentifier: 'invalid_id'"}]
+    assert result["diagnostics"] == [{"artifact": "Renamed.app", "reason": "unsupported CFBundleIdentifier: 'path/app'"}]
 
 
-@pytest.mark.parametrize("identifier", ["blockbench", "AigcPanel", "com.example.app",
-                                       "", "invalid_id", "white space", "path/app", "trailing\n"])
+VALID_IDENTIFIERS = {"blockbench", "AigcPanel", "com.example.app",
+                     "com.CounterPath_Corporation.Bria", "com.mediahuman.YouTube to MP3"}
+
+
+@pytest.mark.parametrize("identifier", [*sorted(VALID_IDENTIFIERS),
+                                       "", " padded", "two  spaces", "trailing.", "path/app", "trailing\n"])
 def test_identifier_validation_from_extraction_through_release(tmp_path, identifier):
     app(tmp_path, "Original.app", identifier)
     archive = tmp_path / "app.zip"
     archive.write_bytes(b"archive")
     result = extract_identities(cask(), tmp_path, archive)
-    valid = identifier in {"blockbench", "AigcPanel", "com.example.app"}
+    valid = identifier in VALID_IDENTIFIERS
     expected = [{"bundleName": "Renamed.app", "bundleIdentifier": identifier}] if valid else []
     assert result["apps"] == expected
     assert bool(result["diagnostics"]) == (not valid)

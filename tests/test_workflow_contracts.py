@@ -114,6 +114,7 @@ def test_install_harvest_isolates_vendor_code_from_the_icons_writer():
 @pytest.mark.parametrize("cron,backfill,tokens,retry,expected", [
     ("43 15 * * *", "", "", "", "--limit 300"),
     ("7 3 1 * *", "", "", "", "--retry-parked"),
+    ("17 5 * * 1", "", "", "", "--identity-refresh --limit 50"),
     ("", "true", "", "", "--identity-backfill --limit 300"),
     ("", "true", "vlc asana", "", "--tokens vlc asana"),
     ("", "true", "vlc", "true", "--retry-parked"),

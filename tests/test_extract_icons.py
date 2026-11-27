@@ -444,6 +444,29 @@ def test_identity_backfill_includes_packages_and_suites(monkeypatch, tmp_path, m
     assert extracted == ["pkg", "suite"]
 
 
+def test_identity_refresh_revisits_only_results_known_to_be_wrong(monkeypatch, tmp_path):
+    import json
+    from types import SimpleNamespace
+
+    def known(name, version="1"):
+        return {"caskVersion": version, "apps": [{"bundleName": name, "bundleIdentifier": "com.example.test"}]}
+    rejected = {"apps": [], "diagnostics": [{"artifact": "Test.app", "reason": "unsupported CFBundleIdentifier: 'blockbench'"}]}
+    manifest = {"casks": {"current": known("Test.app"), "bumped": known("Test.app", "0"), "renamed": known("Old Test.app"),
+                          "rejected": rejected, "parked": known("Old Test.app")}}
+    casks = [_cask(token=t, version="1") for t in ["current", "bumped", "renamed", "missing", "rejected", "parked"]]
+    extracted = []
+    monkeypatch.setattr(extract_icons, "_load_api_casks", lambda _: casks)
+    monkeypatch.setattr(extract_icons, "load_report",
+                        lambda: {"parked": {"status": "failed", "attempts": extract_icons.MAX_ATTEMPTS}})
+    monkeypatch.setattr(extract_icons, "published_tokens", set)
+    monkeypatch.setattr(extract_icons, "_git", lambda *a: SimpleNamespace(returncode=0, stdout=json.dumps(manifest)))
+    monkeypatch.setattr(extract_icons, "load_install_counts", lambda: {"rejected": 10, "missing": 5})
+    monkeypatch.setattr(extract_icons, "_extract_status",
+                        lambda c, _: (extracted.append(c["token"]) or "ok", "exact"))
+    assert extract_icons.main(["--output-dir", str(tmp_path), "--limit", "50", "--identity-refresh"]) == 0
+    assert extracted == ["rejected", "missing", "renamed"]
+
+
 def test_main_reports_identities_independently_of_icon_success(monkeypatch, tmp_path, capsys):
     from app_identities import MANIFEST, load_manifest
     from style_standards import write_json

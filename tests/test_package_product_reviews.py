@@ -59,7 +59,7 @@ def test_invalid_review_cannot_be_published(case):
     elif case == "missing-receipt":
         del review["products"][0]["packageIdentifier"]
     elif case == "invalid-id":
-        review["products"][0]["bundleIdentifier"] = "invalid id"
+        review["products"][0]["bundleIdentifier"] = "invalid/id"
     else:
         del review["evidence"]["infoSHA256"]
     with pytest.raises(ValueError):
