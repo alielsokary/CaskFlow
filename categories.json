@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedDate": "2026-11-25",
-  "totalCasks": 5024,
+  "generatedDate": "2026-11-26",
+  "totalCasks": 5026,
   "categories": {
     "developerTools": {
       "displayName": "Developer Tools",
@@ -3033,6 +3033,10 @@
         "ai",
         "productivity"
       ]
+    },
+    "chapar": {
+      "primary": "developerTools",
+      "secondary": []
     },
     "charles": {
       "primary": "developerTools",
@@ -8790,6 +8794,12 @@
       "primary": "videoMedia",
       "secondary": []
     },
+    "insta360-wave-controller": {
+      "primary": "utilities",
+      "secondary": [
+        "videoMedia"
+      ]
+    },
     "install-disk-creator": {
       "primary": "utilities",
       "secondary": []
@@ -14405,6 +14415,10 @@
         "scienceEducation"
       ]
     },
+    "paradev": {
+      "primary": "developerTools",
+      "secondary": []
+    },
     "paragon-camptune": {
       "primary": "utilities",
       "secondary": []
@@ -19020,10 +19034,6 @@
     },
     "supernotes": {
       "primary": "productivity",
-      "secondary": []
-    },
-    "superset": {
-      "primary": "developerTools",
       "secondary": []
     },
     "superslicer": {

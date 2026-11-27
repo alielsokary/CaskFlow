@@ -4730,6 +4730,13 @@
     "og_desc": "From customer conversations to analytics, marketing, and team collaboration. An AI business OS that puts your customers at the center of your business."
   },
   {
+    "token": "chapar",
+    "homepage": "https://chapar.rest/",
+    "title": "Chapar",
+    "meta_desc": "A fast, private and offline API client for your REST, gRPC, GraphQL and WebSocket services.",
+    "og_desc": "A fast, private and offline API client for your REST, gRPC, GraphQL and WebSocket services."
+  },
+  {
     "token": "charles",
     "homepage": "https://www.charlesproxy.com/",
     "title": "Charles Web Debugging Proxy • HTTP Monitor / HTTP Proxy / HTTPS & SSL Proxy / Reverse Proxy",
@@ -31532,6 +31539,13 @@
     "title": "Insta360 | 360 Cameras - Official Website",
     "meta_desc": "Building better cameras. Insta360 empowers creators to capture every angle, tell richer stories, and share faster with smart cameras, AI editing tools, and accessories.",
     "og_desc": "Building better cameras. Insta360 empowers creators to capture every angle, tell richer stories, and share faster with smart cameras, AI editing tools, and accessories."
+  },
+  {
+    "token": "insta360-wave-controller",
+    "homepage": "https://www.insta360.com/download/insta360-wave",
+    "title": "Action Camera｜360° Camera - App, Firmware Download",
+    "meta_desc": "Click here to download dedicated apps for each Insta360 product.",
+    "og_desc": "Click here to download dedicated apps for each Insta360 product."
   },
   {
     "token": "install-disk-creator",
