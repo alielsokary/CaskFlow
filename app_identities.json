@@ -695,10 +695,17 @@
       "diagnostics": []
     },
     "flutter": {
-      "caskVersion": "3.47.5",
-      "sourceURL": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.47.5-stable.zip",
-      "artifactSHA256": "d4dd908b5f8f65515831b6d68ae33307a813f2b68947dded7a1994ee5ea7cead",
-      "apps": []
+      "caskVersion": "3.50.1",
+      "sourceURL": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.50.1-stable.zip",
+      "artifactSHA256": "872883d49965e0cc1d8e477d2d87f2f45930d13f94b34889e53783586f04c715",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "flutter",
+          "reason": "suite requires unsupported staging or target path"
+        }
+      ]
     },
     "chatgpt": {
       "caskVersion": "26.1120.50957",
@@ -876,15 +883,17 @@
       ]
     },
     "maccy": {
-      "caskVersion": "2.7.1",
-      "sourceURL": "https://github.com/p0deje/Maccy/releases/download/2.7.1/Maccy.app.zip",
-      "artifactSHA256": "f388aee34de09a0c7531631303785d9938bef9a92130e21ce1049c8f56aad077",
+      "caskVersion": "2.8.0",
+      "sourceURL": "https://github.com/p0deje/Maccy/releases/download/2.8.0/Maccy.app.zip",
+      "artifactSHA256": "e684e1ce0c60d7cffd3a2b182dc37bd7e88c29967a64a431a2c71be65b1d27e0",
       "apps": [
         {
           "bundleName": "Maccy.app",
           "bundleIdentifier": "org.p0deje.Maccy"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "session-manager-plugin": {
       "caskVersion": "1.2.896.0",
@@ -1006,9 +1015,9 @@
       "diagnostics": []
     },
     "karabiner-elements": {
-      "caskVersion": "16.3.0",
-      "sourceURL": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg",
-      "artifactSHA256": "19cce7bed3d48a722242ca683bd1bae406b6a87fed520728d1c91dee175b75e4",
+      "caskVersion": "17.0.0",
+      "sourceURL": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v17.0.0/Karabiner-Elements-17.0.0.dmg",
+      "artifactSHA256": "97730c7d4dc831cf2fb5b5ee534ed19f885b205bf8470bf6b201f932046a53aa",
       "apps": [
         {
           "bundleName": "Karabiner-Elements.app",
@@ -1135,15 +1144,17 @@
       "diagnostics": []
     },
     "lm-studio": {
-      "caskVersion": "0.4.25,1",
-      "sourceURL": "https://installers.lmstudio.ai/darwin/arm64/0.4.25-1/LM-Studio-0.4.25-1-arm64.dmg",
-      "artifactSHA256": "8bab857c3d2900e14ab46435f0d1471de068f165e761bb9c177093e8a25e1774",
+      "caskVersion": "0.4.29,2",
+      "sourceURL": "https://installers.lmstudio.ai/darwin/arm64/0.4.29-2/LM-Studio-0.4.29-2-arm64.dmg",
+      "artifactSHA256": "8120d709888370e86e46791b8445482e28615dab5f3e8972a9a22e0f90fcdb14",
       "apps": [
         {
           "bundleName": "LM Studio.app",
           "bundleIdentifier": "ai.elementlabs.lmstudio"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "postman": {
       "caskVersion": "12.38.6",
@@ -1172,9 +1183,9 @@
       "diagnostics": []
     },
     "macfuse": {
-      "caskVersion": "5.4.0",
-      "sourceURL": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.4.0/macfuse-5.4.0.dmg",
-      "artifactSHA256": "861814f0ac7fa8f6547ea40cdd49a36ac84bcc7d34f38a1fa74e8cf68b0401c5",
+      "caskVersion": "5.5.0",
+      "sourceURL": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.5.0/macfuse-5.5.0.dmg",
+      "artifactSHA256": "92c21ef2db4199bcf5bddc8e6efb57b23ecb9715f74ab38cba2c77ab226d3830",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -1258,10 +1269,17 @@
       "diagnostics": []
     },
     "temurin": {
-      "caskVersion": "26.0.2.1,1",
-      "sourceURL": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.2.1_1.pkg",
-      "artifactSHA256": "f03de2294ff4e02f5eda20c48ea8afe665809264b28dc249e82901718f05e3b8",
-      "apps": []
+      "caskVersion": "27.0.1.1,4",
+      "sourceURL": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jdk_aarch64_mac_hotspot_27.0.1.1_4.pkg",
+      "artifactSHA256": "3f54805362180e0cb8df754bb6447132b82a12999f60843e8d7d343957dbbe21",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "payload.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
+        }
+      ]
     },
     "basictex": {
       "caskVersion": "2026.0301",
@@ -1283,15 +1301,17 @@
       "diagnostics": []
     },
     "codexbar": {
-      "caskVersion": "0.62.0",
-      "sourceURL": "https://github.com/steipete/CodexBar/releases/download/v0.62.0/CodexBar-macos-universal-0.62.0.zip",
-      "artifactSHA256": "ddf0039731630bfffb2958e6ddb63906200e9af1b02dcc1b04b04d062774fb06",
+      "caskVersion": "0.85.0",
+      "sourceURL": "https://github.com/steipete/CodexBar/releases/download/v0.85.0/CodexBar-macos-universal-0.85.0.zip",
+      "artifactSHA256": "85a555b97b1d98dd43af4ae1b53cb40e40aaef117827a4bee55e7a1505678ae8",
       "apps": [
         {
           "bundleName": "CodexBar.app",
           "bundleIdentifier": "com.steipete.codexbar"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "google-drive": {
       "caskVersion": "131.0.2",
@@ -1481,37 +1501,52 @@
       ]
     },
     "bruno": {
-      "caskVersion": "4.1.0",
-      "sourceURL": "https://github.com/usebruno/bruno/releases/download/v4.1.0/bruno_4.1.0_arm64_mac.dmg",
-      "artifactSHA256": "31af43035099556492ce2196a87e88234caafdc897ccc2c9bfa62a321fc5df8e",
+      "caskVersion": "4.4.0",
+      "sourceURL": "https://github.com/usebruno/bruno/releases/download/v4.4.0/bruno_4.4.0_arm64_mac.dmg",
+      "artifactSHA256": "b9e7a4d8a371578116c67c20ae2892e840324d58be5a0407b2623701dd40f2a3",
       "apps": [
         {
           "bundleName": "Bruno.app",
           "bundleIdentifier": "com.usebruno.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "wireshark-app": {
-      "caskVersion": "4.6.8",
-      "sourceURL": "https://www.wireshark.org/download/osx/all-versions/Wireshark%204.6.8.dmg",
-      "artifactSHA256": "7de945ed1ba324259ba7e3b2ca2fe11a854cf48a33dc6d4423dd531e466a1f3a",
+      "caskVersion": "4.6.10",
+      "sourceURL": "https://www.wireshark.org/download/osx/all-versions/Wireshark%204.6.10.dmg",
+      "artifactSHA256": "1fa2b3cca5da747eedb83cb023f46b876edbf54dcc234b7d2a80863f417f036b",
       "apps": [
         {
           "bundleName": "Wireshark.app",
           "bundleIdentifier": "org.wireshark.Wireshark"
         }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Install ChmodBPF.pkg",
+          "reason": "declared package matched 2 files"
+        },
+        {
+          "artifact": "Add Wireshark to the system path.pkg",
+          "reason": "declared package matched 2 files"
+        }
       ]
     },
     "unity-hub": {
-      "caskVersion": "3.21.3",
-      "sourceURL": "https://public-cdn.cloud.unity3d.com/hub/prod/3.21.3/UnityHubSetup-3.21.3-arm64.dmg",
-      "artifactSHA256": "15c1c3b03f036845d727047364358ca821c88ee4108b666db5368417053a154e",
+      "caskVersion": "4.0.2",
+      "sourceURL": "https://public-cdn.cloud.unity3d.com/hub/prod/4.0.2/UnityHubSetup-4.0.2-arm64.dmg",
+      "artifactSHA256": "60d4379bf01e62e1c65886c4edc9d554254bd9a0b85c5523e937651b557ea622",
       "apps": [
         {
           "bundleName": "Unity Hub.app",
           "bundleIdentifier": "com.unity3d.unityhub"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "kitty": {
       "caskVersion": "0.51.1",
@@ -1590,15 +1625,17 @@
       "diagnostics": []
     },
     "calibre": {
-      "caskVersion": "9.15.0",
-      "sourceURL": "https://download.calibre-ebook.com/9.15.0/calibre-9.15.0.dmg",
-      "artifactSHA256": "1b3a7451175b73ae2baa28fe1bc1c53ee34d65b489881e7ec02c20f9e0ff6019",
+      "caskVersion": "9.19.0",
+      "sourceURL": "https://download.calibre-ebook.com/9.19.0/calibre-9.19.0.dmg",
+      "artifactSHA256": "207c80d80ace59cb21a4c52fa1c40843a8e860de100304e590da664db3abfb3f",
       "apps": [
         {
           "bundleName": "calibre.app",
           "bundleIdentifier": "net.kovidgoyal.calibre"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "1password": {
       "caskVersion": "8.12.46",
@@ -1647,15 +1684,17 @@
       ]
     },
     "linearmouse": {
-      "caskVersion": "0.11.4",
-      "sourceURL": "https://dl.linearmouse.org/v0.11.4/LinearMouse.dmg",
-      "artifactSHA256": "755127ba3cb053c50615dc1240ed7ad7fd7a337ab3f3bbb890a06644cd62d85f",
+      "caskVersion": "0.13.0",
+      "sourceURL": "https://dl.linearmouse.org/v0.13.0/LinearMouse.dmg",
+      "artifactSHA256": "609276d5db79874034c9469a4eb56ccde6ed6fd01c52404f41fd4b493042789b",
       "apps": [
         {
           "bundleName": "LinearMouse.app",
           "bundleIdentifier": "com.lujjjh.LinearMouse"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "github": {
       "caskVersion": "3.7.1-534cde99",
@@ -1745,15 +1784,17 @@
       ]
     },
     "gimp": {
-      "caskVersion": "3.2.6",
-      "sourceURL": "https://download.gimp.org/gimp/v3.2/macos/gimp-3.2.6-arm64.dmg",
-      "artifactSHA256": "854573aec2be6a185aa021109c3c0ca94f210379204b704231bdd191b4060294",
+      "caskVersion": "3.2.8",
+      "sourceURL": "https://download.gimp.org/gimp/v3.2/macos/gimp-3.2.8-arm64.dmg",
+      "artifactSHA256": "06404a375106b7613ba3a14c7d8d9a7cbe18b9b9e2b2050bb72f3162cbcfc395",
       "apps": [
         {
           "bundleName": "GIMP.app",
           "bundleIdentifier": "org.gimp.gimp"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "cyberduck": {
       "caskVersion": "9.5.4,45528",
@@ -1813,15 +1854,17 @@
       ]
     },
     "telegram": {
-      "caskVersion": "12.10,282985",
-      "sourceURL": "https://osx.telegram.org/updates/Telegram-12.10.282985.app.zip",
-      "artifactSHA256": "609cf5bbed3106f919ed6145f5122f125ded88086ee6e3aeac705d03d705248d",
+      "caskVersion": "13.2.0,283494",
+      "sourceURL": "https://osx.telegram.org/updates/Telegram-13.2.0.283494.app.zip",
+      "artifactSHA256": "614418f797eb875fafecfcbcc21cc23a61cfab98c70012cefe6b94a338478c91",
       "apps": [
         {
           "bundleName": "Telegram.app",
           "bundleIdentifier": "ru.keepcoder.Telegram"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mos": {
       "caskVersion": "4.2.1,20260531.1",
@@ -1835,15 +1878,17 @@
       ]
     },
     "rustdesk": {
-      "caskVersion": "1.4.9",
-      "sourceURL": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64.dmg",
-      "artifactSHA256": "f7935597b247d42c8f2a2ed71176a9f5868018cd9e1a33b8096418a668c8caf0",
+      "caskVersion": "1.5.3",
+      "sourceURL": "https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-aarch64.dmg",
+      "artifactSHA256": "e6d30fa1633d772c48935907c208ca4e555a856fb2038af3aaa87a327c29360b",
       "apps": [
         {
           "bundleName": "RustDesk.app",
           "bundleIdentifier": "com.carriez.rustdesk"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "vscodium": {
       "caskVersion": "1.135.06055",
@@ -1857,15 +1902,17 @@
       ]
     },
     "figma": {
-      "caskVersion": "126.8.18",
-      "sourceURL": "https://desktop.figma.com/mac-arm/Figma-126.8.18.zip",
-      "artifactSHA256": "b35e1f5827d6933b15f52fda1dad8e65067c9e6f31a486ca4dc1f3b00a17bb05",
+      "caskVersion": "126.11.11",
+      "sourceURL": "https://desktop.figma.com/mac-arm/Figma-126.11.11.zip",
+      "artifactSHA256": "d52d56de2bf91e5e5d6feb2215c14d49a009a2cee9a3e5708e24f54f514bc2cc",
       "apps": [
         {
           "bundleName": "Figma.app",
           "bundleIdentifier": "com.figma.Desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "monitorcontrol": {
       "caskVersion": "4.4.0",
@@ -1879,9 +1926,9 @@
       ]
     },
     "windows-app": {
-      "caskVersion": "11.4.1",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.4.1_installer.pkg",
-      "artifactSHA256": "346b9cc2e97ce9d82bdff7c565983b9061f27c3aec38831d3c46e64a1bdfbc75",
+      "caskVersion": "11.4.5",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.4.5_installer.pkg",
+      "artifactSHA256": "bc7ed3e01cc207c095fdaac8adf328d4d92f47c43ba980a9d5850ddab44688ba",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -1963,15 +2010,17 @@
       ]
     },
     "alt-tab": {
-      "caskVersion": "11.7.0",
-      "sourceURL": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.7.0/AltTab-11.7.0.zip",
-      "artifactSHA256": "3c6a13db8325b6a730b5578f0862dc60c4cb28b2fb7fd4144a790bf02bac9a9f",
+      "caskVersion": "11.10.2",
+      "sourceURL": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.2/AltTab-11.10.2.zip",
+      "artifactSHA256": "5a2a821a83be1092df0f63d2403359ef2f7d52ad39cec36d930e4c7554cc045b",
       "apps": [
         {
           "bundleName": "AltTab.app",
           "bundleIdentifier": "com.lwouis.alt-tab-macos"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "audacity": {
       "caskVersion": "4.0.0",
@@ -2087,15 +2136,17 @@
       ]
     },
     "podman-desktop": {
-      "caskVersion": "1.29.3",
-      "sourceURL": "https://github.com/containers/podman-desktop/releases/download/v1.29.3/podman-desktop-1.29.3-arm64.dmg",
-      "artifactSHA256": "9cf9b228da2cf95ee76a7c0435920ea8f71cdca75785a10bc6eb3cd303f68ba2",
+      "caskVersion": "1.31.0",
+      "sourceURL": "https://github.com/containers/podman-desktop/releases/download/v1.31.0/podman-desktop-1.31.0-arm64.dmg",
+      "artifactSHA256": "ac35c0adf00c526852a6a5dfe4838eaad5b3413262452dbb31b6dededa5cf596",
       "apps": [
         {
           "bundleName": "Podman Desktop.app",
           "bundleIdentifier": "io.podmandesktop.PodmanDesktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "blackhole-16ch": {
       "caskVersion": "0.7.1",
@@ -2183,26 +2234,30 @@
       ]
     },
     "grok-bot": {
-      "caskVersion": "0.57.1",
-      "sourceURL": "https://downloads.cursor.com/sand/stable/darwin-arm64/0.57.1/Grok_Bot_0.57.1.dmg",
-      "artifactSHA256": "0ecb5036add3259a100e15bd6d0ea0ab2cb1ed8dcb9a19f7e9633abcef869fa3",
+      "caskVersion": "1.3.0",
+      "sourceURL": "https://downloads.cursor.com/sand/stable/darwin-arm64/1.3.0/Grok_Bot_1.3.0.dmg",
+      "artifactSHA256": "85914908760b4503962ac9794622a16877657be77d5a2925ba99c2fc37d80a8c",
       "apps": [
         {
           "bundleName": "Grok Bot.app",
           "bundleIdentifier": "com.anysphere.sand"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "zen": {
-      "caskVersion": "1.22.2b",
-      "sourceURL": "https://github.com/zen-browser/desktop/releases/download/1.22.2b/zen.macos-universal.dmg",
-      "artifactSHA256": "2332673353551bfe4607aa6edd3c3ee3149652651a7698acabad935612c93943",
+      "caskVersion": "1.24.3b",
+      "sourceURL": "https://github.com/zen-browser/desktop/releases/download/1.24.3b/zen.macos-universal.dmg",
+      "artifactSHA256": "86f6a01e786095d7661c68357396a00cd3e169d6ae5e176245077bb701af8b65",
       "apps": [
         {
           "bundleName": "Zen.app",
           "bundleIdentifier": "app.zen-browser.zen"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "dockdoor": {
       "caskVersion": "1.40.1",
@@ -2216,26 +2271,30 @@
       ]
     },
     "google-gemini": {
-      "caskVersion": "1.116.5.889",
+      "caskVersion": "1.150.3.1601",
       "sourceURL": "https://dl.google.com/release2/j33ro/release/Gemini.dmg",
-      "artifactSHA256": "5481aafb004d6c87da016f6c1bcbc44440d54766e06cb24829e2b0791175ca23",
+      "artifactSHA256": "9b35abffb8aa5991d75094d13762cbe38ab41a01af5627617f68ad4fd55dbb16",
       "apps": [
         {
           "bundleName": "Gemini.app",
           "bundleIdentifier": "com.google.GeminiMacOS"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "signal": {
-      "caskVersion": "8.27.0",
-      "sourceURL": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.27.0.zip",
-      "artifactSHA256": "0ba4aeddb3042de54520aee97e01bb325acb67876d59f743ae77353506967d0c",
+      "caskVersion": "8.36.0",
+      "sourceURL": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.36.0.zip",
+      "artifactSHA256": "2a5f42c7c9bd8fbb10ac082877832a76842ce82e4eb1389de335df11e13d08e3",
       "apps": [
         {
           "bundleName": "Signal.app",
           "bundleIdentifier": "org.whispersystems.signal-desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tableplus": {
       "caskVersion": "26.10.22,802",
@@ -2434,15 +2493,17 @@
       ]
     },
     "handy": {
-      "caskVersion": "0.9.7",
-      "sourceURL": "https://github.com/cjpais/Handy/releases/download/v0.9.7/Handy_0.9.7_aarch64.dmg",
-      "artifactSHA256": "f8a2ed7bbc8f6e814ae620609a184212fc9f49dac19a8921bd80ab0f4bd5783c",
+      "caskVersion": "0.10.2",
+      "sourceURL": "https://github.com/cjpais/Handy/releases/download/v0.10.2/Handy_0.10.2_aarch64.dmg",
+      "artifactSHA256": "b8b893fbf9e8262abb0e363cb0ac6715cc69eac2fd6ffd8c0785278083a0e3ca",
       "apps": [
         {
           "bundleName": "Handy.app",
           "bundleIdentifier": "com.pais.handy"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tor-browser": {
       "caskVersion": "15.0.23",
@@ -40100,9 +40161,9 @@
       "diagnostics": []
     },
     "herdr-app": {
-      "caskVersion": "0.1.10",
-      "sourceURL": "https://releases.herdr.dev/app/0.1.10/Herdr.dmg",
-      "artifactSHA256": "08be7b314e00dc3926df12616a1a0b4464771ff3bd0916c41a26d7d921ca3556",
+      "caskVersion": "0.1.18",
+      "sourceURL": "https://releases.herdr.dev/app/0.1.18/Herdr.dmg",
+      "artifactSHA256": "694f37e062fca24a9e043867aebbbacdd94b53a14c3ada73b213b155e5b0a365",
       "apps": [
         {
           "bundleName": "Herdr.app",
