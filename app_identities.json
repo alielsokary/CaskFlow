@@ -52985,6 +52985,19 @@
           "reason": "no application payload under /Applications"
         }
       ]
+    },
+    "stablebar": {
+      "caskVersion": "0.19.0",
+      "sourceURL": "https://github.com/stablebox/StableBar/releases/download/v0.19.0/StableBar.dmg",
+      "artifactSHA256": "9c27305fa99a7377dd4a61656714b7893229d6a6c82800fe90b3c19a609b0f7e",
+      "apps": [
+        {
+          "bundleName": "StableBar.app",
+          "bundleIdentifier": "org.stablebar.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     }
   }
 }
