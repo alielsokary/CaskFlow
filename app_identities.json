@@ -51668,6 +51668,59 @@
       ],
       "extractionVersion": 5,
       "diagnostics": []
+    },
+    "chapar": {
+      "caskVersion": "0.14.1",
+      "sourceURL": "https://github.com/chapar-rest/chapar/releases/download/v0.14.1/chapar-macos-v0.14.1-arm64.dmg",
+      "artifactSHA256": "4345fb04985656b5bca3da6ddc5b4e510120444f395e2b4be6e2eb1ff614e1ca",
+      "apps": [
+        {
+          "bundleName": "Chapar.app",
+          "bundleIdentifier": "rest.chapar.app"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "paradev": {
+      "caskVersion": "2.0.12",
+      "sourceURL": "https://github.com/ParadevAI/Paradev/releases/download/desktop-v2.0.12/Paradev-arm64.dmg",
+      "artifactSHA256": "fa223394efd8bd7f6e6520c86cb18af888edab0f9df9a49d275498362dd787e7",
+      "apps": [
+        {
+          "bundleName": "Paradev.app",
+          "bundleIdentifier": "com.superset.desktop"
+        }
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
+    },
+    "insta360-wave-controller": {
+      "caskVersion": "1.1.0,build7,_20261008_101106_signed_1791425478377,85661444411946edb17399282f5b0683",
+      "sourceURL": "https://wassets.insta360.com/common/85661444411946edb17399282f5b0683/Insta360WaveController_1.1.0(build7)_20261008_101106_signed_1791425478377.pkg",
+      "artifactSHA256": "f63958145e6d658a0296f6232c7776712f7dc525d85da11f5d632df49fd2fe1d",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "volume-check",
+          "attributes": {
+            "script": "volume_check()"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        },
+        {
+          "artifact": "Insta360_Wave_Controller.pkg/PackageInfo",
+          "reason": "invalid PackageInfo: missing package identifier or relocatable payload"
+        }
+      ]
     }
   }
 }
