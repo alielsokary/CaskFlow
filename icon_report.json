@@ -591,7 +591,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-11-27"
   },
   "dremel-slicer": {
     "status": "review",
@@ -897,7 +897,7 @@
     "status": "no_icon",
     "reason": "no .app found in expanded artifact",
     "attempts": 0,
-    "updated": "2026-09-19"
+    "updated": "2026-11-27"
   },
   "gitkraken-cli": {
     "status": "no_icon",
