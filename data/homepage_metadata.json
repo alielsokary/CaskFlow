@@ -47091,6 +47091,13 @@
     "og_desc": "Multi-Platform Package Manager for Stable Diffusion - LykosAI/StabilityMatrix"
   },
   {
+    "token": "stablebar",
+    "homepage": "https://stablebar.app/",
+    "title": "StableBar: a native, customizable menu bar for macOS",
+    "meta_desc": "A free, open-source menu bar and status bar for macOS, and an alternative to SketchyBar. Themes, widgets, popups and AeroSpace, yabai, OmniWM or Rift workspaces.",
+    "og_desc": "Themes, widgets and popups, set up in the app or in plain JSON. Free and open source."
+  },
+  {
     "token": "stack",
     "homepage": "https://www.transip.nl/stack/",
     "title": "Jouw online Cloudopslag met STACK. Own it / TransIP",
