@@ -22,7 +22,7 @@ from urllib.request import urlopen
 from style_standards import write_json
 
 from app_identities import (MANIFEST, _safe_relative, artifact_matches, declared_artifact_apps, load_manifest, merge_extractions,
-                            needs_refresh, record_extraction)
+                            needs_refresh, needs_targeted_refresh, record_extraction)
 
 from icons_state import (  # noqa: F401  (re-exported for curate_icons/tests)
     ICONS_BRANCH,
@@ -892,6 +892,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--tokens", nargs="*", help="Extract exactly these casks")
     parser.add_argument("--identity-backfill", action="store_true",
                         help="Reinspect existing icons whose identity metadata is missing or outdated")
+    parser.add_argument("--identity-refresh", action="store_true",
+                        help="Reinspect only identities known to be wrong: missing, renamed apps, newly accepted IDs")
     parser.add_argument("--retry-parked", action="store_true",
                         help="Retry every failed-parked token (attempts >= MAX_ATTEMPTS)")
     parser.add_argument("--limit", type=int, default=50, help="Batch cap (default 50)")
@@ -908,13 +910,14 @@ def main(argv: list[str] | None = None) -> int:
     by_token = {c["token"]: c for c in api_casks}
 
     report = load_report()
-    if args.identity_backfill and not args.tokens and not args.retry_parked:
+    if (args.identity_backfill or args.identity_refresh) and not args.tokens and not args.retry_parked:
         show = _git(REPO_ROOT, "show", f"FETCH_HEAD:{MANIFEST}")
         identities = json.loads(show.stdout).get("casks", {}) if show.returncode == 0 else {}
         counts = load_install_counts()
         from classify_new_casks import is_main_cask
+        stale = needs_refresh if args.identity_backfill else needs_targeted_refresh
         batch = [c for c in api_casks if is_main_cask(c) and eligibility(c) is None
-                 and needs_refresh(c, identities.get(c["token"]))
+                 and stale(c, identities.get(c["token"]))
                  and report.get(c["token"], {}).get("attempts", 0) < MAX_ATTEMPTS]
         batch.sort(key=lambda c: counts.get(c["token"], 0), reverse=True)
         batch = batch[:args.limit]
