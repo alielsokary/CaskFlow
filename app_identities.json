@@ -2582,15 +2582,17 @@
       ]
     },
     "fluidvoice": {
-      "caskVersion": "1.6.9",
-      "sourceURL": "https://github.com/altic-dev/FluidVoice/releases/download/v1.6.9/Fluid-oss-1.6.9.dmg",
-      "artifactSHA256": "d8fb7861d479748bb9905b34e058bc0b106efb3c1767b397f9b2cb604a9357a7",
+      "caskVersion": "1.6.13",
+      "sourceURL": "https://github.com/altic-dev/FluidVoice/releases/download/v1.6.13/Fluid-oss-1.6.13.dmg",
+      "artifactSHA256": "8da47aba78de572973c287ab5e33d9eefc4b8938f69bbff99249e28900ce49aa",
       "apps": [
         {
           "bundleName": "FluidVoice.app",
           "bundleIdentifier": "com.FluidApp.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "microsoft-word": {
       "caskVersion": "16.115.26112215",
@@ -2869,15 +2871,17 @@
       "diagnostics": []
     },
     "openclaw": {
-      "caskVersion": "2026.9.5",
-      "sourceURL": "https://github.com/openclaw/openclaw/releases/download/v2026.9.5/OpenClaw-2026.9.5.dmg",
-      "artifactSHA256": "63df4287eca0350df49e792b376a13d24414f0989e0ab382ba6afca2519439f5",
+      "caskVersion": "2026.11.10",
+      "sourceURL": "https://github.com/openclaw/openclaw/releases/download/v2026.11.10/OpenClaw-2026.11.10.dmg",
+      "artifactSHA256": "3e088264e56ff1149c30b048edfb05838fb4a475ffad497aeebe51c4e6d90b72",
       "apps": [
         {
           "bundleName": "OpenClaw.app",
           "bundleIdentifier": "ai.openclaw.mac"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "crossover": {
       "caskVersion": "26.3.0",
@@ -2897,21 +2901,69 @@
       "apps": []
     },
     "clash-verge-rev": {
-      "caskVersion": "2.5.2",
-      "sourceURL": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_aarch64.dmg",
-      "artifactSHA256": "94d29405980b5d1d3419dd1de485db3a234d35cef058f79dcce595e01b697219",
+      "caskVersion": "2.5.10",
+      "sourceURL": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg",
+      "artifactSHA256": "40d4a7da4543d75f573a5cfcc31543b0b4bf7e02caa122a9ca50654859585839",
       "apps": [
         {
           "bundleName": "Clash Verge.app",
           "bundleIdentifier": "io.github.clash-verge-rev.clash-verge-rev"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "microsoft-outlook": {
-      "caskVersion": "16.113.26091740",
-      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.113.26091740_Installer.pkg",
-      "artifactSHA256": "c8ce6b36b6c2f4b5bf1b907e006376b12a18e6bdebcbf5178334733db95fc5d7",
-      "apps": []
+      "caskVersion": "16.115.26110837",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.115.26110837_Installer.pkg",
+      "artifactSHA256": "89a5f392de320615c0940716d19778d8c1ef3a012130147aef87d000a0c25675",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "pkg",
+          "reason": "package choices require installed receipt verification"
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "enabled": "false",
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "choice",
+          "attributes": {
+            "start_selected": "true"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
+        }
+      ]
     },
     "antigravity-ide": {
       "caskVersion": "2.9.0,4671306730438656",
@@ -2940,15 +2992,17 @@
       "diagnostics": []
     },
     "comfy": {
-      "caskVersion": "1.0.47,260908ensm0r3cr",
-      "sourceURL": "https://download.todesktop.com/241012ess7yxs0e/Comfy%20Desktop%201.0.47%20-%20Build%20260908ensm0r3cr-arm64-mac.zip",
-      "artifactSHA256": "b6e3725799217849907b2dac5da8c2326c18885d6ca14329e0150278947f882e",
+      "caskVersion": "1.2.2,261125wtbx8bz4v",
+      "sourceURL": "https://download.todesktop.com/241012ess7yxs0e/Comfy%20Desktop%201.2.2%20-%20Build%20261125wtbx8bz4v-arm64-mac.zip",
+      "artifactSHA256": "e4aa89fc1e2daba2b6ff115e872cbe3a7381711589070a8e786f9ab619d16714",
       "apps": [
         {
           "bundleName": "Comfy Desktop.app",
           "bundleIdentifier": "com.todesktop.241012ess7yxs0e"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "mysqlworkbench": {
       "caskVersion": "26.10.0",
@@ -2977,15 +3031,17 @@
       "diagnostics": []
     },
     "syncthing-app": {
-      "caskVersion": "2.1.5-1",
-      "sourceURL": "https://github.com/syncthing/syncthing-macos/releases/download/v2.1.5-1/Syncthing-2.1.5-1.dmg",
-      "artifactSHA256": "50903a2a6221856e1c36e3c5c5ff39e897053d29aa1f685ad576622c93069e88",
+      "caskVersion": "2.1.6-1",
+      "sourceURL": "https://github.com/syncthing/syncthing-macos/releases/download/v2.1.6-1/Syncthing-2.1.6-1.dmg",
+      "artifactSHA256": "f81d091bb19c42b3bb7a2fda9e80f1794cdb27fadb18b094b0c99b53ef571e2d",
       "apps": [
         {
           "bundleName": "Syncthing.app",
           "bundleIdentifier": "com.github.xor-gate.syncthing-macosx"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "applite": {
       "caskVersion": "1.4.2",
@@ -3010,26 +3066,30 @@
       ]
     },
     "coteditor": {
-      "caskVersion": "7.1.0",
-      "sourceURL": "https://github.com/coteditor/CotEditor/releases/download/7.1.0/CotEditor_7.1.0.dmg",
-      "artifactSHA256": "55ab705fdb5806b40899c637c6232713da3c9919986016d49aab41ebadf1d88c",
+      "caskVersion": "7.1.3",
+      "sourceURL": "https://github.com/coteditor/CotEditor/releases/download/7.1.3/CotEditor_7.1.3.dmg",
+      "artifactSHA256": "c8cbe6437434516bb23f93efe057fd058ad56ded5523ac113081a8ae68dab184",
       "apps": [
         {
           "bundleName": "CotEditor.app",
           "bundleIdentifier": "com.coteditor.CotEditor"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "anydesk": {
-      "caskVersion": "9.8.0",
+      "caskVersion": "9.8.1",
       "sourceURL": "https://download.anydesk.com/anydesk.dmg",
-      "artifactSHA256": "6c1637f89b34cfbfbb4d0d02c3fe81428acd8defcea9b0ac20ff65fdcc041449",
+      "artifactSHA256": "b2ce747fc441e4d4331c26c0d0b562b22090d6fd08fa86db6d086dc8b5197db1",
       "apps": [
         {
           "bundleName": "AnyDesk.app",
           "bundleIdentifier": "com.philandro.anydesk"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "notunes": {
       "caskVersion": "3.5",
@@ -3093,11 +3153,11 @@
       "sourceURL": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_darwin_arm64.dmg",
       "artifactSHA256": "8de08bd435ef8ae0fc5fbd6acefa9c68e62fb898c5ae0fbdacd26853bea9d4d6",
       "apps": [],
-      "extractionVersion": 4,
+      "extractionVersion": 5,
       "diagnostics": [
         {
-          "artifact": "vagrant",
-          "reason": "no supported application bundles in declared artifacts"
+          "artifact": "core.pkg/PackageInfo",
+          "reason": "no application payload under /Applications"
         }
       ]
     },
@@ -3124,9 +3184,9 @@
       ]
     },
     "virtualbox": {
-      "caskVersion": "7.2.18,175117",
-      "sourceURL": "https://download.virtualbox.org/virtualbox/7.2.18/VirtualBox-7.2.18-175117-macOSArm64.dmg",
-      "artifactSHA256": "b8a0329d731d42fe1e0ec2ba1331149ba2f3f293443e0b5b493bcd7d54cc0b34",
+      "caskVersion": "7.2.22,175245",
+      "sourceURL": "https://download.virtualbox.org/virtualbox/7.2.22/VirtualBox-7.2.22-175245-macOSArm64.dmg",
+      "artifactSHA256": "8a5b76de792340071dd7660d3bdec9d71e2d259a843d286c98b4763469513a2d",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -3237,15 +3297,17 @@
       "diagnostics": []
     },
     "skim": {
-      "caskVersion": "1.7.16",
-      "sourceURL": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.16/Skim-1.7.16.dmg",
-      "artifactSHA256": "d15b0bb8d4c5419f3c636da08f49b98e15feb3e03f7791cd3d66c8984fbed08a",
+      "caskVersion": "1.7.20",
+      "sourceURL": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.20/Skim-1.7.20.dmg",
+      "artifactSHA256": "52f38dd90f975dfa20c77f7e09f6deb9a85db02d8271cd7c792ccd376ad3da4b",
       "apps": [
         {
           "bundleName": "Skim.app",
           "bundleIdentifier": "net.sourceforge.skim-app.skim"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "background-music": {
       "caskVersion": "0.5.0",
@@ -3442,20 +3504,22 @@
       "diagnostics": []
     },
     "epic-games": {
-      "caskVersion": "20.1.4",
-      "sourceURL": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-20.1.4.dmg",
-      "artifactSHA256": "5c4f204ed623b01890f26cc99d4af657c3fbd6be1d04be7fed176ddbc94b1259",
+      "caskVersion": "20.3.3",
+      "sourceURL": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-20.3.3.dmg",
+      "artifactSHA256": "d25d7344f3759ef820c3b3f27eab10e86bfaba22788f88d5b917f4937a429076",
       "apps": [
         {
           "bundleName": "Epic Games Launcher.app",
           "bundleIdentifier": "com.epicgames.EpicGamesLauncher"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "openvpn-connect": {
-      "caskVersion": "3.8.2,6009",
-      "sourceURL": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.2.6009_signed.dmg",
-      "artifactSHA256": "8d50036510859956d20d1f50e43171be53417431104c6befb1352ff5187c248a",
+      "caskVersion": "3.9.1,6051",
+      "sourceURL": "https://packages.openvpn.net/connect/v3/OpenVPN_Connect_3_9_1(6051)_arm64_Installer_signed.pkg",
+      "artifactSHA256": "b10a33cb868d0ad5ff62460928a1c77f740d23450289c92c86358133b20baee7",
       "apps": [],
       "extractionVersion": 5,
       "diagnostics": [
@@ -3539,15 +3603,17 @@
       ]
     },
     "tunnelblick": {
-      "caskVersion": "9.0.1,6491",
-      "sourceURL": "https://tunnelblick.net/iprelease/Tunnelblick_9.0.1_build_6491.dmg",
-      "artifactSHA256": "73ca843b7720cd9261a7fd6cf53b0901a06f69c25824ef09430e4094f0688ad0",
+      "caskVersion": "10.0.3,6610",
+      "sourceURL": "https://tunnelblick.net/iprelease/Tunnelblick_10.0.3_build_6610.dmg",
+      "artifactSHA256": "8bb0f38b44c69a6c0ab4a3959d6091e5d3682af4019e99c4b79233fdc4ea7cdc",
       "apps": [
         {
           "bundleName": "Tunnelblick.app",
           "bundleIdentifier": "net.tunnelblick.tunnelblick"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "microsoft-powerpoint": {
       "caskVersion": "16.115.26112215",
@@ -3694,15 +3760,17 @@
       ]
     },
     "itsycal": {
-      "caskVersion": "0.15.14",
-      "sourceURL": "https://itsycal.s3.amazonaws.com/Itsycal-0.15.14.zip",
-      "artifactSHA256": "c66dc8a76dfb9d13396fc7bc3f5b18a41d8710840fb091aa849af747439bc949",
+      "caskVersion": "0.29.0",
+      "sourceURL": "https://itsycal.s3.amazonaws.com/Itsycal-0.29.0.zip",
+      "artifactSHA256": "612f2300340a48b6ea959982a754b5596aa78138485717b1a94bec6df7b9d8b0",
       "apps": [
         {
           "bundleName": "Itsycal.app",
           "bundleIdentifier": "com.mowglii.ItsycalApp"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "agentsview": {
       "caskVersion": "0.43.0",
@@ -3948,26 +4016,30 @@
       ]
     },
     "markdown-preview": {
-      "caskVersion": "0.0.58",
-      "sourceURL": "https://github.com/pluk-inc/markdown-preview/releases/download/v0.0.58/Markdown-Preview.dmg",
-      "artifactSHA256": "6f627a4a833c5b7f019f48c8768d5289b87d5d80046ad117f0cef54465dea336",
+      "caskVersion": "0.0.75",
+      "sourceURL": "https://github.com/pluk-inc/markdown-preview/releases/download/v0.0.75/Markdown-Preview.dmg",
+      "artifactSHA256": "26a548b104ec49d406562530bba8d0a2029dad777c7c54019f37b54f231fec3d",
       "apps": [
         {
           "bundleName": "Markdown Preview.app",
-          "bundleIdentifier": "doc.md-preview"
+          "bundleIdentifier": "sh.pluk.md-preview"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "insomnia": {
-      "caskVersion": "13.2.0",
-      "sourceURL": "https://github.com/Kong/insomnia/releases/download/core%4013.2.0/Insomnia.Core-13.2.0.dmg",
-      "artifactSHA256": "f0b4535e55af44c212b6e601ae5919d0fa8cdbd82c3b52c10e85a29f4f621806",
+      "caskVersion": "13.5.0",
+      "sourceURL": "https://github.com/Kong/insomnia/releases/download/core%4013.5.0/Insomnia.Core-13.5.0.dmg",
+      "artifactSHA256": "bf10dc8e0bd59636938b9122fc957632f74e5a8843b6f511101c9083c3a73337",
       "apps": [
         {
           "bundleName": "Insomnia.app",
           "bundleIdentifier": "com.insomnia.app"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "linear": {
       "caskVersion": "1.32.4",
@@ -4025,15 +4097,17 @@
       ]
     },
     "krita": {
-      "caskVersion": "5.3.4",
-      "sourceURL": "https://download.kde.org/stable/krita/5.3.4/krita-5.3.4-signed.dmg",
-      "artifactSHA256": "8e66539e38b8becfd31093a7701144c340c1789370b75e10a3703322739275d7",
+      "caskVersion": "5.3.5",
+      "sourceURL": "https://download.kde.org/stable/krita/5.3.5/krita-5.3.5-signed.dmg",
+      "artifactSHA256": "273f61d6b6a0bfacb21084336cc6522b66c1d74b9f92a59e641b69cd66988175",
       "apps": [
         {
           "bundleName": "Krita.app",
           "bundleIdentifier": "org.krita"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "nordvpn": {
       "caskVersion": "10.11.0",
@@ -4108,15 +4182,17 @@
       ]
     },
     "capcut": {
-      "caskVersion": "9.4.1.4574",
-      "sourceURL": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_4_1_4574_capcutpc_0_creatortool.dmg",
-      "artifactSHA256": "86d48a42dfcb38b0d7468bbc8674f68edf722bc2587c9db1ee8714a83b520a1f",
+      "caskVersion": "9.9.0.4841",
+      "sourceURL": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_9_0_4841_capcutpc_0_creatortool_nosandbox.dmg",
+      "artifactSHA256": "f83b2a0662f6b959aad2e4b7ac37a345568d7634ea0d9b099cfa2d8d6e4340cc",
       "apps": [
         {
           "bundleName": "CapCut.app",
           "bundleIdentifier": "com.lemon.lvoverseas"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "tabby": {
       "caskVersion": "1.0.235",
@@ -4192,15 +4268,17 @@
       ]
     },
     "wailbrew": {
-      "caskVersion": "0.13.0",
-      "sourceURL": "https://github.com/wickenico/WailBrew/releases/download/v0.13.0/wailbrew-v0.13.0.zip",
-      "artifactSHA256": "233a2d0424c5e4ec918415ddac3473090d18ab640bbf44386e71850cb7923d17",
+      "caskVersion": "0.15.1",
+      "sourceURL": "https://github.com/wickenico/WailBrew/releases/download/v0.15.1/wailbrew-v0.15.1.zip",
+      "artifactSHA256": "d42bcb5485a3f766e255b1e9be227654ae889f37a1828987b4e522f44a595178",
       "apps": [
         {
           "bundleName": "WailBrew.app",
           "bundleIdentifier": "io.github.wickenico.wailbrew"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "chatgpt-classic": {
       "caskVersion": "1.2026.184,1784145287",
@@ -4351,15 +4429,17 @@
       "diagnostics": []
     },
     "opera": {
-      "caskVersion": "136.0.6008.22",
-      "sourceURL": "https://get.geo.opera.com/pub/opera/desktop/136.0.6008.22/mac/Opera_136.0.6008.22_Setup.dmg",
-      "artifactSHA256": "506296522aa59ea7e0b7fba80bef08035f659dc8e6fb386e0e7cd8f2aa5a2a2f",
+      "caskVersion": "141.0.6089.28",
+      "sourceURL": "https://get.geo.opera.com/pub/opera/desktop/141.0.6089.28/mac/Opera_141.0.6089.28_Setup.dmg",
+      "artifactSHA256": "1fd09e144df238b679d0d018fc1021c3b01989464fa3bdfb5696cd9331033c88",
       "apps": [
         {
           "bundleName": "Opera.app",
           "bundleIdentifier": "com.operasoftware.Opera"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "whatcable": {
       "caskVersion": "1.4.0",
@@ -4664,15 +4744,17 @@
       ]
     },
     "beekeeper-studio": {
-      "caskVersion": "6.1.2",
-      "sourceURL": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.1.2/Beekeeper-Studio-6.1.2-arm64.dmg",
-      "artifactSHA256": "2b3a0e9b45fee28d1d1fba4e10250cb127054d7b652d9358288c89bb9cdc02e5",
+      "caskVersion": "6.3.3",
+      "sourceURL": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.3.3/Beekeeper-Studio-6.3.3-arm64.dmg",
+      "artifactSHA256": "09d238e13a35c3fe07a27691c5663a35b02ef69c46a36802939758d621a799da",
       "apps": [
         {
           "bundleName": "Beekeeper Studio.app",
           "bundleIdentifier": "io.beekeeperstudio.desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "cherry-studio": {
       "caskVersion": "2.1.0",
@@ -4796,15 +4878,17 @@
       ]
     },
     "joplin": {
-      "caskVersion": "3.7.18",
-      "sourceURL": "https://github.com/laurent22/joplin/releases/download/v3.7.18/Joplin-3.7.18-arm64.DMG",
-      "artifactSHA256": "103c9bc884108bc31593060008005411a45c1b2b530eeffca4d5ad262306c6e6",
+      "caskVersion": "3.7.24",
+      "sourceURL": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24-arm64.DMG",
+      "artifactSHA256": "d95c2376035c7630dfb94f6eecca2f6edb3a27531626553a344f2b2308a5830e",
       "apps": [
         {
           "bundleName": "Joplin.app",
           "bundleIdentifier": "net.cozic.joplin-desktop"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "losslesscut": {
       "caskVersion": "3.69.0",
@@ -6038,15 +6122,17 @@
       ]
     },
     "osaurus": {
-      "caskVersion": "0.25.9",
-      "sourceURL": "https://github.com/osaurus-ai/osaurus/releases/download/0.25.9/Osaurus-0.25.9.dmg",
-      "artifactSHA256": "ccec3ca03052f65b7000adb662f3801fbbe1db715ef7a910e720701782a06106",
+      "caskVersion": "1.0.13",
+      "sourceURL": "https://github.com/osaurus-ai/osaurus/releases/download/1.0.13/Osaurus-1.0.13.dmg",
+      "artifactSHA256": "fdb747c6cdbfdbfea97f449bfeedd39de14c00234e64238088f109a2de3923a0",
       "apps": [
         {
-          "bundleName": "osaurus.app",
+          "bundleName": "Osaurus.app",
           "bundleIdentifier": "com.dinoki.osaurus"
         }
-      ]
+      ],
+      "extractionVersion": 5,
+      "diagnostics": []
     },
     "canva": {
       "caskVersion": "1.126.0",
@@ -52261,6 +52347,29 @@
         {
           "artifact": "Insta360_Wave_Controller.pkg/PackageInfo",
           "reason": "invalid PackageInfo: missing package identifier or relocatable payload"
+        }
+      ]
+    },
+    "microsoft-auto-update": {
+      "caskVersion": "4.86.26110224",
+      "sourceURL": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_AutoUpdate_4.86.26110224_Updater.pkg",
+      "artifactSHA256": "9f0b5b7b697a187175aa86efb6aa83071d91d39a8d4bc8bd1ff9509cd6bc21a7",
+      "apps": [],
+      "extractionVersion": 5,
+      "diagnostics": [
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "installation-check",
+          "attributes": {
+            "script": "InstallationCheck();"
+          }
+        },
+        {
+          "artifact": "Distribution",
+          "reason": "package selection requires installed receipt verification",
+          "element": "script",
+          "attributes": {}
         }
       ]
     }
